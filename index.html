@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotabo — You drink. They drive. Your car.</title>
+<style>
+  :root{
+    --bg-top:#f6ecf9;
+    --bg-mid:#f3e6f8;
+    --bg-card:#f7edfa;
+    --border:#e2c3ee;
+    --violet-1:#7c2d9c;
+    --violet-2:#9b3fc0;
+    --violet-3:#b23f78;
+    --diamond-a:#a239c9;
+    --diamond-b:#7c2596;
+    --text-dark:#3a1650;
+    --text-body:#6b5878;
+    --text-eyebrow:#8a7a94;
+    --green:#3ecb7e;
+    --btn-solid:#9333a8;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:linear-gradient(180deg,var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-mid) 100%);
+    color:var(--text-body);
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  header{
+    border-bottom:1px solid var(--border);
+    background:linear-gradient(180deg,#f8eefb,#f4e8f8);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 24px;max-width:1080px;margin:0 auto;flex-wrap:wrap;gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);}
+  .brand svg{width:26px;height:34px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+  nav.links{display:flex;flex-wrap:wrap;}
+  nav.links a{color:#5c4d68;text-decoration:none;font-size:1.02rem;margin-right:32px;margin-bottom:8px;}
+  nav.links a:last-child{margin-right:0;}
+  nav.links a:hover{color:var(--violet-1);}
+
+  .hero{
+    text-align:center;
+    padding:64px 24px 40px;
+  }
+  .pill{
+    display:inline-block;
+    border:1px solid var(--border);
+    background:#fff;
+    color:var(--violet-2);
+    font-weight:700;
+    letter-spacing:.06em;
+    font-size:.82rem;
+    padding:14px 28px;
+    border-radius:40px;
+    margin-bottom:56px;
+  }
+  .diamond-hero{
+    width:230px;height:auto;
+    margin:0 auto 48px;
+    filter:drop-shadow(0 20px 30px rgba(124,37,150,.28));
+  }
+  .tagline{
+    font-size:2.6rem;
+    font-weight:800;
+    line-height:1.25;
+    color:var(--text-dark);
+    margin:0 0 28px;
+  }
+  .tagline .accent{color:var(--violet-3);}
+  .lede{
+    max-width:560px;margin:0 auto;
+    font-size:1.15rem;line-height:1.6;
+    color:var(--text-body);
+  }
+  .lede b{color:var(--text-dark);}
+
+  .cta-stack{max-width:560px;margin:44px auto 0;display:flex;flex-direction:column;gap:16px;}
+  .btn{
+    display:block;text-align:center;
+    padding:19px 24px;border-radius:16px;
+    font-weight:800;font-size:1.05rem;
+    text-decoration:none;cursor:pointer;border:1px solid transparent;
+  }
+  .btn-solid{
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);
+    color:#fff;
+    box-shadow:0 14px 30px rgba(124,37,150,.35);
+  }
+  .btn-outline{
+    background:#faf3fc;
+    border:1px solid var(--border);
+    color:var(--text-dark);
+  }
+  .btn-dashed{
+    background:transparent;
+    border:2px dashed var(--violet-2);
+    color:var(--violet-1);
+  }
+  .fine{text-align:center;color:#8a7a94;font-size:.95rem;margin:18px 0 30px;}
+  .badges{display:flex;justify-content:center;flex-wrap:wrap;color:#5c4d68;font-size:.98rem;margin-bottom:60px;}
+  .badges span{display:flex;align-items:center;margin:0 14px 10px;}
+  .badges span .dot{margin-right:8px;}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block;}
+
+  section{max-width:1080px;margin:0 auto;padding:20px 24px;}
+  .eyebrow{
+    text-align:center;color:var(--text-eyebrow);
+    letter-spacing:.12em;font-size:.85rem;font-weight:700;
+    margin-bottom:14px;
+  }
+  h2{
+    text-align:center;color:var(--text-dark);
+    font-size:2.1rem;margin:0 0 40px;
+  }
+
+  .problem{padding-top:70px;}
+  .cross-list{max-width:480px;margin:0 auto 36px;}
+  .cross-list p{
+    font-size:1.15rem;color:#5c4d68;margin:14px 0;text-align:center;
+  }
+  .cross-list p::before{content:"✕  ";color:#9a8aa2;font-weight:700;}
+  .thesis{
+    text-align:center;font-size:1.3rem;font-weight:800;
+    color:var(--text-dark);margin:36px 0 60px;
+  }
+
+  .steps{
+    display:grid;grid-template-columns:1fr 1fr;gap:20px;
+    margin-bottom:24px;
+  }
+  .step-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:32px 24px;
+    text-align:center;
+  }
+  .step-card h3{color:var(--violet-2);font-size:1.3rem;margin:0 0 12px;}
+  .step-card p{margin:0;font-size:1.05rem;line-height:1.5;}
+
+  .not-taxi{
+    text-align:center;font-size:1.15rem;color:#5c4d68;margin:44px 0 8px;
+  }
+  .not-taxi b{display:block;color:var(--text-dark);font-size:1.35rem;margin-top:10px;}
+
+  .drivers-section{padding-top:64px;}
+  .check-list{max-width:640px;margin:0 auto;}
+  .check-list p{
+    font-size:1.1rem;color:#5c4d68;line-height:1.5;margin:22px 0;
+    padding-left:32px;position:relative;
+  }
+  .check-list p::before{
+    content:"✓";position:absolute;left:0;top:0;
+    color:var(--green);font-weight:800;font-size:1.15rem;
+  }
+
+  .cards-2col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px;}
+  .info-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;padding:32px;
+  }
+  .info-card .cat{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.8rem;font-weight:700;margin-bottom:14px;}
+  .info-card h3{color:var(--text-dark);font-size:1.5rem;margin:0 0 16px;line-height:1.3;}
+  .info-card p{font-size:1.02rem;line-height:1.55;margin:0 0 18px;}
+  .info-card a{color:var(--violet-2);font-weight:800;text-decoration:none;}
+
+  .supporters{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:36px;margin:64px 0 40px;
+  }
+  .supporters .cat{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.8rem;font-weight:700;margin-bottom:14px;}
+  .supporters h3{color:var(--text-dark);font-size:1.6rem;margin:0 0 16px;}
+  .supporters p{font-size:1.02rem;line-height:1.55;margin:0 0 18px;}
+  .supporters .names{color:var(--text-dark);font-weight:800;font-size:1.05rem;margin-bottom:18px;}
+  .supporters a{color:var(--violet-2);font-weight:800;text-decoration:none;}
+
+  footer{
+    border-top:1px solid var(--border);
+    text-align:center;padding:44px 24px 60px;color:#8a7a94;
+  }
+  footer .legal{max-width:520px;margin:0 auto 26px;font-size:.98rem;line-height:1.5;}
+  footer .flinks{display:flex;justify-content:center;flex-wrap:wrap;margin-bottom:20px;font-size:.98rem;}
+  footer .flinks a{margin:0 11px 8px;}
+  footer .flinks a{color:#5c4d68;text-decoration:none;}
+  footer .copyright{font-size:.9rem;}
+
+  @media (max-width:640px){
+    .tagline{font-size:2rem;}
+    .steps,.cards-2col{grid-template-columns:1fr;}
+    nav.links a{font-size:.95rem;margin-right:20px;}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="diamondGrad" cx="32%" cy="26%" r="85%">
+      <stop offset="0%" stop-color="#c264e0"/>
+      <stop offset="45%" stop-color="#a239c9"/>
+      <stop offset="100%" stop-color="#7c2596"/>
+    </radialGradient>
+    <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav-inner">
+    <div class="brand">
+      <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      Rotabo
+    </div>
+    <nav class="links">
+      <a href="#how">How it works</a>
+      <a href="#safety">Safety</a>
+      <a href="#business">For businesses</a>
+      <a href="#drive">Become a driver</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="pill">DRIVERS WITH A PURPOSE · YOUR CAR · YOUR WAY HOME</div>
+  <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+  <h1 class="tagline">You drink.<br><span class="accent">They drive.</span><br>Your car.</h1>
+  <p class="lede">Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there <b>in your own car</b>.</p>
+
+  <div class="cta-stack">
+    <a class="btn btn-solid" href="#">Find a driver</a>
+    <a class="btn btn-outline" href="#drive">Become a driver</a>
+    <a class="btn btn-outline" href="#sponsor">Become a sponsor</a>
+    <a class="btn btn-dashed" href="#">⬇ Add Rotabo to your home screen</a>
+  </div>
+  <p class="fine">Works in your browser — no app store needed.</p>
+  <div class="badges">
+    <span><i class="dot"></i>Verified drivers</span>
+    <span><i class="dot"></i>Live journey sharing</span>
+    <span><i class="dot"></i>Google Pay / Apple Pay</span>
+  </div>
+</section>
+
+<section class="problem">
+  <h2>The problem with every other option</h2>
+  <p class="eyebrow" style="margin-top:-24px;margin-bottom:30px;">WHY LEAVE YOUR CAR BEHIND?</p>
+  <div class="cross-list">
+    <p>No taxi.</p>
+    <p>No parking overnight.</p>
+    <p>No coming back for it tomorrow.</p>
+    <p>No second ride to collect it.</p>
+  </div>
+  <p class="thesis">Just you, your car, and the way home.</p>
+</section>
+
+<section id="how">
+  <p class="eyebrow">FOUR STEPS</p>
+  <h2>How Rotabo works</h2>
+  <div class="steps">
+    <div class="step-card"><h3>Request</h3><p>Tell Rotabo where you are.</p></div>
+    <div class="step-card"><h3>Meet</h3><p>Your driver comes to you.</p></div>
+    <div class="step-card"><h3>Drive</h3><p>They drive your car, with you in it.</p></div>
+    <div class="step-card"><h3>Home</h3><p>You arrive together. The car stays yours the whole way.</p></div>
+  </div>
+  <p class="not-taxi">Not a taxi. Not a ride. Not a car left behind.<b>Your car. Your way home.</b></p>
+</section>
+
+<section id="safety" class="drivers-section">
+  <p class="eyebrow">THE PEOPLE WHO DRIVE</p>
+  <h2>Drivers who drive for a reason</h2>
+  <div class="check-list">
+    <p>Every driver joins to keep someone off the road who shouldn't be on it</p>
+    <p>Identity and licence confirmed before the first journey</p>
+    <p>A shared code of conduct, agreed by everyone who drives</p>
+    <p>Share your live journey with anyone you choose</p>
+    <p>Rate every driver, report any incident</p>
+  </div>
+
+  <div class="cards-2col">
+    <div class="info-card" id="business">
+      <div class="cat">PARTNERS</div>
+      <h3>For restaurants, hotels and venues</h3>
+      <p>Let your guests enjoy the evening and still drive home in their own car. Offer Rotabo at the table, at reception, or at the door.</p>
+      <a href="#">Talk to us →</a>
+    </div>
+    <div class="info-card" id="drive">
+      <div class="cat">DRIVERS</div>
+      <h3>Drive with Rotabo</h3>
+      <p>Every journey you take is one nobody takes badly. Choose your own hours, drive cars you never have to own, and get people home the way they wanted to go.</p>
+      <a href="#">Become a driver →</a>
+    </div>
+  </div>
+
+  <div class="supporters" id="sponsor">
+    <div class="cat">SUPPORTERS</div>
+    <h3>People and places behind this</h3>
+    <p>Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.</p>
+    <p class="names">Casa Veche · Nord Logistic · Teatru Studio · Alpin Fleet</p>
+    <a href="#">Support Rotabo →</a>
+  </div>
+</section>
+
+<footer>
+  <p class="legal">Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.</p>
+  <div class="flinks">
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Driver terms</a>
+    <a href="#">Supporters</a>
+  </div>
+  <div class="flinks"><a href="#">Contact</a></div>
+  <p class="copyright">© 2026 Rotabo</p>
+</footer>
+
+</body>
+</html>
