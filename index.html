@@ -420,7 +420,7 @@
   <div class="cta-stack">
     <button type="button" class="btn btn-solid" data-i18n="hero.cta_find_driver" onclick="openModal('findDriverModal')">Find a driver</button>
     <button type="button" class="btn btn-outline" data-i18n="hero.cta_become_driver" onclick="openModal('becomeDriverModal')">Become a driver</button>
-    <a class="btn btn-outline" href="#sponsor" data-i18n="hero.cta_become_sponsor">Become a sponsor</a>
+    <a class="btn btn-outline" href="#sponsor" data-i18n="hero.cta_become_sponsor" onclick="if(window.gtag)gtag('event','cta_become_sponsor_click')">Become a sponsor</a>
     <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
   </div>
   <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
@@ -488,10 +488,10 @@
     <p data-i18n="supporters.invite">We especially welcome banks, insurers, sports brands, energy-drink and soft-drink makers — and any business that stands behind sober driving.</p>
     <p class="names">Casa Veche · Nord Logistic · Teatru Studio · Alpin Fleet</p>
     <div class="sponsor-tiers">
-      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze">Bronze — 100 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" data-i18n="supporters.tier_silver">Silver — 300 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" data-i18n="supporters.tier_gold">Gold — 750 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum">Platinum — 750 CHF+</a>
+      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'bronze'})">Bronze — 100 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" data-i18n="supporters.tier_silver" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'silver'})">Silver — 300 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" data-i18n="supporters.tier_gold" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'gold'})">Gold — 750 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'platinum'})">Platinum — 750 CHF+</a>
     </div>
   </div>
 </section>
@@ -619,9 +619,11 @@
   var FIND_DRIVER_LINK = "https://buy.stripe.com/28E14g2cC9R3e10ekI0co02";
   var BECOME_DRIVER_LINK = "https://buy.stripe.com/6oUaEQ8B07IV8GGa4s0co04";
 
+  var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click" };
   window.openModal = function(id){
     document.getElementById(id).classList.add("open");
     document.body.style.overflow = "hidden";
+    if (window.gtag && MODAL_GA_EVENTS[id]) gtag("event", MODAL_GA_EVENTS[id]);
   };
   window.closeModal = function(id){
     document.getElementById(id).classList.remove("open");
@@ -770,6 +772,7 @@
           return;
         }
         localStorage.setItem("rotabo_request_id", newRequestId);
+        if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "find_driver" });
         window.location.href = FIND_DRIVER_LINK
           + "?client_reference_id=" + encodeURIComponent(newRequestId);
       }).catch(function(){
@@ -811,6 +814,7 @@
         return;
       }
       localStorage.setItem("rotabo_driver_id", newDriverId);
+      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "become_driver" });
       window.location.href = BECOME_DRIVER_LINK
         + "?client_reference_id=" + encodeURIComponent(newDriverId);
     }).catch(function(){
