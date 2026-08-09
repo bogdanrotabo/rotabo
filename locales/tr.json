@@ -44,6 +44,7 @@
   "supporters": {
     "cat": "DESTEKÇİLER", "h3": "Bunun arkasındaki insanlar ve mekanlar",
     "p": "Rotabo, kimsenin uygun olmayan durumda araç kullanmaması gerektiği fikrinin arkasında durmaya istekli herkes sayesinde ayakta kalıyor.",
+    "invite": "Özellikle bankaları, sigorta şirketlerini, spor markalarını, enerji içeceği ve alkolsüz içecek üreticilerini — ve ayık sürüşü destekleyen her işletmeyi memnuniyetle karşılıyoruz.",
     "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Gümüş — 300 CHF", "tier_gold": "Altın — 750 CHF", "tier_platinum": "Platin — 750 CHF ve üzeri"
   },
   "footer": {

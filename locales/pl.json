@@ -44,6 +44,7 @@
   "supporters": {
     "cat": "WSPIERAJĄCY", "h3": "Ludzie i miejsca, które za tym stoją",
     "p": "Rotabo działa dzięki każdemu, kto chce stanąć za ideą, że nikt nie powinien prowadzić, kiedy nie powinien.",
+    "invite": "Szczególnie zapraszamy banki, ubezpieczycieli, marki sportowe, producentów napojów energetycznych i bezalkoholowych — oraz każdą firmę wspierającą trzeźwą jazdę.",
     "tier_bronze": "Brąz — 100 CHF", "tier_silver": "Srebro — 300 CHF", "tier_gold": "Złoto — 750 CHF", "tier_platinum": "Platyna — 750 CHF+"
   },
   "footer": {

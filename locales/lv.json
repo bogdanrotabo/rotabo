@@ -44,6 +44,7 @@
   "supporters": {
     "cat": "ATBALSTĪTĀJI", "h3": "Cilvēki un vietas aiz šī visa",
     "p": "Rotabo pastāv, pateicoties ikvienam, kas gatavs atbalstīt ideju, ka nevienam nevajadzētu braukt, kad to nedrīkst darīt.",
+    "invite": "Īpaši gaidām bankas, apdrošinātājus, sporta zīmolus, enerģijas un bezalkoholisko dzērienu ražotājus — un jebkuru uzņēmumu, kas atbalsta braukšanu skaidrā prātā.",
     "tier_bronze": "Bronza — 100 CHF", "tier_silver": "Sudrabs — 300 CHF", "tier_gold": "Zelts — 750 CHF", "tier_platinum": "Platīns — 750 CHF+"
   },
   "footer": {

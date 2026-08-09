@@ -44,6 +44,7 @@
   "supporters": {
     "cat": "PODPOROVATELIA", "h3": "Ľudia a miesta, ktoré za tým stoja",
     "p": "Rotabo udržiava nažive každý, kto je ochotný stáť za myšlienkou, že nikto by nemal šoférovať, keď by nemal.",
+    "invite": "Obzvlášť vítame banky, poisťovne, športové značky, výrobcov energetických a nealkoholických nápojov — a akúkoľvek firmu, ktorá podporuje triezvu jazdu.",
     "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Striebro — 300 CHF", "tier_gold": "Zlato — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
   },
   "footer": {

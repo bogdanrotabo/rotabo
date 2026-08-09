@@ -44,6 +44,7 @@
   "supporters": {
     "cat": "PENDUKUNG", "h3": "Orang dan tempat di balik semua ini",
     "p": "Rotabo terus berjalan berkat semua orang yang bersedia mendukung gagasan bahwa tak seorang pun boleh menyetir saat seharusnya tidak menyetir.",
+    "invite": "Kami terutama menyambut bank, perusahaan asuransi, merek olahraga, produsen minuman energi dan minuman ringan — serta bisnis apa pun yang mendukung berkendara tanpa alkohol.",
     "tier_bronze": "Perunggu — 100 CHF", "tier_silver": "Perak — 300 CHF", "tier_gold": "Emas — 750 CHF", "tier_platinum": "Platinum — di atas 750 CHF"
   },
   "footer": {
