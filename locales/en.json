@@ -109,5 +109,38 @@
     "decl4": "I understand that I drive entirely at my own responsibility and that of the client.",
     "submit": "Continue to payment",
     "error": "Something went wrong. Please try again."
+  },
+  "searching_page": {
+    "searching_title": "Searching for drivers near you…",
+    "searching_body": "Hang tight — we'll connect you with a driver as soon as one accepts your request.",
+    "pending_title": "Confirming your payment…",
+    "pending_body": "This usually takes just a few seconds.",
+    "no_request_title": "No active request found",
+    "no_request_body": "We couldn't find a request on this device. If you just paid, this can take a few seconds — refresh this page. Otherwise, start a new request from the home page.",
+    "cancelled_title": "This request was cancelled",
+    "cancelled_body": "You can start a new request any time from the home page.",
+    "back_home": "← Back to home",
+    "matched_title": "You're connected! 🎉",
+    "matched_body": "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
+    "default_driver_name": "Your driver"
+  },
+  "dashboard_page": {
+    "eyebrow": "DRIVER DASHBOARD",
+    "title": "Open requests",
+    "subtitle": "Requests currently searching for a driver in {city}.",
+    "loading": "Loading…",
+    "not_registered_body": "You don’t have a driver profile on this device yet.",
+    "register_link": "← Go register as a driver",
+    "pending_confirmation": "Confirming your registration payment…",
+    "empty_note": "No open requests in your city right now. This list refreshes automatically.",
+    "accept_btn": "Accept",
+    "accept_checking": "Checking…",
+    "accept_taken": "Already taken",
+    "taken_note": "That request was just taken by another driver.",
+    "time_just_now": "just now",
+    "time_min_ago_one": "1 min ago",
+    "time_min_ago_other": "{n} min ago",
+    "time_hour_ago_one": "1 hour ago",
+    "time_hour_ago_other": "{n} hours ago"
   }
 }

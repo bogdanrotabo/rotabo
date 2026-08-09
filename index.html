@@ -611,7 +611,16 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
+    // Generate the id client-side rather than reading it back via
+    // .select() after insert: driver_profiles' SELECT policy only
+    // allows reading a driver once they're matched to a request (see
+    // the privacy fix in migration restrict_driver_profiles_contact_info),
+    // so a freshly-inserted, not-yet-matched row can't be read back
+    // that way.
+    var newDriverId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
+
     var payload = {
+      id: newDriverId || undefined,
       name: form.name.value.trim(),
       phone: form.phone.value.trim(),
       email: form.email.value.trim(),
@@ -620,15 +629,15 @@
       declaration_accepted: true
     };
 
-    sb.from("driver_profiles").insert(payload).select("id").single().then(function(res){
-      if (res.error || !res.data) {
+    sb.from("driver_profiles").insert(payload).then(function(res){
+      if (res.error) {
         setSubmitting(form, false);
         showError(errorEl);
         return;
       }
-      localStorage.setItem("rotabo_driver_id", res.data.id);
+      localStorage.setItem("rotabo_driver_id", newDriverId);
       window.location.href = BECOME_DRIVER_LINK
-        + "?client_reference_id=" + encodeURIComponent(res.data.id);
+        + "?client_reference_id=" + encodeURIComponent(newDriverId);
     }).catch(function(){
       setSubmitting(form, false);
       showError(errorEl);

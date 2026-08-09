@@ -102,6 +102,46 @@
   });
   var POLL_MS = 3000;
 
+  // Minimal i18n: reuse the language the visitor already chose on the
+  // homepage (persisted in localStorage). No language switcher here on
+  // purpose -- this is a transactional status page, not a marketing one.
+  var LANG = localStorage.getItem("rotabo_lang") || "en";
+  var T = {
+    searching_title: "Searching for drivers near you…",
+    searching_body: "Hang tight — we'll connect you with a driver as soon as one accepts your request.",
+    pending_title: "Confirming your payment…",
+    pending_body: "This usually takes just a few seconds.",
+    no_request_title: "No active request found",
+    no_request_body: "We couldn't find a request on this device. If you just paid, this can take a few seconds — refresh this page. Otherwise, start a new request from the home page.",
+    cancelled_title: "This request was cancelled",
+    cancelled_body: "You can start a new request any time from the home page.",
+    back_home: "← Back to home",
+    matched_title: "You're connected! 🎉",
+    matched_body: "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
+    default_driver_name: "Your driver"
+  };
+
+  function tr(key, vars){
+    var str = T[key];
+    if (vars) {
+      Object.keys(vars).forEach(function(k){
+        str = str.split("{" + k + "}").join(vars[k]);
+      });
+    }
+    return str;
+  }
+
+  function loadTranslations(){
+    return fetch("locales/" + LANG + ".json")
+      .then(function(res){ return res.ok ? res.json() : null; })
+      .then(function(dict){
+        if (dict && dict.searching_page) {
+          Object.assign(T, dict.searching_page);
+        }
+      })
+      .catch(function(){ /* keep English defaults */ });
+  }
+
   var requestId = localStorage.getItem("rotabo_request_id");
   var card = document.getElementById("card");
   var spinner = document.getElementById("spinner");
@@ -111,32 +151,31 @@
 
   function renderNoRequest(){
     spinner.style.display = "none";
-    titleEl.textContent = "No active request found";
-    bodyEl.textContent = "We couldn't find a request on this device. If you just paid, this can take a few seconds — refresh this page. Otherwise, start a new request from the home page.";
+    titleEl.textContent = tr("no_request_title");
+    bodyEl.textContent = tr("no_request_body");
     var link = document.createElement("a");
     link.className = "home-link";
     link.href = "/";
-    link.textContent = "← Back to home";
+    link.textContent = tr("back_home");
     card.appendChild(link);
   }
 
   function renderCancelled(){
     spinner.style.display = "none";
-    titleEl.textContent = "This request was cancelled";
-    bodyEl.textContent = "You can start a new request any time from the home page.";
+    titleEl.textContent = tr("cancelled_title");
+    bodyEl.textContent = tr("cancelled_body");
     var link = document.createElement("a");
     link.className = "home-link";
     link.href = "/";
-    link.textContent = "← Back to home";
+    link.textContent = tr("back_home");
     card.appendChild(link);
   }
 
   function renderMatched(driverName, driverPhone){
     spinner.style.display = "none";
     document.querySelector(".card").insertAdjacentHTML("afterbegin", '<div class="celebrate">🎉</div>');
-    titleEl.textContent = "You're connected! 🎉";
-    bodyEl.innerHTML = driverName + " has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card."
-      + "<br><br>Thank you for choosing not to drive tonight. That's what Rotabo is about.";
+    titleEl.textContent = tr("matched_title");
+    bodyEl.innerHTML = tr("matched_body", { driver_name: driverName }).split("\n\n").join("<br><br>");
     if (driverPhone) {
       var phoneLink = document.createElement("a");
       phoneLink.className = "driver-phone";
@@ -148,14 +187,14 @@
 
   function renderSearching(){
     spinner.style.display = "";
-    titleEl.textContent = "Searching for drivers near you…";
-    bodyEl.textContent = "Hang tight — we'll connect you with a driver as soon as one accepts your request.";
+    titleEl.textContent = tr("searching_title");
+    bodyEl.textContent = tr("searching_body");
   }
 
   function renderPendingPayment(){
     spinner.style.display = "";
-    titleEl.textContent = "Confirming your payment…";
-    bodyEl.textContent = "This usually takes just a few seconds.";
+    titleEl.textContent = tr("pending_title");
+    bodyEl.textContent = tr("pending_body");
   }
 
   var pollTimer = null;
@@ -186,7 +225,7 @@
             .eq("id", row.driver_id)
             .maybeSingle()
             .then(function(driverRes){
-              var name = (driverRes.data && driverRes.data.name) || "Your driver";
+              var name = (driverRes.data && driverRes.data.name) || tr("default_driver_name");
               var phone = driverRes.data && driverRes.data.phone;
               renderMatched(name, phone);
             });
@@ -194,12 +233,14 @@
       });
   }
 
-  if (!requestId) {
-    renderNoRequest();
-  } else {
-    checkStatus();
-    pollTimer = setInterval(checkStatus, POLL_MS);
-  }
+  loadTranslations().then(function(){
+    if (!requestId) {
+      renderNoRequest();
+    } else {
+      checkStatus();
+      pollTimer = setInterval(checkStatus, POLL_MS);
+    }
+  });
 })();
 </script>
 

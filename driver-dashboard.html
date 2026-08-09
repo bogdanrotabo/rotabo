@@ -89,14 +89,14 @@
 </header>
 
 <div class="wrap">
-  <p class="eyebrow">DRIVER DASHBOARD</p>
+  <p class="eyebrow" id="pageEyebrow">DRIVER DASHBOARD</p>
   <h1 id="pageTitle">Open requests</h1>
   <p class="sub" id="pageSub">Requests currently searching for a driver in your city.</p>
 
   <div id="content">
     <div class="state-card">
       <div class="spinner"></div>
-      <p>Loading…</p>
+      <p id="loadingText">Loading…</p>
     </div>
   </div>
 </div>
@@ -112,6 +112,55 @@
   var BECOME_DRIVER_LINK = "https://buy.stripe.com/6oUaEQ8B07IV8GGa4s0co04";
   var LIST_POLL_MS = 5000;
 
+  // Minimal i18n: reuse the language the visitor already chose on the
+  // homepage (persisted in localStorage). No language switcher here on
+  // purpose -- this is a working tool for a registered driver, not a
+  // marketing page.
+  var LANG = localStorage.getItem("rotabo_lang") || "en";
+  var T = {
+    eyebrow: "DRIVER DASHBOARD",
+    title: "Open requests",
+    subtitle: "Requests currently searching for a driver in {city}.",
+    loading: "Loading…",
+    not_registered_body: "You don’t have a driver profile on this device yet.",
+    register_link: "← Go register as a driver",
+    pending_confirmation: "Confirming your registration payment…",
+    empty_note: "No open requests in your city right now. This list refreshes automatically.",
+    accept_btn: "Accept",
+    accept_checking: "Checking…",
+    accept_taken: "Already taken",
+    taken_note: "That request was just taken by another driver.",
+    time_just_now: "just now",
+    time_min_ago_one: "1 min ago",
+    time_min_ago_other: "{n} min ago",
+    time_hour_ago_one: "1 hour ago",
+    time_hour_ago_other: "{n} hours ago"
+  };
+
+  function tr(key, vars){
+    var str = T[key];
+    if (vars) {
+      Object.keys(vars).forEach(function(k){
+        str = str.split("{" + k + "}").join(vars[k]);
+      });
+    }
+    return str;
+  }
+
+  function loadTranslations(){
+    return fetch("locales/" + LANG + ".json")
+      .then(function(res){ return res.ok ? res.json() : null; })
+      .then(function(dict){
+        if (dict && dict.dashboard_page) {
+          Object.assign(T, dict.dashboard_page);
+        }
+        document.getElementById("pageEyebrow").textContent = T.eyebrow;
+        document.getElementById("pageTitle").textContent = T.title;
+        document.getElementById("loadingText").textContent = T.loading;
+      })
+      .catch(function(){ /* keep English defaults */ });
+  }
+
   var driverId = localStorage.getItem("rotabo_driver_id");
   var content = document.getElementById("content");
   var listPollTimer = null;
@@ -119,36 +168,39 @@
   function renderNotRegistered(){
     content.innerHTML =
       '<div class="state-card">' +
-      '<p>You don’t have a driver profile on this device yet.</p>' +
-      '<a class="home-link" href="/">← Go register as a driver</a>' +
+      '<p></p>' +
+      '<a class="home-link" href="/"></a>' +
       '</div>';
+    content.querySelector("p").textContent = tr("not_registered_body");
+    content.querySelector(".home-link").textContent = tr("register_link");
   }
 
   function renderPendingConfirmation(){
     content.innerHTML =
       '<div class="state-card">' +
       '<div class="spinner"></div>' +
-      '<p>Confirming your registration payment…</p>' +
+      '<p></p>' +
       '</div>';
+    content.querySelector("p").textContent = tr("pending_confirmation");
   }
 
   function timeAgo(iso){
     var diffMs = Date.now() - new Date(iso).getTime();
     var mins = Math.max(0, Math.round(diffMs / 60000));
-    if (mins < 1) return "just now";
-    if (mins === 1) return "1 min ago";
-    if (mins < 60) return mins + " min ago";
+    if (mins < 1) return tr("time_just_now");
+    if (mins === 1) return tr("time_min_ago_one");
+    if (mins < 60) return tr("time_min_ago_other", { n: mins });
     var hrs = Math.round(mins / 60);
-    return hrs + (hrs === 1 ? " hour ago" : " hours ago");
+    return hrs === 1 ? tr("time_hour_ago_one") : tr("time_hour_ago_other", { n: hrs });
   }
 
   function acceptRequest(requestId, btn){
     btn.disabled = true;
-    btn.textContent = "Checking…";
+    btn.textContent = tr("accept_checking");
 
     sb.from("searching_requests").select("id").eq("id", requestId).maybeSingle().then(function(res){
       if (!res.data) {
-        btn.textContent = "Already taken";
+        btn.textContent = tr("accept_taken");
         var note = document.getElementById("takenNote");
         if (note) note.classList.add("show");
         setTimeout(loadRequests, 800);
@@ -158,14 +210,15 @@
         + "?client_reference_id=" + encodeURIComponent(driverId + ":" + requestId);
     }).catch(function(){
       btn.disabled = false;
-      btn.textContent = "Accept";
+      btn.textContent = tr("accept_btn");
     });
   }
 
   function renderDashboard(driverCity){
     var html = '<div class="request-list" id="requestList"></div>'
-      + '<p class="taken-note" id="takenNote">That request was just taken by another driver.</p>';
+      + '<p class="taken-note" id="takenNote"></p>';
     content.innerHTML = html;
+    document.getElementById("takenNote").textContent = tr("taken_note");
     loadRequests(driverCity);
     if (!listPollTimer) {
       listPollTimer = setInterval(function(){ loadRequests(driverCity); }, LIST_POLL_MS);
@@ -189,7 +242,8 @@
 
         var rows = res.data || [];
         if (rows.length === 0) {
-          list.innerHTML = '<p class="empty-note">No open requests in your city right now. This list refreshes automatically.</p>';
+          list.innerHTML = '<p class="empty-note"></p>';
+          list.querySelector(".empty-note").textContent = tr("empty_note");
           return;
         }
 
@@ -202,10 +256,11 @@
             + '<div class="name"></div>'
             + '<div class="city"></div>'
             + '</div>'
-            + '<button type="button" class="accept-btn">Accept</button>';
+            + '<button type="button" class="accept-btn"></button>';
           card.querySelector(".name").textContent = row.client_name;
           card.querySelector(".city").textContent = row.city + " · " + timeAgo(row.created_at);
           var btn = card.querySelector(".accept-btn");
+          btn.textContent = tr("accept_btn");
           btn.addEventListener("click", function(){ acceptRequest(row.id, btn); });
           list.appendChild(card);
         });
@@ -232,13 +287,12 @@
           setTimeout(init, 3000);
           return;
         }
-        document.getElementById("pageSub").textContent =
-          "Requests currently searching for a driver in " + res.data.city + ".";
+        document.getElementById("pageSub").textContent = tr("subtitle", { city: res.data.city });
         renderDashboard(res.data.city);
       });
   }
 
-  init();
+  loadTranslations().then(init);
 })();
 </script>
 
