@@ -21,7 +21,19 @@
     "step2_title": "Találkozzatok", "step2_desc": "A sofőröd hozzád jön.",
     "step3_title": "Vezess", "step3_desc": "Ők vezetik az autódat, te pedig benne ülsz.",
     "step4_title": "Haza", "step4_desc": "Együtt érkeztek meg. Az autó végig a tiéd marad.",
-    "not_taxi1": "Nem taxi. Nem fuvar. Nem otthagyott autó.", "not_taxi2": "A te autód. A te utad haza."
+    "not_taxi1": "Nem taxi. Nem fuvar. Nem otthagyott autó.", "not_taxi2": "A te autód. A te utad haza.",
+    "tab_client": "Fuvarra van szükségem",
+    "tab_driver": "Vezetni szeretnék",
+    "driver_step1_title": "Regisztrálj",
+    "driver_step1_desc": "Hozd létre sofőrprofilodat, és fizesd be a regisztrációs díjat.",
+    "driver_step2_title": "Böngéssz",
+    "driver_step2_desc": "Nézd meg a közeli fuvarigényeket az irányítópultodon.",
+    "driver_step3_title": "Fogadd el és vezess",
+    "driver_step3_desc": "Fogadj el egy kérést, találkozz az ügyféllel, és vezesd az autóját.",
+    "driver_step4_title": "Kapj fizetést",
+    "driver_step4_desc": "A végén közvetlenül az ügyféllel rendezd a díjat.",
+    "driver_not_taxi1": "Nem taxis műszak. Nem bérlés.",
+    "driver_not_taxi2": "Az ő autójuk. A te óráid."
   },
   "safety": {
     "eyebrow": "AKIK VEZETNEK", "h2": "Sofőrök, akiknek célja van",

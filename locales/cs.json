@@ -42,7 +42,19 @@
     "step4_title": "Doma",
     "step4_desc": "Dorazíte spolu. Auto zůstává celou cestu vaše.",
     "not_taxi1": "Není to taxi. Není to svezení. Není to auto nechané někde stát.",
-    "not_taxi2": "Vaše auto. Vaše cesta domů."
+    "not_taxi2": "Vaše auto. Vaše cesta domů.",
+    "tab_client": "Potřebuji odvoz",
+    "tab_driver": "Chci řídit",
+    "driver_step1_title": "Registrace",
+    "driver_step1_desc": "Vytvoř si profil řidiče a zaplať registrační poplatek.",
+    "driver_step2_title": "Procházej",
+    "driver_step2_desc": "Prohlédni si blízké požadavky na svém panelu.",
+    "driver_step3_title": "Přijmi a řiď",
+    "driver_step3_desc": "Přijmi požadavek, setkej se s klientem a řiď jeho auto.",
+    "driver_step4_title": "Dostaň zaplaceno",
+    "driver_step4_desc": "Vyrovnej jízdné přímo s klientem na konci.",
+    "driver_not_taxi1": "Není to taxi směna. Není to půjčovna.",
+    "driver_not_taxi2": "Jejich auto. Tvoje hodiny."
   },
   "safety": {
     "eyebrow": "LIDÉ, KTEŘÍ ŘÍDÍ",

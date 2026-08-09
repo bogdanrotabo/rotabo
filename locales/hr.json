@@ -42,7 +42,19 @@
     "step4_title": "Kod kuće",
     "step4_desc": "Stižete zajedno. Automobil ostaje vaš cijelim putem.",
     "not_taxi1": "Nije taksi. Nije prijevoz. Nije automobil ostavljen negdje.",
-    "not_taxi2": "Vaš automobil. Vaš put kući."
+    "not_taxi2": "Vaš automobil. Vaš put kući.",
+    "tab_client": "Trebam prijevoz",
+    "tab_driver": "Želim voziti",
+    "driver_step1_title": "Registriraj se",
+    "driver_step1_desc": "Izradi svoj vozački profil i plati naknadu za registraciju.",
+    "driver_step2_title": "Pregledaj",
+    "driver_step2_desc": "Vidi zahtjeve za vožnju u blizini na svojoj ploči.",
+    "driver_step3_title": "Prihvati i vozi",
+    "driver_step3_desc": "Prihvati zahtjev, upoznaj klijenta i vozi njegov auto.",
+    "driver_step4_title": "Budi plaćen",
+    "driver_step4_desc": "Podmiri vozarinu izravno s klijentom na kraju.",
+    "driver_not_taxi1": "Nije taksi smjena. Nije najam.",
+    "driver_not_taxi2": "Njihov auto. Tvoji sati."
   },
   "safety": {
     "eyebrow": "LJUDI KOJI VOZE",

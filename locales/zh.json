@@ -21,7 +21,19 @@
     "step2_title": "见面", "step2_desc": "司机会来找您。",
     "step3_title": "驾驶", "step3_desc": "他们驾驶您的车，您就坐在车里。",
     "step4_title": "到家", "step4_desc": "你们一起到达，全程车子始终是您的。",
-    "not_taxi1": "不是出租车，不是拼车，也不会把车留在原地。", "not_taxi2": "你的车，你的回家路。"
+    "not_taxi1": "不是出租车，不是拼车，也不会把车留在原地。", "not_taxi2": "你的车，你的回家路。",
+    "tab_client": "我需要用车",
+    "tab_driver": "我想当司机",
+    "driver_step1_title": "注册",
+    "driver_step1_desc": "创建你的司机资料并支付注册费用。",
+    "driver_step2_title": "浏览",
+    "driver_step2_desc": "在仪表盘上查看附近的乘车请求。",
+    "driver_step3_title": "接单并驾驶",
+    "driver_step3_desc": "接受请求，与客户见面，驾驶他们的车。",
+    "driver_step4_title": "获得报酬",
+    "driver_step4_desc": "行程结束后直接与客户结算车费。",
+    "driver_not_taxi1": "不是出租车班次，不是租车。",
+    "driver_not_taxi2": "他们的车，你的时间。"
   },
   "safety": {
     "eyebrow": "驾驶背后的人", "h2": "为一个理由而驾驶的司机",

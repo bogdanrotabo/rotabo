@@ -21,7 +21,19 @@
     "step2_title": "Gặp mặt", "step2_desc": "Tài xế sẽ đến chỗ bạn.",
     "step3_title": "Lái xe", "step3_desc": "Họ lái xe của bạn, với bạn ngồi trên xe.",
     "step4_title": "Về nhà", "step4_desc": "Cả hai cùng về đến nơi. Chiếc xe luôn thuộc về bạn suốt hành trình.",
-    "not_taxi1": "Không phải taxi. Không phải xe ôm công nghệ. Không phải bỏ xe lại.", "not_taxi2": "Xe của bạn. Đường về nhà của bạn."
+    "not_taxi1": "Không phải taxi. Không phải xe ôm công nghệ. Không phải bỏ xe lại.", "not_taxi2": "Xe của bạn. Đường về nhà của bạn.",
+    "tab_client": "Tôi cần một chuyến đi",
+    "tab_driver": "Tôi muốn lái xe",
+    "driver_step1_title": "Đăng ký",
+    "driver_step1_desc": "Tạo hồ sơ tài xế và thanh toán phí đăng ký.",
+    "driver_step2_title": "Duyệt",
+    "driver_step2_desc": "Xem các yêu cầu chuyến đi gần bạn trên bảng điều khiển.",
+    "driver_step3_title": "Nhận và lái xe",
+    "driver_step3_desc": "Nhận một yêu cầu, gặp khách hàng và lái xe của họ.",
+    "driver_step4_title": "Nhận thanh toán",
+    "driver_step4_desc": "Thanh toán trực tiếp với khách hàng vào cuối chuyến đi.",
+    "driver_not_taxi1": "Không phải ca taxi. Không phải thuê xe.",
+    "driver_not_taxi2": "Xe của họ. Giờ của bạn."
   },
   "safety": {
     "eyebrow": "NHỮNG NGƯỜI CẦM LÁI", "h2": "Những tài xế lái xe vì một lý do",

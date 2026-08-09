@@ -42,7 +42,19 @@
     "step4_title": "Kotona",
     "step4_desc": "Saavutte yhdessä. Auto pysyy sinun omanasi koko matkan.",
     "not_taxi1": "Ei taksi. Ei kyytipalvelu. Ei autoa jätettynä minnekään.",
-    "not_taxi2": "Oma autosi. Oma tiesi kotiin."
+    "not_taxi2": "Oma autosi. Oma tiesi kotiin.",
+    "tab_client": "Tarvitsen kyydin",
+    "tab_driver": "Haluan ajaa",
+    "driver_step1_title": "Rekisteröidy",
+    "driver_step1_desc": "Luo kuljettajaprofiilisi ja maksa rekisteröitymismaksu.",
+    "driver_step2_title": "Selaa",
+    "driver_step2_desc": "Katso lähelläsi olevat kyytipyynnöt kojelaudaltasi.",
+    "driver_step3_title": "Hyväksy ja aja",
+    "driver_step3_desc": "Hyväksy pyyntö, tapaa asiakas ja aja hänen autoaan.",
+    "driver_step4_title": "Saa maksu",
+    "driver_step4_desc": "Sovi hinnasta suoraan asiakkaan kanssa lopuksi.",
+    "driver_not_taxi1": "Ei taksivuoro. Ei vuokraus.",
+    "driver_not_taxi2": "Heidän autonsa. Sinun tuntisi."
   },
   "safety": {
     "eyebrow": "IHMISET, JOTKA AJAVAT",

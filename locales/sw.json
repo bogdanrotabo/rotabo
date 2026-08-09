@@ -21,7 +21,19 @@
     "step2_title": "Kutana", "step2_desc": "Dereva wako anakujia.",
     "step3_title": "Endesha", "step3_desc": "Anaendesha gari lako, ukiwa nawe ndani.",
     "step4_title": "Nyumbani", "step4_desc": "Mnafika pamoja. Gari linabaki lako njia yote.",
-    "not_taxi1": "Si teksi. Si safari ya kushirikiana. Si gari linaloachwa nyuma.", "not_taxi2": "Gari lako. Njia yako ya kurudi nyumbani."
+    "not_taxi1": "Si teksi. Si safari ya kushirikiana. Si gari linaloachwa nyuma.", "not_taxi2": "Gari lako. Njia yako ya kurudi nyumbani.",
+    "tab_client": "Nahitaji safari",
+    "tab_driver": "Nataka kuendesha",
+    "driver_step1_title": "Jisajili",
+    "driver_step1_desc": "Unda wasifu wako wa dereva na ulipe ada ya usajili.",
+    "driver_step2_title": "Vinjari",
+    "driver_step2_desc": "Ona maombi ya safari karibu nawe kwenye dashibodi yako.",
+    "driver_step3_title": "Kubali na endesha",
+    "driver_step3_desc": "Kubali ombi, kutana na mteja, na endesha gari lake.",
+    "driver_step4_title": "Lipwa",
+    "driver_step4_desc": "Malizana na mteja moja kwa moja mwishoni.",
+    "driver_not_taxi1": "Si zamu ya teksi. Si kukodisha.",
+    "driver_not_taxi2": "Gari lao. Saa zako."
   },
   "safety": {
     "eyebrow": "WATU WANAOENDESHA", "h2": "Madereva wanaoendesha kwa sababu",

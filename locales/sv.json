@@ -21,7 +21,19 @@
     "step2_title": "Möt upp", "step2_desc": "Din förare kommer till dig.",
     "step3_title": "Kör", "step3_desc": "De kör din bil, med dig i den.",
     "step4_title": "Hem", "step4_desc": "Ni anländer tillsammans. Bilen förblir din hela vägen.",
-    "not_taxi1": "Ingen taxi. Ingen skjuts. Ingen bil kvarlämnad.", "not_taxi2": "Din bil. Din väg hem."
+    "not_taxi1": "Ingen taxi. Ingen skjuts. Ingen bil kvarlämnad.", "not_taxi2": "Din bil. Din väg hem.",
+    "tab_client": "Jag behöver skjuts",
+    "tab_driver": "Jag vill köra",
+    "driver_step1_title": "Registrera dig",
+    "driver_step1_desc": "Skapa din förarprofil och betala registreringsavgiften.",
+    "driver_step2_title": "Bläddra",
+    "driver_step2_desc": "Se förfrågningar i närheten på din instrumentpanel.",
+    "driver_step3_title": "Acceptera och kör",
+    "driver_step3_desc": "Acceptera en förfrågan, möt kunden och kör deras bil.",
+    "driver_step4_title": "Bli betald",
+    "driver_step4_desc": "Gör upp om priset direkt med kunden i slutet.",
+    "driver_not_taxi1": "Inget taxipass. Ingen uthyrning.",
+    "driver_not_taxi2": "Deras bil. Dina timmar."
   },
   "safety": {
     "eyebrow": "MÄNNISKORNA SOM KÖR", "h2": "Förare som kör av en anledning",

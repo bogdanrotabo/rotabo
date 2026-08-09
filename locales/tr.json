@@ -21,7 +21,19 @@
     "step2_title": "Buluş", "step2_desc": "Sürücün sana gelir.",
     "step3_title": "Sür", "step3_desc": "O senin arabanı sürer, sen de içindesindir.",
     "step4_title": "Eve varış", "step4_desc": "Birlikte varırsınız. Araba yol boyunca hep senindir.",
-    "not_taxi1": "Taksi değil. Yolculuk paylaşımı değil. Geride bırakılan bir araba değil.", "not_taxi2": "Senin araban. Senin eve giden yolun."
+    "not_taxi1": "Taksi değil. Yolculuk paylaşımı değil. Geride bırakılan bir araba değil.", "not_taxi2": "Senin araban. Senin eve giden yolun.",
+    "tab_client": "Bir yolculuğa ihtiyacım var",
+    "tab_driver": "Sürmek istiyorum",
+    "driver_step1_title": "Kaydol",
+    "driver_step1_desc": "Sürücü profilini oluştur ve kayıt ücretini öde.",
+    "driver_step2_title": "Göz at",
+    "driver_step2_desc": "Panelinde yakınındaki yolculuk taleplerini gör.",
+    "driver_step3_title": "Kabul et ve sür",
+    "driver_step3_desc": "Bir talebi kabul et, müşteriyle buluş ve arabasını sür.",
+    "driver_step4_title": "Ödemeni al",
+    "driver_step4_desc": "Ücreti sonunda doğrudan müşteriyle hallet.",
+    "driver_not_taxi1": "Taksi mesaisi değil. Kiralama değil.",
+    "driver_not_taxi2": "Onların arabası. Senin saatlerin."
   },
   "safety": {
     "eyebrow": "SÜREN İNSANLAR", "h2": "Bir sebeple direksiyona geçen sürücüler",

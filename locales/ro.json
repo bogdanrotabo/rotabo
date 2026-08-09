@@ -42,7 +42,19 @@
     "step4_title": "Acasă",
     "step4_desc": "Ajungeți împreună. Mașina rămâne a ta pe tot parcursul drumului.",
     "not_taxi1": "Nu e un taxi. Nu e o cursă. Nu e o mașină lăsată în urmă.",
-    "not_taxi2": "Mașina ta. Drumul tău spre casă."
+    "not_taxi2": "Mașina ta. Drumul tău spre casă.",
+    "tab_client": "Am nevoie de o cursă",
+    "tab_driver": "Vreau să conduc",
+    "driver_step1_title": "Înregistrare",
+    "driver_step1_desc": "Creează-ți profilul de șofer și plătește taxa de înregistrare.",
+    "driver_step2_title": "Răsfoiește",
+    "driver_step2_desc": "Vezi cererile de curse din apropiere, pe panoul tău.",
+    "driver_step3_title": "Acceptă și condu",
+    "driver_step3_desc": "Acceptă o cerere, întâlnește clientul și condu-i mașina.",
+    "driver_step4_title": "Fii plătit",
+    "driver_step4_desc": "Achită tariful direct cu clientul, la final.",
+    "driver_not_taxi1": "Nu e un tur de taxi. Nu e o închiriere.",
+    "driver_not_taxi2": "Mașina lor. Orele tale."
   },
   "safety": {
     "eyebrow": "OAMENII CARE CONDUC",

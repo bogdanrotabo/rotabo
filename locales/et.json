@@ -42,7 +42,19 @@
     "step4_title": "Koju",
     "step4_desc": "Jõuate koju koos. Auto jääb kogu tee sinu omaks.",
     "not_taxi1": "Mitte takso. Mitte sõidujagamine. Mitte maha jäetud auto.",
-    "not_taxi2": "Sinu auto. Sinu tee koju."
+    "not_taxi2": "Sinu auto. Sinu tee koju.",
+    "tab_client": "Vajan sõitu",
+    "tab_driver": "Tahan sõita",
+    "driver_step1_title": "Registreeru",
+    "driver_step1_desc": "Loo oma juhiprofiil ja tasu registreerimistasu.",
+    "driver_step2_title": "Sirvi",
+    "driver_step2_desc": "Vaata oma töölaual lähedal olevaid sõidutaotlusi.",
+    "driver_step3_title": "Nõustu ja sõida",
+    "driver_step3_desc": "Nõustu taotlusega, kohtu kliendiga ja sõida tema autoga.",
+    "driver_step4_title": "Saa tasu",
+    "driver_step4_desc": "Arvelda hind lõpus otse kliendiga.",
+    "driver_not_taxi1": "See pole taksovahetus. See pole rentimine.",
+    "driver_not_taxi2": "Nende auto. Sinu tunnid."
   },
   "safety": {
     "eyebrow": "INIMESED, KES JUHIVAD",

@@ -42,7 +42,19 @@
     "step4_title": "Casa",
     "step4_desc": "Chegam juntos. O carro continua a ser teu durante todo o trajeto.",
     "not_taxi1": "Não é um táxi. Não é uma boleia. Não é um carro deixado para trás.",
-    "not_taxi2": "O teu carro. O teu caminho para casa."
+    "not_taxi2": "O teu carro. O teu caminho para casa.",
+    "tab_client": "Preciso de uma boleia",
+    "tab_driver": "Quero conduzir",
+    "driver_step1_title": "Regista-te",
+    "driver_step1_desc": "Cria o teu perfil de condutor e paga a taxa de registo.",
+    "driver_step2_title": "Explora",
+    "driver_step2_desc": "Vê os pedidos de boleia perto de ti no teu painel.",
+    "driver_step3_title": "Aceita e conduz",
+    "driver_step3_desc": "Aceita um pedido, encontra o cliente e conduz o carro dele.",
+    "driver_step4_title": "Recebe o pagamento",
+    "driver_step4_desc": "Acerta a tarifa diretamente com o cliente, no final.",
+    "driver_not_taxi1": "Não é um turno de táxi. Não é um aluguer.",
+    "driver_not_taxi2": "O carro deles. As tuas horas."
   },
   "safety": {
     "eyebrow": "AS PESSOAS QUE CONDUZEM",

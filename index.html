@@ -153,6 +153,17 @@
     font-size:2.1rem;margin:0 0 40px;
   }
 
+  .how-track-toggle{
+    display:flex;gap:6px;background:var(--bg-card);border:1px solid var(--border);
+    border-radius:999px;padding:5px;max-width:360px;margin:0 auto 32px;
+  }
+  .how-track-btn{
+    flex:1;border:none;background:none;cursor:pointer;
+    font-family:inherit;font-weight:800;font-size:.92rem;
+    padding:11px 14px;border-radius:999px;color:var(--text-body);
+  }
+  .how-track-btn.active{background:var(--violet-2);color:#fff;}
+
   .problem{padding-top:70px;}
   .cross-list{max-width:480px;margin:0 auto 36px;}
   .cross-list p{
@@ -446,13 +457,27 @@
 <section id="how">
   <p class="eyebrow" data-i18n="how.eyebrow">FOUR STEPS</p>
   <h2 data-i18n="how.h2">How Rotabo works</h2>
-  <div class="steps">
+
+  <div class="how-track-toggle">
+    <button type="button" class="how-track-btn active" data-how-track="client" data-i18n="how.tab_client">I need a ride</button>
+    <button type="button" class="how-track-btn" data-how-track="driver" data-i18n="how.tab_driver">I want to drive</button>
+  </div>
+
+  <div class="steps how-track-panel" data-how-track="client">
     <div class="step-card"><h3 data-i18n="how.step1_title">Request</h3><p data-i18n="how.step1_desc">Tell Rotabo where you are.</p></div>
     <div class="step-card"><h3 data-i18n="how.step2_title">Meet</h3><p data-i18n="how.step2_desc">Your driver comes to you.</p></div>
     <div class="step-card"><h3 data-i18n="how.step3_title">Drive</h3><p data-i18n="how.step3_desc">They drive your car, with you in it.</p></div>
     <div class="step-card"><h3 data-i18n="how.step4_title">Home</h3><p data-i18n="how.step4_desc">You arrive together. The car stays yours the whole way.</p></div>
   </div>
-  <p class="not-taxi"><span data-i18n="how.not_taxi1">Not a taxi. Not a ride. Not a car left behind.</span><b data-i18n="how.not_taxi2">Your car. Your way home.</b></p>
+  <div class="steps how-track-panel" data-how-track="driver" hidden>
+    <div class="step-card"><h3 data-i18n="how.driver_step1_title">Register</h3><p data-i18n="how.driver_step1_desc">Create your driver profile and pay the registration fee.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step2_title">Browse</h3><p data-i18n="how.driver_step2_desc">See nearby ride requests on your dashboard.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step3_title">Accept &amp; drive</h3><p data-i18n="how.driver_step3_desc">Accept a request, meet the client, and drive their car.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step4_title">Get paid</h3><p data-i18n="how.driver_step4_desc">Settle the fare directly with the client at the end.</p></div>
+  </div>
+
+  <p class="not-taxi how-track-panel" data-how-track="client"><span data-i18n="how.not_taxi1">Not a taxi. Not a ride. Not a car left behind.</span><b data-i18n="how.not_taxi2">Your car. Your way home.</b></p>
+  <p class="not-taxi how-track-panel" data-how-track="driver" hidden><span data-i18n="how.driver_not_taxi1">Not a taxi shift. Not a rental.</span><b data-i18n="how.driver_not_taxi2">Their car. Your hours.</b></p>
 </section>
 
 <section id="safety" class="drivers-section">
@@ -638,6 +663,18 @@
     if (e.key === "Escape") {
       document.querySelectorAll(".modal-overlay.open").forEach(function(o){ closeModal(o.id); });
     }
+  });
+
+  document.querySelectorAll(".how-track-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var track = btn.getAttribute("data-how-track");
+      document.querySelectorAll(".how-track-btn").forEach(function(b){
+        b.classList.toggle("active", b.getAttribute("data-how-track") === track);
+      });
+      document.querySelectorAll(".how-track-panel").forEach(function(p){
+        p.hidden = p.getAttribute("data-how-track") !== track;
+      });
+    });
   });
 
   function setSubmitting(form, submitting){

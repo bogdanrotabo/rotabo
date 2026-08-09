@@ -42,7 +42,19 @@
     "step4_title": "Home",
     "step4_desc": "You arrive together. The car stays yours the whole way.",
     "not_taxi1": "Not a taxi. Not a ride. Not a car left behind.",
-    "not_taxi2": "Your car. Your way home."
+    "not_taxi2": "Your car. Your way home.",
+    "tab_client": "I need a ride",
+    "tab_driver": "I want to drive",
+    "driver_step1_title": "Register",
+    "driver_step1_desc": "Create your driver profile and pay the registration fee.",
+    "driver_step2_title": "Browse",
+    "driver_step2_desc": "See nearby ride requests on your dashboard.",
+    "driver_step3_title": "Accept & drive",
+    "driver_step3_desc": "Accept a request, meet the client, and drive their car.",
+    "driver_step4_title": "Get paid",
+    "driver_step4_desc": "Settle the fare directly with the client at the end.",
+    "driver_not_taxi1": "Not a taxi shift. Not a rental.",
+    "driver_not_taxi2": "Their car. Your hours."
   },
   "safety": {
     "eyebrow": "THE PEOPLE WHO DRIVE",

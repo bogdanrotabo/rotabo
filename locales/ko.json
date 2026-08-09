@@ -21,7 +21,19 @@
     "step2_title": "만남", "step2_desc": "드라이버가 직접 찾아갑니다.",
     "step3_title": "운전", "step3_desc": "드라이버가 당신을 태운 채 당신의 차를 운전합니다.",
     "step4_title": "귀가", "step4_desc": "함께 도착합니다. 그 여정 내내 차는 계속 당신의 것입니다.",
-    "not_taxi1": "택시가 아닙니다. 단순한 탑승 서비스도 아닙니다. 차를 두고 가는 일도 없습니다.", "not_taxi2": "당신의 차로, 당신의 집으로."
+    "not_taxi1": "택시가 아닙니다. 단순한 탑승 서비스도 아닙니다. 차를 두고 가는 일도 없습니다.", "not_taxi2": "당신의 차로, 당신의 집으로.",
+    "tab_client": "차량이 필요해요",
+    "tab_driver": "운전하고 싶어요",
+    "driver_step1_title": "등록",
+    "driver_step1_desc": "기사 프로필을 만들고 등록비를 결제하세요.",
+    "driver_step2_title": "둘러보기",
+    "driver_step2_desc": "대시보드에서 근처 요청을 확인하세요.",
+    "driver_step3_title": "수락 및 운전",
+    "driver_step3_desc": "요청을 수락하고 고객을 만나 그들의 차를 운전하세요.",
+    "driver_step4_title": "보수 받기",
+    "driver_step4_desc": "마지막에 고객과 직접 요금을 정산하세요.",
+    "driver_not_taxi1": "택시 근무가 아닙니다. 렌트가 아닙니다.",
+    "driver_not_taxi2": "그들의 차. 당신의 시간."
   },
   "safety": {
     "eyebrow": "운전하는 사람들", "h2": "이유가 있어 운전하는 드라이버들",

@@ -42,7 +42,19 @@
     "step4_title": "Casa",
     "step4_desc": "Llegáis juntos. El coche sigue siendo tuyo durante todo el trayecto.",
     "not_taxi1": "No es un taxi. No es un viaje compartido. No es un coche abandonado.",
-    "not_taxi2": "Tu coche. Tu camino a casa."
+    "not_taxi2": "Tu coche. Tu camino a casa.",
+    "tab_client": "Necesito un viaje",
+    "tab_driver": "Quiero conducir",
+    "driver_step1_title": "Regístrate",
+    "driver_step1_desc": "Crea tu perfil de conductor y paga la cuota de registro.",
+    "driver_step2_title": "Explora",
+    "driver_step2_desc": "Ve las solicitudes de viaje cercanas en tu panel.",
+    "driver_step3_title": "Acepta y conduce",
+    "driver_step3_desc": "Acepta una solicitud, conoce al cliente y conduce su coche.",
+    "driver_step4_title": "Cobra",
+    "driver_step4_desc": "Cobra la tarifa directamente con el cliente al final.",
+    "driver_not_taxi1": "No es un turno de taxi. No es un alquiler.",
+    "driver_not_taxi2": "Su coche. Tus horas."
   },
   "safety": {
     "eyebrow": "LAS PERSONAS QUE CONDUCEN",

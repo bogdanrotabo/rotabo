@@ -42,7 +42,19 @@
     "step4_title": "Thuis",
     "step4_desc": "Jullie komen samen aan. De auto blijft de hele rit van jou.",
     "not_taxi1": "Geen taxi. Geen rit met een vreemde auto. Geen achtergelaten auto.",
-    "not_taxi2": "Jouw auto. Jouw weg naar huis."
+    "not_taxi2": "Jouw auto. Jouw weg naar huis.",
+    "tab_client": "Ik heb een rit nodig",
+    "tab_driver": "Ik wil rijden",
+    "driver_step1_title": "Registreer",
+    "driver_step1_desc": "Maak je chauffeursprofiel aan en betaal de registratiekosten.",
+    "driver_step2_title": "Bekijk",
+    "driver_step2_desc": "Zie ritaanvragen bij jou in de buurt op je dashboard.",
+    "driver_step3_title": "Accepteer en rijd",
+    "driver_step3_desc": "Accepteer een aanvraag, ontmoet de klant en rijd in zijn auto.",
+    "driver_step4_title": "Word betaald",
+    "driver_step4_desc": "Reken de rit aan het einde direct af met de klant.",
+    "driver_not_taxi1": "Geen taxidienst. Geen verhuur.",
+    "driver_not_taxi2": "Hun auto. Jouw uren."
   },
   "safety": {
     "eyebrow": "DE MENSEN DIE RIJDEN",

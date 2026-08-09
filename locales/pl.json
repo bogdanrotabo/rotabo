@@ -21,7 +21,19 @@
     "step2_title": "Spotkajcie się", "step2_desc": "Twój kierowca przyjeżdża do Ciebie.",
     "step3_title": "Jedźcie", "step3_desc": "Oni prowadzą Twój samochód, a Ty jedziesz z nimi.",
     "step4_title": "Dom", "step4_desc": "Docieracie razem. Samochód przez całą drogę pozostaje Twój.",
-    "not_taxi1": "To nie taksówka. To nie przejazd. To nie porzucony samochód.", "not_taxi2": "Twój samochód. Twoja droga do domu."
+    "not_taxi1": "To nie taksówka. To nie przejazd. To nie porzucony samochód.", "not_taxi2": "Twój samochód. Twoja droga do domu.",
+    "tab_client": "Potrzebuję przejazdu",
+    "tab_driver": "Chcę prowadzić",
+    "driver_step1_title": "Zarejestruj się",
+    "driver_step1_desc": "Stwórz swój profil kierowcy i zapłać opłatę rejestracyjną.",
+    "driver_step2_title": "Przeglądaj",
+    "driver_step2_desc": "Zobacz pobliskie zgłoszenia na swoim panelu.",
+    "driver_step3_title": "Zaakceptuj i jedź",
+    "driver_step3_desc": "Zaakceptuj zgłoszenie, poznaj klienta i prowadź jego samochód.",
+    "driver_step4_title": "Otrzymaj zapłatę",
+    "driver_step4_desc": "Rozlicz się z klientem bezpośrednio na koniec.",
+    "driver_not_taxi1": "To nie zmiana taksówkarska. To nie wynajem.",
+    "driver_not_taxi2": "Ich samochód. Twoje godziny."
   },
   "safety": {
     "eyebrow": "LUDZIE, KTÓRZY PROWADZĄ", "h2": "Kierowcy, którzy mają powód",

@@ -21,7 +21,19 @@
     "step2_title": "Iltaqa'", "step2_desc": "Is-sewwieq tiegħek jiġi għandek.",
     "step3_title": "Suq", "step3_desc": "Huma jsuqu l-karrozza tiegħek, bik ġo fiha.",
     "step4_title": "Dar", "step4_desc": "Taslu flimkien. Il-karrozza tibqa' tiegħek il-vjaġġ kollu.",
-    "not_taxi1": "Mhux taxi. Mhux passaġġ. Mhux karrozza mħollija warajk.", "not_taxi2": "Il-karrozza tiegħek. It-triq tiegħek lejn dar."
+    "not_taxi1": "Mhux taxi. Mhux passaġġ. Mhux karrozza mħollija warajk.", "not_taxi2": "Il-karrozza tiegħek. It-triq tiegħek lejn dar.",
+    "tab_client": "Għandi bżonn passaġġ",
+    "tab_driver": "Irrid insuq",
+    "driver_step1_title": "Irreġistra",
+    "driver_step1_desc": "Oħloq il-profil tiegħek ta' sewwieq u ħallas il-miżata tar-reġistrazzjoni.",
+    "driver_step2_title": "Fittex",
+    "driver_step2_desc": "Ara talbiet għal vjaġġi qrib tiegħek fuq id-dashboard tiegħek.",
+    "driver_step3_title": "Aċċetta u sewwaq",
+    "driver_step3_desc": "Aċċetta talba, iltaqa' mal-klijent, u sewwaq il-karozza tiegħu.",
+    "driver_step4_title": "Tħallas",
+    "driver_step4_desc": "Issetilja l-prezz direttament mal-klijent fl-aħħar.",
+    "driver_not_taxi1": "Mhux xift ta' taxi. Mhux kiri.",
+    "driver_not_taxi2": "Il-karozza tagħhom. Is-sigħat tiegħek."
   },
   "safety": {
     "eyebrow": "IN-NIES LI JSUQU", "h2": "Sewwieqa li jsuqu għal raġuni",

@@ -42,7 +42,19 @@
     "step4_title": "Hjemme",
     "step4_desc": "I ankommer sammen. Bilen forbliver din hele vejen.",
     "not_taxi1": "Ikke en taxi. Ikke et lift. Ikke en bil efterladt bagved.",
-    "not_taxi2": "Din bil. Din vej hjem."
+    "not_taxi2": "Din bil. Din vej hjem.",
+    "tab_client": "Jeg har brug for en tur",
+    "tab_driver": "Jeg vil køre",
+    "driver_step1_title": "Tilmeld dig",
+    "driver_step1_desc": "Opret din chaufførprofil og betal registreringsgebyret.",
+    "driver_step2_title": "Gennemse",
+    "driver_step2_desc": "Se ture i nærheden af dig på dit dashboard.",
+    "driver_step3_title": "Accepter og kør",
+    "driver_step3_desc": "Accepter en anmodning, mød kunden, og kør deres bil.",
+    "driver_step4_title": "Bliv betalt",
+    "driver_step4_desc": "Afregn prisen direkte med kunden til sidst.",
+    "driver_not_taxi1": "Ikke en taxivagt. Ikke en udlejning.",
+    "driver_not_taxi2": "Deres bil. Dine timer."
   },
   "safety": {
     "eyebrow": "MENNESKERNE, DER KØRER",

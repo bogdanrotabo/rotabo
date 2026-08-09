@@ -21,7 +21,19 @@
     "step2_title": "Srečanje", "step2_desc": "Tvoj voznik pride k tebi.",
     "step3_title": "Vožnja", "step3_desc": "Oni vozijo tvoj avto, ti si zraven.",
     "step4_title": "Domov", "step4_desc": "Prispeta skupaj. Avto ostane tvoj ves čas poti.",
-    "not_taxi1": "Ni taksi. Ni prevoz. Ni avto, puščen zadaj.", "not_taxi2": "Tvoj avto. Tvoja pot domov."
+    "not_taxi1": "Ni taksi. Ni prevoz. Ni avto, puščen zadaj.", "not_taxi2": "Tvoj avto. Tvoja pot domov.",
+    "tab_client": "Potrebujem prevoz",
+    "tab_driver": "Želim voziti",
+    "driver_step1_title": "Registriraj se",
+    "driver_step1_desc": "Ustvari svoj profil voznika in plačaj registracijsko pristojbino.",
+    "driver_step2_title": "Prebrskaj",
+    "driver_step2_desc": "Oglej si bližnje zahteve za prevoz na svoji nadzorni plošči.",
+    "driver_step3_title": "Sprejmi in vozi",
+    "driver_step3_desc": "Sprejmi zahtevo, se sestani s stranko in vozi njen avto.",
+    "driver_step4_title": "Prejmi plačilo",
+    "driver_step4_desc": "Na koncu poravnaj voznino neposredno s stranko.",
+    "driver_not_taxi1": "Ni taksi izmena. Ni najem.",
+    "driver_not_taxi2": "Njihov avto. Tvoje ure."
   },
   "safety": {
     "eyebrow": "LJUDJE, KI VOZIJO", "h2": "Vozniki, ki vozijo z razlogom",

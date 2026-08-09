@@ -42,7 +42,19 @@
     "step4_title": "Casa",
     "step4_desc": "Arrivate insieme. L'auto resta tua per tutto il tragitto.",
     "not_taxi1": "Non è un taxi. Non è una corsa. Non è un'auto lasciata indietro.",
-    "not_taxi2": "La tua auto. La tua strada verso casa."
+    "not_taxi2": "La tua auto. La tua strada verso casa.",
+    "tab_client": "Ho bisogno di un passaggio",
+    "tab_driver": "Voglio guidare",
+    "driver_step1_title": "Registrati",
+    "driver_step1_desc": "Crea il tuo profilo autista e paga la quota di iscrizione.",
+    "driver_step2_title": "Sfoglia",
+    "driver_step2_desc": "Vedi le richieste di corsa vicine a te sulla tua dashboard.",
+    "driver_step3_title": "Accetta e guida",
+    "driver_step3_desc": "Accetta una richiesta, incontra il cliente e guida la sua auto.",
+    "driver_step4_title": "Vieni pagato",
+    "driver_step4_desc": "Regola la tariffa direttamente con il cliente, alla fine.",
+    "driver_not_taxi1": "Non è un turno da taxi. Non è un noleggio.",
+    "driver_not_taxi2": "La loro auto. Le tue ore."
   },
   "safety": {
     "eyebrow": "LE PERSONE CHE GUIDANO",

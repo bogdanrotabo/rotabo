@@ -21,7 +21,19 @@
     "step2_title": "Bertemu", "step2_desc": "Pemandu anda akan datang menemui anda.",
     "step3_title": "Memandu", "step3_desc": "Mereka memandu kereta anda, dengan anda di dalamnya.",
     "step4_title": "Pulang", "step4_desc": "Anda tiba bersama-sama. Kereta itu kekal milik anda sepanjang perjalanan.",
-    "not_taxi1": "Bukan teksi. Bukan perkhidmatan tumpangan. Bukan kereta yang ditinggalkan.", "not_taxi2": "Kereta anda. Perjalanan pulang anda."
+    "not_taxi1": "Bukan teksi. Bukan perkhidmatan tumpangan. Bukan kereta yang ditinggalkan.", "not_taxi2": "Kereta anda. Perjalanan pulang anda.",
+    "tab_client": "Saya perlukan tebengan",
+    "tab_driver": "Saya nak memandu",
+    "driver_step1_title": "Daftar",
+    "driver_step1_desc": "Cipta profil pemandu anda dan bayar yuran pendaftaran.",
+    "driver_step2_title": "Layari",
+    "driver_step2_desc": "Lihat permintaan perjalanan berhampiran anda pada papan pemuka.",
+    "driver_step3_title": "Terima dan pandu",
+    "driver_step3_desc": "Terima permintaan, temui pelanggan, dan pandu kereta mereka.",
+    "driver_step4_title": "Dapat dibayar",
+    "driver_step4_desc": "Selesaikan tambang terus dengan pelanggan pada akhirnya.",
+    "driver_not_taxi1": "Bukan syif teksi. Bukan sewaan.",
+    "driver_not_taxi2": "Kereta mereka. Masa anda."
   },
   "safety": {
     "eyebrow": "ORANG DI SEBALIK STIR", "h2": "Pemandu yang memandu kerana sebab tertentu",

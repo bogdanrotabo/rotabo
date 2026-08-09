@@ -42,7 +42,19 @@
     "step4_title": "Rentrez",
     "step4_desc": "Vous arrivez ensemble. La voiture reste la vôtre tout au long du trajet.",
     "not_taxi1": "Pas un taxi. Pas une course. Pas de voiture laissée derrière.",
-    "not_taxi2": "Votre voiture. Votre chemin vers la maison."
+    "not_taxi2": "Votre voiture. Votre chemin vers la maison.",
+    "tab_client": "J'ai besoin d'un trajet",
+    "tab_driver": "Je veux conduire",
+    "driver_step1_title": "Inscrivez-vous",
+    "driver_step1_desc": "Créez votre profil de chauffeur et payez les frais d'inscription.",
+    "driver_step2_title": "Parcourez",
+    "driver_step2_desc": "Voyez les demandes de course près de vous sur votre tableau de bord.",
+    "driver_step3_title": "Acceptez et conduisez",
+    "driver_step3_desc": "Acceptez une demande, rencontrez le client et conduisez sa voiture.",
+    "driver_step4_title": "Soyez payé",
+    "driver_step4_desc": "Réglez le tarif directement avec le client, à la fin.",
+    "driver_not_taxi1": "Pas un service de taxi. Pas une location.",
+    "driver_not_taxi2": "Leur voiture. Vos horaires."
   },
   "safety": {
     "eyebrow": "CEUX QUI CONDUISENT",

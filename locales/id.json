@@ -21,7 +21,19 @@
     "step2_title": "Bertemu", "step2_desc": "Pengemudi Anda akan datang menjemput.",
     "step3_title": "Berkendara", "step3_desc": "Mereka menyetir mobil Anda, dengan Anda di dalamnya.",
     "step4_title": "Sampai rumah", "step4_desc": "Anda tiba bersama. Mobil tetap menjadi milik Anda sepanjang perjalanan.",
-    "not_taxi1": "Bukan taksi. Bukan layanan tumpangan. Bukan mobil yang ditinggal begitu saja.", "not_taxi2": "Mobil Anda. Jalan pulang Anda."
+    "not_taxi1": "Bukan taksi. Bukan layanan tumpangan. Bukan mobil yang ditinggal begitu saja.", "not_taxi2": "Mobil Anda. Jalan pulang Anda.",
+    "tab_client": "Saya perlu tumpangan",
+    "tab_driver": "Saya ingin mengemudi",
+    "driver_step1_title": "Daftar",
+    "driver_step1_desc": "Buat profil pengemudimu dan bayar biaya pendaftaran.",
+    "driver_step2_title": "Jelajahi",
+    "driver_step2_desc": "Lihat permintaan perjalanan di dekatmu di dasbor.",
+    "driver_step3_title": "Terima dan kemudikan",
+    "driver_step3_desc": "Terima permintaan, temui klien, dan kemudikan mobil mereka.",
+    "driver_step4_title": "Dibayar",
+    "driver_step4_desc": "Selesaikan tarif langsung dengan klien di akhir.",
+    "driver_not_taxi1": "Bukan shift taksi. Bukan sewa mobil.",
+    "driver_not_taxi2": "Mobil mereka. Jam kerjamu."
   },
   "safety": {
     "eyebrow": "ORANG-ORANG DI BALIK KEMUDI", "h2": "Pengemudi yang menyetir demi sebuah alasan",

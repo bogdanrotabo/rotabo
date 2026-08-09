@@ -21,7 +21,19 @@
     "step2_title": "Susitik", "step2_desc": "Vairuotojas atvyksta pas tave.",
     "step3_title": "Važiuok", "step3_desc": "Jie vairuoja tavo automobilį, o tu sėdi šalia.",
     "step4_title": "Namo", "step4_desc": "Atvykstate kartu. Automobilis visą kelią lieka tavo.",
-    "not_taxi1": "Ne taksi. Ne pavėžėjimas. Ne paliktas automobilis.", "not_taxi2": "Tavo automobilis. Tavo kelias namo."
+    "not_taxi1": "Ne taksi. Ne pavėžėjimas. Ne paliktas automobilis.", "not_taxi2": "Tavo automobilis. Tavo kelias namo.",
+    "tab_client": "Man reikia kelionės",
+    "tab_driver": "Noriu vairuoti",
+    "driver_step1_title": "Registruokis",
+    "driver_step1_desc": "Susikurk vairuotojo profilį ir sumokėk registracijos mokestį.",
+    "driver_step2_title": "Naršyk",
+    "driver_step2_desc": "Peržiūrėk netoliese esančias kelionės užklausas savo skydelyje.",
+    "driver_step3_title": "Priimk ir vairuok",
+    "driver_step3_desc": "Priimk užklausą, susitik su klientu ir vairuok jo automobilį.",
+    "driver_step4_title": "Gauk apmokėjimą",
+    "driver_step4_desc": "Atsiskaityk už kelionę tiesiogiai su klientu pabaigoje.",
+    "driver_not_taxi1": "Tai ne taksi pamaina. Tai ne nuoma.",
+    "driver_not_taxi2": "Jų automobilis. Tavo valandos."
   },
   "safety": {
     "eyebrow": "ŽMONĖS, KURIE VAIRUOJA", "h2": "Vairuotojai, turintys tikslą",

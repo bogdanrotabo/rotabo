@@ -21,7 +21,19 @@
     "step2_title": "Buail leis", "step2_desc": "Tagann do thiománaí chugat.",
     "step3_title": "Tiomáin", "step3_desc": "Tiomáineann siad do charr, agus tú ann.",
     "step4_title": "Abhaile", "step4_desc": "Sroicheann sibh le chéile. Fanann an carr leatsa an bealach ar fad.",
-    "not_taxi1": "Ní tacsaí é. Ní síob é. Ní carr fágtha ina dhiaidh é.", "not_taxi2": "Do charr. Do shlí abhaile."
+    "not_taxi1": "Ní tacsaí é. Ní síob é. Ní carr fágtha ina dhiaidh é.", "not_taxi2": "Do charr. Do shlí abhaile.",
+    "tab_client": "Tá turas de dhíth orm",
+    "tab_driver": "Ba mhaith liom tiomáint",
+    "driver_step1_title": "Cláraigh",
+    "driver_step1_desc": "Cruthaigh do phróifíl tiománaí agus íoc an táille chlárúcháin.",
+    "driver_step2_title": "Brabhsáil",
+    "driver_step2_desc": "Féach ar iarratais turais in aice leat ar do dhaisbord.",
+    "driver_step3_title": "Glac agus tiomáin",
+    "driver_step3_desc": "Glac le hiarratas, buail leis an gcliant, agus tiomáin a gcarr.",
+    "driver_step4_title": "Faigh íoc",
+    "driver_step4_desc": "Socraigh an táille go díreach leis an gcliant ag an deireadh.",
+    "driver_not_taxi1": "Ní seal tacsaí é. Ní cíos é.",
+    "driver_not_taxi2": "A gcarr siúd. D'uaireanta féin."
   },
   "safety": {
     "eyebrow": "NA DAOINE A THIOMÁINEANN", "h2": "Tiománaithe a thiomáineann ar chúis",

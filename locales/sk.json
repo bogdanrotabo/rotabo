@@ -21,7 +21,19 @@
     "step2_title": "Stretnite sa", "step2_desc": "Tvoj vodič príde za tebou.",
     "step3_title": "Choďte", "step3_desc": "Vedú tvoje auto, ty si v ňom s nimi.",
     "step4_title": "Domov", "step4_desc": "Prídete spolu. Auto zostáva celou cestou tvoje.",
-    "not_taxi1": "Nie je to taxík. Nie je to odvoz. Nie je to opustené auto.", "not_taxi2": "Tvoje auto. Tvoja cesta domov."
+    "not_taxi1": "Nie je to taxík. Nie je to odvoz. Nie je to opustené auto.", "not_taxi2": "Tvoje auto. Tvoja cesta domov.",
+    "tab_client": "Potrebujem odvoz",
+    "tab_driver": "Chcem šoférovať",
+    "driver_step1_title": "Zaregistruj sa",
+    "driver_step1_desc": "Vytvor si profil vodiča a zaplať registračný poplatok.",
+    "driver_step2_title": "Prezeraj",
+    "driver_step2_desc": "Pozri si blízke žiadosti na svojom paneli.",
+    "driver_step3_title": "Prijmi a šoféruj",
+    "driver_step3_desc": "Prijmi žiadosť, stretni sa s klientom a šoféruj jeho auto.",
+    "driver_step4_title": "Dostaň zaplatené",
+    "driver_step4_desc": "Vyrovnaj cestovné priamo s klientom na konci.",
+    "driver_not_taxi1": "Nie je to taxi zmena. Nie je to prenájom.",
+    "driver_not_taxi2": "Ich auto. Tvoje hodiny."
   },
   "safety": {
     "eyebrow": "ĽUDIA, KTORÍ ŠOFÉRUJÚ", "h2": "Vodiči, ktorí majú dôvod",
