@@ -218,7 +218,7 @@
       return;
     }
 
-    sb.from("driver_profiles")
+    sb.from("driver_public_info")
       .select("id, name, city, stripe_session_id")
       .eq("id", driverId)
       .maybeSingle()
