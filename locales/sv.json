@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Uppskattat återstående belopp: ~{amount} CHF, betalas direkt till din förare.",
+    "cancel_btn": "Avbryt förfrågan",
+    "cancel_confirm": "Avbryta den här förfrågan? Du kan starta en ny när som helst.",
     "eta_label": "🕒 Beräknad ankomst: ~{min} min",
     "eta_arriving": "🕒 Din förare anländer nu",
     "searching_title": "Söker efter förare nära dig…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF till dig",
     "active_ride_fare": "~{amount} CHF för denna resa ({km} km), regleras direkt med kunden",
+    "active_ride_cancel_btn": "Hinner inte — släpp den här resan",
+    "active_ride_cancel_confirm": "Släppa den här resan? Kunden visas igen för andra förare.",
     "active_ride_cat": "DIN RESA",
     "active_ride_call": "📞 Ring kunden",
     "active_ride_navigate": "🧭 Navigera till upphämtningsplatsen",

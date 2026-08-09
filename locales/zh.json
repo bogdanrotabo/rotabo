@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "预计剩余车费：约 {amount} 瑞士法郎，直接支付给司机。",
+    "cancel_btn": "取消请求",
+    "cancel_confirm": "确定取消此请求吗？你可以随时发起新的请求。",
     "eta_label": "🕒 预计到达：~{min} 分钟",
     "eta_arriving": "🕒 您的司机即将到达",
     "searching_title": "正在为您寻找附近的司机…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "约 {amount} 瑞士法郎归你所有",
     "active_ride_fare": "这趟行程约 {amount} 瑞士法郎（{km} 公里），与乘客直接结算",
+    "active_ride_cancel_btn": "无法前往——释放此订单",
+    "active_ride_cancel_confirm": "释放此订单？该客户将重新显示给其他司机。",
     "active_ride_cat": "您的行程",
     "active_ride_call": "📞 致电乘客",
     "active_ride_navigate": "🧭 导航至上车点",

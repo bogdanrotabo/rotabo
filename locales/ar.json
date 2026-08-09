@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "الأجرة المتبقية المقدرة: ~{amount} فرنك سويسري، تُدفع مباشرة لسائقك.",
+    "cancel_btn": "إلغاء الطلب",
+    "cancel_confirm": "هل تريد إلغاء هذا الطلب؟ يمكنك بدء طلب جديد في أي وقت.",
     "eta_label": "🕒 الوصول المتوقع: ~{min} دقيقة",
     "eta_arriving": "🕒 سائقك يصل الآن",
     "searching_title": "جارٍ البحث عن سائقين بالقرب منك…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} فرنك سويسري لك",
     "active_ride_fare": "~{amount} فرنك سويسري لهذه الرحلة ({km} كم)، تُسوّى مباشرة مع العميل",
+    "active_ride_cancel_btn": "لا أستطيع الحضور — إطلاق هذه الرحلة",
+    "active_ride_cancel_confirm": "إطلاق هذه الرحلة؟ سيتم عرض العميل مرة أخرى على سائقين آخرين.",
     "active_ride_cat": "رحلتك",
     "active_ride_call": "📞 اتصل بالعميل",
     "active_ride_navigate": "🧭 التنقل إلى نقطة الالتقاء",

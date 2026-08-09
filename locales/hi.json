@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "अनुमानित शेष किराया: ~{amount} CHF, सीधे अपने ड्राइवर को भुगतान करें।",
+    "cancel_btn": "अनुरोध रद्द करें",
+    "cancel_confirm": "क्या इस अनुरोध को रद्द करना है? आप कभी भी नया अनुरोध शुरू कर सकते हैं।",
     "eta_label": "🕒 अनुमानित आगमन: ~{min} मिनट",
     "eta_arriving": "🕒 आपका ड्राइवर अभी पहुंच रहा है",
     "searching_title": "आपके आसपास ड्राइवर खोजे जा रहे हैं…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "आपके लिए ~{amount} CHF",
     "active_ride_fare": "इस सवारी के लिए ~{amount} CHF ({km} किमी), क्लाइंट के साथ सीधे तय करें",
+    "active_ride_cancel_btn": "नहीं पहुँच सकता — यह राइड छोड़ें",
+    "active_ride_cancel_confirm": "क्या यह राइड छोड़नी है? ग्राहक फिर से अन्य ड्राइवरों को दिखाया जाएगा।",
     "active_ride_cat": "आपकी सवारी",
     "active_ride_call": "📞 क्लाइंट को कॉल करें",
     "active_ride_navigate": "🧭 पिकअप पॉइंट पर जाएं",

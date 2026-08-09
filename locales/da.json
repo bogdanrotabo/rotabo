@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Anslået resterende beløb: ~{amount} CHF, betales direkte til din chauffør.",
+    "cancel_btn": "Annuller anmodning",
+    "cancel_confirm": "Annullere denne anmodning? Du kan altid starte en ny.",
     "eta_label": "🕒 Forventet ankomst: ~{min} min",
     "eta_arriving": "🕒 Din chauffør ankommer nu",
     "searching_title": "Søger efter chauffører i nærheden af dig…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF til dig",
     "active_ride_fare": "~{amount} CHF for denne tur ({km} km), afregnes direkte med kunden",
+    "active_ride_cancel_btn": "Kan ikke nå det — frigiv denne tur",
+    "active_ride_cancel_confirm": "Frigive denne tur? Kunden vil blive vist til andre chauffører igen.",
     "active_ride_cat": "DIN TUR",
     "active_ride_call": "📞 Ring til kunden",
     "active_ride_navigate": "🧭 Naviger til afhentningsstedet",

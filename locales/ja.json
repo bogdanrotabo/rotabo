@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "残りの予想運賃：約{amount} CHF、ドライバーに直接支払います。",
+    "cancel_btn": "リクエストをキャンセル",
+    "cancel_confirm": "このリクエストをキャンセルしますか？いつでも新しく開始できます。",
     "eta_label": "🕒 到着予定：約{min}分",
     "eta_arriving": "🕒 ドライバーがまもなく到着します",
     "searching_title": "近くのドライバーを探しています…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "あなたへ約{amount} CHF",
     "active_ride_fare": "この乗車で約{amount} CHF（{km} km）、クライアントと直接精算",
+    "active_ride_cancel_btn": "対応できません — このライドを解放する",
+    "active_ride_cancel_confirm": "このライドを解放しますか？クライアントは再び他のドライバーに表示されます。",
     "active_ride_cat": "あなたの配車",
     "active_ride_call": "📞 クライアントに電話",
     "active_ride_navigate": "🧭 乗車地点へナビゲート",

@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Numatoma likusi suma: ~{amount} CHF, mokama tiesiogiai jūsų vairuotojui.",
+    "cancel_btn": "Atšaukti užklausą",
+    "cancel_confirm": "Atšaukti šią užklausą? Bet kada galite pradėti naują.",
     "eta_label": "🕒 Numatomas atvykimas: ~{min} min",
     "eta_arriving": "🕒 Jūsų vairuotojas jau atvyksta",
     "searching_title": "Ieškome vairuotojų netoli tavęs…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF jums",
     "active_ride_fare": "~{amount} CHF už šią kelionę ({km} km), atsiskaitoma tiesiogiai su klientu",
+    "active_ride_cancel_btn": "Negaliu suspėti — atlaisvinti šią kelionę",
+    "active_ride_cancel_confirm": "Atlaisvinti šią kelionę? Klientas vėl bus rodomas kitiems vairuotojams.",
     "active_ride_cat": "JŪSŲ KELIONĖ",
     "active_ride_call": "📞 Skambinti klientui",
     "active_ride_navigate": "🧭 Naviguoti į pasiėmimo vietą",

@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Solde estimé : ~{amount} CHF, payé directement à votre chauffeur.",
+    "cancel_btn": "Annuler la demande",
+    "cancel_confirm": "Annuler cette demande ? Vous pouvez en démarrer une nouvelle à tout moment.",
     "eta_label": "🕒 Arrivée estimée : ~{min} min",
     "eta_arriving": "🕒 Votre chauffeur arrive maintenant",
     "searching_title": "Recherche de chauffeurs près de vous…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF pour vous",
     "active_ride_fare": "~{amount} CHF pour cette course ({km} km), à régler directement avec le client",
+    "active_ride_cancel_btn": "Je ne peux pas — libérer cette course",
+    "active_ride_cancel_confirm": "Libérer cette course ? Le client sera de nouveau proposé à d'autres chauffeurs.",
     "active_ride_cat": "VOTRE COURSE",
     "active_ride_call": "📞 Appeler le client",
     "active_ride_navigate": "🧭 Naviguer vers le point de prise en charge",

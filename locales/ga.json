@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Iarmhéid measta: ~{amount} CHF, íoctha go díreach le do thiománaí.",
+    "cancel_btn": "Cealaigh an t-iarratas",
+    "cancel_confirm": "An t-iarratas seo a chealú? Is féidir leat ceann nua a thosú am ar bith.",
     "eta_label": "🕒 Am teachta measta: ~{min} nóiméad",
     "eta_arriving": "🕒 Tá do thiománaí ag teacht anois",
     "searching_title": "Ag cuardach tiománaithe in aice leat…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF duitse",
     "active_ride_fare": "~{amount} CHF don turas seo ({km} km), socraithe go díreach leis an gcliant",
+    "active_ride_cancel_btn": "Ní féidir liom — scaoil an turas seo",
+    "active_ride_cancel_confirm": "An turas seo a scaoileadh? Taispeánfar an cliant do thiománaithe eile arís.",
     "active_ride_cat": "DO THURAS",
     "active_ride_call": "📞 Glaoch ar an gcliant",
     "active_ride_navigate": "🧭 Treoraigh chuig an bpointe bailiúcháin",

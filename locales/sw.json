@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Nauli iliyobaki inayokadiriwa: ~CHF {amount}, ilipwe moja kwa moja kwa dereva wako.",
+    "cancel_btn": "Ghairi ombi",
+    "cancel_confirm": "Ghairi ombi hili? Unaweza kuanza jipya wakati wowote.",
     "eta_label": "🕒 Muda wa kuwasili: ~dakika {min}",
     "eta_arriving": "🕒 Dereva wako anafika sasa hivi",
     "searching_title": "Tunatafuta madereva karibu nawe…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~CHF {amount} kwako",
     "active_ride_fare": "~CHF {amount} kwa safari hii (km {km}), kulipwa moja kwa moja na mteja",
+    "active_ride_cancel_btn": "Siwezi kufika — achilia safari hii",
+    "active_ride_cancel_confirm": "Achilia safari hii? Mteja ataonyeshwa tena kwa madereva wengine.",
     "active_ride_cat": "SAFARI YAKO",
     "active_ride_call": "📞 Mpigie simu mteja",
     "active_ride_navigate": "🧭 Elekeza hadi mahali pa kuchukua",

@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Szacowana pozostała kwota: ~{amount} CHF, płatna bezpośrednio kierowcy.",
+    "cancel_btn": "Anuluj zgłoszenie",
+    "cancel_confirm": "Anulować to zgłoszenie? W każdej chwili możesz zacząć nowe.",
     "eta_label": "🕒 Szacowany czas przyjazdu: ~{min} min",
     "eta_arriving": "🕒 Twój kierowca właśnie dojeżdża",
     "searching_title": "Szukamy kierowców w Twojej okolicy…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF dla ciebie",
     "active_ride_fare": "~{amount} CHF za ten kurs ({km} km), rozliczane bezpośrednio z klientem",
+    "active_ride_cancel_btn": "Nie zdążę — zwolnij ten kurs",
+    "active_ride_cancel_confirm": "Zwolnić ten kurs? Klient zostanie ponownie pokazany innym kierowcom.",
     "active_ride_cat": "TWÓJ KURS",
     "active_ride_call": "📞 Zadzwoń do klienta",
     "active_ride_navigate": "🧭 Nawiguj do miejsca odbioru",

@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Arvioitu jäljellä oleva maksu: ~{amount} CHF, maksetaan suoraan kuljettajallesi.",
+    "cancel_btn": "Peruuta pyyntö",
+    "cancel_confirm": "Peruutetaanko tämä pyyntö? Voit aloittaa uuden milloin tahansa.",
     "eta_label": "🕒 Arvioitu saapuminen: ~{min} min",
     "eta_arriving": "🕒 Kuljettajasi on juuri saapumassa",
     "searching_title": "Etsitään kuljettajia lähelläsi…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF sinulle",
     "active_ride_fare": "~{amount} CHF tästä matkasta ({km} km), sovitaan suoraan asiakkaan kanssa",
+    "active_ride_cancel_btn": "En ehdi — vapauta tämä kyyti",
+    "active_ride_cancel_confirm": "Vapautetaanko tämä kyyti? Asiakas näytetään taas muille kuljettajille.",
     "active_ride_cat": "MATKASI",
     "active_ride_call": "📞 Soita asiakkaalle",
     "active_ride_navigate": "🧭 Navigoi noutopisteeseen",

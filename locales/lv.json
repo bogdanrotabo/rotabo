@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Aptuvenā atlikusī summa: ~{amount} CHF, samaksāta tieši jūsu vadītājam.",
+    "cancel_btn": "Atcelt pieprasījumu",
+    "cancel_confirm": "Atcelt šo pieprasījumu? Jūs jebkurā laikā varat sākt jaunu.",
     "eta_label": "🕒 Paredzamais ierašanās laiks: ~{min} min",
     "eta_arriving": "🕒 Jūsu vadītājs tūlīt ieradīsies",
     "searching_title": "Meklējam šoferus tev tuvumā…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF jums",
     "active_ride_fare": "~{amount} CHF par šo braucienu ({km} km), norēķins tieši ar klientu",
+    "active_ride_cancel_btn": "Nevaru paspēt — atlaist šo braucienu",
+    "active_ride_cancel_confirm": "Atlaist šo braucienu? Klients atkal tiks parādīts citiem vadītājiem.",
     "active_ride_cat": "JŪSU BRAUCIENS",
     "active_ride_call": "📞 Zvanīt klientam",
     "active_ride_navigate": "🧭 Navigācija uz paņemšanas vietu",

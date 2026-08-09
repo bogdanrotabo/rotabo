@@ -69,6 +69,12 @@
     color:var(--text-eyebrow);font-size:.88rem;
   }
   .fare-note.show{display:block;}
+  .cancel-btn{
+    display:none;margin-top:22px;background:none;border:none;
+    color:var(--text-eyebrow);font-size:.88rem;font-family:inherit;
+    text-decoration:underline;cursor:pointer;padding:4px;
+  }
+  .cancel-btn.show{display:inline-block;}
 </style>
 </head>
 <body>
@@ -101,6 +107,7 @@
     <p class="eta-note" id="etaNote"></p>
     <p class="fare-note" id="fareNote"></p>
     <p class="status-note" id="statusNote"></p>
+    <button type="button" class="cancel-btn" id="cancelBtn"></button>
   </div>
 </main>
 
@@ -133,7 +140,9 @@
     default_driver_name: "Your driver",
     eta_label: "🕒 Estimated arrival: ~{min} min",
     eta_arriving: "🕒 Your driver is arriving now",
-    fare_remaining: "Estimated remaining fare: ~{amount} CHF, paid directly to your driver."
+    fare_remaining: "Estimated remaining fare: ~{amount} CHF, paid directly to your driver.",
+    cancel_btn: "Cancel request",
+    cancel_confirm: "Cancel this request? You can start a new one anytime."
   };
 
   function tr(key, vars){
@@ -163,6 +172,24 @@
   var titleEl = document.getElementById("title");
   var bodyEl = document.getElementById("body");
   var statusNote = document.getElementById("statusNote");
+  var cancelBtn = document.getElementById("cancelBtn");
+
+  function showCancelBtn(){ cancelBtn.classList.add("show"); }
+  function hideCancelBtn(){ cancelBtn.classList.remove("show"); }
+
+  cancelBtn.addEventListener("click", function(){
+    if (!window.confirm(tr("cancel_confirm"))) return;
+    cancelBtn.disabled = true;
+    sb.from("requests").update({ status: "cancelled" }).eq("id", requestId).select().then(function(res){
+      if (res.error || !res.data || res.data.length === 0) {
+        cancelBtn.disabled = false;
+        return;
+      }
+      clearInterval(pollTimer);
+      hideCancelBtn();
+      renderCancelled();
+    });
+  });
 
   function renderNoRequest(){
     spinner.style.display = "none";
@@ -177,6 +204,7 @@
 
   function renderCancelled(){
     spinner.style.display = "none";
+    hideCancelBtn();
     titleEl.textContent = tr("cancelled_title");
     bodyEl.textContent = tr("cancelled_body");
     var link = document.createElement("a");
@@ -233,18 +261,23 @@
       phoneLink.textContent = "📞 " + driverPhone;
       card.insertBefore(phoneLink, etaNote);
     }
+    cancelBtn.textContent = tr("cancel_btn");
+    showCancelBtn();
   }
 
   function renderSearching(){
     spinner.style.display = "";
     titleEl.textContent = tr("searching_title");
     bodyEl.textContent = tr("searching_body");
+    cancelBtn.textContent = tr("cancel_btn");
+    showCancelBtn();
   }
 
   function renderPendingPayment(){
     spinner.style.display = "";
     titleEl.textContent = tr("pending_title");
     bodyEl.textContent = tr("pending_body");
+    hideCancelBtn();
   }
 
   var pollTimer = null;
@@ -319,12 +352,54 @@
       });
   }
 
+  // Push notifications: notify the client the moment a driver accepts,
+  // even if this tab isn't focused. No paid push service needed --
+  // self-hosted VAPID keys, sent from the Stripe webhook Edge Function.
+  var VAPID_PUBLIC_KEY = "BOnizqfL706lv3_L9vozWah4-yuMZi8vcXKNuZfJX_FsmLASaMjVNvEKkv6aKJLOE31J1ZXGfcJzx-tIrCQndY8";
+
+  function urlBase64ToUint8Array(base64String){
+    var padding = "=".repeat((4 - base64String.length % 4) % 4);
+    var base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+    var rawData = window.atob(base64);
+    var outputArray = new Uint8Array(rawData.length);
+    for (var i = 0; i < rawData.length; i++) outputArray[i] = rawData.charCodeAt(i);
+    return outputArray;
+  }
+
+  function setupPushSubscription(){
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+    if (window.Notification && Notification.permission === "denied") return;
+
+    navigator.serviceWorker.register("/service-worker.js").then(function(reg){
+      return reg.pushManager.getSubscription().then(function(existing){
+        if (existing) return existing;
+        return Notification.requestPermission().then(function(perm){
+          if (perm !== "granted") return null;
+          return reg.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
+          });
+        });
+      });
+    }).then(function(sub){
+      if (!sub) return;
+      var json = sub.toJSON();
+      return sb.from("push_subscriptions").upsert({
+        request_id: requestId,
+        endpoint: json.endpoint,
+        p256dh: json.keys.p256dh,
+        auth: json.keys.auth
+      }, { onConflict: "request_id" });
+    }).catch(function(){ /* push is a progressive enhancement, fail silently */ });
+  }
+
   loadTranslations().then(function(){
     if (!requestId) {
       renderNoRequest();
     } else {
       checkStatus();
       pollTimer = setInterval(checkStatus, POLL_MS);
+      setupPushSubscription();
     }
   });
 })();

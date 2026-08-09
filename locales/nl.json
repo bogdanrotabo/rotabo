@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Geschat resterend bedrag: ~{amount} CHF, rechtstreeks aan je chauffeur te betalen.",
+    "cancel_btn": "Aanvraag annuleren",
+    "cancel_confirm": "Deze aanvraag annuleren? Je kunt altijd een nieuwe starten.",
     "eta_label": "🕒 Geschatte aankomst: ~{min} min",
     "eta_arriving": "🕒 Je chauffeur komt nu aan",
     "searching_title": "We zoeken chauffeurs bij jou in de buurt…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF voor jou",
     "active_ride_fare": "~{amount} CHF voor deze rit ({km} km), rechtstreeks met de klant af te rekenen",
+    "active_ride_cancel_btn": "Lukt me niet — rit vrijgeven",
+    "active_ride_cancel_confirm": "Deze rit vrijgeven? De klant wordt weer aan andere chauffeurs getoond.",
     "active_ride_cat": "JOUW RIT",
     "active_ride_call": "📞 Bel klant",
     "active_ride_navigate": "🧭 Navigeer naar ophaalpunt",

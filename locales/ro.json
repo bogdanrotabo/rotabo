@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Rest de plată estimat: ~{amount} CHF, plătit direct șoferului.",
+    "cancel_btn": "Anulează cererea",
+    "cancel_confirm": "Anulezi această cerere? Poți începe oricând una nouă.",
     "eta_label": "🕒 Sosire estimată: ~{min} min",
     "eta_arriving": "🕒 Șoferul tău ajunge chiar acum",
     "searching_title": "Căutăm șoferi lângă tine…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF pentru tine",
     "active_ride_fare": "~{amount} CHF pentru această cursă ({km} km), plătiți direct cu clientul",
+    "active_ride_cancel_btn": "Nu pot ajunge — eliberează cursa",
+    "active_ride_cancel_confirm": "Eliberezi această cursă? Clientul va fi arătat din nou altor șoferi.",
     "active_ride_cat": "CURSA TA",
     "active_ride_call": "📞 Sună clientul",
     "active_ride_navigate": "🧭 Navighează spre punctul de preluare",

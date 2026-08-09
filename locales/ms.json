@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Anggaran baki tambang: ~{amount} CHF, dibayar terus kepada pemandu anda.",
+    "cancel_btn": "Batalkan permintaan",
+    "cancel_confirm": "Batalkan permintaan ini? Anda boleh memulakan yang baharu bila-bila masa.",
     "eta_label": "🕒 Anggaran ketibaan: ~{min} minit",
     "eta_arriving": "🕒 Pemandu anda hampir tiba",
     "searching_title": "Mencari pemandu berhampiran anda…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF untuk anda",
     "active_ride_fare": "~{amount} CHF untuk perjalanan ini ({km} km), diselesaikan terus dengan pelanggan",
+    "active_ride_cancel_btn": "Tidak dapat — lepaskan perjalanan ini",
+    "active_ride_cancel_confirm": "Lepaskan perjalanan ini? Pelanggan akan ditunjukkan semula kepada pemandu lain.",
     "active_ride_cat": "PERJALANAN ANDA",
     "active_ride_call": "📞 Hubungi pelanggan",
     "active_ride_navigate": "🧭 Navigasi ke titik ambil",

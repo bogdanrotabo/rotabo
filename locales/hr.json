@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Procijenjeni preostali iznos: ~{amount} CHF, plaća se izravno vašem vozaču.",
+    "cancel_btn": "Otkaži zahtjev",
+    "cancel_confirm": "Otkazati ovaj zahtjev? Novi možete pokrenuti bilo kada.",
     "eta_label": "🕒 Procijenjeni dolazak: ~{min} min",
     "eta_arriving": "🕒 Vaš vozač upravo stiže",
     "searching_title": "Tražimo vozače u vašoj blizini…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF za vas",
     "active_ride_fare": "~{amount} CHF za ovu vožnju ({km} km), podmiruje se izravno s klijentom",
+    "active_ride_cancel_btn": "Ne mogu stići — pusti ovu vožnju",
+    "active_ride_cancel_confirm": "Pustiti ovu vožnju? Klijent će ponovno biti prikazan drugim vozačima.",
     "active_ride_cat": "VAŠA VOŽNJA",
     "active_ride_call": "📞 Nazovi klijenta",
     "active_ride_navigate": "🧭 Navigiraj do mjesta preuzimanja",

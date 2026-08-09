@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Saldo stimato: ~{amount} CHF, da pagare direttamente al tuo autista.",
+    "cancel_btn": "Annulla la richiesta",
+    "cancel_confirm": "Annullare questa richiesta? Puoi iniziarne una nuova in qualsiasi momento.",
     "eta_label": "🕒 Arrivo stimato: ~{min} min",
     "eta_arriving": "🕒 Il tuo autista sta arrivando ora",
     "searching_title": "Ricerca autisti nelle tue vicinanze…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF per te",
     "active_ride_fare": "~{amount} CHF per questa corsa ({km} km), da saldare direttamente con il cliente",
+    "active_ride_cancel_btn": "Non posso farcela — rilascia questa corsa",
+    "active_ride_cancel_confirm": "Rilasciare questa corsa? Il cliente sarà mostrato di nuovo ad altri autisti.",
     "active_ride_cat": "LA TUA CORSA",
     "active_ride_call": "📞 Chiama il cliente",
     "active_ride_navigate": "🧭 Naviga verso il punto di ritiro",

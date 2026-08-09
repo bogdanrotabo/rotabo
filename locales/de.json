@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Geschätzter Restbetrag: ~{amount} CHF, direkt an deinen Fahrer zu zahlen.",
+    "cancel_btn": "Anfrage stornieren",
+    "cancel_confirm": "Diese Anfrage stornieren? Du kannst jederzeit eine neue starten.",
     "eta_label": "🕒 Voraussichtliche Ankunft: ~{min} Min.",
     "eta_arriving": "🕒 Dein Fahrer kommt gerade an",
     "searching_title": "Wir suchen Fahrer in deiner Nähe…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF für dich",
     "active_ride_fare": "~{amount} CHF für diese Fahrt ({km} km), direkt mit dem Kunden abzurechnen",
+    "active_ride_cancel_btn": "Ich schaffe es nicht — Fahrt freigeben",
+    "active_ride_cancel_confirm": "Diese Fahrt freigeben? Der Kunde wird wieder anderen Fahrern angezeigt.",
     "active_ride_cat": "DEINE FAHRT",
     "active_ride_call": "📞 Kunde anrufen",
     "active_ride_navigate": "🧭 Zum Abholort navigieren",

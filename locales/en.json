@@ -138,7 +138,9 @@
     "default_driver_name": "Your driver",
     "eta_label": "🕒 Estimated arrival: ~{min} min",
     "eta_arriving": "🕒 Your driver is arriving now",
-    "fare_remaining": "Estimated remaining fare: ~{amount} CHF, paid directly to your driver."
+    "fare_remaining": "Estimated remaining fare: ~{amount} CHF, paid directly to your driver.",
+    "cancel_btn": "Cancel request",
+    "cancel_confirm": "Cancel this request? You can start a new one anytime."
   },
   "dashboard_page": {
     "eyebrow": "DRIVER DASHBOARD",
@@ -164,6 +166,8 @@
     "active_ride_navigate": "🧭 Navigate to pickup",
     "active_ride_sharing_on": "Sharing your live location with the client.",
     "active_ride_sharing_off": "Turn on location access in your browser to share your live position with the client.",
-    "active_ride_fare": "~{amount} CHF for this ride ({km} km), settled directly with the client"
+    "active_ride_fare": "~{amount} CHF for this ride ({km} km), settled directly with the client",
+    "active_ride_cancel_btn": "Can't make it — release this ride",
+    "active_ride_cancel_confirm": "Release this ride? The client will be shown to other drivers again."
   }
 }

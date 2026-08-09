@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Tahmini kalan ücret: ~{amount} CHF, doğrudan sürücüne ödenir.",
+    "cancel_btn": "Talebi iptal et",
+    "cancel_confirm": "Bu talebi iptal etmek istiyor musunuz? İstediğin zaman yeni bir talep başlatabilirsin.",
     "eta_label": "🕒 Tahmini varış: ~{min} dk",
     "eta_arriving": "🕒 Sürücünüz şu anda geliyor",
     "searching_title": "Yakınındaki sürücüler aranıyor…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "Sana ~{amount} CHF",
     "active_ride_fare": "Bu yolculuk için ~{amount} CHF ({km} km), müşteriyle doğrudan hesaplaşılır",
+    "active_ride_cancel_btn": "Yetişemiyorum — bu yolculuğu bırak",
+    "active_ride_cancel_confirm": "Bu yolculuğu bırakmak istiyor musunuz? Müşteri tekrar diğer sürücülere gösterilecek.",
     "active_ride_cat": "YOLCULUĞUNUZ",
     "active_ride_call": "📞 Müşteriyi ara",
     "active_ride_navigate": "🧭 Alım noktasına yol tarifi al",

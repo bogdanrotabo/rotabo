@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Ammont li fadal stmat: ~{amount} CHF, imħallas direttament lis-sewwieq tiegħek.",
+    "cancel_btn": "Ikkanċella t-talba",
+    "cancel_confirm": "Tikkanċella din it-talba? Tista' tibda waħda ġdida f'kull ħin.",
     "eta_label": "🕒 Wasla stmata: ~{min} min",
     "eta_arriving": "🕒 Is-sewwieq tiegħek se jasal issa",
     "searching_title": "Qed infittxu sewwieqa qrib tiegħek…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF għalik",
     "active_ride_fare": "~{amount} CHF għal dan il-vjaġġ ({km} km), issoluta direttament mal-klijent",
+    "active_ride_cancel_btn": "Ma nistax nasal — irrilaxxa din il-vjaġġ",
+    "active_ride_cancel_confirm": "Tirrilaxxa din il-vjaġġ? Il-klijent jerġa' jintwera lil sewwieqa oħra.",
     "active_ride_cat": "IL-VJAĠĠ TIEGĦEK",
     "active_ride_call": "📞 Ċempel lill-klijent",
     "active_ride_navigate": "🧭 Innaviga lejn il-punt tal-ġbir",

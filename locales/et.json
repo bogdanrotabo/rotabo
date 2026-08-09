@@ -125,6 +125,8 @@
   },
   "searching_page": {
     "fare_remaining": "Hinnanguline jääksumma: ~{amount} CHF, makstakse otse sinu juhile.",
+    "cancel_btn": "Tühista päring",
+    "cancel_confirm": "Kas tühistada see päring? Võid alati alustada uut.",
     "eta_label": "🕒 Eeldatav saabumine: ~{min} min",
     "eta_arriving": "🕒 Sinu juht saabub just nüüd",
     "searching_title": "Otsime sulle lähedal olevaid juhte…",
@@ -143,6 +145,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF sulle",
     "active_ride_fare": "~{amount} CHF selle sõidu eest ({km} km), tasu otse kliendiga",
+    "active_ride_cancel_btn": "Ei jõua kohale — vabasta see sõit",
+    "active_ride_cancel_confirm": "Vabastada see sõit? Klienti näidatakse uuesti teistele juhtidele.",
     "active_ride_cat": "SINU SÕIT",
     "active_ride_call": "📞 Helista kliendile",
     "active_ride_navigate": "🧭 Navigeeri peale võtmise kohta",

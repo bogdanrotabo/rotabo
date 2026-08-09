@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Số tiền còn lại ước tính: ~{amount} CHF, thanh toán trực tiếp cho tài xế.",
+    "cancel_btn": "Hủy yêu cầu",
+    "cancel_confirm": "Hủy yêu cầu này? Bạn có thể bắt đầu yêu cầu mới bất cứ lúc nào.",
     "eta_label": "🕒 Thời gian đến dự kiến: ~{min} phút",
     "eta_arriving": "🕒 Tài xế của bạn sắp đến nơi",
     "searching_title": "Đang tìm tài xế gần bạn…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF cho bạn",
     "active_ride_fare": "~{amount} CHF cho chuyến này ({km} km), thanh toán trực tiếp với khách hàng",
+    "active_ride_cancel_btn": "Không thể đến được — huỷ nhận chuyến này",
+    "active_ride_cancel_confirm": "Huỷ nhận chuyến này? Khách hàng sẽ được hiển thị lại cho các tài xế khác.",
     "active_ride_cat": "CHUYẾN ĐI CỦA BẠN",
     "active_ride_call": "📞 Gọi cho khách hàng",
     "active_ride_navigate": "🧭 Chỉ đường đến điểm đón",

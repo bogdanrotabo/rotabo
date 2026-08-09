@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Примерный остаток к оплате: ~{amount} CHF, напрямую водителю.",
+    "cancel_btn": "Отменить запрос",
+    "cancel_confirm": "Отменить этот запрос? Вы можете начать новый в любое время.",
     "eta_label": "🕒 Ожидаемое прибытие: ~{min} мин",
     "eta_arriving": "🕒 Ваш водитель уже подъезжает",
     "searching_title": "Ищем водителей рядом с вами…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF вам",
     "active_ride_fare": "~{amount} CHF за эту поездку ({km} км), оплата напрямую с клиентом",
+    "active_ride_cancel_btn": "Не успеваю — освободить эту поездку",
+    "active_ride_cancel_confirm": "Освободить эту поездку? Клиент снова будет показан другим водителям.",
     "active_ride_cat": "ВАША ПОЕЗДКА",
     "active_ride_call": "📞 Позвонить клиенту",
     "active_ride_navigate": "🧭 Проложить маршрут до точки посадки",

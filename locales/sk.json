@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Odhadovaná zostávajúca suma: ~{amount} CHF, platená priamo vášmu vodičovi.",
+    "cancel_btn": "Zrušiť žiadosť",
+    "cancel_confirm": "Zrušiť túto žiadosť? Kedykoľvek môžete začať novú.",
     "eta_label": "🕒 Predpokladaný príchod: ~{min} min",
     "eta_arriving": "🕒 Váš vodič práve prichádza",
     "searching_title": "Hľadáme vodičov vo tvojom okolí…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF pre vás",
     "active_ride_fare": "~{amount} CHF za túto jazdu ({km} km), vyrovnané priamo s klientom",
+    "active_ride_cancel_btn": "Nestihnem to — uvoľniť túto jazdu",
+    "active_ride_cancel_confirm": "Uvoľniť túto jazdu? Klient bude znova zobrazený ostatným vodičom.",
     "active_ride_cat": "VAŠA JAZDA",
     "active_ride_call": "📞 Zavolať klientovi",
     "active_ride_navigate": "🧭 Navigovať na miesto vyzdvihnutia",

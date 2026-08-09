@@ -90,6 +90,8 @@
   },
   "searching_page": {
     "fare_remaining": "Becsült hátralévő összeg: ~{amount} CHF, közvetlenül a sofőrödnek fizetve.",
+    "cancel_btn": "Kérés törlése",
+    "cancel_confirm": "Törlöd ezt a kérést? Bármikor indíthatsz újat.",
     "eta_label": "🕒 Becsült érkezés: ~{min} perc",
     "eta_arriving": "🕒 A sofőröd most érkezik",
     "searching_title": "Sofőröket keresünk a közeledben…",
@@ -108,6 +110,8 @@
   "dashboard_page": {
     "fare_for_you": "~{amount} CHF neked",
     "active_ride_fare": "~{amount} CHF ezért az útért ({km} km), közvetlenül az ügyféllel rendezve",
+    "active_ride_cancel_btn": "Nem érek oda — utazás felszabadítása",
+    "active_ride_cancel_confirm": "Felszabadítod ezt az utazást? Az ügyfél újra megjelenik más sofőröknek.",
     "active_ride_cat": "AZ UTAD",
     "active_ride_call": "📞 Ügyfél hívása",
     "active_ride_navigate": "🧭 Navigálás a felvételi ponthoz",
