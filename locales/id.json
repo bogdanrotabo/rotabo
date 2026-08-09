@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi" },
+  "hero": {
+    "pill": "PENGEMUDI DENGAN TUJUAN · MOBIL ANDA · JALAN PULANG ANDA",
+    "tagline1": "Anda minum.", "tagline2": "Mereka menyetir.", "tagline3": "Mobil Anda.",
+    "lede": "Rotabo menghubungkan Anda dengan pengemudi yang percaya bahwa tak seorang pun boleh menyetir pulang dalam kondisi tidak fit — dan mengantar Anda pulang <b>dengan mobil Anda sendiri</b>.",
+    "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_become_sponsor": "Jadi sponsor",
+    "cta_home_screen": "⬇ Tambahkan Rotabo ke layar utama",
+    "fine": "Langsung berfungsi di browser Anda — tanpa perlu unduh aplikasi.",
+    "badge_verified": "Pengemudi terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "MENGAPA HARUS MENINGGALKAN MOBIL ANDA?", "h2": "Masalah dengan semua pilihan lain",
+    "cross1": "Tanpa taksi.", "cross2": "Tanpa parkir semalaman.", "cross3": "Tanpa perlu kembali mengambilnya besok.", "cross4": "Tanpa perlu tumpangan kedua untuk menjemput mobil.",
+    "thesis": "Hanya Anda, mobil Anda, dan jalan pulang."
+  },
+  "how": {
+    "eyebrow": "EMPAT LANGKAH", "h2": "Cara kerja Rotabo",
+    "step1_title": "Ajukan permintaan", "step1_desc": "Beri tahu Rotabo di mana Anda berada.",
+    "step2_title": "Bertemu", "step2_desc": "Pengemudi Anda akan datang menjemput.",
+    "step3_title": "Berkendara", "step3_desc": "Mereka menyetir mobil Anda, dengan Anda di dalamnya.",
+    "step4_title": "Sampai rumah", "step4_desc": "Anda tiba bersama. Mobil tetap menjadi milik Anda sepanjang perjalanan.",
+    "not_taxi1": "Bukan taksi. Bukan layanan tumpangan. Bukan mobil yang ditinggal begitu saja.", "not_taxi2": "Mobil Anda. Jalan pulang Anda."
+  },
+  "safety": {
+    "eyebrow": "ORANG-ORANG DI BALIK KEMUDI", "h2": "Pengemudi yang menyetir demi sebuah alasan",
+    "check1": "Setiap pengemudi bergabung untuk menjaga agar orang yang tidak seharusnya menyetir tetap tidak berada di jalan",
+    "check2": "Identitas dan SIM diverifikasi sebelum perjalanan pertama",
+    "check3": "Kode etik bersama yang disepakati oleh setiap pengemudi",
+    "check4": "Bagikan perjalanan langsung Anda kepada siapa pun yang Anda pilih",
+    "check5": "Beri penilaian untuk setiap pengemudi, laporkan setiap insiden"
+  },
+  "partners_card": {
+    "cat": "MITRA", "h3": "Untuk restoran, hotel, dan tempat acara",
+    "p": "Biarkan tamu Anda menikmati malam sepenuhnya dan tetap bisa menyetir pulang dengan mobil mereka sendiri. Tawarkan Rotabo di meja makan, di resepsionis, atau di pintu keluar.",
+    "link": "Hubungi kami →"
+  },
+  "drivers_card": {
+    "cat": "PENGEMUDI", "h3": "Menyetir bersama Rotabo",
+    "p": "Setiap perjalanan yang Anda jalani adalah perjalanan yang tidak akan berujung buruk bagi siapa pun. Tentukan jam kerja Anda sendiri, kendarai mobil tanpa harus memilikinya, dan antar orang pulang dengan cara yang mereka inginkan.",
+    "link": "Jadi pengemudi →"
+  },
+  "supporters": {
+    "cat": "PENDUKUNG", "h3": "Orang dan tempat di balik semua ini",
+    "p": "Rotabo terus berjalan berkat semua orang yang bersedia mendukung gagasan bahwa tak seorang pun boleh menyetir saat seharusnya tidak menyetir.",
+    "tier_bronze": "Perunggu — 100 CHF", "tier_silver": "Perak — 300 CHF", "tier_gold": "Emas — 750 CHF", "tier_platinum": "Platinum — di atas 750 CHF"
+  },
+  "footer": {
+    "legal": "Rotabo adalah platform teknologi. Pengemudi adalah penyedia layanan independen, bukan karyawan Rotabo.",
+    "terms": "Ketentuan", "privacy": "Privasi", "driver_terms": "Ketentuan pengemudi", "supporters": "Pendukung", "contact": "Kontak",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" }
+}

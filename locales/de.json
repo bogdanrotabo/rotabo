@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "So funktioniert's",
+    "safety": "Sicherheit",
+    "business": "Für Unternehmen",
+    "drive": "Fahrer werden"
+  },
+  "hero": {
+    "pill": "FAHRER MIT EINEM ZWECK · DEIN AUTO · DEIN WEG NACH HAUSE",
+    "tagline1": "Du trinkst.",
+    "tagline2": "Sie fahren.",
+    "tagline3": "Dein Auto.",
+    "lede": "Rotabo verbindet dich mit einem Fahrer, der überzeugt ist, dass niemand fahruntüchtig nach Hause fahren sollte — und der dich <b>in deinem eigenen Auto</b> dorthin bringt.",
+    "cta_find_driver": "Fahrer finden",
+    "cta_become_driver": "Fahrer werden",
+    "cta_become_sponsor": "Sponsor werden",
+    "cta_home_screen": "⬇ Rotabo zum Startbildschirm hinzufügen",
+    "fine": "Funktioniert direkt im Browser — kein App Store nötig.",
+    "badge_verified": "Verifizierte Fahrer",
+    "badge_live": "Live-Standort teilen",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "WARUM DEIN AUTO ZURÜCKLASSEN?",
+    "h2": "Das Problem mit allen anderen Optionen",
+    "cross1": "Kein Taxi.",
+    "cross2": "Kein Parken über Nacht.",
+    "cross3": "Kein Zurückkommen am nächsten Tag.",
+    "cross4": "Keine zweite Fahrt, um es abzuholen.",
+    "thesis": "Nur du, dein Auto und der Weg nach Hause."
+  },
+  "how": {
+    "eyebrow": "VIER SCHRITTE",
+    "h2": "So funktioniert Rotabo",
+    "step1_title": "Anfragen",
+    "step1_desc": "Sag Rotabo, wo du bist.",
+    "step2_title": "Treffen",
+    "step2_desc": "Dein Fahrer kommt zu dir.",
+    "step3_title": "Fahren",
+    "step3_desc": "Er fährt dein Auto, mit dir darin.",
+    "step4_title": "Zuhause",
+    "step4_desc": "Ihr kommt gemeinsam an. Das Auto bleibt die ganze Fahrt über deins.",
+    "not_taxi1": "Kein Taxi. Keine Mitfahrt. Kein zurückgelassenes Auto.",
+    "not_taxi2": "Dein Auto. Dein Weg nach Hause."
+  },
+  "safety": {
+    "eyebrow": "DIE MENSCHEN, DIE FAHREN",
+    "h2": "Fahrer, die aus gutem Grund fahren",
+    "check1": "Jeder Fahrer macht mit, um jemanden von der Straße fernzuhalten, der dort nicht sein sollte",
+    "check2": "Identität und Führerschein werden vor der ersten Fahrt geprüft",
+    "check3": "Ein gemeinsamer Verhaltenskodex, dem alle Fahrer zustimmen",
+    "check4": "Teile deinen Live-Standort mit wem du willst",
+    "check5": "Bewerte jeden Fahrer, melde jeden Vorfall"
+  },
+  "partners_card": {
+    "cat": "PARTNER",
+    "h3": "Für Restaurants, Hotels und Locations",
+    "p": "Lass deine Gäste den Abend genießen und trotzdem mit dem eigenen Auto nach Hause fahren. Biete Rotabo am Tisch, an der Rezeption oder am Ausgang an.",
+    "link": "Sprich mit uns →"
+  },
+  "drivers_card": {
+    "cat": "FAHRER",
+    "h3": "Fahre mit Rotabo",
+    "p": "Jede Fahrt, die du machst, ist eine, die niemand bereut. Wähle deine eigenen Zeiten, fahre Autos, die du nie besitzen musst, und bring Menschen so nach Hause, wie sie es wollten.",
+    "link": "Fahrer werden →"
+  },
+  "supporters": {
+    "cat": "UNTERSTÜTZER",
+    "h3": "Die Menschen und Orte dahinter",
+    "p": "Rotabo lebt von allen, die bereit sind, hinter der Idee zu stehen, dass niemand fahren sollte, wenn er es nicht sollte.",
+    "tier_bronze": "Bronze — 100 CHF",
+    "tier_silver": "Silber — 300 CHF",
+    "tier_gold": "Gold — 750 CHF",
+    "tier_platinum": "Platin — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo ist eine Technologieplattform. Fahrer sind unabhängige Anbieter, keine Angestellten von Rotabo.",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "driver_terms": "Fahrerbedingungen",
+    "supporters": "Unterstützer",
+    "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Sprache",
+    "search_placeholder": "Sprache suchen…"
+  }
+}

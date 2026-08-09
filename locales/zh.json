@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机" },
+  "hero": {
+    "pill": "有使命感的司机 · 您的爱车 · 您的回家路",
+    "tagline1": "你喝酒。", "tagline2": "他们开车。", "tagline3": "你的车。",
+    "lede": "Rotabo 为您匹配一位坚信「没有人该在不清醒时开车回家」的司机，让您<b>坐在自己的车里</b>安全到家。",
+    "cta_find_driver": "寻找司机", "cta_become_driver": "成为司机", "cta_become_sponsor": "成为赞助人",
+    "cta_home_screen": "⬇ 将 Rotabo 添加到主屏幕",
+    "fine": "无需下载应用，浏览器即可使用。",
+    "badge_verified": "认证司机", "badge_live": "实时行程分享", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "为什么要把车留在外面？", "h2": "其他方案的通病",
+    "cross1": "不用打车。", "cross2": "不用整夜停在外面。", "cross3": "不用第二天再跑一趟取车。", "cross4": "不用再叫一辆车去取车。",
+    "thesis": "只有你、你的车，和回家的路。"
+  },
+  "how": {
+    "eyebrow": "四个步骤", "h2": "Rotabo 如何运作",
+    "step1_title": "发出请求", "step1_desc": "告诉 Rotabo 您的位置。",
+    "step2_title": "见面", "step2_desc": "司机会来找您。",
+    "step3_title": "驾驶", "step3_desc": "他们驾驶您的车，您就坐在车里。",
+    "step4_title": "到家", "step4_desc": "你们一起到达，全程车子始终是您的。",
+    "not_taxi1": "不是出租车，不是拼车，也不会把车留在原地。", "not_taxi2": "你的车，你的回家路。"
+  },
+  "safety": {
+    "eyebrow": "驾驶背后的人", "h2": "为一个理由而驾驶的司机",
+    "check1": "每位司机加入 Rotabo，都是为了让不该上路的人不再上路",
+    "check2": "首次出行前，身份与驾照均已核实",
+    "check3": "所有司机共同遵守的行为准则",
+    "check4": "可将实时行程分享给您信任的任何人",
+    "check5": "为每位司机评分，随时举报任何问题"
+  },
+  "partners_card": {
+    "cat": "合作伙伴", "h3": "面向餐厅、酒店与场所",
+    "p": "让您的客人尽情享受夜晚，仍能开着自己的车安全回家。在餐桌旁、前台或门口，为客人提供 Rotabo 服务。",
+    "link": "联系我们 →"
+  },
+  "drivers_card": {
+    "cat": "司机", "h3": "加入 Rotabo 成为司机",
+    "p": "您驾驶的每一程，都让一次糟糕的酒驾不再发生。自由安排时间，驾驶无需拥有的车辆，用他们想要的方式送他们回家。",
+    "link": "成为司机 →"
+  },
+  "supporters": {
+    "cat": "支持者", "h3": "支持这份事业的人与场所",
+    "p": "Rotabo 之所以能持续运转，离不开每一位愿意支持「不该开车时就不开车」这一理念的人。",
+    "tier_bronze": "青铜 — 100 CHF", "tier_silver": "白银 — 300 CHF", "tier_gold": "黄金 — 750 CHF", "tier_platinum": "铂金 — 750 CHF 以上"
+  },
+  "footer": {
+    "legal": "Rotabo 是一个技术平台。司机为独立服务提供者，并非 Rotabo 的雇员。",
+    "terms": "条款", "privacy": "隐私政策", "driver_terms": "司机条款", "supporters": "支持者", "contact": "联系我们",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" }
+}

@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo — You drink. They drive. Your car.</title>
+<meta name="description" content="Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there in your own car. Available in 38 languages.">
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#9B3FAF">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rotabo — You drink. They drive. Your car.">
+<meta property="og:description" content="Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there in your own car.">
+<meta property="og:image" content="https://rotabo.app/og-image.png">
+<meta property="og:url" content="https://rotabo.app/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rotabo — You drink. They drive. Your car.">
+<meta name="twitter:description" content="Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there in your own car.">
+<meta name="twitter:image" content="https://rotabo.app/og-image.png">
 <style>
   :root{
     --bg-top:#f6ecf9;
@@ -63,6 +80,7 @@
     margin-bottom:56px;
   }
   .diamond-hero{
+    display:block;
     width:230px;height:auto;
     margin:0 auto 48px;
     filter:drop-shadow(0 20px 30px rgba(124,37,150,.28));
@@ -207,6 +225,52 @@
     .steps,.cards-2col{grid-template-columns:1fr;}
     nav.links a{font-size:.95rem;margin-right:20px;}
   }
+
+  /* Language selector */
+  .lang-switcher{position:relative;}
+  .lang-btn{
+    display:flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--border);
+    color:var(--violet-1);font-weight:700;font-size:.95rem;
+    padding:10px 16px;border-radius:12px;cursor:pointer;
+  }
+  .lang-btn:hover{background:var(--bg-card);}
+  .lang-btn .code{text-transform:uppercase;color:var(--text-eyebrow);font-size:.82rem;}
+  .lang-panel{
+    display:none;position:absolute;top:calc(100% + 8px);right:0;
+    width:280px;max-height:360px;
+    background:#fff;border:1px solid var(--border);border-radius:16px;
+    box-shadow:0 20px 40px rgba(60,20,80,.18);
+    padding:12px;z-index:50;
+  }
+  .lang-panel.open{display:block;}
+  .lang-search{
+    width:100%;padding:10px 14px;border-radius:10px;
+    border:1px solid var(--border);background:var(--bg-card);
+    color:var(--text-dark);font-size:.95rem;margin-bottom:8px;
+    box-sizing:border-box;
+  }
+  .lang-list{max-height:280px;overflow-y:auto;}
+  .lang-option{
+    display:flex;align-items:center;justify-content:space-between;
+    width:100%;text-align:left;background:none;border:none;
+    padding:10px 10px;border-radius:8px;cursor:pointer;
+    font-size:.98rem;color:var(--text-dark);
+  }
+  .lang-option:hover{background:var(--bg-card);}
+  .lang-option.active{background:var(--bg-card);color:var(--violet-1);font-weight:700;}
+  .lang-option .lo-code{color:var(--text-eyebrow);font-size:.78rem;text-transform:uppercase;}
+  .lang-empty{color:var(--text-eyebrow);font-size:.9rem;padding:10px;text-align:center;}
+
+  /* RTL support */
+  html[dir="rtl"] nav.links a{margin-right:0;margin-left:32px;}
+  html[dir="rtl"] nav.links a:last-child{margin-left:0;}
+  html[dir="rtl"] .badges span .dot{margin-right:0;margin-left:8px;}
+  html[dir="rtl"] .check-list p{padding-left:0;padding-right:32px;}
+  html[dir="rtl"] .check-list p::before{left:auto;right:0;}
+  html[dir="rtl"] .cross-list p::before{content:"";}
+  html[dir="rtl"] .lang-panel{right:auto;left:0;}
+  html[dir="rtl"] .lang-option{text-align:right;}
 </style>
 </head>
 <body>
@@ -229,109 +293,273 @@
       Rotabo
     </div>
     <nav class="links">
-      <a href="#how">How it works</a>
-      <a href="#safety">Safety</a>
-      <a href="#business">For businesses</a>
-      <a href="#drive">Become a driver</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#safety" data-i18n="nav.safety">Safety</a>
+      <a href="#business" data-i18n="nav.business">For businesses</a>
+      <a href="#drive" data-i18n="nav.drive">Become a driver</a>
     </nav>
+    <div class="lang-switcher">
+      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false">
+        🌐 <span id="langBtnLabel">English</span> <span class="code" id="langBtnCode">EN</span>
+      </button>
+      <div class="lang-panel" id="langPanel">
+        <input class="lang-search" id="langSearch" type="text" data-i18n-placeholder="lang_selector.search_placeholder" placeholder="Search language…" autocomplete="off">
+        <div class="lang-list" id="langList"></div>
+      </div>
+    </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="pill">DRIVERS WITH A PURPOSE · YOUR CAR · YOUR WAY HOME</div>
+  <div class="pill" data-i18n="hero.pill">DRIVERS WITH A PURPOSE · YOUR CAR · YOUR WAY HOME</div>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
-  <h1 class="tagline">You drink.<br><span class="accent">They drive.</span><br>Your car.</h1>
-  <p class="lede">Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there <b>in your own car</b>.</p>
+  <h1 class="tagline"><span data-i18n="hero.tagline1">You drink.</span><br><span class="accent" data-i18n="hero.tagline2">They drive.</span><br><span data-i18n="hero.tagline3">Your car.</span></h1>
+  <p class="lede" data-i18n-html="hero.lede">Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there <b>in your own car</b>.</p>
 
   <div class="cta-stack">
-    <a class="btn btn-solid" href="https://buy.stripe.com/test_eVqeVdckj4cafX77baeME00" target="_blank" rel="noopener">Find a driver</a>
-    <a class="btn btn-outline" href="https://buy.stripe.com/test_aFadR9fwv386cKVfHGeME01" target="_blank" rel="noopener">Become a driver</a>
-    <a class="btn btn-outline" href="#sponsor">Become a sponsor</a>
-    <a class="btn btn-dashed" href="#">⬇ Add Rotabo to your home screen</a>
+    <a class="btn btn-solid" href="https://buy.stripe.com/test_eVqeVdckj4cafX77baeME00" target="_blank" rel="noopener" data-i18n="hero.cta_find_driver">Find a driver</a>
+    <a class="btn btn-outline" href="https://buy.stripe.com/test_aFadR9fwv386cKVfHGeME01" target="_blank" rel="noopener" data-i18n="hero.cta_become_driver">Become a driver</a>
+    <a class="btn btn-outline" href="#sponsor" data-i18n="hero.cta_become_sponsor">Become a sponsor</a>
+    <a class="btn btn-dashed" href="#" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</a>
   </div>
-  <p class="fine">Works in your browser — no app store needed.</p>
+  <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
   <div class="badges">
-    <span><i class="dot"></i>Verified drivers</span>
-    <span><i class="dot"></i>Live journey sharing</span>
-    <span><i class="dot"></i>Google Pay / Apple Pay</span>
+    <span><i class="dot"></i><span data-i18n="hero.badge_verified">Verified drivers</span></span>
+    <span><i class="dot"></i><span data-i18n="hero.badge_live">Live journey sharing</span></span>
+    <span><i class="dot"></i><span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span></span>
   </div>
 </section>
 
 <section class="problem">
-  <h2>The problem with every other option</h2>
-  <p class="eyebrow" style="margin-top:-24px;margin-bottom:30px;">WHY LEAVE YOUR CAR BEHIND?</p>
+  <h2 data-i18n="problem.h2">The problem with every other option</h2>
+  <p class="eyebrow" style="margin-top:-24px;margin-bottom:30px;" data-i18n="problem.eyebrow">WHY LEAVE YOUR CAR BEHIND?</p>
   <div class="cross-list">
-    <p>No taxi.</p>
-    <p>No parking overnight.</p>
-    <p>No coming back for it tomorrow.</p>
-    <p>No second ride to collect it.</p>
+    <p data-i18n="problem.cross1">No taxi.</p>
+    <p data-i18n="problem.cross2">No parking overnight.</p>
+    <p data-i18n="problem.cross3">No coming back for it tomorrow.</p>
+    <p data-i18n="problem.cross4">No second ride to collect it.</p>
   </div>
-  <p class="thesis">Just you, your car, and the way home.</p>
+  <p class="thesis" data-i18n="problem.thesis">Just you, your car, and the way home.</p>
 </section>
 
 <section id="how">
-  <p class="eyebrow">FOUR STEPS</p>
-  <h2>How Rotabo works</h2>
+  <p class="eyebrow" data-i18n="how.eyebrow">FOUR STEPS</p>
+  <h2 data-i18n="how.h2">How Rotabo works</h2>
   <div class="steps">
-    <div class="step-card"><h3>Request</h3><p>Tell Rotabo where you are.</p></div>
-    <div class="step-card"><h3>Meet</h3><p>Your driver comes to you.</p></div>
-    <div class="step-card"><h3>Drive</h3><p>They drive your car, with you in it.</p></div>
-    <div class="step-card"><h3>Home</h3><p>You arrive together. The car stays yours the whole way.</p></div>
+    <div class="step-card"><h3 data-i18n="how.step1_title">Request</h3><p data-i18n="how.step1_desc">Tell Rotabo where you are.</p></div>
+    <div class="step-card"><h3 data-i18n="how.step2_title">Meet</h3><p data-i18n="how.step2_desc">Your driver comes to you.</p></div>
+    <div class="step-card"><h3 data-i18n="how.step3_title">Drive</h3><p data-i18n="how.step3_desc">They drive your car, with you in it.</p></div>
+    <div class="step-card"><h3 data-i18n="how.step4_title">Home</h3><p data-i18n="how.step4_desc">You arrive together. The car stays yours the whole way.</p></div>
   </div>
-  <p class="not-taxi">Not a taxi. Not a ride. Not a car left behind.<b>Your car. Your way home.</b></p>
+  <p class="not-taxi"><span data-i18n="how.not_taxi1">Not a taxi. Not a ride. Not a car left behind.</span><b data-i18n="how.not_taxi2">Your car. Your way home.</b></p>
 </section>
 
 <section id="safety" class="drivers-section">
-  <p class="eyebrow">THE PEOPLE WHO DRIVE</p>
-  <h2>Drivers who drive for a reason</h2>
+  <p class="eyebrow" data-i18n="safety.eyebrow">THE PEOPLE WHO DRIVE</p>
+  <h2 data-i18n="safety.h2">Drivers who drive for a reason</h2>
   <div class="check-list">
-    <p>Every driver joins to keep someone off the road who shouldn't be on it</p>
-    <p>Identity and licence confirmed before the first journey</p>
-    <p>A shared code of conduct, agreed by everyone who drives</p>
-    <p>Share your live journey with anyone you choose</p>
-    <p>Rate every driver, report any incident</p>
+    <p data-i18n="safety.check1">Every driver joins to keep someone off the road who shouldn't be on it</p>
+    <p data-i18n="safety.check2">Identity and licence confirmed before the first journey</p>
+    <p data-i18n="safety.check3">A shared code of conduct, agreed by everyone who drives</p>
+    <p data-i18n="safety.check4">Share your live journey with anyone you choose</p>
+    <p data-i18n="safety.check5">Rate every driver, report any incident</p>
   </div>
 
   <div class="cards-2col">
     <div class="info-card" id="business">
-      <div class="cat">PARTNERS</div>
-      <h3>For restaurants, hotels and venues</h3>
-      <p>Let your guests enjoy the evening and still drive home in their own car. Offer Rotabo at the table, at reception, or at the door.</p>
-      <a href="#">Talk to us →</a>
+      <div class="cat" data-i18n="partners_card.cat">PARTNERS</div>
+      <h3 data-i18n="partners_card.h3">For restaurants, hotels and venues</h3>
+      <p data-i18n="partners_card.p">Let your guests enjoy the evening and still drive home in their own car. Offer Rotabo at the table, at reception, or at the door.</p>
+      <a href="#" data-i18n="partners_card.link">Talk to us →</a>
     </div>
     <div class="info-card" id="drive">
-      <div class="cat">DRIVERS</div>
-      <h3>Drive with Rotabo</h3>
-      <p>Every journey you take is one nobody takes badly. Choose your own hours, drive cars you never have to own, and get people home the way they wanted to go.</p>
-      <a href="https://buy.stripe.com/test_aFadR9fwv386cKVfHGeME01" target="_blank" rel="noopener">Become a driver →</a>
+      <div class="cat" data-i18n="drivers_card.cat">DRIVERS</div>
+      <h3 data-i18n="drivers_card.h3">Drive with Rotabo</h3>
+      <p data-i18n="drivers_card.p">Every journey you take is one nobody takes badly. Choose your own hours, drive cars you never have to own, and get people home the way they wanted to go.</p>
+      <a href="https://buy.stripe.com/test_aFadR9fwv386cKVfHGeME01" target="_blank" rel="noopener" data-i18n="drivers_card.link">Become a driver →</a>
     </div>
   </div>
 
   <div class="supporters" id="sponsor">
-    <div class="cat">SUPPORTERS</div>
-    <h3>People and places behind this</h3>
-    <p>Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.</p>
+    <div class="cat" data-i18n="supporters.cat">SUPPORTERS</div>
+    <h3 data-i18n="supporters.h3">People and places behind this</h3>
+    <p data-i18n="supporters.p">Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.</p>
     <p class="names">Casa Veche · Nord Logistic · Teatru Studio · Alpin Fleet</p>
     <div class="sponsor-tiers">
-      <a class="tier-btn" href="https://buy.stripe.com/test_dRmdR91FF2428uF8feeME05" target="_blank" rel="noopener">Bronze — 100 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/test_28E9AT5VV5ge8uF7baeME06" target="_blank" rel="noopener">Silver — 300 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/test_4gMfZh2JJ7om9yJ1QQeME07" target="_blank" rel="noopener">Gold — 750 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/test_14A00j2JJ8sqeT3anmeME03" target="_blank" rel="noopener">Platinum — 750 CHF+</a>
+      <a class="tier-btn" href="https://buy.stripe.com/test_dRmdR91FF2428uF8feeME05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze">Bronze — 100 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/test_28E9AT5VV5ge8uF7baeME06" target="_blank" rel="noopener" data-i18n="supporters.tier_silver">Silver — 300 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/test_4gMfZh2JJ7om9yJ1QQeME07" target="_blank" rel="noopener" data-i18n="supporters.tier_gold">Gold — 750 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/test_14A00j2JJ8sqeT3anmeME03" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum">Platinum — 750 CHF+</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p class="legal">Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.</p>
+  <p class="legal" data-i18n="footer.legal">Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.</p>
   <div class="flinks">
-    <a href="#">Terms</a>
-    <a href="#">Privacy</a>
-    <a href="#">Driver terms</a>
-    <a href="#">Supporters</a>
+    <a href="#" data-i18n="footer.terms">Terms</a>
+    <a href="#" data-i18n="footer.privacy">Privacy</a>
+    <a href="#" data-i18n="footer.driver_terms">Driver terms</a>
+    <a href="#" data-i18n="footer.supporters">Supporters</a>
   </div>
-  <div class="flinks"><a href="#">Contact</a></div>
-  <p class="copyright">© 2026 Rotabo</p>
+  <div class="flinks"><a href="#" data-i18n="footer.contact">Contact</a></div>
+  <p class="copyright" data-i18n="footer.copyright">© 2026 Rotabo</p>
 </footer>
+
+<script>
+(function(){
+  var LANGS = [
+    {code:"en",name:"English"},{code:"it",name:"Italiano"},{code:"ro",name:"Română"},
+    {code:"es",name:"Español"},{code:"fr",name:"Français"},{code:"de",name:"Deutsch"},
+    {code:"pt",name:"Português"},{code:"zh",name:"中文"},{code:"ar",name:"العربية"},
+    {code:"ja",name:"日本語"},{code:"ko",name:"한국어"},{code:"ru",name:"Русский"},
+    {code:"ms",name:"Bahasa Melayu"},{code:"hi",name:"हिन्दी"},{code:"sw",name:"Kiswahili"},
+    {code:"vi",name:"Tiếng Việt"},{code:"th",name:"ไทย"},{code:"id",name:"Bahasa Indonesia"},
+    {code:"tr",name:"Türkçe"},{code:"bn",name:"বাংলা"},{code:"ur",name:"اردو"},
+    {code:"bg",name:"Български"},{code:"cs",name:"Čeština"},{code:"hr",name:"Hrvatski"},
+    {code:"da",name:"Dansk"},{code:"et",name:"Eesti"},{code:"fi",name:"Suomi"},
+    {code:"el",name:"Ελληνικά"},{code:"ga",name:"Gaeilge"},{code:"lv",name:"Latviešu"},
+    {code:"lt",name:"Lietuvių"},{code:"hu",name:"Magyar"},{code:"mt",name:"Malti"},
+    {code:"nl",name:"Nederlands"},{code:"pl",name:"Polski"},{code:"sk",name:"Slovenčina"},
+    {code:"sl",name:"Slovenščina"},{code:"sv",name:"Svenska"}
+  ];
+  var RTL_LANGS = ["ar","ur"];
+  var STORAGE_KEY = "rotabo_lang";
+  var cache = {};
+
+  function getPath(obj, path){
+    return path.split(".").reduce(function(o,k){ return (o && o[k] !== undefined) ? o[k] : undefined; }, obj);
+  }
+
+  function applyTranslations(dict){
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var val = getPath(dict, el.getAttribute("data-i18n"));
+      if (val !== undefined) el.textContent = val;
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function(el){
+      var val = getPath(dict, el.getAttribute("data-i18n-html"));
+      if (val !== undefined) el.innerHTML = val;
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function(el){
+      var val = getPath(dict, el.getAttribute("data-i18n-placeholder"));
+      if (val !== undefined) el.setAttribute("placeholder", val);
+    });
+  }
+
+  function setLangUI(code){
+    var lang = LANGS.find(function(l){ return l.code === code; }) || LANGS[0];
+    document.getElementById("langBtnLabel").textContent = lang.name;
+    document.getElementById("langBtnCode").textContent = lang.code.toUpperCase();
+    document.querySelectorAll(".lang-option").forEach(function(btn){
+      btn.classList.toggle("active", btn.getAttribute("data-code") === code);
+    });
+    document.documentElement.setAttribute("lang", code);
+    document.documentElement.setAttribute("dir", RTL_LANGS.indexOf(code) !== -1 ? "rtl" : "ltr");
+  }
+
+  function loadLang(code){
+    if (cache[code]){
+      applyTranslations(cache[code]);
+      setLangUI(code);
+      return Promise.resolve();
+    }
+    return fetch("locales/" + code + ".json")
+      .then(function(res){
+        if (!res.ok) throw new Error("Failed to load " + code);
+        return res.json();
+      })
+      .then(function(dict){
+        cache[code] = dict;
+        applyTranslations(dict);
+        setLangUI(code);
+      })
+      .catch(function(err){
+        console.error("i18n:", err);
+        if (code !== "en") return loadLang("en");
+      });
+  }
+
+  function selectLang(code){
+    localStorage.setItem(STORAGE_KEY, code);
+    loadLang(code);
+    closePanel();
+  }
+
+  function openPanel(){
+    document.getElementById("langPanel").classList.add("open");
+    document.getElementById("langBtn").setAttribute("aria-expanded", "true");
+    document.getElementById("langSearch").value = "";
+    filterList("");
+    document.getElementById("langSearch").focus();
+  }
+  function closePanel(){
+    document.getElementById("langPanel").classList.remove("open");
+    document.getElementById("langBtn").setAttribute("aria-expanded", "false");
+  }
+  function togglePanel(){
+    var panel = document.getElementById("langPanel");
+    panel.classList.contains("open") ? closePanel() : openPanel();
+  }
+
+  function filterList(query){
+    var q = query.trim().toLowerCase();
+    document.querySelectorAll(".lang-option").forEach(function(btn){
+      var match = btn.getAttribute("data-search").indexOf(q) !== -1;
+      btn.style.display = match ? "flex" : "none";
+    });
+    var anyVisible = Array.prototype.some.call(
+      document.querySelectorAll(".lang-option"),
+      function(btn){ return btn.style.display !== "none"; }
+    );
+    document.getElementById("langEmpty").style.display = anyVisible ? "none" : "block";
+  }
+
+  function buildList(){
+    var list = document.getElementById("langList");
+    LANGS.forEach(function(lang){
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lang-option";
+      btn.setAttribute("data-code", lang.code);
+      btn.setAttribute("data-search", (lang.name + " " + lang.code).toLowerCase());
+      btn.innerHTML = '<span>' + lang.name + '</span><span class="lo-code">' + lang.code.toUpperCase() + '</span>';
+      btn.addEventListener("click", function(){ selectLang(lang.code); });
+      list.appendChild(btn);
+    });
+    var empty = document.createElement("div");
+    empty.id = "langEmpty";
+    empty.className = "lang-empty";
+    empty.textContent = "No matches";
+    empty.style.display = "none";
+    list.appendChild(empty);
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    buildList();
+    document.getElementById("langBtn").addEventListener("click", togglePanel);
+    document.getElementById("langSearch").addEventListener("input", function(e){ filterList(e.target.value); });
+    document.addEventListener("click", function(e){
+      var switcher = document.querySelector(".lang-switcher");
+      if (!switcher.contains(e.target)) closePanel();
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape") closePanel();
+    });
+
+    var saved = localStorage.getItem(STORAGE_KEY);
+    var initial = (saved && LANGS.some(function(l){ return l.code === saved; })) ? saved : "en";
+    loadLang(initial);
+  });
+})();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/service-worker.js").catch(function (err) {
+      console.error("Service worker registration failed:", err);
+    });
+  });
+}
+</script>
 
 </body>
 </html>

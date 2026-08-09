@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik" },
+  "hero": {
+    "pill": "VOZNIKI S POSLANSTVOM · TVOJ AVTOMOBIL · TVOJA POT DOMOV",
+    "tagline1": "Ti piješ.", "tagline2": "Oni vozijo.", "tagline3": "Tvoj avto.",
+    "lede": "Rotabo te poveže z voznikom, ki verjame, da nihče ne bi smel voziti domov, kadar za to ni sposoben — in ki te pripelje domov <b>z lastnim avtomobilom</b>.",
+    "cta_find_driver": "Poišči voznika", "cta_become_driver": "Postani voznik", "cta_become_sponsor": "Postani sponzor",
+    "cta_home_screen": "⬇ Dodaj Rotabo na domači zaslon",
+    "fine": "Deluje v tvojem brskalniku — trgovina z aplikacijami ni potrebna.",
+    "badge_verified": "Preverjeni vozniki", "badge_live": "Deljenje poti v živo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "ZAKAJ PUSTITI SVOJ AVTOMOBIL?", "h2": "Težava z vsemi drugimi možnostmi",
+    "cross1": "Brez taksija.", "cross2": "Brez parkiranja čez noč.", "cross3": "Brez vračanja ponj jutri.", "cross4": "Brez druge poti, da ga prevzameš.",
+    "thesis": "Samo ti, tvoj avto in pot domov."
+  },
+  "how": {
+    "eyebrow": "ŠTIRJE KORAKI", "h2": "Kako deluje Rotabo",
+    "step1_title": "Naroči", "step1_desc": "Povej Rotabo, kje si.",
+    "step2_title": "Srečanje", "step2_desc": "Tvoj voznik pride k tebi.",
+    "step3_title": "Vožnja", "step3_desc": "Oni vozijo tvoj avto, ti si zraven.",
+    "step4_title": "Domov", "step4_desc": "Prispeta skupaj. Avto ostane tvoj ves čas poti.",
+    "not_taxi1": "Ni taksi. Ni prevoz. Ni avto, puščen zadaj.", "not_taxi2": "Tvoj avto. Tvoja pot domov."
+  },
+  "safety": {
+    "eyebrow": "LJUDJE, KI VOZIJO", "h2": "Vozniki, ki vozijo z razlogom",
+    "check1": "Vsak voznik se pridruži, da s ceste umakne nekoga, ki tam ne bi smel biti",
+    "check2": "Identiteta in vozniško dovoljenje potrjena pred prvo vožnjo",
+    "check3": "Skupni kodeks ravnanja, s katerim se strinja vsak voznik",
+    "check4": "Deli svojo pot v živo s komerkoli želiš",
+    "check5": "Oceni vsakega voznika, prijavi vsak incident"
+  },
+  "partners_card": {
+    "cat": "PARTNERJI", "h3": "Za restavracije, hotele in prizorišča",
+    "p": "Naj vaši gostje uživajo večer in se kljub temu odpeljejo domov z lastnim avtomobilom. Ponudite Rotabo za mizo, na recepciji ali pri vratih.",
+    "link": "Kontaktirajte nas →"
+  },
+  "drivers_card": {
+    "cat": "VOZNIKI", "h3": "Vozi z Rotabo",
+    "p": "Vsaka vožnja, ki jo opraviš, je vožnja, ki je nihče ne obžaluje. Izberi svoj urnik, vozi avtomobile, ki jih nikoli ne boš moral kupiti, in pelji ljudi domov točno tako, kot so si želeli.",
+    "link": "Postani voznik →"
+  },
+  "supporters": {
+    "cat": "PODPORNIKI", "h3": "Ljudje in kraji, ki stojijo za tem",
+    "p": "Rotabo ohranja pri življenju vsak, ki je pripravljen stopiti za idejo, da nihče ne bi smel voziti, kadar ne bi smel.",
+    "tier_bronze": "Bron — 100 CHF", "tier_silver": "Srebro — 300 CHF", "tier_gold": "Zlato — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo je tehnološka platforma. Vozniki so neodvisni ponudniki storitev, ne zaposleni pri Rotabo.",
+    "terms": "Pogoji", "privacy": "Zasebnost", "driver_terms": "Pogoji za voznike", "supporters": "Podporniki", "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…" }
+}

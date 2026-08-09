@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Sådan fungerer det",
+    "safety": "Sikkerhed",
+    "business": "Til virksomheder",
+    "drive": "Bliv chauffør"
+  },
+  "hero": {
+    "pill": "CHAUFFØRER MED ET FORMÅL · DIN BIL · DIN VEJ HJEM",
+    "tagline1": "Du drikker.",
+    "tagline2": "De kører.",
+    "tagline3": "Din bil.",
+    "lede": "Rotabo forbinder dig med en chauffør, der mener, at ingen bør køre hjem, når de ikke er i stand til det — og som kører dig hjem <b>i din egen bil</b>.",
+    "cta_find_driver": "Find en chauffør",
+    "cta_become_driver": "Bliv chauffør",
+    "cta_become_sponsor": "Bliv sponsor",
+    "cta_home_screen": "⬇ Føj Rotabo til din hjemmeskærm",
+    "fine": "Fungerer direkte i din browser — ingen app store nødvendig.",
+    "badge_verified": "Verificerede chauffører",
+    "badge_live": "Live-deling af turen",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "HVORFOR EFTERLADE DIN BIL?",
+    "h2": "Problemet med alle andre muligheder",
+    "cross1": "Ingen taxi.",
+    "cross2": "Ingen parkering natten over.",
+    "cross3": "Ingen tur tilbage for at hente den i morgen.",
+    "cross4": "Ingen ekstra tur for at hente den.",
+    "thesis": "Kun dig, din bil og vejen hjem."
+  },
+  "how": {
+    "eyebrow": "FIRE TRIN",
+    "h2": "Sådan fungerer Rotabo",
+    "step1_title": "Bestil",
+    "step1_desc": "Fortæl Rotabo, hvor du er.",
+    "step2_title": "Mød",
+    "step2_desc": "Din chauffør kommer til dig.",
+    "step3_title": "Kør",
+    "step3_desc": "De kører din bil, mens du sidder i den.",
+    "step4_title": "Hjemme",
+    "step4_desc": "I ankommer sammen. Bilen forbliver din hele vejen.",
+    "not_taxi1": "Ikke en taxi. Ikke et lift. Ikke en bil efterladt bagved.",
+    "not_taxi2": "Din bil. Din vej hjem."
+  },
+  "safety": {
+    "eyebrow": "MENNESKERNE, DER KØRER",
+    "h2": "Chauffører, der kører af en grund",
+    "check1": "Hver chauffør melder sig for at holde nogen væk fra vejen, der ikke burde køre",
+    "check2": "Identitet og kørekort bekræftet før den første tur",
+    "check3": "Et fælles adfærdskodeks, som alle chauffører har tilsluttet sig",
+    "check4": "Del din tur live med hvem du vælger",
+    "check5": "Bedøm hver chauffør, anmeld enhver hændelse"
+  },
+  "partners_card": {
+    "cat": "PARTNERE",
+    "h3": "Til restauranter, hoteller og selskabslokaler",
+    "p": "Lad dine gæster nyde aftenen og stadig køre hjem i deres egen bil. Tilbyd Rotabo ved bordet, i receptionen eller ved døren.",
+    "link": "Kontakt os →"
+  },
+  "drivers_card": {
+    "cat": "CHAUFFØRER",
+    "h3": "Kør med Rotabo",
+    "p": "Hver tur, du kører, er en, ingen fortryder. Vælg dine egne timer, kør biler, du aldrig behøver at eje, og få folk hjem, præcis som de ønskede.",
+    "link": "Bliv chauffør →"
+  },
+  "supporters": {
+    "cat": "STØTTER",
+    "h3": "Menneskerne og stederne bag dette",
+    "p": "Rotabo holdes kørende af alle, der er villige til at bakke op om idéen om, at ingen bør køre, når de ikke bør.",
+    "tier_bronze": "Bronze — 100 CHF",
+    "tier_silver": "Sølv — 300 CHF",
+    "tier_gold": "Guld — 750 CHF",
+    "tier_platinum": "Platin — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo er en teknologiplatform. Chauffører er selvstændige udbydere, ikke ansat af Rotabo.",
+    "terms": "Vilkår",
+    "privacy": "Privatliv",
+    "driver_terms": "Chaufførvilkår",
+    "supporters": "Støtter",
+    "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Sprog",
+    "search_placeholder": "Søg efter sprog…"
+  }
+}

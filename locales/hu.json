@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr" },
+  "hero": {
+    "pill": "SOFŐRÖK CÉLLAL · A TE AUTÓD · A TE UTAD HAZA",
+    "tagline1": "Te iszol.", "tagline2": "Ők vezetnek.", "tagline3": "A te autód.",
+    "lede": "A Rotabo összeköt téged egy sofőrrel, aki hisz abban, hogy senkinek sem szabad vezetnie, ha nincs abban az állapotban — és aki <b>a saját autódban</b> visz haza.",
+    "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_become_sponsor": "Legyél támogató",
+    "cta_home_screen": "⬇ Add hozzá a Rotabo-t a kezdőképernyőhöz",
+    "fine": "A böngésződben működik — nincs szükség alkalmazásboltra.",
+    "badge_verified": "Ellenőrzött sofőrök", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "MIÉRT HAGYNÁD OTT AZ AUTÓD?", "h2": "A probléma minden más megoldással",
+    "cross1": "Nincs taxi.", "cross2": "Nincs egész éjszakás parkolás.", "cross3": "Nincs visszamenés érte másnap.", "cross4": "Nincs második út, hogy elhozd.",
+    "thesis": "Csak te, az autód, és az út haza."
+  },
+  "how": {
+    "eyebrow": "NÉGY LÉPÉS", "h2": "Hogyan működik a Rotabo",
+    "step1_title": "Kérj", "step1_desc": "Mondd meg a Rotabo-nak, hol vagy.",
+    "step2_title": "Találkozzatok", "step2_desc": "A sofőröd hozzád jön.",
+    "step3_title": "Vezess", "step3_desc": "Ők vezetik az autódat, te pedig benne ülsz.",
+    "step4_title": "Haza", "step4_desc": "Együtt érkeztek meg. Az autó végig a tiéd marad.",
+    "not_taxi1": "Nem taxi. Nem fuvar. Nem otthagyott autó.", "not_taxi2": "A te autód. A te utad haza."
+  },
+  "safety": {
+    "eyebrow": "AKIK VEZETNEK", "h2": "Sofőrök, akiknek célja van",
+    "check1": "Minden sofőr azért csatlakozik, hogy távol tartson valakit az úttól, akinek nem szabadna ott lennie",
+    "check2": "Személyazonosság és jogosítvány ellenőrizve az első út előtt",
+    "check3": "Közös magatartási kódex, amelyet minden sofőr elfogad",
+    "check4": "Oszd meg az élő útvonaladat bárkivel, akit választasz",
+    "check5": "Értékelj minden sofőrt, jelents minden esetet"
+  },
+  "partners_card": {
+    "cat": "PARTNEREK", "h3": "Éttermeknek, szállodáknak és helyszíneknek",
+    "p": "Hagyd, hogy vendégeid élvezzék az estét, és mégis a saját autójukkal menjenek haza. Kínáld fel a Rotabo-t az asztalnál, a recepción vagy az ajtóban.",
+    "link": "Beszéljünk →"
+  },
+  "drivers_card": {
+    "cat": "SOFŐRÖK", "h3": "Vezess a Rotabo-val",
+    "p": "Minden út, amit megteszel, olyan út, amit senki nem bán meg. Válaszd meg a saját munkaidődet, vezess olyan autókat, amiket sosem kell megvenned, és vidd haza az embereket úgy, ahogy szeretnék.",
+    "link": "Legyél sofőr →"
+  },
+  "supporters": {
+    "cat": "TÁMOGATÓK", "h3": "Az emberek és helyek e mögött",
+    "p": "A Rotabo-t mindenki életben tartja, aki hajlandó kiállni amellett, hogy senkinek sem szabad vezetnie, ha nem szabadna.",
+    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Ezüst — 300 CHF", "tier_gold": "Arany — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "A Rotabo egy technológiai platform. A sofőrök független szolgáltatók, nem a Rotabo alkalmazottai.",
+    "terms": "Feltételek", "privacy": "Adatvédelem", "driver_terms": "Sofőrfeltételek", "supporters": "Támogatók", "contact": "Kapcsolat",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" }
+}

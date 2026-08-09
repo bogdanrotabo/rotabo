@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Kuidas see töötab",
+    "safety": "Ohutus",
+    "business": "Ettevõtetele",
+    "drive": "Hakka juhiks"
+  },
+  "hero": {
+    "pill": "EESMÄRGIGA JUHID · SINU AUTO · SINU TEE KOJU",
+    "tagline1": "Sina jood.",
+    "tagline2": "Nemad juhivad.",
+    "tagline3": "Sinu auto.",
+    "lede": "Rotabo ühendab sind juhiga, kes usub, et keegi ei tohiks sõita koju siis, kui ta pole selleks võimeline — ja kes viib sind koju <b>sinu enda autoga</b>.",
+    "cta_find_driver": "Leia juht",
+    "cta_become_driver": "Hakka juhiks",
+    "cta_become_sponsor": "Hakka toetajaks",
+    "cta_home_screen": "⬇ Lisa Rotabo avakuvale",
+    "fine": "Töötab otse brauseris — rakenduste poodi pole vaja.",
+    "badge_verified": "Kontrollitud juhid",
+    "badge_live": "Reisi jälgimine reaalajas",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "MIKS JÄTTA AUTO MAHA?",
+    "h2": "Probleem kõigi teiste võimalustega",
+    "cross1": "Ei mingit taksot.",
+    "cross2": "Ei mingit ööseks parkimist.",
+    "cross3": "Ei pea homme selle järele tulema.",
+    "cross4": "Ei pea tegema teist sõitu, et see kätte saada.",
+    "thesis": "Ainult sina, sinu auto ja tee koju."
+  },
+  "how": {
+    "eyebrow": "NELI SAMMU",
+    "h2": "Kuidas Rotabo töötab",
+    "step1_title": "Telli",
+    "step1_desc": "Ütle Rotabole, kus sa oled.",
+    "step2_title": "Kohtumine",
+    "step2_desc": "Sinu juht tuleb sinu juurde.",
+    "step3_title": "Sõit",
+    "step3_desc": "Ta juhib sinu autot, sina istud kaasas.",
+    "step4_title": "Koju",
+    "step4_desc": "Jõuate koju koos. Auto jääb kogu tee sinu omaks.",
+    "not_taxi1": "Mitte takso. Mitte sõidujagamine. Mitte maha jäetud auto.",
+    "not_taxi2": "Sinu auto. Sinu tee koju."
+  },
+  "safety": {
+    "eyebrow": "INIMESED, KES JUHIVAD",
+    "h2": "Juhid, kes juhivad põhjusega",
+    "check1": "Iga juht liitub selleks, et hoida teelt eemal kedagi, kes seal olla ei tohiks",
+    "check2": "Isik ja juhiluba kontrollitud enne esimest sõitu",
+    "check3": "Ühine käitumisjuhend, millega on nõustunud kõik juhid",
+    "check4": "Jaga oma sõitu reaalajas kellega iganes soovid",
+    "check5": "Hinda iga juhti, teata igast intsidendist"
+  },
+  "partners_card": {
+    "cat": "PARTNERID",
+    "h3": "Restoranidele, hotellidele ja üritustele",
+    "p": "Lase oma külalistel õhtust nautida ja ikkagi sõita koju oma autoga. Paku Rotabot laua taga, vastuvõtus või ukse juures.",
+    "link": "Võta meiega ühendust →"
+  },
+  "drivers_card": {
+    "cat": "JUHID",
+    "h3": "Sõida Rotaboga",
+    "p": "Iga sõit, mida teed, on selline, mida keegi kahetsema ei pea. Vali oma tunnid, juhi autosid, mida sul pole kunagi vaja omada, ja vii inimesed koju just nii, nagu nad soovisid.",
+    "link": "Hakka juhiks →"
+  },
+  "supporters": {
+    "cat": "TOETAJAD",
+    "h3": "Inimesed ja kohad selle taga",
+    "p": "Rotabo püsib tänu kõigile, kes on valmis toetama mõtet, et keegi ei tohiks juhtida siis, kui ta ei tohi.",
+    "tier_bronze": "Pronks — 100 CHF",
+    "tier_silver": "Hõbe — 300 CHF",
+    "tier_gold": "Kuld — 750 CHF",
+    "tier_platinum": "Plaatina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo on tehnoloogiaplatvorm. Juhid on sõltumatud teenusepakkujad, mitte Rotabo töötajad.",
+    "terms": "Tingimused",
+    "privacy": "Privaatsus",
+    "driver_terms": "Juhi tingimused",
+    "supporters": "Toetajad",
+    "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Keel",
+    "search_placeholder": "Otsi keelt…"
+  }
+}

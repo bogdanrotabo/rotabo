@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Näin se toimii",
+    "safety": "Turvallisuus",
+    "business": "Yrityksille",
+    "drive": "Ryhdy kuljettajaksi"
+  },
+  "hero": {
+    "pill": "KULJETTAJIA TARKOITUKSELLA · OMA AUTOSI · OMA TIESI KOTIIN",
+    "tagline1": "Sinä juot.",
+    "tagline2": "He ajavat.",
+    "tagline3": "Sinun autosi.",
+    "lede": "Rotabo yhdistää sinut kuljettajaan, joka uskoo, ettei kenenkään pitäisi ajaa kotiin kykenemättömänä — ja joka vie sinut perille <b>omalla autollasi</b>.",
+    "cta_find_driver": "Etsi kuljettaja",
+    "cta_become_driver": "Ryhdy kuljettajaksi",
+    "cta_become_sponsor": "Ryhdy tukijaksi",
+    "cta_home_screen": "⬇ Lisää Rotabo aloitusnäytölle",
+    "fine": "Toimii suoraan selaimessa — ei sovelluskauppaa tarvita.",
+    "badge_verified": "Vahvistetut kuljettajat",
+    "badge_live": "Matkan jakaminen reaaliajassa",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "MIKSI JÄTTÄÄ AUTO?",
+    "h2": "Ongelma kaikissa muissa vaihtoehdoissa",
+    "cross1": "Ei taksia.",
+    "cross2": "Ei yöpysäköintiä.",
+    "cross3": "Ei hakemista huomenna.",
+    "cross4": "Ei toista matkaa auton noutamiseksi.",
+    "thesis": "Vain sinä, autosi ja tie kotiin."
+  },
+  "how": {
+    "eyebrow": "NELJÄ VAIHETTA",
+    "h2": "Näin Rotabo toimii",
+    "step1_title": "Tilaa",
+    "step1_desc": "Kerro Rotabolle, missä olet.",
+    "step2_title": "Tapaa",
+    "step2_desc": "Kuljettajasi tulee luoksesi.",
+    "step3_title": "Aja",
+    "step3_desc": "Hän ajaa autoasi, sinä istut kyydissä.",
+    "step4_title": "Kotona",
+    "step4_desc": "Saavutte yhdessä. Auto pysyy sinun omanasi koko matkan.",
+    "not_taxi1": "Ei taksi. Ei kyytipalvelu. Ei autoa jätettynä minnekään.",
+    "not_taxi2": "Oma autosi. Oma tiesi kotiin."
+  },
+  "safety": {
+    "eyebrow": "IHMISET, JOTKA AJAVAT",
+    "h2": "Kuljettajat, joilla on syynsä",
+    "check1": "Jokainen kuljettaja liittyy pitääkseen tieltä poissa jonkun, jonka ei pitäisi olla siellä",
+    "check2": "Henkilöllisyys ja ajokortti vahvistetaan ennen ensimmäistä matkaa",
+    "check3": "Yhteinen käytännesääntö, jonka jokainen kuljettaja on hyväksynyt",
+    "check4": "Jaa matkasi reaaliajassa kenen tahansa kanssa haluat",
+    "check5": "Arvioi jokainen kuljettaja, ilmoita mahdollisista poikkeamista"
+  },
+  "partners_card": {
+    "cat": "KUMPPANIT",
+    "h3": "Ravintoloille, hotelleille ja tapahtumapaikoille",
+    "p": "Anna vieraidesi nauttia illasta ja silti ajaa kotiin omalla autollaan. Tarjoa Rotaboa pöydässä, vastaanotossa tai ovella.",
+    "link": "Ota yhteyttä →"
+  },
+  "drivers_card": {
+    "cat": "KULJETTAJAT",
+    "h3": "Aja Rotabon kanssa",
+    "p": "Jokainen ajamasi matka on sellainen, jota kukaan ei kadu. Valitse omat työaikasi, aja autoja, joita sinun ei koskaan tarvitse omistaa, ja vie ihmiset kotiin juuri niin kuin he halusivat.",
+    "link": "Ryhdy kuljettajaksi →"
+  },
+  "supporters": {
+    "cat": "TUKIJAT",
+    "h3": "Ihmiset ja paikat tämän takana",
+    "p": "Rotabo pysyy käynnissä kaikkien niiden ansiosta, jotka ovat valmiita seisomaan ajatuksen takana, ettei kenenkään pitäisi ajaa silloin, kun ei pitäisi.",
+    "tier_bronze": "Pronssi — 100 CHF",
+    "tier_silver": "Hopea — 300 CHF",
+    "tier_gold": "Kulta — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo on teknologia-alusta. Kuljettajat ovat itsenäisiä palveluntarjoajia, eivät Rotabon työntekijöitä.",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuoja",
+    "driver_terms": "Kuljettajan ehdot",
+    "supporters": "Tukijat",
+    "contact": "Yhteystiedot",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Kieli",
+    "search_placeholder": "Hae kieltä…"
+  }
+}

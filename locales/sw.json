@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva" },
+  "hero": {
+    "pill": "MADEREVA WENYE LENGO · GARI LAKO · NJIA YAKO YA KURUDI NYUMBANI",
+    "tagline1": "Wewe unakunywa.", "tagline2": "Wao wanaendesha.", "tagline3": "Gari lako.",
+    "lede": "Rotabo inakuunganisha na dereva anayeamini kuwa hakuna anayepaswa kuendesha akiwa hafai — na anayekufikisha <b>kwa gari lako mwenyewe</b>.",
+    "cta_find_driver": "Tafuta dereva", "cta_become_driver": "Kuwa dereva", "cta_become_sponsor": "Kuwa mfadhili",
+    "cta_home_screen": "⬇ Ongeza Rotabo kwenye skrini yako ya nyumbani",
+    "fine": "Inafanya kazi kwenye kivinjari chako — hakuna haja ya duka la programu.",
+    "badge_verified": "Madereva waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "KWA NINI UACHE GARI LAKO?", "h2": "Tatizo la kila chaguo lingine",
+    "cross1": "Hakuna teksi.", "cross2": "Hakuna kuegesha usiku kucha.", "cross3": "Hakuna kurudi kulichukua kesho.", "cross4": "Hakuna safari ya pili kulikusanya.",
+    "thesis": "Ni wewe tu, gari lako, na njia ya kurudi nyumbani."
+  },
+  "how": {
+    "eyebrow": "HATUA NNE", "h2": "Jinsi Rotabo inavyofanya kazi",
+    "step1_title": "Omba", "step1_desc": "Mwambie Rotabo ulipo.",
+    "step2_title": "Kutana", "step2_desc": "Dereva wako anakujia.",
+    "step3_title": "Endesha", "step3_desc": "Anaendesha gari lako, ukiwa nawe ndani.",
+    "step4_title": "Nyumbani", "step4_desc": "Mnafika pamoja. Gari linabaki lako njia yote.",
+    "not_taxi1": "Si teksi. Si safari ya kushirikiana. Si gari linaloachwa nyuma.", "not_taxi2": "Gari lako. Njia yako ya kurudi nyumbani."
+  },
+  "safety": {
+    "eyebrow": "WATU WANAOENDESHA", "h2": "Madereva wanaoendesha kwa sababu",
+    "check1": "Kila dereva anajiunga ili kumzuia mtu asiyefaa kuendesha kutoka barabarani",
+    "check2": "Utambulisho na leseni vinathibitishwa kabla ya safari ya kwanza",
+    "check3": "Kanuni za maadili zinazoshirikiwa, zinazokubaliwa na kila anayeendesha",
+    "check4": "Shiriki safari yako moja kwa moja na yeyote unayemchagua",
+    "check5": "Mpe kila dereva alama, ripoti tukio lolote"
+  },
+  "partners_card": {
+    "cat": "WASHIRIKA", "h3": "Kwa migahawa, hoteli na kumbi",
+    "p": "Waache wageni wako wafurahie jioni na bado waendeshe gari lao wenyewe kurudi nyumbani. Toa Rotabo mezani, mapokezi, au mlangoni.",
+    "link": "Zungumza nasi →"
+  },
+  "drivers_card": {
+    "cat": "MADEREVA", "h3": "Endesha na Rotabo",
+    "p": "Kila safari unayochukua ni safari ambayo hakuna anayeichukua vibaya. Chagua saa zako mwenyewe, endesha magari usiyohitaji kuyamiliki, na wafikishe watu nyumbani kwa njia waliyotaka.",
+    "link": "Kuwa dereva →"
+  },
+  "supporters": {
+    "cat": "WAFADHILI", "h3": "Watu na maeneo yanayosimamia hili",
+    "p": "Rotabo inaendelea kutokana na mtu yeyote aliye tayari kuunga mkono wazo kwamba hakuna anayepaswa kuendesha akiwa hafai.",
+    "tier_bronze": "Shaba — CHF 100", "tier_silver": "Fedha — CHF 300", "tier_gold": "Dhahabu — CHF 750", "tier_platinum": "Platinamu — CHF 750+"
+  },
+  "footer": {
+    "legal": "Rotabo ni jukwaa la teknolojia. Madereva ni watoa huduma huru, si wafanyakazi wa Rotabo.",
+    "terms": "Masharti", "privacy": "Faragha", "driver_terms": "Masharti ya dereva", "supporters": "Wafadhili", "contact": "Wasiliana nasi",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" }
+}

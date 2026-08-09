@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju" },
+  "hero": {
+    "pill": "VAIRUOTOJAI SU TIKSLU · TAVO AUTOMOBILIS · TAVO KELIAS NAMO",
+    "tagline1": "Tu geri.", "tagline2": "Jie vairuoja.", "tagline3": "Tavo automobilis.",
+    "lede": "Rotabo sujungia tave su vairuotoju, kuris tiki, kad niekas neturėtų vairuoti namo būdamas netinkamos būklės — ir kuris nuveža tave <b>tavo paties automobiliu</b>.",
+    "cta_find_driver": "Rasti vairuotoją", "cta_become_driver": "Tapk vairuotoju", "cta_become_sponsor": "Tapk rėmėju",
+    "cta_home_screen": "⬇ Pridėk Rotabo prie pradžios ekrano",
+    "fine": "Veikia naršyklėje — programėlių parduotuvė nereikalinga.",
+    "badge_verified": "Patikrinti vairuotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "KAM PALIKTI SAVO AUTOMOBILĮ?", "h2": "Problema su visais kitais variantais",
+    "cross1": "Jokio taksi.", "cross2": "Jokio automobilio, paliekamo nakvynei.", "cross3": "Jokio grįžimo pasiimti jo rytoj.", "cross4": "Jokios antros kelionės jam parsivežti.",
+    "thesis": "Tik tu, tavo automobilis ir kelias namo."
+  },
+  "how": {
+    "eyebrow": "KETURI ŽINGSNIAI", "h2": "Kaip veikia Rotabo",
+    "step1_title": "Užsakyk", "step1_desc": "Praneški Rotabo, kur esi.",
+    "step2_title": "Susitik", "step2_desc": "Vairuotojas atvyksta pas tave.",
+    "step3_title": "Važiuok", "step3_desc": "Jie vairuoja tavo automobilį, o tu sėdi šalia.",
+    "step4_title": "Namo", "step4_desc": "Atvykstate kartu. Automobilis visą kelią lieka tavo.",
+    "not_taxi1": "Ne taksi. Ne pavėžėjimas. Ne paliktas automobilis.", "not_taxi2": "Tavo automobilis. Tavo kelias namo."
+  },
+  "safety": {
+    "eyebrow": "ŽMONĖS, KURIE VAIRUOJA", "h2": "Vairuotojai, turintys tikslą",
+    "check1": "Kiekvienas vairuotojas prisijungia, kad padėtų nuo kelio pašalinti tuos, kuriems ten nevieta",
+    "check2": "Tapatybė ir vairuotojo pažymėjimas patikrinami prieš pirmąją kelionę",
+    "check3": "Bendras elgesio kodeksas, su kuriuo sutinka kiekvienas vairuotojas",
+    "check4": "Dalinkis savo kelionės eiga gyvai su kuo tik nori",
+    "check5": "Įvertink kiekvieną vairuotoją, praneški apie bet kokį incidentą"
+  },
+  "partners_card": {
+    "cat": "PARTNERIAI", "h3": "Restoranams, viešbučiams ir renginių vietoms",
+    "p": "Leisk savo svečiams mėgautis vakaru ir vis tiek parvažiuoti namo savo automobiliu. Pasiūlyk Rotabo prie stalo, registratūroje ar prie durų.",
+    "link": "Susisiek su mumis →"
+  },
+  "drivers_card": {
+    "cat": "VAIRUOTOJAI", "h3": "Vairuok su Rotabo",
+    "p": "Kiekviena tavo kelionė yra kelionė, kurios niekas nesigaili. Rinkis savo darbo valandas, vairuok automobilius, kurių niekada nereikės pirkti, ir parvežk žmones taip, kaip jie norėjo.",
+    "link": "Tapk vairuotoju →"
+  },
+  "supporters": {
+    "cat": "RĖMĖJAI", "h3": "Žmonės ir vietos, stovintys už viso to",
+    "p": "Rotabo gyvuoja dėl kiekvieno, pasiryžusio palaikyti idėją, kad niekas neturėtų vairuoti, kai neturėtų.",
+    "tier_bronze": "Bronza — 100 CHF", "tier_silver": "Sidabras — 300 CHF", "tier_gold": "Auksas — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo yra technologijų platforma. Vairuotojai yra nepriklausomi paslaugų teikėjai, o ne Rotabo darbuotojai.",
+    "terms": "Sąlygos", "privacy": "Privatumas", "driver_terms": "Vairuotojų sąlygos", "supporters": "Rėmėjai", "contact": "Kontaktai",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" }
+}

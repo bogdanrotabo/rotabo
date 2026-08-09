@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "How it works",
+    "safety": "Safety",
+    "business": "For businesses",
+    "drive": "Become a driver"
+  },
+  "hero": {
+    "pill": "DRIVERS WITH A PURPOSE · YOUR CAR · YOUR WAY HOME",
+    "tagline1": "You drink.",
+    "tagline2": "They drive.",
+    "tagline3": "Your car.",
+    "lede": "Rotabo connects you with a driver who believes nobody should drive home unfit — and who gets you there <b>in your own car</b>.",
+    "cta_find_driver": "Find a driver",
+    "cta_become_driver": "Become a driver",
+    "cta_become_sponsor": "Become a sponsor",
+    "cta_home_screen": "⬇ Add Rotabo to your home screen",
+    "fine": "Works in your browser — no app store needed.",
+    "badge_verified": "Verified drivers",
+    "badge_live": "Live journey sharing",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "WHY LEAVE YOUR CAR BEHIND?",
+    "h2": "The problem with every other option",
+    "cross1": "No taxi.",
+    "cross2": "No parking overnight.",
+    "cross3": "No coming back for it tomorrow.",
+    "cross4": "No second ride to collect it.",
+    "thesis": "Just you, your car, and the way home."
+  },
+  "how": {
+    "eyebrow": "FOUR STEPS",
+    "h2": "How Rotabo works",
+    "step1_title": "Request",
+    "step1_desc": "Tell Rotabo where you are.",
+    "step2_title": "Meet",
+    "step2_desc": "Your driver comes to you.",
+    "step3_title": "Drive",
+    "step3_desc": "They drive your car, with you in it.",
+    "step4_title": "Home",
+    "step4_desc": "You arrive together. The car stays yours the whole way.",
+    "not_taxi1": "Not a taxi. Not a ride. Not a car left behind.",
+    "not_taxi2": "Your car. Your way home."
+  },
+  "safety": {
+    "eyebrow": "THE PEOPLE WHO DRIVE",
+    "h2": "Drivers who drive for a reason",
+    "check1": "Every driver joins to keep someone off the road who shouldn't be on it",
+    "check2": "Identity and licence confirmed before the first journey",
+    "check3": "A shared code of conduct, agreed by everyone who drives",
+    "check4": "Share your live journey with anyone you choose",
+    "check5": "Rate every driver, report any incident"
+  },
+  "partners_card": {
+    "cat": "PARTNERS",
+    "h3": "For restaurants, hotels and venues",
+    "p": "Let your guests enjoy the evening and still drive home in their own car. Offer Rotabo at the table, at reception, or at the door.",
+    "link": "Talk to us →"
+  },
+  "drivers_card": {
+    "cat": "DRIVERS",
+    "h3": "Drive with Rotabo",
+    "p": "Every journey you take is one nobody takes badly. Choose your own hours, drive cars you never have to own, and get people home the way they wanted to go.",
+    "link": "Become a driver →"
+  },
+  "supporters": {
+    "cat": "SUPPORTERS",
+    "h3": "People and places behind this",
+    "p": "Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.",
+    "tier_bronze": "Bronze — 100 CHF",
+    "tier_silver": "Silver — 300 CHF",
+    "tier_gold": "Gold — 750 CHF",
+    "tier_platinum": "Platinum — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "driver_terms": "Driver terms",
+    "supporters": "Supporters",
+    "contact": "Contact",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Language",
+    "search_placeholder": "Search language…"
+  }
+}

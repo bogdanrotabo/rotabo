@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq" },
+  "hero": {
+    "pill": "SEWWIEQA B'SKOP · IL-KARROZZA TIEGĦEK · IT-TRIQ TIEGĦEK LEJN DARK",
+    "tagline1": "Int tixrob.", "tagline2": "Huma jsuqu.", "tagline3": "Il-karrozza tiegħek.",
+    "lede": "Rotabo tgħaqqdek ma' sewwieq li jemmen li ħadd m'għandu jsuq lejn daru meta ma jkunx f'kundizzjoni tajba — u li jwassalek <b>bil-karrozza tiegħek stess</b>.",
+    "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_become_sponsor": "Sir sponsor",
+    "cta_home_screen": "⬇ Żid Rotabo mal-iskrin ta' id-dar",
+    "fine": "Taħdem fil-browser tiegħek — ma teħtieġx app store.",
+    "badge_verified": "Sewwieqa vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "GĦALIEX TĦALLI L-KARROZZA TIEGĦEK WARAJK?", "h2": "Il-problema ma' kull għażla oħra",
+    "cross1": "L-ebda taxi.", "cross2": "L-ebda ipparkjar matul il-lejl.", "cross3": "L-ebda ġejjien lura għaliha għada.", "cross4": "L-ebda tieni vjaġġ biex tiġborha.",
+    "thesis": "Int biss, il-karrozza tiegħek, u t-triq lejn dar."
+  },
+  "how": {
+    "eyebrow": "ERBA' PASSI", "h2": "Kif taħdem Rotabo",
+    "step1_title": "Itlob", "step1_desc": "Għid lil Rotabo fejn qiegħed.",
+    "step2_title": "Iltaqa'", "step2_desc": "Is-sewwieq tiegħek jiġi għandek.",
+    "step3_title": "Suq", "step3_desc": "Huma jsuqu l-karrozza tiegħek, bik ġo fiha.",
+    "step4_title": "Dar", "step4_desc": "Taslu flimkien. Il-karrozza tibqa' tiegħek il-vjaġġ kollu.",
+    "not_taxi1": "Mhux taxi. Mhux passaġġ. Mhux karrozza mħollija warajk.", "not_taxi2": "Il-karrozza tiegħek. It-triq tiegħek lejn dar."
+  },
+  "safety": {
+    "eyebrow": "IN-NIES LI JSUQU", "h2": "Sewwieqa li jsuqu għal raġuni",
+    "check1": "Kull sewwieq jingħaqad biex iżomm 'il bogħod mit-triq lil min m'għandux ikun fuqha",
+    "check2": "L-identità u l-liċenzja jiġu kkonfermati qabel l-ewwel vjaġġ",
+    "check3": "Kodiċi ta' kondotta kondiviż, maqbul minn kulħadd li jsuq",
+    "check4": "Aqsam il-vjaġġ live tiegħek ma' min trid",
+    "check5": "Agħti klassifikazzjoni lil kull sewwieq, irrapporta kwalunkwe inċident"
+  },
+  "partners_card": {
+    "cat": "SĦAB", "h3": "Għal ristoranti, lukandi u postijiet",
+    "p": "Ħalli lill-mistiedna tiegħek igawdu s-serata u xorta jsuqu lura d-dar bil-karrozza tagħhom stess. Offri Rotabo fil-mejda, fir-reception, jew fil-bieb.",
+    "link": "Kellimna →"
+  },
+  "drivers_card": {
+    "cat": "SEWWIEQA", "h3": "Suq ma' Rotabo",
+    "p": "Kull vjaġġ li tagħmel huwa vjaġġ li ħadd ma jieħu bi kbir. Agħżel is-sigħat tiegħek stess, suq karrozzi li qatt m'għandek għalfejn tixtri, u wassal lin-nies lejn darhom kif riedu jmorru.",
+    "link": "Sir sewwieq →"
+  },
+  "supporters": {
+    "cat": "SPONSORS", "h3": "In-nies u l-postijiet wara dan kollu",
+    "p": "Rotabo tibqa' sejra bis-saħħa ta' kull min lest jappoġġja l-idea li ħadd m'għandu jsuq meta m'għandux.",
+    "tier_bronze": "Bronż — 100 CHF", "tier_silver": "Fidda — 300 CHF", "tier_gold": "Deheb — 750 CHF", "tier_platinum": "Platinu — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo hija pjattaforma teknoloġika. Is-sewwieqa huma fornituri indipendenti, mhux impjegati ta' Rotabo.",
+    "terms": "Termini", "privacy": "Privatezza", "driver_terms": "Termini tas-sewwieqa", "supporters": "Sponsors", "contact": "Kuntatt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" }
+}

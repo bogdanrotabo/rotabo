@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu" },
+  "hero": {
+    "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
+    "tagline1": "Anda minum.", "tagline2": "Mereka memandu.", "tagline3": "Kereta anda.",
+    "lede": "Rotabo menghubungkan anda dengan pemandu yang percaya tiada sesiapa patut memandu pulang dalam keadaan tidak selamat — dan menghantar anda pulang <b>dengan kereta anda sendiri</b>.",
+    "cta_find_driver": "Cari pemandu", "cta_become_driver": "Menjadi pemandu", "cta_become_sponsor": "Menjadi penaja",
+    "cta_home_screen": "⬇ Tambah Rotabo ke skrin utama",
+    "fine": "Berfungsi terus dalam pelayar anda — tiada keperluan memuat turun aplikasi.",
+    "badge_verified": "Pemandu yang disahkan", "badge_live": "Perkongsian perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "KENAPA PERLU TINGGALKAN KERETA ANDA?", "h2": "Masalah dengan setiap pilihan lain",
+    "cross1": "Tiada teksi.", "cross2": "Tiada tempat letak kereta semalaman.", "cross3": "Tiada keperluan kembali mengambilnya esok.", "cross4": "Tiada tumpangan kedua untuk mengambil kereta.",
+    "thesis": "Hanya anda, kereta anda, dan perjalanan pulang."
+  },
+  "how": {
+    "eyebrow": "EMPAT LANGKAH", "h2": "Cara Rotabo berfungsi",
+    "step1_title": "Buat permintaan", "step1_desc": "Beritahu Rotabo lokasi anda.",
+    "step2_title": "Bertemu", "step2_desc": "Pemandu anda akan datang menemui anda.",
+    "step3_title": "Memandu", "step3_desc": "Mereka memandu kereta anda, dengan anda di dalamnya.",
+    "step4_title": "Pulang", "step4_desc": "Anda tiba bersama-sama. Kereta itu kekal milik anda sepanjang perjalanan.",
+    "not_taxi1": "Bukan teksi. Bukan perkhidmatan tumpangan. Bukan kereta yang ditinggalkan.", "not_taxi2": "Kereta anda. Perjalanan pulang anda."
+  },
+  "safety": {
+    "eyebrow": "ORANG DI SEBALIK STIR", "h2": "Pemandu yang memandu kerana sebab tertentu",
+    "check1": "Setiap pemandu menyertai untuk memastikan mereka yang tidak sepatutnya memandu tidak berada di jalan raya",
+    "check2": "Identiti dan lesen memandu disahkan sebelum perjalanan pertama",
+    "check3": "Kod etika bersama yang dipersetujui oleh setiap pemandu",
+    "check4": "Kongsi perjalanan langsung anda dengan sesiapa sahaja pilihan anda",
+    "check5": "Nilai setiap pemandu, laporkan sebarang insiden"
+  },
+  "partners_card": {
+    "cat": "RAKAN KONGSI", "h3": "Untuk restoran, hotel dan tempat acara",
+    "p": "Biarkan tetamu anda menikmati malam sepenuhnya dan tetap boleh memandu pulang dengan kereta mereka sendiri. Tawarkan Rotabo di meja, di kaunter penerimaan, atau di pintu.",
+    "link": "Hubungi kami →"
+  },
+  "drivers_card": {
+    "cat": "PEMANDU", "h3": "Memandu bersama Rotabo",
+    "p": "Setiap perjalanan yang anda lakukan adalah perjalanan yang tidak akan berakhir buruk bagi sesiapa. Pilih waktu kerja anda sendiri, pandu kereta tanpa perlu memilikinya, dan hantar orang pulang mengikut cara yang mereka mahukan.",
+    "link": "Menjadi pemandu →"
+  },
+  "supporters": {
+    "cat": "PENYOKONG", "h3": "Orang dan tempat di sebalik usaha ini",
+    "p": "Rotabo terus beroperasi berkat semua orang yang sanggup menyokong prinsip bahawa tiada sesiapa patut memandu pada waktu mereka tidak sepatutnya memandu.",
+    "tier_bronze": "Gangsa — 100 CHF", "tier_silver": "Perak — 300 CHF", "tier_gold": "Emas — 750 CHF", "tier_platinum": "Platinum — 750 CHF ke atas"
+  },
+  "footer": {
+    "legal": "Rotabo ialah platform teknologi. Pemandu adalah penyedia perkhidmatan bebas, bukan pekerja Rotabo.",
+    "terms": "Terma", "privacy": "Privasi", "driver_terms": "Terma pemandu", "supporters": "Penyokong", "contact": "Hubungi",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" }
+}

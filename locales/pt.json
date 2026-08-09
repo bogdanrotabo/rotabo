@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Como funciona",
+    "safety": "Segurança",
+    "business": "Para empresas",
+    "drive": "Torna-te condutor"
+  },
+  "hero": {
+    "pill": "CONDUTORES COM UM PROPÓSITO · O TEU CARRO · O TEU CAMINHO PARA CASA",
+    "tagline1": "Tu bebes.",
+    "tagline2": "Eles conduzem.",
+    "tagline3": "O teu carro.",
+    "lede": "A Rotabo põe-te em contacto com um condutor que acredita que ninguém deve conduzir para casa sem estar em condições — e que te leva <b>no teu próprio carro</b>.",
+    "cta_find_driver": "Encontrar um condutor",
+    "cta_become_driver": "Torna-te condutor",
+    "cta_become_sponsor": "Torna-te patrocinador",
+    "cta_home_screen": "⬇ Adicionar a Rotabo ao ecrã principal",
+    "fine": "Funciona no teu navegador — sem necessidade de app store.",
+    "badge_verified": "Condutores verificados",
+    "badge_live": "Partilha do trajeto em tempo real",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "PORQUÊ DEIXAR O TEU CARRO PARA TRÁS?",
+    "h2": "O problema com todas as outras opções",
+    "cross1": "Sem táxi.",
+    "cross2": "Sem estacionar a noite toda.",
+    "cross3": "Sem teres de voltar amanhã para o ir buscar.",
+    "cross4": "Sem uma segunda viagem para o ir buscar.",
+    "thesis": "Só tu, o teu carro e o caminho para casa."
+  },
+  "how": {
+    "eyebrow": "QUATRO PASSOS",
+    "h2": "Como funciona a Rotabo",
+    "step1_title": "Pede",
+    "step1_desc": "Diz à Rotabo onde estás.",
+    "step2_title": "Encontro",
+    "step2_desc": "O teu condutor vem ter contigo.",
+    "step3_title": "Conduz",
+    "step3_desc": "Ele conduz o teu carro, contigo lá dentro.",
+    "step4_title": "Casa",
+    "step4_desc": "Chegam juntos. O carro continua a ser teu durante todo o trajeto.",
+    "not_taxi1": "Não é um táxi. Não é uma boleia. Não é um carro deixado para trás.",
+    "not_taxi2": "O teu carro. O teu caminho para casa."
+  },
+  "safety": {
+    "eyebrow": "AS PESSOAS QUE CONDUZEM",
+    "h2": "Condutores que conduzem por um motivo",
+    "check1": "Cada condutor junta-se a nós para manter fora da estrada quem não devia lá estar",
+    "check2": "Identidade e carta verificadas antes da primeira viagem",
+    "check3": "Um código de conduta partilhado, aceite por todos os que conduzem",
+    "check4": "Partilha o teu trajeto em tempo real com quem quiseres",
+    "check5": "Avalia cada condutor, denuncia qualquer incidente"
+  },
+  "partners_card": {
+    "cat": "PARCEIROS",
+    "h3": "Para restaurantes, hotéis e espaços",
+    "p": "Deixa os teus convidados aproveitarem a noite e, ainda assim, voltarem para casa no seu próprio carro. Oferece a Rotabo à mesa, na receção ou à saída.",
+    "link": "Fala connosco →"
+  },
+  "drivers_card": {
+    "cat": "CONDUTORES",
+    "h3": "Conduz com a Rotabo",
+    "p": "Cada viagem que fazes é uma que ninguém vive mal. Escolhe os teus próprios horários, conduz carros que nunca terás de possuir e leva as pessoas a casa da forma como queriam ir.",
+    "link": "Torna-te condutor →"
+  },
+  "supporters": {
+    "cat": "APOIANTES",
+    "h3": "As pessoas e os lugares por trás disto",
+    "p": "A Rotabo mantém-se graças a quem está disposto a defender a ideia de que ninguém deve conduzir quando não deve.",
+    "tier_bronze": "Bronze — 100 CHF",
+    "tier_silver": "Prata — 300 CHF",
+    "tier_gold": "Ouro — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "A Rotabo é uma plataforma tecnológica. Os condutores são prestadores independentes, não funcionários da Rotabo.",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "driver_terms": "Termos para condutores",
+    "supporters": "Apoiantes",
+    "contact": "Contacto",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Idioma",
+    "search_placeholder": "Procurar idioma…"
+  }
+}

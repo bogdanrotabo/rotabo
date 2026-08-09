@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Cum funcționează",
+    "safety": "Siguranță",
+    "business": "Pentru afaceri",
+    "drive": "Devino șofer"
+  },
+  "hero": {
+    "pill": "ȘOFERI CU UN SCOP · MAȘINA TA · DRUMUL TĂU SPRE CASĂ",
+    "tagline1": "Tu bei.",
+    "tagline2": "Ei conduc.",
+    "tagline3": "Mașina ta.",
+    "lede": "Rotabo te pune în legătură cu un șofer care crede că nimeni nu ar trebui să conducă spre casă când nu e apt — și care te duce acolo <b>cu propria ta mașină</b>.",
+    "cta_find_driver": "Găsește un șofer",
+    "cta_become_driver": "Devino șofer",
+    "cta_become_sponsor": "Devino sponsor",
+    "cta_home_screen": "⬇ Adaugă Rotabo pe ecranul principal",
+    "fine": "Funcționează direct în browser — nu ai nevoie de niciun app store.",
+    "badge_verified": "Șoferi verificați",
+    "badge_live": "Traseu live, partajat",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "DE CE SĂ-ȚI LAȘI MAȘINA ÎN URMĂ?",
+    "h2": "Problema cu toate celelalte opțiuni",
+    "cross1": "Fără taxi.",
+    "cross2": "Fără parcare peste noapte.",
+    "cross3": "Fără să te întorci mâine după ea.",
+    "cross4": "Fără o a doua cursă ca s-o iei.",
+    "thesis": "Doar tu, mașina ta și drumul spre casă."
+  },
+  "how": {
+    "eyebrow": "PATRU PAȘI",
+    "h2": "Cum funcționează Rotabo",
+    "step1_title": "Cerere",
+    "step1_desc": "Spune-i lui Rotabo unde ești.",
+    "step2_title": "Întâlnire",
+    "step2_desc": "Șoferul tău vine la tine.",
+    "step3_title": "Condus",
+    "step3_desc": "Ei conduc mașina ta, cu tine în ea.",
+    "step4_title": "Acasă",
+    "step4_desc": "Ajungeți împreună. Mașina rămâne a ta pe tot parcursul drumului.",
+    "not_taxi1": "Nu e un taxi. Nu e o cursă. Nu e o mașină lăsată în urmă.",
+    "not_taxi2": "Mașina ta. Drumul tău spre casă."
+  },
+  "safety": {
+    "eyebrow": "OAMENII CARE CONDUC",
+    "h2": "Șoferi care conduc cu un motiv",
+    "check1": "Fiecare șofer se alătură ca să țină departe de drum pe cineva care n-ar trebui să fie acolo",
+    "check2": "Identitatea și permisul sunt verificate înainte de prima cursă",
+    "check3": "Un cod de conduită comun, agreat de toți cei care conduc",
+    "check4": "Distribuie traseul tău live oricui alegi tu",
+    "check5": "Evaluează fiecare șofer, raportează orice incident"
+  },
+  "partners_card": {
+    "cat": "PARTENERI",
+    "h3": "Pentru restaurante, hoteluri și localuri",
+    "p": "Lasă-ți oaspeții să se bucure de seară și să ajungă totuși acasă cu propria mașină. Oferă Rotabo la masă, la recepție sau la ușă.",
+    "link": "Contactează-ne →"
+  },
+  "drivers_card": {
+    "cat": "ȘOFERI",
+    "h3": "Condu cu Rotabo",
+    "p": "Fiecare cursă pe care o faci e una pe care nimeni n-o duce la rău. Alege-ți propriul program, condu mașini pe care nu trebuie să le deții niciodată și du oamenii acasă exact așa cum și-au dorit.",
+    "link": "Devino șofer →"
+  },
+  "supporters": {
+    "cat": "SUSȚINĂTORI",
+    "h3": "Oamenii și locurile din spatele acestei idei",
+    "p": "Rotabo continuă să existe datorită celor dispuși să susțină ideea că nimeni nu ar trebui să conducă atunci când n-ar trebui.",
+    "tier_bronze": "Bronz — 100 CHF",
+    "tier_silver": "Argint — 300 CHF",
+    "tier_gold": "Aur — 750 CHF",
+    "tier_platinum": "Platină — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo este o platformă tehnologică. Șoferii sunt furnizori independenți, nu angajați ai Rotabo.",
+    "terms": "Termeni",
+    "privacy": "Confidențialitate",
+    "driver_terms": "Termeni pentru șoferi",
+    "supporters": "Susținători",
+    "contact": "Contact",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Limbă",
+    "search_placeholder": "Caută o limbă…"
+  }
+}

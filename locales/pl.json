@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą" },
+  "hero": {
+    "pill": "KIEROWCY Z MISJĄ · TWÓJ SAMOCHÓD · TWOJA DROGA DO DOMU",
+    "tagline1": "Ty pijesz.", "tagline2": "Oni prowadzą.", "tagline3": "Twój samochód.",
+    "lede": "Rotabo łączy Cię z kierowcą, który wierzy, że nikt nie powinien prowadzić, gdy nie jest w stanie — i który zawiezie Cię <b>Twoim własnym samochodem</b>.",
+    "cta_find_driver": "Znajdź kierowcę", "cta_become_driver": "Zostań kierowcą", "cta_become_sponsor": "Zostań sponsorem",
+    "cta_home_screen": "⬇ Dodaj Rotabo do ekranu głównego",
+    "fine": "Działa w przeglądarce — bez sklepu z aplikacjami.",
+    "badge_verified": "Zweryfikowani kierowcy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "PO CO ZOSTAWIAĆ SWÓJ SAMOCHÓD?", "h2": "Problem z każdą inną opcją",
+    "cross1": "Żadnej taksówki.", "cross2": "Żadnego parkowania na noc.", "cross3": "Żadnego wracania po niego jutro.", "cross4": "Żadnego drugiego kursu, żeby go odebrać.",
+    "thesis": "Tylko Ty, Twój samochód i droga do domu."
+  },
+  "how": {
+    "eyebrow": "CZTERY KROKI", "h2": "Jak działa Rotabo",
+    "step1_title": "Zamów", "step1_desc": "Powiedz Rotabo, gdzie jesteś.",
+    "step2_title": "Spotkajcie się", "step2_desc": "Twój kierowca przyjeżdża do Ciebie.",
+    "step3_title": "Jedźcie", "step3_desc": "Oni prowadzą Twój samochód, a Ty jedziesz z nimi.",
+    "step4_title": "Dom", "step4_desc": "Docieracie razem. Samochód przez całą drogę pozostaje Twój.",
+    "not_taxi1": "To nie taksówka. To nie przejazd. To nie porzucony samochód.", "not_taxi2": "Twój samochód. Twoja droga do domu."
+  },
+  "safety": {
+    "eyebrow": "LUDZIE, KTÓRZY PROWADZĄ", "h2": "Kierowcy, którzy mają powód",
+    "check1": "Każdy kierowca dołącza, by zabrać z drogi kogoś, kto nie powinien na niej być",
+    "check2": "Tożsamość i prawo jazdy potwierdzone przed pierwszym kursem",
+    "check3": "Wspólny kodeks postępowania, uzgodniony przez każdego kierowcę",
+    "check4": "Udostępniaj swoją trasę na żywo, komu tylko chcesz",
+    "check5": "Oceniaj każdego kierowcę, zgłaszaj każdy incydent"
+  },
+  "partners_card": {
+    "cat": "PARTNERZY", "h3": "Dla restauracji, hoteli i lokali",
+    "p": "Pozwól swoim gościom cieszyć się wieczorem i mimo to wrócić do domu własnym samochodem. Zaproponuj Rotabo przy stoliku, w recepcji lub przy drzwiach.",
+    "link": "Porozmawiajmy →"
+  },
+  "drivers_card": {
+    "cat": "KIEROWCY", "h3": "Jeźdź z Rotabo",
+    "p": "Każdy kurs, który wykonujesz, to kurs, którego nikt nie żałuje. Wybierz własne godziny, prowadź samochody, których nigdy nie musisz kupować, i odwoź ludzi do domu tak, jak sami chcieli.",
+    "link": "Zostań kierowcą →"
+  },
+  "supporters": {
+    "cat": "WSPIERAJĄCY", "h3": "Ludzie i miejsca, które za tym stoją",
+    "p": "Rotabo działa dzięki każdemu, kto chce stanąć za ideą, że nikt nie powinien prowadzić, kiedy nie powinien.",
+    "tier_bronze": "Brąz — 100 CHF", "tier_silver": "Srebro — 300 CHF", "tier_gold": "Złoto — 750 CHF", "tier_platinum": "Platyna — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo to platforma technologiczna. Kierowcy są niezależnymi usługodawcami, a nie pracownikami Rotabo.",
+    "terms": "Regulamin", "privacy": "Prywatność", "driver_terms": "Regulamin kierowców", "supporters": "Wspierający", "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…" }
+}

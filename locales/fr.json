@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Comment ça marche",
+    "safety": "Sécurité",
+    "business": "Pour les entreprises",
+    "drive": "Devenir chauffeur"
+  },
+  "hero": {
+    "pill": "DES CHAUFFEURS ENGAGÉS · VOTRE VOITURE · LE CHEMIN DE LA MAISON",
+    "tagline1": "Vous buvez.",
+    "tagline2": "Ils conduisent.",
+    "tagline3": "Votre voiture.",
+    "lede": "Rotabo vous met en relation avec un chauffeur qui pense que personne ne devrait rentrer au volant quand il n'est pas en état de conduire — et qui vous ramène <b>dans votre propre voiture</b>.",
+    "cta_find_driver": "Trouver un chauffeur",
+    "cta_become_driver": "Devenir chauffeur",
+    "cta_become_sponsor": "Devenir sponsor",
+    "cta_home_screen": "⬇ Ajouter Rotabo à l'écran d'accueil",
+    "fine": "Fonctionne directement dans votre navigateur — aucun app store nécessaire.",
+    "badge_verified": "Chauffeurs vérifiés",
+    "badge_live": "Trajet partagé en direct",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "POURQUOI LAISSER VOTRE VOITURE DERRIÈRE VOUS ?",
+    "h2": "Le problème avec toutes les autres options",
+    "cross1": "Pas de taxi.",
+    "cross2": "Pas de stationnement toute la nuit.",
+    "cross3": "Pas besoin de revenir la chercher le lendemain.",
+    "cross4": "Pas de second trajet pour aller la récupérer.",
+    "thesis": "Juste vous, votre voiture, et le chemin de la maison."
+  },
+  "how": {
+    "eyebrow": "QUATRE ÉTAPES",
+    "h2": "Comment fonctionne Rotabo",
+    "step1_title": "Demandez",
+    "step1_desc": "Indiquez à Rotabo où vous êtes.",
+    "step2_title": "Rencontrez",
+    "step2_desc": "Votre chauffeur vient à vous.",
+    "step3_title": "Roulez",
+    "step3_desc": "Il conduit votre voiture, avec vous à bord.",
+    "step4_title": "Rentrez",
+    "step4_desc": "Vous arrivez ensemble. La voiture reste la vôtre tout au long du trajet.",
+    "not_taxi1": "Pas un taxi. Pas une course. Pas de voiture laissée derrière.",
+    "not_taxi2": "Votre voiture. Votre chemin vers la maison."
+  },
+  "safety": {
+    "eyebrow": "CEUX QUI CONDUISENT",
+    "h2": "Des chauffeurs qui conduisent pour une raison",
+    "check1": "Chaque chauffeur nous rejoint pour éviter qu'une personne inapte ne prenne la route",
+    "check2": "Identité et permis vérifiés avant le premier trajet",
+    "check3": "Un code de conduite commun, accepté par tous les chauffeurs",
+    "check4": "Partagez votre trajet en direct avec qui vous voulez",
+    "check5": "Évaluez chaque chauffeur, signalez tout incident"
+  },
+  "partners_card": {
+    "cat": "PARTENAIRES",
+    "h3": "Pour les restaurants, hôtels et établissements",
+    "p": "Laissez vos clients profiter de leur soirée tout en rentrant chez eux dans leur propre voiture. Proposez Rotabo à table, à la réception ou à la sortie.",
+    "link": "Contactez-nous →"
+  },
+  "drivers_card": {
+    "cat": "CHAUFFEURS",
+    "h3": "Conduisez avec Rotabo",
+    "p": "Chaque trajet que vous faites en est un que personne ne regrette. Choisissez vos horaires, conduisez des voitures que vous n'aurez jamais à posséder, et ramenez les gens chez eux comme ils le souhaitaient.",
+    "link": "Devenir chauffeur →"
+  },
+  "supporters": {
+    "cat": "SOUTIENS",
+    "h3": "Les personnes et les lieux derrière ce projet",
+    "p": "Rotabo continue grâce à tous ceux qui sont prêts à défendre l'idée que personne ne devrait conduire quand il ne le devrait pas.",
+    "tier_bronze": "Bronze — 100 CHF",
+    "tier_silver": "Argent — 300 CHF",
+    "tier_gold": "Or — 750 CHF",
+    "tier_platinum": "Platine — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo est une plateforme technologique. Les chauffeurs sont des prestataires indépendants, non des employés de Rotabo.",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "driver_terms": "Conditions chauffeurs",
+    "supporters": "Soutiens",
+    "contact": "Contact",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Langue",
+    "search_placeholder": "Rechercher une langue…"
+  }
+}

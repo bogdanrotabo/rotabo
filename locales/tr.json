@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol" },
+  "hero": {
+    "pill": "BİR AMAÇLA SÜREN SÜRÜCÜLER · KENDİ ARABAN · EVE GİDEN YOLUN",
+    "tagline1": "Sen içersin.", "tagline2": "Onlar sürer.", "tagline3": "Kendi araban.",
+    "lede": "Rotabo seni, kimsenin uygun olmayan durumda araç kullanmaması gerektiğine inanan bir sürücüyle buluşturur — ve seni <b>kendi araban</b> ile evine götürür.",
+    "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_become_sponsor": "Sponsor ol",
+    "cta_home_screen": "⬇ Rotabo'yu ana ekranına ekle",
+    "fine": "Tarayıcında çalışır — uygulama mağazasına gerek yok.",
+    "badge_verified": "Doğrulanmış sürücüler", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "ARABANI NEDEN GERİDE BIRAKASIN?", "h2": "Diğer her seçeneğin sorunu",
+    "cross1": "Taksi yok.", "cross2": "Sabaha kadar park yok.", "cross3": "Yarın geri gelip alma derdi yok.", "cross4": "Onu almak için ikinci bir yolculuk yok.",
+    "thesis": "Sadece sen, araban ve eve giden yol."
+  },
+  "how": {
+    "eyebrow": "DÖRT ADIM", "h2": "Rotabo nasıl çalışır",
+    "step1_title": "Talep et", "step1_desc": "Nerede olduğunu Rotabo'ya söyle.",
+    "step2_title": "Buluş", "step2_desc": "Sürücün sana gelir.",
+    "step3_title": "Sür", "step3_desc": "O senin arabanı sürer, sen de içindesindir.",
+    "step4_title": "Eve varış", "step4_desc": "Birlikte varırsınız. Araba yol boyunca hep senindir.",
+    "not_taxi1": "Taksi değil. Yolculuk paylaşımı değil. Geride bırakılan bir araba değil.", "not_taxi2": "Senin araban. Senin eve giden yolun."
+  },
+  "safety": {
+    "eyebrow": "SÜREN İNSANLAR", "h2": "Bir sebeple direksiyona geçen sürücüler",
+    "check1": "Her sürücü, trafiğe çıkmaması gereken birini yoldan uzak tutmak için aramıza katılır",
+    "check2": "İlk yolculuktan önce kimlik ve ehliyet doğrulaması yapılır",
+    "check3": "Sürücü olan herkesin kabul ettiği ortak bir davranış kuralları",
+    "check4": "Canlı yolculuğunu dilediğin kişiyle paylaş",
+    "check5": "Her sürücüyü puanla, her olayı bildir"
+  },
+  "partners_card": {
+    "cat": "PARTNERLER", "h3": "Restoranlar, oteller ve mekanlar için",
+    "p": "Misafirlerin akşamın tadını çıkarsın, yine de kendi arabalarıyla eve gitsin. Rotabo'yu masada, resepsiyonda ya da kapıda sun.",
+    "link": "Bizimle konuş →"
+  },
+  "drivers_card": {
+    "cat": "SÜRÜCÜLER", "h3": "Rotabo ile sür",
+    "p": "Yaptığın her yolculuk, kimsenin kötüye kullanmadığı bir yolculuktur. Kendi saatlerini seç, hiç sahip olmana gerek kalmadan araçlar sür ve insanları istedikleri şekilde evlerine ulaştır.",
+    "link": "Sürücü ol →"
+  },
+  "supporters": {
+    "cat": "DESTEKÇİLER", "h3": "Bunun arkasındaki insanlar ve mekanlar",
+    "p": "Rotabo, kimsenin uygun olmayan durumda araç kullanmaması gerektiği fikrinin arkasında durmaya istekli herkes sayesinde ayakta kalıyor.",
+    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Gümüş — 300 CHF", "tier_gold": "Altın — 750 CHF", "tier_platinum": "Platin — 750 CHF ve üzeri"
+  },
+  "footer": {
+    "legal": "Rotabo bir teknoloji platformudur. Sürücüler bağımsız hizmet sağlayıcılardır, Rotabo çalışanı değildir.",
+    "terms": "Koşullar", "privacy": "Gizlilik", "driver_terms": "Sürücü koşulları", "supporters": "Destekçiler", "contact": "İletişim",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" }
+}

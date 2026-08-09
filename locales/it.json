@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Come funziona",
+    "safety": "Sicurezza",
+    "business": "Per le aziende",
+    "drive": "Diventa autista"
+  },
+  "hero": {
+    "pill": "AUTISTI CON UNO SCOPO · LA TUA AUTO · LA STRADA VERSO CASA",
+    "tagline1": "Tu bevi.",
+    "tagline2": "Loro guidano.",
+    "tagline3": "La tua auto.",
+    "lede": "Rotabo ti mette in contatto con un autista che crede che nessuno dovrebbe guidare verso casa se non è in condizione di farlo — e che ti accompagna <b>con la tua auto</b>.",
+    "cta_find_driver": "Trova un autista",
+    "cta_become_driver": "Diventa autista",
+    "cta_become_sponsor": "Diventa sponsor",
+    "cta_home_screen": "⬇ Aggiungi Rotabo alla schermata home",
+    "fine": "Funziona nel browser — non serve nessun app store.",
+    "badge_verified": "Autisti verificati",
+    "badge_live": "Percorso condiviso in tempo reale",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "PERCHÉ LASCIARE LA TUA AUTO?",
+    "h2": "Il problema con tutte le altre opzioni",
+    "cross1": "Niente taxi.",
+    "cross2": "Niente parcheggio notturno.",
+    "cross3": "Niente ritorno il giorno dopo per riprenderla.",
+    "cross4": "Niente secondo viaggio per andarla a prendere.",
+    "thesis": "Solo tu, la tua auto e la strada verso casa."
+  },
+  "how": {
+    "eyebrow": "QUATTRO PASSI",
+    "h2": "Come funziona Rotabo",
+    "step1_title": "Richiedi",
+    "step1_desc": "Di' a Rotabo dove ti trovi.",
+    "step2_title": "Incontro",
+    "step2_desc": "Il tuo autista viene da te.",
+    "step3_title": "Guida",
+    "step3_desc": "Guidano la tua auto, con te a bordo.",
+    "step4_title": "Casa",
+    "step4_desc": "Arrivate insieme. L'auto resta tua per tutto il tragitto.",
+    "not_taxi1": "Non è un taxi. Non è una corsa. Non è un'auto lasciata indietro.",
+    "not_taxi2": "La tua auto. La tua strada verso casa."
+  },
+  "safety": {
+    "eyebrow": "LE PERSONE CHE GUIDANO",
+    "h2": "Autisti che guidano per una ragione",
+    "check1": "Ogni autista si unisce a noi per tenere lontano dalla strada chi non dovrebbe esserci",
+    "check2": "Identità e patente verificate prima del primo viaggio",
+    "check3": "Un codice di condotta condiviso, accettato da chiunque guidi",
+    "check4": "Condividi il tuo percorso in tempo reale con chi vuoi",
+    "check5": "Valuta ogni autista, segnala qualsiasi incidente"
+  },
+  "partners_card": {
+    "cat": "PARTNER",
+    "h3": "Per ristoranti, hotel e locali",
+    "p": "Lascia che i tuoi ospiti si godano la serata e tornino comunque a casa con la propria auto. Offri Rotabo al tavolo, alla reception o all'uscita.",
+    "link": "Contattaci →"
+  },
+  "drivers_card": {
+    "cat": "AUTISTI",
+    "h3": "Guida con Rotabo",
+    "p": "Ogni viaggio che fai è uno che nessuno vive male. Scegli i tuoi orari, guida auto che non devi mai possedere e porta le persone a casa nel modo in cui volevano arrivarci.",
+    "link": "Diventa autista →"
+  },
+  "supporters": {
+    "cat": "SOSTENITORI",
+    "h3": "Le persone e i luoghi dietro tutto questo",
+    "p": "Rotabo va avanti grazie a chiunque sia disposto a sostenere l'idea che nessuno dovrebbe guidare quando non dovrebbe.",
+    "tier_bronze": "Bronzo — 100 CHF",
+    "tier_silver": "Argento — 300 CHF",
+    "tier_gold": "Oro — 750 CHF",
+    "tier_platinum": "Platino — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo è una piattaforma tecnologica. Gli autisti sono fornitori indipendenti, non dipendenti di Rotabo.",
+    "terms": "Termini",
+    "privacy": "Privacy",
+    "driver_terms": "Termini per gli autisti",
+    "supporters": "Sostenitori",
+    "contact": "Contatti",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Lingua",
+    "search_placeholder": "Cerca una lingua…"
+  }
+}

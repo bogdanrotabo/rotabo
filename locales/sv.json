@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare" },
+  "hero": {
+    "pill": "FÖRARE MED ETT SYFTE · DIN BIL · DIN VÄG HEM",
+    "tagline1": "Du dricker.", "tagline2": "De kör.", "tagline3": "Din bil.",
+    "lede": "Rotabo kopplar ihop dig med en förare som tror att ingen ska köra hem när de inte är i skick att göra det — och som tar dig hem <b>i din egen bil</b>.",
+    "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_become_sponsor": "Bli sponsor",
+    "cta_home_screen": "⬇ Lägg till Rotabo på hemskärmen",
+    "fine": "Fungerar i din webbläsare — ingen app store behövs.",
+    "badge_verified": "Verifierade förare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "VARFÖR LÄMNA BILEN KVAR?", "h2": "Problemet med alla andra alternativ",
+    "cross1": "Ingen taxi.", "cross2": "Ingen övernattparkering.", "cross3": "Inget hämtande av den imorgon.", "cross4": "Ingen andra resa för att hämta den.",
+    "thesis": "Bara du, din bil och vägen hem."
+  },
+  "how": {
+    "eyebrow": "FYRA STEG", "h2": "Så fungerar Rotabo",
+    "step1_title": "Begär", "step1_desc": "Berätta för Rotabo var du är.",
+    "step2_title": "Möt upp", "step2_desc": "Din förare kommer till dig.",
+    "step3_title": "Kör", "step3_desc": "De kör din bil, med dig i den.",
+    "step4_title": "Hem", "step4_desc": "Ni anländer tillsammans. Bilen förblir din hela vägen.",
+    "not_taxi1": "Ingen taxi. Ingen skjuts. Ingen bil kvarlämnad.", "not_taxi2": "Din bil. Din väg hem."
+  },
+  "safety": {
+    "eyebrow": "MÄNNISKORNA SOM KÖR", "h2": "Förare som kör av en anledning",
+    "check1": "Varje förare går med för att hålla borta från vägen någon som inte borde vara där",
+    "check2": "Identitet och körkort bekräftas före första resan",
+    "check3": "En gemensam uppförandekod, som alla förare ställer sig bakom",
+    "check4": "Dela din resa live med vem du vill",
+    "check5": "Betygsätt varje förare, anmäl alla incidenter"
+  },
+  "partners_card": {
+    "cat": "PARTNERS", "h3": "För restauranger, hotell och lokaler",
+    "p": "Låt dina gäster njuta av kvällen och ändå köra hem i sin egen bil. Erbjud Rotabo vid bordet, i receptionen eller vid dörren.",
+    "link": "Kontakta oss →"
+  },
+  "drivers_card": {
+    "cat": "FÖRARE", "h3": "Kör med Rotabo",
+    "p": "Varje resa du gör är en resa som ingen ångrar. Välj dina egna timmar, kör bilar du aldrig behöver äga, och ta hem folk precis som de ville.",
+    "link": "Bli förare →"
+  },
+  "supporters": {
+    "cat": "SUPPORTRAR", "h3": "Människorna och platserna bakom detta",
+    "p": "Rotabo hålls igång av alla som är villiga att stå bakom tanken att ingen ska köra när de inte borde.",
+    "tier_bronze": "Brons — 100 CHF", "tier_silver": "Silver — 300 CHF", "tier_gold": "Guld — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo är en teknikplattform. Förarna är oberoende leverantörer, inte anställda hos Rotabo.",
+    "terms": "Villkor", "privacy": "Integritet", "driver_terms": "Villkor för förare", "supporters": "Supportrar", "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" }
+}

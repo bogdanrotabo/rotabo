@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế" },
+  "hero": {
+    "pill": "TÀI XẾ CÓ SỨ MỆNH · XE CỦA BẠN · ĐƯỜNG VỀ NHÀ CỦA BẠN",
+    "tagline1": "Bạn uống.", "tagline2": "Họ lái.", "tagline3": "Xe của bạn.",
+    "lede": "Rotabo kết nối bạn với một tài xế tin rằng không ai nên tự lái xe về nhà khi không đủ tỉnh táo — và đưa bạn về nhà <b>bằng chính chiếc xe của bạn</b>.",
+    "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_become_sponsor": "Trở thành nhà tài trợ",
+    "cta_home_screen": "⬇ Thêm Rotabo vào màn hình chính",
+    "fine": "Hoạt động ngay trên trình duyệt — không cần tải ứng dụng.",
+    "badge_verified": "Tài xế đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "TẠI SAO PHẢI BỎ LẠI XE CỦA BẠN?", "h2": "Vấn đề với mọi lựa chọn khác",
+    "cross1": "Không cần taxi.", "cross2": "Không cần gửi xe qua đêm.", "cross3": "Không cần quay lại lấy xe vào hôm sau.", "cross4": "Không cần đi nhờ thêm chuyến để lấy xe.",
+    "thesis": "Chỉ có bạn, xe của bạn, và đường về nhà."
+  },
+  "how": {
+    "eyebrow": "BỐN BƯỚC", "h2": "Rotabo hoạt động như thế nào",
+    "step1_title": "Yêu cầu", "step1_desc": "Cho Rotabo biết bạn đang ở đâu.",
+    "step2_title": "Gặp mặt", "step2_desc": "Tài xế sẽ đến chỗ bạn.",
+    "step3_title": "Lái xe", "step3_desc": "Họ lái xe của bạn, với bạn ngồi trên xe.",
+    "step4_title": "Về nhà", "step4_desc": "Cả hai cùng về đến nơi. Chiếc xe luôn thuộc về bạn suốt hành trình.",
+    "not_taxi1": "Không phải taxi. Không phải xe ôm công nghệ. Không phải bỏ xe lại.", "not_taxi2": "Xe của bạn. Đường về nhà của bạn."
+  },
+  "safety": {
+    "eyebrow": "NHỮNG NGƯỜI CẦM LÁI", "h2": "Những tài xế lái xe vì một lý do",
+    "check1": "Mỗi tài xế tham gia để giữ cho những người không nên lái xe tránh xa mặt đường",
+    "check2": "Danh tính và bằng lái được xác minh trước chuyến đi đầu tiên",
+    "check3": "Bộ quy tắc ứng xử chung, được mọi tài xế đồng thuận",
+    "check4": "Chia sẻ hành trình trực tiếp của bạn với bất kỳ ai bạn muốn",
+    "check5": "Đánh giá mọi tài xế, báo cáo mọi sự cố"
+  },
+  "partners_card": {
+    "cat": "ĐỐI TÁC", "h3": "Dành cho nhà hàng, khách sạn và địa điểm tổ chức",
+    "p": "Hãy để khách của bạn tận hưởng trọn vẹn buổi tối và vẫn có thể tự lái xe về nhà. Giới thiệu Rotabo ngay tại bàn, quầy lễ tân, hoặc cửa ra vào.",
+    "link": "Liên hệ với chúng tôi →"
+  },
+  "drivers_card": {
+    "cat": "TÀI XẾ", "h3": "Lái xe cùng Rotabo",
+    "p": "Mỗi chuyến đi bạn thực hiện là một chuyến đi không ai phải hối tiếc. Tự chọn giờ làm việc, lái những chiếc xe mà bạn không cần sở hữu, và đưa mọi người về nhà theo cách họ mong muốn.",
+    "link": "Trở thành tài xế →"
+  },
+  "supporters": {
+    "cat": "NHÀ TÀI TRỢ", "h3": "Những con người và địa điểm đứng sau dự án này",
+    "p": "Rotabo được duy trì nhờ bất kỳ ai sẵn sàng ủng hộ ý tưởng rằng không ai nên lái xe khi không nên lái.",
+    "tier_bronze": "Đồng — 100 CHF", "tier_silver": "Bạc — 300 CHF", "tier_gold": "Vàng — 750 CHF", "tier_platinum": "Bạch kim — trên 750 CHF"
+  },
+  "footer": {
+    "legal": "Rotabo là một nền tảng công nghệ. Tài xế là nhà cung cấp dịch vụ độc lập, không phải nhân viên của Rotabo.",
+    "terms": "Điều khoản", "privacy": "Quyền riêng tư", "driver_terms": "Điều khoản dành cho tài xế", "supporters": "Nhà tài trợ", "contact": "Liên hệ",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" }
+}

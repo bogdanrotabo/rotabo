@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "how": "Hoe het werkt",
+    "safety": "Veiligheid",
+    "business": "Voor bedrijven",
+    "drive": "Word chauffeur"
+  },
+  "hero": {
+    "pill": "CHAUFFEURS MET EEN DOEL · JOUW AUTO · JOUW WEG NAAR HUIS",
+    "tagline1": "Jij drinkt.",
+    "tagline2": "Zij rijden.",
+    "tagline3": "Jouw auto.",
+    "lede": "Rotabo brengt je in contact met een chauffeur die gelooft dat niemand ongeschikt naar huis zou moeten rijden — en die je <b>in je eigen auto</b> thuisbrengt.",
+    "cta_find_driver": "Zoek een chauffeur",
+    "cta_become_driver": "Word chauffeur",
+    "cta_become_sponsor": "Word sponsor",
+    "cta_home_screen": "⬇ Voeg Rotabo toe aan je startscherm",
+    "fine": "Werkt in je browser — geen app store nodig.",
+    "badge_verified": "Geverifieerde chauffeurs",
+    "badge_live": "Live rit delen",
+    "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "WAAROM JE AUTO ACHTERLATEN?",
+    "h2": "Het probleem met elke andere optie",
+    "cross1": "Geen taxi.",
+    "cross2": "Niet de hele nacht parkeren.",
+    "cross3": "Niet morgen terug hoeven om hem op te halen.",
+    "cross4": "Geen tweede rit om hem op te halen.",
+    "thesis": "Alleen jij, je auto en de weg naar huis."
+  },
+  "how": {
+    "eyebrow": "VIER STAPPEN",
+    "h2": "Zo werkt Rotabo",
+    "step1_title": "Vraag aan",
+    "step1_desc": "Laat Rotabo weten waar je bent.",
+    "step2_title": "Ontmoet",
+    "step2_desc": "Je chauffeur komt naar je toe.",
+    "step3_title": "Rijd",
+    "step3_desc": "Hij rijdt in jouw auto, met jou erin.",
+    "step4_title": "Thuis",
+    "step4_desc": "Jullie komen samen aan. De auto blijft de hele rit van jou.",
+    "not_taxi1": "Geen taxi. Geen rit met een vreemde auto. Geen achtergelaten auto.",
+    "not_taxi2": "Jouw auto. Jouw weg naar huis."
+  },
+  "safety": {
+    "eyebrow": "DE MENSEN DIE RIJDEN",
+    "h2": "Chauffeurs die rijden met een reden",
+    "check1": "Elke chauffeur doet mee om iemand die niet zou moeten rijden van de weg te houden",
+    "check2": "Identiteit en rijbewijs gecontroleerd vóór de eerste rit",
+    "check3": "Een gedeelde gedragscode, waar elke chauffeur zich aan houdt",
+    "check4": "Deel je live rit met wie je maar wilt",
+    "check5": "Beoordeel elke chauffeur, meld elk incident"
+  },
+  "partners_card": {
+    "cat": "PARTNERS",
+    "h3": "Voor restaurants, hotels en horeca",
+    "p": "Laat je gasten van de avond genieten en toch met hun eigen auto naar huis rijden. Bied Rotabo aan tafel, bij de receptie of bij de deur.",
+    "link": "Neem contact op →"
+  },
+  "drivers_card": {
+    "cat": "CHAUFFEURS",
+    "h3": "Rijd met Rotabo",
+    "p": "Elke rit die je maakt is er een die niemand slecht vergaat. Kies je eigen uren, rijd in auto's die je nooit hoeft te bezitten, en breng mensen thuis zoals zij het wilden.",
+    "link": "Word chauffeur →"
+  },
+  "supporters": {
+    "cat": "SUPPORTERS",
+    "h3": "De mensen en plekken hierachter",
+    "p": "Rotabo blijft bestaan dankzij iedereen die achter het idee wil staan dat niemand zou moeten rijden wanneer dat niet kan.",
+    "tier_bronze": "Brons — 100 CHF",
+    "tier_silver": "Zilver — 300 CHF",
+    "tier_gold": "Goud — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo is een technologieplatform. Chauffeurs zijn zelfstandige aanbieders, geen werknemers van Rotabo.",
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "driver_terms": "Voorwaarden voor chauffeurs",
+    "supporters": "Supporters",
+    "contact": "Contact",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": {
+    "label": "Taal",
+    "search_placeholder": "Zoek een taal…"
+  }
+}

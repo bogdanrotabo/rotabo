@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi" },
+  "hero": {
+    "pill": "ŠOFERI AR MĒRĶI · TAVA MAŠĪNA · TAVS CEĻŠ MĀJUP",
+    "tagline1": "Tu dzer.", "tagline2": "Viņi vada.", "tagline3": "Tava mašīna.",
+    "lede": "Rotabo savieno tevi ar šoferi, kurš tic, ka nevienam nevajadzētu braukt mājās, kad tas nav droši — un kurš aizved tevi <b>ar tavu pašu mašīnu</b>.",
+    "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_become_sponsor": "Kļūsti par atbalstītāju",
+    "cta_home_screen": "⬇ Pievieno Rotabo sākuma ekrānam",
+    "fine": "Darbojas tavā pārlūkā — bez lietotņu veikala.",
+    "badge_verified": "Pārbaudīti šoferi", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "KĀPĒC ATSTĀT SAVU MAŠĪNU?", "h2": "Problēma ar visām pārējām iespējām",
+    "cross1": "Ne taksometrs.", "cross2": "Ne stāvēšana pa nakti.", "cross3": "Ne braukšana pēc tās rīt.", "cross4": "Ne otrs brauciens, lai to paņemtu.",
+    "thesis": "Tikai tu, tava mašīna un ceļš mājup."
+  },
+  "how": {
+    "eyebrow": "ČETRI SOĻI", "h2": "Kā darbojas Rotabo",
+    "step1_title": "Pieprasi", "step1_desc": "Pasaki Rotabo, kur tu esi.",
+    "step2_title": "Tiecies", "step2_desc": "Tavs šoferis atbrauc pie tevis.",
+    "step3_title": "Brauc", "step3_desc": "Viņi vada tavu mašīnu, tev sēžot līdzās.",
+    "step4_title": "Mājās", "step4_desc": "Jūs ierodaties kopā. Mašīna visu ceļu paliek tava.",
+    "not_taxi1": "Nav taksometrs. Nav brauciens. Nav pamesta mašīna.", "not_taxi2": "Tava mašīna. Tavs ceļš mājup."
+  },
+  "safety": {
+    "eyebrow": "CILVĒKI, KAS VADA", "h2": "Šoferi, kuri brauc ar mērķi",
+    "check1": "Katrs šoferis pievienojas, lai palīdzētu novērst no ceļa kādu, kam tur nevajadzētu būt",
+    "check2": "Identitāte un vadītāja apliecība pārbaudīta pirms pirmā brauciena",
+    "check3": "Kopīgs rīcības kodekss, ko apstiprinājis ikviens šoferis",
+    "check4": "Dalies ar sava brauciena atrašanās vietu reāllaikā ar ikvienu, ko izvēlies",
+    "check5": "Novērtē katru šoferi, ziņo par jebkuru incidentu"
+  },
+  "partners_card": {
+    "cat": "PARTNERI", "h3": "Restorāniem, viesnīcām un pasākumu vietām",
+    "p": "Ļauj saviem viesiem baudīt vakaru un tomēr aizbraukt mājās ar savu pašu mašīnu. Piedāvā Rotabo pie galda, reģistratūrā vai pie durvīm.",
+    "link": "Sazinies ar mums →"
+  },
+  "drivers_card": {
+    "cat": "ŠOFERI", "h3": "Brauc ar Rotabo",
+    "p": "Katrs brauciens, ko tu veic, ir brauciens, ko neviens nenožēlo. Izvēlies savu darba laiku, vadi mašīnas, kas tev nekad nebūs jāpērk, un aizved cilvēkus mājās tā, kā viņi to vēlējās.",
+    "link": "Kļūsti par šoferi →"
+  },
+  "supporters": {
+    "cat": "ATBALSTĪTĀJI", "h3": "Cilvēki un vietas aiz šī visa",
+    "p": "Rotabo pastāv, pateicoties ikvienam, kas gatavs atbalstīt ideju, ka nevienam nevajadzētu braukt, kad to nedrīkst darīt.",
+    "tier_bronze": "Bronza — 100 CHF", "tier_silver": "Sudrabs — 300 CHF", "tier_gold": "Zelts — 750 CHF", "tier_platinum": "Platīns — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo ir tehnoloģiju platforma. Šoferi ir neatkarīgi pakalpojumu sniedzēji, nevis Rotabo darbinieki.",
+    "terms": "Noteikumi", "privacy": "Privātums", "driver_terms": "Šoferu noteikumi", "supporters": "Atbalstītāji", "contact": "Kontakti",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" }
+}

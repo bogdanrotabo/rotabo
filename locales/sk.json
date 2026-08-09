@@ -1,0 +1,54 @@
+{
+  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom" },
+  "hero": {
+    "pill": "VODIČI S POSLANÍM · TVOJE AUTO · TVOJA CESTA DOMOV",
+    "tagline1": "Ty piješ.", "tagline2": "Oni šoférujú.", "tagline3": "Tvoje auto.",
+    "lede": "Rotabo ťa spojí s vodičom, ktorý verí, že nikto by nemal šoférovať domov, keď na to nie je spôsobilý — a ktorý ťa odvezie <b>tvojím vlastným autom</b>.",
+    "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_become_sponsor": "Staň sa podporovateľom",
+    "cta_home_screen": "⬇ Pridať Rotabo na plochu",
+    "fine": "Funguje priamo v prehliadači — žiadny obchod s aplikáciami netreba.",
+    "badge_verified": "Overení vodiči", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "problem": {
+    "eyebrow": "PREČO NECHÁVAŤ SVOJE AUTO ZA SEBOU?", "h2": "Problém so všetkými ostatnými možnosťami",
+    "cross1": "Žiadny taxík.", "cross2": "Žiadne parkovanie cez noc.", "cross3": "Žiadne vracanie sa preň zajtra.", "cross4": "Žiadna druhá cesta, aby ste ho vyzdvihli.",
+    "thesis": "Len ty, tvoje auto a cesta domov."
+  },
+  "how": {
+    "eyebrow": "ŠTYRI KROKY", "h2": "Ako funguje Rotabo",
+    "step1_title": "Objednaj", "step1_desc": "Povedz Rotabo, kde si.",
+    "step2_title": "Stretnite sa", "step2_desc": "Tvoj vodič príde za tebou.",
+    "step3_title": "Choďte", "step3_desc": "Vedú tvoje auto, ty si v ňom s nimi.",
+    "step4_title": "Domov", "step4_desc": "Prídete spolu. Auto zostáva celou cestou tvoje.",
+    "not_taxi1": "Nie je to taxík. Nie je to odvoz. Nie je to opustené auto.", "not_taxi2": "Tvoje auto. Tvoja cesta domov."
+  },
+  "safety": {
+    "eyebrow": "ĽUDIA, KTORÍ ŠOFÉRUJÚ", "h2": "Vodiči, ktorí majú dôvod",
+    "check1": "Každý vodič sa pridáva, aby pomohol dostať z cesty niekoho, kto by tam nemal byť",
+    "check2": "Totožnosť a vodičský preukaz overené pred prvou jazdou",
+    "check3": "Spoločný kódex správania, na ktorom sa zhodli všetci vodiči",
+    "check4": "Zdieľaj svoju trasu naživo s kýmkoľvek si vyberieš",
+    "check5": "Ohodnoť každého vodiča, nahlás akýkoľvek incident"
+  },
+  "partners_card": {
+    "cat": "PARTNERI", "h3": "Pre reštaurácie, hotely a podniky",
+    "p": "Dovoľ svojim hosťom užiť si večer a napriek tomu odviezť sa domov vlastným autom. Ponúkni Rotabo pri stole, na recepcii alebo pri dverách.",
+    "link": "Kontaktujte nás →"
+  },
+  "drivers_card": {
+    "cat": "VODIČI", "h3": "Jazdi s Rotabo",
+    "p": "Každá jazda, ktorú absolvuješ, je jazda, ktorú nikto neoľutuje. Vyber si vlastné hodiny, šoféruj autá, ktoré nikdy nemusíš vlastniť, a odvez ľudí domov presne tak, ako chceli.",
+    "link": "Staň sa vodičom →"
+  },
+  "supporters": {
+    "cat": "PODPOROVATELIA", "h3": "Ľudia a miesta, ktoré za tým stoja",
+    "p": "Rotabo udržiava nažive každý, kto je ochotný stáť za myšlienkou, že nikto by nemal šoférovať, keď by nemal.",
+    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Striebro — 300 CHF", "tier_gold": "Zlato — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+  },
+  "footer": {
+    "legal": "Rotabo je technologická platforma. Vodiči sú nezávislí poskytovatelia, nie zamestnanci Rotabo.",
+    "terms": "Podmienky", "privacy": "Súkromie", "driver_terms": "Podmienky pre vodičov", "supporters": "Podporovatelia", "contact": "Kontakt",
+    "copyright": "© 2026 Rotabo"
+  },
+  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" }
+}
