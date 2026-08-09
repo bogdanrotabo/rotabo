@@ -252,17 +252,24 @@
   .lang-btn .code{text-transform:uppercase;color:var(--text-eyebrow);font-size:.82rem;}
   .lang-panel{
     display:none;position:absolute;top:calc(100% + 8px);right:0;
-    width:280px;max-height:360px;
+    width:280px;max-width:calc(100vw - 32px);max-height:360px;
     background:#fff;border:1px solid var(--border);border-radius:16px;
     box-shadow:0 20px 40px rgba(60,20,80,.18);
     padding:12px;z-index:50;
   }
   .lang-panel.open{display:block;}
+  .lang-panel-close{
+    display:none;
+    align-items:center;justify-content:center;
+    width:36px;height:36px;margin:0 0 8px auto;
+    background:var(--bg-card);border:1px solid var(--border);border-radius:50%;
+    font-size:1.1rem;color:var(--text-dark);cursor:pointer;flex-shrink:0;
+  }
   .lang-search{
     width:100%;padding:10px 14px;border-radius:10px;
     border:1px solid var(--border);background:var(--bg-card);
     color:var(--text-dark);font-size:.95rem;margin-bottom:8px;
-    box-sizing:border-box;
+    box-sizing:border-box;flex-shrink:0;
   }
   .lang-list{max-height:280px;overflow-y:auto;}
   .lang-option{
@@ -275,6 +282,20 @@
   .lang-option.active{background:var(--bg-card);color:var(--violet-1);font-weight:700;}
   .lang-option .lo-code{color:var(--text-eyebrow);font-size:.78rem;text-transform:uppercase;}
   .lang-empty{color:var(--text-eyebrow);font-size:.9rem;padding:10px;text-align:center;}
+
+  @media (max-width:640px){
+    .lang-panel{
+      position:fixed;top:auto;left:0;right:0;bottom:0;
+      width:100%;max-width:100%;max-height:70vh;
+      border-radius:20px 20px 0 0;
+      box-shadow:0 -10px 40px rgba(60,20,80,.25);
+      padding:16px;
+    }
+    .lang-panel.open{display:flex;flex-direction:column;}
+    .lang-panel-close{display:flex;}
+    .lang-list{flex:1;max-height:none;}
+  }
+  html[dir="rtl"] .lang-panel-close{margin:0 auto 8px 0;}
 
   /* RTL support */
   html[dir="rtl"] nav.links a{margin-right:0;margin-left:32px;}
@@ -358,6 +379,7 @@
         🌐 <span id="langBtnFlag">🇬🇧</span> <span id="langBtnLabel">English</span> <span class="code" id="langBtnCode">EN</span>
       </button>
       <div class="lang-panel" id="langPanel">
+        <button type="button" class="lang-panel-close" id="langPanelClose" aria-label="Close">✕</button>
         <input class="lang-search" id="langSearch" type="text" data-i18n-placeholder="lang_selector.search_placeholder" placeholder="Search language…" autocomplete="off">
         <div class="lang-list" id="langList"></div>
       </div>
@@ -731,7 +753,12 @@
     document.getElementById("langBtn").setAttribute("aria-expanded", "true");
     document.getElementById("langSearch").value = "";
     filterList("");
-    document.getElementById("langSearch").focus();
+    // On mobile the panel opens as a full-width bottom sheet meant to
+    // be scrolled through, not typed into -- autofocusing the search
+    // field there just pops the keyboard up over the options list.
+    if (window.innerWidth >= 640) {
+      document.getElementById("langSearch").focus();
+    }
   }
   function closePanel(){
     document.getElementById("langPanel").classList.remove("open");
@@ -778,6 +805,7 @@
   document.addEventListener("DOMContentLoaded", function(){
     buildList();
     document.getElementById("langBtn").addEventListener("click", togglePanel);
+    document.getElementById("langPanelClose").addEventListener("click", closePanel);
     document.getElementById("langSearch").addEventListener("input", function(e){ filterList(e.target.value); });
     document.addEventListener("click", function(e){
       var switcher = document.querySelector(".lang-switcher");
