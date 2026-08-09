@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí" },
   "hero": {
+    "origin_badge": "🇨🇭 Déanta san Eilvéis — don domhan ar fad",
     "pill": "TIOMÁNAITHE LE CUSPÓIR · DO CHARR · DO SHLÍ ABHAILE",
     "tagline1": "Ólann tú.", "tagline2": "Tiomáineann siadsan.", "tagline3": "Do charr.",
     "lede": "Ceanglaíonn Rotabo thú le tiománaí a chreideann nár chóir d'aon duine tiomáint abhaile agus é/í neamhoiriúnach — agus a thugann abhaile thú <b>i do charr féin</b>.",

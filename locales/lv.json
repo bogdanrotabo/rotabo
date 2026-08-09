@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi" },
   "hero": {
+    "origin_badge": "🇨🇭 Ražots Šveicē — visai pasaulei",
     "pill": "ŠOFERI AR MĒRĶI · TAVA MAŠĪNA · TAVS CEĻŠ MĀJUP",
     "tagline1": "Tu dzer.", "tagline2": "Viņi vada.", "tagline3": "Tava mašīna.",
     "lede": "Rotabo savieno tevi ar šoferi, kurš tic, ka nevienam nevajadzētu braukt mājās, kad tas nav droši — un kurš aizved tevi <b>ar tavu pašu mašīnu</b>.",

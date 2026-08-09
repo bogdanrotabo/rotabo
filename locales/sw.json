@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva" },
   "hero": {
+    "origin_badge": "🇨🇭 Imetengenezwa Uswisi — kwa ulimwengu wote",
     "pill": "MADEREVA WENYE LENGO · GARI LAKO · NJIA YAKO YA KURUDI NYUMBANI",
     "tagline1": "Wewe unakunywa.", "tagline2": "Wao wanaendesha.", "tagline3": "Gari lako.",
     "lede": "Rotabo inakuunganisha na dereva anayeamini kuwa hakuna anayepaswa kuendesha akiwa hafai — na anayekufikisha <b>kwa gari lako mwenyewe</b>.",

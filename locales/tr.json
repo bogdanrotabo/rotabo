@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol" },
   "hero": {
+    "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
     "pill": "BİR AMAÇLA SÜREN SÜRÜCÜLER · KENDİ ARABAN · EVE GİDEN YOLUN",
     "tagline1": "Sen içersin.", "tagline2": "Onlar sürer.", "tagline3": "Kendi araban.",
     "lede": "Rotabo seni, kimsenin uygun olmayan durumda araç kullanmaması gerektiğine inanan bir sürücüyle buluşturur — ve seni <b>kendi araban</b> ile evine götürür.",

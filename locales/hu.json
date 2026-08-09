@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr" },
   "hero": {
+    "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
     "pill": "SOFŐRÖK CÉLLAL · A TE AUTÓD · A TE UTAD HAZA",
     "tagline1": "Te iszol.", "tagline2": "Ők vezetnek.", "tagline3": "A te autód.",
     "lede": "A Rotabo összeköt téged egy sofőrrel, aki hisz abban, hogy senkinek sem szabad vezetnie, ha nincs abban az állapotban — és aki <b>a saját autódban</b> visz haza.",

@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju" },
   "hero": {
+    "origin_badge": "🇨🇭 Pagaminta Šveicarijoje — visam pasauliui",
     "pill": "VAIRUOTOJAI SU TIKSLU · TAVO AUTOMOBILIS · TAVO KELIAS NAMO",
     "tagline1": "Tu geri.", "tagline2": "Jie vairuoja.", "tagline3": "Tavo automobilis.",
     "lede": "Rotabo sujungia tave su vairuotoju, kuris tiki, kad niekas neturėtų vairuoti namo būdamas netinkamos būklės — ir kuris nuveža tave <b>tavo paties automobiliu</b>.",

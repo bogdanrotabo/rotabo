@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare" },
   "hero": {
+    "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
     "pill": "FÖRARE MED ETT SYFTE · DIN BIL · DIN VÄG HEM",
     "tagline1": "Du dricker.", "tagline2": "De kör.", "tagline3": "Din bil.",
     "lede": "Rotabo kopplar ihop dig med en förare som tror att ingen ska köra hem när de inte är i skick att göra det — och som tar dig hem <b>i din egen bil</b>.",

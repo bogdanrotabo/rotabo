@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik" },
   "hero": {
+    "origin_badge": "🇨🇭 Izdelano v Švici — za ves svet",
     "pill": "VOZNIKI S POSLANSTVOM · TVOJ AVTOMOBIL · TVOJA POT DOMOV",
     "tagline1": "Ti piješ.", "tagline2": "Oni vozijo.", "tagline3": "Tvoj avto.",
     "lede": "Rotabo te poveže z voznikom, ki verjame, da nihče ne bi smel voziti domov, kadar za to ni sposoben — in ki te pripelje domov <b>z lastnim avtomobilom</b>.",

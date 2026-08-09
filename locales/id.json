@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi" },
   "hero": {
+    "origin_badge": "🇨🇭 Dibuat di Swiss — untuk seluruh dunia",
     "pill": "PENGEMUDI DENGAN TUJUAN · MOBIL ANDA · JALAN PULANG ANDA",
     "tagline1": "Anda minum.", "tagline2": "Mereka menyetir.", "tagline3": "Mobil Anda.",
     "lede": "Rotabo menghubungkan Anda dengan pengemudi yang percaya bahwa tak seorang pun boleh menyetir pulang dalam kondisi tidak fit — dan mengantar Anda pulang <b>dengan mobil Anda sendiri</b>.",

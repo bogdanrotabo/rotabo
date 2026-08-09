@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą" },
   "hero": {
+    "origin_badge": "🇨🇭 Zrobione w Szwajcarii — dla całego świata",
     "pill": "KIEROWCY Z MISJĄ · TWÓJ SAMOCHÓD · TWOJA DROGA DO DOMU",
     "tagline1": "Ty pijesz.", "tagline2": "Oni prowadzą.", "tagline3": "Twój samochód.",
     "lede": "Rotabo łączy Cię z kierowcą, który wierzy, że nikt nie powinien prowadzić, gdy nie jest w stanie — i który zawiezie Cię <b>Twoim własnym samochodem</b>.",

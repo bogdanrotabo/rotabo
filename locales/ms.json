@@ -1,6 +1,7 @@
 {
   "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu" },
   "hero": {
+    "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
     "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
     "tagline1": "Anda minum.", "tagline2": "Mereka memandu.", "tagline3": "Kereta anda.",
     "lede": "Rotabo menghubungkan anda dengan pemandu yang percaya tiada sesiapa patut memandu pulang dalam keadaan tidak selamat — dan menghantar anda pulang <b>dengan kereta anda sendiri</b>.",
