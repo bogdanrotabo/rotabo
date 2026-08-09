@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v4";
+const CACHE_VERSION = "v5";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -12,6 +12,8 @@ const PRECACHE_URLS = [
   "/index.html",
   "/terms.html",
   "/privacy.html",
+  "/searching.html",
+  "/driver-dashboard.html",
   "/manifest.json",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
@@ -50,6 +52,11 @@ self.addEventListener("activate", function (event) {
 
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
+
+  // Only cache same-origin site assets. Cross-origin requests (Supabase
+  // REST/API calls, the Supabase JS CDN script, Stripe, etc.) must always
+  // hit the network so dynamic data is never served stale from cache.
+  if (new URL(event.request.url).origin !== self.location.origin) return;
 
   event.respondWith(
     caches.match(event.request).then(function (cached) {

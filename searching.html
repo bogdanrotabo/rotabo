@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Searching for a driver — Rotabo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<style>
+  :root{
+    --bg-top:#f6ecf9;
+    --bg-mid:#f3e6f8;
+    --bg-card:#f7edfa;
+    --border:#e2c3ee;
+    --violet-1:#7c2d9c;
+    --violet-2:#9b3fc0;
+    --text-dark:#3a1650;
+    --text-body:#6b5878;
+    --text-eyebrow:#8a7a94;
+    --green:#3ecb7e;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:linear-gradient(180deg,var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-mid) 100%);
+    color:var(--text-body);
+    display:flex;flex-direction:column;
+  }
+  header{border-bottom:1px solid var(--border);background:linear-gradient(180deg,#f8eefb,#f4e8f8);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;max-width:1080px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);text-decoration:none;}
+  .brand svg{width:24px;height:31px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px;}
+  .card{
+    max-width:480px;width:100%;text-align:center;
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:24px;padding:48px 36px;
+  }
+
+  .spinner{
+    width:56px;height:56px;margin:0 auto 28px;
+    border-radius:50%;
+    border:5px solid var(--border);
+    border-top-color:var(--violet-2);
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .celebrate{font-size:3rem;margin-bottom:8px;}
+  h1{color:var(--text-dark);font-size:1.6rem;margin:0 0 14px;}
+  p{font-size:1.02rem;line-height:1.6;margin:0 0 16px;}
+  .driver-phone{
+    display:inline-block;margin-top:6px;
+    background:#fff;border:1px solid var(--border);border-radius:14px;
+    padding:14px 22px;font-weight:800;color:var(--violet-1);font-size:1.15rem;
+    text-decoration:none;
+  }
+  .status-note{color:var(--text-eyebrow);font-size:.9rem;margin-top:24px;}
+  .home-link{display:inline-block;margin-top:24px;color:var(--violet-2);font-weight:700;text-decoration:none;}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="diamondGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#c264e0"/>
+      <stop offset="55%" stop-color="#a239c9"/>
+      <stop offset="100%" stop-color="#7c2596"/>
+    </radialGradient>
+    <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      Rotabo
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="card" id="card">
+    <div class="spinner" id="spinner"></div>
+    <h1 id="title">Searching for drivers near you…</h1>
+    <p id="body">Hang tight — we'll connect you with a driver as soon as one accepts your request.</p>
+    <p class="status-note" id="statusNote"></p>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+(function(){
+  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
+  });
+  var POLL_MS = 3000;
+
+  var requestId = localStorage.getItem("rotabo_request_id");
+  var card = document.getElementById("card");
+  var spinner = document.getElementById("spinner");
+  var titleEl = document.getElementById("title");
+  var bodyEl = document.getElementById("body");
+  var statusNote = document.getElementById("statusNote");
+
+  function renderNoRequest(){
+    spinner.style.display = "none";
+    titleEl.textContent = "No active request found";
+    bodyEl.textContent = "We couldn't find a request on this device. If you just paid, this can take a few seconds — refresh this page. Otherwise, start a new request from the home page.";
+    var link = document.createElement("a");
+    link.className = "home-link";
+    link.href = "/";
+    link.textContent = "← Back to home";
+    card.appendChild(link);
+  }
+
+  function renderCancelled(){
+    spinner.style.display = "none";
+    titleEl.textContent = "This request was cancelled";
+    bodyEl.textContent = "You can start a new request any time from the home page.";
+    var link = document.createElement("a");
+    link.className = "home-link";
+    link.href = "/";
+    link.textContent = "← Back to home";
+    card.appendChild(link);
+  }
+
+  function renderMatched(driverName, driverPhone){
+    spinner.style.display = "none";
+    document.querySelector(".card").insertAdjacentHTML("afterbegin", '<div class="celebrate">🎉</div>');
+    titleEl.textContent = "You're connected! 🎉";
+    bodyEl.innerHTML = driverName + " has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card."
+      + "<br><br>Thank you for choosing not to drive tonight. That's what Rotabo is about.";
+    if (driverPhone) {
+      var phoneLink = document.createElement("a");
+      phoneLink.className = "driver-phone";
+      phoneLink.href = "tel:" + driverPhone;
+      phoneLink.textContent = "📞 " + driverPhone;
+      card.appendChild(phoneLink);
+    }
+  }
+
+  function renderSearching(){
+    spinner.style.display = "";
+    titleEl.textContent = "Searching for drivers near you…";
+    bodyEl.textContent = "Hang tight — we'll connect you with a driver as soon as one accepts your request.";
+  }
+
+  function renderPendingPayment(){
+    spinner.style.display = "";
+    titleEl.textContent = "Confirming your payment…";
+    bodyEl.textContent = "This usually takes just a few seconds.";
+  }
+
+  var pollTimer = null;
+
+  function checkStatus(){
+    sb.from("requests")
+      .select("id, status, driver_id")
+      .eq("id", requestId)
+      .maybeSingle()
+      .then(function(res){
+        if (res.error || !res.data) {
+          statusNote.textContent = "";
+          return;
+        }
+        var row = res.data;
+
+        if (row.status === "pending") {
+          renderPendingPayment();
+        } else if (row.status === "searching") {
+          renderSearching();
+        } else if (row.status === "cancelled") {
+          clearInterval(pollTimer);
+          renderCancelled();
+        } else if (row.status === "matched" && row.driver_id) {
+          clearInterval(pollTimer);
+          sb.from("driver_profiles")
+            .select("name, phone")
+            .eq("id", row.driver_id)
+            .maybeSingle()
+            .then(function(driverRes){
+              var name = (driverRes.data && driverRes.data.name) || "Your driver";
+              var phone = driverRes.data && driverRes.data.phone;
+              renderMatched(name, phone);
+            });
+        }
+      });
+  }
+
+  if (!requestId) {
+    renderNoRequest();
+  } else {
+    checkStatus();
+    pollTimer = setInterval(checkStatus, POLL_MS);
+  }
+})();
+</script>
+
+</body>
+</html>

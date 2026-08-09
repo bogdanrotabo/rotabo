@@ -85,5 +85,29 @@
   "lang_selector": {
     "label": "Language",
     "search_placeholder": "Search language…"
+  },
+  "find_form": {
+    "title": "Find a driver",
+    "subtitle": "Tell us who you are and where you are. You'll pay the platform contribution next, then we start searching.",
+    "name_label": "Your name",
+    "phone_label": "Phone number",
+    "city_label": "City / location",
+    "submit": "Continue to payment",
+    "error": "Something went wrong. Please try again."
+  },
+  "drive_form": {
+    "title": "Become a driver",
+    "subtitle": "Create your driver profile. You'll pay the platform contribution next, then you can start browsing requests.",
+    "name_label": "Your name",
+    "phone_label": "Phone number",
+    "email_label": "Email",
+    "city_label": "City / area of activity",
+    "license_year_label": "Year you obtained your driving licence",
+    "decl1": "I hold a valid driving licence for the relevant vehicle categories.",
+    "decl2": "I am legally permitted to drive in the country where I offer rides.",
+    "decl3": "I will never accept or perform a ride while impaired by alcohol, drugs, or any other substance.",
+    "decl4": "I understand that I drive entirely at my own responsibility and that of the client.",
+    "submit": "Continue to payment",
+    "error": "Something went wrong. Please try again."
   }
 }
