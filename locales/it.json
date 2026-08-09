@@ -112,6 +112,8 @@
     "error": "Qualcosa è andato storto. Riprova."
   },
   "searching_page": {
+    "eta_label": "🕒 Arrivo stimato: ~{min} min",
+    "eta_arriving": "🕒 Il tuo autista sta arrivando ora",
     "searching_title": "Ricerca autisti nelle tue vicinanze…",
     "searching_body": "Un attimo di pazienza — ti metteremo in contatto con un autista non appena qualcuno accetterà la tua richiesta.",
     "pending_title": "Conferma del pagamento in corso…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Il tuo autista"
   },
   "dashboard_page": {
+    "active_ride_cat": "LA TUA CORSA",
+    "active_ride_call": "📞 Chiama il cliente",
+    "active_ride_navigate": "🧭 Naviga verso il punto di ritiro",
+    "active_ride_sharing_on": "Stai condividendo la tua posizione in tempo reale con il cliente.",
+    "active_ride_sharing_off": "Attiva l'accesso alla posizione nel browser per condividere la tua posizione live con il cliente.",
     "eyebrow": "PANNELLO AUTISTA",
     "title": "Richieste aperte",
     "subtitle": "Richieste attualmente alla ricerca di un autista a {city}.",

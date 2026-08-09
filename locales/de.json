@@ -112,6 +112,8 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
   },
   "searching_page": {
+    "eta_label": "🕒 Voraussichtliche Ankunft: ~{min} Min.",
+    "eta_arriving": "🕒 Dein Fahrer kommt gerade an",
     "searching_title": "Wir suchen Fahrer in deiner Nähe…",
     "searching_body": "Einen Moment Geduld — wir verbinden dich mit einem Fahrer, sobald jemand deine Anfrage annimmt.",
     "pending_title": "Deine Zahlung wird bestätigt…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Dein Fahrer"
   },
   "dashboard_page": {
+    "active_ride_cat": "DEINE FAHRT",
+    "active_ride_call": "📞 Kunde anrufen",
+    "active_ride_navigate": "🧭 Zum Abholort navigieren",
+    "active_ride_sharing_on": "Du teilst deinen Live-Standort mit dem Kunden.",
+    "active_ride_sharing_off": "Aktiviere den Standortzugriff in deinem Browser, um deinen Live-Standort mit dem Kunden zu teilen.",
     "eyebrow": "FAHRER-DASHBOARD",
     "title": "Offene Anfragen",
     "subtitle": "Anfragen, die derzeit einen Fahrer in {city} suchen.",

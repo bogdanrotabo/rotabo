@@ -112,6 +112,8 @@
     "error": "Algo salió mal. Inténtalo de nuevo."
   },
   "searching_page": {
+    "eta_label": "🕒 Llegada estimada: ~{min} min",
+    "eta_arriving": "🕒 Tu conductor está llegando ahora",
     "searching_title": "Buscando conductores cerca de ti…",
     "searching_body": "Espera un momento — te conectaremos con un conductor en cuanto alguien acepte tu solicitud.",
     "pending_title": "Confirmando tu pago…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Tu conductor"
   },
   "dashboard_page": {
+    "active_ride_cat": "TU VIAJE",
+    "active_ride_call": "📞 Llamar al cliente",
+    "active_ride_navigate": "🧭 Navegar hasta el punto de recogida",
+    "active_ride_sharing_on": "Estás compartiendo tu ubicación en tiempo real con el cliente.",
+    "active_ride_sharing_off": "Activa el acceso a la ubicación en tu navegador para compartir tu posición en tiempo real con el cliente.",
     "eyebrow": "PANEL DE CONDUCTOR",
     "title": "Solicitudes abiertas",
     "subtitle": "Solicitudes que actualmente buscan conductor en {city}.",

@@ -77,6 +77,8 @@
     "error": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
   },
   "searching_page": {
+    "eta_label": "🕒 الوصول المتوقع: ~{min} دقيقة",
+    "eta_arriving": "🕒 سائقك يصل الآن",
     "searching_title": "جارٍ البحث عن سائقين بالقرب منك…",
     "searching_body": "يرجى الانتظار قليلاً — سنوصلك بسائق فور قبوله لطلبك.",
     "pending_title": "جارٍ تأكيد دفعتك…",
@@ -91,6 +93,11 @@
     "default_driver_name": "سائقك"
   },
   "dashboard_page": {
+    "active_ride_cat": "رحلتك",
+    "active_ride_call": "📞 اتصل بالعميل",
+    "active_ride_navigate": "🧭 التنقل إلى نقطة الالتقاء",
+    "active_ride_sharing_on": "أنت تشارك موقعك المباشر مع العميل.",
+    "active_ride_sharing_off": "فعّل إذن الوصول إلى الموقع في متصفحك لمشاركة موقعك المباشر مع العميل.",
     "eyebrow": "لوحة تحكم السائق",
     "title": "الطلبات المفتوحة",
     "subtitle": "الطلبات التي تبحث حاليًا عن سائق في {city}.",

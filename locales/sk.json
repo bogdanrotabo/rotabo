@@ -77,6 +77,8 @@
     "error": "Niečo sa pokazilo. Skús to prosím znova."
   },
   "searching_page": {
+    "eta_label": "🕒 Predpokladaný príchod: ~{min} min",
+    "eta_arriving": "🕒 Váš vodič práve prichádza",
     "searching_title": "Hľadáme vodičov vo tvojom okolí…",
     "searching_body": "Vydrž chvíľu — spojíme ťa s vodičom hneď, ako niekto prijme tvoju požiadavku.",
     "pending_title": "Potvrdzujeme tvoju platbu…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Tvoj vodič"
   },
   "dashboard_page": {
+    "active_ride_cat": "VAŠA JAZDA",
+    "active_ride_call": "📞 Zavolať klientovi",
+    "active_ride_navigate": "🧭 Navigovať na miesto vyzdvihnutia",
+    "active_ride_sharing_on": "Zdieľate svoju polohu naživo s klientom.",
+    "active_ride_sharing_off": "Zapnite prístup k polohe vo svojom prehliadači, aby ste mohli zdieľať svoju polohu naživo s klientom.",
     "eyebrow": "PANEL VODIČA",
     "title": "Otvorené požiadavky",
     "subtitle": "Požiadavky, ktoré momentálne hľadajú vodiča v {city}.",

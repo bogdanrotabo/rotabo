@@ -64,6 +64,23 @@
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:24px 0;}
   .taken-note{color:#c0392b;font-size:.9rem;margin-top:10px;display:none;text-align:center;}
   .taken-note.show{display:block;}
+
+  .active-ride{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:28px;margin-bottom:28px;
+  }
+  .active-ride .cat{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.78rem;font-weight:700;margin-bottom:10px;}
+  .active-ride .name{font-weight:800;color:var(--text-dark);font-size:1.2rem;margin-bottom:4px;}
+  .active-ride .city{color:var(--text-eyebrow);font-size:.92rem;margin-bottom:18px;}
+  .active-ride .actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .active-ride .phone-btn, .active-ride .nav-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 18px;border-radius:12px;font-weight:800;font-size:.95rem;
+    text-decoration:none;border:none;cursor:pointer;
+  }
+  .active-ride .phone-btn{background:#fff;border:1px solid var(--border);color:var(--violet-1);}
+  .active-ride .nav-btn{background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;}
+  .active-ride .loc-note{color:var(--text-eyebrow);font-size:.85rem;margin-top:14px;}
 </style>
 </head>
 <body>
@@ -134,7 +151,12 @@
     time_min_ago_one: "1 min ago",
     time_min_ago_other: "{n} min ago",
     time_hour_ago_one: "1 hour ago",
-    time_hour_ago_other: "{n} hours ago"
+    time_hour_ago_other: "{n} hours ago",
+    active_ride_cat: "YOUR RIDE",
+    active_ride_call: "📞 Call client",
+    active_ride_navigate: "🧭 Navigate to pickup",
+    active_ride_sharing_on: "Sharing your live location with the client.",
+    active_ride_sharing_off: "Turn on location access in your browser to share your live position with the client."
   };
 
   function tr(key, vars){
@@ -267,6 +289,63 @@
       });
   }
 
+  var locationWatchId = null;
+
+  // Broadcasts this driver's position to their active ride's row every
+  // few seconds at most, so the client can see a live ETA. Only ever
+  // runs while there's a matched ride -- the "matched ride live
+  // location can be updated" RLS policy (and its trigger guard, which
+  // rejects any change outside the location fields) only allows this
+  // for rows currently in that state.
+  function startLocationSharing(requestId){
+    if (!navigator.geolocation || locationWatchId !== null) return;
+    var lastSent = 0;
+    var MIN_INTERVAL_MS = 4000;
+    locationWatchId = navigator.geolocation.watchPosition(function(pos){
+      var now = Date.now();
+      if (now - lastSent < MIN_INTERVAL_MS) return;
+      lastSent = now;
+      sb.from("requests").update({
+        driver_lat: pos.coords.latitude,
+        driver_lng: pos.coords.longitude,
+        driver_location_updated_at: new Date().toISOString()
+      }).eq("id", requestId).then(function(){});
+    }, function(){
+      var note = document.getElementById("locNote");
+      if (note) note.textContent = tr("active_ride_sharing_off");
+    }, { enableHighAccuracy: true, maximumAge: 5000 });
+  }
+
+  function renderActiveRide(ride){
+    content.innerHTML =
+      '<div class="active-ride">' +
+      '<div class="cat"></div>' +
+      '<div class="name"></div>' +
+      '<div class="city"></div>' +
+      '<div class="actions">' +
+      '<a class="phone-btn" id="callBtn"></a>' +
+      '<a class="nav-btn" id="navBtn" target="_blank" rel="noopener"></a>' +
+      '</div>' +
+      '<p class="loc-note" id="locNote"></p>' +
+      '</div>';
+    content.querySelector(".cat").textContent = tr("active_ride_cat");
+    content.querySelector(".name").textContent = ride.client_name;
+    content.querySelector(".city").textContent = ride.city;
+
+    var callBtn = document.getElementById("callBtn");
+    callBtn.href = "tel:" + ride.client_phone;
+    callBtn.textContent = tr("active_ride_call");
+
+    var navBtn = document.getElementById("navBtn");
+    navBtn.href = (ride.pickup_lat != null && ride.pickup_lng != null)
+      ? "https://www.google.com/maps/dir/?api=1&destination=" + ride.pickup_lat + "," + ride.pickup_lng
+      : "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ride.city);
+    navBtn.textContent = tr("active_ride_navigate");
+
+    document.getElementById("locNote").textContent = tr("active_ride_sharing_on");
+    startLocationSharing(ride.id);
+  }
+
   function init(){
     if (!driverId) {
       renderNotRegistered();
@@ -287,8 +366,21 @@
           setTimeout(init, 3000);
           return;
         }
-        document.getElementById("pageSub").textContent = tr("subtitle", { city: res.data.city });
-        renderDashboard(res.data.city);
+
+        sb.from("requests")
+          .select("id, client_name, client_phone, city, pickup_lat, pickup_lng")
+          .eq("driver_id", driverId)
+          .eq("status", "matched")
+          .maybeSingle()
+          .then(function(rideRes){
+            if (rideRes.data) {
+              document.getElementById("pageSub").textContent = "";
+              renderActiveRide(rideRes.data);
+            } else {
+              document.getElementById("pageSub").textContent = tr("subtitle", { city: res.data.city });
+              renderDashboard(res.data.city);
+            }
+          });
       });
   }
 

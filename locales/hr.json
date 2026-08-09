@@ -112,6 +112,8 @@
     "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
   },
   "searching_page": {
+    "eta_label": "🕒 Procijenjeni dolazak: ~{min} min",
+    "eta_arriving": "🕒 Vaš vozač upravo stiže",
     "searching_title": "Tražimo vozače u vašoj blizini…",
     "searching_body": "Strpite se — povezat ćemo vas s vozačem čim netko prihvati vaš zahtjev.",
     "pending_title": "Potvrđujemo vašu uplatu…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Vaš vozač"
   },
   "dashboard_page": {
+    "active_ride_cat": "VAŠA VOŽNJA",
+    "active_ride_call": "📞 Nazovi klijenta",
+    "active_ride_navigate": "🧭 Navigiraj do mjesta preuzimanja",
+    "active_ride_sharing_on": "Dijelite svoju lokaciju uživo s klijentom.",
+    "active_ride_sharing_off": "Uključite pristup lokaciji u pregledniku kako biste dijelili svoju lokaciju uživo s klijentom.",
     "eyebrow": "NADZORNA PLOČA VOZAČA",
     "title": "Otvoreni zahtjevi",
     "subtitle": "Zahtjevi koji trenutačno traže vozača u gradu {city}.",

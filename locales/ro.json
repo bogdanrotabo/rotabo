@@ -112,6 +112,8 @@
     "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
   },
   "searching_page": {
+    "eta_label": "🕒 Sosire estimată: ~{min} min",
+    "eta_arriving": "🕒 Șoferul tău ajunge chiar acum",
     "searching_title": "Căutăm șoferi lângă tine…",
     "searching_body": "Ai puțină răbdare — te conectăm cu un șofer imediat ce cineva acceptă cererea ta.",
     "pending_title": "Confirmăm plata ta…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Șoferul tău"
   },
   "dashboard_page": {
+    "active_ride_cat": "CURSA TA",
+    "active_ride_call": "📞 Sună clientul",
+    "active_ride_navigate": "🧭 Navighează spre punctul de preluare",
+    "active_ride_sharing_on": "Îți partajezi locația live cu clientul.",
+    "active_ride_sharing_off": "Activează accesul la locație în browser ca să-ți partajezi poziția live cu clientul.",
     "eyebrow": "PANOU ȘOFER",
     "title": "Cereri deschise",
     "subtitle": "Cereri care caută în prezent un șofer în {city}.",

@@ -77,6 +77,8 @@
     "error": "Valami hiba történt. Kérjük, próbáld újra."
   },
   "searching_page": {
+    "eta_label": "🕒 Becsült érkezés: ~{min} perc",
+    "eta_arriving": "🕒 A sofőröd most érkezik",
     "searching_title": "Sofőröket keresünk a közeledben…",
     "searching_body": "Tarts ki egy kicsit — összekötünk egy sofőrrel, amint valaki elfogadja a kérésedet.",
     "pending_title": "Fizetésed megerősítése…",
@@ -91,6 +93,11 @@
     "default_driver_name": "A sofőröd"
   },
   "dashboard_page": {
+    "active_ride_cat": "AZ UTAD",
+    "active_ride_call": "📞 Ügyfél hívása",
+    "active_ride_navigate": "🧭 Navigálás a felvételi ponthoz",
+    "active_ride_sharing_on": "Élő helyzetedet megosztod az ügyféllel.",
+    "active_ride_sharing_off": "Kapcsold be a helymeghatározás elérését a böngésződben, hogy megoszthasd élő helyzetedet az ügyféllel.",
     "eyebrow": "SOFŐR IRÁNYÍTÓPULT",
     "title": "Nyitott kérések",
     "subtitle": "Kérések, amelyek jelenleg sofőrt keresnek itt: {city}.",

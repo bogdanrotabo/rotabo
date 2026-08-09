@@ -112,6 +112,8 @@
     "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "searching_page": {
+    "eta_label": "🕒 Geschatte aankomst: ~{min} min",
+    "eta_arriving": "🕒 Je chauffeur komt nu aan",
     "searching_title": "We zoeken chauffeurs bij jou in de buurt…",
     "searching_body": "Even geduld — we brengen je in contact met een chauffeur zodra iemand je aanvraag accepteert.",
     "pending_title": "We bevestigen je betaling…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Jouw chauffeur"
   },
   "dashboard_page": {
+    "active_ride_cat": "JOUW RIT",
+    "active_ride_call": "📞 Bel klant",
+    "active_ride_navigate": "🧭 Navigeer naar ophaalpunt",
+    "active_ride_sharing_on": "Je deelt je live locatie met de klant.",
+    "active_ride_sharing_off": "Zet locatietoegang aan in je browser om je live positie met de klant te delen.",
     "eyebrow": "CHAUFFEURSDASHBOARD",
     "title": "Openstaande aanvragen",
     "subtitle": "Aanvragen die momenteel op zoek zijn naar een chauffeur in {city}.",

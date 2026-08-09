@@ -77,6 +77,8 @@
     "error": "Tharla earráid. Bain triail eile as le do thoil."
   },
   "searching_page": {
+    "eta_label": "🕒 Am teachta measta: ~{min} nóiméad",
+    "eta_arriving": "🕒 Tá do thiománaí ag teacht anois",
     "searching_title": "Ag cuardach tiománaithe in aice leat…",
     "searching_body": "Fan go foighneach — ceanglóimid thú le tiománaí a luaithe a ghlacfaidh duine le d'iarratas.",
     "pending_title": "Ag deimhniú d'íocaíocht…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Do thiománaí"
   },
   "dashboard_page": {
+    "active_ride_cat": "DO THURAS",
+    "active_ride_call": "📞 Glaoch ar an gcliant",
+    "active_ride_navigate": "🧭 Treoraigh chuig an bpointe bailiúcháin",
+    "active_ride_sharing_on": "Tá tú ag roinnt do shuímh bheo leis an gcliant.",
+    "active_ride_sharing_off": "Cuir rochtain suímh ar siúl i do bhrabhsálaí chun do shuíomh beo a roinnt leis an gcliant.",
     "eyebrow": "CLÁR TIOMÁNAITHE",
     "title": "Iarratais oscailte",
     "subtitle": "Iarratais atá ag cuardach tiománaí i {city} faoi láthair.",

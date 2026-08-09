@@ -77,6 +77,8 @@
     "error": "出了点问题，请重试。"
   },
   "searching_page": {
+    "eta_label": "🕒 预计到达：~{min} 分钟",
+    "eta_arriving": "🕒 您的司机即将到达",
     "searching_title": "正在为您寻找附近的司机…",
     "searching_body": "请稍候——一旦有司机接受您的请求，我们会立即为您接通。",
     "pending_title": "正在确认您的付款…",
@@ -91,6 +93,11 @@
     "default_driver_name": "您的司机"
   },
   "dashboard_page": {
+    "active_ride_cat": "您的行程",
+    "active_ride_call": "📞 致电乘客",
+    "active_ride_navigate": "🧭 导航至上车点",
+    "active_ride_sharing_on": "您正在与乘客共享实时位置。",
+    "active_ride_sharing_off": "请在浏览器中开启定位权限，以便与乘客共享您的实时位置。",
     "eyebrow": "司机控制台",
     "title": "待接请求",
     "subtitle": "当前在 {city} 寻找司机的请求。",

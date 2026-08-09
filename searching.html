@@ -59,6 +59,11 @@
   }
   .status-note{color:var(--text-eyebrow);font-size:.9rem;margin-top:24px;}
   .home-link{display:inline-block;margin-top:24px;color:var(--violet-2);font-weight:700;text-decoration:none;}
+  .eta-note{
+    display:none;margin-top:14px;
+    color:var(--violet-1);font-weight:700;font-size:1rem;
+  }
+  .eta-note.show{display:block;}
 </style>
 </head>
 <body>
@@ -88,6 +93,7 @@
     <div class="spinner" id="spinner"></div>
     <h1 id="title">Searching for drivers near you…</h1>
     <p id="body">Hang tight — we'll connect you with a driver as soon as one accepts your request.</p>
+    <p class="eta-note" id="etaNote"></p>
     <p class="status-note" id="statusNote"></p>
   </div>
 </main>
@@ -118,7 +124,9 @@
     back_home: "← Back to home",
     matched_title: "You're connected! 🎉",
     matched_body: "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
-    default_driver_name: "Your driver"
+    default_driver_name: "Your driver",
+    eta_label: "🕒 Estimated arrival: ~{min} min",
+    eta_arriving: "🕒 Your driver is arriving now"
   };
 
   function tr(key, vars){
@@ -171,17 +179,52 @@
     card.appendChild(link);
   }
 
+  var etaNote = document.getElementById("etaNote");
+
+  function haversineKm(lat1, lng1, lat2, lng2){
+    var R = 6371;
+    var dLat = (lat2 - lat1) * Math.PI / 180;
+    var dLng = (lng2 - lng1) * Math.PI / 180;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  // Rough estimate only (straight-line distance / assumed average
+  // city speed) -- there's no Google Maps API key configured yet for
+  // real routed ETAs. Good enough to give the client a sense of "a
+  // few minutes" vs "almost here" without one.
+  var ASSUMED_SPEED_KMH = 25;
+
+  function updateEta(pickup, driverPos){
+    if (!pickup || !driverPos) {
+      etaNote.classList.remove("show");
+      return;
+    }
+    var km = haversineKm(pickup.lat, pickup.lng, driverPos.lat, driverPos.lng);
+    if (km < 0.3) {
+      etaNote.textContent = tr("eta_arriving");
+    } else {
+      var mins = Math.max(1, Math.round((km / ASSUMED_SPEED_KMH) * 60));
+      etaNote.textContent = tr("eta_label", { min: mins });
+    }
+    etaNote.classList.add("show");
+  }
+
   function renderMatched(driverName, driverPhone){
     spinner.style.display = "none";
-    document.querySelector(".card").insertAdjacentHTML("afterbegin", '<div class="celebrate">🎉</div>');
+    if (!card.querySelector(".celebrate")) {
+      card.insertAdjacentHTML("afterbegin", '<div class="celebrate">🎉</div>');
+    }
     titleEl.textContent = tr("matched_title");
     bodyEl.innerHTML = tr("matched_body", { driver_name: driverName }).split("\n\n").join("<br><br>");
-    if (driverPhone) {
+    if (driverPhone && !card.querySelector(".driver-phone")) {
       var phoneLink = document.createElement("a");
       phoneLink.className = "driver-phone";
       phoneLink.href = "tel:" + driverPhone;
       phoneLink.textContent = "📞 " + driverPhone;
-      card.appendChild(phoneLink);
+      card.insertBefore(phoneLink, etaNote);
     }
   }
 
@@ -198,9 +241,41 @@
   }
 
   var pollTimer = null;
+  var matchedInfoLoaded = false;
+  var pickupCoords = null;
+
+  function pollMatchedDetails(driverId){
+    sb.from("requests")
+      .select("pickup_lat, pickup_lng, driver_lat, driver_lng")
+      .eq("id", requestId)
+      .maybeSingle()
+      .then(function(res){
+        if (!res.data) return;
+        if (res.data.pickup_lat != null && res.data.pickup_lng != null) {
+          pickupCoords = { lat: res.data.pickup_lat, lng: res.data.pickup_lng };
+        }
+        var driverPos = (res.data.driver_lat != null && res.data.driver_lng != null)
+          ? { lat: res.data.driver_lat, lng: res.data.driver_lng }
+          : null;
+        updateEta(pickupCoords, driverPos);
+      });
+
+    if (!matchedInfoLoaded) {
+      matchedInfoLoaded = true;
+      sb.from("driver_profiles")
+        .select("name, phone")
+        .eq("id", driverId)
+        .maybeSingle()
+        .then(function(driverRes){
+          var name = (driverRes.data && driverRes.data.name) || tr("default_driver_name");
+          var phone = driverRes.data && driverRes.data.phone;
+          renderMatched(name, phone);
+        });
+    }
+  }
 
   function checkStatus(){
-    sb.from("requests")
+    sb.from("request_status_public")
       .select("id, status, driver_id")
       .eq("id", requestId)
       .maybeSingle()
@@ -219,16 +294,7 @@
           clearInterval(pollTimer);
           renderCancelled();
         } else if (row.status === "matched" && row.driver_id) {
-          clearInterval(pollTimer);
-          sb.from("driver_profiles")
-            .select("name, phone")
-            .eq("id", row.driver_id)
-            .maybeSingle()
-            .then(function(driverRes){
-              var name = (driverRes.data && driverRes.data.name) || tr("default_driver_name");
-              var phone = driverRes.data && driverRes.data.phone;
-              renderMatched(name, phone);
-            });
+          pollMatchedDetails(row.driver_id);
         }
       });
   }

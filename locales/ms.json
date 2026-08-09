@@ -77,6 +77,8 @@
     "error": "Sesuatu telah berlaku. Sila cuba lagi."
   },
   "searching_page": {
+    "eta_label": "🕒 Anggaran ketibaan: ~{min} minit",
+    "eta_arriving": "🕒 Pemandu anda hampir tiba",
     "searching_title": "Mencari pemandu berhampiran anda…",
     "searching_body": "Harap bersabar — kami akan menghubungkan anda dengan pemandu sebaik sahaja seseorang menerima permintaan anda.",
     "pending_title": "Mengesahkan pembayaran anda…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Pemandu anda"
   },
   "dashboard_page": {
+    "active_ride_cat": "PERJALANAN ANDA",
+    "active_ride_call": "📞 Hubungi pelanggan",
+    "active_ride_navigate": "🧭 Navigasi ke titik ambil",
+    "active_ride_sharing_on": "Anda sedang berkongsi lokasi langsung dengan pelanggan.",
+    "active_ride_sharing_off": "Hidupkan akses lokasi dalam pelayar anda untuk berkongsi kedudukan langsung dengan pelanggan.",
     "eyebrow": "PAPAN PEMUKA PEMANDU",
     "title": "Permintaan terbuka",
     "subtitle": "Permintaan yang sedang mencari pemandu di {city}.",

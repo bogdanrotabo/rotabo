@@ -77,6 +77,8 @@
     "error": "Terjadi kesalahan. Silakan coba lagi."
   },
   "searching_page": {
+    "eta_label": "🕒 Perkiraan tiba: ~{min} menit",
+    "eta_arriving": "🕒 Pengemudi Anda hampir tiba",
     "searching_title": "Mencari pengemudi di dekat Anda…",
     "searching_body": "Mohon tunggu — kami akan menghubungkan Anda dengan pengemudi segera setelah ada yang menerima permintaan Anda.",
     "pending_title": "Mengonfirmasi pembayaran Anda…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Pengemudi Anda"
   },
   "dashboard_page": {
+    "active_ride_cat": "PERJALANAN ANDA",
+    "active_ride_call": "📞 Telepon klien",
+    "active_ride_navigate": "🧭 Navigasi ke titik jemput",
+    "active_ride_sharing_on": "Anda sedang membagikan lokasi langsung dengan klien.",
+    "active_ride_sharing_off": "Aktifkan akses lokasi di browser Anda untuk membagikan posisi langsung dengan klien.",
     "eyebrow": "DASBOR PENGEMUDI",
     "title": "Permintaan terbuka",
     "subtitle": "Permintaan yang sedang mencari pengemudi di {city}.",

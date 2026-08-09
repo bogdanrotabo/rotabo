@@ -77,6 +77,8 @@
     "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
   },
   "searching_page": {
+    "eta_label": "🕒 Tahmini varış: ~{min} dk",
+    "eta_arriving": "🕒 Sürücünüz şu anda geliyor",
     "searching_title": "Yakınındaki sürücüler aranıyor…",
     "searching_body": "Biraz bekle — bir sürücü talebini kabul eder etmez seni onunla buluşturacağız.",
     "pending_title": "Ödemen onaylanıyor…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Sürücün"
   },
   "dashboard_page": {
+    "active_ride_cat": "YOLCULUĞUNUZ",
+    "active_ride_call": "📞 Müşteriyi ara",
+    "active_ride_navigate": "🧭 Alım noktasına yol tarifi al",
+    "active_ride_sharing_on": "Canlı konumunuzu müşteriyle paylaşıyorsunuz.",
+    "active_ride_sharing_off": "Canlı konumunuzu müşteriyle paylaşmak için tarayıcınızda konum erişimini açın.",
     "eyebrow": "SÜRÜCÜ PANELİ",
     "title": "Açık talepler",
     "subtitle": "{city} içinde şu anda sürücü arayan talepler.",

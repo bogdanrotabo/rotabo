@@ -77,6 +77,8 @@
     "error": "Något gick fel. Försök igen."
   },
   "searching_page": {
+    "eta_label": "🕒 Beräknad ankomst: ~{min} min",
+    "eta_arriving": "🕒 Din förare anländer nu",
     "searching_title": "Söker efter förare nära dig…",
     "searching_body": "Ha tålamod — vi kopplar ihop dig med en förare så snart någon accepterar din förfrågan.",
     "pending_title": "Bekräftar din betalning…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Din förare"
   },
   "dashboard_page": {
+    "active_ride_cat": "DIN RESA",
+    "active_ride_call": "📞 Ring kunden",
+    "active_ride_navigate": "🧭 Navigera till upphämtningsplatsen",
+    "active_ride_sharing_on": "Du delar din liveposition med kunden.",
+    "active_ride_sharing_off": "Aktivera platsåtkomst i din webbläsare för att dela din liveposition med kunden.",
     "eyebrow": "FÖRARPANEL",
     "title": "Öppna förfrågningar",
     "subtitle": "Förfrågningar som just nu söker en förare i {city}.",

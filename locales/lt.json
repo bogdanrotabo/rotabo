@@ -77,6 +77,8 @@
     "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
   },
   "searching_page": {
+    "eta_label": "🕒 Numatomas atvykimas: ~{min} min",
+    "eta_arriving": "🕒 Jūsų vairuotojas jau atvyksta",
     "searching_title": "Ieškome vairuotojų netoli tavęs…",
     "searching_body": "Palauk truputį — sujungsime tave su vairuotoju, kai tik kas nors priims tavo užklausą.",
     "pending_title": "Patvirtiname tavo mokėjimą…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Tavo vairuotojas"
   },
   "dashboard_page": {
+    "active_ride_cat": "JŪSŲ KELIONĖ",
+    "active_ride_call": "📞 Skambinti klientui",
+    "active_ride_navigate": "🧭 Naviguoti į pasiėmimo vietą",
+    "active_ride_sharing_on": "Jūs dalinatės savo gyva vietove su klientu.",
+    "active_ride_sharing_off": "Įjunkite vietos prieigą naršyklėje, kad galėtumėte dalytis gyva vieta su klientu.",
     "eyebrow": "VAIRUOTOJO SKYDELIS",
     "title": "Atviros užklausos",
     "subtitle": "Užklausos, kurios šiuo metu ieško vairuotojo mieste {city}.",

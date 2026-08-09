@@ -77,6 +77,8 @@
     "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
   },
   "searching_page": {
+    "eta_label": "🕒 Paredzamais ierašanās laiks: ~{min} min",
+    "eta_arriving": "🕒 Jūsu vadītājs tūlīt ieradīsies",
     "searching_title": "Meklējam šoferus tev tuvumā…",
     "searching_body": "Uzgaidi mazliet — savienosim tevi ar šoferi, tiklīdz kāds pieņems tavu pieprasījumu.",
     "pending_title": "Apstiprinām tavu maksājumu…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Tavs šoferis"
   },
   "dashboard_page": {
+    "active_ride_cat": "JŪSU BRAUCIENS",
+    "active_ride_call": "📞 Zvanīt klientam",
+    "active_ride_navigate": "🧭 Navigācija uz paņemšanas vietu",
+    "active_ride_sharing_on": "Jūs kopīgojat savu tiešraides atrašanās vietu ar klientu.",
+    "active_ride_sharing_off": "Ieslēdziet atrašanās vietas piekļuvi savā pārlūkā, lai kopīgotu savu tiešraides atrašanās vietu ar klientu.",
     "eyebrow": "ŠOFERA PANELIS",
     "title": "Atvērti pieprasījumi",
     "subtitle": "Pieprasījumi, kas šobrīd meklē šoferi {city}.",

@@ -77,6 +77,8 @@
     "error": "問題が発生しました。もう一度お試しください。"
   },
   "searching_page": {
+    "eta_label": "🕒 到着予定：約{min}分",
+    "eta_arriving": "🕒 ドライバーがまもなく到着します",
     "searching_title": "近くのドライバーを探しています…",
     "searching_body": "少々お待ちください。ドライバーがリクエストを承諾次第、すぐにおつなぎします。",
     "pending_title": "お支払いを確認しています…",
@@ -91,6 +93,11 @@
     "default_driver_name": "あなたのドライバー"
   },
   "dashboard_page": {
+    "active_ride_cat": "あなたの配車",
+    "active_ride_call": "📞 クライアントに電話",
+    "active_ride_navigate": "🧭 乗車地点へナビゲート",
+    "active_ride_sharing_on": "クライアントとリアルタイムの位置情報を共有しています。",
+    "active_ride_sharing_off": "ブラウザで位置情報へのアクセスを有効にすると、クライアントとリアルタイムの位置を共有できます。",
     "eyebrow": "ドライバーダッシュボード",
     "title": "受付中のリクエスト",
     "subtitle": "現在 {city} でドライバーを探しているリクエストです。",

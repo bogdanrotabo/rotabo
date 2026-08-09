@@ -123,7 +123,9 @@
     "back_home": "← Back to home",
     "matched_title": "You're connected! 🎉",
     "matched_body": "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
-    "default_driver_name": "Your driver"
+    "default_driver_name": "Your driver",
+    "eta_label": "🕒 Estimated arrival: ~{min} min",
+    "eta_arriving": "🕒 Your driver is arriving now"
   },
   "dashboard_page": {
     "eyebrow": "DRIVER DASHBOARD",
@@ -142,6 +144,11 @@
     "time_min_ago_one": "1 min ago",
     "time_min_ago_other": "{n} min ago",
     "time_hour_ago_one": "1 hour ago",
-    "time_hour_ago_other": "{n} hours ago"
+    "time_hour_ago_other": "{n} hours ago",
+    "active_ride_cat": "YOUR RIDE",
+    "active_ride_call": "📞 Call client",
+    "active_ride_navigate": "🧭 Navigate to pickup",
+    "active_ride_sharing_on": "Sharing your live location with the client.",
+    "active_ride_sharing_off": "Turn on location access in your browser to share your live position with the client."
   }
 }

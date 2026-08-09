@@ -77,6 +77,8 @@
     "error": "Kuna hitilafu. Tafadhali jaribu tena."
   },
   "searching_page": {
+    "eta_label": "🕒 Muda wa kuwasili: ~dakika {min}",
+    "eta_arriving": "🕒 Dereva wako anafika sasa hivi",
     "searching_title": "Tunatafuta madereva karibu nawe…",
     "searching_body": "Subiri kidogo — tutakuunganisha na dereva mara tu atakapokubali ombi lako.",
     "pending_title": "Tunathibitisha malipo yako…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Dereva wako"
   },
   "dashboard_page": {
+    "active_ride_cat": "SAFARI YAKO",
+    "active_ride_call": "📞 Mpigie simu mteja",
+    "active_ride_navigate": "🧭 Elekeza hadi mahali pa kuchukua",
+    "active_ride_sharing_on": "Unashiriki mahali ulipo papo hapo na mteja.",
+    "active_ride_sharing_off": "Washa ruhusa ya mahali ulipo kwenye kivinjari chako ili kushiriki mahali ulipo papo hapo na mteja.",
     "eyebrow": "DASHIBODI YA DEREVA",
     "title": "Maombi yaliyo wazi",
     "subtitle": "Maombi yanayotafuta dereva kwa sasa katika {city}.",

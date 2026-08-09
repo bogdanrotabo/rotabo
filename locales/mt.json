@@ -77,6 +77,8 @@
     "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
   },
   "searching_page": {
+    "eta_label": "🕒 Wasla stmata: ~{min} min",
+    "eta_arriving": "🕒 Is-sewwieq tiegħek se jasal issa",
     "searching_title": "Qed infittxu sewwieqa qrib tiegħek…",
     "searching_body": "Stenna ftit — se nqabbduk ma' sewwieq malli xi ħadd jaċċetta t-talba tiegħek.",
     "pending_title": "Qed nikkonfermaw il-ħlas tiegħek…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Is-sewwieq tiegħek"
   },
   "dashboard_page": {
+    "active_ride_cat": "IL-VJAĠĠ TIEGĦEK",
+    "active_ride_call": "📞 Ċempel lill-klijent",
+    "active_ride_navigate": "🧭 Innaviga lejn il-punt tal-ġbir",
+    "active_ride_sharing_on": "Qed taqsam il-post tiegħek live mal-klijent.",
+    "active_ride_sharing_off": "Ixgħel l-aċċess għall-post fil-browser tiegħek biex taqsam il-pożizzjoni live tiegħek mal-klijent.",
     "eyebrow": "DASHBOARD TAS-SEWWIEQ",
     "title": "Talbiet miftuħa",
     "subtitle": "Talbiet li bħalissa qed ifittxu sewwieq f'{city}.",

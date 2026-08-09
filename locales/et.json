@@ -112,6 +112,8 @@
     "error": "Midagi läks valesti. Palun proovi uuesti."
   },
   "searching_page": {
+    "eta_label": "🕒 Eeldatav saabumine: ~{min} min",
+    "eta_arriving": "🕒 Sinu juht saabub just nüüd",
     "searching_title": "Otsime sulle lähedal olevaid juhte…",
     "searching_body": "Pea vastu — ühendame sind juhiga niipea, kui keegi su päringu vastu võtab.",
     "pending_title": "Kinnitame sinu makset…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Sinu juht"
   },
   "dashboard_page": {
+    "active_ride_cat": "SINU SÕIT",
+    "active_ride_call": "📞 Helista kliendile",
+    "active_ride_navigate": "🧭 Navigeeri peale võtmise kohta",
+    "active_ride_sharing_on": "Jagad oma reaalajas asukohta kliendiga.",
+    "active_ride_sharing_off": "Luba brauseris asukohale juurdepääs, et jagada oma reaalajas asukohta kliendiga.",
     "eyebrow": "JUHI TÖÖLAUD",
     "title": "Avatud päringud",
     "subtitle": "Päringud, mis praegu otsivad juhti linnas {city}.",

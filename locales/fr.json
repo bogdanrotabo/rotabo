@@ -112,6 +112,8 @@
     "error": "Une erreur s'est produite. Veuillez réessayer."
   },
   "searching_page": {
+    "eta_label": "🕒 Arrivée estimée : ~{min} min",
+    "eta_arriving": "🕒 Votre chauffeur arrive maintenant",
     "searching_title": "Recherche de chauffeurs près de vous…",
     "searching_body": "Un instant — nous vous mettrons en relation avec un chauffeur dès que l'un d'eux acceptera votre demande.",
     "pending_title": "Confirmation de votre paiement…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Votre chauffeur"
   },
   "dashboard_page": {
+    "active_ride_cat": "VOTRE COURSE",
+    "active_ride_call": "📞 Appeler le client",
+    "active_ride_navigate": "🧭 Naviguer vers le point de prise en charge",
+    "active_ride_sharing_on": "Vous partagez votre position en direct avec le client.",
+    "active_ride_sharing_off": "Activez l'accès à la position dans votre navigateur pour partager votre position en direct avec le client.",
     "eyebrow": "TABLEAU DE BORD CHAUFFEUR",
     "title": "Demandes ouvertes",
     "subtitle": "Demandes actuellement à la recherche d'un chauffeur à {city}.",

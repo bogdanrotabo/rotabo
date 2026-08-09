@@ -77,6 +77,8 @@
     "error": "Nekaj je šlo narobe. Poskusi znova."
   },
   "searching_page": {
+    "eta_label": "🕒 Predviden prihod: ~{min} min",
+    "eta_arriving": "🕒 Vaš voznik ravno prihaja",
     "searching_title": "Iščemo voznike v tvoji bližini…",
     "searching_body": "Potrpi malo — povezali te bomo z voznikom, takoj ko nekdo sprejme tvoje povpraševanje.",
     "pending_title": "Potrjujemo tvoje plačilo…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Tvoj voznik"
   },
   "dashboard_page": {
+    "active_ride_cat": "VAŠA VOŽNJA",
+    "active_ride_call": "📞 Pokliči stranko",
+    "active_ride_navigate": "🧭 Navigiraj do mesta prevzema",
+    "active_ride_sharing_on": "S stranko delite svojo lokacijo v živo.",
+    "active_ride_sharing_off": "Vklopite dostop do lokacije v brskalniku, da delite svojo lokacijo v živo s stranko.",
     "eyebrow": "NADZORNA PLOŠČA VOZNIKA",
     "title": "Odprta povpraševanja",
     "subtitle": "Povpraševanja, ki trenutno iščejo voznika v {city}.",

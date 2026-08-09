@@ -77,6 +77,8 @@
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
   "searching_page": {
+    "eta_label": "🕒 Szacowany czas przyjazdu: ~{min} min",
+    "eta_arriving": "🕒 Twój kierowca właśnie dojeżdża",
     "searching_title": "Szukamy kierowców w Twojej okolicy…",
     "searching_body": "Chwila cierpliwości — połączymy Cię z kierowcą, gdy tylko ktoś przyjmie Twoje zgłoszenie.",
     "pending_title": "Potwierdzamy Twoją płatność…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Twój kierowca"
   },
   "dashboard_page": {
+    "active_ride_cat": "TWÓJ KURS",
+    "active_ride_call": "📞 Zadzwoń do klienta",
+    "active_ride_navigate": "🧭 Nawiguj do miejsca odbioru",
+    "active_ride_sharing_on": "Udostępniasz swoją lokalizację na żywo klientowi.",
+    "active_ride_sharing_off": "Włącz dostęp do lokalizacji w przeglądarce, aby udostępniać swoją lokalizację na żywo klientowi.",
     "eyebrow": "PANEL KIEROWCY",
     "title": "Otwarte zgłoszenia",
     "subtitle": "Zgłoszenia, które aktualnie szukają kierowcy w {city}.",

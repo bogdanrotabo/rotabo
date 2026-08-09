@@ -603,6 +603,31 @@
     el.classList.remove("show");
   }
 
+  // Best-effort pickup coordinates: resolves with {lat,lng} or null.
+  // Never blocks submission -- if geolocation is denied, unsupported,
+  // or slow, the ride still works via the free-text city, just
+  // without the driver's "navigate to pickup" link or the client's ETA.
+  function getPickupCoords(){
+    return new Promise(function(resolve){
+      if (!navigator.geolocation) { resolve(null); return; }
+      var settled = false;
+      var timer = setTimeout(function(){
+        if (!settled) { settled = true; resolve(null); }
+      }, 6000);
+      navigator.geolocation.getCurrentPosition(function(pos){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+      }, function(){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        resolve(null);
+      }, { enableHighAccuracy: true, timeout: 5500 });
+    });
+  }
+
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
@@ -610,25 +635,37 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
-    var payload = {
-      client_name: form.client_name.value.trim(),
-      client_phone: form.client_phone.value.trim(),
-      city: form.city.value.trim(),
-      status: "pending"
-    };
+    getPickupCoords().then(function(coords){
+      // Generate the id client-side rather than reading it back via
+      // .select() after insert: requests' SELECT policy only allows
+      // reading a row once it's matched (see migration
+      // restrict_requests_contact_info), so a freshly-inserted,
+      // still-pending row can't be read back that way.
+      var newRequestId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
-    sb.from("requests").insert(payload).select("id").single().then(function(res){
-      if (res.error || !res.data) {
+      var payload = {
+        id: newRequestId || undefined,
+        client_name: form.client_name.value.trim(),
+        client_phone: form.client_phone.value.trim(),
+        city: form.city.value.trim(),
+        status: "pending",
+        pickup_lat: coords ? coords.lat : null,
+        pickup_lng: coords ? coords.lng : null
+      };
+
+      sb.from("requests").insert(payload).then(function(res){
+        if (res.error) {
+          setSubmitting(form, false);
+          showError(errorEl);
+          return;
+        }
+        localStorage.setItem("rotabo_request_id", newRequestId);
+        window.location.href = FIND_DRIVER_LINK
+          + "?client_reference_id=" + encodeURIComponent(newRequestId);
+      }).catch(function(){
         setSubmitting(form, false);
         showError(errorEl);
-        return;
-      }
-      localStorage.setItem("rotabo_request_id", res.data.id);
-      window.location.href = FIND_DRIVER_LINK
-        + "?client_reference_id=" + encodeURIComponent(res.data.id);
-    }).catch(function(){
-      setSubmitting(form, false);
-      showError(errorEl);
+      });
     });
   });
 

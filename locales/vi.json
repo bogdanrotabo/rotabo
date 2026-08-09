@@ -77,6 +77,8 @@
     "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
   },
   "searching_page": {
+    "eta_label": "🕒 Thời gian đến dự kiến: ~{min} phút",
+    "eta_arriving": "🕒 Tài xế của bạn sắp đến nơi",
     "searching_title": "Đang tìm tài xế gần bạn…",
     "searching_body": "Vui lòng chờ trong giây lát — chúng tôi sẽ kết nối bạn với tài xế ngay khi có người nhận yêu cầu của bạn.",
     "pending_title": "Đang xác nhận thanh toán của bạn…",
@@ -91,6 +93,11 @@
     "default_driver_name": "Tài xế của bạn"
   },
   "dashboard_page": {
+    "active_ride_cat": "CHUYẾN ĐI CỦA BẠN",
+    "active_ride_call": "📞 Gọi cho khách hàng",
+    "active_ride_navigate": "🧭 Chỉ đường đến điểm đón",
+    "active_ride_sharing_on": "Bạn đang chia sẻ vị trí trực tiếp với khách hàng.",
+    "active_ride_sharing_off": "Bật quyền truy cập vị trí trong trình duyệt để chia sẻ vị trí trực tiếp với khách hàng.",
     "eyebrow": "BẢNG ĐIỀU KHIỂN TÀI XẾ",
     "title": "Yêu cầu đang mở",
     "subtitle": "Các yêu cầu đang tìm tài xế tại {city}.",

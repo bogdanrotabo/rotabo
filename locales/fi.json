@@ -112,6 +112,8 @@
     "error": "Jokin meni pieleen. Yritä uudelleen."
   },
   "searching_page": {
+    "eta_label": "🕒 Arvioitu saapuminen: ~{min} min",
+    "eta_arriving": "🕒 Kuljettajasi on juuri saapumassa",
     "searching_title": "Etsitään kuljettajia lähelläsi…",
     "searching_body": "Odota hetki — yhdistämme sinut kuljettajaan heti, kun joku hyväksyy pyyntösi.",
     "pending_title": "Vahvistetaan maksuasi…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Kuljettajasi"
   },
   "dashboard_page": {
+    "active_ride_cat": "MATKASI",
+    "active_ride_call": "📞 Soita asiakkaalle",
+    "active_ride_navigate": "🧭 Navigoi noutopisteeseen",
+    "active_ride_sharing_on": "Jaat reaaliaikaisen sijaintisi asiakkaan kanssa.",
+    "active_ride_sharing_off": "Ota selaimessasi sijaintikäyttöoikeus käyttöön jakaaksesi reaaliaikaisen sijaintisi asiakkaan kanssa.",
     "eyebrow": "KULJETTAJAN NÄKYMÄ",
     "title": "Avoimet pyynnöt",
     "subtitle": "Pyynnöt, jotka etsivät parhaillaan kuljettajaa alueella {city}.",

@@ -112,6 +112,8 @@
     "error": "Noget gik galt. Prøv venligst igen."
   },
   "searching_page": {
+    "eta_label": "🕒 Forventet ankomst: ~{min} min",
+    "eta_arriving": "🕒 Din chauffør ankommer nu",
     "searching_title": "Søger efter chauffører i nærheden af dig…",
     "searching_body": "Hold ud — vi forbinder dig med en chauffør, så snart en accepterer din forespørgsel.",
     "pending_title": "Bekræfter din betaling…",
@@ -126,6 +128,11 @@
     "default_driver_name": "Din chauffør"
   },
   "dashboard_page": {
+    "active_ride_cat": "DIN TUR",
+    "active_ride_call": "📞 Ring til kunden",
+    "active_ride_navigate": "🧭 Naviger til afhentningsstedet",
+    "active_ride_sharing_on": "Du deler din live placering med kunden.",
+    "active_ride_sharing_off": "Aktivér placeringsadgang i din browser for at dele din live placering med kunden.",
     "eyebrow": "CHAUFFØRPANEL",
     "title": "Åbne forespørgsler",
     "subtitle": "Forespørgsler, der lige nu søger en chauffør i {city}.",
