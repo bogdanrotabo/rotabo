@@ -300,7 +300,7 @@
     </nav>
     <div class="lang-switcher">
       <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false">
-        🌐 <span id="langBtnLabel">English</span> <span class="code" id="langBtnCode">EN</span>
+        🌐 <span id="langBtnFlag">🇬🇧</span> <span id="langBtnLabel">English</span> <span class="code" id="langBtnCode">EN</span>
       </button>
       <div class="lang-panel" id="langPanel">
         <input class="lang-search" id="langSearch" type="text" data-i18n-placeholder="lang_selector.search_placeholder" placeholder="Search language…" autocomplete="off">
@@ -409,19 +409,19 @@
 <script>
 (function(){
   var LANGS = [
-    {code:"en",name:"English"},{code:"it",name:"Italiano"},{code:"ro",name:"Română"},
-    {code:"es",name:"Español"},{code:"fr",name:"Français"},{code:"de",name:"Deutsch"},
-    {code:"pt",name:"Português"},{code:"zh",name:"中文"},{code:"ar",name:"العربية"},
-    {code:"ja",name:"日本語"},{code:"ko",name:"한국어"},{code:"ru",name:"Русский"},
-    {code:"ms",name:"Bahasa Melayu"},{code:"hi",name:"हिन्दी"},{code:"sw",name:"Kiswahili"},
-    {code:"vi",name:"Tiếng Việt"},{code:"th",name:"ไทย"},{code:"id",name:"Bahasa Indonesia"},
-    {code:"tr",name:"Türkçe"},{code:"bn",name:"বাংলা"},{code:"ur",name:"اردو"},
-    {code:"bg",name:"Български"},{code:"cs",name:"Čeština"},{code:"hr",name:"Hrvatski"},
-    {code:"da",name:"Dansk"},{code:"et",name:"Eesti"},{code:"fi",name:"Suomi"},
-    {code:"el",name:"Ελληνικά"},{code:"ga",name:"Gaeilge"},{code:"lv",name:"Latviešu"},
-    {code:"lt",name:"Lietuvių"},{code:"hu",name:"Magyar"},{code:"mt",name:"Malti"},
-    {code:"nl",name:"Nederlands"},{code:"pl",name:"Polski"},{code:"sk",name:"Slovenčina"},
-    {code:"sl",name:"Slovenščina"},{code:"sv",name:"Svenska"}
+    {code:"en",name:"English",flag:"🇬🇧"},{code:"it",name:"Italiano",flag:"🇮🇹"},{code:"ro",name:"Română",flag:"🇷🇴"},
+    {code:"es",name:"Español",flag:"🇪🇸"},{code:"fr",name:"Français",flag:"🇫🇷"},{code:"de",name:"Deutsch",flag:"🇩🇪"},
+    {code:"pt",name:"Português",flag:"🇵🇹"},{code:"zh",name:"中文",flag:"🇨🇳"},{code:"ar",name:"العربية",flag:"🇸🇦"},
+    {code:"ja",name:"日本語",flag:"🇯🇵"},{code:"ko",name:"한국어",flag:"🇰🇷"},{code:"ru",name:"Русский",flag:"🇷🇺"},
+    {code:"ms",name:"Bahasa Melayu",flag:"🇲🇾"},{code:"hi",name:"हिन्दी",flag:"🇮🇳"},{code:"sw",name:"Kiswahili",flag:"🇰🇪"},
+    {code:"vi",name:"Tiếng Việt",flag:"🇻🇳"},{code:"th",name:"ไทย",flag:"🇹🇭"},{code:"id",name:"Bahasa Indonesia",flag:"🇮🇩"},
+    {code:"tr",name:"Türkçe",flag:"🇹🇷"},{code:"bn",name:"বাংলা",flag:"🇧🇩"},{code:"ur",name:"اردو",flag:"🇵🇰"},
+    {code:"bg",name:"Български",flag:"🇧🇬"},{code:"cs",name:"Čeština",flag:"🇨🇿"},{code:"hr",name:"Hrvatski",flag:"🇭🇷"},
+    {code:"da",name:"Dansk",flag:"🇩🇰"},{code:"et",name:"Eesti",flag:"🇪🇪"},{code:"fi",name:"Suomi",flag:"🇫🇮"},
+    {code:"el",name:"Ελληνικά",flag:"🇬🇷"},{code:"ga",name:"Gaeilge",flag:"🇮🇪"},{code:"lv",name:"Latviešu",flag:"🇱🇻"},
+    {code:"lt",name:"Lietuvių",flag:"🇱🇹"},{code:"hu",name:"Magyar",flag:"🇭🇺"},{code:"mt",name:"Malti",flag:"🇲🇹"},
+    {code:"nl",name:"Nederlands",flag:"🇳🇱"},{code:"pl",name:"Polski",flag:"🇵🇱"},{code:"sk",name:"Slovenčina",flag:"🇸🇰"},
+    {code:"sl",name:"Slovenščina",flag:"🇸🇮"},{code:"sv",name:"Svenska",flag:"🇸🇪"}
   ];
   var RTL_LANGS = ["ar","ur"];
   var STORAGE_KEY = "rotabo_lang";
@@ -448,6 +448,7 @@
 
   function setLangUI(code){
     var lang = LANGS.find(function(l){ return l.code === code; }) || LANGS[0];
+    document.getElementById("langBtnFlag").textContent = lang.flag;
     document.getElementById("langBtnLabel").textContent = lang.name;
     document.getElementById("langBtnCode").textContent = lang.code.toUpperCase();
     document.querySelectorAll(".lang-option").forEach(function(btn){
@@ -522,7 +523,7 @@
       btn.className = "lang-option";
       btn.setAttribute("data-code", lang.code);
       btn.setAttribute("data-search", (lang.name + " " + lang.code).toLowerCase());
-      btn.innerHTML = '<span>' + lang.name + '</span><span class="lo-code">' + lang.code.toUpperCase() + '</span>';
+      btn.innerHTML = '<span>' + lang.flag + ' ' + lang.name + '</span><span class="lo-code">' + lang.code.toUpperCase() + '</span>';
       btn.addEventListener("click", function(){ selectLang(lang.code); });
       list.appendChild(btn);
     });
