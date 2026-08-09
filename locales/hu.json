@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" },
+  "install_modal": {
+    "title": "Rotabo hozzáadása a kezdőképernyőhöz",
+    "generic": "Nyisd meg a böngésző menüjét, és keresd az \"Alkalmazás telepítése\" vagy \"Hozzáadás a kezdőképernyőhöz\" lehetőséget.",
+    "ios": "Koppints a Megosztás ikonra a Safariban, majd válaszd a \"Kezdőképernyőhöz adás\" lehetőséget."
+  },
   "find_form": {
     "title": "Sofőr keresése",
     "subtitle": "Mondd el, ki vagy és hol vagy. Ezután fizeted ki a platformdíjat, majd elkezdjük a keresést.",

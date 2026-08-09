@@ -87,6 +87,11 @@
     "label": "Idioma",
     "search_placeholder": "Procurar idioma…"
   },
+  "install_modal": {
+    "title": "Adiciona o Rotabo ao ecrã principal",
+    "generic": "Abre o menu do teu navegador e procura \"Instalar aplicação\" ou \"Adicionar ao ecrã principal\".",
+    "ios": "Toca no ícone Partilhar no Safari e depois em \"Adicionar ao ecrã principal\"."
+  },
   "find_form": {
     "title": "Encontrar um condutor",
     "subtitle": "Diz-nos quem és e onde estás. De seguida vais pagar a contribuição da plataforma e depois começamos a procurar.",

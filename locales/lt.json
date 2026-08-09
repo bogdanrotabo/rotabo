@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" },
+  "install_modal": {
+    "title": "Pridėti Rotabo prie pagrindinio ekrano",
+    "generic": "Atidarykite naršyklės meniu ir raskite \"Įdiegti programą\" arba \"Pridėti prie pagrindinio ekrano\".",
+    "ios": "Palieskite bendrinimo piktogramą „Safari“, tada pasirinkite \"Pridėti prie pagrindinio ekrano\"."
+  },
   "find_form": {
     "title": "Rasti vairuotoją",
     "subtitle": "Pasakyk mums, kas tu esi ir kur esi. Kitą žingsnį sumokėsi platformos mokestį, tada pradėsime paiešką.",

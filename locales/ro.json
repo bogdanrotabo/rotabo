@@ -87,6 +87,11 @@
     "label": "Limbă",
     "search_placeholder": "Caută o limbă…"
   },
+  "install_modal": {
+    "title": "Adaugă Rotabo pe ecranul principal",
+    "generic": "Deschide meniul browserului și caută \"Instalează aplicația\" sau \"Adaugă pe ecranul principal\".",
+    "ios": "Apasă pe iconița Share din Safari, apoi \"Adaugă pe ecranul principal\"."
+  },
   "find_form": {
     "title": "Găsește un șofer",
     "subtitle": "Spune-ne cine ești și unde te afli. Urmează să plătești contribuția platformei, apoi începem căutarea.",

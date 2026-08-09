@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" },
+  "install_modal": {
+    "title": "Rotabo'yu ana ekrana ekle",
+    "generic": "Tarayıcı menünüzü açın ve \"Uygulamayı yükle\" veya \"Ana ekrana ekle\" seçeneğini arayın.",
+    "ios": "Safari'de Paylaş simgesine dokunun, ardından \"Ana Ekrana Ekle\"yi seçin."
+  },
   "find_form": {
     "title": "Sürücü bul",
     "subtitle": "Bize kim olduğunu ve nerede olduğunu söyle. Ardından platform katkı payını ödeyeceksin, sonra aramaya başlayacağız.",

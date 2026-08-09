@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…" },
+  "install_modal": {
+    "title": "Cuir Rotabo le do scáileán baile",
+    "generic": "Oscail roghchlár do bhrabhsálaí agus cuardaigh \"Suiteáil aip\" nó \"Cuir leis an Scáileán Baile\".",
+    "ios": "Tapáil ar an deilbhín Comhroinnt i Safari, ansin \"Cuir leis an Scáileán Baile\"."
+  },
   "find_form": {
     "title": "Faigh tiománaí",
     "subtitle": "Inis dúinn cé thusa agus cá bhfuil tú. Íocfaidh tú an ranníocaíocht ardáin ina dhiaidh sin, ansin tosóimid ag cuardach.",

@@ -87,6 +87,11 @@
     "label": "Lingua",
     "search_placeholder": "Cerca una lingua…"
   },
+  "install_modal": {
+    "title": "Aggiungi Rotabo alla schermata Home",
+    "generic": "Apri il menu del tuo browser e cerca \"Installa app\" o \"Aggiungi a schermata Home\".",
+    "ios": "Tocca l'icona Condividi in Safari, poi \"Aggiungi a Home\"."
+  },
   "find_form": {
     "title": "Trova un autista",
     "subtitle": "Dicci chi sei e dove ti trovi. Dopo pagherai il contributo della piattaforma, poi inizieremo la ricerca.",

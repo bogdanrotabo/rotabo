@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" },
+  "install_modal": {
+    "title": "Żid Rotabo mal-iskrin ta' dar",
+    "generic": "Iftaħ il-menu tal-browser tiegħek u fittex \"Installa l-app\" jew \"Żid mal-Iskrin ta' Dar\".",
+    "ios": "Mess l-ikona Ixxerja fi Safari, imbagħad \"Żid mal-Iskrin ta' Dar\"."
+  },
   "find_form": {
     "title": "Sib sewwieq",
     "subtitle": "Għidilna min int u fejn qiegħed. Imbagħad tħallas il-kontribuzzjoni tal-pjattaforma, u nibdew infittxu.",

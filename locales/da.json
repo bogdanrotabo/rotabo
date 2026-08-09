@@ -87,6 +87,11 @@
     "label": "Sprog",
     "search_placeholder": "Søg efter sprog…"
   },
+  "install_modal": {
+    "title": "Føj Rotabo til din hjemmeskærm",
+    "generic": "Åbn din browsers menu, og find \"Installer app\" eller \"Føj til hjemmeskærm\".",
+    "ios": "Tryk på Del-ikonet i Safari, og vælg derefter \"Føj til hjemmeskærm\"."
+  },
   "find_form": {
     "title": "Find en chauffør",
     "subtitle": "Fortæl os, hvem du er, og hvor du er. Herefter betaler du platformsbidraget, og så begynder vi at søge.",

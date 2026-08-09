@@ -87,6 +87,11 @@
     "label": "Jazyk",
     "search_placeholder": "Hledat jazyk…"
   },
+  "install_modal": {
+    "title": "Přidat Rotabo na plochu",
+    "generic": "Otevřete menu prohlížeče a najděte \"Instalovat aplikaci\" nebo \"Přidat na plochu\".",
+    "ios": "V Safari klepněte na ikonu Sdílet a poté na \"Přidat na plochu\"."
+  },
   "find_form": {
     "title": "Najít řidiče",
     "subtitle": "Řekněte nám, kdo jste a kde se nacházíte. Dále zaplatíte příspěvek platformě a poté začneme hledat.",

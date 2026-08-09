@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…" },
+  "install_modal": {
+    "title": "Dodaj Rotabo na začetni zaslon",
+    "generic": "Odprite meni brskalnika in poiščite \"Namesti aplikacijo\" ali \"Dodaj na začetni zaslon\".",
+    "ios": "V Safariju se dotaknite ikone Deli, nato izberite \"Dodaj na začetni zaslon\"."
+  },
   "find_form": {
     "title": "Poišči voznika",
     "subtitle": "Povej nam, kdo si in kje si. Naslednji korak je plačilo prispevka platformi, nato začnemo iskati.",

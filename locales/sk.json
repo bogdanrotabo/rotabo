@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" },
+  "install_modal": {
+    "title": "Pridať Rotabo na plochu",
+    "generic": "Otvorte menu prehliadača a vyhľadajte \"Inštalovať aplikáciu\" alebo \"Pridať na plochu\".",
+    "ios": "V Safari ťuknite na ikonu Zdieľať a potom na \"Pridať na plochu\"."
+  },
   "find_form": {
     "title": "Nájsť vodiča",
     "subtitle": "Povedz nám, kto si a kde sa nachádzaš. Ďalej zaplatíš príspevok platforme a potom začneme hľadať.",

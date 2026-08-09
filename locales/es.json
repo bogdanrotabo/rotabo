@@ -87,6 +87,11 @@
     "label": "Idioma",
     "search_placeholder": "Buscar idioma…"
   },
+  "install_modal": {
+    "title": "Añade Rotabo a tu pantalla de inicio",
+    "generic": "Abre el menú de tu navegador y busca \"Instalar app\" o \"Añadir a pantalla de inicio\".",
+    "ios": "Toca el icono Compartir en Safari y luego \"Añadir a pantalla de inicio\"."
+  },
   "find_form": {
     "title": "Buscar conductor",
     "subtitle": "Cuéntanos quién eres y dónde estás. A continuación pagarás la contribución de la plataforma y empezaremos a buscar.",

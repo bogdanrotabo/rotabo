@@ -87,6 +87,11 @@
     "label": "Jezik",
     "search_placeholder": "Pretraži jezik…"
   },
+  "install_modal": {
+    "title": "Dodaj Rotabo na početni zaslon",
+    "generic": "Otvorite izbornik preglednika i potražite \"Instaliraj aplikaciju\" ili \"Dodaj na početni zaslon\".",
+    "ios": "Dodirnite ikonu Podijeli u Safariju, zatim \"Dodaj na Home zaslon\"."
+  },
   "find_form": {
     "title": "Pronađi vozača",
     "subtitle": "Recite nam tko ste i gdje se nalazite. Zatim plaćate naknadu platforme, a potom počinjemo tražiti.",

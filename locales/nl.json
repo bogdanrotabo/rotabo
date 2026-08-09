@@ -87,6 +87,11 @@
     "label": "Taal",
     "search_placeholder": "Zoek een taal…"
   },
+  "install_modal": {
+    "title": "Voeg Rotabo toe aan je beginscherm",
+    "generic": "Open het menu van je browser en zoek naar \"App installeren\" of \"Toevoegen aan beginscherm\".",
+    "ios": "Tik in Safari op het deelpictogram en dan op \"Zet op beginscherm\"."
+  },
   "find_form": {
     "title": "Zoek een chauffeur",
     "subtitle": "Vertel ons wie je bent en waar je bent. Daarna betaal je de platformbijdrage en beginnen we met zoeken.",

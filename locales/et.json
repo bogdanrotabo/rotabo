@@ -87,6 +87,11 @@
     "label": "Keel",
     "search_placeholder": "Otsi keelt…"
   },
+  "install_modal": {
+    "title": "Lisa Rotabo avakuvale",
+    "generic": "Ava brauseri menüü ja otsi \"Installi rakendus\" või \"Lisa avakuvale\".",
+    "ios": "Puuduta Safaris jagamisikooni ja seejärel \"Lisa avakuvale\"."
+  },
   "find_form": {
     "title": "Leia juht",
     "subtitle": "Ütle meile, kes sa oled ja kus sa asud. Järgmisena tasud platvormitasu ja siis alustame otsimist.",

@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" },
+  "install_modal": {
+    "title": "将 Rotabo 添加到主屏幕",
+    "generic": "打开浏览器菜单，寻找「安装应用」或「添加到主屏幕」。",
+    "ios": "在 Safari 中点击分享图标，然后选择「添加到主屏幕」。"
+  },
   "find_form": {
     "title": "寻找司机",
     "subtitle": "告诉我们您是谁、您在哪里。接下来您需要支付平台服务费，之后我们就会开始为您寻找司机。",

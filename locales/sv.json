@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" },
+  "install_modal": {
+    "title": "Lägg till Rotabo på hemskärmen",
+    "generic": "Öppna webbläsarens meny och leta efter \"Installera app\" eller \"Lägg till på hemskärmen\".",
+    "ios": "Tryck på Dela-ikonen i Safari och välj sedan \"Lägg till på hemskärmen\"."
+  },
   "find_form": {
     "title": "Hitta en förare",
     "subtitle": "Berätta vem du är och var du befinner dig. Härnäst betalar du plattformsavgiften, sedan börjar vi söka.",

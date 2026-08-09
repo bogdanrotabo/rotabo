@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "언어", "search_placeholder": "언어 검색…" },
+  "install_modal": {
+    "title": "Rotabo를 홈 화면에 추가",
+    "generic": "브라우저 메뉴를 열고 \"앱 설치\" 또는 \"홈 화면에 추가\"를 찾으세요.",
+    "ios": "Safari에서 공유 아이콘을 탭한 다음 \"홈 화면에 추가\"를 선택하세요."
+  },
   "find_form": {
     "title": "드라이버 찾기",
     "subtitle": "성함과 현재 위치를 알려주세요. 다음 단계에서 플랫폼 이용료를 결제하시면 바로 드라이버 검색을 시작합니다.",

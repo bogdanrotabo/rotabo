@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…" },
+  "install_modal": {
+    "title": "Dodaj Rotabo do ekranu głównego",
+    "generic": "Otwórz menu przeglądarki i poszukaj opcji \"Zainstaluj aplikację\" lub \"Dodaj do ekranu głównego\".",
+    "ios": "Stuknij ikonę Udostępnij w Safari, a następnie \"Dodaj do ekranu głównego\"."
+  },
   "find_form": {
     "title": "Znajdź kierowcę",
     "subtitle": "Powiedz nam, kim jesteś i gdzie się znajdujesz. Następnie zapłacisz opłatę na rzecz platformy, a potem zaczniemy szukać.",

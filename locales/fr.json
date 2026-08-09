@@ -87,6 +87,11 @@
     "label": "Langue",
     "search_placeholder": "Rechercher une langue…"
   },
+  "install_modal": {
+    "title": "Ajoutez Rotabo à votre écran d'accueil",
+    "generic": "Ouvrez le menu de votre navigateur et cherchez \"Installer l'application\" ou \"Ajouter à l'écran d'accueil\".",
+    "ios": "Appuyez sur l'icône Partager dans Safari, puis \"Sur l'écran d'accueil\"."
+  },
   "find_form": {
     "title": "Trouver un chauffeur",
     "subtitle": "Dites-nous qui vous êtes et où vous êtes. Vous paierez ensuite la contribution de la plateforme, puis nous commencerons la recherche.",

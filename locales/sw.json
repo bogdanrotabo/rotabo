@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" },
+  "install_modal": {
+    "title": "Ongeza Rotabo kwenye skrini yako ya nyumbani",
+    "generic": "Fungua menyu ya kivinjari chako na utafute \"Sakinisha programu\" au \"Ongeza kwenye Skrini ya Nyumbani\".",
+    "ios": "Gusa aikoni ya Share katika Safari, kisha chagua \"Ongeza kwenye Skrini ya Nyumbani\"."
+  },
   "find_form": {
     "title": "Tafuta dereva",
     "subtitle": "Tuambie wewe ni nani na uko wapi. Kisha utalipa mchango wa jukwaa, kisha tutaanza kutafuta.",

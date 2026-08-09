@@ -87,6 +87,11 @@
     "label": "Language",
     "search_placeholder": "Search language…"
   },
+  "install_modal": {
+    "title": "Add Rotabo to your home screen",
+    "generic": "Open your browser's menu and look for \"Install app\" or \"Add to Home screen\".",
+    "ios": "Tap the Share icon in Safari, then \"Add to Home Screen\"."
+  },
   "find_form": {
     "title": "Find a driver",
     "subtitle": "Tell us who you are and where you are. You'll pay the platform contribution next, then we start searching.",

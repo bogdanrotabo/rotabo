@@ -403,7 +403,7 @@
     <button type="button" class="btn btn-solid" data-i18n="hero.cta_find_driver" onclick="openModal('findDriverModal')">Find a driver</button>
     <button type="button" class="btn btn-outline" data-i18n="hero.cta_become_driver" onclick="openModal('becomeDriverModal')">Become a driver</button>
     <a class="btn btn-outline" href="#sponsor" data-i18n="hero.cta_become_sponsor">Become a sponsor</a>
-    <a class="btn btn-dashed" href="#" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</a>
+    <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
   </div>
   <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
   <div class="badges">
@@ -546,6 +546,14 @@
       <button type="submit" class="form-submit" data-i18n="drive_form.submit">Continue to payment</button>
       <p class="form-error" id="becomeDriverError" data-i18n="drive_form.error">Something went wrong. Please try again.</p>
     </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="installModal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" onclick="closeModal('installModal')" aria-label="Close">✕</button>
+    <h3 data-i18n="install_modal.title">Add Rotabo to your home screen</h3>
+    <p class="modal-sub" id="installInstructions" data-i18n="install_modal.generic">Open your browser's menu and look for "Install app" or "Add to Home screen".</p>
   </div>
 </div>
 
@@ -736,6 +744,16 @@
     return path.split(".").reduce(function(o,k){ return (o && o[k] !== undefined) ? o[k] : undefined; }, obj);
   }
 
+  // Small lookup helper for UI built outside this IIFE (the install
+  // prompt below needs to translate a string it swaps in dynamically,
+  // not just on page load like the data-i18n elements).
+  window.rotaboT = function(path){
+    var code = document.documentElement.getAttribute("lang") || "en";
+    var dict = cache[code] || cache.en;
+    var val = dict ? getPath(dict, path) : undefined;
+    return val !== undefined ? val : path;
+  };
+
   function applyTranslations(dict){
     document.querySelectorAll("[data-i18n]").forEach(function(el){
       var val = getPath(dict, el.getAttribute("data-i18n"));
@@ -871,6 +889,49 @@ if ("serviceWorker" in navigator) {
     });
   });
 }
+
+(function(){
+  // "Add to home screen" was previously a dead href="#" link. Chrome/
+  // Edge/Android support a real install prompt (captured via
+  // beforeinstallprompt below); Safari/iOS and browsers that don't
+  // fire that event at all (Firefox desktop, or Chrome before it
+  // decides the install criteria are met) get manual instructions
+  // instead, since there's no programmatic install API for them.
+  var deferredPrompt = null;
+  var installBtn = document.getElementById("installBtn");
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  var isStandalone = window.matchMedia("(display-mode: standalone)").matches
+    || window.navigator.standalone === true;
+
+  if (isStandalone && installBtn) {
+    installBtn.style.display = "none";
+  }
+
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+  });
+
+  window.addEventListener("appinstalled", function(){
+    deferredPrompt = null;
+    if (installBtn) installBtn.style.display = "none";
+  });
+
+  if (installBtn) {
+    installBtn.addEventListener("click", function(){
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
+        return;
+      }
+      var key = isIOS ? "install_modal.ios" : "install_modal.generic";
+      var instructions = document.getElementById("installInstructions");
+      instructions.setAttribute("data-i18n", key);
+      instructions.textContent = window.rotaboT(key);
+      openModal("installModal");
+    });
+  }
+})();
 </script>
 
 </body>

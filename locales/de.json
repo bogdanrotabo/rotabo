@@ -87,6 +87,11 @@
     "label": "Sprache",
     "search_placeholder": "Sprache suchen…"
   },
+  "install_modal": {
+    "title": "Rotabo zum Startbildschirm hinzufügen",
+    "generic": "Öffne das Menü deines Browsers und suche nach \"App installieren\" oder \"Zum Startbildschirm hinzufügen\".",
+    "ios": "Tippe in Safari auf das Teilen-Symbol, dann auf \"Zum Home-Bildschirm\"."
+  },
   "find_form": {
     "title": "Fahrer finden",
     "subtitle": "Sag uns, wer du bist und wo du bist. Als Nächstes zahlst du den Plattformbeitrag, dann beginnen wir mit der Suche.",

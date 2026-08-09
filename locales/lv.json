@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" },
+  "install_modal": {
+    "title": "Pievieno Rotabo sākuma ekrānam",
+    "generic": "Atveriet pārlūkprogrammas izvēlni un meklējiet \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",
+    "ios": "Pieskarieties ikonai Kopīgot pārlūkā Safari un pēc tam \"Pievienot sākuma ekrānam\"."
+  },
   "find_form": {
     "title": "Atrast šoferi",
     "subtitle": "Pastāsti mums, kas tu esi un kur atrodies. Nākamajā solī samaksāsi platformas maksu, tad sāksim meklēšanu.",

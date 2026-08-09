@@ -87,6 +87,11 @@
     "label": "Kieli",
     "search_placeholder": "Hae kieltä…"
   },
+  "install_modal": {
+    "title": "Lisää Rotabo aloitusnäytölle",
+    "generic": "Avaa selaimesi valikko ja etsi \"Asenna sovellus\" tai \"Lisää aloitusnäytölle\".",
+    "ios": "Napauta Safarissa Jaa-kuvaketta ja valitse sitten \"Lisää Koti-valikkoon\"."
+  },
   "find_form": {
     "title": "Etsi kuljettaja",
     "subtitle": "Kerro meille, kuka olet ja missä olet. Seuraavaksi maksat alustamaksun, jonka jälkeen aloitamme etsimisen.",

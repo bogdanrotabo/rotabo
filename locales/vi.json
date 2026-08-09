@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" },
+  "install_modal": {
+    "title": "Thêm Rotabo vào màn hình chính",
+    "generic": "Mở menu trình duyệt của bạn và tìm \"Cài đặt ứng dụng\" hoặc \"Thêm vào màn hình chính\".",
+    "ios": "Nhấn biểu tượng Chia sẻ trong Safari, sau đó chọn \"Thêm vào MH chính\"."
+  },
   "find_form": {
     "title": "Tìm tài xế",
     "subtitle": "Cho chúng tôi biết bạn là ai và bạn đang ở đâu. Tiếp theo bạn sẽ thanh toán phí nền tảng, sau đó chúng tôi bắt đầu tìm kiếm.",

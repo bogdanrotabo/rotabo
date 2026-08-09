@@ -52,6 +52,11 @@
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" },
+  "install_modal": {
+    "title": "Tambah Rotabo ke skrin utama",
+    "generic": "Buka menu pelayar anda dan cari \"Pasang apl\" atau \"Tambah ke Skrin Utama\".",
+    "ios": "Ketik ikon Kongsi dalam Safari, kemudian \"Tambah ke Skrin Utama\"."
+  },
   "find_form": {
     "title": "Cari pemandu",
     "subtitle": "Beritahu kami siapa anda dan di mana anda berada. Seterusnya anda akan membayar sumbangan platform, kemudian kami mula mencari pemandu.",
