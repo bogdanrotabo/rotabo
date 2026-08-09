@@ -50,5 +50,62 @@
     "terms": "Koşullar", "privacy": "Gizlilik", "driver_terms": "Sürücü koşulları", "supporters": "Destekçiler", "contact": "İletişim",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" }
+  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" },
+  "find_form": {
+    "title": "Sürücü bul",
+    "subtitle": "Bize kim olduğunu ve nerede olduğunu söyle. Ardından platform katkı payını ödeyeceksin, sonra aramaya başlayacağız.",
+    "name_label": "Adın",
+    "phone_label": "Telefon numarası",
+    "city_label": "Şehir / konum",
+    "submit": "Ödemeye geç",
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+  },
+  "drive_form": {
+    "title": "Sürücü ol",
+    "subtitle": "Sürücü profilini oluştur. Ardından platform katkı payını ödeyeceksin, sonra talepleri incelemeye başlayabilirsin.",
+    "name_label": "Adın",
+    "phone_label": "Telefon numarası",
+    "email_label": "E-posta",
+    "city_label": "Şehir / faaliyet bölgesi",
+    "license_year_label": "Ehliyetini aldığın yıl",
+    "decl1": "İlgili araç kategorileri için geçerli bir sürücü belgesine sahibim.",
+    "decl2": "Yolculuk sunduğum ülkede araç kullanmaya yasal olarak yetkiliyim.",
+    "decl3": "Alkol, uyuşturucu veya başka herhangi bir maddenin etkisi altındayken hiçbir yolculuğu kabul etmeyeceğim veya gerçekleştirmeyeceğim.",
+    "decl4": "Tamamen kendi sorumluluğumda ve müşterinin sorumluluğunda araç kullandığımı anlıyorum.",
+    "submit": "Ödemeye geç",
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+  },
+  "searching_page": {
+    "searching_title": "Yakınındaki sürücüler aranıyor…",
+    "searching_body": "Biraz bekle — bir sürücü talebini kabul eder etmez seni onunla buluşturacağız.",
+    "pending_title": "Ödemen onaylanıyor…",
+    "pending_body": "Bu genellikle sadece birkaç saniye sürer.",
+    "no_request_title": "Aktif talep bulunamadı",
+    "no_request_body": "Bu cihazda bir talep bulamadık. Az önce ödeme yaptıysan bu birkaç saniye sürebilir — bu sayfayı yenile. Aksi takdirde ana sayfadan yeni bir talep başlat.",
+    "cancelled_title": "Bu talep iptal edildi",
+    "cancelled_body": "Ana sayfadan istediğin zaman yeni bir talep başlatabilirsin.",
+    "back_home": "← Ana sayfaya dön",
+    "matched_title": "Eşleştin! 🎉",
+    "matched_body": "{driver_name} talebini kabul etti. Buradan sonra ayrıntıları doğrudan aranızda anlaşarak belirlersiniz. Kalan ücret aranızda, nakit veya kartla ödenir.\n\nBu gece direksiyona geçmemeyi seçtiğin için teşekkürler. Rotabo tam olarak bunun için var.",
+    "default_driver_name": "Sürücün"
+  },
+  "dashboard_page": {
+    "eyebrow": "SÜRÜCÜ PANELİ",
+    "title": "Açık talepler",
+    "subtitle": "{city} içinde şu anda sürücü arayan talepler.",
+    "loading": "Yükleniyor…",
+    "not_registered_body": "Bu cihazda henüz bir sürücü profilin yok.",
+    "register_link": "← Sürücü olarak kaydolmaya git",
+    "pending_confirmation": "Kayıt ödemen onaylanıyor…",
+    "empty_note": "Şu anda şehrinde açık talep yok. Bu liste otomatik olarak güncellenir.",
+    "accept_btn": "Kabul et",
+    "accept_checking": "Kontrol ediliyor…",
+    "accept_taken": "Zaten alındı",
+    "taken_note": "Bu talep az önce başka bir sürücü tarafından alındı.",
+    "time_just_now": "az önce",
+    "time_min_ago_one": "1 dakika önce",
+    "time_min_ago_other": "{n} dakika önce",
+    "time_hour_ago_one": "1 saat önce",
+    "time_hour_ago_other": "{n} saat önce"
+  }
 }

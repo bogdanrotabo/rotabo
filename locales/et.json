@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Keel",
     "search_placeholder": "Otsi keelt…"
+  },
+  "find_form": {
+    "title": "Leia juht",
+    "subtitle": "Ütle meile, kes sa oled ja kus sa asud. Järgmisena tasud platvormitasu ja siis alustame otsimist.",
+    "name_label": "Sinu nimi",
+    "phone_label": "Telefoninumber",
+    "city_label": "Linn / asukoht",
+    "submit": "Jätka maksmisele",
+    "error": "Midagi läks valesti. Palun proovi uuesti."
+  },
+  "drive_form": {
+    "title": "Hakka juhiks",
+    "subtitle": "Loo oma juhiprofiil. Järgmisena tasud platvormitasu ja seejärel saad hakata sõidusoove sirvima.",
+    "name_label": "Sinu nimi",
+    "phone_label": "Telefoninumber",
+    "email_label": "E-post",
+    "city_label": "Linn / tegevuspiirkond",
+    "license_year_label": "Aasta, mil said juhiloa",
+    "decl1": "Mul on kehtiv juhiluba asjaomaste sõidukikategooriate jaoks.",
+    "decl2": "Mul on seaduslik õigus sõita riigis, kus ma sõite pakun.",
+    "decl3": "Ma ei võta kunagi vastu ega tee sõitu alkoholi, narkootikumide ega muu aine mõju all.",
+    "decl4": "Ma mõistan, et sõidan täielikult omal vastutusel ja kliendi vastutusel.",
+    "submit": "Jätka maksmisele",
+    "error": "Midagi läks valesti. Palun proovi uuesti."
+  },
+  "searching_page": {
+    "searching_title": "Otsime sulle lähedal olevaid juhte…",
+    "searching_body": "Pea vastu — ühendame sind juhiga niipea, kui keegi su päringu vastu võtab.",
+    "pending_title": "Kinnitame sinu makset…",
+    "pending_body": "See võtab tavaliselt vaid mõne sekundi.",
+    "no_request_title": "Aktiivset päringut ei leitud",
+    "no_request_body": "Me ei leidnud sellest seadmest ühtegi päringut. Kui sa just maksid, võib see võtta mõne sekundi — värskenda lehte. Vastasel juhul alusta uut päringut avalehelt.",
+    "cancelled_title": "See päring tühistati",
+    "cancelled_body": "Saad alati alustada uut päringut avalehelt.",
+    "back_home": "← Tagasi avalehele",
+    "matched_title": "Olete ühendatud! 🎉",
+    "matched_body": "{driver_name} võttis sinu päringu vastu. Siit edasi lepite üksikasjades kokku omavahel otse. Ülejäänud sõiduhinna maksate omavahel kokku, sularahas või kaardiga.\n\nAitäh, et otsustasid täna õhtul mitte ise sõita. Just selle jaoks Rotabo ongi.",
+    "default_driver_name": "Sinu juht"
+  },
+  "dashboard_page": {
+    "eyebrow": "JUHI TÖÖLAUD",
+    "title": "Avatud päringud",
+    "subtitle": "Päringud, mis praegu otsivad juhti linnas {city}.",
+    "loading": "Laadimine…",
+    "not_registered_body": "Sul pole veel selles seadmes juhiprofiili.",
+    "register_link": "← Mine end juhiks registreerima",
+    "pending_confirmation": "Kinnitame sinu registreerimistasu makset…",
+    "empty_note": "Sinu linnas pole hetkel avatud päringuid. See loend uueneb automaatselt.",
+    "accept_btn": "Võta vastu",
+    "accept_checking": "Kontrollimine…",
+    "accept_taken": "Juba võetud",
+    "taken_note": "Selle päringu võttis just vastu teine juht.",
+    "time_just_now": "just praegu",
+    "time_min_ago_one": "1 minut tagasi",
+    "time_min_ago_other": "{n} minutit tagasi",
+    "time_hour_ago_one": "1 tund tagasi",
+    "time_hour_ago_other": "{n} tundi tagasi"
   }
 }

@@ -50,5 +50,62 @@
     "terms": "Villkor", "privacy": "Integritet", "driver_terms": "Villkor för förare", "supporters": "Supportrar", "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" }
+  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" },
+  "find_form": {
+    "title": "Hitta en förare",
+    "subtitle": "Berätta vem du är och var du befinner dig. Härnäst betalar du plattformsavgiften, sedan börjar vi söka.",
+    "name_label": "Ditt namn",
+    "phone_label": "Telefonnummer",
+    "city_label": "Stad / plats",
+    "submit": "Fortsätt till betalning",
+    "error": "Något gick fel. Försök igen."
+  },
+  "drive_form": {
+    "title": "Bli förare",
+    "subtitle": "Skapa din förarprofil. Härnäst betalar du plattformsavgiften, sedan kan du börja bläddra bland förfrågningar.",
+    "name_label": "Ditt namn",
+    "phone_label": "Telefonnummer",
+    "email_label": "E-post",
+    "city_label": "Stad / verksamhetsområde",
+    "license_year_label": "Året du fick ditt körkort",
+    "decl1": "Jag har ett giltigt körkort för de relevanta fordonskategorierna.",
+    "decl2": "Jag har laglig rätt att köra i landet där jag erbjuder resor.",
+    "decl3": "Jag kommer aldrig att acceptera eller genomföra en resa påverkad av alkohol, droger eller andra substanser.",
+    "decl4": "Jag förstår att jag kör helt på eget ansvar och kundens ansvar.",
+    "submit": "Fortsätt till betalning",
+    "error": "Något gick fel. Försök igen."
+  },
+  "searching_page": {
+    "searching_title": "Söker efter förare nära dig…",
+    "searching_body": "Ha tålamod — vi kopplar ihop dig med en förare så snart någon accepterar din förfrågan.",
+    "pending_title": "Bekräftar din betalning…",
+    "pending_body": "Det tar oftast bara några sekunder.",
+    "no_request_title": "Ingen aktiv förfrågan hittades",
+    "no_request_body": "Vi kunde inte hitta någon förfrågan på den här enheten. Om du precis betalat kan det ta några sekunder — uppdatera sidan. Annars, starta en ny förfrågan från startsidan.",
+    "cancelled_title": "Den här förfrågan avbröts",
+    "cancelled_body": "Du kan starta en ny förfrågan när som helst från startsidan.",
+    "back_home": "← Tillbaka till startsidan",
+    "matched_title": "Ni är ihopkopplade! 🎉",
+    "matched_body": "{driver_name} har accepterat din förfrågan. Härifrån löser ni detaljerna direkt med varandra. Resterande belopp gör ni upp om sinsemellan, kontant eller med kort.\n\nTack för att du valde att inte köra själv i kväll. Det är precis vad Rotabo handlar om.",
+    "default_driver_name": "Din förare"
+  },
+  "dashboard_page": {
+    "eyebrow": "FÖRARPANEL",
+    "title": "Öppna förfrågningar",
+    "subtitle": "Förfrågningar som just nu söker en förare i {city}.",
+    "loading": "Laddar…",
+    "not_registered_body": "Du har ännu ingen förarprofil på den här enheten.",
+    "register_link": "← Registrera dig som förare",
+    "pending_confirmation": "Bekräftar din registreringsbetalning…",
+    "empty_note": "Inga öppna förfrågningar i din stad just nu. Listan uppdateras automatiskt.",
+    "accept_btn": "Acceptera",
+    "accept_checking": "Kontrollerar…",
+    "accept_taken": "Redan tagen",
+    "taken_note": "Den förfrågan togs precis av en annan förare.",
+    "time_just_now": "just nu",
+    "time_min_ago_one": "1 min sedan",
+    "time_min_ago_other": "{n} min sedan",
+    "time_hour_ago_one": "1 timme sedan",
+    "time_hour_ago_other": "{n} timmar sedan"
+  }
 }

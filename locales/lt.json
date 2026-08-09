@@ -50,5 +50,62 @@
     "terms": "Sąlygos", "privacy": "Privatumas", "driver_terms": "Vairuotojų sąlygos", "supporters": "Rėmėjai", "contact": "Kontaktai",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" }
+  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" },
+  "find_form": {
+    "title": "Rasti vairuotoją",
+    "subtitle": "Pasakyk mums, kas tu esi ir kur esi. Kitą žingsnį sumokėsi platformos mokestį, tada pradėsime paiešką.",
+    "name_label": "Tavo vardas",
+    "phone_label": "Telefono numeris",
+    "city_label": "Miestas / vietovė",
+    "submit": "Tęsti į apmokėjimą",
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+  },
+  "drive_form": {
+    "title": "Tapk vairuotoju",
+    "subtitle": "Susikurk savo vairuotojo profilį. Kitą žingsnį sumokėsi platformos mokestį, tada galėsi naršyti užklausas.",
+    "name_label": "Tavo vardas",
+    "phone_label": "Telefono numeris",
+    "email_label": "El. paštas",
+    "city_label": "Miestas / veiklos zona",
+    "license_year_label": "Metai, kai gavai vairuotojo pažymėjimą",
+    "decl1": "Turiu galiojantį vairuotojo pažymėjimą atitinkamoms transporto priemonių kategorijoms.",
+    "decl2": "Man teisėtai leidžiama vairuoti šalyje, kurioje siūlau keliones.",
+    "decl3": "Niekada nepriimsiu ir neatliksiu kelionės būdamas apsvaigęs nuo alkoholio, narkotikų ar bet kokios kitos medžiagos.",
+    "decl4": "Suprantu, kad vairuoju visiškai savo ir kliento atsakomybe.",
+    "submit": "Tęsti į apmokėjimą",
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+  },
+  "searching_page": {
+    "searching_title": "Ieškome vairuotojų netoli tavęs…",
+    "searching_body": "Palauk truputį — sujungsime tave su vairuotoju, kai tik kas nors priims tavo užklausą.",
+    "pending_title": "Patvirtiname tavo mokėjimą…",
+    "pending_body": "Paprastai tai užtrunka tik kelias sekundes.",
+    "no_request_title": "Aktyvi užklausa nerasta",
+    "no_request_body": "Nepavyko rasti užklausos šiame įrenginyje. Jei ką tik sumokėjai, tai gali užtrukti kelias sekundes — atnaujink šį puslapį. Priešingu atveju pradėk naują užklausą iš pagrindinio puslapio.",
+    "cancelled_title": "Ši užklausa buvo atšaukta",
+    "cancelled_body": "Bet kada gali pradėti naują užklausą iš pagrindinio puslapio.",
+    "back_home": "← Atgal į pradžią",
+    "matched_title": "Esi sujungtas! 🎉",
+    "matched_body": "{driver_name} priėmė tavo užklausą. Nuo šiol viską susitariate patys tiesiogiai. Likusi kelionės kaina atsiskaitoma tarp jūsų, grynaisiais arba kortele.\n\nAčiū, kad šįvakar pasirinkai nevairuoti pats. Būtent tam ir skirtas Rotabo.",
+    "default_driver_name": "Tavo vairuotojas"
+  },
+  "dashboard_page": {
+    "eyebrow": "VAIRUOTOJO SKYDELIS",
+    "title": "Atviros užklausos",
+    "subtitle": "Užklausos, kurios šiuo metu ieško vairuotojo mieste {city}.",
+    "loading": "Kraunama…",
+    "not_registered_body": "Šiame įrenginyje dar neturi vairuotojo profilio.",
+    "register_link": "← Registruotis kaip vairuotojui",
+    "pending_confirmation": "Patvirtiname tavo registracijos mokėjimą…",
+    "empty_note": "Šiuo metu tavo mieste nėra atvirų užklausų. Šis sąrašas atsinaujina automatiškai.",
+    "accept_btn": "Priimti",
+    "accept_checking": "Tikrinama…",
+    "accept_taken": "Jau užimta",
+    "taken_note": "Tą užklausą ką tik priėmė kitas vairuotojas.",
+    "time_just_now": "ką tik",
+    "time_min_ago_one": "prieš 1 min.",
+    "time_min_ago_other": "prieš {n} min.",
+    "time_hour_ago_one": "prieš 1 val.",
+    "time_hour_ago_other": "prieš {n} val."
+  }
 }

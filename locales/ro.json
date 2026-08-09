@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Limbă",
     "search_placeholder": "Caută o limbă…"
+  },
+  "find_form": {
+    "title": "Găsește un șofer",
+    "subtitle": "Spune-ne cine ești și unde te afli. Urmează să plătești contribuția platformei, apoi începem căutarea.",
+    "name_label": "Numele tău",
+    "phone_label": "Număr de telefon",
+    "city_label": "Oraș / locație",
+    "submit": "Continuă spre plată",
+    "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
+  },
+  "drive_form": {
+    "title": "Devino șofer",
+    "subtitle": "Creează-ți profilul de șofer. Urmează să plătești contribuția platformei, apoi poți începe să răsfoiești cererile.",
+    "name_label": "Numele tău",
+    "phone_label": "Număr de telefon",
+    "email_label": "Email",
+    "city_label": "Oraș / zonă de activitate",
+    "license_year_label": "Anul în care ai obținut permisul de conducere",
+    "decl1": "Dețin un permis de conducere valabil pentru categoriile de vehicule relevante.",
+    "decl2": "Am dreptul legal de a conduce în țara în care ofer curse.",
+    "decl3": "Nu voi accepta sau efectua niciodată o cursă sub influența alcoolului, a drogurilor sau a oricărei alte substanțe.",
+    "decl4": "Înțeleg că conduc pe propria mea răspundere și pe cea a clientului.",
+    "submit": "Continuă spre plată",
+    "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
+  },
+  "searching_page": {
+    "searching_title": "Căutăm șoferi lângă tine…",
+    "searching_body": "Ai puțină răbdare — te conectăm cu un șofer imediat ce cineva acceptă cererea ta.",
+    "pending_title": "Confirmăm plata ta…",
+    "pending_body": "De obicei durează doar câteva secunde.",
+    "no_request_title": "Nu am găsit nicio cerere activă",
+    "no_request_body": "Nu am găsit nicio cerere pe acest dispozitiv. Dacă tocmai ai plătit, poate dura câteva secunde — reîmprospătează pagina. Altfel, pornește o cerere nouă de pe pagina principală.",
+    "cancelled_title": "Această cerere a fost anulată",
+    "cancelled_body": "Poți porni oricând o cerere nouă de pe pagina principală.",
+    "back_home": "← Înapoi acasă",
+    "matched_title": "Te-ai conectat! 🎉",
+    "matched_body": "{driver_name} a acceptat cererea ta. De aici înainte, voi doi preluați lucrurile — stabiliți detaliile direct între voi. Restul cursei se achită între voi, cash sau card.\n\nÎți mulțumim că ai ales să nu conduci în seara asta. Exact despre asta este Rotabo.",
+    "default_driver_name": "Șoferul tău"
+  },
+  "dashboard_page": {
+    "eyebrow": "PANOU ȘOFER",
+    "title": "Cereri deschise",
+    "subtitle": "Cereri care caută în prezent un șofer în {city}.",
+    "loading": "Se încarcă…",
+    "not_registered_body": "Nu ai încă un profil de șofer pe acest dispozitiv.",
+    "register_link": "← Înregistrează-te ca șofer",
+    "pending_confirmation": "Confirmăm plata înregistrării tale…",
+    "empty_note": "Nu există cereri deschise în orașul tău momentan. Această listă se actualizează automat.",
+    "accept_btn": "Acceptă",
+    "accept_checking": "Se verifică…",
+    "accept_taken": "Deja preluată",
+    "taken_note": "Acea cerere tocmai a fost preluată de alt șofer.",
+    "time_just_now": "chiar acum",
+    "time_min_ago_one": "acum 1 min",
+    "time_min_ago_other": "acum {n} min",
+    "time_hour_ago_one": "acum 1 oră",
+    "time_hour_ago_other": "acum {n} ore"
   }
 }

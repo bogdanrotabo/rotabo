@@ -50,5 +50,62 @@
     "terms": "Noteikumi", "privacy": "Privātums", "driver_terms": "Šoferu noteikumi", "supporters": "Atbalstītāji", "contact": "Kontakti",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" }
+  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" },
+  "find_form": {
+    "title": "Atrast šoferi",
+    "subtitle": "Pastāsti mums, kas tu esi un kur atrodies. Nākamajā solī samaksāsi platformas maksu, tad sāksim meklēšanu.",
+    "name_label": "Tavs vārds",
+    "phone_label": "Tālruņa numurs",
+    "city_label": "Pilsēta / atrašanās vieta",
+    "submit": "Turpināt uz apmaksu",
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+  },
+  "drive_form": {
+    "title": "Kļūsti par šoferi",
+    "subtitle": "Izveido savu šofera profilu. Nākamajā solī samaksāsi platformas maksu, tad varēsi sākt pārlūkot pieprasījumus.",
+    "name_label": "Tavs vārds",
+    "phone_label": "Tālruņa numurs",
+    "email_label": "E-pasts",
+    "city_label": "Pilsēta / darbības teritorija",
+    "license_year_label": "Gads, kad ieguvi vadītāja apliecību",
+    "decl1": "Man ir derīga vadītāja apliecība attiecīgajām transportlīdzekļu kategorijām.",
+    "decl2": "Man ir likumīgas tiesības vadīt transportlīdzekli valstī, kurā piedāvāju braucienus.",
+    "decl3": "Es nekad nepieņemšu un neveikšu braucienu, ja būšu alkohola, narkotiku vai citu vielu ietekmē.",
+    "decl4": "Es saprotu, ka vadu transportlīdzekli pilnībā uz savu un klienta atbildību.",
+    "submit": "Turpināt uz apmaksu",
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+  },
+  "searching_page": {
+    "searching_title": "Meklējam šoferus tev tuvumā…",
+    "searching_body": "Uzgaidi mazliet — savienosim tevi ar šoferi, tiklīdz kāds pieņems tavu pieprasījumu.",
+    "pending_title": "Apstiprinām tavu maksājumu…",
+    "pending_body": "Parasti tas aizņem tikai dažas sekundes.",
+    "no_request_title": "Aktīvs pieprasījums nav atrasts",
+    "no_request_body": "Mēs nevarējām atrast pieprasījumu šajā ierīcē. Ja tikko samaksāji, tas var aizņemt dažas sekundes — atsvaidzini šo lapu. Pretējā gadījumā sāc jaunu pieprasījumu no sākumlapas.",
+    "cancelled_title": "Šis pieprasījums tika atcelts",
+    "cancelled_body": "Tu vari sākt jaunu pieprasījumu jebkurā laikā no sākumlapas.",
+    "back_home": "← Atpakaļ uz sākumu",
+    "matched_title": "Tu esi savienots! 🎉",
+    "matched_body": "{driver_name} ir pieņēmis tavu pieprasījumu. No šī brīža jūs paši vienojaties par detaļām. Atlikusī brauciena maksa tiek nokārtota starp jums, skaidrā naudā vai ar karti.\n\nPaldies, ka šovakar izvēlējies nevadīt pats. Tieši par to ir Rotabo.",
+    "default_driver_name": "Tavs šoferis"
+  },
+  "dashboard_page": {
+    "eyebrow": "ŠOFERA PANELIS",
+    "title": "Atvērti pieprasījumi",
+    "subtitle": "Pieprasījumi, kas šobrīd meklē šoferi {city}.",
+    "loading": "Notiek ielāde…",
+    "not_registered_body": "Tev vēl nav šofera profila šajā ierīcē.",
+    "register_link": "← Reģistrēties kā šoferim",
+    "pending_confirmation": "Apstiprinām tavu reģistrācijas maksājumu…",
+    "empty_note": "Šobrīd tavā pilsētā nav atvērtu pieprasījumu. Šis saraksts atjaunojas automātiski.",
+    "accept_btn": "Pieņemt",
+    "accept_checking": "Pārbauda…",
+    "accept_taken": "Jau aizņemts",
+    "taken_note": "Šo pieprasījumu tikko pieņēma cits šoferis.",
+    "time_just_now": "tikko",
+    "time_min_ago_one": "pirms 1 minūtes",
+    "time_min_ago_other": "pirms {n} minūtēm",
+    "time_hour_ago_one": "pirms 1 stundas",
+    "time_hour_ago_other": "pirms {n} stundām"
+  }
 }

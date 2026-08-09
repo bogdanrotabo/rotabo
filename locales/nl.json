@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Taal",
     "search_placeholder": "Zoek een taal…"
+  },
+  "find_form": {
+    "title": "Zoek een chauffeur",
+    "subtitle": "Vertel ons wie je bent en waar je bent. Daarna betaal je de platformbijdrage en beginnen we met zoeken.",
+    "name_label": "Je naam",
+    "phone_label": "Telefoonnummer",
+    "city_label": "Stad / locatie",
+    "submit": "Doorgaan naar betaling",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "drive_form": {
+    "title": "Word chauffeur",
+    "subtitle": "Maak je chauffeursprofiel aan. Daarna betaal je de platformbijdrage en kun je aanvragen gaan bekijken.",
+    "name_label": "Je naam",
+    "phone_label": "Telefoonnummer",
+    "email_label": "E-mail",
+    "city_label": "Stad / werkgebied",
+    "license_year_label": "Jaar waarin je je rijbewijs hebt gehaald",
+    "decl1": "Ik heb een geldig rijbewijs voor de relevante voertuigcategorieën.",
+    "decl2": "Ik ben wettelijk bevoegd om te rijden in het land waar ik ritten aanbied.",
+    "decl3": "Ik zal nooit een rit accepteren of uitvoeren onder invloed van alcohol, drugs of enige andere stof.",
+    "decl4": "Ik begrijp dat ik volledig op eigen verantwoordelijkheid en die van de klant rijd.",
+    "submit": "Doorgaan naar betaling",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "searching_page": {
+    "searching_title": "We zoeken chauffeurs bij jou in de buurt…",
+    "searching_body": "Even geduld — we brengen je in contact met een chauffeur zodra iemand je aanvraag accepteert.",
+    "pending_title": "We bevestigen je betaling…",
+    "pending_body": "Dit duurt meestal maar een paar seconden.",
+    "no_request_title": "Geen actieve aanvraag gevonden",
+    "no_request_body": "We konden geen aanvraag vinden op dit apparaat. Als je net hebt betaald, kan dit een paar seconden duren — vernieuw deze pagina. Start anders een nieuwe aanvraag vanaf de homepage.",
+    "cancelled_title": "Deze aanvraag is geannuleerd",
+    "cancelled_body": "Je kunt altijd een nieuwe aanvraag starten vanaf de homepage.",
+    "back_home": "← Terug naar home",
+    "matched_title": "Je bent verbonden! 🎉",
+    "matched_body": "{driver_name} heeft je aanvraag geaccepteerd. Vanaf hier regelen jullie het samen — spreek de details rechtstreeks met elkaar af. De rest van de rit reken je onderling af, contant of met kaart.\n\nBedankt dat je ervoor koos om vanavond niet zelf te rijden. Daar staat Rotabo voor.",
+    "default_driver_name": "Jouw chauffeur"
+  },
+  "dashboard_page": {
+    "eyebrow": "CHAUFFEURSDASHBOARD",
+    "title": "Openstaande aanvragen",
+    "subtitle": "Aanvragen die momenteel op zoek zijn naar een chauffeur in {city}.",
+    "loading": "Laden…",
+    "not_registered_body": "Je hebt nog geen chauffeursprofiel op dit apparaat.",
+    "register_link": "← Registreer je als chauffeur",
+    "pending_confirmation": "We bevestigen de betaling van je registratie…",
+    "empty_note": "Op dit moment zijn er geen openstaande aanvragen in jouw stad. Deze lijst wordt automatisch ververst.",
+    "accept_btn": "Accepteren",
+    "accept_checking": "Controleren…",
+    "accept_taken": "Al bezet",
+    "taken_note": "Die aanvraag is zojuist door een andere chauffeur geaccepteerd.",
+    "time_just_now": "zojuist",
+    "time_min_ago_one": "1 min geleden",
+    "time_min_ago_other": "{n} min geleden",
+    "time_hour_ago_one": "1 uur geleden",
+    "time_hour_ago_other": "{n} uur geleden"
   }
 }

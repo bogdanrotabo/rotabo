@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Jazyk",
     "search_placeholder": "Hledat jazyk…"
+  },
+  "find_form": {
+    "title": "Najít řidiče",
+    "subtitle": "Řekněte nám, kdo jste a kde se nacházíte. Dále zaplatíte příspěvek platformě a poté začneme hledat.",
+    "name_label": "Vaše jméno",
+    "phone_label": "Telefonní číslo",
+    "city_label": "Město / poloha",
+    "submit": "Pokračovat k platbě",
+    "error": "Něco se pokazilo. Zkuste to prosím znovu."
+  },
+  "drive_form": {
+    "title": "Staň se řidičem",
+    "subtitle": "Vytvořte si profil řidiče. Dále zaplatíte příspěvek platformě a poté můžete začít procházet poptávky.",
+    "name_label": "Vaše jméno",
+    "phone_label": "Telefonní číslo",
+    "email_label": "E-mail",
+    "city_label": "Město / oblast působení",
+    "license_year_label": "Rok získání řidičského průkazu",
+    "decl1": "Vlastním platný řidičský průkaz pro příslušné kategorie vozidel.",
+    "decl2": "Mám zákonné oprávnění řídit v zemi, kde nabízím jízdy.",
+    "decl3": "Nikdy nepřijmu ani neuskutečním jízdu pod vlivem alkoholu, drog nebo jiné návykové látky.",
+    "decl4": "Rozumím, že řídím zcela na vlastní odpovědnost a na odpovědnost klienta.",
+    "submit": "Pokračovat k platbě",
+    "error": "Něco se pokazilo. Zkuste to prosím znovu."
+  },
+  "searching_page": {
+    "searching_title": "Hledáme řidiče ve vašem okolí…",
+    "searching_body": "Vydržte — jakmile někdo přijme vaši žádost, spojíme vás s řidičem.",
+    "pending_title": "Potvrzujeme vaši platbu…",
+    "pending_body": "Obvykle to trvá jen pár sekund.",
+    "no_request_title": "Nebyla nalezena žádná aktivní žádost",
+    "no_request_body": "Na tomto zařízení jsme nenašli žádnou žádost. Pokud jste právě zaplatili, může to chvíli trvat — obnovte stránku. Jinak zadejte novou žádost z domovské stránky.",
+    "cancelled_title": "Tato žádost byla zrušena",
+    "cancelled_body": "Novou žádost můžete kdykoli zadat z domovské stránky.",
+    "back_home": "← Zpět na hlavní stránku",
+    "matched_title": "Jste spojeni! 🎉",
+    "matched_body": "{driver_name} přijal vaši žádost. Odtud si už podrobnosti domlouváte přímo mezi sebou. Zbytek jízdného si vyrovnáte mezi sebou, v hotovosti nebo kartou.\n\nDěkujeme, že jste se dnes večer rozhodli neřídit. Přesně o tom Rotabo je.",
+    "default_driver_name": "Váš řidič"
+  },
+  "dashboard_page": {
+    "eyebrow": "PŘEHLED ŘIDIČE",
+    "title": "Otevřené žádosti",
+    "subtitle": "Žádosti, které aktuálně hledají řidiče ve městě {city}.",
+    "loading": "Načítání…",
+    "not_registered_body": "Na tomto zařízení zatím nemáte profil řidiče.",
+    "register_link": "← Zaregistrovat se jako řidič",
+    "pending_confirmation": "Potvrzujeme platbu za vaši registraci…",
+    "empty_note": "Ve vašem městě momentálně nejsou žádné otevřené žádosti. Tento seznam se automaticky obnovuje.",
+    "accept_btn": "Přijmout",
+    "accept_checking": "Kontroluji…",
+    "accept_taken": "Již obsazeno",
+    "taken_note": "Tuto žádost si právě vzal jiný řidič.",
+    "time_just_now": "právě teď",
+    "time_min_ago_one": "před 1 minutou",
+    "time_min_ago_other": "před {n} minutami",
+    "time_hour_ago_one": "před 1 hodinou",
+    "time_hour_ago_other": "před {n} hodinami"
   }
 }

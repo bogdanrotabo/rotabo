@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Kieli",
     "search_placeholder": "Hae kieltä…"
+  },
+  "find_form": {
+    "title": "Etsi kuljettaja",
+    "subtitle": "Kerro meille, kuka olet ja missä olet. Seuraavaksi maksat alustamaksun, jonka jälkeen aloitamme etsimisen.",
+    "name_label": "Nimesi",
+    "phone_label": "Puhelinnumero",
+    "city_label": "Kaupunki / sijainti",
+    "submit": "Jatka maksuun",
+    "error": "Jokin meni pieleen. Yritä uudelleen."
+  },
+  "drive_form": {
+    "title": "Ryhdy kuljettajaksi",
+    "subtitle": "Luo kuljettajaprofiilisi. Seuraavaksi maksat alustamaksun, jonka jälkeen voit alkaa selata pyyntöjä.",
+    "name_label": "Nimesi",
+    "phone_label": "Puhelinnumero",
+    "email_label": "Sähköposti",
+    "city_label": "Kaupunki / toiminta-alue",
+    "license_year_label": "Vuosi, jolloin sait ajokorttisi",
+    "decl1": "Minulla on voimassa oleva ajokortti asianomaisiin ajoneuvoluokkiin.",
+    "decl2": "Minulla on laillinen oikeus ajaa maassa, jossa tarjoan kyytejä.",
+    "decl3": "En koskaan ota vastaan tai suorita kyytiä alkoholin, huumeiden tai minkään muun aineen vaikutuksen alaisena.",
+    "decl4": "Ymmärrän ajavani täysin omalla ja asiakkaan vastuulla.",
+    "submit": "Jatka maksuun",
+    "error": "Jokin meni pieleen. Yritä uudelleen."
+  },
+  "searching_page": {
+    "searching_title": "Etsitään kuljettajia lähelläsi…",
+    "searching_body": "Odota hetki — yhdistämme sinut kuljettajaan heti, kun joku hyväksyy pyyntösi.",
+    "pending_title": "Vahvistetaan maksuasi…",
+    "pending_body": "Tämä kestää yleensä vain muutaman sekunnin.",
+    "no_request_title": "Aktiivista pyyntöä ei löytynyt",
+    "no_request_body": "Emme löytäneet pyyntöä tältä laitteelta. Jos maksoit juuri, tämä voi kestää muutaman sekunnin — päivitä sivu. Muussa tapauksessa aloita uusi pyyntö etusivulta.",
+    "cancelled_title": "Tämä pyyntö peruutettiin",
+    "cancelled_body": "Voit aloittaa uuden pyynnön milloin tahansa etusivulta.",
+    "back_home": "← Takaisin etusivulle",
+    "matched_title": "Olette yhteydessä! 🎉",
+    "matched_body": "{driver_name} hyväksyi pyyntösi. Tästä eteenpäin sovitte yksityiskohdista suoraan keskenänne. Loppumatkan hinta maksetaan teidän kesken, käteisellä tai kortilla.\n\nKiitos, että päätit olla ajamatta itse tänä iltana. Juuri siitä Rotabossa on kyse.",
+    "default_driver_name": "Kuljettajasi"
+  },
+  "dashboard_page": {
+    "eyebrow": "KULJETTAJAN NÄKYMÄ",
+    "title": "Avoimet pyynnöt",
+    "subtitle": "Pyynnöt, jotka etsivät parhaillaan kuljettajaa alueella {city}.",
+    "loading": "Ladataan…",
+    "not_registered_body": "Sinulla ei vielä ole kuljettajaprofiilia tällä laitteella.",
+    "register_link": "← Rekisteröidy kuljettajaksi",
+    "pending_confirmation": "Vahvistetaan rekisteröitymismaksuasi…",
+    "empty_note": "Kaupungissasi ei ole tällä hetkellä avoimia pyyntöjä. Tämä lista päivittyy automaattisesti.",
+    "accept_btn": "Hyväksy",
+    "accept_checking": "Tarkistetaan…",
+    "accept_taken": "Jo varattu",
+    "taken_note": "Toinen kuljettaja otti juuri kyseisen pyynnön.",
+    "time_just_now": "juuri nyt",
+    "time_min_ago_one": "1 min sitten",
+    "time_min_ago_other": "{n} min sitten",
+    "time_hour_ago_one": "1 tunti sitten",
+    "time_hour_ago_other": "{n} tuntia sitten"
   }
 }

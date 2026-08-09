@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Jezik",
     "search_placeholder": "Pretraži jezik…"
+  },
+  "find_form": {
+    "title": "Pronađi vozača",
+    "subtitle": "Recite nam tko ste i gdje se nalazite. Zatim plaćate naknadu platforme, a potom počinjemo tražiti.",
+    "name_label": "Vaše ime",
+    "phone_label": "Broj telefona",
+    "city_label": "Grad / lokacija",
+    "submit": "Nastavi na plaćanje",
+    "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
+  },
+  "drive_form": {
+    "title": "Postani vozač",
+    "subtitle": "Izradite svoj profil vozača. Zatim plaćate naknadu platforme, a potom možete početi pregledavati zahtjeve.",
+    "name_label": "Vaše ime",
+    "phone_label": "Broj telefona",
+    "email_label": "E-mail",
+    "city_label": "Grad / područje djelovanja",
+    "license_year_label": "Godina stjecanja vozačke dozvole",
+    "decl1": "Posjedujem važeću vozačku dozvolu za odgovarajuće kategorije vozila.",
+    "decl2": "Zakonski imam pravo voziti u zemlji u kojoj nudim vožnje.",
+    "decl3": "Nikada neću prihvatiti niti obaviti vožnju pod utjecajem alkohola, droga ili bilo koje druge tvari.",
+    "decl4": "Razumijem da vozim isključivo na vlastitu odgovornost i odgovornost klijenta.",
+    "submit": "Nastavi na plaćanje",
+    "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
+  },
+  "searching_page": {
+    "searching_title": "Tražimo vozače u vašoj blizini…",
+    "searching_body": "Strpite se — povezat ćemo vas s vozačem čim netko prihvati vaš zahtjev.",
+    "pending_title": "Potvrđujemo vašu uplatu…",
+    "pending_body": "To obično traje samo nekoliko sekundi.",
+    "no_request_title": "Nema aktivnog zahtjeva",
+    "no_request_body": "Nismo pronašli zahtjev na ovom uređaju. Ako ste upravo platili, to može potrajati nekoliko sekundi — osvježite stranicu. U suprotnom, pokrenite novi zahtjev s početne stranice.",
+    "cancelled_title": "Ovaj zahtjev je otkazan",
+    "cancelled_body": "Novi zahtjev možete pokrenuti bilo kada s početne stranice.",
+    "back_home": "← Natrag na početnu",
+    "matched_title": "Povezani ste! 🎉",
+    "matched_body": "{driver_name} je prihvatio vaš zahtjev. Odavde nadalje sami dogovarate detalje. Preostali iznos vožnje podmirujete međusobno, gotovinom ili karticom.\n\nHvala vam što ste odlučili ne voziti večeras. Upravo je to smisao Rotaba.",
+    "default_driver_name": "Vaš vozač"
+  },
+  "dashboard_page": {
+    "eyebrow": "NADZORNA PLOČA VOZAČA",
+    "title": "Otvoreni zahtjevi",
+    "subtitle": "Zahtjevi koji trenutačno traže vozača u gradu {city}.",
+    "loading": "Učitavanje…",
+    "not_registered_body": "Na ovom uređaju još nemate profil vozača.",
+    "register_link": "← Idi se registrirati kao vozač",
+    "pending_confirmation": "Potvrđujemo uplatu za vašu registraciju…",
+    "empty_note": "Trenutačno nema otvorenih zahtjeva u vašem gradu. Ovaj popis se automatski osvježava.",
+    "accept_btn": "Prihvati",
+    "accept_checking": "Provjera…",
+    "accept_taken": "Već zauzeto",
+    "taken_note": "Taj je zahtjev upravo preuzeo drugi vozač.",
+    "time_just_now": "upravo sada",
+    "time_min_ago_one": "prije 1 minutu",
+    "time_min_ago_other": "prije {n} minuta",
+    "time_hour_ago_one": "prije 1 sat",
+    "time_hour_ago_other": "prije {n} sati"
   }
 }

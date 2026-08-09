@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Lingua",
     "search_placeholder": "Cerca una lingua…"
+  },
+  "find_form": {
+    "title": "Trova un autista",
+    "subtitle": "Dicci chi sei e dove ti trovi. Dopo pagherai il contributo della piattaforma, poi inizieremo la ricerca.",
+    "name_label": "Il tuo nome",
+    "phone_label": "Numero di telefono",
+    "city_label": "Città / posizione",
+    "submit": "Continua al pagamento",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "drive_form": {
+    "title": "Diventa autista",
+    "subtitle": "Crea il tuo profilo da autista. Dopo pagherai il contributo della piattaforma, poi potrai iniziare a sfogliare le richieste.",
+    "name_label": "Il tuo nome",
+    "phone_label": "Numero di telefono",
+    "email_label": "Email",
+    "city_label": "Città / area di attività",
+    "license_year_label": "Anno di conseguimento della patente",
+    "decl1": "Sono in possesso di una patente di guida valida per le categorie di veicoli pertinenti.",
+    "decl2": "Sono legalmente autorizzato a guidare nel paese in cui offro i viaggi.",
+    "decl3": "Non accetterò né effettuerò mai un viaggio sotto l'effetto di alcol, droghe o qualsiasi altra sostanza.",
+    "decl4": "Comprendo di guidare interamente sotto la mia responsabilità e quella del cliente.",
+    "submit": "Continua al pagamento",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "searching_page": {
+    "searching_title": "Ricerca autisti nelle tue vicinanze…",
+    "searching_body": "Un attimo di pazienza — ti metteremo in contatto con un autista non appena qualcuno accetterà la tua richiesta.",
+    "pending_title": "Conferma del pagamento in corso…",
+    "pending_body": "Di solito richiede solo pochi secondi.",
+    "no_request_title": "Nessuna richiesta attiva trovata",
+    "no_request_body": "Non abbiamo trovato una richiesta su questo dispositivo. Se hai appena pagato, potrebbero volerci alcuni secondi — aggiorna questa pagina. Altrimenti, avvia una nuova richiesta dalla pagina iniziale.",
+    "cancelled_title": "Questa richiesta è stata annullata",
+    "cancelled_body": "Puoi avviare una nuova richiesta in qualsiasi momento dalla pagina iniziale.",
+    "back_home": "← Torna alla home",
+    "matched_title": "Sei connesso! 🎉",
+    "matched_body": "{driver_name} ha accettato la tua richiesta. Da qui in poi tocca a voi due — accordatevi direttamente sui dettagli. La tariffa rimanente si salda tra voi, in contanti o con carta.\n\nGrazie per aver scelto di non guidare stasera. È proprio questo lo spirito di Rotabo.",
+    "default_driver_name": "Il tuo autista"
+  },
+  "dashboard_page": {
+    "eyebrow": "PANNELLO AUTISTA",
+    "title": "Richieste aperte",
+    "subtitle": "Richieste attualmente alla ricerca di un autista a {city}.",
+    "loading": "Caricamento…",
+    "not_registered_body": "Non hai ancora un profilo da autista su questo dispositivo.",
+    "register_link": "← Registrati come autista",
+    "pending_confirmation": "Conferma del pagamento della registrazione in corso…",
+    "empty_note": "Al momento non ci sono richieste aperte nella tua città. Questa lista si aggiorna automaticamente.",
+    "accept_btn": "Accetta",
+    "accept_checking": "Verifica in corso…",
+    "accept_taken": "Già presa",
+    "taken_note": "Quella richiesta è appena stata presa da un altro autista.",
+    "time_just_now": "proprio ora",
+    "time_min_ago_one": "1 minuto fa",
+    "time_min_ago_other": "{n} minuti fa",
+    "time_hour_ago_one": "1 ora fa",
+    "time_hour_ago_other": "{n} ore fa"
   }
 }

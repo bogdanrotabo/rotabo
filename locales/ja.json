@@ -50,5 +50,62 @@
     "terms": "利用規約", "privacy": "プライバシーポリシー", "driver_terms": "ドライバー利用規約", "supporters": "サポーター", "contact": "お問い合わせ",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "言語", "search_placeholder": "言語を検索…" }
+  "lang_selector": { "label": "言語", "search_placeholder": "言語を検索…" },
+  "find_form": {
+    "title": "ドライバーを探す",
+    "subtitle": "お名前と現在地をお知らせください。次にプラットフォーム利用料をお支払いいただいたのち、ドライバーの検索を開始します。",
+    "name_label": "お名前",
+    "phone_label": "電話番号",
+    "city_label": "市区町村 / 現在地",
+    "submit": "支払いに進む",
+    "error": "問題が発生しました。もう一度お試しください。"
+  },
+  "drive_form": {
+    "title": "ドライバーになる",
+    "subtitle": "ドライバープロフィールを作成してください。次にプラットフォーム利用料をお支払いいただくと、リクエストの閲覧を始められます。",
+    "name_label": "お名前",
+    "phone_label": "電話番号",
+    "email_label": "メールアドレス",
+    "city_label": "都市 / 活動エリア",
+    "license_year_label": "運転免許を取得した年",
+    "decl1": "私は該当する車両区分の有効な運転免許を保有しています。",
+    "decl2": "私は送迎を提供する国において、法的に運転が認められています。",
+    "decl3": "私はアルコール、薬物、その他の物質の影響下にある状態で、送迎を引き受けたり行ったりすることは決してありません。",
+    "decl4": "私は、運転がすべて自己およびお客様自身の責任のもとで行われることを理解しています。",
+    "submit": "支払いに進む",
+    "error": "問題が発生しました。もう一度お試しください。"
+  },
+  "searching_page": {
+    "searching_title": "近くのドライバーを探しています…",
+    "searching_body": "少々お待ちください。ドライバーがリクエストを承諾次第、すぐにおつなぎします。",
+    "pending_title": "お支払いを確認しています…",
+    "pending_body": "通常、数秒で完了します。",
+    "no_request_title": "有効なリクエストが見つかりません",
+    "no_request_body": "このデバイスでリクエストが見つかりませんでした。お支払い直後の場合は数秒かかることがありますので、このページを更新してください。それ以外の場合は、ホームページから新しいリクエストを開始してください。",
+    "cancelled_title": "このリクエストはキャンセルされました",
+    "cancelled_body": "ホームページからいつでも新しいリクエストを開始できます。",
+    "back_home": "← ホームに戻る",
+    "matched_title": "マッチングしました！🎉",
+    "matched_body": "{driver_name} があなたのリクエストを承諾しました。ここからはお二人で直接詳細を決めていただけます。残りの料金は現金またはカードで、お二人の間で精算してください。\n\n今夜、運転しないことを選んでくださりありがとうございます。それこそが Rotabo の目指すものです。",
+    "default_driver_name": "あなたのドライバー"
+  },
+  "dashboard_page": {
+    "eyebrow": "ドライバーダッシュボード",
+    "title": "受付中のリクエスト",
+    "subtitle": "現在 {city} でドライバーを探しているリクエストです。",
+    "loading": "読み込み中…",
+    "not_registered_body": "このデバイスにはまだドライバープロフィールが登録されていません。",
+    "register_link": "← ドライバー登録に進む",
+    "pending_confirmation": "登録料のお支払いを確認しています…",
+    "empty_note": "現在、お住まいの都市に受付中のリクエストはありません。このリストは自動的に更新されます。",
+    "accept_btn": "承諾する",
+    "accept_checking": "確認中…",
+    "accept_taken": "受付終了",
+    "taken_note": "このリクエストは、たった今別のドライバーが承諾しました。",
+    "time_just_now": "たった今",
+    "time_min_ago_one": "1分前",
+    "time_min_ago_other": "{n}分前",
+    "time_hour_ago_one": "1時間前",
+    "time_hour_ago_other": "{n}時間前"
+  }
 }

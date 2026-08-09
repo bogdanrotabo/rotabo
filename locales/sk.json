@@ -50,5 +50,62 @@
     "terms": "Podmienky", "privacy": "Súkromie", "driver_terms": "Podmienky pre vodičov", "supporters": "Podporovatelia", "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" }
+  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" },
+  "find_form": {
+    "title": "Nájsť vodiča",
+    "subtitle": "Povedz nám, kto si a kde sa nachádzaš. Ďalej zaplatíš príspevok platforme a potom začneme hľadať.",
+    "name_label": "Tvoje meno",
+    "phone_label": "Telefónne číslo",
+    "city_label": "Mesto / poloha",
+    "submit": "Pokračovať k platbe",
+    "error": "Niečo sa pokazilo. Skús to prosím znova."
+  },
+  "drive_form": {
+    "title": "Staň sa vodičom",
+    "subtitle": "Vytvor si svoj profil vodiča. Ďalej zaplatíš príspevok platforme a potom môžeš začať prehliadať požiadavky.",
+    "name_label": "Tvoje meno",
+    "phone_label": "Telefónne číslo",
+    "email_label": "E-mail",
+    "city_label": "Mesto / oblasť pôsobenia",
+    "license_year_label": "Rok, kedy si získal vodičský preukaz",
+    "decl1": "Mám platný vodičský preukaz pre príslušné kategórie vozidiel.",
+    "decl2": "Som legálne oprávnený viesť vozidlo v krajine, kde ponúkam jazdy.",
+    "decl3": "Nikdy neprijmem ani nevykonám jazdu pod vplyvom alkoholu, drog alebo akejkoľvek inej látky.",
+    "decl4": "Rozumiem, že šoférujem výhradne na vlastnú zodpovednosť a zodpovednosť klienta.",
+    "submit": "Pokračovať k platbe",
+    "error": "Niečo sa pokazilo. Skús to prosím znova."
+  },
+  "searching_page": {
+    "searching_title": "Hľadáme vodičov vo tvojom okolí…",
+    "searching_body": "Vydrž chvíľu — spojíme ťa s vodičom hneď, ako niekto prijme tvoju požiadavku.",
+    "pending_title": "Potvrdzujeme tvoju platbu…",
+    "pending_body": "Zvyčajne to trvá len pár sekúnd.",
+    "no_request_title": "Nenašla sa žiadna aktívna požiadavka",
+    "no_request_body": "Na tomto zariadení sme nenašli žiadnu požiadavku. Ak si práve zaplatil, môže to trvať pár sekúnd — obnov túto stránku. Inak začni novú požiadavku z domovskej stránky.",
+    "cancelled_title": "Táto požiadavka bola zrušená",
+    "cancelled_body": "Novú požiadavku môžeš kedykoľvek začať z domovskej stránky.",
+    "back_home": "← Späť domov",
+    "matched_title": "Si spojený! 🎉",
+    "matched_body": "{driver_name} prijal tvoju požiadavku. Odteraz si detaily dohodnete priamo medzi sebou. Zvyšok cestovného si vyrovnáte medzi sebou, v hotovosti alebo kartou.\n\nĎakujeme, že si dnes večer nešoféroval sám. Presne o to v Rotabo ide.",
+    "default_driver_name": "Tvoj vodič"
+  },
+  "dashboard_page": {
+    "eyebrow": "PANEL VODIČA",
+    "title": "Otvorené požiadavky",
+    "subtitle": "Požiadavky, ktoré momentálne hľadajú vodiča v {city}.",
+    "loading": "Načítava sa…",
+    "not_registered_body": "Na tomto zariadení ešte nemáš profil vodiča.",
+    "register_link": "← Zaregistrovať sa ako vodič",
+    "pending_confirmation": "Potvrdzujeme tvoju registračnú platbu…",
+    "empty_note": "Momentálne nie sú vo tvojom meste žiadne otvorené požiadavky. Tento zoznam sa aktualizuje automaticky.",
+    "accept_btn": "Prijať",
+    "accept_checking": "Kontrola…",
+    "accept_taken": "Už obsadené",
+    "taken_note": "Túto požiadavku práve prijal iný vodič.",
+    "time_just_now": "práve teraz",
+    "time_min_ago_one": "pred 1 minútou",
+    "time_min_ago_other": "pred {n} minútami",
+    "time_hour_ago_one": "pred 1 hodinou",
+    "time_hour_ago_other": "pred {n} hodinami"
+  }
 }

@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Sprog",
     "search_placeholder": "Søg efter sprog…"
+  },
+  "find_form": {
+    "title": "Find en chauffør",
+    "subtitle": "Fortæl os, hvem du er, og hvor du er. Herefter betaler du platformsbidraget, og så begynder vi at søge.",
+    "name_label": "Dit navn",
+    "phone_label": "Telefonnummer",
+    "city_label": "By / placering",
+    "submit": "Fortsæt til betaling",
+    "error": "Noget gik galt. Prøv venligst igen."
+  },
+  "drive_form": {
+    "title": "Bliv chauffør",
+    "subtitle": "Opret din chaufførprofil. Herefter betaler du platformsbidraget, og derefter kan du begynde at gennemse forespørgsler.",
+    "name_label": "Dit navn",
+    "phone_label": "Telefonnummer",
+    "email_label": "E-mail",
+    "city_label": "By / område",
+    "license_year_label": "Året du fik dit kørekort",
+    "decl1": "Jeg har et gyldigt kørekort til de relevante køretøjskategorier.",
+    "decl2": "Jeg har lovlig ret til at køre i det land, hvor jeg tilbyder ture.",
+    "decl3": "Jeg vil aldrig acceptere eller udføre en tur, mens jeg er påvirket af alkohol, stoffer eller andre rusmidler.",
+    "decl4": "Jeg forstår, at jeg kører helt på eget ansvar og på kundens ansvar.",
+    "submit": "Fortsæt til betaling",
+    "error": "Noget gik galt. Prøv venligst igen."
+  },
+  "searching_page": {
+    "searching_title": "Søger efter chauffører i nærheden af dig…",
+    "searching_body": "Hold ud — vi forbinder dig med en chauffør, så snart en accepterer din forespørgsel.",
+    "pending_title": "Bekræfter din betaling…",
+    "pending_body": "Dette tager normalt kun et par sekunder.",
+    "no_request_title": "Ingen aktiv forespørgsel fundet",
+    "no_request_body": "Vi kunne ikke finde en forespørgsel på denne enhed. Hvis du lige har betalt, kan det tage et par sekunder — genindlæs siden. Ellers kan du starte en ny forespørgsel fra forsiden.",
+    "cancelled_title": "Denne forespørgsel blev annulleret",
+    "cancelled_body": "Du kan altid starte en ny forespørgsel fra forsiden.",
+    "back_home": "← Tilbage til forsiden",
+    "matched_title": "I er forbundet! 🎉",
+    "matched_body": "{driver_name} har accepteret din forespørgsel. Herfra aftaler I selv detaljerne direkte. Det resterende beløb gøres op mellem jer, kontant eller med kort.\n\nTak, fordi du valgte ikke at køre selv i aften. Det er dét, Rotabo handler om.",
+    "default_driver_name": "Din chauffør"
+  },
+  "dashboard_page": {
+    "eyebrow": "CHAUFFØRPANEL",
+    "title": "Åbne forespørgsler",
+    "subtitle": "Forespørgsler, der lige nu søger en chauffør i {city}.",
+    "loading": "Indlæser…",
+    "not_registered_body": "Du har endnu ikke en chaufførprofil på denne enhed.",
+    "register_link": "← Registrer dig som chauffør",
+    "pending_confirmation": "Bekræfter betalingen for din registrering…",
+    "empty_note": "Der er ingen åbne forespørgsler i din by lige nu. Listen opdateres automatisk.",
+    "accept_btn": "Accepter",
+    "accept_checking": "Kontrollerer…",
+    "accept_taken": "Allerede taget",
+    "taken_note": "Den forespørgsel blev lige taget af en anden chauffør.",
+    "time_just_now": "lige nu",
+    "time_min_ago_one": "for 1 minut siden",
+    "time_min_ago_other": "for {n} minutter siden",
+    "time_hour_ago_one": "for 1 time siden",
+    "time_hour_ago_other": "for {n} timer siden"
   }
 }

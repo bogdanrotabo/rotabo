@@ -50,5 +50,62 @@
     "terms": "Pogoji", "privacy": "Zasebnost", "driver_terms": "Pogoji za voznike", "supporters": "Podporniki", "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…" }
+  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…" },
+  "find_form": {
+    "title": "Poišči voznika",
+    "subtitle": "Povej nam, kdo si in kje si. Naslednji korak je plačilo prispevka platformi, nato začnemo iskati.",
+    "name_label": "Tvoje ime",
+    "phone_label": "Telefonska številka",
+    "city_label": "Mesto / lokacija",
+    "submit": "Nadaljuj na plačilo",
+    "error": "Nekaj je šlo narobe. Poskusi znova."
+  },
+  "drive_form": {
+    "title": "Postani voznik",
+    "subtitle": "Ustvari svoj voznikov profil. Naslednji korak je plačilo prispevka platformi, nato lahko začneš brskati po povpraševanjih.",
+    "name_label": "Tvoje ime",
+    "phone_label": "Telefonska številka",
+    "email_label": "E-pošta",
+    "city_label": "Mesto / območje delovanja",
+    "license_year_label": "Leto, ko si pridobil vozniško dovoljenje",
+    "decl1": "Imam veljavno vozniško dovoljenje za ustrezne kategorije vozil.",
+    "decl2": "Zakonito smem voziti v državi, kjer ponujam prevoze.",
+    "decl3": "Nikoli ne bom sprejel ali opravil prevoza pod vplivom alkohola, drog ali katere koli druge substance.",
+    "decl4": "Razumem, da vozim izključno na lastno odgovornost in odgovornost stranke.",
+    "submit": "Nadaljuj na plačilo",
+    "error": "Nekaj je šlo narobe. Poskusi znova."
+  },
+  "searching_page": {
+    "searching_title": "Iščemo voznike v tvoji bližini…",
+    "searching_body": "Potrpi malo — povezali te bomo z voznikom, takoj ko nekdo sprejme tvoje povpraševanje.",
+    "pending_title": "Potrjujemo tvoje plačilo…",
+    "pending_body": "To običajno traja le nekaj sekund.",
+    "no_request_title": "Aktivno povpraševanje ni bilo najdeno",
+    "no_request_body": "Na tej napravi nismo našli nobenega povpraševanja. Če si pravkar plačal, lahko to traja nekaj sekund — osveži to stran. Sicer začni novo povpraševanje na domači strani.",
+    "cancelled_title": "To povpraševanje je bilo preklicano",
+    "cancelled_body": "Novo povpraševanje lahko kadar koli začneš na domači strani.",
+    "back_home": "← Nazaj domov",
+    "matched_title": "Povezan si! 🎉",
+    "matched_body": "{driver_name} je sprejel tvoje povpraševanje. Od zdaj naprej se o podrobnostih dogovorita neposredno med seboj. Preostanek vožnje poravnata med seboj, v gotovini ali s kartico.\n\nHvala, ker nocoj nisi vozil sam. Prav to je bistvo Rotabo.",
+    "default_driver_name": "Tvoj voznik"
+  },
+  "dashboard_page": {
+    "eyebrow": "NADZORNA PLOŠČA VOZNIKA",
+    "title": "Odprta povpraševanja",
+    "subtitle": "Povpraševanja, ki trenutno iščejo voznika v {city}.",
+    "loading": "Nalaganje…",
+    "not_registered_body": "Na tej napravi še nimaš voznikovega profila.",
+    "register_link": "← Registriraj se kot voznik",
+    "pending_confirmation": "Potrjujemo tvoje registracijsko plačilo…",
+    "empty_note": "Trenutno v tvojem mestu ni odprtih povpraševanj. Ta seznam se samodejno osvežuje.",
+    "accept_btn": "Sprejmi",
+    "accept_checking": "Preverjanje…",
+    "accept_taken": "Že zasedeno",
+    "taken_note": "To povpraševanje je pravkar sprejel drug voznik.",
+    "time_just_now": "pravkar",
+    "time_min_ago_one": "pred 1 minuto",
+    "time_min_ago_other": "pred {n} minutami",
+    "time_hour_ago_one": "pred 1 uro",
+    "time_hour_ago_other": "pred {n} urami"
+  }
 }

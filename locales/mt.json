@@ -50,5 +50,62 @@
     "terms": "Termini", "privacy": "Privatezza", "driver_terms": "Termini tas-sewwieqa", "supporters": "Sponsors", "contact": "Kuntatt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" }
+  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" },
+  "find_form": {
+    "title": "Sib sewwieq",
+    "subtitle": "Għidilna min int u fejn qiegħed. Imbagħad tħallas il-kontribuzzjoni tal-pjattaforma, u nibdew infittxu.",
+    "name_label": "Ismek",
+    "phone_label": "Numru tat-telefon",
+    "city_label": "Belt / post",
+    "submit": "Kompli għall-ħlas",
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+  },
+  "drive_form": {
+    "title": "Sir sewwieq",
+    "subtitle": "Oħloq il-profil tiegħek ta' sewwieq. Imbagħad tħallas il-kontribuzzjoni tal-pjattaforma, u tkun tista' tibda tfittex talbiet.",
+    "name_label": "Ismek",
+    "phone_label": "Numru tat-telefon",
+    "email_label": "Email",
+    "city_label": "Belt / żona ta' attività",
+    "license_year_label": "Is-sena li fiha ksibt il-liċenzja tas-sewqan",
+    "decl1": "Għandi liċenzja tas-sewqan valida għall-kategoriji tal-vetturi rilevanti.",
+    "decl2": "Nista' nsuq legalment fil-pajjiż fejn noffri l-vjaġġi.",
+    "decl3": "Qatt mhu se naċċetta jew nagħmel vjaġġ waqt li nkun taħt l-effett tal-alkoħol, id-droga, jew kwalunkwe sustanza oħra.",
+    "decl4": "Nifhem li nsuq għal kollox taħt ir-responsabbiltà tiegħi stess u ta' min qed jitla' fil-karrozza.",
+    "submit": "Kompli għall-ħlas",
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+  },
+  "searching_page": {
+    "searching_title": "Qed infittxu sewwieqa qrib tiegħek…",
+    "searching_body": "Stenna ftit — se nqabbduk ma' sewwieq malli xi ħadd jaċċetta t-talba tiegħek.",
+    "pending_title": "Qed nikkonfermaw il-ħlas tiegħek…",
+    "pending_body": "Normalment dan idum biss ftit sekondi.",
+    "no_request_title": "Ma nstabet l-ebda talba attiva",
+    "no_request_body": "Ma stajniex insibu talba fuq dan l-apparat. Jekk għadek kif ħallast, dan jista' jdum ftit sekondi — irrifreska din il-paġna. Inkella, ibda talba ġdida mill-paġna ewlenija.",
+    "cancelled_title": "Din it-talba ġiet ikkanċellata",
+    "cancelled_body": "Tista' tibda talba ġdida meta trid mill-paġna ewlenija.",
+    "back_home": "← Lura għall-paġna ewlenija",
+    "matched_title": "Int konness! 🎉",
+    "matched_body": "{driver_name} aċċetta t-talba tiegħek. Minn hawn 'il quddiem, intom it-tnejn tiftiehmu direttament dwar id-dettalji. Il-bqija tal-ħlas jiġi sistemat bejnietkom, bi flus kontanti jew bil-kard.\n\nGrazzi talli għażilt li ma ssuqx illejla. Dan hu li tfisser Rotabo.",
+    "default_driver_name": "Is-sewwieq tiegħek"
+  },
+  "dashboard_page": {
+    "eyebrow": "DASHBOARD TAS-SEWWIEQ",
+    "title": "Talbiet miftuħa",
+    "subtitle": "Talbiet li bħalissa qed ifittxu sewwieq f'{city}.",
+    "loading": "Qed jgħabbi…",
+    "not_registered_body": "Għad m'għandekx profil ta' sewwieq fuq dan l-apparat.",
+    "register_link": "← Mur irreġistra bħala sewwieq",
+    "pending_confirmation": "Qed nikkonfermaw il-ħlas tar-reġistrazzjoni tiegħek…",
+    "empty_note": "Bħalissa m'hemm l-ebda talba miftuħa fil-belt tiegħek. Din il-lista tiġi aġġornata awtomatikament.",
+    "accept_btn": "Aċċetta",
+    "accept_checking": "Qed jiġi vverifikat…",
+    "accept_taken": "Diġà meħud",
+    "taken_note": "Dik it-talba għadha kif ittieħdet minn sewwieq ieħor.",
+    "time_just_now": "għadu kemm",
+    "time_min_ago_one": "minuta ilu",
+    "time_min_ago_other": "{n} minuti ilu",
+    "time_hour_ago_one": "siegħa ilu",
+    "time_hour_ago_other": "{n} sigħat ilu"
+  }
 }

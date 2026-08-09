@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Langue",
     "search_placeholder": "Rechercher une langue…"
+  },
+  "find_form": {
+    "title": "Trouver un chauffeur",
+    "subtitle": "Dites-nous qui vous êtes et où vous êtes. Vous paierez ensuite la contribution de la plateforme, puis nous commencerons la recherche.",
+    "name_label": "Votre nom",
+    "phone_label": "Numéro de téléphone",
+    "city_label": "Ville / lieu",
+    "submit": "Continuer vers le paiement",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "drive_form": {
+    "title": "Devenir chauffeur",
+    "subtitle": "Créez votre profil de chauffeur. Vous paierez ensuite la contribution de la plateforme, puis vous pourrez commencer à consulter les demandes.",
+    "name_label": "Votre nom",
+    "phone_label": "Numéro de téléphone",
+    "email_label": "E-mail",
+    "city_label": "Ville / zone d'activité",
+    "license_year_label": "Année d'obtention de votre permis de conduire",
+    "decl1": "Je suis titulaire d'un permis de conduire valide pour les catégories de véhicules concernées.",
+    "decl2": "Je suis légalement autorisé à conduire dans le pays où je propose mes trajets.",
+    "decl3": "Je n'accepterai ni n'effectuerai jamais un trajet sous l'emprise de l'alcool, de drogues ou de toute autre substance.",
+    "decl4": "Je comprends que je conduis entièrement sous ma propre responsabilité et celle du client.",
+    "submit": "Continuer vers le paiement",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "searching_page": {
+    "searching_title": "Recherche de chauffeurs près de vous…",
+    "searching_body": "Un instant — nous vous mettrons en relation avec un chauffeur dès que l'un d'eux acceptera votre demande.",
+    "pending_title": "Confirmation de votre paiement…",
+    "pending_body": "Cela ne prend généralement que quelques secondes.",
+    "no_request_title": "Aucune demande active trouvée",
+    "no_request_body": "Nous n'avons trouvé aucune demande sur cet appareil. Si vous venez de payer, cela peut prendre quelques secondes — actualisez cette page. Sinon, lancez une nouvelle demande depuis la page d'accueil.",
+    "cancelled_title": "Cette demande a été annulée",
+    "cancelled_body": "Vous pouvez lancer une nouvelle demande à tout moment depuis la page d'accueil.",
+    "back_home": "← Retour à l'accueil",
+    "matched_title": "Vous êtes connectés ! 🎉",
+    "matched_body": "{driver_name} a accepté votre demande. À partir de maintenant, c'est entre vous deux — mettez-vous d'accord directement sur les détails. Le reste de la course se règle entre vous, en espèces ou par carte.\n\nMerci d'avoir choisi de ne pas conduire ce soir. C'est exactement l'esprit de Rotabo.",
+    "default_driver_name": "Votre chauffeur"
+  },
+  "dashboard_page": {
+    "eyebrow": "TABLEAU DE BORD CHAUFFEUR",
+    "title": "Demandes ouvertes",
+    "subtitle": "Demandes actuellement à la recherche d'un chauffeur à {city}.",
+    "loading": "Chargement…",
+    "not_registered_body": "Vous n'avez pas encore de profil chauffeur sur cet appareil.",
+    "register_link": "← S'inscrire comme chauffeur",
+    "pending_confirmation": "Confirmation du paiement de votre inscription…",
+    "empty_note": "Aucune demande ouverte dans votre ville pour le moment. Cette liste se met à jour automatiquement.",
+    "accept_btn": "Accepter",
+    "accept_checking": "Vérification…",
+    "accept_taken": "Déjà prise",
+    "taken_note": "Cette demande vient d'être prise par un autre chauffeur.",
+    "time_just_now": "à l'instant",
+    "time_min_ago_one": "il y a 1 min",
+    "time_min_ago_other": "il y a {n} min",
+    "time_hour_ago_one": "il y a 1 heure",
+    "time_hour_ago_other": "il y a {n} heures"
   }
 }

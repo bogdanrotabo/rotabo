@@ -50,5 +50,62 @@
     "terms": "Điều khoản", "privacy": "Quyền riêng tư", "driver_terms": "Điều khoản dành cho tài xế", "supporters": "Nhà tài trợ", "contact": "Liên hệ",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" }
+  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" },
+  "find_form": {
+    "title": "Tìm tài xế",
+    "subtitle": "Cho chúng tôi biết bạn là ai và bạn đang ở đâu. Tiếp theo bạn sẽ thanh toán phí nền tảng, sau đó chúng tôi bắt đầu tìm kiếm.",
+    "name_label": "Họ tên của bạn",
+    "phone_label": "Số điện thoại",
+    "city_label": "Thành phố / vị trí",
+    "submit": "Tiếp tục thanh toán",
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "drive_form": {
+    "title": "Trở thành tài xế",
+    "subtitle": "Tạo hồ sơ tài xế của bạn. Tiếp theo bạn sẽ thanh toán phí nền tảng, sau đó bạn có thể bắt đầu xem các yêu cầu.",
+    "name_label": "Họ tên của bạn",
+    "phone_label": "Số điện thoại",
+    "email_label": "Email",
+    "city_label": "Thành phố / khu vực hoạt động",
+    "license_year_label": "Năm bạn được cấp bằng lái xe",
+    "decl1": "Tôi có bằng lái xe hợp lệ cho các hạng xe liên quan.",
+    "decl2": "Tôi được phép lái xe hợp pháp tại quốc gia nơi tôi cung cấp dịch vụ này.",
+    "decl3": "Tôi sẽ không bao giờ nhận hoặc thực hiện chuyến đi khi đang chịu ảnh hưởng của rượu bia, ma túy hoặc bất kỳ chất kích thích nào khác.",
+    "decl4": "Tôi hiểu rằng tôi lái xe hoàn toàn dưới trách nhiệm của bản thân mình và của khách hàng.",
+    "submit": "Tiếp tục thanh toán",
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "searching_page": {
+    "searching_title": "Đang tìm tài xế gần bạn…",
+    "searching_body": "Vui lòng chờ trong giây lát — chúng tôi sẽ kết nối bạn với tài xế ngay khi có người nhận yêu cầu của bạn.",
+    "pending_title": "Đang xác nhận thanh toán của bạn…",
+    "pending_body": "Thường chỉ mất vài giây.",
+    "no_request_title": "Không tìm thấy yêu cầu nào đang hoạt động",
+    "no_request_body": "Chúng tôi không tìm thấy yêu cầu nào trên thiết bị này. Nếu bạn vừa thanh toán, việc này có thể mất vài giây — hãy làm mới trang này. Nếu không, hãy bắt đầu một yêu cầu mới từ trang chủ.",
+    "cancelled_title": "Yêu cầu này đã bị hủy",
+    "cancelled_body": "Bạn có thể bắt đầu một yêu cầu mới bất cứ lúc nào từ trang chủ.",
+    "back_home": "← Về trang chủ",
+    "matched_title": "Đã kết nối! 🎉",
+    "matched_body": "{driver_name} đã chấp nhận yêu cầu của bạn. Từ đây, hai bạn sẽ tự thống nhất các chi tiết trực tiếp với nhau. Phần cước phí còn lại sẽ được thanh toán trực tiếp giữa hai bạn, bằng tiền mặt hoặc thẻ.\n\nCảm ơn bạn đã chọn không tự lái xe tối nay. Đó chính là ý nghĩa của Rotabo.",
+    "default_driver_name": "Tài xế của bạn"
+  },
+  "dashboard_page": {
+    "eyebrow": "BẢNG ĐIỀU KHIỂN TÀI XẾ",
+    "title": "Yêu cầu đang mở",
+    "subtitle": "Các yêu cầu đang tìm tài xế tại {city}.",
+    "loading": "Đang tải…",
+    "not_registered_body": "Bạn chưa có hồ sơ tài xế trên thiết bị này.",
+    "register_link": "← Đăng ký làm tài xế",
+    "pending_confirmation": "Đang xác nhận thanh toán đăng ký của bạn…",
+    "empty_note": "Hiện không có yêu cầu nào đang mở tại thành phố của bạn. Danh sách này sẽ tự động cập nhật.",
+    "accept_btn": "Nhận chuyến",
+    "accept_checking": "Đang kiểm tra…",
+    "accept_taken": "Đã có người nhận",
+    "taken_note": "Yêu cầu đó vừa được một tài xế khác nhận.",
+    "time_just_now": "vừa xong",
+    "time_min_ago_one": "1 phút trước",
+    "time_min_ago_other": "{n} phút trước",
+    "time_hour_ago_one": "1 giờ trước",
+    "time_hour_ago_other": "{n} giờ trước"
+  }
 }

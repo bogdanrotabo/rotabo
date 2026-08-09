@@ -85,5 +85,62 @@
   "lang_selector": {
     "label": "Idioma",
     "search_placeholder": "Buscar idioma…"
+  },
+  "find_form": {
+    "title": "Buscar conductor",
+    "subtitle": "Cuéntanos quién eres y dónde estás. A continuación pagarás la contribución de la plataforma y empezaremos a buscar.",
+    "name_label": "Tu nombre",
+    "phone_label": "Número de teléfono",
+    "city_label": "Ciudad / ubicación",
+    "submit": "Continuar al pago",
+    "error": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "drive_form": {
+    "title": "Conviértete en conductor",
+    "subtitle": "Crea tu perfil de conductor. A continuación pagarás la contribución de la plataforma y después podrás empezar a ver solicitudes.",
+    "name_label": "Tu nombre",
+    "phone_label": "Número de teléfono",
+    "email_label": "Correo electrónico",
+    "city_label": "Ciudad / zona de actividad",
+    "license_year_label": "Año en que obtuviste el carné de conducir",
+    "decl1": "Tengo un carné de conducir válido para las categorías de vehículos correspondientes.",
+    "decl2": "Estoy legalmente autorizado a conducir en el país donde ofrezco los trayectos.",
+    "decl3": "Nunca aceptaré ni realizaré un trayecto bajo los efectos del alcohol, drogas o cualquier otra sustancia.",
+    "decl4": "Entiendo que conduzco enteramente bajo mi propia responsabilidad y la del cliente.",
+    "submit": "Continuar al pago",
+    "error": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "searching_page": {
+    "searching_title": "Buscando conductores cerca de ti…",
+    "searching_body": "Espera un momento — te conectaremos con un conductor en cuanto alguien acepte tu solicitud.",
+    "pending_title": "Confirmando tu pago…",
+    "pending_body": "Normalmente tarda solo unos segundos.",
+    "no_request_title": "No se encontró ninguna solicitud activa",
+    "no_request_body": "No hemos encontrado ninguna solicitud en este dispositivo. Si acabas de pagar, esto puede tardar unos segundos — actualiza esta página. Si no, inicia una nueva solicitud desde la página de inicio.",
+    "cancelled_title": "Esta solicitud fue cancelada",
+    "cancelled_body": "Puedes iniciar una nueva solicitud en cualquier momento desde la página de inicio.",
+    "back_home": "← Volver al inicio",
+    "matched_title": "¡Ya estás conectado! 🎉",
+    "matched_body": "{driver_name} ha aceptado tu solicitud. A partir de aquí, sois vosotros dos quienes lleváis las riendas: acordad los detalles directamente. La tarifa restante se paga entre vosotros, en efectivo o con tarjeta.\n\nGracias por elegir no conducir esta noche. De eso se trata Rotabo.",
+    "default_driver_name": "Tu conductor"
+  },
+  "dashboard_page": {
+    "eyebrow": "PANEL DE CONDUCTOR",
+    "title": "Solicitudes abiertas",
+    "subtitle": "Solicitudes que actualmente buscan conductor en {city}.",
+    "loading": "Cargando…",
+    "not_registered_body": "Todavía no tienes un perfil de conductor en este dispositivo.",
+    "register_link": "← Regístrate como conductor",
+    "pending_confirmation": "Confirmando el pago de tu registro…",
+    "empty_note": "No hay solicitudes abiertas en tu ciudad en este momento. Esta lista se actualiza automáticamente.",
+    "accept_btn": "Aceptar",
+    "accept_checking": "Comprobando…",
+    "accept_taken": "Ya asignada",
+    "taken_note": "Esa solicitud acaba de ser aceptada por otro conductor.",
+    "time_just_now": "justo ahora",
+    "time_min_ago_one": "hace 1 min",
+    "time_min_ago_other": "hace {n} min",
+    "time_hour_ago_one": "hace 1 hora",
+    "time_hour_ago_other": "hace {n} horas"
   }
 }

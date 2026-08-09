@@ -50,5 +50,62 @@
     "terms": "Téarmaí", "privacy": "Príobháideachas", "driver_terms": "Téarmaí tiománaithe", "supporters": "Tacaíontóirí", "contact": "Teagmháil",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…" }
+  "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…" },
+  "find_form": {
+    "title": "Faigh tiománaí",
+    "subtitle": "Inis dúinn cé thusa agus cá bhfuil tú. Íocfaidh tú an ranníocaíocht ardáin ina dhiaidh sin, ansin tosóimid ag cuardach.",
+    "name_label": "D'ainm",
+    "phone_label": "Uimhir theileafóin",
+    "city_label": "Cathair / suíomh",
+    "submit": "Ar aghaidh chuig íocaíocht",
+    "error": "Tharla earráid. Bain triail eile as le do thoil."
+  },
+  "drive_form": {
+    "title": "Bí i do thiománaí",
+    "subtitle": "Cruthaigh do phróifíl tiománaí. Íocfaidh tú an ranníocaíocht ardáin ina dhiaidh sin, agus ansin is féidir leat tosú ag brabhsáil iarratas.",
+    "name_label": "D'ainm",
+    "phone_label": "Uimhir theileafóin",
+    "email_label": "Ríomhphost",
+    "city_label": "Cathair / limistéar gníomhaíochta",
+    "license_year_label": "An bhliain a fuair tú do cheadúnas tiomána",
+    "decl1": "Tá ceadúnas tiomána bailí agam do na haicmí feithicle ábhartha.",
+    "decl2": "Tá cead dleathach agam tiomáint sa tír ina dtairgim síobanna.",
+    "decl3": "Ní ghlacfaidh mé le síob ná ní dhéanfaidh mé síob riamh agus mé faoi thionchar alcóil, drugaí, nó aon substaint eile.",
+    "decl4": "Tuigim go dtiomáinim go hiomlán ar mo fhreagracht féin agus ar fhreagracht an chliaint.",
+    "submit": "Ar aghaidh chuig íocaíocht",
+    "error": "Tharla earráid. Bain triail eile as le do thoil."
+  },
+  "searching_page": {
+    "searching_title": "Ag cuardach tiománaithe in aice leat…",
+    "searching_body": "Fan go foighneach — ceanglóimid thú le tiománaí a luaithe a ghlacfaidh duine le d'iarratas.",
+    "pending_title": "Ag deimhniú d'íocaíocht…",
+    "pending_body": "De ghnáth ní thógann sé ach cúpla soicind.",
+    "no_request_title": "Níor aimsíodh aon iarratas gníomhach",
+    "no_request_body": "Níorbh fhéidir linn iarratas a aimsiú ar an bhfeiste seo. Má d'íoc tú anois beag, féadfaidh sé cúpla soicind a thógáil — athnuaigh an leathanach seo. Seachas sin, tosaigh iarratas nua ón leathanach baile.",
+    "cancelled_title": "Cuireadh an t-iarratas seo ar ceal",
+    "cancelled_body": "Is féidir leat iarratas nua a thosú am ar bith ón leathanach baile.",
+    "back_home": "← Ar ais go dtí an leathanach baile",
+    "matched_title": "Tá tú ceangailte! 🎉",
+    "matched_body": "Ghlac {driver_name} le d'iarratas. As seo amach, is fútsa féin atá sé — socraígí na sonraí eadraibh féin. Réitítear an chuid eile den táille eadraibh, in airgead tirim nó le cárta.\n\nGo raibh maith agat as gan tiomáint anocht. Sin é atá i gceist le Rotabo.",
+    "default_driver_name": "Do thiománaí"
+  },
+  "dashboard_page": {
+    "eyebrow": "CLÁR TIOMÁNAITHE",
+    "title": "Iarratais oscailte",
+    "subtitle": "Iarratais atá ag cuardach tiománaí i {city} faoi láthair.",
+    "loading": "Á lódáil…",
+    "not_registered_body": "Níl próifíl tiománaí agat ar an bhfeiste seo fós.",
+    "register_link": "← Téigh chun clárú mar thiománaí",
+    "pending_confirmation": "Ag deimhniú d'íocaíocht chláraithe…",
+    "empty_note": "Níl aon iarratas oscailte i do chathair faoi láthair. Athnuaitear an liosta seo go huathoibríoch.",
+    "accept_btn": "Glac leis",
+    "accept_checking": "Á sheiceáil…",
+    "accept_taken": "Tógtha cheana",
+    "taken_note": "Ghlac tiománaí eile leis an iarratas sin díreach anois.",
+    "time_just_now": "díreach anois",
+    "time_min_ago_one": "1 nóiméad ó shin",
+    "time_min_ago_other": "{n} nóiméad ó shin",
+    "time_hour_ago_one": "1 uair an chloig ó shin",
+    "time_hour_ago_other": "{n} uair an chloig ó shin"
+  }
 }

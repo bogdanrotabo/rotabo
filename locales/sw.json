@@ -50,5 +50,62 @@
     "terms": "Masharti", "privacy": "Faragha", "driver_terms": "Masharti ya dereva", "supporters": "Wafadhili", "contact": "Wasiliana nasi",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" }
+  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" },
+  "find_form": {
+    "title": "Tafuta dereva",
+    "subtitle": "Tuambie wewe ni nani na uko wapi. Kisha utalipa mchango wa jukwaa, kisha tutaanza kutafuta.",
+    "name_label": "Jina lako",
+    "phone_label": "Namba ya simu",
+    "city_label": "Mji / eneo",
+    "submit": "Endelea kulipa",
+    "error": "Kuna hitilafu. Tafadhali jaribu tena."
+  },
+  "drive_form": {
+    "title": "Kuwa dereva",
+    "subtitle": "Unda wasifu wako wa udereva. Kisha utalipa mchango wa jukwaa, kisha unaweza kuanza kutazama maombi.",
+    "name_label": "Jina lako",
+    "phone_label": "Namba ya simu",
+    "email_label": "Barua pepe",
+    "city_label": "Mji / eneo la shughuli",
+    "license_year_label": "Mwaka ulipopata leseni ya udereva",
+    "decl1": "Nina leseni halali ya udereva kwa aina husika za magari.",
+    "decl2": "Nina kibali cha kisheria cha kuendesha gari katika nchi ninayotoa safari.",
+    "decl3": "Sitakubali au kufanya safari yoyote nikiwa nimeathiriwa na pombe, dawa za kulevya, au kitu kingine chochote.",
+    "decl4": "Ninaelewa kwamba naendesha gari kwa jukumu langu mwenyewe kikamilifu na la mteja.",
+    "submit": "Endelea kulipa",
+    "error": "Kuna hitilafu. Tafadhali jaribu tena."
+  },
+  "searching_page": {
+    "searching_title": "Tunatafuta madereva karibu nawe…",
+    "searching_body": "Subiri kidogo — tutakuunganisha na dereva mara tu atakapokubali ombi lako.",
+    "pending_title": "Tunathibitisha malipo yako…",
+    "pending_body": "Kwa kawaida hii huchukua sekunde chache tu.",
+    "no_request_title": "Hakuna ombi linaloendelea",
+    "no_request_body": "Hatukuweza kupata ombi kwenye kifaa hiki. Kama umelipa hivi punde, hii inaweza kuchukua sekunde chache — onyesha upya ukurasa huu. Vinginevyo, anzisha ombi jipya kutoka ukurasa wa nyumbani.",
+    "cancelled_title": "Ombi hili limeghairiwa",
+    "cancelled_body": "Unaweza kuanzisha ombi jipya wakati wowote kutoka ukurasa wa nyumbani.",
+    "back_home": "← Rudi nyumbani",
+    "matched_title": "Umeunganishwa! 🎉",
+    "matched_body": "{driver_name} amekubali ombi lako. Kuanzia hapa, ninyi wawili mtapanga maelezo moja kwa moja. Nauli iliyobaki inalipwa kati yenu, kwa fedha taslimu au kadi.\n\nAsante kwa kuchagua kutoendesha gari usiku huu. Hilo ndilo lengo la Rotabo.",
+    "default_driver_name": "Dereva wako"
+  },
+  "dashboard_page": {
+    "eyebrow": "DASHIBODI YA DEREVA",
+    "title": "Maombi yaliyo wazi",
+    "subtitle": "Maombi yanayotafuta dereva kwa sasa katika {city}.",
+    "loading": "Inapakia…",
+    "not_registered_body": "Huna wasifu wa udereva kwenye kifaa hiki bado.",
+    "register_link": "← Nenda kujiandikisha kama dereva",
+    "pending_confirmation": "Tunathibitisha malipo ya usajili wako…",
+    "empty_note": "Hakuna maombi yaliyo wazi katika mji wako kwa sasa. Orodha hii inaonyesha upya kiotomatiki.",
+    "accept_btn": "Kubali",
+    "accept_checking": "Inakagua…",
+    "accept_taken": "Tayari limechukuliwa",
+    "taken_note": "Ombi hilo limechukuliwa na dereva mwingine.",
+    "time_just_now": "sasa hivi",
+    "time_min_ago_one": "dakika 1 iliyopita",
+    "time_min_ago_other": "dakika {n} zilizopita",
+    "time_hour_ago_one": "saa 1 iliyopita",
+    "time_hour_ago_other": "saa {n} zilizopita"
+  }
 }

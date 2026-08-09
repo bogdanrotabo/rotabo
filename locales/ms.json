@@ -50,5 +50,62 @@
     "terms": "Terma", "privacy": "Privasi", "driver_terms": "Terma pemandu", "supporters": "Penyokong", "contact": "Hubungi",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" }
+  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" },
+  "find_form": {
+    "title": "Cari pemandu",
+    "subtitle": "Beritahu kami siapa anda dan di mana anda berada. Seterusnya anda akan membayar sumbangan platform, kemudian kami mula mencari pemandu.",
+    "name_label": "Nama anda",
+    "phone_label": "Nombor telefon",
+    "city_label": "Bandar / lokasi",
+    "submit": "Teruskan ke pembayaran",
+    "error": "Sesuatu telah berlaku. Sila cuba lagi."
+  },
+  "drive_form": {
+    "title": "Menjadi pemandu",
+    "subtitle": "Cipta profil pemandu anda. Seterusnya anda akan membayar sumbangan platform, kemudian anda boleh mula menyemak permintaan.",
+    "name_label": "Nama anda",
+    "phone_label": "Nombor telefon",
+    "email_label": "E-mel",
+    "city_label": "Bandar / kawasan operasi",
+    "license_year_label": "Tahun anda memperoleh lesen memandu",
+    "decl1": "Saya memiliki lesen memandu yang sah untuk kategori kenderaan berkenaan.",
+    "decl2": "Saya dibenarkan dari segi undang-undang untuk memandu di negara tempat saya menawarkan perkhidmatan ini.",
+    "decl3": "Saya tidak akan sekali-kali menerima atau melakukan perjalanan semasa berada di bawah pengaruh alkohol, dadah, atau apa-apa bahan lain.",
+    "decl4": "Saya faham bahawa saya memandu sepenuhnya atas tanggungjawab saya sendiri dan tanggungjawab pelanggan.",
+    "submit": "Teruskan ke pembayaran",
+    "error": "Sesuatu telah berlaku. Sila cuba lagi."
+  },
+  "searching_page": {
+    "searching_title": "Mencari pemandu berhampiran anda…",
+    "searching_body": "Harap bersabar — kami akan menghubungkan anda dengan pemandu sebaik sahaja seseorang menerima permintaan anda.",
+    "pending_title": "Mengesahkan pembayaran anda…",
+    "pending_body": "Ini biasanya hanya mengambil masa beberapa saat.",
+    "no_request_title": "Tiada permintaan aktif ditemui",
+    "no_request_body": "Kami tidak dapat menemui permintaan pada peranti ini. Jika anda baru sahaja membayar, ini mungkin mengambil masa beberapa saat — muat semula halaman ini. Jika tidak, mulakan permintaan baharu dari halaman utama.",
+    "cancelled_title": "Permintaan ini telah dibatalkan",
+    "cancelled_body": "Anda boleh memulakan permintaan baharu pada bila-bila masa dari halaman utama.",
+    "back_home": "← Kembali ke laman utama",
+    "matched_title": "Anda telah disepadankan! 🎉",
+    "matched_body": "{driver_name} telah menerima permintaan anda. Dari sini, anda berdua boleh berbincang terus untuk menetapkan butiran. Baki tambang diselesaikan antara anda berdua, secara tunai atau kad.\n\nTerima kasih kerana memilih untuk tidak memandu sendiri malam ini. Itulah matlamat Rotabo.",
+    "default_driver_name": "Pemandu anda"
+  },
+  "dashboard_page": {
+    "eyebrow": "PAPAN PEMUKA PEMANDU",
+    "title": "Permintaan terbuka",
+    "subtitle": "Permintaan yang sedang mencari pemandu di {city}.",
+    "loading": "Memuatkan…",
+    "not_registered_body": "Anda belum mempunyai profil pemandu pada peranti ini.",
+    "register_link": "← Daftar sebagai pemandu",
+    "pending_confirmation": "Mengesahkan pembayaran pendaftaran anda…",
+    "empty_note": "Tiada permintaan terbuka di bandar anda buat masa ini. Senarai ini akan dikemas kini secara automatik.",
+    "accept_btn": "Terima",
+    "accept_checking": "Menyemak…",
+    "accept_taken": "Sudah diambil",
+    "taken_note": "Permintaan itu baru sahaja diambil oleh pemandu lain.",
+    "time_just_now": "sebentar tadi",
+    "time_min_ago_one": "1 minit lalu",
+    "time_min_ago_other": "{n} minit lalu",
+    "time_hour_ago_one": "1 jam lalu",
+    "time_hour_ago_other": "{n} jam lalu"
+  }
 }

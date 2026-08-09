@@ -50,5 +50,62 @@
     "terms": "Regulamin", "privacy": "Prywatność", "driver_terms": "Regulamin kierowców", "supporters": "Wspierający", "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…" }
+  "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…" },
+  "find_form": {
+    "title": "Znajdź kierowcę",
+    "subtitle": "Powiedz nam, kim jesteś i gdzie się znajdujesz. Następnie zapłacisz opłatę na rzecz platformy, a potem zaczniemy szukać.",
+    "name_label": "Twoje imię",
+    "phone_label": "Numer telefonu",
+    "city_label": "Miasto / lokalizacja",
+    "submit": "Przejdź do płatności",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "drive_form": {
+    "title": "Zostań kierowcą",
+    "subtitle": "Utwórz swój profil kierowcy. Następnie zapłacisz opłatę na rzecz platformy, a potem będziesz mógł przeglądać zlecenia.",
+    "name_label": "Twoje imię",
+    "phone_label": "Numer telefonu",
+    "email_label": "E-mail",
+    "city_label": "Miasto / obszar działania",
+    "license_year_label": "Rok uzyskania prawa jazdy",
+    "decl1": "Posiadam ważne prawo jazdy odpowiedniej kategorii pojazdów.",
+    "decl2": "Mam prawo prowadzić pojazd w kraju, w którym oferuję przejazdy.",
+    "decl3": "Nigdy nie przyjmę ani nie wykonam przejazdu pod wpływem alkoholu, narkotyków ani żadnej innej substancji.",
+    "decl4": "Rozumiem, że prowadzę pojazd wyłącznie na własną odpowiedzialność i odpowiedzialność klienta.",
+    "submit": "Przejdź do płatności",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "searching_page": {
+    "searching_title": "Szukamy kierowców w Twojej okolicy…",
+    "searching_body": "Chwila cierpliwości — połączymy Cię z kierowcą, gdy tylko ktoś przyjmie Twoje zgłoszenie.",
+    "pending_title": "Potwierdzamy Twoją płatność…",
+    "pending_body": "Zwykle zajmuje to tylko kilka sekund.",
+    "no_request_title": "Nie znaleziono aktywnego zgłoszenia",
+    "no_request_body": "Nie mogliśmy znaleźć zgłoszenia na tym urządzeniu. Jeśli właśnie zapłaciłeś, może to potrwać kilka sekund — odśwież tę stronę. W przeciwnym razie rozpocznij nowe zgłoszenie ze strony głównej.",
+    "cancelled_title": "To zgłoszenie zostało anulowane",
+    "cancelled_body": "Możesz w każdej chwili rozpocząć nowe zgłoszenie ze strony głównej.",
+    "back_home": "← Powrót do strony głównej",
+    "matched_title": "Jesteś połączony! 🎉",
+    "matched_body": "{driver_name} przyjął Twoje zgłoszenie. Od teraz ustalacie szczegóły bezpośrednio między sobą. Pozostałą część opłaty rozliczacie między sobą, gotówką lub kartą.\n\nDziękujemy, że dziś nie prowadziłeś sam. O to właśnie chodzi w Rotabo.",
+    "default_driver_name": "Twój kierowca"
+  },
+  "dashboard_page": {
+    "eyebrow": "PANEL KIEROWCY",
+    "title": "Otwarte zgłoszenia",
+    "subtitle": "Zgłoszenia, które aktualnie szukają kierowcy w {city}.",
+    "loading": "Ładowanie…",
+    "not_registered_body": "Nie masz jeszcze profilu kierowcy na tym urządzeniu.",
+    "register_link": "← Zarejestruj się jako kierowca",
+    "pending_confirmation": "Potwierdzamy Twoją płatność rejestracyjną…",
+    "empty_note": "W Twoim mieście nie ma teraz żadnych otwartych zgłoszeń. Ta lista odświeża się automatycznie.",
+    "accept_btn": "Akceptuj",
+    "accept_checking": "Sprawdzanie…",
+    "accept_taken": "Już zajęte",
+    "taken_note": "To zgłoszenie zostało właśnie przyjęte przez innego kierowcę.",
+    "time_just_now": "przed chwilą",
+    "time_min_ago_one": "1 minutę temu",
+    "time_min_ago_other": "{n} minut temu",
+    "time_hour_ago_one": "1 godzinę temu",
+    "time_hour_ago_other": "{n} godzin temu"
+  }
 }

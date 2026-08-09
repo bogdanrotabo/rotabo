@@ -50,5 +50,62 @@
     "terms": "Feltételek", "privacy": "Adatvédelem", "driver_terms": "Sofőrfeltételek", "supporters": "Támogatók", "contact": "Kapcsolat",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" }
+  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" },
+  "find_form": {
+    "title": "Sofőr keresése",
+    "subtitle": "Mondd el, ki vagy és hol vagy. Ezután fizeted ki a platformdíjat, majd elkezdjük a keresést.",
+    "name_label": "A neved",
+    "phone_label": "Telefonszám",
+    "city_label": "Város / helyszín",
+    "submit": "Tovább a fizetéshez",
+    "error": "Valami hiba történt. Kérjük, próbáld újra."
+  },
+  "drive_form": {
+    "title": "Legyél sofőr",
+    "subtitle": "Hozd létre a sofőrprofilodat. Ezután kifizeted a platformdíjat, majd böngészheted a kéréseket.",
+    "name_label": "A neved",
+    "phone_label": "Telefonszám",
+    "email_label": "E-mail",
+    "city_label": "Város / működési terület",
+    "license_year_label": "Melyik évben szerezted a jogosítványt",
+    "decl1": "Érvényes jogosítvánnyal rendelkezem a megfelelő járműkategóriákra.",
+    "decl2": "Jogosult vagyok vezetni abban az országban, ahol a fuvarokat kínálom.",
+    "decl3": "Soha nem vállalok vagy teljesítek fuvart alkohol, drog vagy bármely más szer hatása alatt.",
+    "decl4": "Tudomásul veszem, hogy a vezetés teljes mértékben a saját és az utas felelősségére történik.",
+    "submit": "Tovább a fizetéshez",
+    "error": "Valami hiba történt. Kérjük, próbáld újra."
+  },
+  "searching_page": {
+    "searching_title": "Sofőröket keresünk a közeledben…",
+    "searching_body": "Tarts ki egy kicsit — összekötünk egy sofőrrel, amint valaki elfogadja a kérésedet.",
+    "pending_title": "Fizetésed megerősítése…",
+    "pending_body": "Ez általában csak néhány másodpercig tart.",
+    "no_request_title": "Nem található aktív kérés",
+    "no_request_body": "Nem találtunk kérést ezen az eszközön. Ha most fizettél, ez néhány másodpercig tarthat — frissítsd az oldalt. Egyébként indíts új kérést a kezdőlapról.",
+    "cancelled_title": "Ezt a kérést törölték",
+    "cancelled_body": "Bármikor indíthatsz új kérést a kezdőlapról.",
+    "back_home": "← Vissza a kezdőlapra",
+    "matched_title": "Összekapcsoltak titeket! 🎉",
+    "matched_body": "{driver_name} elfogadta a kérésedet. Innentől ti ketten intézitek a részleteket egymás között. A fennmaradó díjat egymás között rendezitek, készpénzben vagy kártyával.\n\nKöszönjük, hogy ma este nem vezettél. Pontosan ez a Rotabo lényege.",
+    "default_driver_name": "A sofőröd"
+  },
+  "dashboard_page": {
+    "eyebrow": "SOFŐR IRÁNYÍTÓPULT",
+    "title": "Nyitott kérések",
+    "subtitle": "Kérések, amelyek jelenleg sofőrt keresnek itt: {city}.",
+    "loading": "Betöltés…",
+    "not_registered_body": "Ezen az eszközön még nincs sofőrprofilod.",
+    "register_link": "← Regisztrálj sofőrként",
+    "pending_confirmation": "Regisztrációs fizetésed megerősítése…",
+    "empty_note": "Jelenleg nincs nyitott kérés a városodban. Ez a lista automatikusan frissül.",
+    "accept_btn": "Elfogadás",
+    "accept_checking": "Ellenőrzés…",
+    "accept_taken": "Már foglalt",
+    "taken_note": "Azt a kérést épp most fogadta el egy másik sofőr.",
+    "time_just_now": "épp most",
+    "time_min_ago_one": "1 perce",
+    "time_min_ago_other": "{n} perce",
+    "time_hour_ago_one": "1 órája",
+    "time_hour_ago_other": "{n} órája"
+  }
 }

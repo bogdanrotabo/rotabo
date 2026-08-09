@@ -50,5 +50,62 @@
     "terms": "条款", "privacy": "隐私政策", "driver_terms": "司机条款", "supporters": "支持者", "contact": "联系我们",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" }
+  "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" },
+  "find_form": {
+    "title": "寻找司机",
+    "subtitle": "告诉我们您是谁、您在哪里。接下来您需要支付平台服务费，之后我们就会开始为您寻找司机。",
+    "name_label": "您的姓名",
+    "phone_label": "电话号码",
+    "city_label": "城市 / 位置",
+    "submit": "继续支付",
+    "error": "出了点问题，请重试。"
+  },
+  "drive_form": {
+    "title": "成为司机",
+    "subtitle": "创建您的司机资料。接下来您需要支付平台服务费，之后即可开始浏览接单请求。",
+    "name_label": "您的姓名",
+    "phone_label": "电话号码",
+    "email_label": "电子邮箱",
+    "city_label": "城市 / 活动区域",
+    "license_year_label": "您取得驾照的年份",
+    "decl1": "我持有相关车辆类别的有效驾驶执照。",
+    "decl2": "我在提供载客服务的国家拥有合法驾驶资格。",
+    "decl3": "我绝不会在受酒精、药物或任何其他物质影响的情况下接受或执行任何行程。",
+    "decl4": "我理解此次驾驶完全由我本人及客户自行承担责任。",
+    "submit": "继续支付",
+    "error": "出了点问题，请重试。"
+  },
+  "searching_page": {
+    "searching_title": "正在为您寻找附近的司机…",
+    "searching_body": "请稍候——一旦有司机接受您的请求，我们会立即为您接通。",
+    "pending_title": "正在确认您的付款…",
+    "pending_body": "通常只需几秒钟。",
+    "no_request_title": "未找到有效请求",
+    "no_request_body": "我们在此设备上未找到您的请求。如果您刚完成付款，可能需要几秒钟才能生效——请刷新此页面。否则，请从首页发起新的请求。",
+    "cancelled_title": "该请求已被取消",
+    "cancelled_body": "您可以随时从首页发起新的请求。",
+    "back_home": "← 返回首页",
+    "matched_title": "已为您接通！🎉",
+    "matched_body": "{driver_name} 已接受您的请求。接下来由你们二人直接沟通并确定细节。剩余车费由你们自行结算，可使用现金或银行卡支付。\n\n感谢您选择今晚不亲自开车。这正是 Rotabo 的意义所在。",
+    "default_driver_name": "您的司机"
+  },
+  "dashboard_page": {
+    "eyebrow": "司机控制台",
+    "title": "待接请求",
+    "subtitle": "当前在 {city} 寻找司机的请求。",
+    "loading": "加载中…",
+    "not_registered_body": "您在此设备上尚未创建司机资料。",
+    "register_link": "← 前往注册成为司机",
+    "pending_confirmation": "正在确认您的注册付款…",
+    "empty_note": "您所在城市目前没有待接请求。此列表会自动刷新。",
+    "accept_btn": "接受",
+    "accept_checking": "正在核实…",
+    "accept_taken": "已被接受",
+    "taken_note": "该请求刚被其他司机接受。",
+    "time_just_now": "刚刚",
+    "time_min_ago_one": "1 分钟前",
+    "time_min_ago_other": "{n} 分钟前",
+    "time_hour_ago_one": "1 小时前",
+    "time_hour_ago_other": "{n} 小时前"
+  }
 }
