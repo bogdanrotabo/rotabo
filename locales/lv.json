@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Pievieno Rotabo sākuma ekrānam",
     "generic": "Atveriet pārlūkprogrammas izvēlni un meklējiet \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",
-    "ios": "Pieskarieties ikonai Kopīgot pārlūkā Safari un pēc tam \"Pievienot sākuma ekrānam\"."
+    "ios_step1": "Pieskarieties pogai <strong>Kopīgot</strong> Safari joslā (kvadrāts ar bultu uz augšu).",
+    "ios_step2": "Ritiniet kopīgošanas izvēlnē un pieskarieties <strong>\"Pievienot sākuma ekrānam\"</strong>.",
+    "ios_step3": "Pieskarieties <strong>\"Pievienot\"</strong> augšējā labajā stūrī — gatavs."
   },
   "find_form": {
+    "destination_label": "Kurp vēlaties doties?",
+    "destination_placeholder": "Iela, pilsēta…",
+    "fare_estimate": "Aptuvenais brauciens: <strong>~{amount} CHF</strong> par {km} km",
+    "fare_note": "90% saņem jūsu vadītājs, samaksāts tieši brauciena beigās.",
     "title": "Atrast šoferi",
     "subtitle": "Pastāsti mums, kas tu esi un kur atrodies. Nākamajā solī samaksāsi platformas maksu, tad sāksim meklēšanu.",
     "name_label": "Tavs vārds",
@@ -82,6 +88,7 @@
     "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
   },
   "searching_page": {
+    "fare_remaining": "Aptuvenā atlikusī summa: ~{amount} CHF, samaksāta tieši jūsu vadītājam.",
     "eta_label": "🕒 Paredzamais ierašanās laiks: ~{min} min",
     "eta_arriving": "🕒 Jūsu vadītājs tūlīt ieradīsies",
     "searching_title": "Meklējam šoferus tev tuvumā…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Tavs šoferis"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF jums",
+    "active_ride_fare": "~{amount} CHF par šo braucienu ({km} km), norēķins tieši ar klientu",
     "active_ride_cat": "JŪSU BRAUCIENS",
     "active_ride_call": "📞 Zvanīt klientam",
     "active_ride_navigate": "🧭 Navigācija uz paņemšanas vietu",

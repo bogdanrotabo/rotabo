@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Føj Rotabo til din hjemmeskærm",
     "generic": "Åbn din browsers menu, og find \"Installer app\" eller \"Føj til hjemmeskærm\".",
-    "ios": "Tryk på Del-ikonet i Safari, og vælg derefter \"Føj til hjemmeskærm\"."
+    "ios_step1": "Tryk på <strong>Del</strong>-knappen i Safaris værktøjslinje (kvadratet med pilen opad).",
+    "ios_step2": "Rul i delemenuen, og tryk på <strong>\"Føj til hjemmeskærm\"</strong>.",
+    "ios_step3": "Tryk på <strong>\"Tilføj\"</strong> øverst til højre — færdig."
   },
   "find_form": {
+    "destination_label": "Hvor vil du hen?",
+    "destination_placeholder": "Gade, by…",
+    "fare_estimate": "Anslået tur: <strong>~{amount} CHF</strong> for {km} km",
+    "fare_note": "90% går til din chauffør, betalt direkte ved turens afslutning.",
     "title": "Find en chauffør",
     "subtitle": "Fortæl os, hvem du er, og hvor du er. Herefter betaler du platformsbidraget, og så begynder vi at søge.",
     "name_label": "Dit navn",
@@ -117,6 +123,7 @@
     "error": "Noget gik galt. Prøv venligst igen."
   },
   "searching_page": {
+    "fare_remaining": "Anslået resterende beløb: ~{amount} CHF, betales direkte til din chauffør.",
     "eta_label": "🕒 Forventet ankomst: ~{min} min",
     "eta_arriving": "🕒 Din chauffør ankommer nu",
     "searching_title": "Søger efter chauffører i nærheden af dig…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Din chauffør"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF til dig",
+    "active_ride_fare": "~{amount} CHF for denne tur ({km} km), afregnes direkte med kunden",
     "active_ride_cat": "DIN TUR",
     "active_ride_call": "📞 Ring til kunden",
     "active_ride_navigate": "🧭 Naviger til afhentningsstedet",

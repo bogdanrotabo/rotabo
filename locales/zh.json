@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "将 Rotabo 添加到主屏幕",
     "generic": "打开浏览器菜单，寻找「安装应用」或「添加到主屏幕」。",
-    "ios": "在 Safari 中点击分享图标，然后选择「添加到主屏幕」。"
+    "ios_step1": "点按 Safari 工具栏中的<strong>分享</strong>按钮（带向上箭头的方框）。",
+    "ios_step2": "在分享菜单中向下滚动，点按<strong>「添加到主屏幕」</strong>。",
+    "ios_step3": "点按右上角的<strong>「添加」</strong>——完成。"
   },
   "find_form": {
+    "destination_label": "你想去哪里？",
+    "destination_placeholder": "街道、城市…",
+    "fare_estimate": "预计车费：<strong>约 {amount} 瑞士法郎</strong>，{km} 公里",
+    "fare_note": "90% 归司机所有，在行程结束时直接支付。",
     "title": "寻找司机",
     "subtitle": "告诉我们您是谁、您在哪里。接下来您需要支付平台服务费，之后我们就会开始为您寻找司机。",
     "name_label": "您的姓名",
@@ -82,6 +88,7 @@
     "error": "出了点问题，请重试。"
   },
   "searching_page": {
+    "fare_remaining": "预计剩余车费：约 {amount} 瑞士法郎，直接支付给司机。",
     "eta_label": "🕒 预计到达：~{min} 分钟",
     "eta_arriving": "🕒 您的司机即将到达",
     "searching_title": "正在为您寻找附近的司机…",
@@ -98,6 +105,8 @@
     "default_driver_name": "您的司机"
   },
   "dashboard_page": {
+    "fare_for_you": "约 {amount} 瑞士法郎归你所有",
+    "active_ride_fare": "这趟行程约 {amount} 瑞士法郎（{km} 公里），与乘客直接结算",
     "active_ride_cat": "您的行程",
     "active_ride_call": "📞 致电乘客",
     "active_ride_navigate": "🧭 导航至上车点",

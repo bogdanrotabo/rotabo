@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Rotabo'yu ana ekrana ekle",
     "generic": "Tarayıcı menünüzü açın ve \"Uygulamayı yükle\" veya \"Ana ekrana ekle\" seçeneğini arayın.",
-    "ios": "Safari'de Paylaş simgesine dokunun, ardından \"Ana Ekrana Ekle\"yi seçin."
+    "ios_step1": "Safari araç çubuğundaki <strong>Paylaş</strong> düğmesine dokun (yukarı oklu kare).",
+    "ios_step2": "Paylaşım menüsünde kaydır ve <strong>\"Ana Ekrana Ekle\"</strong>ye dokun.",
+    "ios_step3": "Sağ üstteki <strong>\"Ekle\"</strong>ye dokun — bitti."
   },
   "find_form": {
+    "destination_label": "Nereye gitmek istiyorsun?",
+    "destination_placeholder": "Sokak, şehir…",
+    "fare_estimate": "Tahmini ücret: <strong>~{amount} CHF</strong>, {km} km",
+    "fare_note": "%90'ı sürücüne aittir, yolculuk sonunda doğrudan ödenir.",
     "title": "Sürücü bul",
     "subtitle": "Bize kim olduğunu ve nerede olduğunu söyle. Ardından platform katkı payını ödeyeceksin, sonra aramaya başlayacağız.",
     "name_label": "Adın",
@@ -82,6 +88,7 @@
     "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
   },
   "searching_page": {
+    "fare_remaining": "Tahmini kalan ücret: ~{amount} CHF, doğrudan sürücüne ödenir.",
     "eta_label": "🕒 Tahmini varış: ~{min} dk",
     "eta_arriving": "🕒 Sürücünüz şu anda geliyor",
     "searching_title": "Yakınındaki sürücüler aranıyor…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Sürücün"
   },
   "dashboard_page": {
+    "fare_for_you": "Sana ~{amount} CHF",
+    "active_ride_fare": "Bu yolculuk için ~{amount} CHF ({km} km), müşteriyle doğrudan hesaplaşılır",
     "active_ride_cat": "YOLCULUĞUNUZ",
     "active_ride_call": "📞 Müşteriyi ara",
     "active_ride_navigate": "🧭 Alım noktasına yol tarifi al",

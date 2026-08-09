@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Tambahkan Rotabo ke layar utama",
     "generic": "Buka menu browser Anda dan cari \"Instal aplikasi\" atau \"Tambahkan ke Layar Utama\".",
-    "ios": "Ketuk ikon Bagikan di Safari, lalu pilih \"Tambah ke Layar Utama\"."
+    "ios_step1": "Ketuk tombol <strong>Bagikan</strong> di bilah Safari (kotak dengan panah ke atas).",
+    "ios_step2": "Gulir di menu bagikan dan ketuk <strong>\"Tambah ke Layar Utama\"</strong>.",
+    "ios_step3": "Ketuk <strong>\"Tambah\"</strong> di pojok kanan atas — selesai."
   },
   "find_form": {
+    "destination_label": "Anda mau ke mana?",
+    "destination_placeholder": "Jalan, kota…",
+    "fare_estimate": "Perkiraan tarif: <strong>~{amount} CHF</strong> untuk {km} km",
+    "fare_note": "90% untuk pengemudi Anda, dibayar langsung di akhir perjalanan.",
     "title": "Cari pengemudi",
     "subtitle": "Beri tahu kami siapa Anda dan di mana Anda berada. Selanjutnya Anda akan membayar kontribusi platform, lalu kami mulai mencarikan pengemudi.",
     "name_label": "Nama Anda",
@@ -82,6 +88,7 @@
     "error": "Terjadi kesalahan. Silakan coba lagi."
   },
   "searching_page": {
+    "fare_remaining": "Perkiraan sisa tarif: ~{amount} CHF, dibayar langsung ke pengemudi Anda.",
     "eta_label": "🕒 Perkiraan tiba: ~{min} menit",
     "eta_arriving": "🕒 Pengemudi Anda hampir tiba",
     "searching_title": "Mencari pengemudi di dekat Anda…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Pengemudi Anda"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF untuk Anda",
+    "active_ride_fare": "~{amount} CHF untuk perjalanan ini ({km} km), diselesaikan langsung dengan klien",
     "active_ride_cat": "PERJALANAN ANDA",
     "active_ride_call": "📞 Telepon klien",
     "active_ride_navigate": "🧭 Navigasi ke titik jemput",

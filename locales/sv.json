@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Lägg till Rotabo på hemskärmen",
     "generic": "Öppna webbläsarens meny och leta efter \"Installera app\" eller \"Lägg till på hemskärmen\".",
-    "ios": "Tryck på Dela-ikonen i Safari och välj sedan \"Lägg till på hemskärmen\"."
+    "ios_step1": "Tryck på <strong>Dela</strong>-knappen i Safaris verktygsfält (kvadraten med pilen uppåt).",
+    "ios_step2": "Bläddra i delningsmenyn och tryck på <strong>\"Lägg till på hemskärmen\"</strong>.",
+    "ios_step3": "Tryck på <strong>\"Lägg till\"</strong> uppe till höger — klart."
   },
   "find_form": {
+    "destination_label": "Vart vill du åka?",
+    "destination_placeholder": "Gata, stad…",
+    "fare_estimate": "Uppskattad resa: <strong>~{amount} CHF</strong> för {km} km",
+    "fare_note": "90% går till din förare, betalas direkt vid resans slut.",
     "title": "Hitta en förare",
     "subtitle": "Berätta vem du är och var du befinner dig. Härnäst betalar du plattformsavgiften, sedan börjar vi söka.",
     "name_label": "Ditt namn",
@@ -82,6 +88,7 @@
     "error": "Något gick fel. Försök igen."
   },
   "searching_page": {
+    "fare_remaining": "Uppskattat återstående belopp: ~{amount} CHF, betalas direkt till din förare.",
     "eta_label": "🕒 Beräknad ankomst: ~{min} min",
     "eta_arriving": "🕒 Din förare anländer nu",
     "searching_title": "Söker efter förare nära dig…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Din förare"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF till dig",
+    "active_ride_fare": "~{amount} CHF för denna resa ({km} km), regleras direkt med kunden",
     "active_ride_cat": "DIN RESA",
     "active_ride_call": "📞 Ring kunden",
     "active_ride_navigate": "🧭 Navigera till upphämtningsplatsen",

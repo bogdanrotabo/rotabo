@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Dodaj Rotabo na početni zaslon",
     "generic": "Otvorite izbornik preglednika i potražite \"Instaliraj aplikaciju\" ili \"Dodaj na početni zaslon\".",
-    "ios": "Dodirnite ikonu Podijeli u Safariju, zatim \"Dodaj na Home zaslon\"."
+    "ios_step1": "Dodirnite gumb <strong>Podijeli</strong> na traci Safarija (kvadrat sa strelicom prema gore).",
+    "ios_step2": "Pomaknite se u izborniku dijeljenja i dodirnite <strong>\"Dodaj na Home zaslon\"</strong>.",
+    "ios_step3": "Dodirnite <strong>\"Dodaj\"</strong> u gornjem desnom kutu — gotovo."
   },
   "find_form": {
+    "destination_label": "Kamo želite ići?",
+    "destination_placeholder": "Ulica, grad…",
+    "fare_estimate": "Procijenjena vožnja: <strong>~{amount} CHF</strong> za {km} km",
+    "fare_note": "90% ide vašem vozaču, plaćeno izravno na kraju vožnje.",
     "title": "Pronađi vozača",
     "subtitle": "Recite nam tko ste i gdje se nalazite. Zatim plaćate naknadu platforme, a potom počinjemo tražiti.",
     "name_label": "Vaše ime",
@@ -117,6 +123,7 @@
     "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
   },
   "searching_page": {
+    "fare_remaining": "Procijenjeni preostali iznos: ~{amount} CHF, plaća se izravno vašem vozaču.",
     "eta_label": "🕒 Procijenjeni dolazak: ~{min} min",
     "eta_arriving": "🕒 Vaš vozač upravo stiže",
     "searching_title": "Tražimo vozače u vašoj blizini…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Vaš vozač"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF za vas",
+    "active_ride_fare": "~{amount} CHF za ovu vožnju ({km} km), podmiruje se izravno s klijentom",
     "active_ride_cat": "VAŠA VOŽNJA",
     "active_ride_call": "📞 Nazovi klijenta",
     "active_ride_navigate": "🧭 Navigiraj do mjesta preuzimanja",

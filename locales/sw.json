@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "generic": "Fungua menyu ya kivinjari chako na utafute \"Sakinisha programu\" au \"Ongeza kwenye Skrini ya Nyumbani\".",
-    "ios": "Gusa aikoni ya Share katika Safari, kisha chagua \"Ongeza kwenye Skrini ya Nyumbani\"."
+    "ios_step1": "Gusa kitufe cha <strong>Share</strong> kwenye upau wa Safari (mraba wenye mshale unaoelekea juu).",
+    "ios_step2": "Sogeza kwenye menyu ya kushiriki na ugusa <strong>\"Ongeza kwenye Skrini ya Nyumbani\"</strong>.",
+    "ios_step3": "Gusa <strong>\"Ongeza\"</strong> kona ya juu kulia — imekamilika."
   },
   "find_form": {
+    "destination_label": "Unataka kwenda wapi?",
+    "destination_placeholder": "Barabara, jiji…",
+    "fare_estimate": "Nauli inayokadiriwa: <strong>~CHF {amount}</strong> kwa km {km}",
+    "fare_note": "90% inakwenda kwa dereva wako, inalipwa moja kwa moja mwishoni mwa safari.",
     "title": "Tafuta dereva",
     "subtitle": "Tuambie wewe ni nani na uko wapi. Kisha utalipa mchango wa jukwaa, kisha tutaanza kutafuta.",
     "name_label": "Jina lako",
@@ -82,6 +88,7 @@
     "error": "Kuna hitilafu. Tafadhali jaribu tena."
   },
   "searching_page": {
+    "fare_remaining": "Nauli iliyobaki inayokadiriwa: ~CHF {amount}, ilipwe moja kwa moja kwa dereva wako.",
     "eta_label": "🕒 Muda wa kuwasili: ~dakika {min}",
     "eta_arriving": "🕒 Dereva wako anafika sasa hivi",
     "searching_title": "Tunatafuta madereva karibu nawe…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Dereva wako"
   },
   "dashboard_page": {
+    "fare_for_you": "~CHF {amount} kwako",
+    "active_ride_fare": "~CHF {amount} kwa safari hii (km {km}), kulipwa moja kwa moja na mteja",
     "active_ride_cat": "SAFARI YAKO",
     "active_ride_call": "📞 Mpigie simu mteja",
     "active_ride_navigate": "🧭 Elekeza hadi mahali pa kuchukua",

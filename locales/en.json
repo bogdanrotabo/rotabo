@@ -90,7 +90,9 @@
   "install_modal": {
     "title": "Add Rotabo to your home screen",
     "generic": "Open your browser's menu and look for \"Install app\" or \"Add to Home screen\".",
-    "ios": "Tap the Share icon in Safari, then \"Add to Home Screen\"."
+    "ios_step1": "Tap the <strong>Share</strong> button in Safari's toolbar (the square with an arrow pointing up).",
+    "ios_step2": "Scroll down the share menu and tap <strong>\"Add to Home Screen\"</strong>.",
+    "ios_step3": "Tap <strong>\"Add\"</strong> in the top-right corner — done."
   },
   "find_form": {
     "title": "Find a driver",
@@ -98,6 +100,10 @@
     "name_label": "Your name",
     "phone_label": "Phone number",
     "city_label": "City / location",
+    "destination_label": "Where do you want to go?",
+    "destination_placeholder": "Street, city…",
+    "fare_estimate": "Estimated ride: <strong>~{amount} CHF</strong> for {km} km",
+    "fare_note": "90% goes to your driver, paid directly at the end of the ride.",
     "submit": "Continue to payment",
     "error": "Something went wrong. Please try again."
   },
@@ -130,7 +136,8 @@
     "matched_body": "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
     "default_driver_name": "Your driver",
     "eta_label": "🕒 Estimated arrival: ~{min} min",
-    "eta_arriving": "🕒 Your driver is arriving now"
+    "eta_arriving": "🕒 Your driver is arriving now",
+    "fare_remaining": "Estimated remaining fare: ~{amount} CHF, paid directly to your driver."
   },
   "dashboard_page": {
     "eyebrow": "DRIVER DASHBOARD",
@@ -150,10 +157,12 @@
     "time_min_ago_other": "{n} min ago",
     "time_hour_ago_one": "1 hour ago",
     "time_hour_ago_other": "{n} hours ago",
+    "fare_for_you": "~{amount} CHF for you",
     "active_ride_cat": "YOUR RIDE",
     "active_ride_call": "📞 Call client",
     "active_ride_navigate": "🧭 Navigate to pickup",
     "active_ride_sharing_on": "Sharing your live location with the client.",
-    "active_ride_sharing_off": "Turn on location access in your browser to share your live position with the client."
+    "active_ride_sharing_off": "Turn on location access in your browser to share your live position with the client.",
+    "active_ride_fare": "~{amount} CHF for this ride ({km} km), settled directly with the client"
   }
 }

@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Přidat Rotabo na plochu",
     "generic": "Otevřete menu prohlížeče a najděte \"Instalovat aplikaci\" nebo \"Přidat na plochu\".",
-    "ios": "V Safari klepněte na ikonu Sdílet a poté na \"Přidat na plochu\"."
+    "ios_step1": "Klepněte na tlačítko <strong>Sdílet</strong> na liště Safari (čtverec se šipkou nahoru).",
+    "ios_step2": "V nabídce sdílení přejděte dolů a klepněte na <strong>„Přidat na plochu“</strong>.",
+    "ios_step3": "Klepněte na <strong>„Přidat“</strong> vpravo nahoře — hotovo."
   },
   "find_form": {
+    "destination_label": "Kam se chcete dostat?",
+    "destination_placeholder": "Ulice, město…",
+    "fare_estimate": "Odhadovaná jízda: <strong>~{amount} CHF</strong> za {km} km",
+    "fare_note": "90% jde vašemu řidiči, placeno přímo na konci jízdy.",
     "title": "Najít řidiče",
     "subtitle": "Řekněte nám, kdo jste a kde se nacházíte. Dále zaplatíte příspěvek platformě a poté začneme hledat.",
     "name_label": "Vaše jméno",
@@ -117,6 +123,7 @@
     "error": "Něco se pokazilo. Zkuste to prosím znovu."
   },
   "searching_page": {
+    "fare_remaining": "Odhadovaný zbývající doplatek: ~{amount} CHF, placeno přímo vašemu řidiči.",
     "eta_label": "🕒 Odhadovaný příjezd: ~{min} min",
     "eta_arriving": "🕒 Váš řidič právě přijíždí",
     "searching_title": "Hledáme řidiče ve vašem okolí…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Váš řidič"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF pro vás",
+    "active_ride_fare": "~{amount} CHF za tuto jízdu ({km} km), vyrovnáno přímo s klientem",
     "active_ride_cat": "VAŠE JÍZDA",
     "active_ride_call": "📞 Zavolat klientovi",
     "active_ride_navigate": "🧭 Navigovat na místo vyzvednutí",

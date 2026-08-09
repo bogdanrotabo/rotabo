@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Adiciona o Rotabo ao ecrã principal",
     "generic": "Abre o menu do teu navegador e procura \"Instalar aplicação\" ou \"Adicionar ao ecrã principal\".",
-    "ios": "Toca no ícone Partilhar no Safari e depois em \"Adicionar ao ecrã principal\"."
+    "ios_step1": "Toca no botão <strong>Partilhar</strong> na barra do Safari (o quadrado com a seta para cima).",
+    "ios_step2": "Desce no menu de partilha e toca em <strong>\"Adicionar ao ecrã principal\"</strong>.",
+    "ios_step3": "Toca em <strong>\"Adicionar\"</strong> no canto superior direito — pronto."
   },
   "find_form": {
+    "destination_label": "Para onde queres ir?",
+    "destination_placeholder": "Rua, cidade…",
+    "fare_estimate": "Viagem estimada: <strong>~{amount} CHF</strong> por {km} km",
+    "fare_note": "90% vai para o teu condutor, pago diretamente no final da viagem.",
     "title": "Encontrar um condutor",
     "subtitle": "Diz-nos quem és e onde estás. De seguida vais pagar a contribuição da plataforma e depois começamos a procurar.",
     "name_label": "O teu nome",
@@ -117,6 +123,7 @@
     "error": "Algo correu mal. Tenta novamente."
   },
   "searching_page": {
+    "fare_remaining": "Saldo estimado: ~{amount} CHF, pago diretamente ao teu condutor.",
     "eta_label": "🕒 Chegada estimada: ~{min} min",
     "eta_arriving": "🕒 O teu condutor está a chegar agora",
     "searching_title": "A procurar condutores perto de ti…",
@@ -133,6 +140,8 @@
     "default_driver_name": "O teu condutor"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF para ti",
+    "active_ride_fare": "~{amount} CHF por esta viagem ({km} km), a acertar diretamente com o cliente",
     "active_ride_cat": "A TUA VIAGEM",
     "active_ride_call": "📞 Ligar ao cliente",
     "active_ride_navigate": "🧭 Navegar até ao ponto de recolha",

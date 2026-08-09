@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Rotaboをホーム画面に追加",
     "generic": "ブラウザのメニューを開き、「アプリをインストール」または「ホーム画面に追加」を探してください。",
-    "ios": "Safariの共有アイコンをタップし、「ホーム画面に追加」を選択してください。"
+    "ios_step1": "Safariのツールバーにある<strong>共有</strong>ボタン（上向き矢印の四角）をタップします。",
+    "ios_step2": "共有メニューをスクロールし、<strong>「ホーム画面に追加」</strong>をタップします。",
+    "ios_step3": "右上の<strong>「追加」</strong>をタップして完了です。"
   },
   "find_form": {
+    "destination_label": "どこに行きたいですか？",
+    "destination_placeholder": "通り、都市…",
+    "fare_estimate": "予想運賃：<strong>約{amount} CHF</strong>（{km} km）",
+    "fare_note": "90%はドライバーに、乗車終了時に直接支払われます。",
     "title": "ドライバーを探す",
     "subtitle": "お名前と現在地をお知らせください。次にプラットフォーム利用料をお支払いいただいたのち、ドライバーの検索を開始します。",
     "name_label": "お名前",
@@ -82,6 +88,7 @@
     "error": "問題が発生しました。もう一度お試しください。"
   },
   "searching_page": {
+    "fare_remaining": "残りの予想運賃：約{amount} CHF、ドライバーに直接支払います。",
     "eta_label": "🕒 到着予定：約{min}分",
     "eta_arriving": "🕒 ドライバーがまもなく到着します",
     "searching_title": "近くのドライバーを探しています…",
@@ -98,6 +105,8 @@
     "default_driver_name": "あなたのドライバー"
   },
   "dashboard_page": {
+    "fare_for_you": "あなたへ約{amount} CHF",
+    "active_ride_fare": "この乗車で約{amount} CHF（{km} km）、クライアントと直接精算",
     "active_ride_cat": "あなたの配車",
     "active_ride_call": "📞 クライアントに電話",
     "active_ride_navigate": "🧭 乗車地点へナビゲート",

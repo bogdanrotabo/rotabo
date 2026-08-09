@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Lisää Rotabo aloitusnäytölle",
     "generic": "Avaa selaimesi valikko ja etsi \"Asenna sovellus\" tai \"Lisää aloitusnäytölle\".",
-    "ios": "Napauta Safarissa Jaa-kuvaketta ja valitse sitten \"Lisää Koti-valikkoon\"."
+    "ios_step1": "Napauta Safarin työkalurivin <strong>Jaa</strong>-painiketta (neliö, jossa ylöspäin osoittava nuoli).",
+    "ios_step2": "Vieritä jakovalikossa ja napauta <strong>\"Lisää Koti-valikkoon\"</strong>.",
+    "ios_step3": "Napauta oikeassa yläkulmassa <strong>\"Lisää\"</strong> — valmis."
   },
   "find_form": {
+    "destination_label": "Minne haluat mennä?",
+    "destination_placeholder": "Katu, kaupunki…",
+    "fare_estimate": "Arvioitu matka: <strong>~{amount} CHF</strong>, {km} km",
+    "fare_note": "90% menee kuljettajallesi, maksetaan suoraan matkan päätteeksi.",
     "title": "Etsi kuljettaja",
     "subtitle": "Kerro meille, kuka olet ja missä olet. Seuraavaksi maksat alustamaksun, jonka jälkeen aloitamme etsimisen.",
     "name_label": "Nimesi",
@@ -117,6 +123,7 @@
     "error": "Jokin meni pieleen. Yritä uudelleen."
   },
   "searching_page": {
+    "fare_remaining": "Arvioitu jäljellä oleva maksu: ~{amount} CHF, maksetaan suoraan kuljettajallesi.",
     "eta_label": "🕒 Arvioitu saapuminen: ~{min} min",
     "eta_arriving": "🕒 Kuljettajasi on juuri saapumassa",
     "searching_title": "Etsitään kuljettajia lähelläsi…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Kuljettajasi"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF sinulle",
+    "active_ride_fare": "~{amount} CHF tästä matkasta ({km} km), sovitaan suoraan asiakkaan kanssa",
     "active_ride_cat": "MATKASI",
     "active_ride_call": "📞 Soita asiakkaalle",
     "active_ride_navigate": "🧭 Navigoi noutopisteeseen",

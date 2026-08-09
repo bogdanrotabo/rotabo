@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Cuir Rotabo le do scáileán baile",
     "generic": "Oscail roghchlár do bhrabhsálaí agus cuardaigh \"Suiteáil aip\" nó \"Cuir leis an Scáileán Baile\".",
-    "ios": "Tapáil ar an deilbhín Comhroinnt i Safari, ansin \"Cuir leis an Scáileán Baile\"."
+    "ios_step1": "Tapáil an cnaipe <strong>Comhroinnt</strong> i mbarra Safari (an cearnóg leis an tsaighead in airde).",
+    "ios_step2": "Scrollaigh sa roghchlár comhroinnte agus tapáil <strong>\"Cuir leis an Scáileán Baile\"</strong>.",
+    "ios_step3": "Tapáil <strong>\"Cuir Leis\"</strong> sa chúinne uachtarach ar dheis — críochnaithe."
   },
   "find_form": {
+    "destination_label": "Cá bhfuil tú ag iarraidh dul?",
+    "destination_placeholder": "Sráid, cathair…",
+    "fare_estimate": "Turas measta: <strong>~{amount} CHF</strong> ar {km} km",
+    "fare_note": "Téann 90% chuig do thiománaí, íoctha go díreach ag deireadh an turais.",
     "title": "Faigh tiománaí",
     "subtitle": "Inis dúinn cé thusa agus cá bhfuil tú. Íocfaidh tú an ranníocaíocht ardáin ina dhiaidh sin, ansin tosóimid ag cuardach.",
     "name_label": "D'ainm",
@@ -82,6 +88,7 @@
     "error": "Tharla earráid. Bain triail eile as le do thoil."
   },
   "searching_page": {
+    "fare_remaining": "Iarmhéid measta: ~{amount} CHF, íoctha go díreach le do thiománaí.",
     "eta_label": "🕒 Am teachta measta: ~{min} nóiméad",
     "eta_arriving": "🕒 Tá do thiománaí ag teacht anois",
     "searching_title": "Ag cuardach tiománaithe in aice leat…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Do thiománaí"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF duitse",
+    "active_ride_fare": "~{amount} CHF don turas seo ({km} km), socraithe go díreach leis an gcliant",
     "active_ride_cat": "DO THURAS",
     "active_ride_call": "📞 Glaoch ar an gcliant",
     "active_ride_navigate": "🧭 Treoraigh chuig an bpointe bailiúcháin",

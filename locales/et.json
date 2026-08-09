@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Lisa Rotabo avakuvale",
     "generic": "Ava brauseri menüü ja otsi \"Installi rakendus\" või \"Lisa avakuvale\".",
-    "ios": "Puuduta Safaris jagamisikooni ja seejärel \"Lisa avakuvale\"."
+    "ios_step1": "Puuduta Safari tööriistariba nuppu <strong>Jaga</strong> (ülespoole noolega ruut).",
+    "ios_step2": "Keri jagamismenüüs ja puuduta <strong>\"Lisa avakuvale\"</strong>.",
+    "ios_step3": "Puuduta paremas ülanurgas <strong>\"Lisa\"</strong> — valmis."
   },
   "find_form": {
+    "destination_label": "Kuhu soovid minna?",
+    "destination_placeholder": "Tänav, linn…",
+    "fare_estimate": "Hinnanguline sõit: <strong>~{amount} CHF</strong> {km} km eest",
+    "fare_note": "90% läheb sinu juhile, makstakse otse sõidu lõpus.",
     "title": "Leia juht",
     "subtitle": "Ütle meile, kes sa oled ja kus sa asud. Järgmisena tasud platvormitasu ja siis alustame otsimist.",
     "name_label": "Sinu nimi",
@@ -117,6 +123,7 @@
     "error": "Midagi läks valesti. Palun proovi uuesti."
   },
   "searching_page": {
+    "fare_remaining": "Hinnanguline jääksumma: ~{amount} CHF, makstakse otse sinu juhile.",
     "eta_label": "🕒 Eeldatav saabumine: ~{min} min",
     "eta_arriving": "🕒 Sinu juht saabub just nüüd",
     "searching_title": "Otsime sulle lähedal olevaid juhte…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Sinu juht"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF sulle",
+    "active_ride_fare": "~{amount} CHF selle sõidu eest ({km} km), tasu otse kliendiga",
     "active_ride_cat": "SINU SÕIT",
     "active_ride_call": "📞 Helista kliendile",
     "active_ride_navigate": "🧭 Navigeeri peale võtmise kohta",

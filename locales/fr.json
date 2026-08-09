@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Ajoutez Rotabo à votre écran d'accueil",
     "generic": "Ouvrez le menu de votre navigateur et cherchez \"Installer l'application\" ou \"Ajouter à l'écran d'accueil\".",
-    "ios": "Appuyez sur l'icône Partager dans Safari, puis \"Sur l'écran d'accueil\"."
+    "ios_step1": "Appuyez sur le bouton <strong>Partager</strong> dans la barre Safari (le carré avec une flèche vers le haut).",
+    "ios_step2": "Faites défiler le menu de partage et appuyez sur <strong>« Sur l'écran d'accueil »</strong>.",
+    "ios_step3": "Appuyez sur <strong>« Ajouter »</strong> en haut à droite — terminé."
   },
   "find_form": {
+    "destination_label": "Où voulez-vous aller ?",
+    "destination_placeholder": "Rue, ville…",
+    "fare_estimate": "Course estimée : <strong>~{amount} CHF</strong> pour {km} km",
+    "fare_note": "90% revient à votre chauffeur, payé directement à la fin de la course.",
     "title": "Trouver un chauffeur",
     "subtitle": "Dites-nous qui vous êtes et où vous êtes. Vous paierez ensuite la contribution de la plateforme, puis nous commencerons la recherche.",
     "name_label": "Votre nom",
@@ -117,6 +123,7 @@
     "error": "Une erreur s'est produite. Veuillez réessayer."
   },
   "searching_page": {
+    "fare_remaining": "Solde estimé : ~{amount} CHF, payé directement à votre chauffeur.",
     "eta_label": "🕒 Arrivée estimée : ~{min} min",
     "eta_arriving": "🕒 Votre chauffeur arrive maintenant",
     "searching_title": "Recherche de chauffeurs près de vous…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Votre chauffeur"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF pour vous",
+    "active_ride_fare": "~{amount} CHF pour cette course ({km} km), à régler directement avec le client",
     "active_ride_cat": "VOTRE COURSE",
     "active_ride_call": "📞 Appeler le client",
     "active_ride_navigate": "🧭 Naviguer vers le point de prise en charge",

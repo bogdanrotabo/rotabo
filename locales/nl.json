@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Voeg Rotabo toe aan je beginscherm",
     "generic": "Open het menu van je browser en zoek naar \"App installeren\" of \"Toevoegen aan beginscherm\".",
-    "ios": "Tik in Safari op het deelpictogram en dan op \"Zet op beginscherm\"."
+    "ios_step1": "Tik op de <strong>Deel</strong>-knop in de Safari-balk (het vierkant met de pijl omhoog).",
+    "ios_step2": "Scroll in het deelmenu en tik op <strong>\"Zet op beginscherm\"</strong>.",
+    "ios_step3": "Tik rechtsboven op <strong>\"Voeg toe\"</strong> — klaar."
   },
   "find_form": {
+    "destination_label": "Waar wil je heen?",
+    "destination_placeholder": "Straat, stad…",
+    "fare_estimate": "Geschatte rit: <strong>~{amount} CHF</strong> voor {km} km",
+    "fare_note": "90% gaat naar je chauffeur, direct betaald aan het einde van de rit.",
     "title": "Zoek een chauffeur",
     "subtitle": "Vertel ons wie je bent en waar je bent. Daarna betaal je de platformbijdrage en beginnen we met zoeken.",
     "name_label": "Je naam",
@@ -117,6 +123,7 @@
     "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "searching_page": {
+    "fare_remaining": "Geschat resterend bedrag: ~{amount} CHF, rechtstreeks aan je chauffeur te betalen.",
     "eta_label": "🕒 Geschatte aankomst: ~{min} min",
     "eta_arriving": "🕒 Je chauffeur komt nu aan",
     "searching_title": "We zoeken chauffeurs bij jou in de buurt…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Jouw chauffeur"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF voor jou",
+    "active_ride_fare": "~{amount} CHF voor deze rit ({km} km), rechtstreeks met de klant af te rekenen",
     "active_ride_cat": "JOUW RIT",
     "active_ride_call": "📞 Bel klant",
     "active_ride_navigate": "🧭 Navigeer naar ophaalpunt",

@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Dodaj Rotabo do ekranu głównego",
     "generic": "Otwórz menu przeglądarki i poszukaj opcji \"Zainstaluj aplikację\" lub \"Dodaj do ekranu głównego\".",
-    "ios": "Stuknij ikonę Udostępnij w Safari, a następnie \"Dodaj do ekranu głównego\"."
+    "ios_step1": "Stuknij przycisk <strong>Udostępnij</strong> na pasku Safari (kwadrat ze strzałką w górę).",
+    "ios_step2": "Przewiń menu udostępniania i stuknij <strong>\"Dodaj do ekranu głównego\"</strong>.",
+    "ios_step3": "Stuknij <strong>\"Dodaj\"</strong> w prawym górnym rogu — gotowe."
   },
   "find_form": {
+    "destination_label": "Dokąd chcesz jechać?",
+    "destination_placeholder": "Ulica, miasto…",
+    "fare_estimate": "Szacowany kurs: <strong>~{amount} CHF</strong> za {km} km",
+    "fare_note": "90% trafia do kierowcy, płatne bezpośrednio na koniec kursu.",
     "title": "Znajdź kierowcę",
     "subtitle": "Powiedz nam, kim jesteś i gdzie się znajdujesz. Następnie zapłacisz opłatę na rzecz platformy, a potem zaczniemy szukać.",
     "name_label": "Twoje imię",
@@ -82,6 +88,7 @@
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
   "searching_page": {
+    "fare_remaining": "Szacowana pozostała kwota: ~{amount} CHF, płatna bezpośrednio kierowcy.",
     "eta_label": "🕒 Szacowany czas przyjazdu: ~{min} min",
     "eta_arriving": "🕒 Twój kierowca właśnie dojeżdża",
     "searching_title": "Szukamy kierowców w Twojej okolicy…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Twój kierowca"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF dla ciebie",
+    "active_ride_fare": "~{amount} CHF za ten kurs ({km} km), rozliczane bezpośrednio z klientem",
     "active_ride_cat": "TWÓJ KURS",
     "active_ride_call": "📞 Zadzwoń do klienta",
     "active_ride_navigate": "🧭 Nawiguj do miejsca odbioru",

@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Pridėti Rotabo prie pagrindinio ekrano",
     "generic": "Atidarykite naršyklės meniu ir raskite \"Įdiegti programą\" arba \"Pridėti prie pagrindinio ekrano\".",
-    "ios": "Palieskite bendrinimo piktogramą „Safari“, tada pasirinkite \"Pridėti prie pagrindinio ekrano\"."
+    "ios_step1": "Palieskite mygtuką <strong>Bendrinti</strong> \"Safari\" juostoje (kvadratas su rodykle aukštyn).",
+    "ios_step2": "Slinkite bendrinimo meniu ir palieskite <strong>\"Pridėti prie pagrindinio ekrano\"</strong>.",
+    "ios_step3": "Palieskite <strong>\"Pridėti\"</strong> viršuje dešinėje — atlikta."
   },
   "find_form": {
+    "destination_label": "Kur norite vykti?",
+    "destination_placeholder": "Gatvė, miestas…",
+    "fare_estimate": "Numatoma kelionė: <strong>~{amount} CHF</strong> už {km} km",
+    "fare_note": "90% atitenka jūsų vairuotojui, sumokama tiesiogiai kelionės pabaigoje.",
     "title": "Rasti vairuotoją",
     "subtitle": "Pasakyk mums, kas tu esi ir kur esi. Kitą žingsnį sumokėsi platformos mokestį, tada pradėsime paiešką.",
     "name_label": "Tavo vardas",
@@ -82,6 +88,7 @@
     "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
   },
   "searching_page": {
+    "fare_remaining": "Numatoma likusi suma: ~{amount} CHF, mokama tiesiogiai jūsų vairuotojui.",
     "eta_label": "🕒 Numatomas atvykimas: ~{min} min",
     "eta_arriving": "🕒 Jūsų vairuotojas jau atvyksta",
     "searching_title": "Ieškome vairuotojų netoli tavęs…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Tavo vairuotojas"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF jums",
+    "active_ride_fare": "~{amount} CHF už šią kelionę ({km} km), atsiskaitoma tiesiogiai su klientu",
     "active_ride_cat": "JŪSŲ KELIONĖ",
     "active_ride_call": "📞 Skambinti klientui",
     "active_ride_navigate": "🧭 Naviguoti į pasiėmimo vietą",

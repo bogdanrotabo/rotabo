@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Żid Rotabo mal-iskrin ta' dar",
     "generic": "Iftaħ il-menu tal-browser tiegħek u fittex \"Installa l-app\" jew \"Żid mal-Iskrin ta' Dar\".",
-    "ios": "Mess l-ikona Ixxerja fi Safari, imbagħad \"Żid mal-Iskrin ta' Dar\"."
+    "ios_step1": "Mess il-buttuna <strong>Ixxerja</strong> fil-bar ta' Safari (il-kwadru bil-vleġġa 'l fuq).",
+    "ios_step2": "Scrollja fil-menu tal-qsim u mess <strong>\"Żid mal-Iskrin ta' Dar\"</strong>.",
+    "ios_step3": "Mess <strong>\"Żid\"</strong> fin-naħa ta' fuq lemin — lest."
   },
   "find_form": {
+    "destination_label": "Fejn trid tmur?",
+    "destination_placeholder": "Triq, belt…",
+    "fare_estimate": "Vjaġġ stmat: <strong>~{amount} CHF</strong> għal {km} km",
+    "fare_note": "90% imur għand is-sewwieq tiegħek, imħallas direttament fl-aħħar tal-vjaġġ.",
     "title": "Sib sewwieq",
     "subtitle": "Għidilna min int u fejn qiegħed. Imbagħad tħallas il-kontribuzzjoni tal-pjattaforma, u nibdew infittxu.",
     "name_label": "Ismek",
@@ -82,6 +88,7 @@
     "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
   },
   "searching_page": {
+    "fare_remaining": "Ammont li fadal stmat: ~{amount} CHF, imħallas direttament lis-sewwieq tiegħek.",
     "eta_label": "🕒 Wasla stmata: ~{min} min",
     "eta_arriving": "🕒 Is-sewwieq tiegħek se jasal issa",
     "searching_title": "Qed infittxu sewwieqa qrib tiegħek…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Is-sewwieq tiegħek"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF għalik",
+    "active_ride_fare": "~{amount} CHF għal dan il-vjaġġ ({km} km), issoluta direttament mal-klijent",
     "active_ride_cat": "IL-VJAĠĠ TIEGĦEK",
     "active_ride_call": "📞 Ċempel lill-klijent",
     "active_ride_navigate": "🧭 Innaviga lejn il-punt tal-ġbir",

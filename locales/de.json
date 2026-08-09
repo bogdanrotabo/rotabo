@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Rotabo zum Startbildschirm hinzufügen",
     "generic": "Öffne das Menü deines Browsers und suche nach \"App installieren\" oder \"Zum Startbildschirm hinzufügen\".",
-    "ios": "Tippe in Safari auf das Teilen-Symbol, dann auf \"Zum Home-Bildschirm\"."
+    "ios_step1": "Tippe auf das <strong>Teilen</strong>-Symbol in der Safari-Leiste (das Quadrat mit dem Pfeil nach oben).",
+    "ios_step2": "Scrolle im Teilen-Menü und tippe auf <strong>„Zum Home-Bildschirm“</strong>.",
+    "ios_step3": "Tippe oben rechts auf <strong>„Hinzufügen“</strong> — fertig."
   },
   "find_form": {
+    "destination_label": "Wohin möchtest du?",
+    "destination_placeholder": "Straße, Stadt…",
+    "fare_estimate": "Geschätzte Fahrt: <strong>~{amount} CHF</strong> für {km} km",
+    "fare_note": "90% gehen an deinen Fahrer, direkt am Ende der Fahrt bezahlt.",
     "title": "Fahrer finden",
     "subtitle": "Sag uns, wer du bist und wo du bist. Als Nächstes zahlst du den Plattformbeitrag, dann beginnen wir mit der Suche.",
     "name_label": "Dein Name",
@@ -117,6 +123,7 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
   },
   "searching_page": {
+    "fare_remaining": "Geschätzter Restbetrag: ~{amount} CHF, direkt an deinen Fahrer zu zahlen.",
     "eta_label": "🕒 Voraussichtliche Ankunft: ~{min} Min.",
     "eta_arriving": "🕒 Dein Fahrer kommt gerade an",
     "searching_title": "Wir suchen Fahrer in deiner Nähe…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Dein Fahrer"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF für dich",
+    "active_ride_fare": "~{amount} CHF für diese Fahrt ({km} km), direkt mit dem Kunden abzurechnen",
     "active_ride_cat": "DEINE FAHRT",
     "active_ride_call": "📞 Kunde anrufen",
     "active_ride_navigate": "🧭 Zum Abholort navigieren",

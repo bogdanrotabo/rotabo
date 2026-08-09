@@ -64,6 +64,11 @@
     color:var(--violet-1);font-weight:700;font-size:1rem;
   }
   .eta-note.show{display:block;}
+  .fare-note{
+    display:none;margin-top:8px;
+    color:var(--text-eyebrow);font-size:.88rem;
+  }
+  .fare-note.show{display:block;}
 </style>
 </head>
 <body>
@@ -94,6 +99,7 @@
     <h1 id="title">Searching for drivers near you…</h1>
     <p id="body">Hang tight — we'll connect you with a driver as soon as one accepts your request.</p>
     <p class="eta-note" id="etaNote"></p>
+    <p class="fare-note" id="fareNote"></p>
     <p class="status-note" id="statusNote"></p>
   </div>
 </main>
@@ -126,7 +132,8 @@
     matched_body: "{driver_name} has accepted your request. From here, you two take it from here — agree on the details directly. The remaining fare is settled between you, in cash or by card.\n\nThank you for choosing not to drive tonight. That's what Rotabo is about.",
     default_driver_name: "Your driver",
     eta_label: "🕒 Estimated arrival: ~{min} min",
-    eta_arriving: "🕒 Your driver is arriving now"
+    eta_arriving: "🕒 Your driver is arriving now",
+    fare_remaining: "Estimated remaining fare: ~{amount} CHF, paid directly to your driver."
   };
 
   function tr(key, vars){
@@ -270,6 +277,19 @@
           var name = (driverRes.data && driverRes.data.name) || tr("default_driver_name");
           var phone = driverRes.data && driverRes.data.phone;
           renderMatched(name, phone);
+        });
+
+      sb.from("requests")
+        .select("estimated_fare_chf, distance_km")
+        .eq("id", requestId)
+        .maybeSingle()
+        .then(function(res){
+          var fareNote = document.getElementById("fareNote");
+          if (res.data && res.data.estimated_fare_chf != null) {
+            var driverShare = Math.round(res.data.estimated_fare_chf * 0.9 * 100) / 100;
+            fareNote.textContent = tr("fare_remaining", { amount: driverShare.toFixed(2) });
+            fareNote.classList.add("show");
+          }
         });
     }
   }

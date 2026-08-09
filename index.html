@@ -333,6 +333,16 @@
   html[dir="rtl"] .modal-close{right:auto;left:20px;}
   .modal-box h3{color:var(--text-dark);font-size:1.4rem;margin:0 0 6px;}
   .modal-sub{color:var(--text-body);font-size:.95rem;margin:0 0 24px;}
+  .install-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;}
+  .install-steps li{display:flex;align-items:flex-start;gap:14px;}
+  .install-steps .install-icon{
+    flex-shrink:0;width:36px;height:36px;border-radius:10px;
+    background:var(--bg-card);border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;color:var(--violet-1);
+  }
+  .install-steps .install-icon svg{width:19px;height:19px;}
+  .install-steps li span:last-child{font-size:.95rem;color:var(--text-body);line-height:1.5;padding-top:6px;}
+  .install-steps li span:last-child strong{color:var(--text-dark);}
   .form-field{margin-bottom:16px;}
   .form-field label{display:block;font-size:.9rem;font-weight:700;color:var(--text-dark);margin-bottom:6px;}
   .form-field input, .form-field select{
@@ -352,6 +362,14 @@
   .form-submit:disabled{opacity:.6;cursor:not-allowed;}
   .form-error{color:#c0392b;font-size:.9rem;margin-top:10px;display:none;}
   .form-error.show{display:block;}
+  .fare-note{
+    display:none;background:var(--bg-card);border:1px solid var(--border);
+    border-radius:12px;padding:12px 14px;margin:0 0 16px;
+    color:var(--text-dark);font-size:.92rem;line-height:1.5;
+  }
+  .fare-note.show{display:block;}
+  .fare-note strong{color:var(--violet-1);}
+  .fare-note .fare-sub{display:block;color:var(--text-eyebrow);font-size:.82rem;margin-top:2px;}
 </style>
 </head>
 <body>
@@ -495,6 +513,11 @@
         <label for="fd_city" data-i18n="find_form.city_label">City / location</label>
         <input type="text" id="fd_city" name="city" required autocomplete="address-level2">
       </div>
+      <div class="form-field">
+        <label for="fd_destination" data-i18n="find_form.destination_label">Where do you want to go?</label>
+        <input type="text" id="fd_destination" name="destination" autocomplete="off" data-i18n-placeholder="find_form.destination_placeholder" placeholder="Street, city…">
+      </div>
+      <p class="fare-note" id="fareEstimate"></p>
       <button type="submit" class="form-submit" data-i18n="find_form.submit">Continue to payment</button>
       <p class="form-error" id="findDriverError" data-i18n="find_form.error">Something went wrong. Please try again.</p>
     </form>
@@ -553,7 +576,21 @@
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('installModal')" aria-label="Close">✕</button>
     <h3 data-i18n="install_modal.title">Add Rotabo to your home screen</h3>
-    <p class="modal-sub" id="installInstructions" data-i18n="install_modal.generic">Open your browser's menu and look for "Install app" or "Add to Home screen".</p>
+    <p class="modal-sub" id="installGeneric" data-i18n="install_modal.generic">Open your browser's menu and look for "Install app" or "Add to Home screen".</p>
+    <ol class="install-steps" id="installSteps">
+      <li>
+        <span class="install-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/><rect x="4" y="12" width="16" height="8" rx="2"/></svg></span>
+        <span data-i18n-html="install_modal.ios_step1">Tap the <strong>Share</strong> button in Safari's toolbar (the square with an arrow pointing up).</span>
+      </li>
+      <li>
+        <span class="install-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span>
+        <span data-i18n-html="install_modal.ios_step2">Scroll down the share menu and tap <strong>"Add to Home Screen"</strong>.</span>
+      </li>
+      <li>
+        <span class="install-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <span data-i18n-html="install_modal.ios_step3">Tap <strong>"Add"</strong> in the top-right corner — done.</span>
+      </li>
+    </ol>
   </div>
 </div>
 
@@ -636,6 +673,65 @@
     });
   }
 
+  // Fetch pickup coords once and cache -- both the live fare estimate
+  // (on destination blur) and the final submit reuse this, so the
+  // browser only prompts for location permission once.
+  var pickupCoordsPromise = null;
+  function ensurePickupCoords(){
+    if (!pickupCoordsPromise) pickupCoordsPromise = getPickupCoords();
+    return pickupCoordsPromise;
+  }
+
+  // No Google Maps key configured, so the fare estimate uses free
+  // OpenStreetMap geocoding (Nominatim) for the typed destination,
+  // plus the same straight-line (haversine) distance already used
+  // for the live ETA on searching.html -- approximate, not routed,
+  // but needs no paid API and no key.
+  var RATE_CHF_PER_KM = 2;
+
+  function haversineKm(lat1, lng1, lat2, lng2){
+    var R = 6371;
+    var dLat = (lat2 - lat1) * Math.PI / 180;
+    var dLng = (lng2 - lng1) * Math.PI / 180;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function geocodeAddress(text){
+    var url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=" + encodeURIComponent(text);
+    return fetch(url, { headers: { "Accept": "application/json" } })
+      .then(function(res){ return res.ok ? res.json() : []; })
+      .then(function(results){
+        if (!results || !results.length) return null;
+        return { lat: parseFloat(results[0].lat), lng: parseFloat(results[0].lon) };
+      })
+      .catch(function(){ return null; });
+  }
+
+  var fareState = { destinationCoords: null, distanceKm: null, fareChf: null };
+
+  document.getElementById("fd_destination").addEventListener("blur", function(){
+    var text = this.value.trim();
+    var fareEl = document.getElementById("fareEstimate");
+    if (!text) { fareEl.classList.remove("show"); fareState = { destinationCoords: null, distanceKm: null, fareChf: null }; return; }
+
+    Promise.all([ensurePickupCoords(), geocodeAddress(text)]).then(function(results){
+      var pickup = results[0];
+      var destination = results[1];
+      if (!pickup || !destination) { fareEl.classList.remove("show"); return; }
+
+      var km = haversineKm(pickup.lat, pickup.lng, destination.lat, destination.lng);
+      var fare = Math.round(km * RATE_CHF_PER_KM * 100) / 100;
+      fareState = { destinationCoords: destination, distanceKm: Math.round(km * 100) / 100, fareChf: fare };
+
+      fareEl.innerHTML = window.rotaboT("find_form.fare_estimate", { amount: fare.toFixed(2), km: fareState.distanceKm.toFixed(1) })
+        + '<span class="fare-sub">' + window.rotaboT("find_form.fare_note") + '</span>';
+      fareEl.classList.add("show");
+    });
+  });
+
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
@@ -643,7 +739,7 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
-    getPickupCoords().then(function(coords){
+    ensurePickupCoords().then(function(coords){
       // Generate the id client-side rather than reading it back via
       // .select() after insert: requests' SELECT policy only allows
       // reading a row once it's matched (see migration
@@ -658,7 +754,12 @@
         city: form.city.value.trim(),
         status: "pending",
         pickup_lat: coords ? coords.lat : null,
-        pickup_lng: coords ? coords.lng : null
+        pickup_lng: coords ? coords.lng : null,
+        destination_address: form.destination.value.trim() || null,
+        destination_lat: fareState.destinationCoords ? fareState.destinationCoords.lat : null,
+        destination_lng: fareState.destinationCoords ? fareState.destinationCoords.lng : null,
+        distance_km: fareState.distanceKm,
+        estimated_fare_chf: fareState.fareChf
       };
 
       sb.from("requests").insert(payload).then(function(res){
@@ -747,11 +848,17 @@
   // Small lookup helper for UI built outside this IIFE (the install
   // prompt below needs to translate a string it swaps in dynamically,
   // not just on page load like the data-i18n elements).
-  window.rotaboT = function(path){
+  window.rotaboT = function(path, vars){
     var code = document.documentElement.getAttribute("lang") || "en";
     var dict = cache[code] || cache.en;
     var val = dict ? getPath(dict, path) : undefined;
-    return val !== undefined ? val : path;
+    if (val === undefined) return path;
+    if (vars) {
+      Object.keys(vars).forEach(function(k){
+        val = val.split("{" + k + "}").join(vars[k]);
+      });
+    }
+    return val;
   };
 
   function applyTranslations(dict){
@@ -924,10 +1031,13 @@ if ("serviceWorker" in navigator) {
         deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
         return;
       }
-      var key = isIOS ? "install_modal.ios" : "install_modal.generic";
-      var instructions = document.getElementById("installInstructions");
-      instructions.setAttribute("data-i18n", key);
-      instructions.textContent = window.rotaboT(key);
+      // iOS has no install API at all -- Safari's Share sheet is the
+      // only way, always manual, no matter what any site's code does.
+      // Show the numbered steps there instead of the one-line generic
+      // fallback used for browsers that just haven't fired
+      // beforeinstallprompt yet (e.g. Firefox desktop).
+      document.getElementById("installGeneric").style.display = isIOS ? "none" : "block";
+      document.getElementById("installSteps").style.display = isIOS ? "flex" : "none";
       openModal("installModal");
     });
   }

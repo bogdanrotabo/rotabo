@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Thêm Rotabo vào màn hình chính",
     "generic": "Mở menu trình duyệt của bạn và tìm \"Cài đặt ứng dụng\" hoặc \"Thêm vào màn hình chính\".",
-    "ios": "Nhấn biểu tượng Chia sẻ trong Safari, sau đó chọn \"Thêm vào MH chính\"."
+    "ios_step1": "Nhấn nút <strong>Chia sẻ</strong> trên thanh công cụ Safari (hình vuông có mũi tên hướng lên).",
+    "ios_step2": "Cuộn trong menu chia sẻ và nhấn <strong>\"Thêm vào MH chính\"</strong>.",
+    "ios_step3": "Nhấn <strong>\"Thêm\"</strong> ở góc trên bên phải — xong."
   },
   "find_form": {
+    "destination_label": "Bạn muốn đến đâu?",
+    "destination_placeholder": "Đường, thành phố…",
+    "fare_estimate": "Cước phí ước tính: <strong>~{amount} CHF</strong> cho {km} km",
+    "fare_note": "90% thuộc về tài xế, thanh toán trực tiếp khi kết thúc chuyến đi.",
     "title": "Tìm tài xế",
     "subtitle": "Cho chúng tôi biết bạn là ai và bạn đang ở đâu. Tiếp theo bạn sẽ thanh toán phí nền tảng, sau đó chúng tôi bắt đầu tìm kiếm.",
     "name_label": "Họ tên của bạn",
@@ -82,6 +88,7 @@
     "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
   },
   "searching_page": {
+    "fare_remaining": "Số tiền còn lại ước tính: ~{amount} CHF, thanh toán trực tiếp cho tài xế.",
     "eta_label": "🕒 Thời gian đến dự kiến: ~{min} phút",
     "eta_arriving": "🕒 Tài xế của bạn sắp đến nơi",
     "searching_title": "Đang tìm tài xế gần bạn…",
@@ -98,6 +105,8 @@
     "default_driver_name": "Tài xế của bạn"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF cho bạn",
+    "active_ride_fare": "~{amount} CHF cho chuyến này ({km} km), thanh toán trực tiếp với khách hàng",
     "active_ride_cat": "CHUYẾN ĐI CỦA BẠN",
     "active_ride_call": "📞 Gọi cho khách hàng",
     "active_ride_navigate": "🧭 Chỉ đường đến điểm đón",

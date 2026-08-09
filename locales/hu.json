@@ -55,9 +55,15 @@
   "install_modal": {
     "title": "Rotabo hozzáadása a kezdőképernyőhöz",
     "generic": "Nyisd meg a böngésző menüjét, és keresd az \"Alkalmazás telepítése\" vagy \"Hozzáadás a kezdőképernyőhöz\" lehetőséget.",
-    "ios": "Koppints a Megosztás ikonra a Safariban, majd válaszd a \"Kezdőképernyőhöz adás\" lehetőséget."
+    "ios_step1": "Koppints a <strong>Megosztás</strong> gombra a Safari eszköztárán (a felfelé mutató nyilas négyzet).",
+    "ios_step2": "Görgess a megosztási menüben, és koppints a <strong>„Kezdőképernyőhöz adás”</strong> lehetőségre.",
+    "ios_step3": "Koppints a jobb felső sarokban a <strong>„Hozzáadás”</strong> gombra — kész."
   },
   "find_form": {
+    "destination_label": "Hová szeretnél menni?",
+    "destination_placeholder": "Utca, város…",
+    "fare_estimate": "Becsült út: <strong>~{amount} CHF</strong>, {km} km",
+    "fare_note": "90% a sofőrödé, közvetlenül az út végén fizetve.",
     "title": "Sofőr keresése",
     "subtitle": "Mondd el, ki vagy és hol vagy. Ezután fizeted ki a platformdíjat, majd elkezdjük a keresést.",
     "name_label": "A neved",
@@ -82,6 +88,7 @@
     "error": "Valami hiba történt. Kérjük, próbáld újra."
   },
   "searching_page": {
+    "fare_remaining": "Becsült hátralévő összeg: ~{amount} CHF, közvetlenül a sofőrödnek fizetve.",
     "eta_label": "🕒 Becsült érkezés: ~{min} perc",
     "eta_arriving": "🕒 A sofőröd most érkezik",
     "searching_title": "Sofőröket keresünk a közeledben…",
@@ -98,6 +105,8 @@
     "default_driver_name": "A sofőröd"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF neked",
+    "active_ride_fare": "~{amount} CHF ezért az útért ({km} km), közvetlenül az ügyféllel rendezve",
     "active_ride_cat": "AZ UTAD",
     "active_ride_call": "📞 Ügyfél hívása",
     "active_ride_navigate": "🧭 Navigálás a felvételi ponthoz",

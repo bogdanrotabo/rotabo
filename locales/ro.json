@@ -90,9 +90,15 @@
   "install_modal": {
     "title": "Adaugă Rotabo pe ecranul principal",
     "generic": "Deschide meniul browserului și caută \"Instalează aplicația\" sau \"Adaugă pe ecranul principal\".",
-    "ios": "Apasă pe iconița Share din Safari, apoi \"Adaugă pe ecranul principal\"."
+    "ios_step1": "Apasă butonul <strong>Share</strong> din bara Safari (pătratul cu săgeata în sus).",
+    "ios_step2": "Derulează în meniul de partajare și apasă <strong>„Add to Home Screen”</strong>.",
+    "ios_step3": "Apasă <strong>„Add”</strong> în colțul din dreapta sus — gata."
   },
   "find_form": {
+    "destination_label": "Unde vrei să ajungi?",
+    "destination_placeholder": "Stradă, oraș…",
+    "fare_estimate": "Cursă estimată: <strong>~{amount} CHF</strong> pentru {km} km",
+    "fare_note": "90% merge la șofer, plătit direct la finalul cursei.",
     "title": "Găsește un șofer",
     "subtitle": "Spune-ne cine ești și unde te afli. Urmează să plătești contribuția platformei, apoi începem căutarea.",
     "name_label": "Numele tău",
@@ -117,6 +123,7 @@
     "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
   },
   "searching_page": {
+    "fare_remaining": "Rest de plată estimat: ~{amount} CHF, plătit direct șoferului.",
     "eta_label": "🕒 Sosire estimată: ~{min} min",
     "eta_arriving": "🕒 Șoferul tău ajunge chiar acum",
     "searching_title": "Căutăm șoferi lângă tine…",
@@ -133,6 +140,8 @@
     "default_driver_name": "Șoferul tău"
   },
   "dashboard_page": {
+    "fare_for_you": "~{amount} CHF pentru tine",
+    "active_ride_fare": "~{amount} CHF pentru această cursă ({km} km), plătiți direct cu clientul",
     "active_ride_cat": "CURSA TA",
     "active_ride_call": "📞 Sună clientul",
     "active_ride_navigate": "🧭 Navighează spre punctul de preluare",
