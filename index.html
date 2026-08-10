@@ -904,6 +904,7 @@
       <div class="form-field">
         <label for="vc_code" data-i18n="verify_modal.code_label">Verification code</label>
         <input type="text" id="vc_code" name="code" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code">
+        <span class="field-hint" data-i18n="verify_modal.spam_hint">Don't see it? Check your Spam or Junk folder — first emails from a new sender sometimes land there.</span>
       </div>
       <button type="submit" class="form-submit" data-i18n="verify_modal.submit">Confirm code</button>
       <p class="form-error" id="emailCodeError" data-i18n="verify_modal.error">Invalid or expired code. Please try again.</p>

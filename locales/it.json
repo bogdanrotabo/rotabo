@@ -262,7 +262,8 @@
     "code_label": "Codice di verifica",
     "submit": "Conferma codice",
     "error": "Codice non valido o scaduto. Riprova.",
-    "resend": "Reinvia codice"
+    "resend": "Reinvia codice",
+    "spam_hint": "Non lo vedi? Controlla la cartella Spam o Posta indesiderata — le prime email di un nuovo mittente a volte finiscono lì."
   },
   "visibility": {
     "email_hint": "Usa un indirizzo reale — invieremo qui un codice di verifica prima che il tuo annuncio diventi visibile.",

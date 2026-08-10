@@ -262,7 +262,8 @@
     "code_label": "Verification code",
     "submit": "Confirm code",
     "error": "Invalid or expired code. Please try again.",
-    "resend": "Resend code"
+    "resend": "Resend code",
+    "spam_hint": "Don't see it? Check your Spam or Junk folder — first emails from a new sender sometimes land there."
   },
   "visibility": {
     "email_hint": "Use a real address — we'll send a verification code here before your listing goes live.",

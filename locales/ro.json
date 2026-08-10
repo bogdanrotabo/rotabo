@@ -262,7 +262,8 @@
     "code_label": "Cod de verificare",
     "submit": "Confirmă codul",
     "error": "Cod invalid sau expirat. Încearcă din nou.",
-    "resend": "Retrimite codul"
+    "resend": "Retrimite codul",
+    "spam_hint": "Nu-l vezi? Verifică folderul Spam sau Junk — primele emailuri de la un expeditor nou uneori ajung acolo."
   },
   "visibility": {
     "email_hint": "Folosește o adresă reală — trimitem aici un cod de verificare înainte ca listarea ta să devină vizibilă.",
