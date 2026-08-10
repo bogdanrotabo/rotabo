@@ -82,6 +82,16 @@
   .badge.unpaid{background:#fdecea;color:var(--red);}
   .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;}
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:40px 0;}
+
+  .tabs{display:flex;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--border);}
+  .tab-btn{
+    padding:10px 18px;border:none;background:none;cursor:pointer;
+    font-family:inherit;font-size:.94rem;font-weight:700;color:var(--text-eyebrow);
+    border-bottom:2px solid transparent;margin-bottom:-1px;
+  }
+  .tab-btn.active{color:var(--violet-1);border-bottom-color:var(--violet-2);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;}
 </style>
 </head>
 <body>
@@ -115,55 +125,89 @@
   </div>
 
   <div id="dashboardView" style="display:none;">
-    <h1>Listings</h1>
-    <p class="sub">Everyone who has ever filled out a form — paid or not.</p>
-
-    <div class="stats" id="stats"></div>
-
-    <div class="filter-row">
-      <select id="categoryFilter">
-        <option value="">All categories</option>
-        <option value="drive">Drive</option>
-        <option value="move">Move</option>
-        <option value="build">Build</option>
-        <option value="tools">Tools</option>
-        <option value="home">Home</option>
-        <option value="auto">Auto</option>
-      </select>
-      <select id="roleFilter">
-        <option value="">All roles</option>
-        <option value="seeking">Seeking</option>
-        <option value="offering">Offering</option>
-      </select>
-      <select id="paidFilter">
-        <option value="">All (paid + unpaid)</option>
-        <option value="paid">Paid only</option>
-        <option value="unpaid">Unpaid only</option>
-      </select>
-      <input type="text" id="searchInput" placeholder="Search name, email, city…">
+    <div class="tabs">
+      <button type="button" class="tab-btn active" id="tabBtnListings">Listings</button>
+      <button type="button" class="tab-btn" id="tabBtnVisits">Visits</button>
     </div>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Created</th>
-            <th>Category</th>
-            <th>Role</th>
-            <th>Status</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>City</th>
-            <th>Address</th>
-            <th>Note</th>
-            <th>Visible until</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+    <div class="tab-panel active" id="panelListings">
+      <h1>Listings</h1>
+      <p class="sub">Everyone who has ever filled out a form — paid or not.</p>
+
+      <div class="stats" id="stats"></div>
+
+      <div class="filter-row">
+        <select id="categoryFilter">
+          <option value="">All categories</option>
+          <option value="drive">Drive</option>
+          <option value="move">Move</option>
+          <option value="build">Build</option>
+          <option value="tools">Tools</option>
+          <option value="home">Home</option>
+          <option value="auto">Auto</option>
+        </select>
+        <select id="roleFilter">
+          <option value="">All roles</option>
+          <option value="seeking">Seeking</option>
+          <option value="offering">Offering</option>
+        </select>
+        <select id="paidFilter">
+          <option value="">All (paid + unpaid)</option>
+          <option value="paid">Paid only</option>
+          <option value="unpaid">Unpaid only</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search name, email, city…">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Created</th>
+              <th>Category</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>City</th>
+              <th>Address</th>
+              <th>Note</th>
+              <th>Visible until</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty-note" id="emptyNote" style="display:none;">No listings match this filter.</p>
     </div>
-    <p class="empty-note" id="emptyNote" style="display:none;">No listings match this filter.</p>
+
+    <div class="tab-panel" id="panelVisits">
+      <h1>Visits</h1>
+      <p class="sub">Every page load recorded on the site, anonymous session per browser.</p>
+
+      <div class="stats" id="visitStats"></div>
+
+      <div class="filter-row">
+        <input type="text" id="visitSearchInput" placeholder="Search path or referrer…">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Path</th>
+              <th>Referrer</th>
+              <th>Language</th>
+              <th>Session</th>
+            </tr>
+          </thead>
+          <tbody id="visitsTableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty-note" id="visitsEmptyNote" style="display:none;">No visits match this filter.</p>
+    </div>
   </div>
 </div>
 
@@ -172,6 +216,8 @@
   var FUNCTION_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co/functions/v1/admin-listings";
   var SESSION_KEY = "rotabo_admin_pw";
   var allRows = [];
+  var allVisits = [];
+  var visitsLoaded = false;
 
   var loginView = document.getElementById("loginView");
   var dashboardView = document.getElementById("dashboardView");
@@ -181,6 +227,16 @@
 
   function fetchListings(password){
     return fetch(FUNCTION_URL, {
+      headers: { "Authorization": "Bearer " + password },
+      cache: "no-store"
+    }).then(function(res){
+      if (res.status === 401) return { ok: false };
+      return res.json().then(function(json){ return { ok: true, data: json.data || [] }; });
+    });
+  }
+
+  function fetchVisits(password){
+    return fetch(FUNCTION_URL + "?resource=visits", {
       headers: { "Authorization": "Bearer " + password },
       cache: "no-store"
     }).then(function(res){
@@ -302,6 +358,86 @@
     document.getElementById(id).addEventListener("change", render);
   });
   document.getElementById("searchInput").addEventListener("input", render);
+
+  function renderVisitsStats(rows){
+    var total = rows.length;
+    var sessions = {};
+    rows.forEach(function(r){ if (r.session_id) sessions[r.session_id] = true; });
+    var uniqueSessions = Object.keys(sessions).length;
+    var todayStr = new Date().toDateString();
+    var today = rows.filter(function(r){
+      return r.created_at && new Date(r.created_at).toDateString() === todayStr;
+    }).length;
+    var html = ""
+      + '<div class="stat-tile"><div class="n">' + total + '</div><div class="l">TOTAL VISITS</div></div>'
+      + '<div class="stat-tile"><div class="n">' + uniqueSessions + '</div><div class="l">UNIQUE VISITORS</div></div>'
+      + '<div class="stat-tile"><div class="n">' + today + '</div><div class="l">TODAY</div></div>';
+    document.getElementById("visitStats").innerHTML = html;
+  }
+
+  function renderVisits(){
+    renderVisitsStats(allVisits);
+
+    var search = document.getElementById("visitSearchInput").value.trim().toLowerCase();
+    var rows = allVisits.filter(function(r){
+      if (search) {
+        var hay = [r.path, r.referrer].join(" ").toLowerCase();
+        if (hay.indexOf(search) === -1) return false;
+      }
+      return true;
+    });
+
+    var tbody = document.getElementById("visitsTableBody");
+    var emptyNote = document.getElementById("visitsEmptyNote");
+    if (rows.length === 0) {
+      tbody.innerHTML = "";
+      emptyNote.style.display = "block";
+      return;
+    }
+    emptyNote.style.display = "none";
+
+    tbody.innerHTML = rows.map(function(r){
+      var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
+      return "<tr>"
+        + "<td>" + esc(created) + "</td>"
+        + "<td>" + esc(r.path) + "</td>"
+        + "<td>" + esc(r.referrer || "—") + "</td>"
+        + "<td>" + esc(r.language) + "</td>"
+        + "<td>" + esc((r.session_id || "").slice(0, 8)) + "</td>"
+        + "</tr>";
+    }).join("");
+  }
+
+  document.getElementById("visitSearchInput").addEventListener("input", renderVisits);
+
+  var tabBtnListings = document.getElementById("tabBtnListings");
+  var tabBtnVisits = document.getElementById("tabBtnVisits");
+  var panelListings = document.getElementById("panelListings");
+  var panelVisits = document.getElementById("panelVisits");
+
+  tabBtnListings.addEventListener("click", function(){
+    tabBtnListings.classList.add("active");
+    tabBtnVisits.classList.remove("active");
+    panelListings.classList.add("active");
+    panelVisits.classList.remove("active");
+  });
+
+  tabBtnVisits.addEventListener("click", function(){
+    tabBtnVisits.classList.add("active");
+    tabBtnListings.classList.remove("active");
+    panelVisits.classList.add("active");
+    panelListings.classList.remove("active");
+    var password = sessionStorage.getItem(SESSION_KEY);
+    if (!visitsLoaded && password) {
+      fetchVisits(password).then(function(res){
+        if (res.ok) {
+          allVisits = res.data;
+          visitsLoaded = true;
+          renderVisits();
+        }
+      });
+    }
+  });
 
   // Auto-login if a password is already stashed in this tab's session.
   var storedPassword = sessionStorage.getItem(SESSION_KEY);
