@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Rotabo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<style>
+  :root{
+    --bg-top:#f6ecf9;
+    --bg-mid:#f3e6f8;
+    --bg-card:#f7edfa;
+    --border:#e2c3ee;
+    --violet-1:#7c2d9c;
+    --violet-2:#9b3fc0;
+    --text-dark:#3a1650;
+    --text-body:#6b5878;
+    --text-eyebrow:#8a7a94;
+    --green:#3ecb7e;
+    --red:#c0392b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:linear-gradient(180deg,var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-mid) 100%);
+    color:var(--text-body);
+  }
+  header{border-bottom:1px solid var(--border);background:linear-gradient(180deg,#f8eefb,#f4e8f8);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;max-width:1200px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);text-decoration:none;}
+  .brand svg{width:24px;height:31px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+
+  .wrap{max-width:1200px;margin:0 auto;padding:48px 24px 80px;}
+  h1{color:var(--text-dark);font-size:1.6rem;margin:0 0 8px;}
+  .sub{color:var(--text-body);font-size:.98rem;margin:0 0 32px;}
+
+  .login-card{
+    max-width:360px;margin:60px auto;background:var(--bg-card);
+    border:1px solid var(--border);border-radius:20px;padding:32px;text-align:center;
+  }
+  .login-card input{
+    width:100%;padding:12px 14px;border-radius:10px;
+    border:1px solid var(--border);background:#fff;
+    color:var(--text-dark);font-size:1rem;font-family:inherit;box-sizing:border-box;margin-bottom:14px;
+  }
+  .login-card button{
+    width:100%;padding:13px 20px;border-radius:12px;border:none;
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    font-weight:800;font-size:1rem;cursor:pointer;
+  }
+  .login-error{color:var(--red);font-size:.9rem;margin-top:12px;display:none;}
+  .login-error.show{display:block;}
+
+  .stats{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px;}
+  .stat-tile{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:14px;
+    padding:16px 20px;min-width:120px;
+  }
+  .stat-tile .n{font-size:1.5rem;font-weight:800;color:var(--text-dark);}
+  .stat-tile .l{font-size:.82rem;color:var(--text-eyebrow);letter-spacing:.04em;}
+
+  .filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+  .filter-row select, .filter-row input{
+    padding:10px 12px;border-radius:10px;border:1px solid var(--border);
+    background:#fff;color:var(--text-dark);font-size:.92rem;font-family:inherit;
+  }
+
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:.88rem;}
+  thead th{
+    text-align:left;background:var(--bg-card);color:var(--text-eyebrow);
+    font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    padding:10px 12px;border-bottom:1px solid var(--border);white-space:nowrap;
+  }
+  tbody td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  .badge{
+    display:inline-block;padding:3px 9px;border-radius:999px;font-size:.76rem;font-weight:700;
+  }
+  .badge.paid{background:#e3f9ec;color:#1d8348;}
+  .badge.unpaid{background:#fdecea;color:var(--red);}
+  .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;}
+  .empty-note{color:var(--text-eyebrow);text-align:center;padding:40px 0;}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="diamondGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#c264e0"/>
+      <stop offset="55%" stop-color="#a239c9"/>
+      <stop offset="100%" stop-color="#7c2596"/>
+    </radialGradient>
+    <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      Rotabo
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="loginView" class="login-card">
+    <h1 style="margin-bottom:18px;">Admin</h1>
+    <input type="password" id="passwordInput" placeholder="Password" autocomplete="off">
+    <button type="button" id="loginBtn">Enter</button>
+    <p class="login-error" id="loginError">Wrong password. Try again.</p>
+  </div>
+
+  <div id="dashboardView" style="display:none;">
+    <h1>Listings</h1>
+    <p class="sub">Everyone who has ever filled out a form — paid or not.</p>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filter-row">
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+        <option value="drive">Drive</option>
+        <option value="move">Move</option>
+        <option value="build">Build</option>
+        <option value="tools">Tools</option>
+        <option value="home">Home</option>
+        <option value="auto">Auto</option>
+      </select>
+      <select id="roleFilter">
+        <option value="">All roles</option>
+        <option value="seeking">Seeking</option>
+        <option value="offering">Offering</option>
+      </select>
+      <select id="paidFilter">
+        <option value="">All (paid + unpaid)</option>
+        <option value="paid">Paid only</option>
+        <option value="unpaid">Unpaid only</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search name, email, city…">
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Created</th>
+            <th>Category</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Note</th>
+            <th>Visible until</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <p class="empty-note" id="emptyNote" style="display:none;">No listings match this filter.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var FUNCTION_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co/functions/v1/admin-listings";
+  var SESSION_KEY = "rotabo_admin_pw";
+  var allRows = [];
+
+  var loginView = document.getElementById("loginView");
+  var dashboardView = document.getElementById("dashboardView");
+  var passwordInput = document.getElementById("passwordInput");
+  var loginBtn = document.getElementById("loginBtn");
+  var loginError = document.getElementById("loginError");
+
+  function fetchListings(password){
+    return fetch(FUNCTION_URL, {
+      headers: { "Authorization": "Bearer " + password },
+      cache: "no-store"
+    }).then(function(res){
+      if (res.status === 401) return { ok: false };
+      return res.json().then(function(json){ return { ok: true, data: json.data || [] }; });
+    });
+  }
+
+  function tryLogin(password){
+    loginError.classList.remove("show");
+    loginBtn.disabled = true;
+    loginBtn.textContent = "Checking…";
+    fetchListings(password).then(function(res){
+      loginBtn.disabled = false;
+      loginBtn.textContent = "Enter";
+      if (!res.ok) {
+        loginError.classList.add("show");
+        return;
+      }
+      sessionStorage.setItem(SESSION_KEY, password);
+      allRows = res.data;
+      showDashboard();
+    }).catch(function(){
+      loginBtn.disabled = false;
+      loginBtn.textContent = "Enter";
+      loginError.textContent = "Something went wrong. Try again.";
+      loginError.classList.add("show");
+    });
+  }
+
+  loginBtn.addEventListener("click", function(){
+    if (passwordInput.value) tryLogin(passwordInput.value);
+  });
+  passwordInput.addEventListener("keydown", function(e){
+    if (e.key === "Enter" && passwordInput.value) tryLogin(passwordInput.value);
+  });
+
+  function showDashboard(){
+    loginView.style.display = "none";
+    dashboardView.style.display = "block";
+    render();
+  }
+
+  function isPaid(row){
+    return !!row.stripe_session_id;
+  }
+
+  function renderStats(rows){
+    var total = rows.length;
+    var paid = rows.filter(isPaid).length;
+    var byCategory = {};
+    rows.forEach(function(r){ byCategory[r.category] = (byCategory[r.category] || 0) + 1; });
+    var html = ""
+      + '<div class="stat-tile"><div class="n">' + total + '</div><div class="l">TOTAL SUBMISSIONS</div></div>'
+      + '<div class="stat-tile"><div class="n">' + paid + '</div><div class="l">PAID</div></div>'
+      + '<div class="stat-tile"><div class="n">' + (total - paid) + '</div><div class="l">UNPAID</div></div>';
+    document.getElementById("stats").innerHTML = html;
+  }
+
+  function esc(s){
+    if (s == null) return "";
+    var d = document.createElement("div");
+    d.textContent = String(s);
+    return d.innerHTML;
+  }
+
+  function render(){
+    renderStats(allRows);
+
+    var cat = document.getElementById("categoryFilter").value;
+    var role = document.getElementById("roleFilter").value;
+    var paidFilter = document.getElementById("paidFilter").value;
+    var search = document.getElementById("searchInput").value.trim().toLowerCase();
+
+    var rows = allRows.filter(function(r){
+      if (cat && r.category !== cat) return false;
+      if (role && r.role !== role) return false;
+      if (paidFilter === "paid" && !isPaid(r)) return false;
+      if (paidFilter === "unpaid" && isPaid(r)) return false;
+      if (search) {
+        var hay = [r.name, r.email, r.city, r.phone].join(" ").toLowerCase();
+        if (hay.indexOf(search) === -1) return false;
+      }
+      return true;
+    });
+
+    var tbody = document.getElementById("tableBody");
+    var emptyNote = document.getElementById("emptyNote");
+    if (rows.length === 0) {
+      tbody.innerHTML = "";
+      emptyNote.style.display = "block";
+      return;
+    }
+    emptyNote.style.display = "none";
+
+    tbody.innerHTML = rows.map(function(r){
+      var statusBadge = isPaid(r)
+        ? '<span class="badge paid">Paid</span>'
+        : '<span class="badge unpaid">Unpaid</span>';
+      var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
+      var visibleUntil = r.visible_until ? new Date(r.visible_until).toLocaleString() : "—";
+      return "<tr>"
+        + "<td>" + esc(created) + "</td>"
+        + "<td>" + esc(r.category) + "</td>"
+        + "<td>" + esc(r.role) + "</td>"
+        + "<td>" + statusBadge + "</td>"
+        + "<td>" + esc(r.name) + "</td>"
+        + "<td>" + esc(r.phone) + "</td>"
+        + "<td>" + esc(r.email) + "</td>"
+        + "<td>" + esc(r.city) + "</td>"
+        + "<td>" + esc(r.address) + "</td>"
+        + "<td>" + esc(r.note) + "</td>"
+        + "<td>" + esc(visibleUntil) + "</td>"
+        + "</tr>";
+    }).join("");
+  }
+
+  ["categoryFilter", "roleFilter", "paidFilter"].forEach(function(id){
+    document.getElementById(id).addEventListener("change", render);
+  });
+  document.getElementById("searchInput").addEventListener("input", render);
+
+  // Auto-login if a password is already stashed in this tab's session.
+  var storedPassword = sessionStorage.getItem(SESSION_KEY);
+  if (storedPassword) {
+    fetchListings(storedPassword).then(function(res){
+      if (res.ok) {
+        allRows = res.data;
+        showDashboard();
+      } else {
+        sessionStorage.removeItem(SESSION_KEY);
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
