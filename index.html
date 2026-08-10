@@ -746,7 +746,7 @@
       </div>
       <div class="form-field">
         <label for="fd_phone" data-i18n="find_form.phone_label">Phone number</label>
-        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
@@ -800,7 +800,7 @@
       </div>
       <div class="form-field">
         <label for="bd_phone" data-i18n="drive_form.phone_label">Phone number</label>
-        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
@@ -874,7 +874,7 @@
       </div>
       <div class="form-field">
         <label for="gl_phone" data-i18n="generic_form.phone_label">Phone number</label>
-        <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
@@ -1158,9 +1158,9 @@
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
-    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("findDriverError");
     hideError(errorEl);
+    if (!form.reportValidity()) return;
     setSubmitting(form, true);
 
     var payload = {
@@ -1180,9 +1180,9 @@
   document.getElementById("becomeDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
-    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("becomeDriverError");
     hideError(errorEl);
+    if (!form.reportValidity()) return;
     setSubmitting(form, true);
 
     var payload = {
@@ -1218,9 +1218,9 @@
   document.getElementById("genericListingForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
-    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("genericListingError");
     hideError(errorEl);
+    if (!form.reportValidity()) return;
     setSubmitting(form, true);
 
     var category = form.dataset.category;
