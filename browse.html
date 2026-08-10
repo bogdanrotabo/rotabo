@@ -155,7 +155,7 @@
     empty_note: "Nobody is visible right now. This list refreshes automatically.",
     call_btn: "📞 Call",
     email_btn: "✉️ Email",
-    city_filter_placeholder: "Filter by city…",
+    country_filter_placeholder: "Filter by country…",
     time_just_now: "just now",
     time_min_ago_one: "1 min ago",
     time_min_ago_other: "{n} min ago",
@@ -195,7 +195,7 @@
 
   var content = document.getElementById("content");
   var listPollTimer = null;
-  var cityFilter = "";
+  var countryFilter = "";
 
   function renderNotRegistered(){
     content.innerHTML =
@@ -228,12 +228,12 @@
 
   function renderDashboard(){
     content.innerHTML =
-      '<div class="filter-field"><input type="text" id="cityFilter" class="city-filter"></div>' +
+      '<div class="filter-field"><input type="text" id="countryFilter" class="city-filter"></div>' +
       '<div class="request-list" id="requestList"></div>';
-    var filterInput = document.getElementById("cityFilter");
-    filterInput.placeholder = tr("city_filter_placeholder");
+    var filterInput = document.getElementById("countryFilter");
+    filterInput.placeholder = tr("country_filter_placeholder");
     filterInput.addEventListener("input", function(){
-      cityFilter = this.value.trim();
+      countryFilter = this.value.trim();
       loadListings();
     });
     loadListings();
@@ -244,11 +244,11 @@
 
   function loadListings(){
     var query = sb.from("listings")
-      .select("id, name, city, address, phone, email, note, created_at")
+      .select("id, name, city, country, address, phone, email, note, created_at")
       .eq("category", category)
       .eq("role", browseRole)
       .order("created_at", { ascending: false });
-    if (cityFilter) query = query.ilike("city", "%" + cityFilter + "%");
+    if (countryFilter) query = query.ilike("country", "%" + countryFilter + "%");
 
     query.then(function(res){
       var list = document.getElementById("requestList");
@@ -278,7 +278,8 @@
           + '<a class="email-btn"></a>'
           + '</div>';
         card.querySelector(".name").textContent = row.name;
-        card.querySelector(".city").textContent = row.city + " · " + timeAgo(row.created_at);
+        var location = [row.city, row.country].filter(Boolean).join(", ");
+        card.querySelector(".city").textContent = location + " · " + timeAgo(row.created_at);
         var addressEl = card.querySelector(".address");
         if (row.address) { addressEl.textContent = row.address; } else { addressEl.remove(); }
         var noteEl = card.querySelector(".note");

@@ -745,6 +745,10 @@
         <input type="text" id="fd_city" name="city" required autocomplete="address-level2">
       </div>
       <div class="form-field">
+        <label for="fd_country" data-i18n="find_form.country_label">Country</label>
+        <input type="text" id="fd_country" name="country" required autocomplete="country-name">
+      </div>
+      <div class="form-field">
         <label for="fd_address" data-i18n="find_form.address_label">Address</label>
         <input type="text" id="fd_address" name="address" required autocomplete="street-address">
         <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
@@ -793,6 +797,10 @@
       <div class="form-field">
         <label for="bd_city" data-i18n="drive_form.city_label">City / area of activity</label>
         <input type="text" id="bd_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="bd_country" data-i18n="drive_form.country_label">Country</label>
+        <input type="text" id="bd_country" name="country" required autocomplete="country-name">
       </div>
       <div class="form-field">
         <label for="bd_address" data-i18n="drive_form.address_label">Address</label>
@@ -863,6 +871,10 @@
       <div class="form-field">
         <label for="gl_city" data-i18n="generic_form.city_label">City / area</label>
         <input type="text" id="gl_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="gl_country" data-i18n="generic_form.country_label">Country</label>
+        <input type="text" id="gl_country" name="country" required autocomplete="country-name">
       </div>
       <div class="form-field">
         <label for="gl_address" data-i18n="generic_form.address_label">Address</label>
@@ -1132,6 +1144,7 @@
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
+    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("findDriverError");
     hideError(errorEl);
     setSubmitting(form, true);
@@ -1143,6 +1156,7 @@
       phone: form.client_phone.value.trim(),
       email: form.email.value.trim(),
       city: form.city.value.trim(),
+      country: form.country.value.trim(),
       address: form.address.value.trim()
     };
 
@@ -1152,6 +1166,7 @@
   document.getElementById("becomeDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
+    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("becomeDriverError");
     hideError(errorEl);
     setSubmitting(form, true);
@@ -1163,6 +1178,7 @@
       phone: form.phone.value.trim(),
       email: form.email.value.trim(),
       city: form.city.value.trim(),
+      country: form.country.value.trim(),
       address: form.address.value.trim(),
       license_year: parseInt(form.license_year.value, 10) || null,
       declaration_accepted: true
@@ -1188,6 +1204,7 @@
   document.getElementById("genericListingForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
+    if (!form.reportValidity()) return;
     var errorEl = document.getElementById("genericListingError");
     hideError(errorEl);
     setSubmitting(form, true);
@@ -1202,6 +1219,7 @@
       phone: form.phone.value.trim(),
       email: form.email.value.trim(),
       city: form.city.value.trim(),
+      country: form.country.value.trim(),
       address: form.address.value.trim(),
       note: form.note.value.trim() || null
     };
