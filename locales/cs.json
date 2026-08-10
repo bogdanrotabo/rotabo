@@ -22,6 +22,57 @@
     "badge_live": "Sdílení jízdy naživo",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "CO POTŘEBUJEŠ?",
+    "section_title": "Něco potřebuješ? Najdi si někoho.",
+    "section_lead": "Vyber si, co potřebuješ — nebo se zapiš jako někdo, kdo může pomoct.",
+    "need_btn": "Tohle potřebuju",
+    "offer_btn": "Tohle nabízím",
+    "drive": {
+      "name": "Řidič",
+      "desc": "Řidič, který za tebou přijede a odveze tě tvým vlastním autem."
+    },
+    "move": {
+      "name": "Stěhování",
+      "desc": "Nábytek, krabice nebo celá domácnost — s dodávkou a řidičem.",
+      "seeking_title": "Potřebuješ pomoct se stěhováním?",
+      "seeking_lead": "Napiš nám, co se má stěhovat a kam.",
+      "offering_title": "Nabídni pomoc se stěhováním",
+      "offering_lead": "Zapiš se, aby tě našli lidi, kteří potřebují pomoct."
+    },
+    "build": {
+      "name": "Stavba",
+      "desc": "Bagry, generátory, plošiny — těžká technika s obsluhou.",
+      "seeking_title": "Potřebuješ techniku nebo obsluhu?",
+      "seeking_lead": "Napiš nám, co potřebuješ a kde.",
+      "offering_title": "Nabídni techniku nebo obsluhu",
+      "offering_lead": "Zapiš svůj stroj nebo dovednosti, aby tě našli lidi, kteří je potřebují."
+    },
+    "tools": {
+      "name": "Nářadí",
+      "desc": "Elektrické nářadí a stroje, připravené, když je potřebuješ.",
+      "seeking_title": "Potřebuješ nářadí nebo stroj?",
+      "seeking_lead": "Napiš nám, co potřebuješ a kde.",
+      "offering_title": "Nabídni své nářadí",
+      "offering_lead": "Zapiš, co máš, aby tě našli lidi, kteří to potřebují."
+    },
+    "home": {
+      "name": "Domácnost",
+      "desc": "Elektrikáři, instalatéři, úklid a další pomoc doma.",
+      "seeking_title": "Potřebuješ pomoct doma?",
+      "seeking_lead": "Napiš nám, co potřebuješ a kde.",
+      "offering_title": "Nabídni pomoc doma",
+      "offering_lead": "Zapiš své dovednosti, aby tě našli lidi, kteří je potřebují."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Pomoc na silnici — baterka, pneumatika, odtah, mobilní mechanik.",
+      "seeking_title": "Potřebuješ pomoct na silnici?",
+      "seeking_lead": "Napiš nám, co potřebuješ a kde.",
+      "offering_title": "Nabídni pomoc na silnici",
+      "offering_lead": "Zapiš své dovednosti, aby tě našli lidi, kteří je potřebují."
+    }
+  },
   "problem": {
     "eyebrow": "PROČ NECHÁVAT AUTO DOMA?",
     "h2": "Problém se všemi ostatními možnostmi",
@@ -156,6 +207,15 @@
     "submit": "Pokračovat k platbě",
     "error": "Něco se pokazilo. Zkuste to prosím znovu."
   },
+  "generic_form": {
+    "name_label": "Tvoje jméno",
+    "phone_label": "Telefonní číslo",
+    "city_label": "Město / oblast",
+    "note_label": "Napiš nám víc (nepovinné)",
+    "note_placeholder": "Pár detailů pomůže — co, kdy, za kolik…",
+    "submit": "Pokračovat k platbě",
+    "error": "Něco se pokazilo. Zkus to prosím znovu."
+  },
   "searching_page": {
     "fare_remaining": "Odhadovaný zbývající doplatek: ~{amount} CHF, placeno přímo vašemu řidiči.",
     "cancel_btn": "Zrušit požadavek",
@@ -214,6 +274,23 @@
     "register_link": "← Zpět domů",
     "pending_confirmation": "Potvrzujeme tvou platbu…",
     "empty_note": "Momentálně nejsou vidět žádní řidiči. Seznam se aktualizuje automaticky.",
+    "call_btn": "📞 Zavolat",
+    "city_filter_placeholder": "Filtrovat podle města…",
+    "time_just_now": "právě teď",
+    "time_min_ago_one": "před 1 minutou",
+    "time_min_ago_other": "před {n} minutami",
+    "time_hour_ago_one": "před 1 hodinou",
+    "time_hour_ago_other": "před {n} hodinami"
+  },
+  "browse_page": {
+    "offering_title": "Poskytovatelé {category} poblíž tebe",
+    "seeking_title": "Lidé, kteří potřebují {category}",
+    "subtitle": "Všichni, kdo jsou právě viditelní. Klidně filtruj podle města.",
+    "loading": "Načítání…",
+    "not_registered_body": "Na tomto zařízení zatím nemáš aktivní nabídku.",
+    "register_link": "← Zpět domů",
+    "pending_confirmation": "Potvrzujeme tvou platbu…",
+    "empty_note": "Momentálně není nikdo viditelný. Seznam se aktualizuje automaticky.",
     "call_btn": "📞 Zavolat",
     "city_filter_placeholder": "Filtrovat podle města…",
     "time_just_now": "právě teď",

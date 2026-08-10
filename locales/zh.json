@@ -10,6 +10,57 @@
     "fine": "无需下载应用，浏览器即可使用。",
     "badge_verified": "认证司机", "badge_live": "实时行程分享", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "你需要什么？",
+    "section_title": "需要点什么？找个人来帮忙。",
+    "section_lead": "选择你需要的 — 或者把自己列为可以提供帮助的人。",
+    "need_btn": "我需要这个",
+    "offer_btn": "我能提供这个",
+    "drive": {
+      "name": "代驾",
+      "desc": "司机上门，为你驾驶你自己的车。"
+    },
+    "move": {
+      "name": "搬家",
+      "desc": "家具、纸箱，或整个家 — 配货车和司机。",
+      "seeking_title": "搬家需要帮忙吗？",
+      "seeking_lead": "告诉我们要搬什么、搬到哪里。",
+      "offering_title": "提供搬家帮助",
+      "offering_lead": "登记自己，让需要帮忙的人找到你。"
+    },
+    "build": {
+      "name": "施工",
+      "desc": "挖掘机、发电机、升降机 — 配操作员的重型设备。",
+      "seeking_title": "需要设备或操作员吗？",
+      "seeking_lead": "告诉我们你需要什么、在哪里。",
+      "offering_title": "提供设备或服务",
+      "offering_lead": "登记你的机械或技能，让需要的人找到你。"
+    },
+    "tools": {
+      "name": "工具",
+      "desc": "电动工具和机械，随时待命。",
+      "seeking_title": "需要工具或机械吗？",
+      "seeking_lead": "告诉我们你需要什么、在哪里。",
+      "offering_title": "提供你的工具",
+      "offering_lead": "登记你拥有的工具，让需要的人找到你。"
+    },
+    "home": {
+      "name": "居家",
+      "desc": "电工、水管工、清洁工，以及其他居家帮手。",
+      "seeking_title": "家里需要帮忙吗？",
+      "seeking_lead": "告诉我们你需要什么、在哪里。",
+      "offering_title": "提供居家帮助",
+      "offering_lead": "登记你的技能，让需要的人找到你。"
+    },
+    "auto": {
+      "name": "汽车",
+      "desc": "道路救援 — 电瓶、轮胎、拖车、上门维修。",
+      "seeking_title": "需要道路救援吗？",
+      "seeking_lead": "告诉我们你需要什么、在哪里。",
+      "offering_title": "提供道路救援",
+      "offering_lead": "登记你的技能，让需要的人找到你。"
+    }
+  },
   "problem": {
     "eyebrow": "为什么要把车留在外面？", "h2": "其他方案的通病",
     "cross1": "不用打车。", "cross2": "不用整夜停在外面。", "cross3": "不用第二天再跑一趟取车。", "cross4": "不用再叫一辆车去取车。",
@@ -120,6 +171,15 @@
     "submit": "继续支付",
     "error": "出了点问题，请重试。"
   },
+  "generic_form": {
+    "name_label": "你的姓名",
+    "phone_label": "电话号码",
+    "city_label": "城市 / 地区",
+    "note_label": "告诉我们更多（选填）",
+    "note_placeholder": "提供一些细节会有帮助 — 内容、时间、预算……",
+    "submit": "继续付款",
+    "error": "出了点问题，请重试。"
+  },
   "searching_page": {
     "fare_remaining": "预计剩余车费：约 {amount} 瑞士法郎，直接支付给司机。",
     "cancel_btn": "取消请求",
@@ -178,6 +238,23 @@
     "register_link": "← 返回首页",
     "pending_confirmation": "正在确认你的付款…",
     "empty_note": "目前没有司机可见。此列表会自动刷新。",
+    "call_btn": "📞 拨打电话",
+    "city_filter_placeholder": "按城市筛选…",
+    "time_just_now": "刚刚",
+    "time_min_ago_one": "1 分钟前",
+    "time_min_ago_other": "{n} 分钟前",
+    "time_hour_ago_one": "1 小时前",
+    "time_hour_ago_other": "{n} 小时前"
+  },
+  "browse_page": {
+    "offering_title": "你附近的{category}服务提供者",
+    "seeking_title": "需要{category}的人",
+    "subtitle": "当前所有可见的人。如果需要，可以按城市筛选。",
+    "loading": "加载中…",
+    "not_registered_body": "你在这台设备上还没有有效信息。",
+    "register_link": "← 返回首页",
+    "pending_confirmation": "正在确认你的付款…",
+    "empty_note": "目前没有人可见。此列表会自动刷新。",
     "call_btn": "📞 拨打电话",
     "city_filter_placeholder": "按城市筛选…",
     "time_just_now": "刚刚",

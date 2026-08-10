@@ -22,6 +22,57 @@
     "badge_live": "Trajet partagé en direct",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "DE QUOI AS-TU BESOIN ?",
+    "section_title": "Besoin de quelque chose ? Trouve quelqu'un.",
+    "section_lead": "Choisis ce dont tu as besoin — ou inscris-toi comme quelqu'un qui peut aider.",
+    "need_btn": "J'en ai besoin",
+    "offer_btn": "Je propose ça",
+    "drive": {
+      "name": "Chauffeur",
+      "desc": "Un chauffeur qui vient chez toi et conduit ta propre voiture."
+    },
+    "move": {
+      "name": "Déménagement",
+      "desc": "Meubles, cartons ou tout un logement — avec camionnette et chauffeur.",
+      "seeking_title": "Besoin d'aide pour déménager ?",
+      "seeking_lead": "Dis-nous ce qu'il faut déplacer et où.",
+      "offering_title": "Propose ton aide pour déménager",
+      "offering_lead": "Inscris-toi pour que ceux qui ont besoin d'un coup de main te trouvent."
+    },
+    "build": {
+      "name": "Chantier",
+      "desc": "Pelleteuses, générateurs, nacelles — des engins lourds avec opérateur.",
+      "seeking_title": "Besoin d'un engin ou d'un opérateur ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
+      "offering_title": "Propose ton engin ou tes services",
+      "offering_lead": "Inscris ta machine ou tes compétences pour que ceux qui en ont besoin te trouvent."
+    },
+    "tools": {
+      "name": "Outils",
+      "desc": "Outils électriques et machines, prêts quand tu en as besoin.",
+      "seeking_title": "Besoin d'un outil ou d'une machine ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
+      "offering_title": "Propose tes outils",
+      "offering_lead": "Inscris ce que tu as pour que ceux qui en ont besoin te trouvent."
+    },
+    "home": {
+      "name": "Maison",
+      "desc": "Électriciens, plombiers, ménage et autre aide à domicile.",
+      "seeking_title": "Besoin d'aide à la maison ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
+      "offering_title": "Propose ton aide à domicile",
+      "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Dépannage sur route — batterie, pneu, remorquage, mécanicien mobile.",
+      "seeking_title": "Besoin d'un dépannage sur route ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
+      "offering_title": "Propose du dépannage sur route",
+      "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
+    }
+  },
   "problem": {
     "eyebrow": "POURQUOI LAISSER VOTRE VOITURE DERRIÈRE VOUS ?",
     "h2": "Le problème avec toutes les autres options",
@@ -156,6 +207,15 @@
     "submit": "Continuer vers le paiement",
     "error": "Une erreur s'est produite. Veuillez réessayer."
   },
+  "generic_form": {
+    "name_label": "Ton nom",
+    "phone_label": "Numéro de téléphone",
+    "city_label": "Ville / secteur",
+    "note_label": "Dis-nous en plus (facultatif)",
+    "note_placeholder": "Quelques détails aident — quoi, quand, combien…",
+    "submit": "Continuer vers le paiement",
+    "error": "Une erreur s'est produite. Réessaie."
+  },
   "searching_page": {
     "fare_remaining": "Solde estimé : ~{amount} CHF, payé directement à votre chauffeur.",
     "cancel_btn": "Annuler la demande",
@@ -214,6 +274,23 @@
     "register_link": "← Retour à l'accueil",
     "pending_confirmation": "Confirmation de ton paiement…",
     "empty_note": "Aucun chauffeur visible pour le moment. Cette liste se met à jour automatiquement.",
+    "call_btn": "📞 Appeler",
+    "city_filter_placeholder": "Filtrer par ville…",
+    "time_just_now": "à l'instant",
+    "time_min_ago_one": "il y a 1 min",
+    "time_min_ago_other": "il y a {n} min",
+    "time_hour_ago_one": "il y a 1 heure",
+    "time_hour_ago_other": "il y a {n} heures"
+  },
+  "browse_page": {
+    "offering_title": "Prestataires {category} près de chez toi",
+    "seeking_title": "Des gens qui ont besoin de {category}",
+    "subtitle": "Tout le monde est actuellement visible. Filtre par ville si tu veux.",
+    "loading": "Chargement…",
+    "not_registered_body": "Tu n'as pas encore d'annonce active sur cet appareil.",
+    "register_link": "← Retour à l'accueil",
+    "pending_confirmation": "Confirmation de ton paiement…",
+    "empty_note": "Personne n'est visible pour le moment. Cette liste se met à jour automatiquement.",
     "call_btn": "📞 Appeler",
     "city_filter_placeholder": "Filtrer par ville…",
     "time_just_now": "à l'instant",

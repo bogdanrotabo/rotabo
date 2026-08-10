@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Find a driver — Rotabo</title>
+<title>Rotabo</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <style>
@@ -63,6 +63,7 @@
   }
   .request-info .name{font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .request-info .city{color:var(--text-eyebrow);font-size:.9rem;margin-top:3px;}
+  .request-info .note{color:var(--text-body);font-size:.92rem;margin-top:4px;}
   .call-btn{
     display:inline-flex;align-items:center;gap:8px;
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
@@ -95,9 +96,9 @@
 </header>
 
 <div class="wrap">
-  <p class="eyebrow" id="pageEyebrow">FIND A DRIVER</p>
-  <h1 id="pageTitle">Drivers near you</h1>
-  <p class="sub" id="pageSub">Everyone currently visible. Filter by city if you like.</p>
+  <p class="eyebrow" id="pageEyebrow">CATEGORY</p>
+  <h1 id="pageTitle">Loading…</h1>
+  <p class="sub" id="pageSub"></p>
 
   <div id="content">
     <div class="state-card">
@@ -116,6 +117,18 @@
     global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
   });
   var LIST_POLL_MS = 5000;
+  var VALID_CATEGORIES = ["drive", "move", "build", "tools", "home", "auto"];
+
+  var params = new URLSearchParams(window.location.search);
+  var category = params.get("category");
+  var myRole = params.get("role"); // "seeking" or "offering" -- my own listing's role
+  if (VALID_CATEGORIES.indexOf(category) === -1 || (myRole !== "seeking" && myRole !== "offering")) {
+    document.getElementById("pageTitle").textContent = "Not found";
+    document.getElementById("content").innerHTML = "";
+    return;
+  }
+  var browseRole = myRole === "seeking" ? "offering" : "seeking";
+  var listingId = localStorage.getItem("rotabo_listing_" + category + "_" + myRole);
 
   // Minimal i18n: reuse the language the visitor already chose on the
   // homepage (persisted in localStorage). No language switcher here on
@@ -123,14 +136,15 @@
   // marketing page.
   var LANG = localStorage.getItem("rotabo_lang") || "en";
   var T = {
-    eyebrow: "FIND A DRIVER",
-    title: "Drivers near you",
+    eyebrow: category.toUpperCase(),
+    offering_title: "{category} providers near you",
+    seeking_title: "People who need {category}",
     subtitle: "Everyone currently visible. Filter by city if you like.",
     loading: "Loading…",
-    not_registered_body: "You don’t have an active listing on this device yet.",
+    not_registered_body: "You don’t have a listing on this device yet.",
     register_link: "← Back to home",
     pending_confirmation: "Confirming your payment…",
-    empty_note: "No drivers visible right now. This list refreshes automatically.",
+    empty_note: "Nobody is visible right now. This list refreshes automatically.",
     call_btn: "📞 Call",
     city_filter_placeholder: "Filter by city…",
     time_just_now: "just now",
@@ -139,6 +153,7 @@
     time_hour_ago_one: "1 hour ago",
     time_hour_ago_other: "{n} hours ago"
   };
+  var categoryName = category;
 
   function tr(key, vars){
     var str = T[key];
@@ -154,18 +169,21 @@
     return fetch("locales/" + LANG + ".json")
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
-        if (dict && dict.find_dashboard_page) {
-          Object.assign(T, dict.find_dashboard_page);
+        if (dict && dict.browse_page) {
+          Object.assign(T, dict.browse_page);
         }
-        document.getElementById("pageEyebrow").textContent = T.eyebrow;
-        document.getElementById("pageTitle").textContent = T.title;
+        if (dict && dict.categories && dict.categories[category] && dict.categories[category].name) {
+          categoryName = dict.categories[category].name;
+        }
+        var title = myRole === "seeking" ? tr("offering_title", { category: categoryName }) : tr("seeking_title", { category: categoryName });
+        document.getElementById("pageEyebrow").textContent = categoryName.toUpperCase();
+        document.getElementById("pageTitle").textContent = title;
         document.getElementById("pageSub").textContent = T.subtitle;
         document.getElementById("loadingText").textContent = T.loading;
       })
       .catch(function(){ /* keep English defaults */ });
   }
 
-  var clientListingId = localStorage.getItem("rotabo_client_listing_id");
   var content = document.getElementById("content");
   var listPollTimer = null;
   var cityFilter = "";
@@ -216,8 +234,10 @@
   }
 
   function loadListings(){
-    var query = sb.from("driver_listings")
-      .select("id, name, city, phone, created_at")
+    var query = sb.from("listings")
+      .select("id, name, city, phone, note, created_at")
+      .eq("category", category)
+      .eq("role", browseRole)
       .order("created_at", { ascending: false });
     if (cityFilter) query = query.ilike("city", "%" + cityFilter + "%");
 
@@ -241,10 +261,13 @@
           '<div class="request-info">'
           + '<div class="name"></div>'
           + '<div class="city"></div>'
+          + '<div class="note"></div>'
           + '</div>'
           + '<a class="call-btn"></a>';
         card.querySelector(".name").textContent = row.name;
         card.querySelector(".city").textContent = row.city + " · " + timeAgo(row.created_at);
+        var noteEl = card.querySelector(".note");
+        if (row.note) { noteEl.textContent = row.note; } else { noteEl.remove(); }
         var callBtn = card.querySelector(".call-btn");
         callBtn.href = "tel:" + row.phone;
         callBtn.textContent = tr("call_btn");
@@ -254,14 +277,14 @@
   }
 
   function init(){
-    if (!clientListingId) {
+    if (!listingId) {
       renderNotRegistered();
       return;
     }
 
-    sb.from("client_listing_status")
+    sb.from("listing_status")
       .select("id, stripe_session_id, visible_until")
-      .eq("id", clientListingId)
+      .eq("id", listingId)
       .maybeSingle()
       .then(function(res){
         if (res.error || !res.data) {

@@ -22,6 +22,57 @@
     "badge_live": "Traseu live, partajat",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "CE AI NEVOIE?",
+    "section_title": "Ai nevoie de ceva? Găsește pe cineva.",
+    "section_lead": "Alege ce ai nevoie — sau listează-te ca cineva care poate ajuta.",
+    "need_btn": "Am nevoie de asta",
+    "offer_btn": "Ofer asta",
+    "drive": {
+      "name": "Șofer",
+      "desc": "Un șofer care vine la tine și conduce propria ta mașină."
+    },
+    "move": {
+      "name": "Mutări",
+      "desc": "Mobilă, cutii sau o casă întreagă — cu o dubă și un șofer.",
+      "seeking_title": "Ai nevoie de ajutor la mutare?",
+      "seeking_lead": "Spune-ne ce trebuie mutat și unde.",
+      "offering_title": "Oferă ajutor la mutări",
+      "offering_lead": "Listează-te ca oamenii care au nevoie de o mână de ajutor să te găsească."
+    },
+    "build": {
+      "name": "Utilaje",
+      "desc": "Excavatoare, generatoare, macarale — echipamente grele cu operator.",
+      "seeking_title": "Ai nevoie de un utilaj sau un operator?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
+      "offering_title": "Oferă utilaj sau operare",
+      "offering_lead": "Listează-ți utilajul sau abilitățile ca oamenii care au nevoie de ele să te găsească."
+    },
+    "tools": {
+      "name": "Unelte",
+      "desc": "Unelte electrice și utilaje mici, gata când ai nevoie de ele.",
+      "seeking_title": "Ai nevoie de o unealtă sau un utilaj?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
+      "offering_title": "Oferă-ți uneltele",
+      "offering_lead": "Listează ce ai ca oamenii care au nevoie să te găsească."
+    },
+    "home": {
+      "name": "Acasă",
+      "desc": "Electricieni, instalatori, curățenie și alt ajutor la domiciliu.",
+      "seeking_title": "Ai nevoie de ajutor acasă?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
+      "offering_title": "Oferă ajutor la domiciliu",
+      "offering_lead": "Listează-ți abilitățile ca oamenii care au nevoie de ele să te găsească."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Ajutor rutier — baterie, cauciuc, tractare, mecanic mobil.",
+      "seeking_title": "Ai nevoie de ajutor rutier?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
+      "offering_title": "Oferă ajutor rutier",
+      "offering_lead": "Listează-ți abilitățile ca oamenii care au nevoie de ele să te găsească."
+    }
+  },
   "problem": {
     "eyebrow": "DE CE SĂ-ȚI LAȘI MAȘINA ÎN URMĂ?",
     "h2": "Problema cu toate celelalte opțiuni",
@@ -156,6 +207,15 @@
     "submit": "Continuă spre plată",
     "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
   },
+  "generic_form": {
+    "name_label": "Numele tău",
+    "phone_label": "Număr de telefon",
+    "city_label": "Oraș / zonă",
+    "note_label": "Spune-ne mai multe (opțional)",
+    "note_placeholder": "Câteva detalii ajută — ce, când, cât…",
+    "submit": "Continuă spre plată",
+    "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
+  },
   "searching_page": {
     "fare_remaining": "Rest de plată estimat: ~{amount} CHF, plătit direct șoferului.",
     "cancel_btn": "Anulează cererea",
@@ -214,6 +274,23 @@
     "register_link": "← Înapoi acasă",
     "pending_confirmation": "Confirmăm plata ta…",
     "empty_note": "Niciun șofer vizibil acum. Această listă se actualizează automat.",
+    "call_btn": "📞 Sună",
+    "city_filter_placeholder": "Filtrează după oraș…",
+    "time_just_now": "chiar acum",
+    "time_min_ago_one": "acum 1 min",
+    "time_min_ago_other": "acum {n} min",
+    "time_hour_ago_one": "acum 1 oră",
+    "time_hour_ago_other": "acum {n} ore"
+  },
+  "browse_page": {
+    "offering_title": "Prestatori {category} lângă tine",
+    "seeking_title": "Persoane care caută {category}",
+    "subtitle": "Toată lumea vizibilă acum. Filtrează după oraș dacă vrei.",
+    "loading": "Se încarcă…",
+    "not_registered_body": "Nu ai încă o listare pe acest dispozitiv.",
+    "register_link": "← Înapoi acasă",
+    "pending_confirmation": "Confirmăm plata ta…",
+    "empty_note": "Nimeni nu e vizibil acum. Această listă se actualizează automat.",
     "call_btn": "📞 Sună",
     "city_filter_placeholder": "Filtrează după oraș…",
     "time_just_now": "chiar acum",

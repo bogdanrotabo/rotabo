@@ -10,6 +10,57 @@
     "fine": "Oibríonn sé i do bhrabhsálaí — níl aon siopa aipeanna ag teastáil.",
     "badge_verified": "Tiománaithe deimhnithe", "badge_live": "Comhroinnt turais bheo", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "CAD ATÁ UAIT?",
+    "section_title": "Rud éigin ag teastáil? Faigh duine.",
+    "section_lead": "Roghnaigh a bhfuil uait — nó liostáil tú féin mar dhuine atá in ann cabhrú.",
+    "need_btn": "Tá sé seo uaim",
+    "offer_btn": "Táim ag tairiscint é seo",
+    "drive": {
+      "name": "Tiománaí",
+      "desc": "Tiománaí a thagann chugat agus a thiomáineann do charr féin."
+    },
+    "move": {
+      "name": "Aistriú",
+      "desc": "Troscán, boscaí, nó teach iomlán — le veain agus tiománaí.",
+      "seeking_title": "Cabhair ag teastáil le haistriú?",
+      "seeking_lead": "Inis dúinn cad is gá a aistriú agus cén áit.",
+      "offering_title": "Tairg cabhair aistrithe",
+      "offering_lead": "Liostáil tú féin ionas gur féidir le daoine a bhfuil cabhair uathu tú a aimsiú."
+    },
+    "build": {
+      "name": "Tógáil",
+      "desc": "Innill tochailte, gineadóirí, ardaitheoirí — trealamh trom le hoibreoir.",
+      "seeking_title": "Trealamh nó oibreoir ag teastáil?",
+      "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
+      "offering_title": "Tairg trealamh nó oibriú",
+      "offering_lead": "Liostáil d'inneall nó do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
+    },
+    "tools": {
+      "name": "Uirlisí",
+      "desc": "Uirlisí cumhachta agus innealra, réidh nuair atá siad uait.",
+      "seeking_title": "Uirlis nó inneall ag teastáil?",
+      "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
+      "offering_title": "Tairg do chuid uirlisí",
+      "offering_lead": "Liostáil a bhfuil agat ionas gur féidir le daoine a bhfuil sé uathu tú a aimsiú."
+    },
+    "home": {
+      "name": "Baile",
+      "desc": "Leictreoirí, pluiméirí, glantóirí, agus cabhair bhaile eile.",
+      "seeking_title": "Cabhair sa bhaile ag teastáil?",
+      "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
+      "offering_title": "Tairg cabhair bhaile",
+      "offering_lead": "Liostáil do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
+    },
+    "auto": {
+      "name": "Gluaisteán",
+      "desc": "Cabhair ar an mbóthar — ceallraí, bonn, tarraingt, meicneoir soghluaiste.",
+      "seeking_title": "Cabhair ar an mbóthar ag teastáil?",
+      "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
+      "offering_title": "Tairg cabhair ar an mbóthar",
+      "offering_lead": "Liostáil do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
+    }
+  },
   "problem": {
     "eyebrow": "CÉN FÁTH DO CHARR A FHÁGÁIL INA DHIAIDH?", "h2": "An fhadhb atá le gach rogha eile",
     "cross1": "Gan tacsaí.", "cross2": "Gan páirceáil thar oíche.", "cross3": "Gan filleadh air amárach.", "cross4": "Gan dara turas lena bhailiú.",
@@ -120,6 +171,15 @@
     "submit": "Ar aghaidh chuig íocaíocht",
     "error": "Tharla earráid. Bain triail eile as le do thoil."
   },
+  "generic_form": {
+    "name_label": "D'ainm",
+    "phone_label": "Uimhir ghutháin",
+    "city_label": "Cathair / ceantar",
+    "note_label": "Inis dúinn tuilleadh (roghnach)",
+    "note_placeholder": "Cabhraíonn cúpla sonra — cad, cathain, cé mhéad…",
+    "submit": "Lean ar aghaidh chuig íocaíocht",
+    "error": "Tharla earráid. Bain triail eile as."
+  },
   "searching_page": {
     "fare_remaining": "Iarmhéid measta: ~{amount} CHF, íoctha go díreach le do thiománaí.",
     "cancel_btn": "Cealaigh an t-iarratas",
@@ -178,6 +238,23 @@
     "register_link": "← Ar ais go dtí an leathanach baile",
     "pending_confirmation": "Ag deimhniú do íocaíochta…",
     "empty_note": "Níl aon tiománaí infheicthe faoi láthair. Nuashonraítear an liosta seo go huathoibríoch.",
+    "call_btn": "📞 Glaoigh",
+    "city_filter_placeholder": "Scag de réir cathrach…",
+    "time_just_now": "díreach anois",
+    "time_min_ago_one": "1 nóiméad ó shin",
+    "time_min_ago_other": "{n} nóiméad ó shin",
+    "time_hour_ago_one": "1 uair an chloig ó shin",
+    "time_hour_ago_other": "{n} uair an chloig ó shin"
+  },
+  "browse_page": {
+    "offering_title": "Soláthraithe {category} in aice leat",
+    "seeking_title": "Daoine a bhfuil {category} uathu",
+    "subtitle": "Gach duine atá infheicthe faoi láthair. Scag de réir cathrach más mian leat.",
+    "loading": "Á lódáil…",
+    "not_registered_body": "Níl liostú gníomhach agat fós ar an ngléas seo.",
+    "register_link": "← Ar ais go dtí an leathanach baile",
+    "pending_confirmation": "Ag deimhniú do íocaíochta…",
+    "empty_note": "Níl aon duine infheicthe faoi láthair. Nuashonraítear an liosta seo go huathoibríoch.",
     "call_btn": "📞 Glaoigh",
     "city_filter_placeholder": "Scag de réir cathrach…",
     "time_just_now": "díreach anois",

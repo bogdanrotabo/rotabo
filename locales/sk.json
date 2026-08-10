@@ -10,6 +10,57 @@
     "fine": "Funguje priamo v prehliadači — žiadny obchod s aplikáciami netreba.",
     "badge_verified": "Overení vodiči", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "ČO POTREBUJEŠ?",
+    "section_title": "Niečo potrebuješ? Nájdi niekoho.",
+    "section_lead": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
+    "need_btn": "Toto potrebujem",
+    "offer_btn": "Toto ponúkam",
+    "drive": {
+      "name": "Vodič",
+      "desc": "Vodič, ktorý za tebou príde a odvezie ťa tvojím vlastným autom."
+    },
+    "move": {
+      "name": "Sťahovanie",
+      "desc": "Nábytok, krabice alebo celá domácnosť — s dodávkou a vodičom.",
+      "seeking_title": "Potrebuješ pomoc so sťahovaním?",
+      "seeking_lead": "Napíš nám, čo treba presunúť a kam.",
+      "offering_title": "Ponúkni pomoc so sťahovaním",
+      "offering_lead": "Zapíš sa, aby ťa našli ľudia, ktorí potrebujú pomoc."
+    },
+    "build": {
+      "name": "Stavba",
+      "desc": "Bagre, generátory, plošiny — ťažká technika s obsluhou.",
+      "seeking_title": "Potrebuješ techniku alebo obsluhu?",
+      "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
+      "offering_title": "Ponúkni techniku alebo obsluhu",
+      "offering_lead": "Zapíš svoj stroj alebo zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
+    },
+    "tools": {
+      "name": "Náradie",
+      "desc": "Elektrické náradie a stroje, pripravené, keď ich potrebuješ.",
+      "seeking_title": "Potrebuješ náradie alebo stroj?",
+      "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
+      "offering_title": "Ponúkni svoje náradie",
+      "offering_lead": "Zapíš, čo máš, aby ťa našli ľudia, ktorí to potrebujú."
+    },
+    "home": {
+      "name": "Domácnosť",
+      "desc": "Elektrikári, inštalatéri, upratovanie a ďalšia pomoc doma.",
+      "seeking_title": "Potrebuješ pomoc doma?",
+      "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
+      "offering_title": "Ponúkni pomoc doma",
+      "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Pomoc na ceste — batéria, pneumatika, odťah, mobilný mechanik.",
+      "seeking_title": "Potrebuješ pomoc na ceste?",
+      "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
+      "offering_title": "Ponúkni pomoc na ceste",
+      "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
+    }
+  },
   "problem": {
     "eyebrow": "PREČO NECHÁVAŤ SVOJE AUTO ZA SEBOU?", "h2": "Problém so všetkými ostatnými možnosťami",
     "cross1": "Žiadny taxík.", "cross2": "Žiadne parkovanie cez noc.", "cross3": "Žiadne vracanie sa preň zajtra.", "cross4": "Žiadna druhá cesta, aby ste ho vyzdvihli.",
@@ -120,6 +171,15 @@
     "submit": "Pokračovať k platbe",
     "error": "Niečo sa pokazilo. Skús to prosím znova."
   },
+  "generic_form": {
+    "name_label": "Tvoje meno",
+    "phone_label": "Telefónne číslo",
+    "city_label": "Mesto / oblasť",
+    "note_label": "Napíš nám viac (nepovinné)",
+    "note_placeholder": "Pár detailov pomôže — čo, kedy, za koľko…",
+    "submit": "Pokračovať k platbe",
+    "error": "Niečo sa pokazilo. Skús to prosím znova."
+  },
   "searching_page": {
     "fare_remaining": "Odhadovaná zostávajúca suma: ~{amount} CHF, platená priamo vášmu vodičovi.",
     "cancel_btn": "Zrušiť žiadosť",
@@ -178,6 +238,23 @@
     "register_link": "← Späť domov",
     "pending_confirmation": "Potvrdzujeme tvoju platbu…",
     "empty_note": "Momentálne nie sú vidieť žiadni vodiči. Zoznam sa aktualizuje automaticky.",
+    "call_btn": "📞 Zavolať",
+    "city_filter_placeholder": "Filtrovať podľa mesta…",
+    "time_just_now": "práve teraz",
+    "time_min_ago_one": "pred 1 minútou",
+    "time_min_ago_other": "pred {n} minútami",
+    "time_hour_ago_one": "pred 1 hodinou",
+    "time_hour_ago_other": "pred {n} hodinami"
+  },
+  "browse_page": {
+    "offering_title": "Poskytovatelia {category} v tvojom okolí",
+    "seeking_title": "Ľudia, ktorí potrebujú {category}",
+    "subtitle": "Všetci, ktorí sú práve viditeľní. Pokojne filtruj podľa mesta.",
+    "loading": "Načítava sa…",
+    "not_registered_body": "Na tomto zariadení zatiaľ nemáš aktívnu ponuku.",
+    "register_link": "← Späť domov",
+    "pending_confirmation": "Potvrdzujeme tvoju platbu…",
+    "empty_note": "Momentálne nie je nikto viditeľný. Zoznam sa aktualizuje automaticky.",
     "call_btn": "📞 Zavolať",
     "city_filter_placeholder": "Filtrovať podľa mesta…",
     "time_just_now": "práve teraz",

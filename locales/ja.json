@@ -10,6 +10,57 @@
     "fine": "ブラウザだけで使えます。アプリのダウンロードは不要です。",
     "badge_verified": "本人確認済みドライバー", "badge_live": "リアルタイムの行程共有", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "何が必要？",
+    "section_title": "探しものがある？ 人を見つけよう。",
+    "section_lead": "必要なものを選ぶか、力になれる人として登録しよう。",
+    "need_btn": "これが欲しい",
+    "offer_btn": "これを提供する",
+    "drive": {
+      "name": "ドライバー",
+      "desc": "あなたの車を運転してくれるドライバーが来てくれます。"
+    },
+    "move": {
+      "name": "引っ越し",
+      "desc": "家具、段ボール、家まるごと — バンとドライバー付きで。",
+      "seeking_title": "引っ越しの手伝いが必要？",
+      "seeking_lead": "何をどこへ運ぶか教えてください。",
+      "offering_title": "引っ越しの手伝いを提供",
+      "offering_lead": "登録して、手伝いが必要な人に見つけてもらおう。"
+    },
+    "build": {
+      "name": "建設",
+      "desc": "ショベルカー、発電機、リフト — オペレーター付きの重機。",
+      "seeking_title": "重機やオペレーターが必要？",
+      "seeking_lead": "何がどこで必要か教えてください。",
+      "offering_title": "重機やサービスを提供",
+      "offering_lead": "機械やスキルを登録して、必要な人に見つけてもらおう。"
+    },
+    "tools": {
+      "name": "工具",
+      "desc": "電動工具や機械を、必要なときにすぐ使える。",
+      "seeking_title": "工具や機械が必要？",
+      "seeking_lead": "何がどこで必要か教えてください。",
+      "offering_title": "自分の工具を提供",
+      "offering_lead": "持っているものを登録して、必要な人に見つけてもらおう。"
+    },
+    "home": {
+      "name": "住まい",
+      "desc": "電気工事、水道工事、清掃など、家まわりのお手伝い。",
+      "seeking_title": "家のことで手伝いが必要？",
+      "seeking_lead": "何がどこで必要か教えてください。",
+      "offering_title": "家まわりの手伝いを提供",
+      "offering_lead": "スキルを登録して、必要な人に見つけてもらおう。"
+    },
+    "auto": {
+      "name": "車",
+      "desc": "道路でのトラブル対応 — バッテリー、タイヤ、レッカー、出張整備。",
+      "seeking_title": "道路でのトラブル対応が必要？",
+      "seeking_lead": "何がどこで必要か教えてください。",
+      "offering_title": "道路トラブル対応を提供",
+      "offering_lead": "スキルを登録して、必要な人に見つけてもらおう。"
+    }
+  },
   "problem": {
     "eyebrow": "なぜ愛車を置いていく必要があるのか", "h2": "他の選択肢が抱える問題",
     "cross1": "タクシーはいらない。", "cross2": "一晩中の駐車もいらない。", "cross3": "翌日車を取りに戻る必要もない。", "cross4": "車を取りに行くための送迎もいらない。",
@@ -120,6 +171,15 @@
     "submit": "支払いに進む",
     "error": "問題が発生しました。もう一度お試しください。"
   },
+  "generic_form": {
+    "name_label": "お名前",
+    "phone_label": "電話番号",
+    "city_label": "市区町村 / エリア",
+    "note_label": "詳しく教えてください（任意）",
+    "note_placeholder": "詳細があると助かります — 内容、時期、予算など…",
+    "submit": "支払いへ進む",
+    "error": "エラーが発生しました。もう一度お試しください。"
+  },
   "searching_page": {
     "fare_remaining": "残りの予想運賃：約{amount} CHF、ドライバーに直接支払います。",
     "cancel_btn": "リクエストをキャンセル",
@@ -178,6 +238,23 @@
     "register_link": "← ホームに戻る",
     "pending_confirmation": "お支払いを確認しています…",
     "empty_note": "現在、表示中のドライバーはいません。このリストは自動的に更新されます。",
+    "call_btn": "📞 電話する",
+    "city_filter_placeholder": "都市で絞り込む…",
+    "time_just_now": "たった今",
+    "time_min_ago_one": "1分前",
+    "time_min_ago_other": "{n}分前",
+    "time_hour_ago_one": "1時間前",
+    "time_hour_ago_other": "{n}時間前"
+  },
+  "browse_page": {
+    "offering_title": "近くの{category}提供者",
+    "seeking_title": "{category}を必要としている人",
+    "subtitle": "現在表示中の人たち。必要なら都市で絞り込めます。",
+    "loading": "読み込み中…",
+    "not_registered_body": "このデバイスにはまだ有効な登録がありません。",
+    "register_link": "← ホームに戻る",
+    "pending_confirmation": "お支払いを確認しています…",
+    "empty_note": "現在、表示中の人はいません。このリストは自動的に更新されます。",
     "call_btn": "📞 電話する",
     "city_filter_placeholder": "都市で絞り込む…",
     "time_just_now": "たった今",

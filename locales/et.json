@@ -22,6 +22,57 @@
     "badge_live": "Reisi jälgimine reaalajas",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "MIDA SA VAJAD?",
+    "section_title": "Vajad midagi? Leia keegi.",
+    "section_lead": "Vali, mida vajad — või lisa end nimekirja kui keegi, kes saab aidata.",
+    "need_btn": "Vajan seda",
+    "offer_btn": "Pakun seda",
+    "drive": {
+      "name": "Sõidujuht",
+      "desc": "Juht, kes tuleb sinu juurde ja sõidutab sind sinu enda autoga."
+    },
+    "move": {
+      "name": "Kolimine",
+      "desc": "Mööbel, kastid või terve kodu — kaubikuga ja juhiga.",
+      "seeking_title": "Vajad kolimisel abi?",
+      "seeking_lead": "Räägi meile, mida tuleb kolida ja kuhu.",
+      "offering_title": "Paku kolimisabi",
+      "offering_lead": "Lisa end nimekirja, et abivajajad sind leiaksid."
+    },
+    "build": {
+      "name": "Ehitus",
+      "desc": "Ekskavaatorid, generaatorid, tõstukid — rasketehnika koos operaatoriga.",
+      "seeking_title": "Vajad tehnikat või operaatorit?",
+      "seeking_lead": "Räägi meile, mida ja kus vajad.",
+      "offering_title": "Paku tehnikat või oma teenust",
+      "offering_lead": "Lisa oma masin või oskused nimekirja, et abivajajad sind leiaksid."
+    },
+    "tools": {
+      "name": "Tööriistad",
+      "desc": "Elektritööriistad ja masinad, valmis siis, kui neid vajad.",
+      "seeking_title": "Vajad tööriista või masinat?",
+      "seeking_lead": "Räägi meile, mida ja kus vajad.",
+      "offering_title": "Paku oma tööriistu",
+      "offering_lead": "Lisa oma varustus nimekirja, et abivajajad sind leiaksid."
+    },
+    "home": {
+      "name": "Kodu",
+      "desc": "Elektrikud, torulukksepad, koristajad ja muu abi kodus.",
+      "seeking_title": "Vajad abi kodus?",
+      "seeking_lead": "Räägi meile, mida ja kus vajad.",
+      "offering_title": "Paku abi kodus",
+      "offering_lead": "Lisa oma oskused nimekirja, et abivajajad sind leiaksid."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Abi teel — aku, rehv, pukseerimine, mobiilne mehaanik.",
+      "seeking_title": "Vajad abi teel?",
+      "seeking_lead": "Räägi meile, mida ja kus vajad.",
+      "offering_title": "Paku abi teel",
+      "offering_lead": "Lisa oma oskused nimekirja, et abivajajad sind leiaksid."
+    }
+  },
   "problem": {
     "eyebrow": "MIKS JÄTTA AUTO MAHA?",
     "h2": "Probleem kõigi teiste võimalustega",
@@ -156,6 +207,15 @@
     "submit": "Jätka maksmisele",
     "error": "Midagi läks valesti. Palun proovi uuesti."
   },
+  "generic_form": {
+    "name_label": "Sinu nimi",
+    "phone_label": "Telefoninumber",
+    "city_label": "Linn / piirkond",
+    "note_label": "Räägi rohkem (valikuline)",
+    "note_placeholder": "Mõned detailid aitavad — mis, millal, kui palju…",
+    "submit": "Jätka maksmisele",
+    "error": "Midagi läks valesti. Palun proovi uuesti."
+  },
   "searching_page": {
     "fare_remaining": "Hinnanguline jääksumma: ~{amount} CHF, makstakse otse sinu juhile.",
     "cancel_btn": "Tühista päring",
@@ -214,6 +274,23 @@
     "register_link": "← Tagasi avalehele",
     "pending_confirmation": "Kinnitame su makset…",
     "empty_note": "Praegu ei ole ühtegi juhti nähtaval. Nimekiri uueneb automaatselt.",
+    "call_btn": "📞 Helista",
+    "city_filter_placeholder": "Filtreeri linna järgi…",
+    "time_just_now": "just praegu",
+    "time_min_ago_one": "1 minut tagasi",
+    "time_min_ago_other": "{n} minutit tagasi",
+    "time_hour_ago_one": "1 tund tagasi",
+    "time_hour_ago_other": "{n} tundi tagasi"
+  },
+  "browse_page": {
+    "offering_title": "{category} pakkujad sinu lähedal",
+    "seeking_title": "Inimesed, kes vajavad {category}",
+    "subtitle": "Kõik, kes on praegu nähtavad. Soovi korral filtreeri linna järgi.",
+    "loading": "Laadimine…",
+    "not_registered_body": "Sul ei ole veel selles seadmes aktiivset kuulutust.",
+    "register_link": "← Tagasi avalehele",
+    "pending_confirmation": "Kinnitame su makset…",
+    "empty_note": "Praegu ei ole keegi nähtav. Nimekiri uueneb automaatselt.",
     "call_btn": "📞 Helista",
     "city_filter_placeholder": "Filtreeri linna järgi…",
     "time_just_now": "just praegu",

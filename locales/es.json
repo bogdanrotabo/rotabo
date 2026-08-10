@@ -22,6 +22,57 @@
     "badge_live": "Recorrido compartido en directo",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "¿QUÉ NECESITAS?",
+    "section_title": "¿Necesitas algo? Encuentra a alguien.",
+    "section_lead": "Elige lo que necesitas — o inscríbete como alguien que puede ayudar.",
+    "need_btn": "Necesito esto",
+    "offer_btn": "Ofrezco esto",
+    "drive": {
+      "name": "Conductor",
+      "desc": "Un conductor que viene a ti y conduce tu propio coche."
+    },
+    "move": {
+      "name": "Mudanza",
+      "desc": "Muebles, cajas o una casa entera — con furgoneta y conductor.",
+      "seeking_title": "¿Necesitas ayuda con la mudanza?",
+      "seeking_lead": "Cuéntanos qué hay que mover y adónde.",
+      "offering_title": "Ofrece ayuda con mudanzas",
+      "offering_lead": "Inscríbete para que te encuentren quienes necesitan una mano."
+    },
+    "build": {
+      "name": "Obra",
+      "desc": "Excavadoras, generadores, plataformas — maquinaria pesada con operador.",
+      "seeking_title": "¿Necesitas maquinaria o un operador?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde.",
+      "offering_title": "Ofrece maquinaria o tus servicios",
+      "offering_lead": "Inscribe tu máquina o tus habilidades para que te encuentren quienes las necesitan."
+    },
+    "tools": {
+      "name": "Herramientas",
+      "desc": "Herramientas eléctricas y maquinaria, listas cuando las necesites.",
+      "seeking_title": "¿Necesitas una herramienta o máquina?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde.",
+      "offering_title": "Ofrece tus herramientas",
+      "offering_lead": "Inscribe lo que tienes para que te encuentren quienes lo necesitan."
+    },
+    "home": {
+      "name": "Hogar",
+      "desc": "Electricistas, fontaneros, limpieza y otra ayuda en casa.",
+      "seeking_title": "¿Necesitas ayuda en casa?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde.",
+      "offering_title": "Ofrece ayuda en el hogar",
+      "offering_lead": "Inscribe tus habilidades para que te encuentren quienes las necesitan."
+    },
+    "auto": {
+      "name": "Coche",
+      "desc": "Ayuda en carretera — batería, rueda, grúa, mecánico a domicilio.",
+      "seeking_title": "¿Necesitas ayuda en la carretera?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde.",
+      "offering_title": "Ofrece ayuda en carretera",
+      "offering_lead": "Inscribe tus habilidades para que te encuentren quienes las necesitan."
+    }
+  },
   "problem": {
     "eyebrow": "¿POR QUÉ DEJAR TU COCHE ATRÁS?",
     "h2": "El problema con todas las demás opciones",
@@ -156,6 +207,15 @@
     "submit": "Continuar al pago",
     "error": "Algo salió mal. Inténtalo de nuevo."
   },
+  "generic_form": {
+    "name_label": "Tu nombre",
+    "phone_label": "Número de teléfono",
+    "city_label": "Ciudad / zona",
+    "note_label": "Cuéntanos más (opcional)",
+    "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…",
+    "submit": "Continuar al pago",
+    "error": "Algo salió mal. Inténtalo de nuevo."
+  },
   "searching_page": {
     "fare_remaining": "Saldo estimado: ~{amount} CHF, pagado directamente a tu conductor.",
     "cancel_btn": "Cancelar solicitud",
@@ -214,6 +274,23 @@
     "register_link": "← Volver al inicio",
     "pending_confirmation": "Confirmando tu pago…",
     "empty_note": "Ahora mismo no hay conductores visibles. Esta lista se actualiza automáticamente.",
+    "call_btn": "📞 Llamar",
+    "city_filter_placeholder": "Filtrar por ciudad…",
+    "time_just_now": "justo ahora",
+    "time_min_ago_one": "hace 1 min",
+    "time_min_ago_other": "hace {n} min",
+    "time_hour_ago_one": "hace 1 hora",
+    "time_hour_ago_other": "hace {n} horas"
+  },
+  "browse_page": {
+    "offering_title": "Proveedores de {category} cerca de ti",
+    "seeking_title": "Personas que necesitan {category}",
+    "subtitle": "Todos los que están visibles ahora mismo. Filtra por ciudad si quieres.",
+    "loading": "Cargando…",
+    "not_registered_body": "Aún no tienes un perfil activo en este dispositivo.",
+    "register_link": "← Volver al inicio",
+    "pending_confirmation": "Confirmando tu pago…",
+    "empty_note": "Ahora mismo nadie está visible. Esta lista se actualiza automáticamente.",
     "call_btn": "📞 Llamar",
     "city_filter_placeholder": "Filtrar por ciudad…",
     "time_just_now": "justo ahora",

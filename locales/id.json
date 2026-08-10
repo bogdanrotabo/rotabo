@@ -10,6 +10,57 @@
     "fine": "Langsung berfungsi di browser Anda — tanpa perlu unduh aplikasi.",
     "badge_verified": "Pengemudi terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "KAMU BUTUH APA?",
+    "section_title": "Butuh sesuatu? Temukan orangnya.",
+    "section_lead": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
+    "need_btn": "Aku butuh ini",
+    "offer_btn": "Aku menawarkan ini",
+    "drive": {
+      "name": "Sopir",
+      "desc": "Sopir yang datang ke kamu dan mengemudikan mobilmu sendiri."
+    },
+    "move": {
+      "name": "Pindahan",
+      "desc": "Furnitur, kardus, atau seluruh rumah — dengan van dan sopir.",
+      "seeking_title": "Butuh bantuan pindahan?",
+      "seeking_lead": "Beri tahu kami apa yang perlu dipindahkan dan ke mana.",
+      "offering_title": "Tawarkan bantuan pindahan",
+      "offering_lead": "Daftarkan dirimu agar ditemukan orang yang butuh bantuan."
+    },
+    "build": {
+      "name": "Konstruksi",
+      "desc": "Ekskavator, generator, lift — alat berat dengan operator.",
+      "seeking_title": "Butuh alat berat atau operator?",
+      "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
+      "offering_title": "Tawarkan alat berat atau jasa",
+      "offering_lead": "Daftarkan mesin atau keahlianmu agar ditemukan orang yang membutuhkannya."
+    },
+    "tools": {
+      "name": "Alat",
+      "desc": "Alat listrik dan mesin, siap saat kamu membutuhkannya.",
+      "seeking_title": "Butuh alat atau mesin?",
+      "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
+      "offering_title": "Tawarkan alatmu",
+      "offering_lead": "Daftarkan yang kamu punya agar ditemukan orang yang membutuhkannya."
+    },
+    "home": {
+      "name": "Rumah",
+      "desc": "Tukang listrik, tukang ledeng, kebersihan, dan bantuan rumah lainnya.",
+      "seeking_title": "Butuh bantuan di rumah?",
+      "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
+      "offering_title": "Tawarkan bantuan rumah",
+      "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
+    },
+    "auto": {
+      "name": "Mobil",
+      "desc": "Bantuan di jalan — aki, ban, derek, mekanik keliling.",
+      "seeking_title": "Butuh bantuan di jalan?",
+      "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
+      "offering_title": "Tawarkan bantuan di jalan",
+      "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
+    }
+  },
   "problem": {
     "eyebrow": "MENGAPA HARUS MENINGGALKAN MOBIL ANDA?", "h2": "Masalah dengan semua pilihan lain",
     "cross1": "Tanpa taksi.", "cross2": "Tanpa parkir semalaman.", "cross3": "Tanpa perlu kembali mengambilnya besok.", "cross4": "Tanpa perlu tumpangan kedua untuk menjemput mobil.",
@@ -120,6 +171,15 @@
     "submit": "Lanjutkan ke pembayaran",
     "error": "Terjadi kesalahan. Silakan coba lagi."
   },
+  "generic_form": {
+    "name_label": "Namamu",
+    "phone_label": "Nomor telepon",
+    "city_label": "Kota / area",
+    "note_label": "Beri tahu lebih lanjut (opsional)",
+    "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…",
+    "submit": "Lanjut ke pembayaran",
+    "error": "Ada yang salah. Silakan coba lagi."
+  },
   "searching_page": {
     "fare_remaining": "Perkiraan sisa tarif: ~{amount} CHF, dibayar langsung ke pengemudi Anda.",
     "cancel_btn": "Batalkan permintaan",
@@ -178,6 +238,23 @@
     "register_link": "← Kembali ke beranda",
     "pending_confirmation": "Mengonfirmasi pembayaranmu…",
     "empty_note": "Belum ada pengemudi yang terlihat saat ini. Daftar ini diperbarui otomatis.",
+    "call_btn": "📞 Telepon",
+    "city_filter_placeholder": "Filter berdasarkan kota…",
+    "time_just_now": "baru saja",
+    "time_min_ago_one": "1 menit lalu",
+    "time_min_ago_other": "{n} menit lalu",
+    "time_hour_ago_one": "1 jam lalu",
+    "time_hour_ago_other": "{n} jam lalu"
+  },
+  "browse_page": {
+    "offering_title": "Penyedia {category} di dekatmu",
+    "seeking_title": "Orang yang membutuhkan {category}",
+    "subtitle": "Semua orang yang sedang terlihat. Filter berdasarkan kota jika kamu mau.",
+    "loading": "Memuat…",
+    "not_registered_body": "Kamu belum punya listing aktif di perangkat ini.",
+    "register_link": "← Kembali ke beranda",
+    "pending_confirmation": "Mengonfirmasi pembayaranmu…",
+    "empty_note": "Belum ada yang terlihat saat ini. Daftar ini diperbarui otomatis.",
     "call_btn": "📞 Telepon",
     "city_filter_placeholder": "Filter berdasarkan kota…",
     "time_just_now": "baru saja",

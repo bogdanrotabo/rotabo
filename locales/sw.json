@@ -10,6 +10,57 @@
     "fine": "Inafanya kazi kwenye kivinjari chako — hakuna haja ya duka la programu.",
     "badge_verified": "Madereva waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "UNAHITAJI NINI?",
+    "section_title": "Unahitaji kitu? Tafuta mtu.",
+    "section_lead": "Chagua unachohitaji — au jiorodheshe kama mtu anayeweza kusaidia.",
+    "need_btn": "Nahitaji hii",
+    "offer_btn": "Ninatoa hii",
+    "drive": {
+      "name": "Dereva",
+      "desc": "Dereva anayekuja kwako na kuendesha gari lako mwenyewe."
+    },
+    "move": {
+      "name": "Kuhamisha",
+      "desc": "Fanicha, masanduku, au nyumba nzima — kwa gari la mizigo na dereva.",
+      "seeking_title": "Unahitaji msaada wa kuhamisha?",
+      "seeking_lead": "Tuambie kinachohitaji kuhamishwa na wapi.",
+      "offering_title": "Toa msaada wa kuhamisha",
+      "offering_lead": "Jiorodheshe ili watu wanaohitaji msaada wakupate."
+    },
+    "build": {
+      "name": "Ujenzi",
+      "desc": "Excavator, jenereta, vinyanyua — mitambo mizito pamoja na opereta.",
+      "seeking_title": "Unahitaji mitambo au opereta?",
+      "seeking_lead": "Tuambie unachohitaji na wapi.",
+      "offering_title": "Toa mitambo au huduma",
+      "offering_lead": "Orodhesha mashine yako au ujuzi wako ili wanaohitaji wakupate."
+    },
+    "tools": {
+      "name": "Zana",
+      "desc": "Zana za umeme na mitambo, tayari unapozihitaji.",
+      "seeking_title": "Unahitaji zana au mtambo?",
+      "seeking_lead": "Tuambie unachohitaji na wapi.",
+      "offering_title": "Toa zana zako",
+      "offering_lead": "Orodhesha ulicho nacho ili wanaohitaji wakupate."
+    },
+    "home": {
+      "name": "Nyumbani",
+      "desc": "Fundi umeme, fundi mabomba, usafi, na msaada mwingine wa nyumbani.",
+      "seeking_title": "Unahitaji msaada nyumbani?",
+      "seeking_lead": "Tuambie unachohitaji na wapi.",
+      "offering_title": "Toa msaada wa nyumbani",
+      "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
+    },
+    "auto": {
+      "name": "Gari",
+      "desc": "Msaada barabarani — betri, tairi, kuvuta gari, fundi wa kutembelea.",
+      "seeking_title": "Unahitaji msaada barabarani?",
+      "seeking_lead": "Tuambie unachohitaji na wapi.",
+      "offering_title": "Toa msaada barabarani",
+      "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
+    }
+  },
   "problem": {
     "eyebrow": "KWA NINI UACHE GARI LAKO?", "h2": "Tatizo la kila chaguo lingine",
     "cross1": "Hakuna teksi.", "cross2": "Hakuna kuegesha usiku kucha.", "cross3": "Hakuna kurudi kulichukua kesho.", "cross4": "Hakuna safari ya pili kulikusanya.",
@@ -120,6 +171,15 @@
     "submit": "Endelea kulipa",
     "error": "Kuna hitilafu. Tafadhali jaribu tena."
   },
+  "generic_form": {
+    "name_label": "Jina lako",
+    "phone_label": "Nambari ya simu",
+    "city_label": "Mji / eneo",
+    "note_label": "Tuambie zaidi (si lazima)",
+    "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…",
+    "submit": "Endelea kulipa",
+    "error": "Hitilafu imetokea. Tafadhali jaribu tena."
+  },
   "searching_page": {
     "fare_remaining": "Nauli iliyobaki inayokadiriwa: ~CHF {amount}, ilipwe moja kwa moja kwa dereva wako.",
     "cancel_btn": "Ghairi ombi",
@@ -178,6 +238,23 @@
     "register_link": "← Rudi mwanzo",
     "pending_confirmation": "Tunathibitisha malipo yako…",
     "empty_note": "Hakuna dereva anayeonekana kwa sasa. Orodha hii inasasishwa moja kwa moja.",
+    "call_btn": "📞 Piga simu",
+    "city_filter_placeholder": "Chuja kwa mji…",
+    "time_just_now": "sasa hivi",
+    "time_min_ago_one": "dakika 1 iliyopita",
+    "time_min_ago_other": "dakika {n} zilizopita",
+    "time_hour_ago_one": "saa 1 iliyopita",
+    "time_hour_ago_other": "saa {n} zilizopita"
+  },
+  "browse_page": {
+    "offering_title": "Watoa huduma za {category} karibu nawe",
+    "seeking_title": "Watu wanaohitaji {category}",
+    "subtitle": "Kila mtu anayeonekana sasa hivi. Chuja kwa mji ukipenda.",
+    "loading": "Inapakia…",
+    "not_registered_body": "Bado huna tangazo tendaji kwenye kifaa hiki.",
+    "register_link": "← Rudi mwanzo",
+    "pending_confirmation": "Tunathibitisha malipo yako…",
+    "empty_note": "Hakuna anayeonekana kwa sasa. Orodha hii inasasishwa moja kwa moja.",
     "call_btn": "📞 Piga simu",
     "city_filter_placeholder": "Chuja kwa mji…",
     "time_just_now": "sasa hivi",

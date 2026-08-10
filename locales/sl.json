@@ -10,6 +10,57 @@
     "fine": "Deluje v tvojem brskalniku — trgovina z aplikacijami ni potrebna.",
     "badge_verified": "Preverjeni vozniki", "badge_live": "Deljenje poti v živo", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "KAJ POTREBUJEŠ?",
+    "section_title": "Potrebuješ nekaj? Poišči nekoga.",
+    "section_lead": "Izberi, kaj potrebuješ — ali se prijavi kot nekdo, ki lahko pomaga.",
+    "need_btn": "To potrebujem",
+    "offer_btn": "To ponujam",
+    "drive": {
+      "name": "Voznik",
+      "desc": "Voznik, ki pride k tebi in vozi tvoj lasten avto."
+    },
+    "move": {
+      "name": "Selitev",
+      "desc": "Pohištvo, škatle ali cel dom — s kombijem in voznikom.",
+      "seeking_title": "Potrebuješ pomoč pri selitvi?",
+      "seeking_lead": "Povej nam, kaj je treba preseliti in kam.",
+      "offering_title": "Ponudi pomoč pri selitvi",
+      "offering_lead": "Prijavi se, da te najdejo tisti, ki potrebujejo pomoč."
+    },
+    "build": {
+      "name": "Gradnja",
+      "desc": "Bagri, generatorji, dvigala — težka mehanizacija z upravljavcem.",
+      "seeking_title": "Potrebuješ mehanizacijo ali upravljavca?",
+      "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
+      "offering_title": "Ponudi mehanizacijo ali storitve",
+      "offering_lead": "Prijavi svoj stroj ali znanje, da te najdejo tisti, ki ju potrebujejo."
+    },
+    "tools": {
+      "name": "Orodje",
+      "desc": "Električno orodje in stroji, pripravljeni, ko jih potrebuješ.",
+      "seeking_title": "Potrebuješ orodje ali stroj?",
+      "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
+      "offering_title": "Ponudi svoje orodje",
+      "offering_lead": "Prijavi, kaj imaš, da te najdejo tisti, ki to potrebujejo."
+    },
+    "home": {
+      "name": "Dom",
+      "desc": "Električarji, vodovodarji, čiščenje in druga pomoč doma.",
+      "seeking_title": "Potrebuješ pomoč doma?",
+      "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
+      "offering_title": "Ponudi pomoč doma",
+      "offering_lead": "Prijavi svoje znanje, da te najdejo tisti, ki ga potrebujejo."
+    },
+    "auto": {
+      "name": "Avto",
+      "desc": "Pomoč na cesti — akumulator, guma, vleka, mobilni mehanik.",
+      "seeking_title": "Potrebuješ pomoč na cesti?",
+      "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
+      "offering_title": "Ponudi pomoč na cesti",
+      "offering_lead": "Prijavi svoje znanje, da te najdejo tisti, ki ga potrebujejo."
+    }
+  },
   "problem": {
     "eyebrow": "ZAKAJ PUSTITI SVOJ AVTOMOBIL?", "h2": "Težava z vsemi drugimi možnostmi",
     "cross1": "Brez taksija.", "cross2": "Brez parkiranja čez noč.", "cross3": "Brez vračanja ponj jutri.", "cross4": "Brez druge poti, da ga prevzameš.",
@@ -120,6 +171,15 @@
     "submit": "Nadaljuj na plačilo",
     "error": "Nekaj je šlo narobe. Poskusi znova."
   },
+  "generic_form": {
+    "name_label": "Tvoje ime",
+    "phone_label": "Telefonska številka",
+    "city_label": "Mesto / območje",
+    "note_label": "Povej nam več (neobvezno)",
+    "note_placeholder": "Nekaj podrobnosti pomaga — kaj, kdaj, za koliko…",
+    "submit": "Nadaljuj na plačilo",
+    "error": "Nekaj je šlo narobe. Poskusi znova."
+  },
   "searching_page": {
     "fare_remaining": "Ocenjeni preostali znesek: ~{amount} CHF, plačan neposredno vašemu vozniku.",
     "cancel_btn": "Prekliči zahtevo",
@@ -178,6 +238,23 @@
     "register_link": "← Nazaj na začetno stran",
     "pending_confirmation": "Potrjujemo tvoje plačilo…",
     "empty_note": "Trenutno ni vidnih voznikov. Ta seznam se samodejno osvežuje.",
+    "call_btn": "📞 Pokliči",
+    "city_filter_placeholder": "Filtriraj po mestu…",
+    "time_just_now": "pravkar",
+    "time_min_ago_one": "pred 1 minuto",
+    "time_min_ago_other": "pred {n} minutami",
+    "time_hour_ago_one": "pred 1 uro",
+    "time_hour_ago_other": "pred {n} urami"
+  },
+  "browse_page": {
+    "offering_title": "Ponudniki {category} v tvoji bližini",
+    "seeking_title": "Ljudje, ki potrebujejo {category}",
+    "subtitle": "Vsi, ki so trenutno vidni. Če želiš, filtriraj po mestu.",
+    "loading": "Nalaganje…",
+    "not_registered_body": "Na tej napravi še nimaš aktivnega oglasa.",
+    "register_link": "← Nazaj na začetno stran",
+    "pending_confirmation": "Potrjujemo tvoje plačilo…",
+    "empty_note": "Trenutno ni nihče viden. Ta seznam se samodejno osvežuje.",
     "call_btn": "📞 Pokliči",
     "city_filter_placeholder": "Filtriraj po mestu…",
     "time_just_now": "pravkar",

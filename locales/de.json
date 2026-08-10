@@ -22,6 +22,57 @@
     "badge_live": "Live-Standort teilen",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "WAS BRAUCHST DU?",
+    "section_title": "Du brauchst etwas? Finde jemanden.",
+    "section_lead": "Wähle, was du brauchst — oder trag dich ein als jemand, der helfen kann.",
+    "need_btn": "Das brauche ich",
+    "offer_btn": "Das biete ich an",
+    "drive": {
+      "name": "Fahrer",
+      "desc": "Ein Fahrer, der zu dir kommt und dein eigenes Auto fährt."
+    },
+    "move": {
+      "name": "Umzug",
+      "desc": "Möbel, Kartons oder ein ganzes Zuhause — mit Transporter und Fahrer.",
+      "seeking_title": "Brauchst du Hilfe beim Umzug?",
+      "seeking_lead": "Sag uns, was umziehen soll und wohin.",
+      "offering_title": "Umzugshilfe anbieten",
+      "offering_lead": "Trag dich ein, damit dich Leute finden, die eine Hand brauchen."
+    },
+    "build": {
+      "name": "Bau",
+      "desc": "Bagger, Generatoren, Hebebühnen — schweres Gerät mit Bediener.",
+      "seeking_title": "Brauchst du Gerät oder eine Bedienperson?",
+      "seeking_lead": "Sag uns, was du brauchst und wo.",
+      "offering_title": "Gerät oder Bedienung anbieten",
+      "offering_lead": "Trag deine Maschine oder deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
+    },
+    "tools": {
+      "name": "Werkzeug",
+      "desc": "Elektrowerkzeuge und Maschinen, bereit, wenn du sie brauchst.",
+      "seeking_title": "Brauchst du ein Werkzeug oder eine Maschine?",
+      "seeking_lead": "Sag uns, was du brauchst und wo.",
+      "offering_title": "Dein Werkzeug anbieten",
+      "offering_lead": "Trag ein, was du hast, damit dich Leute finden, die es brauchen."
+    },
+    "home": {
+      "name": "Zuhause",
+      "desc": "Elektriker, Klempner, Reinigungskräfte und andere Hilfe im Haushalt.",
+      "seeking_title": "Brauchst du Hilfe im Haushalt?",
+      "seeking_lead": "Sag uns, was du brauchst und wo.",
+      "offering_title": "Haushaltshilfe anbieten",
+      "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Pannenhilfe — Batterie, Reifen, Abschleppen, mobiler Mechaniker.",
+      "seeking_title": "Brauchst du Pannenhilfe?",
+      "seeking_lead": "Sag uns, was du brauchst und wo.",
+      "offering_title": "Pannenhilfe anbieten",
+      "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
+    }
+  },
   "problem": {
     "eyebrow": "WARUM DEIN AUTO ZURÜCKLASSEN?",
     "h2": "Das Problem mit allen anderen Optionen",
@@ -156,6 +207,15 @@
     "submit": "Weiter zur Zahlung",
     "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
   },
+  "generic_form": {
+    "name_label": "Dein Name",
+    "phone_label": "Telefonnummer",
+    "city_label": "Stadt / Gegend",
+    "note_label": "Erzähl uns mehr (optional)",
+    "note_placeholder": "Ein paar Details helfen — was, wann, wie viel…",
+    "submit": "Weiter zur Zahlung",
+    "error": "Etwas ist schiefgelaufen. Bitte versuch es noch mal."
+  },
   "searching_page": {
     "fare_remaining": "Geschätzter Restbetrag: ~{amount} CHF, direkt an deinen Fahrer zu zahlen.",
     "cancel_btn": "Anfrage stornieren",
@@ -214,6 +274,23 @@
     "register_link": "← Zurück zur Startseite",
     "pending_confirmation": "Deine Zahlung wird bestätigt…",
     "empty_note": "Gerade sind keine Fahrer sichtbar. Diese Liste aktualisiert sich automatisch.",
+    "call_btn": "📞 Anrufen",
+    "city_filter_placeholder": "Nach Stadt filtern…",
+    "time_just_now": "gerade eben",
+    "time_min_ago_one": "vor 1 Minute",
+    "time_min_ago_other": "vor {n} Minuten",
+    "time_hour_ago_one": "vor 1 Stunde",
+    "time_hour_ago_other": "vor {n} Stunden"
+  },
+  "browse_page": {
+    "offering_title": "{category}-Anbieter in deiner Nähe",
+    "seeking_title": "Leute, die {category} brauchen",
+    "subtitle": "Alle, die gerade sichtbar sind. Filtere nach Stadt, wenn du willst.",
+    "loading": "Wird geladen…",
+    "not_registered_body": "Du hast auf diesem Gerät noch kein aktives Profil.",
+    "register_link": "← Zurück zur Startseite",
+    "pending_confirmation": "Deine Zahlung wird bestätigt…",
+    "empty_note": "Gerade ist niemand sichtbar. Diese Liste aktualisiert sich automatisch.",
     "call_btn": "📞 Anrufen",
     "city_filter_placeholder": "Nach Stadt filtern…",
     "time_just_now": "gerade eben",

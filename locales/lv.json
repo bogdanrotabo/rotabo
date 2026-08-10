@@ -10,6 +10,57 @@
     "fine": "Darbojas tavā pārlūkā — bez lietotņu veikala.",
     "badge_verified": "Pārbaudīti šoferi", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "KAS TEV VAJADZĪGS?",
+    "section_title": "Vajag kaut ko? Atrodi kādu.",
+    "section_lead": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
+    "need_btn": "Man tas ir vajadzīgs",
+    "offer_btn": "Es to piedāvāju",
+    "drive": {
+      "name": "Šoferis",
+      "desc": "Šoferis, kurš atbrauc pie tevis un vada tavu pašu automašīnu."
+    },
+    "move": {
+      "name": "Pārvākšanās",
+      "desc": "Mēbeles, kastes vai visa māja — ar mikroautobusu un šoferi.",
+      "seeking_title": "Vajag palīdzību ar pārvākšanos?",
+      "seeking_lead": "Pastāsti, kas jāpārvieto un uz kurieni.",
+      "offering_title": "Piedāvā palīdzību pārvākšanās",
+      "offering_lead": "Reģistrējies, lai tevi atrastu tie, kam vajadzīga palīdzība."
+    },
+    "build": {
+      "name": "Būvniecība",
+      "desc": "Ekskavatori, ģeneratori, pacēlāji — smagā tehnika ar operatoru.",
+      "seeking_title": "Vajag tehniku vai operatoru?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
+      "offering_title": "Piedāvā tehniku vai pakalpojumu",
+      "offering_lead": "Reģistrē savu mašīnu vai prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
+    },
+    "tools": {
+      "name": "Instrumenti",
+      "desc": "Elektroinstrumenti un mašīnas, gatavas, kad tās vajadzīgas.",
+      "seeking_title": "Vajag instrumentu vai mašīnu?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
+      "offering_title": "Piedāvā savus instrumentus",
+      "offering_lead": "Reģistrē to, kas tev ir, lai tevi atrastu tie, kam tas vajadzīgs."
+    },
+    "home": {
+      "name": "Mājas",
+      "desc": "Elektriķi, santehniķi, uzkopšana un cita palīdzība mājās.",
+      "seeking_title": "Vajag palīdzību mājās?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
+      "offering_title": "Piedāvā palīdzību mājās",
+      "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Palīdzība uz ceļa — akumulators, riepa, evakuācija, mobilais mehāniķis.",
+      "seeking_title": "Vajag palīdzību uz ceļa?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
+      "offering_title": "Piedāvā palīdzību uz ceļa",
+      "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
+    }
+  },
   "problem": {
     "eyebrow": "KĀPĒC ATSTĀT SAVU MAŠĪNU?", "h2": "Problēma ar visām pārējām iespējām",
     "cross1": "Ne taksometrs.", "cross2": "Ne stāvēšana pa nakti.", "cross3": "Ne braukšana pēc tās rīt.", "cross4": "Ne otrs brauciens, lai to paņemtu.",
@@ -120,6 +171,15 @@
     "submit": "Turpināt uz apmaksu",
     "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
   },
+  "generic_form": {
+    "name_label": "Tavs vārds",
+    "phone_label": "Tālruņa numurs",
+    "city_label": "Pilsēta / rajons",
+    "note_label": "Pastāsti vairāk (nav obligāti)",
+    "note_placeholder": "Daži sīkumi palīdz — kas, kad, par cik…",
+    "submit": "Turpināt uz apmaksu",
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+  },
   "searching_page": {
     "fare_remaining": "Aptuvenā atlikusī summa: ~{amount} CHF, samaksāta tieši jūsu vadītājam.",
     "cancel_btn": "Atcelt pieprasījumu",
@@ -178,6 +238,23 @@
     "register_link": "← Atpakaļ uz sākumu",
     "pending_confirmation": "Apstiprinām tavu maksājumu…",
     "empty_note": "Šobrīd nav redzamu vadītāju. Šis saraksts atjaunojas automātiski.",
+    "call_btn": "📞 Zvanīt",
+    "city_filter_placeholder": "Filtrēt pēc pilsētas…",
+    "time_just_now": "tikko",
+    "time_min_ago_one": "pirms 1 minūtes",
+    "time_min_ago_other": "pirms {n} minūtēm",
+    "time_hour_ago_one": "pirms 1 stundas",
+    "time_hour_ago_other": "pirms {n} stundām"
+  },
+  "browse_page": {
+    "offering_title": "{category} pakalpojumu sniedzēji tev tuvumā",
+    "seeking_title": "Cilvēki, kam vajadzīgs {category}",
+    "subtitle": "Visi, kas šobrīd ir redzami. Ja vēlies, filtrē pēc pilsētas.",
+    "loading": "Notiek ielāde…",
+    "not_registered_body": "Šajā ierīcē tev vēl nav aktīva sludinājuma.",
+    "register_link": "← Atpakaļ uz sākumu",
+    "pending_confirmation": "Apstiprinām tavu maksājumu…",
+    "empty_note": "Šobrīd neviens nav redzams. Šis saraksts atjaunojas automātiski.",
     "call_btn": "📞 Zvanīt",
     "city_filter_placeholder": "Filtrēt pēc pilsētas…",
     "time_just_now": "tikko",

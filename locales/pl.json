@@ -10,6 +10,57 @@
     "fine": "Działa w przeglądarce — bez sklepu z aplikacjami.",
     "badge_verified": "Zweryfikowani kierowcy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "CZEGO POTRZEBUJESZ?",
+    "section_title": "Czegoś potrzebujesz? Znajdź kogoś.",
+    "section_lead": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
+    "need_btn": "Potrzebuję tego",
+    "offer_btn": "Oferuję to",
+    "drive": {
+      "name": "Kierowca",
+      "desc": "Kierowca, który przyjeżdża do ciebie i prowadzi twój własny samochód."
+    },
+    "move": {
+      "name": "Przeprowadzka",
+      "desc": "Meble, kartony albo cały dom — z busem i kierowcą.",
+      "seeking_title": "Potrzebujesz pomocy przy przeprowadzce?",
+      "seeking_lead": "Powiedz nam, co trzeba przewieźć i dokąd.",
+      "offering_title": "Zaoferuj pomoc przy przeprowadzce",
+      "offering_lead": "Zgłoś się, żeby znaleźli cię ludzie, którzy potrzebują pomocy."
+    },
+    "build": {
+      "name": "Budowa",
+      "desc": "Koparki, agregaty, podnośniki — ciężki sprzęt z operatorem.",
+      "seeking_title": "Potrzebujesz sprzętu albo operatora?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
+      "offering_title": "Zaoferuj sprzęt albo usługi",
+      "offering_lead": "Zgłoś swoją maszynę lub umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
+    },
+    "tools": {
+      "name": "Narzędzia",
+      "desc": "Elektronarzędzia i maszyny, gotowe, gdy ich potrzebujesz.",
+      "seeking_title": "Potrzebujesz narzędzia albo maszyny?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
+      "offering_title": "Zaoferuj swoje narzędzia",
+      "offering_lead": "Zgłoś to, co masz, żeby znaleźli cię ci, którzy tego potrzebują."
+    },
+    "home": {
+      "name": "Dom",
+      "desc": "Elektrycy, hydraulicy, sprzątanie i inna pomoc domowa.",
+      "seeking_title": "Potrzebujesz pomocy w domu?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
+      "offering_title": "Zaoferuj pomoc domową",
+      "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Pomoc drogowa — akumulator, opona, holowanie, mechanik na telefon.",
+      "seeking_title": "Potrzebujesz pomocy drogowej?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
+      "offering_title": "Zaoferuj pomoc drogową",
+      "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
+    }
+  },
   "problem": {
     "eyebrow": "PO CO ZOSTAWIAĆ SWÓJ SAMOCHÓD?", "h2": "Problem z każdą inną opcją",
     "cross1": "Żadnej taksówki.", "cross2": "Żadnego parkowania na noc.", "cross3": "Żadnego wracania po niego jutro.", "cross4": "Żadnego drugiego kursu, żeby go odebrać.",
@@ -120,6 +171,15 @@
     "submit": "Przejdź do płatności",
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
+  "generic_form": {
+    "name_label": "Twoje imię",
+    "phone_label": "Numer telefonu",
+    "city_label": "Miasto / okolica",
+    "note_label": "Powiedz nam więcej (opcjonalnie)",
+    "note_placeholder": "Kilka szczegółów pomoże — co, kiedy, za ile…",
+    "submit": "Przejdź do płatności",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
   "searching_page": {
     "fare_remaining": "Szacowana pozostała kwota: ~{amount} CHF, płatna bezpośrednio kierowcy.",
     "cancel_btn": "Anuluj zgłoszenie",
@@ -178,6 +238,23 @@
     "register_link": "← Wróć do strony głównej",
     "pending_confirmation": "Potwierdzamy twoją płatność…",
     "empty_note": "Żaden kierowca nie jest teraz widoczny. Ta lista odświeża się automatycznie.",
+    "call_btn": "📞 Zadzwoń",
+    "city_filter_placeholder": "Filtruj według miasta…",
+    "time_just_now": "przed chwilą",
+    "time_min_ago_one": "1 minutę temu",
+    "time_min_ago_other": "{n} minut temu",
+    "time_hour_ago_one": "1 godzinę temu",
+    "time_hour_ago_other": "{n} godzin temu"
+  },
+  "browse_page": {
+    "offering_title": "Dostawcy usług {category} w twojej okolicy",
+    "seeking_title": "Ludzie, którzy potrzebują: {category}",
+    "subtitle": "Wszyscy, którzy są teraz widoczni. Możesz filtrować według miasta.",
+    "loading": "Ładowanie…",
+    "not_registered_body": "Nie masz jeszcze aktywnego ogłoszenia na tym urządzeniu.",
+    "register_link": "← Wróć do strony głównej",
+    "pending_confirmation": "Potwierdzamy twoją płatność…",
+    "empty_note": "Nikt nie jest teraz widoczny. Ta lista odświeża się automatycznie.",
     "call_btn": "📞 Zadzwoń",
     "city_filter_placeholder": "Filtruj według miasta…",
     "time_just_now": "przed chwilą",

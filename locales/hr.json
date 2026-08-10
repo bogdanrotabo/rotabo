@@ -22,6 +22,57 @@
     "badge_live": "Dijeljenje vožnje uživo",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "ŠTO TI TREBA?",
+    "section_title": "Nešto ti treba? Pronađi nekoga.",
+    "section_lead": "Odaberi što ti treba — ili se prijavi kao netko tko može pomoći.",
+    "need_btn": "Ovo mi treba",
+    "offer_btn": "Ovo nudim",
+    "drive": {
+      "name": "Vozač",
+      "desc": "Vozač koji dolazi k tebi i vozi tvoj vlastiti auto."
+    },
+    "move": {
+      "name": "Selidba",
+      "desc": "Namještaj, kutije ili cijeli dom — s kombijem i vozačem.",
+      "seeking_title": "Treba ti pomoć oko selidbe?",
+      "seeking_lead": "Reci nam što treba preseliti i kamo.",
+      "offering_title": "Ponudi pomoć pri selidbi",
+      "offering_lead": "Prijavi se kako bi te pronašli oni kojima treba pomoć."
+    },
+    "build": {
+      "name": "Gradnja",
+      "desc": "Bageri, generatori, dizalice — teška mehanizacija s operaterom.",
+      "seeking_title": "Treba ti mehanizacija ili operater?",
+      "seeking_lead": "Reci nam što ti treba i gdje.",
+      "offering_title": "Ponudi mehanizaciju ili usluge",
+      "offering_lead": "Prijavi svoj stroj ili vještine kako bi te pronašli oni kojima trebaju."
+    },
+    "tools": {
+      "name": "Alati",
+      "desc": "Električni alati i strojevi, spremni kad ti zatrebaju.",
+      "seeking_title": "Treba ti alat ili stroj?",
+      "seeking_lead": "Reci nam što ti treba i gdje.",
+      "offering_title": "Ponudi svoje alate",
+      "offering_lead": "Prijavi što imaš kako bi te pronašli oni kojima treba."
+    },
+    "home": {
+      "name": "Dom",
+      "desc": "Električari, vodoinstalateri, čišćenje i druga pomoć u kući.",
+      "seeking_title": "Treba ti pomoć u kući?",
+      "seeking_lead": "Reci nam što ti treba i gdje.",
+      "offering_title": "Ponudi pomoć u kući",
+      "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Pomoć na cesti — akumulator, guma, šlep, mobilni mehaničar.",
+      "seeking_title": "Treba ti pomoć na cesti?",
+      "seeking_lead": "Reci nam što ti treba i gdje.",
+      "offering_title": "Ponudi pomoć na cesti",
+      "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
+    }
+  },
   "problem": {
     "eyebrow": "ZAŠTO OSTAVLJATI SVOJ AUTOMOBIL?",
     "h2": "Problem sa svakom drugom opcijom",
@@ -156,6 +207,15 @@
     "submit": "Nastavi na plaćanje",
     "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
   },
+  "generic_form": {
+    "name_label": "Tvoje ime",
+    "phone_label": "Broj telefona",
+    "city_label": "Grad / područje",
+    "note_label": "Reci nam više (neobavezno)",
+    "note_placeholder": "Nekoliko detalja pomaže — što, kada, koliko…",
+    "submit": "Nastavi na plaćanje",
+    "error": "Nešto je pošlo po zlu. Pokušaj ponovno."
+  },
   "searching_page": {
     "fare_remaining": "Procijenjeni preostali iznos: ~{amount} CHF, plaća se izravno vašem vozaču.",
     "cancel_btn": "Otkaži zahtjev",
@@ -214,6 +274,23 @@
     "register_link": "← Natrag na početnu",
     "pending_confirmation": "Potvrđujemo tvoju uplatu…",
     "empty_note": "Trenutno nema vidljivih vozača. Popis se automatski osvježava.",
+    "call_btn": "📞 Nazovi",
+    "city_filter_placeholder": "Filtriraj po gradu…",
+    "time_just_now": "upravo sada",
+    "time_min_ago_one": "prije 1 minutu",
+    "time_min_ago_other": "prije {n} minuta",
+    "time_hour_ago_one": "prije 1 sat",
+    "time_hour_ago_other": "prije {n} sati"
+  },
+  "browse_page": {
+    "offering_title": "Pružatelji usluge {category} blizu tebe",
+    "seeking_title": "Ljudi kojima treba {category}",
+    "subtitle": "Svi koji su trenutno vidljivi. Filtriraj po gradu ako želiš.",
+    "loading": "Učitavanje…",
+    "not_registered_body": "Na ovom uređaju još nemaš aktivan oglas.",
+    "register_link": "← Natrag na početnu",
+    "pending_confirmation": "Potvrđujemo tvoju uplatu…",
+    "empty_note": "Trenutno nitko nije vidljiv. Popis se automatski osvježava.",
     "call_btn": "📞 Nazovi",
     "city_filter_placeholder": "Filtriraj po gradu…",
     "time_just_now": "upravo sada",

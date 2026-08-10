@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotabo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<style>
+  body{
+    margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:linear-gradient(180deg,#f6ecf9 0%, #f3e6f8 40%, #f3e6f8 100%);
+    color:#6b5878;
+  }
+  .spinner{
+    width:44px;height:44px;
+    border-radius:50%;border:4px solid #e2c3ee;border-top-color:#9b3fc0;
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+<div class="spinner"></div>
+<script>
+(function(){
+  // Stripe Payment Links redirect here unconditionally after any
+  // successful checkout (both the 1-month and 12-month tier links point
+  // at this single fixed URL) -- we don't get to pass which
+  // category/role the payment was for through Stripe itself, so we
+  // recover it from localStorage, set right before the browser left for
+  // Stripe, and forward on to the right browse page.
+  var raw = localStorage.getItem("rotabo_last_listing");
+  var dest = "/";
+  if (raw) {
+    try {
+      var info = JSON.parse(raw);
+      if (info && info.category && info.role) {
+        dest = "/browse.html?category=" + encodeURIComponent(info.category) + "&role=" + encodeURIComponent(info.role);
+      }
+    } catch (e) { /* fall back to home */ }
+  }
+  window.location.replace(dest);
+})();
+</script>
+</body>
+</html>

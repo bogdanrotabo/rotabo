@@ -10,6 +10,57 @@
     "fine": "Berfungsi terus dalam pelayar anda — tiada keperluan memuat turun aplikasi.",
     "badge_verified": "Pemandu yang disahkan", "badge_live": "Perkongsian perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "APA YANG KAMU PERLUKAN?",
+    "section_title": "Perlukan sesuatu? Cari seseorang.",
+    "section_lead": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
+    "need_btn": "Saya perlukan ini",
+    "offer_btn": "Saya menawarkan ini",
+    "drive": {
+      "name": "Pemandu",
+      "desc": "Pemandu yang datang kepada kamu dan memandu kereta kamu sendiri."
+    },
+    "move": {
+      "name": "Pindah rumah",
+      "desc": "Perabot, kotak, atau seluruh rumah — dengan van dan pemandu.",
+      "seeking_title": "Perlukan bantuan berpindah?",
+      "seeking_lead": "Beritahu kami apa yang perlu dipindahkan dan ke mana.",
+      "offering_title": "Tawarkan bantuan berpindah",
+      "offering_lead": "Daftarkan diri kamu supaya orang yang perlukan bantuan dapat menemui kamu."
+    },
+    "build": {
+      "name": "Pembinaan",
+      "desc": "Jengkaut, penjana, pelift — jentera berat dengan operator.",
+      "seeking_title": "Perlukan jentera atau operator?",
+      "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
+      "offering_title": "Tawarkan jentera atau perkhidmatan",
+      "offering_lead": "Daftarkan mesin atau kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
+    },
+    "tools": {
+      "name": "Alatan",
+      "desc": "Alat kuasa dan mesin, sedia apabila kamu memerlukannya.",
+      "seeking_title": "Perlukan alat atau mesin?",
+      "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
+      "offering_title": "Tawarkan alatan kamu",
+      "offering_lead": "Daftarkan apa yang kamu ada supaya mereka yang memerlukannya dapat menemui kamu."
+    },
+    "home": {
+      "name": "Rumah",
+      "desc": "Tukang elektrik, tukang paip, pembersihan, dan bantuan rumah lain.",
+      "seeking_title": "Perlukan bantuan di rumah?",
+      "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
+      "offering_title": "Tawarkan bantuan di rumah",
+      "offering_lead": "Daftarkan kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
+    },
+    "auto": {
+      "name": "Kereta",
+      "desc": "Bantuan di jalan raya — bateri, tayar, tunda, mekanik bergerak.",
+      "seeking_title": "Perlukan bantuan di jalan raya?",
+      "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
+      "offering_title": "Tawarkan bantuan di jalan raya",
+      "offering_lead": "Daftarkan kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
+    }
+  },
   "problem": {
     "eyebrow": "KENAPA PERLU TINGGALKAN KERETA ANDA?", "h2": "Masalah dengan setiap pilihan lain",
     "cross1": "Tiada teksi.", "cross2": "Tiada tempat letak kereta semalaman.", "cross3": "Tiada keperluan kembali mengambilnya esok.", "cross4": "Tiada tumpangan kedua untuk mengambil kereta.",
@@ -120,6 +171,15 @@
     "submit": "Teruskan ke pembayaran",
     "error": "Sesuatu telah berlaku. Sila cuba lagi."
   },
+  "generic_form": {
+    "name_label": "Nama kamu",
+    "phone_label": "Nombor telefon",
+    "city_label": "Bandar / kawasan",
+    "note_label": "Beritahu kami lebih lanjut (pilihan)",
+    "note_placeholder": "Beberapa butiran membantu — apa, bila, berapa…",
+    "submit": "Teruskan ke pembayaran",
+    "error": "Sesuatu tidak kena. Sila cuba lagi."
+  },
   "searching_page": {
     "fare_remaining": "Anggaran baki tambang: ~{amount} CHF, dibayar terus kepada pemandu anda.",
     "cancel_btn": "Batalkan permintaan",
@@ -178,6 +238,23 @@
     "register_link": "← Kembali ke laman utama",
     "pending_confirmation": "Mengesahkan bayaran anda…",
     "empty_note": "Tiada pemandu kelihatan sekarang. Senarai ini dikemas kini secara automatik.",
+    "call_btn": "📞 Telefon",
+    "city_filter_placeholder": "Tapis mengikut bandar…",
+    "time_just_now": "sebentar tadi",
+    "time_min_ago_one": "1 minit lalu",
+    "time_min_ago_other": "{n} minit lalu",
+    "time_hour_ago_one": "1 jam lalu",
+    "time_hour_ago_other": "{n} jam lalu"
+  },
+  "browse_page": {
+    "offering_title": "Penyedia {category} berdekatan kamu",
+    "seeking_title": "Orang yang memerlukan {category}",
+    "subtitle": "Semua orang yang kelihatan sekarang. Tapis mengikut bandar jika anda mahu.",
+    "loading": "Memuatkan…",
+    "not_registered_body": "Anda belum mempunyai penyenaraian aktif pada peranti ini.",
+    "register_link": "← Kembali ke laman utama",
+    "pending_confirmation": "Mengesahkan bayaran anda…",
+    "empty_note": "Tiada sesiapa kelihatan sekarang. Senarai ini dikemas kini secara automatik.",
     "call_btn": "📞 Telefon",
     "city_filter_placeholder": "Tapis mengikut bandar…",
     "time_just_now": "sebentar tadi",

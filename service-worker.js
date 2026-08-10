@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v23";
+const CACHE_VERSION = "v24";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -12,8 +12,8 @@ const PRECACHE_URLS = [
   "/index.html",
   "/terms.html",
   "/privacy.html",
-  "/driver-dashboard.html",
-  "/client-dashboard.html",
+  "/browse.html",
+  "/after-payment.html",
   "/manifest.json",
   "/icons/icon-192.png",
   "/icons/icon-512.png",

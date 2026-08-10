@@ -10,6 +10,57 @@
     "fine": "Veikia naršyklėje — programėlių parduotuvė nereikalinga.",
     "badge_verified": "Patikrinti vairuotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "KO TAU REIKIA?",
+    "section_title": "Ko nors reikia? Susirask žmogų.",
+    "section_lead": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
+    "need_btn": "Man to reikia",
+    "offer_btn": "Aš tai siūlau",
+    "drive": {
+      "name": "Vairuotojas",
+      "desc": "Vairuotojas, kuris atvyksta pas tave ir vairuoja tavo paties automobilį."
+    },
+    "move": {
+      "name": "Kraustymasis",
+      "desc": "Baldai, dėžės ar visas būstas — su mikroautobusu ir vairuotoju.",
+      "seeking_title": "Reikia pagalbos kraustantis?",
+      "seeking_lead": "Papasakok, ką reikia perkraustyti ir kur.",
+      "offering_title": "Pasiūlyk pagalbą kraustantis",
+      "offering_lead": "Užsiregistruok, kad tave rastų žmonės, kuriems reikia pagalbos."
+    },
+    "build": {
+      "name": "Statyba",
+      "desc": "Ekskavatoriai, generatoriai, keltuvai — sunkioji technika su operatoriumi.",
+      "seeking_title": "Reikia technikos ar operatoriaus?",
+      "seeking_lead": "Papasakok, ko reikia ir kur.",
+      "offering_title": "Pasiūlyk techniką ar paslaugas",
+      "offering_lead": "Užregistruok savo mašiną ar įgūdžius, kad tave rastų juos reikalaujantys."
+    },
+    "tools": {
+      "name": "Įrankiai",
+      "desc": "Elektriniai įrankiai ir mašinos, paruošti, kai jų prireikia.",
+      "seeking_title": "Reikia įrankio ar mašinos?",
+      "seeking_lead": "Papasakok, ko reikia ir kur.",
+      "offering_title": "Pasiūlyk savo įrankius",
+      "offering_lead": "Užregistruok, ką turi, kad tave rastų juos reikalaujantys."
+    },
+    "home": {
+      "name": "Namai",
+      "desc": "Elektrikai, santechnikai, valymas ir kita pagalba namuose.",
+      "seeking_title": "Reikia pagalbos namuose?",
+      "seeking_lead": "Papasakok, ko reikia ir kur.",
+      "offering_title": "Pasiūlyk pagalbą namuose",
+      "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
+    },
+    "auto": {
+      "name": "Automobilis",
+      "desc": "Pagalba kelyje — akumuliatorius, padanga, vilkimas, mobilus mechanikas.",
+      "seeking_title": "Reikia pagalbos kelyje?",
+      "seeking_lead": "Papasakok, ko reikia ir kur.",
+      "offering_title": "Pasiūlyk pagalbą kelyje",
+      "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
+    }
+  },
   "problem": {
     "eyebrow": "KAM PALIKTI SAVO AUTOMOBILĮ?", "h2": "Problema su visais kitais variantais",
     "cross1": "Jokio taksi.", "cross2": "Jokio automobilio, paliekamo nakvynei.", "cross3": "Jokio grįžimo pasiimti jo rytoj.", "cross4": "Jokios antros kelionės jam parsivežti.",
@@ -120,6 +171,15 @@
     "submit": "Tęsti į apmokėjimą",
     "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
   },
+  "generic_form": {
+    "name_label": "Tavo vardas",
+    "phone_label": "Telefono numeris",
+    "city_label": "Miestas / rajonas",
+    "note_label": "Papasakok daugiau (neprivaloma)",
+    "note_placeholder": "Keli detalūs punktai padeda — kas, kada, už kiek…",
+    "submit": "Tęsti prie mokėjimo",
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+  },
   "searching_page": {
     "fare_remaining": "Numatoma likusi suma: ~{amount} CHF, mokama tiesiogiai jūsų vairuotojui.",
     "cancel_btn": "Atšaukti užklausą",
@@ -178,6 +238,23 @@
     "register_link": "← Atgal į pradžią",
     "pending_confirmation": "Tvirtiname tavo mokėjimą…",
     "empty_note": "Šiuo metu nėra matomų vairuotojų. Šis sąrašas atsinaujina automatiškai.",
+    "call_btn": "📞 Skambinti",
+    "city_filter_placeholder": "Filtruoti pagal miestą…",
+    "time_just_now": "ką tik",
+    "time_min_ago_one": "prieš 1 min.",
+    "time_min_ago_other": "prieš {n} min.",
+    "time_hour_ago_one": "prieš 1 val.",
+    "time_hour_ago_other": "prieš {n} val."
+  },
+  "browse_page": {
+    "offering_title": "{category} paslaugų teikėjai netoli tavęs",
+    "seeking_title": "Žmonės, kuriems reikia {category}",
+    "subtitle": "Visi, kurie šiuo metu matomi. Jei nori, filtruok pagal miestą.",
+    "loading": "Kraunama…",
+    "not_registered_body": "Šiame įrenginyje dar neturi aktyvaus skelbimo.",
+    "register_link": "← Atgal į pradžią",
+    "pending_confirmation": "Tvirtiname tavo mokėjimą…",
+    "empty_note": "Šiuo metu niekas nematomas. Šis sąrašas atsinaujina automatiškai.",
     "call_btn": "📞 Skambinti",
     "city_filter_placeholder": "Filtruoti pagal miestą…",
     "time_just_now": "ką tik",

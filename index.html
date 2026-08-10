@@ -241,6 +241,23 @@
     font-size:.92rem;line-height:1.5;color:rgba(255,255,255,.8);
   }
 
+  .categories-section{padding-top:56px;}
+  .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
+  .category-card{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:28px 24px;text-align:center;
+  }
+  .category-card .cat-icon{font-size:2rem;margin-bottom:12px;}
+  .category-card h3{color:var(--text-dark);font-size:1.15rem;margin:0 0 8px;}
+  .category-card p{font-size:.92rem;line-height:1.5;margin:0 0 18px;color:var(--text-body);}
+  .cat-actions{display:flex;flex-direction:column;gap:8px;}
+  .cat-btn{
+    border-radius:10px;padding:11px 14px;font-weight:800;font-size:.9rem;
+    cursor:pointer;border:1px solid transparent;font-family:inherit;
+  }
+  .cat-btn.need{background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;}
+  .cat-btn.offer{background:#fff;border:1px solid var(--border);color:var(--text-dark);}
+
   .drivers-section{padding-top:64px;}
   .check-list{max-width:640px;margin:0 auto;}
   .check-list p{
@@ -299,7 +316,7 @@
 
   @media (max-width:640px){
     .tagline{font-size:2rem;}
-    .steps,.cards-2col{grid-template-columns:1fr;}
+    .steps,.cards-2col,.category-grid{grid-template-columns:1fr;}
     nav.links a{font-size:.95rem;margin-right:20px;}
   }
 
@@ -498,6 +515,68 @@
     <span><i class="dot"></i><span data-i18n="hero.badge_verified">Verified drivers</span></span>
     <span><i class="dot"></i><span data-i18n="hero.badge_live">Live journey sharing</span></span>
     <span><i class="dot"></i><span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span></span>
+  </div>
+</section>
+
+<section class="categories-section" id="categories">
+  <p class="eyebrow" data-i18n="categories.section_eyebrow">WHAT DO YOU NEED?</p>
+  <h2 data-i18n="categories.section_title">Need something? Find someone.</h2>
+  <p class="lede" style="text-align:center;max-width:560px;margin:0 auto 8px;" data-i18n="categories.section_lead">Pick what you need — or list yourself as someone who can help.</p>
+  <div class="category-grid">
+    <div class="category-card">
+      <div class="cat-icon">🚗</div>
+      <h3 data-i18n="categories.drive.name">Drive</h3>
+      <p data-i18n="categories.drive.desc">A driver who comes to you and drives your own car.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openModal('findDriverModal')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openModal('becomeDriverModal')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">📦</div>
+      <h3 data-i18n="categories.move.name">Move</h3>
+      <p data-i18n="categories.move.desc">Furniture, boxes, or a whole home — with a van and a driver.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('move','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('move','offering')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">🏗️</div>
+      <h3 data-i18n="categories.build.name">Build</h3>
+      <p data-i18n="categories.build.desc">Excavators, generators, lifts — heavy equipment with an operator.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('build','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('build','offering')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">🛠️</div>
+      <h3 data-i18n="categories.tools.name">Tools</h3>
+      <p data-i18n="categories.tools.desc">Power tools and machinery, ready when you need them.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('tools','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('tools','offering')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">🏠</div>
+      <h3 data-i18n="categories.home.name">Home</h3>
+      <p data-i18n="categories.home.desc">Electricians, plumbers, cleaners, and other home help.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('home','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('home','offering')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">🔧</div>
+      <h3 data-i18n="categories.auto.name">Auto</h3>
+      <p data-i18n="categories.auto.desc">Roadside help — battery, tyre, tow, mobile mechanic.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('auto','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('auto','offering')">I offer this</button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -702,6 +781,50 @@
   </div>
 </div>
 
+<div class="modal-overlay" id="genericListingModal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" onclick="closeModal('genericListingModal')" aria-label="Close">✕</button>
+    <h3 id="genericModalTitle">Need something?</h3>
+    <p class="modal-sub" id="genericModalSub">Tell us who you are and where you are.</p>
+    <form id="genericListingForm" novalidate>
+      <div class="form-field">
+        <label for="gl_name" data-i18n="generic_form.name_label">Your name</label>
+        <input type="text" id="gl_name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="gl_phone" data-i18n="generic_form.phone_label">Phone number</label>
+        <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
+      </div>
+      <div class="form-field">
+        <label for="gl_city" data-i18n="generic_form.city_label">City / area</label>
+        <input type="text" id="gl_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="gl_note" data-i18n="generic_form.note_label">Tell us more (optional)</label>
+        <input type="text" id="gl_note" name="note" data-i18n-placeholder="generic_form.note_placeholder" placeholder="A few details help — what, when, how much…">
+      </div>
+      <div class="form-field">
+        <label data-i18n="visibility.tier_label">Visibility</label>
+        <div class="tier-picker">
+          <label class="tier-option">
+            <input type="radio" name="tier" value="1" checked>
+            <span class="tier-price">1 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="12">
+            <span class="tier-price">2 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="form-submit" data-i18n="generic_form.submit">Continue to payment</button>
+      <p class="form-error" id="genericListingError" data-i18n="generic_form.error">Something went wrong. Please try again.</p>
+    </form>
+  </div>
+</div>
+
 <div class="modal-overlay" id="installModal">
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('installModal')" aria-label="Close">✕</button>
@@ -816,25 +939,28 @@
     setSubmitting(form, true);
 
     // Generate the id client-side rather than reading it back via
-    // .select() after insert: client_listings' SELECT policy only
-    // allows reading a row once it's paid and visible, so a
-    // freshly-inserted, not-yet-paid row can't be read back that way.
+    // .select() after insert: listings' SELECT policy only allows
+    // reading a row once it's paid and visible, so a freshly-inserted,
+    // not-yet-paid row can't be read back that way.
     var newListingId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
     var payload = {
       id: newListingId || undefined,
+      category: "drive",
+      role: "seeking",
       name: form.client_name.value.trim(),
       phone: form.client_phone.value.trim(),
       city: form.city.value.trim()
     };
 
-    sb.from("client_listings").insert(payload).then(function(res){
+    sb.from("listings").insert(payload).then(function(res){
       if (res.error) {
         setSubmitting(form, false);
         showError(errorEl);
         return;
       }
-      localStorage.setItem("rotabo_client_listing_id", newListingId);
+      localStorage.setItem("rotabo_listing_drive_seeking", newListingId);
+      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: "drive", role: "seeking" }));
       if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "find_driver" });
       window.location.href = tierLinkFor(form)
         + "?client_reference_id=" + encodeURIComponent(newListingId);
@@ -852,13 +978,15 @@
     setSubmitting(form, true);
 
     // Generate the id client-side rather than reading it back via
-    // .select() after insert: driver_listings' SELECT policy only
-    // allows reading a row once it's paid and visible, so a
-    // freshly-inserted, not-yet-paid row can't be read back that way.
+    // .select() after insert: listings' SELECT policy only allows
+    // reading a row once it's paid and visible, so a freshly-inserted,
+    // not-yet-paid row can't be read back that way.
     var newDriverId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
     var payload = {
       id: newDriverId || undefined,
+      category: "drive",
+      role: "offering",
       name: form.name.value.trim(),
       phone: form.phone.value.trim(),
       email: form.email.value.trim(),
@@ -867,16 +995,69 @@
       declaration_accepted: true
     };
 
-    sb.from("driver_listings").insert(payload).then(function(res){
+    sb.from("listings").insert(payload).then(function(res){
       if (res.error) {
         setSubmitting(form, false);
         showError(errorEl);
         return;
       }
-      localStorage.setItem("rotabo_driver_id", newDriverId);
+      localStorage.setItem("rotabo_listing_drive_offering", newDriverId);
+      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: "drive", role: "offering" }));
       if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "become_driver" });
       window.location.href = tierLinkFor(form)
         + "?client_reference_id=" + encodeURIComponent(newDriverId);
+    }).catch(function(){
+      setSubmitting(form, false);
+      showError(errorEl);
+    });
+  });
+
+  // Shared modal for the 5 non-drive categories: one form, category and
+  // role passed in via data attributes rather than a dedicated modal
+  // pair per category. Title/subtitle come from window.rotaboT (defined
+  // in the i18n IIFE below) since they change per category+role and
+  // can't be set with a static data-i18n attribute.
+  window.openGenericModal = function(category, role){
+    var form = document.getElementById("genericListingForm");
+    form.dataset.category = category;
+    form.dataset.role = role;
+    document.getElementById("genericModalTitle").textContent = window.rotaboT("categories." + category + "." + role + "_title");
+    document.getElementById("genericModalSub").textContent = window.rotaboT("categories." + category + "." + role + "_lead");
+    openModal("genericListingModal");
+  };
+
+  document.getElementById("genericListingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var form = e.target;
+    var errorEl = document.getElementById("genericListingError");
+    hideError(errorEl);
+    setSubmitting(form, true);
+
+    var category = form.dataset.category;
+    var role = form.dataset.role;
+    var newId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
+
+    var payload = {
+      id: newId || undefined,
+      category: category,
+      role: role,
+      name: form.name.value.trim(),
+      phone: form.phone.value.trim(),
+      city: form.city.value.trim(),
+      note: form.note.value.trim() || null
+    };
+
+    sb.from("listings").insert(payload).then(function(res){
+      if (res.error) {
+        setSubmitting(form, false);
+        showError(errorEl);
+        return;
+      }
+      localStorage.setItem("rotabo_listing_" + category + "_" + role, newId);
+      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: category, role: role }));
+      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: category + "_" + role });
+      window.location.href = tierLinkFor(form)
+        + "?client_reference_id=" + encodeURIComponent(newId);
     }).catch(function(){
       setSubmitting(form, false);
       showError(errorEl);

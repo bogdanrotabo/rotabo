@@ -10,6 +10,57 @@
     "fine": "A böngésződben működik — nincs szükség alkalmazásboltra.",
     "badge_verified": "Ellenőrzött sofőrök", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "MIRE VAN SZÜKSÉGED?",
+    "section_title": "Szükséged van valamire? Találj valakit.",
+    "section_lead": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
+    "need_btn": "Erre van szükségem",
+    "offer_btn": "Ezt kínálom",
+    "drive": {
+      "name": "Sofőr",
+      "desc": "Egy sofőr, aki hozzád jön, és a saját autódat vezeti."
+    },
+    "move": {
+      "name": "Költöztetés",
+      "desc": "Bútor, dobozok, vagy egy egész otthon — furgonnal és sofőrrel.",
+      "seeking_title": "Segítségre van szükséged a költözéshez?",
+      "seeking_lead": "Mondd el, mit kell elszállítani és hová.",
+      "offering_title": "Ajánlj költöztetési segítséget",
+      "offering_lead": "Regisztrálj, hogy megtaláljanak azok, akiknek segítségre van szükségük."
+    },
+    "build": {
+      "name": "Építkezés",
+      "desc": "Kotrók, generátorok, emelők — nehézgép kezelővel.",
+      "seeking_title": "Gépre vagy kezelőre van szükséged?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol.",
+      "offering_title": "Ajánld a gépedet vagy szolgáltatásod",
+      "offering_lead": "Regisztráld a gépedet vagy a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
+    },
+    "tools": {
+      "name": "Szerszámok",
+      "desc": "Elektromos szerszámok és gépek, készen állva, ha szükséged van rájuk.",
+      "seeking_title": "Szerszámra vagy gépre van szükséged?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol.",
+      "offering_title": "Ajánld a szerszámaidat",
+      "offering_lead": "Regisztráld, amid van, hogy megtaláljanak, akiknek szükségük van rá."
+    },
+    "home": {
+      "name": "Otthon",
+      "desc": "Villanyszerelők, vízvezeték-szerelők, takarítás és más otthoni segítség.",
+      "seeking_title": "Segítségre van szükséged otthon?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol.",
+      "offering_title": "Ajánld otthoni segítségedet",
+      "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
+    },
+    "auto": {
+      "name": "Autó",
+      "desc": "Útközbeni segítség — akkumulátor, gumi, vontatás, mobil szerelő.",
+      "seeking_title": "Segítségre van szükséged az úton?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol.",
+      "offering_title": "Ajánld útközbeni segítségedet",
+      "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
+    }
+  },
   "problem": {
     "eyebrow": "MIÉRT HAGYNÁD OTT AZ AUTÓD?", "h2": "A probléma minden más megoldással",
     "cross1": "Nincs taxi.", "cross2": "Nincs egész éjszakás parkolás.", "cross3": "Nincs visszamenés érte másnap.", "cross4": "Nincs második út, hogy elhozd.",
@@ -120,6 +171,15 @@
     "submit": "Tovább a fizetéshez",
     "error": "Valami hiba történt. Kérjük, próbáld újra."
   },
+  "generic_form": {
+    "name_label": "A neved",
+    "phone_label": "Telefonszám",
+    "city_label": "Város / körzet",
+    "note_label": "Mondj el többet (nem kötelező)",
+    "note_placeholder": "Néhány részlet segít — mi, mikor, mennyiért…",
+    "submit": "Tovább a fizetéshez",
+    "error": "Valami hiba történt. Kérjük, próbáld újra."
+  },
   "searching_page": {
     "fare_remaining": "Becsült hátralévő összeg: ~{amount} CHF, közvetlenül a sofőrödnek fizetve.",
     "cancel_btn": "Kérés törlése",
@@ -178,6 +238,23 @@
     "register_link": "← Vissza a főoldalra",
     "pending_confirmation": "A fizetésed megerősítése folyamatban…",
     "empty_note": "Jelenleg egy sofőr sem látható. A lista automatikusan frissül.",
+    "call_btn": "📞 Hívás",
+    "city_filter_placeholder": "Szűrés város szerint…",
+    "time_just_now": "épp most",
+    "time_min_ago_one": "1 perce",
+    "time_min_ago_other": "{n} perce",
+    "time_hour_ago_one": "1 órája",
+    "time_hour_ago_other": "{n} órája"
+  },
+  "browse_page": {
+    "offering_title": "{category} szolgáltatók a közeledben",
+    "seeking_title": "Emberek, akiknek szükségük van erre: {category}",
+    "subtitle": "Mindenki, aki most látható. Ha szeretnéd, szűrj város szerint.",
+    "loading": "Betöltés…",
+    "not_registered_body": "Ezen az eszközön még nincs aktív hirdetésed.",
+    "register_link": "← Vissza a főoldalra",
+    "pending_confirmation": "A fizetésed megerősítése folyamatban…",
+    "empty_note": "Jelenleg senki sem látható. A lista automatikusan frissül.",
     "call_btn": "📞 Hívás",
     "city_filter_placeholder": "Szűrés város szerint…",
     "time_just_now": "épp most",

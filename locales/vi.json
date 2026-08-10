@@ -10,6 +10,57 @@
     "fine": "Hoạt động ngay trên trình duyệt — không cần tải ứng dụng.",
     "badge_verified": "Tài xế đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "BẠN CẦN GÌ?",
+    "section_title": "Cần gì đó? Tìm người giúp.",
+    "section_lead": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
+    "need_btn": "Tôi cần cái này",
+    "offer_btn": "Tôi cung cấp cái này",
+    "drive": {
+      "name": "Tài xế",
+      "desc": "Một tài xế đến chỗ bạn và lái chính xe của bạn."
+    },
+    "move": {
+      "name": "Chuyển nhà",
+      "desc": "Đồ đạc, thùng carton, hay cả một căn nhà — có xe tải và tài xế.",
+      "seeking_title": "Cần giúp chuyển nhà?",
+      "seeking_lead": "Cho chúng tôi biết cần chuyển gì và đến đâu.",
+      "offering_title": "Đề xuất giúp chuyển nhà",
+      "offering_lead": "Đăng ký để những người cần giúp đỡ tìm thấy bạn."
+    },
+    "build": {
+      "name": "Xây dựng",
+      "desc": "Máy xúc, máy phát điện, xe nâng — thiết bị hạng nặng kèm người vận hành.",
+      "seeking_title": "Cần thiết bị hay người vận hành?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
+      "offering_title": "Đề xuất thiết bị hoặc dịch vụ",
+      "offering_lead": "Đăng ký máy móc hoặc kỹ năng của bạn để người cần tìm thấy bạn."
+    },
+    "tools": {
+      "name": "Dụng cụ",
+      "desc": "Dụng cụ điện và máy móc, sẵn sàng khi bạn cần.",
+      "seeking_title": "Cần một dụng cụ hay máy móc?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
+      "offering_title": "Đề xuất dụng cụ của bạn",
+      "offering_lead": "Đăng ký những gì bạn có để người cần tìm thấy bạn."
+    },
+    "home": {
+      "name": "Nhà cửa",
+      "desc": "Thợ điện, thợ ống nước, dọn dẹp và các trợ giúp khác tại nhà.",
+      "seeking_title": "Cần giúp việc nhà?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
+      "offering_title": "Đề xuất giúp việc nhà",
+      "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
+    },
+    "auto": {
+      "name": "Ô tô",
+      "desc": "Cứu hộ trên đường — bình ắc quy, lốp xe, kéo xe, thợ máy lưu động.",
+      "seeking_title": "Cần cứu hộ trên đường?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
+      "offering_title": "Đề xuất cứu hộ trên đường",
+      "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
+    }
+  },
   "problem": {
     "eyebrow": "TẠI SAO PHẢI BỎ LẠI XE CỦA BẠN?", "h2": "Vấn đề với mọi lựa chọn khác",
     "cross1": "Không cần taxi.", "cross2": "Không cần gửi xe qua đêm.", "cross3": "Không cần quay lại lấy xe vào hôm sau.", "cross4": "Không cần đi nhờ thêm chuyến để lấy xe.",
@@ -120,6 +171,15 @@
     "submit": "Tiếp tục thanh toán",
     "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
   },
+  "generic_form": {
+    "name_label": "Tên của bạn",
+    "phone_label": "Số điện thoại",
+    "city_label": "Thành phố / khu vực",
+    "note_label": "Cho chúng tôi biết thêm (không bắt buộc)",
+    "note_placeholder": "Vài chi tiết sẽ hữu ích — cái gì, khi nào, giá bao nhiêu…",
+    "submit": "Tiếp tục thanh toán",
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+  },
   "searching_page": {
     "fare_remaining": "Số tiền còn lại ước tính: ~{amount} CHF, thanh toán trực tiếp cho tài xế.",
     "cancel_btn": "Hủy yêu cầu",
@@ -178,6 +238,23 @@
     "register_link": "← Về trang chủ",
     "pending_confirmation": "Đang xác nhận thanh toán của bạn…",
     "empty_note": "Hiện tại chưa có tài xế nào hiển thị. Danh sách này tự động làm mới.",
+    "call_btn": "📞 Gọi",
+    "city_filter_placeholder": "Lọc theo thành phố…",
+    "time_just_now": "vừa xong",
+    "time_min_ago_one": "1 phút trước",
+    "time_min_ago_other": "{n} phút trước",
+    "time_hour_ago_one": "1 giờ trước",
+    "time_hour_ago_other": "{n} giờ trước"
+  },
+  "browse_page": {
+    "offering_title": "Nhà cung cấp {category} gần bạn",
+    "seeking_title": "Những người cần {category}",
+    "subtitle": "Tất cả những người đang hiển thị hiện tại. Lọc theo thành phố nếu bạn muốn.",
+    "loading": "Đang tải…",
+    "not_registered_body": "Bạn chưa có tin đăng nào đang hoạt động trên thiết bị này.",
+    "register_link": "← Về trang chủ",
+    "pending_confirmation": "Đang xác nhận thanh toán của bạn…",
+    "empty_note": "Hiện tại chưa có ai hiển thị. Danh sách này tự động làm mới.",
     "call_btn": "📞 Gọi",
     "city_filter_placeholder": "Lọc theo thành phố…",
     "time_just_now": "vừa xong",

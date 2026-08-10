@@ -22,6 +22,57 @@
     "badge_live": "Live-deling af turen",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "HVAD HAR DU BRUG FOR?",
+    "section_title": "Mangler du noget? Find nogen.",
+    "section_lead": "Vælg, hvad du har brug for — eller tilmeld dig som en, der kan hjælpe.",
+    "need_btn": "Jeg har brug for det",
+    "offer_btn": "Jeg tilbyder det",
+    "drive": {
+      "name": "Chauffør",
+      "desc": "En chauffør, der kommer til dig og kører din egen bil."
+    },
+    "move": {
+      "name": "Flytning",
+      "desc": "Møbler, kasser eller et helt hjem — med varevogn og chauffør.",
+      "seeking_title": "Skal du bruge hjælp til flytning?",
+      "seeking_lead": "Fortæl os, hvad der skal flyttes, og hvortil.",
+      "offering_title": "Tilbyd flyttehjælp",
+      "offering_lead": "Tilmeld dig, så folk der har brug for en hånd kan finde dig."
+    },
+    "build": {
+      "name": "Byggeri",
+      "desc": "Gravemaskiner, generatorer, lifte — tungt materiel med fører.",
+      "seeking_title": "Mangler du materiel eller en fører?",
+      "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
+      "offering_title": "Tilbyd materiel eller kørsel",
+      "offering_lead": "Tilmeld din maskine eller dine evner, så folk der har brug for dem kan finde dig."
+    },
+    "tools": {
+      "name": "Værktøj",
+      "desc": "Elværktøj og maskiner, klar når du har brug for dem.",
+      "seeking_title": "Mangler du et værktøj eller en maskine?",
+      "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
+      "offering_title": "Tilbyd dit værktøj",
+      "offering_lead": "Tilmeld det, du har, så folk der har brug for det kan finde dig."
+    },
+    "home": {
+      "name": "Hjem",
+      "desc": "Elektrikere, blikkenslagere, rengøring og anden hjælp i hjemmet.",
+      "seeking_title": "Mangler du hjælp derhjemme?",
+      "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
+      "offering_title": "Tilbyd hjælp i hjemmet",
+      "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
+    },
+    "auto": {
+      "name": "Bil",
+      "desc": "Hjælp på vejen — batteri, dæk, bugsering, mobil mekaniker.",
+      "seeking_title": "Mangler du hjælp på vejen?",
+      "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
+      "offering_title": "Tilbyd hjælp på vejen",
+      "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
+    }
+  },
   "problem": {
     "eyebrow": "HVORFOR EFTERLADE DIN BIL?",
     "h2": "Problemet med alle andre muligheder",
@@ -156,6 +207,15 @@
     "submit": "Fortsæt til betaling",
     "error": "Noget gik galt. Prøv venligst igen."
   },
+  "generic_form": {
+    "name_label": "Dit navn",
+    "phone_label": "Telefonnummer",
+    "city_label": "By / område",
+    "note_label": "Fortæl os mere (valgfrit)",
+    "note_placeholder": "Et par detaljer hjælper — hvad, hvornår, hvor meget…",
+    "submit": "Fortsæt til betaling",
+    "error": "Noget gik galt. Prøv igen."
+  },
   "searching_page": {
     "fare_remaining": "Anslået resterende beløb: ~{amount} CHF, betales direkte til din chauffør.",
     "cancel_btn": "Annuller anmodning",
@@ -214,6 +274,23 @@
     "register_link": "← Tilbage til forsiden",
     "pending_confirmation": "Bekræfter din betaling…",
     "empty_note": "Ingen chauffører er synlige lige nu. Listen opdateres automatisk.",
+    "call_btn": "📞 Ring",
+    "city_filter_placeholder": "Filtrér efter by…",
+    "time_just_now": "lige nu",
+    "time_min_ago_one": "for 1 minut siden",
+    "time_min_ago_other": "for {n} minutter siden",
+    "time_hour_ago_one": "for 1 time siden",
+    "time_hour_ago_other": "for {n} timer siden"
+  },
+  "browse_page": {
+    "offering_title": "{category}-udbydere i nærheden af dig",
+    "seeking_title": "Folk der har brug for {category}",
+    "subtitle": "Alle, der er synlige lige nu. Filtrér efter by, hvis du vil.",
+    "loading": "Indlæser…",
+    "not_registered_body": "Du har endnu ikke en aktiv annonce på denne enhed.",
+    "register_link": "← Tilbage til forsiden",
+    "pending_confirmation": "Bekræfter din betaling…",
+    "empty_note": "Ingen er synlige lige nu. Listen opdateres automatisk.",
     "call_btn": "📞 Ring",
     "city_filter_placeholder": "Filtrér efter by…",
     "time_just_now": "lige nu",

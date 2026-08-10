@@ -22,6 +22,57 @@
     "badge_live": "Matkan jakaminen reaaliajassa",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "MITÄ TARVITSET?",
+    "section_title": "Tarvitsetko jotain? Löydä joku.",
+    "section_lead": "Valitse, mitä tarvitset — tai ilmoittaudu jonkuna, joka voi auttaa.",
+    "need_btn": "Tarvitsen tätä",
+    "offer_btn": "Tarjoan tätä",
+    "drive": {
+      "name": "Kuljettaja",
+      "desc": "Kuljettaja, joka tulee luoksesi ja ajaa omalla autollasi."
+    },
+    "move": {
+      "name": "Muutto",
+      "desc": "Huonekaluja, laatikoita tai koko koti — pakettiautolla ja kuljettajalla.",
+      "seeking_title": "Tarvitsetko apua muutossa?",
+      "seeking_lead": "Kerro, mitä pitää muuttaa ja minne.",
+      "offering_title": "Tarjoa muuttoapua",
+      "offering_lead": "Ilmoittaudu, jotta avuntarvitsijat löytävät sinut."
+    },
+    "build": {
+      "name": "Rakentaminen",
+      "desc": "Kaivinkoneet, generaattorit, nostimet — raskaat koneet kuljettajineen.",
+      "seeking_title": "Tarvitsetko koneen tai kuljettajan?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä.",
+      "offering_title": "Tarjoa konetta tai osaamistasi",
+      "offering_lead": "Ilmoita koneesi tai taitosi, jotta niitä tarvitsevat löytävät sinut."
+    },
+    "tools": {
+      "name": "Työkalut",
+      "desc": "Sähkötyökalut ja koneet, valmiina kun niitä tarvitset.",
+      "seeking_title": "Tarvitsetko työkalun tai koneen?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä.",
+      "offering_title": "Tarjoa työkalujasi",
+      "offering_lead": "Ilmoita mitä sinulla on, jotta sitä tarvitsevat löytävät sinut."
+    },
+    "home": {
+      "name": "Koti",
+      "desc": "Sähköasentajat, putkimiehet, siivoojat ja muu kotiapu.",
+      "seeking_title": "Tarvitsetko apua kotiin?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä.",
+      "offering_title": "Tarjoa kotiapua",
+      "offering_lead": "Ilmoita taitosi, jotta niitä tarvitsevat löytävät sinut."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Apua tien päällä — akku, rengas, hinaus, liikkuva mekaanikko.",
+      "seeking_title": "Tarvitsetko apua tien päällä?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä.",
+      "offering_title": "Tarjoa apua tien päällä",
+      "offering_lead": "Ilmoita taitosi, jotta niitä tarvitsevat löytävät sinut."
+    }
+  },
   "problem": {
     "eyebrow": "MIKSI JÄTTÄÄ AUTO?",
     "h2": "Ongelma kaikissa muissa vaihtoehdoissa",
@@ -156,6 +207,15 @@
     "submit": "Jatka maksuun",
     "error": "Jokin meni pieleen. Yritä uudelleen."
   },
+  "generic_form": {
+    "name_label": "Nimesi",
+    "phone_label": "Puhelinnumero",
+    "city_label": "Kaupunki / alue",
+    "note_label": "Kerro lisää (valinnainen)",
+    "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, paljonko…",
+    "submit": "Jatka maksuun",
+    "error": "Jokin meni pieleen. Yritä uudelleen."
+  },
   "searching_page": {
     "fare_remaining": "Arvioitu jäljellä oleva maksu: ~{amount} CHF, maksetaan suoraan kuljettajallesi.",
     "cancel_btn": "Peruuta pyyntö",
@@ -214,6 +274,23 @@
     "register_link": "← Takaisin etusivulle",
     "pending_confirmation": "Vahvistetaan maksuasi…",
     "empty_note": "Yhtään kuljettajaa ei ole juuri nyt näkyvissä. Lista päivittyy automaattisesti.",
+    "call_btn": "📞 Soita",
+    "city_filter_placeholder": "Suodata kaupungin mukaan…",
+    "time_just_now": "juuri nyt",
+    "time_min_ago_one": "1 min sitten",
+    "time_min_ago_other": "{n} min sitten",
+    "time_hour_ago_one": "1 tunti sitten",
+    "time_hour_ago_other": "{n} tuntia sitten"
+  },
+  "browse_page": {
+    "offering_title": "{category}-palveluntarjoajat lähelläsi",
+    "seeking_title": "Ihmiset, jotka tarvitsevat {category}",
+    "subtitle": "Kaikki, jotka ovat juuri nyt näkyvissä. Suodata halutessasi kaupungin mukaan.",
+    "loading": "Ladataan…",
+    "not_registered_body": "Sinulla ei ole vielä aktiivista ilmoitusta tällä laitteella.",
+    "register_link": "← Takaisin etusivulle",
+    "pending_confirmation": "Vahvistetaan maksuasi…",
+    "empty_note": "Kukaan ei ole juuri nyt näkyvissä. Lista päivittyy automaattisesti.",
     "call_btn": "📞 Soita",
     "city_filter_placeholder": "Suodata kaupungin mukaan…",
     "time_just_now": "juuri nyt",

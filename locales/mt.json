@@ -10,6 +10,57 @@
     "fine": "Taħdem fil-browser tiegħek — ma teħtieġx app store.",
     "badge_verified": "Sewwieqa vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "XI TEĦTIEĠ?",
+    "section_title": "Teħtieġ xi ħaġa? Sib lil xi ħadd.",
+    "section_lead": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
+    "need_btn": "Neħtieġ dan",
+    "offer_btn": "Noffri dan",
+    "drive": {
+      "name": "Sewwieq",
+      "desc": "Sewwieq li jiġi għandek u jsuq il-karozza tiegħek stess."
+    },
+    "move": {
+      "name": "Ċaqliq",
+      "desc": "Għamara, kaxxi, jew dar sħiħa — b'vann u sewwieq.",
+      "seeking_title": "Teħtieġ għajnuna biex tiċċaqlaq?",
+      "seeking_lead": "Għidilna x'jeħtieġ jiġi ċċaqlaq u fejn.",
+      "offering_title": "Offri għajnuna għaċ-ċaqliq",
+      "offering_lead": "Iddaħħal ismek biex min jeħtieġ l-għajnuna jsibek."
+    },
+    "build": {
+      "name": "Bini",
+      "desc": "Excavators, ġeneraturi, liftijiet — tagħmir tqil b'operatur.",
+      "seeking_title": "Teħtieġ tagħmir jew operatur?",
+      "seeking_lead": "Għidilna x'teħtieġ u fejn.",
+      "offering_title": "Offri tagħmir jew servizz",
+      "offering_lead": "Iddaħħal il-magna jew il-ħiliet tiegħek biex min jeħtieġhom isibek."
+    },
+    "tools": {
+      "name": "Għodda",
+      "desc": "Għodda bl-elettriku u makkinarju, lesti meta teħtieġhom.",
+      "seeking_title": "Teħtieġ għodda jew magna?",
+      "seeking_lead": "Għidilna x'teħtieġ u fejn.",
+      "offering_title": "Offri l-għodda tiegħek",
+      "offering_lead": "Iddaħħal x'għandek biex min jeħtieġu jsibek."
+    },
+    "home": {
+      "name": "Dar",
+      "desc": "Elettriċisti, plumbers, tindif, u għajnuna oħra fid-dar.",
+      "seeking_title": "Teħtieġ għajnuna d-dar?",
+      "seeking_lead": "Għidilna x'teħtieġ u fejn.",
+      "offering_title": "Offri għajnuna fid-dar",
+      "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
+    },
+    "auto": {
+      "name": "Karozza",
+      "desc": "Għajnuna fit-triq — batterija, tajer, irmunkar, mekkanik li jiġi għandek.",
+      "seeking_title": "Teħtieġ għajnuna fit-triq?",
+      "seeking_lead": "Għidilna x'teħtieġ u fejn.",
+      "offering_title": "Offri għajnuna fit-triq",
+      "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
+    }
+  },
   "problem": {
     "eyebrow": "GĦALIEX TĦALLI L-KARROZZA TIEGĦEK WARAJK?", "h2": "Il-problema ma' kull għażla oħra",
     "cross1": "L-ebda taxi.", "cross2": "L-ebda ipparkjar matul il-lejl.", "cross3": "L-ebda ġejjien lura għaliha għada.", "cross4": "L-ebda tieni vjaġġ biex tiġborha.",
@@ -120,6 +171,15 @@
     "submit": "Kompli għall-ħlas",
     "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
   },
+  "generic_form": {
+    "name_label": "Isimek",
+    "phone_label": "Numru tat-telefon",
+    "city_label": "Belt / żona",
+    "note_label": "Għidilna aktar (mhux obbligatorju)",
+    "note_placeholder": "Ftit dettalji jgħinu — x'inhu, meta, kemm…",
+    "submit": "Kompli lejn il-ħlas",
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+  },
   "searching_page": {
     "fare_remaining": "Ammont li fadal stmat: ~{amount} CHF, imħallas direttament lis-sewwieq tiegħek.",
     "cancel_btn": "Ikkanċella t-talba",
@@ -178,6 +238,23 @@
     "register_link": "← Lura lejn il-paġna ewlenija",
     "pending_confirmation": "Qed nikkonfermaw il-ħlas tiegħek…",
     "empty_note": "Ebda sewwieq mhu viżibbli bħalissa. Din il-lista tiġi aġġornata awtomatikament.",
+    "call_btn": "📞 Ċempel",
+    "city_filter_placeholder": "Filtra skont il-belt…",
+    "time_just_now": "għadu kemm",
+    "time_min_ago_one": "minuta ilu",
+    "time_min_ago_other": "{n} minuti ilu",
+    "time_hour_ago_one": "siegħa ilu",
+    "time_hour_ago_other": "{n} sigħat ilu"
+  },
+  "browse_page": {
+    "offering_title": "Fornituri ta' {category} qrib tiegħek",
+    "seeking_title": "Nies li jeħtieġu {category}",
+    "subtitle": "Kulħadd li bħalissa huwa viżibbli. Filtra skont il-belt jekk trid.",
+    "loading": "Qed jgħabbi…",
+    "not_registered_body": "Għad m'għandekx lista attiva fuq dan l-apparat.",
+    "register_link": "← Lura lejn il-paġna ewlenija",
+    "pending_confirmation": "Qed nikkonfermaw il-ħlas tiegħek…",
+    "empty_note": "Ħadd mhu viżibbli bħalissa. Din il-lista tiġi aġġornata awtomatikament.",
     "call_btn": "📞 Ċempel",
     "city_filter_placeholder": "Filtra skont il-belt…",
     "time_just_now": "għadu kemm",

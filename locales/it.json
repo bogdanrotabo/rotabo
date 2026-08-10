@@ -22,6 +22,57 @@
     "badge_live": "Percorso condiviso in tempo reale",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "DI COSA HAI BISOGNO?",
+    "section_title": "Hai bisogno di qualcosa? Trova qualcuno.",
+    "section_lead": "Scegli ciò di cui hai bisogno — o iscriviti come qualcuno che può aiutare.",
+    "need_btn": "Ne ho bisogno",
+    "offer_btn": "Lo offro",
+    "drive": {
+      "name": "Autista",
+      "desc": "Un autista che viene da te e guida la tua auto."
+    },
+    "move": {
+      "name": "Traslochi",
+      "desc": "Mobili, scatoloni o un'intera casa — con un furgone e un autista.",
+      "seeking_title": "Hai bisogno di aiuto per traslocare?",
+      "seeking_lead": "Dicci cosa deve essere spostato e dove.",
+      "offering_title": "Offri aiuto per traslochi",
+      "offering_lead": "Iscriviti così chi ha bisogno di una mano può trovarti."
+    },
+    "build": {
+      "name": "Cantiere",
+      "desc": "Escavatori, generatori, gru — attrezzature pesanti con operatore.",
+      "seeking_title": "Hai bisogno di un mezzo o di un operatore?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove.",
+      "offering_title": "Offri mezzi o competenze",
+      "offering_lead": "Iscrivi il tuo mezzo o le tue competenze così chi ne ha bisogno può trovarti."
+    },
+    "tools": {
+      "name": "Attrezzi",
+      "desc": "Utensili elettrici e macchinari, pronti quando ti servono.",
+      "seeking_title": "Hai bisogno di un attrezzo o un macchinario?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove.",
+      "offering_title": "Offri i tuoi attrezzi",
+      "offering_lead": "Iscrivi ciò che hai così chi ne ha bisogno può trovarti."
+    },
+    "home": {
+      "name": "Casa",
+      "desc": "Elettricisti, idraulici, pulizie e altri aiuti domestici.",
+      "seeking_title": "Hai bisogno di aiuto in casa?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove.",
+      "offering_title": "Offri aiuto domestico",
+      "offering_lead": "Iscrivi le tue competenze così chi ne ha bisogno può trovarti."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Assistenza stradale — batteria, gomme, traino, meccanico mobile.",
+      "seeking_title": "Hai bisogno di assistenza stradale?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove.",
+      "offering_title": "Offri assistenza stradale",
+      "offering_lead": "Iscrivi le tue competenze così chi ne ha bisogno può trovarti."
+    }
+  },
   "problem": {
     "eyebrow": "PERCHÉ LASCIARE LA TUA AUTO?",
     "h2": "Il problema con tutte le altre opzioni",
@@ -156,6 +207,15 @@
     "submit": "Continua al pagamento",
     "error": "Qualcosa è andato storto. Riprova."
   },
+  "generic_form": {
+    "name_label": "Il tuo nome",
+    "phone_label": "Numero di telefono",
+    "city_label": "Città / zona",
+    "note_label": "Dicci di più (facoltativo)",
+    "note_placeholder": "Qualche dettaglio aiuta — cosa, quando, quanto…",
+    "submit": "Continua al pagamento",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
   "searching_page": {
     "fare_remaining": "Saldo stimato: ~{amount} CHF, da pagare direttamente al tuo autista.",
     "cancel_btn": "Annulla la richiesta",
@@ -214,6 +274,23 @@
     "register_link": "← Torna alla home",
     "pending_confirmation": "Conferma del pagamento in corso…",
     "empty_note": "Nessun autista visibile al momento. Questa lista si aggiorna automaticamente.",
+    "call_btn": "📞 Chiama",
+    "city_filter_placeholder": "Filtra per città…",
+    "time_just_now": "proprio ora",
+    "time_min_ago_one": "1 minuto fa",
+    "time_min_ago_other": "{n} minuti fa",
+    "time_hour_ago_one": "1 ora fa",
+    "time_hour_ago_other": "{n} ore fa"
+  },
+  "browse_page": {
+    "offering_title": "Chi offre {category} vicino a te",
+    "seeking_title": "Persone che cercano {category}",
+    "subtitle": "Tutti quelli attualmente visibili. Filtra per città se vuoi.",
+    "loading": "Caricamento…",
+    "not_registered_body": "Non hai ancora un annuncio su questo dispositivo.",
+    "register_link": "← Torna alla home",
+    "pending_confirmation": "Conferma del pagamento in corso…",
+    "empty_note": "Nessuno è visibile al momento. Questa lista si aggiorna automaticamente.",
     "call_btn": "📞 Chiama",
     "city_filter_placeholder": "Filtra per città…",
     "time_just_now": "proprio ora",

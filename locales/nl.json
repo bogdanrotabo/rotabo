@@ -22,6 +22,57 @@
     "badge_live": "Live rit delen",
     "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "WAT HEB JE NODIG?",
+    "section_title": "Iets nodig? Vind iemand.",
+    "section_lead": "Kies wat je nodig hebt — of meld je aan als iemand die kan helpen.",
+    "need_btn": "Ik heb dit nodig",
+    "offer_btn": "Ik bied dit aan",
+    "drive": {
+      "name": "Chauffeur",
+      "desc": "Een chauffeur die naar je toe komt en je eigen auto rijdt."
+    },
+    "move": {
+      "name": "Verhuizen",
+      "desc": "Meubels, dozen, of een heel huis — met bus en chauffeur.",
+      "seeking_title": "Hulp nodig bij verhuizen?",
+      "seeking_lead": "Vertel ons wat er verhuisd moet worden en waarheen.",
+      "offering_title": "Bied verhuishulp aan",
+      "offering_lead": "Meld je aan zodat mensen die hulp nodig hebben je kunnen vinden."
+    },
+    "build": {
+      "name": "Bouw",
+      "desc": "Graafmachines, generatoren, hoogwerkers — zwaar materieel met bediener.",
+      "seeking_title": "Materieel of een bediener nodig?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
+      "offering_title": "Bied materieel of je diensten aan",
+      "offering_lead": "Meld je machine of vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
+    },
+    "tools": {
+      "name": "Gereedschap",
+      "desc": "Elektrisch gereedschap en machines, klaar wanneer je ze nodig hebt.",
+      "seeking_title": "Gereedschap of een machine nodig?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
+      "offering_title": "Bied je gereedschap aan",
+      "offering_lead": "Meld aan wat je hebt zodat mensen die het nodig hebben je kunnen vinden."
+    },
+    "home": {
+      "name": "Huis",
+      "desc": "Elektriciens, loodgieters, schoonmaak en andere hulp in huis.",
+      "seeking_title": "Hulp nodig in huis?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
+      "offering_title": "Bied hulp in huis aan",
+      "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
+    },
+    "auto": {
+      "name": "Auto",
+      "desc": "Hulp onderweg — accu, band, sleepdienst, mobiele monteur.",
+      "seeking_title": "Hulp nodig onderweg?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
+      "offering_title": "Bied hulp onderweg aan",
+      "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
+    }
+  },
   "problem": {
     "eyebrow": "WAAROM JE AUTO ACHTERLATEN?",
     "h2": "Het probleem met elke andere optie",
@@ -156,6 +207,15 @@
     "submit": "Doorgaan naar betaling",
     "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
+  "generic_form": {
+    "name_label": "Je naam",
+    "phone_label": "Telefoonnummer",
+    "city_label": "Stad / regio",
+    "note_label": "Vertel ons meer (optioneel)",
+    "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…",
+    "submit": "Doorgaan naar betaling",
+    "error": "Er ging iets mis. Probeer het opnieuw."
+  },
   "searching_page": {
     "fare_remaining": "Geschat resterend bedrag: ~{amount} CHF, rechtstreeks aan je chauffeur te betalen.",
     "cancel_btn": "Aanvraag annuleren",
@@ -214,6 +274,23 @@
     "register_link": "← Terug naar home",
     "pending_confirmation": "Je betaling wordt bevestigd…",
     "empty_note": "Er zijn nu geen chauffeurs zichtbaar. Deze lijst wordt automatisch ververst.",
+    "call_btn": "📞 Bellen",
+    "city_filter_placeholder": "Filter op stad…",
+    "time_just_now": "zojuist",
+    "time_min_ago_one": "1 min geleden",
+    "time_min_ago_other": "{n} min geleden",
+    "time_hour_ago_one": "1 uur geleden",
+    "time_hour_ago_other": "{n} uur geleden"
+  },
+  "browse_page": {
+    "offering_title": "{category}-aanbieders bij jou in de buurt",
+    "seeking_title": "Mensen die {category} nodig hebben",
+    "subtitle": "Iedereen die nu zichtbaar is. Filter eventueel op stad.",
+    "loading": "Laden…",
+    "not_registered_body": "Je hebt op dit apparaat nog geen actieve vermelding.",
+    "register_link": "← Terug naar home",
+    "pending_confirmation": "Je betaling wordt bevestigd…",
+    "empty_note": "Er is nu niemand zichtbaar. Deze lijst wordt automatisch ververst.",
     "call_btn": "📞 Bellen",
     "city_filter_placeholder": "Filter op stad…",
     "time_just_now": "zojuist",

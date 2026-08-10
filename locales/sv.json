@@ -10,6 +10,57 @@
     "fine": "Fungerar i din webbläsare — ingen app store behövs.",
     "badge_verified": "Verifierade förare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "VAD BEHÖVER DU?",
+    "section_title": "Behöver du något? Hitta någon.",
+    "section_lead": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
+    "need_btn": "Jag behöver det här",
+    "offer_btn": "Jag erbjuder det här",
+    "drive": {
+      "name": "Förare",
+      "desc": "En förare som kommer till dig och kör din egen bil."
+    },
+    "move": {
+      "name": "Flytt",
+      "desc": "Möbler, kartonger eller ett helt hem — med skåpbil och förare.",
+      "seeking_title": "Behöver du hjälp med flytten?",
+      "seeking_lead": "Berätta vad som ska flyttas och vart.",
+      "offering_title": "Erbjud flytthjälp",
+      "offering_lead": "Registrera dig så att de som behöver en hand kan hitta dig."
+    },
+    "build": {
+      "name": "Bygg",
+      "desc": "Grävmaskiner, generatorer, liftar — tunga maskiner med förare.",
+      "seeking_title": "Behöver du maskiner eller en förare?",
+      "seeking_lead": "Berätta vad du behöver och var.",
+      "offering_title": "Erbjud maskiner eller tjänster",
+      "offering_lead": "Registrera din maskin eller dina kunskaper så att de som behöver dem kan hitta dig."
+    },
+    "tools": {
+      "name": "Verktyg",
+      "desc": "Elverktyg och maskiner, redo när du behöver dem.",
+      "seeking_title": "Behöver du ett verktyg eller en maskin?",
+      "seeking_lead": "Berätta vad du behöver och var.",
+      "offering_title": "Erbjud dina verktyg",
+      "offering_lead": "Registrera det du har så att de som behöver det kan hitta dig."
+    },
+    "home": {
+      "name": "Hem",
+      "desc": "Elektriker, rörmokare, städning och annan hjälp hemma.",
+      "seeking_title": "Behöver du hjälp hemma?",
+      "seeking_lead": "Berätta vad du behöver och var.",
+      "offering_title": "Erbjud hjälp i hemmet",
+      "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
+    },
+    "auto": {
+      "name": "Bil",
+      "desc": "Hjälp på vägen — batteri, däck, bärgning, mobil mekaniker.",
+      "seeking_title": "Behöver du hjälp på vägen?",
+      "seeking_lead": "Berätta vad du behöver och var.",
+      "offering_title": "Erbjud hjälp på vägen",
+      "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
+    }
+  },
   "problem": {
     "eyebrow": "VARFÖR LÄMNA BILEN KVAR?", "h2": "Problemet med alla andra alternativ",
     "cross1": "Ingen taxi.", "cross2": "Ingen övernattparkering.", "cross3": "Inget hämtande av den imorgon.", "cross4": "Ingen andra resa för att hämta den.",
@@ -120,6 +171,15 @@
     "submit": "Fortsätt till betalning",
     "error": "Något gick fel. Försök igen."
   },
+  "generic_form": {
+    "name_label": "Ditt namn",
+    "phone_label": "Telefonnummer",
+    "city_label": "Stad / område",
+    "note_label": "Berätta mer (valfritt)",
+    "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…",
+    "submit": "Fortsätt till betalning",
+    "error": "Något gick fel. Försök igen."
+  },
   "searching_page": {
     "fare_remaining": "Uppskattat återstående belopp: ~{amount} CHF, betalas direkt till din förare.",
     "cancel_btn": "Avbryt förfrågan",
@@ -178,6 +238,23 @@
     "register_link": "← Tillbaka till startsidan",
     "pending_confirmation": "Bekräftar din betalning…",
     "empty_note": "Inga förare är synliga just nu. Listan uppdateras automatiskt.",
+    "call_btn": "📞 Ring",
+    "city_filter_placeholder": "Filtrera efter stad…",
+    "time_just_now": "just nu",
+    "time_min_ago_one": "1 min sedan",
+    "time_min_ago_other": "{n} min sedan",
+    "time_hour_ago_one": "1 timme sedan",
+    "time_hour_ago_other": "{n} timmar sedan"
+  },
+  "browse_page": {
+    "offering_title": "{category}-leverantörer nära dig",
+    "seeking_title": "Personer som behöver {category}",
+    "subtitle": "Alla som är synliga just nu. Filtrera efter stad om du vill.",
+    "loading": "Laddar…",
+    "not_registered_body": "Du har ännu ingen aktiv annons på den här enheten.",
+    "register_link": "← Tillbaka till startsidan",
+    "pending_confirmation": "Bekräftar din betalning…",
+    "empty_note": "Ingen är synlig just nu. Listan uppdateras automatiskt.",
     "call_btn": "📞 Ring",
     "city_filter_placeholder": "Filtrera efter stad…",
     "time_just_now": "just nu",

@@ -10,6 +10,57 @@
     "fine": "Tarayıcında çalışır — uygulama mağazasına gerek yok.",
     "badge_verified": "Doğrulanmış sürücüler", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
   },
+  "categories": {
+    "section_eyebrow": "NEYE İHTİYACIN VAR?",
+    "section_title": "Bir şeye mi ihtiyacın var? Birini bul.",
+    "section_lead": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
+    "need_btn": "Buna ihtiyacım var",
+    "offer_btn": "Bunu sunuyorum",
+    "drive": {
+      "name": "Şoför",
+      "desc": "Sana gelip kendi arabanı kullanacak bir şoför."
+    },
+    "move": {
+      "name": "Nakliye",
+      "desc": "Mobilya, kutular ya da koca bir ev — minibüs ve şoförle.",
+      "seeking_title": "Taşınmada yardıma mı ihtiyacın var?",
+      "seeking_lead": "Neyin taşınacağını ve nereye taşınacağını anlat.",
+      "offering_title": "Taşınma yardımı sun",
+      "offering_lead": "Kaydol ki yardıma ihtiyacı olanlar seni bulsun."
+    },
+    "build": {
+      "name": "İnşaat",
+      "desc": "Ekskavatörler, jeneratörler, vinçler — operatörlü ağır ekipman.",
+      "seeking_title": "Ekipmana ya da operatöre mi ihtiyacın var?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
+      "offering_title": "Ekipman ya da hizmet sun",
+      "offering_lead": "Makineni ya da becerilerini kaydet ki onlara ihtiyacı olanlar seni bulsun."
+    },
+    "tools": {
+      "name": "Aletler",
+      "desc": "İhtiyacın olduğunda hazır elektrikli aletler ve makineler.",
+      "seeking_title": "Bir alete ya da makineye mi ihtiyacın var?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
+      "offering_title": "Aletlerini sun",
+      "offering_lead": "Sahip olduklarını kaydet ki ihtiyacı olanlar seni bulsun."
+    },
+    "home": {
+      "name": "Ev",
+      "desc": "Elektrikçiler, tesisatçılar, temizlik ve diğer ev yardımları.",
+      "seeking_title": "Evde yardıma mı ihtiyacın var?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
+      "offering_title": "Ev yardımı sun",
+      "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
+    },
+    "auto": {
+      "name": "Araba",
+      "desc": "Yol yardımı — akü, lastik, çekici, gezici tamirci.",
+      "seeking_title": "Yolda yardıma mı ihtiyacın var?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
+      "offering_title": "Yol yardımı sun",
+      "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
+    }
+  },
   "problem": {
     "eyebrow": "ARABANI NEDEN GERİDE BIRAKASIN?", "h2": "Diğer her seçeneğin sorunu",
     "cross1": "Taksi yok.", "cross2": "Sabaha kadar park yok.", "cross3": "Yarın geri gelip alma derdi yok.", "cross4": "Onu almak için ikinci bir yolculuk yok.",
@@ -120,6 +171,15 @@
     "submit": "Ödemeye geç",
     "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
   },
+  "generic_form": {
+    "name_label": "Adın",
+    "phone_label": "Telefon numarası",
+    "city_label": "Şehir / bölge",
+    "note_label": "Bize daha fazla anlat (isteğe bağlı)",
+    "note_placeholder": "Birkaç ayrıntı yardımcı olur — ne, ne zaman, ne kadar…",
+    "submit": "Ödemeye devam et",
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+  },
   "searching_page": {
     "fare_remaining": "Tahmini kalan ücret: ~{amount} CHF, doğrudan sürücüne ödenir.",
     "cancel_btn": "Talebi iptal et",
@@ -178,6 +238,23 @@
     "register_link": "← Ana sayfaya dön",
     "pending_confirmation": "Ödemen onaylanıyor…",
     "empty_note": "Şu anda görünür sürücü yok. Bu liste otomatik olarak yenilenir.",
+    "call_btn": "📞 Ara",
+    "city_filter_placeholder": "Şehre göre filtrele…",
+    "time_just_now": "az önce",
+    "time_min_ago_one": "1 dakika önce",
+    "time_min_ago_other": "{n} dakika önce",
+    "time_hour_ago_one": "1 saat önce",
+    "time_hour_ago_other": "{n} saat önce"
+  },
+  "browse_page": {
+    "offering_title": "Yakınındaki {category} sağlayıcıları",
+    "seeking_title": "{category} ihtiyacı olanlar",
+    "subtitle": "Şu anda görünür olan herkes. İstersen şehre göre filtrele.",
+    "loading": "Yükleniyor…",
+    "not_registered_body": "Bu cihazda henüz aktif bir ilanın yok.",
+    "register_link": "← Ana sayfaya dön",
+    "pending_confirmation": "Ödemen onaylanıyor…",
+    "empty_note": "Şu anda kimse görünür değil. Bu liste otomatik olarak yenilenir.",
     "call_btn": "📞 Ara",
     "city_filter_placeholder": "Şehre göre filtrele…",
     "time_just_now": "az önce",
