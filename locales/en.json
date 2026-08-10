@@ -8,8 +8,8 @@
   },
   "hero": {
     "origin_badge": "🇨🇭 Made in Switzerland — for the whole world",
-    "pill": "Need Me? Find Me!",
-    "tagline1": "Need Me?",
+    "pill": "Need Me! Find Me!",
+    "tagline1": "Need Me!",
     "tagline2": "Find Me!",
     "tagline3": "Your car.",
     "lede": "Pick what you need — or list yourself as someone who can help.",
@@ -129,6 +129,14 @@
       "seeking_lead": "Tell us what you need and where.",
       "offering_title": "Offer roadside help",
       "offering_lead": "List your skills so people who need them can find you."
+    },
+    "care": {
+      "name": "Borrowed Grandparents",
+      "desc": "Retirees 60+ who give young families a few hours of childcare, company, and stories.",
+      "seeking_title": "Need a hand with the kids?",
+      "seeking_lead": "Tell us what you need and where — a few hours a week of care and company.",
+      "offering_title": "Offer to be a borrowed grandparent",
+      "offering_lead": "List yourself so families nearby who'd love your time can find you."
     }
   },
   "problem": {
@@ -241,6 +249,7 @@
     "resend": "Resend code"
   },
   "visibility": {
+    "email_hint": "Use a real address — we'll send a verification code here before your listing goes live.",
     "phone_hint": "Include your country code — this number will be visible to whoever is browsing.",
     "address_hint": "This will be visible to whoever is browsing, same as your phone number.",
     "tier_label": "Visibility",

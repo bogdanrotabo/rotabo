@@ -8,8 +8,8 @@
   },
   "hero": {
     "origin_badge": "🇨🇭 Realizzato in Svizzera — per tutto il mondo",
-    "pill": "Hai bisogno di me? Trovami!",
-    "tagline1": "Hai bisogno di me?",
+    "pill": "Hai bisogno di me! Trovami!",
+    "tagline1": "Hai bisogno di me!",
     "tagline2": "Trovami!",
     "tagline3": "La tua auto.",
     "lede": "Scegli ciò di cui hai bisogno — o iscriviti come qualcuno che può aiutare.",
@@ -129,6 +129,14 @@
       "seeking_lead": "Dicci di cosa hai bisogno e dove.",
       "offering_title": "Offri assistenza stradale",
       "offering_lead": "Iscrivi le tue competenze così chi ne ha bisogno può trovarti."
+    },
+    "care": {
+      "name": "Nonni in prestito",
+      "desc": "Pensionati 60+ che offrono alle giovani famiglie alcune ore di aiuto con i bambini, compagnia e storie.",
+      "seeking_title": "Hai bisogno di aiuto con i bambini?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove — alcune ore a settimana di cura e compagnia.",
+      "offering_title": "Offriti come nonno o nonna in prestito",
+      "offering_lead": "Iscriviti così le famiglie della zona che apprezzerebbero il tuo tempo possano trovarti."
     }
   },
   "problem": {
@@ -241,6 +249,7 @@
     "resend": "Reinvia codice"
   },
   "visibility": {
+    "email_hint": "Usa un indirizzo reale — invieremo qui un codice di verifica prima che il tuo annuncio diventi visibile.",
     "phone_hint": "Includi il prefisso internazionale — questo numero sarà visibile a chiunque navighi sul sito.",
     "address_hint": "Questo indirizzo sarà visibile a chiunque navighi sul sito, come il tuo numero di telefono.",
     "tier_label": "Visibilità",

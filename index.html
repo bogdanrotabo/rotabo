@@ -524,9 +524,9 @@
 
 <section class="hero">
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
-  <div class="pill" data-i18n="hero.pill">Need Me? Find Me!</div>
+  <div class="pill" data-i18n="hero.pill">Need Me! Find Me!</div>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
-  <h1 class="tagline"><span data-i18n="hero.tagline1">Need Me?</span><br><span class="accent" data-i18n="hero.tagline2">Find Me!</span></h1>
+  <h1 class="tagline"><span data-i18n="hero.tagline1">Need Me!</span><br><span class="accent" data-i18n="hero.tagline2">Find Me!</span></h1>
   <p class="lede" data-i18n="hero.lede">Pick what you need — or list yourself as someone who can help.</p>
 
   <div class="cta-stack">
@@ -634,6 +634,15 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('auto','offering')">I offer this</button>
       </div>
     </div>
+    <div class="category-card">
+      <div class="cat-icon">👵</div>
+      <h3 data-i18n="categories.care.name">Borrowed Grandparents</h3>
+      <p data-i18n="categories.care.desc">Retirees 60+ who give young families a few hours of childcare, company, and stories.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('care','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('care','offering')">I offer this</button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -711,6 +720,7 @@
       <div class="form-field">
         <label for="fd_email" data-i18n="find_form.email_label">Email</label>
         <input type="email" id="fd_email" name="email" required autocomplete="email">
+        <span class="field-hint" data-i18n="visibility.email_hint">Use a real address — we'll send a verification code here before your listing goes live.</span>
       </div>
       <div class="form-field">
         <label for="fd_city" data-i18n="find_form.city_label">City / location</label>
@@ -760,6 +770,7 @@
       <div class="form-field">
         <label for="bd_email" data-i18n="drive_form.email_label">Email</label>
         <input type="email" id="bd_email" name="email" required autocomplete="email">
+        <span class="field-hint" data-i18n="visibility.email_hint">Use a real address — we'll send a verification code here before your listing goes live.</span>
       </div>
       <div class="form-field">
         <label for="bd_city" data-i18n="drive_form.city_label">City / area of activity</label>
@@ -829,6 +840,7 @@
       <div class="form-field">
         <label for="gl_email" data-i18n="generic_form.email_label">Email</label>
         <input type="email" id="gl_email" name="email" required autocomplete="email">
+        <span class="field-hint" data-i18n="visibility.email_hint">Use a real address — we'll send a verification code here before your listing goes live.</span>
       </div>
       <div class="form-field">
         <label for="gl_city" data-i18n="generic_form.city_label">City / area</label>

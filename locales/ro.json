@@ -8,8 +8,8 @@
   },
   "hero": {
     "origin_badge": "🇨🇭 Făcut în Elveția — pentru toată lumea",
-    "pill": "Ai nevoie de mine? Găsește-mă!",
-    "tagline1": "Ai nevoie de mine?",
+    "pill": "Ai nevoie de mine! Găsește-mă!",
+    "tagline1": "Ai nevoie de mine!",
     "tagline2": "Găsește-mă!",
     "tagline3": "Mașina ta.",
     "lede": "Alege ce ai nevoie — sau listează-te ca cineva care poate ajuta.",
@@ -129,6 +129,14 @@
       "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
       "offering_title": "Oferă ajutor rutier",
       "offering_lead": "Listează-ți abilitățile ca oamenii care au nevoie de ele să te găsească."
+    },
+    "care": {
+      "name": "Bunici de împrumut",
+      "desc": "Pensionari 60+ care oferă familiilor tinere câteva ore de ajutor cu copiii, companie și povești.",
+      "seeking_title": "Ai nevoie de ajutor cu copiii?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde — câteva ore pe săptămână de grijă și companie.",
+      "offering_title": "Oferă-te ca bunic/bunică de împrumut",
+      "offering_lead": "Listează-te ca familiile din zonă care ar aprecia timpul tău să te găsească."
     }
   },
   "problem": {
@@ -241,6 +249,7 @@
     "resend": "Retrimite codul"
   },
   "visibility": {
+    "email_hint": "Folosește o adresă reală — trimitem aici un cod de verificare înainte ca listarea ta să devină vizibilă.",
     "phone_hint": "Include prefixul de țară — acest număr va fi vizibil pentru oricine navighează.",
     "address_hint": "Aceasta va fi vizibilă pentru oricine navighează, la fel ca numărul tău de telefon.",
     "tier_label": "Vizibilitate",
