@@ -4,7 +4,7 @@
     "safety": "Sécurité",
     "business": "Pour les entreprises",
     "drive": "Devenir chauffeur",
-    "drivers": "Drivers"
+    "drivers": "Chauffeurs"
   },
   "hero": {
     "origin_badge": "🇨🇭 Conçu en Suisse — pour le monde entier",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Leur voiture. Vos horaires."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo recherche des chauffeurs. Partout.",
+    "lead": "Nous lançons une recherche mondiale de personnes qui veulent conduire pour que quelqu'un d'autre n'ait pas à le faire.",
+    "req": "Tu n'as pas besoin de voiture. Tu n'as pas besoin d'entreprise. Tu as besoin d'un permis valide, d'un esprit clair et d'une raison de te présenter.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Comment ça marche",
+      "body": "Quelqu'un demande un chauffeur dans ta ville. Tu vois le point de rendez-vous et ce que rapporte le trajet. Tu acceptes celles que tu veux. Tu conduis sa voiture, avec lui à bord, et il rentre chez lui en sécurité."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Où",
+      "body": "Partout. Rotabo est disponible en 38 langues dès le premier jour. Si personne ne conduit encore dans ta ville, sois le premier — les premiers chauffeurs reçoivent chaque demande qui arrive."
     },
-    "cta": "Become a driver"
+    "cta": "Devenir chauffeur"
   },
   "safety": {
     "eyebrow": "CEUX QUI CONDUISENT",

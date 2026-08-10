@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Drivers" },
+  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ" },
   "hero": {
     "origin_badge": "🇨🇭 Magħmul fl-Isvizzera — għad-dinja kollha",
     "pill": "SEWWIEQA B'SKOP · IL-KARROZZA TIEGĦEK · IT-TRIQ TIEGĦEK LEJN DARK",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Il-karozza tagħhom. Is-sigħat tiegħek."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo qed tfittex sewwieqa. Kullimkien.",
+    "lead": "Qed nibdew tfittxija dinjija għal nies li jridu jsuqu biex ħaddieħor ma jkollux għalfejn.",
+    "req": "M'għandekx bżonn karozza. M'għandekx bżonn kumpanija. Għandek bżonn liċenzja tas-sewqan valida, moħħ ċar, u raġuni biex tidher.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Kif taħdem",
+      "body": "Xi ħadd jitlob sewwieq fil-belt tiegħek. Tara l-punt tal-ġbir u kemm tħallas il-vjaġġ. Taċċetta dawk li trid. Ssuq il-karozza tiegħu, hu ġewwa fiha, u jasal id-dar bla periklu."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Fejn",
+      "body": "Kullimkien. Rotabo hija disponibbli fi 38 lingwa mill-ewwel jum. Jekk għadu ħadd ma jsuq fil-belt tiegħek, kun l-ewwel wieħed — l-ewwel sewwieqa jirċievu kull talba li tasal."
     },
-    "cta": "Become a driver"
+    "cta": "Sir sewwieq"
   },
   "safety": {
     "eyebrow": "IN-NIES LI JSUQU", "h2": "Sewwieqa li jsuqu għal raġuni",

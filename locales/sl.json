@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik", "drivers": "Drivers" },
+  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik", "drivers": "Vozniki" },
   "hero": {
     "origin_badge": "🇨🇭 Izdelano v Švici — za ves svet",
     "pill": "VOZNIKI S POSLANSTVOM · TVOJ AVTOMOBIL · TVOJA POT DOMOV",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Njihov avto. Tvoje ure."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo išče voznike. Povsod.",
+    "lead": "Začenjamo svetovno iskanje ljudi, ki želijo voziti, da tega ne bi moral nekdo drug.",
+    "req": "Ne potrebuješ avtomobila. Ne potrebuješ podjetja. Potrebuješ veljavno vozniško dovoljenje, jasno glavo in razlog, da se prikažeš.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Kako deluje",
+      "body": "Nekdo v tvojem mestu zaprosi za voznika. Vidiš točko prevzema in koliko plača vožnja. Sprejmeš tiste, ki jih želiš. Voziš njegov avto, on je notri, in varno pride domov."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Kje",
+      "body": "Kjerkoli. Rotabo je od prvega dne na voljo v 38 jezikih. Če v tvojem mestu še nihče ne vozi, bodi prvi — prvi vozniki dobijo vsako prispelo povpraševanje."
     },
-    "cta": "Become a driver"
+    "cta": "Postani voznik"
   },
   "safety": {
     "eyebrow": "LJUDJE, KI VOZIJO", "h2": "Vozniki, ki vozijo z razlogom",

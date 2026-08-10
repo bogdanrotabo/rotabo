@@ -4,7 +4,7 @@
     "safety": "Ασφάλεια",
     "business": "Για επιχειρήσεις",
     "drive": "Γίνε οδηγός",
-    "drivers": "Drivers"
+    "drivers": "Οδηγοί"
   },
   "hero": {
     "origin_badge": "🇨🇭 Κατασκευάστηκε στην Ελβετία — για όλο τον κόσμο",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Το αυτοκίνητό τους. Οι ώρες σου."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Η Rotabo αναζητά οδηγούς. Παντού.",
+    "lead": "Ξεκινάμε μια παγκόσμια αναζήτηση ανθρώπων που θέλουν να οδηγούν, ώστε να μη χρειαστεί να το κάνει κάποιος άλλος.",
+    "req": "Δεν χρειάζεσαι αυτοκίνητο. Δεν χρειάζεσαι εταιρεία. Χρειάζεσαι ισχύουσα άδεια οδήγησης, καθαρό μυαλό και έναν λόγο να εμφανιστείς.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Πώς λειτουργεί",
+      "body": "Κάποιος ζητά οδηγό στην πόλη σου. Βλέπεις το σημείο παραλαβής και πόσο πληρώνει η διαδρομή. Αποδέχεσαι όσες θέλεις. Οδηγείς το αυτοκίνητό του, ενώ εκείνος είναι μέσα, και φτάνει σπίτι με ασφάλεια."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Πού",
+      "body": "Οπουδήποτε. Η Rotabo είναι διαθέσιμη σε 38 γλώσσες από την πρώτη μέρα. Αν κανείς δεν οδηγεί ακόμα στην πόλη σου, γίνε ο πρώτος — οι πρώτοι οδηγοί λαμβάνουν κάθε αίτημα που έρχεται."
     },
-    "cta": "Become a driver"
+    "cta": "Γίνε οδηγός"
   },
   "safety": {
     "eyebrow": "ΟΙ ΑΝΘΡΩΠΟΙ ΠΟΥ ΟΔΗΓΟΥΝ",

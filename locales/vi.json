@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Drivers" },
+  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế" },
   "hero": {
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
     "pill": "TÀI XẾ CÓ SỨ MỆNH · XE CỦA BẠN · ĐƯỜNG VỀ NHÀ CỦA BẠN",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Xe của họ. Giờ của bạn."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo đang tìm kiếm tài xế. Khắp mọi nơi.",
+    "lead": "Chúng tôi bắt đầu tìm kiếm trên toàn thế giới những người muốn lái xe, để người khác không phải làm điều đó.",
+    "req": "Bạn không cần xe hơi. Bạn không cần công ty. Bạn cần bằng lái hợp lệ, đầu óc tỉnh táo, và một lý do để xuất hiện.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Cách hoạt động",
+      "body": "Ai đó yêu cầu một tài xế trong thành phố của bạn. Bạn thấy điểm đón và số tiền chuyến đi trả. Bạn chấp nhận những yêu cầu bạn muốn. Bạn lái xe của họ, có họ ngồi trong đó, và họ về nhà an toàn."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Ở đâu",
+      "body": "Bất cứ đâu. Rotabo có mặt bằng 38 ngôn ngữ ngay từ ngày đầu. Nếu chưa ai lái xe ở thành phố của bạn, hãy là người đầu tiên — những tài xế đầu tiên sẽ nhận được mọi yêu cầu gửi đến."
     },
-    "cta": "Become a driver"
+    "cta": "Trở thành tài xế"
   },
   "safety": {
     "eyebrow": "NHỮNG NGƯỜI CẦM LÁI", "h2": "Những tài xế lái xe vì một lý do",

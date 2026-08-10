@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Drivers" },
+  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Swiss — untuk seluruh dunia",
     "pill": "PENGEMUDI DENGAN TUJUAN · MOBIL ANDA · JALAN PULANG ANDA",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Mobil mereka. Jam kerjamu."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo sedang mencari pengemudi. Di mana saja.",
+    "lead": "Kami memulai pencarian di seluruh dunia untuk orang-orang yang ingin mengemudi, agar orang lain tidak perlu melakukannya.",
+    "req": "Kamu tidak perlu mobil. Kamu tidak perlu perusahaan. Kamu perlu SIM yang berlaku, kepala yang jernih, dan alasan untuk hadir.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Cara kerja",
+      "body": "Seseorang meminta pengemudi di kotamu. Kamu melihat titik jemput dan berapa bayaran perjalanan. Kamu menerima yang kamu inginkan. Kamu mengemudikan mobil mereka, dengan mereka di dalamnya, dan mereka pulang dengan selamat."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Di mana",
+      "body": "Di mana saja. Rotabo tersedia dalam 38 bahasa sejak hari pertama. Jika belum ada yang mengemudi di kotamu, jadilah yang pertama — pengemudi pertama mendapatkan setiap permintaan yang masuk."
     },
-    "cta": "Become a driver"
+    "cta": "Jadi pengemudi"
   },
   "safety": {
     "eyebrow": "ORANG-ORANG DI BALIK KEMUDI", "h2": "Pengemudi yang menyetir demi sebuah alasan",

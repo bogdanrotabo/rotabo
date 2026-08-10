@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Drivers" },
+  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök" },
   "hero": {
     "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
     "pill": "SOFŐRÖK CÉLLAL · A TE AUTÓD · A TE UTAD HAZA",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Az ő autójuk. A te óráid."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "A Rotabo sofőröket keres. Mindenhol.",
+    "lead": "Világszintű keresést indítunk olyan emberek után, akik szeretnének vezetni, hogy másnak ne kelljen.",
+    "req": "Nincs szükséged autóra. Nincs szükséged cégre. Érvényes jogosítványra, tiszta fejre és egy okra van szükséged, hogy megjelenj.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Hogyan működik",
+      "body": "Valaki sofőrt kér a városodban. Látod a felszállási pontot és hogy mennyit fizet az út. Elfogadod, amit szeretnél. Az ő autóját vezeted, ő ül benne, és biztonságban hazaér."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Hol",
+      "body": "Bárhol. A Rotabo az első naptól kezdve 38 nyelven elérhető. Ha a városodban még senki sem vezet, légy te az első — az első sofőrök megkapnak minden beérkező kérést."
     },
-    "cta": "Become a driver"
+    "cta": "Legyél sofőr"
   },
   "safety": {
     "eyebrow": "AKIK VEZETNEK", "h2": "Sofőrök, akiknek célja van",

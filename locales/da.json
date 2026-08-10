@@ -4,7 +4,7 @@
     "safety": "Sikkerhed",
     "business": "Til virksomheder",
     "drive": "Bliv chauffør",
-    "drivers": "Drivers"
+    "drivers": "Chauffører"
   },
   "hero": {
     "origin_badge": "🇨🇭 Lavet i Schweiz — til hele verden",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Deres bil. Dine timer."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo leder efter chauffører. Overalt.",
+    "lead": "Vi starter en verdensomspændende søgning efter folk, der vil køre, så en anden ikke behøver at gøre det.",
+    "req": "Du har ikke brug for en bil. Du har ikke brug for et firma. Du har brug for et gyldigt kørekort, et klart hoved og en grund til at møde op.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Sådan fungerer det",
+      "body": "Nogen anmoder om en chauffør i din by. Du ser afhentningsstedet og hvad turen betaler. Du accepterer dem, du vil have. Du kører deres bil, mens de sidder i den, og de kommer sikkert hjem."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Hvor",
+      "body": "Overalt. Rotabo er tilgængelig på 38 sprog fra dag ét. Hvis ingen endnu kører i din by, så vær den første — de første chauffører får hver eneste forespørgsel, der kommer ind."
     },
-    "cta": "Become a driver"
+    "cta": "Bliv chauffør"
   },
   "safety": {
     "eyebrow": "MENNESKERNE, DER KØRER",

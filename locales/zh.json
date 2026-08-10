@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "Drivers" },
+  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "司机" },
   "hero": {
     "origin_badge": "🇨🇭 瑞士制造 — 服务全世界",
     "pill": "有使命感的司机 · 您的爱车 · 您的回家路",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "他们的车，你的时间。"
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo 正在招募司机。遍布各地。",
+    "lead": "我们正在全球范围内寻找愿意开车的人，这样别人就不必开车了。",
+    "req": "你不需要汽车。你不需要公司。你只需要有效驾照、清醒的头脑，以及一个出车的理由。",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "如何运作",
+      "body": "有人在你所在的城市请求司机。你会看到接送地点和这次行程的报酬。你可以接受你想接的请求。你驾驶对方的车，载着对方，安全送他们回家。"
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "在哪里",
+      "body": "任何地方。Rotabo 从第一天起就支持 38 种语言。如果你所在的城市还没有人开车，那就做第一个——最早加入的司机会收到每一个新请求。"
     },
-    "cta": "Become a driver"
+    "cta": "成为司机"
   },
   "safety": {
     "eyebrow": "驾驶背后的人", "h2": "为一个理由而驾驶的司机",

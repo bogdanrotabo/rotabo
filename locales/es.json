@@ -4,7 +4,7 @@
     "safety": "Seguridad",
     "business": "Para empresas",
     "drive": "Conviértete en conductor",
-    "drivers": "Drivers"
+    "drivers": "Conductores"
   },
   "hero": {
     "origin_badge": "🇨🇭 Hecho en Suiza — para todo el mundo",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Su coche. Tus horas."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo busca conductores. En todas partes.",
+    "lead": "Estamos iniciando una búsqueda mundial de personas que quieran conducir para que otra persona no tenga que hacerlo.",
+    "req": "No necesitas un coche. No necesitas una empresa. Necesitas un carné de conducir válido, la cabeza despejada y un motivo para presentarte.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Cómo funciona",
+      "body": "Alguien solicita un conductor en tu ciudad. Ves el punto de recogida y cuánto paga el trayecto. Aceptas los que quieras. Conduces su coche, con él dentro, y llega a casa sano y salvo."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Dónde",
+      "body": "En cualquier lugar. Rotabo está disponible en 38 idiomas desde el primer día. Si todavía nadie conduce en tu ciudad, sé el primero — los primeros conductores reciben cada solicitud que llega."
     },
-    "cta": "Become a driver"
+    "cta": "Conviértete en conductor"
   },
   "safety": {
     "eyebrow": "LAS PERSONAS QUE CONDUCEN",

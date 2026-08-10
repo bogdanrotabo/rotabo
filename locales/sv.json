@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Drivers" },
+  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare" },
   "hero": {
     "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
     "pill": "FÖRARE MED ETT SYFTE · DIN BIL · DIN VÄG HEM",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Deras bil. Dina timmar."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo söker förare. Överallt.",
+    "lead": "Vi startar en global sökning efter människor som vill köra, så att någon annan inte behöver.",
+    "req": "Du behöver ingen bil. Du behöver inget företag. Du behöver ett giltigt körkort, ett klart huvud och en anledning att dyka upp.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Så fungerar det",
+      "body": "Någon efterfrågar en förare i din stad. Du ser upphämtningsplatsen och vad resan betalar. Du accepterar de förfrågningar du vill. Du kör deras bil, med dem i den, och de kommer hem tryggt."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Var",
+      "body": "Var som helst. Rotabo finns på 38 språk från dag ett. Om ingen ännu kör i din stad, var den första — de första förarna får varje inkommande förfrågan."
     },
-    "cta": "Become a driver"
+    "cta": "Bli förare"
   },
   "safety": {
     "eyebrow": "MÄNNISKORNA SOM KÖR", "h2": "Förare som kör av en anledning",

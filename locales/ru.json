@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Как это работает", "safety": "Безопасность", "business": "Для бизнеса", "drive": "Стать водителем", "drivers": "Drivers" },
+  "nav": { "how": "Как это работает", "safety": "Безопасность", "business": "Для бизнеса", "drive": "Стать водителем", "drivers": "Водители" },
   "hero": {
     "origin_badge": "🇨🇭 Сделано в Швейцарии — для всего мира",
     "pill": "ВОДИТЕЛИ С ЦЕЛЬЮ · ВАША МАШИНА · ВАШ ПУТЬ ДОМОЙ",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Их машина. Ваше время."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo ищет водителей. Везде.",
+    "lead": "Мы начинаем всемирный поиск людей, которые хотят водить, чтобы кому-то другому не пришлось.",
+    "req": "Автомобиль не нужен. Компания не нужна. Нужны действующие права, ясная голова и причина, чтобы прийти.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Как это работает",
+      "body": "Кто-то в вашем городе запрашивает водителя. Вы видите точку встречи и сколько платят за поездку. Вы принимаете те заявки, которые хотите. Вы ведёте его машину, пока он сидит внутри, и он благополучно добирается домой."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Где",
+      "body": "Где угодно. Rotabo доступен на 38 языках с первого дня. Если в вашем городе пока никто не ездит, станьте первым — первые водители получают каждую поступающую заявку."
     },
-    "cta": "Become a driver"
+    "cta": "Стать водителем"
   },
   "safety": {
     "eyebrow": "ЛЮДИ, КОТОРЫЕ ВОЗЯТ", "h2": "Водители, у которых есть причина",

@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "যেভাবে কাজ করে", "safety": "নিরাপত্তা", "business": "ব্যবসার জন্য", "drive": "ড্রাইভার হোন", "drivers": "Drivers" },
+  "nav": { "how": "যেভাবে কাজ করে", "safety": "নিরাপত্তা", "business": "ব্যবসার জন্য", "drive": "ড্রাইভার হোন", "drivers": "চালকরা" },
   "hero": {
     "origin_badge": "🇨🇭 সুইজারল্যান্ডে তৈরি — সমগ্র বিশ্বের জন্য",
     "pill": "উদ্দেশ্য নিয়ে ড্রাইভার · আপনার গাড়ি · আপনার বাড়ি ফেরার পথ",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "তাদের গাড়ি। আপনার সময়।"
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo চালক খুঁজছে। সবখানে।",
+    "lead": "আমরা এমন মানুষদের জন্য বিশ্বব্যাপী অনুসন্ধান শুরু করছি যারা গাড়ি চালাতে চান, যাতে অন্য কাউকে চালাতে না হয়।",
+    "req": "আপনার গাড়ির দরকার নেই। কোম্পানির দরকার নেই। দরকার একটি বৈধ লাইসেন্স, পরিষ্কার মাথা, আর হাজির হওয়ার একটা কারণ।",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "যেভাবে কাজ করে",
+      "body": "কেউ আপনার শহরে একজন চালক অনুরোধ করে। আপনি পিকআপ পয়েন্ট এবং যাত্রার মূল্য দেখতে পান। আপনি যেগুলো চান সেগুলো গ্রহণ করেন। আপনি তাদের গাড়ি চালান, তারা ভেতরে থাকে, আর তারা নিরাপদে বাড়ি পৌঁছায়।"
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "কোথায়",
+      "body": "যেকোনো জায়গায়। Rotabo প্রথম দিন থেকেই ৩৮টি ভাষায় চালু আছে। যদি আপনার শহরে এখনও কেউ না চালায়, প্রথম হোন — প্রথম দিকের চালকরা আসা প্রতিটি অনুরোধ পান।"
     },
-    "cta": "Become a driver"
+    "cta": "চালক হোন"
   },
   "safety": {
     "eyebrow": "যারা গাড়ি চালান", "h2": "একটি কারণে গাড়ি চালানো ড্রাইভাররা",

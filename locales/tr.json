@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Drivers" },
+  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler" },
   "hero": {
     "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
     "pill": "BİR AMAÇLA SÜREN SÜRÜCÜLER · KENDİ ARABAN · EVE GİDEN YOLUN",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Onların arabası. Senin saatlerin."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo sürücü arıyor. Her yerde.",
+    "lead": "Başka birinin yapmak zorunda kalmaması için, araç kullanmak isteyen insanlar için dünya çapında bir arama başlatıyoruz.",
+    "req": "Arabaya ihtiyacın yok. Şirkete ihtiyacın yok. Geçerli bir ehliyete, berrak bir kafaya ve ortaya çıkmak için bir sebebe ihtiyacın var.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Nasıl çalışır",
+      "body": "Şehrindeki biri sürücü talep eder. Alım noktasını ve yolculuğun ne kadar ödediğini görürsün. İstediğin talepleri kabul edersin. Onun arabasını sürersin, o içindedir ve güvenle evine ulaşır."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Nerede",
+      "body": "Her yerde. Rotabo ilk günden itibaren 38 dilde kullanılabilir. Eğer şehrinde henüz kimse araç kullanmıyorsa, ilk sen ol — ilk sürücüler gelen her talebi alır."
     },
-    "cta": "Become a driver"
+    "cta": "Sürücü ol"
   },
   "safety": {
     "eyebrow": "SÜREN İNSANLAR", "h2": "Bir sebeple direksiyona geçen sürücüler",

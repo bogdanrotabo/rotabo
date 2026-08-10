@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Drivers" },
+  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Pemandu" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
     "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Kereta mereka. Masa anda."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo sedang mencari pemandu. Di mana-mana.",
+    "lead": "Kami memulakan pencarian di seluruh dunia untuk orang yang ingin memandu supaya orang lain tidak perlu.",
+    "req": "Anda tidak perlukan kereta. Anda tidak perlukan syarikat. Anda perlukan lesen memandu yang sah, minda yang jernih, dan sebab untuk hadir.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Cara ia berfungsi",
+      "body": "Seseorang memohon pemandu di bandar anda. Anda lihat lokasi jemputan dan bayaran perjalanan. Anda terima permintaan yang anda mahu. Anda memandu kereta mereka, dengan mereka di dalamnya, dan mereka pulang dengan selamat."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Di mana",
+      "body": "Di mana-mana sahaja. Rotabo tersedia dalam 38 bahasa sejak hari pertama. Jika belum ada sesiapa memandu di bandar anda, jadilah yang pertama — pemandu awal menerima setiap permintaan yang masuk."
     },
-    "cta": "Become a driver"
+    "cta": "Menjadi pemandu"
   },
   "safety": {
     "eyebrow": "ORANG DI SEBALIK STIR", "h2": "Pemandu yang memandu kerana sebab tertentu",

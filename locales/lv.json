@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Drivers" },
+  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi" },
   "hero": {
     "origin_badge": "🇨🇭 Ražots Šveicē — visai pasaulei",
     "pill": "ŠOFERI AR MĒRĶI · TAVA MAŠĪNA · TAVS CEĻŠ MĀJUP",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Viņu auto. Tavas stundas."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo meklē šoferus. Visur.",
+    "lead": "Mēs sākam pasaules mēroga meklēšanu cilvēkiem, kuri vēlas vadīt, lai kādam citam nebūtu jāvada.",
+    "req": "Tev nevajag automašīnu. Tev nevajag uzņēmumu. Tev vajag derīgu autovadītāja apliecību, skaidru galvu un iemeslu ierasties.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Kā tas darbojas",
+      "body": "Kāds tavā pilsētā pieprasa šoferi. Tu redzi paņemšanas vietu un cik maksā brauciens. Tu pieņem tos pieprasījumus, kurus vēlies. Tu vadi viņa automašīnu, viņš sēž iekšā, un viņš droši nokļūst mājās."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Kur",
+      "body": "Jebkur. Rotabo darbojas 38 valodās jau no pirmās dienas. Ja tavā pilsētā vēl neviens nebrauc, kļūsti par pirmo — pirmie šoferi saņem katru ienākošo pieprasījumu."
     },
-    "cta": "Become a driver"
+    "cta": "Kļūsti par šoferi"
   },
   "safety": {
     "eyebrow": "CILVĒKI, KAS VADA", "h2": "Šoferi, kuri brauc ar mērķi",

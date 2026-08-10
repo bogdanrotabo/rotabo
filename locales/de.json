@@ -4,7 +4,7 @@
     "safety": "Sicherheit",
     "business": "Für Unternehmen",
     "drive": "Fahrer werden",
-    "drivers": "Drivers"
+    "drivers": "Fahrer"
   },
   "hero": {
     "origin_badge": "🇨🇭 Gemacht in der Schweiz — für die ganze Welt",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Ihr Auto. Deine Stunden."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo sucht Fahrer. Überall.",
+    "lead": "Wir starten eine weltweite Suche nach Menschen, die fahren wollen, damit es niemand anderes tun muss.",
+    "req": "Du brauchst kein Auto. Du brauchst keine Firma. Du brauchst einen gültigen Führerschein, einen klaren Kopf und einen Grund, aufzutauchen.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "So funktioniert's",
+      "body": "Jemand fordert in deiner Stadt einen Fahrer an. Du siehst den Abholpunkt und was die Fahrt zahlt. Du nimmst die Anfragen an, die du willst. Du fährst sein Auto, er sitzt dabei, und er kommt sicher nach Hause."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Wo",
+      "body": "Überall. Rotabo ist von Anfang an in 38 Sprachen verfügbar. Wenn in deiner Stadt noch niemand fährt, sei der Erste — die ersten Fahrer bekommen jede eingehende Anfrage."
     },
-    "cta": "Become a driver"
+    "cta": "Fahrer werden"
   },
   "safety": {
     "eyebrow": "DIE MENSCHEN, DIE FAHREN",

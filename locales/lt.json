@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Drivers" },
+  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai" },
   "hero": {
     "origin_badge": "🇨🇭 Pagaminta Šveicarijoje — visam pasauliui",
     "pill": "VAIRUOTOJAI SU TIKSLU · TAVO AUTOMOBILIS · TAVO KELIAS NAMO",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Jų automobilis. Tavo valandos."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo ieško vairuotojų. Visur.",
+    "lead": "Pradedame pasaulinę paiešką žmonių, norinčių vairuoti, kad kitam nereikėtų.",
+    "req": "Tau nereikia automobilio. Tau nereikia įmonės. Tau reikia galiojančio vairuotojo pažymėjimo, blaivios galvos ir priežasties atvykti.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Kaip tai veikia",
+      "body": "Kažkas tavo mieste paprašo vairuotojo. Matai pasiėmimo tašką ir kiek moka kelionė. Priimi tas užklausas, kurių nori. Vairuoji jo automobilį, jis sėdi viduje, ir jis saugiai grįžta namo."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Kur",
+      "body": "Bet kur. Rotabo veikia 38 kalbomis nuo pirmos dienos. Jei tavo mieste dar niekas nevairuoja, būk pirmas — pirmieji vairuotojai gauna kiekvieną gaunamą užklausą."
     },
-    "cta": "Become a driver"
+    "cta": "Tapk vairuotoju"
   },
   "safety": {
     "eyebrow": "ŽMONĖS, KURIE VAIRUOJA", "h2": "Vairuotojai, turintys tikslą",

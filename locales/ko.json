@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업 고객", "drive": "드라이버 등록", "drivers": "Drivers" },
+  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업 고객", "drive": "드라이버 등록", "drivers": "드라이버" },
   "hero": {
     "origin_badge": "🇨🇭 스위스에서 제작 — 전 세계를 위해",
     "pill": "목적을 가진 드라이버 · 당신의 차 · 당신의 귀갓길",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "그들의 차. 당신의 시간."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo가 드라이버를 찾고 있습니다. 어디서나.",
+    "lead": "다른 누군가가 운전하지 않아도 되도록, 운전하고 싶은 사람들을 전 세계에서 찾기 시작합니다.",
+    "req": "차는 필요 없습니다. 회사도 필요 없습니다. 유효한 운전면허, 맑은 정신, 그리고 나설 이유만 있으면 됩니다.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "이용 방법",
+      "body": "누군가 당신의 도시에서 드라이버를 요청합니다. 픽업 지점과 운행 보수를 확인합니다. 원하는 요청을 수락합니다. 그들의 차를 운전하고, 그들을 태운 채로 안전하게 집까지 데려다줍니다."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "어디서",
+      "body": "어디서든. Rotabo는 첫날부터 38개 언어로 제공됩니다. 아직 당신의 도시에서 아무도 운전하지 않는다면, 첫 번째가 되세요 — 초기 드라이버는 들어오는 모든 요청을 받습니다."
     },
-    "cta": "Become a driver"
+    "cta": "드라이버 등록"
   },
   "safety": {
     "eyebrow": "운전하는 사람들", "h2": "이유가 있어 운전하는 드라이버들",

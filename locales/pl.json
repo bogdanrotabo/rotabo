@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Drivers" },
+  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy" },
   "hero": {
     "origin_badge": "🇨🇭 Zrobione w Szwajcarii — dla całego świata",
     "pill": "KIEROWCY Z MISJĄ · TWÓJ SAMOCHÓD · TWOJA DROGA DO DOMU",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Ich samochód. Twoje godziny."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo szuka kierowców. Wszędzie.",
+    "lead": "Rozpoczynamy globalne poszukiwania osób, które chcą prowadzić, żeby ktoś inny nie musiał.",
+    "req": "Nie potrzebujesz samochodu. Nie potrzebujesz firmy. Potrzebujesz ważnego prawa jazdy, trzeźwego umysłu i powodu, by się pojawić.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Jak to działa",
+      "body": "Ktoś w twoim mieście zamawia kierowcę. Widzisz punkt odbioru i ile płaci kurs. Akceptujesz te, które chcesz. Prowadzisz jego samochód, on siedzi w środku, i bezpiecznie wraca do domu."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Gdzie",
+      "body": "Wszędzie. Rotabo działa w 38 językach od pierwszego dnia. Jeśli w twoim mieście nikt jeszcze nie jeździ, bądź pierwszy — pierwsi kierowcy dostają każde nadchodzące zamówienie."
     },
-    "cta": "Become a driver"
+    "cta": "Zostań kierowcą"
   },
   "safety": {
     "eyebrow": "LUDZIE, KTÓRZY PROWADZĄ", "h2": "Kierowcy, którzy mają powód",

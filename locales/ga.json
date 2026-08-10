@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí", "drivers": "Drivers" },
+  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí", "drivers": "Tiománaithe" },
   "hero": {
     "origin_badge": "🇨🇭 Déanta san Eilvéis — don domhan ar fad",
     "pill": "TIOMÁNAITHE LE CUSPÓIR · DO CHARR · DO SHLÍ ABHAILE",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "A gcarr siúd. D'uaireanta féin."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Tá Rotabo ag lorg tiománaithe. Gach áit.",
+    "lead": "Táimid ag tosú ar chuardach domhanda ar dhaoine ar mhaith leo tiomáint ionas nach mbeidh ar dhuine eile é a dhéanamh.",
+    "req": "Ní gá duit carr a bheith agat. Ní gá duit comhlacht a bheith agat. Tá ceadúnas tiomána bailí, intinn ghlan, agus cúis le teacht ag teastáil uait.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Conas a oibríonn sé",
+      "body": "Iarrann duine éigin tiománaí i do chathair. Feiceann tú an pointe bailithe agus a íocann an turas. Glacann tú leis na hiarratais is mian leat. Tiomáineann tú a charr, é féin istigh ann, agus sroicheann sé abhaile go sábháilte."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Cá háit",
+      "body": "Áit ar bith. Tá Rotabo ar fáil i 38 teanga ón gcéad lá. Mura bhfuil aon duine ag tiomáint i do chathair fós, bí ar an gcéad duine — faigheann na chéad tiománaithe gach iarratas a thagann isteach."
     },
-    "cta": "Become a driver"
+    "cta": "Bí i do thiománaí"
   },
   "safety": {
     "eyebrow": "NA DAOINE A THIOMÁINEANN", "h2": "Tiománaithe a thiomáineann ar chúis",

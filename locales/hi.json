@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "यह कैसे काम करता है", "safety": "सुरक्षा", "business": "व्यवसायों के लिए", "drive": "ड्राइवर बनें", "drivers": "Drivers" },
+  "nav": { "how": "यह कैसे काम करता है", "safety": "सुरक्षा", "business": "व्यवसायों के लिए", "drive": "ड्राइवर बनें", "drivers": "ड्राइवर" },
   "hero": {
     "origin_badge": "🇨🇭 स्विट्ज़रलैंड में निर्मित — पूरी दुनिया के लिए",
     "pill": "एक मकसद वाले ड्राइवर · आपकी कार · आपके घर का रास्ता",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "उनकी कार। आपके घंटे।"
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo ड्राइवरों की तलाश में है। हर जगह।",
+    "lead": "हम दुनिया भर में उन लोगों की खोज शुरू कर रहे हैं जो गाड़ी चलाना चाहते हैं, ताकि किसी और को न चलानी पड़े।",
+    "req": "आपको कार की ज़रूरत नहीं है। आपको कंपनी की ज़रूरत नहीं है। आपको एक वैध लाइसेंस, साफ़ दिमाग़, और आने की एक वजह चाहिए।",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "यह कैसे काम करता है",
+      "body": "कोई आपके शहर में ड्राइवर का अनुरोध करता है। आप पिकअप पॉइंट और यात्रा का भुगतान देखते हैं। आप जो चाहें स्वीकार करते हैं। आप उनकी कार चलाते हैं, वे उसमें बैठे होते हैं, और वे सुरक्षित घर पहुंचते हैं।"
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "कहाँ",
+      "body": "कहीं भी। Rotabo पहले दिन से ही 38 भाषाओं में उपलब्ध है। अगर आपके शहर में अभी कोई नहीं चला रहा, तो पहले बनें — शुरुआती ड्राइवरों को हर आने वाला अनुरोध मिलता है।"
     },
-    "cta": "Become a driver"
+    "cta": "ड्राइवर बनें"
   },
   "safety": {
     "eyebrow": "गाड़ी चलाने वाले लोग", "h2": "एक वजह से गाड़ी चलाने वाले ड्राइवर",

@@ -4,7 +4,7 @@
     "safety": "Segurança",
     "business": "Para empresas",
     "drive": "Torna-te condutor",
-    "drivers": "Drivers"
+    "drivers": "Motoristas"
   },
   "hero": {
     "origin_badge": "🇨🇭 Feito na Suíça — para o mundo inteiro",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "O carro deles. As tuas horas."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "A Rotabo está à procura de motoristas. Em todo o lado.",
+    "lead": "Estamos a iniciar uma busca mundial por pessoas que querem conduzir, para que outra pessoa não precise.",
+    "req": "Não precisas de carro. Não precisas de empresa. Precisas de uma carta de condução válida, cabeça no lugar e um motivo para apareceres.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Como funciona",
+      "body": "Alguém pede um motorista na tua cidade. Vês o ponto de recolha e quanto paga a viagem. Aceitas os pedidos que quiseres. Conduzes o carro dele, com ele lá dentro, e ele chega a casa em segurança."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Onde",
+      "body": "Em qualquer lugar. A Rotabo está disponível em 38 idiomas desde o primeiro dia. Se ainda ninguém conduz na tua cidade, sê o primeiro — os primeiros motoristas recebem todos os pedidos que chegam."
     },
-    "cta": "Become a driver"
+    "cta": "Torna-te condutor"
   },
   "safety": {
     "eyebrow": "AS PESSOAS QUE CONDUZEM",

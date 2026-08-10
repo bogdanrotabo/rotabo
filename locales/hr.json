@@ -4,7 +4,7 @@
     "safety": "Sigurnost",
     "business": "Za tvrtke",
     "drive": "Postani vozač",
-    "drivers": "Drivers"
+    "drivers": "Vozači"
   },
   "hero": {
     "origin_badge": "🇨🇭 Izrađeno u Švicarskoj — za cijeli svijet",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Njihov auto. Tvoji sati."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo traži vozače. Posvuda.",
+    "lead": "Pokrećemo svjetsku potragu za ljudima koji žele voziti kako netko drugi ne bi morao.",
+    "req": "Ne trebaš auto. Ne trebaš tvrtku. Trebaš važeću vozačku dozvolu, bistru glavu i razlog da se pojaviš.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Kako funkcionira",
+      "body": "Netko u tvom gradu traži vozača. Vidiš mjesto preuzimanja i koliko vožnja plaća. Prihvaćaš one koje želiš. Voziš njegov auto, on je unutra, i sigurno stiže kući."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Gdje",
+      "body": "Bilo gdje. Rotabo je dostupan na 38 jezika od prvog dana. Ako još nitko ne vozi u tvom gradu, budi prvi — prvi vozači dobivaju svaki zahtjev koji stigne."
     },
-    "cta": "Become a driver"
+    "cta": "Postani vozač"
   },
   "safety": {
     "eyebrow": "LJUDI KOJI VOZE",

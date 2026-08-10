@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Drivers" },
+  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Vodiči" },
   "hero": {
     "origin_badge": "🇨🇭 Vyrobené vo Švajčiarsku — pre celý svet",
     "pill": "VODIČI S POSLANÍM · TVOJE AUTO · TVOJA CESTA DOMOV",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Ich auto. Tvoje hodiny."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo hľadá vodičov. Všade.",
+    "lead": "Spúšťame celosvetové hľadanie ľudí, ktorí chcú šoférovať, aby to nemusel robiť niekto iný.",
+    "req": "Nepotrebuješ auto. Nepotrebuješ firmu. Potrebuješ platný vodičský preukaz, jasnú hlavu a dôvod, aby si sa ukázal.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Ako to funguje",
+      "body": "Niekto vo tvojom meste požiada o vodiča. Uvidíš miesto vyzdvihnutia a koľko jazda platí. Prijmeš tie, ktoré chceš. Šoféruješ jeho auto, on je vnútri, a bezpečne sa dostane domov."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Kde",
+      "body": "Kdekoľvek. Rotabo funguje od prvého dňa v 38 jazykoch. Ak vo tvojom meste ešte nikto nešoféruje, buď prvý — prví vodiči dostávajú každú prichádzajúcu požiadavku."
     },
-    "cta": "Become a driver"
+    "cta": "Staň sa vodičom"
   },
   "safety": {
     "eyebrow": "ĽUDIA, KTORÍ ŠOFÉRUJÚ", "h2": "Vodiči, ktorí majú dôvod",

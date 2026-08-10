@@ -4,7 +4,7 @@
     "safety": "Turvallisuus",
     "business": "Yrityksille",
     "drive": "Ryhdy kuljettajaksi",
-    "drivers": "Drivers"
+    "drivers": "Kuljettajat"
   },
   "hero": {
     "origin_badge": "🇨🇭 Valmistettu Sveitsissä — koko maailmalle",
@@ -58,18 +58,18 @@
     "driver_not_taxi2": "Heidän autonsa. Sinun tuntisi."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo etsii kuljettajia. Kaikkialla.",
+    "lead": "Aloitamme maailmanlaajuisen haun ihmisille, jotka haluavat ajaa, jotta jonkun muun ei tarvitse.",
+    "req": "Et tarvitse autoa. Et tarvitse yritystä. Tarvitset voimassa olevan ajokortin, kirkkaan pään ja syyn tulla paikalle.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Näin se toimii",
+      "body": "Joku pyytää kuljettajaa kaupungissasi. Näet noutopisteen ja mitä matka maksaa. Hyväksyt haluamasi pyynnöt. Ajat hänen autoaan, hän on kyydissä, ja hän pääsee turvallisesti kotiin."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Missä",
+      "body": "Missä tahansa. Rotabo on käytössä 38 kielellä alusta asti. Jos kaupungissasi ei vielä aja kukaan, ole ensimmäinen — ensimmäiset kuljettajat saavat jokaisen saapuvan pyynnön."
     },
-    "cta": "Become a driver"
+    "cta": "Ryhdy kuljettajaksi"
   },
   "safety": {
     "eyebrow": "IHMISET, JOTKA AJAVAT",

@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Drivers" },
+  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Madereva" },
   "hero": {
     "origin_badge": "🇨🇭 Imetengenezwa Uswisi — kwa ulimwengu wote",
     "pill": "MADEREVA WENYE LENGO · GARI LAKO · NJIA YAKO YA KURUDI NYUMBANI",
@@ -36,18 +36,18 @@
     "driver_not_taxi2": "Gari lao. Saa zako."
   },
   "recruit": {
-    "title": "Rotabo is looking for drivers. Everywhere.",
-    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
-    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "title": "Rotabo inatafuta madereva. Kila mahali.",
+    "lead": "Tunaanzisha utafutaji wa kimataifa wa watu wanaotaka kuendesha ili mtu mwingine asilazimike.",
+    "req": "Huhitaji gari. Huhitaji kampuni. Unahitaji leseni halali, akili timamu, na sababu ya kujitokeza.",
     "how": {
-      "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "title": "Jinsi inavyofanya kazi",
+      "body": "Mtu anaomba dereva katika jiji lako. Unaona sehemu ya kuchukua na kiasi kinacholipwa safarini. Unakubali maombi unayotaka. Unaendesha gari lake, akiwa ndani, na anafika nyumbani salama."
     },
     "where": {
-      "title": "Where",
-      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+      "title": "Wapi",
+      "body": "Popote. Rotabo inapatikana kwa lugha 38 tangu siku ya kwanza. Kama bado hakuna anayeendesha katika jiji lako, kuwa wa kwanza — madereva wa kwanza wanapokea kila ombi linalofika."
     },
-    "cta": "Become a driver"
+    "cta": "Kuwa dereva"
   },
   "safety": {
     "eyebrow": "WATU WANAOENDESHA", "h2": "Madereva wanaoendesha kwa sababu",
