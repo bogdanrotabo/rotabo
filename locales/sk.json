@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Vyrobené vo Švajčiarsku — pre celý svet",
     "pill": "VODIČI S POSLANÍM · TVOJE AUTO · TVOJA CESTA DOMOV",
-    "tagline1": "Ty piješ.", "tagline2": "Oni šoférujú.", "tagline3": "Tvoje auto.",
-    "lede": "Rotabo ťa spojí s vodičom, ktorý verí, že nikto by nemal šoférovať domov, keď na to nie je spôsobilý — a ktorý ťa odvezie <b>tvojím vlastným autom</b>.",
+    "tagline1": "Potrebuješ niečo?", "tagline2": "Nájdi niekoho.", "tagline3": "Tvoje auto.",
+    "lede": "Rotabo spája ľudí, ktorí niečo potrebujú, s ľuďmi, ktorí môžu pomôcť — vozidlom, službou, vybavením, zručnosťami alebo jednoducho svojím časom.",
+    "cta_find": "Nájdi, čo potrebuješ",
+    "cta_offer": "Ponúkni, čo vieš",
     "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_become_sponsor": "Staň sa podporovateľom",
     "cta_home_screen": "⬇ Pridať Rotabo na plochu",
     "fine": "Funguje priamo v prehliadači — žiadny obchod s aplikáciami netreba.",
-    "badge_verified": "Overení vodiči", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Overení používatelia", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "AKO FUNGUJE ROTABO",
+    "h2": "Niečo potrebuješ. Niekto môže pomôcť.",
+    "step1": "Povedz nám, čo potrebuješ.",
+    "step2": "Nájdi niekoho v okolí, kto môže pomôcť.",
+    "step3": "Spoj sa priamo a dohodnite sa na detailoch.",
+    "examples": "Môže to byť vodič, dodávka, sťahovacia služba, stavebná technika, náradie, doručenie alebo jednoducho niekto so správnymi zručnosťami a časom.",
+    "closing": "Jedna sieť. Tisíce možností."
+  },
+  "need_driver": {
+    "eyebrow": "POTREBUJEŠ VODIČA?",
+    "tagline1": "Ty piješ.",
+    "tagline2": "Oni šoférujú.",
+    "tagline3": "Tvoje auto.",
+    "body1": "Niekedy nepotrebuješ taxík. Stačí ti niekto, kto odvezie tvoje vlastné auto.",
+    "body2": "Rotabo ťa spojí s overeným vodičom, ktorý za tebou príde a odvezie ťa domov v tvojom vlastnom aute, keď nemôžeš alebo by si nemal šoférovať.",
+    "cta": "Nájsť vodiča"
+  },
+  "need_other": {
+    "eyebrow": "POTREBUJEŠ NIEČO INÉ?",
+    "vehicle_title": "Potrebuješ vozidlo?",
+    "vehicle_desc": "Nájdi niekoho so správnym vozidlom pre tvoju cestu, doručenie alebo prácu.",
+    "moving_title": "Sťahuješ sa?",
+    "moving_desc": "Spoj sa s niekým, kto ti pomôže presťahovať nábytok, veci alebo čokoľvek iné, čo treba prepraviť.",
+    "equipment_title": "Potrebuješ vybavenie?",
+    "equipment_desc": "Nájdi náradie, stroje a stavebnú techniku pre prácu, ktorú musíš urobiť.",
+    "hand_title": "Potrebuješ pomocnú ruku?",
+    "hand_desc": "Nájdi niekoho so zručnosťami, skúsenosťami alebo časom pomôcť.",
+    "unexpected_title": "Stalo sa niečo neočakávané?",
+    "unexpected_desc": "Povedz Rotabu, čo potrebuješ. Niekto v okolí by mohol pomôcť."
+  },
+  "offer": {
+    "eyebrow": "MÁŠ ČO PONÚKNUŤ?",
+    "h2": "Niekto potrebuje to, čo máš.",
+    "item1": "Tvoje auto.",
+    "item2": "Tvoja dodávka.",
+    "item3": "Tvoje náradie.",
+    "item4": "Tvoje vybavenie.",
+    "item5": "Tvoje zručnosti.",
+    "item6": "Tvoj čas.",
+    "body": "Povedz Rotabu, čo môžeš ponúknuť, a spoj sa s ľuďmi, ktorí to potrebujú.",
+    "keep_title": "Nechaj si, čo zarobíš.",
+    "keep_body": "Rotabo si neberie žiadne percento z toho, čo zarobíš.",
+    "cta": "Ponúkni, čo vieš"
+  },
+  "idea": {
+    "eyebrow": "MYŠLIENKA ROTABO",
+    "tagline1": "Ľudia niečo potrebujú.",
+    "tagline2": "Ľudia niečo majú.",
+    "tagline3": "Rotabo ich spája.",
+    "body1": "Všade na svete ľudia potrebujú pomoc. A všade na svete má niekto čas, zručnosti, vybavenie alebo zdroje, aby pomohol.",
+    "body2": "Problém je často jednoduchý: jednoducho sa nevedia nájsť. Rotabo ich spája.",
+    "closing1": "Potrebuješ niečo? Nájdi niekoho.",
+    "closing2": "Máš čo ponúknuť? Niekto to potrebuje.",
+    "closing3": "Rotabo ich spája."
   },
   "categories": {
     "section_eyebrow": "ČO POTREBUJEŠ?",

@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
     "pill": "SOFŐRÖK CÉLLAL · A TE AUTÓD · A TE UTAD HAZA",
-    "tagline1": "Te iszol.", "tagline2": "Ők vezetnek.", "tagline3": "A te autód.",
-    "lede": "A Rotabo összeköt téged egy sofőrrel, aki hisz abban, hogy senkinek sem szabad vezetnie, ha nincs abban az állapotban — és aki <b>a saját autódban</b> visz haza.",
+    "tagline1": "Szükséged van valamire?", "tagline2": "Találj valakit.", "tagline3": "A te autód.",
+    "lede": "A Rotabo összeköti azokat, akiknek szükségük van valamire, azokkal, akik segíteni tudnak — járművel, szolgáltatással, felszereléssel, tudással vagy egyszerűen az idejükkel.",
+    "cta_find": "Találd meg, amire szükséged van",
+    "cta_offer": "Ajánld fel, amit tudsz",
     "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_become_sponsor": "Legyél támogató",
     "cta_home_screen": "⬇ Add hozzá a Rotabo-t a kezdőképernyőhöz",
     "fine": "A böngésződben működik — nincs szükség alkalmazásboltra.",
-    "badge_verified": "Ellenőrzött sofőrök", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Ellenőrzött felhasználók", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "HOGYAN MŰKÖDIK A ROTABO",
+    "h2": "Szükséged van valamire. Valaki tud segíteni.",
+    "step1": "Mondd el, mire van szükséged.",
+    "step2": "Találj valakit a közeledben, aki tud segíteni.",
+    "step3": "Vedd fel közvetlenül a kapcsolatot, és egyeztessetek a részletekről.",
+    "examples": "Lehet ez egy sofőr, egy kisteherautó, egy költöztető szolgáltatás, építőipari gép, egy szerszám, egy szállítás, vagy egyszerűen valaki a megfelelő tudással és idővel.",
+    "closing": "Egy hálózat. Több ezer lehetőség."
+  },
+  "need_driver": {
+    "eyebrow": "SOFŐRRE VAN SZÜKSÉGED?",
+    "tagline1": "Te iszol.",
+    "tagline2": "Ők vezetnek.",
+    "tagline3": "A te autód.",
+    "body1": "Néha nem taxira van szükséged. Csak valakire, aki elvezeti a saját autódat.",
+    "body2": "A Rotabo összeköt egy ellenőrzött sofőrrel, aki eljön hozzád, és hazavisz a saját autódban, amikor nem tudsz vagy nem szabad vezetned.",
+    "cta": "Sofőr keresése"
+  },
+  "need_other": {
+    "eyebrow": "VALAMI MÁSRA VAN SZÜKSÉGED?",
+    "vehicle_title": "Járműre van szükséged?",
+    "vehicle_desc": "Találj valakit a megfelelő járművel az utadhoz, szállításodhoz vagy munkádhoz.",
+    "moving_title": "Költözöl?",
+    "moving_desc": "Vedd fel a kapcsolatot valakivel, aki segít bútort, holmit vagy bármi mást elszállítani, amit szállítani kell.",
+    "equipment_title": "Felszerelésre van szükséged?",
+    "equipment_desc": "Találj szerszámokat, gépeket és építőipari felszerelést az elvégzendő munkához.",
+    "hand_title": "Segítő kézre van szükséged?",
+    "hand_desc": "Találj valakit, akinek megvan a tudása, tapasztalata vagy ideje segíteni.",
+    "unexpected_title": "Valami váratlan történt?",
+    "unexpected_desc": "Mondd el a Rotabónak, mire van szükséged. Valaki a közeledben talán tud segíteni."
+  },
+  "offer": {
+    "eyebrow": "VAN VALAMID, AMIT FELAJÁNLHATSZ?",
+    "h2": "Valakinek szüksége van arra, amid van.",
+    "item1": "A te autód.",
+    "item2": "A te kisteherautód.",
+    "item3": "A te szerszámaid.",
+    "item4": "A te felszerelésed.",
+    "item5": "A te tudásod.",
+    "item6": "A te időd.",
+    "body": "Mondd el a Rotabónak, mit tudsz felajánlani, és lépj kapcsolatba azokkal, akiknek szükségük van rá.",
+    "keep_title": "Tartsd meg, amit keresel.",
+    "keep_body": "A Rotabo nem vesz el semmilyen százalékot abból, amit keresel.",
+    "cta": "Ajánld fel, amit tudsz"
+  },
+  "idea": {
+    "eyebrow": "A ROTABO ÖTLETE",
+    "tagline1": "Az embereknek szükségük van dolgokra.",
+    "tagline2": "Az embereknek vannak dolgaik.",
+    "tagline3": "A Rotabo összeköti őket.",
+    "body1": "A világ minden táján szükségük van segítségre az embereknek. És a világ minden táján van valakinek ideje, tudása, felszerelése vagy erőforrása a segítéshez.",
+    "body2": "A probléma gyakran egyszerű: egyszerűen nem találják meg egymást. A Rotabo összehozza őket.",
+    "closing1": "Szükséged van valamire? Találj valakit.",
+    "closing2": "Van valamid, amit felajánlhatsz? Valakinek szüksége van rá.",
+    "closing3": "A Rotabo összeköti őket."
   },
   "categories": {
     "section_eyebrow": "MIRE VAN SZÜKSÉGED?",

@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Déanta san Eilvéis — don domhan ar fad",
     "pill": "TIOMÁNAITHE LE CUSPÓIR · DO CHARR · DO SHLÍ ABHAILE",
-    "tagline1": "Ólann tú.", "tagline2": "Tiomáineann siadsan.", "tagline3": "Do charr.",
-    "lede": "Ceanglaíonn Rotabo thú le tiománaí a chreideann nár chóir d'aon duine tiomáint abhaile agus é/í neamhoiriúnach — agus a thugann abhaile thú <b>i do charr féin</b>.",
+    "tagline1": "An bhfuil rud éigin uait?", "tagline2": "Faigh duine.", "tagline3": "Do charr.",
+    "lede": "Nascann Rotabo daoine a bhfuil rud éigin uathu le daoine ar féidir leo cabhrú — le feithicil, seirbhís, trealamh, scileanna nó a gcuid ama go simplí.",
+    "cta_find": "Faigh a bhfuil uait",
+    "cta_offer": "Tairg a bhfuil ar do chumas",
     "cta_find_driver": "Faigh tiománaí", "cta_become_driver": "Bí i do thiománaí", "cta_become_sponsor": "Bí i do dheontóir",
     "cta_home_screen": "⬇ Cuir Rotabo ar do scáileán baile",
     "fine": "Oibríonn sé i do bhrabhsálaí — níl aon siopa aipeanna ag teastáil.",
-    "badge_verified": "Tiománaithe deimhnithe", "badge_live": "Comhroinnt turais bheo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Úsáideoirí deimhnithe", "badge_live": "Comhroinnt turais bheo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "MAR A OIBRÍONN ROTABO",
+    "h2": "Tá rud éigin uait. Is féidir le duine cabhrú.",
+    "step1": "Inis dúinn cad atá uait.",
+    "step2": "Faigh duine in aice láimhe ar féidir leis cabhrú.",
+    "step3": "Déan teagmháil dhíreach agus socraígí na sonraí.",
+    "examples": "D'fhéadfadh sé a bheith ina thiománaí, veain, seirbhís aistrithe, trealamh tógála, uirlis, seachadadh nó duine leis na scileanna agus an t-am ceart go simplí.",
+    "closing": "Líonra amháin. Na mílte féidearthacht."
+  },
+  "need_driver": {
+    "eyebrow": "AN BHFUIL TIOMÁNAÍ UAIT?",
+    "tagline1": "Ólann tusa.",
+    "tagline2": "Tiomáineann siadsan.",
+    "tagline3": "Do charr.",
+    "body1": "Uaireanta ní gá duit tacsaí. Níl uait ach duine a thiomáineann do charr féin.",
+    "body2": "Nascann Rotabo thú le tiománaí deimhnithe a thagann chugat agus a thiomáineann abhaile thú i do charr féin nuair nach féidir leat, nó nár chóir duit, tiomáint.",
+    "cta": "Faigh tiománaí"
+  },
+  "need_other": {
+    "eyebrow": "AN BHFUIL RUD EILE UAIT?",
+    "vehicle_title": "An bhfuil feithicil uait?",
+    "vehicle_desc": "Faigh duine leis an bhfeithicil cheart do do thuras, do sheachadadh nó do phost.",
+    "moving_title": "Ag bogadh teach?",
+    "moving_desc": "Déan teagmháil le duine ar féidir leis cabhrú leat troscán, earraí nó rud ar bith eile is gá a iompar a bhogadh.",
+    "equipment_title": "An bhfuil trealamh uait?",
+    "equipment_desc": "Faigh uirlisí, meaisíní agus trealamh tógála don obair atá le déanamh agat.",
+    "hand_title": "An bhfuil cabhair uait?",
+    "hand_desc": "Faigh duine leis na scileanna, an taithí nó an t-am chun cabhrú.",
+    "unexpected_title": "Ar tharla rud éigin gan choinne?",
+    "unexpected_desc": "Inis do Rotabo cad atá uait. Seans go mbeidh duine in aice láimhe in ann cabhrú."
+  },
+  "offer": {
+    "eyebrow": "AN BHFUIL RUD LE TAIRISCINT AGAT?",
+    "h2": "Tá rud atá agat uait ó dhuine éigin.",
+    "item1": "Do charr.",
+    "item2": "Do veain.",
+    "item3": "D'uirlisí.",
+    "item4": "Do threalamh.",
+    "item5": "Do scileanna.",
+    "item6": "Do chuid ama.",
+    "body": "Inis do Rotabo cad is féidir leat a thairiscint agus déan teagmháil le daoine a bhfuil sé uathu.",
+    "keep_title": "Coinnigh a shaothraíonn tú.",
+    "keep_body": "Ní thógann Rotabo aon chéatadán dá bhfuil á shaothrú agat.",
+    "cta": "Tairg a bhfuil ar do chumas"
+  },
+  "idea": {
+    "eyebrow": "SMAOINEAMH ROTABO",
+    "tagline1": "Tá rudaí ag teastáil ó dhaoine.",
+    "tagline2": "Tá rudaí ag daoine.",
+    "tagline3": "Nascann Rotabo iad.",
+    "body1": "Ar fud an domhain, tá cabhair ag teastáil ó dhaoine. Agus ar fud an domhain, tá an t-am, na scileanna, an trealamh nó na hacmhainní ag duine éigin chun cabhrú.",
+    "body2": "Is minic gur simplí an fhadhb: ní féidir leo teacht ar a chéile amháin. Tugann Rotabo le chéile iad.",
+    "closing1": "Rud éigin uait? Faigh duine.",
+    "closing2": "Rud le tairiscint agat? Tá sé uaidh ó dhuine éigin.",
+    "closing3": "Nascann Rotabo iad."
   },
   "categories": {
     "section_eyebrow": "CAD ATÁ UAIT?",

@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 瑞士制造 — 服务全世界",
     "pill": "有使命感的司机 · 您的爱车 · 您的回家路",
-    "tagline1": "你喝酒。", "tagline2": "他们开车。", "tagline3": "你的车。",
-    "lede": "Rotabo 为您匹配一位坚信「没有人该在不清醒时开车回家」的司机，让您<b>坐在自己的车里</b>安全到家。",
+    "tagline1": "需要帮助吗?", "tagline2": "找到能帮你的人。", "tagline3": "你的车。",
+    "lede": "Rotabo 将有需要的人与能提供帮助的人连接起来——无论是车辆、服务、设备、技能,还是仅仅是他们的时间。",
+    "cta_find": "寻找你需要的",
+    "cta_offer": "提供你能给的",
     "cta_find_driver": "寻找司机", "cta_become_driver": "成为司机", "cta_become_sponsor": "成为赞助人",
     "cta_home_screen": "⬇ 将 Rotabo 添加到主屏幕",
     "fine": "无需下载应用，浏览器即可使用。",
-    "badge_verified": "认证司机", "badge_live": "实时行程分享", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "已验证用户", "badge_live": "实时行程分享", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "ROTABO 如何运作",
+    "h2": "你有需要,总有人能帮忙。",
+    "step1": "告诉我们你需要什么。",
+    "step2": "找到附近能帮忙的人。",
+    "step3": "直接联系,商定细节。",
+    "examples": "可能是司机、面包车、搬家服务、施工设备、工具、送货,或者只是一个拥有合适技能和时间的人。",
+    "closing": "一个网络,千万种可能。"
+  },
+  "need_driver": {
+    "eyebrow": "需要司机吗?",
+    "tagline1": "你喝酒。",
+    "tagline2": "他们开车。",
+    "tagline3": "你的车。",
+    "body1": "有时候你需要的不是出租车,只是有人来开你自己的车。",
+    "body2": "Rotabo 为你连接一位已验证的司机,当你不能或不该开车时,他会来找你,用你自己的车送你回家。",
+    "cta": "寻找司机"
+  },
+  "need_other": {
+    "eyebrow": "还需要别的吗?",
+    "vehicle_title": "需要一辆车吗?",
+    "vehicle_desc": "为你的出行、送货或工作找到合适车辆的人。",
+    "moving_title": "要搬家吗?",
+    "moving_desc": "联系能帮你搬运家具、物品或其他任何需要运输的东西的人。",
+    "equipment_title": "需要设备吗?",
+    "equipment_desc": "为你要完成的工作找到工具、机械和施工设备。",
+    "hand_title": "需要帮手吗?",
+    "hand_desc": "找到有技能、经验或时间来帮忙的人。",
+    "unexpected_title": "发生了意外情况?",
+    "unexpected_desc": "告诉 Rotabo 你需要什么,附近可能有人能帮上忙。"
+  },
+  "offer": {
+    "eyebrow": "有什么可以提供的吗?",
+    "h2": "有人需要你拥有的东西。",
+    "item1": "你的车。",
+    "item2": "你的面包车。",
+    "item3": "你的工具。",
+    "item4": "你的设备。",
+    "item5": "你的技能。",
+    "item6": "你的时间。",
+    "body": "告诉 Rotabo 你能提供什么,与需要它的人建立联系。",
+    "keep_title": "你赚的全归你。",
+    "keep_body": "Rotabo 不会从你的收入中抽取任何提成。",
+    "cta": "提供你能给的"
+  },
+  "idea": {
+    "eyebrow": "ROTABO 的理念",
+    "tagline1": "人们需要东西。",
+    "tagline2": "人们拥有东西。",
+    "tagline3": "Rotabo 连接他们。",
+    "body1": "世界各地,人们都需要帮助。而世界各地,总有人拥有时间、技能、设备或资源来提供帮助。",
+    "body2": "问题往往很简单:他们只是找不到彼此。Rotabo 将他们连接在一起。",
+    "closing1": "需要帮助吗?找到能帮你的人。",
+    "closing2": "有什么可以提供的吗?有人正需要它。",
+    "closing3": "Rotabo 连接他们。"
   },
   "categories": {
     "section_eyebrow": "你需要什么？",

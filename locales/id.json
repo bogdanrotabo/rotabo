@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Swiss — untuk seluruh dunia",
     "pill": "PENGEMUDI DENGAN TUJUAN · MOBIL ANDA · JALAN PULANG ANDA",
-    "tagline1": "Anda minum.", "tagline2": "Mereka menyetir.", "tagline3": "Mobil Anda.",
-    "lede": "Rotabo menghubungkan Anda dengan pengemudi yang percaya bahwa tak seorang pun boleh menyetir pulang dalam kondisi tidak fit — dan mengantar Anda pulang <b>dengan mobil Anda sendiri</b>.",
+    "tagline1": "Butuh sesuatu?", "tagline2": "Temukan seseorang.", "tagline3": "Mobil Anda.",
+    "lede": "Rotabo menghubungkan orang yang membutuhkan sesuatu dengan orang yang bisa membantu — dengan kendaraan, layanan, peralatan, keahlian, atau sekadar waktu mereka.",
+    "cta_find": "Temukan yang kamu butuhkan",
+    "cta_offer": "Tawarkan yang kamu bisa",
     "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_become_sponsor": "Jadi sponsor",
     "cta_home_screen": "⬇ Tambahkan Rotabo ke layar utama",
     "fine": "Langsung berfungsi di browser Anda — tanpa perlu unduh aplikasi.",
-    "badge_verified": "Pengemudi terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Pengguna terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "CARA KERJA ROTABO",
+    "h2": "Kamu butuh sesuatu. Seseorang bisa membantu.",
+    "step1": "Beri tahu kami apa yang kamu butuhkan.",
+    "step2": "Temukan seseorang di dekatmu yang bisa membantu.",
+    "step3": "Hubungi langsung dan sepakati detailnya.",
+    "examples": "Bisa berupa pengemudi, mobil van, jasa pindahan, alat berat konstruksi, sebuah alat, pengiriman, atau sekadar seseorang dengan keahlian dan waktu yang tepat.",
+    "closing": "Satu jaringan. Ribuan kemungkinan."
+  },
+  "need_driver": {
+    "eyebrow": "BUTUH PENGEMUDI?",
+    "tagline1": "Kamu minum.",
+    "tagline2": "Mereka mengemudi.",
+    "tagline3": "Mobilmu.",
+    "body1": "Terkadang kamu tidak butuh taksi. Kamu hanya butuh seseorang untuk mengemudikan mobilmu sendiri.",
+    "body2": "Rotabo menghubungkanmu dengan pengemudi terverifikasi yang datang menemuimu dan mengantarmu pulang dengan mobilmu sendiri saat kamu tidak bisa atau tidak boleh mengemudi.",
+    "cta": "Temukan pengemudi"
+  },
+  "need_other": {
+    "eyebrow": "BUTUH SESUATU YANG LAIN?",
+    "vehicle_title": "Butuh kendaraan?",
+    "vehicle_desc": "Temukan seseorang dengan kendaraan yang tepat untuk perjalanan, pengiriman, atau pekerjaanmu.",
+    "moving_title": "Sedang pindahan?",
+    "moving_desc": "Hubungi seseorang yang bisa membantumu memindahkan furnitur, barang, atau apa pun lainnya yang perlu diangkut.",
+    "equipment_title": "Butuh peralatan?",
+    "equipment_desc": "Temukan alat, mesin, dan peralatan konstruksi untuk pekerjaan yang perlu kamu selesaikan.",
+    "hand_title": "Butuh bantuan tangan?",
+    "hand_desc": "Temukan seseorang dengan keahlian, pengalaman, atau waktu untuk membantu.",
+    "unexpected_title": "Ada hal tak terduga terjadi?",
+    "unexpected_desc": "Beri tahu Rotabo apa yang kamu butuhkan. Seseorang di dekatmu mungkin bisa membantu."
+  },
+  "offer": {
+    "eyebrow": "PUNYA SESUATU UNTUK DITAWARKAN?",
+    "h2": "Ada yang membutuhkan apa yang kamu punya.",
+    "item1": "Mobilmu.",
+    "item2": "Mobil vanmu.",
+    "item3": "Alatmu.",
+    "item4": "Peralatanmu.",
+    "item5": "Keahlianmu.",
+    "item6": "Waktumu.",
+    "body": "Beri tahu Rotabo apa yang bisa kamu tawarkan dan terhubung dengan orang yang membutuhkannya.",
+    "keep_title": "Simpan seluruh penghasilanmu.",
+    "keep_body": "Rotabo tidak mengambil persentase dari penghasilanmu.",
+    "cta": "Tawarkan yang kamu bisa"
+  },
+  "idea": {
+    "eyebrow": "IDE DI BALIK ROTABO",
+    "tagline1": "Orang butuh sesuatu.",
+    "tagline2": "Orang punya sesuatu.",
+    "tagline3": "Rotabo menghubungkan mereka.",
+    "body1": "Di mana pun di dunia, orang membutuhkan bantuan. Dan di mana pun di dunia, ada seseorang yang punya waktu, keahlian, peralatan, atau sumber daya untuk membantu.",
+    "body2": "Masalahnya sering kali sederhana: mereka hanya tidak bisa saling menemukan. Rotabo mempertemukan mereka.",
+    "closing1": "Butuh sesuatu? Temukan seseorang.",
+    "closing2": "Punya sesuatu untuk ditawarkan? Ada yang membutuhkannya.",
+    "closing3": "Rotabo menghubungkan mereka."
   },
   "categories": {
     "section_eyebrow": "KAMU BUTUH APA?",

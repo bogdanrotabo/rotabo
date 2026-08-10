@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
     "pill": "FÖRARE MED ETT SYFTE · DIN BIL · DIN VÄG HEM",
-    "tagline1": "Du dricker.", "tagline2": "De kör.", "tagline3": "Din bil.",
-    "lede": "Rotabo kopplar ihop dig med en förare som tror att ingen ska köra hem när de inte är i skick att göra det — och som tar dig hem <b>i din egen bil</b>.",
+    "tagline1": "Behöver du något?", "tagline2": "Hitta någon.", "tagline3": "Din bil.",
+    "lede": "Rotabo kopplar samman människor som behöver något med människor som kan hjälpa till — med ett fordon, en tjänst, utrustning, kunskaper eller helt enkelt sin tid.",
+    "cta_find": "Hitta det du behöver",
+    "cta_offer": "Erbjud det du kan",
     "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_become_sponsor": "Bli sponsor",
     "cta_home_screen": "⬇ Lägg till Rotabo på hemskärmen",
     "fine": "Fungerar i din webbläsare — ingen app store behövs.",
-    "badge_verified": "Verifierade förare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Verifierade användare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "SÅ FUNGERAR ROTABO",
+    "h2": "Du behöver något. Någon kan hjälpa till.",
+    "step1": "Berätta för oss vad du behöver.",
+    "step2": "Hitta någon i närheten som kan hjälpa till.",
+    "step3": "Ta direktkontakt och kom överens om detaljerna.",
+    "examples": "Det kan vara en förare, en skåpbil, en flyttjänst, byggmaskiner, ett verktyg, en leverans eller helt enkelt någon med rätt kunskaper och tid.",
+    "closing": "Ett nätverk. Tusentals möjligheter."
+  },
+  "need_driver": {
+    "eyebrow": "BEHÖVER DU EN FÖRARE?",
+    "tagline1": "Du dricker.",
+    "tagline2": "De kör.",
+    "tagline3": "Din bil.",
+    "body1": "Ibland behöver du ingen taxi. Du behöver bara någon som kör din egen bil.",
+    "body2": "Rotabo kopplar dig samman med en verifierad förare som kommer till dig och kör dig hem i din egen bil när du inte kan eller inte bör köra själv.",
+    "cta": "Hitta en förare"
+  },
+  "need_other": {
+    "eyebrow": "BEHÖVER DU NÅGOT ANNAT?",
+    "vehicle_title": "Behöver du ett fordon?",
+    "vehicle_desc": "Hitta någon med rätt fordon för din resa, leverans eller uppgift.",
+    "moving_title": "Ska du flytta?",
+    "moving_desc": "Ta kontakt med någon som kan hjälpa dig att flytta möbler, saker eller annat som behöver transporteras.",
+    "equipment_title": "Behöver du utrustning?",
+    "equipment_desc": "Hitta verktyg, maskiner och byggutrustning för jobbet du behöver få gjort.",
+    "hand_title": "Behöver du en hjälpande hand?",
+    "hand_desc": "Hitta någon med kunskaperna, erfarenheten eller tiden att hjälpa till.",
+    "unexpected_title": "Hände något oväntat?",
+    "unexpected_desc": "Berätta för Rotabo vad du behöver. Någon i närheten kanske kan hjälpa till."
+  },
+  "offer": {
+    "eyebrow": "HAR DU NÅGOT ATT ERBJUDA?",
+    "h2": "Någon behöver det du har.",
+    "item1": "Din bil.",
+    "item2": "Din skåpbil.",
+    "item3": "Dina verktyg.",
+    "item4": "Din utrustning.",
+    "item5": "Dina kunskaper.",
+    "item6": "Din tid.",
+    "body": "Berätta för Rotabo vad du kan erbjuda och ta kontakt med människor som behöver det.",
+    "keep_title": "Behåll det du tjänar.",
+    "keep_body": "Rotabo tar ingen procent av det du tjänar.",
+    "cta": "Erbjud det du kan"
+  },
+  "idea": {
+    "eyebrow": "IDÉN BAKOM ROTABO",
+    "tagline1": "Människor behöver saker.",
+    "tagline2": "Människor har saker.",
+    "tagline3": "Rotabo kopplar samman dem.",
+    "body1": "Överallt i världen behöver människor hjälp. Och överallt i världen har någon tiden, kunskaperna, utrustningen eller resurserna för att hjälpa till.",
+    "body2": "Problemet är ofta enkelt: de kan helt enkelt inte hitta varandra. Rotabo för dem samman.",
+    "closing1": "Behöver du något? Hitta någon.",
+    "closing2": "Har du något att erbjuda? Någon behöver det.",
+    "closing3": "Rotabo kopplar samman dem."
   },
   "categories": {
     "section_eyebrow": "VAD BEHÖVER DU?",

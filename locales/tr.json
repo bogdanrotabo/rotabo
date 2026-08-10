@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
     "pill": "BİR AMAÇLA SÜREN SÜRÜCÜLER · KENDİ ARABAN · EVE GİDEN YOLUN",
-    "tagline1": "Sen içersin.", "tagline2": "Onlar sürer.", "tagline3": "Kendi araban.",
-    "lede": "Rotabo seni, kimsenin uygun olmayan durumda araç kullanmaması gerektiğine inanan bir sürücüyle buluşturur — ve seni <b>kendi araban</b> ile evine götürür.",
+    "tagline1": "Bir şeye mi ihtiyacın var?", "tagline2": "Birini bul.", "tagline3": "Kendi araban.",
+    "lede": "Rotabo, bir şeye ihtiyacı olan insanları yardım edebilecek insanlarla buluşturur — bir araç, hizmet, ekipman, beceri veya sadece zamanlarıyla.",
+    "cta_find": "İhtiyacın olanı bul",
+    "cta_offer": "Sunabileceğini sun",
     "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_become_sponsor": "Sponsor ol",
     "cta_home_screen": "⬇ Rotabo'yu ana ekranına ekle",
     "fine": "Tarayıcında çalışır — uygulama mağazasına gerek yok.",
-    "badge_verified": "Doğrulanmış sürücüler", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Doğrulanmış kullanıcılar", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "ROTABO NASIL ÇALIŞIR",
+    "h2": "Bir şeye ihtiyacın var. Biri yardım edebilir.",
+    "step1": "Bize neye ihtiyacın olduğunu söyle.",
+    "step2": "Yardım edebilecek yakındaki birini bul.",
+    "step3": "Doğrudan iletişime geç ve detaylarda anlaşın.",
+    "examples": "Bu bir şoför, bir minibüs, bir nakliye hizmeti, inşaat ekipmanı, bir alet, bir teslimat ya da sadece doğru becerilere ve zamana sahip biri olabilir.",
+    "closing": "Tek bir ağ. Binlerce olasılık."
+  },
+  "need_driver": {
+    "eyebrow": "ŞOFÖRE Mİ İHTİYACIN VAR?",
+    "tagline1": "Sen içersin.",
+    "tagline2": "Onlar sürer.",
+    "tagline3": "Senin araban.",
+    "body1": "Bazen taksiye ihtiyacın olmaz. Sadece kendi arabanı sürecek birine ihtiyacın vardır.",
+    "body2": "Rotabo, sürmemen gerektiğinde veya süremeyeceğin zamanlarda sana gelip seni kendi arabanla evine bırakacak doğrulanmış bir şoförle buluşturur.",
+    "cta": "Şoför bul"
+  },
+  "need_other": {
+    "eyebrow": "BAŞKA BİR ŞEYE Mİ İHTİYACIN VAR?",
+    "vehicle_title": "Araca mı ihtiyacın var?",
+    "vehicle_desc": "Yolculuğun, teslimatın veya işin için doğru araca sahip birini bul.",
+    "moving_title": "Taşınıyor musun?",
+    "moving_desc": "Mobilya, eşya veya taşınması gereken herhangi bir şeyi taşımana yardımcı olabilecek biriyle bağlantı kur.",
+    "equipment_title": "Ekipmana mı ihtiyacın var?",
+    "equipment_desc": "Yapman gereken iş için alet, makine ve inşaat ekipmanı bul.",
+    "hand_title": "Yardımcı bir ele mi ihtiyacın var?",
+    "hand_desc": "Yardım edecek beceriye, deneyime veya zamana sahip birini bul.",
+    "unexpected_title": "Beklenmedik bir şey mi oldu?",
+    "unexpected_desc": "Rotabo'ya neye ihtiyacın olduğunu söyle. Yakınlardaki biri yardımcı olabilir."
+  },
+  "offer": {
+    "eyebrow": "SUNACAK BİR ŞEYİN VAR MI?",
+    "h2": "Birinin sahip olduğuna ihtiyacı var.",
+    "item1": "Senin araban.",
+    "item2": "Senin minibüsün.",
+    "item3": "Senin aletlerin.",
+    "item4": "Senin ekipmanın.",
+    "item5": "Senin becerilerin.",
+    "item6": "Senin zamanın.",
+    "body": "Rotabo'ya ne sunabileceğini söyle ve buna ihtiyacı olan insanlarla bağlantı kur.",
+    "keep_title": "Kazandığını sende tut.",
+    "keep_body": "Rotabo kazandığından hiçbir yüzde almaz.",
+    "cta": "Sunabileceğini sun"
+  },
+  "idea": {
+    "eyebrow": "ROTABO FİKRİ",
+    "tagline1": "İnsanların bir şeylere ihtiyacı var.",
+    "tagline2": "İnsanların bir şeyleri var.",
+    "tagline3": "Rotabo onları buluşturur.",
+    "body1": "Dünyanın her yerinde insanların yardıma ihtiyacı var. Ve dünyanın her yerinde birinin yardım edecek zamanı, becerisi, ekipmanı ya da kaynağı var.",
+    "body2": "Sorun genellikle basittir: birbirlerini bulamıyorlardır. Rotabo onları bir araya getirir.",
+    "closing1": "Bir şeye mi ihtiyacın var? Birini bul.",
+    "closing2": "Sunacak bir şeyin mi var? Birinin buna ihtiyacı var.",
+    "closing3": "Rotabo onları buluşturur."
   },
   "categories": {
     "section_eyebrow": "NEYE İHTİYACIN VAR?",

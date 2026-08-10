@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
     "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
-    "tagline1": "Anda minum.", "tagline2": "Mereka memandu.", "tagline3": "Kereta anda.",
-    "lede": "Rotabo menghubungkan anda dengan pemandu yang percaya tiada sesiapa patut memandu pulang dalam keadaan tidak selamat — dan menghantar anda pulang <b>dengan kereta anda sendiri</b>.",
+    "tagline1": "Perlukan sesuatu?", "tagline2": "Cari seseorang.", "tagline3": "Kereta anda.",
+    "lede": "Rotabo menghubungkan orang yang memerlukan sesuatu dengan orang yang boleh membantu — dengan kenderaan, perkhidmatan, peralatan, kemahiran atau sekadar masa mereka.",
+    "cta_find": "Cari apa yang anda perlukan",
+    "cta_offer": "Tawarkan apa yang anda boleh",
     "cta_find_driver": "Cari pemandu", "cta_become_driver": "Menjadi pemandu", "cta_become_sponsor": "Menjadi penaja",
     "cta_home_screen": "⬇ Tambah Rotabo ke skrin utama",
     "fine": "Berfungsi terus dalam pelayar anda — tiada keperluan memuat turun aplikasi.",
-    "badge_verified": "Pemandu yang disahkan", "badge_live": "Perkongsian perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Pengguna disahkan", "badge_live": "Perkongsian perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "BAGAIMANA ROTABO BERFUNGSI",
+    "h2": "Anda perlukan sesuatu. Seseorang boleh membantu.",
+    "step1": "Beritahu kami apa yang anda perlukan.",
+    "step2": "Cari seseorang berdekatan yang boleh membantu.",
+    "step3": "Hubungi terus dan bincangkan butirannya.",
+    "examples": "Ia boleh jadi seorang pemandu, van, perkhidmatan berpindah, peralatan pembinaan, sebuah alat, penghantaran atau sekadar seseorang dengan kemahiran dan masa yang sesuai.",
+    "closing": "Satu rangkaian. Ribuan kemungkinan."
+  },
+  "need_driver": {
+    "eyebrow": "PERLUKAN PEMANDU?",
+    "tagline1": "Anda minum.",
+    "tagline2": "Mereka memandu.",
+    "tagline3": "Kereta anda.",
+    "body1": "Kadangkala anda tidak memerlukan teksi. Anda cuma perlukan seseorang untuk memandu kereta anda sendiri.",
+    "body2": "Rotabo menghubungkan anda dengan pemandu yang disahkan, yang datang kepada anda dan menghantar anda pulang dengan kereta anda sendiri apabila anda tidak boleh atau tidak sepatutnya memandu.",
+    "cta": "Cari pemandu"
+  },
+  "need_other": {
+    "eyebrow": "PERLUKAN SESUATU YANG LAIN?",
+    "vehicle_title": "Perlukan kenderaan?",
+    "vehicle_desc": "Cari seseorang dengan kenderaan yang sesuai untuk perjalanan, penghantaran atau kerja anda.",
+    "moving_title": "Berpindah rumah?",
+    "moving_desc": "Hubungi seseorang yang boleh membantu anda memindahkan perabot, barangan atau apa-apa lagi yang perlu diangkut.",
+    "equipment_title": "Perlukan peralatan?",
+    "equipment_desc": "Cari alat, mesin dan peralatan pembinaan untuk kerja yang perlu anda selesaikan.",
+    "hand_title": "Perlukan bantuan?",
+    "hand_desc": "Cari seseorang dengan kemahiran, pengalaman atau masa untuk membantu.",
+    "unexpected_title": "Sesuatu yang tidak dijangka berlaku?",
+    "unexpected_desc": "Beritahu Rotabo apa yang anda perlukan. Seseorang berdekatan mungkin boleh membantu."
+  },
+  "offer": {
+    "eyebrow": "ADA SESUATU UNTUK DITAWARKAN?",
+    "h2": "Seseorang memerlukan apa yang anda ada.",
+    "item1": "Kereta anda.",
+    "item2": "Van anda.",
+    "item3": "Alat anda.",
+    "item4": "Peralatan anda.",
+    "item5": "Kemahiran anda.",
+    "item6": "Masa anda.",
+    "body": "Beritahu Rotabo apa yang boleh anda tawarkan dan hubungi orang yang memerlukannya.",
+    "keep_title": "Simpan semua yang anda peroleh.",
+    "keep_body": "Rotabo tidak mengambil sebarang peratusan daripada apa yang anda peroleh.",
+    "cta": "Tawarkan apa yang anda boleh"
+  },
+  "idea": {
+    "eyebrow": "IDEA ROTABO",
+    "tagline1": "Orang memerlukan sesuatu.",
+    "tagline2": "Orang mempunyai sesuatu.",
+    "tagline3": "Rotabo menghubungkan mereka.",
+    "body1": "Di mana-mana sahaja di dunia, orang memerlukan bantuan. Dan di mana-mana sahaja di dunia, seseorang mempunyai masa, kemahiran, peralatan atau sumber untuk membantu.",
+    "body2": "Masalahnya selalunya mudah: mereka cuma tidak dapat mencari satu sama lain. Rotabo menyatukan mereka.",
+    "closing1": "Perlukan sesuatu? Cari seseorang.",
+    "closing2": "Ada sesuatu untuk ditawarkan? Seseorang memerlukannya.",
+    "closing3": "Rotabo menghubungkan mereka."
   },
   "categories": {
     "section_eyebrow": "APA YANG KAMU PERLUKAN?",

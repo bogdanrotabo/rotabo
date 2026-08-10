@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Zrobione w Szwajcarii — dla całego świata",
     "pill": "KIEROWCY Z MISJĄ · TWÓJ SAMOCHÓD · TWOJA DROGA DO DOMU",
-    "tagline1": "Ty pijesz.", "tagline2": "Oni prowadzą.", "tagline3": "Twój samochód.",
-    "lede": "Rotabo łączy Cię z kierowcą, który wierzy, że nikt nie powinien prowadzić, gdy nie jest w stanie — i który zawiezie Cię <b>Twoim własnym samochodem</b>.",
+    "tagline1": "Potrzebujesz czegoś?", "tagline2": "Znajdź kogoś.", "tagline3": "Twój samochód.",
+    "lede": "Rotabo łączy ludzi, którzy czegoś potrzebują, z ludźmi, którzy mogą pomóc — pojazdem, usługą, sprzętem, umiejętnościami lub po prostu swoim czasem.",
+    "cta_find": "Znajdź to, czego potrzebujesz",
+    "cta_offer": "Zaoferuj to, co możesz",
     "cta_find_driver": "Znajdź kierowcę", "cta_become_driver": "Zostań kierowcą", "cta_become_sponsor": "Zostań sponsorem",
     "cta_home_screen": "⬇ Dodaj Rotabo do ekranu głównego",
     "fine": "Działa w przeglądarce — bez sklepu z aplikacjami.",
-    "badge_verified": "Zweryfikowani kierowcy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Zweryfikowani użytkownicy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "JAK DZIAŁA ROTABO",
+    "h2": "Czegoś potrzebujesz. Ktoś może pomóc.",
+    "step1": "Powiedz nam, czego potrzebujesz.",
+    "step2": "Znajdź kogoś w pobliżu, kto może pomóc.",
+    "step3": "Skontaktuj się bezpośrednio i ustalcie szczegóły.",
+    "examples": "To może być kierowca, bus, usługa przeprowadzki, sprzęt budowlany, narzędzie, dostawa lub po prostu ktoś z odpowiednimi umiejętnościami i czasem.",
+    "closing": "Jedna sieć. Tysiące możliwości."
+  },
+  "need_driver": {
+    "eyebrow": "POTRZEBUJESZ KIEROWCY?",
+    "tagline1": "Ty pijesz.",
+    "tagline2": "Oni prowadzą.",
+    "tagline3": "Twój samochód.",
+    "body1": "Czasami nie potrzebujesz taksówki. Potrzebujesz po prostu kogoś, kto poprowadzi twój własny samochód.",
+    "body2": "Rotabo łączy cię ze zweryfikowanym kierowcą, który przyjeżdża do ciebie i odwozi cię do domu twoim własnym samochodem, gdy nie możesz lub nie powinieneś prowadzić.",
+    "cta": "Znajdź kierowcę"
+  },
+  "need_other": {
+    "eyebrow": "POTRZEBUJESZ CZEGOŚ INNEGO?",
+    "vehicle_title": "Potrzebujesz pojazdu?",
+    "vehicle_desc": "Znajdź kogoś z odpowiednim pojazdem do twojej podróży, dostawy lub pracy.",
+    "moving_title": "Przeprowadzasz się?",
+    "moving_desc": "Skontaktuj się z kimś, kto pomoże ci przewieźć meble, rzeczy lub cokolwiek innego, co wymaga transportu.",
+    "equipment_title": "Potrzebujesz sprzętu?",
+    "equipment_desc": "Znajdź narzędzia, maszyny i sprzęt budowlany do pracy, którą musisz wykonać.",
+    "hand_title": "Potrzebujesz pomocnej dłoni?",
+    "hand_desc": "Znajdź kogoś z umiejętnościami, doświadczeniem lub czasem, żeby pomóc.",
+    "unexpected_title": "Wydarzyło się coś nieoczekiwanego?",
+    "unexpected_desc": "Powiedz Rotabo, czego potrzebujesz. Ktoś w pobliżu może być w stanie pomóc."
+  },
+  "offer": {
+    "eyebrow": "MASZ COŚ DO ZAOFEROWANIA?",
+    "h2": "Ktoś potrzebuje tego, co masz.",
+    "item1": "Twój samochód.",
+    "item2": "Twój bus.",
+    "item3": "Twoje narzędzia.",
+    "item4": "Twój sprzęt.",
+    "item5": "Twoje umiejętności.",
+    "item6": "Twój czas.",
+    "body": "Powiedz Rotabo, co możesz zaoferować, i skontaktuj się z ludźmi, którzy tego potrzebują.",
+    "keep_title": "Zatrzymaj to, co zarobisz.",
+    "keep_body": "Rotabo nie pobiera żadnego procentu od tego, co zarabiasz.",
+    "cta": "Zaoferuj to, co możesz"
+  },
+  "idea": {
+    "eyebrow": "IDEA ROTABO",
+    "tagline1": "Ludzie czegoś potrzebują.",
+    "tagline2": "Ludzie coś mają.",
+    "tagline3": "Rotabo ich łączy.",
+    "body1": "Wszędzie na świecie ludzie potrzebują pomocy. I wszędzie na świecie ktoś ma czas, umiejętności, sprzęt lub zasoby, żeby pomóc.",
+    "body2": "Problem jest często prosty: po prostu nie mogą się odnaleźć. Rotabo ich łączy.",
+    "closing1": "Potrzebujesz czegoś? Znajdź kogoś.",
+    "closing2": "Masz coś do zaoferowania? Ktoś tego potrzebuje.",
+    "closing3": "Rotabo ich łączy."
   },
   "categories": {
     "section_eyebrow": "CZEGO POTRZEBUJESZ?",

@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Pagaminta Šveicarijoje — visam pasauliui",
     "pill": "VAIRUOTOJAI SU TIKSLU · TAVO AUTOMOBILIS · TAVO KELIAS NAMO",
-    "tagline1": "Tu geri.", "tagline2": "Jie vairuoja.", "tagline3": "Tavo automobilis.",
-    "lede": "Rotabo sujungia tave su vairuotoju, kuris tiki, kad niekas neturėtų vairuoti namo būdamas netinkamos būklės — ir kuris nuveža tave <b>tavo paties automobiliu</b>.",
+    "tagline1": "Reikia kažko?", "tagline2": "Raskite žmogų.", "tagline3": "Tavo automobilis.",
+    "lede": "Rotabo sujungia žmones, kuriems ko nors reikia, su žmonėmis, galinčiais padėti — transporto priemone, paslauga, įranga, įgūdžiais ar tiesiog savo laiku.",
+    "cta_find": "Rasti, ko reikia",
+    "cta_offer": "Pasiūlyti, ką gali",
     "cta_find_driver": "Rasti vairuotoją", "cta_become_driver": "Tapk vairuotoju", "cta_become_sponsor": "Tapk rėmėju",
     "cta_home_screen": "⬇ Pridėk Rotabo prie pradžios ekrano",
     "fine": "Veikia naršyklėje — programėlių parduotuvė nereikalinga.",
-    "badge_verified": "Patikrinti vairuotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Patvirtinti vartotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "KAIP VEIKIA ROTABO",
+    "h2": "Jums ko nors reikia. Kažkas gali padėti.",
+    "step1": "Pasakykite mums, ko jums reikia.",
+    "step2": "Raskite netoliese esantį žmogų, galintį padėti.",
+    "step3": "Susisiekite tiesiogiai ir sutarkite dėl detalių.",
+    "examples": "Tai gali būti vairuotojas, mikroautobusas, perkraustymo paslauga, statybinė įranga, įrankis, pristatymas arba tiesiog žmogus su tinkamais įgūdžiais ir laiku.",
+    "closing": "Vienas tinklas. Tūkstančiai galimybių."
+  },
+  "need_driver": {
+    "eyebrow": "REIKIA VAIRUOTOJO?",
+    "tagline1": "Jūs geriate.",
+    "tagline2": "Jie vairuoja.",
+    "tagline3": "Jūsų automobilis.",
+    "body1": "Kartais jums nereikia taksi. Jums tereikia žmogaus, kuris pavairuotų jūsų pačių automobilį.",
+    "body2": "Rotabo sujungia jus su patvirtintu vairuotoju, kuris atvyksta pas jus ir parveža namo jūsų pačių automobiliu, kai negalite ar neturėtumėte vairuoti.",
+    "cta": "Rasti vairuotoją"
+  },
+  "need_other": {
+    "eyebrow": "REIKIA KO NORS KITO?",
+    "vehicle_title": "Reikia transporto priemonės?",
+    "vehicle_desc": "Raskite žmogų su tinkama transporto priemone jūsų kelionei, pristatymui ar darbui.",
+    "moving_title": "Kraustotės?",
+    "moving_desc": "Susisiekite su žmogumi, galinčiu padėti perkelti baldus, daiktus ar bet ką kitą, ką reikia pervežti.",
+    "equipment_title": "Reikia įrangos?",
+    "equipment_desc": "Raskite įrankius, mašinas ir statybinę įrangą darbui, kurį reikia atlikti.",
+    "hand_title": "Reikia pagalbos?",
+    "hand_desc": "Raskite žmogų su įgūdžiais, patirtimi ar laiku padėti.",
+    "unexpected_title": "Nutiko kažkas netikėto?",
+    "unexpected_desc": "Pasakykite Rotabo, ko jums reikia. Kažkas netoliese galbūt galės padėti."
+  },
+  "offer": {
+    "eyebrow": "TURITE KĄ PASIŪLYTI?",
+    "h2": "Kažkam reikia to, ką turite.",
+    "item1": "Jūsų automobilis.",
+    "item2": "Jūsų mikroautobusas.",
+    "item3": "Jūsų įrankiai.",
+    "item4": "Jūsų įranga.",
+    "item5": "Jūsų įgūdžiai.",
+    "item6": "Jūsų laikas.",
+    "body": "Pasakykite Rotabo, ką galite pasiūlyti, ir susisiekite su žmonėmis, kuriems to reikia.",
+    "keep_title": "Pasilikite tai, ką uždirbate.",
+    "keep_body": "Rotabo neima jokio procento nuo to, ką uždirbate.",
+    "cta": "Pasiūlyti, ką gali"
+  },
+  "idea": {
+    "eyebrow": "ROTABO IDĖJA",
+    "tagline1": "Žmonėms ko nors reikia.",
+    "tagline2": "Žmonės kažką turi.",
+    "tagline3": "Rotabo juos sujungia.",
+    "body1": "Visame pasaulyje žmonėms reikia pagalbos. Ir visame pasaulyje kažkas turi laiko, įgūdžių, įrangos ar išteklių padėti.",
+    "body2": "Problema dažnai paprasta: jie tiesiog negali vieni kitų rasti. Rotabo juos suveda.",
+    "closing1": "Reikia kažko? Raskite žmogų.",
+    "closing2": "Turite ką pasiūlyti? Kažkam to reikia.",
+    "closing3": "Rotabo juos sujungia."
   },
   "categories": {
     "section_eyebrow": "KO TAU REIKIA?",

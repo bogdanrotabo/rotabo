@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Magħmul fl-Isvizzera — għad-dinja kollha",
     "pill": "SEWWIEQA B'SKOP · IL-KARROZZA TIEGĦEK · IT-TRIQ TIEGĦEK LEJN DARK",
-    "tagline1": "Int tixrob.", "tagline2": "Huma jsuqu.", "tagline3": "Il-karrozza tiegħek.",
-    "lede": "Rotabo tgħaqqdek ma' sewwieq li jemmen li ħadd m'għandu jsuq lejn daru meta ma jkunx f'kundizzjoni tajba — u li jwassalek <b>bil-karrozza tiegħek stess</b>.",
+    "tagline1": "Għandek bżonn xi ħaġa?", "tagline2": "Sib lil xi ħadd.", "tagline3": "Il-karrozza tiegħek.",
+    "lede": "Rotabo tgħaqqad nies li għandhom bżonn xi ħaġa ma' nies li jistgħu jgħinu — b'vettura, servizz, tagħmir, ħiliet jew sempliċement il-ħin tagħhom.",
+    "cta_find": "Sib dak li għandek bżonn",
+    "cta_offer": "Offri dak li tista'",
     "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_become_sponsor": "Sir sponsor",
     "cta_home_screen": "⬇ Żid Rotabo mal-iskrin ta' id-dar",
     "fine": "Taħdem fil-browser tiegħek — ma teħtieġx app store.",
-    "badge_verified": "Sewwieqa vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Utenti vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "KIF TAĦDEM ROTABO",
+    "h2": "Għandek bżonn xi ħaġa. Xi ħadd jista' jgħin.",
+    "step1": "Għidilna x'għandek bżonn.",
+    "step2": "Sib lil xi ħadd fil-qrib li jista' jgħin.",
+    "step3": "Ikkuntattja direttament u ftiehmu dwar id-dettalji.",
+    "examples": "Jista' jkun sewwieq, vann, servizz ta' trasferiment, tagħmir tal-kostruzzjoni, għodda, konsenja jew sempliċement xi ħadd bil-ħiliet u l-ħin it-tajbin.",
+    "closing": "Network wieħed. Eluf ta' possibbiltajiet."
+  },
+  "need_driver": {
+    "eyebrow": "GĦANDEK BŻONN SEWWIEQ?",
+    "tagline1": "Int tixrob.",
+    "tagline2": "Huma jsuqu.",
+    "tagline3": "Il-karozza tiegħek.",
+    "body1": "Kultant m'għandekx bżonn taxi. Kull ma jkollok bżonn hu xi ħadd li jsuq il-karozza tiegħek stess.",
+    "body2": "Rotabo tgħaqqdek ma' sewwieq ivverifikat li jiġi għandek u jwassalek id-dar bil-karozza tiegħek stess meta ma tkunx tista' jew m'għandekx issuq.",
+    "cta": "Sib sewwieq"
+  },
+  "need_other": {
+    "eyebrow": "GĦANDEK BŻONN XI ĦAĠA OĦRA?",
+    "vehicle_title": "Għandek bżonn vettura?",
+    "vehicle_desc": "Sib lil xi ħadd bil-vettura t-tajba għall-vjaġġ, il-konsenja jew ix-xogħol tiegħek.",
+    "moving_title": "Qed tittrasferixxi?",
+    "moving_desc": "Ikkuntattja lil xi ħadd li jista' jgħinek tittrasferixxi l-għamara, l-affarijiet jew kwalunkwe ħaġa oħra li jkollha bżonn tiġi ttrasportata.",
+    "equipment_title": "Għandek bżonn tagħmir?",
+    "equipment_desc": "Sib għodod, magni u tagħmir tal-kostruzzjoni għax-xogħol li għandek bżonn tlesti.",
+    "hand_title": "Għandek bżonn għajnuna?",
+    "hand_desc": "Sib lil xi ħadd bil-ħiliet, l-esperjenza jew il-ħin biex jgħin.",
+    "unexpected_title": "Ġara xi ħaġa mhux mistennija?",
+    "unexpected_desc": "Għid lil Rotabo x'għandek bżonn. Xi ħadd fil-qrib jista' jkun kapaċi jgħin."
+  },
+  "offer": {
+    "eyebrow": "GĦANDEK XI ĦAĠA X'TOFFRI?",
+    "h2": "Xi ħadd għandu bżonn dak li għandek.",
+    "item1": "Il-karozza tiegħek.",
+    "item2": "Il-vann tiegħek.",
+    "item3": "L-għodod tiegħek.",
+    "item4": "It-tagħmir tiegħek.",
+    "item5": "Il-ħiliet tiegħek.",
+    "item6": "Il-ħin tiegħek.",
+    "body": "Għid lil Rotabo x'tista' toffri u ikkuntattja lin-nies li għandhom bżonnu.",
+    "keep_title": "Żomm dak li taqla'.",
+    "keep_body": "Rotabo ma tieħu ebda persentaġġ minn dak li taqla'.",
+    "cta": "Offri dak li tista'"
+  },
+  "idea": {
+    "eyebrow": "L-IDEA TA' ROTABO",
+    "tagline1": "In-nies għandhom bżonn l-affarijiet.",
+    "tagline2": "In-nies għandhom l-affarijiet.",
+    "tagline3": "Rotabo tgħaqqadhom.",
+    "body1": "Kullimkien fid-dinja, in-nies għandhom bżonn l-għajnuna. U kullimkien fid-dinja, xi ħadd għandu l-ħin, il-ħiliet, it-tagħmir jew ir-riżorsi biex jgħin.",
+    "body2": "Il-problema ħafna drabi hi sempliċi: sempliċement ma jistgħux isibu lil xulxin. Rotabo ġġibhom flimkien.",
+    "closing1": "Għandek bżonn xi ħaġa? Sib lil xi ħadd.",
+    "closing2": "Għandek xi ħaġa x'toffri? Xi ħadd għandu bżonnha.",
+    "closing3": "Rotabo tgħaqqadhom."
   },
   "categories": {
     "section_eyebrow": "XI TEĦTIEĠ?",

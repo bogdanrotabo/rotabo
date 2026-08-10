@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
     "pill": "TÀI XẾ CÓ SỨ MỆNH · XE CỦA BẠN · ĐƯỜNG VỀ NHÀ CỦA BẠN",
-    "tagline1": "Bạn uống.", "tagline2": "Họ lái.", "tagline3": "Xe của bạn.",
-    "lede": "Rotabo kết nối bạn với một tài xế tin rằng không ai nên tự lái xe về nhà khi không đủ tỉnh táo — và đưa bạn về nhà <b>bằng chính chiếc xe của bạn</b>.",
+    "tagline1": "Bạn cần gì đó?", "tagline2": "Tìm người giúp.", "tagline3": "Xe của bạn.",
+    "lede": "Rotabo kết nối những người cần giúp đỡ với những người có thể giúp — bằng một chiếc xe, một dịch vụ, thiết bị, kỹ năng hoặc đơn giản là thời gian của họ.",
+    "cta_find": "Tìm thứ bạn cần",
+    "cta_offer": "Đề nghị những gì bạn có thể",
     "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_become_sponsor": "Trở thành nhà tài trợ",
     "cta_home_screen": "⬇ Thêm Rotabo vào màn hình chính",
     "fine": "Hoạt động ngay trên trình duyệt — không cần tải ứng dụng.",
-    "badge_verified": "Tài xế đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Người dùng đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "ROTABO HOẠT ĐỘNG NHƯ THẾ NÀO",
+    "h2": "Bạn cần gì đó. Ai đó có thể giúp.",
+    "step1": "Cho chúng tôi biết bạn cần gì.",
+    "step2": "Tìm ai đó gần bạn có thể giúp đỡ.",
+    "step3": "Liên hệ trực tiếp và thống nhất chi tiết.",
+    "examples": "Đó có thể là tài xế, xe tải nhỏ, dịch vụ chuyển nhà, thiết bị xây dựng, một dụng cụ, giao hàng hoặc đơn giản là người có đúng kỹ năng và thời gian.",
+    "closing": "Một mạng lưới. Hàng nghìn khả năng."
+  },
+  "need_driver": {
+    "eyebrow": "CẦN TÀI XẾ?",
+    "tagline1": "Bạn uống.",
+    "tagline2": "Họ lái.",
+    "tagline3": "Xe của bạn.",
+    "body1": "Đôi khi bạn không cần taxi. Bạn chỉ cần ai đó lái chiếc xe của chính mình.",
+    "body2": "Rotabo kết nối bạn với một tài xế đã xác minh, người sẽ đến chỗ bạn và lái xe của chính bạn đưa bạn về nhà khi bạn không thể hoặc không nên lái xe.",
+    "cta": "Tìm tài xế"
+  },
+  "need_other": {
+    "eyebrow": "CẦN THỨ KHÁC?",
+    "vehicle_title": "Cần xe?",
+    "vehicle_desc": "Tìm ai đó có phương tiện phù hợp cho chuyến đi, việc giao hàng hoặc công việc của bạn.",
+    "moving_title": "Đang chuyển nhà?",
+    "moving_desc": "Kết nối với ai đó có thể giúp bạn di chuyển đồ nội thất, đồ đạc hoặc bất cứ thứ gì khác cần vận chuyển.",
+    "equipment_title": "Cần thiết bị?",
+    "equipment_desc": "Tìm dụng cụ, máy móc và thiết bị xây dựng cho công việc bạn cần hoàn thành.",
+    "hand_title": "Cần người giúp một tay?",
+    "hand_desc": "Tìm ai đó có kỹ năng, kinh nghiệm hoặc thời gian để giúp đỡ.",
+    "unexpected_title": "Có chuyện bất ngờ xảy ra?",
+    "unexpected_desc": "Cho Rotabo biết bạn cần gì. Ai đó gần bạn có thể sẽ giúp được."
+  },
+  "offer": {
+    "eyebrow": "CÓ GÌ ĐỂ ĐỀ NGHỊ?",
+    "h2": "Ai đó cần thứ bạn có.",
+    "item1": "Xe của bạn.",
+    "item2": "Xe tải nhỏ của bạn.",
+    "item3": "Dụng cụ của bạn.",
+    "item4": "Thiết bị của bạn.",
+    "item5": "Kỹ năng của bạn.",
+    "item6": "Thời gian của bạn.",
+    "body": "Cho Rotabo biết bạn có thể đề nghị gì và kết nối với những người cần điều đó.",
+    "keep_title": "Giữ lại toàn bộ những gì bạn kiếm được.",
+    "keep_body": "Rotabo không lấy bất kỳ phần trăm nào từ số tiền bạn kiếm được.",
+    "cta": "Đề nghị những gì bạn có thể"
+  },
+  "idea": {
+    "eyebrow": "Ý TƯỞNG CỦA ROTABO",
+    "tagline1": "Mọi người cần những thứ.",
+    "tagline2": "Mọi người có những thứ.",
+    "tagline3": "Rotabo kết nối họ.",
+    "body1": "Ở khắp mọi nơi trên thế giới, mọi người cần giúp đỡ. Và ở khắp mọi nơi trên thế giới, ai đó có thời gian, kỹ năng, thiết bị hoặc nguồn lực để giúp đỡ.",
+    "body2": "Vấn đề thường đơn giản: họ chỉ là không tìm thấy nhau. Rotabo đưa họ đến với nhau.",
+    "closing1": "Cần gì đó? Tìm người giúp.",
+    "closing2": "Có gì để đề nghị? Ai đó cần điều đó.",
+    "closing3": "Rotabo kết nối họ."
   },
   "categories": {
     "section_eyebrow": "BẠN CẦN GÌ?",

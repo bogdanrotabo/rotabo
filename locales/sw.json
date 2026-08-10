@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Imetengenezwa Uswisi — kwa ulimwengu wote",
     "pill": "MADEREVA WENYE LENGO · GARI LAKO · NJIA YAKO YA KURUDI NYUMBANI",
-    "tagline1": "Wewe unakunywa.", "tagline2": "Wao wanaendesha.", "tagline3": "Gari lako.",
-    "lede": "Rotabo inakuunganisha na dereva anayeamini kuwa hakuna anayepaswa kuendesha akiwa hafai — na anayekufikisha <b>kwa gari lako mwenyewe</b>.",
+    "tagline1": "Unahitaji kitu?", "tagline2": "Mtafute mtu.", "tagline3": "Gari lako.",
+    "lede": "Rotabo huunganisha watu wanaohitaji kitu na watu wanaoweza kusaidia — kwa gari, huduma, vifaa, ujuzi au tu wakati wao.",
+    "cta_find": "Tafuta unachohitaji",
+    "cta_offer": "Toa unachoweza",
     "cta_find_driver": "Tafuta dereva", "cta_become_driver": "Kuwa dereva", "cta_become_sponsor": "Kuwa mfadhili",
     "cta_home_screen": "⬇ Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "fine": "Inafanya kazi kwenye kivinjari chako — hakuna haja ya duka la programu.",
-    "badge_verified": "Madereva waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Watumiaji waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "JINSI ROTABO INAVYOFANYA KAZI",
+    "h2": "Unahitaji kitu. Mtu anaweza kusaidia.",
+    "step1": "Tuambie unachohitaji.",
+    "step2": "Tafuta mtu aliye karibu anayeweza kusaidia.",
+    "step3": "Wasiliana moja kwa moja na mkubaliane kuhusu maelezo.",
+    "examples": "Inaweza kuwa dereva, gari la mizigo, huduma ya kuhamisha vitu, vifaa vya ujenzi, chombo, uwasilishaji au tu mtu mwenye ujuzi na wakati unaofaa.",
+    "closing": "Mtandao mmoja. Uwezekano maelfu."
+  },
+  "need_driver": {
+    "eyebrow": "UNAHITAJI DEREVA?",
+    "tagline1": "Wewe unakunywa.",
+    "tagline2": "Wao wanaendesha.",
+    "tagline3": "Gari lako.",
+    "body1": "Wakati mwingine huhitaji teksi. Unahitaji tu mtu wa kuendesha gari lako mwenyewe.",
+    "body2": "Rotabo inakuunganisha na dereva aliyethibitishwa anayekuja kwako na kukupeleka nyumbani kwa gari lako mwenyewe wakati huwezi au hupaswi kuendesha.",
+    "cta": "Tafuta dereva"
+  },
+  "need_other": {
+    "eyebrow": "UNAHITAJI KITU KINGINE?",
+    "vehicle_title": "Unahitaji gari?",
+    "vehicle_desc": "Tafuta mtu mwenye gari linalofaa kwa safari, uwasilishaji au kazi yako.",
+    "moving_title": "Unahamia?",
+    "moving_desc": "Wasiliana na mtu anayeweza kukusaidia kuhamisha samani, mali au kitu kingine chochote kinachohitaji kusafirishwa.",
+    "equipment_title": "Unahitaji vifaa?",
+    "equipment_desc": "Tafuta zana, mashine na vifaa vya ujenzi kwa ajili ya kazi unayohitaji kuifanya.",
+    "hand_title": "Unahitaji msaada?",
+    "hand_desc": "Tafuta mtu mwenye ujuzi, uzoefu au wakati wa kusaidia.",
+    "unexpected_title": "Kitu kisichotarajiwa kimetokea?",
+    "unexpected_desc": "Mwambie Rotabo unachohitaji. Mtu aliye karibu huenda akaweza kusaidia."
+  },
+  "offer": {
+    "eyebrow": "UNA KITU CHA KUTOA?",
+    "h2": "Mtu anahitaji ulicho nacho.",
+    "item1": "Gari lako.",
+    "item2": "Gari lako la mizigo.",
+    "item3": "Zana zako.",
+    "item4": "Vifaa vyako.",
+    "item5": "Ujuzi wako.",
+    "item6": "Wakati wako.",
+    "body": "Mwambie Rotabo unachoweza kutoa na wasiliana na watu wanaohitaji hicho.",
+    "keep_title": "Weka unachopata.",
+    "keep_body": "Rotabo haichukui asilimia yoyote ya unachopata.",
+    "cta": "Toa unachoweza"
+  },
+  "idea": {
+    "eyebrow": "WAZO LA ROTABO",
+    "tagline1": "Watu wanahitaji vitu.",
+    "tagline2": "Watu wana vitu.",
+    "tagline3": "Rotabo huwaunganisha.",
+    "body1": "Kila mahali duniani, watu wanahitaji msaada. Na kila mahali duniani, mtu ana wakati, ujuzi, vifaa au rasilimali za kusaidia.",
+    "body2": "Tatizo mara nyingi ni rahisi: hawawezi tu kupatana. Rotabo huwaleta pamoja.",
+    "closing1": "Unahitaji kitu? Mtafute mtu.",
+    "closing2": "Una kitu cha kutoa? Mtu anakihitaji.",
+    "closing3": "Rotabo huwaunganisha."
   },
   "categories": {
     "section_eyebrow": "UNAHITAJI NINI?",

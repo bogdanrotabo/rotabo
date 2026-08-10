@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Izdelano v Švici — za ves svet",
     "pill": "VOZNIKI S POSLANSTVOM · TVOJ AVTOMOBIL · TVOJA POT DOMOV",
-    "tagline1": "Ti piješ.", "tagline2": "Oni vozijo.", "tagline3": "Tvoj avto.",
-    "lede": "Rotabo te poveže z voznikom, ki verjame, da nihče ne bi smel voziti domov, kadar za to ni sposoben — in ki te pripelje domov <b>z lastnim avtomobilom</b>.",
+    "tagline1": "Potrebuješ nekaj?", "tagline2": "Poišči nekoga.", "tagline3": "Tvoj avto.",
+    "lede": "Rotabo povezuje ljudi, ki nekaj potrebujejo, z ljudmi, ki lahko pomagajo — z vozilom, storitvijo, opremo, znanjem ali preprosto svojim časom.",
+    "cta_find": "Poišči, kar potrebuješ",
+    "cta_offer": "Ponudi, kar znaš",
     "cta_find_driver": "Poišči voznika", "cta_become_driver": "Postani voznik", "cta_become_sponsor": "Postani sponzor",
     "cta_home_screen": "⬇ Dodaj Rotabo na domači zaslon",
     "fine": "Deluje v tvojem brskalniku — trgovina z aplikacijami ni potrebna.",
-    "badge_verified": "Preverjeni vozniki", "badge_live": "Deljenje poti v živo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Preverjeni uporabniki", "badge_live": "Deljenje poti v živo", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "KAKO DELUJE ROTABO",
+    "h2": "Nekaj potrebuješ. Nekdo lahko pomaga.",
+    "step1": "Povej nam, kaj potrebuješ.",
+    "step2": "Poišči nekoga v bližini, ki lahko pomaga.",
+    "step3": "Poveži se neposredno in se dogovorita o podrobnostih.",
+    "examples": "To je lahko voznik, kombi, selitvena storitev, gradbena oprema, orodje, dostava ali preprosto nekdo s pravim znanjem in časom.",
+    "closing": "Eno omrežje. Tisoč možnosti."
+  },
+  "need_driver": {
+    "eyebrow": "POTREBUJEŠ VOZNIKA?",
+    "tagline1": "Ti piješ.",
+    "tagline2": "Oni vozijo.",
+    "tagline3": "Tvoj avto.",
+    "body1": "Včasih ne potrebuješ taksija. Potrebuješ le nekoga, ki bo peljal tvoj lastni avto.",
+    "body2": "Rotabo te poveže s preverjenim voznikom, ki pride k tebi in te odpelje domov v tvojem lastnem avtu, kadar ne moreš ali ne smeš voziti.",
+    "cta": "Poišči voznika"
+  },
+  "need_other": {
+    "eyebrow": "POTREBUJEŠ ŠE KAJ DRUGEGA?",
+    "vehicle_title": "Potrebuješ vozilo?",
+    "vehicle_desc": "Poišči nekoga s pravim vozilom za tvojo pot, dostavo ali delo.",
+    "moving_title": "Se seliš?",
+    "moving_desc": "Poveži se z nekom, ki ti lahko pomaga preseliti pohištvo, stvari ali karkoli drugega, kar je treba prepeljati.",
+    "equipment_title": "Potrebuješ opremo?",
+    "equipment_desc": "Poišči orodje, stroje in gradbeno opremo za delo, ki ga moraš opraviti.",
+    "hand_title": "Potrebuješ pomoč?",
+    "hand_desc": "Poišči nekoga z znanjem, izkušnjami ali časom za pomoč.",
+    "unexpected_title": "Se je zgodilo kaj nepričakovanega?",
+    "unexpected_desc": "Povej Rotabu, kaj potrebuješ. Nekdo v bližini ti bo morda lahko pomagal."
+  },
+  "offer": {
+    "eyebrow": "IMAŠ KAJ ZA PONUDITI?",
+    "h2": "Nekdo potrebuje to, kar imaš.",
+    "item1": "Tvoj avto.",
+    "item2": "Tvoj kombi.",
+    "item3": "Tvoje orodje.",
+    "item4": "Tvoja oprema.",
+    "item5": "Tvoje znanje.",
+    "item6": "Tvoj čas.",
+    "body": "Povej Rotabu, kaj lahko ponudiš, in se poveži z ljudmi, ki to potrebujejo.",
+    "keep_title": "Obdrži, kar zaslužiš.",
+    "keep_body": "Rotabo ne vzame nobenega odstotka od tega, kar zaslužiš.",
+    "cta": "Ponudi, kar znaš"
+  },
+  "idea": {
+    "eyebrow": "IDEJA ROTABO",
+    "tagline1": "Ljudje potrebujejo stvari.",
+    "tagline2": "Ljudje imajo stvari.",
+    "tagline3": "Rotabo jih poveže.",
+    "body1": "Povsod po svetu ljudje potrebujejo pomoč. In povsod po svetu ima nekdo čas, znanje, opremo ali sredstva za pomoč.",
+    "body2": "Težava je pogosto preprosta: preprosto se ne najdejo. Rotabo jih združi.",
+    "closing1": "Potrebuješ nekaj? Poišči nekoga.",
+    "closing2": "Imaš kaj za ponuditi? Nekdo to potrebuje.",
+    "closing3": "Rotabo jih poveže."
   },
   "categories": {
     "section_eyebrow": "KAJ POTREBUJEŠ?",

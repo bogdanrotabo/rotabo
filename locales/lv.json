@@ -3,12 +3,70 @@
   "hero": {
     "origin_badge": "🇨🇭 Ražots Šveicē — visai pasaulei",
     "pill": "ŠOFERI AR MĒRĶI · TAVA MAŠĪNA · TAVS CEĻŠ MĀJUP",
-    "tagline1": "Tu dzer.", "tagline2": "Viņi vada.", "tagline3": "Tava mašīna.",
-    "lede": "Rotabo savieno tevi ar šoferi, kurš tic, ka nevienam nevajadzētu braukt mājās, kad tas nav droši — un kurš aizved tevi <b>ar tavu pašu mašīnu</b>.",
+    "tagline1": "Vajag kaut ko?", "tagline2": "Atrodi kādu.", "tagline3": "Tava mašīna.",
+    "lede": "Rotabo savieno cilvēkus, kuriem kaut kas nepieciešams, ar cilvēkiem, kas var palīdzēt — ar transportlīdzekli, pakalpojumu, aprīkojumu, prasmēm vai vienkārši savu laiku.",
+    "cta_find": "Atrodi to, kas nepieciešams",
+    "cta_offer": "Piedāvā to, ko vari",
     "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_become_sponsor": "Kļūsti par atbalstītāju",
     "cta_home_screen": "⬇ Pievieno Rotabo sākuma ekrānam",
     "fine": "Darbojas tavā pārlūkā — bez lietotņu veikala.",
-    "badge_verified": "Pārbaudīti šoferi", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Pārbaudīti lietotāji", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
+  },
+  "works": {
+    "eyebrow": "KĀ DARBOJAS ROTABO",
+    "h2": "Tev kaut kas nepieciešams. Kāds var palīdzēt.",
+    "step1": "Pastāsti mums, kas tev nepieciešams.",
+    "step2": "Atrodi kādu tuvumā, kas var palīdzēt.",
+    "step3": "Sazinies tieši un vienojieties par detaļām.",
+    "examples": "Tas var būt šoferis, mikroautobuss, pārvākšanās pakalpojums, būvniecības tehnika, instruments, piegāde vai vienkārši kāds ar īstajām prasmēm un laiku.",
+    "closing": "Viens tīkls. Tūkstošiem iespēju."
+  },
+  "need_driver": {
+    "eyebrow": "VAJAG ŠOFERI?",
+    "tagline1": "Tu dzer.",
+    "tagline2": "Viņi vada.",
+    "tagline3": "Tavu auto.",
+    "body1": "Dažreiz tev nav vajadzīgs taksometrs. Tev vienkārši vajag kādu, kas vadītu tavu pašu auto.",
+    "body2": "Rotabo savieno tevi ar pārbaudītu šoferi, kurš ierodas pie tevis un aizved tevi mājās ar tavu pašu auto, kad tu nevari vai tev nevajadzētu braukt pašam.",
+    "cta": "Atrast šoferi"
+  },
+  "need_other": {
+    "eyebrow": "VAJAG KAUT KO CITU?",
+    "vehicle_title": "Vajag transportlīdzekli?",
+    "vehicle_desc": "Atrodi kādu ar piemērotu transportlīdzekli tavam braucienam, piegādei vai darbam.",
+    "moving_title": "Pārvācies?",
+    "moving_desc": "Sazinies ar kādu, kas var palīdzēt pārvest mēbeles, mantas vai jebko citu, kas jāpārvieto.",
+    "equipment_title": "Vajag aprīkojumu?",
+    "equipment_desc": "Atrodi instrumentus, mašīnas un būvniecības tehniku darbam, kas jāpaveic.",
+    "hand_title": "Vajag palīdzīgu roku?",
+    "hand_desc": "Atrodi kādu ar prasmēm, pieredzi vai laiku, lai palīdzētu.",
+    "unexpected_title": "Notika kaut kas negaidīts?",
+    "unexpected_desc": "Pastāsti Rotabo, kas tev nepieciešams. Kāds tuvumā varbūt varēs palīdzēt."
+  },
+  "offer": {
+    "eyebrow": "IR KAS PIEDĀVĀJAMS?",
+    "h2": "Kādam ir vajadzīgs tas, kas tev ir.",
+    "item1": "Tavs auto.",
+    "item2": "Tavs mikroautobuss.",
+    "item3": "Tavi instrumenti.",
+    "item4": "Tavs aprīkojums.",
+    "item5": "Tavas prasmes.",
+    "item6": "Tavs laiks.",
+    "body": "Pastāsti Rotabo, ko vari piedāvāt, un sazinies ar cilvēkiem, kuriem tas nepieciešams.",
+    "keep_title": "Paturi to, ko nopelni.",
+    "keep_body": "Rotabo neņem nekādu procentu no tā, ko nopelni.",
+    "cta": "Piedāvā to, ko vari"
+  },
+  "idea": {
+    "eyebrow": "ROTABO IDEJA",
+    "tagline1": "Cilvēkiem kaut kas ir vajadzīgs.",
+    "tagline2": "Cilvēkiem kaut kas ir.",
+    "tagline3": "Rotabo viņus savieno.",
+    "body1": "Visur pasaulē cilvēkiem nepieciešama palīdzība. Un visur pasaulē kādam ir laiks, prasmes, aprīkojums vai resursi, lai palīdzētu.",
+    "body2": "Problēma bieži ir vienkārša: viņi vienkārši nevar atrast viens otru. Rotabo viņus satuvina.",
+    "closing1": "Vajag kaut ko? Atrodi kādu.",
+    "closing2": "Ir kas piedāvājams? Kādam tas ir vajadzīgs.",
+    "closing3": "Rotabo viņus savieno."
   },
   "categories": {
     "section_eyebrow": "KAS TEV VAJADZĪGS?",
