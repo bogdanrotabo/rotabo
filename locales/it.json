@@ -145,6 +145,14 @@
       "seeking_lead": "Dicci cosa vuoi imparare e dove.",
       "offering_title": "Offriti come insegnante",
       "offering_lead": "Iscrivi le tue competenze così studenti e chi vuole imparare possano trovarti."
+    },
+    "stay": {
+      "name": "Vacanze reciproche",
+      "desc": "Scambiatevi le case vacanza — tu stai da loro, loro stanno da te — oppure ospitatevi a vicenda.",
+      "seeking_title": "Cerchi un posto dove stare in vacanza?",
+      "seeking_lead": "Dicci dove vorresti andare e quando.",
+      "offering_title": "Offri la tua casa per uno scambio o un soggiorno",
+      "offering_lead": "Iscrivi la tua casa così chi cerca uno scambio o una visita possa trovarti."
     }
   },
   "problem": {

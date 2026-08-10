@@ -145,6 +145,14 @@
       "seeking_lead": "Tell us what you want to learn and where.",
       "offering_title": "Offer to teach",
       "offering_lead": "List your skills so students and learners nearby can find you."
+    },
+    "stay": {
+      "name": "Vacation Stays",
+      "desc": "Swap vacation homes — you stay at theirs, they stay at yours — or host each other for a visit.",
+      "seeking_title": "Looking for a place to stay?",
+      "seeking_lead": "Tell us where you'd like to go and when.",
+      "offering_title": "Offer your place for a swap or stay",
+      "offering_lead": "List your home so others looking to swap or visit can find you."
     }
   },
   "problem": {

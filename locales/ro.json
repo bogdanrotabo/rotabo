@@ -145,6 +145,14 @@
       "seeking_lead": "Spune-ne ce vrei să înveți și unde.",
       "offering_title": "Oferă-te ca profesor",
       "offering_lead": "Listează-ți cunoștințele ca elevii și cei care vor să învețe să te găsească."
+    },
+    "stay": {
+      "name": "Vacanțe reciproce",
+      "desc": "Faceți schimb de case de vacanță — tu stai la ei, ei stau la tine — sau vă găzduiți reciproc.",
+      "seeking_title": "Cauți un loc de stat în vacanță?",
+      "seeking_lead": "Spune-ne unde ai vrea să mergi și când.",
+      "offering_title": "Oferă-ți casa pentru schimb sau găzduire",
+      "offering_lead": "Listează-ți casa ca alții care vor schimb sau vizită să te găsească."
     }
   },
   "problem": {
