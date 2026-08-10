@@ -2,9 +2,9 @@
   "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế" },
   "hero": {
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
-    "pill": "TÀI XẾ CÓ SỨ MỆNH · XE CỦA BẠN · ĐƯỜNG VỀ NHÀ CỦA BẠN",
-    "tagline1": "Bạn cần gì đó?", "tagline2": "Tìm người giúp.", "tagline3": "Xe của bạn.",
-    "lede": "Rotabo kết nối những người cần giúp đỡ với những người có thể giúp — bằng một chiếc xe, một dịch vụ, thiết bị, kỹ năng hoặc đơn giản là thời gian của họ.",
+    "pill": "Bạn cần tôi? Tìm tôi đi!",
+    "tagline1": "Bạn cần tôi?", "tagline2": "Tìm tôi đi!", "tagline3": "Xe của bạn.",
+    "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
     "cta_find": "Tìm thứ bạn cần",
     "cta_offer": "Đề nghị những gì bạn có thể",
     "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_become_sponsor": "Trở thành nhà tài trợ",

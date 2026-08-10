@@ -2,9 +2,9 @@
   "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler" },
   "hero": {
     "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
-    "pill": "BİR AMAÇLA SÜREN SÜRÜCÜLER · KENDİ ARABAN · EVE GİDEN YOLUN",
-    "tagline1": "Bir şeye mi ihtiyacın var?", "tagline2": "Birini bul.", "tagline3": "Kendi araban.",
-    "lede": "Rotabo, bir şeye ihtiyacı olan insanları yardım edebilecek insanlarla buluşturur — bir araç, hizmet, ekipman, beceri veya sadece zamanlarıyla.",
+    "pill": "Bana ihtiyacın mı var? Beni bul!",
+    "tagline1": "Bana ihtiyacın mı var?", "tagline2": "Beni bul!", "tagline3": "Kendi araban.",
+    "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
     "cta_find": "İhtiyacın olanı bul",
     "cta_offer": "Sunabileceğini sun",
     "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_become_sponsor": "Sponsor ol",

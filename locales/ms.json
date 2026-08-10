@@ -2,9 +2,9 @@
   "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Pemandu" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
-    "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
-    "tagline1": "Perlukan sesuatu?", "tagline2": "Cari seseorang.", "tagline3": "Kereta anda.",
-    "lede": "Rotabo menghubungkan orang yang memerlukan sesuatu dengan orang yang boleh membantu — dengan kenderaan, perkhidmatan, peralatan, kemahiran atau sekadar masa mereka.",
+    "pill": "Perlukan saya? Cari saya!",
+    "tagline1": "Perlukan saya?", "tagline2": "Cari saya!", "tagline3": "Kereta anda.",
+    "lede": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
     "cta_find": "Cari apa yang anda perlukan",
     "cta_offer": "Tawarkan apa yang anda boleh",
     "cta_find_driver": "Cari pemandu", "cta_become_driver": "Menjadi pemandu", "cta_become_sponsor": "Menjadi penaja",

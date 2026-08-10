@@ -2,9 +2,9 @@
   "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업 고객", "drive": "드라이버 등록", "drivers": "드라이버" },
   "hero": {
     "origin_badge": "🇨🇭 스위스에서 제작 — 전 세계를 위해",
-    "pill": "목적을 가진 드라이버 · 당신의 차 · 당신의 귀갓길",
-    "tagline1": "필요한 게 있나요?", "tagline2": "도와줄 사람을 찾아보세요.", "tagline3": "당신의 차로.",
-    "lede": "Rotabo는 무언가가 필요한 사람과 도움을 줄 수 있는 사람을 연결합니다 — 차량, 서비스, 장비, 기술, 또는 그저 시간으로요.",
+    "pill": "내가 필요해? 나를 찾아!",
+    "tagline1": "내가 필요해?", "tagline2": "나를 찾아!", "tagline3": "당신의 차로.",
+    "lede": "필요한 걸 선택하거나, 도와줄 수 있는 사람으로 등록하세요.",
     "cta_find": "필요한 것 찾기",
     "cta_offer": "내가 줄 수 있는 것 제공하기",
     "cta_find_driver": "드라이버 찾기", "cta_become_driver": "드라이버 등록하기", "cta_become_sponsor": "후원자 되기",

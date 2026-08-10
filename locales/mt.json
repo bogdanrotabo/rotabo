@@ -2,9 +2,9 @@
   "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ" },
   "hero": {
     "origin_badge": "🇨🇭 Magħmul fl-Isvizzera — għad-dinja kollha",
-    "pill": "SEWWIEQA B'SKOP · IL-KARROZZA TIEGĦEK · IT-TRIQ TIEGĦEK LEJN DARK",
-    "tagline1": "Għandek bżonn xi ħaġa?", "tagline2": "Sib lil xi ħadd.", "tagline3": "Il-karrozza tiegħek.",
-    "lede": "Rotabo tgħaqqad nies li għandhom bżonn xi ħaġa ma' nies li jistgħu jgħinu — b'vettura, servizz, tagħmir, ħiliet jew sempliċement il-ħin tagħhom.",
+    "pill": "Għandek bżonni? Sibni!",
+    "tagline1": "Għandek bżonni?", "tagline2": "Sibni!", "tagline3": "Il-karrozza tiegħek.",
+    "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
     "cta_find": "Sib dak li għandek bżonn",
     "cta_offer": "Offri dak li tista'",
     "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_become_sponsor": "Sir sponsor",

@@ -2,9 +2,9 @@
   "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik", "drivers": "Vozniki" },
   "hero": {
     "origin_badge": "🇨🇭 Izdelano v Švici — za ves svet",
-    "pill": "VOZNIKI S POSLANSTVOM · TVOJ AVTOMOBIL · TVOJA POT DOMOV",
-    "tagline1": "Potrebuješ nekaj?", "tagline2": "Poišči nekoga.", "tagline3": "Tvoj avto.",
-    "lede": "Rotabo povezuje ljudi, ki nekaj potrebujejo, z ljudmi, ki lahko pomagajo — z vozilom, storitvijo, opremo, znanjem ali preprosto svojim časom.",
+    "pill": "Me potrebuješ? Najdi me!",
+    "tagline1": "Me potrebuješ?", "tagline2": "Najdi me!", "tagline3": "Tvoj avto.",
+    "lede": "Izberi, kaj potrebuješ — ali se prijavi kot nekdo, ki lahko pomaga.",
     "cta_find": "Poišči, kar potrebuješ",
     "cta_offer": "Ponudi, kar znaš",
     "cta_find_driver": "Poišči voznika", "cta_become_driver": "Postani voznik", "cta_become_sponsor": "Postani sponzor",

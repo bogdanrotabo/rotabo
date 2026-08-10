@@ -2,9 +2,9 @@
   "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Swiss — untuk seluruh dunia",
-    "pill": "PENGEMUDI DENGAN TUJUAN · MOBIL ANDA · JALAN PULANG ANDA",
-    "tagline1": "Butuh sesuatu?", "tagline2": "Temukan seseorang.", "tagline3": "Mobil Anda.",
-    "lede": "Rotabo menghubungkan orang yang membutuhkan sesuatu dengan orang yang bisa membantu — dengan kendaraan, layanan, peralatan, keahlian, atau sekadar waktu mereka.",
+    "pill": "Butuh saya? Temukan saya!",
+    "tagline1": "Butuh saya?", "tagline2": "Temukan saya!", "tagline3": "Mobil Anda.",
+    "lede": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
     "cta_find": "Temukan yang kamu butuhkan",
     "cta_offer": "Tawarkan yang kamu bisa",
     "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_become_sponsor": "Jadi sponsor",

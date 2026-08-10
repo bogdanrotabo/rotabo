@@ -2,9 +2,9 @@
   "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí", "drivers": "Tiománaithe" },
   "hero": {
     "origin_badge": "🇨🇭 Déanta san Eilvéis — don domhan ar fad",
-    "pill": "TIOMÁNAITHE LE CUSPÓIR · DO CHARR · DO SHLÍ ABHAILE",
-    "tagline1": "An bhfuil rud éigin uait?", "tagline2": "Faigh duine.", "tagline3": "Do charr.",
-    "lede": "Nascann Rotabo daoine a bhfuil rud éigin uathu le daoine ar féidir leo cabhrú — le feithicil, seirbhís, trealamh, scileanna nó a gcuid ama go simplí.",
+    "pill": "An bhfuil mé uait? Aimsigh mé!",
+    "tagline1": "An bhfuil mé uait?", "tagline2": "Aimsigh mé!", "tagline3": "Do charr.",
+    "lede": "Roghnaigh a bhfuil uait — nó liostáil tú féin mar dhuine atá in ann cabhrú.",
     "cta_find": "Faigh a bhfuil uait",
     "cta_offer": "Tairg a bhfuil ar do chumas",
     "cta_find_driver": "Faigh tiománaí", "cta_become_driver": "Bí i do thiománaí", "cta_become_sponsor": "Bí i do dheontóir",

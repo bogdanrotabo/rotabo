@@ -2,9 +2,9 @@
   "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi" },
   "hero": {
     "origin_badge": "🇨🇭 Ražots Šveicē — visai pasaulei",
-    "pill": "ŠOFERI AR MĒRĶI · TAVA MAŠĪNA · TAVS CEĻŠ MĀJUP",
-    "tagline1": "Vajag kaut ko?", "tagline2": "Atrodi kādu.", "tagline3": "Tava mašīna.",
-    "lede": "Rotabo savieno cilvēkus, kuriem kaut kas nepieciešams, ar cilvēkiem, kas var palīdzēt — ar transportlīdzekli, pakalpojumu, aprīkojumu, prasmēm vai vienkārši savu laiku.",
+    "pill": "Vai tev esmu vajadzīgs? Atrodi mani!",
+    "tagline1": "Vai tev esmu vajadzīgs?", "tagline2": "Atrodi mani!", "tagline3": "Tava mašīna.",
+    "lede": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
     "cta_find": "Atrodi to, kas nepieciešams",
     "cta_offer": "Piedāvā to, ko vari",
     "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_become_sponsor": "Kļūsti par atbalstītāju",

@@ -2,9 +2,9 @@
   "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Vodiči" },
   "hero": {
     "origin_badge": "🇨🇭 Vyrobené vo Švajčiarsku — pre celý svet",
-    "pill": "VODIČI S POSLANÍM · TVOJE AUTO · TVOJA CESTA DOMOV",
-    "tagline1": "Potrebuješ niečo?", "tagline2": "Nájdi niekoho.", "tagline3": "Tvoje auto.",
-    "lede": "Rotabo spája ľudí, ktorí niečo potrebujú, s ľuďmi, ktorí môžu pomôcť — vozidlom, službou, vybavením, zručnosťami alebo jednoducho svojím časom.",
+    "pill": "Potrebuješ ma? Nájdi ma!",
+    "tagline1": "Potrebuješ ma?", "tagline2": "Nájdi ma!", "tagline3": "Tvoje auto.",
+    "lede": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
     "cta_find": "Nájdi, čo potrebuješ",
     "cta_offer": "Ponúkni, čo vieš",
     "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_become_sponsor": "Staň sa podporovateľom",

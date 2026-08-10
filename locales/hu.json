@@ -2,9 +2,9 @@
   "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök" },
   "hero": {
     "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
-    "pill": "SOFŐRÖK CÉLLAL · A TE AUTÓD · A TE UTAD HAZA",
-    "tagline1": "Szükséged van valamire?", "tagline2": "Találj valakit.", "tagline3": "A te autód.",
-    "lede": "A Rotabo összeköti azokat, akiknek szükségük van valamire, azokkal, akik segíteni tudnak — járművel, szolgáltatással, felszereléssel, tudással vagy egyszerűen az idejükkel.",
+    "pill": "Szükséged van rám? Találj meg!",
+    "tagline1": "Szükséged van rám?", "tagline2": "Találj meg!", "tagline3": "A te autód.",
+    "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
     "cta_find": "Találd meg, amire szükséged van",
     "cta_offer": "Ajánld fel, amit tudsz",
     "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_become_sponsor": "Legyél támogató",

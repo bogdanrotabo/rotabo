@@ -2,9 +2,9 @@
   "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare" },
   "hero": {
     "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
-    "pill": "FÖRARE MED ETT SYFTE · DIN BIL · DIN VÄG HEM",
-    "tagline1": "Behöver du något?", "tagline2": "Hitta någon.", "tagline3": "Din bil.",
-    "lede": "Rotabo kopplar samman människor som behöver något med människor som kan hjälpa till — med ett fordon, en tjänst, utrustning, kunskaper eller helt enkelt sin tid.",
+    "pill": "Behöver du mig? Hitta mig!",
+    "tagline1": "Behöver du mig?", "tagline2": "Hitta mig!", "tagline3": "Din bil.",
+    "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
     "cta_find": "Hitta det du behöver",
     "cta_offer": "Erbjud det du kan",
     "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_become_sponsor": "Bli sponsor",
