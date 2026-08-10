@@ -153,6 +153,14 @@
       "seeking_lead": "Spune-ne unde ai vrea să mergi și când.",
       "offering_title": "Oferă-ți casa pentru schimb sau găzduire",
       "offering_lead": "Listează-ți casa ca alții care vor schimb sau vizită să te găsească."
+    },
+    "other": {
+      "name": "Altceva",
+      "desc": "Nu se încadrează în nicio categorie? Spune-i lui Rotabo ce s-a întâmplat — cineva din apropiere te-ar putea ajuta.",
+      "seeking_title": "S-a întâmplat ceva neașteptat?",
+      "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
+      "offering_title": "Oferă-te să ajuți cu orice",
+      "offering_lead": "Listează-te ca oamenii cu o cerere neobișnuită să te găsească."
     }
   },
   "problem": {
@@ -224,12 +232,6 @@
     "h3": "Devino investitor",
     "p": "Rotabo conectează oameni în 9 categorii, în 38 de limbi, în toată lumea — fără niciun comision luat de la cei care oferă timp, abilități sau echipament. Vorbim cu oameni care cred în modelul ăsta.",
     "link": "Ia legătura →"
-  },
-  "unexpected_card": {
-    "cat": "ALTCEVA?",
-    "h3": "S-a întâmplat ceva neașteptat?",
-    "p": "Spune-i lui Rotabo de ce ai nevoie. Cineva din apropiere te-ar putea ajuta.",
-    "link": "Spune-ne →"
   },
   "drivers_card": {
     "cat": "ȘOFERI",

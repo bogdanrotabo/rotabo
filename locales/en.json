@@ -153,6 +153,14 @@
       "seeking_lead": "Tell us where you'd like to go and when.",
       "offering_title": "Offer your place for a swap or stay",
       "offering_lead": "List your home so others looking to swap or visit can find you."
+    },
+    "other": {
+      "name": "Something Else",
+      "desc": "Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.",
+      "seeking_title": "Something unexpected happen?",
+      "seeking_lead": "Tell us what you need and where.",
+      "offering_title": "Offer to help with anything",
+      "offering_lead": "List yourself so people with an unusual request can find you."
     }
   },
   "problem": {
@@ -224,12 +232,6 @@
     "h3": "Become an investor",
     "p": "Rotabo connects people across 9 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.",
     "link": "Get in touch →"
-  },
-  "unexpected_card": {
-    "cat": "SOMETHING ELSE?",
-    "h3": "Did something unexpected happen?",
-    "p": "Tell Rotabo what you need. Someone nearby might be able to help.",
-    "link": "Tell us →"
   },
   "drivers_card": {
     "cat": "DRIVERS",

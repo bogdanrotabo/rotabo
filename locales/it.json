@@ -153,6 +153,14 @@
       "seeking_lead": "Dicci dove vorresti andare e quando.",
       "offering_title": "Offri la tua casa per uno scambio o un soggiorno",
       "offering_lead": "Iscrivi la tua casa così chi cerca uno scambio o una visita possa trovarti."
+    },
+    "other": {
+      "name": "Altro",
+      "desc": "Non rientra in nessuna categoria? Dì a Rotabo cosa è successo — qualcuno nelle vicinanze potrebbe aiutarti.",
+      "seeking_title": "È successo qualcosa di inaspettato?",
+      "seeking_lead": "Dicci di cosa hai bisogno e dove.",
+      "offering_title": "Offriti per aiutare con qualsiasi cosa",
+      "offering_lead": "Iscriviti così chi ha una richiesta insolita possa trovarti."
     }
   },
   "problem": {
@@ -224,12 +232,6 @@
     "h3": "Diventa investitore",
     "p": "Rotabo collega persone in 9 categorie, in 38 lingue, in tutto il mondo — senza alcuna commissione su chi offre tempo, competenze o attrezzatura. Stiamo parlando con chi crede in questo modello.",
     "link": "Contattaci →"
-  },
-  "unexpected_card": {
-    "cat": "ALTRO?",
-    "h3": "È successo qualcosa di inaspettato?",
-    "p": "Dì a Rotabo di cosa hai bisogno. Qualcuno nelle vicinanze potrebbe aiutarti.",
-    "link": "Dicci →"
   },
   "drivers_card": {
     "cat": "AUTISTI",
