@@ -232,6 +232,14 @@
     "ios_step2": "Derulează în meniul de partajare și apasă <strong>„Add to Home Screen”</strong>.",
     "ios_step3": "Apasă <strong>„Add”</strong> în colțul din dreapta sus — gata."
   },
+  "verify_modal": {
+    "title": "Verifică-ți emailul",
+    "subtitle": "Am trimis un cod de 6 cifre la adresa de mai jos. Introdu-l ca să continui.",
+    "code_label": "Cod de verificare",
+    "submit": "Confirmă codul",
+    "error": "Cod invalid sau expirat. Încearcă din nou.",
+    "resend": "Retrimite codul"
+  },
   "visibility": {
     "phone_hint": "Include prefixul de țară — acest număr va fi vizibil pentru oricine navighează.",
     "address_hint": "Aceasta va fi vizibilă pentru oricine navighează, la fel ca numărul tău de telefon.",

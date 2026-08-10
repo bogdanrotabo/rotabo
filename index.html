@@ -459,6 +459,12 @@
   .form-submit:disabled{opacity:.6;cursor:not-allowed;}
   .form-error{color:#c0392b;font-size:.9rem;margin-top:10px;display:none;}
   .form-error.show{display:block;}
+  .link-btn{
+    display:block;width:100%;margin-top:12px;padding:0;border:none;background:none;
+    color:var(--violet-2);font-weight:700;font-size:.9rem;cursor:pointer;font-family:inherit;
+    text-align:center;
+  }
+  .link-btn:disabled{opacity:.5;cursor:not-allowed;}
   .fare-note{
     display:none;background:var(--bg-card);border:1px solid var(--border);
     border-radius:12px;padding:12px 14px;margin:0 0 16px;
@@ -858,6 +864,24 @@
   </div>
 </div>
 
+<div class="modal-overlay" id="emailCodeModal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" onclick="closeModal('emailCodeModal')" aria-label="Close">✕</button>
+    <h3 data-i18n="verify_modal.title">Check your email</h3>
+    <p class="modal-sub" data-i18n="verify_modal.subtitle">We sent a 6-digit code to the email below. Enter it to continue.</p>
+    <p class="modal-sub" id="verifyModalEmail" style="font-weight:800;color:var(--text-dark);margin-top:-16px;"></p>
+    <form id="emailCodeForm" novalidate>
+      <div class="form-field">
+        <label for="vc_code" data-i18n="verify_modal.code_label">Verification code</label>
+        <input type="text" id="vc_code" name="code" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code">
+      </div>
+      <button type="submit" class="form-submit" data-i18n="verify_modal.submit">Confirm code</button>
+      <p class="form-error" id="emailCodeError" data-i18n="verify_modal.error">Invalid or expired code. Please try again.</p>
+      <button type="button" class="link-btn" id="resendCodeBtn" data-i18n="verify_modal.resend">Resend code</button>
+    </form>
+  </div>
+</div>
+
 <div class="modal-overlay" id="installModal">
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('installModal')" aria-label="Close">✕</button>
@@ -891,15 +915,8 @@
   <p class="copyright" data-i18n="footer.copyright">© 2026 Rotabo</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
 (function(){
-  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
-  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-    global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
-  });
-
   // Visibility tiers, reused for both the client and driver forms: 1 CHF
   // buys 1 month, 2 CHF buys 12 months. Same two Payment Links regardless
   // of which form is submitted -- the webhook tells the tables apart by
@@ -950,6 +967,137 @@
     return TIER_LINKS[months];
   }
 
+  // ---- Email verification gate ----
+  // Every listing must go through create-listing (an edge function
+  // using the service role), which requires a verified_emails token.
+  // That token is obtained by emailing the submitter a 6-digit code
+  // (verify-email) and having them type it back -- this is what stops
+  // someone from posting junk data straight into the form. A token is
+  // cached in localStorage per-email for 30 minutes so a visitor who
+  // just verified doesn't have to redo it if they submit a second form
+  // in the same session.
+  var FUNCTIONS_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co/functions/v1";
+  var pending = null; // { form, payload, errorEl, sourceModalId, email }
+
+  function cachedToken(email){
+    var storedEmail = localStorage.getItem("rotabo_verified_email");
+    var storedToken = localStorage.getItem("rotabo_verified_token");
+    var storedUntil = localStorage.getItem("rotabo_verified_until");
+    if (storedEmail && storedToken && storedUntil
+        && storedEmail.toLowerCase() === email.toLowerCase()
+        && Number(storedUntil) > Date.now()) {
+      return storedToken;
+    }
+    return null;
+  }
+
+  function createListing(payload, token, form, errorEl){
+    return fetch(FUNCTIONS_URL + "/create-listing", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.assign({}, payload, { token: token }))
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+      .then(function(result){
+        if (!result.ok) {
+          setSubmitting(form, false);
+          showError(errorEl);
+          return;
+        }
+        var newId = result.json.id;
+        localStorage.setItem("rotabo_listing_" + payload.category + "_" + payload.role, newId);
+        localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: payload.category, role: payload.role }));
+        if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
+        window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId);
+      })
+      .catch(function(){
+        setSubmitting(form, false);
+        showError(errorEl);
+      });
+  }
+
+  function submitWithVerification(form, payload, errorEl, sourceModalId){
+    var email = payload.email;
+    var token = cachedToken(email);
+    if (token) {
+      createListing(payload, token, form, errorEl);
+      return;
+    }
+
+    pending = { form: form, payload: payload, errorEl: errorEl, sourceModalId: sourceModalId, email: email };
+
+    fetch(FUNCTIONS_URL + "/verify-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "send", email: email })
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+      .then(function(result){
+        if (!result.ok) {
+          setSubmitting(form, false);
+          showError(errorEl);
+          pending = null;
+          return;
+        }
+        setSubmitting(form, false);
+        closeModal(sourceModalId);
+        document.getElementById("verifyModalEmail").textContent = email;
+        document.getElementById("vc_code").value = "";
+        hideError(document.getElementById("emailCodeError"));
+        openModal("emailCodeModal");
+      })
+      .catch(function(){
+        setSubmitting(form, false);
+        showError(errorEl);
+        pending = null;
+      });
+  }
+
+  document.getElementById("emailCodeForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    if (!pending) return;
+    var codeForm = e.target;
+    var codeErrorEl = document.getElementById("emailCodeError");
+    hideError(codeErrorEl);
+    setSubmitting(codeForm, true);
+
+    fetch(FUNCTIONS_URL + "/verify-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "verify", email: pending.email, code: codeForm.code.value.trim() })
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+      .then(function(result){
+        setSubmitting(codeForm, false);
+        if (!result.ok) {
+          showError(codeErrorEl);
+          return;
+        }
+        localStorage.setItem("rotabo_verified_email", pending.email);
+        localStorage.setItem("rotabo_verified_token", result.json.token);
+        localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60_000));
+        closeModal("emailCodeModal");
+        var p = pending;
+        pending = null;
+        setSubmitting(p.form, true);
+        createListing(p.payload, result.json.token, p.form, p.errorEl);
+      })
+      .catch(function(){
+        setSubmitting(codeForm, false);
+        showError(codeErrorEl);
+      });
+  });
+
+  document.getElementById("resendCodeBtn").addEventListener("click", function(){
+    if (!pending) return;
+    var btn = this;
+    btn.disabled = true;
+    fetch(FUNCTIONS_URL + "/verify-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "send", email: pending.email })
+    }).finally(function(){
+      setTimeout(function(){ btn.disabled = false; }, 60_000);
+    });
+  });
+
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
@@ -957,14 +1105,7 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
-    // Generate the id client-side rather than reading it back via
-    // .select() after insert: listings' SELECT policy only allows
-    // reading a row once it's paid and visible, so a freshly-inserted,
-    // not-yet-paid row can't be read back that way.
-    var newListingId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
-
     var payload = {
-      id: newListingId || undefined,
       category: "drive",
       role: "seeking",
       name: form.client_name.value.trim(),
@@ -974,21 +1115,7 @@
       address: form.address.value.trim()
     };
 
-    sb.from("listings").insert(payload).then(function(res){
-      if (res.error) {
-        setSubmitting(form, false);
-        showError(errorEl);
-        return;
-      }
-      localStorage.setItem("rotabo_listing_drive_seeking", newListingId);
-      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: "drive", role: "seeking" }));
-      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "find_driver" });
-      window.location.href = tierLinkFor(form)
-        + "?client_reference_id=" + encodeURIComponent(newListingId);
-    }).catch(function(){
-      setSubmitting(form, false);
-      showError(errorEl);
-    });
+    submitWithVerification(form, payload, errorEl, "findDriverModal");
   });
 
   document.getElementById("becomeDriverForm").addEventListener("submit", function(e){
@@ -998,14 +1125,7 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
-    // Generate the id client-side rather than reading it back via
-    // .select() after insert: listings' SELECT policy only allows
-    // reading a row once it's paid and visible, so a freshly-inserted,
-    // not-yet-paid row can't be read back that way.
-    var newDriverId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
-
     var payload = {
-      id: newDriverId || undefined,
       category: "drive",
       role: "offering",
       name: form.name.value.trim(),
@@ -1017,21 +1137,7 @@
       declaration_accepted: true
     };
 
-    sb.from("listings").insert(payload).then(function(res){
-      if (res.error) {
-        setSubmitting(form, false);
-        showError(errorEl);
-        return;
-      }
-      localStorage.setItem("rotabo_listing_drive_offering", newDriverId);
-      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: "drive", role: "offering" }));
-      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "become_driver" });
-      window.location.href = tierLinkFor(form)
-        + "?client_reference_id=" + encodeURIComponent(newDriverId);
-    }).catch(function(){
-      setSubmitting(form, false);
-      showError(errorEl);
-    });
+    submitWithVerification(form, payload, errorEl, "becomeDriverModal");
   });
 
   // Shared modal for the 5 non-drive categories: one form, category and
@@ -1057,10 +1163,8 @@
 
     var category = form.dataset.category;
     var role = form.dataset.role;
-    var newId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
     var payload = {
-      id: newId || undefined,
       category: category,
       role: role,
       name: form.name.value.trim(),
@@ -1071,21 +1175,7 @@
       note: form.note.value.trim() || null
     };
 
-    sb.from("listings").insert(payload).then(function(res){
-      if (res.error) {
-        setSubmitting(form, false);
-        showError(errorEl);
-        return;
-      }
-      localStorage.setItem("rotabo_listing_" + category + "_" + role, newId);
-      localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: category, role: role }));
-      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: category + "_" + role });
-      window.location.href = tierLinkFor(form)
-        + "?client_reference_id=" + encodeURIComponent(newId);
-    }).catch(function(){
-      setSubmitting(form, false);
-      showError(errorEl);
-    });
+    submitWithVerification(form, payload, errorEl, "genericListingModal");
   });
 })();
 </script>

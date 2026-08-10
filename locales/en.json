@@ -232,6 +232,14 @@
     "ios_step2": "Scroll down the share menu and tap <strong>\"Add to Home Screen\"</strong>.",
     "ios_step3": "Tap <strong>\"Add\"</strong> in the top-right corner — done."
   },
+  "verify_modal": {
+    "title": "Check your email",
+    "subtitle": "We sent a 6-digit code to the email below. Enter it to continue.",
+    "code_label": "Verification code",
+    "submit": "Confirm code",
+    "error": "Invalid or expired code. Please try again.",
+    "resend": "Resend code"
+  },
   "visibility": {
     "phone_hint": "Include your country code — this number will be visible to whoever is browsing.",
     "address_hint": "This will be visible to whoever is browsing, same as your phone number.",

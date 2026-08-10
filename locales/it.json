@@ -232,6 +232,14 @@
     "ios_step2": "Scorri nel menu di condivisione e tocca <strong>\"Aggiungi a Home\"</strong>.",
     "ios_step3": "Tocca <strong>\"Aggiungi\"</strong> in alto a destra — fatto."
   },
+  "verify_modal": {
+    "title": "Controlla la tua email",
+    "subtitle": "Abbiamo inviato un codice di 6 cifre all'indirizzo qui sotto. Inseriscilo per continuare.",
+    "code_label": "Codice di verifica",
+    "submit": "Conferma codice",
+    "error": "Codice non valido o scaduto. Riprova.",
+    "resend": "Reinvia codice"
+  },
   "visibility": {
     "phone_hint": "Includi il prefisso internazionale — questo numero sarà visibile a chiunque navighi sul sito.",
     "address_hint": "Questo indirizzo sarà visibile a chiunque navighi sul sito, come il tuo numero di telefono.",
