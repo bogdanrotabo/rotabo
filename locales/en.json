@@ -137,6 +137,14 @@
       "seeking_lead": "Tell us what you need and where — a few hours a week of care and company.",
       "offering_title": "Offer to be a borrowed grandparent",
       "offering_lead": "List yourself so families nearby who'd love your time can find you."
+    },
+    "learn": {
+      "name": "Teachers",
+      "desc": "Tutors and teachers for school subjects, languages, or skills like Excel, cooking, or gardening.",
+      "seeking_title": "Need a tutor or teacher?",
+      "seeking_lead": "Tell us what you want to learn and where.",
+      "offering_title": "Offer to teach",
+      "offering_lead": "List your skills so students and learners nearby can find you."
     }
   },
   "problem": {

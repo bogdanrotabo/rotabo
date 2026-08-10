@@ -137,6 +137,14 @@
       "seeking_lead": "Dicci di cosa hai bisogno e dove — alcune ore a settimana di cura e compagnia.",
       "offering_title": "Offriti come nonno o nonna in prestito",
       "offering_lead": "Iscriviti così le famiglie della zona che apprezzerebbero il tuo tempo possano trovarti."
+    },
+    "learn": {
+      "name": "Insegnanti",
+      "desc": "Ripetizioni e corsi — da materie scolastiche a Excel, tedesco, cucina o giardinaggio.",
+      "seeking_title": "Hai bisogno di ripetizioni o un corso?",
+      "seeking_lead": "Dicci cosa vuoi imparare e dove.",
+      "offering_title": "Offriti come insegnante",
+      "offering_lead": "Iscrivi le tue competenze così studenti e chi vuole imparare possano trovarti."
     }
   },
   "problem": {

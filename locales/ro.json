@@ -137,6 +137,14 @@
       "seeking_lead": "Spune-ne de ce ai nevoie și unde — câteva ore pe săptămână de grijă și companie.",
       "offering_title": "Oferă-te ca bunic/bunică de împrumut",
       "offering_lead": "Listează-te ca familiile din zonă care ar aprecia timpul tău să te găsească."
+    },
+    "learn": {
+      "name": "Profesori",
+      "desc": "Meditații și cursuri — de la materii școlare la Excel, germană B2, gătit sau grădinărit.",
+      "seeking_title": "Ai nevoie de meditații sau un curs?",
+      "seeking_lead": "Spune-ne ce vrei să înveți și unde.",
+      "offering_title": "Oferă-te ca profesor",
+      "offering_lead": "Listează-ți cunoștințele ca elevii și cei care vor să învețe să te găsească."
     }
   },
   "problem": {

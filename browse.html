@@ -125,7 +125,7 @@
     global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
   });
   var LIST_POLL_MS = 5000;
-  var VALID_CATEGORIES = ["drive", "move", "build", "tools", "home", "auto", "care"];
+  var VALID_CATEGORIES = ["drive", "move", "build", "tools", "home", "auto", "care", "learn"];
 
   var params = new URLSearchParams(window.location.search);
   var category = params.get("category");
