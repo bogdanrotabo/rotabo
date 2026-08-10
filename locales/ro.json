@@ -3,7 +3,8 @@
     "how": "Cum funcționează",
     "safety": "Siguranță",
     "business": "Pentru afaceri",
-    "drive": "Devino șofer"
+    "drive": "Devino șofer",
+    "drivers": "Șoferi"
   },
   "hero": {
     "origin_badge": "🇨🇭 Făcut în Elveția — pentru toată lumea",
@@ -55,6 +56,20 @@
     "driver_step4_desc": "Achită tariful direct cu clientul, la final.",
     "driver_not_taxi1": "Nu e un tur de taxi. Nu e o închiriere.",
     "driver_not_taxi2": "Mașina lor. Orele tale."
+  },
+  "recruit": {
+    "title": "Rotabo caută șoferi. Peste tot.",
+    "lead": "Pornim o căutare la nivel mondial pentru oameni care vor să conducă, ca altcineva să nu fie nevoit s-o facă.",
+    "req": "Nu ai nevoie de o mașină. Nu ai nevoie de o companie. Ai nevoie de un permis valabil, un cap limpede și un motiv să te prezinți.",
+    "how": {
+      "title": "Cum funcționează",
+      "body": "Cineva cere un șofer în orașul tău. Vezi punctul de preluare și cât plătește cursa. Accepți cursele pe care le vrei. Le conduci mașina, cu ei în ea, și ajung acasă în siguranță."
+    },
+    "where": {
+      "title": "Unde",
+      "body": "Oriunde. Rotabo este disponibil în 38 de limbi chiar de la început. Dacă încă nu conduce nimeni în orașul tău, fii primul — primii șoferi primesc fiecare cerere care vine."
+    },
+    "cta": "Devino șofer"
   },
   "safety": {
     "eyebrow": "OAMENII CARE CONDUC",

@@ -3,7 +3,8 @@
     "how": "Come funziona",
     "safety": "Sicurezza",
     "business": "Per le aziende",
-    "drive": "Diventa autista"
+    "drive": "Diventa autista",
+    "drivers": "Autisti"
   },
   "hero": {
     "origin_badge": "🇨🇭 Realizzato in Svizzera — per tutto il mondo",
@@ -55,6 +56,20 @@
     "driver_step4_desc": "Regola la tariffa direttamente con il cliente, alla fine.",
     "driver_not_taxi1": "Non è un turno da taxi. Non è un noleggio.",
     "driver_not_taxi2": "La loro auto. Le tue ore."
+  },
+  "recruit": {
+    "title": "Rotabo cerca autisti. Ovunque.",
+    "lead": "Stiamo avviando una ricerca globale di persone che vogliono guidare, così qualcun altro non debba farlo.",
+    "req": "Non serve un'auto. Non serve un'azienda. Serve una patente valida, la testa lucida e un motivo per esserci.",
+    "how": {
+      "title": "Come funziona",
+      "body": "Qualcuno richiede un autista nella tua città. Vedi il punto di ritiro e quanto paga la corsa. Accetti quelle che vuoi. Guidi la loro auto, con loro a bordo, e li porti a casa sani e salvi."
+    },
+    "where": {
+      "title": "Dove",
+      "body": "Ovunque. Rotabo è disponibile in 38 lingue fin dal primo giorno. Se nella tua città non guida ancora nessuno, sii il primo — i primi autisti ricevono ogni richiesta in arrivo."
+    },
+    "cta": "Diventa autista"
   },
   "safety": {
     "eyebrow": "LE PERSONE CHE GUIDANO",

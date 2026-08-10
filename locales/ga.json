@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí" },
+  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Do ghnóthaí", "drive": "Bí i do thiománaí", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 Déanta san Eilvéis — don domhan ar fad",
     "pill": "TIOMÁNAITHE LE CUSPÓIR · DO CHARR · DO SHLÍ ABHAILE",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "Socraigh an táille go díreach leis an gcliant ag an deireadh.",
     "driver_not_taxi1": "Ní seal tacsaí é. Ní cíos é.",
     "driver_not_taxi2": "A gcarr siúd. D'uaireanta féin."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "NA DAOINE A THIOMÁINEANN", "h2": "Tiománaithe a thiomáineann ar chúis",

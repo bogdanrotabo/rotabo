@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업 고객", "drive": "드라이버 등록" },
+  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업 고객", "drive": "드라이버 등록", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 스위스에서 제작 — 전 세계를 위해",
     "pill": "목적을 가진 드라이버 · 당신의 차 · 당신의 귀갓길",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "마지막에 고객과 직접 요금을 정산하세요.",
     "driver_not_taxi1": "택시 근무가 아닙니다. 렌트가 아닙니다.",
     "driver_not_taxi2": "그들의 차. 당신의 시간."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "운전하는 사람들", "h2": "이유가 있어 운전하는 드라이버들",

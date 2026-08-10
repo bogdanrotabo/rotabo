@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机" },
+  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 瑞士制造 — 服务全世界",
     "pill": "有使命感的司机 · 您的爱车 · 您的回家路",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "行程结束后直接与客户结算车费。",
     "driver_not_taxi1": "不是出租车班次，不是租车。",
     "driver_not_taxi2": "他们的车，你的时间。"
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "驾驶背后的人", "h2": "为一个理由而驾驶的司机",

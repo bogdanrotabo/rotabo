@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu" },
+  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
     "pill": "PEMANDU YANG BERTUJUAN · KERETA ANDA · PERJALANAN PULANG ANDA",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "Selesaikan tambang terus dengan pelanggan pada akhirnya.",
     "driver_not_taxi1": "Bukan syif teksi. Bukan sewaan.",
     "driver_not_taxi2": "Kereta mereka. Masa anda."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "ORANG DI SEBALIK STIR", "h2": "Pemandu yang memandu kerana sebab tertentu",

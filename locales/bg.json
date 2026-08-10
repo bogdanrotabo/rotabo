@@ -3,7 +3,8 @@
     "how": "Как работи",
     "safety": "Безопасност",
     "business": "За бизнеса",
-    "drive": "Стани шофьор"
+    "drive": "Стани шофьор",
+    "drivers": "Drivers"
   },
   "hero": {
     "origin_badge": "🇨🇭 Произведено в Швейцария — за целия свят",
@@ -55,6 +56,20 @@
     "driver_step4_desc": "Уреди тарифата директно с клиента накрая.",
     "driver_not_taxi1": "Не е таксиметрова смяна. Не е наем.",
     "driver_not_taxi2": "Тяхната кола. Твоите часове."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "ХОРАТА, КОИТО КАРАТ",

@@ -3,7 +3,8 @@
     "how": "Cómo funciona",
     "safety": "Seguridad",
     "business": "Para empresas",
-    "drive": "Conviértete en conductor"
+    "drive": "Conviértete en conductor",
+    "drivers": "Drivers"
   },
   "hero": {
     "origin_badge": "🇨🇭 Hecho en Suiza — para todo el mundo",
@@ -55,6 +56,20 @@
     "driver_step4_desc": "Cobra la tarifa directamente con el cliente al final.",
     "driver_not_taxi1": "No es un turno de taxi. No es un alquiler.",
     "driver_not_taxi2": "Su coche. Tus horas."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "LAS PERSONAS QUE CONDUCEN",

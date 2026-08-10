@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "यह कैसे काम करता है", "safety": "सुरक्षा", "business": "व्यवसायों के लिए", "drive": "ड्राइवर बनें" },
+  "nav": { "how": "यह कैसे काम करता है", "safety": "सुरक्षा", "business": "व्यवसायों के लिए", "drive": "ड्राइवर बनें", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 स्विट्ज़रलैंड में निर्मित — पूरी दुनिया के लिए",
     "pill": "एक मकसद वाले ड्राइवर · आपकी कार · आपके घर का रास्ता",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "अंत में सीधे क्लाइंट के साथ किराया तय करें।",
     "driver_not_taxi1": "यह टैक्सी शिफ्ट नहीं है। यह किराये की गाड़ी नहीं है।",
     "driver_not_taxi2": "उनकी कार। आपके घंटे।"
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "गाड़ी चलाने वाले लोग", "h2": "एक वजह से गाड़ी चलाने वाले ड्राइवर",

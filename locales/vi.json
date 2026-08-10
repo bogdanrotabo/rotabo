@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế" },
+  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
     "pill": "TÀI XẾ CÓ SỨ MỆNH · XE CỦA BẠN · ĐƯỜNG VỀ NHÀ CỦA BẠN",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "Thanh toán trực tiếp với khách hàng vào cuối chuyến đi.",
     "driver_not_taxi1": "Không phải ca taxi. Không phải thuê xe.",
     "driver_not_taxi2": "Xe của họ. Giờ của bạn."
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "NHỮNG NGƯỜI CẦM LÁI", "h2": "Những tài xế lái xe vì một lý do",

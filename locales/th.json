@@ -1,5 +1,5 @@
 {
-  "nav": { "how": "วิธีการทำงาน", "safety": "ความปลอดภัย", "business": "สำหรับธุรกิจ", "drive": "สมัครเป็นคนขับ" },
+  "nav": { "how": "วิธีการทำงาน", "safety": "ความปลอดภัย", "business": "สำหรับธุรกิจ", "drive": "สมัครเป็นคนขับ", "drivers": "Drivers" },
   "hero": {
     "origin_badge": "🇨🇭 ผลิตในสวิตเซอร์แลนด์ — เพื่อคนทั้งโลก",
     "pill": "คนขับที่ขับเพื่อจุดมุ่งหมาย · รถของคุณ · ทางกลับบ้านของคุณ",
@@ -34,6 +34,20 @@
     "driver_step4_desc": "ชำระค่าโดยสารโดยตรงกับลูกค้าเมื่อจบทริป",
     "driver_not_taxi1": "ไม่ใช่กะแท็กซี่ ไม่ใช่การเช่ารถ",
     "driver_not_taxi2": "รถของพวกเขา เวลาของคุณ"
+  },
+  "recruit": {
+    "title": "Rotabo is looking for drivers. Everywhere.",
+    "lead": "We're starting a worldwide search for people who want to drive so that someone else doesn't have to.",
+    "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
+    "how": {
+      "title": "How it works",
+      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+    },
+    "where": {
+      "title": "Where",
+      "body": "Anywhere. Rotabo is live in 38 languages from day one. If nobody drives in your city yet, be the first — early drivers get every request that comes in."
+    },
+    "cta": "Become a driver"
   },
   "safety": {
     "eyebrow": "คนที่อยู่เบื้องหลังพวงมาลัย", "h2": "คนขับที่ขับรถด้วยเหตุผลที่ชัดเจน",
