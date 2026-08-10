@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Podaj numer kierunkowy swojego kraju — ten numer będzie widoczny dla każdego, kto przegląda ogłoszenia.",
+    "address_hint": "Będzie to widoczne dla każdego, kto przegląda, tak samo jak twój numer telefonu.",
     "tier_label": "Widoczność",
     "period_1mo": "1 miesiąc",
     "period_12mo": "12 miesięcy"
@@ -211,7 +212,9 @@
     "subtitle": "Powiedz nam, kim jesteś i gdzie jesteś. Wybierz, jak długo chcesz być widoczny — kierowcy, którzy zobaczą twoje ogłoszenie, mogą zadzwonić do ciebie bezpośrednio.",
     "name_label": "Twoje imię",
     "phone_label": "Numer telefonu",
+    "email_label": "E-mail",
     "city_label": "Miasto / lokalizacja",
+    "address_label": "Adres",
     "submit": "Przejdź do płatności",
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Numer telefonu",
     "email_label": "E-mail",
     "city_label": "Miasto / obszar działania",
+    "address_label": "Adres",
     "license_year_label": "Rok uzyskania prawa jazdy",
     "decl1": "Posiadam ważne prawo jazdy odpowiedniej kategorii pojazdów.",
     "decl2": "Mam prawo prowadzić pojazd w kraju, w którym oferuję przejazdy.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Twoje imię",
     "phone_label": "Numer telefonu",
+    "email_label": "E-mail",
     "city_label": "Miasto / okolica",
+    "address_label": "Adres",
     "note_label": "Powiedz nam więcej (opcjonalnie)",
     "note_placeholder": "Kilka szczegółów pomoże — co, kiedy, za ile…",
     "submit": "Przejdź do płatności",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Potwierdzamy twoją płatność…",
     "empty_note": "Nikt nie jest teraz widoczny. Ta lista odświeża się automatycznie.",
     "call_btn": "📞 Zadzwoń",
+    "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filtruj według miasta…",
     "time_just_now": "przed chwilą",
     "time_min_ago_one": "1 minutę temu",

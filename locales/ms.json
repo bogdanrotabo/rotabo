@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Sertakan kod negara anda — nombor ini akan kelihatan kepada sesiapa yang sedang melayari.",
+    "address_hint": "Ini akan kelihatan kepada sesiapa yang melayari, sama seperti nombor telefon anda.",
     "tier_label": "Keterlihatan",
     "period_1mo": "1 bulan",
     "period_12mo": "12 bulan"
@@ -211,7 +212,9 @@
     "subtitle": "Beritahu kami siapa anda dan di mana anda berada. Pilih berapa lama anda mahu kekal kelihatan — pemandu yang nampak penyenaraian anda boleh terus menelefon anda.",
     "name_label": "Nama anda",
     "phone_label": "Nombor telefon",
+    "email_label": "E-mel",
     "city_label": "Bandar / lokasi",
+    "address_label": "Alamat",
     "submit": "Teruskan ke pembayaran",
     "error": "Sesuatu telah berlaku. Sila cuba lagi."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Nombor telefon",
     "email_label": "E-mel",
     "city_label": "Bandar / kawasan operasi",
+    "address_label": "Alamat",
     "license_year_label": "Tahun anda memperoleh lesen memandu",
     "decl1": "Saya memiliki lesen memandu yang sah untuk kategori kenderaan berkenaan.",
     "decl2": "Saya dibenarkan dari segi undang-undang untuk memandu di negara tempat saya menawarkan perkhidmatan ini.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Nama kamu",
     "phone_label": "Nombor telefon",
+    "email_label": "E-mel",
     "city_label": "Bandar / kawasan",
+    "address_label": "Alamat",
     "note_label": "Beritahu kami lebih lanjut (pilihan)",
     "note_placeholder": "Beberapa butiran membantu — apa, bila, berapa…",
     "submit": "Teruskan ke pembayaran",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Mengesahkan bayaran anda…",
     "empty_note": "Tiada sesiapa kelihatan sekarang. Senarai ini dikemas kini secara automatik.",
     "call_btn": "📞 Telefon",
+    "email_btn": "✉️ E-mel",
     "city_filter_placeholder": "Tapis mengikut bandar…",
     "time_just_now": "sebentar tadi",
     "time_min_ago_one": "1 minit lalu",

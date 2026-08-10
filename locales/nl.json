@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Vul je landcode in — dit nummer is zichtbaar voor iedereen die aan het browsen is.",
+    "address_hint": "Dit is zichtbaar voor iedereen die rondkijkt, net als je telefoonnummer.",
     "tier_label": "Zichtbaarheid",
     "period_1mo": "1 maand",
     "period_12mo": "12 maanden"
@@ -247,7 +248,9 @@
     "subtitle": "Vertel ons wie je bent en waar je bent. Kies hoelang je zichtbaar wilt blijven — chauffeurs die je vermelding zien, kunnen je rechtstreeks bellen.",
     "name_label": "Je naam",
     "phone_label": "Telefoonnummer",
+    "email_label": "E-mail",
     "city_label": "Stad / locatie",
+    "address_label": "Adres",
     "submit": "Doorgaan naar betaling",
     "error": "Er is iets misgegaan. Probeer het opnieuw."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Telefoonnummer",
     "email_label": "E-mail",
     "city_label": "Stad / werkgebied",
+    "address_label": "Adres",
     "license_year_label": "Jaar waarin je je rijbewijs hebt gehaald",
     "decl1": "Ik heb een geldig rijbewijs voor de relevante voertuigcategorieën.",
     "decl2": "Ik ben wettelijk bevoegd om te rijden in het land waar ik ritten aanbied.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Je naam",
     "phone_label": "Telefoonnummer",
+    "email_label": "E-mail",
     "city_label": "Stad / regio",
+    "address_label": "Adres",
     "note_label": "Vertel ons meer (optioneel)",
     "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…",
     "submit": "Doorgaan naar betaling",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Je betaling wordt bevestigd…",
     "empty_note": "Er is nu niemand zichtbaar. Deze lijst wordt automatisch ververst.",
     "call_btn": "📞 Bellen",
+    "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filter op stad…",
     "time_just_now": "zojuist",
     "time_min_ago_one": "1 min geleden",

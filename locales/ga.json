@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Cuir do chód tíre san áireamh — beidh an uimhir seo infheicthe ag aon duine atá ag brabhsáil.",
+    "address_hint": "Beidh sé seo infheicthe ag aon duine atá ag brabhsáil, mar an gcéanna le d'uimhir ghutháin.",
     "tier_label": "Infheictheacht",
     "period_1mo": "1 mí",
     "period_12mo": "12 mí"
@@ -211,7 +212,9 @@
     "subtitle": "Inis dúinn cé thú féin agus cá bhfuil tú. Roghnaigh cá fhad ar mhaith leat a bheith infheicthe — is féidir le tiománaithe a fheiceann do liostú glaoch ort go díreach.",
     "name_label": "D'ainm",
     "phone_label": "Uimhir theileafóin",
+    "email_label": "Ríomhphost",
     "city_label": "Cathair / suíomh",
+    "address_label": "Seoladh",
     "submit": "Ar aghaidh chuig íocaíocht",
     "error": "Tharla earráid. Bain triail eile as le do thoil."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Uimhir theileafóin",
     "email_label": "Ríomhphost",
     "city_label": "Cathair / limistéar gníomhaíochta",
+    "address_label": "Seoladh",
     "license_year_label": "An bhliain a fuair tú do cheadúnas tiomána",
     "decl1": "Tá ceadúnas tiomána bailí agam do na haicmí feithicle ábhartha.",
     "decl2": "Tá cead dleathach agam tiomáint sa tír ina dtairgim síobanna.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "D'ainm",
     "phone_label": "Uimhir ghutháin",
+    "email_label": "Ríomhphost",
     "city_label": "Cathair / ceantar",
+    "address_label": "Seoladh",
     "note_label": "Inis dúinn tuilleadh (roghnach)",
     "note_placeholder": "Cabhraíonn cúpla sonra — cad, cathain, cé mhéad…",
     "submit": "Lean ar aghaidh chuig íocaíocht",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Ag deimhniú do íocaíochta…",
     "empty_note": "Níl aon duine infheicthe faoi láthair. Nuashonraítear an liosta seo go huathoibríoch.",
     "call_btn": "📞 Glaoigh",
+    "email_btn": "✉️ Ríomhphost",
     "city_filter_placeholder": "Scag de réir cathrach…",
     "time_just_now": "díreach anois",
     "time_min_ago_one": "1 nóiméad ó shin",

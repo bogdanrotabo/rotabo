@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Include prefixul de țară — acest număr va fi vizibil pentru oricine navighează.",
+    "address_hint": "Aceasta va fi vizibilă pentru oricine navighează, la fel ca numărul tău de telefon.",
     "tier_label": "Vizibilitate",
     "period_1mo": "1 lună",
     "period_12mo": "12 luni"
@@ -247,7 +248,9 @@
     "subtitle": "Spune-ne cine ești și unde te afli. Alege cât timp vrei să rămâi vizibil — șoferii care văd listarea ta te pot suna direct.",
     "name_label": "Numele tău",
     "phone_label": "Număr de telefon",
+    "email_label": "Email",
     "city_label": "Oraș / locație",
+    "address_label": "Adresă",
     "submit": "Continuă spre plată",
     "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Număr de telefon",
     "email_label": "Email",
     "city_label": "Oraș / zonă de activitate",
+    "address_label": "Adresă",
     "license_year_label": "Anul în care ai obținut permisul de conducere",
     "decl1": "Dețin un permis de conducere valabil pentru categoriile de vehicule relevante.",
     "decl2": "Am dreptul legal de a conduce în țara în care ofer curse.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Numele tău",
     "phone_label": "Număr de telefon",
+    "email_label": "Email",
     "city_label": "Oraș / zonă",
+    "address_label": "Adresă",
     "note_label": "Spune-ne mai multe (opțional)",
     "note_placeholder": "Câteva detalii ajută — ce, când, cât…",
     "submit": "Continuă spre plată",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Confirmăm plata ta…",
     "empty_note": "Nimeni nu e vizibil acum. Această listă se actualizează automat.",
     "call_btn": "📞 Sună",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filtrează după oraș…",
     "time_just_now": "chiar acum",
     "time_min_ago_one": "acum 1 min",

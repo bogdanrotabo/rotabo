@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Lisää maatunnuksesi — tämä numero näkyy kaikille selaajille.",
+    "address_hint": "Tämä näkyy kaikille selaajille, samoin kuin puhelinnumerosi.",
     "tier_label": "Näkyvyys",
     "period_1mo": "1 kuukausi",
     "period_12mo": "12 kuukautta"
@@ -247,7 +248,9 @@
     "subtitle": "Kerro meille, kuka olet ja missä olet. Valitse, kuinka kauan haluat olla näkyvissä — kuljettajat, jotka näkevät ilmoituksesi, voivat soittaa sinulle suoraan.",
     "name_label": "Nimesi",
     "phone_label": "Puhelinnumero",
+    "email_label": "Sähköposti",
     "city_label": "Kaupunki / sijainti",
+    "address_label": "Osoite",
     "submit": "Jatka maksuun",
     "error": "Jokin meni pieleen. Yritä uudelleen."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Puhelinnumero",
     "email_label": "Sähköposti",
     "city_label": "Kaupunki / toiminta-alue",
+    "address_label": "Osoite",
     "license_year_label": "Vuosi, jolloin sait ajokorttisi",
     "decl1": "Minulla on voimassa oleva ajokortti asianomaisiin ajoneuvoluokkiin.",
     "decl2": "Minulla on laillinen oikeus ajaa maassa, jossa tarjoan kyytejä.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Nimesi",
     "phone_label": "Puhelinnumero",
+    "email_label": "Sähköposti",
     "city_label": "Kaupunki / alue",
+    "address_label": "Osoite",
     "note_label": "Kerro lisää (valinnainen)",
     "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, paljonko…",
     "submit": "Jatka maksuun",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Vahvistetaan maksuasi…",
     "empty_note": "Kukaan ei ole juuri nyt näkyvissä. Lista päivittyy automaattisesti.",
     "call_btn": "📞 Soita",
+    "email_btn": "✉️ Sähköposti",
     "city_filter_placeholder": "Suodata kaupungin mukaan…",
     "time_just_now": "juuri nyt",
     "time_min_ago_one": "1 min sitten",

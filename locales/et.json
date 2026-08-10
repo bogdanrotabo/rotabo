@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Lisa oma riigikood — see number on nähtav kõigile, kes sirvivad.",
+    "address_hint": "See on nähtav kõigile, kes sirvivad, samamoodi nagu su telefoninumber.",
     "tier_label": "Nähtavus",
     "period_1mo": "1 kuu",
     "period_12mo": "12 kuud"
@@ -247,7 +248,9 @@
     "subtitle": "Räägi meile, kes sa oled ja kus sa asud. Vali, kui kauaks soovid nähtavaks jääda — juhid, kes su kuulutust näevad, saavad sulle otse helistada.",
     "name_label": "Sinu nimi",
     "phone_label": "Telefoninumber",
+    "email_label": "E-post",
     "city_label": "Linn / asukoht",
+    "address_label": "Aadress",
     "submit": "Jätka maksmisele",
     "error": "Midagi läks valesti. Palun proovi uuesti."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Telefoninumber",
     "email_label": "E-post",
     "city_label": "Linn / tegevuspiirkond",
+    "address_label": "Aadress",
     "license_year_label": "Aasta, mil said juhiloa",
     "decl1": "Mul on kehtiv juhiluba asjaomaste sõidukikategooriate jaoks.",
     "decl2": "Mul on seaduslik õigus sõita riigis, kus ma sõite pakun.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Sinu nimi",
     "phone_label": "Telefoninumber",
+    "email_label": "E-post",
     "city_label": "Linn / piirkond",
+    "address_label": "Aadress",
     "note_label": "Räägi rohkem (valikuline)",
     "note_placeholder": "Mõned detailid aitavad — mis, millal, kui palju…",
     "submit": "Jätka maksmisele",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Kinnitame su makset…",
     "empty_note": "Praegu ei ole keegi nähtav. Nimekiri uueneb automaatselt.",
     "call_btn": "📞 Helista",
+    "email_btn": "✉️ E-post",
     "city_filter_placeholder": "Filtreeri linna järgi…",
     "time_just_now": "just praegu",
     "time_min_ago_one": "1 minut tagasi",

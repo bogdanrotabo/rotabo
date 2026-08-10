@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Uveď svou předvolbu země — toto číslo uvidí každý, kdo si nabídky prohlíží.",
+    "address_hint": "Toto bude viditelné pro každého, kdo si prohlíží nabídky, stejně jako tvé telefonní číslo.",
     "tier_label": "Viditelnost",
     "period_1mo": "1 měsíc",
     "period_12mo": "12 měsíců"
@@ -247,7 +248,9 @@
     "subtitle": "Řekni nám, kdo jsi a kde se nacházíš. Vyber si, jak dlouho chceš být viditelný — řidiči, kteří uvidí tvou nabídku, ti můžou rovnou zavolat.",
     "name_label": "Vaše jméno",
     "phone_label": "Telefonní číslo",
+    "email_label": "E-mail",
     "city_label": "Město / poloha",
+    "address_label": "Adresa",
     "submit": "Pokračovat k platbě",
     "error": "Něco se pokazilo. Zkuste to prosím znovu."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Telefonní číslo",
     "email_label": "E-mail",
     "city_label": "Město / oblast působení",
+    "address_label": "Adresa",
     "license_year_label": "Rok získání řidičského průkazu",
     "decl1": "Vlastním platný řidičský průkaz pro příslušné kategorie vozidel.",
     "decl2": "Mám zákonné oprávnění řídit v zemi, kde nabízím jízdy.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Tvoje jméno",
     "phone_label": "Telefonní číslo",
+    "email_label": "E-mail",
     "city_label": "Město / oblast",
+    "address_label": "Adresa",
     "note_label": "Napiš nám víc (nepovinné)",
     "note_placeholder": "Pár detailů pomůže — co, kdy, za kolik…",
     "submit": "Pokračovat k platbě",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Potvrzujeme tvou platbu…",
     "empty_note": "Momentálně není nikdo viditelný. Seznam se aktualizuje automaticky.",
     "call_btn": "📞 Zavolat",
+    "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filtrovat podle města…",
     "time_just_now": "právě teď",
     "time_min_ago_one": "před 1 minutou",

@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Ülke kodunu da ekle — bu numara göz atan herkes tarafından görülecek.",
+    "address_hint": "Bu, telefon numaran gibi, göz atan herkes tarafından görülebilecek.",
     "tier_label": "Görünürlük",
     "period_1mo": "1 ay",
     "period_12mo": "12 ay"
@@ -211,7 +212,9 @@
     "subtitle": "Bize kim olduğunu ve nerede olduğunu söyle. Ne kadar süre görünür kalmak istediğini seç — ilanını gören sürücüler seni doğrudan arayabilir.",
     "name_label": "Adın",
     "phone_label": "Telefon numarası",
+    "email_label": "E-posta",
     "city_label": "Şehir / konum",
+    "address_label": "Adres",
     "submit": "Ödemeye geç",
     "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Telefon numarası",
     "email_label": "E-posta",
     "city_label": "Şehir / faaliyet bölgesi",
+    "address_label": "Adres",
     "license_year_label": "Ehliyetini aldığın yıl",
     "decl1": "İlgili araç kategorileri için geçerli bir sürücü belgesine sahibim.",
     "decl2": "Yolculuk sunduğum ülkede araç kullanmaya yasal olarak yetkiliyim.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Adın",
     "phone_label": "Telefon numarası",
+    "email_label": "E-posta",
     "city_label": "Şehir / bölge",
+    "address_label": "Adres",
     "note_label": "Bize daha fazla anlat (isteğe bağlı)",
     "note_placeholder": "Birkaç ayrıntı yardımcı olur — ne, ne zaman, ne kadar…",
     "submit": "Ödemeye devam et",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Ödemen onaylanıyor…",
     "empty_note": "Şu anda kimse görünür değil. Bu liste otomatik olarak yenilenir.",
     "call_btn": "📞 Ara",
+    "email_btn": "✉️ E-posta",
     "city_filter_placeholder": "Şehre göre filtrele…",
     "time_just_now": "az önce",
     "time_min_ago_one": "1 dakika önce",

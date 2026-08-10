@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Sertakan kode negaramu — nomor ini akan terlihat oleh siapa pun yang sedang menjelajah.",
+    "address_hint": "Ini akan terlihat oleh siapa pun yang sedang menjelajah, sama seperti nomor teleponmu.",
     "tier_label": "Visibilitas",
     "period_1mo": "1 bulan",
     "period_12mo": "12 bulan"
@@ -211,7 +212,9 @@
     "subtitle": "Beri tahu kami siapa kamu dan di mana kamu berada. Pilih berapa lama kamu ingin tetap terlihat — pengemudi yang melihat listingmu bisa langsung meneleponmu.",
     "name_label": "Nama Anda",
     "phone_label": "Nomor telepon",
+    "email_label": "Email",
     "city_label": "Kota / lokasi",
+    "address_label": "Alamat",
     "submit": "Lanjutkan ke pembayaran",
     "error": "Terjadi kesalahan. Silakan coba lagi."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Nomor telepon",
     "email_label": "Email",
     "city_label": "Kota / area operasi",
+    "address_label": "Alamat",
     "license_year_label": "Tahun Anda memperoleh SIM",
     "decl1": "Saya memiliki SIM yang berlaku untuk kategori kendaraan yang relevan.",
     "decl2": "Saya diizinkan secara hukum untuk mengemudi di negara tempat saya menawarkan layanan ini.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Namamu",
     "phone_label": "Nomor telepon",
+    "email_label": "Email",
     "city_label": "Kota / area",
+    "address_label": "Alamat",
     "note_label": "Beri tahu lebih lanjut (opsional)",
     "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…",
     "submit": "Lanjut ke pembayaran",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Mengonfirmasi pembayaranmu…",
     "empty_note": "Belum ada yang terlihat saat ini. Daftar ini diperbarui otomatis.",
     "call_btn": "📞 Telepon",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filter berdasarkan kota…",
     "time_just_now": "baru saja",
     "time_min_ago_one": "1 menit lalu",

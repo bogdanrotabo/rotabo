@@ -703,8 +703,17 @@
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
+        <label for="fd_email" data-i18n="find_form.email_label">Email</label>
+        <input type="email" id="fd_email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-field">
         <label for="fd_city" data-i18n="find_form.city_label">City / location</label>
         <input type="text" id="fd_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="fd_address" data-i18n="find_form.address_label">Address</label>
+        <input type="text" id="fd_address" name="address" required autocomplete="street-address">
+        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label data-i18n="visibility.tier_label">Visibility</label>
@@ -749,6 +758,11 @@
       <div class="form-field">
         <label for="bd_city" data-i18n="drive_form.city_label">City / area of activity</label>
         <input type="text" id="bd_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="bd_address" data-i18n="drive_form.address_label">Address</label>
+        <input type="text" id="bd_address" name="address" required autocomplete="street-address">
+        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label for="bd_license_year" data-i18n="drive_form.license_year_label">Year you obtained your driving licence</label>
@@ -807,8 +821,17 @@
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
+        <label for="gl_email" data-i18n="generic_form.email_label">Email</label>
+        <input type="email" id="gl_email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-field">
         <label for="gl_city" data-i18n="generic_form.city_label">City / area</label>
         <input type="text" id="gl_city" name="city" required autocomplete="address-level2">
+      </div>
+      <div class="form-field">
+        <label for="gl_address" data-i18n="generic_form.address_label">Address</label>
+        <input type="text" id="gl_address" name="address" required autocomplete="street-address">
+        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label for="gl_note" data-i18n="generic_form.note_label">Tell us more (optional)</label>
@@ -947,7 +970,9 @@
       role: "seeking",
       name: form.client_name.value.trim(),
       phone: form.client_phone.value.trim(),
-      city: form.city.value.trim()
+      email: form.email.value.trim(),
+      city: form.city.value.trim(),
+      address: form.address.value.trim()
     };
 
     sb.from("listings").insert(payload).then(function(res){
@@ -988,6 +1013,7 @@
       phone: form.phone.value.trim(),
       email: form.email.value.trim(),
       city: form.city.value.trim(),
+      address: form.address.value.trim(),
       license_year: parseInt(form.license_year.value, 10) || null,
       declaration_accepted: true
     };
@@ -1040,7 +1066,9 @@
       role: role,
       name: form.name.value.trim(),
       phone: form.phone.value.trim(),
+      email: form.email.value.trim(),
       city: form.city.value.trim(),
+      address: form.address.value.trim(),
       note: form.note.value.trim() || null
     };
 

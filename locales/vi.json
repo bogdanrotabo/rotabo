@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Thêm mã quốc gia của bạn — số này sẽ hiển thị cho bất kỳ ai đang duyệt xem.",
+    "address_hint": "Điều này sẽ hiển thị cho bất kỳ ai đang duyệt, giống như số điện thoại của bạn.",
     "tier_label": "Hiển thị",
     "period_1mo": "1 tháng",
     "period_12mo": "12 tháng"
@@ -211,7 +212,9 @@
     "subtitle": "Cho chúng tôi biết bạn là ai và bạn đang ở đâu. Chọn thời gian bạn muốn được hiển thị — tài xế nào thấy tin đăng của bạn có thể gọi trực tiếp cho bạn.",
     "name_label": "Họ tên của bạn",
     "phone_label": "Số điện thoại",
+    "email_label": "Email",
     "city_label": "Thành phố / vị trí",
+    "address_label": "Địa chỉ",
     "submit": "Tiếp tục thanh toán",
     "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Số điện thoại",
     "email_label": "Email",
     "city_label": "Thành phố / khu vực hoạt động",
+    "address_label": "Địa chỉ",
     "license_year_label": "Năm bạn được cấp bằng lái xe",
     "decl1": "Tôi có bằng lái xe hợp lệ cho các hạng xe liên quan.",
     "decl2": "Tôi được phép lái xe hợp pháp tại quốc gia nơi tôi cung cấp dịch vụ này.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Tên của bạn",
     "phone_label": "Số điện thoại",
+    "email_label": "Email",
     "city_label": "Thành phố / khu vực",
+    "address_label": "Địa chỉ",
     "note_label": "Cho chúng tôi biết thêm (không bắt buộc)",
     "note_placeholder": "Vài chi tiết sẽ hữu ích — cái gì, khi nào, giá bao nhiêu…",
     "submit": "Tiếp tục thanh toán",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Đang xác nhận thanh toán của bạn…",
     "empty_note": "Hiện tại chưa có ai hiển thị. Danh sách này tự động làm mới.",
     "call_btn": "📞 Gọi",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Lọc theo thành phố…",
     "time_just_now": "vừa xong",
     "time_min_ago_one": "1 phút trước",

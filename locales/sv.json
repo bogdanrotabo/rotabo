@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Ange ditt landsnummer — detta nummer blir synligt för alla som bläddrar.",
+    "address_hint": "Detta kommer att vara synligt för alla som bläddrar, precis som ditt telefonnummer.",
     "tier_label": "Synlighet",
     "period_1mo": "1 månad",
     "period_12mo": "12 månader"
@@ -211,7 +212,9 @@
     "subtitle": "Berätta vem du är och var du är. Välj hur länge du vill vara synlig — förare som ser din annons kan ringa dig direkt.",
     "name_label": "Ditt namn",
     "phone_label": "Telefonnummer",
+    "email_label": "E-post",
     "city_label": "Stad / plats",
+    "address_label": "Adress",
     "submit": "Fortsätt till betalning",
     "error": "Något gick fel. Försök igen."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Telefonnummer",
     "email_label": "E-post",
     "city_label": "Stad / verksamhetsområde",
+    "address_label": "Adress",
     "license_year_label": "Året du fick ditt körkort",
     "decl1": "Jag har ett giltigt körkort för de relevanta fordonskategorierna.",
     "decl2": "Jag har laglig rätt att köra i landet där jag erbjuder resor.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Ditt namn",
     "phone_label": "Telefonnummer",
+    "email_label": "E-post",
     "city_label": "Stad / område",
+    "address_label": "Adress",
     "note_label": "Berätta mer (valfritt)",
     "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…",
     "submit": "Fortsätt till betalning",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Bekräftar din betalning…",
     "empty_note": "Ingen är synlig just nu. Listan uppdateras automatiskt.",
     "call_btn": "📞 Ring",
+    "email_btn": "✉️ E-post",
     "city_filter_placeholder": "Filtrera efter stad…",
     "time_just_now": "just nu",
     "time_min_ago_one": "1 min sedan",

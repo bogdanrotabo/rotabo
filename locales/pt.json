@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Inclua o código do seu país — esse número ficará visível para quem estiver navegando.",
+    "address_hint": "Isto será visível para quem estiver a navegar, tal como o teu número de telefone.",
     "tier_label": "Visibilidade",
     "period_1mo": "1 mês",
     "period_12mo": "12 meses"
@@ -247,7 +248,9 @@
     "subtitle": "Conte quem você é e onde está. Escolha por quanto tempo quer ficar visível — motoristas que virem seu anúncio podem ligar diretamente para você.",
     "name_label": "O teu nome",
     "phone_label": "Número de telefone",
+    "email_label": "Email",
     "city_label": "Cidade / localização",
+    "address_label": "Morada",
     "submit": "Continuar para o pagamento",
     "error": "Algo correu mal. Tenta novamente."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Número de telefone",
     "email_label": "Email",
     "city_label": "Cidade / área de atividade",
+    "address_label": "Morada",
     "license_year_label": "Ano em que obtiveste a carta de condução",
     "decl1": "Possuo uma carta de condução válida para as categorias de veículos relevantes.",
     "decl2": "Estou legalmente autorizado a conduzir no país onde ofereço as viagens.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "O teu nome",
     "phone_label": "Número de telefone",
+    "email_label": "Email",
     "city_label": "Cidade / zona",
+    "address_label": "Morada",
     "note_label": "Conta-nos mais (opcional)",
     "note_placeholder": "Alguns detalhes ajudam — o quê, quando, quanto…",
     "submit": "Continuar para o pagamento",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Confirmando seu pagamento…",
     "empty_note": "Ninguém está visível no momento. Esta lista atualiza automaticamente.",
     "call_btn": "📞 Ligar",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filtrar por cidade…",
     "time_just_now": "agora mesmo",
     "time_min_ago_one": "há 1 min",

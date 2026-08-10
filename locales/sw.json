@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Weka msimbo wa nchi yako — namba hii itaonekana kwa yeyote anayevinjari.",
+    "address_hint": "Hii itaonekana kwa yeyote anayevinjari, kama vile nambari yako ya simu.",
     "tier_label": "Kuonekana",
     "period_1mo": "Mwezi 1",
     "period_12mo": "Miezi 12"
@@ -211,7 +212,9 @@
     "subtitle": "Tuambie wewe ni nani na uko wapi. Chagua muda gani unataka kuendelea kuonekana — madereva wanaoona tangazo lako wanaweza kukupigia simu moja kwa moja.",
     "name_label": "Jina lako",
     "phone_label": "Namba ya simu",
+    "email_label": "Barua pepe",
     "city_label": "Mji / eneo",
+    "address_label": "Anwani",
     "submit": "Endelea kulipa",
     "error": "Kuna hitilafu. Tafadhali jaribu tena."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Namba ya simu",
     "email_label": "Barua pepe",
     "city_label": "Mji / eneo la shughuli",
+    "address_label": "Anwani",
     "license_year_label": "Mwaka ulipopata leseni ya udereva",
     "decl1": "Nina leseni halali ya udereva kwa aina husika za magari.",
     "decl2": "Nina kibali cha kisheria cha kuendesha gari katika nchi ninayotoa safari.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Jina lako",
     "phone_label": "Nambari ya simu",
+    "email_label": "Barua pepe",
     "city_label": "Mji / eneo",
+    "address_label": "Anwani",
     "note_label": "Tuambie zaidi (si lazima)",
     "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…",
     "submit": "Endelea kulipa",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Tunathibitisha malipo yako…",
     "empty_note": "Hakuna anayeonekana kwa sasa. Orodha hii inasasishwa moja kwa moja.",
     "call_btn": "📞 Piga simu",
+    "email_btn": "✉️ Barua pepe",
     "city_filter_placeholder": "Chuja kwa mji…",
     "time_just_now": "sasa hivi",
     "time_min_ago_one": "dakika 1 iliyopita",

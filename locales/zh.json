@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "请填写国家区号——所有浏览的人都能看到这个号码。",
+    "address_hint": "这将对所有浏览者可见，就像你的电话号码一样。",
     "tier_label": "曝光设置",
     "period_1mo": "1个月",
     "period_12mo": "12个月"
@@ -211,7 +212,9 @@
     "subtitle": "告诉我们你是谁、在哪里。选择你想保持曝光的时长——看到你信息的司机可以直接给你打电话。",
     "name_label": "您的姓名",
     "phone_label": "电话号码",
+    "email_label": "电子邮箱",
     "city_label": "城市 / 位置",
+    "address_label": "地址",
     "submit": "继续支付",
     "error": "出了点问题，请重试。"
   },
@@ -222,6 +225,7 @@
     "phone_label": "电话号码",
     "email_label": "电子邮箱",
     "city_label": "城市 / 活动区域",
+    "address_label": "地址",
     "license_year_label": "您取得驾照的年份",
     "decl1": "我持有相关车辆类别的有效驾驶执照。",
     "decl2": "我在提供载客服务的国家拥有合法驾驶资格。",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "你的姓名",
     "phone_label": "电话号码",
+    "email_label": "电子邮箱",
     "city_label": "城市 / 地区",
+    "address_label": "地址",
     "note_label": "告诉我们更多（选填）",
     "note_placeholder": "提供一些细节会有帮助 — 内容、时间、预算……",
     "submit": "继续付款",
@@ -315,6 +321,7 @@
     "pending_confirmation": "正在确认你的付款…",
     "empty_note": "目前没有人可见。此列表会自动刷新。",
     "call_btn": "📞 拨打电话",
+    "email_btn": "✉️ 电子邮箱",
     "city_filter_placeholder": "按城市筛选…",
     "time_just_now": "刚刚",
     "time_min_ago_one": "1 分钟前",

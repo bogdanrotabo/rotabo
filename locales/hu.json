@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Add meg az országhívó kódodat — ezt a számot mindenki látni fogja, aki böngészik.",
+    "address_hint": "Ez látható lesz mindenki számára, aki böngészik, ugyanúgy, mint a telefonszámod.",
     "tier_label": "Láthatóság",
     "period_1mo": "1 hónap",
     "period_12mo": "12 hónap"
@@ -211,7 +212,9 @@
     "subtitle": "Mondd el, ki vagy és hol vagy. Válaszd ki, mennyi ideig szeretnél látható maradni — azok a sofőrök, akik látják a hirdetésed, közvetlenül felhívhatnak.",
     "name_label": "A neved",
     "phone_label": "Telefonszám",
+    "email_label": "E-mail",
     "city_label": "Város / helyszín",
+    "address_label": "Cím",
     "submit": "Tovább a fizetéshez",
     "error": "Valami hiba történt. Kérjük, próbáld újra."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Telefonszám",
     "email_label": "E-mail",
     "city_label": "Város / működési terület",
+    "address_label": "Cím",
     "license_year_label": "Melyik évben szerezted a jogosítványt",
     "decl1": "Érvényes jogosítvánnyal rendelkezem a megfelelő járműkategóriákra.",
     "decl2": "Jogosult vagyok vezetni abban az országban, ahol a fuvarokat kínálom.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "A neved",
     "phone_label": "Telefonszám",
+    "email_label": "E-mail",
     "city_label": "Város / körzet",
+    "address_label": "Cím",
     "note_label": "Mondj el többet (nem kötelező)",
     "note_placeholder": "Néhány részlet segít — mi, mikor, mennyiért…",
     "submit": "Tovább a fizetéshez",
@@ -315,6 +321,7 @@
     "pending_confirmation": "A fizetésed megerősítése folyamatban…",
     "empty_note": "Jelenleg senki sem látható. A lista automatikusan frissül.",
     "call_btn": "📞 Hívás",
+    "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Szűrés város szerint…",
     "time_just_now": "épp most",
     "time_min_ago_one": "1 perce",

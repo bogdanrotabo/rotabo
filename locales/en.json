@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Include your country code — this number will be visible to whoever is browsing.",
+    "address_hint": "This will be visible to whoever is browsing, same as your phone number.",
     "tier_label": "Visibility",
     "period_1mo": "1 month",
     "period_12mo": "12 months"
@@ -243,7 +244,9 @@
     "subtitle": "Tell us who you are and where you are. Choose how long you want to stay visible — drivers who see your listing can call you directly.",
     "name_label": "Your name",
     "phone_label": "Phone number",
+    "email_label": "Email",
     "city_label": "City / location",
+    "address_label": "Address",
     "destination_label": "Where do you want to go?",
     "destination_placeholder": "Street, city…",
     "fare_estimate": "Estimated ride: <strong>~{amount} CHF</strong> for {km} km",
@@ -258,6 +261,7 @@
     "phone_label": "Phone number",
     "email_label": "Email",
     "city_label": "City / area of activity",
+    "address_label": "Address",
     "license_year_label": "Year you obtained your driving licence",
     "decl1": "I hold a valid driving licence for the relevant vehicle categories.",
     "decl2": "I am legally permitted to drive in the country where I offer rides.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Your name",
     "phone_label": "Phone number",
+    "email_label": "Email",
     "city_label": "City / area",
+    "address_label": "Address",
     "note_label": "Tell us more (optional)",
     "note_placeholder": "A few details help — what, when, how much…",
     "submit": "Continue to payment",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Confirming your payment…",
     "empty_note": "Nobody is visible right now. This list refreshes automatically.",
     "call_btn": "📞 Call",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filter by city…",
     "time_just_now": "just now",
     "time_min_ago_one": "1 min ago",

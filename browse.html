@@ -63,11 +63,19 @@
   }
   .request-info .name{font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .request-info .city{color:var(--text-eyebrow);font-size:.9rem;margin-top:3px;}
+  .request-info .address{color:var(--text-body);font-size:.9rem;margin-top:3px;}
   .request-info .note{color:var(--text-body);font-size:.92rem;margin-top:4px;}
+  .contact-actions{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;}
   .call-btn{
     display:inline-flex;align-items:center;gap:8px;
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
     border:none;border-radius:12px;padding:11px 20px;
+    font-weight:800;font-size:.95rem;text-decoration:none;flex-shrink:0;
+  }
+  .email-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--border);color:var(--text-dark);
+    border-radius:12px;padding:11px 20px;
     font-weight:800;font-size:.95rem;text-decoration:none;flex-shrink:0;
   }
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:24px 0;}
@@ -146,6 +154,7 @@
     pending_confirmation: "Confirming your payment…",
     empty_note: "Nobody is visible right now. This list refreshes automatically.",
     call_btn: "📞 Call",
+    email_btn: "✉️ Email",
     city_filter_placeholder: "Filter by city…",
     time_just_now: "just now",
     time_min_ago_one: "1 min ago",
@@ -235,7 +244,7 @@
 
   function loadListings(){
     var query = sb.from("listings")
-      .select("id, name, city, phone, note, created_at")
+      .select("id, name, city, address, phone, email, note, created_at")
       .eq("category", category)
       .eq("role", browseRole)
       .order("created_at", { ascending: false });
@@ -261,16 +270,29 @@
           '<div class="request-info">'
           + '<div class="name"></div>'
           + '<div class="city"></div>'
+          + '<div class="address"></div>'
           + '<div class="note"></div>'
           + '</div>'
-          + '<a class="call-btn"></a>';
+          + '<div class="contact-actions">'
+          + '<a class="call-btn"></a>'
+          + '<a class="email-btn"></a>'
+          + '</div>';
         card.querySelector(".name").textContent = row.name;
         card.querySelector(".city").textContent = row.city + " · " + timeAgo(row.created_at);
+        var addressEl = card.querySelector(".address");
+        if (row.address) { addressEl.textContent = row.address; } else { addressEl.remove(); }
         var noteEl = card.querySelector(".note");
         if (row.note) { noteEl.textContent = row.note; } else { noteEl.remove(); }
         var callBtn = card.querySelector(".call-btn");
         callBtn.href = "tel:" + row.phone;
         callBtn.textContent = tr("call_btn");
+        var emailBtn = card.querySelector(".email-btn");
+        if (row.email) {
+          emailBtn.href = "mailto:" + row.email;
+          emailBtn.textContent = tr("email_btn");
+        } else {
+          emailBtn.remove();
+        }
         list.appendChild(card);
       });
     });

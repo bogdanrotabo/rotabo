@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "国番号を含めて入力してください — この番号は閲覧者全員に表示されます。",
+    "address_hint": "これは電話番号と同じように、閲覧者全員に表示されます。",
     "tier_label": "表示設定",
     "period_1mo": "1か月",
     "period_12mo": "12か月"
@@ -211,7 +212,9 @@
     "subtitle": "あなたが誰で、どこにいるか教えてください。表示期間を選んでください — 掲載を見たドライバーから直接電話がかかってきます。",
     "name_label": "お名前",
     "phone_label": "電話番号",
+    "email_label": "メールアドレス",
     "city_label": "市区町村 / 現在地",
+    "address_label": "住所",
     "submit": "支払いに進む",
     "error": "問題が発生しました。もう一度お試しください。"
   },
@@ -222,6 +225,7 @@
     "phone_label": "電話番号",
     "email_label": "メールアドレス",
     "city_label": "都市 / 活動エリア",
+    "address_label": "住所",
     "license_year_label": "運転免許を取得した年",
     "decl1": "私は該当する車両区分の有効な運転免許を保有しています。",
     "decl2": "私は送迎を提供する国において、法的に運転が認められています。",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "お名前",
     "phone_label": "電話番号",
+    "email_label": "メールアドレス",
     "city_label": "市区町村 / エリア",
+    "address_label": "住所",
     "note_label": "詳しく教えてください（任意）",
     "note_placeholder": "詳細があると助かります — 内容、時期、予算など…",
     "submit": "支払いへ進む",
@@ -315,6 +321,7 @@
     "pending_confirmation": "お支払いを確認しています…",
     "empty_note": "現在、表示中の人はいません。このリストは自動的に更新されます。",
     "call_btn": "📞 電話する",
+    "email_btn": "✉️ メールアドレス",
     "city_filter_placeholder": "都市で絞り込む…",
     "time_just_now": "たった今",
     "time_min_ago_one": "1分前",

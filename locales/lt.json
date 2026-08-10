@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Nurodyk savo šalies kodą — šis numeris bus matomas visiems, kas naršo.",
+    "address_hint": "Tai bus matoma visiems, kas naršo, taip pat kaip ir tavo telefono numeris.",
     "tier_label": "Matomumas",
     "period_1mo": "1 mėnuo",
     "period_12mo": "12 mėnesių"
@@ -211,7 +212,9 @@
     "subtitle": "Papasakok, kas esi ir kur esi. Pasirink, kiek laiko nori būti matomas — vairuotojai, matantys tavo skelbimą, gali paskambinti tiesiogiai.",
     "name_label": "Tavo vardas",
     "phone_label": "Telefono numeris",
+    "email_label": "El. paštas",
     "city_label": "Miestas / vietovė",
+    "address_label": "Adresas",
     "submit": "Tęsti į apmokėjimą",
     "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Telefono numeris",
     "email_label": "El. paštas",
     "city_label": "Miestas / veiklos zona",
+    "address_label": "Adresas",
     "license_year_label": "Metai, kai gavai vairuotojo pažymėjimą",
     "decl1": "Turiu galiojantį vairuotojo pažymėjimą atitinkamoms transporto priemonių kategorijoms.",
     "decl2": "Man teisėtai leidžiama vairuoti šalyje, kurioje siūlau keliones.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Tavo vardas",
     "phone_label": "Telefono numeris",
+    "email_label": "El. paštas",
     "city_label": "Miestas / rajonas",
+    "address_label": "Adresas",
     "note_label": "Papasakok daugiau (neprivaloma)",
     "note_placeholder": "Keli detalūs punktai padeda — kas, kada, už kiek…",
     "submit": "Tęsti prie mokėjimo",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Tvirtiname tavo mokėjimą…",
     "empty_note": "Šiuo metu niekas nematomas. Šis sąrašas atsinaujina automatiškai.",
     "call_btn": "📞 Skambinti",
+    "email_btn": "✉️ El. paštas",
     "city_filter_placeholder": "Filtruoti pagal miestą…",
     "time_just_now": "ką tik",
     "time_min_ago_one": "prieš 1 min.",

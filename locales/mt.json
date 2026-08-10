@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Daħħal il-kodiċi tal-pajjiż tiegħek — dan in-numru se jkun viżibbli għal kull min qed jgħaddi minn hawn.",
+    "address_hint": "Dan ikun viżibbli għal kull min ibbrawżja, l-istess bħan-numru tat-telefon tiegħek.",
     "tier_label": "Viżibbiltà",
     "period_1mo": "Xahar 1",
     "period_12mo": "12-il xahar"
@@ -211,7 +212,9 @@
     "subtitle": "Għidilna min int u fejn int. Agħżel kemm żmien trid tibqa' viżibbli — sewwieqa li jaraw il-lista tiegħek jistgħu jċemplulek direttament.",
     "name_label": "Ismek",
     "phone_label": "Numru tat-telefon",
+    "email_label": "Email",
     "city_label": "Belt / post",
+    "address_label": "Indirizz",
     "submit": "Kompli għall-ħlas",
     "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Numru tat-telefon",
     "email_label": "Email",
     "city_label": "Belt / żona ta' attività",
+    "address_label": "Indirizz",
     "license_year_label": "Is-sena li fiha ksibt il-liċenzja tas-sewqan",
     "decl1": "Għandi liċenzja tas-sewqan valida għall-kategoriji tal-vetturi rilevanti.",
     "decl2": "Nista' nsuq legalment fil-pajjiż fejn noffri l-vjaġġi.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Isimek",
     "phone_label": "Numru tat-telefon",
+    "email_label": "Email",
     "city_label": "Belt / żona",
+    "address_label": "Indirizz",
     "note_label": "Għidilna aktar (mhux obbligatorju)",
     "note_placeholder": "Ftit dettalji jgħinu — x'inhu, meta, kemm…",
     "submit": "Kompli lejn il-ħlas",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Qed nikkonfermaw il-ħlas tiegħek…",
     "empty_note": "Ħadd mhu viżibbli bħalissa. Din il-lista tiġi aġġornata awtomatikament.",
     "call_btn": "📞 Ċempel",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filtra skont il-belt…",
     "time_just_now": "għadu kemm",
     "time_min_ago_one": "minuta ilu",

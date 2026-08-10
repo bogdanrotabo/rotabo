@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Vnesi klicno številko svoje države — to številko bo videl vsak, ki brska po oglasih.",
+    "address_hint": "To bo vidno vsem, ki brskajo, tako kot tvoja telefonska številka.",
     "tier_label": "Vidnost",
     "period_1mo": "1 mesec",
     "period_12mo": "12 mesecev"
@@ -211,7 +212,9 @@
     "subtitle": "Povej nam, kdo si in kje si. Izberi, kako dolgo želiš ostati viden — vozniki, ki vidijo tvoj oglas, te lahko pokličejo neposredno.",
     "name_label": "Tvoje ime",
     "phone_label": "Telefonska številka",
+    "email_label": "E-pošta",
     "city_label": "Mesto / lokacija",
+    "address_label": "Naslov",
     "submit": "Nadaljuj na plačilo",
     "error": "Nekaj je šlo narobe. Poskusi znova."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Telefonska številka",
     "email_label": "E-pošta",
     "city_label": "Mesto / območje delovanja",
+    "address_label": "Naslov",
     "license_year_label": "Leto, ko si pridobil vozniško dovoljenje",
     "decl1": "Imam veljavno vozniško dovoljenje za ustrezne kategorije vozil.",
     "decl2": "Zakonito smem voziti v državi, kjer ponujam prevoze.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Tvoje ime",
     "phone_label": "Telefonska številka",
+    "email_label": "E-pošta",
     "city_label": "Mesto / območje",
+    "address_label": "Naslov",
     "note_label": "Povej nam več (neobvezno)",
     "note_placeholder": "Nekaj podrobnosti pomaga — kaj, kdaj, za koliko…",
     "submit": "Nadaljuj na plačilo",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Potrjujemo tvoje plačilo…",
     "empty_note": "Trenutno ni nihče viden. Ta seznam se samodejno osvežuje.",
     "call_btn": "📞 Pokliči",
+    "email_btn": "✉️ E-pošta",
     "city_filter_placeholder": "Filtriraj po mestu…",
     "time_just_now": "pravkar",
     "time_min_ago_one": "pred 1 minuto",

@@ -198,6 +198,7 @@
   },
   "visibility": {
     "phone_hint": "Norādi savas valsts kodu — šis numurs būs redzams ikvienam, kas pārlūko sludinājumus.",
+    "address_hint": "Šis būs redzams ikvienam, kas pārlūko, tāpat kā tavs tālruņa numurs.",
     "tier_label": "Redzamība",
     "period_1mo": "1 mēnesis",
     "period_12mo": "12 mēneši"
@@ -211,7 +212,9 @@
     "subtitle": "Pastāsti mums, kas tu esi un kur atrodies. Izvēlies, cik ilgi vēlies būt redzams — vadītāji, kas redz tavu sludinājumu, var tev piezvanīt tieši.",
     "name_label": "Tavs vārds",
     "phone_label": "Tālruņa numurs",
+    "email_label": "E-pasts",
     "city_label": "Pilsēta / atrašanās vieta",
+    "address_label": "Adrese",
     "submit": "Turpināt uz apmaksu",
     "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
   },
@@ -222,6 +225,7 @@
     "phone_label": "Tālruņa numurs",
     "email_label": "E-pasts",
     "city_label": "Pilsēta / darbības teritorija",
+    "address_label": "Adrese",
     "license_year_label": "Gads, kad ieguvi vadītāja apliecību",
     "decl1": "Man ir derīga vadītāja apliecība attiecīgajām transportlīdzekļu kategorijām.",
     "decl2": "Man ir likumīgas tiesības vadīt transportlīdzekli valstī, kurā piedāvāju braucienus.",
@@ -233,7 +237,9 @@
   "generic_form": {
     "name_label": "Tavs vārds",
     "phone_label": "Tālruņa numurs",
+    "email_label": "E-pasts",
     "city_label": "Pilsēta / rajons",
+    "address_label": "Adrese",
     "note_label": "Pastāsti vairāk (nav obligāti)",
     "note_placeholder": "Daži sīkumi palīdz — kas, kad, par cik…",
     "submit": "Turpināt uz apmaksu",
@@ -315,6 +321,7 @@
     "pending_confirmation": "Apstiprinām tavu maksājumu…",
     "empty_note": "Šobrīd neviens nav redzams. Šis saraksts atjaunojas automātiski.",
     "call_btn": "📞 Zvanīt",
+    "email_btn": "✉️ E-pasts",
     "city_filter_placeholder": "Filtrēt pēc pilsētas…",
     "time_just_now": "tikko",
     "time_min_ago_one": "pirms 1 minūtes",

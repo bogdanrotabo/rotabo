@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Incluye el prefijo de tu país — este número será visible para cualquiera que esté navegando.",
+    "address_hint": "Esto será visible para cualquiera que esté navegando, igual que tu número de teléfono.",
     "tier_label": "Visibilidad",
     "period_1mo": "1 mes",
     "period_12mo": "12 meses"
@@ -247,7 +248,9 @@
     "subtitle": "Cuéntanos quién eres y dónde estás. Elige cuánto tiempo quieres estar visible — los conductores que vean tu perfil podrán llamarte directamente.",
     "name_label": "Tu nombre",
     "phone_label": "Número de teléfono",
+    "email_label": "Correo electrónico",
     "city_label": "Ciudad / ubicación",
+    "address_label": "Dirección",
     "submit": "Continuar al pago",
     "error": "Algo salió mal. Inténtalo de nuevo."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Número de teléfono",
     "email_label": "Correo electrónico",
     "city_label": "Ciudad / zona de actividad",
+    "address_label": "Dirección",
     "license_year_label": "Año en que obtuviste el carné de conducir",
     "decl1": "Tengo un carné de conducir válido para las categorías de vehículos correspondientes.",
     "decl2": "Estoy legalmente autorizado a conducir en el país donde ofrezco los trayectos.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Tu nombre",
     "phone_label": "Número de teléfono",
+    "email_label": "Correo electrónico",
     "city_label": "Ciudad / zona",
+    "address_label": "Dirección",
     "note_label": "Cuéntanos más (opcional)",
     "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…",
     "submit": "Continuar al pago",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Confirmando tu pago…",
     "empty_note": "Ahora mismo nadie está visible. Esta lista se actualiza automáticamente.",
     "call_btn": "📞 Llamar",
+    "email_btn": "✉️ Correo electrónico",
     "city_filter_placeholder": "Filtrar por ciudad…",
     "time_just_now": "justo ahora",
     "time_min_ago_one": "hace 1 min",

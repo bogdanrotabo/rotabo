@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Includi il prefisso internazionale — questo numero sarà visibile a chiunque navighi sul sito.",
+    "address_hint": "Questo indirizzo sarà visibile a chiunque navighi sul sito, come il tuo numero di telefono.",
     "tier_label": "Visibilità",
     "period_1mo": "1 mese",
     "period_12mo": "12 mesi"
@@ -247,7 +248,9 @@
     "subtitle": "Dicci chi sei e dove ti trovi. Scegli per quanto tempo restare visibile — gli autisti che vedono il tuo annuncio possono chiamarti direttamente.",
     "name_label": "Il tuo nome",
     "phone_label": "Numero di telefono",
+    "email_label": "Email",
     "city_label": "Città / posizione",
+    "address_label": "Indirizzo",
     "submit": "Continua al pagamento",
     "error": "Qualcosa è andato storto. Riprova."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Numero di telefono",
     "email_label": "Email",
     "city_label": "Città / area di attività",
+    "address_label": "Indirizzo",
     "license_year_label": "Anno di conseguimento della patente",
     "decl1": "Sono in possesso di una patente di guida valida per le categorie di veicoli pertinenti.",
     "decl2": "Sono legalmente autorizzato a guidare nel paese in cui offro i viaggi.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Il tuo nome",
     "phone_label": "Numero di telefono",
+    "email_label": "Email",
     "city_label": "Città / zona",
+    "address_label": "Indirizzo",
     "note_label": "Dicci di più (facoltativo)",
     "note_placeholder": "Qualche dettaglio aiuta — cosa, quando, quanto…",
     "submit": "Continua al pagamento",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Conferma del pagamento in corso…",
     "empty_note": "Nessuno è visibile al momento. Questa lista si aggiorna automaticamente.",
     "call_btn": "📞 Chiama",
+    "email_btn": "✉️ Email",
     "city_filter_placeholder": "Filtra per città…",
     "time_just_now": "proprio ora",
     "time_min_ago_one": "1 minuto fa",

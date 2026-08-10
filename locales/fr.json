@@ -234,6 +234,7 @@
   },
   "visibility": {
     "phone_hint": "Indique ton indicatif de pays — ce numéro sera visible par toute personne qui consulte les annonces.",
+    "address_hint": "Ceci sera visible par toute personne qui consulte les annonces, comme ton numéro de téléphone.",
     "tier_label": "Visibilité",
     "period_1mo": "1 mois",
     "period_12mo": "12 mois"
@@ -247,7 +248,9 @@
     "subtitle": "Dis-nous qui tu es et où tu es. Choisis combien de temps tu veux rester visible — les chauffeurs qui voient ton annonce peuvent t'appeler directement.",
     "name_label": "Votre nom",
     "phone_label": "Numéro de téléphone",
+    "email_label": "E-mail",
     "city_label": "Ville / lieu",
+    "address_label": "Adresse",
     "submit": "Continuer vers le paiement",
     "error": "Une erreur s'est produite. Veuillez réessayer."
   },
@@ -258,6 +261,7 @@
     "phone_label": "Numéro de téléphone",
     "email_label": "E-mail",
     "city_label": "Ville / zone d'activité",
+    "address_label": "Adresse",
     "license_year_label": "Année d'obtention de votre permis de conduire",
     "decl1": "Je suis titulaire d'un permis de conduire valide pour les catégories de véhicules concernées.",
     "decl2": "Je suis légalement autorisé à conduire dans le pays où je propose mes trajets.",
@@ -269,7 +273,9 @@
   "generic_form": {
     "name_label": "Ton nom",
     "phone_label": "Numéro de téléphone",
+    "email_label": "E-mail",
     "city_label": "Ville / secteur",
+    "address_label": "Adresse",
     "note_label": "Dis-nous en plus (facultatif)",
     "note_placeholder": "Quelques détails aident — quoi, quand, combien…",
     "submit": "Continuer vers le paiement",
@@ -351,6 +357,7 @@
     "pending_confirmation": "Confirmation de ton paiement…",
     "empty_note": "Personne n'est visible pour le moment. Cette liste se met à jour automatiquement.",
     "call_btn": "📞 Appeler",
+    "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filtrer par ville…",
     "time_just_now": "à l'instant",
     "time_min_ago_one": "il y a 1 min",
