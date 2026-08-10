@@ -47,13 +47,13 @@
     "tab_client": "I need a ride",
     "tab_driver": "I want to drive",
     "driver_step1_title": "Register",
-    "driver_step1_desc": "Create your driver profile and pay the registration fee.",
+    "driver_step1_desc": "Create your driver listing and pay for visibility.",
     "driver_step2_title": "Browse",
-    "driver_step2_desc": "See nearby ride requests on your dashboard.",
-    "driver_step3_title": "Accept & drive",
-    "driver_step3_desc": "Accept a request, meet the client, and drive their car.",
+    "driver_step2_desc": "See people looking for a driver on your dashboard.",
+    "driver_step3_title": "Call & drive",
+    "driver_step3_desc": "Call someone who needs a ride, meet them, and drive their car.",
     "driver_step4_title": "Get paid",
-    "driver_step4_desc": "Settle the fare directly with the client at the end.",
+    "driver_step4_desc": "Settle the fare directly with them at the end.",
     "driver_not_taxi1": "Not a taxi shift. Not a rental.",
     "driver_not_taxi2": "Their car. Your hours."
   },
@@ -63,7 +63,7 @@
     "req": "You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.",
     "how": {
       "title": "How it works",
-      "body": "Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe."
+      "body": "Someone lists themselves as looking for a driver in your city. You see their name and phone number. You call the ones you want. You drive their car, with them in it, and they get home safe."
     },
     "where": {
       "title": "Where",
@@ -122,9 +122,15 @@
     "ios_step2": "Scroll down the share menu and tap <strong>\"Add to Home Screen\"</strong>.",
     "ios_step3": "Tap <strong>\"Add\"</strong> in the top-right corner — done."
   },
+  "visibility": {
+    "phone_hint": "Include your country code — this number will be visible to whoever is browsing.",
+    "tier_label": "Visibility",
+    "period_1mo": "1 month",
+    "period_12mo": "12 months"
+  },
   "find_form": {
     "title": "Find a driver",
-    "subtitle": "Tell us who you are and where you are. You'll pay the platform contribution next, then we start searching.",
+    "subtitle": "Tell us who you are and where you are. Choose how long you want to stay visible — drivers who see your listing can call you directly.",
     "name_label": "Your name",
     "phone_label": "Phone number",
     "city_label": "City / location",
@@ -137,7 +143,7 @@
   },
   "drive_form": {
     "title": "Become a driver",
-    "subtitle": "Create your driver profile. You'll pay the platform contribution next, then you can start browsing requests.",
+    "subtitle": "Create your driver listing. Choose how long you want to stay visible, then start browsing people looking for a driver.",
     "name_label": "Your name",
     "phone_label": "Phone number",
     "email_label": "Email",
@@ -171,13 +177,15 @@
   },
   "dashboard_page": {
     "eyebrow": "DRIVER DASHBOARD",
-    "title": "Open requests",
-    "subtitle": "Requests currently searching for a driver in {city}.",
+    "title": "People looking for a driver",
+    "subtitle": "Everyone currently visible. Filter by city if you like.",
     "loading": "Loading…",
-    "not_registered_body": "You don’t have a driver profile on this device yet.",
-    "register_link": "← Go register as a driver",
-    "pending_confirmation": "Confirming your registration payment…",
-    "empty_note": "No open requests in your city right now. This list refreshes automatically.",
+    "not_registered_body": "You don’t have a driver listing on this device yet.",
+    "register_link": "← Go create a listing",
+    "pending_confirmation": "Confirming your payment…",
+    "empty_note": "Nobody is visible right now. This list refreshes automatically.",
+    "call_btn": "📞 Call",
+    "city_filter_placeholder": "Filter by city…",
     "accept_btn": "Accept",
     "accept_checking": "Checking…",
     "accept_taken": "Already taken",
@@ -196,5 +204,22 @@
     "active_ride_fare": "~{amount} CHF for this ride ({km} km), settled directly with the client",
     "active_ride_cancel_btn": "Can't make it — release this ride",
     "active_ride_cancel_confirm": "Release this ride? The client will be shown to other drivers again."
+  },
+  "find_dashboard_page": {
+    "eyebrow": "FIND A DRIVER",
+    "title": "Drivers near you",
+    "subtitle": "Everyone currently visible. Filter by city if you like.",
+    "loading": "Loading…",
+    "not_registered_body": "You don’t have an active listing on this device yet.",
+    "register_link": "← Back to home",
+    "pending_confirmation": "Confirming your payment…",
+    "empty_note": "No drivers visible right now. This list refreshes automatically.",
+    "call_btn": "📞 Call",
+    "city_filter_placeholder": "Filter by city…",
+    "time_just_now": "just now",
+    "time_min_ago_one": "1 min ago",
+    "time_min_ago_other": "{n} min ago",
+    "time_hour_ago_one": "1 hour ago",
+    "time_hour_ago_other": "{n} hours ago"
   }
 }

@@ -428,6 +428,17 @@
   .fare-note.show{display:block;}
   .fare-note strong{color:var(--violet-1);}
   .fare-note .fare-sub{display:block;color:var(--text-eyebrow);font-size:.82rem;margin-top:2px;}
+  .field-hint{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:6px;line-height:1.4;}
+  .tier-picker{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .tier-option{
+    position:relative;display:block;cursor:pointer;
+    border:1px solid var(--border);border-radius:12px;
+    padding:12px 14px;background:var(--bg-card);text-align:center;
+  }
+  .tier-option input{position:absolute;opacity:0;}
+  .tier-option .tier-price{display:block;font-weight:800;color:var(--text-dark);font-size:1.05rem;}
+  .tier-option .tier-period{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:2px;}
+  .tier-option:has(input:checked){border-color:var(--violet-2);background:#f3e6f8;}
 </style>
 </head>
 <body>
@@ -518,10 +529,10 @@
     <div class="step-card"><h3 data-i18n="how.step4_title">Home</h3><p data-i18n="how.step4_desc">You arrive together. The car stays yours the whole way.</p></div>
   </div>
   <div class="steps how-track-panel" data-how-track="driver" hidden>
-    <div class="step-card"><h3 data-i18n="how.driver_step1_title">Register</h3><p data-i18n="how.driver_step1_desc">Create your driver profile and pay the registration fee.</p></div>
-    <div class="step-card"><h3 data-i18n="how.driver_step2_title">Browse</h3><p data-i18n="how.driver_step2_desc">See nearby ride requests on your dashboard.</p></div>
-    <div class="step-card"><h3 data-i18n="how.driver_step3_title">Accept &amp; drive</h3><p data-i18n="how.driver_step3_desc">Accept a request, meet the client, and drive their car.</p></div>
-    <div class="step-card"><h3 data-i18n="how.driver_step4_title">Get paid</h3><p data-i18n="how.driver_step4_desc">Settle the fare directly with the client at the end.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step1_title">Register</h3><p data-i18n="how.driver_step1_desc">Create your driver listing and pay for visibility.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step2_title">Browse</h3><p data-i18n="how.driver_step2_desc">See people looking for a driver on your dashboard.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step3_title">Call &amp; drive</h3><p data-i18n="how.driver_step3_desc">Call someone who needs a ride, meet them, and drive their car.</p></div>
+    <div class="step-card"><h3 data-i18n="how.driver_step4_title">Get paid</h3><p data-i18n="how.driver_step4_desc">Settle the fare directly with them at the end.</p></div>
   </div>
 
   <p class="not-taxi how-track-panel" data-how-track="client"><span data-i18n="how.not_taxi1">Not a taxi. Not a ride. Not a car left behind.</span><b data-i18n="how.not_taxi2">Your car. Your way home.</b></p>
@@ -535,7 +546,7 @@
     <p class="recruit-req" data-i18n="recruit.req">You don't need a car. You don't need a company. You need a valid licence, a clear head, and a reason to show up.</p>
     <div class="recruit-block">
       <h3 data-i18n="recruit.how.title">How it works</h3>
-      <p data-i18n="recruit.how.body">Someone requests a driver in your city. You see the pickup point and what the journey pays. You accept the ones you want. You drive their car, with them in it, and they get home safe.</p>
+      <p data-i18n="recruit.how.body">Someone lists themselves as looking for a driver in your city. You see their name and phone number. You call the ones you want. You drive their car, with them in it, and they get home safe.</p>
     </div>
     <div class="recruit-block">
       <h3 data-i18n="recruit.where.title">Where</h3>
@@ -591,7 +602,7 @@
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('findDriverModal')" aria-label="Close">✕</button>
     <h3 data-i18n="find_form.title">Find a driver</h3>
-    <p class="modal-sub" data-i18n="find_form.subtitle">Tell us who you are and where you are. You'll pay the platform contribution next, then we start searching.</p>
+    <p class="modal-sub" data-i18n="find_form.subtitle">Tell us who you are and where you are. Choose how long you want to stay visible — drivers who see your listing can call you directly.</p>
     <form id="findDriverForm" novalidate>
       <div class="form-field">
         <label for="fd_name" data-i18n="find_form.name_label">Your name</label>
@@ -599,17 +610,28 @@
       </div>
       <div class="form-field">
         <label for="fd_phone" data-i18n="find_form.phone_label">Phone number</label>
-        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel">
+        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
         <label for="fd_city" data-i18n="find_form.city_label">City / location</label>
         <input type="text" id="fd_city" name="city" required autocomplete="address-level2">
       </div>
       <div class="form-field">
-        <label for="fd_destination" data-i18n="find_form.destination_label">Where do you want to go?</label>
-        <input type="text" id="fd_destination" name="destination" autocomplete="off" data-i18n-placeholder="find_form.destination_placeholder" placeholder="Street, city…">
+        <label data-i18n="visibility.tier_label">Visibility</label>
+        <div class="tier-picker">
+          <label class="tier-option">
+            <input type="radio" name="tier" value="1" checked>
+            <span class="tier-price">1 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="12">
+            <span class="tier-price">2 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+          </label>
+        </div>
       </div>
-      <p class="fare-note" id="fareEstimate"></p>
       <button type="submit" class="form-submit" data-i18n="find_form.submit">Continue to payment</button>
       <p class="form-error" id="findDriverError" data-i18n="find_form.error">Something went wrong. Please try again.</p>
     </form>
@@ -620,7 +642,7 @@
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('becomeDriverModal')" aria-label="Close">✕</button>
     <h3 data-i18n="drive_form.title">Become a driver</h3>
-    <p class="modal-sub" data-i18n="drive_form.subtitle">Create your driver profile. You'll pay the platform contribution next, then you can start browsing requests.</p>
+    <p class="modal-sub" data-i18n="drive_form.subtitle">Create your driver listing. Choose how long you want to stay visible, then start browsing people looking for a driver.</p>
     <form id="becomeDriverForm" novalidate>
       <div class="form-field">
         <label for="bd_name" data-i18n="drive_form.name_label">Your name</label>
@@ -628,7 +650,8 @@
       </div>
       <div class="form-field">
         <label for="bd_phone" data-i18n="drive_form.phone_label">Phone number</label>
-        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel">
+        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="\+[0-9 ]{7,20}">
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
       </div>
       <div class="form-field">
         <label for="bd_email" data-i18n="drive_form.email_label">Email</label>
@@ -641,6 +664,21 @@
       <div class="form-field">
         <label for="bd_license_year" data-i18n="drive_form.license_year_label">Year you obtained your driving licence</label>
         <input type="number" id="bd_license_year" name="license_year" required min="1950" max="2026" placeholder="2018">
+      </div>
+      <div class="form-field">
+        <label data-i18n="visibility.tier_label">Visibility</label>
+        <div class="tier-picker">
+          <label class="tier-option">
+            <input type="radio" name="tier" value="1" checked>
+            <span class="tier-price">1 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="12">
+            <span class="tier-price">2 CHF</span>
+            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+          </label>
+        </div>
       </div>
       <div class="form-check">
         <input type="checkbox" id="bd_decl1" required>
@@ -707,8 +745,15 @@
     global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
   });
 
-  var FIND_DRIVER_LINK = "https://buy.stripe.com/28E14g2cC9R3e10ekI0co02";
-  var BECOME_DRIVER_LINK = "https://buy.stripe.com/6oUaEQ8B07IV8GGa4s0co04";
+  // Visibility tiers, reused for both the client and driver forms: 1 CHF
+  // buys 1 month, 2 CHF buys 12 months. Same two Payment Links regardless
+  // of which form is submitted -- the webhook tells the tables apart by
+  // client_reference_id, and the tier by the Stripe amount paid.
+  // TODO: replace with the real Payment Link URLs once created in Stripe.
+  var TIER_LINKS = {
+    "1": "https://buy.stripe.com/TODO_1_CHF_1_MONTH",
+    "12": "https://buy.stripe.com/TODO_2_CHF_12_MONTHS"
+  };
 
   var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click" };
   window.openModal = function(id){
@@ -754,89 +799,14 @@
     el.classList.remove("show");
   }
 
-  // Best-effort pickup coordinates: resolves with {lat,lng} or null.
-  // Never blocks submission -- if geolocation is denied, unsupported,
-  // or slow, the ride still works via the free-text city, just
-  // without the driver's "navigate to pickup" link or the client's ETA.
-  function getPickupCoords(){
-    return new Promise(function(resolve){
-      if (!navigator.geolocation) { resolve(null); return; }
-      var settled = false;
-      var timer = setTimeout(function(){
-        if (!settled) { settled = true; resolve(null); }
-      }, 6000);
-      navigator.geolocation.getCurrentPosition(function(pos){
-        if (settled) return;
-        settled = true;
-        clearTimeout(timer);
-        resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude });
-      }, function(){
-        if (settled) return;
-        settled = true;
-        clearTimeout(timer);
-        resolve(null);
-      }, { enableHighAccuracy: true, timeout: 5500 });
-    });
+  // The chosen tier (radio button value "1" or "12") picks which of the
+  // two Payment Links to send the browser to; the webhook then infers
+  // the same tier back from the Stripe amount paid.
+  function tierLinkFor(form){
+    var checked = form.querySelector('input[name="tier"]:checked');
+    var months = checked ? checked.value : "1";
+    return TIER_LINKS[months];
   }
-
-  // Fetch pickup coords once and cache -- both the live fare estimate
-  // (on destination blur) and the final submit reuse this, so the
-  // browser only prompts for location permission once.
-  var pickupCoordsPromise = null;
-  function ensurePickupCoords(){
-    if (!pickupCoordsPromise) pickupCoordsPromise = getPickupCoords();
-    return pickupCoordsPromise;
-  }
-
-  // No Google Maps key configured, so the fare estimate uses free
-  // OpenStreetMap geocoding (Nominatim) for the typed destination,
-  // plus the same straight-line (haversine) distance already used
-  // for the live ETA on searching.html -- approximate, not routed,
-  // but needs no paid API and no key.
-  var RATE_CHF_PER_KM = 2;
-
-  function haversineKm(lat1, lng1, lat2, lng2){
-    var R = 6371;
-    var dLat = (lat2 - lat1) * Math.PI / 180;
-    var dLng = (lng2 - lng1) * Math.PI / 180;
-    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-            Math.sin(dLng / 2) * Math.sin(dLng / 2);
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  }
-
-  function geocodeAddress(text){
-    var url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=" + encodeURIComponent(text);
-    return fetch(url, { headers: { "Accept": "application/json" } })
-      .then(function(res){ return res.ok ? res.json() : []; })
-      .then(function(results){
-        if (!results || !results.length) return null;
-        return { lat: parseFloat(results[0].lat), lng: parseFloat(results[0].lon) };
-      })
-      .catch(function(){ return null; });
-  }
-
-  var fareState = { destinationCoords: null, distanceKm: null, fareChf: null };
-
-  document.getElementById("fd_destination").addEventListener("blur", function(){
-    var text = this.value.trim();
-    var fareEl = document.getElementById("fareEstimate");
-    if (!text) { fareEl.classList.remove("show"); fareState = { destinationCoords: null, distanceKm: null, fareChf: null }; return; }
-
-    Promise.all([ensurePickupCoords(), geocodeAddress(text)]).then(function(results){
-      var pickup = results[0];
-      var destination = results[1];
-      if (!pickup || !destination) { fareEl.classList.remove("show"); return; }
-
-      var km = haversineKm(pickup.lat, pickup.lng, destination.lat, destination.lng);
-      var fare = Math.round(km * RATE_CHF_PER_KM * 100) / 100;
-      fareState = { destinationCoords: destination, distanceKm: Math.round(km * 100) / 100, fareChf: fare };
-
-      fareEl.innerHTML = window.rotaboT("find_form.fare_estimate", { amount: fare.toFixed(2), km: fareState.distanceKm.toFixed(1) })
-        + '<span class="fare-sub">' + window.rotaboT("find_form.fare_note") + '</span>';
-      fareEl.classList.add("show");
-    });
-  });
 
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
@@ -845,43 +815,32 @@
     hideError(errorEl);
     setSubmitting(form, true);
 
-    ensurePickupCoords().then(function(coords){
-      // Generate the id client-side rather than reading it back via
-      // .select() after insert: requests' SELECT policy only allows
-      // reading a row once it's matched (see migration
-      // restrict_requests_contact_info), so a freshly-inserted,
-      // still-pending row can't be read back that way.
-      var newRequestId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
+    // Generate the id client-side rather than reading it back via
+    // .select() after insert: client_listings' SELECT policy only
+    // allows reading a row once it's paid and visible, so a
+    // freshly-inserted, not-yet-paid row can't be read back that way.
+    var newListingId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
-      var payload = {
-        id: newRequestId || undefined,
-        client_name: form.client_name.value.trim(),
-        client_phone: form.client_phone.value.trim(),
-        city: form.city.value.trim(),
-        status: "pending",
-        pickup_lat: coords ? coords.lat : null,
-        pickup_lng: coords ? coords.lng : null,
-        destination_address: form.destination.value.trim() || null,
-        destination_lat: fareState.destinationCoords ? fareState.destinationCoords.lat : null,
-        destination_lng: fareState.destinationCoords ? fareState.destinationCoords.lng : null,
-        distance_km: fareState.distanceKm,
-        estimated_fare_chf: fareState.fareChf
-      };
+    var payload = {
+      id: newListingId || undefined,
+      name: form.client_name.value.trim(),
+      phone: form.client_phone.value.trim(),
+      city: form.city.value.trim()
+    };
 
-      sb.from("requests").insert(payload).then(function(res){
-        if (res.error) {
-          setSubmitting(form, false);
-          showError(errorEl);
-          return;
-        }
-        localStorage.setItem("rotabo_request_id", newRequestId);
-        if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "find_driver" });
-        window.location.href = FIND_DRIVER_LINK
-          + "?client_reference_id=" + encodeURIComponent(newRequestId);
-      }).catch(function(){
+    sb.from("client_listings").insert(payload).then(function(res){
+      if (res.error) {
         setSubmitting(form, false);
         showError(errorEl);
-      });
+        return;
+      }
+      localStorage.setItem("rotabo_client_listing_id", newListingId);
+      if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "find_driver" });
+      window.location.href = tierLinkFor(form)
+        + "?client_reference_id=" + encodeURIComponent(newListingId);
+    }).catch(function(){
+      setSubmitting(form, false);
+      showError(errorEl);
     });
   });
 
@@ -893,11 +852,9 @@
     setSubmitting(form, true);
 
     // Generate the id client-side rather than reading it back via
-    // .select() after insert: driver_profiles' SELECT policy only
-    // allows reading a driver once they're matched to a request (see
-    // the privacy fix in migration restrict_driver_profiles_contact_info),
-    // so a freshly-inserted, not-yet-matched row can't be read back
-    // that way.
+    // .select() after insert: driver_listings' SELECT policy only
+    // allows reading a row once it's paid and visible, so a
+    // freshly-inserted, not-yet-paid row can't be read back that way.
     var newDriverId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
 
     var payload = {
@@ -910,7 +867,7 @@
       declaration_accepted: true
     };
 
-    sb.from("driver_profiles").insert(payload).then(function(res){
+    sb.from("driver_listings").insert(payload).then(function(res){
       if (res.error) {
         setSubmitting(form, false);
         showError(errorEl);
@@ -918,7 +875,7 @@
       }
       localStorage.setItem("rotabo_driver_id", newDriverId);
       if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "become_driver" });
-      window.location.href = BECOME_DRIVER_LINK
+      window.location.href = tierLinkFor(form)
         + "?client_reference_id=" + encodeURIComponent(newDriverId);
     }).catch(function(){
       setSubmitting(form, false);

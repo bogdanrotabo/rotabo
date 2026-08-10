@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Driver dashboard — Rotabo</title>
+<title>Find a driver — Rotabo</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <style>
@@ -95,8 +95,8 @@
 </header>
 
 <div class="wrap">
-  <p class="eyebrow" id="pageEyebrow">DRIVER DASHBOARD</p>
-  <h1 id="pageTitle">People looking for a driver</h1>
+  <p class="eyebrow" id="pageEyebrow">FIND A DRIVER</p>
+  <h1 id="pageTitle">Drivers near you</h1>
   <p class="sub" id="pageSub">Everyone currently visible. Filter by city if you like.</p>
 
   <div id="content">
@@ -119,18 +119,18 @@
 
   // Minimal i18n: reuse the language the visitor already chose on the
   // homepage (persisted in localStorage). No language switcher here on
-  // purpose -- this is a working tool for a registered driver, not a
+  // purpose -- this is a working tool for someone who just paid, not a
   // marketing page.
   var LANG = localStorage.getItem("rotabo_lang") || "en";
   var T = {
-    eyebrow: "DRIVER DASHBOARD",
-    title: "People looking for a driver",
+    eyebrow: "FIND A DRIVER",
+    title: "Drivers near you",
     subtitle: "Everyone currently visible. Filter by city if you like.",
     loading: "Loading…",
-    not_registered_body: "You don’t have a driver listing on this device yet.",
-    register_link: "← Go create a listing",
+    not_registered_body: "You don’t have an active listing on this device yet.",
+    register_link: "← Back to home",
     pending_confirmation: "Confirming your payment…",
-    empty_note: "Nobody is visible right now. This list refreshes automatically.",
+    empty_note: "No drivers visible right now. This list refreshes automatically.",
     call_btn: "📞 Call",
     city_filter_placeholder: "Filter by city…",
     time_just_now: "just now",
@@ -154,8 +154,8 @@
     return fetch("locales/" + LANG + ".json")
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
-        if (dict && dict.dashboard_page) {
-          Object.assign(T, dict.dashboard_page);
+        if (dict && dict.find_dashboard_page) {
+          Object.assign(T, dict.find_dashboard_page);
         }
         document.getElementById("pageEyebrow").textContent = T.eyebrow;
         document.getElementById("pageTitle").textContent = T.title;
@@ -165,7 +165,7 @@
       .catch(function(){ /* keep English defaults */ });
   }
 
-  var driverId = localStorage.getItem("rotabo_driver_id");
+  var clientListingId = localStorage.getItem("rotabo_client_listing_id");
   var content = document.getElementById("content");
   var listPollTimer = null;
   var cityFilter = "";
@@ -216,7 +216,7 @@
   }
 
   function loadListings(){
-    var query = sb.from("client_listings")
+    var query = sb.from("driver_listings")
       .select("id, name, city, phone, created_at")
       .order("created_at", { ascending: false });
     if (cityFilter) query = query.ilike("city", "%" + cityFilter + "%");
@@ -254,14 +254,14 @@
   }
 
   function init(){
-    if (!driverId) {
+    if (!clientListingId) {
       renderNotRegistered();
       return;
     }
 
-    sb.from("driver_listing_status")
+    sb.from("client_listing_status")
       .select("id, stripe_session_id, visible_until")
-      .eq("id", driverId)
+      .eq("id", clientListingId)
       .maybeSingle()
       .then(function(res){
         if (res.error || !res.data) {

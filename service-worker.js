@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v22";
+const CACHE_VERSION = "v23";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -12,8 +12,8 @@ const PRECACHE_URLS = [
   "/index.html",
   "/terms.html",
   "/privacy.html",
-  "/searching.html",
   "/driver-dashboard.html",
+  "/client-dashboard.html",
   "/manifest.json",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
@@ -46,36 +46,6 @@ self.addEventListener("activate", function (event) {
       );
     }).then(function () {
       return self.clients.claim();
-    })
-  );
-});
-
-self.addEventListener("push", function (event) {
-  var data = {};
-  try { data = event.data ? event.data.json() : {}; } catch (e) { /* ignore malformed payload */ }
-
-  var title = data.title || "Rotabo";
-  var options = {
-    body: data.body || "",
-    icon: "/icons/icon-192.png",
-    badge: "/icons/favicon-32.png",
-    data: { url: data.url || "/searching.html" }
-  };
-
-  event.waitUntil(self.registration.showNotification(title, options));
-});
-
-self.addEventListener("notificationclick", function (event) {
-  event.notification.close();
-  var url = (event.notification.data && event.notification.data.url) || "/searching.html";
-
-  event.waitUntil(
-    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (clientList) {
-      for (var i = 0; i < clientList.length; i++) {
-        var client = clientList[i];
-        if (client.url.indexOf(url) !== -1 && "focus" in client) return client.focus();
-      }
-      if (self.clients.openWindow) return self.clients.openWindow(url);
     })
   );
 });
