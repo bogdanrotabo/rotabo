@@ -225,6 +225,12 @@
     "p": "Rotabo conectează oameni în 9 categorii, în 38 de limbi, în toată lumea — fără niciun comision luat de la cei care oferă timp, abilități sau echipament. Vorbim cu oameni care cred în modelul ăsta.",
     "link": "Ia legătura →"
   },
+  "unexpected_card": {
+    "cat": "ALTCEVA?",
+    "h3": "S-a întâmplat ceva neașteptat?",
+    "p": "Spune-i lui Rotabo de ce ai nevoie. Cineva din apropiere te-ar putea ajuta.",
+    "link": "Spune-ne →"
+  },
   "drivers_card": {
     "cat": "ȘOFERI",
     "h3": "Condu cu Rotabo",

@@ -225,6 +225,12 @@
     "p": "Rotabo connects people across 9 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.",
     "link": "Get in touch →"
   },
+  "unexpected_card": {
+    "cat": "SOMETHING ELSE?",
+    "h3": "Did something unexpected happen?",
+    "p": "Tell Rotabo what you need. Someone nearby might be able to help.",
+    "link": "Tell us →"
+  },
   "drivers_card": {
     "cat": "DRIVERS",
     "h3": "Drive with Rotabo",

@@ -225,6 +225,12 @@
     "p": "Rotabo collega persone in 9 categorie, in 38 lingue, in tutto il mondo — senza alcuna commissione su chi offre tempo, competenze o attrezzatura. Stiamo parlando con chi crede in questo modello.",
     "link": "Contattaci →"
   },
+  "unexpected_card": {
+    "cat": "ALTRO?",
+    "h3": "È successo qualcosa di inaspettato?",
+    "p": "Dì a Rotabo di cosa hai bisogno. Qualcuno nelle vicinanze potrebbe aiutarti.",
+    "link": "Dicci →"
+  },
   "drivers_card": {
     "cat": "AUTISTI",
     "h3": "Guida con Rotabo",
