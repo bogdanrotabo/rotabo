@@ -2,8 +2,7 @@
   "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare" },
   "hero": {
     "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
-    "pill": "Behöver du mig? Hitta mig!",
-    "tagline1": "Behöver du mig?", "tagline2": "Hitta mig!", "tagline3": "Din bil.",
+    "tagline3": "Din bil.",
     "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
     "cta_find": "Hitta det du behöver",
     "cta_offer": "Erbjud det du kan",

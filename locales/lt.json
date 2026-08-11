@@ -2,8 +2,7 @@
   "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai" },
   "hero": {
     "origin_badge": "🇨🇭 Pagaminta Šveicarijoje — visam pasauliui",
-    "pill": "Ar reikia manęs? Suraskite mane!",
-    "tagline1": "Ar reikia manęs?", "tagline2": "Suraskite mane!", "tagline3": "Tavo automobilis.",
+    "tagline3": "Tavo automobilis.",
     "lede": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
     "cta_find": "Rasti, ko reikia",
     "cta_offer": "Pasiūlyti, ką gali",

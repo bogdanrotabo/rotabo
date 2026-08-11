@@ -2,8 +2,7 @@
   "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök" },
   "hero": {
     "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
-    "pill": "Szükséged van rám? Találj meg!",
-    "tagline1": "Szükséged van rám?", "tagline2": "Találj meg!", "tagline3": "A te autód.",
+    "tagline3": "A te autód.",
     "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
     "cta_find": "Találd meg, amire szükséged van",
     "cta_offer": "Ajánld fel, amit tudsz",

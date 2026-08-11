@@ -2,8 +2,7 @@
   "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy" },
   "hero": {
     "origin_badge": "🇨🇭 Zrobione w Szwajcarii — dla całego świata",
-    "pill": "Potrzebujesz mnie? Znajdź mnie!",
-    "tagline1": "Potrzebujesz mnie?", "tagline2": "Znajdź mnie!", "tagline3": "Twój samochód.",
+    "tagline3": "Twój samochód.",
     "lede": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
     "cta_find": "Znajdź to, czego potrzebujesz",
     "cta_offer": "Zaoferuj to, co możesz",

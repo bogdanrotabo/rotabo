@@ -2,8 +2,7 @@
   "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế" },
   "hero": {
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
-    "pill": "Bạn cần tôi? Tìm tôi đi!",
-    "tagline1": "Bạn cần tôi?", "tagline2": "Tìm tôi đi!", "tagline3": "Xe của bạn.",
+    "tagline3": "Xe của bạn.",
     "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
     "cta_find": "Tìm thứ bạn cần",
     "cta_offer": "Đề nghị những gì bạn có thể",

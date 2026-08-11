@@ -2,8 +2,7 @@
   "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "司机" },
   "hero": {
     "origin_badge": "🇨🇭 瑞士制造 — 服务全世界",
-    "pill": "需要我吗？ 找到我！",
-    "tagline1": "需要我吗？", "tagline2": "找到我！", "tagline3": "你的车。",
+    "tagline3": "你的车。",
     "lede": "选择你需要的 — 或者把自己列为可以提供帮助的人。",
     "cta_find": "寻找你需要的",
     "cta_offer": "提供你能给的",

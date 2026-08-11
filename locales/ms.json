@@ -2,8 +2,7 @@
   "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Pemandu" },
   "hero": {
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
-    "pill": "Perlukan saya? Cari saya!",
-    "tagline1": "Perlukan saya?", "tagline2": "Cari saya!", "tagline3": "Kereta anda.",
+    "tagline3": "Kereta anda.",
     "lede": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
     "cta_find": "Cari apa yang anda perlukan",
     "cta_offer": "Tawarkan apa yang anda boleh",

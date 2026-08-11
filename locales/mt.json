@@ -2,8 +2,7 @@
   "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ" },
   "hero": {
     "origin_badge": "🇨🇭 Magħmul fl-Isvizzera — għad-dinja kollha",
-    "pill": "Għandek bżonni? Sibni!",
-    "tagline1": "Għandek bżonni?", "tagline2": "Sibni!", "tagline3": "Il-karrozza tiegħek.",
+    "tagline3": "Il-karrozza tiegħek.",
     "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
     "cta_find": "Sib dak li għandek bżonn",
     "cta_offer": "Offri dak li tista'",

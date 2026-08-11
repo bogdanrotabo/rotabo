@@ -2,8 +2,7 @@
   "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Za podjetja", "drive": "Postani voznik", "drivers": "Vozniki" },
   "hero": {
     "origin_badge": "🇨🇭 Izdelano v Švici — za ves svet",
-    "pill": "Me potrebuješ? Najdi me!",
-    "tagline1": "Me potrebuješ?", "tagline2": "Najdi me!", "tagline3": "Tvoj avto.",
+    "tagline3": "Tvoj avto.",
     "lede": "Izberi, kaj potrebuješ — ali se prijavi kot nekdo, ki lahko pomaga.",
     "cta_find": "Poišči, kar potrebuješ",
     "cta_offer": "Ponudi, kar znaš",

@@ -2,8 +2,7 @@
   "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler" },
   "hero": {
     "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
-    "pill": "Bana ihtiyacın mı var? Beni bul!",
-    "tagline1": "Bana ihtiyacın mı var?", "tagline2": "Beni bul!", "tagline3": "Kendi araban.",
+    "tagline3": "Kendi araban.",
     "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
     "cta_find": "İhtiyacın olanı bul",
     "cta_offer": "Sunabileceğini sun",
