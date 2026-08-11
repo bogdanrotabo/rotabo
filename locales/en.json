@@ -444,6 +444,7 @@
     "status_active": "Active",
     "status_pending": "Pending payment",
     "status_expired": "Expired",
-    "home_link": "Add your first listing →"
+    "home_link": "Add your first listing →",
+    "admin_link": "🔑 Open admin panel — see everyone offering and seeking"
   }
 }

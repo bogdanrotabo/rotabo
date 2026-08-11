@@ -82,6 +82,11 @@
     background:#fff;border:1px solid var(--border);color:var(--text-dark);
     border-radius:10px;padding:9px 16px;font-weight:700;font-size:.9rem;cursor:pointer;
   }
+  .admin-banner{
+    display:block;background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    border-radius:12px;padding:12px 16px;font-weight:800;font-size:.92rem;
+    text-decoration:none;text-align:center;margin-bottom:20px;
+  }
 
   .listing-list{display:flex;flex-direction:column;gap:14px;}
   .listing-card{
@@ -176,7 +181,8 @@
     status_active: "Active",
     status_pending: "Pending payment",
     status_expired: "Expired",
-    home_link: "Add your first listing →"
+    home_link: "Add your first listing →",
+    admin_link: "🔑 Open admin panel — see everyone offering and seeking"
   };
   function tr(key){ return T[key]; }
 
@@ -287,6 +293,7 @@
       '<div class="card">' +
       '<div class="account-header"><div class="account-email"></div>' +
       '<button type="button" class="logout-btn" id="logoutBtn"></button></div>' +
+      '<a href="/admin.html" class="admin-banner hidden" id="adminBanner"></a>' +
       '<div id="listingsBox"><div class="spinner"></div></div>' +
       '</div>';
     content.querySelector(".account-email").textContent = session.user.email;
@@ -294,6 +301,20 @@
     document.getElementById("logoutBtn").addEventListener("click", function(){
       sb.auth.signOut().then(function(){ renderAuthForms(); });
     });
+
+    sb.from("admin_emails")
+      .select("email")
+      .ilike("email", session.user.email)
+      .maybeSingle()
+      .then(function(res){
+        if (res.data) {
+          var banner = document.getElementById("adminBanner");
+          if (banner) {
+            banner.textContent = tr("admin_link");
+            banner.classList.remove("hidden");
+          }
+        }
+      });
 
     sb.from("listings")
       .select("id, category, role, city, country, visible_until, created_at")

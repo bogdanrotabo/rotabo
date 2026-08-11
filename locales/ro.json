@@ -444,6 +444,7 @@
     "status_active": "Activă",
     "status_pending": "Plată în așteptare",
     "status_expired": "Expirată",
-    "home_link": "Adaugă prima ta listare →"
+    "home_link": "Adaugă prima ta listare →",
+    "admin_link": "🔑 Deschide panoul de admin — vezi pe toți, cei care oferă și cei care caută"
   }
 }

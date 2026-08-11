@@ -444,6 +444,7 @@
     "status_active": "Attivo",
     "status_pending": "Pagamento in attesa",
     "status_expired": "Scaduto",
-    "home_link": "Aggiungi il tuo primo annuncio →"
+    "home_link": "Aggiungi il tuo primo annuncio →",
+    "admin_link": "🔑 Apri il pannello admin — vedi chi offre e chi cerca"
   }
 }
