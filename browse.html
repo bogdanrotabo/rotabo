@@ -425,7 +425,9 @@
     }
   }
 
+  var loadListingsRequestId = 0;
   function loadListings(){
+    var requestId = ++loadListingsRequestId;
     var query = sb.from("listings")
       .select("id, name, city, country, address, phone, email, note, created_at")
       .eq("category", category)
@@ -435,6 +437,11 @@
     if (cityFilter) query = query.ilike("city", "%" + cityFilter + "%");
 
     query.then(function(res){
+      // A later filter change or poll tick may have started a newer
+      // request that resolves before this one -- discard this result
+      // if it's no longer the most recent request in flight, otherwise
+      // a stale response can overwrite a fresher, correct one.
+      if (requestId !== loadListingsRequestId) return;
       var list = document.getElementById("requestList");
       if (!list) return;
       if (res.error) return;
