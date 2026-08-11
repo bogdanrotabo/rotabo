@@ -1066,11 +1066,15 @@
     return null;
   }
 
-  // Called when a country field changes: if empty, pre-fill the phone
-  // field with "+<code> " as a starting point. Never overwrites a
-  // number the visitor already started typing.
+  // Called when a country field changes: pre-fill the phone field with
+  // "+<code> " as a starting point. If the field is empty, or still
+  // holds nothing but a previous auto-filled prefix (e.g. the visitor
+  // picked the wrong country and corrected it), the prefix is replaced
+  // to match the new country. Never overwrites a number the visitor
+  // actually started typing.
   function prefillPhoneFromCountry(countryInput, phoneInput){
-    if (phoneInput.value.trim()) return;
+    var current = phoneInput.value.trim();
+    if (current && !/^\+\d{1,4}$/.test(current)) return;
     var code = findDialCode(countryInput.value);
     if (code) phoneInput.value = "+" + code + " ";
   }
