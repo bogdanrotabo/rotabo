@@ -30,6 +30,7 @@
   .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;max-width:1080px;margin:0 auto;}
   .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);text-decoration:none;}
   .brand svg{width:24px;height:31px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+  .account-link{color:var(--violet-2);font-weight:700;font-size:.92rem;text-decoration:none;}
 
   .wrap{max-width:640px;margin:0 auto;padding:48px 24px 80px;}
   .eyebrow{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.82rem;font-weight:700;margin-bottom:10px;}
@@ -122,6 +123,7 @@
       <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
       Rotabo
     </a>
+    <a class="account-link" id="accountLink" href="/account.html">My account</a>
   </div>
 </header>
 
@@ -494,12 +496,7 @@
     });
   }
 
-  function init(){
-    if (!listingId) {
-      renderNotRegistered();
-      return;
-    }
-
+  function checkStatusAndRender(){
     sb.from("listing_status")
       .select("id, stripe_session_id, visible_until")
       .eq("id", listingId)
@@ -511,11 +508,47 @@
         }
         if (!res.data.stripe_session_id) {
           renderPendingConfirmation();
-          setTimeout(init, 3000);
+          setTimeout(checkStatusAndRender, 3000);
           return;
         }
         renderDashboard();
       });
+  }
+
+  function init(){
+    if (listingId) {
+      checkStatusAndRender();
+      return;
+    }
+
+    // No record of a listing on this browser -- if the visitor is logged
+    // into an account (see account.html), look up their most recent
+    // listing for this category/role there instead, so the page works
+    // the same way from any device, not just the one they paid on.
+    sb.auth.getSession().then(function(sessionRes){
+      var session = sessionRes.data && sessionRes.data.session;
+      if (!session) {
+        renderNotRegistered();
+        return;
+      }
+      sb.from("listings")
+        .select("id")
+        .eq("category", category)
+        .eq("role", myRole)
+        .eq("user_id", session.user.id)
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .maybeSingle()
+        .then(function(res){
+          if (res.error || !res.data) {
+            renderNotRegistered();
+            return;
+          }
+          listingId = res.data.id;
+          localStorage.setItem("rotabo_listing_" + category + "_" + myRole, listingId);
+          checkStatusAndRender();
+        });
+    });
   }
 
   loadTranslations().then(init);

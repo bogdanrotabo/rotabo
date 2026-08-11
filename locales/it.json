@@ -4,7 +4,8 @@
     "safety": "Sicurezza",
     "business": "Per le aziende",
     "drive": "Diventa autista",
-    "drivers": "Autisti"
+    "drivers": "Autisti",
+    "account": "Il mio account"
   },
   "hero": {
     "origin_badge": "🇨🇭 Realizzato in Svizzera — per tutto il mondo",
@@ -423,5 +424,26 @@
     "time_min_ago_other": "{n} minuti fa",
     "time_hour_ago_one": "1 ora fa",
     "time_hour_ago_other": "{n} ore fa"
+  },
+  "account_page": {
+    "title": "Il mio account",
+    "subtitle": "Accedi per vedere tutto ciò che hai pubblicato, da qualsiasi dispositivo.",
+    "email_label": "Email",
+    "password_label": "Password",
+    "login_btn": "Accedi",
+    "signup_btn": "Crea account",
+    "switch_to_signup": "Nuovo qui? Crea un account",
+    "switch_to_login": "Hai già un account? Accedi",
+    "forgot_link": "Password dimenticata?",
+    "reset_sent": "Se quell'email ha un account, riceverai un link per reimpostarla.",
+    "confirm_email_note": "Controlla la tua email per confermare l'account, poi accedi.",
+    "logout_btn": "Esci",
+    "my_listings_title": "I tuoi annunci",
+    "empty_note": "Non hai ancora nessun annuncio.",
+    "browse_btn": "Apri",
+    "status_active": "Attivo",
+    "status_pending": "Pagamento in attesa",
+    "status_expired": "Scaduto",
+    "home_link": "Aggiungi il tuo primo annuncio →"
   }
 }

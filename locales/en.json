@@ -4,7 +4,8 @@
     "safety": "Safety",
     "business": "For businesses",
     "drive": "Become a driver",
-    "drivers": "Drivers"
+    "drivers": "Drivers",
+    "account": "My account"
   },
   "hero": {
     "origin_badge": "🇨🇭 Made in Switzerland — for the whole world",
@@ -423,5 +424,26 @@
     "time_min_ago_other": "{n} min ago",
     "time_hour_ago_one": "1 hour ago",
     "time_hour_ago_other": "{n} hours ago"
+  },
+  "account_page": {
+    "title": "My account",
+    "subtitle": "Log in to see everything you've listed, from any device.",
+    "email_label": "Email",
+    "password_label": "Password",
+    "login_btn": "Log in",
+    "signup_btn": "Create account",
+    "switch_to_signup": "New here? Create an account",
+    "switch_to_login": "Already have an account? Log in",
+    "forgot_link": "Forgot your password?",
+    "reset_sent": "If that email has an account, a reset link is on its way.",
+    "confirm_email_note": "Check your email to confirm your account, then log in.",
+    "logout_btn": "Log out",
+    "my_listings_title": "Your listings",
+    "empty_note": "You don't have any listings yet.",
+    "browse_btn": "Open",
+    "status_active": "Active",
+    "status_pending": "Pending payment",
+    "status_expired": "Expired",
+    "home_link": "Add your first listing →"
   }
 }

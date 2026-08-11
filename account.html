@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account — Rotabo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<style>
+  :root{
+    --bg-top:#f6ecf9;
+    --bg-mid:#f3e6f8;
+    --bg-card:#f7edfa;
+    --border:#e2c3ee;
+    --violet-1:#7c2d9c;
+    --violet-2:#9b3fc0;
+    --text-dark:#3a1650;
+    --text-body:#6b5878;
+    --text-eyebrow:#8a7a94;
+    --green:#3ecb7e;
+    --red:#c0392b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:linear-gradient(180deg,var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-mid) 100%);
+    color:var(--text-body);
+  }
+  header{border-bottom:1px solid var(--border);background:linear-gradient(180deg,#f8eefb,#f4e8f8);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;max-width:1080px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);text-decoration:none;}
+  .brand svg{width:24px;height:31px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+
+  .wrap{max-width:640px;margin:0 auto;padding:48px 24px 80px;}
+  .eyebrow{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.82rem;font-weight:700;margin-bottom:10px;}
+  h1{color:var(--text-dark);font-size:1.7rem;margin:0 0 8px;}
+  .sub{color:var(--text-body);font-size:1rem;margin:0 0 32px;}
+
+  .card{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:28px;
+  }
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-weight:700;color:var(--text-dark);font-size:.92rem;margin-bottom:6px;}
+  .field input{
+    width:100%;padding:12px 14px;border-radius:10px;
+    border:1px solid var(--border);background:#fff;
+    color:var(--text-dark);font-size:1rem;font-family:inherit;box-sizing:border-box;
+  }
+  .field input:focus{outline:2px solid var(--violet-2);outline-offset:1px;}
+  .submit-btn{
+    width:100%;padding:13px;border-radius:12px;border:none;
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    font-weight:800;font-size:1rem;cursor:pointer;margin-top:4px;
+  }
+  .submit-btn:disabled{opacity:.6;cursor:default;}
+  .switch-mode{
+    text-align:center;margin-top:16px;font-size:.92rem;
+  }
+  .switch-mode button{
+    background:none;border:none;color:var(--violet-2);font-weight:700;
+    cursor:pointer;font-size:.92rem;text-decoration:underline;padding:0;
+  }
+  .forgot-link{
+    display:block;text-align:center;margin-top:12px;font-size:.86rem;
+    color:var(--text-eyebrow);text-decoration:none;
+  }
+  .auth-error{
+    background:#fdeceb;border:1px solid #f3c6c1;color:var(--red);
+    border-radius:10px;padding:10px 14px;font-size:.88rem;margin-bottom:16px;
+  }
+  .auth-note{
+    background:#eefaf3;border:1px solid #bfe8cf;color:#1f7a44;
+    border-radius:10px;padding:10px 14px;font-size:.88rem;margin-bottom:16px;
+  }
+  .hidden{display:none !important;}
+
+  .account-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;}
+  .account-email{font-weight:800;color:var(--text-dark);font-size:1.05rem;}
+  .logout-btn{
+    background:#fff;border:1px solid var(--border);color:var(--text-dark);
+    border-radius:10px;padding:9px 16px;font-weight:700;font-size:.9rem;cursor:pointer;
+  }
+
+  .listing-list{display:flex;flex-direction:column;gap:14px;}
+  .listing-card{
+    background:#fff;border:1px solid var(--border);border-radius:16px;
+    padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  }
+  .listing-info .cat{font-weight:800;color:var(--text-dark);font-size:1.02rem;}
+  .listing-info .loc{color:var(--text-eyebrow);font-size:.88rem;margin-top:3px;}
+  .listing-info .status{font-size:.85rem;margin-top:4px;font-weight:700;}
+  .status.active{color:var(--green);}
+  .status.expired{color:var(--text-eyebrow);}
+  .status.pending{color:#b8860b;}
+  .browse-btn{
+    display:inline-flex;align-items:center;gap:8px;flex-shrink:0;
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    border:none;border-radius:12px;padding:10px 18px;
+    font-weight:800;font-size:.92rem;text-decoration:none;
+  }
+  .empty-note{color:var(--text-eyebrow);text-align:center;padding:24px 0;}
+  .spinner{
+    width:36px;height:36px;margin:0 auto;
+    border-radius:50%;border:4px solid var(--border);border-top-color:var(--violet-2);
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="diamondGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#c264e0"/>
+      <stop offset="55%" stop-color="#a239c9"/>
+      <stop offset="100%" stop-color="#7c2596"/>
+    </radialGradient>
+    <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      Rotabo
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="eyebrow" id="pageEyebrow">MY ACCOUNT</p>
+  <h1 id="pageTitle">My account</h1>
+  <p class="sub" id="pageSub">Log in to see everything you've listed, from any device.</p>
+
+  <div id="content">
+    <div class="card"><div class="spinner"></div></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+(function(){
+  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  var CLAIM_URL = SUPABASE_URL + "/functions/v1/claim-listings";
+
+  var VALID_CATEGORIES = ["drive", "move", "build", "tools", "home", "auto", "care", "learn", "stay", "other"];
+  var CATEGORY_LABELS = {
+    drive: "Drive", move: "Move", build: "Build", tools: "Tools", home: "Home",
+    auto: "Auto", care: "Care", learn: "Learn", stay: "Stay", other: "Other"
+  };
+  var ROLE_LABELS = { seeking: "Seeking", offering: "Offering" };
+
+  var LANG = localStorage.getItem("rotabo_lang") || "en";
+  var T = {
+    title: "My account",
+    subtitle: "Log in to see everything you've listed, from any device.",
+    email_label: "Email",
+    password_label: "Password",
+    login_btn: "Log in",
+    signup_btn: "Create account",
+    switch_to_signup: "New here? Create an account",
+    switch_to_login: "Already have an account? Log in",
+    forgot_link: "Forgot your password?",
+    reset_sent: "If that email has an account, a reset link is on its way.",
+    confirm_email_note: "Check your email to confirm your account, then log in.",
+    logout_btn: "Log out",
+    my_listings_title: "Your listings",
+    empty_note: "You don't have any listings yet.",
+    browse_btn: "Open",
+    status_active: "Active",
+    status_pending: "Pending payment",
+    status_expired: "Expired",
+    home_link: "Add your first listing →"
+  };
+  function tr(key){ return T[key]; }
+
+  function loadTranslations(){
+    return fetch("locales/" + LANG + ".json")
+      .then(function(res){ return res.ok ? res.json() : null; })
+      .then(function(dict){
+        if (dict && dict.account_page) Object.assign(T, dict.account_page);
+      })
+      .catch(function(){});
+  }
+
+  var content = document.getElementById("content");
+
+  function renderAuthForms(message){
+    var loginMode = true;
+    content.innerHTML =
+      '<div class="card">' +
+      (message ? '<div class="auth-note"></div>' : '') +
+      '<div class="auth-error hidden" id="authError"></div>' +
+      '<form id="authForm" autocomplete="on">' +
+        '<div class="field"><label id="emailLabel"></label>' +
+        '<input type="email" id="authEmail" autocomplete="username" required></div>' +
+        '<div class="field"><label id="passwordLabel"></label>' +
+        '<input type="password" id="authPassword" autocomplete="current-password" minlength="6" required></div>' +
+        '<button type="submit" class="submit-btn" id="authSubmitBtn"></button>' +
+      '</form>' +
+      '<div class="switch-mode"><button type="button" id="switchModeBtn"></button></div>' +
+      '<a href="#" class="forgot-link" id="forgotLink"></a>' +
+      '</div>';
+
+    if (message) content.querySelector(".auth-note").textContent = message;
+    document.getElementById("emailLabel").textContent = tr("email_label");
+    document.getElementById("passwordLabel").textContent = tr("password_label");
+    document.getElementById("authSubmitBtn").textContent = tr("login_btn");
+    document.getElementById("switchModeBtn").textContent = tr("switch_to_signup");
+    document.getElementById("forgotLink").textContent = tr("forgot_link");
+
+    var form = document.getElementById("authForm");
+    var emailInput = document.getElementById("authEmail");
+    var passwordInput = document.getElementById("authPassword");
+    var submitBtn = document.getElementById("authSubmitBtn");
+    var errorBox = document.getElementById("authError");
+
+    document.getElementById("switchModeBtn").addEventListener("click", function(){
+      loginMode = !loginMode;
+      passwordInput.autocomplete = loginMode ? "current-password" : "new-password";
+      submitBtn.textContent = loginMode ? tr("login_btn") : tr("signup_btn");
+      document.getElementById("switchModeBtn").textContent = loginMode ? tr("switch_to_signup") : tr("switch_to_login");
+      errorBox.classList.add("hidden");
+    });
+
+    document.getElementById("forgotLink").addEventListener("click", function(e){
+      e.preventDefault();
+      var email = emailInput.value.trim();
+      if (!email) { emailInput.focus(); return; }
+      sb.auth.resetPasswordForEmail(email).then(function(){
+        renderAuthForms(tr("reset_sent"));
+      });
+    });
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      errorBox.classList.add("hidden");
+      submitBtn.disabled = true;
+      var email = emailInput.value.trim();
+      var password = passwordInput.value;
+
+      var action = loginMode
+        ? sb.auth.signInWithPassword({ email: email, password: password })
+        : sb.auth.signUp({ email: email, password: password });
+
+      action.then(function(res){
+        submitBtn.disabled = false;
+        if (res.error) {
+          errorBox.textContent = res.error.message;
+          errorBox.classList.remove("hidden");
+          return;
+        }
+        if (!loginMode && !res.data.session) {
+          renderAuthForms(tr("confirm_email_note"));
+          return;
+        }
+        onAuthed();
+      });
+    });
+  }
+
+  function claimPastListings(session){
+    return fetch(CLAIM_URL, {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + session.access_token,
+        "apikey": SUPABASE_ANON_KEY,
+        "Content-Type": "application/json"
+      }
+    }).catch(function(){});
+  }
+
+  function statusOf(row){
+    if (!row.visible_until) return { key: "pending", label: tr("status_pending") };
+    if (new Date(row.visible_until).getTime() > Date.now()) return { key: "active", label: tr("status_active") };
+    return { key: "expired", label: tr("status_expired") };
+  }
+
+  function renderDashboard(session){
+    content.innerHTML =
+      '<div class="card">' +
+      '<div class="account-header"><div class="account-email"></div>' +
+      '<button type="button" class="logout-btn" id="logoutBtn"></button></div>' +
+      '<div id="listingsBox"><div class="spinner"></div></div>' +
+      '</div>';
+    content.querySelector(".account-email").textContent = session.user.email;
+    document.getElementById("logoutBtn").textContent = tr("logout_btn");
+    document.getElementById("logoutBtn").addEventListener("click", function(){
+      sb.auth.signOut().then(function(){ renderAuthForms(); });
+    });
+
+    sb.from("listings")
+      .select("id, category, role, city, country, visible_until, created_at")
+      .eq("user_id", session.user.id)
+      .order("created_at", { ascending: false })
+      .then(function(res){
+        var box = document.getElementById("listingsBox");
+        if (!box) return;
+        var rows = (res.data || []).filter(function(r){ return VALID_CATEGORIES.indexOf(r.category) !== -1; });
+        if (res.error || rows.length === 0) {
+          box.innerHTML = '<p class="empty-note"></p><a class="forgot-link" href="/#categories" style="margin-top:6px;"></a>';
+          box.querySelector(".empty-note").textContent = tr("empty_note");
+          box.querySelector("a").textContent = tr("home_link");
+          return;
+        }
+        box.innerHTML = '<p class="eyebrow" style="margin-top:0;"></p><div class="listing-list"></div>';
+        box.querySelector(".eyebrow").textContent = tr("my_listings_title");
+        var list = box.querySelector(".listing-list");
+        rows.forEach(function(row){
+          var st = statusOf(row);
+          var card = document.createElement("div");
+          card.className = "listing-card";
+          var location = [row.city, row.country].filter(Boolean).join(", ");
+          card.innerHTML =
+            '<div class="listing-info">' +
+            '<div class="cat"></div>' +
+            '<div class="loc"></div>' +
+            '<div class="status ' + st.key + '"></div>' +
+            '</div>' +
+            '<a class="browse-btn" href="/browse.html?category=' + encodeURIComponent(row.category) + '&role=' + encodeURIComponent(row.role) + '"></a>';
+          card.querySelector(".cat").textContent = (CATEGORY_LABELS[row.category] || row.category) + " · " + (ROLE_LABELS[row.role] || row.role);
+          card.querySelector(".loc").textContent = location;
+          card.querySelector(".status").textContent = st.label;
+          card.querySelector(".browse-btn").textContent = tr("browse_btn");
+          list.appendChild(card);
+        });
+      });
+  }
+
+  function onAuthed(){
+    sb.auth.getSession().then(function(sessionRes){
+      var session = sessionRes.data && sessionRes.data.session;
+      if (!session) { renderAuthForms(); return; }
+      claimPastListings(session).then(function(){
+        renderDashboard(session);
+      });
+    });
+  }
+
+  loadTranslations().then(function(){
+    sb.auth.getSession().then(function(sessionRes){
+      var session = sessionRes.data && sessionRes.data.session;
+      if (session) { onAuthed(); } else { renderAuthForms(); }
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  try {
+    var sid = localStorage.getItem("rotabo_sid");
+    if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : (Date.now() + "-" + Math.random().toString(16).slice(2))); localStorage.setItem("rotabo_sid", sid); }
+    fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
+      method: "POST",
+      headers: {
+        "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal"
+      },
+      body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid }),
+      keepalive: true
+    }).catch(function(){});
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

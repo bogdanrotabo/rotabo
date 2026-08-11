@@ -4,7 +4,8 @@
     "safety": "Siguranță",
     "business": "Pentru afaceri",
     "drive": "Devino șofer",
-    "drivers": "Șoferi"
+    "drivers": "Șoferi",
+    "account": "Contul meu"
   },
   "hero": {
     "origin_badge": "🇨🇭 Făcut în Elveția — pentru toată lumea",
@@ -423,5 +424,26 @@
     "time_min_ago_other": "acum {n} min",
     "time_hour_ago_one": "acum 1 oră",
     "time_hour_ago_other": "acum {n} ore"
+  },
+  "account_page": {
+    "title": "Contul meu",
+    "subtitle": "Loghează-te ca să vezi tot ce ai listat, de pe orice dispozitiv.",
+    "email_label": "Email",
+    "password_label": "Parolă",
+    "login_btn": "Autentificare",
+    "signup_btn": "Creează cont",
+    "switch_to_signup": "Ești nou aici? Creează un cont",
+    "switch_to_login": "Ai deja cont? Autentifică-te",
+    "forgot_link": "Ai uitat parola?",
+    "reset_sent": "Dacă acel email are un cont, primești un link de resetare.",
+    "confirm_email_note": "Verifică-ți emailul ca să confirmi contul, apoi autentifică-te.",
+    "logout_btn": "Deconectare",
+    "my_listings_title": "Listările tale",
+    "empty_note": "Nu ai nicio listare încă.",
+    "browse_btn": "Deschide",
+    "status_active": "Activă",
+    "status_pending": "Plată în așteptare",
+    "status_expired": "Expirată",
+    "home_link": "Adaugă prima ta listare →"
   }
 }
