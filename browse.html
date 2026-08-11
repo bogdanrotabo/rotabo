@@ -497,9 +497,7 @@
   }
 
   function checkStatusAndRender(){
-    sb.from("listing_status")
-      .select("id, stripe_session_id, visible_until")
-      .eq("id", listingId)
+    sb.rpc("get_listing_status", { p_id: listingId })
       .maybeSingle()
       .then(function(res){
         if (res.error || !res.data) {
