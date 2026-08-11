@@ -6,7 +6,7 @@
     "lede": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
     "cta_find": "Temukan yang kamu butuhkan",
     "cta_offer": "Tawarkan yang kamu bisa",
-    "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_become_sponsor": "Jadi sponsor",
+    "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_translator": "Penerjemah saat dibutuhkan", "cta_become_sponsor": "Jadi sponsor",
     "cta_home_screen": "⬇ Tambahkan Rotabo ke layar utama",
     "fine": "Langsung berfungsi di browser Anda — tanpa perlu unduh aplikasi.",
     "badge_verified": "Pengguna terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Sopir",
       "desc": "Sopir yang datang ke kamu dan mengemudikan mobilmu sendiri."
     },
+    "translator": {
+      "name": "Penerjemah",
+      "desc": "Penerjemah atau juru bahasa saat Anda membutuhkannya — panggilan, janji temu, dokumen, atau langsung.",
+      "seeking_title": "Butuh penerjemah?",
+      "seeking_lead": "Beri tahu kami bahasa apa yang Anda butuhkan dan di mana.",
+      "offering_title": "Tawarkan menerjemahkan atau menjadi juru bahasa",
+      "offering_lead": "Cantumkan bahasa yang Anda kuasai agar yang membutuhkan bisa menemukan Anda."
+    },
     "move": {
       "name": "Pindahan",
       "desc": "Furnitur, kardus, atau seluruh rumah — dengan van dan sopir.",
@@ -116,6 +124,11 @@
       "offering_title": "Tawarkan bantuan di jalan",
       "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
     }
+  },
+  "bridge": {
+    "title": "Jembatan — penerjemah saat Anda membutuhkannya, untuk hidup sebagai imigran",
+    "body": "Anda jauh dari rumah, di negara yang bahasanya nyaris tak Anda pahami, dan setiap surat resmi membuat perut Anda mencekam. Di loket, di dokter, di sekolah anak Anda, atau di telepon dengan suatu instansi — Anda tidak butuh penerjemah sepanjang waktu, hanya tepat saat itu penting. Saya ikut ke mana pun Anda membutuhkan saya dan menerjemahkan di tempat, agar Anda paham apa yang terjadi dan apa yang harus Anda lakukan. Saya jelaskan surat-surat resmi dengan kata-kata sederhana: apa itu, sampai kapan, di mana menandatangani. Saya yang menelepon untuk Anda dan berbicara bahasa setempat, sementara Anda duduk tenang di samping saya. Kita isi formulir bersama, langkah demi langkah, di kantor yang tepat. Saya tidak hanya menerjemahkan bahasa — saya menerjemahkan ketenangan hati, dan saya menggenggam tangan Anda sampai Anda tiba di tempat yang Anda tuju. Dari „saya tidak mengerti“ menjadi „saya bisa“.",
+    "cta": "Cari penerjemah"
   },
   "problem": {
     "eyebrow": "MENGAPA HARUS MENINGGALKAN MOBIL ANDA?", "h2": "Masalah dengan semua pilihan lain",

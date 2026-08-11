@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo — Need Me! Find Me!</title>
-<meta name="description" content="Rotabo connects people who need something with people who have it — 10 categories, 38 languages, worldwide. No commission, just connection.">
+<meta name="description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NPQ989WJ"></script>
@@ -22,13 +22,13 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rotabo — Need Me! Find Me!">
-<meta property="og:description" content="Rotabo connects people who need something with people who have it — 10 categories, 38 languages, worldwide. No commission, just connection.">
+<meta property="og:description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
 <meta property="og:image" content="https://rotabo.app/og-image.png">
 <meta property="og:url" content="https://rotabo.app/">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Rotabo — Need Me! Find Me!">
-<meta name="twitter:description" content="Rotabo connects people who need something with people who have it — 10 categories, 38 languages, worldwide. No commission, just connection.">
+<meta name="twitter:description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
 <meta name="twitter:image" content="https://rotabo.app/og-image.png">
 
 <link rel="canonical" href="https://rotabo.app/">
@@ -39,7 +39,7 @@
   "@type": "Service",
   "serviceType": "Connection directory",
   "name": "Rotabo",
-  "description": "Rotabo connects people who need something with people who have it, across 10 categories in 38 languages, worldwide.",
+  "description": "Rotabo connects people who need something with people who have it, across 11 categories in 38 languages, worldwide.",
   "url": "https://rotabo.app/",
   "image": "https://rotabo.app/og-image.png",
   "areaServed": "Worldwide",
@@ -307,6 +307,9 @@
   .info-card h3{color:var(--text-dark);font-size:1.5rem;margin:0 0 16px;line-height:1.3;}
   .info-card p{font-size:1.02rem;line-height:1.55;margin:0 0 18px;}
   .info-card a{color:var(--violet-2);font-weight:800;text-decoration:none;}
+  .bridge{max-width:720px;margin:0 auto 44px;text-align:left;}
+  .bridge h3{color:var(--violet-2);font-size:1.35rem;margin-bottom:16px;}
+  .bridge p{margin:0;font-size:1.05rem;line-height:1.65;}
   .text-link-btn{
     background:none;border:none;padding:0;cursor:pointer;
     color:var(--violet-2);font-weight:800;text-decoration:none;
@@ -548,6 +551,7 @@
     <a class="btn btn-solid" href="#categories" data-i18n="hero.cta_find">Find what you need</a>
     <a class="btn btn-outline" href="#categories" data-i18n="hero.cta_offer">Offer what you can</a>
     <button type="button" class="btn btn-outline" data-i18n="hero.cta_become_driver" onclick="openModal('becomeDriverModal')">Become a driver</button>
+    <button type="button" class="btn btn-outline" data-i18n="hero.cta_translator" onclick="openGenericModal('translator','seeking')">Translator on demand</button>
     <a class="btn btn-outline" href="/account.html" data-i18n="hero.cta_login">Log in</a>
     <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
   </div>
@@ -591,6 +595,13 @@
 </section>
 
 <section class="categories-section" id="categories">
+  <div class="info-card bridge">
+    <h3 data-i18n="bridge.title">The Bridge — a translator when you need one, for life as an immigrant</h3>
+    <p data-i18n="bridge.body">You're far from home, in a country whose language you barely grasp, and every official letter tightens your stomach. At the counter, at the doctor's, at your child's school, or on the phone with some agency — you don't need a translator all the time, just exactly when it matters. I come with you wherever you need me and translate on the spot, so you understand what's happening and what you have to do. I break official letters down into plain words: what it is, by when, where to sign. I make the calls for you and speak the local language, while you sit beside me at ease. We fill out the applications together, step by step, at the right office. I don't just translate the language — I translate peace of mind, and I hold your hand until you get where you need to be. From “I don't understand” to “I've got this.”</p>
+    <div class="cta-stack" style="max-width:320px;margin-top:24px;">
+      <button type="button" class="btn btn-solid" data-i18n="bridge.cta" onclick="openGenericModal('translator','seeking')">Find a translator</button>
+    </div>
+  </div>
   <p class="eyebrow" data-i18n="categories.section_eyebrow">THE ROTABO MARKETPLACE</p>
   <h2 dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h2>
   <p class="lede" style="text-align:center;max-width:560px;margin:0 auto 8px;" data-i18n="categories.section_lead">Pick what you need — or list yourself as someone who can help.</p>
@@ -602,6 +613,15 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openModal('findDriverModal')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openModal('becomeDriverModal')">I offer this</button>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="cat-icon">🗣️</div>
+      <h3 data-i18n="categories.translator.name">Translator</h3>
+      <p data-i18n="categories.translator.desc">A translator or interpreter when you need one — calls, appointments, paperwork, or in person.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('translator','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('translator','offering')">I offer this</button>
       </div>
     </div>
     <div class="category-card">
@@ -730,7 +750,7 @@
     <div class="info-card" id="investors">
       <div class="cat" data-i18n="investors_card.cat">INVESTORS</div>
       <h3 data-i18n="investors_card.h3">Become an investor</h3>
-      <p data-i18n="investors_card.p">Rotabo connects people across 10 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.</p>
+      <p data-i18n="investors_card.p">Rotabo connects people across 11 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.</p>
       <a href="mailto:invest@rotabo.app" data-i18n="investors_card.link">Get in touch →</a>
     </div>
   </div>

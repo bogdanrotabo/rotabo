@@ -6,7 +6,7 @@
     "lede": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
     "cta_find": "Rasti, ko reikia",
     "cta_offer": "Pasiūlyti, ką gali",
-    "cta_find_driver": "Rasti vairuotoją", "cta_become_driver": "Tapk vairuotoju", "cta_become_sponsor": "Tapk rėmėju",
+    "cta_find_driver": "Rasti vairuotoją", "cta_become_driver": "Tapk vairuotoju", "cta_translator": "Vertėjas prireikus", "cta_become_sponsor": "Tapk rėmėju",
     "cta_home_screen": "⬇ Pridėk Rotabo prie pradžios ekrano",
     "fine": "Veikia naršyklėje — programėlių parduotuvė nereikalinga.",
     "badge_verified": "Patvirtinti vartotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Vairuotojas",
       "desc": "Vairuotojas, kuris atvyksta pas tave ir vairuoja tavo paties automobilį."
     },
+    "translator": {
+      "name": "Vertėjas",
+      "desc": "Vertėjas raštu ar žodžiu, kai jo prireikia — skambučiai, susitikimai, dokumentai ar gyvai.",
+      "seeking_title": "Reikia vertėjo?",
+      "seeking_lead": "Pasakykite, kokių kalbų reikia ir kur.",
+      "offering_title": "Pasiūlykite vertimą raštu ar žodžiu",
+      "offering_lead": "Nurodykite kalbas, kuriomis kalbate, kad jums reikalingi žmonės jus rastų."
+    },
     "move": {
       "name": "Kraustymasis",
       "desc": "Baldai, dėžės ar visas būstas — su mikroautobusu ir vairuotoju.",
@@ -116,6 +124,11 @@
       "offering_title": "Pasiūlyk pagalbą kelyje",
       "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
     }
+  },
+  "bridge": {
+    "title": "Tiltas — vertėjas, kai jo prireikia, imigranto gyvenimui",
+    "body": "Esi toli nuo namų, šalyje, kurios kalbą vos supranti, ir kiekvienas oficialus laiškas suspaudžia skrandį. Prie langelio, pas gydytoją, vaiko mokykloje ar telefonu su kokia nors įstaiga — vertėjo reikia ne visą laiką, o būtent tada, kai tai svarbu. Einu su tavimi visur, kur tik manęs reikia, ir verčiu vietoje, kad suprastum, kas vyksta ir ką turi daryti. Oficialius laiškus paaiškinu paprastais žodžiais: kas tai, iki kada, kur pasirašyti. Skambinu už tave ir kalbu vietine kalba, o tu ramiai sėdi šalia manęs. Prašymus pildome kartu, žingsnis po žingsnio, tinkamoje įstaigoje. Verčiu ne tik kalbą — verčiu dvasios ramybę ir laikau tave už rankos, kol nueini ten, kur reikia. Nuo „nesuprantu“ iki „susitvarkysiu“.",
+    "cta": "Rasti vertėją"
   },
   "problem": {
     "eyebrow": "KAM PALIKTI SAVO AUTOMOBILĮ?", "h2": "Problema su visais kitais variantais",

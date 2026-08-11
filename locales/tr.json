@@ -6,7 +6,7 @@
     "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
     "cta_find": "İhtiyacın olanı bul",
     "cta_offer": "Sunabileceğini sun",
-    "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_become_sponsor": "Sponsor ol",
+    "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_translator": "İhtiyaç halinde tercüman", "cta_become_sponsor": "Sponsor ol",
     "cta_home_screen": "⬇ Rotabo'yu ana ekranına ekle",
     "fine": "Tarayıcında çalışır — uygulama mağazasına gerek yok.",
     "badge_verified": "Doğrulanmış kullanıcılar", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Şoför",
       "desc": "Sana gelip kendi arabanı kullanacak bir şoför."
     },
+    "translator": {
+      "name": "Tercüman",
+      "desc": "İhtiyacın olduğunda çevirmen veya tercüman — aramalar, randevular, evrak işleri veya yüz yüze.",
+      "seeking_title": "Tercümana mı ihtiyacın var?",
+      "seeking_lead": "Hangi dillere ve nerede ihtiyacın olduğunu söyle.",
+      "offering_title": "Çeviri veya tercümanlık teklif et",
+      "offering_lead": "Konuştuğun dilleri belirt ki ihtiyacı olanlar seni bulsun."
+    },
     "move": {
       "name": "Nakliye",
       "desc": "Mobilya, kutular ya da koca bir ev — minibüs ve şoförle.",
@@ -116,6 +124,11 @@
       "offering_title": "Yol yardımı sun",
       "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
     }
+  },
+  "bridge": {
+    "title": "Köprü — ihtiyacın olduğunda bir tercüman, göçmen hayatı için",
+    "body": "Evinden uzaktasın, dilini zar zor anladığın bir ülkedesin ve her resmî mektup mideni düğümlüyor. Gişede, doktorda, çocuğunun okulunda ya da bir kurumla telefonda — her zaman değil, tam da önemli olduğu anda bir tercümana ihtiyacın var. Beni nerede istersen seninle gelirim ve oracıkta çeviririm, böylece ne olduğunu ve ne yapman gerektiğini anlarsın. Resmî mektupları sade sözcüklerle açıklarım: nedir, ne zamana kadar, nereyi imzalayacaksın. Aramaları senin yerine yapar, yerel dili konuşurum; sen rahatça yanımda oturursun. Başvuruları birlikte, adım adım, doğru dairede doldururuz. Sadece dili çevirmem — huzuru çeviririm ve gitmen gereken yere varana dek elini tutarım. „Anlamıyorum“dan „bunu hallederim“e.",
+    "cta": "Tercüman bul"
   },
   "problem": {
     "eyebrow": "ARABANI NEDEN GERİDE BIRAKASIN?", "h2": "Diğer her seçeneğin sorunu",

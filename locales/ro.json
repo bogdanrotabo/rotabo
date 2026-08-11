@@ -15,6 +15,7 @@
     "cta_offer": "Oferă ce poți",
     "cta_find_driver": "Găsește un șofer",
     "cta_become_driver": "Devino șofer",
+    "cta_translator": "Translator la nevoie",
     "cta_login": "Autentificare",
     "cta_become_sponsor": "Devino sponsor",
     "cta_home_screen": "⬇ Adaugă Rotabo pe ecranul principal",
@@ -87,6 +88,14 @@
     "drive": {
       "name": "Șofer",
       "desc": "Un șofer care vine la tine și conduce propria ta mașină."
+    },
+    "translator": {
+      "name": "Translator",
+      "desc": "Un traducător sau interpret când ai nevoie — apeluri, programări, acte sau în persoană.",
+      "seeking_title": "Ai nevoie de un translator?",
+      "seeking_lead": "Spune-ne ce limbi îți trebuie și unde.",
+      "offering_title": "Oferă traducere sau interpretariat",
+      "offering_lead": "Adaugă limbile pe care le vorbești ca cei care au nevoie să te găsească."
     },
     "move": {
       "name": "Mutări",
@@ -161,6 +170,11 @@
       "offering_lead": "Listează-te ca oamenii cu o cerere neobișnuită să te găsească."
     }
   },
+  "bridge": {
+    "title": "Puntea — un translator când ai nevoie, pentru viața de imigrant",
+    "body": "Ești departe de casă, într-o țară a cărei limbă abia o înțelegi, și fiecare scrisoare oficială îți strânge stomacul. La ghișeu, la doctor, la școala copilului tău sau la telefon cu vreo instituție — nu ai nevoie de un translator tot timpul, ci exact atunci când contează. Vin cu tine oriunde ai nevoie și traduc pe loc, ca să înțelegi ce se întâmplă și ce ai de făcut. Îți desfac scrisorile oficiale în cuvinte simple: ce este, până când, unde semnezi. Dau eu telefoanele în locul tău și vorbesc limba locală, în timp ce tu stai liniștit lângă mine. Completăm cererile împreună, pas cu pas, la ghișeul potrivit. Nu traduc doar limba — traduc liniștea sufletească și te țin de mână până ajungi unde trebuie. De la „nu înțeleg” la „mă descurc”.",
+    "cta": "Găsește un translator"
+  },
   "problem": {
     "eyebrow": "DE CE SĂ-ȚI LAȘI MAȘINA ÎN URMĂ?",
     "h2": "Problema cu toate celelalte opțiuni",
@@ -228,7 +242,7 @@
   "investors_card": {
     "cat": "INVESTITORI",
     "h3": "Devino investitor",
-    "p": "Rotabo conectează oameni în 9 categorii, în 38 de limbi, în toată lumea — fără niciun comision luat de la cei care oferă timp, abilități sau echipament. Vorbim cu oameni care cred în modelul ăsta.",
+    "p": "Rotabo conectează oameni în 11 categorii, în 38 de limbi, în toată lumea — fără niciun comision luat de la cei care oferă timp, abilități sau echipament. Vorbim cu oameni care cred în modelul ăsta.",
     "link": "Ia legătura →"
   },
   "drivers_card": {

@@ -14,6 +14,7 @@
     "cta_offer": "Ponudi ono što možeš",
     "cta_find_driver": "Pronađi vozača",
     "cta_become_driver": "Postani vozač",
+    "cta_translator": "Prevoditelj po potrebi",
     "cta_become_sponsor": "Postani sponzor",
     "cta_home_screen": "⬇ Dodaj Rotabo na početni zaslon",
     "fine": "Radi izravno u pregledniku — nije potrebna trgovina aplikacijama.",
@@ -86,6 +87,14 @@
       "name": "Vozač",
       "desc": "Vozač koji dolazi k tebi i vozi tvoj vlastiti auto."
     },
+    "translator": {
+      "name": "Prevoditelj",
+      "desc": "Prevoditelj ili tumač kad vam zatreba — pozivi, termini, papirologija ili uživo.",
+      "seeking_title": "Trebate prevoditelja?",
+      "seeking_lead": "Recite nam koje jezike trebate i gdje.",
+      "offering_title": "Ponudite prijevod ili usmeno prevođenje",
+      "offering_lead": "Navedite jezike koje govorite kako bi vas oni kojima trebaju pronašli."
+    },
     "move": {
       "name": "Selidba",
       "desc": "Namještaj, kutije ili cijeli dom — s kombijem i vozačem.",
@@ -126,6 +135,11 @@
       "offering_title": "Ponudi pomoć na cesti",
       "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
     }
+  },
+  "bridge": {
+    "title": "Most — prevoditelj kad ti zatreba, za život useljenika",
+    "body": "Daleko si od kuće, u zemlji čiji jezik jedva razumiješ, i svako službeno pismo steže ti želudac. Na šalteru, kod liječnika, u školi tvog djeteta ili na telefonu s nekom ustanovom — ne treba ti prevoditelj cijelo vrijeme, nego točno kad je važno. Dolazim s tobom gdje god me trebaš i prevodim na licu mjesta, da razumiješ što se događa i što moraš učiniti. Objasnim ti službena pisma jednostavnim riječima: što je, do kada, gdje potpisati. Obavim pozive umjesto tebe i govorim mjesni jezik, dok ti sjediš mirno pokraj mene. Ispunjavamo zahtjeve zajedno, korak po korak, u pravom uredu. Ne prevodim samo jezik — prevodim mir u duši i držim te za ruku dok ne stigneš tamo gdje trebaš biti. Od „ne razumijem“ do „mogu ja to“.",
+    "cta": "Pronađi prevoditelja"
   },
   "problem": {
     "eyebrow": "ZAŠTO OSTAVLJATI SVOJ AUTOMOBIL?",

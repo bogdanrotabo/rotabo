@@ -14,6 +14,7 @@
     "cta_offer": "Tilbyd det, du kan",
     "cta_find_driver": "Find en chauffør",
     "cta_become_driver": "Bliv chauffør",
+    "cta_translator": "Oversætter efter behov",
     "cta_become_sponsor": "Bliv sponsor",
     "cta_home_screen": "⬇ Føj Rotabo til din hjemmeskærm",
     "fine": "Fungerer direkte i din browser — ingen app store nødvendig.",
@@ -86,6 +87,14 @@
       "name": "Chauffør",
       "desc": "En chauffør, der kommer til dig og kører din egen bil."
     },
+    "translator": {
+      "name": "Oversætter",
+      "desc": "En oversætter eller tolk, når du har brug for det — opkald, aftaler, papirarbejde eller personligt.",
+      "seeking_title": "Brug for en oversætter?",
+      "seeking_lead": "Fortæl os, hvilke sprog du har brug for, og hvor.",
+      "offering_title": "Tilbyd at oversætte eller tolke",
+      "offering_lead": "Angiv de sprog, du taler, så folk, der har brug for dem, kan finde dig."
+    },
     "move": {
       "name": "Flytning",
       "desc": "Møbler, kasser eller et helt hjem — med varevogn og chauffør.",
@@ -126,6 +135,11 @@
       "offering_title": "Tilbyd hjælp på vejen",
       "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
     }
+  },
+  "bridge": {
+    "title": "Broen — en oversætter, når du har brug for en, til livet som indvandrer",
+    "body": "Du er langt hjemmefra, i et land hvis sprog du knap forstår, og hvert officielt brev snører maven sammen. Ved skranken, hos lægen, på dit barns skole eller i telefonen med en myndighed — du har ikke brug for en oversætter hele tiden, kun præcis når det betyder noget. Jeg tager med dig, hvorhen du har brug for mig, og oversætter på stedet, så du forstår, hvad der sker, og hvad du skal gøre. Jeg forklarer officielle breve med enkle ord: hvad det er, hvornår, hvor du skal skrive under. Jeg tager opkaldene for dig og taler det lokale sprog, mens du sidder roligt ved siden af mig. Vi udfylder ansøgningerne sammen, skridt for skridt, på det rigtige kontor. Jeg oversætter ikke kun sproget — jeg oversætter ro i sindet og holder dig i hånden, indtil du når derhen, hvor du skal være. Fra „jeg forstår ikke“ til „det klarer jeg“.",
+    "cta": "Find en oversætter"
   },
   "problem": {
     "eyebrow": "HVORFOR EFTERLADE DIN BIL?",

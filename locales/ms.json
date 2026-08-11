@@ -6,7 +6,7 @@
     "lede": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
     "cta_find": "Cari apa yang anda perlukan",
     "cta_offer": "Tawarkan apa yang anda boleh",
-    "cta_find_driver": "Cari pemandu", "cta_become_driver": "Menjadi pemandu", "cta_become_sponsor": "Menjadi penaja",
+    "cta_find_driver": "Cari pemandu", "cta_become_driver": "Menjadi pemandu", "cta_translator": "Penterjemah bila perlu", "cta_become_sponsor": "Menjadi penaja",
     "cta_home_screen": "⬇ Tambah Rotabo ke skrin utama",
     "fine": "Berfungsi terus dalam pelayar anda — tiada keperluan memuat turun aplikasi.",
     "badge_verified": "Pengguna disahkan", "badge_live": "Perkongsian perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Pemandu",
       "desc": "Pemandu yang datang kepada kamu dan memandu kereta kamu sendiri."
     },
+    "translator": {
+      "name": "Penterjemah",
+      "desc": "Penterjemah atau jurubahasa apabila anda perlukan — panggilan, temu janji, dokumen atau bersemuka.",
+      "seeking_title": "Perlukan penterjemah?",
+      "seeking_lead": "Beritahu kami bahasa yang anda perlukan dan di mana.",
+      "offering_title": "Tawarkan terjemahan atau jurubahasa",
+      "offering_lead": "Senaraikan bahasa yang anda tuturkan supaya mereka yang memerlukan dapat mencari anda."
+    },
     "move": {
       "name": "Pindah rumah",
       "desc": "Perabot, kotak, atau seluruh rumah — dengan van dan pemandu.",
@@ -116,6 +124,11 @@
       "offering_title": "Tawarkan bantuan di jalan raya",
       "offering_lead": "Daftarkan kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
     }
+  },
+  "bridge": {
+    "title": "Jambatan — penterjemah bila anda memerlukannya, untuk kehidupan sebagai pendatang",
+    "body": "Anda jauh dari rumah, di sebuah negara yang bahasanya hampir tidak anda fahami, dan setiap surat rasmi menyebabkan perut anda menegang. Di kaunter, di klinik, di sekolah anak anda, atau di telefon dengan sesuatu jabatan — anda tidak memerlukan penterjemah sepanjang masa, hanya tepat pada saat ia penting. Saya menemani anda ke mana sahaja anda memerlukan saya dan menterjemah di tempat, supaya anda faham apa yang berlaku dan apa yang perlu anda lakukan. Saya jelaskan surat rasmi dengan kata-kata mudah: apa itu, sampai bila, di mana hendak menandatangani. Saya buat panggilan bagi pihak anda dan bertutur dalam bahasa tempatan, sementara anda duduk tenang di sebelah saya. Kita isi permohonan bersama-sama, langkah demi langkah, di pejabat yang betul. Saya bukan sekadar menterjemah bahasa — saya menterjemah ketenangan hati, dan saya memegang tangan anda sehingga anda sampai ke tempat yang anda tuju. Daripada „saya tidak faham“ kepada „saya boleh“.",
+    "cta": "Cari penterjemah"
   },
   "problem": {
     "eyebrow": "KENAPA PERLU TINGGALKAN KERETA ANDA?", "h2": "Masalah dengan setiap pilihan lain",

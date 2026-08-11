@@ -6,7 +6,7 @@
     "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
     "cta_find": "Sib dak li għandek bżonn",
     "cta_offer": "Offri dak li tista'",
-    "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_become_sponsor": "Sir sponsor",
+    "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_translator": "Traduttur meta jkun meħtieġ", "cta_become_sponsor": "Sir sponsor",
     "cta_home_screen": "⬇ Żid Rotabo mal-iskrin ta' id-dar",
     "fine": "Taħdem fil-browser tiegħek — ma teħtieġx app store.",
     "badge_verified": "Utenti vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Sewwieq",
       "desc": "Sewwieq li jiġi għandek u jsuq il-karozza tiegħek stess."
     },
+    "translator": {
+      "name": "Traduttur",
+      "desc": "Traduttur jew interpretu meta jkollok bżonn — telefonati, appuntamenti, karti jew wiċċ imb wiċċ.",
+      "seeking_title": "Għandek bżonn traduttur?",
+      "seeking_lead": "Għidilna liema lingwi għandek bżonn u fejn.",
+      "offering_title": "Offri traduzzjoni jew interpretazzjoni",
+      "offering_lead": "Elenka l-lingwi li titkellem biex min jeħtieġhom isibek."
+    },
     "move": {
       "name": "Ċaqliq",
       "desc": "Għamara, kaxxi, jew dar sħiħa — b'vann u sewwieq.",
@@ -116,6 +124,11 @@
       "offering_title": "Offri għajnuna fit-triq",
       "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
     }
+  },
+  "bridge": {
+    "title": "Il-Pont — traduttur meta jkollok bżonn, għall-ħajja bħala immigrant",
+    "body": "Int 'il bogħod mid-dar, f'pajjiż li l-lingwa tiegħu bilkemm tifhem, u kull ittra uffiċjali tgħaqqdlek l-istonku. Fil-bank, għand it-tabib, fl-iskola ta' wliedek jew fuq it-telefon ma' xi aġenzija — m'għandekx bżonn traduttur il-ħin kollu, iżda eżatt meta jgħodd. Niġi miegħek fejn għandek bżonni u nittraduċi fuq il-post, biex tifhem x'qed jiġri u x'trid tagħmel. Infissirlek l-ittri uffiċjali bi kliem sempliċi: x'inhi, sa meta, fejn tiffirma. Nagħmel it-telefonati minflokok u nitkellem il-lingwa lokali, waqt li int toqgħod bilqiegħda kwiet ħdejja. Nimlew l-applikazzjonijiet flimkien, pass pass, fl-uffiċċju t-tajjeb. Ma nittraduċix biss il-lingwa — nittraduċi l-paċi tal-moħħ, u nżommlok idejk sakemm tasal fejn trid tkun. Minn „ma nifhimx“ għal „kapaċi nagħmilha“.",
+    "cta": "Sib traduttur"
   },
   "problem": {
     "eyebrow": "GĦALIEX TĦALLI L-KARROZZA TIEGĦEK WARAJK?", "h2": "Il-problema ma' kull għażla oħra",

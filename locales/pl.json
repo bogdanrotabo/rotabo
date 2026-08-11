@@ -6,7 +6,7 @@
     "lede": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
     "cta_find": "Znajdź to, czego potrzebujesz",
     "cta_offer": "Zaoferuj to, co możesz",
-    "cta_find_driver": "Znajdź kierowcę", "cta_become_driver": "Zostań kierowcą", "cta_become_sponsor": "Zostań sponsorem",
+    "cta_find_driver": "Znajdź kierowcę", "cta_become_driver": "Zostań kierowcą", "cta_translator": "Tłumacz na żądanie", "cta_become_sponsor": "Zostań sponsorem",
     "cta_home_screen": "⬇ Dodaj Rotabo do ekranu głównego",
     "fine": "Działa w przeglądarce — bez sklepu z aplikacjami.",
     "badge_verified": "Zweryfikowani użytkownicy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Kierowca",
       "desc": "Kierowca, który przyjeżdża do ciebie i prowadzi twój własny samochód."
     },
+    "translator": {
+      "name": "Tłumacz",
+      "desc": "Tłumacz pisemny lub ustny, gdy go potrzebujesz — rozmowy, wizyty, dokumenty lub osobiście.",
+      "seeking_title": "Potrzebujesz tłumacza?",
+      "seeking_lead": "Powiedz nam, jakich języków potrzebujesz i gdzie.",
+      "offering_title": "Zaoferuj tłumaczenie pisemne lub ustne",
+      "offering_lead": "Podaj języki, którymi mówisz, aby znaleźli cię ci, którzy ich potrzebują."
+    },
     "move": {
       "name": "Przeprowadzka",
       "desc": "Meble, kartony albo cały dom — z busem i kierowcą.",
@@ -116,6 +124,11 @@
       "offering_title": "Zaoferuj pomoc drogową",
       "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
     }
+  },
+  "bridge": {
+    "title": "Most — tłumacz, kiedy go potrzebujesz, do życia imigranta",
+    "body": "Jesteś daleko od domu, w kraju, którego języka ledwo rozumiesz, a każde urzędowe pismo ściska ci żołądek. Przy okienku, u lekarza, w szkole twojego dziecka albo przez telefon z jakimś urzędem — nie potrzebujesz tłumacza cały czas, tylko dokładnie wtedy, gdy to się liczy. Idę z tobą tam, gdzie mnie potrzebujesz, i tłumaczę na miejscu, żebyś rozumiał, co się dzieje i co masz zrobić. Wyjaśniam ci urzędowe pisma prostymi słowami: co to jest, do kiedy, gdzie podpisać. Wykonuję za ciebie telefony i mówię w miejscowym języku, a ty siedzisz spokojnie obok mnie. Wypełniamy wnioski razem, krok po kroku, we właściwym urzędzie. Nie tłumaczę tylko języka — tłumaczę spokój ducha i trzymam cię za rękę, aż dotrzesz tam, gdzie masz być. Od „nie rozumiem“ do „dam radę“.",
+    "cta": "Znajdź tłumacza"
   },
   "problem": {
     "eyebrow": "PO CO ZOSTAWIAĆ SWÓJ SAMOCHÓD?", "h2": "Problem z każdą inną opcją",

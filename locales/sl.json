@@ -6,7 +6,7 @@
     "lede": "Izberi, kaj potrebuješ — ali se prijavi kot nekdo, ki lahko pomaga.",
     "cta_find": "Poišči, kar potrebuješ",
     "cta_offer": "Ponudi, kar znaš",
-    "cta_find_driver": "Poišči voznika", "cta_become_driver": "Postani voznik", "cta_become_sponsor": "Postani sponzor",
+    "cta_find_driver": "Poišči voznika", "cta_become_driver": "Postani voznik", "cta_translator": "Prevajalec po potrebi", "cta_become_sponsor": "Postani sponzor",
     "cta_home_screen": "⬇ Dodaj Rotabo na domači zaslon",
     "fine": "Deluje v tvojem brskalniku — trgovina z aplikacijami ni potrebna.",
     "badge_verified": "Preverjeni uporabniki", "badge_live": "Deljenje poti v živo", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Voznik",
       "desc": "Voznik, ki pride k tebi in vozi tvoj lasten avto."
     },
+    "translator": {
+      "name": "Prevajalec",
+      "desc": "Prevajalec ali tolmač, ko ga potrebujete — klici, sestanki, papirologija ali v živo.",
+      "seeking_title": "Potrebujete prevajalca?",
+      "seeking_lead": "Povejte nam, katere jezike potrebujete in kje.",
+      "offering_title": "Ponudite prevajanje ali tolmačenje",
+      "offering_lead": "Navedite jezike, ki jih govorite, da vas najdejo tisti, ki jih potrebujejo."
+    },
     "move": {
       "name": "Selitev",
       "desc": "Pohištvo, škatle ali cel dom — s kombijem in voznikom.",
@@ -116,6 +124,11 @@
       "offering_title": "Ponudi pomoč na cesti",
       "offering_lead": "Prijavi svoje znanje, da te najdejo tisti, ki ga potrebujejo."
     }
+  },
+  "bridge": {
+    "title": "Most — prevajalec, ko ga potrebujete, za življenje priseljenca",
+    "body": "Daleč ste od doma, v državi, katere jezika komaj razumete, in vsako uradno pismo vam stisne želodec. Na okencu, pri zdravniku, v šoli vašega otroka ali po telefonu z neko ustanovo — prevajalca ne potrebujete ves čas, ampak točno takrat, ko je pomembno. Grem z vami, kamor koli me potrebujete, in prevajam na kraju samem, da razumete, kaj se dogaja in kaj morate storiti. Uradna pisma vam razložim s preprostimi besedami: kaj je, do kdaj, kje podpisati. Opravim klice namesto vas in govorim v krajevnem jeziku, medtem ko vi mirno sedite ob meni. Vloge izpolniva skupaj, korak za korakom, na pravem uradu. Ne prevajam le jezika — prevajam mir v duši in vas držim za roko, dokler ne pridete tja, kamor morate. Od „ne razumem“ do „zmorem“.",
+    "cta": "Poišči prevajalca"
   },
   "problem": {
     "eyebrow": "ZAKAJ PUSTITI SVOJ AVTOMOBIL?", "h2": "Težava z vsemi drugimi možnostmi",

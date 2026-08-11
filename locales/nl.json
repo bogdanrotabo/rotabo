@@ -14,6 +14,7 @@
     "cta_offer": "Bied aan wat je kunt",
     "cta_find_driver": "Zoek een chauffeur",
     "cta_become_driver": "Word chauffeur",
+    "cta_translator": "Vertaler op afroep",
     "cta_become_sponsor": "Word sponsor",
     "cta_home_screen": "⬇ Voeg Rotabo toe aan je startscherm",
     "fine": "Werkt in je browser — geen app store nodig.",
@@ -86,6 +87,14 @@
       "name": "Chauffeur",
       "desc": "Een chauffeur die naar je toe komt en je eigen auto rijdt."
     },
+    "translator": {
+      "name": "Vertaler",
+      "desc": "Een vertaler of tolk wanneer je er een nodig hebt — telefoontjes, afspraken, papierwerk of in persoon.",
+      "seeking_title": "Een vertaler nodig?",
+      "seeking_lead": "Vertel ons welke talen je nodig hebt en waar.",
+      "offering_title": "Bied aan om te vertalen of tolken",
+      "offering_lead": "Vermeld de talen die je spreekt zodat mensen die ze nodig hebben je vinden."
+    },
     "move": {
       "name": "Verhuizen",
       "desc": "Meubels, dozen, of een heel huis — met bus en chauffeur.",
@@ -126,6 +135,11 @@
       "offering_title": "Bied hulp onderweg aan",
       "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
     }
+  },
+  "bridge": {
+    "title": "De Brug — een vertaler wanneer je er een nodig hebt, voor het leven als immigrant",
+    "body": "Je bent ver van huis, in een land waarvan je de taal amper begrijpt, en elke officiële brief snoert je maag dicht. Aan het loket, bij de dokter, op de school van je kind of aan de telefoon met een of andere instantie — je hebt niet de hele tijd een vertaler nodig, alleen precies wanneer het ertoe doet. Ik ga met je mee waar je me nodig hebt en vertaal ter plekke, zodat je begrijpt wat er gebeurt en wat je moet doen. Ik leg officiële brieven uit in gewone woorden: wat het is, wanneer, waar je moet tekenen. Ik pleeg de telefoontjes voor je en spreek de lokale taal, terwijl jij ontspannen naast me zit. We vullen de aanvragen samen in, stap voor stap, bij het juiste loket. Ik vertaal niet alleen de taal — ik vertaal gemoedsrust, en ik houd je hand vast tot je bent waar je moet zijn. Van „ik begrijp het niet” naar „dit lukt me”.",
+    "cta": "Vind een vertaler"
   },
   "problem": {
     "eyebrow": "WAAROM JE AUTO ACHTERLATEN?",

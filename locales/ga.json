@@ -6,7 +6,7 @@
     "lede": "Roghnaigh a bhfuil uait — nó liostáil tú féin mar dhuine atá in ann cabhrú.",
     "cta_find": "Faigh a bhfuil uait",
     "cta_offer": "Tairg a bhfuil ar do chumas",
-    "cta_find_driver": "Faigh tiománaí", "cta_become_driver": "Bí i do thiománaí", "cta_become_sponsor": "Bí i do dheontóir",
+    "cta_find_driver": "Faigh tiománaí", "cta_become_driver": "Bí i do thiománaí", "cta_translator": "Aistritheoir ar éileamh", "cta_become_sponsor": "Bí i do dheontóir",
     "cta_home_screen": "⬇ Cuir Rotabo ar do scáileán baile",
     "fine": "Oibríonn sé i do bhrabhsálaí — níl aon siopa aipeanna ag teastáil.",
     "badge_verified": "Úsáideoirí deimhnithe", "badge_live": "Comhroinnt turais bheo", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Tiománaí",
       "desc": "Tiománaí a thagann chugat agus a thiomáineann do charr féin."
     },
+    "translator": {
+      "name": "Aistritheoir",
+      "desc": "Aistritheoir nó ateangaire nuair a bhíonn duine uait — glaonna, coinní, páipéarachas nó go pearsanta.",
+      "seeking_title": "An bhfuil aistritheoir uait?",
+      "seeking_lead": "Inis dúinn cé na teangacha atá uait agus cá háit.",
+      "offering_title": "Tairg aistriúchán nó ateangaireacht",
+      "offering_lead": "Liostaigh na teangacha a labhraíonn tú ionas go bhfaighidh daoine a bhfuil siad uathu thú."
+    },
     "move": {
       "name": "Aistriú",
       "desc": "Troscán, boscaí, nó teach iomlán — le veain agus tiománaí.",
@@ -116,6 +124,11 @@
       "offering_title": "Tairg cabhair ar an mbóthar",
       "offering_lead": "Liostáil do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
     }
+  },
+  "bridge": {
+    "title": "An Droichead — aistritheoir nuair a bhíonn duine uait, do shaol an inimircigh",
+    "body": "Tá tú i bhfad ó bhaile, i dtír nach dtuigeann tú a teanga ach ar éigean, agus teannann gach litir oifigiúil do bholg. Ag an gcuntar, ag an dochtúir, i scoil do linbh nó ar an bhfón le gníomhaireacht éigin — ní bhíonn aistritheoir uait an t-am ar fad, ach díreach nuair is tábhachtach é. Tagaim leat cibé áit a bhfuil mé uait agus aistrím ar an toirt, ionas go dtuigfidh tú cad atá ag tarlú agus cad atá le déanamh agat. Mínímse litreacha oifigiúla i bhfocail shimplí: cad é féin, faoi cén dáta, cá háit le síniú. Déanaim na glaonna duit agus labhraím an teanga áitiúil, agus tú suite go socair in aice liom. Líonaimid na hiarratais isteach le chéile, céim ar chéim, san oifig cheart. Ní hé an teanga amháin a aistrím — aistrím suaimhneas aigne, agus coinním do lámh go dtí go sroicheann tú an áit a bhfuil tú ag dul. Ó „ní thuigim“ go „tá sé agam“.",
+    "cta": "Faigh aistritheoir"
   },
   "problem": {
     "eyebrow": "CÉN FÁTH DO CHARR A FHÁGÁIL INA DHIAIDH?", "h2": "An fhadhb atá le gach rogha eile",

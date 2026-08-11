@@ -6,7 +6,7 @@
     "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
     "cta_find": "Találd meg, amire szükséged van",
     "cta_offer": "Ajánld fel, amit tudsz",
-    "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_become_sponsor": "Legyél támogató",
+    "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_translator": "Fordító, ha kell", "cta_become_sponsor": "Legyél támogató",
     "cta_home_screen": "⬇ Add hozzá a Rotabo-t a kezdőképernyőhöz",
     "fine": "A böngésződben működik — nincs szükség alkalmazásboltra.",
     "badge_verified": "Ellenőrzött felhasználók", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Sofőr",
       "desc": "Egy sofőr, aki hozzád jön, és a saját autódat vezeti."
     },
+    "translator": {
+      "name": "Fordító",
+      "desc": "Fordító vagy tolmács, amikor szükséged van rá — hívások, időpontok, papírmunka vagy személyesen.",
+      "seeking_title": "Fordítóra van szükséged?",
+      "seeking_lead": "Mondd el, milyen nyelvekre van szükséged és hol.",
+      "offering_title": "Ajánlj fordítást vagy tolmácsolást",
+      "offering_lead": "Add meg, milyen nyelveken beszélsz, hogy megtaláljanak, akiknek szükségük van rá."
+    },
     "move": {
       "name": "Költöztetés",
       "desc": "Bútor, dobozok, vagy egy egész otthon — furgonnal és sofőrrel.",
@@ -116,6 +124,11 @@
       "offering_title": "Ajánld útközbeni segítségedet",
       "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
     }
+  },
+  "bridge": {
+    "title": "A Híd — fordító, amikor szükséged van rá, a bevándorló élethez",
+    "body": "Messze vagy otthonról, egy országban, amelynek a nyelvét alig érted, és minden hivatalos levél összeszorítja a gyomrodat. A pultnál, az orvosnál, a gyereked iskolájában vagy telefonon valamelyik hivatallal — nincs szükséged fordítóra állandóan, csak pontosan akkor, amikor számít. Veled megyek, ahová csak szükséged van rám, és a helyszínen fordítok, hogy megértsd, mi történik és mit kell tenned. Egyszerű szavakkal elmagyarázom a hivatalos leveleket: miről szól, meddig, hol kell aláírni. Elintézem helyetted a telefonokat, és beszélem a helyi nyelvet, miközben te nyugodtan ülsz mellettem. Együtt töltjük ki a kérelmeket, lépésről lépésre, a megfelelő hivatalban. Nem csak a nyelvet fordítom — lelki nyugalmat fordítok, és fogom a kezed, amíg oda nem érsz, ahová kell. Az „nem értem“-től a „megoldom“-ig.",
+    "cta": "Találj fordítót"
   },
   "problem": {
     "eyebrow": "MIÉRT HAGYNÁD OTT AZ AUTÓD?", "h2": "A probléma minden más megoldással",

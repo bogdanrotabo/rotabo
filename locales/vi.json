@@ -6,7 +6,7 @@
     "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
     "cta_find": "Tìm thứ bạn cần",
     "cta_offer": "Đề nghị những gì bạn có thể",
-    "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_become_sponsor": "Trở thành nhà tài trợ",
+    "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_translator": "Phiên dịch khi cần", "cta_become_sponsor": "Trở thành nhà tài trợ",
     "cta_home_screen": "⬇ Thêm Rotabo vào màn hình chính",
     "fine": "Hoạt động ngay trên trình duyệt — không cần tải ứng dụng.",
     "badge_verified": "Người dùng đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Tài xế",
       "desc": "Một tài xế đến chỗ bạn và lái chính xe của bạn."
     },
+    "translator": {
+      "name": "Phiên dịch",
+      "desc": "Biên dịch hoặc phiên dịch khi bạn cần — cuộc gọi, cuộc hẹn, giấy tờ hoặc trực tiếp.",
+      "seeking_title": "Cần người phiên dịch?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần ngôn ngữ nào và ở đâu.",
+      "offering_title": "Cung cấp dịch vụ biên dịch hoặc phiên dịch",
+      "offering_lead": "Liệt kê các ngôn ngữ bạn nói để những người cần có thể tìm thấy bạn."
+    },
     "move": {
       "name": "Chuyển nhà",
       "desc": "Đồ đạc, thùng carton, hay cả một căn nhà — có xe tải và tài xế.",
@@ -116,6 +124,11 @@
       "offering_title": "Đề xuất cứu hộ trên đường",
       "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
     }
+  },
+  "bridge": {
+    "title": "Nhịp Cầu — một phiên dịch khi bạn cần, cho cuộc sống của người nhập cư",
+    "body": "Bạn ở xa nhà, tại một đất nước mà bạn hầu như không hiểu tiếng, và mỗi lá thư hành chính lại khiến bụng dạ bạn thắt lại. Ở quầy, ở phòng khám, ở trường của con bạn, hay qua điện thoại với một cơ quan nào đó — bạn không cần phiên dịch mọi lúc, chỉ cần đúng vào lúc quan trọng. Tôi đi cùng bạn đến bất cứ nơi nào bạn cần và dịch ngay tại chỗ, để bạn hiểu chuyện gì đang xảy ra và bạn phải làm gì. Tôi giải thích các lá thư hành chính bằng lời lẽ đơn giản: đó là gì, hạn đến khi nào, ký ở đâu. Tôi gọi điện thay bạn và nói tiếng địa phương, trong khi bạn ngồi yên tâm bên cạnh tôi. Chúng ta cùng điền đơn, từng bước một, tại đúng cơ quan. Tôi không chỉ dịch ngôn ngữ — tôi dịch sự an tâm, và tôi nắm tay bạn cho đến khi bạn đến được nơi cần đến. Từ „tôi không hiểu“ đến „tôi làm được“.",
+    "cta": "Tìm phiên dịch"
   },
   "problem": {
     "eyebrow": "TẠI SAO PHẢI BỎ LẠI XE CỦA BẠN?", "h2": "Vấn đề với mọi lựa chọn khác",

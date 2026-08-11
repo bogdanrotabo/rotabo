@@ -14,6 +14,7 @@
     "cta_offer": "Proposer ce que vous pouvez",
     "cta_find_driver": "Trouver un chauffeur",
     "cta_become_driver": "Devenir chauffeur",
+    "cta_translator": "Traducteur à la demande",
     "cta_become_sponsor": "Devenir sponsor",
     "cta_home_screen": "⬇ Ajouter Rotabo à l'écran d'accueil",
     "fine": "Fonctionne directement dans votre navigateur — aucun app store nécessaire.",
@@ -86,6 +87,14 @@
       "name": "Chauffeur",
       "desc": "Un chauffeur qui vient chez toi et conduit ta propre voiture."
     },
+    "translator": {
+      "name": "Traducteur",
+      "desc": "Un traducteur ou interprète quand vous en avez besoin — appels, rendez-vous, documents ou en personne.",
+      "seeking_title": "Besoin d'un traducteur ?",
+      "seeking_lead": "Dites-nous de quelles langues vous avez besoin et où.",
+      "offering_title": "Proposer de traduire ou d'interpréter",
+      "offering_lead": "Indiquez les langues que vous parlez pour que ceux qui en ont besoin vous trouvent."
+    },
     "move": {
       "name": "Déménagement",
       "desc": "Meubles, cartons ou tout un logement — avec camionnette et chauffeur.",
@@ -126,6 +135,11 @@
       "offering_title": "Propose du dépannage sur route",
       "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
     }
+  },
+  "bridge": {
+    "title": "Le Pont — un traducteur quand vous en avez besoin, pour la vie d'immigré",
+    "body": "Vous êtes loin de chez vous, dans un pays dont vous comprenez à peine la langue, et chaque courrier officiel vous noue l'estomac. Au guichet, chez le médecin, à l'école de votre enfant ou au téléphone avec une administration — vous n'avez pas besoin d'un traducteur tout le temps, seulement au moment où cela compte. Je viens avec vous partout où vous avez besoin de moi et je traduis sur place, pour que vous compreniez ce qui se passe et ce que vous avez à faire. Je décompose les lettres officielles en mots simples : de quoi il s'agit, pour quand, où signer. Je passe les appels à votre place et je parle la langue locale, pendant que vous êtes assis tranquillement à côté de moi. Nous remplissons les demandes ensemble, étape par étape, au bon guichet. Je ne traduis pas seulement la langue — je traduis la tranquillité d'esprit, et je vous tiens la main jusqu'à ce que vous arriviez là où vous devez être. De « je ne comprends pas » à « je gère ».",
+    "cta": "Trouver un traducteur"
   },
   "problem": {
     "eyebrow": "POURQUOI LAISSER VOTRE VOITURE DERRIÈRE VOUS ?",

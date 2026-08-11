@@ -6,7 +6,7 @@
     "lede": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
     "cta_find": "Atrodi to, kas nepieciešams",
     "cta_offer": "Piedāvā to, ko vari",
-    "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_become_sponsor": "Kļūsti par atbalstītāju",
+    "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_translator": "Tulks pēc vajadzības", "cta_become_sponsor": "Kļūsti par atbalstītāju",
     "cta_home_screen": "⬇ Pievieno Rotabo sākuma ekrānam",
     "fine": "Darbojas tavā pārlūkā — bez lietotņu veikala.",
     "badge_verified": "Pārbaudīti lietotāji", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Šoferis",
       "desc": "Šoferis, kurš atbrauc pie tevis un vada tavu pašu automašīnu."
     },
+    "translator": {
+      "name": "Tulks",
+      "desc": "Tulkotājs vai tulks, kad tas nepieciešams — zvani, tikšanās, dokumenti vai klātienē.",
+      "seeking_title": "Vajadzīgs tulks?",
+      "seeking_lead": "Pastāstiet, kādas valodas jums vajadzīgas un kur.",
+      "offering_title": "Piedāvājiet tulkošanu rakstiski vai mutiski",
+      "offering_lead": "Norādiet valodas, kurās runājat, lai tie, kam tās vajadzīgas, jūs atrastu."
+    },
     "move": {
       "name": "Pārvākšanās",
       "desc": "Mēbeles, kastes vai visa māja — ar mikroautobusu un šoferi.",
@@ -116,6 +124,11 @@
       "offering_title": "Piedāvā palīdzību uz ceļa",
       "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
     }
+  },
+  "bridge": {
+    "title": "Tilts — tulks, kad tas nepieciešams, imigranta dzīvei",
+    "body": "Esi tālu no mājām, valstī, kuras valodu tik tikko saproti, un katra oficiālā vēstule savelk vēderu. Pie lodziņa, pie ārsta, bērna skolā vai pa telefonu ar kādu iestādi — tulks nav vajadzīgs visu laiku, bet tieši tad, kad tas ir svarīgi. Nāku tev līdzi, kur vien esmu vajadzīgs, un tulkoju uz vietas, lai tu saprastu, kas notiek un kas tev jādara. Oficiālās vēstules izskaidroju vienkāršos vārdos: kas tas ir, līdz kuram laikam, kur jāparakstās. Zvanu tavā vietā un runāju vietējā valodā, kamēr tu mierīgi sēdi man blakus. Pieteikumus aizpildām kopā, soli pa solim, pareizajā iestādē. Es netulkoju tikai valodu — es tulkoju sirdsmieru un turu tevi pie rokas, līdz tu nonāc tur, kur tev jābūt. No „es nesaprotu“ līdz „es tikšu galā“.",
+    "cta": "Atrast tulku"
   },
   "problem": {
     "eyebrow": "KĀPĒC ATSTĀT SAVU MAŠĪNU?", "h2": "Problēma ar visām pārējām iespējām",

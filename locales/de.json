@@ -14,6 +14,7 @@
     "cta_offer": "Biete an, was du kannst",
     "cta_find_driver": "Fahrer finden",
     "cta_become_driver": "Fahrer werden",
+    "cta_translator": "Übersetzer bei Bedarf",
     "cta_become_sponsor": "Sponsor werden",
     "cta_home_screen": "⬇ Rotabo zum Startbildschirm hinzufügen",
     "fine": "Funktioniert direkt im Browser — kein App Store nötig.",
@@ -86,6 +87,14 @@
       "name": "Fahrer",
       "desc": "Ein Fahrer, der zu dir kommt und dein eigenes Auto fährt."
     },
+    "translator": {
+      "name": "Übersetzer",
+      "desc": "Ein Übersetzer oder Dolmetscher, wenn du einen brauchst — Anrufe, Termine, Papierkram oder persönlich.",
+      "seeking_title": "Brauchst du einen Übersetzer?",
+      "seeking_lead": "Sag uns, welche Sprachen du brauchst und wo.",
+      "offering_title": "Übersetzen oder dolmetschen anbieten",
+      "offering_lead": "Gib an, welche Sprachen du sprichst, damit dich Menschen finden, die sie brauchen."
+    },
     "move": {
       "name": "Umzug",
       "desc": "Möbel, Kartons oder ein ganzes Zuhause — mit Transporter und Fahrer.",
@@ -126,6 +135,11 @@
       "offering_title": "Pannenhilfe anbieten",
       "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
     }
+  },
+  "bridge": {
+    "title": "Die Brücke — ein Übersetzer, wenn du einen brauchst, für das Leben als Einwanderer",
+    "body": "Du bist weit weg von zu Hause, in einem Land, dessen Sprache du kaum verstehst, und jeder amtliche Brief schnürt dir den Magen zu. Am Schalter, beim Arzt, in der Schule deines Kindes oder am Telefon mit irgendeiner Behörde — du brauchst nicht die ganze Zeit einen Übersetzer, sondern genau dann, wenn es darauf ankommt. Ich komme mit dir, wohin du mich brauchst, und übersetze an Ort und Stelle, damit du verstehst, was passiert und was du tun musst. Ich erkläre dir amtliche Briefe in einfachen Worten: worum es geht, bis wann, wo du unterschreiben musst. Ich erledige die Anrufe für dich und spreche die Landessprache, während du entspannt neben mir sitzt. Wir füllen die Anträge gemeinsam aus, Schritt für Schritt, bei der richtigen Stelle. Ich übersetze nicht nur die Sprache — ich übersetze Seelenfrieden und halte deine Hand, bis du dort ankommst, wo du hinmusst. Von „Ich verstehe nicht“ zu „Ich schaffe das“.",
+    "cta": "Übersetzer finden"
   },
   "problem": {
     "eyebrow": "WARUM DEIN AUTO ZURÜCKLASSEN?",

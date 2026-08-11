@@ -14,6 +14,7 @@
     "cta_offer": "Ofereça o que puder",
     "cta_find_driver": "Encontrar um condutor",
     "cta_become_driver": "Torna-te condutor",
+    "cta_translator": "Tradutor quando precisar",
     "cta_become_sponsor": "Torna-te patrocinador",
     "cta_home_screen": "⬇ Adicionar a Rotabo ao ecrã principal",
     "fine": "Funciona no teu navegador — sem necessidade de app store.",
@@ -86,6 +87,14 @@
       "name": "Condutor",
       "desc": "Um condutor que vem até ti e conduz o teu próprio carro."
     },
+    "translator": {
+      "name": "Tradutor",
+      "desc": "Um tradutor ou intérprete quando precisar — chamadas, consultas, papelada ou pessoalmente.",
+      "seeking_title": "Precisa de um tradutor?",
+      "seeking_lead": "Diga-nos de que idiomas precisa e onde.",
+      "offering_title": "Ofereça traduzir ou interpretar",
+      "offering_lead": "Liste os idiomas que fala para que quem precisa o encontre."
+    },
     "move": {
       "name": "Mudança",
       "desc": "Móveis, caixas, ou uma casa inteira — com carrinha e condutor.",
@@ -126,6 +135,11 @@
       "offering_title": "Oferece ajuda na estrada",
       "offering_lead": "Inscreve as tuas competências para que quem precisa te encontre."
     }
+  },
+  "bridge": {
+    "title": "A Ponte — um tradutor quando precisar, para a vida de imigrante",
+    "body": "Estás longe de casa, num país cuja língua mal entendes, e cada carta oficial aperta-te o estômago. No balcão, no médico, na escola do teu filho ou ao telefone com alguma repartição — não precisas de um tradutor o tempo todo, só exatamente quando é importante. Vou contigo aonde precisares de mim e traduzo na hora, para que percebas o que se passa e o que tens de fazer. Explico-te as cartas oficiais em palavras simples: do que se trata, até quando, onde assinar. Faço as chamadas por ti e falo a língua local, enquanto ficas sentado tranquilo ao meu lado. Preenchemos os pedidos juntos, passo a passo, no serviço certo. Não traduzo só a língua — traduzo paz de espírito, e seguro a tua mão até chegares onde precisas de estar. De «não percebo» a «eu consigo».",
+    "cta": "Encontrar um tradutor"
   },
   "problem": {
     "eyebrow": "PORQUÊ DEIXAR O TEU CARRO PARA TRÁS?",

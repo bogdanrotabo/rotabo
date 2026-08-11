@@ -6,7 +6,7 @@
     "lede": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
     "cta_find": "Nájdi, čo potrebuješ",
     "cta_offer": "Ponúkni, čo vieš",
-    "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_become_sponsor": "Staň sa podporovateľom",
+    "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_translator": "Prekladateľ podľa potreby", "cta_become_sponsor": "Staň sa podporovateľom",
     "cta_home_screen": "⬇ Pridať Rotabo na plochu",
     "fine": "Funguje priamo v prehliadači — žiadny obchod s aplikáciami netreba.",
     "badge_verified": "Overení používatelia", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Vodič",
       "desc": "Vodič, ktorý za tebou príde a odvezie ťa tvojím vlastným autom."
     },
+    "translator": {
+      "name": "Prekladateľ",
+      "desc": "Prekladateľ alebo tlmočník, keď ho potrebujete — hovory, stretnutia, papierovačky alebo osobne.",
+      "seeking_title": "Potrebujete prekladateľa?",
+      "seeking_lead": "Povedzte nám, ktoré jazyky potrebujete a kde.",
+      "offering_title": "Ponúknite preklad alebo tlmočenie",
+      "offering_lead": "Uveďte jazyky, ktorými hovoríte, aby vás našli tí, čo ich potrebujú."
+    },
     "move": {
       "name": "Sťahovanie",
       "desc": "Nábytok, krabice alebo celá domácnosť — s dodávkou a vodičom.",
@@ -116,6 +124,11 @@
       "offering_title": "Ponúkni pomoc na ceste",
       "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
     }
+  },
+  "bridge": {
+    "title": "Most — prekladateľ, keď ho potrebujete, pre život prisťahovalca",
+    "body": "Ste ďaleko od domova, v krajine, ktorej jazyku sotva rozumiete, a každý úradný list vám zviera žalúdok. Pri priehradke, u lekára, v škole vášho dieťaťa alebo po telefóne s nejakým úradom — prekladateľa nepotrebujete stále, len presne vtedy, keď na tom záleží. Idem s vami, kamkoľvek ma potrebujete, a prekladám priamo na mieste, aby ste rozumeli, čo sa deje a čo máte urobiť. Úradné listy vám vysvetlím jednoduchými slovami: o čo ide, dokedy, kde podpísať. Vybavím za vás telefonáty a hovorím miestnym jazykom, kým vy pokojne sedíte vedľa mňa. Žiadosti vyplníme spolu, krok za krokom, na správnom úrade. Neprekladám len jazyk — prekladám pokoj v duši a držím vás za ruku, kým nedôjdete tam, kam potrebujete. Od „nerozumiem“ k „to zvládnem“.",
+    "cta": "Nájsť prekladateľa"
   },
   "problem": {
     "eyebrow": "PREČO NECHÁVAŤ SVOJE AUTO ZA SEBOU?", "h2": "Problém so všetkými ostatnými možnosťami",

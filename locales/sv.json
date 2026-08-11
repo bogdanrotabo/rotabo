@@ -6,7 +6,7 @@
     "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
     "cta_find": "Hitta det du behöver",
     "cta_offer": "Erbjud det du kan",
-    "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_become_sponsor": "Bli sponsor",
+    "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_translator": "Översättare vid behov", "cta_become_sponsor": "Bli sponsor",
     "cta_home_screen": "⬇ Lägg till Rotabo på hemskärmen",
     "fine": "Fungerar i din webbläsare — ingen app store behövs.",
     "badge_verified": "Verifierade användare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Förare",
       "desc": "En förare som kommer till dig och kör din egen bil."
     },
+    "translator": {
+      "name": "Översättare",
+      "desc": "En översättare eller tolk när du behöver en — samtal, möten, pappersarbete eller på plats.",
+      "seeking_title": "Behöver du en översättare?",
+      "seeking_lead": "Berätta vilka språk du behöver och var.",
+      "offering_title": "Erbjud översättning eller tolkning",
+      "offering_lead": "Ange de språk du talar så att de som behöver dem hittar dig."
+    },
     "move": {
       "name": "Flytt",
       "desc": "Möbler, kartonger eller ett helt hem — med skåpbil och förare.",
@@ -116,6 +124,11 @@
       "offering_title": "Erbjud hjälp på vägen",
       "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
     }
+  },
+  "bridge": {
+    "title": "Bron — en översättare när du behöver en, för livet som invandrare",
+    "body": "Du är långt hemifrån, i ett land vars språk du knappt förstår, och varje myndighetsbrev knyter ihop magen. Vid luckan, hos läkaren, i ditt barns skola eller i telefon med någon myndighet — du behöver inte en översättare hela tiden, bara precis när det är viktigt. Jag följer med dig dit du behöver mig och översätter på plats, så att du förstår vad som händer och vad du måste göra. Jag förklarar myndighetsbrev med enkla ord: vad det är, senast när, var du ska skriva under. Jag ringer samtalen åt dig och talar det lokala språket, medan du sitter lugnt bredvid mig. Vi fyller i ansökningarna tillsammans, steg för steg, på rätt kontor. Jag översätter inte bara språket — jag översätter sinnesro, och jag håller din hand tills du kommer dit du ska. Från ”jag förstår inte” till ”det här klarar jag”.",
+    "cta": "Hitta en översättare"
   },
   "problem": {
     "eyebrow": "VARFÖR LÄMNA BILEN KVAR?", "h2": "Problemet med alla andra alternativ",

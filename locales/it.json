@@ -15,6 +15,7 @@
     "cta_offer": "Offri ciò che puoi",
     "cta_find_driver": "Trova un autista",
     "cta_become_driver": "Diventa autista",
+    "cta_translator": "Traduttore su richiesta",
     "cta_login": "Accedi",
     "cta_become_sponsor": "Diventa sponsor",
     "cta_home_screen": "⬇ Aggiungi Rotabo alla schermata home",
@@ -87,6 +88,14 @@
     "drive": {
       "name": "Autista",
       "desc": "Un autista che viene da te e guida la tua auto."
+    },
+    "translator": {
+      "name": "Traduttore",
+      "desc": "Un traduttore o interprete quando ti serve — telefonate, appuntamenti, documenti o di persona.",
+      "seeking_title": "Ti serve un traduttore?",
+      "seeking_lead": "Dicci di quali lingue hai bisogno e dove.",
+      "offering_title": "Offri traduzione o interpretariato",
+      "offering_lead": "Indica le lingue che parli così chi ne ha bisogno può trovarti."
     },
     "move": {
       "name": "Traslochi",
@@ -161,6 +170,11 @@
       "offering_lead": "Iscriviti così chi ha una richiesta insolita possa trovarti."
     }
   },
+  "bridge": {
+    "title": "Il Ponte — un traduttore quando ti serve, per la vita da immigrato",
+    "body": "Sei lontano da casa, in un paese di cui capisci a malapena la lingua, e ogni lettera ufficiale ti stringe lo stomaco. Allo sportello, dal medico, a scuola di tuo figlio o al telefono con qualche ente — non ti serve un traduttore tutto il tempo, solo esattamente quando conta. Vengo con te ovunque tu abbia bisogno e traduco sul posto, così capisci cosa sta succedendo e cosa devi fare. Ti spiego le lettere ufficiali con parole semplici: di cosa si tratta, entro quando, dove firmare. Faccio le telefonate al posto tuo e parlo la lingua locale, mentre tu resti seduto tranquillo accanto a me. Compiliamo le domande insieme, passo dopo passo, all'ufficio giusto. Non traduco solo la lingua — traduco serenità, e ti tengo per mano finché non arrivi dove devi essere. Da «non capisco» a «ce la faccio».",
+    "cta": "Trova un traduttore"
+  },
   "problem": {
     "eyebrow": "PERCHÉ LASCIARE LA TUA AUTO?",
     "h2": "Il problema con tutte le altre opzioni",
@@ -228,7 +242,7 @@
   "investors_card": {
     "cat": "INVESTITORI",
     "h3": "Diventa investitore",
-    "p": "Rotabo collega persone in 9 categorie, in 38 lingue, in tutto il mondo — senza alcuna commissione su chi offre tempo, competenze o attrezzatura. Stiamo parlando con chi crede in questo modello.",
+    "p": "Rotabo collega persone in 11 categorie, in 38 lingue, in tutto il mondo — senza alcuna commissione su chi offre tempo, competenze o attrezzatura. Stiamo parlando con chi crede in questo modello.",
     "link": "Contattaci →"
   },
   "drivers_card": {

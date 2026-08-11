@@ -15,6 +15,7 @@
     "cta_offer": "Offer what you can",
     "cta_find_driver": "Find a driver",
     "cta_become_driver": "Become a driver",
+    "cta_translator": "Translator on demand",
     "cta_login": "Log in",
     "cta_become_sponsor": "Become a sponsor",
     "cta_home_screen": "⬇ Add Rotabo to your home screen",
@@ -87,6 +88,14 @@
     "drive": {
       "name": "Drive",
       "desc": "A driver who comes to you and drives your own car."
+    },
+    "translator": {
+      "name": "Translator",
+      "desc": "A translator or interpreter when you need one — calls, appointments, paperwork, or in person.",
+      "seeking_title": "Need a translator?",
+      "seeking_lead": "Tell us which languages you need and where.",
+      "offering_title": "Offer to translate or interpret",
+      "offering_lead": "List the languages you speak so people who need them can find you."
     },
     "move": {
       "name": "Move",
@@ -161,6 +170,11 @@
       "offering_lead": "List yourself so people with an unusual request can find you."
     }
   },
+  "bridge": {
+    "title": "The Bridge — a translator when you need one, for life as an immigrant",
+    "body": "You're far from home, in a country whose language you barely grasp, and every official letter tightens your stomach. At the counter, at the doctor's, at your child's school, or on the phone with some agency — you don't need a translator all the time, just exactly when it matters. I come with you wherever you need me and translate on the spot, so you understand what's happening and what you have to do. I break official letters down into plain words: what it is, by when, where to sign. I make the calls for you and speak the local language, while you sit beside me at ease. We fill out the applications together, step by step, at the right office. I don't just translate the language — I translate peace of mind, and I hold your hand until you get where you need to be. From “I don't understand” to “I've got this.”",
+    "cta": "Find a translator"
+  },
   "problem": {
     "eyebrow": "WHY LEAVE YOUR CAR BEHIND?",
     "h2": "The problem with every other option",
@@ -228,7 +242,7 @@
   "investors_card": {
     "cat": "INVESTORS",
     "h3": "Become an investor",
-    "p": "Rotabo connects people across 10 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.",
+    "p": "Rotabo connects people across 11 categories in 38 languages, worldwide — no commission taken from anyone who offers their time, skills, or equipment. We're talking to people who back that model.",
     "link": "Get in touch →"
   },
   "drivers_card": {

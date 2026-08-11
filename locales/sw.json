@@ -6,7 +6,7 @@
     "lede": "Chagua unachohitaji — au jiorodheshe kama mtu anayeweza kusaidia.",
     "cta_find": "Tafuta unachohitaji",
     "cta_offer": "Toa unachoweza",
-    "cta_find_driver": "Tafuta dereva", "cta_become_driver": "Kuwa dereva", "cta_become_sponsor": "Kuwa mfadhili",
+    "cta_find_driver": "Tafuta dereva", "cta_become_driver": "Kuwa dereva", "cta_translator": "Mkalimani unapohitaji", "cta_become_sponsor": "Kuwa mfadhili",
     "cta_home_screen": "⬇ Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "fine": "Inafanya kazi kwenye kivinjari chako — hakuna haja ya duka la programu.",
     "badge_verified": "Watumiaji waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
@@ -76,6 +76,14 @@
       "name": "Dereva",
       "desc": "Dereva anayekuja kwako na kuendesha gari lako mwenyewe."
     },
+    "translator": {
+      "name": "Mkalimani",
+      "desc": "Mtafsiri au mkalimani unapomhitaji — simu, miadi, karatasi au ana kwa ana.",
+      "seeking_title": "Unahitaji mkalimani?",
+      "seeking_lead": "Tuambie lugha unazohitaji na wapi.",
+      "offering_title": "Toa huduma ya kutafsiri au kukalimani",
+      "offering_lead": "Orodhesha lugha unazozungumza ili wanaozihitaji wakupate."
+    },
     "move": {
       "name": "Kuhamisha",
       "desc": "Fanicha, masanduku, au nyumba nzima — kwa gari la mizigo na dereva.",
@@ -116,6 +124,11 @@
       "offering_title": "Toa msaada barabarani",
       "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
     }
+  },
+  "bridge": {
+    "title": "Daraja — mkalimani unapomhitaji, kwa maisha ya mhamiaji",
+    "body": "Uko mbali na nyumbani, katika nchi ambayo lugha yake huielewi vizuri, na kila barua rasmi hukaza tumbo lako. Dirishani, kwa daktari, shuleni kwa mtoto wako au kwenye simu na shirika fulani — huhitaji mkalimani kila wakati, bali hasa pale inapokuwa muhimu. Ninakuja nawe popote unaponihitaji na kutafsiri papo hapo, ili uelewe kinachoendelea na unachotakiwa kufanya. Ninazivunja barua rasmi kwa maneno rahisi: ni nini, kufikia lini, wapi pa kutia sahihi. Ninapiga simu kwa niaba yako na kuzungumza lugha ya wenyeji, huku wewe ukiketi kwa utulivu kando yangu. Tunajaza maombi pamoja, hatua kwa hatua, katika ofisi sahihi. Sitafsiri lugha tu — natafsiri amani ya moyo, na ninakushika mkono hadi ufike unakotaka kwenda. Kutoka „sielewi“ hadi „nitaweza“.",
+    "cta": "Tafuta mkalimani"
   },
   "problem": {
     "eyebrow": "KWA NINI UACHE GARI LAKO?", "h2": "Tatizo la kila chaguo lingine",
