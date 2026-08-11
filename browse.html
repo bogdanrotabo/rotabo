@@ -48,13 +48,18 @@
   @keyframes spin{to{transform:rotate(360deg);}}
   .home-link{display:inline-block;margin-top:20px;color:var(--violet-2);font-weight:700;text-decoration:none;}
 
-  .filter-field{margin-bottom:18px;}
+  .filter-field{margin-bottom:18px;display:flex;gap:8px;}
   .city-filter{
-    width:100%;padding:12px 14px;border-radius:10px;
+    flex:1;min-width:0;padding:12px 14px;border-radius:10px;
     border:1px solid var(--border);background:#fff;
     color:var(--text-dark);font-size:1rem;font-family:inherit;box-sizing:border-box;
   }
   .city-filter:focus{outline:2px solid var(--violet-2);outline-offset:1px;}
+  .filter-btn{
+    flex-shrink:0;padding:12px 20px;border-radius:10px;border:none;
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    font-weight:800;font-size:.95rem;cursor:pointer;
+  }
 
   .request-list{display:flex;flex-direction:column;gap:14px;}
   .request-card{
@@ -156,6 +161,7 @@
     call_btn: "📞 Call",
     email_btn: "✉️ Email",
     country_filter_placeholder: "Filter by country…",
+    search_btn: "Search",
     time_just_now: "just now",
     time_min_ago_one: "1 min ago",
     time_min_ago_other: "{n} min ago",
@@ -228,14 +234,21 @@
 
   function renderDashboard(){
     content.innerHTML =
-      '<div class="filter-field"><input type="text" id="countryFilter" class="city-filter"></div>' +
+      '<div class="filter-field"><input type="text" id="countryFilter" class="city-filter"><button type="button" class="filter-btn" id="countryFilterBtn"></button></div>' +
       '<div class="request-list" id="requestList"></div>';
     var filterInput = document.getElementById("countryFilter");
+    var filterBtn = document.getElementById("countryFilterBtn");
     filterInput.placeholder = tr("country_filter_placeholder");
-    filterInput.addEventListener("input", function(){
-      countryFilter = this.value.trim();
+    filterBtn.textContent = tr("search_btn");
+    function applyFilter(){
+      countryFilter = filterInput.value.trim();
       loadListings();
+    }
+    filterInput.addEventListener("input", applyFilter);
+    filterInput.addEventListener("keydown", function(e){
+      if (e.key === "Enter") { e.preventDefault(); applyFilter(); }
     });
+    filterBtn.addEventListener("click", applyFilter);
     loadListings();
     if (!listPollTimer) {
       listPollTimer = setInterval(loadListings, LIST_POLL_MS);
@@ -285,8 +298,12 @@
         var noteEl = card.querySelector(".note");
         if (row.note) { noteEl.textContent = row.note; } else { noteEl.remove(); }
         var callBtn = card.querySelector(".call-btn");
-        callBtn.href = "tel:" + row.phone;
-        callBtn.textContent = tr("call_btn");
+        if (row.phone) {
+          callBtn.href = "tel:" + row.phone;
+          callBtn.textContent = tr("call_btn");
+        } else {
+          callBtn.remove();
+        }
         var emailBtn = card.querySelector(".email-btn");
         if (row.email) {
           emailBtn.href = "mailto:" + row.email;

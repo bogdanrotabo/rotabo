@@ -410,6 +410,7 @@
     "call_btn": "📞 Call",
     "email_btn": "✉️ Email",
     "country_filter_placeholder": "Filter by country…",
+    "search_btn": "Search",
     "time_just_now": "just now",
     "time_min_ago_one": "1 min ago",
     "time_min_ago_other": "{n} min ago",
