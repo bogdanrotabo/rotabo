@@ -1200,6 +1200,27 @@
   wireCountryCity("bd_country");
   wireCountryCity("gl_country");
 
+  // Browsers only pop open a <datalist>'s full option list when the
+  // field is empty (or partially typed) -- once it already holds a
+  // complete value, clicking back in just shows that one match, so
+  // changing your mind meant deleting everything first. Clearing the
+  // field on focus brings the full list straight back; if the visitor
+  // clicks away without picking anything new, the original value is
+  // restored so nothing is lost.
+  function wireReopenOnFocus(inputId){
+    var input = document.getElementById(inputId);
+    if (!input) return;
+    var previousValue = "";
+    input.addEventListener("focus", function(){
+      previousValue = input.value;
+      input.value = "";
+    });
+    input.addEventListener("blur", function(){
+      if (!input.value.trim() && previousValue) input.value = previousValue;
+    });
+  }
+  ["fd_country", "fd_city", "bd_country", "bd_city", "gl_country", "gl_city"].forEach(wireReopenOnFocus);
+
   var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click" };
   window.openModal = function(id){
     document.getElementById(id).classList.add("open");

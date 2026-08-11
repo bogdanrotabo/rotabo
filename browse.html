@@ -404,6 +404,21 @@
     cityInput.addEventListener("keydown", function(e){
       if (e.key === "Enter") { e.preventDefault(); applyFilter(); }
     });
+    // Same fix as the registration forms: a <datalist> input that
+    // already holds a full value won't reopen with the full option
+    // list on refocus in most browsers -- clear it on focus so it
+    // does, restoring the previous value on blur if nothing new was
+    // picked.
+    [filterInput, cityInput].forEach(function(input){
+      var previousValue = "";
+      input.addEventListener("focus", function(){
+        previousValue = input.value;
+        input.value = "";
+      });
+      input.addEventListener("blur", function(){
+        if (!input.value.trim() && previousValue) { input.value = previousValue; }
+      });
+    });
     loadListings();
     if (!listPollTimer) {
       listPollTimer = setInterval(loadListings, LIST_POLL_MS);
