@@ -1,7 +1,7 @@
 {
   "name": "Rotabo",
   "short_name": "Rotabo",
-  "description": "You drink. They drive. Your car. Rotabo connects you with a driver who takes you home in your own car.",
+  "description": "Need Me! Find Me! Rotabo connects people who need something with people who have it — 10 categories, worldwide.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
