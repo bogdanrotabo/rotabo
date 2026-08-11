@@ -768,6 +768,10 @@
         <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
       </div>
       <div class="form-field">
+        <label for="fd_note" data-i18n="find_form.note_label">Tell us more (optional)</label>
+        <input type="text" id="fd_note" name="note" data-i18n-placeholder="find_form.note_placeholder" placeholder="A few details help — what, when, how much…">
+      </div>
+      <div class="form-field">
         <label data-i18n="visibility.tier_label">Visibility</label>
         <div class="tier-picker">
           <label class="tier-option">
@@ -824,6 +828,10 @@
       <div class="form-field">
         <label for="bd_license_year" data-i18n="drive_form.license_year_label">Year you obtained your driving licence</label>
         <input type="number" id="bd_license_year" name="license_year" required min="1950" max="2026" placeholder="2018">
+      </div>
+      <div class="form-field">
+        <label for="bd_note" data-i18n="drive_form.note_label">Tell us more (optional)</label>
+        <input type="text" id="bd_note" name="note" data-i18n-placeholder="drive_form.note_placeholder" placeholder="A few details help — what, when, how much…">
       </div>
       <div class="form-field">
         <label data-i18n="visibility.tier_label">Visibility</label>
@@ -1114,6 +1122,7 @@
     var codeForm = e.target;
     var codeErrorEl = document.getElementById("emailCodeError");
     hideError(codeErrorEl);
+    if (!codeForm.reportValidity()) return;
     setSubmitting(codeForm, true);
 
     fetch(FUNCTIONS_URL + "/verify-email", {
@@ -1171,7 +1180,8 @@
       email: form.email.value.trim(),
       city: form.city.value.trim(),
       country: form.country.value.trim(),
-      address: form.address.value.trim()
+      address: form.address.value.trim(),
+      note: form.note.value.trim() || null
     };
 
     submitWithVerification(form, payload, errorEl, "findDriverModal");
@@ -1194,6 +1204,7 @@
       city: form.city.value.trim(),
       country: form.country.value.trim(),
       address: form.address.value.trim(),
+      note: form.note.value.trim() || null,
       license_year: parseInt(form.license_year.value, 10) || null,
       declaration_accepted: true
     };

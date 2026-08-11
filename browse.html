@@ -48,6 +48,15 @@
   @keyframes spin{to{transform:rotate(360deg);}}
   .home-link{display:inline-block;margin-top:20px;color:var(--violet-2);font-weight:700;text-decoration:none;}
 
+  .my-listing{
+    background:#eefaf3;border:1px solid #bfe8cf;border-radius:16px;
+    padding:18px 20px;margin-bottom:24px;
+  }
+  .my-listing .my-eyebrow{color:var(--green);font-weight:800;font-size:.82rem;letter-spacing:.05em;margin-bottom:6px;}
+  .my-listing .my-sub{color:var(--text-body);font-size:.88rem;margin-bottom:10px;}
+  .my-listing .my-name{font-weight:800;color:var(--text-dark);font-size:1rem;}
+  .my-listing .my-detail{color:var(--text-body);font-size:.92rem;margin-top:2px;}
+
   .filter-field{margin-bottom:18px;display:flex;gap:8px;}
   .city-filter{
     flex:1;min-width:0;padding:12px 14px;border-radius:10px;
@@ -162,6 +171,8 @@
     email_btn: "✉️ Email",
     country_filter_placeholder: "Filter by country…",
     search_btn: "Search",
+    my_listing_title: "Your listing is live",
+    my_listing_sub: "This is what others browsing this category now see about you.",
     time_just_now: "just now",
     time_min_ago_one: "1 min ago",
     time_min_ago_other: "{n} min ago",
@@ -232,10 +243,40 @@
     return hrs === 1 ? tr("time_hour_ago_one") : tr("time_hour_ago_other", { n: hrs });
   }
 
+  function renderMyListing(){
+    sb.from("listings")
+      .select("name, phone, email, city, country, address, note")
+      .eq("id", listingId)
+      .maybeSingle()
+      .then(function(res){
+        var box = document.getElementById("myListing");
+        if (!box || res.error || !res.data) return;
+        var row = res.data;
+        var location = [row.city, row.country].filter(Boolean).join(", ");
+        var html = '<div class="my-eyebrow"></div><p class="my-sub"></p>'
+          + '<div class="my-name"></div>'
+          + '<div class="my-detail my-location"></div>'
+          + '<div class="my-detail my-address"></div>'
+          + '<div class="my-detail my-note"></div>';
+        box.innerHTML = html;
+        box.querySelector(".my-eyebrow").textContent = tr("my_listing_title");
+        box.querySelector(".my-sub").textContent = tr("my_listing_sub");
+        box.querySelector(".my-name").textContent = row.name;
+        var locEl = box.querySelector(".my-location");
+        if (location) { locEl.textContent = location; } else { locEl.remove(); }
+        var addrEl = box.querySelector(".my-address");
+        if (row.address) { addrEl.textContent = row.address; } else { addrEl.remove(); }
+        var noteEl = box.querySelector(".my-note");
+        if (row.note) { noteEl.textContent = row.note; } else { noteEl.remove(); }
+      });
+  }
+
   function renderDashboard(){
     content.innerHTML =
+      '<div class="my-listing" id="myListing"></div>' +
       '<div class="filter-field"><input type="text" id="countryFilter" class="city-filter"><button type="button" class="filter-btn" id="countryFilterBtn"></button></div>' +
       '<div class="request-list" id="requestList"></div>';
+    renderMyListing();
     var filterInput = document.getElementById("countryFilter");
     var filterBtn = document.getElementById("countryFilterBtn");
     filterInput.placeholder = tr("country_filter_placeholder");

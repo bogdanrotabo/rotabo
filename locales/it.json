@@ -288,6 +288,8 @@
     "period_12mo": "12 mesi"
   },
   "find_form": {
+    "note_label": "Dicci di più (facoltativo)",
+    "note_placeholder": "Qualche dettaglio aiuta — cosa, quando, quanto…",
     "destination_label": "Dove vuoi andare?",
     "destination_placeholder": "Via, città…",
     "fare_estimate": "Corsa stimata: <strong>~{amount} CHF</strong> per {km} km",
@@ -313,6 +315,8 @@
     "country_label": "Paese",
     "address_label": "Indirizzo",
     "license_year_label": "Anno di conseguimento della patente",
+    "note_label": "Dicci di più (facoltativo)",
+    "note_placeholder": "Qualche dettaglio aiuta — cosa, quando, quanto…",
     "decl1": "Sono in possesso di una patente di guida valida per le categorie di veicoli pertinenti.",
     "decl2": "Sono legalmente autorizzato a guidare nel paese in cui offro i viaggi.",
     "decl3": "Non accetterò né effettuerò mai un viaggio sotto l'effetto di alcol, droghe o qualsiasi altra sostanza.",
@@ -411,6 +415,8 @@
     "email_btn": "✉️ Email",
     "country_filter_placeholder": "Filtra per paese…",
     "search_btn": "Cerca",
+    "my_listing_title": "Il tuo annuncio è attivo",
+    "my_listing_sub": "Questo è ciò che vedono di te gli altri che navigano in questa categoria.",
     "time_just_now": "proprio ora",
     "time_min_ago_one": "1 minuto fa",
     "time_min_ago_other": "{n} minuti fa",

@@ -288,6 +288,8 @@
     "period_12mo": "12 luni"
   },
   "find_form": {
+    "note_label": "Spune-ne mai multe (opțional)",
+    "note_placeholder": "Câteva detalii ajută — ce, când, cât…",
     "destination_label": "Unde vrei să ajungi?",
     "destination_placeholder": "Stradă, oraș…",
     "fare_estimate": "Cursă estimată: <strong>~{amount} CHF</strong> pentru {km} km",
@@ -313,6 +315,8 @@
     "country_label": "Țară",
     "address_label": "Adresă",
     "license_year_label": "Anul în care ai obținut permisul de conducere",
+    "note_label": "Spune-ne mai multe (opțional)",
+    "note_placeholder": "Câteva detalii ajută — ce, când, cât…",
     "decl1": "Dețin un permis de conducere valabil pentru categoriile de vehicule relevante.",
     "decl2": "Am dreptul legal de a conduce în țara în care ofer curse.",
     "decl3": "Nu voi accepta sau efectua niciodată o cursă sub influența alcoolului, a drogurilor sau a oricărei alte substanțe.",
@@ -411,6 +415,8 @@
     "email_btn": "✉️ Email",
     "country_filter_placeholder": "Filtrează după țară…",
     "search_btn": "Caută",
+    "my_listing_title": "Listarea ta e live",
+    "my_listing_sub": "Asta văd ceilalți care navighează în această categorie despre tine.",
     "time_just_now": "chiar acum",
     "time_min_ago_one": "acum 1 min",
     "time_min_ago_other": "acum {n} min",
