@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v59";
+const CACHE_VERSION = "v60";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
