@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Sie sind schon hier.",
+    "note": "Stöbern ist kostenlos. Schalte alle Details frei und kontaktiere jeden — 1 CHF für einen Monat, 2 CHF für ein Jahr.",
+    "loading": "Wird geladen…",
+    "empty": "Sei der Erste — hol dir deine Nummer.",
+    "not_found": "Noch keine aktive Rotabo-Nummer {n}."
+  },
+  "banknote": {
+    "title": "Deine Nummer reist um die Welt. Du musst es nicht.",
+    "body": "<p>Nimm einen Geldschein aus deiner Brieftasche. Irgendeinen. Bevor du ihn ausgibst, schreib sechs kleine Zeichen darauf: rotabo2244 — deine Nummer. Dann lass ihn los.</p><p>Morgen bezahlt er jemandes Kaffee. Nächste Woche ist er Wechselgeld in einem Taxi drei Städte weiter. Nächsten Monat überquert er eine Grenze in der Tasche eines Fremden. Geld hört nie auf, sich zu bewegen — und jetzt auch dein Name nicht mehr.</p><p>Irgendwo schaut jemand auf den Schein in seiner Hand. Er sieht es: rotabo2244. Die Neugier erledigt den Rest. Er tippt es auf rotabo.app ein — und da bist du. Dein Name. Deine Flagge. Was du anbietest. Ein echter Mensch, auffindbar für jeden, überall, der dieses Stück Papier je in Händen hält.</p><p>Keine Plakatwand reist so weit. Keine Anzeige lebt so lange. Ein Geldschein bleibt jahrelang im Umlauf und geht durch Hunderte Hände — und jede einzelne kann dich finden. Ein Stift. Eine Nummer. Die ganze Welt wird zu deiner Werbung.</p>",
+    "fineprint": "Auf Geldscheine zu schreiben ist deine eigene Entscheidung. Prüfe die örtlichen Gesetze."
+  },
+
   "nav": {
     "how": "So funktioniert's",
     "safety": "Sicherheit",
@@ -7,6 +20,11 @@
     "drivers": "Fahrer"
   },
   "hero": {
+    "number_intro": "Jeder auf Rotabo hat eine Nummer. Eine Nummer. Für immer deine. Sie sagt, wer du bist, wo du bist und was du kannst — auffindbar für jeden auf der Welt.",
+    "search_placeholder": "Eine Rotabo-Nummer finden — z. B. 2244",
+    "search_btn": "Suchen",
+    "get_number": "Hol dir deine Nummer",
+
     "origin_badge": "🇨🇭 Gemacht in der Schweiz — für die ganze Welt",
     "tagline3": "Dein Auto.",
     "lede": "Wähle, was du brauchst — oder trag dich ein als jemand, der helfen kann.",
@@ -243,8 +261,8 @@
     "ios_step3": "Tippe oben rechts auf <strong>„Hinzufügen“</strong> — fertig."
   },
   "visibility": {
-    "phone_hint": "Gib deine Landesvorwahl an — diese Nummer ist für alle sichtbar, die stöbern.",
-    "address_hint": "Das wird für alle sichtbar sein, die stöbern, genau wie deine Telefonnummer.",
+    "phone_hint": "Gib deine Ländervorwahl an. Deine Nummer sehen nur Besucher, die für vollen Zugang bezahlt haben — nicht jeder, der stöbert.",
+    "address_hint": "Deine Adresse sehen nur Besucher, die für vollen Zugang bezahlt haben, genau wie deine Telefonnummer.",
     "tier_label": "Sichtbarkeit",
     "period_1mo": "1 Monat",
     "period_12mo": "12 Monate"

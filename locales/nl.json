@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Ze zijn er al.",
+    "note": "Bladeren is gratis. Ontgrendel alle details en neem contact op met iedereen — 1 CHF voor een maand, 2 CHF voor een jaar.",
+    "loading": "Laden…",
+    "empty": "Wees de eerste — haal je nummer.",
+    "not_found": "Nog geen actief Rotabo-nummer {n}."
+  },
+  "banknote": {
+    "title": "Je nummer reist de wereld rond. Jij hoeft dat niet.",
+    "body": "<p>Haal een bankbiljet uit je portemonnee. Welke dan ook. Voordat je het uitgeeft, schrijf er zes kleine tekens op: rotabo2244 — jouw nummer. Laat het dan los.</p><p>Morgen betaalt het iemands koffie. Volgende week is het wisselgeld in een taxi drie steden verderop. Volgende maand steekt het een grens over in de zak van een vreemde. Geld stopt nooit met bewegen — en nu je naam ook niet meer.</p><p>Ergens kijkt iemand naar het biljet in zijn hand. Hij ziet het: rotabo2244. Nieuwsgierigheid doet de rest. Hij typt het in op rotabo.app — en daar ben jij. Je naam. Je vlag. Wat je aanbiedt. Een echt mens, vindbaar voor iedereen, overal, die dat stukje papier ooit vasthoudt.</p><p>Geen reclamebord reist zo ver. Geen advertentie leeft zo lang. Een bankbiljet blijft jarenlang in omloop en gaat door honderden handen — en elk daarvan kan jou vinden. Eén pen. Eén nummer. De hele wereld wordt jouw advertentie.</p>",
+    "fineprint": "Op bankbiljetten schrijven is je eigen keuze. Controleer de lokale wetten."
+  },
+
   "nav": {
     "how": "Hoe het werkt",
     "safety": "Veiligheid",
@@ -7,6 +20,11 @@
     "drivers": "Chauffeurs"
   },
   "hero": {
+    "number_intro": "Iedereen op Rotabo heeft een nummer. Eén nummer. Voor altijd van jou. Het vertelt wie je bent, waar je bent en wat je kunt — vindbaar voor iedereen op aarde.",
+    "search_placeholder": "Zoek een Rotabo-nummer — bijv. 2244",
+    "search_btn": "Zoeken",
+    "get_number": "Haal je nummer",
+
     "origin_badge": "🇨🇭 Gemaakt in Zwitserland — voor de hele wereld",
     "tagline3": "Jouw auto.",
     "lede": "Kies wat je nodig hebt — of meld je aan als iemand die kan helpen.",
@@ -243,8 +261,8 @@
     "ios_step3": "Tik rechtsboven op <strong>\"Voeg toe\"</strong> — klaar."
   },
   "visibility": {
-    "phone_hint": "Vul je landcode in — dit nummer is zichtbaar voor iedereen die aan het browsen is.",
-    "address_hint": "Dit is zichtbaar voor iedereen die rondkijkt, net als je telefoonnummer.",
+    "phone_hint": "Vermeld je landcode. Je nummer is alleen zichtbaar voor bezoekers die voor volledige toegang hebben betaald — niet voor iedereen die bladert.",
+    "address_hint": "Je adres is alleen zichtbaar voor bezoekers die voor volledige toegang hebben betaald, net als je telefoonnummer.",
     "tier_label": "Zichtbaarheid",
     "period_1mo": "1 maand",
     "period_12mo": "12 maanden"

@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Onlar çoktan burada.",
+    "note": "Göz atmak ücretsiz. Tüm ayrıntıları aç ve herkesle iletişime geç — bir ay için 1 CHF, bir yıl için 2 CHF.",
+    "loading": "Yükleniyor…",
+    "empty": "İlk sen ol — numaranı al.",
+    "not_found": "Henüz aktif bir Rotabo numarası {n} yok."
+  },
+  "banknote": {
+    "title": "Numaran dünyayı dolaşır. Senin dolaşmana gerek yok.",
+    "body": "<p>Cüzdanından bir banknot çıkar. Herhangi biri. Harcamadan önce üzerine altı küçük karakter yaz: rotabo2244 — senin numaran. Sonra bırak gitsin.</p><p>Yarın birinin kahvesini öder. Gelecek hafta üç şehir ötede bir takside para üstüdür. Gelecek ay bir yabancının cebinde sınırı geçer. Para asla hareket etmeyi bırakmaz — ve artık adın da bırakmıyor.</p><p>Bir yerlerde biri elindeki banknota bakar. Onu görür: rotabo2244. Gerisini merak halleder. Bunu rotabo.app adresine yazar — ve işte oradasın. Adın. Bayrağın. Ne sunduğun. O kağıt parçasını tutan herkesin, her yerde bulabileceği gerçek bir insan.</p><p>Hiçbir reklam panosu bu kadar uzağa gitmez. Hiçbir ilan bu kadar uzun yaşamaz. Bir banknot yıllarca dolaşımda kalır, yüzlerce elden geçer — ve her biri seni bulabilir. Bir kalem. Bir numara. Tüm dünya senin reklamın olur.</p>",
+    "fineprint": "Banknotlara yazmak senin kendi tercihindir. Yerel yasaları kontrol et."
+  },
+
   "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler" },
   "hero": {
+    "number_intro": "Rotabo'daki herkesin bir numarası var. Tek bir numara. Sonsuza dek senin. Kim olduğunu, nerede olduğunu ve ne yapabildiğini söyler — dünyadaki herkes seni bulabilir.",
+    "search_placeholder": "Bir Rotabo numarası bul — örn. 2244",
+    "search_btn": "Ara",
+    "get_number": "Numaranı al",
+
     "origin_badge": "🇨🇭 İsviçre'de üretildi — tüm dünya için",
     "tagline3": "Kendi araban.",
     "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
@@ -208,8 +226,8 @@
     "ios_step3": "Sağ üstteki <strong>\"Ekle\"</strong>ye dokun — bitti."
   },
   "visibility": {
-    "phone_hint": "Ülke kodunu da ekle — bu numara göz atan herkes tarafından görülecek.",
-    "address_hint": "Bu, telefon numaran gibi, göz atan herkes tarafından görülebilecek.",
+    "phone_hint": "Ülke kodunu ekle. Numaranı yalnızca tam erişim için ödeme yapan ziyaretçiler görür — göz atan herkes değil.",
+    "address_hint": "Adresini yalnızca tam erişim için ödeme yapan ziyaretçiler görür, tıpkı telefon numaran gibi.",
     "tier_label": "Görünürlük",
     "period_1mo": "1 ay",
     "period_12mo": "12 ay"

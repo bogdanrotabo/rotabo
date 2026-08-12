@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Mereka sudah di sini.",
+    "note": "Menjelajah itu gratis. Buka semua detail dan hubungi siapa saja — 1 CHF untuk sebulan, 2 CHF untuk setahun.",
+    "loading": "Memuat…",
+    "empty": "Jadilah yang pertama — dapatkan nomormu.",
+    "not_found": "Belum ada nomor Rotabo aktif {n}."
+  },
+  "banknote": {
+    "title": "Nomormu berkeliling dunia. Kamu tidak perlu.",
+    "body": "<p>Ambil selembar uang kertas dari dompetmu. Yang mana saja. Sebelum kamu membelanjakannya, tulis enam karakter kecil di atasnya: rotabo2244 — nomormu. Lalu lepaskan.</p><p>Besok ia membayar kopi seseorang. Minggu depan ia jadi kembalian di taksi tiga kota jauhnya. Bulan depan ia melintasi perbatasan di saku orang asing. Uang tak pernah berhenti bergerak — dan kini, namamu pun tidak.</p><p>Di suatu tempat, seseorang menatap uang di tangannya. Ia melihatnya: rotabo2244. Rasa penasaran melakukan sisanya. Ia mengetiknya di rotabo.app — dan itulah kamu. Namamu. Benderamu. Apa yang kamu tawarkan. Orang sungguhan, yang bisa ditemukan siapa saja, di mana saja, yang pernah memegang secarik kertas itu.</p><p>Tak ada papan iklan yang menempuh jarak sejauh itu. Tak ada iklan yang hidup selama itu. Selembar uang kertas beredar bertahun-tahun, berpindah melalui ratusan tangan — dan setiap tangan bisa menemukanmu. Satu pena. Satu nomor. Seluruh dunia menjadi iklanmu.</p>",
+    "fineprint": "Menulis di uang kertas adalah pilihanmu sendiri. Periksa hukum setempat."
+  },
+
   "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi" },
   "hero": {
+    "number_intro": "Setiap orang di Rotabo punya nomor. Satu nomor. Milikmu selamanya. Ia mengatakan siapa kamu, di mana kamu, dan apa yang bisa kamu lakukan — dapat ditemukan siapa saja di Bumi.",
+    "search_placeholder": "Cari nomor Rotabo — mis. 2244",
+    "search_btn": "Cari",
+    "get_number": "Dapatkan nomormu",
+
     "origin_badge": "🇨🇭 Dibuat di Swiss — untuk seluruh dunia",
     "tagline3": "Mobil Anda.",
     "lede": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
@@ -208,8 +226,8 @@
     "ios_step3": "Ketuk <strong>\"Tambah\"</strong> di pojok kanan atas — selesai."
   },
   "visibility": {
-    "phone_hint": "Sertakan kode negaramu — nomor ini akan terlihat oleh siapa pun yang sedang menjelajah.",
-    "address_hint": "Ini akan terlihat oleh siapa pun yang sedang menjelajah, sama seperti nomor teleponmu.",
+    "phone_hint": "Sertakan kode negaramu. Nomormu hanya terlihat oleh pengunjung yang telah membayar akses penuh — bukan semua orang yang menjelajah.",
+    "address_hint": "Alamatmu hanya terlihat oleh pengunjung yang telah membayar akses penuh, sama seperti nomor teleponmu.",
     "tier_label": "Visibilitas",
     "period_1mo": "1 bulan",
     "period_12mo": "12 bulan"

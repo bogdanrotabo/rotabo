@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Diġà qegħdin hawn.",
+    "note": "It-tfittxija hija b'xejn. Iftaħ id-dettalji kollha u kkuntattja lil kulħadd — 1 CHF għal xahar, 2 CHF għal sena.",
+    "loading": "Qed jitgħabba…",
+    "empty": "Kun l-ewwel — ikseb in-numru tiegħek.",
+    "not_found": "Għad m'hemmx numru Rotabo attiv {n}."
+  },
+  "banknote": {
+    "title": "In-numru tiegħek jivvjaġġa mad-dinja. Int le.",
+    "body": "<p>Oħroġ karta tal-flus mill-kartiera tiegħek. Kwalunkwe waħda. Qabel ma tonfoqha, ikteb fuqha sitt karattri żgħar: rotabo2244 — in-numru tiegħek. Imbagħad ħalliha tmur.</p><p>Għada tħallas il-kafè ta' xi ħadd. Il-ġimgħa d-dieħla tkun bqija f'taksi tliet bliet 'il bogħod. Ix-xahar id-dieħel taqsam fruntiera fil-but ta' barrani. Il-flus qatt ma jieqfu jiċċaqilqu — u issa, lanqas ismek.</p><p>X'imkien, xi ħadd iħares lejn il-karta f'idu. Jaraha: rotabo2244. Il-kurżità tagħmel il-bqija. Jittajpjaha fuq rotabo.app — u hemm int. Ismek. Il-bandiera tiegħek. X'toffri. Persuna vera, li tinstab minn kulħadd, kullimkien, li qatt iżomm dik il-biċċa karta.</p><p>L-ebda billboard ma jivvjaġġa daqshekk 'il bogħod. L-ebda reklam ma jgħix daqshekk twil. Il-karta tal-flus tibqa' fiċ-ċirkolazzjoni għal snin, tgħaddi minn mijiet ta' idejn — u kull waħda minnhom tista' ssibek. Pinna waħda. Numru wieħed. Id-dinja kollha ssir ir-reklam tiegħek.</p>",
+    "fineprint": "Il-kitba fuq il-karti tal-flus hija l-għażla tiegħek. Iċċekkja l-liġijiet lokali."
+  },
+
   "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ" },
   "hero": {
+    "number_intro": "Kulħadd fuq Rotabo għandu numru. Numru wieħed. Tiegħek għal dejjem. Jgħid min int, fejn int u x'tista' tagħmel — jinstab minn kulħadd fid-dinja.",
+    "search_placeholder": "Sib numru Rotabo — eż. 2244",
+    "search_btn": "Fittex",
+    "get_number": "Ikseb in-numru tiegħek",
+
     "origin_badge": "🇨🇭 Magħmul fl-Isvizzera — għad-dinja kollha",
     "tagline3": "Il-karrozza tiegħek.",
     "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
@@ -208,8 +226,8 @@
     "ios_step3": "Mess <strong>\"Żid\"</strong> fin-naħa ta' fuq lemin — lest."
   },
   "visibility": {
-    "phone_hint": "Daħħal il-kodiċi tal-pajjiż tiegħek — dan in-numru se jkun viżibbli għal kull min qed jgħaddi minn hawn.",
-    "address_hint": "Dan ikun viżibbli għal kull min ibbrawżja, l-istess bħan-numru tat-telefon tiegħek.",
+    "phone_hint": "Inkludi l-kodiċi tal-pajjiż tiegħek. In-numru tiegħek jidher biss għal viżitaturi li ħallsu għal aċċess sħiħ — mhux għal kulħadd li jfittex.",
+    "address_hint": "L-indirizz tiegħek jidher biss għal viżitaturi li ħallsu għal aċċess sħiħ, l-istess bħan-numru tat-telefon.",
     "tier_label": "Viżibbiltà",
     "period_1mo": "Xahar 1",
     "period_12mo": "12-il xahar"

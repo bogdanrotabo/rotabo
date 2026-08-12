@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "He ovat jo täällä.",
+    "note": "Selailu on ilmaista. Avaa kaikki tiedot ja ota yhteyttä keneen tahansa — 1 CHF kuukaudeksi, 2 CHF vuodeksi.",
+    "loading": "Ladataan…",
+    "empty": "Ole ensimmäinen — hanki numerosi.",
+    "not_found": "Ei vielä aktiivista Rotabo-numeroa {n}."
+  },
+  "banknote": {
+    "title": "Numerosi matkaa maailmalla. Sinun ei tarvitse.",
+    "body": "<p>Ota seteli lompakostasi. Mikä tahansa. Ennen kuin käytät sen, kirjoita siihen kuusi pientä merkkiä: rotabo2244 — numerosi. Päästä se sitten menemään.</p><p>Huomenna se maksaa jonkun kahvin. Ensi viikolla se on vaihtorahaa taksissa kolmen kaupungin päässä. Ensi kuussa se ylittää rajan tuntemattoman taskussa. Raha ei koskaan lakkaa liikkumasta — eikä nyt myöskään nimesi.</p><p>Jossain joku katsoo kädessään olevaa seteliä. Hän näkee sen: rotabo2244. Uteliaisuus tekee lopun. Hän kirjoittaa sen osoitteeseen rotabo.app — ja siinä olet. Nimesi. Lippusi. Mitä tarjoat. Todellinen ihminen, jonka kuka tahansa, missä tahansa, joka koskaan pitää sitä paperinpalaa, voi löytää.</p><p>Mikään mainostaulu ei matkaa niin kauas. Mikään mainos ei elä niin kauan. Seteli pysyy liikkeessä vuosia ja kulkee satojen käsien läpi — ja jokainen niistä voi löytää sinut. Yksi kynä. Yksi numero. Koko maailmasta tulee mainoksesi.</p>",
+    "fineprint": "Seteleihin kirjoittaminen on oma valintasi. Tarkista paikalliset lait."
+  },
+
   "nav": {
     "how": "Näin se toimii",
     "safety": "Turvallisuus",
@@ -7,6 +20,11 @@
     "drivers": "Kuljettajat"
   },
   "hero": {
+    "number_intro": "Jokaisella Rotabossa on numero. Yksi numero. Sinun ikuisesti. Se kertoo, kuka olet, missä olet ja mitä osaat — kuka tahansa maapallolla löytää sinut.",
+    "search_placeholder": "Etsi Rotabo-numero — esim. 2244",
+    "search_btn": "Hae",
+    "get_number": "Hanki numerosi",
+
     "origin_badge": "🇨🇭 Valmistettu Sveitsissä — koko maailmalle",
     "tagline3": "Sinun autosi.",
     "lede": "Valitse, mitä tarvitset — tai ilmoittaudu jonkuna, joka voi auttaa.",
@@ -243,8 +261,8 @@
     "ios_step3": "Napauta oikeassa yläkulmassa <strong>\"Lisää\"</strong> — valmis."
   },
   "visibility": {
-    "phone_hint": "Lisää maatunnuksesi — tämä numero näkyy kaikille selaajille.",
-    "address_hint": "Tämä näkyy kaikille selaajille, samoin kuin puhelinnumerosi.",
+    "phone_hint": "Lisää maasi suuntanumero. Numerosi näkyy vain kävijöille, jotka ovat maksaneet täydestä pääsystä — ei kaikille, jotka selaavat.",
+    "address_hint": "Osoitteesi näkyy vain kävijöille, jotka ovat maksaneet täydestä pääsystä, aivan kuten puhelinnumerosi.",
     "tier_label": "Näkyvyys",
     "period_1mo": "1 kuukausi",
     "period_12mo": "12 kuukautta"

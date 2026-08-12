@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Már itt vannak.",
+    "note": "A böngészés ingyenes. Oldd fel az összes részletet, és lépj kapcsolatba bárkivel — 1 CHF egy hónapra, 2 CHF egy évre.",
+    "loading": "Betöltés…",
+    "empty": "Legyél az első — szerezd meg a számod.",
+    "not_found": "Még nincs aktív Rotabo-szám {n}."
+  },
+  "banknote": {
+    "title": "A számod bejárja a világot. Neked nem kell.",
+    "body": "<p>Végy ki egy bankjegyet a pénztárcádból. Bármelyiket. Mielőtt elköltenéd, írj rá hat kis karaktert: rotabo2244 — a te számod. Aztán engedd útjára.</p><p>Holnap valakinek a kávéját fizeti. Jövő héten aprópénz egy taxiban három várossal odébb. Jövő hónapban határt lép át egy idegen zsebében. A pénz sosem áll meg — és mostantól a neved sem.</p><p>Valahol valaki ránéz a kezében lévő bankjegyre. Meglátja: rotabo2244. A kíváncsiság elvégzi a többit. Beírja a rotabo.app-ba — és ott vagy. A neved. A zászlód. Amit kínálsz. Egy valódi ember, akit bárki, bárhol megtalálhat, aki valaha kézbe veszi azt a papírdarabot.</p><p>Egyetlen óriásplakát sem utazik ilyen messzire. Egyetlen hirdetés sem él ilyen sokáig. Egy bankjegy évekig forgalomban marad, több száz kézen megy át — és mindegyik megtalálhat téged. Egy toll. Egy szám. Az egész világ a hirdetéseddé válik.</p>",
+    "fineprint": "A bankjegyekre írás a saját döntésed. Ellenőrizd a helyi törvényeket."
+  },
+
   "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök" },
   "hero": {
+    "number_intro": "A Rotabón mindenkinek van egy száma. Egyetlen szám. Örökre a tiéd. Elmondja, ki vagy, hol vagy és mit tudsz — a Föld bárkije megtalálhat.",
+    "search_placeholder": "Keress egy Rotabo-számot — pl. 2244",
+    "search_btn": "Keresés",
+    "get_number": "Szerezd meg a számod",
+
     "origin_badge": "🇨🇭 Svájcban készült — az egész világnak",
     "tagline3": "A te autód.",
     "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
@@ -208,8 +226,8 @@
     "ios_step3": "Koppints a jobb felső sarokban a <strong>„Hozzáadás”</strong> gombra — kész."
   },
   "visibility": {
-    "phone_hint": "Add meg az országhívó kódodat — ezt a számot mindenki látni fogja, aki böngészik.",
-    "address_hint": "Ez látható lesz mindenki számára, aki böngészik, ugyanúgy, mint a telefonszámod.",
+    "phone_hint": "Add meg az országhívószámod. A számodat csak azok a látogatók látják, akik fizettek a teljes hozzáférésért — nem mindenki, aki böngész.",
+    "address_hint": "A címedet csak azok a látogatók látják, akik fizettek a teljes hozzáférésért, ugyanúgy, mint a telefonszámodat.",
     "tier_label": "Láthatóság",
     "period_1mo": "1 hónap",
     "period_12mo": "12 hónap"

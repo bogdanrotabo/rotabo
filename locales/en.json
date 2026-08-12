@@ -9,6 +9,10 @@
   },
   "hero": {
     "origin_badge": "🇨🇭 Made in Switzerland — for the whole world",
+    "number_intro": "Everyone on Rotabo has a number. One number. Yours forever. It says who you are, where you are, and what you can do — findable by anyone on Earth.",
+    "search_placeholder": "Find a Rotabo number — e.g. 2244",
+    "search_btn": "Search",
+    "get_number": "Get your number",
     "tagline3": "Your car.",
     "lede": "Pick what you need — or list yourself as someone who can help.",
     "cta_find": "Find what you need",
@@ -23,6 +27,18 @@
     "badge_verified": "Verified users",
     "badge_live": "Live journey sharing",
     "badge_pay": "Google Pay / Apple Pay"
+  },
+  "here": {
+    "title": "They're already here.",
+    "note": "Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.",
+    "loading": "Loading…",
+    "empty": "Be the first — get your number.",
+    "not_found": "No active Rotabo number {n} yet."
+  },
+  "banknote": {
+    "title": "Your number travels the world. You don't have to.",
+    "body": "<p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo2244 — your number. Then let it go.</p><p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p><p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p><p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>",
+    "fineprint": "Writing on banknotes is your own choice. Check your local laws."
   },
   "works": {
     "eyebrow": "HOW ROTABO WORKS",
@@ -293,8 +309,8 @@
   },
   "visibility": {
     "email_hint": "Use a real address — we'll send a verification code here before your listing goes live.",
-    "phone_hint": "Include your country code — this number will be visible to whoever is browsing.",
-    "address_hint": "This will be visible to whoever is browsing, same as your phone number.",
+    "phone_hint": "Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.",
+    "address_hint": "Your address is shown only to viewers who paid for full access, same as your phone number.",
     "tier_label": "Visibility",
     "period_1mo": "1 month",
     "period_12mo": "12 months"

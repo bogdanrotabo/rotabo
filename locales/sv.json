@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "De är redan här.",
+    "note": "Att bläddra är gratis. Lås upp alla detaljer och kontakta vem som helst — 1 CHF för en månad, 2 CHF för ett år.",
+    "loading": "Laddar…",
+    "empty": "Var först — skaffa ditt nummer.",
+    "not_found": "Ännu inget aktivt Rotabo-nummer {n}."
+  },
+  "banknote": {
+    "title": "Ditt nummer reser jorden runt. Det behöver inte du.",
+    "body": "<p>Ta en sedel ur plånboken. Vilken som helst. Innan du spenderar den, skriv sex små tecken på den: rotabo2244 — ditt nummer. Släpp den sedan.</p><p>Imorgon betalar den någons kaffe. Nästa vecka är den växel i en taxi tre städer bort. Nästa månad korsar den en gräns i en främlings ficka. Pengar slutar aldrig röra sig — och nu gör inte ditt namn det heller.</p><p>Någonstans tittar någon på sedeln i sin hand. De ser det: rotabo2244. Nyfikenheten gör resten. De skriver in det på rotabo.app — och där är du. Ditt namn. Din flagga. Vad du erbjuder. En verklig människa, hittbar av vem som helst, var som helst, som någonsin håller den papperslappen.</p><p>Ingen reklamtavla reser så långt. Ingen annons lever så länge. En sedel är i omlopp i åratal och passerar genom hundratals händer — och var och en av dem kan hitta dig. En penna. Ett nummer. Hela världen blir din reklam.</p>",
+    "fineprint": "Att skriva på sedlar är ditt eget val. Kontrollera de lokala lagarna."
+  },
+
   "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare" },
   "hero": {
+    "number_intro": "Alla på Rotabo har ett nummer. Ett nummer. Ditt för alltid. Det säger vem du är, var du är och vad du kan — hittbar av vem som helst på jorden.",
+    "search_placeholder": "Hitta ett Rotabo-nummer — t.ex. 2244",
+    "search_btn": "Sök",
+    "get_number": "Skaffa ditt nummer",
+
     "origin_badge": "🇨🇭 Tillverkad i Schweiz — för hela världen",
     "tagline3": "Din bil.",
     "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
@@ -208,8 +226,8 @@
     "ios_step3": "Tryck på <strong>\"Lägg till\"</strong> uppe till höger — klart."
   },
   "visibility": {
-    "phone_hint": "Ange ditt landsnummer — detta nummer blir synligt för alla som bläddrar.",
-    "address_hint": "Detta kommer att vara synligt för alla som bläddrar, precis som ditt telefonnummer.",
+    "phone_hint": "Ange din landskod. Ditt nummer syns bara för besökare som betalat för full åtkomst — inte för alla som bläddrar.",
+    "address_hint": "Din adress syns bara för besökare som betalat för full åtkomst, precis som ditt telefonnummer.",
     "tier_label": "Synlighet",
     "period_1mo": "1 månad",
     "period_12mo": "12 månader"

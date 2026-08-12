@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Họ đã ở đây rồi.",
+    "note": "Duyệt xem miễn phí. Mở khóa toàn bộ chi tiết và liên hệ với bất kỳ ai — 1 CHF cho một tháng, 2 CHF cho một năm.",
+    "loading": "Đang tải…",
+    "empty": "Hãy là người đầu tiên — nhận số của bạn.",
+    "not_found": "Chưa có số Rotabo hoạt động {n}."
+  },
+  "banknote": {
+    "title": "Con số của bạn đi khắp thế giới. Bạn thì không cần.",
+    "body": "<p>Lấy một tờ tiền ra khỏi ví. Bất kỳ tờ nào. Trước khi tiêu nó, hãy viết lên đó sáu ký tự nhỏ: rotabo2244 — con số của bạn. Rồi để nó ra đi.</p><p>Ngày mai nó trả tiền cà phê cho ai đó. Tuần sau nó là tiền thối trong một chiếc taxi cách ba thành phố. Tháng sau nó vượt biên giới trong túi một người lạ. Tiền không bao giờ ngừng di chuyển — và bây giờ, tên bạn cũng vậy.</p><p>Ở đâu đó, ai đó nhìn tờ tiền trên tay mình. Họ thấy nó: rotabo2244. Sự tò mò làm phần còn lại. Họ gõ nó vào rotabo.app — và bạn ở đó. Tên bạn. Lá cờ của bạn. Những gì bạn cung cấp. Một con người thật, có thể được tìm thấy bởi bất kỳ ai, ở bất kỳ đâu, từng cầm mảnh giấy đó.</p><p>Không tấm biển quảng cáo nào đi xa đến thế. Không quảng cáo nào sống lâu đến thế. Một tờ tiền lưu hành trong nhiều năm, đi qua hàng trăm bàn tay — và mỗi bàn tay đều có thể tìm thấy bạn. Một cây bút. Một con số. Cả thế giới trở thành quảng cáo của bạn.</p>",
+    "fineprint": "Viết lên tiền giấy là lựa chọn của riêng bạn. Hãy kiểm tra luật pháp địa phương."
+  },
+
   "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế" },
   "hero": {
+    "number_intro": "Mọi người trên Rotabo đều có một số. Một con số. Của bạn mãi mãi. Nó cho biết bạn là ai, bạn ở đâu và bạn có thể làm gì — bất kỳ ai trên Trái Đất đều có thể tìm thấy bạn.",
+    "search_placeholder": "Tìm một số Rotabo — ví dụ 2244",
+    "search_btn": "Tìm",
+    "get_number": "Nhận số của bạn",
+
     "origin_badge": "🇨🇭 Sản xuất tại Thụy Sĩ — cho cả thế giới",
     "tagline3": "Xe của bạn.",
     "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
@@ -208,8 +226,8 @@
     "ios_step3": "Nhấn <strong>\"Thêm\"</strong> ở góc trên bên phải — xong."
   },
   "visibility": {
-    "phone_hint": "Thêm mã quốc gia của bạn — số này sẽ hiển thị cho bất kỳ ai đang duyệt xem.",
-    "address_hint": "Điều này sẽ hiển thị cho bất kỳ ai đang duyệt, giống như số điện thoại của bạn.",
+    "phone_hint": "Bao gồm mã quốc gia của bạn. Số của bạn chỉ hiển thị cho khách đã trả phí truy cập đầy đủ — không phải mọi người duyệt xem.",
+    "address_hint": "Địa chỉ của bạn chỉ hiển thị cho khách đã trả phí truy cập đầy đủ, giống như số điện thoại của bạn.",
     "tier_label": "Hiển thị",
     "period_1mo": "1 tháng",
     "period_12mo": "12 tháng"

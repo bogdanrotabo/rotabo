@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Oni już tu są.",
+    "note": "Przeglądanie jest darmowe. Odblokuj wszystkie szczegóły i skontaktuj się z każdym — 1 CHF za miesiąc, 2 CHF za rok.",
+    "loading": "Ładowanie…",
+    "empty": "Bądź pierwszy — zdobądź swój numer.",
+    "not_found": "Nie ma jeszcze aktywnego numeru Rotabo {n}."
+  },
+  "banknote": {
+    "title": "Twój numer podróżuje po świecie. Ty nie musisz.",
+    "body": "<p>Wyjmij banknot z portfela. Dowolny. Zanim go wydasz, napisz na nim sześć małych znaków: rotabo2244 — twój numer. Potem pozwól mu odejść.</p><p>Jutro zapłaci za czyjąś kawę. Za tydzień będzie resztą w taksówce trzy miasta dalej. Za miesiąc przekroczy granicę w kieszeni nieznajomego. Pieniądze nigdy nie przestają się poruszać — a teraz twoje imię też nie.</p><p>Gdzieś ktoś patrzy na banknot w swojej dłoni. Widzi to: rotabo2244. Ciekawość robi resztę. Wpisuje to na rotabo.app — i oto jesteś. Twoje imię. Twoja flaga. To, co oferujesz. Prawdziwy człowiek, do znalezienia przez każdego, wszędzie, kto kiedykolwiek trzyma ten kawałek papieru.</p><p>Żaden billboard nie podróżuje tak daleko. Żadna reklama nie żyje tak długo. Banknot pozostaje w obiegu latami, przechodząc przez setki rąk — i każda z nich może cię znaleźć. Jeden długopis. Jeden numer. Cały świat staje się twoją reklamą.</p>",
+    "fineprint": "Pisanie na banknotach to twój własny wybór. Sprawdź lokalne przepisy."
+  },
+
   "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy" },
   "hero": {
+    "number_intro": "Każdy na Rotabo ma numer. Jeden numer. Twój na zawsze. Mówi, kim jesteś, gdzie jesteś i co potrafisz — do znalezienia przez każdego na Ziemi.",
+    "search_placeholder": "Znajdź numer Rotabo — np. 2244",
+    "search_btn": "Szukaj",
+    "get_number": "Zdobądź swój numer",
+
     "origin_badge": "🇨🇭 Zrobione w Szwajcarii — dla całego świata",
     "tagline3": "Twój samochód.",
     "lede": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
@@ -208,8 +226,8 @@
     "ios_step3": "Stuknij <strong>\"Dodaj\"</strong> w prawym górnym rogu — gotowe."
   },
   "visibility": {
-    "phone_hint": "Podaj numer kierunkowy swojego kraju — ten numer będzie widoczny dla każdego, kto przegląda ogłoszenia.",
-    "address_hint": "Będzie to widoczne dla każdego, kto przegląda, tak samo jak twój numer telefonu.",
+    "phone_hint": "Podaj swój numer kierunkowy kraju. Twój numer widzą tylko odwiedzający, którzy zapłacili za pełny dostęp — nie każdy, kto przegląda.",
+    "address_hint": "Twój adres widzą tylko odwiedzający, którzy zapłacili za pełny dostęp, tak samo jak numer telefonu.",
     "tier_label": "Widoczność",
     "period_1mo": "1 miesiąc",
     "period_12mo": "12 miesięcy"

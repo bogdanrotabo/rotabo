@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Už sú tu.",
+    "note": "Prehliadanie je zadarmo. Odomkni všetky podrobnosti a kontaktuj kohokoľvek — 1 CHF na mesiac, 2 CHF na rok.",
+    "loading": "Načítava sa…",
+    "empty": "Buď prvý — získaj svoje číslo.",
+    "not_found": "Zatiaľ žiadne aktívne číslo Rotabo {n}."
+  },
+  "banknote": {
+    "title": "Tvoje číslo cestuje po svete. Ty nemusíš.",
+    "body": "<p>Vytiahni z peňaženky bankovku. Akúkoľvek. Skôr než ju minieš, napíš na ňu šesť malých znakov: rotabo2244 — tvoje číslo. Potom ju nechaj ísť.</p><p>Zajtra zaplatí niekomu kávu. Budúci týždeň bude drobnými v taxíku o tri mestá ďalej. Budúci mesiac prekročí hranicu vo vrecku cudzinca. Peniaze sa nikdy neprestanú pohybovať — a teraz ani tvoje meno.</p><p>Niekde sa niekto pozrie na bankovku vo svojej ruke. Vidí to: rotabo2244. Zvedavosť urobí zvyšok. Napíše to na rotabo.app — a si tam. Tvoje meno. Tvoja vlajka. Čo ponúkaš. Skutočný človek, nájditeľný kýmkoľvek, kdekoľvek, kto kedy drží ten kus papiera.</p><p>Žiadny billboard necestuje tak ďaleko. Žiadna reklama nežije tak dlho. Bankovka zostáva v obehu roky a prejde stovkami rúk — a každá z nich ťa môže nájsť. Jedno pero. Jedno číslo. Celý svet sa stane tvojou reklamou.</p>",
+    "fineprint": "Písanie na bankovky je tvoja vlastná voľba. Skontroluj miestne zákony."
+  },
+
   "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Vodiči" },
   "hero": {
+    "number_intro": "Každý na Rotabe má číslo. Jedno číslo. Navždy tvoje. Hovorí, kto si, kde si a čo dokážeš — nájditeľný kýmkoľvek na Zemi.",
+    "search_placeholder": "Nájdi číslo Rotabo — napr. 2244",
+    "search_btn": "Hľadať",
+    "get_number": "Získaj svoje číslo",
+
     "origin_badge": "🇨🇭 Vyrobené vo Švajčiarsku — pre celý svet",
     "tagline3": "Tvoje auto.",
     "lede": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
@@ -208,8 +226,8 @@
     "ios_step3": "Ťuknite na <strong>„Pridať“</strong> vpravo hore — hotovo."
   },
   "visibility": {
-    "phone_hint": "Zadaj predvoľbu svojej krajiny — toto číslo uvidí každý, kto si ponuky prezerá.",
-    "address_hint": "Toto bude viditeľné pre každého, kto si prezerá ponuky, rovnako ako tvoje telefónne číslo.",
+    "phone_hint": "Uveď svoju telefónnu predvoľbu krajiny. Tvoje číslo vidia len návštevníci, ktorí zaplatili plný prístup — nie každý, kto prehliada.",
+    "address_hint": "Tvoju adresu vidia len návštevníci, ktorí zaplatili plný prístup, rovnako ako telefónne číslo.",
     "tier_label": "Viditeľnosť",
     "period_1mo": "1 mesiac",
     "period_12mo": "12 mesiacov"

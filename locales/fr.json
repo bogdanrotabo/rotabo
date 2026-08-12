@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Ils sont déjà là.",
+    "note": "La navigation est gratuite. Débloquez tous les détails et contactez n'importe qui — 1 CHF pour un mois, 2 CHF pour un an.",
+    "loading": "Chargement…",
+    "empty": "Soyez le premier — obtenez votre numéro.",
+    "not_found": "Aucun numéro Rotabo actif {n} pour l'instant."
+  },
+  "banknote": {
+    "title": "Votre numéro voyage dans le monde. Pas vous.",
+    "body": "<p>Sortez un billet de votre portefeuille. N'importe lequel. Avant de le dépenser, écrivez dessus six petits caractères : rotabo2244 — votre numéro. Puis laissez-le partir.</p><p>Demain il paie le café de quelqu'un. La semaine prochaine, c'est de la monnaie dans un taxi à trois villes de là. Le mois prochain, il franchit une frontière dans la poche d'un inconnu. L'argent ne cesse jamais de circuler — et désormais, votre nom non plus.</p><p>Quelque part, quelqu'un regarde le billet dans sa main. Il le voit : rotabo2244. La curiosité fait le reste. Il le tape sur rotabo.app — et vous voilà. Votre nom. Votre drapeau. Ce que vous offrez. Une personne réelle, trouvable par n'importe qui, n'importe où, qui tient un jour ce morceau de papier.</p><p>Aucun panneau publicitaire ne voyage aussi loin. Aucune annonce ne vit aussi longtemps. Un billet reste en circulation pendant des années, passant entre des centaines de mains — et chacune d'elles peut vous trouver. Un stylo. Un numéro. Le monde entier devient votre publicité.</p>",
+    "fineprint": "Écrire sur les billets est votre propre choix. Vérifiez les lois locales."
+  },
+
   "nav": {
     "how": "Comment ça marche",
     "safety": "Sécurité",
@@ -7,6 +20,11 @@
     "drivers": "Chauffeurs"
   },
   "hero": {
+    "number_intro": "Chacun sur Rotabo a un numéro. Un seul numéro. Le vôtre pour toujours. Il dit qui vous êtes, où vous êtes et ce que vous pouvez faire — trouvable par n'importe qui sur Terre.",
+    "search_placeholder": "Trouver un numéro Rotabo — ex. 2244",
+    "search_btn": "Rechercher",
+    "get_number": "Obtenez votre numéro",
+
     "origin_badge": "🇨🇭 Conçu en Suisse — pour le monde entier",
     "tagline3": "Votre voiture.",
     "lede": "Choisis ce dont tu as besoin — ou inscris-toi comme quelqu'un qui peut aider.",
@@ -243,8 +261,8 @@
     "ios_step3": "Appuyez sur <strong>« Ajouter »</strong> en haut à droite — terminé."
   },
   "visibility": {
-    "phone_hint": "Indique ton indicatif de pays — ce numéro sera visible par toute personne qui consulte les annonces.",
-    "address_hint": "Ceci sera visible par toute personne qui consulte les annonces, comme ton numéro de téléphone.",
+    "phone_hint": "Indiquez votre indicatif pays. Votre numéro n'est visible que par les visiteurs ayant payé l'accès complet — pas par tous ceux qui naviguent.",
+    "address_hint": "Votre adresse n'est visible que par les visiteurs ayant payé l'accès complet, comme votre numéro de téléphone.",
     "tier_label": "Visibilité",
     "period_1mo": "1 mois",
     "period_12mo": "12 mois"

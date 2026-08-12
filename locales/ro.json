@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Sunt deja aici.",
+    "note": "Navigarea e gratuită. Deblochează toate detaliile și contactează pe oricine — 1 CHF pentru o lună, 2 CHF pentru un an.",
+    "loading": "Se încarcă…",
+    "empty": "Fii primul — ia-ți numărul.",
+    "not_found": "Niciun număr Rotabo activ {n} încă."
+  },
+  "banknote": {
+    "title": "Numărul tău călătorește prin lume. Tu nu trebuie.",
+    "body": "<p>Scoate o bancnotă din portofel. Oricare. Înainte s-o cheltui, scrie pe ea șase caractere mici: rotabo2244 — numărul tău. Apoi las-o să plece.</p><p>Mâine plătește cafeaua cuiva. Săptămâna viitoare e rest într-un taxi la trei orașe distanță. Luna viitoare trece o graniță în buzunarul unui străin. Banii nu se opresc niciodată din mișcare — și acum, nici numele tău.</p><p>Undeva, cineva privește bancnota din mâna sa. O vede: rotabo2244. Curiozitatea face restul. O tastează pe rotabo.app — și acolo ești. Numele tău. Steagul tău. Ce oferi. O persoană reală, găsibilă de oricine, oriunde, care ține vreodată acea bucată de hârtie.</p><p>Niciun panou publicitar nu ajunge atât de departe. Nicio reclamă nu trăiește atât de mult. O bancnotă rămâne în circulație ani de zile, trecând prin sute de mâini — și fiecare dintre ele te poate găsi. Un pix. Un număr. Lumea întreagă devine reclama ta.</p>",
+    "fineprint": "Scrisul pe bancnote este alegerea ta. Verifică legile locale."
+  },
+
   "nav": {
     "how": "Cum funcționează",
     "safety": "Siguranță",
@@ -8,6 +21,11 @@
     "account": "Contul meu"
   },
   "hero": {
+    "number_intro": "Fiecare om de pe Rotabo are un număr. Un singur număr. Al tău pentru totdeauna. Spune cine ești, unde ești și ce poți face — găsibil de oricine de pe Pământ.",
+    "search_placeholder": "Caută un număr Rotabo — ex. 2244",
+    "search_btn": "Caută",
+    "get_number": "Ia-ți numărul",
+
     "origin_badge": "🇨🇭 Făcut în Elveția — pentru toată lumea",
     "tagline3": "Mașina ta.",
     "lede": "Alege ce ai nevoie — sau listează-te ca cineva care poate ajuta.",
@@ -293,8 +311,8 @@
   },
   "visibility": {
     "email_hint": "Folosește o adresă reală — trimitem aici un cod de verificare înainte ca listarea ta să devină vizibilă.",
-    "phone_hint": "Include prefixul de țară — acest număr va fi vizibil pentru oricine navighează.",
-    "address_hint": "Aceasta va fi vizibilă pentru oricine navighează, la fel ca numărul tău de telefon.",
+    "phone_hint": "Include prefixul țării. Numărul tău e vizibil doar pentru vizitatorii care au plătit acces complet — nu pentru oricine navighează.",
+    "address_hint": "Adresa ta e vizibilă doar pentru vizitatorii care au plătit acces complet, la fel ca numărul de telefon.",
     "tier_label": "Vizibilitate",
     "period_1mo": "1 lună",
     "period_12mo": "12 luni"

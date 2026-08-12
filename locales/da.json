@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "De er her allerede.",
+    "note": "At kigge er gratis. Lås alle detaljer op og kontakt hvem som helst — 1 CHF for en måned, 2 CHF for et år.",
+    "loading": "Indlæser…",
+    "empty": "Vær den første — få dit nummer.",
+    "not_found": "Endnu intet aktivt Rotabo-nummer {n}."
+  },
+  "banknote": {
+    "title": "Dit nummer rejser verden rundt. Det behøver du ikke.",
+    "body": "<p>Tag en pengeseddel op af din pung. En hvilken som helst. Før du bruger den, skriv seks små tegn på den: rotabo2244 — dit nummer. Slip den så.</p><p>I morgen betaler den nogens kaffe. Næste uge er den byttepenge i en taxa tre byer væk. Næste måned krydser den en grænse i en fremmeds lomme. Penge holder aldrig op med at bevæge sig — og nu gør dit navn det heller ikke.</p><p>Et sted kigger nogen på sedlen i hånden. De ser det: rotabo2244. Nysgerrigheden gør resten. De taster det ind på rotabo.app — og der er du. Dit navn. Dit flag. Hvad du tilbyder. Et rigtigt menneske, findbar for alle, overalt, som nogensinde holder det stykke papir.</p><p>Ingen reklametavle rejser så langt. Ingen annonce lever så længe. En pengeseddel er i omløb i årevis og går gennem hundredvis af hænder — og hver eneste kan finde dig. En kuglepen. Et nummer. Hele verden bliver din reklame.</p>",
+    "fineprint": "At skrive på pengesedler er dit eget valg. Tjek de lokale love."
+  },
+
   "nav": {
     "how": "Sådan fungerer det",
     "safety": "Sikkerhed",
@@ -7,6 +20,11 @@
     "drivers": "Chauffører"
   },
   "hero": {
+    "number_intro": "Alle på Rotabo har et nummer. Ét nummer. Dit for altid. Det fortæller, hvem du er, hvor du er, og hvad du kan — findbar for alle på Jorden.",
+    "search_placeholder": "Find et Rotabo-nummer — f.eks. 2244",
+    "search_btn": "Søg",
+    "get_number": "Få dit nummer",
+
     "origin_badge": "🇨🇭 Lavet i Schweiz — til hele verden",
     "tagline3": "Din bil.",
     "lede": "Vælg, hvad du har brug for — eller tilmeld dig som en, der kan hjælpe.",
@@ -243,8 +261,8 @@
     "ios_step3": "Tryk på <strong>\"Tilføj\"</strong> øverst til højre — færdig."
   },
   "visibility": {
-    "phone_hint": "Angiv dit landekode — dette nummer vil være synligt for alle, der browser.",
-    "address_hint": "Dette vil være synligt for alle, der browser, ligesom dit telefonnummer.",
+    "phone_hint": "Angiv din landekode. Dit nummer ses kun af besøgende, der har betalt for fuld adgang — ikke af alle, der kigger.",
+    "address_hint": "Din adresse ses kun af besøgende, der har betalt for fuld adgang, ligesom dit telefonnummer.",
     "tier_label": "Synlighed",
     "period_1mo": "1 måned",
     "period_12mo": "12 måneder"

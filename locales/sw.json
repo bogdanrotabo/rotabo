@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Tayari wako hapa.",
+    "note": "Kuvinjari ni bure. Fungua maelezo yote na wasiliana na yeyote — 1 CHF kwa mwezi, 2 CHF kwa mwaka.",
+    "loading": "Inapakia…",
+    "empty": "Kuwa wa kwanza — pata nambari yako.",
+    "not_found": "Bado hakuna nambari ya Rotabo inayotumika {n}."
+  },
+  "banknote": {
+    "title": "Nambari yako inasafiri dunia. Wewe huhitaji.",
+    "body": "<p>Toa noti kwenye pochi yako. Yoyote ile. Kabla ya kuitumia, andika herufi sita ndogo juu yake: rotabo2244 — nambari yako. Kisha iachilie iende.</p><p>Kesho italipa kahawa ya mtu. Wiki ijayo ni chenji katika teksi miji mitatu mbali. Mwezi ujao inavuka mpaka kwenye mfuko wa mgeni. Pesa haziachi kamwe kutembea — na sasa, wala jina lako.</p><p>Mahali fulani, mtu anatazama noti mkononi mwake. Anaiona: rotabo2244. Udadisi hufanya mengine. Anaiandika kwenye rotabo.app — na hapo ndipo ulipo. Jina lako. Bendera yako. Unachotoa. Mtu halisi, anayeweza kupatikana na yeyote, popote, anayeishika karatasi hiyo wakati wowote.</p><p>Hakuna bango la matangazo linalosafiri mbali kiasi hicho. Hakuna tangazo linaloishi muda mrefu kiasi hicho. Noti hubaki kwenye mzunguko kwa miaka, ikipita mikononi mwa mamia — na kila mmoja wao anaweza kukupata. Kalamu moja. Nambari moja. Dunia nzima inakuwa tangazo lako.</p>",
+    "fineprint": "Kuandika kwenye noti ni chaguo lako mwenyewe. Angalia sheria za eneo lako."
+  },
+
   "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Madereva" },
   "hero": {
+    "number_intro": "Kila mtu kwenye Rotabo ana nambari. Nambari moja. Yako milele. Inasema wewe ni nani, uko wapi na unaweza kufanya nini — unaweza kupatikana na yeyote Duniani.",
+    "search_placeholder": "Tafuta nambari ya Rotabo — mf. 2244",
+    "search_btn": "Tafuta",
+    "get_number": "Pata nambari yako",
+
     "origin_badge": "🇨🇭 Imetengenezwa Uswisi — kwa ulimwengu wote",
     "tagline3": "Gari lako.",
     "lede": "Chagua unachohitaji — au jiorodheshe kama mtu anayeweza kusaidia.",
@@ -208,8 +226,8 @@
     "ios_step3": "Gusa <strong>\"Ongeza\"</strong> kona ya juu kulia — imekamilika."
   },
   "visibility": {
-    "phone_hint": "Weka msimbo wa nchi yako — namba hii itaonekana kwa yeyote anayevinjari.",
-    "address_hint": "Hii itaonekana kwa yeyote anayevinjari, kama vile nambari yako ya simu.",
+    "phone_hint": "Jumuisha msimbo wa nchi yako. Nambari yako inaonekana tu kwa wageni waliolipia ufikiaji kamili — si kila anayevinjari.",
+    "address_hint": "Anwani yako inaonekana tu kwa wageni waliolipia ufikiaji kamili, sawa na nambari yako ya simu.",
     "tier_label": "Kuonekana",
     "period_1mo": "Mwezi 1",
     "period_12mo": "Miezi 12"

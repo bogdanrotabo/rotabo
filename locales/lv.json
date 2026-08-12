@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Viņi jau ir šeit.",
+    "note": "Pārlūkošana ir bez maksas. Atbloķē visas detaļas un sazinies ar jebkuru — 1 CHF par mēnesi, 2 CHF par gadu.",
+    "loading": "Ielādē…",
+    "empty": "Esi pirmais — iegūsti savu numuru.",
+    "not_found": "Vēl nav aktīva Rotabo numura {n}."
+  },
+  "banknote": {
+    "title": "Tavs numurs ceļo pa pasauli. Tev nav jāceļo.",
+    "body": "<p>Izņem no maka banknoti. Jebkuru. Pirms to iztērē, uzraksti uz tās sešas mazas zīmes: rotabo2244 — tavs numurs. Tad ļauj tai aiziet.</p><p>Rīt tā samaksās kāda kafiju. Nākamnedēļ tā būs sīknauda taksometrā trīs pilsētas tālāk. Nākammēnes tā šķērsos robežu sveša cilvēka kabatā. Nauda nekad nepārstāj kustēties — un tagad arī tavs vārds ne.</p><p>Kaut kur kāds paskatās uz banknoti savā rokā. Viņš to redz: rotabo2244. Ziņkāre izdara pārējo. Viņš to ieraksta vietnē rotabo.app — un tur nu tu esi. Tavs vārds. Tavs karogs. Ko tu piedāvā. Īsts cilvēks, atrodams jebkuram, jebkur, kas jebkad tur rokā to papīra gabaliņu.</p><p>Neviens reklāmas stends neceļo tik tālu. Neviena reklāma nedzīvo tik ilgi. Banknote paliek apgrozībā gadiem un iziet cauri simtiem roku — un katra no tām var tevi atrast. Viena pildspalva. Viens numurs. Visa pasaule kļūst par tavu reklāmu.</p>",
+    "fineprint": "Rakstīšana uz banknotēm ir tava paša izvēle. Pārbaudi vietējos likumus."
+  },
+
   "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi" },
   "hero": {
+    "number_intro": "Katram Rotabo lietotājam ir numurs. Viens numurs. Tavs mūžīgi. Tas pasaka, kas tu esi, kur tu esi un ko tu proti — atrodams jebkuram uz Zemes.",
+    "search_placeholder": "Atrodi Rotabo numuru — piem., 2244",
+    "search_btn": "Meklēt",
+    "get_number": "Iegūsti savu numuru",
+
     "origin_badge": "🇨🇭 Ražots Šveicē — visai pasaulei",
     "tagline3": "Tava mašīna.",
     "lede": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
@@ -208,8 +226,8 @@
     "ios_step3": "Pieskarieties <strong>\"Pievienot\"</strong> augšējā labajā stūrī — gatavs."
   },
   "visibility": {
-    "phone_hint": "Norādi savas valsts kodu — šis numurs būs redzams ikvienam, kas pārlūko sludinājumus.",
-    "address_hint": "Šis būs redzams ikvienam, kas pārlūko, tāpat kā tavs tālruņa numurs.",
+    "phone_hint": "Norādi savas valsts kodu. Tavu numuru redz tikai apmeklētāji, kuri samaksājuši par pilnu piekļuvi — nevis ikviens, kas pārlūko.",
+    "address_hint": "Tavu adresi redz tikai apmeklētāji, kuri samaksājuši par pilnu piekļuvi, tāpat kā tālruņa numuru.",
     "tier_label": "Redzamība",
     "period_1mo": "1 mēnesis",
     "period_12mo": "12 mēneši"

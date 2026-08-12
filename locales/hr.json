@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Već su ovdje.",
+    "note": "Pregledavanje je besplatno. Otključaj sve detalje i kontaktiraj bilo koga — 1 CHF za mjesec, 2 CHF za godinu.",
+    "loading": "Učitavanje…",
+    "empty": "Budi prvi — nabavi svoj broj.",
+    "not_found": "Još nema aktivnog Rotabo broja {n}."
+  },
+  "banknote": {
+    "title": "Tvoj broj putuje svijetom. Ti ne moraš.",
+    "body": "<p>Izvadi novčanicu iz novčanika. Bilo koju. Prije nego je potrošiš, napiši na nju šest malih znakova: rotabo2244 — tvoj broj. Zatim je pusti.</p><p>Sutra plaća nečiju kavu. Sljedeći tjedan je sitniš u taksiju tri grada dalje. Sljedeći mjesec prelazi granicu u džepu stranca. Novac se nikad ne prestaje kretati — a sada ni tvoje ime.</p><p>Negdje netko pogleda novčanicu u svojoj ruci. Vidi je: rotabo2244. Znatiželja učini ostalo. Utipka je na rotabo.app — i eto tebe. Tvoje ime. Tvoja zastava. Ono što nudiš. Stvarna osoba, pronađiva od bilo koga, bilo gdje, tko ikad drži taj komad papira.</p><p>Nijedan pano ne putuje tako daleko. Nijedan oglas ne živi tako dugo. Novčanica ostaje u optjecaju godinama, prolazeći kroz stotine ruku — i svaka od njih te može pronaći. Jedna olovka. Jedan broj. Cijeli svijet postaje tvoj oglas.</p>",
+    "fineprint": "Pisanje po novčanicama je tvoj vlastiti izbor. Provjeri lokalne zakone."
+  },
+
   "nav": {
     "how": "Kako funkcionira",
     "safety": "Sigurnost",
@@ -7,6 +20,11 @@
     "drivers": "Vozači"
   },
   "hero": {
+    "number_intro": "Svatko na Rotabu ima broj. Jedan broj. Tvoj zauvijek. Govori tko si, gdje si i što znaš — pronađiv od bilo koga na Zemlji.",
+    "search_placeholder": "Pronađi Rotabo broj — npr. 2244",
+    "search_btn": "Traži",
+    "get_number": "Nabavi svoj broj",
+
     "origin_badge": "🇨🇭 Izrađeno u Švicarskoj — za cijeli svijet",
     "tagline3": "Vaš automobil.",
     "lede": "Odaberi što ti treba — ili se prijavi kao netko tko može pomoći.",
@@ -243,8 +261,8 @@
     "ios_step3": "Dodirnite <strong>\"Dodaj\"</strong> u gornjem desnom kutu — gotovo."
   },
   "visibility": {
-    "phone_hint": "Unesi pozivni broj svoje države — ovaj broj bit će vidljiv svima koji pregledavaju oglase.",
-    "address_hint": "Ovo će biti vidljivo svima koji pregledavaju, isto kao i tvoj telefonski broj.",
+    "phone_hint": "Uključi svoj pozivni broj države. Tvoj broj vide samo posjetitelji koji su platili puni pristup — ne svatko tko pregledava.",
+    "address_hint": "Tvoju adresu vide samo posjetitelji koji su platili puni pristup, jednako kao broj telefona.",
     "tier_label": "Vidljivost",
     "period_1mo": "1 mjesec",
     "period_12mo": "12 mjeseci"

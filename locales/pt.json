@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Eles já estão aqui.",
+    "note": "Navegar é grátis. Desbloqueie todos os detalhes e contacte qualquer pessoa — 1 CHF por um mês, 2 CHF por um ano.",
+    "loading": "A carregar…",
+    "empty": "Seja o primeiro — obtenha o seu número.",
+    "not_found": "Ainda não há um número Rotabo ativo {n}."
+  },
+  "banknote": {
+    "title": "O seu número viaja pelo mundo. Você não precisa.",
+    "body": "<p>Tire uma nota do seu bolso. Qualquer uma. Antes de a gastar, escreva nela seis pequenos caracteres: rotabo2244 — o seu número. Depois deixe-a ir.</p><p>Amanhã paga o café de alguém. Na próxima semana é troco num táxi a três cidades de distância. No próximo mês atravessa uma fronteira no bolso de um desconhecido. O dinheiro nunca para de circular — e agora, o seu nome também não.</p><p>Nalgum lugar, alguém olha para a nota na sua mão. Vê-a: rotabo2244. A curiosidade faz o resto. Digita-a em rotabo.app — e aí está você. O seu nome. A sua bandeira. O que oferece. Uma pessoa real, encontrável por qualquer pessoa, em qualquer lugar, que alguma vez segure aquele pedaço de papel.</p><p>Nenhum outdoor viaja tão longe. Nenhum anúncio vive tanto tempo. Uma nota permanece em circulação durante anos, passando por centenas de mãos — e cada uma delas pode encontrá-lo. Uma caneta. Um número. O mundo inteiro torna-se o seu anúncio.</p>",
+    "fineprint": "Escrever em notas é a sua própria escolha. Verifique as leis locais."
+  },
+
   "nav": {
     "how": "Como funciona",
     "safety": "Segurança",
@@ -7,6 +20,11 @@
     "drivers": "Motoristas"
   },
   "hero": {
+    "number_intro": "Cada pessoa no Rotabo tem um número. Um número. Seu para sempre. Diz quem você é, onde está e o que sabe fazer — encontrável por qualquer pessoa na Terra.",
+    "search_placeholder": "Procure um número Rotabo — ex. 2244",
+    "search_btn": "Procurar",
+    "get_number": "Obtenha o seu número",
+
     "origin_badge": "🇨🇭 Feito na Suíça — para o mundo inteiro",
     "tagline3": "O teu carro.",
     "lede": "Escolhe o que precisas — ou inscreve-te como alguém que pode ajudar.",
@@ -243,8 +261,8 @@
     "ios_step3": "Toca em <strong>\"Adicionar\"</strong> no canto superior direito — pronto."
   },
   "visibility": {
-    "phone_hint": "Inclua o código do seu país — esse número ficará visível para quem estiver navegando.",
-    "address_hint": "Isto será visível para quem estiver a navegar, tal como o teu número de telefone.",
+    "phone_hint": "Inclua o indicativo do seu país. O seu número só é visível para visitantes que pagaram o acesso completo — não para todos os que navegam.",
+    "address_hint": "A sua morada só é visível para visitantes que pagaram o acesso completo, tal como o número de telefone.",
     "tier_label": "Visibilidade",
     "period_1mo": "1 mês",
     "period_12mo": "12 meses"

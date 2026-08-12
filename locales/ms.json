@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Mereka sudah ada di sini.",
+    "note": "Melayari adalah percuma. Buka kunci semua butiran dan hubungi sesiapa sahaja — 1 CHF untuk sebulan, 2 CHF untuk setahun.",
+    "loading": "Memuatkan…",
+    "empty": "Jadilah yang pertama — dapatkan nombor anda.",
+    "not_found": "Belum ada nombor Rotabo aktif {n}."
+  },
+  "banknote": {
+    "title": "Nombor anda mengembara ke seluruh dunia. Anda tidak perlu.",
+    "body": "<p>Keluarkan sekeping wang kertas dari dompet anda. Mana-mana sahaja. Sebelum anda membelanjakannya, tulis enam aksara kecil padanya: rotabo2244 — nombor anda. Kemudian lepaskannya.</p><p>Esok ia membayar kopi seseorang. Minggu depan ia menjadi baki di dalam teksi tiga bandar jauhnya. Bulan depan ia melintasi sempadan dalam poket orang asing. Wang tidak pernah berhenti bergerak — dan kini, nama anda pun tidak.</p><p>Di suatu tempat, seseorang memandang wang kertas di tangannya. Dia melihatnya: rotabo2244. Rasa ingin tahu melakukan selebihnya. Dia menaipnya di rotabo.app — dan di situ anda. Nama anda. Bendera anda. Apa yang anda tawarkan. Seorang manusia sebenar, yang boleh ditemui oleh sesiapa sahaja, di mana sahaja, yang pernah memegang sekeping kertas itu.</p><p>Tiada papan iklan mengembara sejauh itu. Tiada iklan hidup selama itu. Sekeping wang kertas kekal dalam edaran selama bertahun-tahun, melalui ratusan tangan — dan setiap satu daripadanya boleh menemui anda. Satu pen. Satu nombor. Seluruh dunia menjadi iklan anda.</p>",
+    "fineprint": "Menulis pada wang kertas adalah pilihan anda sendiri. Semak undang-undang tempatan."
+  },
+
   "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Pemandu" },
   "hero": {
+    "number_intro": "Setiap orang di Rotabo mempunyai nombor. Satu nombor. Milik anda selamanya. Ia memberitahu siapa anda, di mana anda, dan apa yang anda boleh lakukan — boleh ditemui oleh sesiapa sahaja di Bumi.",
+    "search_placeholder": "Cari nombor Rotabo — cth. 2244",
+    "search_btn": "Cari",
+    "get_number": "Dapatkan nombor anda",
+
     "origin_badge": "🇨🇭 Dibuat di Switzerland — untuk seluruh dunia",
     "tagline3": "Kereta anda.",
     "lede": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
@@ -208,8 +226,8 @@
     "ios_step3": "Ketik <strong>\"Tambah\"</strong> di penjuru kanan atas — selesai."
   },
   "visibility": {
-    "phone_hint": "Sertakan kod negara anda — nombor ini akan kelihatan kepada sesiapa yang sedang melayari.",
-    "address_hint": "Ini akan kelihatan kepada sesiapa yang melayari, sama seperti nombor telefon anda.",
+    "phone_hint": "Sertakan kod negara anda. Nombor anda hanya dilihat oleh pelawat yang telah membayar akses penuh — bukan semua orang yang melayari.",
+    "address_hint": "Alamat anda hanya dilihat oleh pelawat yang telah membayar akses penuh, sama seperti nombor telefon anda.",
     "tier_label": "Keterlihatan",
     "period_1mo": "1 bulan",
     "period_12mo": "12 bulan"

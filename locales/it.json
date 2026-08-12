@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Sono già qui.",
+    "note": "Sfogliare è gratis. Sblocca tutti i dettagli e contatta chiunque — 1 CHF per un mese, 2 CHF per un anno.",
+    "loading": "Caricamento…",
+    "empty": "Sii il primo — ottieni il tuo numero.",
+    "not_found": "Nessun numero Rotabo attivo {n} ancora."
+  },
+  "banknote": {
+    "title": "Il tuo numero viaggia per il mondo. Tu no.",
+    "body": "<p>Prendi una banconota dal portafoglio. Una qualsiasi. Prima di spenderla, scrivici sopra sei piccoli caratteri: rotabo2244 — il tuo numero. Poi lasciala andare.</p><p>Domani paga il caffè di qualcuno. La settimana prossima è resto in un taxi a tre città di distanza. Il mese prossimo attraversa un confine nella tasca di uno sconosciuto. Il denaro non smette mai di muoversi — e ora nemmeno il tuo nome.</p><p>Da qualche parte, qualcuno guarda la banconota nella sua mano. La vede: rotabo2244. La curiosità fa il resto. La digita su rotabo.app — ed eccoti lì. Il tuo nome. La tua bandiera. Ciò che offri. Una persona reale, trovabile da chiunque, ovunque, tenga mai quel pezzo di carta.</p><p>Nessun cartellone viaggia così lontano. Nessun annuncio vive così a lungo. Una banconota resta in circolazione per anni, passando per centinaia di mani — e ognuna di esse può trovarti. Una penna. Un numero. Il mondo intero diventa la tua pubblicità.</p>",
+    "fineprint": "Scrivere sulle banconote è una tua scelta. Controlla le leggi locali."
+  },
+
   "nav": {
     "how": "Come funziona",
     "safety": "Sicurezza",
@@ -8,6 +21,11 @@
     "account": "Il mio account"
   },
   "hero": {
+    "number_intro": "Ognuno su Rotabo ha un numero. Un solo numero. Tuo per sempre. Dice chi sei, dove sei e cosa sai fare — trovabile da chiunque sulla Terra.",
+    "search_placeholder": "Trova un numero Rotabo — es. 2244",
+    "search_btn": "Cerca",
+    "get_number": "Ottieni il tuo numero",
+
     "origin_badge": "🇨🇭 Realizzato in Svizzera — per tutto il mondo",
     "tagline3": "La tua auto.",
     "lede": "Scegli ciò di cui hai bisogno — o iscriviti come qualcuno che può aiutare.",
@@ -293,8 +311,8 @@
   },
   "visibility": {
     "email_hint": "Usa un indirizzo reale — invieremo qui un codice di verifica prima che il tuo annuncio diventi visibile.",
-    "phone_hint": "Includi il prefisso internazionale — questo numero sarà visibile a chiunque navighi sul sito.",
-    "address_hint": "Questo indirizzo sarà visibile a chiunque navighi sul sito, come il tuo numero di telefono.",
+    "phone_hint": "Includi il prefisso del paese. Il tuo numero è visibile solo ai visitatori che hanno pagato l'accesso completo — non a chiunque naviga.",
+    "address_hint": "Il tuo indirizzo è visibile solo ai visitatori che hanno pagato l'accesso completo, come il numero di telefono.",
     "tier_label": "Visibilità",
     "period_1mo": "1 mese",
     "period_12mo": "12 mesi"

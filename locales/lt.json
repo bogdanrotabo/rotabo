@@ -1,6 +1,24 @@
 {
+  "here": {
+    "title": "Jie jau čia.",
+    "note": "Naršyti nemokama. Atrakink visą informaciją ir susisiek su bet kuo — 1 CHF mėnesiui, 2 CHF metams.",
+    "loading": "Įkeliama…",
+    "empty": "Būk pirmas — gauk savo numerį.",
+    "not_found": "Aktyvaus Rotabo numerio {n} dar nėra."
+  },
+  "banknote": {
+    "title": "Tavo numeris keliauja po pasaulį. Tau nereikia.",
+    "body": "<p>Išsiimk iš piniginės banknotą. Bet kokį. Prieš išleisdamas, užrašyk ant jo šešis mažus ženklus: rotabo2244 — tavo numeris. Tada paleisk jį.</p><p>Rytoj jis sumokės už kažkieno kavą. Kitą savaitę bus grąža taksi už trijų miestų. Kitą mėnesį kirs sieną nepažįstamojo kišenėje. Pinigai niekada nenustoja judėti — o dabar ir tavo vardas.</p><p>Kažkur kažkas pažvelgia į banknotą savo rankoje. Pamato: rotabo2244. Smalsumas padaro likusią dalį. Jis įveda tai svetainėje rotabo.app — ir štai tu. Tavo vardas. Tavo vėliava. Ką siūlai. Tikras žmogus, surandamas bet kam, bet kur, kas kada nors laiko tą popieriaus gabalėlį.</p><p>Joks reklaminis stendas nekeliauja taip toli. Jokia reklama negyvena taip ilgai. Banknotas lieka apyvartoje metų metus ir pereina per šimtus rankų — ir kiekviena iš jų gali tave rasti. Vienas rašiklis. Vienas numeris. Visas pasaulis tampa tavo reklama.</p>",
+    "fineprint": "Rašyti ant banknotų yra tavo paties pasirinkimas. Pasitikrink vietinius įstatymus."
+  },
+
   "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai" },
   "hero": {
+    "number_intro": "Kiekvienas Rotabo turi numerį. Vieną numerį. Tavo amžinai. Jis pasako, kas tu esi, kur esi ir ką moki — surandamas bet kam Žemėje.",
+    "search_placeholder": "Rask Rotabo numerį — pvz., 2244",
+    "search_btn": "Ieškoti",
+    "get_number": "Gauk savo numerį",
+
     "origin_badge": "🇨🇭 Pagaminta Šveicarijoje — visam pasauliui",
     "tagline3": "Tavo automobilis.",
     "lede": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
@@ -208,8 +226,8 @@
     "ios_step3": "Palieskite <strong>\"Pridėti\"</strong> viršuje dešinėje — atlikta."
   },
   "visibility": {
-    "phone_hint": "Nurodyk savo šalies kodą — šis numeris bus matomas visiems, kas naršo.",
-    "address_hint": "Tai bus matoma visiems, kas naršo, taip pat kaip ir tavo telefono numeris.",
+    "phone_hint": "Nurodyk savo šalies telefono kodą. Tavo numerį mato tik lankytojai, sumokėję už visą prieigą — ne visi, kurie naršo.",
+    "address_hint": "Tavo adresą mato tik lankytojai, sumokėję už visą prieigą, kaip ir telefono numerį.",
     "tier_label": "Matomumas",
     "period_1mo": "1 mėnuo",
     "period_12mo": "12 mėnesių"

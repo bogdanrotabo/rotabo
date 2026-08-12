@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rotabo — Need Me! Find Me!</title>
-<meta name="description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
+<title>Rotabo — Need Me! Find Me! On a Banknote!</title>
+<meta name="description" content="Everyone on Rotabo has a number. One number, yours forever — it says who you are, where you are, and what you can do, findable by anyone on Earth. Need Me! Find Me! On a Banknote!">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0NPQ989WJ"></script>
@@ -21,14 +21,14 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180.png">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Rotabo — Need Me! Find Me!">
-<meta property="og:description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
+<meta property="og:title" content="Rotabo — Need Me! Find Me! On a Banknote!">
+<meta property="og:description" content="Everyone on Rotabo has a number. One number, yours forever — findable by anyone on Earth. Need Me! Find Me! On a Banknote!">
 <meta property="og:image" content="https://rotabo.app/og-image.png">
 <meta property="og:url" content="https://rotabo.app/">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rotabo — Need Me! Find Me!">
-<meta name="twitter:description" content="Rotabo connects people who need something with people who have it — 11 categories, 38 languages, worldwide. No commission, just connection.">
+<meta name="twitter:title" content="Rotabo — Need Me! Find Me! On a Banknote!">
+<meta name="twitter:description" content="Everyone on Rotabo has a number. One number, yours forever — findable by anyone on Earth. Need Me! Find Me! On a Banknote!">
 <meta name="twitter:image" content="https://rotabo.app/og-image.png">
 
 <link rel="canonical" href="https://rotabo.app/">
@@ -493,6 +493,66 @@
   .tier-option .tier-price{display:block;font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .tier-option .tier-period{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:2px;}
   .tier-option:has(input:checked){border-color:var(--violet-2);background:#f3e6f8;}
+
+  /* ---- Rotabo Number: hero intro, search, live list, banknote ---- */
+  .hero-intro{
+    max-width:620px;margin:22px auto 26px;
+    font-size:1.18rem;line-height:1.6;color:var(--text-dark);font-weight:600;
+  }
+  .number-search{
+    display:flex;gap:10px;max-width:460px;margin:0 auto 14px;
+    flex-wrap:wrap;justify-content:center;
+  }
+  .number-search input{
+    flex:1 1 220px;min-width:0;
+    border:1px solid var(--border);border-radius:40px;
+    padding:14px 20px;font-size:1rem;background:#fff;color:var(--text-dark);
+    box-shadow:0 2px 10px rgba(124,37,150,.06);
+  }
+  .number-search input:focus{outline:none;border-color:var(--violet-2);box-shadow:0 0 0 3px rgba(155,63,192,.18);}
+  .number-search .btn{flex:0 0 auto;}
+  .number-result{
+    max-width:460px;margin:0 auto 20px;
+    border:1px solid var(--border);border-radius:14px;background:var(--bg-card);
+    padding:14px 16px;
+  }
+  .number-result.notfound{color:var(--text-eyebrow);font-weight:600;text-align:center;}
+
+  .here-section{padding:24px 24px 8px;}
+  .here-title{text-align:center;color:var(--text-dark);font-size:1.7rem;margin:0 0 22px;}
+  .here-list{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
+  .here-empty{text-align:center;color:var(--text-eyebrow);font-weight:600;padding:10px 0;}
+  .here-entry{
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    border:1px solid var(--border);border-radius:12px;background:var(--bg-card);
+    padding:12px 16px;font-size:1.05rem;
+  }
+  .he-num{font-weight:800;color:var(--violet-1);font-variant-numeric:tabular-nums;unicode-bidi:isolate;}
+  .he-flag{font-size:1.25rem;line-height:1;unicode-bidi:isolate;}
+  .he-name{font-weight:700;color:var(--text-dark);}
+  .he-sep{color:var(--text-eyebrow);}
+  .he-cat{color:var(--text-body);font-weight:600;}
+  .here-note{
+    max-width:640px;margin:22px auto 0;text-align:center;
+    color:var(--text-body);font-size:1rem;line-height:1.6;
+  }
+
+  .banknote-section{padding:16px 24px 8px;}
+  .banknote-section .info-card.bridge{max-width:820px;margin:0 auto;}
+  .banknote-body p{margin:0 0 14px;line-height:1.75;}
+  .banknote-body p:last-child{margin-bottom:0;}
+  .banknote-slogan{
+    text-align:center;font-weight:800;letter-spacing:.01em;
+    font-size:1.9rem;color:var(--violet-1);margin:26px 0 10px;
+  }
+  .banknote-fineprint{
+    text-align:center;font-size:.86rem;color:var(--text-eyebrow);margin:0;
+  }
+  @media (max-width:520px){
+    .here-title{font-size:1.4rem;}
+    .banknote-slogan{font-size:1.5rem;}
+    .hero-intro{font-size:1.05rem;}
+  }
 </style>
 </head>
 <body>
@@ -544,7 +604,20 @@
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <div class="pill" dir="ltr">Need <span class="me">Me</span>! Find <span class="me">Me</span>!</div>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
-  <h1 class="tagline" dir="ltr">Need <span class="me">Me</span>!<br>Find <span class="me">Me</span>!</h1>
+  <h1 class="tagline" dir="ltr">Need <span class="me">Me</span>! Find <span class="me">Me</span>!<br>On a Banknote!</h1>
+
+  <p class="hero-intro" data-i18n="hero.number_intro">Everyone on Rotabo has a number. One number. Yours forever. It says who you are, where you are, and what you can do — findable by anyone on Earth.</p>
+
+  <form class="number-search" id="numberSearch" onsubmit="return false;" dir="ltr">
+    <input type="search" id="numberSearchInput" inputmode="numeric" autocomplete="off" placeholder="Find a Rotabo number — e.g. 2244" data-i18n-placeholder="hero.search_placeholder" aria-label="Find a Rotabo number">
+    <button type="submit" class="btn btn-solid" id="numberSearchBtn" data-i18n="hero.search_btn">Search</button>
+  </form>
+  <div class="number-result" id="numberResult" hidden></div>
+
+  <div class="cta-stack" style="max-width:360px;margin-top:8px;">
+    <a class="btn btn-solid" href="#categories" data-i18n="hero.get_number">Get your number</a>
+  </div>
+
   <p class="lede" data-i18n="hero.lede">Pick what you need — or list yourself as someone who can help.</p>
 
   <div class="cta-stack">
@@ -558,6 +631,32 @@
   <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
   <div class="badges">
     <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
+  </div>
+</section>
+
+<section class="here-section">
+  <div class="wrap">
+    <h2 class="here-title" data-i18n="here.title">They're already here.</h2>
+    <div class="here-list" id="hereList" aria-live="polite">
+      <p class="here-empty" data-i18n="here.loading">Loading…</p>
+    </div>
+    <p class="here-note" data-i18n="here.note">Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.</p>
+  </div>
+</section>
+
+<section class="banknote-section">
+  <div class="wrap">
+    <div class="info-card bridge banknote">
+      <h3 data-i18n="banknote.title">Your number travels the world. You don't have to.</h3>
+      <div class="banknote-body" data-i18n-html="banknote.body">
+        <p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo2244 — your number. Then let it go.</p>
+        <p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p>
+        <p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p>
+        <p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>
+      </div>
+      <p class="banknote-slogan" dir="ltr">On a Banknote!</p>
+      <p class="banknote-fineprint" data-i18n="banknote.fineprint">Writing on banknotes is your own choice. Check your local laws.</p>
+    </div>
   </div>
 </section>
 
@@ -796,12 +895,12 @@
       <div class="form-field">
         <label for="fd_phone" data-i18n="find_form.phone_label">Phone number</label>
         <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
-        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
         <label for="fd_address" data-i18n="find_form.address_label">Address</label>
         <input type="text" id="fd_address" name="address" required autocomplete="street-address">
-        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
+        <span class="field-hint" data-i18n="visibility.address_hint">Your address is shown only to viewers who paid for full access, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label for="fd_note" data-i18n="find_form.note_label">Tell us more (optional)</label>
@@ -854,12 +953,12 @@
       <div class="form-field">
         <label for="bd_phone" data-i18n="drive_form.phone_label">Phone number</label>
         <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
-        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
         <label for="bd_address" data-i18n="drive_form.address_label">Address</label>
         <input type="text" id="bd_address" name="address" required autocomplete="street-address">
-        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
+        <span class="field-hint" data-i18n="visibility.address_hint">Your address is shown only to viewers who paid for full access, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label for="bd_license_year" data-i18n="drive_form.license_year_label">Year you obtained your driving licence</label>
@@ -932,12 +1031,12 @@
       <div class="form-field">
         <label for="gl_phone" data-i18n="generic_form.phone_label">Phone number</label>
         <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
-        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code — this number will be visible to whoever is browsing.</span>
+        <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
         <label for="gl_address" data-i18n="generic_form.address_label">Address</label>
         <input type="text" id="gl_address" name="address" required autocomplete="street-address">
-        <span class="field-hint" data-i18n="visibility.address_hint">This will be visible to whoever is browsing, same as your phone number.</span>
+        <span class="field-hint" data-i18n="visibility.address_hint">Your address is shown only to viewers who paid for full access, same as your phone number.</span>
       </div>
       <div class="form-field">
         <label for="gl_note" data-i18n="generic_form.note_label">Tell us more (optional)</label>
@@ -1573,6 +1672,7 @@
       var val = getPath(dict, el.getAttribute("data-i18n-placeholder"));
       if (val !== undefined) el.setAttribute("placeholder", val);
     });
+    if (window.__afterTranslate) { try { window.__afterTranslate(dict); } catch (e) {} }
   }
 
   function setLangUI(code){
@@ -1743,6 +1843,184 @@ if ("serviceWorker" in navigator) {
 })();
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+// Rotabo Number: live list, search, and personalised banknote example.
+(function(){
+  if (!window.supabase) return;
+  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    global: { fetch: function(u, o){ return fetch(u, Object.assign({}, o, { cache: "no-store" })); } }
+  });
+
+  // --- country name -> flag emoji (English + key native/EU spellings) ---
+  function iso2ToFlag(cc){
+    if (!cc || cc.length !== 2) return "";
+    var A = 0x1F1E6, base = 65;
+    return String.fromCodePoint(A + cc.charCodeAt(0) - base, A + cc.charCodeAt(1) - base);
+  }
+  function norm(s){
+    return (s == null ? "" : String(s)).trim().toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[.'’]/g, "").replace(/\s+/g, " ");
+  }
+  var RAW_ISO = {
+    "Albania":"AL","Shqiperia":"AL","Shqiperi":"AL","Andorra":"AD",
+    "Austria":"AT","Osterreich":"AT","Autriche":"AT","Austria ":"AT",
+    "Belarus":"BY","Belgium":"BE","Belgie":"BE","Belgique":"BE","Belgien":"BE",
+    "Bosnia and Herzegovina":"BA","Bosnia":"BA","Bulgaria":"BG",
+    "Croatia":"HR","Hrvatska":"HR","Cyprus":"CY",
+    "Czechia":"CZ","Czech Republic":"CZ","Cesko":"CZ","Ceska republika":"CZ",
+    "Denmark":"DK","Danmark":"DK","Estonia":"EE","Eesti":"EE",
+    "Finland":"FI","Suomi":"FI","France":"FR","Francia":"FR","Frankreich":"FR","Frankrijk":"FR",
+    "Germany":"DE","Deutschland":"DE","Germania":"DE","Allemagne":"DE","Alemania":"DE","Duitsland":"DE",
+    "Greece":"GR","Ellada":"GR","Hellas":"GR","Grecia":"GR","Griechenland":"GR",
+    "Hungary":"HU","Magyarorszag":"HU","Iceland":"IS","Island":"IS",
+    "Ireland":"IE","Eire":"IE","Italy":"IT","Italia":"IT","Italie":"IT","Italien":"IT","Italie ":"IT",
+    "Kosovo":"XK","Latvia":"LV","Latvija":"LV","Liechtenstein":"LI",
+    "Lithuania":"LT","Lietuva":"LT","Luxembourg":"LU","Luxemburg":"LU","Malta":"MT",
+    "Moldova":"MD","Republica Moldova":"MD","Monaco":"MC","Montenegro":"ME","Crna Gora":"ME",
+    "Netherlands":"NL","Nederland":"NL","Holland":"NL","Paesi Bassi":"NL","Pays-Bas":"NL","Niederlande":"NL",
+    "North Macedonia":"MK","Macedonia":"MK","Norway":"NO","Norge":"NO",
+    "Poland":"PL","Polska":"PL","Polen":"PL","Pologne":"PL","Portugal":"PT",
+    "Romania":"RO","Rumanien":"RO","Roumanie":"RO","Rumania":"RO","Rumunia":"RO",
+    "Russia":"RU","Russian Federation":"RU","Rossiya":"RU",
+    "San Marino":"SM","Serbia":"RS","Srbija":"RS","Slovakia":"SK","Slovensko":"SK",
+    "Slovenia":"SI","Slovenija":"SI","Spain":"ES","Espana":"ES","Espagne":"ES","Spanien":"ES","Spagna":"ES",
+    "Sweden":"SE","Sverige":"SE",
+    "Switzerland":"CH","Svizzera":"CH","Suisse":"CH","Schweiz":"CH","Svizra":"CH","Elvetia":"CH","Confoederatio Helvetica":"CH","CH":"CH",
+    "Ukraine":"UA","Ukraina":"UA","United Kingdom":"GB","UK":"GB","Great Britain":"GB","England":"GB","Britain":"GB",
+    "Vatican City":"VA","Vatican":"VA",
+    "United States":"US","USA":"US","United States of America":"US","America":"US",
+    "Canada":"CA","Mexico":"MX","Brazil":"BR","Brasil":"BR","Argentina":"AR",
+    "Chile":"CL","Colombia":"CO","Peru":"PE","Venezuela":"VE","Ecuador":"EC","Bolivia":"BO","Paraguay":"PY","Uruguay":"UY",
+    "China":"CN","Japan":"JP","Nippon":"JP","South Korea":"KR","Korea":"KR","Republic of Korea":"KR","North Korea":"KP",
+    "India":"IN","Bharat":"IN","Pakistan":"PK","Bangladesh":"BD","Sri Lanka":"LK","Nepal":"NP",
+    "Indonesia":"ID","Malaysia":"MY","Singapore":"SG","Thailand":"TH","Vietnam":"VN","Viet Nam":"VN",
+    "Philippines":"PH","Cambodia":"KH","Laos":"LA","Myanmar":"MM","Burma":"MM","Brunei":"BN",
+    "Turkey":"TR","Turkiye":"TR","Israel":"IL","Palestine":"PS","Lebanon":"LB","Syria":"SY","Jordan":"JO",
+    "Iraq":"IQ","Iran":"IR","Saudi Arabia":"SA","United Arab Emirates":"AE","UAE":"AE","Qatar":"QA","Kuwait":"KW",
+    "Bahrain":"BH","Oman":"OM","Yemen":"YE",
+    "Egypt":"EG","Morocco":"MA","Maroc":"MA","Algeria":"DZ","Algerie":"DZ","Tunisia":"TN","Tunisie":"TN",
+    "Libya":"LY","Sudan":"SD","South Sudan":"SS",
+    "Nigeria":"NG","Ghana":"GH","Kenya":"KE","Ethiopia":"ET","Tanzania":"TZ","Uganda":"UG","South Africa":"ZA",
+    "Zimbabwe":"ZW","Zambia":"ZM","Angola":"AO","Mozambique":"MZ","Cameroon":"CM","Ivory Coast":"CI","Cote dIvoire":"CI",
+    "Senegal":"SN","Mali":"ML","Somalia":"SO","Rwanda":"RW","DR Congo":"CD","Congo":"CG",
+    "Australia":"AU","New Zealand":"NZ","Fiji":"FJ","Papua New Guinea":"PG",
+    "Kazakhstan":"KZ","Uzbekistan":"UZ","Turkmenistan":"TM","Kyrgyzstan":"KG","Tajikistan":"TJ",
+    "Azerbaijan":"AZ","Armenia":"AM","Georgia":"GE","Afghanistan":"AF","Mongolia":"MN",
+    "Cuba":"CU","Dominican Republic":"DO","Haiti":"HT","Jamaica":"JM","Guatemala":"GT","Honduras":"HN",
+    "El Salvador":"SV","Nicaragua":"NI","Costa Rica":"CR","Panama":"PA","Trinidad and Tobago":"TT"
+  };
+  var NAME_TO_ISO = {};
+  Object.keys(RAW_ISO).forEach(function(k){ NAME_TO_ISO[norm(k)] = RAW_ISO[k]; });
+  function flagFor(country){
+    var iso = NAME_TO_ISO[norm(country)];
+    return iso ? iso2ToFlag(iso) : "";
+  }
+
+  var EN_CATS = { drive:"Drive", move:"Move", build:"Build", tools:"Tools", home:"Home",
+    auto:"Auto", care:"Care", learn:"Learn", stay:"Stay", other:"Other", translator:"Translator" };
+  function catLabel(cat){
+    var d = window.__dict;
+    if (d && d.categories && d.categories[cat] && d.categories[cat].name) return d.categories[cat].name;
+    return EN_CATS[cat] || cat;
+  }
+  function esc(s){
+    return (s == null ? "" : String(s)).replace(/[&<>"]/g, function(c){
+      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;" }[c];
+    });
+  }
+  function entryHtml(r){
+    var flag = flagFor(r.country);
+    return '<div class="here-entry">' +
+      '<span class="he-num" dir="ltr">#' + r.number + '</span>' +
+      (flag ? '<span class="he-flag">' + flag + '</span>' : '') +
+      '<span class="he-name">' + esc(r.name) + '</span>' +
+      '<span class="he-sep">·</span>' +
+      '<span class="he-cat">' + esc(catLabel(r.category)) + '</span>' +
+    '</div>';
+  }
+
+  var listData = [];
+  function renderList(){
+    var box = document.getElementById("hereList");
+    if (!box) return;
+    var d = window.__dict || {};
+    if (!listData.length){
+      var empty = (d.here && d.here.empty) || "Be the first — get your number.";
+      box.innerHTML = '<p class="here-empty">' + esc(empty) + '</p>';
+      return;
+    }
+    box.innerHTML = listData.map(entryHtml).join("");
+  }
+  function fetchList(){
+    sb.from("public_listings").select("number,name,country,category,role,city")
+      .order("number", { ascending: true })
+      .then(function(res){ if (res && res.data){ listData = res.data; renderList(); } });
+  }
+
+  function doSearch(){
+    var input = document.getElementById("numberSearchInput");
+    var out = document.getElementById("numberResult");
+    if (!input || !out) return;
+    var raw = (input.value || "").replace(/[^0-9]/g, "");
+    if (!raw){ out.hidden = true; return; }
+    var num = parseInt(raw, 10);
+    sb.rpc("find_rotabo_number", { p_number: num }).then(function(res){
+      var d = window.__dict || {};
+      var t = d.here || {};
+      out.hidden = false;
+      if (res && res.data && res.data.length){
+        out.className = "number-result found";
+        out.innerHTML = entryHtml(res.data[0]);
+      } else {
+        out.className = "number-result notfound";
+        var msg = (t.not_found || "No active Rotabo number {n} yet.").split("{n}").join(num);
+        out.textContent = msg;
+      }
+    });
+  }
+
+  var myNumber = null;
+  function swapBanknoteNumber(){
+    if (!myNumber) return;
+    var body = document.querySelector(".banknote-body");
+    if (!body) return;
+    if (body.innerHTML.indexOf("rotabo2244") !== -1){
+      body.innerHTML = body.innerHTML.split("rotabo2244").join("rotabo" + myNumber);
+    }
+  }
+  function loadMyNumber(){
+    sb.auth.getSession().then(function(s){
+      if (s && s.data && s.data.session){
+        sb.rpc("my_rotabo_number").then(function(res){
+          if (res && res.data){ myNumber = res.data; swapBanknoteNumber(); }
+        });
+      }
+    }).catch(function(){});
+  }
+
+  window.__afterTranslate = function(dict){
+    window.__dict = dict;
+    renderList();
+    swapBanknoteNumber();
+  };
+
+  function init(){
+    var form = document.getElementById("numberSearch");
+    if (form) form.addEventListener("submit", function(e){ e.preventDefault(); doSearch(); });
+    var btn = document.getElementById("numberSearchBtn");
+    if (btn) btn.addEventListener("click", function(e){ e.preventDefault(); doSearch(); });
+    fetchList();
+    setInterval(fetchList, 15000);
+    loadMyNumber();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
 <script>
 (function(){
   try {

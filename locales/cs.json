@@ -1,4 +1,17 @@
 {
+  "here": {
+    "title": "Už jsou tady.",
+    "note": "Prohlížení je zdarma. Odemkni všechny podrobnosti a kontaktuj kohokoli — 1 CHF na měsíc, 2 CHF na rok.",
+    "loading": "Načítání…",
+    "empty": "Buď první — získej své číslo.",
+    "not_found": "Zatím žádné aktivní číslo Rotabo {n}."
+  },
+  "banknote": {
+    "title": "Tvé číslo cestuje po světě. Ty nemusíš.",
+    "body": "<p>Vytáhni z peněženky bankovku. Jakoukoli. Než ji utratíš, napiš na ni šest malých znaků: rotabo2244 — tvé číslo. Pak ji nech jít.</p><p>Zítra zaplatí něčí kávu. Příští týden je drobnými v taxíku o tři města dál. Příští měsíc překročí hranici v kapse cizince. Peníze se nikdy nepřestanou pohybovat — a teď ani tvé jméno.</p><p>Někde se někdo podívá na bankovku ve své ruce. Vidí to: rotabo2244. Zvědavost udělá zbytek. Napíše to na rotabo.app — a jsi tam. Tvé jméno. Tvá vlajka. Co nabízíš. Skutečný člověk, najitelný kýmkoli, kdekoli, kdo kdy drží ten kus papíru.</p><p>Žádný billboard necestuje tak daleko. Žádná reklama nežije tak dlouho. Bankovka zůstává v oběhu roky a projde stovkami rukou — a každá z nich tě může najít. Jedno pero. Jedno číslo. Celý svět se stane tvou reklamou.</p>",
+    "fineprint": "Psaní na bankovky je tvá vlastní volba. Zkontroluj místní zákony."
+  },
+
   "nav": {
     "how": "Jak to funguje",
     "safety": "Bezpečnost",
@@ -7,6 +20,11 @@
     "drivers": "Řidiči"
   },
   "hero": {
+    "number_intro": "Každý na Rotabu má číslo. Jedno číslo. Navždy tvoje. Říká, kdo jsi, kde jsi a co umíš — najitelný kýmkoli na Zemi.",
+    "search_placeholder": "Najdi číslo Rotabo — např. 2244",
+    "search_btn": "Hledat",
+    "get_number": "Získej své číslo",
+
     "origin_badge": "🇨🇭 Vyrobeno ve Švýcarsku — pro celý svět",
     "tagline3": "Vaše auto.",
     "lede": "Vyber si, co potřebuješ — nebo se zapiš jako někdo, kdo může pomoct.",
@@ -243,8 +261,8 @@
     "ios_step3": "Klepněte na <strong>„Přidat“</strong> vpravo nahoře — hotovo."
   },
   "visibility": {
-    "phone_hint": "Uveď svou předvolbu země — toto číslo uvidí každý, kdo si nabídky prohlíží.",
-    "address_hint": "Toto bude viditelné pro každého, kdo si prohlíží nabídky, stejně jako tvé telefonní číslo.",
+    "phone_hint": "Uveď svou telefonní předvolbu země. Tvé číslo vidí jen návštěvníci, kteří zaplatili plný přístup — ne každý, kdo prohlíží.",
+    "address_hint": "Tvou adresu vidí jen návštěvníci, kteří zaplatili plný přístup, stejně jako telefonní číslo.",
     "tier_label": "Viditelnost",
     "period_1mo": "1 měsíc",
     "period_12mo": "12 měsíců"
