@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Sblocca l'accesso completo",
+    "intro": "Sfogliare è gratis. Per vedere numeri e indirizzi e contattare chiunque, sblocca l'accesso completo a tutti gli annunci.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Invia codice",
+    "code_placeholder": "codice a 6 cifre",
+    "verify_btn": "Verifica",
+    "code_sent": "Abbiamo inviato un codice a {email}.",
+    "choose": "Scegli il tuo accesso:",
+    "tier1": "1 CHF — 1 mese",
+    "tier12": "2 CHF — 1 anno",
+    "pay_note": "Dopo il pagamento, torna e tocca di nuovo l'annuncio per rivelare i dettagli.",
+    "unlocked": "Accesso sbloccato — i dettagli sono ora visibili.",
+    "err_email": "Inserisci un'email valida.",
+    "err_code": "Codice non valido o scaduto.",
+    "err_generic": "Qualcosa è andato storto. Riprova."
+  },
+
   "here": {
     "title": "Sono già qui.",
     "note": "Sfogliare è gratis. Sblocca tutti i dettagli e contatta chiunque — 1 CHF per un mese, 2 CHF per un anno.",
@@ -433,9 +451,10 @@
     "time_hour_ago_other": "{n} ore fa"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Vedi contatto",
     "offering_title": "Chi offre {category} vicino a te",
     "seeking_title": "Persone che cercano {category}",
-    "subtitle": "Tutti quelli attualmente visibili. Filtra per paese se vuoi.",
+    "subtitle": "Sfoglia tutti qui gratis. Sblocca l'accesso completo per vedere telefono e indirizzo.",
     "loading": "Caricamento…",
     "not_registered_body": "Non hai ancora un annuncio su questo dispositivo.",
     "register_link": "← Torna alla home",

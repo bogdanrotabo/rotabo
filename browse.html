@@ -208,6 +208,7 @@
     return fetch("locales/" + LANG + ".json")
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
+        window.__dict = dict; // let viewer.js localize its unlock modal
         if (dict && dict.browse_page) {
           Object.assign(T, dict.browse_page);
         }

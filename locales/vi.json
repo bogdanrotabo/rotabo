@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Mở khóa quyền truy cập đầy đủ",
+    "intro": "Duyệt xem miễn phí. Để xem số điện thoại và địa chỉ và liên hệ với bất kỳ ai, hãy mở khóa quyền truy cập đầy đủ vào mọi tin đăng.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Gửi mã",
+    "code_placeholder": "mã 6 chữ số",
+    "verify_btn": "Xác minh",
+    "code_sent": "Chúng tôi đã gửi mã đến {email}.",
+    "choose": "Chọn quyền truy cập của bạn:",
+    "tier1": "1 CHF — 1 tháng",
+    "tier12": "2 CHF — 1 năm",
+    "pay_note": "Sau khi thanh toán, quay lại và chạm vào tin đăng lần nữa để hiện chi tiết.",
+    "unlocked": "Đã mở khóa — chi tiết giờ đã hiển thị.",
+    "err_email": "Vui lòng nhập email hợp lệ.",
+    "err_code": "Mã không hợp lệ hoặc đã hết hạn.",
+    "err_generic": "Đã xảy ra lỗi. Vui lòng thử lại."
+  },
+
   "here": {
     "title": "Họ đã ở đây rồi.",
     "note": "Duyệt xem miễn phí. Mở khóa toàn bộ chi tiết và liên hệ với bất kỳ ai — 1 CHF cho một tháng, 2 CHF cho một năm.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} giờ trước"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Xem liên hệ",
     "offering_title": "Nhà cung cấp {category} gần bạn",
     "seeking_title": "Những người cần {category}",
-    "subtitle": "Tất cả những người đang hiển thị hiện tại. Lọc theo thành phố nếu bạn muốn.",
+    "subtitle": "Duyệt xem mọi người ở đây miễn phí. Mở khóa quyền truy cập đầy đủ để xem điện thoại và địa chỉ.",
     "loading": "Đang tải…",
     "not_registered_body": "Bạn chưa có tin đăng nào đang hoạt động trên thiết bị này.",
     "register_link": "← Về trang chủ",

@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Buka akses penuh",
+    "intro": "Melayari adalah percuma. Untuk melihat nombor telefon dan alamat serta menghubungi sesiapa sahaja, buka akses penuh ke setiap penyenaraian.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Hantar kod",
+    "code_placeholder": "kod 6 digit",
+    "verify_btn": "Sahkan",
+    "code_sent": "Kami menghantar kod ke {email}.",
+    "choose": "Pilih akses anda:",
+    "tier1": "1 CHF — 1 bulan",
+    "tier12": "2 CHF — 1 tahun",
+    "pay_note": "Selepas membayar, kembali dan ketik penyenaraian sekali lagi untuk mendedahkan butiran.",
+    "unlocked": "Akses dibuka — butiran kini kelihatan.",
+    "err_email": "Sila masukkan e-mel yang sah.",
+    "err_code": "Kod tidak sah atau tamat tempoh.",
+    "err_generic": "Sesuatu tidak kena. Sila cuba lagi."
+  },
+
   "here": {
     "title": "Mereka sudah ada di sini.",
     "note": "Melayari adalah percuma. Buka kunci semua butiran dan hubungi sesiapa sahaja — 1 CHF untuk sebulan, 2 CHF untuk setahun.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} jam lalu"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Lihat kenalan",
     "offering_title": "Penyedia {category} berdekatan kamu",
     "seeking_title": "Orang yang memerlukan {category}",
-    "subtitle": "Semua orang yang kelihatan sekarang. Tapis mengikut bandar jika anda mahu.",
+    "subtitle": "Layari semua orang di sini secara percuma. Buka akses penuh untuk melihat telefon dan alamat.",
     "loading": "Memuatkan…",
     "not_registered_body": "Anda belum mempunyai penyenaraian aktif pada peranti ini.",
     "register_link": "← Kembali ke laman utama",

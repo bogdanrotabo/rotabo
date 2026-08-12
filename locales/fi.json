@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Avaa täysi käyttöoikeus",
+    "intro": "Selailu on ilmaista. Nähdäksesi puhelinnumerot ja osoitteet ja ottaaksesi yhteyttä keneen tahansa, avaa täysi käyttöoikeus kaikkiin ilmoituksiin.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Lähetä koodi",
+    "code_placeholder": "6-numeroinen koodi",
+    "verify_btn": "Vahvista",
+    "code_sent": "Lähetimme koodin osoitteeseen {email}.",
+    "choose": "Valitse käyttöoikeutesi:",
+    "tier1": "1 CHF — 1 kuukausi",
+    "tier12": "2 CHF — 1 vuosi",
+    "pay_note": "Maksun jälkeen palaa ja napauta ilmoitusta uudelleen nähdäksesi tiedot.",
+    "unlocked": "Käyttöoikeus avattu — tiedot ovat nyt näkyvissä.",
+    "err_email": "Anna kelvollinen sähköposti.",
+    "err_code": "Virheellinen tai vanhentunut koodi.",
+    "err_generic": "Jokin meni pieleen. Yritä uudelleen."
+  },
+
   "here": {
     "title": "He ovat jo täällä.",
     "note": "Selailu on ilmaista. Avaa kaikki tiedot ja ota yhteyttä keneen tahansa — 1 CHF kuukaudeksi, 2 CHF vuodeksi.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "{n} tuntia sitten"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Näytä yhteystiedot",
     "offering_title": "{category}-palveluntarjoajat lähelläsi",
     "seeking_title": "Ihmiset, jotka tarvitsevat {category}",
-    "subtitle": "Kaikki, jotka ovat juuri nyt näkyvissä. Suodata halutessasi kaupungin mukaan.",
+    "subtitle": "Selaa kaikkia täällä ilmaiseksi. Avaa täysi käyttöoikeus nähdäksesi puhelimen ja osoitteen.",
     "loading": "Ladataan…",
     "not_registered_body": "Sinulla ei ole vielä aktiivista ilmoitusta tällä laitteella.",
     "register_link": "← Takaisin etusivulle",

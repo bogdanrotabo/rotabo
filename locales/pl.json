@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Odblokuj pełny dostęp",
+    "intro": "Przeglądanie jest darmowe. Aby zobaczyć telefony i adresy oraz skontaktować się z każdym, odblokuj pełny dostęp do wszystkich ogłoszeń.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Wyślij kod",
+    "code_placeholder": "6-cyfrowy kod",
+    "verify_btn": "Zweryfikuj",
+    "code_sent": "Wysłaliśmy kod na {email}.",
+    "choose": "Wybierz swój dostęp:",
+    "tier1": "1 CHF — 1 miesiąc",
+    "tier12": "2 CHF — 1 rok",
+    "pay_note": "Po zapłaceniu wróć i ponownie dotknij ogłoszenia, aby zobaczyć szczegóły.",
+    "unlocked": "Dostęp odblokowany — szczegóły są już widoczne.",
+    "err_email": "Podaj prawidłowy e-mail.",
+    "err_code": "Nieprawidłowy lub wygasły kod.",
+    "err_generic": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+
   "here": {
     "title": "Oni już tu są.",
     "note": "Przeglądanie jest darmowe. Odblokuj wszystkie szczegóły i skontaktuj się z każdym — 1 CHF za miesiąc, 2 CHF za rok.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} godzin temu"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Zobacz kontakt",
     "offering_title": "Dostawcy usług {category} w twojej okolicy",
     "seeking_title": "Ludzie, którzy potrzebują: {category}",
-    "subtitle": "Wszyscy, którzy są teraz widoczni. Możesz filtrować według miasta.",
+    "subtitle": "Przeglądaj tu wszystkich za darmo. Odblokuj pełny dostęp, aby zobaczyć telefon i adres.",
     "loading": "Ładowanie…",
     "not_registered_body": "Nie masz jeszcze aktywnego ogłoszenia na tym urządzeniu.",
     "register_link": "← Wróć do strony głównej",

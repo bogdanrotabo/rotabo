@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Vollen Zugang freischalten",
+    "intro": "Stöbern ist kostenlos. Um Telefonnummern und Adressen zu sehen und jeden zu kontaktieren, schalte vollen Zugang zu allen Einträgen frei.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Code senden",
+    "code_placeholder": "6-stelliger Code",
+    "verify_btn": "Bestätigen",
+    "code_sent": "Wir haben einen Code an {email} gesendet.",
+    "choose": "Wähle deinen Zugang:",
+    "tier1": "1 CHF — 1 Monat",
+    "tier12": "2 CHF — 1 Jahr",
+    "pay_note": "Komm nach der Zahlung zurück und tippe den Eintrag erneut an, um die Details zu sehen.",
+    "unlocked": "Zugang freigeschaltet — Details sind jetzt sichtbar.",
+    "err_email": "Bitte gib eine gültige E-Mail ein.",
+    "err_code": "Ungültiger oder abgelaufener Code.",
+    "err_generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+  },
+
   "here": {
     "title": "Sie sind schon hier.",
     "note": "Stöbern ist kostenlos. Schalte alle Details frei und kontaktiere jeden — 1 CHF für einen Monat, 2 CHF für ein Jahr.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "vor {n} Stunden"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Kontakt anzeigen",
     "offering_title": "{category}-Anbieter in deiner Nähe",
     "seeking_title": "Leute, die {category} brauchen",
-    "subtitle": "Alle, die gerade sichtbar sind. Filtere nach Stadt, wenn du willst.",
+    "subtitle": "Stöbere hier kostenlos durch alle. Schalte vollen Zugang frei, um Telefon und Adresse zu sehen.",
     "loading": "Wird geladen…",
     "not_registered_body": "Du hast auf diesem Gerät noch kein aktives Profil.",
     "register_link": "← Zurück zur Startseite",

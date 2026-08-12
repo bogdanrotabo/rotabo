@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Odomknúť plný prístup",
+    "intro": "Prehliadanie je zadarmo. Aby si videl telefóny a adresy a kontaktoval kohokoľvek, odomkni plný prístup ku všetkým inzerátom.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Poslať kód",
+    "code_placeholder": "6-miestny kód",
+    "verify_btn": "Overiť",
+    "code_sent": "Poslali sme kód na {email}.",
+    "choose": "Vyber si prístup:",
+    "tier1": "1 CHF — 1 mesiac",
+    "tier12": "2 CHF — 1 rok",
+    "pay_note": "Po zaplatení sa vráť a znova ťukni na inzerát, aby sa zobrazili podrobnosti.",
+    "unlocked": "Prístup odomknutý — podrobnosti sú teraz viditeľné.",
+    "err_email": "Zadaj platný e-mail.",
+    "err_code": "Neplatný alebo vypršaný kód.",
+    "err_generic": "Niečo sa pokazilo. Skús to znova."
+  },
+
   "here": {
     "title": "Už sú tu.",
     "note": "Prehliadanie je zadarmo. Odomkni všetky podrobnosti a kontaktuj kohokoľvek — 1 CHF na mesiac, 2 CHF na rok.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "pred {n} hodinami"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Zobraziť kontakt",
     "offering_title": "Poskytovatelia {category} v tvojom okolí",
     "seeking_title": "Ľudia, ktorí potrebujú {category}",
-    "subtitle": "Všetci, ktorí sú práve viditeľní. Pokojne filtruj podľa mesta.",
+    "subtitle": "Prezeraj si tu všetkých zadarmo. Odomkni plný prístup, aby si videl telefón a adresu.",
     "loading": "Načítava sa…",
     "not_registered_body": "Na tomto zariadení zatiaľ nemáš aktívnu ponuku.",
     "register_link": "← Späť domov",

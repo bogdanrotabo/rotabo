@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Teljes hozzáférés feloldása",
+    "intro": "A böngészés ingyenes. Ha látni akarod a telefonszámokat és címeket, és bárkivel kapcsolatba lépnél, oldd fel a teljes hozzáférést minden hirdetéshez.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Kód küldése",
+    "code_placeholder": "6 jegyű kód",
+    "verify_btn": "Ellenőrzés",
+    "code_sent": "Kódot küldtünk ide: {email}.",
+    "choose": "Válaszd ki a hozzáférésed:",
+    "tier1": "1 CHF — 1 hónap",
+    "tier12": "2 CHF — 1 év",
+    "pay_note": "Fizetés után gyere vissza, és koppints újra a hirdetésre a részletek megjelenítéséhez.",
+    "unlocked": "Hozzáférés feloldva — a részletek most láthatók.",
+    "err_email": "Adj meg egy érvényes e-mailt.",
+    "err_code": "Érvénytelen vagy lejárt kód.",
+    "err_generic": "Valami elromlott. Próbáld újra."
+  },
+
   "here": {
     "title": "Már itt vannak.",
     "note": "A böngészés ingyenes. Oldd fel az összes részletet, és lépj kapcsolatba bárkivel — 1 CHF egy hónapra, 2 CHF egy évre.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} órája"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Kapcsolat megjelenítése",
     "offering_title": "{category} szolgáltatók a közeledben",
     "seeking_title": "Emberek, akiknek szükségük van erre: {category}",
-    "subtitle": "Mindenki, aki most látható. Ha szeretnéd, szűrj város szerint.",
+    "subtitle": "Böngéssz itt mindenkit ingyen. Oldd fel a teljes hozzáférést a telefonszám és cím megtekintéséhez.",
     "loading": "Betöltés…",
     "not_registered_body": "Ezen az eszközön még nincs aktív hirdetésed.",
     "register_link": "← Vissza a főoldalra",

@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Fungua ufikiaji kamili",
+    "intro": "Kuvinjari ni bure. Ili kuona nambari za simu na anwani na kuwasiliana na yeyote, fungua ufikiaji kamili kwa kila tangazo.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Tuma msimbo",
+    "code_placeholder": "msimbo wa tarakimu 6",
+    "verify_btn": "Thibitisha",
+    "code_sent": "Tumetuma msimbo kwa {email}.",
+    "choose": "Chagua ufikiaji wako:",
+    "tier1": "1 CHF — mwezi 1",
+    "tier12": "2 CHF — mwaka 1",
+    "pay_note": "Baada ya kulipa, rudi na ugonge tangazo tena ili kuona maelezo.",
+    "unlocked": "Ufikiaji umefunguliwa — maelezo sasa yanaonekana.",
+    "err_email": "Tafadhali weka barua pepe halali.",
+    "err_code": "Msimbo batili au uliokwisha muda.",
+    "err_generic": "Hitilafu imetokea. Tafadhali jaribu tena."
+  },
+
   "here": {
     "title": "Tayari wako hapa.",
     "note": "Kuvinjari ni bure. Fungua maelezo yote na wasiliana na yeyote — 1 CHF kwa mwezi, 2 CHF kwa mwaka.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "saa {n} zilizopita"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Ona mawasiliano",
     "offering_title": "Watoa huduma za {category} karibu nawe",
     "seeking_title": "Watu wanaohitaji {category}",
-    "subtitle": "Kila mtu anayeonekana sasa hivi. Chuja kwa mji ukipenda.",
+    "subtitle": "Vinjari kila mtu hapa bure. Fungua ufikiaji kamili ili kuona simu na anwani.",
     "loading": "Inapakia…",
     "not_registered_body": "Bado huna tangazo tendaji kwenye kifaa hiki.",
     "register_link": "← Rudi mwanzo",

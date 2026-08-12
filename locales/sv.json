@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Lås upp full åtkomst",
+    "intro": "Att bläddra är gratis. För att se telefonnummer och adresser och kontakta vem som helst, lås upp full åtkomst till alla annonser.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Skicka kod",
+    "code_placeholder": "6-siffrig kod",
+    "verify_btn": "Verifiera",
+    "code_sent": "Vi skickade en kod till {email}.",
+    "choose": "Välj din åtkomst:",
+    "tier1": "1 CHF — 1 månad",
+    "tier12": "2 CHF — 1 år",
+    "pay_note": "Kom tillbaka efter betalning och tryck på annonsen igen för att visa detaljerna.",
+    "unlocked": "Åtkomst upplåst — detaljerna är nu synliga.",
+    "err_email": "Ange en giltig e-post.",
+    "err_code": "Ogiltig eller utgången kod.",
+    "err_generic": "Något gick fel. Försök igen."
+  },
+
   "here": {
     "title": "De är redan här.",
     "note": "Att bläddra är gratis. Lås upp alla detaljer och kontakta vem som helst — 1 CHF för en månad, 2 CHF för ett år.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} timmar sedan"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Visa kontakt",
     "offering_title": "{category}-leverantörer nära dig",
     "seeking_title": "Personer som behöver {category}",
-    "subtitle": "Alla som är synliga just nu. Filtrera efter stad om du vill.",
+    "subtitle": "Bläddra bland alla här gratis. Lås upp full åtkomst för att se telefon och adress.",
     "loading": "Laddar…",
     "not_registered_body": "Du har ännu ingen aktiv annons på den här enheten.",
     "register_link": "← Tillbaka till startsidan",

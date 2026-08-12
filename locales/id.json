@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Buka akses penuh",
+    "intro": "Menjelajah itu gratis. Untuk melihat nomor telepon dan alamat serta menghubungi siapa saja, buka akses penuh ke setiap daftar.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Kirim kode",
+    "code_placeholder": "kode 6 digit",
+    "verify_btn": "Verifikasi",
+    "code_sent": "Kami mengirim kode ke {email}.",
+    "choose": "Pilih aksesmu:",
+    "tier1": "1 CHF — 1 bulan",
+    "tier12": "2 CHF — 1 tahun",
+    "pay_note": "Setelah membayar, kembali dan ketuk lagi daftar untuk menampilkan detailnya.",
+    "unlocked": "Akses terbuka — detail kini terlihat.",
+    "err_email": "Masukkan email yang valid.",
+    "err_code": "Kode tidak valid atau kedaluwarsa.",
+    "err_generic": "Terjadi kesalahan. Silakan coba lagi."
+  },
+
   "here": {
     "title": "Mereka sudah di sini.",
     "note": "Menjelajah itu gratis. Buka semua detail dan hubungi siapa saja — 1 CHF untuk sebulan, 2 CHF untuk setahun.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} jam lalu"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Lihat kontak",
     "offering_title": "Penyedia {category} di dekatmu",
     "seeking_title": "Orang yang membutuhkan {category}",
-    "subtitle": "Semua orang yang sedang terlihat. Filter berdasarkan kota jika kamu mau.",
+    "subtitle": "Jelajahi semua orang di sini gratis. Buka akses penuh untuk melihat telepon dan alamat.",
     "loading": "Memuat…",
     "not_registered_body": "Kamu belum punya listing aktif di perangkat ini.",
     "register_link": "← Kembali ke beranda",

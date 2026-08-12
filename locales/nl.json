@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Volledige toegang ontgrendelen",
+    "intro": "Bladeren is gratis. Om telefoonnummers en adressen te zien en iedereen te contacteren, ontgrendel volledige toegang tot alle vermeldingen.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Code sturen",
+    "code_placeholder": "6-cijferige code",
+    "verify_btn": "Verifiëren",
+    "code_sent": "We hebben een code naar {email} gestuurd.",
+    "choose": "Kies je toegang:",
+    "tier1": "1 CHF — 1 maand",
+    "tier12": "2 CHF — 1 jaar",
+    "pay_note": "Kom na het betalen terug en tik de vermelding opnieuw aan om de details te tonen.",
+    "unlocked": "Toegang ontgrendeld — details zijn nu zichtbaar.",
+    "err_email": "Voer een geldig e-mailadres in.",
+    "err_code": "Ongeldige of verlopen code.",
+    "err_generic": "Er ging iets mis. Probeer het opnieuw."
+  },
+
   "here": {
     "title": "Ze zijn er al.",
     "note": "Bladeren is gratis. Ontgrendel alle details en neem contact op met iedereen — 1 CHF voor een maand, 2 CHF voor een jaar.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "{n} uur geleden"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Contact tonen",
     "offering_title": "{category}-aanbieders bij jou in de buurt",
     "seeking_title": "Mensen die {category} nodig hebben",
-    "subtitle": "Iedereen die nu zichtbaar is. Filter eventueel op stad.",
+    "subtitle": "Bekijk hier iedereen gratis. Ontgrendel volledige toegang om telefoon en adres te zien.",
     "loading": "Laden…",
     "not_registered_body": "Je hebt op dit apparaat nog geen actieve vermelding.",
     "register_link": "← Terug naar home",

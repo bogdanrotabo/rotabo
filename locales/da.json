@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Lås fuld adgang op",
+    "intro": "At kigge er gratis. For at se telefonnumre og adresser og kontakte alle, lås fuld adgang til alle opslag op.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Send kode",
+    "code_placeholder": "6-cifret kode",
+    "verify_btn": "Bekræft",
+    "code_sent": "Vi sendte en kode til {email}.",
+    "choose": "Vælg din adgang:",
+    "tier1": "1 CHF — 1 måned",
+    "tier12": "2 CHF — 1 år",
+    "pay_note": "Kom tilbage efter betaling, og tryk på opslaget igen for at se detaljerne.",
+    "unlocked": "Adgang låst op — detaljerne er nu synlige.",
+    "err_email": "Indtast en gyldig e-mail.",
+    "err_code": "Ugyldig eller udløbet kode.",
+    "err_generic": "Noget gik galt. Prøv igen."
+  },
+
   "here": {
     "title": "De er her allerede.",
     "note": "At kigge er gratis. Lås alle detaljer op og kontakt hvem som helst — 1 CHF for en måned, 2 CHF for et år.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "for {n} timer siden"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Vis kontakt",
     "offering_title": "{category}-udbydere i nærheden af dig",
     "seeking_title": "Folk der har brug for {category}",
-    "subtitle": "Alle, der er synlige lige nu. Filtrér efter by, hvis du vil.",
+    "subtitle": "Se alle her gratis. Lås fuld adgang op for at se telefon og adresse.",
     "loading": "Indlæser…",
     "not_registered_body": "Du har endnu ikke en aktiv annonce på denne enhed.",
     "register_link": "← Tilbage til forsiden",

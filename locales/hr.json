@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Otključaj puni pristup",
+    "intro": "Pregledavanje je besplatno. Da vidiš telefone i adrese i kontaktiraš bilo koga, otključaj puni pristup svim oglasima.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Pošalji kod",
+    "code_placeholder": "6-znamenkasti kod",
+    "verify_btn": "Potvrdi",
+    "code_sent": "Poslali smo kod na {email}.",
+    "choose": "Odaberi svoj pristup:",
+    "tier1": "1 CHF — 1 mjesec",
+    "tier12": "2 CHF — 1 godina",
+    "pay_note": "Nakon plaćanja vrati se i ponovno dodirni oglas da vidiš detalje.",
+    "unlocked": "Pristup otključan — detalji su sada vidljivi.",
+    "err_email": "Unesi valjanu e-poštu.",
+    "err_code": "Nevažeći ili istekli kod.",
+    "err_generic": "Nešto je pošlo po zlu. Pokušaj ponovno."
+  },
+
   "here": {
     "title": "Već su ovdje.",
     "note": "Pregledavanje je besplatno. Otključaj sve detalje i kontaktiraj bilo koga — 1 CHF za mjesec, 2 CHF za godinu.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "prije {n} sati"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Prikaži kontakt",
     "offering_title": "Pružatelji usluge {category} blizu tebe",
     "seeking_title": "Ljudi kojima treba {category}",
-    "subtitle": "Svi koji su trenutno vidljivi. Filtriraj po gradu ako želiš.",
+    "subtitle": "Ovdje pregledaj sve besplatno. Otključaj puni pristup da vidiš telefon i adresu.",
     "loading": "Učitavanje…",
     "not_registered_body": "Na ovom uređaju još nemaš aktivan oglas.",
     "register_link": "← Natrag na početnu",

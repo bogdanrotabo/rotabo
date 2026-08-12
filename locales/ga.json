@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Díghlasáil rochtain iomlán",
+    "intro": "Tá brabhsáil saor in aisce. Chun uimhreacha gutháin agus seoltaí a fheiceáil agus dul i dteagmháil le haon duine, díghlasáil rochtain iomlán ar gach liostáil.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Seol cód",
+    "code_placeholder": "cód 6 dhigit",
+    "verify_btn": "Fíoraigh",
+    "code_sent": "Sheolamar cód chuig {email}.",
+    "choose": "Roghnaigh do rochtain:",
+    "tier1": "1 CHF — 1 mhí",
+    "tier12": "2 CHF — 1 bhliain",
+    "pay_note": "Tar éis íoc, fill ar ais agus tapáil an liostáil arís chun na sonraí a nochtadh.",
+    "unlocked": "Rochtain díghlasáilte — tá na sonraí le feiceáil anois.",
+    "err_email": "Cuir isteach ríomhphost bailí, le do thoil.",
+    "err_code": "Cód neamhbhailí nó as feidhm.",
+    "err_generic": "Chuaigh rud éigin mícheart. Bain triail eile as."
+  },
+
   "here": {
     "title": "Tá siad anseo cheana féin.",
     "note": "Tá brabhsáil saor in aisce. Díghlasáil na sonraí go léir agus déan teagmháil le haon duine — 1 CHF ar feadh míosa, 2 CHF ar feadh bliana.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} uair an chloig ó shin"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Féach teagmháil",
     "offering_title": "Soláthraithe {category} in aice leat",
     "seeking_title": "Daoine a bhfuil {category} uathu",
-    "subtitle": "Gach duine atá infheicthe faoi láthair. Scag de réir cathrach más mian leat.",
+    "subtitle": "Brabhsáil gach duine anseo saor in aisce. Díghlasáil rochtain iomlán chun guthán agus seoladh a fheiceáil.",
     "loading": "Á lódáil…",
     "not_registered_body": "Níl liostú gníomhach agat fós ar an ngléas seo.",
     "register_link": "← Ar ais go dtí an leathanach baile",

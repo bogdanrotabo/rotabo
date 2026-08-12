@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "解锁完整访问",
+    "intro": "浏览是免费的。要查看电话号码和地址并联系任何人，请解锁对每个条目的完整访问。",
+    "email_placeholder": "your@email.com",
+    "send_btn": "发送验证码",
+    "code_placeholder": "6 位验证码",
+    "verify_btn": "验证",
+    "code_sent": "我们已向 {email} 发送验证码。",
+    "choose": "选择你的访问权限：",
+    "tier1": "1 CHF — 1 个月",
+    "tier12": "2 CHF — 1 年",
+    "pay_note": "付款后，返回并再次点击该条目以显示详情。",
+    "unlocked": "已解锁——详情现在可见。",
+    "err_email": "请输入有效的电子邮箱。",
+    "err_code": "验证码无效或已过期。",
+    "err_generic": "出了点问题，请重试。"
+  },
+
   "here": {
     "title": "他们已经在这里了。",
     "note": "浏览是免费的。解锁全部详情并联系任何人——一个月 1 CHF，一年 2 CHF。",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} 小时前"
   },
   "browse_page": {
+    "unlock_btn": "🔓 查看联系方式",
     "offering_title": "你附近的{category}服务提供者",
     "seeking_title": "需要{category}的人",
-    "subtitle": "当前所有可见的人。如果需要，可以按城市筛选。",
+    "subtitle": "在这里免费浏览所有人。解锁完整访问以查看电话和地址。",
     "loading": "加载中…",
     "not_registered_body": "你在这台设备上还没有有效信息。",
     "register_link": "← 返回首页",

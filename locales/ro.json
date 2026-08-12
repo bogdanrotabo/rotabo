@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Deblochează accesul complet",
+    "intro": "Navigarea e gratuită. Ca să vezi numere de telefon și adrese și să contactezi pe oricine, deblochează accesul complet la toate listările.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Trimite codul",
+    "code_placeholder": "cod din 6 cifre",
+    "verify_btn": "Verifică",
+    "code_sent": "Am trimis un cod la {email}.",
+    "choose": "Alege-ți accesul:",
+    "tier1": "1 CHF — 1 lună",
+    "tier12": "2 CHF — 1 an",
+    "pay_note": "După plată, revino și apasă din nou pe listare ca să vezi detaliile.",
+    "unlocked": "Acces deblocat — detaliile sunt acum vizibile.",
+    "err_email": "Introdu un email valid.",
+    "err_code": "Cod invalid sau expirat.",
+    "err_generic": "Ceva n-a mers. Încearcă din nou."
+  },
+
   "here": {
     "title": "Sunt deja aici.",
     "note": "Navigarea e gratuită. Deblochează toate detaliile și contactează pe oricine — 1 CHF pentru o lună, 2 CHF pentru un an.",
@@ -433,9 +451,10 @@
     "time_hour_ago_other": "acum {n} ore"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Vezi contactul",
     "offering_title": "Prestatori {category} lângă tine",
     "seeking_title": "Persoane care caută {category}",
-    "subtitle": "Toată lumea vizibilă acum. Filtrează după țară dacă vrei.",
+    "subtitle": "Vezi pe toți aici gratuit. Deblochează accesul complet ca să vezi telefonul și adresa.",
     "loading": "Se încarcă…",
     "not_registered_body": "Nu ai încă o listare pe acest dispozitiv.",
     "register_link": "← Înapoi acasă",

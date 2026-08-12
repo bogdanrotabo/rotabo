@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Desbloquear acesso completo",
+    "intro": "Navegar é grátis. Para ver telefones e moradas e contactar qualquer pessoa, desbloqueie o acesso completo a todos os anúncios.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Enviar código",
+    "code_placeholder": "código de 6 dígitos",
+    "verify_btn": "Verificar",
+    "code_sent": "Enviámos um código para {email}.",
+    "choose": "Escolha o seu acesso:",
+    "tier1": "1 CHF — 1 mês",
+    "tier12": "2 CHF — 1 ano",
+    "pay_note": "Após pagar, volte e toque novamente no anúncio para revelar os detalhes.",
+    "unlocked": "Acesso desbloqueado — os detalhes já estão visíveis.",
+    "err_email": "Introduza um email válido.",
+    "err_code": "Código inválido ou expirado.",
+    "err_generic": "Algo correu mal. Tente novamente."
+  },
+
   "here": {
     "title": "Eles já estão aqui.",
     "note": "Navegar é grátis. Desbloqueie todos os detalhes e contacte qualquer pessoa — 1 CHF por um mês, 2 CHF por um ano.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "há {n} horas"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Ver contacto",
     "offering_title": "Prestadores de {category} perto de ti",
     "seeking_title": "Pessoas que precisam de {category}",
-    "subtitle": "Todo mundo que está visível agora. Filtre por cidade se quiser.",
+    "subtitle": "Veja todos aqui grátis. Desbloqueie o acesso completo para ver telefone e morada.",
     "loading": "A carregar…",
     "not_registered_body": "Você ainda não tem um anúncio ativo neste dispositivo.",
     "register_link": "← Voltar para o início",

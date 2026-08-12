@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Atrakinti visą prieigą",
+    "intro": "Naršyti nemokama. Kad matytum telefono numerius ir adresus ir susisiektum su bet kuo, atrakink visą prieigą prie visų skelbimų.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Siųsti kodą",
+    "code_placeholder": "6 skaitmenų kodas",
+    "verify_btn": "Patvirtinti",
+    "code_sent": "Išsiuntėme kodą į {email}.",
+    "choose": "Pasirink savo prieigą:",
+    "tier1": "1 CHF — 1 mėnuo",
+    "tier12": "2 CHF — 1 metai",
+    "pay_note": "Sumokėję grįžkite ir dar kartą bakstelėkite skelbimą, kad matytumėte informaciją.",
+    "unlocked": "Prieiga atrakinta — informacija dabar matoma.",
+    "err_email": "Įveskite galiojantį el. paštą.",
+    "err_code": "Neteisingas arba pasibaigęs kodas.",
+    "err_generic": "Kažkas nepavyko. Bandykite dar kartą."
+  },
+
   "here": {
     "title": "Jie jau čia.",
     "note": "Naršyti nemokama. Atrakink visą informaciją ir susisiek su bet kuo — 1 CHF mėnesiui, 2 CHF metams.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "prieš {n} val."
   },
   "browse_page": {
+    "unlock_btn": "🔓 Rodyti kontaktą",
     "offering_title": "{category} paslaugų teikėjai netoli tavęs",
     "seeking_title": "Žmonės, kuriems reikia {category}",
-    "subtitle": "Visi, kurie šiuo metu matomi. Jei nori, filtruok pagal miestą.",
+    "subtitle": "Naršyk visus čia nemokamai. Atrakink visą prieigą, kad matytum telefoną ir adresą.",
     "loading": "Kraunama…",
     "not_registered_body": "Šiame įrenginyje dar neturi aktyvaus skelbimo.",
     "register_link": "← Atgal į pradžią",

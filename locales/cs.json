@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Odemknout plný přístup",
+    "intro": "Prohlížení je zdarma. Abys viděl telefony a adresy a kontaktoval kohokoli, odemkni plný přístup ke všem inzerátům.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Poslat kód",
+    "code_placeholder": "6místný kód",
+    "verify_btn": "Ověřit",
+    "code_sent": "Poslali jsme kód na {email}.",
+    "choose": "Vyber si přístup:",
+    "tier1": "1 CHF — 1 měsíc",
+    "tier12": "2 CHF — 1 rok",
+    "pay_note": "Po zaplacení se vrať a znovu klepni na inzerát, aby se zobrazily podrobnosti.",
+    "unlocked": "Přístup odemčen — podrobnosti jsou nyní viditelné.",
+    "err_email": "Zadej platný e-mail.",
+    "err_code": "Neplatný nebo vypršelý kód.",
+    "err_generic": "Něco se pokazilo. Zkus to znovu."
+  },
+
   "here": {
     "title": "Už jsou tady.",
     "note": "Prohlížení je zdarma. Odemkni všechny podrobnosti a kontaktuj kohokoli — 1 CHF na měsíc, 2 CHF na rok.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "před {n} hodinami"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Zobrazit kontakt",
     "offering_title": "Poskytovatelé {category} poblíž tebe",
     "seeking_title": "Lidé, kteří potřebují {category}",
-    "subtitle": "Všichni, kdo jsou právě viditelní. Klidně filtruj podle města.",
+    "subtitle": "Procházej tu všechny zdarma. Odemkni plný přístup, abys viděl telefon a adresu.",
     "loading": "Načítání…",
     "not_registered_body": "Na tomto zařízení zatím nemáš aktivní nabídku.",
     "register_link": "← Zpět domů",

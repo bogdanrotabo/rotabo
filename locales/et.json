@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Ava täielik juurdepääs",
+    "intro": "Sirvimine on tasuta. Et näha telefoninumbreid ja aadresse ning võtta kellegagi ühendust, ava täielik juurdepääs kõigile kuulutustele.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Saada kood",
+    "code_placeholder": "6-kohaline kood",
+    "verify_btn": "Kinnita",
+    "code_sent": "Saatsime koodi aadressile {email}.",
+    "choose": "Vali oma juurdepääs:",
+    "tier1": "1 CHF — 1 kuu",
+    "tier12": "2 CHF — 1 aasta",
+    "pay_note": "Pärast maksmist tule tagasi ja puuduta kuulutust uuesti, et näha üksikasju.",
+    "unlocked": "Juurdepääs avatud — üksikasjad on nüüd nähtavad.",
+    "err_email": "Sisesta kehtiv e-post.",
+    "err_code": "Vigane või aegunud kood.",
+    "err_generic": "Midagi läks valesti. Proovi uuesti."
+  },
+
   "here": {
     "title": "Nad on juba siin.",
     "note": "Sirvimine on tasuta. Ava kõik üksikasjad ja võta kellegagi ühendust — 1 CHF kuu eest, 2 CHF aasta eest.",
@@ -376,9 +394,10 @@
     "time_hour_ago_other": "{n} tundi tagasi"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Näita kontakti",
     "offering_title": "{category} pakkujad sinu lähedal",
     "seeking_title": "Inimesed, kes vajavad {category}",
-    "subtitle": "Kõik, kes on praegu nähtavad. Soovi korral filtreeri linna järgi.",
+    "subtitle": "Sirvi siin kõiki tasuta. Ava täielik juurdepääs, et näha telefoni ja aadressi.",
     "loading": "Laadimine…",
     "not_registered_body": "Sul ei ole veel selles seadmes aktiivset kuulutust.",
     "register_link": "← Tagasi avalehele",

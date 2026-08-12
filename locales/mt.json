@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Iftaħ aċċess sħiħ",
+    "intro": "It-tfittxija hija b'xejn. Biex tara n-numri tat-telefon u l-indirizzi u tikkuntattja lil kulħadd, iftaħ aċċess sħiħ għal kull reklam.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Ibgħat kodiċi",
+    "code_placeholder": "kodiċi ta' 6 ċifri",
+    "verify_btn": "Ivverifika",
+    "code_sent": "Bgħatna kodiċi lil {email}.",
+    "choose": "Agħżel l-aċċess tiegħek:",
+    "tier1": "1 CHF — xahar",
+    "tier12": "2 CHF — sena",
+    "pay_note": "Wara l-ħlas, erġa' lura u agħfas ir-reklam mill-ġdid biex tikxef id-dettalji.",
+    "unlocked": "Aċċess miftuħ — id-dettalji issa jidhru.",
+    "err_email": "Jekk jogħġbok daħħal email validu.",
+    "err_code": "Kodiċi invalidu jew skadut.",
+    "err_generic": "Xi ħaġa marret ħażin. Erġa' pprova."
+  },
+
   "here": {
     "title": "Diġà qegħdin hawn.",
     "note": "It-tfittxija hija b'xejn. Iftaħ id-dettalji kollha u kkuntattja lil kulħadd — 1 CHF għal xahar, 2 CHF għal sena.",
@@ -341,9 +359,10 @@
     "time_hour_ago_other": "{n} sigħat ilu"
   },
   "browse_page": {
+    "unlock_btn": "🔓 Ara l-kuntatt",
     "offering_title": "Fornituri ta' {category} qrib tiegħek",
     "seeking_title": "Nies li jeħtieġu {category}",
-    "subtitle": "Kulħadd li bħalissa huwa viżibbli. Filtra skont il-belt jekk trid.",
+    "subtitle": "Fittex lil kulħadd hawn b'xejn. Iftaħ aċċess sħiħ biex tara t-telefon u l-indirizz.",
     "loading": "Qed jgħabbi…",
     "not_registered_body": "Għad m'għandekx lista attiva fuq dan l-apparat.",
     "register_link": "← Lura lejn il-paġna ewlenija",

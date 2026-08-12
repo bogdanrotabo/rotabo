@@ -1,4 +1,22 @@
 {
+  "viewer": {
+    "title": "Unlock full access",
+    "intro": "Browsing is free. To see phone numbers and addresses and contact anyone, unlock full access to every listing.",
+    "email_placeholder": "your@email.com",
+    "send_btn": "Send code",
+    "code_placeholder": "6-digit code",
+    "verify_btn": "Verify",
+    "code_sent": "We sent a code to {email}.",
+    "choose": "Choose your access:",
+    "tier1": "1 CHF — 1 month",
+    "tier12": "2 CHF — 1 year",
+    "pay_note": "After paying, come back and tap the listing again to reveal the details.",
+    "unlocked": "Access unlocked — details are now visible.",
+    "err_email": "Please enter a valid email.",
+    "err_code": "Invalid or expired code.",
+    "err_generic": "Something went wrong. Please try again."
+  },
+
   "nav": {
     "how": "How it works",
     "safety": "Safety",
@@ -431,9 +449,10 @@
     "time_hour_ago_other": "{n} hours ago"
   },
   "browse_page": {
+    "unlock_btn": "🔓 See contact",
     "offering_title": "{category} providers near you",
     "seeking_title": "People who need {category}",
-    "subtitle": "Everyone currently visible. Filter by country if you like.",
+    "subtitle": "Browse everyone here for free. Unlock full access to see phone and address.",
     "loading": "Loading…",
     "not_registered_body": "You don’t have a listing on this device yet.",
     "register_link": "← Back to home",
