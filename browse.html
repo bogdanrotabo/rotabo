@@ -474,8 +474,9 @@
         unlockBtn.textContent = tr("unlock_btn");
         unlockBtn.addEventListener("click", function(){
           if (!window.RotaboViewer) return;
-          window.RotaboViewer.reveal({ id: row.id, onDetails: function(details){
-            var d = (details && details[0]) || {};
+          window.RotaboViewer.reveal({ number: row.number, onDetails: function(details){
+            var match = (details || []).filter(function(x){ return x.category === category && x.role === browseRole; });
+            var d = match[0] || (details && details[0]) || {};
             unlockBtn.hidden = true;
             var addressEl = card.querySelector(".address");
             if (d.address) { addressEl.textContent = d.address; addressEl.hidden = false; }
