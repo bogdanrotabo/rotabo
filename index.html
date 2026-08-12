@@ -1987,10 +1987,21 @@ if ("serviceWorker" in navigator) {
     }
     box.innerHTML = listData.map(entryHtml).join("");
   }
+  var lastListJson = null;
   function fetchList(){
     sb.from("public_listings").select("number,name,country,category,role,city")
       .order("number", { ascending: true })
-      .then(function(res){ if (res && res.data){ listData = res.data; renderList(); } });
+      .then(function(res){
+        if (res && res.data){
+          var j = JSON.stringify(res.data);
+          // Skip re-render when nothing changed, so a viewer's just-revealed
+          // contact details aren't wiped by the background poll.
+          if (j === lastListJson) return;
+          lastListJson = j;
+          listData = res.data;
+          renderList();
+        }
+      });
   }
 
   function doSearch(){

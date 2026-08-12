@@ -427,6 +427,7 @@
     }
   }
 
+  var lastBrowseSig = null;
   var loadListingsRequestId = 0;
   function loadListings(){
     var requestId = ++loadListingsRequestId;
@@ -444,6 +445,11 @@
       // projection (no private fields ever leave the server unfiltered).
       if (countryFilter) { var cf = countryFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.country || "").toLowerCase().indexOf(cf) !== -1; }); }
       if (cityFilter) { var cyf = cityFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.city || "").toLowerCase().indexOf(cyf) !== -1; }); }
+      // Skip re-render when the filtered result is unchanged, so an unlocked
+      // card's revealed contact details aren't wiped by the 5s poll.
+      var sig = JSON.stringify(rows);
+      if (sig === lastBrowseSig) return;
+      lastBrowseSig = sig;
       if (rows.length === 0) {
         list.innerHTML = '<p class="empty-note"></p>';
         list.querySelector(".empty-note").textContent = tr("empty_note");
