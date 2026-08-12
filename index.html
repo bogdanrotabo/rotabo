@@ -532,6 +532,12 @@
   .he-name{font-weight:700;color:var(--text-dark);}
   .he-sep{color:var(--text-eyebrow);}
   .he-cat{color:var(--text-body);font-weight:600;}
+  .here-entry{cursor:pointer;transition:border-color .15s;}
+  .here-entry:hover{border-color:var(--violet-2);}
+  .he-unlock{margin-left:auto;font-size:1rem;opacity:.55;}
+  html[dir="rtl"] .he-unlock{margin-left:0;margin-right:auto;}
+  .he-details{flex-basis:100%;margin-top:8px;color:var(--text-dark);font-size:.97rem;line-height:1.5;}
+  .he-contact a{color:var(--violet-1);font-weight:700;text-decoration:none;}
   .here-note{
     max-width:640px;margin:22px auto 0;text-align:center;
     color:var(--text-body);font-size:1rem;line-height:1.6;
@@ -1844,6 +1850,7 @@ if ("serviceWorker" in navigator) {
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/viewer.js"></script>
 <script>
 // Rotabo Number: live list, search, and personalised banknote example.
 (function(){
@@ -1934,14 +1941,38 @@ if ("serviceWorker" in navigator) {
   }
   function entryHtml(r){
     var flag = flagFor(r.country);
-    return '<div class="here-entry">' +
+    return '<div class="here-entry" data-num="' + r.number + '" role="button" tabindex="0">' +
       '<span class="he-num" dir="ltr">#' + r.number + '</span>' +
       (flag ? '<span class="he-flag">' + flag + '</span>' : '') +
       '<span class="he-name">' + esc(r.name) + '</span>' +
       '<span class="he-sep">·</span>' +
       '<span class="he-cat">' + esc(catLabel(r.category)) + '</span>' +
+      '<span class="he-unlock" aria-hidden="true">🔓</span>' +
+      '<div class="he-details" hidden></div>' +
     '</div>';
   }
+  function renderEntryDetails(el, rows){
+    var box = el.querySelector(".he-details");
+    if (!box) return;
+    box.innerHTML = (rows || []).map(function(d){
+      var parts = [];
+      if (d.phone) parts.push('<a href="tel:' + esc(d.phone) + '">' + esc(d.phone) + '</a>');
+      if (d.address) parts.push(esc(d.address));
+      if (d.note) parts.push(esc(d.note));
+      return '<div class="he-contact">' + parts.join(' &middot; ') + '</div>';
+    }).join("");
+    box.hidden = false;
+    var u = el.querySelector(".he-unlock"); if (u) u.textContent = "✓";
+  }
+  document.addEventListener("click", function(e){
+    var el = e.target.closest ? e.target.closest(".here-entry") : null;
+    if (!el || !el.getAttribute("data-num")) return;
+    var box = el.querySelector(".he-details");
+    if (box && !box.hidden) return; // already revealed
+    if (!window.RotaboViewer) return;
+    var number = parseInt(el.getAttribute("data-num"), 10);
+    window.RotaboViewer.reveal({ number: number, onDetails: function(rows){ renderEntryDetails(el, rows); } });
+  });
 
   var listData = [];
   function renderList(){

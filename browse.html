@@ -141,6 +141,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/viewer.js"></script>
 <script>
 (function(){
   var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
@@ -171,7 +172,8 @@
     eyebrow: category.toUpperCase(),
     offering_title: "{category} providers near you",
     seeking_title: "People who need {category}",
-    subtitle: "Everyone currently visible. Filter by city if you like.",
+    subtitle: "Browse everyone here for free. Unlock full access to see phone and address.",
+    unlock_btn: "🔓 See contact",
     loading: "Loading…",
     not_registered_body: "You don’t have a listing on this device yet.",
     register_link: "← Back to home",
@@ -349,14 +351,11 @@
   }
 
   function renderMyListing(){
-    sb.from("listings")
-      .select("name, phone, email, city, country, address, note")
-      .eq("id", listingId)
-      .maybeSingle()
+    sb.rpc("get_own_listing", { p_id: listingId })
       .then(function(res){
         var box = document.getElementById("myListing");
-        if (!box || res.error || !res.data) return;
-        var row = res.data;
+        var row = res.data && res.data[0];
+        if (!box || res.error || !row) return;
         var location = [row.city, row.country].filter(Boolean).join(", ");
         var html = '<div class="my-eyebrow"></div><p class="my-sub"></p>'
           + '<div class="my-name"></div>'
@@ -430,25 +429,20 @@
   var loadListingsRequestId = 0;
   function loadListings(){
     var requestId = ++loadListingsRequestId;
-    var query = sb.from("listings")
-      .select("id, name, city, country, address, phone, email, note, created_at")
-      .eq("category", category)
-      .eq("role", browseRole)
-      .order("created_at", { ascending: false });
-    if (countryFilter) query = query.ilike("country", "%" + countryFilter + "%");
-    if (cityFilter) query = query.ilike("city", "%" + cityFilter + "%");
-
-    query.then(function(res){
+    sb.rpc("browse_public", { p_category: category, p_role: browseRole })
+      .then(function(res){
       // A later filter change or poll tick may have started a newer
-      // request that resolves before this one -- discard this result
-      // if it's no longer the most recent request in flight, otherwise
-      // a stale response can overwrite a fresher, correct one.
+      // request that resolves before this one -- discard stale results.
       if (requestId !== loadListingsRequestId) return;
       var list = document.getElementById("requestList");
       if (!list) return;
       if (res.error) return;
 
       var rows = res.data || [];
+      // Country/city filtering is done client-side over the public
+      // projection (no private fields ever leave the server unfiltered).
+      if (countryFilter) { var cf = countryFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.country || "").toLowerCase().indexOf(cf) !== -1; }); }
+      if (cityFilter) { var cyf = cityFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.city || "").toLowerCase().indexOf(cyf) !== -1; }); }
       if (rows.length === 0) {
         list.innerHTML = '<p class="empty-note"></p>';
         list.querySelector(".empty-note").textContent = tr("empty_note");
@@ -463,34 +457,36 @@
           '<div class="request-info">'
           + '<div class="name"></div>'
           + '<div class="city"></div>'
-          + '<div class="address"></div>'
-          + '<div class="note"></div>'
+          + '<div class="address" hidden></div>'
+          + '<div class="note" hidden></div>'
           + '</div>'
           + '<div class="contact-actions">'
-          + '<a class="call-btn"></a>'
-          + '<a class="email-btn"></a>'
+          + '<button type="button" class="call-btn unlock-btn"></button>'
+          + '<a class="call-btn tel-btn" hidden></a>'
+          + '<a class="email-btn addr-email" hidden></a>'
           + '</div>';
-        card.querySelector(".name").textContent = row.name;
+        card.querySelector(".name").textContent = "#" + row.number + "  " + row.name;
         var location = [row.city, row.country].filter(Boolean).join(", ");
         card.querySelector(".city").textContent = location + " · " + timeAgo(row.created_at);
-        var addressEl = card.querySelector(".address");
-        if (row.address) { addressEl.textContent = row.address; } else { addressEl.remove(); }
-        var noteEl = card.querySelector(".note");
-        if (row.note) { noteEl.textContent = row.note; } else { noteEl.remove(); }
-        var callBtn = card.querySelector(".call-btn");
-        if (row.phone) {
-          callBtn.href = "tel:" + row.phone;
-          callBtn.textContent = tr("call_btn");
-        } else {
-          callBtn.remove();
-        }
-        var emailBtn = card.querySelector(".email-btn");
-        if (row.email) {
-          emailBtn.href = "mailto:" + row.email;
-          emailBtn.textContent = tr("email_btn");
-        } else {
-          emailBtn.remove();
-        }
+        // Contact details (phone/address/email/note) stay hidden until the
+        // viewer unlocks paid access -- served only via get_listing_details_by_id.
+        var unlockBtn = card.querySelector(".unlock-btn");
+        unlockBtn.textContent = tr("unlock_btn");
+        unlockBtn.addEventListener("click", function(){
+          if (!window.RotaboViewer) return;
+          window.RotaboViewer.reveal({ id: row.id, onDetails: function(details){
+            var d = (details && details[0]) || {};
+            unlockBtn.hidden = true;
+            var addressEl = card.querySelector(".address");
+            if (d.address) { addressEl.textContent = d.address; addressEl.hidden = false; }
+            var noteEl = card.querySelector(".note");
+            if (d.note) { noteEl.textContent = d.note; noteEl.hidden = false; }
+            var telBtn = card.querySelector(".tel-btn");
+            if (d.phone) { telBtn.href = "tel:" + d.phone; telBtn.textContent = tr("call_btn"); telBtn.hidden = false; }
+            var emailBtn = card.querySelector(".addr-email");
+            if (d.email) { emailBtn.href = "mailto:" + d.email; emailBtn.textContent = tr("email_btn"); emailBtn.hidden = false; }
+          }});
+        });
         list.appendChild(card);
       });
     });
