@@ -195,7 +195,7 @@
       <div class="stats" id="visitStats"></div>
 
       <div class="filter-row">
-        <input type="text" id="visitSearchInput" placeholder="Search path or referrer…">
+        <input type="text" id="visitSearchInput" placeholder="Search path, country or referrer…">
       </div>
 
       <div class="table-wrap">
@@ -204,6 +204,7 @@
             <tr>
               <th>Time</th>
               <th>Path</th>
+              <th>Country</th>
               <th>Referrer</th>
               <th>Language</th>
               <th>Session</th>
@@ -446,13 +447,21 @@
     document.getElementById("visitStats").innerHTML = html;
   }
 
+  // "CH" -> "🇨🇭". Empty for anything that isn't a plain ISO-3166
+  // alpha-2 code, so an unknown origin shows as a dash rather than as
+  // a wrong flag.
+  function flagFromCode(code){
+    if (!/^[A-Z]{2}$/.test(code)) return "";
+    return String.fromCodePoint(0x1F1E6 + code.charCodeAt(0) - 65, 0x1F1E6 + code.charCodeAt(1) - 65);
+  }
+
   function renderVisits(){
     renderVisitsStats(allVisits);
 
     var search = document.getElementById("visitSearchInput").value.trim().toLowerCase();
     var rows = allVisits.filter(function(r){
       if (search) {
-        var hay = [r.path, r.referrer].join(" ").toLowerCase();
+        var hay = [r.path, r.country, r.referrer].join(" ").toLowerCase();
         if (hay.indexOf(search) === -1) return false;
       }
       return true;
@@ -469,9 +478,12 @@
 
     tbody.innerHTML = rows.map(function(r){
       var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
+      var cc = (r.country || "").toUpperCase();
+      var flag = flagFromCode(cc);
       return "<tr>"
         + "<td>" + esc(created) + "</td>"
         + "<td>" + esc(r.path) + "</td>"
+        + "<td>" + (cc ? (flag ? flag + " " : "") + esc(cc) : "—") + "</td>"
         + "<td>" + esc(r.referrer || "—") + "</td>"
         + "<td>" + esc(r.language) + "</td>"
         + "<td>" + esc((r.session_id || "").slice(0, 8)) + "</td>"
