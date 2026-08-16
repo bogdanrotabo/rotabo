@@ -35,6 +35,40 @@
     localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60000));
   }
 
+  // The verified-email token above lives ~29 minutes, which is right for
+  // proving an address but wrong for paid access that lasts a month or a
+  // year -- it made buyers redo the emailed code every half hour. Once
+  // access is confirmed we trade it for a viewer session, minted server
+  // side and capped at the paid-access expiry.
+  function getSession() {
+    var token = localStorage.getItem("rotabo_viewer_session");
+    var email = localStorage.getItem("rotabo_verified_email") || "";
+    var until = parseInt(localStorage.getItem("rotabo_viewer_session_until") || "0", 10);
+    if (token && until > Date.now()) return { token: token, email: email };
+    return null;
+  }
+  function clearSession() {
+    localStorage.removeItem("rotabo_viewer_session");
+    localStorage.removeItem("rotabo_viewer_session_until");
+  }
+  // Whichever credential is currently good: the long session first.
+  function getCredential() { return getSession() || getToken(); }
+
+  // Swap a fresh verified-email token for a session. Best effort -- if it
+  // fails the viewer simply keeps using the short token as before.
+  function startSession(tok) {
+    if (!tok || getSession()) return Promise.resolve();
+    return sb.rpc("viewer_start_session", { p_token: tok.token }).then(function (r) {
+      var row = r && r.data && (Array.isArray(r.data) ? r.data[0] : r.data);
+      if (!row || !row.session_token) return;
+      localStorage.setItem("rotabo_viewer_session", row.session_token);
+      localStorage.setItem(
+        "rotabo_viewer_session_until",
+        String(row.session_expires ? new Date(row.session_expires).getTime() : Date.now() + 30 * 86400000)
+      );
+    }).catch(function () { /* keep the short token */ });
+  }
+
   function T(key, def, vars) {
     var d = window.__dict;
     var val = def;
@@ -100,7 +134,7 @@
     if (!overlay) build();
     onUnlock = cb || null;
     overlay.classList.add("open");
-    var tok = getToken();
+    var tok = getCredential();
     if (tok) stepAccessCheck(tok); else stepEmail();
   }
   function close() { if (overlay) overlay.classList.remove("open"); }
@@ -149,9 +183,28 @@
   function stepAccessCheck(tok) {
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>…</p>';
     sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
-      if (r && r.data === true) { stepSuccess(); if (onUnlock) onUnlock(); }
-      else stepPay(tok);
-    }).catch(function () { stepPay(tok); });
+      if (r && r.data === true) {
+        // Access confirmed: mint the long session before showing success,
+        // so the next visit needs no emailed code.
+        startSession(tok).then(function () {
+          stepSuccess();
+          if (onUnlock) onUnlock();
+        });
+      } else toPayment();
+    }).catch(function () { toPayment(); });
+
+    // No access (or it lapsed). Any session we hold is worthless now, and
+    // the checkout's client_reference_id must carry a verified-email token
+    // -- that is what the Stripe webhook looks up to know who paid. With a
+    // session token there it would find nothing and fall back to whatever
+    // address Stripe collected. So drop the session and, if there is no
+    // fresh verified token, send them back through the emailed code.
+    function toPayment() {
+      clearSession();
+      var verified = getToken();
+      if (verified) stepPay(verified);
+      else stepEmail(tok.email || "");
+    }
   }
   function stepPay(tok) {
     var q = "?client_reference_id=" + encodeURIComponent("viewer-" + tok.token) + "&prefilled_email=" + encodeURIComponent(tok.email);
@@ -176,11 +229,11 @@
 
   // ----- public API -----
   window.RotaboViewer = {
-    hasToken: function () { return !!getToken(); },
+    hasToken: function () { return !!getCredential(); },
     open: open,
     // Reveal a listing's details. opts: {id} or {number}, onDetails(rows), onLocked()
     reveal: function (opts) {
-      var tok = getToken();
+      var tok = getCredential();
       if (!tok) { open(function () { window.RotaboViewer.reveal(opts); }); return; }
       var call = opts.id
         ? sb.rpc("get_listing_details_by_id", { p_id: opts.id, p_token: tok.token })
