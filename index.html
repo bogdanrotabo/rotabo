@@ -102,6 +102,50 @@
     font-size:.9rem;font-weight:600;
     margin:0 0 18px;
   }
+  /* Category strip — one row of chips that never wraps. When the viewport
+     is too narrow for all 11, the row scrolls sideways instead; the edge
+     fades hint that there is more to see. */
+  .cat-strip{
+    position:relative;
+    margin:0 -24px 18px;          /* bleed out to the hero's own padding */
+  }
+  .cat-strip::before,
+  .cat-strip::after{
+    content:"";position:absolute;top:0;bottom:0;width:26px;
+    pointer-events:none;z-index:1;
+  }
+  .cat-strip::before{left:0;background:linear-gradient(to right,#f5eaf9,rgba(245,234,249,0));}
+  .cat-strip::after{right:0;background:linear-gradient(to left,#f5eaf9,rgba(245,234,249,0));}
+  .cat-strip-scroll{
+    display:flex;
+    gap:10px;
+    /* "safe" keeps the first chip reachable once the row overflows;
+       browsers that don't know it fall back to flex-start, which is
+       equally un-clipped. */
+    justify-content:safe center;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    padding:2px 24px;
+    scroll-padding-inline:24px;
+  }
+  .cat-strip-scroll::-webkit-scrollbar{display:none;}
+  .cat-chip{
+    flex:0 0 auto;
+    display:inline-flex;align-items:center;gap:7px;
+    padding:8px 14px;border-radius:999px;
+    background:var(--bg-card);border:1px solid var(--border);
+    color:var(--text-dark);
+    font-family:inherit;font-size:14px;font-weight:700;line-height:1.2;
+    white-space:nowrap;cursor:pointer;
+    transition:background .15s,border-color .15s,color .15s;
+  }
+  .cat-chip:hover,.cat-chip:active{background:#fff;border-color:#9B3FAF;color:#9B3FAF;}
+  .cat-chip:focus-visible{outline:2px solid #9B3FAF;outline-offset:2px;}
+  .cat-chip .chip-emoji{font-size:15px;line-height:1;}
+
   .pill{
     display:inline-block;
     border:1px solid var(--border);
@@ -275,6 +319,12 @@
     background:var(--bg-card);border:1px solid var(--border);
     border-radius:20px;padding:28px 24px;text-align:center;
   }
+  /* Brief purple pulse when a chip in the hero strip points here. */
+  @keyframes catPulse{
+    0%{border-color:#9B3FAF;box-shadow:0 0 0 0 rgba(155,63,175,.45);}
+    100%{border-color:var(--border);box-shadow:0 0 0 16px rgba(155,63,175,0);}
+  }
+  .category-card.cat-pulse{animation:catPulse 1s ease-out;}
   .category-card .cat-icon{font-size:2rem;margin-bottom:12px;}
   .category-card h3{color:var(--text-dark);font-size:1.15rem;margin:0 0 8px;}
   .category-card p{font-size:.92rem;line-height:1.5;margin:0 0 18px;color:var(--text-body);}
@@ -612,6 +662,26 @@
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
   <h1 class="tagline" dir="ltr">Need <span class="me">Me</span>! Find <span class="me">Me</span>!<br>On a Banknote!</h1>
 
+  <!-- The 11 marketplace categories, in the same order as the big cards.
+       Names reuse the card translation keys, so every language the cards
+       speak the chips speak too. The emoji sits in its own span so
+       applyTranslations() (which rewrites textContent) can't eat it. -->
+  <nav class="cat-strip" aria-label="Marketplace categories">
+    <div class="cat-strip-scroll" id="catStrip">
+      <button type="button" class="cat-chip" data-cat="cat-drive"><span class="chip-emoji" aria-hidden="true">🚗</span><span data-i18n="categories.drive.name">Drive</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-translator"><span class="chip-emoji" aria-hidden="true">🗣️</span><span data-i18n="categories.translator.name">Translator</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-move"><span class="chip-emoji" aria-hidden="true">📦</span><span data-i18n="categories.move.name">Move</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-build"><span class="chip-emoji" aria-hidden="true">🏗️</span><span data-i18n="categories.build.name">Build</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-tools"><span class="chip-emoji" aria-hidden="true">🛠️</span><span data-i18n="categories.tools.name">Tools</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-home"><span class="chip-emoji" aria-hidden="true">🏠</span><span data-i18n="categories.home.name">Home</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-auto"><span class="chip-emoji" aria-hidden="true">🔧</span><span data-i18n="categories.auto.name">Auto</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-care"><span class="chip-emoji" aria-hidden="true">👵</span><span data-i18n="categories.care.name">Borrowed Grandparents</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-learn"><span class="chip-emoji" aria-hidden="true">🧑‍🏫</span><span data-i18n="categories.learn.name">Teachers</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-stay"><span class="chip-emoji" aria-hidden="true">🏖️</span><span data-i18n="categories.stay.name">Vacation Stays</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji" aria-hidden="true">🆘</span><span data-i18n="categories.other.name">Something Else</span></button>
+    </div>
+  </nav>
+
   <p class="hero-intro" data-i18n="hero.number_intro">Everyone on Rotabo has a number. One number. Yours forever. It says who you are, where you are, and what you can do — findable by anyone on Earth.</p>
 
   <form class="number-search" id="numberSearch" onsubmit="return false;" dir="ltr">
@@ -714,7 +784,7 @@
   <h2 dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h2>
   <p class="lede" style="text-align:center;max-width:560px;margin:0 auto 8px;" data-i18n="categories.section_lead">Pick what you need — or list yourself as someone who can help.</p>
   <div class="category-grid">
-    <div class="category-card">
+    <div class="category-card" id="cat-drive">
       <div class="cat-icon">🚗</div>
       <h3 data-i18n="categories.drive.name">Drive</h3>
       <p data-i18n="categories.drive.desc">A driver who comes to you and drives your own car.</p>
@@ -723,7 +793,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openModal('becomeDriverModal')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-translator">
       <div class="cat-icon">🗣️</div>
       <h3 data-i18n="categories.translator.name">Translator</h3>
       <p data-i18n="categories.translator.desc">A translator or interpreter when you need one — calls, appointments, paperwork, or in person.</p>
@@ -732,7 +802,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('translator','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-move">
       <div class="cat-icon">📦</div>
       <h3 data-i18n="categories.move.name">Move</h3>
       <p data-i18n="categories.move.desc">Furniture, boxes, or a whole home — with a van and a driver.</p>
@@ -741,7 +811,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('move','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-build">
       <div class="cat-icon">🏗️</div>
       <h3 data-i18n="categories.build.name">Build</h3>
       <p data-i18n="categories.build.desc">Excavators, generators, lifts — heavy equipment with an operator.</p>
@@ -750,7 +820,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('build','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-tools">
       <div class="cat-icon">🛠️</div>
       <h3 data-i18n="categories.tools.name">Tools</h3>
       <p data-i18n="categories.tools.desc">Power tools and machinery, ready when you need them.</p>
@@ -759,7 +829,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('tools','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-home">
       <div class="cat-icon">🏠</div>
       <h3 data-i18n="categories.home.name">Home</h3>
       <p data-i18n="categories.home.desc">Electricians, plumbers, cleaners, and other home help.</p>
@@ -768,7 +838,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('home','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-auto">
       <div class="cat-icon">🔧</div>
       <h3 data-i18n="categories.auto.name">Auto</h3>
       <p data-i18n="categories.auto.desc">Roadside help — battery, tyre, tow, mobile mechanic.</p>
@@ -777,7 +847,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('auto','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-care">
       <div class="cat-icon">👵</div>
       <h3 data-i18n="categories.care.name">Borrowed Grandparents</h3>
       <p data-i18n="categories.care.desc">Retirees 60+ who give young families a few hours of childcare, company, and stories.</p>
@@ -786,7 +856,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('care','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-learn">
       <div class="cat-icon">🧑‍🏫</div>
       <h3 data-i18n="categories.learn.name">Teachers</h3>
       <p data-i18n="categories.learn.desc">Tutors and teachers for school subjects, languages, or skills — students helping students, retirees sharing experience, or anyone teaching Excel, cooking, gardening, and more.</p>
@@ -795,7 +865,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('learn','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-stay">
       <div class="cat-icon">🏖️</div>
       <h3 data-i18n="categories.stay.name">Vacation Stays</h3>
       <p data-i18n="categories.stay.desc">Swap vacation homes — you stay at theirs, they stay at yours — or host each other for a visit.</p>
@@ -804,7 +874,7 @@
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('stay','offering')">I offer this</button>
       </div>
     </div>
-    <div class="category-card">
+    <div class="category-card" id="cat-other">
       <div class="cat-icon">🆘</div>
       <h3 data-i18n="categories.other.name">Something Else</h3>
       <p data-i18n="categories.other.desc">Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.</p>
@@ -2026,6 +2096,24 @@ if ("serviceWorker" in navigator) {
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
+})();
+</script>
+<script>
+// Hero category strip: a chip scrolls to its big card and pulses it once.
+(function(){
+  var strip = document.getElementById("catStrip");
+  if (!strip) return;
+  strip.addEventListener("click", function(e){
+    var chip = e.target.closest(".cat-chip");
+    if (!chip) return;
+    var card = document.getElementById(chip.getAttribute("data-cat"));
+    if (!card) return;
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+    card.classList.remove("cat-pulse");
+    void card.offsetWidth;            // restart the animation on a repeat click
+    card.classList.add("cat-pulse");
+    setTimeout(function(){ card.classList.remove("cat-pulse"); }, 1100);
+  });
 })();
 </script>
 <script>
