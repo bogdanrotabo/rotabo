@@ -10,6 +10,7 @@
     "choose": "Vyber si přístup:",
     "tier1": "1 CHF — 1 měsíc",
     "tier12": "2 CHF — 1 rok",
+    "local_currency": "Účtováno ve vaší místní měně.",
     "pay_note": "Po zaplacení se vrať a znovu klepni na inzerát, aby se zobrazily podrobnosti.",
     "unlocked": "Přístup odemčen — podrobnosti jsou nyní viditelné.",
     "err_email": "Zadej platný e-mail.",

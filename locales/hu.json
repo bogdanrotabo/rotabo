@@ -10,6 +10,7 @@
     "choose": "Válaszd ki a hozzáférésed:",
     "tier1": "1 CHF — 1 hónap",
     "tier12": "2 CHF — 1 év",
+    "local_currency": "A saját pénznemében terheljük.",
     "pay_note": "Fizetés után gyere vissza, és koppints újra a hirdetésre a részletek megjelenítéséhez.",
     "unlocked": "Hozzáférés feloldva — a részletek most láthatók.",
     "err_email": "Adj meg egy érvényes e-mailt.",

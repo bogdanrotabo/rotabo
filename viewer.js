@@ -87,6 +87,7 @@
     choose: ["choose", "Choose your access:"],
     tier1: ["tier1", "1 CHF — 1 month"],
     tier12: ["tier12", "2 CHF — 1 year"],
+    localcur: ["local_currency", "Charged in your local currency."],
     paynote: ["pay_note", "After paying, come back and tap the listing again to reveal the details."],
     unlocked: ["unlocked", "Access unlocked — details are now visible."],
     err_email: ["err_email", "Please enter a valid email."],
@@ -213,6 +214,11 @@
       '<p>' + esc(t("choose")) + '</p>' +
       '<a class="rv-btn tier" href="' + TIER_LINKS["1"] + q + '">' + esc(t("tier1")) + '</a>' +
       '<a class="rv-btn tier" href="' + TIER_LINKS["12"] + q + '">' + esc(t("tier12")) + '</a>' +
+      // Prices are quoted in CHF, but Stripe's Adaptive Pricing is always
+      // on for Payment Links, so a buyer abroad is billed in their own
+      // currency. Saying so keeps the CHF figure honest without the site
+      // having to carry live exchange rates.
+      '<p style="font-size:.85rem;margin-top:6px;">' + esc(t("localcur")) + '</p>' +
       '<p style="font-size:.85rem;margin-top:6px;">' + esc(t("paynote")) + '</p>';
   }
   function stepSuccess() {

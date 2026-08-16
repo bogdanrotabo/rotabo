@@ -10,6 +10,7 @@
     "choose": "Vali oma juurdepääs:",
     "tier1": "1 CHF — 1 kuu",
     "tier12": "2 CHF — 1 aasta",
+    "local_currency": "Tasu võetakse teie kohalikus vääringus.",
     "pay_note": "Pärast maksmist tule tagasi ja puuduta kuulutust uuesti, et näha üksikasju.",
     "unlocked": "Juurdepääs avatud — üksikasjad on nüüd nähtavad.",
     "err_email": "Sisesta kehtiv e-post.",

@@ -10,6 +10,7 @@
     "choose": "Izvēlies savu piekļuvi:",
     "tier1": "1 CHF — 1 mēnesis",
     "tier12": "2 CHF — 1 gads",
+    "local_currency": "Tiek iekasēts jūsu vietējā valūtā.",
     "pay_note": "Pēc maksājuma atgriezies un vēlreiz pieskaries sludinājumam, lai redzētu detaļas.",
     "unlocked": "Piekļuve atbloķēta — detaļas tagad ir redzamas.",
     "err_email": "Lūdzu, ievadi derīgu e-pastu.",

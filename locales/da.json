@@ -10,6 +10,7 @@
     "choose": "Vælg din adgang:",
     "tier1": "1 CHF — 1 måned",
     "tier12": "2 CHF — 1 år",
+    "local_currency": "Opkræves i din lokale valuta.",
     "pay_note": "Kom tilbage efter betaling, og tryk på opslaget igen for at se detaljerne.",
     "unlocked": "Adgang låst op — detaljerne er nu synlige.",
     "err_email": "Indtast en gyldig e-mail.",

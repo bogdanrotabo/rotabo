@@ -10,6 +10,7 @@
     "choose": "Valitse käyttöoikeutesi:",
     "tier1": "1 CHF — 1 kuukausi",
     "tier12": "2 CHF — 1 vuosi",
+    "local_currency": "Veloitetaan paikallisessa valuutassasi.",
     "pay_note": "Maksun jälkeen palaa ja napauta ilmoitusta uudelleen nähdäksesi tiedot.",
     "unlocked": "Käyttöoikeus avattu — tiedot ovat nyt näkyvissä.",
     "err_email": "Anna kelvollinen sähköposti.",

@@ -10,6 +10,7 @@
     "choose": "Choisissez votre accès :",
     "tier1": "1 CHF — 1 mois",
     "tier12": "2 CHF — 1 an",
+    "local_currency": "Débité dans votre devise locale.",
     "pay_note": "Après le paiement, revenez et touchez à nouveau l'annonce pour révéler les détails.",
     "unlocked": "Accès débloqué — les détails sont maintenant visibles.",
     "err_email": "Veuillez saisir un e-mail valide.",
