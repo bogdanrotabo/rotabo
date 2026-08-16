@@ -31,7 +31,7 @@
     "fineprint": "A bankjegyekre írás a saját döntésed. Ellenőrizd a helyi törvényeket."
   },
 
-  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök" },
+  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök", "account": "Fiókom" },
   "hero": {
     "number_intro": "A Rotabón mindenkinek van egy száma. Egyetlen szám. Örökre a tiéd. Elmondja, ki vagy, hol vagy és mit tudsz — a Föld bárkije megtalálhat.",
     "search_placeholder": "Keress egy Rotabo-számot — pl. 2244",
@@ -43,10 +43,16 @@
     "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
     "cta_find": "Találd meg, amire szükséged van",
     "cta_offer": "Ajánld fel, amit tudsz",
-    "cta_find_driver": "Sofőr keresése", "cta_become_driver": "Legyél sofőr", "cta_translator": "Fordító, ha kell", "cta_become_sponsor": "Legyél támogató",
+    "cta_find_driver": "Sofőr keresése",
+    "cta_become_driver": "Legyél sofőr",
+    "cta_translator": "Fordító, ha kell",
+    "cta_become_sponsor": "Legyél támogató",
     "cta_home_screen": "⬇ Add hozzá a Rotabo-t a kezdőképernyőhöz",
     "fine": "A böngésződben működik — nincs szükség alkalmazásboltra.",
-    "badge_verified": "Ellenőrzött felhasználók", "badge_live": "Élő útvonalmegosztás", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Ellenőrzött felhasználók",
+    "badge_live": "Élő útvonalmegosztás",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Bejelentkezés"
   },
   "works": {
     "eyebrow": "HOGYAN MŰKÖDIK A ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Mondd el, mire van szükséged és hol.",
       "offering_title": "Ajánld útközbeni segítségedet",
       "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
+    },
+    "care": {
+      "name": "Kölcsönnagyszülők",
+      "desc": "60 év feletti nyugdíjasok, akik fiatal családoknak adnak pár óra gyerekfelügyeletet, társaságot és mesét.",
+      "seeking_title": "Segítség kellene a gyerekekkel?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol — heti pár óra felügyelet és társaság.",
+      "offering_title": "Ajánld fel magad kölcsönnagyszülőnek",
+      "offering_lead": "Hirdesd meg magad, hogy megtaláljanak a közeli családok, akik örülnének az idődnek."
+    },
+    "learn": {
+      "name": "Tanárok",
+      "desc": "Korrepetálás és tanárok iskolai tantárgyakhoz, nyelvekhez vagy készségekhez — diákok segítenek diákoknak, nyugdíjasok adják át a tapasztalatot, vagy valaki Excelt, főzést, kertészkedést és sok mást tanít.",
+      "seeking_title": "Korrepetálás vagy tanár kell?",
+      "seeking_lead": "Mondd el, mit szeretnél tanulni és hol.",
+      "offering_title": "Ajánld fel, hogy tanítasz",
+      "offering_lead": "Sorold fel a tudásod, hogy megtaláljanak a közelben tanulni vágyók."
+    },
+    "stay": {
+      "name": "Nyaralások",
+      "desc": "Cseréljetek nyaralót — te náluk laksz, ők nálad — vagy lássátok vendégül egymást.",
+      "seeking_title": "Szállást keresel?",
+      "seeking_lead": "Mondd el, hová szeretnél menni és mikor.",
+      "offering_title": "Ajánld fel az otthonod cserére vagy vendéglátásra",
+      "offering_lead": "Hirdesd meg az otthonod, hogy megtaláljanak, akik cserélnének vagy meglátogatnának."
+    },
+    "other": {
+      "name": "Valami más",
+      "desc": "Sehová sem illik? Mondd el a Rotabónak, mi történt — lehet, hogy valaki a közelben tud segíteni.",
+      "seeking_title": "Történt valami váratlan?",
+      "seeking_lead": "Mondd el, mire van szükséged és hol.",
+      "offering_title": "Ajánld fel, hogy bármiben segítesz",
+      "offering_lead": "Hirdesd meg magad, hogy megtaláljanak a szokatlan kéréssel érkezők."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Találj fordítót"
   },
   "problem": {
-    "eyebrow": "MIÉRT HAGYNÁD OTT AZ AUTÓD?", "h2": "A probléma minden más megoldással",
-    "cross1": "Nincs taxi.", "cross2": "Nincs egész éjszakás parkolás.", "cross3": "Nincs visszamenés érte másnap.", "cross4": "Nincs második út, hogy elhozd.",
+    "eyebrow": "MIÉRT HAGYNÁD OTT AZ AUTÓD?",
+    "h2": "A probléma minden más megoldással",
+    "cross1": "Nincs taxi.",
+    "cross2": "Nincs egész éjszakás parkolás.",
+    "cross3": "Nincs visszamenés érte másnap.",
+    "cross4": "Nincs második út, hogy elhozd.",
     "thesis": "Csak te, az autód, és az út haza."
   },
   "how": {
-    "eyebrow": "NÉGY LÉPÉS", "h2": "Hogyan működik a Rotabo",
-    "step1_title": "Kérj", "step1_desc": "Mondd meg a Rotabo-nak, hol vagy.",
-    "step2_title": "Találkozzatok", "step2_desc": "A sofőröd hozzád jön.",
-    "step3_title": "Vezess", "step3_desc": "Ők vezetik az autódat, te pedig benne ülsz.",
-    "step4_title": "Haza", "step4_desc": "Együtt érkeztek meg. Az autó végig a tiéd marad.",
-    "not_taxi1": "Nem taxi. Nem fuvar. Nem otthagyott autó.", "not_taxi2": "A te autód. A te utad haza.",
+    "eyebrow": "NÉGY LÉPÉS",
+    "h2": "Hogyan működik a Rotabo",
+    "step1_title": "Kérj",
+    "step1_desc": "Mondd meg a Rotabo-nak, hol vagy.",
+    "step2_title": "Találkozzatok",
+    "step2_desc": "A sofőröd hozzád jön.",
+    "step3_title": "Vezess",
+    "step3_desc": "Ők vezetik az autódat, te pedig benne ülsz.",
+    "step4_title": "Haza",
+    "step4_desc": "Együtt érkeztek meg. Az autó végig a tiéd marad.",
+    "not_taxi1": "Nem taxi. Nem fuvar. Nem otthagyott autó.",
+    "not_taxi2": "A te autód. A te utad haza.",
     "tab_client": "Fuvarra van szükségem",
     "tab_driver": "Vezetni szeretnék",
     "driver_step1_title": "Regisztrálj",
@@ -207,7 +255,8 @@
     "cta": "Legyél sofőr"
   },
   "safety": {
-    "eyebrow": "AKIK VEZETNEK", "h2": "Sofőrök, akiknek célja van",
+    "eyebrow": "AKIK VEZETNEK",
+    "h2": "Sofőrök, akiknek célja van",
     "check1": "Minden sofőr azért csatlakozik, hogy távol tartson valakit az úttól, akinek nem szabadna ott lennie",
     "check2": "Személyazonosság és jogosítvány ellenőrizve az első út előtt",
     "check3": "Közös magatartási kódex, amelyet minden sofőr elfogad",
@@ -215,25 +264,35 @@
     "check5": "Értékelj minden sofőrt, jelents minden esetet"
   },
   "partners_card": {
-    "cat": "PARTNEREK", "h3": "Éttermeknek, szállodáknak és helyszíneknek",
+    "cat": "PARTNEREK",
+    "h3": "Éttermeknek, szállodáknak és helyszíneknek",
     "p": "Hagyd, hogy vendégeid élvezzék az estét, és mégis a saját autójukkal menjenek haza. Kínáld fel a Rotabo-t az asztalnál, a recepción vagy az ajtóban.",
     "link": "Beszéljünk →"
   },
   "drivers_card": {
-    "cat": "SOFŐRÖK", "h3": "Vezess a Rotabo-val",
+    "cat": "SOFŐRÖK",
+    "h3": "Vezess a Rotabo-val",
     "p": "Minden út, amit megteszel, olyan út, amit senki nem bán meg. Válaszd meg a saját munkaidődet, vezess olyan autókat, amiket sosem kell megvenned, és vidd haza az embereket úgy, ahogy szeretnék.",
     "link": "Legyél sofőr →"
   },
   "supporters": {
-    "cat": "TÁMOGATÓK", "h3": "Az emberek és helyek e mögött",
+    "cat": "TÁMOGATÓK",
+    "h3": "Az emberek és helyek e mögött",
     "p": "A Rotabo-t mindenki életben tartja, aki hajlandó kiállni amellett, hogy senkinek sem szabad vezetnie, ha nem szabadna.",
     "invite": "Különösen szívesen látjuk a bankokat, biztosítókat, sportmárkákat, energiaital- és üdítőgyártókat — és minden vállalkozást, amely a józan vezetést támogatja.",
     "first": "Még nincs támogató — legyél az első név ezen a listán.",
-    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Ezüst — 300 CHF", "tier_gold": "Arany — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+    "tier_bronze": "Bronz — 100 CHF",
+    "tier_silver": "Ezüst — 300 CHF",
+    "tier_gold": "Arany — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
   },
   "footer": {
     "legal": "A Rotabo egy technológiai platform. A sofőrök független szolgáltatók, nem a Rotabo alkalmazottai.",
-    "terms": "Feltételek", "privacy": "Adatvédelem", "driver_terms": "Sofőrfeltételek", "supporters": "Támogatók", "contact": "Kapcsolat",
+    "terms": "Feltételek",
+    "privacy": "Adatvédelem",
+    "driver_terms": "Sofőrfeltételek",
+    "supporters": "Támogatók",
+    "contact": "Kapcsolat",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" },
@@ -249,7 +308,8 @@
     "address_hint": "A címedet csak azok a látogatók látják, akik fizettek a teljes hozzáférésért, ugyanúgy, mint a telefonszámodat.",
     "tier_label": "Láthatóság",
     "period_1mo": "1 hónap",
-    "period_12mo": "12 hónap"
+    "period_12mo": "12 hónap",
+    "email_hint": "Valódi címet adj meg — ide küldünk egy megerősítő kódot, mielőtt a hirdetésed megjelenik."
   },
   "find_form": {
     "destination_label": "Hová szeretnél menni?",
@@ -264,7 +324,10 @@
     "city_label": "Város / helyszín",
     "address_label": "Cím",
     "submit": "Tovább a fizetéshez",
-    "error": "Valami hiba történt. Kérjük, próbáld újra."
+    "error": "Valami hiba történt. Kérjük, próbáld újra.",
+    "country_label": "Ország",
+    "note_label": "Mesélj még (nem kötelező)",
+    "note_placeholder": "Pár részlet segít — mit, mikor, mennyit…"
   },
   "drive_form": {
     "title": "Legyél sofőr",
@@ -280,7 +343,10 @@
     "decl3": "Soha nem vállalok vagy teljesítek fuvart alkohol, drog vagy bármely más szer hatása alatt.",
     "decl4": "Tudomásul veszem, hogy a vezetés teljes mértékben a saját és az utas felelősségére történik.",
     "submit": "Tovább a fizetéshez",
-    "error": "Valami hiba történt. Kérjük, próbáld újra."
+    "error": "Valami hiba történt. Kérjük, próbáld újra.",
+    "country_label": "Ország",
+    "note_label": "Mesélj még (nem kötelező)",
+    "note_placeholder": "Pár részlet segít — mit, mikor, mennyit…"
   },
   "generic_form": {
     "name_label": "A neved",
@@ -291,7 +357,8 @@
     "note_label": "Mondj el többet (nem kötelező)",
     "note_placeholder": "Néhány részlet segít — mi, mikor, mennyiért…",
     "submit": "Tovább a fizetéshez",
-    "error": "Valami hiba történt. Kérjük, próbáld újra."
+    "error": "Valami hiba történt. Kérjük, próbáld újra.",
+    "country_label": "Ország"
   },
   "searching_page": {
     "fare_remaining": "Becsült hátralévő összeg: ~{amount} CHF, közvetlenül a sofőrödnek fizetve.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} perce",
     "time_hour_ago_one": "1 órája",
     "time_hour_ago_other": "{n} órája"
+  },
+
+  "investors_card": {
+    "cat": "BEFEKTETŐK",
+    "h3": "Legyél befektető",
+    "p": "A Rotabo 11 kategóriában és 38 nyelven köt össze embereket világszerte — jutalék nélkül mindenkitől, aki az idejét, tudását vagy eszközeit kínálja. Azokkal beszélgetünk, akik támogatják ezt a modellt.",
+    "link": "Vedd fel a kapcsolatot →"
+  },
+
+  "verify_modal": {
+    "title": "Nézd meg az e-mailjeidet",
+    "subtitle": "Küldtünk egy 6 jegyű kódot az alábbi címre. Írd be a folytatáshoz.",
+    "code_label": "Megerősítő kód",
+    "submit": "Kód megerősítése",
+    "resend": "Kód újraküldése",
+    "spam_hint": "Nem látod? Nézd meg a spam mappát — új feladó első levelei néha oda kerülnek.",
+    "error": "Érvénytelen vagy lejárt kód. Próbáld újra."
   }
 }

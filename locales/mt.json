@@ -31,7 +31,7 @@
     "fineprint": "Il-kitba fuq il-karti tal-flus hija l-għażla tiegħek. Iċċekkja l-liġijiet lokali."
   },
 
-  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ" },
+  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ", "account": "Il-kont tiegħi" },
   "hero": {
     "number_intro": "Kulħadd fuq Rotabo għandu numru. Numru wieħed. Tiegħek għal dejjem. Jgħid min int, fejn int u x'tista' tagħmel — jinstab minn kulħadd fid-dinja.",
     "search_placeholder": "Sib numru Rotabo — eż. 2244",
@@ -43,10 +43,16 @@
     "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
     "cta_find": "Sib dak li għandek bżonn",
     "cta_offer": "Offri dak li tista'",
-    "cta_find_driver": "Sib sewwieq", "cta_become_driver": "Sir sewwieq", "cta_translator": "Traduttur meta jkun meħtieġ", "cta_become_sponsor": "Sir sponsor",
+    "cta_find_driver": "Sib sewwieq",
+    "cta_become_driver": "Sir sewwieq",
+    "cta_translator": "Traduttur meta jkun meħtieġ",
+    "cta_become_sponsor": "Sir sponsor",
     "cta_home_screen": "⬇ Żid Rotabo mal-iskrin ta' id-dar",
     "fine": "Taħdem fil-browser tiegħek — ma teħtieġx app store.",
-    "badge_verified": "Utenti vverifikati", "badge_live": "Qsim tal-vjaġġ live", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Utenti vverifikati",
+    "badge_live": "Qsim tal-vjaġġ live",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Idħol"
   },
   "works": {
     "eyebrow": "KIF TAĦDEM ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Għidilna x'teħtieġ u fejn.",
       "offering_title": "Offri għajnuna fit-triq",
       "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
+    },
+    "care": {
+      "name": "Nanniet mislufa",
+      "desc": "Pensjonanti ta' 60 sena jew aktar li jagħtu lill-familji żgħażagħ ftit sigħat ta' kura, kumpanija u stejjer.",
+      "seeking_title": "Għandek bżonn għajnuna bit-tfal?",
+      "seeking_lead": "Għidilna x'għandek bżonn u fejn — ftit sigħat ta' kura u kumpanija fil-ġimgħa.",
+      "offering_title": "Offri li tkun nannu jew nanna mislufa",
+      "offering_lead": "Niżżel lilek innifsek biex isibuk il-familji fil-viċin li jieħdu gost bil-ħin tiegħek."
+    },
+    "learn": {
+      "name": "Għalliema",
+      "desc": "Tuturi u għalliema għal suġġetti tal-iskola, lingwi jew ħiliet — studenti jgħinu studenti, pensjonanti jaqsmu l-esperjenza, jew xi ħadd jgħallem Excel, tisjir, ġardinaġġ u aktar.",
+      "seeking_title": "Għandek bżonn tutur jew għalliem?",
+      "seeking_lead": "Għidilna x'trid titgħallem u fejn.",
+      "offering_title": "Offri li tgħallem",
+      "offering_lead": "Niżżel il-ħiliet tiegħek biex isibuk dawk li jridu jitgħallmu fil-viċin."
+    },
+    "stay": {
+      "name": "Soġġorni tal-vaganzi",
+      "desc": "Ibdlu d-djar tal-vaganzi — int toqgħod għandhom, huma joqogħdu għandek — jew ilqgħu lil xulxin għal żjara.",
+      "seeking_title": "Qed tfittex fejn toqgħod?",
+      "seeking_lead": "Għidilna fejn tixtieq tmur u meta.",
+      "offering_title": "Offri d-dar tiegħek għal bdil jew soġġorn",
+      "offering_lead": "Niżżel id-dar tiegħek biex isibuk dawk li jridu jibdlu jew jiġu jżuruk."
+    },
+    "other": {
+      "name": "Xi ħaġa oħra",
+      "desc": "Ma taqbel imkien ieħor? Għid lil Rotabo x'ġara — forsi xi ħadd fil-viċin jista' jgħin.",
+      "seeking_title": "Ġara xi ħaġa mhux mistennija?",
+      "seeking_lead": "Għidilna x'għandek bżonn u fejn.",
+      "offering_title": "Offri li tgħin f'kollox",
+      "offering_lead": "Niżżel lilek innifsek biex isibuk nies b'talba mhux tas-soltu."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Sib traduttur"
   },
   "problem": {
-    "eyebrow": "GĦALIEX TĦALLI L-KARROZZA TIEGĦEK WARAJK?", "h2": "Il-problema ma' kull għażla oħra",
-    "cross1": "L-ebda taxi.", "cross2": "L-ebda ipparkjar matul il-lejl.", "cross3": "L-ebda ġejjien lura għaliha għada.", "cross4": "L-ebda tieni vjaġġ biex tiġborha.",
+    "eyebrow": "GĦALIEX TĦALLI L-KARROZZA TIEGĦEK WARAJK?",
+    "h2": "Il-problema ma' kull għażla oħra",
+    "cross1": "L-ebda taxi.",
+    "cross2": "L-ebda ipparkjar matul il-lejl.",
+    "cross3": "L-ebda ġejjien lura għaliha għada.",
+    "cross4": "L-ebda tieni vjaġġ biex tiġborha.",
     "thesis": "Int biss, il-karrozza tiegħek, u t-triq lejn dar."
   },
   "how": {
-    "eyebrow": "ERBA' PASSI", "h2": "Kif taħdem Rotabo",
-    "step1_title": "Itlob", "step1_desc": "Għid lil Rotabo fejn qiegħed.",
-    "step2_title": "Iltaqa'", "step2_desc": "Is-sewwieq tiegħek jiġi għandek.",
-    "step3_title": "Suq", "step3_desc": "Huma jsuqu l-karrozza tiegħek, bik ġo fiha.",
-    "step4_title": "Dar", "step4_desc": "Taslu flimkien. Il-karrozza tibqa' tiegħek il-vjaġġ kollu.",
-    "not_taxi1": "Mhux taxi. Mhux passaġġ. Mhux karrozza mħollija warajk.", "not_taxi2": "Il-karrozza tiegħek. It-triq tiegħek lejn dar.",
+    "eyebrow": "ERBA' PASSI",
+    "h2": "Kif taħdem Rotabo",
+    "step1_title": "Itlob",
+    "step1_desc": "Għid lil Rotabo fejn qiegħed.",
+    "step2_title": "Iltaqa'",
+    "step2_desc": "Is-sewwieq tiegħek jiġi għandek.",
+    "step3_title": "Suq",
+    "step3_desc": "Huma jsuqu l-karrozza tiegħek, bik ġo fiha.",
+    "step4_title": "Dar",
+    "step4_desc": "Taslu flimkien. Il-karrozza tibqa' tiegħek il-vjaġġ kollu.",
+    "not_taxi1": "Mhux taxi. Mhux passaġġ. Mhux karrozza mħollija warajk.",
+    "not_taxi2": "Il-karrozza tiegħek. It-triq tiegħek lejn dar.",
     "tab_client": "Għandi bżonn passaġġ",
     "tab_driver": "Irrid insuq",
     "driver_step1_title": "Irreġistra",
@@ -207,7 +255,8 @@
     "cta": "Sir sewwieq"
   },
   "safety": {
-    "eyebrow": "IN-NIES LI JSUQU", "h2": "Sewwieqa li jsuqu għal raġuni",
+    "eyebrow": "IN-NIES LI JSUQU",
+    "h2": "Sewwieqa li jsuqu għal raġuni",
     "check1": "Kull sewwieq jingħaqad biex iżomm 'il bogħod mit-triq lil min m'għandux ikun fuqha",
     "check2": "L-identità u l-liċenzja jiġu kkonfermati qabel l-ewwel vjaġġ",
     "check3": "Kodiċi ta' kondotta kondiviż, maqbul minn kulħadd li jsuq",
@@ -215,25 +264,35 @@
     "check5": "Agħti klassifikazzjoni lil kull sewwieq, irrapporta kwalunkwe inċident"
   },
   "partners_card": {
-    "cat": "SĦAB", "h3": "Għal ristoranti, lukandi u postijiet",
+    "cat": "SĦAB",
+    "h3": "Għal ristoranti, lukandi u postijiet",
     "p": "Ħalli lill-mistiedna tiegħek igawdu s-serata u xorta jsuqu lura d-dar bil-karrozza tagħhom stess. Offri Rotabo fil-mejda, fir-reception, jew fil-bieb.",
     "link": "Kellimna →"
   },
   "drivers_card": {
-    "cat": "SEWWIEQA", "h3": "Suq ma' Rotabo",
+    "cat": "SEWWIEQA",
+    "h3": "Suq ma' Rotabo",
     "p": "Kull vjaġġ li tagħmel huwa vjaġġ li ħadd ma jieħu bi kbir. Agħżel is-sigħat tiegħek stess, suq karrozzi li qatt m'għandek għalfejn tixtri, u wassal lin-nies lejn darhom kif riedu jmorru.",
     "link": "Sir sewwieq →"
   },
   "supporters": {
-    "cat": "SPONSORS", "h3": "In-nies u l-postijiet wara dan kollu",
+    "cat": "SPONSORS",
+    "h3": "In-nies u l-postijiet wara dan kollu",
     "p": "Rotabo tibqa' sejra bis-saħħa ta' kull min lest jappoġġja l-idea li ħadd m'għandu jsuq meta m'għandux.",
     "invite": "Nilqgħu b'mod speċjali banek, kumpaniji tal-assigurazzjoni, marki sportivi, manifatturi ta' xarbiet enerġetiċi u mhux alkoħoliċi — u kwalunkwe negozju li jappoġġja s-sewqan bla alkoħol.",
     "first": "Għad m'hemm ebda sostenituri — kun l-ewwel isem f'din il-lista.",
-    "tier_bronze": "Bronż — 100 CHF", "tier_silver": "Fidda — 300 CHF", "tier_gold": "Deheb — 750 CHF", "tier_platinum": "Platinu — 750 CHF+"
+    "tier_bronze": "Bronż — 100 CHF",
+    "tier_silver": "Fidda — 300 CHF",
+    "tier_gold": "Deheb — 750 CHF",
+    "tier_platinum": "Platinu — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo hija pjattaforma teknoloġika. Is-sewwieqa huma fornituri indipendenti, mhux impjegati ta' Rotabo.",
-    "terms": "Termini", "privacy": "Privatezza", "driver_terms": "Termini tas-sewwieqa", "supporters": "Sponsors", "contact": "Kuntatt",
+    "terms": "Termini",
+    "privacy": "Privatezza",
+    "driver_terms": "Termini tas-sewwieqa",
+    "supporters": "Sponsors",
+    "contact": "Kuntatt",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" },
@@ -249,7 +308,8 @@
     "address_hint": "L-indirizz tiegħek jidher biss għal viżitaturi li ħallsu għal aċċess sħiħ, l-istess bħan-numru tat-telefon.",
     "tier_label": "Viżibbiltà",
     "period_1mo": "Xahar 1",
-    "period_12mo": "12-il xahar"
+    "period_12mo": "12-il xahar",
+    "email_hint": "Uża indirizz veru — se nibagħtu hemm kodiċi ta' verifika qabel ma l-annunċ tiegħek isir viżibbli."
   },
   "find_form": {
     "destination_label": "Fejn trid tmur?",
@@ -264,7 +324,10 @@
     "city_label": "Belt / post",
     "address_label": "Indirizz",
     "submit": "Kompli għall-ħlas",
-    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+    "country_label": "Pajjiż",
+    "note_label": "Għidilna aktar (mhux obbligatorju)",
+    "note_placeholder": "Ftit dettalji jgħinu — xiex, meta, kemm…"
   },
   "drive_form": {
     "title": "Sir sewwieq",
@@ -280,7 +343,10 @@
     "decl3": "Qatt mhu se naċċetta jew nagħmel vjaġġ waqt li nkun taħt l-effett tal-alkoħol, id-droga, jew kwalunkwe sustanza oħra.",
     "decl4": "Nifhem li nsuq għal kollox taħt ir-responsabbiltà tiegħi stess u ta' min qed jitla' fil-karrozza.",
     "submit": "Kompli għall-ħlas",
-    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+    "country_label": "Pajjiż",
+    "note_label": "Għidilna aktar (mhux obbligatorju)",
+    "note_placeholder": "Ftit dettalji jgħinu — xiex, meta, kemm…"
   },
   "generic_form": {
     "name_label": "Isimek",
@@ -291,7 +357,8 @@
     "note_label": "Għidilna aktar (mhux obbligatorju)",
     "note_placeholder": "Ftit dettalji jgħinu — x'inhu, meta, kemm…",
     "submit": "Kompli lejn il-ħlas",
-    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+    "error": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+    "country_label": "Pajjiż"
   },
   "searching_page": {
     "fare_remaining": "Ammont li fadal stmat: ~{amount} CHF, imħallas direttament lis-sewwieq tiegħek.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} minuti ilu",
     "time_hour_ago_one": "siegħa ilu",
     "time_hour_ago_other": "{n} sigħat ilu"
+  },
+
+  "investors_card": {
+    "cat": "INVESTITURI",
+    "h3": "Sir investitur",
+    "p": "Rotabo tgħaqqad nies f'11-il kategorija u 38 lingwa, madwar id-dinja — mingħajr kummissjoni minn ħadd li joffri l-ħin, il-ħiliet jew it-tagħmir tiegħu. Qed nitkellmu ma' nies li jappoġġjaw dan il-mudell.",
+    "link": "Ikkuntattjana →"
+  },
+
+  "verify_modal": {
+    "title": "Iċċekkja l-email tiegħek",
+    "subtitle": "Bgħatna kodiċi ta' 6 ċifri fl-indirizz hawn taħt. Daħħlu biex tkompli.",
+    "code_label": "Kodiċi ta' verifika",
+    "submit": "Ikkonferma l-kodiċi",
+    "resend": "Erġa' ibgħat il-kodiċi",
+    "spam_hint": "Ma tarahx? Iċċekkja l-folder tal-ispam — l-ewwel emails minn mittent ġdid xi kultant jispiċċaw hemm.",
+    "error": "Kodiċi invalidu jew skadut. Erġa' pprova."
   }
 }

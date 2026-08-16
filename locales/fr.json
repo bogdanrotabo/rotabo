@@ -36,7 +36,8 @@
     "safety": "Sécurité",
     "business": "Pour les entreprises",
     "drive": "Devenir chauffeur",
-    "drivers": "Chauffeurs"
+    "drivers": "Chauffeurs",
+    "account": "Mon compte"
   },
   "hero": {
     "number_intro": "Chacun sur Rotabo a un numéro. Un seul numéro. Le vôtre pour toujours. Il dit qui vous êtes, où vous êtes et ce que vous pouvez faire — trouvable par n'importe qui sur Terre.",
@@ -57,7 +58,8 @@
     "fine": "Fonctionne directement dans votre navigateur — aucun app store nécessaire.",
     "badge_verified": "Utilisateurs vérifiés",
     "badge_live": "Trajet partagé en direct",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Se connecter"
   },
   "works": {
     "eyebrow": "COMMENT FONCTIONNE ROTABO",
@@ -171,6 +173,38 @@
       "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
       "offering_title": "Propose du dépannage sur route",
       "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
+    },
+    "care": {
+      "name": "Grands-parents d'emprunt",
+      "desc": "Des retraités de 60 ans et plus qui offrent aux jeunes familles quelques heures de garde, de compagnie et d'histoires.",
+      "seeking_title": "Besoin d'un coup de main avec les enfants ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où — quelques heures de garde et de compagnie par semaine.",
+      "offering_title": "Proposez d'être un grand-parent d'emprunt",
+      "offering_lead": "Inscris-toi pour que les familles proches qui aimeraient ton temps te trouvent."
+    },
+    "learn": {
+      "name": "Enseignants",
+      "desc": "Des profs particuliers et des enseignants pour les matières scolaires, les langues ou d'autres compétences — des étudiants qui aident d'autres étudiants, des retraités qui transmettent leur expérience, ou quelqu'un qui enseigne Excel, la cuisine, le jardinage et bien plus.",
+      "seeking_title": "Besoin d'un prof particulier ou d'un enseignant ?",
+      "seeking_lead": "Dis-nous ce que tu veux apprendre et où.",
+      "offering_title": "Proposez d'enseigner",
+      "offering_lead": "Indique tes compétences pour que les apprenants proches te trouvent."
+    },
+    "stay": {
+      "name": "Séjours de vacances",
+      "desc": "Échangez vos maisons de vacances — tu loges chez eux, ils logent chez toi — ou accueillez-vous mutuellement.",
+      "seeking_title": "Tu cherches un endroit où loger ?",
+      "seeking_lead": "Dis-nous où tu aimerais aller et quand.",
+      "offering_title": "Proposez votre logement pour un échange ou un séjour",
+      "offering_lead": "Inscris ton logement pour que ceux qui veulent échanger ou venir te trouvent."
+    },
+    "other": {
+      "name": "Autre chose",
+      "desc": "Ça n'entre dans aucune catégorie ? Raconte à Rotabo ce qui s'est passé — quelqu'un près de toi peut peut-être aider.",
+      "seeking_title": "Il s'est passé quelque chose d'imprévu ?",
+      "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
+      "offering_title": "Proposez votre aide pour n'importe quoi",
+      "offering_lead": "Inscris-toi pour que les gens ayant une demande inhabituelle te trouvent."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Votre adresse n'est visible que par les visiteurs ayant payé l'accès complet, comme votre numéro de téléphone.",
     "tier_label": "Visibilité",
     "period_1mo": "1 mois",
-    "period_12mo": "12 mois"
+    "period_12mo": "12 mois",
+    "email_hint": "Utilise une vraie adresse — nous y enverrons un code de vérification avant la mise en ligne de ton annonce."
   },
   "find_form": {
     "destination_label": "Où voulez-vous aller ?",
@@ -299,7 +334,10 @@
     "city_label": "Ville / lieu",
     "address_label": "Adresse",
     "submit": "Continuer vers le paiement",
-    "error": "Une erreur s'est produite. Veuillez réessayer."
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "country_label": "Pays",
+    "note_label": "Dis-nous en plus (facultatif)",
+    "note_placeholder": "Quelques détails aident — quoi, quand, combien…"
   },
   "drive_form": {
     "title": "Devenir chauffeur",
@@ -315,7 +353,10 @@
     "decl3": "Je n'accepterai ni n'effectuerai jamais un trajet sous l'emprise de l'alcool, de drogues ou de toute autre substance.",
     "decl4": "Je comprends que je conduis entièrement sous ma propre responsabilité et celle du client.",
     "submit": "Continuer vers le paiement",
-    "error": "Une erreur s'est produite. Veuillez réessayer."
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "country_label": "Pays",
+    "note_label": "Dis-nous en plus (facultatif)",
+    "note_placeholder": "Quelques détails aident — quoi, quand, combien…"
   },
   "generic_form": {
     "name_label": "Ton nom",
@@ -326,7 +367,8 @@
     "note_label": "Dis-nous en plus (facultatif)",
     "note_placeholder": "Quelques détails aident — quoi, quand, combien…",
     "submit": "Continuer vers le paiement",
-    "error": "Une erreur s'est produite. Réessaie."
+    "error": "Une erreur s'est produite. Réessaie.",
+    "country_label": "Pays"
   },
   "searching_page": {
     "fare_remaining": "Solde estimé : ~{amount} CHF, payé directement à votre chauffeur.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "il y a {n} min",
     "time_hour_ago_one": "il y a 1 heure",
     "time_hour_ago_other": "il y a {n} heures"
+  },
+
+  "investors_card": {
+    "cat": "INVESTISSEURS",
+    "h3": "Devenir investisseur",
+    "p": "Rotabo relie les gens dans 11 catégories et 38 langues, partout dans le monde — sans aucune commission prélevée sur ceux qui offrent leur temps, leurs compétences ou leur matériel. Nous parlons avec ceux qui soutiennent ce modèle.",
+    "link": "Nous contacter →"
+  },
+
+  "verify_modal": {
+    "title": "Regarde tes e-mails",
+    "subtitle": "Nous avons envoyé un code à 6 chiffres à l'adresse ci-dessous. Saisis-le pour continuer.",
+    "code_label": "Code de vérification",
+    "submit": "Confirmer le code",
+    "resend": "Renvoyer le code",
+    "spam_hint": "Tu ne le vois pas ? Regarde dans les spams ou les indésirables — les premiers e-mails d'un nouvel expéditeur y atterrissent parfois.",
+    "error": "Code invalide ou expiré. Réessaie."
   }
 }

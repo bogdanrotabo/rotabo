@@ -36,7 +36,8 @@
     "safety": "Bezpečnost",
     "business": "Pro firmy",
     "drive": "Staň se řidičem",
-    "drivers": "Řidiči"
+    "drivers": "Řidiči",
+    "account": "Můj účet"
   },
   "hero": {
     "number_intro": "Každý na Rotabu má číslo. Jedno číslo. Navždy tvoje. Říká, kdo jsi, kde jsi a co umíš — najitelný kýmkoli na Zemi.",
@@ -57,7 +58,8 @@
     "fine": "Funguje přímo v prohlížeči — žádný obchod s aplikacemi.",
     "badge_verified": "Ověření uživatelé",
     "badge_live": "Sdílení jízdy naživo",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Přihlásit se"
   },
   "works": {
     "eyebrow": "JAK ROTABO FUNGUJE",
@@ -171,6 +173,38 @@
       "seeking_lead": "Napiš nám, co potřebuješ a kde.",
       "offering_title": "Nabídni pomoc na silnici",
       "offering_lead": "Zapiš své dovednosti, aby tě našli lidi, kteří je potřebují."
+    },
+    "care": {
+      "name": "Půjčení prarodiče",
+      "desc": "Důchodci nad 60 let, kteří mladým rodinám dají pár hodin hlídání, společnosti a vyprávění.",
+      "seeking_title": "Potřebuješ pomoc s dětmi?",
+      "seeking_lead": "Řekni nám, co potřebuješ a kde — pár hodin hlídání a společnosti týdně.",
+      "offering_title": "Nabídni se jako půjčený dědeček nebo babička",
+      "offering_lead": "Přidej se, ať tě najdou rodiny v okolí, které by tvůj čas uvítaly."
+    },
+    "learn": {
+      "name": "Učitelé",
+      "desc": "Doučování a učitelé školních předmětů, jazyků nebo dovedností — studenti pomáhají studentům, důchodci předávají zkušenosti, nebo někdo učí Excel, vaření, zahradničení a další.",
+      "seeking_title": "Potřebuješ doučování nebo učitele?",
+      "seeking_lead": "Řekni nám, co se chceš naučit a kde.",
+      "offering_title": "Nabídni se, že budeš učit",
+      "offering_lead": "Uveď své dovednosti, ať tě najdou ti, kdo se v okolí chtějí učit."
+    },
+    "stay": {
+      "name": "Prázdninové pobyty",
+      "desc": "Vyměňte si prázdninové domy — ty bydlíš u nich, oni u tebe — nebo se navzájem pohostěte.",
+      "seeking_title": "Hledáš, kde se ubytovat?",
+      "seeking_lead": "Řekni nám, kam bys chtěl jet a kdy.",
+      "offering_title": "Nabídni své bydlení na výměnu nebo pobyt",
+      "offering_lead": "Přidej své bydlení, ať tě najdou ti, kdo chtějí měnit nebo přijet na návštěvu."
+    },
+    "other": {
+      "name": "Něco jiného",
+      "desc": "Nezapadá to nikam jinam? Řekni Rotabu, co se stalo — někdo poblíž možná pomůže.",
+      "seeking_title": "Stalo se něco nečekaného?",
+      "seeking_lead": "Řekni nám, co potřebuješ a kde.",
+      "offering_title": "Nabídni pomoc s čímkoli",
+      "offering_lead": "Přidej se, ať tě najdou lidé s neobvyklou prosbou."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Tvou adresu vidí jen návštěvníci, kteří zaplatili plný přístup, stejně jako telefonní číslo.",
     "tier_label": "Viditelnost",
     "period_1mo": "1 měsíc",
-    "period_12mo": "12 měsíců"
+    "period_12mo": "12 měsíců",
+    "email_hint": "Použij skutečnou adresu — pošleme na ni ověřovací kód, než se tvůj inzerát zveřejní."
   },
   "find_form": {
     "destination_label": "Kam se chcete dostat?",
@@ -299,7 +334,10 @@
     "city_label": "Město / poloha",
     "address_label": "Adresa",
     "submit": "Pokračovat k platbě",
-    "error": "Něco se pokazilo. Zkuste to prosím znovu."
+    "error": "Něco se pokazilo. Zkuste to prosím znovu.",
+    "country_label": "Země",
+    "note_label": "Řekni nám víc (nepovinné)",
+    "note_placeholder": "Pár detailů pomůže — co, kdy, kolik…"
   },
   "drive_form": {
     "title": "Staň se řidičem",
@@ -315,7 +353,10 @@
     "decl3": "Nikdy nepřijmu ani neuskutečním jízdu pod vlivem alkoholu, drog nebo jiné návykové látky.",
     "decl4": "Rozumím, že řídím zcela na vlastní odpovědnost a na odpovědnost klienta.",
     "submit": "Pokračovat k platbě",
-    "error": "Něco se pokazilo. Zkuste to prosím znovu."
+    "error": "Něco se pokazilo. Zkuste to prosím znovu.",
+    "country_label": "Země",
+    "note_label": "Řekni nám víc (nepovinné)",
+    "note_placeholder": "Pár detailů pomůže — co, kdy, kolik…"
   },
   "generic_form": {
     "name_label": "Tvoje jméno",
@@ -326,7 +367,8 @@
     "note_label": "Napiš nám víc (nepovinné)",
     "note_placeholder": "Pár detailů pomůže — co, kdy, za kolik…",
     "submit": "Pokračovat k platbě",
-    "error": "Něco se pokazilo. Zkus to prosím znovu."
+    "error": "Něco se pokazilo. Zkus to prosím znovu.",
+    "country_label": "Země"
   },
   "searching_page": {
     "fare_remaining": "Odhadovaný zbývající doplatek: ~{amount} CHF, placeno přímo vašemu řidiči.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "před {n} minutami",
     "time_hour_ago_one": "před 1 hodinou",
     "time_hour_ago_other": "před {n} hodinami"
+  },
+
+  "investors_card": {
+    "cat": "INVESTOŘI",
+    "h3": "Staň se investorem",
+    "p": "Rotabo spojuje lidi v 11 kategoriích a 38 jazycích po celém světě — bez provize od kohokoli, kdo nabízí svůj čas, dovednosti nebo vybavení. Mluvíme s těmi, kdo tenhle model podporují.",
+    "link": "Ozvi se nám →"
+  },
+
+  "verify_modal": {
+    "title": "Zkontroluj e-mail",
+    "subtitle": "Poslali jsme šestimístný kód na adresu níže. Zadej ho a pokračuj.",
+    "code_label": "Ověřovací kód",
+    "submit": "Potvrdit kód",
+    "resend": "Poslat kód znovu",
+    "spam_hint": "Nevidíš ho? Zkontroluj složku spam — první e-maily od nového odesílatele tam občas spadnou.",
+    "error": "Neplatný nebo vypršený kód. Zkus to prosím znovu."
   }
 }

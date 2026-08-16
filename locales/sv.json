@@ -31,7 +31,7 @@
     "fineprint": "Att skriva på sedlar är ditt eget val. Kontrollera de lokala lagarna."
   },
 
-  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare" },
+  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare", "account": "Mitt konto" },
   "hero": {
     "number_intro": "Alla på Rotabo har ett nummer. Ett nummer. Ditt för alltid. Det säger vem du är, var du är och vad du kan — hittbar av vem som helst på jorden.",
     "search_placeholder": "Hitta ett Rotabo-nummer — t.ex. 2244",
@@ -43,10 +43,16 @@
     "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
     "cta_find": "Hitta det du behöver",
     "cta_offer": "Erbjud det du kan",
-    "cta_find_driver": "Hitta en förare", "cta_become_driver": "Bli förare", "cta_translator": "Översättare vid behov", "cta_become_sponsor": "Bli sponsor",
+    "cta_find_driver": "Hitta en förare",
+    "cta_become_driver": "Bli förare",
+    "cta_translator": "Översättare vid behov",
+    "cta_become_sponsor": "Bli sponsor",
     "cta_home_screen": "⬇ Lägg till Rotabo på hemskärmen",
     "fine": "Fungerar i din webbläsare — ingen app store behövs.",
-    "badge_verified": "Verifierade användare", "badge_live": "Live-delning av resan", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Verifierade användare",
+    "badge_live": "Live-delning av resan",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Logga in"
   },
   "works": {
     "eyebrow": "SÅ FUNGERAR ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Berätta vad du behöver och var.",
       "offering_title": "Erbjud hjälp på vägen",
       "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
+    },
+    "care": {
+      "name": "Lånade mor- och farföräldrar",
+      "desc": "Pensionärer 60+ som ger unga familjer några timmars barnpassning, sällskap och berättelser.",
+      "seeking_title": "Behöver du hjälp med barnen?",
+      "seeking_lead": "Berätta vad du behöver och var — några timmars omsorg och sällskap i veckan.",
+      "offering_title": "Erbjud dig att vara en lånad mor- eller farförälder",
+      "offering_lead": "Lägg upp dig själv så att familjer i närheten som skulle uppskatta din tid hittar dig."
+    },
+    "learn": {
+      "name": "Lärare",
+      "desc": "Läxhjälp och lärare för skolämnen, språk eller färdigheter — studenter som hjälper studenter, pensionärer som delar med sig av erfarenhet, eller någon som lär ut Excel, matlagning, trädgård och mer.",
+      "seeking_title": "Behöver du läxhjälp eller en lärare?",
+      "seeking_lead": "Berätta vad du vill lära dig och var.",
+      "offering_title": "Erbjud dig att undervisa",
+      "offering_lead": "Lägg upp dina kunskaper så att de som vill lära sig i närheten hittar dig."
+    },
+    "stay": {
+      "name": "Semesterboenden",
+      "desc": "Byt semesterbostad — du bor hos dem, de bor hos dig — eller ta emot varandra på besök.",
+      "seeking_title": "Letar du efter någonstans att bo?",
+      "seeking_lead": "Berätta vart du vill åka och när.",
+      "offering_title": "Erbjud ditt hem för byte eller besök",
+      "offering_lead": "Lägg upp ditt hem så att andra som vill byta eller hälsa på hittar dig."
+    },
+    "other": {
+      "name": "Något annat",
+      "desc": "Passar inte någon annanstans? Berätta för Rotabo vad som hänt — någon i närheten kanske kan hjälpa.",
+      "seeking_title": "Har något oväntat hänt?",
+      "seeking_lead": "Berätta vad du behöver och var.",
+      "offering_title": "Erbjud dig att hjälpa till med vad som helst",
+      "offering_lead": "Lägg upp dig själv så att personer med en ovanlig förfrågan hittar dig."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Hitta en översättare"
   },
   "problem": {
-    "eyebrow": "VARFÖR LÄMNA BILEN KVAR?", "h2": "Problemet med alla andra alternativ",
-    "cross1": "Ingen taxi.", "cross2": "Ingen övernattparkering.", "cross3": "Inget hämtande av den imorgon.", "cross4": "Ingen andra resa för att hämta den.",
+    "eyebrow": "VARFÖR LÄMNA BILEN KVAR?",
+    "h2": "Problemet med alla andra alternativ",
+    "cross1": "Ingen taxi.",
+    "cross2": "Ingen övernattparkering.",
+    "cross3": "Inget hämtande av den imorgon.",
+    "cross4": "Ingen andra resa för att hämta den.",
     "thesis": "Bara du, din bil och vägen hem."
   },
   "how": {
-    "eyebrow": "FYRA STEG", "h2": "Så fungerar Rotabo",
-    "step1_title": "Begär", "step1_desc": "Berätta för Rotabo var du är.",
-    "step2_title": "Möt upp", "step2_desc": "Din förare kommer till dig.",
-    "step3_title": "Kör", "step3_desc": "De kör din bil, med dig i den.",
-    "step4_title": "Hem", "step4_desc": "Ni anländer tillsammans. Bilen förblir din hela vägen.",
-    "not_taxi1": "Ingen taxi. Ingen skjuts. Ingen bil kvarlämnad.", "not_taxi2": "Din bil. Din väg hem.",
+    "eyebrow": "FYRA STEG",
+    "h2": "Så fungerar Rotabo",
+    "step1_title": "Begär",
+    "step1_desc": "Berätta för Rotabo var du är.",
+    "step2_title": "Möt upp",
+    "step2_desc": "Din förare kommer till dig.",
+    "step3_title": "Kör",
+    "step3_desc": "De kör din bil, med dig i den.",
+    "step4_title": "Hem",
+    "step4_desc": "Ni anländer tillsammans. Bilen förblir din hela vägen.",
+    "not_taxi1": "Ingen taxi. Ingen skjuts. Ingen bil kvarlämnad.",
+    "not_taxi2": "Din bil. Din väg hem.",
     "tab_client": "Jag behöver skjuts",
     "tab_driver": "Jag vill köra",
     "driver_step1_title": "Registrera dig",
@@ -207,7 +255,8 @@
     "cta": "Bli förare"
   },
   "safety": {
-    "eyebrow": "MÄNNISKORNA SOM KÖR", "h2": "Förare som kör av en anledning",
+    "eyebrow": "MÄNNISKORNA SOM KÖR",
+    "h2": "Förare som kör av en anledning",
     "check1": "Varje förare går med för att hålla borta från vägen någon som inte borde vara där",
     "check2": "Identitet och körkort bekräftas före första resan",
     "check3": "En gemensam uppförandekod, som alla förare ställer sig bakom",
@@ -215,25 +264,35 @@
     "check5": "Betygsätt varje förare, anmäl alla incidenter"
   },
   "partners_card": {
-    "cat": "PARTNERS", "h3": "För restauranger, hotell och lokaler",
+    "cat": "PARTNERS",
+    "h3": "För restauranger, hotell och lokaler",
     "p": "Låt dina gäster njuta av kvällen och ändå köra hem i sin egen bil. Erbjud Rotabo vid bordet, i receptionen eller vid dörren.",
     "link": "Kontakta oss →"
   },
   "drivers_card": {
-    "cat": "FÖRARE", "h3": "Kör med Rotabo",
+    "cat": "FÖRARE",
+    "h3": "Kör med Rotabo",
     "p": "Varje resa du gör är en resa som ingen ångrar. Välj dina egna timmar, kör bilar du aldrig behöver äga, och ta hem folk precis som de ville.",
     "link": "Bli förare →"
   },
   "supporters": {
-    "cat": "SUPPORTRAR", "h3": "Människorna och platserna bakom detta",
+    "cat": "SUPPORTRAR",
+    "h3": "Människorna och platserna bakom detta",
     "p": "Rotabo hålls igång av alla som är villiga att stå bakom tanken att ingen ska köra när de inte borde.",
     "invite": "Vi välkomnar särskilt banker, försäkringsbolag, sportvarumärken, tillverkare av energidrycker och läsk — samt alla företag som stöder nykter körning.",
     "first": "Inga supportrar än — bli det första namnet på listan.",
-    "tier_bronze": "Brons — 100 CHF", "tier_silver": "Silver — 300 CHF", "tier_gold": "Guld — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+    "tier_bronze": "Brons — 100 CHF",
+    "tier_silver": "Silver — 300 CHF",
+    "tier_gold": "Guld — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo är en teknikplattform. Förarna är oberoende leverantörer, inte anställda hos Rotabo.",
-    "terms": "Villkor", "privacy": "Integritet", "driver_terms": "Villkor för förare", "supporters": "Supportrar", "contact": "Kontakt",
+    "terms": "Villkor",
+    "privacy": "Integritet",
+    "driver_terms": "Villkor för förare",
+    "supporters": "Supportrar",
+    "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" },
@@ -249,7 +308,8 @@
     "address_hint": "Din adress syns bara för besökare som betalat för full åtkomst, precis som ditt telefonnummer.",
     "tier_label": "Synlighet",
     "period_1mo": "1 månad",
-    "period_12mo": "12 månader"
+    "period_12mo": "12 månader",
+    "email_hint": "Använd en riktig adress — vi skickar en verifieringskod dit innan din annons publiceras."
   },
   "find_form": {
     "destination_label": "Vart vill du åka?",
@@ -264,7 +324,10 @@
     "city_label": "Stad / plats",
     "address_label": "Adress",
     "submit": "Fortsätt till betalning",
-    "error": "Något gick fel. Försök igen."
+    "error": "Något gick fel. Försök igen.",
+    "country_label": "Land",
+    "note_label": "Berätta mer (valfritt)",
+    "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…"
   },
   "drive_form": {
     "title": "Bli förare",
@@ -280,7 +343,10 @@
     "decl3": "Jag kommer aldrig att acceptera eller genomföra en resa påverkad av alkohol, droger eller andra substanser.",
     "decl4": "Jag förstår att jag kör helt på eget ansvar och kundens ansvar.",
     "submit": "Fortsätt till betalning",
-    "error": "Något gick fel. Försök igen."
+    "error": "Något gick fel. Försök igen.",
+    "country_label": "Land",
+    "note_label": "Berätta mer (valfritt)",
+    "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…"
   },
   "generic_form": {
     "name_label": "Ditt namn",
@@ -291,7 +357,8 @@
     "note_label": "Berätta mer (valfritt)",
     "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…",
     "submit": "Fortsätt till betalning",
-    "error": "Något gick fel. Försök igen."
+    "error": "Något gick fel. Försök igen.",
+    "country_label": "Land"
   },
   "searching_page": {
     "fare_remaining": "Uppskattat återstående belopp: ~{amount} CHF, betalas direkt till din förare.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} min sedan",
     "time_hour_ago_one": "1 timme sedan",
     "time_hour_ago_other": "{n} timmar sedan"
+  },
+
+  "investors_card": {
+    "cat": "INVESTERARE",
+    "h3": "Bli investerare",
+    "p": "Rotabo kopplar ihop människor i 11 kategorier och 38 språk, över hela världen — utan provision från någon som erbjuder sin tid, sina kunskaper eller sin utrustning. Vi pratar med dem som tror på den modellen.",
+    "link": "Hör av dig →"
+  },
+
+  "verify_modal": {
+    "title": "Kolla din e-post",
+    "subtitle": "Vi har skickat en sexsiffrig kod till adressen nedan. Ange den för att fortsätta.",
+    "code_label": "Verifieringskod",
+    "submit": "Bekräfta koden",
+    "resend": "Skicka koden igen",
+    "spam_hint": "Ser du den inte? Kolla skräpposten — de första mejlen från en ny avsändare hamnar ibland där.",
+    "error": "Ogiltig eller utgången kod. Försök igen."
   }
 }

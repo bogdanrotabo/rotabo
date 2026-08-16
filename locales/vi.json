@@ -31,7 +31,7 @@
     "fineprint": "Viết lên tiền giấy là lựa chọn của riêng bạn. Hãy kiểm tra luật pháp địa phương."
   },
 
-  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế" },
+  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế", "account": "Tài khoản của tôi" },
   "hero": {
     "number_intro": "Mọi người trên Rotabo đều có một số. Một con số. Của bạn mãi mãi. Nó cho biết bạn là ai, bạn ở đâu và bạn có thể làm gì — bất kỳ ai trên Trái Đất đều có thể tìm thấy bạn.",
     "search_placeholder": "Tìm một số Rotabo — ví dụ 2244",
@@ -43,10 +43,16 @@
     "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
     "cta_find": "Tìm thứ bạn cần",
     "cta_offer": "Đề nghị những gì bạn có thể",
-    "cta_find_driver": "Tìm tài xế", "cta_become_driver": "Trở thành tài xế", "cta_translator": "Phiên dịch khi cần", "cta_become_sponsor": "Trở thành nhà tài trợ",
+    "cta_find_driver": "Tìm tài xế",
+    "cta_become_driver": "Trở thành tài xế",
+    "cta_translator": "Phiên dịch khi cần",
+    "cta_become_sponsor": "Trở thành nhà tài trợ",
     "cta_home_screen": "⬇ Thêm Rotabo vào màn hình chính",
     "fine": "Hoạt động ngay trên trình duyệt — không cần tải ứng dụng.",
-    "badge_verified": "Người dùng đã xác minh", "badge_live": "Chia sẻ hành trình trực tiếp", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Người dùng đã xác minh",
+    "badge_live": "Chia sẻ hành trình trực tiếp",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Đăng nhập"
   },
   "works": {
     "eyebrow": "ROTABO HOẠT ĐỘNG NHƯ THẾ NÀO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
       "offering_title": "Đề xuất cứu hộ trên đường",
       "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
+    },
+    "care": {
+      "name": "Ông bà cho mượn",
+      "desc": "Người nghỉ hưu từ 60 tuổi trở lên dành cho các gia đình trẻ vài giờ trông trẻ, bầu bạn và kể chuyện.",
+      "seeking_title": "Cần người phụ trông con?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu — vài giờ trông nom và bầu bạn mỗi tuần.",
+      "offering_title": "Nhận làm ông bà cho mượn",
+      "offering_lead": "Đăng thông tin để các gia đình gần bạn, những người trân trọng thời gian của bạn, tìm thấy bạn."
+    },
+    "learn": {
+      "name": "Giáo viên",
+      "desc": "Gia sư và giáo viên cho các môn học, ngoại ngữ hoặc kỹ năng — sinh viên giúp sinh viên, người nghỉ hưu chia sẻ kinh nghiệm, hoặc bất kỳ ai dạy Excel, nấu ăn, làm vườn và nhiều thứ khác.",
+      "seeking_title": "Cần gia sư hoặc giáo viên?",
+      "seeking_lead": "Cho chúng tôi biết bạn muốn học gì và ở đâu.",
+      "offering_title": "Nhận dạy học",
+      "offering_lead": "Ghi rõ kỹ năng của bạn để người học ở gần tìm thấy bạn."
+    },
+    "stay": {
+      "name": "Chỗ ở kỳ nghỉ",
+      "desc": "Đổi nhà nghỉ dưỡng — bạn ở nhà họ, họ ở nhà bạn — hoặc đón nhau đến chơi.",
+      "seeking_title": "Đang tìm chỗ ở?",
+      "seeking_lead": "Cho chúng tôi biết bạn muốn đi đâu và khi nào.",
+      "offering_title": "Mời đổi nhà hoặc đến ở nhà bạn",
+      "offering_lead": "Đăng nhà của bạn để những người muốn đổi hoặc ghé thăm tìm thấy bạn."
+    },
+    "other": {
+      "name": "Việc khác",
+      "desc": "Không thuộc mục nào? Kể cho Rotabo nghe chuyện gì đã xảy ra — có thể ai đó gần bạn giúp được.",
+      "seeking_title": "Có chuyện bất ngờ xảy ra?",
+      "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
+      "offering_title": "Nhận giúp bất cứ việc gì",
+      "offering_lead": "Đăng thông tin để những người có yêu cầu khác thường tìm thấy bạn."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Tìm phiên dịch"
   },
   "problem": {
-    "eyebrow": "TẠI SAO PHẢI BỎ LẠI XE CỦA BẠN?", "h2": "Vấn đề với mọi lựa chọn khác",
-    "cross1": "Không cần taxi.", "cross2": "Không cần gửi xe qua đêm.", "cross3": "Không cần quay lại lấy xe vào hôm sau.", "cross4": "Không cần đi nhờ thêm chuyến để lấy xe.",
+    "eyebrow": "TẠI SAO PHẢI BỎ LẠI XE CỦA BẠN?",
+    "h2": "Vấn đề với mọi lựa chọn khác",
+    "cross1": "Không cần taxi.",
+    "cross2": "Không cần gửi xe qua đêm.",
+    "cross3": "Không cần quay lại lấy xe vào hôm sau.",
+    "cross4": "Không cần đi nhờ thêm chuyến để lấy xe.",
     "thesis": "Chỉ có bạn, xe của bạn, và đường về nhà."
   },
   "how": {
-    "eyebrow": "BỐN BƯỚC", "h2": "Rotabo hoạt động như thế nào",
-    "step1_title": "Yêu cầu", "step1_desc": "Cho Rotabo biết bạn đang ở đâu.",
-    "step2_title": "Gặp mặt", "step2_desc": "Tài xế sẽ đến chỗ bạn.",
-    "step3_title": "Lái xe", "step3_desc": "Họ lái xe của bạn, với bạn ngồi trên xe.",
-    "step4_title": "Về nhà", "step4_desc": "Cả hai cùng về đến nơi. Chiếc xe luôn thuộc về bạn suốt hành trình.",
-    "not_taxi1": "Không phải taxi. Không phải xe ôm công nghệ. Không phải bỏ xe lại.", "not_taxi2": "Xe của bạn. Đường về nhà của bạn.",
+    "eyebrow": "BỐN BƯỚC",
+    "h2": "Rotabo hoạt động như thế nào",
+    "step1_title": "Yêu cầu",
+    "step1_desc": "Cho Rotabo biết bạn đang ở đâu.",
+    "step2_title": "Gặp mặt",
+    "step2_desc": "Tài xế sẽ đến chỗ bạn.",
+    "step3_title": "Lái xe",
+    "step3_desc": "Họ lái xe của bạn, với bạn ngồi trên xe.",
+    "step4_title": "Về nhà",
+    "step4_desc": "Cả hai cùng về đến nơi. Chiếc xe luôn thuộc về bạn suốt hành trình.",
+    "not_taxi1": "Không phải taxi. Không phải xe ôm công nghệ. Không phải bỏ xe lại.",
+    "not_taxi2": "Xe của bạn. Đường về nhà của bạn.",
     "tab_client": "Tôi cần một chuyến đi",
     "tab_driver": "Tôi muốn lái xe",
     "driver_step1_title": "Đăng ký",
@@ -207,7 +255,8 @@
     "cta": "Trở thành tài xế"
   },
   "safety": {
-    "eyebrow": "NHỮNG NGƯỜI CẦM LÁI", "h2": "Những tài xế lái xe vì một lý do",
+    "eyebrow": "NHỮNG NGƯỜI CẦM LÁI",
+    "h2": "Những tài xế lái xe vì một lý do",
     "check1": "Mỗi tài xế tham gia để giữ cho những người không nên lái xe tránh xa mặt đường",
     "check2": "Danh tính và bằng lái được xác minh trước chuyến đi đầu tiên",
     "check3": "Bộ quy tắc ứng xử chung, được mọi tài xế đồng thuận",
@@ -215,25 +264,35 @@
     "check5": "Đánh giá mọi tài xế, báo cáo mọi sự cố"
   },
   "partners_card": {
-    "cat": "ĐỐI TÁC", "h3": "Dành cho nhà hàng, khách sạn và địa điểm tổ chức",
+    "cat": "ĐỐI TÁC",
+    "h3": "Dành cho nhà hàng, khách sạn và địa điểm tổ chức",
     "p": "Hãy để khách của bạn tận hưởng trọn vẹn buổi tối và vẫn có thể tự lái xe về nhà. Giới thiệu Rotabo ngay tại bàn, quầy lễ tân, hoặc cửa ra vào.",
     "link": "Liên hệ với chúng tôi →"
   },
   "drivers_card": {
-    "cat": "TÀI XẾ", "h3": "Lái xe cùng Rotabo",
+    "cat": "TÀI XẾ",
+    "h3": "Lái xe cùng Rotabo",
     "p": "Mỗi chuyến đi bạn thực hiện là một chuyến đi không ai phải hối tiếc. Tự chọn giờ làm việc, lái những chiếc xe mà bạn không cần sở hữu, và đưa mọi người về nhà theo cách họ mong muốn.",
     "link": "Trở thành tài xế →"
   },
   "supporters": {
-    "cat": "NHÀ TÀI TRỢ", "h3": "Những con người và địa điểm đứng sau dự án này",
+    "cat": "NHÀ TÀI TRỢ",
+    "h3": "Những con người và địa điểm đứng sau dự án này",
     "p": "Rotabo được duy trì nhờ bất kỳ ai sẵn sàng ủng hộ ý tưởng rằng không ai nên lái xe khi không nên lái.",
     "invite": "Chúng tôi đặc biệt chào đón các ngân hàng, công ty bảo hiểm, thương hiệu thể thao, nhà sản xuất nước tăng lực và nước giải khát — cùng bất kỳ doanh nghiệp nào ủng hộ việc lái xe không rượu bia.",
     "first": "Chưa có nhà tài trợ nào — hãy là cái tên đầu tiên trong danh sách này.",
-    "tier_bronze": "Đồng — 100 CHF", "tier_silver": "Bạc — 300 CHF", "tier_gold": "Vàng — 750 CHF", "tier_platinum": "Bạch kim — trên 750 CHF"
+    "tier_bronze": "Đồng — 100 CHF",
+    "tier_silver": "Bạc — 300 CHF",
+    "tier_gold": "Vàng — 750 CHF",
+    "tier_platinum": "Bạch kim — trên 750 CHF"
   },
   "footer": {
     "legal": "Rotabo là một nền tảng công nghệ. Tài xế là nhà cung cấp dịch vụ độc lập, không phải nhân viên của Rotabo.",
-    "terms": "Điều khoản", "privacy": "Quyền riêng tư", "driver_terms": "Điều khoản dành cho tài xế", "supporters": "Nhà tài trợ", "contact": "Liên hệ",
+    "terms": "Điều khoản",
+    "privacy": "Quyền riêng tư",
+    "driver_terms": "Điều khoản dành cho tài xế",
+    "supporters": "Nhà tài trợ",
+    "contact": "Liên hệ",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" },
@@ -249,7 +308,8 @@
     "address_hint": "Địa chỉ của bạn chỉ hiển thị cho khách đã trả phí truy cập đầy đủ, giống như số điện thoại của bạn.",
     "tier_label": "Hiển thị",
     "period_1mo": "1 tháng",
-    "period_12mo": "12 tháng"
+    "period_12mo": "12 tháng",
+    "email_hint": "Dùng địa chỉ thật — chúng tôi sẽ gửi mã xác minh tới đó trước khi tin của bạn hiển thị."
   },
   "find_form": {
     "destination_label": "Bạn muốn đến đâu?",
@@ -264,7 +324,10 @@
     "city_label": "Thành phố / vị trí",
     "address_label": "Địa chỉ",
     "submit": "Tiếp tục thanh toán",
-    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại.",
+    "country_label": "Quốc gia",
+    "note_label": "Kể thêm (không bắt buộc)",
+    "note_placeholder": "Vài chi tiết sẽ giúp ích — việc gì, khi nào, bao nhiêu…"
   },
   "drive_form": {
     "title": "Trở thành tài xế",
@@ -280,7 +343,10 @@
     "decl3": "Tôi sẽ không bao giờ nhận hoặc thực hiện chuyến đi khi đang chịu ảnh hưởng của rượu bia, ma túy hoặc bất kỳ chất kích thích nào khác.",
     "decl4": "Tôi hiểu rằng tôi lái xe hoàn toàn dưới trách nhiệm của bản thân mình và của khách hàng.",
     "submit": "Tiếp tục thanh toán",
-    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại.",
+    "country_label": "Quốc gia",
+    "note_label": "Kể thêm (không bắt buộc)",
+    "note_placeholder": "Vài chi tiết sẽ giúp ích — việc gì, khi nào, bao nhiêu…"
   },
   "generic_form": {
     "name_label": "Tên của bạn",
@@ -291,7 +357,8 @@
     "note_label": "Cho chúng tôi biết thêm (không bắt buộc)",
     "note_placeholder": "Vài chi tiết sẽ hữu ích — cái gì, khi nào, giá bao nhiêu…",
     "submit": "Tiếp tục thanh toán",
-    "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+    "error": "Đã có lỗi xảy ra. Vui lòng thử lại.",
+    "country_label": "Quốc gia"
   },
   "searching_page": {
     "fare_remaining": "Số tiền còn lại ước tính: ~{amount} CHF, thanh toán trực tiếp cho tài xế.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} phút trước",
     "time_hour_ago_one": "1 giờ trước",
     "time_hour_ago_other": "{n} giờ trước"
+  },
+
+  "investors_card": {
+    "cat": "NHÀ ĐẦU TƯ",
+    "h3": "Trở thành nhà đầu tư",
+    "p": "Rotabo kết nối mọi người trong 11 hạng mục và 38 ngôn ngữ, trên toàn thế giới — không thu hoa hồng của bất kỳ ai cống hiến thời gian, kỹ năng hay thiết bị của mình. Chúng tôi đang trò chuyện với những người ủng hộ mô hình đó.",
+    "link": "Liên hệ →"
+  },
+
+  "verify_modal": {
+    "title": "Kiểm tra email của bạn",
+    "subtitle": "Chúng tôi đã gửi mã 6 chữ số tới địa chỉ bên dưới. Nhập mã để tiếp tục.",
+    "code_label": "Mã xác minh",
+    "submit": "Xác nhận mã",
+    "resend": "Gửi lại mã",
+    "spam_hint": "Không thấy? Kiểm tra thư mục Spam hoặc Junk — email đầu tiên từ người gửi mới đôi khi rơi vào đó.",
+    "error": "Mã không hợp lệ hoặc đã hết hạn. Vui lòng thử lại."
   }
 }

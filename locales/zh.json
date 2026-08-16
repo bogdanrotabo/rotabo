@@ -31,7 +31,7 @@
     "fineprint": "在钞票上书写是你自己的选择。请查阅当地法律。"
   },
 
-  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "司机" },
+  "nav": { "how": "如何运作", "safety": "安全保障", "business": "商务合作", "drive": "成为司机", "drivers": "司机", "account": "我的账户" },
   "hero": {
     "number_intro": "Rotabo 上的每个人都有一个号码。一个号码。永远属于你。它说明你是谁、你在哪里、你能做什么——地球上任何人都能找到你。",
     "search_placeholder": "查找 Rotabo 号码——例如 2244",
@@ -43,10 +43,16 @@
     "lede": "选择你需要的 — 或者把自己列为可以提供帮助的人。",
     "cta_find": "寻找你需要的",
     "cta_offer": "提供你能给的",
-    "cta_find_driver": "寻找司机", "cta_become_driver": "成为司机", "cta_translator": "随需翻译", "cta_become_sponsor": "成为赞助人",
+    "cta_find_driver": "寻找司机",
+    "cta_become_driver": "成为司机",
+    "cta_translator": "随需翻译",
+    "cta_become_sponsor": "成为赞助人",
     "cta_home_screen": "⬇ 将 Rotabo 添加到主屏幕",
     "fine": "无需下载应用，浏览器即可使用。",
-    "badge_verified": "已验证用户", "badge_live": "实时行程分享", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "已验证用户",
+    "badge_live": "实时行程分享",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "登录"
   },
   "works": {
     "eyebrow": "ROTABO 如何运作",
@@ -160,6 +166,38 @@
       "seeking_lead": "告诉我们你需要什么、在哪里。",
       "offering_title": "提供道路救援",
       "offering_lead": "登记你的技能，让需要的人找到你。"
+    },
+    "care": {
+      "name": "共享爷爷奶奶",
+      "desc": "60岁以上的退休长辈，为年轻家庭带来几小时的照看、陪伴和故事。",
+      "seeking_title": "需要人搭把手照看孩子？",
+      "seeking_lead": "告诉我们你需要什么、在哪里 — 每周几小时的照看与陪伴。",
+      "offering_title": "报名当共享爷爷奶奶",
+      "offering_lead": "登记一下，让附近珍惜你时间的家庭找到你。"
+    },
+    "learn": {
+      "name": "老师",
+      "desc": "教授学校科目、语言或技能的家教和老师 — 学生帮助学生，退休长辈传授经验，也有人教 Excel、烹饪、园艺等等。",
+      "seeking_title": "需要家教或老师？",
+      "seeking_lead": "告诉我们你想学什么、在哪里。",
+      "offering_title": "提供教学",
+      "offering_lead": "登记你的本领，让附近想学的人找到你。"
+    },
+    "stay": {
+      "name": "度假住宿",
+      "desc": "交换度假屋 — 你住他们家，他们住你家 — 或者互相接待做客。",
+      "seeking_title": "在找住的地方？",
+      "seeking_lead": "告诉我们你想去哪里、什么时候。",
+      "offering_title": "把你的住处拿来交换或接待",
+      "offering_lead": "登记你的住处，让想交换或来做客的人找到你。"
+    },
+    "other": {
+      "name": "其他事情",
+      "desc": "哪一类都不合适？把发生的事告诉 Rotabo — 附近也许有人能帮上忙。",
+      "seeking_title": "遇到意料之外的事？",
+      "seeking_lead": "告诉我们你需要什么、在哪里。",
+      "offering_title": "提供任何形式的帮助",
+      "offering_lead": "登记一下，让有特殊需求的人找到你。"
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "找翻译"
   },
   "problem": {
-    "eyebrow": "为什么要把车留在外面？", "h2": "其他方案的通病",
-    "cross1": "不用打车。", "cross2": "不用整夜停在外面。", "cross3": "不用第二天再跑一趟取车。", "cross4": "不用再叫一辆车去取车。",
+    "eyebrow": "为什么要把车留在外面？",
+    "h2": "其他方案的通病",
+    "cross1": "不用打车。",
+    "cross2": "不用整夜停在外面。",
+    "cross3": "不用第二天再跑一趟取车。",
+    "cross4": "不用再叫一辆车去取车。",
     "thesis": "只有你、你的车，和回家的路。"
   },
   "how": {
-    "eyebrow": "四个步骤", "h2": "Rotabo 如何运作",
-    "step1_title": "发出请求", "step1_desc": "告诉 Rotabo 您的位置。",
-    "step2_title": "见面", "step2_desc": "司机会来找您。",
-    "step3_title": "驾驶", "step3_desc": "他们驾驶您的车，您就坐在车里。",
-    "step4_title": "到家", "step4_desc": "你们一起到达，全程车子始终是您的。",
-    "not_taxi1": "不是出租车，不是拼车，也不会把车留在原地。", "not_taxi2": "你的车，你的回家路。",
+    "eyebrow": "四个步骤",
+    "h2": "Rotabo 如何运作",
+    "step1_title": "发出请求",
+    "step1_desc": "告诉 Rotabo 您的位置。",
+    "step2_title": "见面",
+    "step2_desc": "司机会来找您。",
+    "step3_title": "驾驶",
+    "step3_desc": "他们驾驶您的车，您就坐在车里。",
+    "step4_title": "到家",
+    "step4_desc": "你们一起到达，全程车子始终是您的。",
+    "not_taxi1": "不是出租车，不是拼车，也不会把车留在原地。",
+    "not_taxi2": "你的车，你的回家路。",
     "tab_client": "我需要用车",
     "tab_driver": "我想当司机",
     "driver_step1_title": "注册",
@@ -207,7 +255,8 @@
     "cta": "成为司机"
   },
   "safety": {
-    "eyebrow": "驾驶背后的人", "h2": "为一个理由而驾驶的司机",
+    "eyebrow": "驾驶背后的人",
+    "h2": "为一个理由而驾驶的司机",
     "check1": "每位司机加入 Rotabo，都是为了让不该上路的人不再上路",
     "check2": "首次出行前，身份与驾照均已核实",
     "check3": "所有司机共同遵守的行为准则",
@@ -215,25 +264,35 @@
     "check5": "为每位司机评分，随时举报任何问题"
   },
   "partners_card": {
-    "cat": "合作伙伴", "h3": "面向餐厅、酒店与场所",
+    "cat": "合作伙伴",
+    "h3": "面向餐厅、酒店与场所",
     "p": "让您的客人尽情享受夜晚，仍能开着自己的车安全回家。在餐桌旁、前台或门口，为客人提供 Rotabo 服务。",
     "link": "联系我们 →"
   },
   "drivers_card": {
-    "cat": "司机", "h3": "加入 Rotabo 成为司机",
+    "cat": "司机",
+    "h3": "加入 Rotabo 成为司机",
     "p": "您驾驶的每一程，都让一次糟糕的酒驾不再发生。自由安排时间，驾驶无需拥有的车辆，用他们想要的方式送他们回家。",
     "link": "成为司机 →"
   },
   "supporters": {
-    "cat": "支持者", "h3": "支持这份事业的人与场所",
+    "cat": "支持者",
+    "h3": "支持这份事业的人与场所",
     "p": "Rotabo 之所以能持续运转，离不开每一位愿意支持「不该开车时就不开车」这一理念的人。",
     "invite": "我们特别欢迎银行、保险公司、运动品牌、能量饮料和软饮料制造商——以及任何支持清醒驾驶理念的企业。",
     "first": "还没有支持者——成为这份名单上的第一个名字。",
-    "tier_bronze": "青铜 — 100 CHF", "tier_silver": "白银 — 300 CHF", "tier_gold": "黄金 — 750 CHF", "tier_platinum": "铂金 — 750 CHF 以上"
+    "tier_bronze": "青铜 — 100 CHF",
+    "tier_silver": "白银 — 300 CHF",
+    "tier_gold": "黄金 — 750 CHF",
+    "tier_platinum": "铂金 — 750 CHF 以上"
   },
   "footer": {
     "legal": "Rotabo 是一个技术平台。司机为独立服务提供者，并非 Rotabo 的雇员。",
-    "terms": "条款", "privacy": "隐私政策", "driver_terms": "司机条款", "supporters": "支持者", "contact": "联系我们",
+    "terms": "条款",
+    "privacy": "隐私政策",
+    "driver_terms": "司机条款",
+    "supporters": "支持者",
+    "contact": "联系我们",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" },
@@ -249,7 +308,8 @@
     "address_hint": "你的地址只对已付费获得完整访问权限的访客可见，与你的电话号码一样。",
     "tier_label": "曝光设置",
     "period_1mo": "1个月",
-    "period_12mo": "12个月"
+    "period_12mo": "12个月",
+    "email_hint": "请填写真实邮箱 — 在你的信息发布前，我们会把验证码发到那里。"
   },
   "find_form": {
     "destination_label": "你想去哪里？",
@@ -264,7 +324,10 @@
     "city_label": "城市 / 位置",
     "address_label": "地址",
     "submit": "继续支付",
-    "error": "出了点问题，请重试。"
+    "error": "出了点问题，请重试。",
+    "country_label": "国家",
+    "note_label": "多说一点（可选）",
+    "note_placeholder": "一些细节会有帮助 — 什么、何时、多少…"
   },
   "drive_form": {
     "title": "成为司机",
@@ -280,7 +343,10 @@
     "decl3": "我绝不会在受酒精、药物或任何其他物质影响的情况下接受或执行任何行程。",
     "decl4": "我理解此次驾驶完全由我本人及客户自行承担责任。",
     "submit": "继续支付",
-    "error": "出了点问题，请重试。"
+    "error": "出了点问题，请重试。",
+    "country_label": "国家",
+    "note_label": "多说一点（可选）",
+    "note_placeholder": "一些细节会有帮助 — 什么、何时、多少…"
   },
   "generic_form": {
     "name_label": "你的姓名",
@@ -291,7 +357,8 @@
     "note_label": "告诉我们更多（选填）",
     "note_placeholder": "提供一些细节会有帮助 — 内容、时间、预算……",
     "submit": "继续付款",
-    "error": "出了点问题，请重试。"
+    "error": "出了点问题，请重试。",
+    "country_label": "国家"
   },
   "searching_page": {
     "fare_remaining": "预计剩余车费：约 {amount} 瑞士法郎，直接支付给司机。",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} 分钟前",
     "time_hour_ago_one": "1 小时前",
     "time_hour_ago_other": "{n} 小时前"
+  },
+
+  "investors_card": {
+    "cat": "投资人",
+    "h3": "成为投资人",
+    "p": "Rotabo 在全球以 38 种语言连接 11 个类别的人 — 对任何献出时间、技能或设备的人都不收取佣金。我们正在与认同这一模式的人交流。",
+    "link": "联系我们 →"
+  },
+
+  "verify_modal": {
+    "title": "查看你的邮箱",
+    "subtitle": "我们已向下面的邮箱发送了 6 位验证码。输入后即可继续。",
+    "code_label": "验证码",
+    "submit": "确认验证码",
+    "resend": "重新发送验证码",
+    "spam_hint": "没看到？请查看垃圾邮件文件夹 — 新发件人的第一封邮件有时会落在那里。",
+    "error": "验证码无效或已过期，请重试。"
   }
 }

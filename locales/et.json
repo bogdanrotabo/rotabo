@@ -36,7 +36,8 @@
     "safety": "Ohutus",
     "business": "Ettevõtetele",
     "drive": "Hakka juhiks",
-    "drivers": "Juhid"
+    "drivers": "Juhid",
+    "account": "Minu konto"
   },
   "hero": {
     "number_intro": "Igal Rotabo kasutajal on number. Üks number. Sinu oma igavesti. See ütleb, kes sa oled, kus sa oled ja mida sa oskad — leitav igaühele Maal.",
@@ -57,7 +58,8 @@
     "fine": "Töötab otse brauseris — rakenduste poodi pole vaja.",
     "badge_verified": "Kinnitatud kasutajad",
     "badge_live": "Reisi jälgimine reaalajas",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Logi sisse"
   },
   "works": {
     "eyebrow": "KUIDAS ROTABO TÖÖTAB",
@@ -171,6 +173,38 @@
       "seeking_lead": "Räägi meile, mida ja kus vajad.",
       "offering_title": "Paku abi teel",
       "offering_lead": "Lisa oma oskused nimekirja, et abivajajad sind leiaksid."
+    },
+    "care": {
+      "name": "Laenatud vanavanemad",
+      "desc": "Üle 60-aastased pensionärid, kes annavad noortele peredele mõne tunni lastehoidu, seltsi ja lugusid.",
+      "seeking_title": "Vajad lastega abikätt?",
+      "seeking_lead": "Ütle, mida vajad ja kus — paar tundi hoidu ja seltsi nädalas.",
+      "offering_title": "Paku end laenatud vanavanemaks",
+      "offering_lead": "Lisa end, et lähedal olevad pered, kes su ajast rõõmu tunneksid, sind leiaksid."
+    },
+    "learn": {
+      "name": "Õpetajad",
+      "desc": "Juhendajad ja õpetajad kooliainete, keelte või oskuste jaoks — õpilased aitavad õpilasi, pensionärid jagavad kogemust või keegi õpetab Excelit, kokkamist, aiandust ja palju muud.",
+      "seeking_title": "Vajad juhendajat või õpetajat?",
+      "seeking_lead": "Ütle, mida soovid õppida ja kus.",
+      "offering_title": "Paku õpetamist",
+      "offering_lead": "Lisa oma oskused, et lähedal olevad õppijad sind leiaksid."
+    },
+    "stay": {
+      "name": "Puhkusemajutus",
+      "desc": "Vahetage puhkusekodusid — sina elad nende juures, nemad sinu juures — või võõrustage teineteist.",
+      "seeking_title": "Otsid kohta, kus peatuda?",
+      "seeking_lead": "Ütle, kuhu tahaksid minna ja millal.",
+      "offering_title": "Paku oma kodu vahetuseks või peatumiseks",
+      "offering_lead": "Lisa oma kodu, et vahetust või külaskäiku otsijad sind leiaksid."
+    },
+    "other": {
+      "name": "Midagi muud",
+      "desc": "Ei sobi kuhugi mujale? Ütle Rotabole, mis juhtus — keegi lähedal võib aidata.",
+      "seeking_title": "Juhtus midagi ootamatut?",
+      "seeking_lead": "Ütle, mida vajad ja kus.",
+      "offering_title": "Paku abi ükskõik millega",
+      "offering_lead": "Lisa end, et ebatavalise sooviga inimesed sind leiaksid."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Sinu aadressi näevad ainult külastajad, kes on maksnud täieliku juurdepääsu eest, nagu ka telefoninumbrit.",
     "tier_label": "Nähtavus",
     "period_1mo": "1 kuu",
-    "period_12mo": "12 kuud"
+    "period_12mo": "12 kuud",
+    "email_hint": "Kasuta päris aadressi — saadame sinna kinnituskoodi, enne kui su kuulutus avaldatakse."
   },
   "find_form": {
     "destination_label": "Kuhu soovid minna?",
@@ -299,7 +334,10 @@
     "city_label": "Linn / asukoht",
     "address_label": "Aadress",
     "submit": "Jätka maksmisele",
-    "error": "Midagi läks valesti. Palun proovi uuesti."
+    "error": "Midagi läks valesti. Palun proovi uuesti.",
+    "country_label": "Riik",
+    "note_label": "Räägi lähemalt (valikuline)",
+    "note_placeholder": "Mõni detail aitab — mida, millal, kui palju…"
   },
   "drive_form": {
     "title": "Hakka juhiks",
@@ -315,7 +353,10 @@
     "decl3": "Ma ei võta kunagi vastu ega tee sõitu alkoholi, narkootikumide ega muu aine mõju all.",
     "decl4": "Ma mõistan, et sõidan täielikult omal vastutusel ja kliendi vastutusel.",
     "submit": "Jätka maksmisele",
-    "error": "Midagi läks valesti. Palun proovi uuesti."
+    "error": "Midagi läks valesti. Palun proovi uuesti.",
+    "country_label": "Riik",
+    "note_label": "Räägi lähemalt (valikuline)",
+    "note_placeholder": "Mõni detail aitab — mida, millal, kui palju…"
   },
   "generic_form": {
     "name_label": "Sinu nimi",
@@ -326,7 +367,8 @@
     "note_label": "Räägi rohkem (valikuline)",
     "note_placeholder": "Mõned detailid aitavad — mis, millal, kui palju…",
     "submit": "Jätka maksmisele",
-    "error": "Midagi läks valesti. Palun proovi uuesti."
+    "error": "Midagi läks valesti. Palun proovi uuesti.",
+    "country_label": "Riik"
   },
   "searching_page": {
     "fare_remaining": "Hinnanguline jääksumma: ~{amount} CHF, makstakse otse sinu juhile.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "{n} minutit tagasi",
     "time_hour_ago_one": "1 tund tagasi",
     "time_hour_ago_other": "{n} tundi tagasi"
+  },
+
+  "investors_card": {
+    "cat": "INVESTORID",
+    "h3": "Hakka investoriks",
+    "p": "Rotabo ühendab inimesi 11 kategoorias ja 38 keeles üle maailma — ilma komisjonitasuta kelleltki, kes pakub oma aega, oskusi või tehnikat. Räägime nendega, kes seda mudelit toetavad.",
+    "link": "Võta ühendust →"
+  },
+
+  "verify_modal": {
+    "title": "Vaata oma e-posti",
+    "subtitle": "Saatsime allolevale aadressile 6-kohalise koodi. Sisesta see, et jätkata.",
+    "code_label": "Kinnituskood",
+    "submit": "Kinnita kood",
+    "resend": "Saada kood uuesti",
+    "spam_hint": "Ei näe seda? Vaata rämpsposti kausta — uue saatja esimesed kirjad satuvad vahel sinna.",
+    "error": "Vigane või aegunud kood. Proovi uuesti."
   }
 }

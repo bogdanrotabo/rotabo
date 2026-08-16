@@ -31,7 +31,7 @@
     "fineprint": "Rašyti ant banknotų yra tavo paties pasirinkimas. Pasitikrink vietinius įstatymus."
   },
 
-  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai" },
+  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai", "account": "Mano paskyra" },
   "hero": {
     "number_intro": "Kiekvienas Rotabo turi numerį. Vieną numerį. Tavo amžinai. Jis pasako, kas tu esi, kur esi ir ką moki — surandamas bet kam Žemėje.",
     "search_placeholder": "Rask Rotabo numerį — pvz., 2244",
@@ -43,10 +43,16 @@
     "lede": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
     "cta_find": "Rasti, ko reikia",
     "cta_offer": "Pasiūlyti, ką gali",
-    "cta_find_driver": "Rasti vairuotoją", "cta_become_driver": "Tapk vairuotoju", "cta_translator": "Vertėjas prireikus", "cta_become_sponsor": "Tapk rėmėju",
+    "cta_find_driver": "Rasti vairuotoją",
+    "cta_become_driver": "Tapk vairuotoju",
+    "cta_translator": "Vertėjas prireikus",
+    "cta_become_sponsor": "Tapk rėmėju",
     "cta_home_screen": "⬇ Pridėk Rotabo prie pradžios ekrano",
     "fine": "Veikia naršyklėje — programėlių parduotuvė nereikalinga.",
-    "badge_verified": "Patvirtinti vartotojai", "badge_live": "Kelionės sekimas gyvai", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Patvirtinti vartotojai",
+    "badge_live": "Kelionės sekimas gyvai",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Prisijungti"
   },
   "works": {
     "eyebrow": "KAIP VEIKIA ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Papasakok, ko reikia ir kur.",
       "offering_title": "Pasiūlyk pagalbą kelyje",
       "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
+    },
+    "care": {
+      "name": "Pasiskolinti seneliai",
+      "desc": "60+ pensininkai, kurie jaunoms šeimoms dovanoja kelias valandas vaikų priežiūros, draugijos ir istorijų.",
+      "seeking_title": "Reikia pagalbos su vaikais?",
+      "seeking_lead": "Papasakok, ko reikia ir kur — kelios valandos priežiūros ir draugijos per savaitę.",
+      "offering_title": "Pasisiūlyk būti pasiskolintu seneliu",
+      "offering_lead": "Užsiregistruok, kad tave rastų netoliese esančios šeimos, kurios džiaugtųsi tavo laiku."
+    },
+    "learn": {
+      "name": "Mokytojai",
+      "desc": "Korepetitoriai ir mokytojai mokykliniams dalykams, kalboms ar įgūdžiams — studentai padeda studentams, pensininkai dalijasi patirtimi arba kas nors moko Excel, gaminti, sodininkauti ir dar daugiau.",
+      "seeking_title": "Reikia korepetitoriaus ar mokytojo?",
+      "seeking_lead": "Papasakok, ko nori išmokti ir kur.",
+      "offering_title": "Pasisiūlyk mokyti",
+      "offering_lead": "Nurodyk savo įgūdžius, kad tave rastų netoliese norintys mokytis."
+    },
+    "stay": {
+      "name": "Atostogų apgyvendinimas",
+      "desc": "Keiskitės atostogų namais — tu gyveni pas juos, jie pas tave — arba priimkite vieni kitus svečiuose.",
+      "seeking_title": "Ieškai, kur apsistoti?",
+      "seeking_lead": "Papasakok, kur norėtum vykti ir kada.",
+      "offering_title": "Pasiūlyk savo namus mainams ar apsistojimui",
+      "offering_lead": "Įkelk savo namus, kad tave rastų norintys mainytis ar atvykti."
+    },
+    "other": {
+      "name": "Kažkas kita",
+      "desc": "Niekur kitur netinka? Papasakok Rotabo, kas nutiko — galbūt kas nors netoliese gali padėti.",
+      "seeking_title": "Nutiko kažkas netikėto?",
+      "seeking_lead": "Papasakok, ko reikia ir kur.",
+      "offering_title": "Pasisiūlyk padėti su bet kuo",
+      "offering_lead": "Užsiregistruok, kad tave rastų žmonės su neįprastu prašymu."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Rasti vertėją"
   },
   "problem": {
-    "eyebrow": "KAM PALIKTI SAVO AUTOMOBILĮ?", "h2": "Problema su visais kitais variantais",
-    "cross1": "Jokio taksi.", "cross2": "Jokio automobilio, paliekamo nakvynei.", "cross3": "Jokio grįžimo pasiimti jo rytoj.", "cross4": "Jokios antros kelionės jam parsivežti.",
+    "eyebrow": "KAM PALIKTI SAVO AUTOMOBILĮ?",
+    "h2": "Problema su visais kitais variantais",
+    "cross1": "Jokio taksi.",
+    "cross2": "Jokio automobilio, paliekamo nakvynei.",
+    "cross3": "Jokio grįžimo pasiimti jo rytoj.",
+    "cross4": "Jokios antros kelionės jam parsivežti.",
     "thesis": "Tik tu, tavo automobilis ir kelias namo."
   },
   "how": {
-    "eyebrow": "KETURI ŽINGSNIAI", "h2": "Kaip veikia Rotabo",
-    "step1_title": "Užsakyk", "step1_desc": "Praneški Rotabo, kur esi.",
-    "step2_title": "Susitik", "step2_desc": "Vairuotojas atvyksta pas tave.",
-    "step3_title": "Važiuok", "step3_desc": "Jie vairuoja tavo automobilį, o tu sėdi šalia.",
-    "step4_title": "Namo", "step4_desc": "Atvykstate kartu. Automobilis visą kelią lieka tavo.",
-    "not_taxi1": "Ne taksi. Ne pavėžėjimas. Ne paliktas automobilis.", "not_taxi2": "Tavo automobilis. Tavo kelias namo.",
+    "eyebrow": "KETURI ŽINGSNIAI",
+    "h2": "Kaip veikia Rotabo",
+    "step1_title": "Užsakyk",
+    "step1_desc": "Praneški Rotabo, kur esi.",
+    "step2_title": "Susitik",
+    "step2_desc": "Vairuotojas atvyksta pas tave.",
+    "step3_title": "Važiuok",
+    "step3_desc": "Jie vairuoja tavo automobilį, o tu sėdi šalia.",
+    "step4_title": "Namo",
+    "step4_desc": "Atvykstate kartu. Automobilis visą kelią lieka tavo.",
+    "not_taxi1": "Ne taksi. Ne pavėžėjimas. Ne paliktas automobilis.",
+    "not_taxi2": "Tavo automobilis. Tavo kelias namo.",
     "tab_client": "Man reikia kelionės",
     "tab_driver": "Noriu vairuoti",
     "driver_step1_title": "Registruokis",
@@ -207,7 +255,8 @@
     "cta": "Tapk vairuotoju"
   },
   "safety": {
-    "eyebrow": "ŽMONĖS, KURIE VAIRUOJA", "h2": "Vairuotojai, turintys tikslą",
+    "eyebrow": "ŽMONĖS, KURIE VAIRUOJA",
+    "h2": "Vairuotojai, turintys tikslą",
     "check1": "Kiekvienas vairuotojas prisijungia, kad padėtų nuo kelio pašalinti tuos, kuriems ten nevieta",
     "check2": "Tapatybė ir vairuotojo pažymėjimas patikrinami prieš pirmąją kelionę",
     "check3": "Bendras elgesio kodeksas, su kuriuo sutinka kiekvienas vairuotojas",
@@ -215,25 +264,35 @@
     "check5": "Įvertink kiekvieną vairuotoją, praneški apie bet kokį incidentą"
   },
   "partners_card": {
-    "cat": "PARTNERIAI", "h3": "Restoranams, viešbučiams ir renginių vietoms",
+    "cat": "PARTNERIAI",
+    "h3": "Restoranams, viešbučiams ir renginių vietoms",
     "p": "Leisk savo svečiams mėgautis vakaru ir vis tiek parvažiuoti namo savo automobiliu. Pasiūlyk Rotabo prie stalo, registratūroje ar prie durų.",
     "link": "Susisiek su mumis →"
   },
   "drivers_card": {
-    "cat": "VAIRUOTOJAI", "h3": "Vairuok su Rotabo",
+    "cat": "VAIRUOTOJAI",
+    "h3": "Vairuok su Rotabo",
     "p": "Kiekviena tavo kelionė yra kelionė, kurios niekas nesigaili. Rinkis savo darbo valandas, vairuok automobilius, kurių niekada nereikės pirkti, ir parvežk žmones taip, kaip jie norėjo.",
     "link": "Tapk vairuotoju →"
   },
   "supporters": {
-    "cat": "RĖMĖJAI", "h3": "Žmonės ir vietos, stovintys už viso to",
+    "cat": "RĖMĖJAI",
+    "h3": "Žmonės ir vietos, stovintys už viso to",
     "p": "Rotabo gyvuoja dėl kiekvieno, pasiryžusio palaikyti idėją, kad niekas neturėtų vairuoti, kai neturėtų.",
     "invite": "Ypač laukiame bankų, draudimo bendrovių, sporto prekių ženklų, energetinių ir gaiviųjų gėrimų gamintojų — bei bet kokio verslo, palaikančio blaivų vairavimą.",
     "first": "Kol kas rėmėjų nėra — būk pirmasis vardas šiame sąraše.",
-    "tier_bronze": "Bronza — 100 CHF", "tier_silver": "Sidabras — 300 CHF", "tier_gold": "Auksas — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+    "tier_bronze": "Bronza — 100 CHF",
+    "tier_silver": "Sidabras — 300 CHF",
+    "tier_gold": "Auksas — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo yra technologijų platforma. Vairuotojai yra nepriklausomi paslaugų teikėjai, o ne Rotabo darbuotojai.",
-    "terms": "Sąlygos", "privacy": "Privatumas", "driver_terms": "Vairuotojų sąlygos", "supporters": "Rėmėjai", "contact": "Kontaktai",
+    "terms": "Sąlygos",
+    "privacy": "Privatumas",
+    "driver_terms": "Vairuotojų sąlygos",
+    "supporters": "Rėmėjai",
+    "contact": "Kontaktai",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" },
@@ -249,7 +308,8 @@
     "address_hint": "Tavo adresą mato tik lankytojai, sumokėję už visą prieigą, kaip ir telefono numerį.",
     "tier_label": "Matomumas",
     "period_1mo": "1 mėnuo",
-    "period_12mo": "12 mėnesių"
+    "period_12mo": "12 mėnesių",
+    "email_hint": "Naudok tikrą adresą — prieš paskelbiant tavo skelbimą, ten išsiųsime patvirtinimo kodą."
   },
   "find_form": {
     "destination_label": "Kur norite vykti?",
@@ -264,7 +324,10 @@
     "city_label": "Miestas / vietovė",
     "address_label": "Adresas",
     "submit": "Tęsti į apmokėjimą",
-    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą.",
+    "country_label": "Šalis",
+    "note_label": "Papasakok daugiau (nebūtina)",
+    "note_placeholder": "Kelios detalės padeda — kas, kada, kiek…"
   },
   "drive_form": {
     "title": "Tapk vairuotoju",
@@ -280,7 +343,10 @@
     "decl3": "Niekada nepriimsiu ir neatliksiu kelionės būdamas apsvaigęs nuo alkoholio, narkotikų ar bet kokios kitos medžiagos.",
     "decl4": "Suprantu, kad vairuoju visiškai savo ir kliento atsakomybe.",
     "submit": "Tęsti į apmokėjimą",
-    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą.",
+    "country_label": "Šalis",
+    "note_label": "Papasakok daugiau (nebūtina)",
+    "note_placeholder": "Kelios detalės padeda — kas, kada, kiek…"
   },
   "generic_form": {
     "name_label": "Tavo vardas",
@@ -291,7 +357,8 @@
     "note_label": "Papasakok daugiau (neprivaloma)",
     "note_placeholder": "Keli detalūs punktai padeda — kas, kada, už kiek…",
     "submit": "Tęsti prie mokėjimo",
-    "error": "Kažkas nutiko ne taip. Bandyk dar kartą."
+    "error": "Kažkas nutiko ne taip. Bandyk dar kartą.",
+    "country_label": "Šalis"
   },
   "searching_page": {
     "fare_remaining": "Numatoma likusi suma: ~{amount} CHF, mokama tiesiogiai jūsų vairuotojui.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "prieš {n} min.",
     "time_hour_ago_one": "prieš 1 val.",
     "time_hour_ago_other": "prieš {n} val."
+  },
+
+  "investors_card": {
+    "cat": "INVESTUOTOJAI",
+    "h3": "Tapk investuotoju",
+    "p": "Rotabo jungia žmones 11 kategorijų ir 38 kalbomis visame pasaulyje — neimdama komisinių iš nieko, kas siūlo savo laiką, įgūdžius ar įrangą. Kalbamės su tais, kurie palaiko šį modelį.",
+    "link": "Susisiek →"
+  },
+
+  "verify_modal": {
+    "title": "Patikrink el. paštą",
+    "subtitle": "Išsiuntėme 6 skaitmenų kodą žemiau nurodytu adresu. Įvesk jį, kad tęstum.",
+    "code_label": "Patvirtinimo kodas",
+    "submit": "Patvirtinti kodą",
+    "resend": "Siųsti kodą dar kartą",
+    "spam_hint": "Nematai? Patikrink šlamšto aplanką — pirmieji laiškai iš naujo siuntėjo kartais patenka ten.",
+    "error": "Neteisingas arba pasibaigęs kodas. Bandyk dar kartą."
   }
 }

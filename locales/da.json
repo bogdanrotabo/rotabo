@@ -36,7 +36,8 @@
     "safety": "Sikkerhed",
     "business": "Til virksomheder",
     "drive": "Bliv chauffør",
-    "drivers": "Chauffører"
+    "drivers": "Chauffører",
+    "account": "Min konto"
   },
   "hero": {
     "number_intro": "Alle på Rotabo har et nummer. Ét nummer. Dit for altid. Det fortæller, hvem du er, hvor du er, og hvad du kan — findbar for alle på Jorden.",
@@ -57,7 +58,8 @@
     "fine": "Fungerer direkte i din browser — ingen app store nødvendig.",
     "badge_verified": "Verificerede brugere",
     "badge_live": "Live-deling af turen",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Log ind"
   },
   "works": {
     "eyebrow": "SÅDAN FUNGERER ROTABO",
@@ -171,6 +173,38 @@
       "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
       "offering_title": "Tilbyd hjælp på vejen",
       "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
+    },
+    "care": {
+      "name": "Lånebedsteforældre",
+      "desc": "Pensionister på 60+ der giver unge familier et par timers pasning, selskab og historier.",
+      "seeking_title": "Brug for en hånd med børnene?",
+      "seeking_lead": "Fortæl os, hvad du har brug for og hvor — et par timers pasning og selskab om ugen.",
+      "offering_title": "Tilbyd at være lånebedsteforælder",
+      "offering_lead": "Skriv dig op, så familier i nærheden, der ville sætte pris på din tid, kan finde dig."
+    },
+    "learn": {
+      "name": "Lærere",
+      "desc": "Lektiehjælp og lærere til skolefag, sprog eller færdigheder — studerende der hjælper studerende, pensionister der deler erfaring, eller nogen der underviser i Excel, madlavning, havearbejde og meget mere.",
+      "seeking_title": "Brug for lektiehjælp eller en lærer?",
+      "seeking_lead": "Fortæl os, hvad du vil lære og hvor.",
+      "offering_title": "Tilbyd at undervise",
+      "offering_lead": "Skriv dine færdigheder op, så de, der vil lære i nærheden, kan finde dig."
+    },
+    "stay": {
+      "name": "Ferieophold",
+      "desc": "Byt feriebolig — du bor hos dem, de bor hos dig — eller tag imod hinanden på besøg.",
+      "seeking_title": "Leder du efter et sted at bo?",
+      "seeking_lead": "Fortæl os, hvor du gerne vil hen og hvornår.",
+      "offering_title": "Tilbyd dit hjem til bytte eller ophold",
+      "offering_lead": "Skriv dit hjem op, så andre, der vil bytte eller besøge, kan finde dig."
+    },
+    "other": {
+      "name": "Noget andet",
+      "desc": "Passer ikke ind andre steder? Fortæl Rotabo, hvad der er sket — måske kan nogen i nærheden hjælpe.",
+      "seeking_title": "Er der sket noget uventet?",
+      "seeking_lead": "Fortæl os, hvad du har brug for og hvor.",
+      "offering_title": "Tilbyd at hjælpe med hvad som helst",
+      "offering_lead": "Skriv dig op, så folk med en usædvanlig forespørgsel kan finde dig."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Din adresse ses kun af besøgende, der har betalt for fuld adgang, ligesom dit telefonnummer.",
     "tier_label": "Synlighed",
     "period_1mo": "1 måned",
-    "period_12mo": "12 måneder"
+    "period_12mo": "12 måneder",
+    "email_hint": "Brug en rigtig adresse — vi sender en bekræftelseskode dertil, før din annonce bliver synlig."
   },
   "find_form": {
     "destination_label": "Hvor vil du hen?",
@@ -299,7 +334,10 @@
     "city_label": "By / placering",
     "address_label": "Adresse",
     "submit": "Fortsæt til betaling",
-    "error": "Noget gik galt. Prøv venligst igen."
+    "error": "Noget gik galt. Prøv venligst igen.",
+    "country_label": "Land",
+    "note_label": "Fortæl os mere (valgfrit)",
+    "note_placeholder": "Et par detaljer hjælper — hvad, hvornår, hvor meget…"
   },
   "drive_form": {
     "title": "Bliv chauffør",
@@ -315,7 +353,10 @@
     "decl3": "Jeg vil aldrig acceptere eller udføre en tur, mens jeg er påvirket af alkohol, stoffer eller andre rusmidler.",
     "decl4": "Jeg forstår, at jeg kører helt på eget ansvar og på kundens ansvar.",
     "submit": "Fortsæt til betaling",
-    "error": "Noget gik galt. Prøv venligst igen."
+    "error": "Noget gik galt. Prøv venligst igen.",
+    "country_label": "Land",
+    "note_label": "Fortæl os mere (valgfrit)",
+    "note_placeholder": "Et par detaljer hjælper — hvad, hvornår, hvor meget…"
   },
   "generic_form": {
     "name_label": "Dit navn",
@@ -326,7 +367,8 @@
     "note_label": "Fortæl os mere (valgfrit)",
     "note_placeholder": "Et par detaljer hjælper — hvad, hvornår, hvor meget…",
     "submit": "Fortsæt til betaling",
-    "error": "Noget gik galt. Prøv igen."
+    "error": "Noget gik galt. Prøv igen.",
+    "country_label": "Land"
   },
   "searching_page": {
     "fare_remaining": "Anslået resterende beløb: ~{amount} CHF, betales direkte til din chauffør.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "for {n} minutter siden",
     "time_hour_ago_one": "for 1 time siden",
     "time_hour_ago_other": "for {n} timer siden"
+  },
+
+  "investors_card": {
+    "cat": "INVESTORER",
+    "h3": "Bliv investor",
+    "p": "Rotabo forbinder mennesker i 11 kategorier og 38 sprog verden over — uden kommission fra nogen, der tilbyder deres tid, evner eller udstyr. Vi taler med dem, der bakker op om den model.",
+    "link": "Tag kontakt →"
+  },
+
+  "verify_modal": {
+    "title": "Tjek din mail",
+    "subtitle": "Vi har sendt en 6-cifret kode til adressen nedenfor. Indtast den for at fortsætte.",
+    "code_label": "Bekræftelseskode",
+    "submit": "Bekræft kode",
+    "resend": "Send koden igen",
+    "spam_hint": "Kan du ikke se den? Tjek spam- eller uønsket-mappen — de første mails fra en ny afsender lander nogle gange der.",
+    "error": "Ugyldig eller udløbet kode. Prøv igen."
   }
 }

@@ -31,7 +31,7 @@
     "fineprint": "Rakstīšana uz banknotēm ir tava paša izvēle. Pārbaudi vietējos likumus."
   },
 
-  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi" },
+  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi", "account": "Mans konts" },
   "hero": {
     "number_intro": "Katram Rotabo lietotājam ir numurs. Viens numurs. Tavs mūžīgi. Tas pasaka, kas tu esi, kur tu esi un ko tu proti — atrodams jebkuram uz Zemes.",
     "search_placeholder": "Atrodi Rotabo numuru — piem., 2244",
@@ -43,10 +43,16 @@
     "lede": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
     "cta_find": "Atrodi to, kas nepieciešams",
     "cta_offer": "Piedāvā to, ko vari",
-    "cta_find_driver": "Atrast šoferi", "cta_become_driver": "Kļūsti par šoferi", "cta_translator": "Tulks pēc vajadzības", "cta_become_sponsor": "Kļūsti par atbalstītāju",
+    "cta_find_driver": "Atrast šoferi",
+    "cta_become_driver": "Kļūsti par šoferi",
+    "cta_translator": "Tulks pēc vajadzības",
+    "cta_become_sponsor": "Kļūsti par atbalstītāju",
     "cta_home_screen": "⬇ Pievieno Rotabo sākuma ekrānam",
     "fine": "Darbojas tavā pārlūkā — bez lietotņu veikala.",
-    "badge_verified": "Pārbaudīti lietotāji", "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Pārbaudīti lietotāji",
+    "badge_live": "Brauciena atrašanās vietas koplietošana reāllaikā",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Pieteikties"
   },
   "works": {
     "eyebrow": "KĀ DARBOJAS ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
       "offering_title": "Piedāvā palīdzību uz ceļa",
       "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
+    },
+    "care": {
+      "name": "Aizņemtie vecvecāki",
+      "desc": "Pensionāri no 60 gadiem, kas jaunām ģimenēm dāvina dažas stundas bērnu pieskatīšanas, sabiedrības un stāstu.",
+      "seeking_title": "Vajadzīga palīdzība ar bērniem?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur — dažas stundas pieskatīšanas un sabiedrības nedēļā.",
+      "offering_title": "Piedāvā būt aizņemtais vecvecāks",
+      "offering_lead": "Piesakies, lai tuvumā esošās ģimenes, kuras priecātos par tavu laiku, tevi atrastu."
+    },
+    "learn": {
+      "name": "Skolotāji",
+      "desc": "Pasniedzēji un skolotāji skolas priekšmetiem, valodām vai prasmēm — studenti palīdz studentiem, pensionāri dalās pieredzē, vai kāds māca Excel, gatavošanu, dārzkopību un daudz ko citu.",
+      "seeking_title": "Vajadzīgs pasniedzējs vai skolotājs?",
+      "seeking_lead": "Pastāsti, ko vēlies apgūt un kur.",
+      "offering_title": "Piedāvā mācīt",
+      "offering_lead": "Norādi savas prasmes, lai tuvumā esošie mācīties gribētāji tevi atrastu."
+    },
+    "stay": {
+      "name": "Brīvdienu mājvietas",
+      "desc": "Mainieties ar brīvdienu mājām — tu dzīvo pie viņiem, viņi pie tevis — vai uzņemiet viens otru ciemos.",
+      "seeking_title": "Meklē, kur apmesties?",
+      "seeking_lead": "Pastāsti, kurp vēlies doties un kad.",
+      "offering_title": "Piedāvā savu mājvietu maiņai vai uzturēšanās reizei",
+      "offering_lead": "Pievieno savu mājvietu, lai tie, kas vēlas mainīties vai atbraukt ciemos, tevi atrastu."
+    },
+    "other": {
+      "name": "Kaut kas cits",
+      "desc": "Neiederas nekur citur? Pastāsti Rotabo, kas notika — varbūt kāds tuvumā var palīdzēt.",
+      "seeking_title": "Noticis kaut kas negaidīts?",
+      "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
+      "offering_title": "Piedāvā palīdzēt ar jebko",
+      "offering_lead": "Piesakies, lai cilvēki ar neparastu lūgumu tevi atrastu."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Atrast tulku"
   },
   "problem": {
-    "eyebrow": "KĀPĒC ATSTĀT SAVU MAŠĪNU?", "h2": "Problēma ar visām pārējām iespējām",
-    "cross1": "Ne taksometrs.", "cross2": "Ne stāvēšana pa nakti.", "cross3": "Ne braukšana pēc tās rīt.", "cross4": "Ne otrs brauciens, lai to paņemtu.",
+    "eyebrow": "KĀPĒC ATSTĀT SAVU MAŠĪNU?",
+    "h2": "Problēma ar visām pārējām iespējām",
+    "cross1": "Ne taksometrs.",
+    "cross2": "Ne stāvēšana pa nakti.",
+    "cross3": "Ne braukšana pēc tās rīt.",
+    "cross4": "Ne otrs brauciens, lai to paņemtu.",
     "thesis": "Tikai tu, tava mašīna un ceļš mājup."
   },
   "how": {
-    "eyebrow": "ČETRI SOĻI", "h2": "Kā darbojas Rotabo",
-    "step1_title": "Pieprasi", "step1_desc": "Pasaki Rotabo, kur tu esi.",
-    "step2_title": "Tiecies", "step2_desc": "Tavs šoferis atbrauc pie tevis.",
-    "step3_title": "Brauc", "step3_desc": "Viņi vada tavu mašīnu, tev sēžot līdzās.",
-    "step4_title": "Mājās", "step4_desc": "Jūs ierodaties kopā. Mašīna visu ceļu paliek tava.",
-    "not_taxi1": "Nav taksometrs. Nav brauciens. Nav pamesta mašīna.", "not_taxi2": "Tava mašīna. Tavs ceļš mājup.",
+    "eyebrow": "ČETRI SOĻI",
+    "h2": "Kā darbojas Rotabo",
+    "step1_title": "Pieprasi",
+    "step1_desc": "Pasaki Rotabo, kur tu esi.",
+    "step2_title": "Tiecies",
+    "step2_desc": "Tavs šoferis atbrauc pie tevis.",
+    "step3_title": "Brauc",
+    "step3_desc": "Viņi vada tavu mašīnu, tev sēžot līdzās.",
+    "step4_title": "Mājās",
+    "step4_desc": "Jūs ierodaties kopā. Mašīna visu ceļu paliek tava.",
+    "not_taxi1": "Nav taksometrs. Nav brauciens. Nav pamesta mašīna.",
+    "not_taxi2": "Tava mašīna. Tavs ceļš mājup.",
     "tab_client": "Man vajag braucienu",
     "tab_driver": "Es gribu vadīt",
     "driver_step1_title": "Reģistrējies",
@@ -207,7 +255,8 @@
     "cta": "Kļūsti par šoferi"
   },
   "safety": {
-    "eyebrow": "CILVĒKI, KAS VADA", "h2": "Šoferi, kuri brauc ar mērķi",
+    "eyebrow": "CILVĒKI, KAS VADA",
+    "h2": "Šoferi, kuri brauc ar mērķi",
     "check1": "Katrs šoferis pievienojas, lai palīdzētu novērst no ceļa kādu, kam tur nevajadzētu būt",
     "check2": "Identitāte un vadītāja apliecība pārbaudīta pirms pirmā brauciena",
     "check3": "Kopīgs rīcības kodekss, ko apstiprinājis ikviens šoferis",
@@ -215,25 +264,35 @@
     "check5": "Novērtē katru šoferi, ziņo par jebkuru incidentu"
   },
   "partners_card": {
-    "cat": "PARTNERI", "h3": "Restorāniem, viesnīcām un pasākumu vietām",
+    "cat": "PARTNERI",
+    "h3": "Restorāniem, viesnīcām un pasākumu vietām",
     "p": "Ļauj saviem viesiem baudīt vakaru un tomēr aizbraukt mājās ar savu pašu mašīnu. Piedāvā Rotabo pie galda, reģistratūrā vai pie durvīm.",
     "link": "Sazinies ar mums →"
   },
   "drivers_card": {
-    "cat": "ŠOFERI", "h3": "Brauc ar Rotabo",
+    "cat": "ŠOFERI",
+    "h3": "Brauc ar Rotabo",
     "p": "Katrs brauciens, ko tu veic, ir brauciens, ko neviens nenožēlo. Izvēlies savu darba laiku, vadi mašīnas, kas tev nekad nebūs jāpērk, un aizved cilvēkus mājās tā, kā viņi to vēlējās.",
     "link": "Kļūsti par šoferi →"
   },
   "supporters": {
-    "cat": "ATBALSTĪTĀJI", "h3": "Cilvēki un vietas aiz šī visa",
+    "cat": "ATBALSTĪTĀJI",
+    "h3": "Cilvēki un vietas aiz šī visa",
     "p": "Rotabo pastāv, pateicoties ikvienam, kas gatavs atbalstīt ideju, ka nevienam nevajadzētu braukt, kad to nedrīkst darīt.",
     "invite": "Īpaši gaidām bankas, apdrošinātājus, sporta zīmolus, enerģijas un bezalkoholisko dzērienu ražotājus — un jebkuru uzņēmumu, kas atbalsta braukšanu skaidrā prātā.",
     "first": "Vēl nav atbalstītāju — kļūsti par pirmo vārdu šajā sarakstā.",
-    "tier_bronze": "Bronza — 100 CHF", "tier_silver": "Sudrabs — 300 CHF", "tier_gold": "Zelts — 750 CHF", "tier_platinum": "Platīns — 750 CHF+"
+    "tier_bronze": "Bronza — 100 CHF",
+    "tier_silver": "Sudrabs — 300 CHF",
+    "tier_gold": "Zelts — 750 CHF",
+    "tier_platinum": "Platīns — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo ir tehnoloģiju platforma. Šoferi ir neatkarīgi pakalpojumu sniedzēji, nevis Rotabo darbinieki.",
-    "terms": "Noteikumi", "privacy": "Privātums", "driver_terms": "Šoferu noteikumi", "supporters": "Atbalstītāji", "contact": "Kontakti",
+    "terms": "Noteikumi",
+    "privacy": "Privātums",
+    "driver_terms": "Šoferu noteikumi",
+    "supporters": "Atbalstītāji",
+    "contact": "Kontakti",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" },
@@ -249,7 +308,8 @@
     "address_hint": "Tavu adresi redz tikai apmeklētāji, kuri samaksājuši par pilnu piekļuvi, tāpat kā tālruņa numuru.",
     "tier_label": "Redzamība",
     "period_1mo": "1 mēnesis",
-    "period_12mo": "12 mēneši"
+    "period_12mo": "12 mēneši",
+    "email_hint": "Izmanto īstu adresi — nosūtīsim uz to apstiprinājuma kodu, pirms tavs sludinājums kļūs redzams."
   },
   "find_form": {
     "destination_label": "Kurp vēlaties doties?",
@@ -264,7 +324,10 @@
     "city_label": "Pilsēta / atrašanās vieta",
     "address_label": "Adrese",
     "submit": "Turpināt uz apmaksu",
-    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+    "country_label": "Valsts",
+    "note_label": "Pastāsti vairāk (nav obligāti)",
+    "note_placeholder": "Dažas detaļas palīdz — kas, kad, cik…"
   },
   "drive_form": {
     "title": "Kļūsti par šoferi",
@@ -280,7 +343,10 @@
     "decl3": "Es nekad nepieņemšu un neveikšu braucienu, ja būšu alkohola, narkotiku vai citu vielu ietekmē.",
     "decl4": "Es saprotu, ka vadu transportlīdzekli pilnībā uz savu un klienta atbildību.",
     "submit": "Turpināt uz apmaksu",
-    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+    "country_label": "Valsts",
+    "note_label": "Pastāsti vairāk (nav obligāti)",
+    "note_placeholder": "Dažas detaļas palīdz — kas, kad, cik…"
   },
   "generic_form": {
     "name_label": "Tavs vārds",
@@ -291,7 +357,8 @@
     "note_label": "Pastāsti vairāk (nav obligāti)",
     "note_placeholder": "Daži sīkumi palīdz — kas, kad, par cik…",
     "submit": "Turpināt uz apmaksu",
-    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+    "error": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+    "country_label": "Valsts"
   },
   "searching_page": {
     "fare_remaining": "Aptuvenā atlikusī summa: ~{amount} CHF, samaksāta tieši jūsu vadītājam.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "pirms {n} minūtēm",
     "time_hour_ago_one": "pirms 1 stundas",
     "time_hour_ago_other": "pirms {n} stundām"
+  },
+
+  "investors_card": {
+    "cat": "INVESTORI",
+    "h3": "Kļūsti par investoru",
+    "p": "Rotabo savieno cilvēkus 11 kategorijās un 38 valodās visā pasaulē — bez komisijas no neviena, kas piedāvā savu laiku, prasmes vai tehniku. Mēs runājam ar tiem, kas atbalsta šo modeli.",
+    "link": "Sazinies ar mums →"
+  },
+
+  "verify_modal": {
+    "title": "Pārbaudi savu e-pastu",
+    "subtitle": "Nosūtījām 6 ciparu kodu uz zemāk norādīto adresi. Ievadi to, lai turpinātu.",
+    "code_label": "Apstiprinājuma kods",
+    "submit": "Apstiprināt kodu",
+    "resend": "Nosūtīt kodu vēlreiz",
+    "spam_hint": "Neredzi to? Pārbaudi mēstuļu mapi — pirmās vēstules no jauna sūtītāja dažreiz nonāk tur.",
+    "error": "Nederīgs vai novecojis kods. Mēģini vēlreiz."
   }
 }

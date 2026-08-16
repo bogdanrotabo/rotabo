@@ -31,7 +31,7 @@
     "fineprint": "Banknotlara yazmak senin kendi tercihindir. Yerel yasaları kontrol et."
   },
 
-  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler" },
+  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler", "account": "Hesabım" },
   "hero": {
     "number_intro": "Rotabo'daki herkesin bir numarası var. Tek bir numara. Sonsuza dek senin. Kim olduğunu, nerede olduğunu ve ne yapabildiğini söyler — dünyadaki herkes seni bulabilir.",
     "search_placeholder": "Bir Rotabo numarası bul — örn. 2244",
@@ -43,10 +43,16 @@
     "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
     "cta_find": "İhtiyacın olanı bul",
     "cta_offer": "Sunabileceğini sun",
-    "cta_find_driver": "Sürücü bul", "cta_become_driver": "Sürücü ol", "cta_translator": "İhtiyaç halinde tercüman", "cta_become_sponsor": "Sponsor ol",
+    "cta_find_driver": "Sürücü bul",
+    "cta_become_driver": "Sürücü ol",
+    "cta_translator": "İhtiyaç halinde tercüman",
+    "cta_become_sponsor": "Sponsor ol",
     "cta_home_screen": "⬇ Rotabo'yu ana ekranına ekle",
     "fine": "Tarayıcında çalışır — uygulama mağazasına gerek yok.",
-    "badge_verified": "Doğrulanmış kullanıcılar", "badge_live": "Canlı yolculuk paylaşımı", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Doğrulanmış kullanıcılar",
+    "badge_live": "Canlı yolculuk paylaşımı",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Giriş yap"
   },
   "works": {
     "eyebrow": "ROTABO NASIL ÇALIŞIR",
@@ -160,6 +166,38 @@
       "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
       "offering_title": "Yol yardımı sun",
       "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
+    },
+    "care": {
+      "name": "Ödünç büyükanne ve büyükbabalar",
+      "desc": "Genç ailelere birkaç saatlik çocuk bakımı, arkadaşlık ve hikâye armağan eden 60 yaş üstü emekliler.",
+      "seeking_title": "Çocuklar için yardım mı lazım?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu söyle — haftada birkaç saat bakım ve arkadaşlık.",
+      "offering_title": "Ödünç büyükanne ya da büyükbaba olmayı teklif et",
+      "offering_lead": "Kendini ekle ki zamanına sevinecek yakındaki aileler seni bulsun."
+    },
+    "learn": {
+      "name": "Öğretmenler",
+      "desc": "Okul dersleri, diller ya da beceriler için özel ders verenler ve öğretmenler — öğrenciler öğrencilere yardım ediyor, emekliler deneyimini paylaşıyor ya da biri Excel, yemek, bahçe işleri ve daha fazlasını öğretiyor.",
+      "seeking_title": "Özel ders ya da öğretmen mi arıyorsun?",
+      "seeking_lead": "Ne öğrenmek istediğini ve nerede olduğunu söyle.",
+      "offering_title": "Ders vermeyi teklif et",
+      "offering_lead": "Becerilerini yaz ki yakındaki öğrenmek isteyenler seni bulsun."
+    },
+    "stay": {
+      "name": "Tatil konaklamaları",
+      "desc": "Tatil evlerini takas edin — sen onlarda kalırsın, onlar sende — ya da birbirinizi misafir edin.",
+      "seeking_title": "Kalacak yer mi arıyorsun?",
+      "seeking_lead": "Nereye gitmek istediğini ve ne zaman olduğunu söyle.",
+      "offering_title": "Evini takas ya da konaklama için teklif et",
+      "offering_lead": "Evini ekle ki takas etmek ya da ziyarete gelmek isteyenler seni bulsun."
+    },
+    "other": {
+      "name": "Başka bir şey",
+      "desc": "Hiçbir yere uymuyor mu? Rotabo'ya ne olduğunu anlat — yakınlarda biri yardım edebilir.",
+      "seeking_title": "Beklenmedik bir şey mi oldu?",
+      "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu söyle.",
+      "offering_title": "Her konuda yardım etmeyi teklif et",
+      "offering_lead": "Kendini ekle ki sıra dışı bir isteği olanlar seni bulsun."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Tercüman bul"
   },
   "problem": {
-    "eyebrow": "ARABANI NEDEN GERİDE BIRAKASIN?", "h2": "Diğer her seçeneğin sorunu",
-    "cross1": "Taksi yok.", "cross2": "Sabaha kadar park yok.", "cross3": "Yarın geri gelip alma derdi yok.", "cross4": "Onu almak için ikinci bir yolculuk yok.",
+    "eyebrow": "ARABANI NEDEN GERİDE BIRAKASIN?",
+    "h2": "Diğer her seçeneğin sorunu",
+    "cross1": "Taksi yok.",
+    "cross2": "Sabaha kadar park yok.",
+    "cross3": "Yarın geri gelip alma derdi yok.",
+    "cross4": "Onu almak için ikinci bir yolculuk yok.",
     "thesis": "Sadece sen, araban ve eve giden yol."
   },
   "how": {
-    "eyebrow": "DÖRT ADIM", "h2": "Rotabo nasıl çalışır",
-    "step1_title": "Talep et", "step1_desc": "Nerede olduğunu Rotabo'ya söyle.",
-    "step2_title": "Buluş", "step2_desc": "Sürücün sana gelir.",
-    "step3_title": "Sür", "step3_desc": "O senin arabanı sürer, sen de içindesindir.",
-    "step4_title": "Eve varış", "step4_desc": "Birlikte varırsınız. Araba yol boyunca hep senindir.",
-    "not_taxi1": "Taksi değil. Yolculuk paylaşımı değil. Geride bırakılan bir araba değil.", "not_taxi2": "Senin araban. Senin eve giden yolun.",
+    "eyebrow": "DÖRT ADIM",
+    "h2": "Rotabo nasıl çalışır",
+    "step1_title": "Talep et",
+    "step1_desc": "Nerede olduğunu Rotabo'ya söyle.",
+    "step2_title": "Buluş",
+    "step2_desc": "Sürücün sana gelir.",
+    "step3_title": "Sür",
+    "step3_desc": "O senin arabanı sürer, sen de içindesindir.",
+    "step4_title": "Eve varış",
+    "step4_desc": "Birlikte varırsınız. Araba yol boyunca hep senindir.",
+    "not_taxi1": "Taksi değil. Yolculuk paylaşımı değil. Geride bırakılan bir araba değil.",
+    "not_taxi2": "Senin araban. Senin eve giden yolun.",
     "tab_client": "Bir yolculuğa ihtiyacım var",
     "tab_driver": "Sürmek istiyorum",
     "driver_step1_title": "Kaydol",
@@ -207,7 +255,8 @@
     "cta": "Sürücü ol"
   },
   "safety": {
-    "eyebrow": "SÜREN İNSANLAR", "h2": "Bir sebeple direksiyona geçen sürücüler",
+    "eyebrow": "SÜREN İNSANLAR",
+    "h2": "Bir sebeple direksiyona geçen sürücüler",
     "check1": "Her sürücü, trafiğe çıkmaması gereken birini yoldan uzak tutmak için aramıza katılır",
     "check2": "İlk yolculuktan önce kimlik ve ehliyet doğrulaması yapılır",
     "check3": "Sürücü olan herkesin kabul ettiği ortak bir davranış kuralları",
@@ -215,25 +264,35 @@
     "check5": "Her sürücüyü puanla, her olayı bildir"
   },
   "partners_card": {
-    "cat": "PARTNERLER", "h3": "Restoranlar, oteller ve mekanlar için",
+    "cat": "PARTNERLER",
+    "h3": "Restoranlar, oteller ve mekanlar için",
     "p": "Misafirlerin akşamın tadını çıkarsın, yine de kendi arabalarıyla eve gitsin. Rotabo'yu masada, resepsiyonda ya da kapıda sun.",
     "link": "Bizimle konuş →"
   },
   "drivers_card": {
-    "cat": "SÜRÜCÜLER", "h3": "Rotabo ile sür",
+    "cat": "SÜRÜCÜLER",
+    "h3": "Rotabo ile sür",
     "p": "Yaptığın her yolculuk, kimsenin kötüye kullanmadığı bir yolculuktur. Kendi saatlerini seç, hiç sahip olmana gerek kalmadan araçlar sür ve insanları istedikleri şekilde evlerine ulaştır.",
     "link": "Sürücü ol →"
   },
   "supporters": {
-    "cat": "DESTEKÇİLER", "h3": "Bunun arkasındaki insanlar ve mekanlar",
+    "cat": "DESTEKÇİLER",
+    "h3": "Bunun arkasındaki insanlar ve mekanlar",
     "p": "Rotabo, kimsenin uygun olmayan durumda araç kullanmaması gerektiği fikrinin arkasında durmaya istekli herkes sayesinde ayakta kalıyor.",
     "invite": "Özellikle bankaları, sigorta şirketlerini, spor markalarını, enerji içeceği ve alkolsüz içecek üreticilerini — ve ayık sürüşü destekleyen her işletmeyi memnuniyetle karşılıyoruz.",
     "first": "Henüz destekçi yok — bu listedeki ilk isim ol.",
-    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Gümüş — 300 CHF", "tier_gold": "Altın — 750 CHF", "tier_platinum": "Platin — 750 CHF ve üzeri"
+    "tier_bronze": "Bronz — 100 CHF",
+    "tier_silver": "Gümüş — 300 CHF",
+    "tier_gold": "Altın — 750 CHF",
+    "tier_platinum": "Platin — 750 CHF ve üzeri"
   },
   "footer": {
     "legal": "Rotabo bir teknoloji platformudur. Sürücüler bağımsız hizmet sağlayıcılardır, Rotabo çalışanı değildir.",
-    "terms": "Koşullar", "privacy": "Gizlilik", "driver_terms": "Sürücü koşulları", "supporters": "Destekçiler", "contact": "İletişim",
+    "terms": "Koşullar",
+    "privacy": "Gizlilik",
+    "driver_terms": "Sürücü koşulları",
+    "supporters": "Destekçiler",
+    "contact": "İletişim",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" },
@@ -249,7 +308,8 @@
     "address_hint": "Adresini yalnızca tam erişim için ödeme yapan ziyaretçiler görür, tıpkı telefon numaran gibi.",
     "tier_label": "Görünürlük",
     "period_1mo": "1 ay",
-    "period_12mo": "12 ay"
+    "period_12mo": "12 ay",
+    "email_hint": "Gerçek bir adres kullan — ilanın yayına girmeden önce oraya bir doğrulama kodu göndereceğiz."
   },
   "find_form": {
     "destination_label": "Nereye gitmek istiyorsun?",
@@ -264,7 +324,10 @@
     "city_label": "Şehir / konum",
     "address_label": "Adres",
     "submit": "Ödemeye geç",
-    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "country_label": "Ülke",
+    "note_label": "Biraz daha anlat (isteğe bağlı)",
+    "note_placeholder": "Birkaç ayrıntı işe yarar — ne, ne zaman, ne kadar…"
   },
   "drive_form": {
     "title": "Sürücü ol",
@@ -280,7 +343,10 @@
     "decl3": "Alkol, uyuşturucu veya başka herhangi bir maddenin etkisi altındayken hiçbir yolculuğu kabul etmeyeceğim veya gerçekleştirmeyeceğim.",
     "decl4": "Tamamen kendi sorumluluğumda ve müşterinin sorumluluğunda araç kullandığımı anlıyorum.",
     "submit": "Ödemeye geç",
-    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "country_label": "Ülke",
+    "note_label": "Biraz daha anlat (isteğe bağlı)",
+    "note_placeholder": "Birkaç ayrıntı işe yarar — ne, ne zaman, ne kadar…"
   },
   "generic_form": {
     "name_label": "Adın",
@@ -291,7 +357,8 @@
     "note_label": "Bize daha fazla anlat (isteğe bağlı)",
     "note_placeholder": "Birkaç ayrıntı yardımcı olur — ne, ne zaman, ne kadar…",
     "submit": "Ödemeye devam et",
-    "error": "Bir şeyler ters gitti. Lütfen tekrar dene."
+    "error": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "country_label": "Ülke"
   },
   "searching_page": {
     "fare_remaining": "Tahmini kalan ücret: ~{amount} CHF, doğrudan sürücüne ödenir.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} dakika önce",
     "time_hour_ago_one": "1 saat önce",
     "time_hour_ago_other": "{n} saat önce"
+  },
+
+  "investors_card": {
+    "cat": "YATIRIMCILAR",
+    "h3": "Yatırımcı ol",
+    "p": "Rotabo, dünya genelinde 11 kategoride ve 38 dilde insanları buluşturuyor — zamanını, becerisini ya da ekipmanını sunan hiç kimseden komisyon almadan. Bu modeli destekleyen insanlarla görüşüyoruz.",
+    "link": "Bize ulaş →"
+  },
+
+  "verify_modal": {
+    "title": "E-postana bak",
+    "subtitle": "Aşağıdaki adrese 6 haneli bir kod gönderdik. Devam etmek için kodu gir.",
+    "code_label": "Doğrulama kodu",
+    "submit": "Kodu onayla",
+    "resend": "Kodu tekrar gönder",
+    "spam_hint": "Göremiyor musun? Spam ya da gereksiz klasörüne bak — yeni bir göndericiden gelen ilk e-postalar bazen oraya düşer.",
+    "error": "Geçersiz ya da süresi dolmuş kod. Lütfen tekrar dene."
   }
 }

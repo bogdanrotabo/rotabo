@@ -36,7 +36,8 @@
     "safety": "Turvallisuus",
     "business": "Yrityksille",
     "drive": "Ryhdy kuljettajaksi",
-    "drivers": "Kuljettajat"
+    "drivers": "Kuljettajat",
+    "account": "Oma tili"
   },
   "hero": {
     "number_intro": "Jokaisella Rotabossa on numero. Yksi numero. Sinun ikuisesti. Se kertoo, kuka olet, missä olet ja mitä osaat — kuka tahansa maapallolla löytää sinut.",
@@ -57,7 +58,8 @@
     "fine": "Toimii suoraan selaimessa — ei sovelluskauppaa tarvita.",
     "badge_verified": "Vahvistetut käyttäjät",
     "badge_live": "Matkan jakaminen reaaliajassa",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Kirjaudu sisään"
   },
   "works": {
     "eyebrow": "NÄIN ROTABO TOIMII",
@@ -171,6 +173,38 @@
       "seeking_lead": "Kerro, mitä tarvitset ja missä.",
       "offering_title": "Tarjoa apua tien päällä",
       "offering_lead": "Ilmoita taitosi, jotta niitä tarvitsevat löytävät sinut."
+    },
+    "care": {
+      "name": "Lainaisovanhemmat",
+      "desc": "Yli 60-vuotiaat eläkeläiset, jotka antavat lapsiperheille muutaman tunnin hoitoapua, seuraa ja tarinoita.",
+      "seeking_title": "Tarvitsetko apua lasten kanssa?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä — muutama tunti hoitoa ja seuraa viikossa.",
+      "offering_title": "Tarjoudu lainaisovanhemmaksi",
+      "offering_lead": "Ilmoittaudu, jotta lähistön perheet, jotka ilahtuisivat ajastasi, löytävät sinut."
+    },
+    "learn": {
+      "name": "Opettajat",
+      "desc": "Tukiopettajia ja opettajia kouluaineisiin, kieliin tai taitoihin — opiskelijat auttavat opiskelijoita, eläkeläiset jakavat kokemustaan, tai joku opettaa Exceliä, ruoanlaittoa, puutarhanhoitoa ja paljon muuta.",
+      "seeking_title": "Tarvitsetko tukiopettajan tai opettajan?",
+      "seeking_lead": "Kerro, mitä haluat oppia ja missä.",
+      "offering_title": "Tarjoudu opettamaan",
+      "offering_lead": "Kerro taidoistasi, jotta lähistön oppijat löytävät sinut."
+    },
+    "stay": {
+      "name": "Lomamajoitukset",
+      "desc": "Vaihtakaa lomakoteja — sinä asut heillä, he sinulla — tai majoittakaa toisianne vierailulle.",
+      "seeking_title": "Etsitkö majoitusta?",
+      "seeking_lead": "Kerro, minne haluaisit mennä ja milloin.",
+      "offering_title": "Tarjoa kotiasi vaihtoon tai majoitukseen",
+      "offering_lead": "Ilmoita kotisi, jotta vaihtoa tai vierailua etsivät löytävät sinut."
+    },
+    "other": {
+      "name": "Jotain muuta",
+      "desc": "Ei sovi mihinkään muuhun? Kerro Rotabolle, mitä tapahtui — joku lähellä saattaa pystyä auttamaan.",
+      "seeking_title": "Sattuiko jotain odottamatonta?",
+      "seeking_lead": "Kerro, mitä tarvitset ja missä.",
+      "offering_title": "Tarjoudu auttamaan missä tahansa",
+      "offering_lead": "Ilmoittaudu, jotta epätavallista apua tarvitsevat löytävät sinut."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Osoitteesi näkyy vain kävijöille, jotka ovat maksaneet täydestä pääsystä, aivan kuten puhelinnumerosi.",
     "tier_label": "Näkyvyys",
     "period_1mo": "1 kuukausi",
-    "period_12mo": "12 kuukautta"
+    "period_12mo": "12 kuukautta",
+    "email_hint": "Käytä oikeaa osoitetta — lähetämme sinne vahvistuskoodin ennen kuin ilmoituksesi julkaistaan."
   },
   "find_form": {
     "destination_label": "Minne haluat mennä?",
@@ -299,7 +334,10 @@
     "city_label": "Kaupunki / sijainti",
     "address_label": "Osoite",
     "submit": "Jatka maksuun",
-    "error": "Jokin meni pieleen. Yritä uudelleen."
+    "error": "Jokin meni pieleen. Yritä uudelleen.",
+    "country_label": "Maa",
+    "note_label": "Kerro lisää (valinnainen)",
+    "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, kuinka paljon…"
   },
   "drive_form": {
     "title": "Ryhdy kuljettajaksi",
@@ -315,7 +353,10 @@
     "decl3": "En koskaan ota vastaan tai suorita kyytiä alkoholin, huumeiden tai minkään muun aineen vaikutuksen alaisena.",
     "decl4": "Ymmärrän ajavani täysin omalla ja asiakkaan vastuulla.",
     "submit": "Jatka maksuun",
-    "error": "Jokin meni pieleen. Yritä uudelleen."
+    "error": "Jokin meni pieleen. Yritä uudelleen.",
+    "country_label": "Maa",
+    "note_label": "Kerro lisää (valinnainen)",
+    "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, kuinka paljon…"
   },
   "generic_form": {
     "name_label": "Nimesi",
@@ -326,7 +367,8 @@
     "note_label": "Kerro lisää (valinnainen)",
     "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, paljonko…",
     "submit": "Jatka maksuun",
-    "error": "Jokin meni pieleen. Yritä uudelleen."
+    "error": "Jokin meni pieleen. Yritä uudelleen.",
+    "country_label": "Maa"
   },
   "searching_page": {
     "fare_remaining": "Arvioitu jäljellä oleva maksu: ~{amount} CHF, maksetaan suoraan kuljettajallesi.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "{n} min sitten",
     "time_hour_ago_one": "1 tunti sitten",
     "time_hour_ago_other": "{n} tuntia sitten"
+  },
+
+  "investors_card": {
+    "cat": "SIJOITTAJAT",
+    "h3": "Ryhdy sijoittajaksi",
+    "p": "Rotabo yhdistää ihmisiä 11 kategoriassa ja 38 kielellä ympäri maailmaa — ilman komissiota keneltäkään, joka tarjoaa aikaansa, taitojaan tai kalustoaan. Keskustelemme niiden kanssa, jotka tukevat tätä mallia.",
+    "link": "Ota yhteyttä →"
+  },
+
+  "verify_modal": {
+    "title": "Tarkista sähköpostisi",
+    "subtitle": "Lähetimme 6-numeroisen koodin alla olevaan osoitteeseen. Syötä se jatkaaksesi.",
+    "code_label": "Vahvistuskoodi",
+    "submit": "Vahvista koodi",
+    "resend": "Lähetä koodi uudelleen",
+    "spam_hint": "Etkö näe sitä? Tarkista roskaposti — uuden lähettäjän ensimmäiset viestit päätyvät joskus sinne.",
+    "error": "Virheellinen tai vanhentunut koodi. Yritä uudelleen."
   }
 }

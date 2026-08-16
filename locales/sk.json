@@ -31,7 +31,7 @@
     "fineprint": "Písanie na bankovky je tvoja vlastná voľba. Skontroluj miestne zákony."
   },
 
-  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Vodiči" },
+  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Pre firmy", "drive": "Staň sa vodičom", "drivers": "Vodiči", "account": "Môj účet" },
   "hero": {
     "number_intro": "Každý na Rotabe má číslo. Jedno číslo. Navždy tvoje. Hovorí, kto si, kde si a čo dokážeš — nájditeľný kýmkoľvek na Zemi.",
     "search_placeholder": "Nájdi číslo Rotabo — napr. 2244",
@@ -43,10 +43,16 @@
     "lede": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
     "cta_find": "Nájdi, čo potrebuješ",
     "cta_offer": "Ponúkni, čo vieš",
-    "cta_find_driver": "Nájsť vodiča", "cta_become_driver": "Staň sa vodičom", "cta_translator": "Prekladateľ podľa potreby", "cta_become_sponsor": "Staň sa podporovateľom",
+    "cta_find_driver": "Nájsť vodiča",
+    "cta_become_driver": "Staň sa vodičom",
+    "cta_translator": "Prekladateľ podľa potreby",
+    "cta_become_sponsor": "Staň sa podporovateľom",
     "cta_home_screen": "⬇ Pridať Rotabo na plochu",
     "fine": "Funguje priamo v prehliadači — žiadny obchod s aplikáciami netreba.",
-    "badge_verified": "Overení používatelia", "badge_live": "Zdieľanie trasy naživo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Overení používatelia",
+    "badge_live": "Zdieľanie trasy naživo",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Prihlásiť sa"
   },
   "works": {
     "eyebrow": "AKO FUNGUJE ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
       "offering_title": "Ponúkni pomoc na ceste",
       "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
+    },
+    "care": {
+      "name": "Požičaní starí rodičia",
+      "desc": "Dôchodcovia nad 60 rokov, ktorí mladým rodinám dajú pár hodín stráženia, spoločnosti a rozprávania.",
+      "seeking_title": "Potrebuješ pomoc s deťmi?",
+      "seeking_lead": "Povedz nám, čo potrebuješ a kde — pár hodín stráženia a spoločnosti týždenne.",
+      "offering_title": "Ponúkni sa ako požičaný dedko alebo babka",
+      "offering_lead": "Pridaj sa, nech ťa nájdu rodiny v okolí, ktoré by tvoj čas privítali."
+    },
+    "learn": {
+      "name": "Učitelia",
+      "desc": "Doučovanie a učitelia školských predmetov, jazykov alebo zručností — študenti pomáhajú študentom, dôchodcovia odovzdávajú skúsenosti, alebo niekto učí Excel, varenie, záhradkárčenie a ďalšie.",
+      "seeking_title": "Potrebuješ doučovanie alebo učiteľa?",
+      "seeking_lead": "Povedz nám, čo sa chceš naučiť a kde.",
+      "offering_title": "Ponúkni sa, že budeš učiť",
+      "offering_lead": "Uveď svoje zručnosti, nech ťa nájdu tí, čo sa v okolí chcú učiť."
+    },
+    "stay": {
+      "name": "Prázdninové pobyty",
+      "desc": "Vymeňte si prázdninové domy — ty bývaš u nich, oni u teba — alebo sa navzájom pohostite.",
+      "seeking_title": "Hľadáš, kde sa ubytovať?",
+      "seeking_lead": "Povedz nám, kam by si chcel ísť a kedy.",
+      "offering_title": "Ponúkni svoje bývanie na výmenu alebo pobyt",
+      "offering_lead": "Pridaj svoje bývanie, nech ťa nájdu tí, čo chcú meniť alebo prísť na návštevu."
+    },
+    "other": {
+      "name": "Niečo iné",
+      "desc": "Nezapadá to nikam inam? Povedz Rotabu, čo sa stalo — niekto nablízku možno pomôže.",
+      "seeking_title": "Stalo sa niečo nečakané?",
+      "seeking_lead": "Povedz nám, čo potrebuješ a kde.",
+      "offering_title": "Ponúkni pomoc s čímkoľvek",
+      "offering_lead": "Pridaj sa, nech ťa nájdu ľudia s nezvyčajnou prosbou."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Nájsť prekladateľa"
   },
   "problem": {
-    "eyebrow": "PREČO NECHÁVAŤ SVOJE AUTO ZA SEBOU?", "h2": "Problém so všetkými ostatnými možnosťami",
-    "cross1": "Žiadny taxík.", "cross2": "Žiadne parkovanie cez noc.", "cross3": "Žiadne vracanie sa preň zajtra.", "cross4": "Žiadna druhá cesta, aby ste ho vyzdvihli.",
+    "eyebrow": "PREČO NECHÁVAŤ SVOJE AUTO ZA SEBOU?",
+    "h2": "Problém so všetkými ostatnými možnosťami",
+    "cross1": "Žiadny taxík.",
+    "cross2": "Žiadne parkovanie cez noc.",
+    "cross3": "Žiadne vracanie sa preň zajtra.",
+    "cross4": "Žiadna druhá cesta, aby ste ho vyzdvihli.",
     "thesis": "Len ty, tvoje auto a cesta domov."
   },
   "how": {
-    "eyebrow": "ŠTYRI KROKY", "h2": "Ako funguje Rotabo",
-    "step1_title": "Objednaj", "step1_desc": "Povedz Rotabo, kde si.",
-    "step2_title": "Stretnite sa", "step2_desc": "Tvoj vodič príde za tebou.",
-    "step3_title": "Choďte", "step3_desc": "Vedú tvoje auto, ty si v ňom s nimi.",
-    "step4_title": "Domov", "step4_desc": "Prídete spolu. Auto zostáva celou cestou tvoje.",
-    "not_taxi1": "Nie je to taxík. Nie je to odvoz. Nie je to opustené auto.", "not_taxi2": "Tvoje auto. Tvoja cesta domov.",
+    "eyebrow": "ŠTYRI KROKY",
+    "h2": "Ako funguje Rotabo",
+    "step1_title": "Objednaj",
+    "step1_desc": "Povedz Rotabo, kde si.",
+    "step2_title": "Stretnite sa",
+    "step2_desc": "Tvoj vodič príde za tebou.",
+    "step3_title": "Choďte",
+    "step3_desc": "Vedú tvoje auto, ty si v ňom s nimi.",
+    "step4_title": "Domov",
+    "step4_desc": "Prídete spolu. Auto zostáva celou cestou tvoje.",
+    "not_taxi1": "Nie je to taxík. Nie je to odvoz. Nie je to opustené auto.",
+    "not_taxi2": "Tvoje auto. Tvoja cesta domov.",
     "tab_client": "Potrebujem odvoz",
     "tab_driver": "Chcem šoférovať",
     "driver_step1_title": "Zaregistruj sa",
@@ -207,7 +255,8 @@
     "cta": "Staň sa vodičom"
   },
   "safety": {
-    "eyebrow": "ĽUDIA, KTORÍ ŠOFÉRUJÚ", "h2": "Vodiči, ktorí majú dôvod",
+    "eyebrow": "ĽUDIA, KTORÍ ŠOFÉRUJÚ",
+    "h2": "Vodiči, ktorí majú dôvod",
     "check1": "Každý vodič sa pridáva, aby pomohol dostať z cesty niekoho, kto by tam nemal byť",
     "check2": "Totožnosť a vodičský preukaz overené pred prvou jazdou",
     "check3": "Spoločný kódex správania, na ktorom sa zhodli všetci vodiči",
@@ -215,25 +264,35 @@
     "check5": "Ohodnoť každého vodiča, nahlás akýkoľvek incident"
   },
   "partners_card": {
-    "cat": "PARTNERI", "h3": "Pre reštaurácie, hotely a podniky",
+    "cat": "PARTNERI",
+    "h3": "Pre reštaurácie, hotely a podniky",
     "p": "Dovoľ svojim hosťom užiť si večer a napriek tomu odviezť sa domov vlastným autom. Ponúkni Rotabo pri stole, na recepcii alebo pri dverách.",
     "link": "Kontaktujte nás →"
   },
   "drivers_card": {
-    "cat": "VODIČI", "h3": "Jazdi s Rotabo",
+    "cat": "VODIČI",
+    "h3": "Jazdi s Rotabo",
     "p": "Každá jazda, ktorú absolvuješ, je jazda, ktorú nikto neoľutuje. Vyber si vlastné hodiny, šoféruj autá, ktoré nikdy nemusíš vlastniť, a odvez ľudí domov presne tak, ako chceli.",
     "link": "Staň sa vodičom →"
   },
   "supporters": {
-    "cat": "PODPOROVATELIA", "h3": "Ľudia a miesta, ktoré za tým stoja",
+    "cat": "PODPOROVATELIA",
+    "h3": "Ľudia a miesta, ktoré za tým stoja",
     "p": "Rotabo udržiava nažive každý, kto je ochotný stáť za myšlienkou, že nikto by nemal šoférovať, keď by nemal.",
     "invite": "Obzvlášť vítame banky, poisťovne, športové značky, výrobcov energetických a nealkoholických nápojov — a akúkoľvek firmu, ktorá podporuje triezvu jazdu.",
     "first": "Zatiaľ žiadni podporovatelia — buď prvé meno na tomto zozname.",
-    "tier_bronze": "Bronz — 100 CHF", "tier_silver": "Striebro — 300 CHF", "tier_gold": "Zlato — 750 CHF", "tier_platinum": "Platina — 750 CHF+"
+    "tier_bronze": "Bronz — 100 CHF",
+    "tier_silver": "Striebro — 300 CHF",
+    "tier_gold": "Zlato — 750 CHF",
+    "tier_platinum": "Platina — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo je technologická platforma. Vodiči sú nezávislí poskytovatelia, nie zamestnanci Rotabo.",
-    "terms": "Podmienky", "privacy": "Súkromie", "driver_terms": "Podmienky pre vodičov", "supporters": "Podporovatelia", "contact": "Kontakt",
+    "terms": "Podmienky",
+    "privacy": "Súkromie",
+    "driver_terms": "Podmienky pre vodičov",
+    "supporters": "Podporovatelia",
+    "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" },
@@ -249,7 +308,8 @@
     "address_hint": "Tvoju adresu vidia len návštevníci, ktorí zaplatili plný prístup, rovnako ako telefónne číslo.",
     "tier_label": "Viditeľnosť",
     "period_1mo": "1 mesiac",
-    "period_12mo": "12 mesiacov"
+    "period_12mo": "12 mesiacov",
+    "email_hint": "Použi skutočnú adresu — pošleme na ňu overovací kód, kým sa tvoj inzerát zverejní."
   },
   "find_form": {
     "destination_label": "Kam sa chcete dostať?",
@@ -264,7 +324,10 @@
     "city_label": "Mesto / poloha",
     "address_label": "Adresa",
     "submit": "Pokračovať k platbe",
-    "error": "Niečo sa pokazilo. Skús to prosím znova."
+    "error": "Niečo sa pokazilo. Skús to prosím znova.",
+    "country_label": "Krajina",
+    "note_label": "Povedz nám viac (nepovinné)",
+    "note_placeholder": "Pár detailov pomôže — čo, kedy, koľko…"
   },
   "drive_form": {
     "title": "Staň sa vodičom",
@@ -280,7 +343,10 @@
     "decl3": "Nikdy neprijmem ani nevykonám jazdu pod vplyvom alkoholu, drog alebo akejkoľvek inej látky.",
     "decl4": "Rozumiem, že šoférujem výhradne na vlastnú zodpovednosť a zodpovednosť klienta.",
     "submit": "Pokračovať k platbe",
-    "error": "Niečo sa pokazilo. Skús to prosím znova."
+    "error": "Niečo sa pokazilo. Skús to prosím znova.",
+    "country_label": "Krajina",
+    "note_label": "Povedz nám viac (nepovinné)",
+    "note_placeholder": "Pár detailov pomôže — čo, kedy, koľko…"
   },
   "generic_form": {
     "name_label": "Tvoje meno",
@@ -291,7 +357,8 @@
     "note_label": "Napíš nám viac (nepovinné)",
     "note_placeholder": "Pár detailov pomôže — čo, kedy, za koľko…",
     "submit": "Pokračovať k platbe",
-    "error": "Niečo sa pokazilo. Skús to prosím znova."
+    "error": "Niečo sa pokazilo. Skús to prosím znova.",
+    "country_label": "Krajina"
   },
   "searching_page": {
     "fare_remaining": "Odhadovaná zostávajúca suma: ~{amount} CHF, platená priamo vášmu vodičovi.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "pred {n} minútami",
     "time_hour_ago_one": "pred 1 hodinou",
     "time_hour_ago_other": "pred {n} hodinami"
+  },
+
+  "investors_card": {
+    "cat": "INVESTORI",
+    "h3": "Staň sa investorom",
+    "p": "Rotabo spája ľudí v 11 kategóriách a 38 jazykoch po celom svete — bez provízie od kohokoľvek, kto ponúka svoj čas, zručnosti alebo vybavenie. Rozprávame sa s tými, ktorí tento model podporujú.",
+    "link": "Ozvi sa nám →"
+  },
+
+  "verify_modal": {
+    "title": "Skontroluj e-mail",
+    "subtitle": "Poslali sme šesťmiestny kód na adresu nižšie. Zadaj ho a pokračuj.",
+    "code_label": "Overovací kód",
+    "submit": "Potvrdiť kód",
+    "resend": "Poslať kód znova",
+    "spam_hint": "Nevidíš ho? Skontroluj priečinok spam — prvé e-maily od nového odosielateľa tam občas spadnú.",
+    "error": "Neplatný alebo vypršaný kód. Skús to znova."
   }
 }

@@ -36,7 +36,8 @@
     "safety": "Veiligheid",
     "business": "Voor bedrijven",
     "drive": "Word chauffeur",
-    "drivers": "Chauffeurs"
+    "drivers": "Chauffeurs",
+    "account": "Mijn account"
   },
   "hero": {
     "number_intro": "Iedereen op Rotabo heeft een nummer. Eén nummer. Voor altijd van jou. Het vertelt wie je bent, waar je bent en wat je kunt — vindbaar voor iedereen op aarde.",
@@ -57,7 +58,8 @@
     "fine": "Werkt in je browser — geen app store nodig.",
     "badge_verified": "Geverifieerde gebruikers",
     "badge_live": "Live rit delen",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Inloggen"
   },
   "works": {
     "eyebrow": "HOE ROTABO WERKT",
@@ -171,6 +173,38 @@
       "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
       "offering_title": "Bied hulp onderweg aan",
       "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
+    },
+    "care": {
+      "name": "Leengrootouders",
+      "desc": "Gepensioneerden van 60+ die jonge gezinnen een paar uur opvang, gezelschap en verhalen geven.",
+      "seeking_title": "Hulp nodig met de kinderen?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar — een paar uur opvang en gezelschap per week.",
+      "offering_title": "Bied jezelf aan als leengrootouder",
+      "offering_lead": "Zet jezelf erbij, zodat gezinnen in de buurt die blij zouden zijn met jouw tijd je vinden."
+    },
+    "learn": {
+      "name": "Docenten",
+      "desc": "Bijles en docenten voor schoolvakken, talen of vaardigheden — studenten die studenten helpen, gepensioneerden die ervaring delen, of iemand die Excel, koken, tuinieren en meer leert.",
+      "seeking_title": "Bijles of een docent nodig?",
+      "seeking_lead": "Vertel ons wat je wilt leren en waar.",
+      "offering_title": "Bied jezelf aan om les te geven",
+      "offering_lead": "Zet je vaardigheden erbij, zodat lerenden in de buurt je vinden."
+    },
+    "stay": {
+      "name": "Vakantieverblijven",
+      "desc": "Ruil vakantiehuizen — jij logeert bij hen, zij bij jou — of ontvang elkaar op bezoek.",
+      "seeking_title": "Op zoek naar een plek om te verblijven?",
+      "seeking_lead": "Vertel ons waar je heen wilt en wanneer.",
+      "offering_title": "Bied je huis aan voor een ruil of verblijf",
+      "offering_lead": "Zet je huis erbij, zodat anderen die willen ruilen of langskomen je vinden."
+    },
+    "other": {
+      "name": "Iets anders",
+      "desc": "Past nergens anders? Vertel Rotabo wat er gebeurd is — misschien kan iemand in de buurt helpen.",
+      "seeking_title": "Is er iets onverwachts gebeurd?",
+      "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
+      "offering_title": "Bied jezelf aan om overal mee te helpen",
+      "offering_lead": "Zet jezelf erbij, zodat mensen met een ongewoon verzoek je vinden."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Je adres is alleen zichtbaar voor bezoekers die voor volledige toegang hebben betaald, net als je telefoonnummer.",
     "tier_label": "Zichtbaarheid",
     "period_1mo": "1 maand",
-    "period_12mo": "12 maanden"
+    "period_12mo": "12 maanden",
+    "email_hint": "Gebruik een echt adres — we sturen daar een verificatiecode heen voordat je advertentie online gaat."
   },
   "find_form": {
     "destination_label": "Waar wil je heen?",
@@ -299,7 +334,10 @@
     "city_label": "Stad / locatie",
     "address_label": "Adres",
     "submit": "Doorgaan naar betaling",
-    "error": "Er is iets misgegaan. Probeer het opnieuw."
+    "error": "Er is iets misgegaan. Probeer het opnieuw.",
+    "country_label": "Land",
+    "note_label": "Vertel ons meer (optioneel)",
+    "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…"
   },
   "drive_form": {
     "title": "Word chauffeur",
@@ -315,7 +353,10 @@
     "decl3": "Ik zal nooit een rit accepteren of uitvoeren onder invloed van alcohol, drugs of enige andere stof.",
     "decl4": "Ik begrijp dat ik volledig op eigen verantwoordelijkheid en die van de klant rijd.",
     "submit": "Doorgaan naar betaling",
-    "error": "Er is iets misgegaan. Probeer het opnieuw."
+    "error": "Er is iets misgegaan. Probeer het opnieuw.",
+    "country_label": "Land",
+    "note_label": "Vertel ons meer (optioneel)",
+    "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…"
   },
   "generic_form": {
     "name_label": "Je naam",
@@ -326,7 +367,8 @@
     "note_label": "Vertel ons meer (optioneel)",
     "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…",
     "submit": "Doorgaan naar betaling",
-    "error": "Er ging iets mis. Probeer het opnieuw."
+    "error": "Er ging iets mis. Probeer het opnieuw.",
+    "country_label": "Land"
   },
   "searching_page": {
     "fare_remaining": "Geschat resterend bedrag: ~{amount} CHF, rechtstreeks aan je chauffeur te betalen.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "{n} min geleden",
     "time_hour_ago_one": "1 uur geleden",
     "time_hour_ago_other": "{n} uur geleden"
+  },
+
+  "investors_card": {
+    "cat": "INVESTEERDERS",
+    "h3": "Word investeerder",
+    "p": "Rotabo verbindt mensen in 11 categorieën en 38 talen, wereldwijd — zonder commissie van wie dan ook die tijd, vaardigheden of materieel aanbiedt. We praten met mensen die dat model steunen.",
+    "link": "Neem contact op →"
+  },
+
+  "verify_modal": {
+    "title": "Kijk in je e-mail",
+    "subtitle": "We hebben een 6-cijferige code naar het adres hieronder gestuurd. Voer die in om verder te gaan.",
+    "code_label": "Verificatiecode",
+    "submit": "Code bevestigen",
+    "resend": "Code opnieuw sturen",
+    "spam_hint": "Zie je hem niet? Kijk in je spam- of ongewenstmap — eerste e-mails van een nieuwe afzender belanden daar soms.",
+    "error": "Ongeldige of verlopen code. Probeer het opnieuw."
   }
 }

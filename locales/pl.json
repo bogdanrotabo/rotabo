@@ -31,7 +31,7 @@
     "fineprint": "Pisanie na banknotach to twój własny wybór. Sprawdź lokalne przepisy."
   },
 
-  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy" },
+  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy", "account": "Moje konto" },
   "hero": {
     "number_intro": "Każdy na Rotabo ma numer. Jeden numer. Twój na zawsze. Mówi, kim jesteś, gdzie jesteś i co potrafisz — do znalezienia przez każdego na Ziemi.",
     "search_placeholder": "Znajdź numer Rotabo — np. 2244",
@@ -43,10 +43,16 @@
     "lede": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
     "cta_find": "Znajdź to, czego potrzebujesz",
     "cta_offer": "Zaoferuj to, co możesz",
-    "cta_find_driver": "Znajdź kierowcę", "cta_become_driver": "Zostań kierowcą", "cta_translator": "Tłumacz na żądanie", "cta_become_sponsor": "Zostań sponsorem",
+    "cta_find_driver": "Znajdź kierowcę",
+    "cta_become_driver": "Zostań kierowcą",
+    "cta_translator": "Tłumacz na żądanie",
+    "cta_become_sponsor": "Zostań sponsorem",
     "cta_home_screen": "⬇ Dodaj Rotabo do ekranu głównego",
     "fine": "Działa w przeglądarce — bez sklepu z aplikacjami.",
-    "badge_verified": "Zweryfikowani użytkownicy", "badge_live": "Udostępnianie trasy na żywo", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Zweryfikowani użytkownicy",
+    "badge_live": "Udostępnianie trasy na żywo",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Zaloguj się"
   },
   "works": {
     "eyebrow": "JAK DZIAŁA ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
       "offering_title": "Zaoferuj pomoc drogową",
       "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
+    },
+    "care": {
+      "name": "Wypożyczeni dziadkowie",
+      "desc": "Emeryci 60+, którzy dają młodym rodzinom kilka godzin opieki, towarzystwa i opowieści.",
+      "seeking_title": "Potrzebujesz pomocy z dziećmi?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie — kilka godzin opieki i towarzystwa w tygodniu.",
+      "offering_title": "Zaproponuj bycie wypożyczonym dziadkiem lub babcią",
+      "offering_lead": "Dodaj się, żeby znalazły cię pobliskie rodziny, które ucieszyłyby się z twojego czasu."
+    },
+    "learn": {
+      "name": "Nauczyciele",
+      "desc": "Korepetytorzy i nauczyciele przedmiotów szkolnych, języków lub umiejętności — studenci pomagają studentom, emeryci dzielą się doświadczeniem, albo ktoś uczy Excela, gotowania, ogrodnictwa i wielu innych rzeczy.",
+      "seeking_title": "Potrzebujesz korepetytora lub nauczyciela?",
+      "seeking_lead": "Powiedz nam, czego chcesz się nauczyć i gdzie.",
+      "offering_title": "Zaproponuj naukę innym",
+      "offering_lead": "Wypisz swoje umiejętności, żeby znaleźli cię uczący się w pobliżu."
+    },
+    "stay": {
+      "name": "Pobyty wakacyjne",
+      "desc": "Zamieńcie się domami wakacyjnymi — ty mieszkasz u nich, oni u ciebie — albo ugośćcie się nawzajem.",
+      "seeking_title": "Szukasz miejsca na pobyt?",
+      "seeking_lead": "Powiedz nam, dokąd chcesz pojechać i kiedy.",
+      "offering_title": "Zaproponuj swoje miejsce na zamianę lub pobyt",
+      "offering_lead": "Dodaj swój dom, żeby znaleźli cię chętni do zamiany lub odwiedzin."
+    },
+    "other": {
+      "name": "Coś innego",
+      "desc": "Nie pasuje nigdzie indziej? Powiedz Rotabo, co się stało — ktoś w pobliżu może pomóc.",
+      "seeking_title": "Wydarzyło się coś nieoczekiwanego?",
+      "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
+      "offering_title": "Zaproponuj pomoc w czymkolwiek",
+      "offering_lead": "Dodaj się, żeby znaleźli cię ludzie z nietypową prośbą."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Znajdź tłumacza"
   },
   "problem": {
-    "eyebrow": "PO CO ZOSTAWIAĆ SWÓJ SAMOCHÓD?", "h2": "Problem z każdą inną opcją",
-    "cross1": "Żadnej taksówki.", "cross2": "Żadnego parkowania na noc.", "cross3": "Żadnego wracania po niego jutro.", "cross4": "Żadnego drugiego kursu, żeby go odebrać.",
+    "eyebrow": "PO CO ZOSTAWIAĆ SWÓJ SAMOCHÓD?",
+    "h2": "Problem z każdą inną opcją",
+    "cross1": "Żadnej taksówki.",
+    "cross2": "Żadnego parkowania na noc.",
+    "cross3": "Żadnego wracania po niego jutro.",
+    "cross4": "Żadnego drugiego kursu, żeby go odebrać.",
     "thesis": "Tylko Ty, Twój samochód i droga do domu."
   },
   "how": {
-    "eyebrow": "CZTERY KROKI", "h2": "Jak działa Rotabo",
-    "step1_title": "Zamów", "step1_desc": "Powiedz Rotabo, gdzie jesteś.",
-    "step2_title": "Spotkajcie się", "step2_desc": "Twój kierowca przyjeżdża do Ciebie.",
-    "step3_title": "Jedźcie", "step3_desc": "Oni prowadzą Twój samochód, a Ty jedziesz z nimi.",
-    "step4_title": "Dom", "step4_desc": "Docieracie razem. Samochód przez całą drogę pozostaje Twój.",
-    "not_taxi1": "To nie taksówka. To nie przejazd. To nie porzucony samochód.", "not_taxi2": "Twój samochód. Twoja droga do domu.",
+    "eyebrow": "CZTERY KROKI",
+    "h2": "Jak działa Rotabo",
+    "step1_title": "Zamów",
+    "step1_desc": "Powiedz Rotabo, gdzie jesteś.",
+    "step2_title": "Spotkajcie się",
+    "step2_desc": "Twój kierowca przyjeżdża do Ciebie.",
+    "step3_title": "Jedźcie",
+    "step3_desc": "Oni prowadzą Twój samochód, a Ty jedziesz z nimi.",
+    "step4_title": "Dom",
+    "step4_desc": "Docieracie razem. Samochód przez całą drogę pozostaje Twój.",
+    "not_taxi1": "To nie taksówka. To nie przejazd. To nie porzucony samochód.",
+    "not_taxi2": "Twój samochód. Twoja droga do domu.",
     "tab_client": "Potrzebuję przejazdu",
     "tab_driver": "Chcę prowadzić",
     "driver_step1_title": "Zarejestruj się",
@@ -207,7 +255,8 @@
     "cta": "Zostań kierowcą"
   },
   "safety": {
-    "eyebrow": "LUDZIE, KTÓRZY PROWADZĄ", "h2": "Kierowcy, którzy mają powód",
+    "eyebrow": "LUDZIE, KTÓRZY PROWADZĄ",
+    "h2": "Kierowcy, którzy mają powód",
     "check1": "Każdy kierowca dołącza, by zabrać z drogi kogoś, kto nie powinien na niej być",
     "check2": "Tożsamość i prawo jazdy potwierdzone przed pierwszym kursem",
     "check3": "Wspólny kodeks postępowania, uzgodniony przez każdego kierowcę",
@@ -215,25 +264,35 @@
     "check5": "Oceniaj każdego kierowcę, zgłaszaj każdy incydent"
   },
   "partners_card": {
-    "cat": "PARTNERZY", "h3": "Dla restauracji, hoteli i lokali",
+    "cat": "PARTNERZY",
+    "h3": "Dla restauracji, hoteli i lokali",
     "p": "Pozwól swoim gościom cieszyć się wieczorem i mimo to wrócić do domu własnym samochodem. Zaproponuj Rotabo przy stoliku, w recepcji lub przy drzwiach.",
     "link": "Porozmawiajmy →"
   },
   "drivers_card": {
-    "cat": "KIEROWCY", "h3": "Jeźdź z Rotabo",
+    "cat": "KIEROWCY",
+    "h3": "Jeźdź z Rotabo",
     "p": "Każdy kurs, który wykonujesz, to kurs, którego nikt nie żałuje. Wybierz własne godziny, prowadź samochody, których nigdy nie musisz kupować, i odwoź ludzi do domu tak, jak sami chcieli.",
     "link": "Zostań kierowcą →"
   },
   "supporters": {
-    "cat": "WSPIERAJĄCY", "h3": "Ludzie i miejsca, które za tym stoją",
+    "cat": "WSPIERAJĄCY",
+    "h3": "Ludzie i miejsca, które za tym stoją",
     "p": "Rotabo działa dzięki każdemu, kto chce stanąć za ideą, że nikt nie powinien prowadzić, kiedy nie powinien.",
     "invite": "Szczególnie zapraszamy banki, ubezpieczycieli, marki sportowe, producentów napojów energetycznych i bezalkoholowych — oraz każdą firmę wspierającą trzeźwą jazdę.",
     "first": "Jeszcze brak wspierających — bądź pierwszym nazwiskiem na tej liście.",
-    "tier_bronze": "Brąz — 100 CHF", "tier_silver": "Srebro — 300 CHF", "tier_gold": "Złoto — 750 CHF", "tier_platinum": "Platyna — 750 CHF+"
+    "tier_bronze": "Brąz — 100 CHF",
+    "tier_silver": "Srebro — 300 CHF",
+    "tier_gold": "Złoto — 750 CHF",
+    "tier_platinum": "Platyna — 750 CHF+"
   },
   "footer": {
     "legal": "Rotabo to platforma technologiczna. Kierowcy są niezależnymi usługodawcami, a nie pracownikami Rotabo.",
-    "terms": "Regulamin", "privacy": "Prywatność", "driver_terms": "Regulamin kierowców", "supporters": "Wspierający", "contact": "Kontakt",
+    "terms": "Regulamin",
+    "privacy": "Prywatność",
+    "driver_terms": "Regulamin kierowców",
+    "supporters": "Wspierający",
+    "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…" },
@@ -249,7 +308,8 @@
     "address_hint": "Twój adres widzą tylko odwiedzający, którzy zapłacili za pełny dostęp, tak samo jak numer telefonu.",
     "tier_label": "Widoczność",
     "period_1mo": "1 miesiąc",
-    "period_12mo": "12 miesięcy"
+    "period_12mo": "12 miesięcy",
+    "email_hint": "Użyj prawdziwego adresu — wyślemy tam kod weryfikacyjny, zanim twoje ogłoszenie stanie się widoczne."
   },
   "find_form": {
     "destination_label": "Dokąd chcesz jechać?",
@@ -264,7 +324,10 @@
     "city_label": "Miasto / lokalizacja",
     "address_label": "Adres",
     "submit": "Przejdź do płatności",
-    "error": "Coś poszło nie tak. Spróbuj ponownie."
+    "error": "Coś poszło nie tak. Spróbuj ponownie.",
+    "country_label": "Kraj",
+    "note_label": "Powiedz nam więcej (opcjonalnie)",
+    "note_placeholder": "Kilka szczegółów pomaga — co, kiedy, ile…"
   },
   "drive_form": {
     "title": "Zostań kierowcą",
@@ -280,7 +343,10 @@
     "decl3": "Nigdy nie przyjmę ani nie wykonam przejazdu pod wpływem alkoholu, narkotyków ani żadnej innej substancji.",
     "decl4": "Rozumiem, że prowadzę pojazd wyłącznie na własną odpowiedzialność i odpowiedzialność klienta.",
     "submit": "Przejdź do płatności",
-    "error": "Coś poszło nie tak. Spróbuj ponownie."
+    "error": "Coś poszło nie tak. Spróbuj ponownie.",
+    "country_label": "Kraj",
+    "note_label": "Powiedz nam więcej (opcjonalnie)",
+    "note_placeholder": "Kilka szczegółów pomaga — co, kiedy, ile…"
   },
   "generic_form": {
     "name_label": "Twoje imię",
@@ -291,7 +357,8 @@
     "note_label": "Powiedz nam więcej (opcjonalnie)",
     "note_placeholder": "Kilka szczegółów pomoże — co, kiedy, za ile…",
     "submit": "Przejdź do płatności",
-    "error": "Coś poszło nie tak. Spróbuj ponownie."
+    "error": "Coś poszło nie tak. Spróbuj ponownie.",
+    "country_label": "Kraj"
   },
   "searching_page": {
     "fare_remaining": "Szacowana pozostała kwota: ~{amount} CHF, płatna bezpośrednio kierowcy.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} minut temu",
     "time_hour_ago_one": "1 godzinę temu",
     "time_hour_ago_other": "{n} godzin temu"
+  },
+
+  "investors_card": {
+    "cat": "INWESTORZY",
+    "h3": "Zostań inwestorem",
+    "p": "Rotabo łączy ludzi w 11 kategoriach i 38 językach na całym świecie — bez prowizji od nikogo, kto oferuje swój czas, umiejętności lub sprzęt. Rozmawiamy z tymi, którzy wspierają ten model.",
+    "link": "Skontaktuj się →"
+  },
+
+  "verify_modal": {
+    "title": "Sprawdź swoją pocztę",
+    "subtitle": "Wysłaliśmy 6-cyfrowy kod na adres poniżej. Wpisz go, żeby kontynuować.",
+    "code_label": "Kod weryfikacyjny",
+    "submit": "Potwierdź kod",
+    "resend": "Wyślij kod ponownie",
+    "spam_hint": "Nie widzisz go? Sprawdź folder spam — pierwsze wiadomości od nowego nadawcy czasem tam trafiają.",
+    "error": "Nieprawidłowy lub wygasły kod. Spróbuj ponownie."
   }
 }

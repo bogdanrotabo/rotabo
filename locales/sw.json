@@ -31,7 +31,7 @@
     "fineprint": "Kuandika kwenye noti ni chaguo lako mwenyewe. Angalia sheria za eneo lako."
   },
 
-  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Madereva" },
+  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Madereva", "account": "Akaunti yangu" },
   "hero": {
     "number_intro": "Kila mtu kwenye Rotabo ana nambari. Nambari moja. Yako milele. Inasema wewe ni nani, uko wapi na unaweza kufanya nini — unaweza kupatikana na yeyote Duniani.",
     "search_placeholder": "Tafuta nambari ya Rotabo — mf. 2244",
@@ -43,10 +43,16 @@
     "lede": "Chagua unachohitaji — au jiorodheshe kama mtu anayeweza kusaidia.",
     "cta_find": "Tafuta unachohitaji",
     "cta_offer": "Toa unachoweza",
-    "cta_find_driver": "Tafuta dereva", "cta_become_driver": "Kuwa dereva", "cta_translator": "Mkalimani unapohitaji", "cta_become_sponsor": "Kuwa mfadhili",
+    "cta_find_driver": "Tafuta dereva",
+    "cta_become_driver": "Kuwa dereva",
+    "cta_translator": "Mkalimani unapohitaji",
+    "cta_become_sponsor": "Kuwa mfadhili",
     "cta_home_screen": "⬇ Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "fine": "Inafanya kazi kwenye kivinjari chako — hakuna haja ya duka la programu.",
-    "badge_verified": "Watumiaji waliothibitishwa", "badge_live": "Kushiriki safari moja kwa moja", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Watumiaji waliothibitishwa",
+    "badge_live": "Kushiriki safari moja kwa moja",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Ingia"
   },
   "works": {
     "eyebrow": "JINSI ROTABO INAVYOFANYA KAZI",
@@ -160,6 +166,38 @@
       "seeking_lead": "Tuambie unachohitaji na wapi.",
       "offering_title": "Toa msaada barabarani",
       "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
+    },
+    "care": {
+      "name": "Babu na bibi wa kuazima",
+      "desc": "Wastaafu wenye miaka 60+ wanaowapa familia changa saa chache za kulea watoto, kuwa nao na kusimulia hadithi.",
+      "seeking_title": "Unahitaji msaada na watoto?",
+      "seeking_lead": "Tuambie unahitaji nini na wapi — saa chache za malezi na uandamani kwa wiki.",
+      "offering_title": "Jitolee kuwa babu au bibi wa kuazima",
+      "offering_lead": "Jiorodheshe ili familia za jirani zinazothamini muda wako zikupate."
+    },
+    "learn": {
+      "name": "Walimu",
+      "desc": "Wakufunzi na walimu wa masomo ya shule, lugha au ujuzi — wanafunzi wakisaidia wanafunzi, wastaafu wakishiriki uzoefu, au yeyote anayefundisha Excel, upishi, bustani na mengineyo.",
+      "seeking_title": "Unahitaji mkufunzi au mwalimu?",
+      "seeking_lead": "Tuambie unataka kujifunza nini na wapi.",
+      "offering_title": "Jitolee kufundisha",
+      "offering_lead": "Orodhesha ujuzi wako ili wanaotaka kujifunza karibu nawe wakupate."
+    },
+    "stay": {
+      "name": "Malazi ya likizo",
+      "desc": "Badilishaneni nyumba za likizo — wewe unakaa kwao, wao wanakaa kwako — au karibishaneni kwa ziara.",
+      "seeking_title": "Unatafuta mahali pa kukaa?",
+      "seeking_lead": "Tuambie ungependa kwenda wapi na lini.",
+      "offering_title": "Toa nyumba yako kwa kubadilishana au kukaa",
+      "offering_lead": "Orodhesha nyumba yako ili wanaotaka kubadilishana au kutembelea wakupate."
+    },
+    "other": {
+      "name": "Kitu kingine",
+      "desc": "Haiingii popote pengine? Iambie Rotabo kilichotokea — huenda mtu wa karibu akaweza kusaidia.",
+      "seeking_title": "Kuna jambo lisilotarajiwa limetokea?",
+      "seeking_lead": "Tuambie unahitaji nini na wapi.",
+      "offering_title": "Jitolee kusaidia kwa lolote",
+      "offering_lead": "Jiorodheshe ili watu wenye ombi lisilo la kawaida wakupate."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Tafuta mkalimani"
   },
   "problem": {
-    "eyebrow": "KWA NINI UACHE GARI LAKO?", "h2": "Tatizo la kila chaguo lingine",
-    "cross1": "Hakuna teksi.", "cross2": "Hakuna kuegesha usiku kucha.", "cross3": "Hakuna kurudi kulichukua kesho.", "cross4": "Hakuna safari ya pili kulikusanya.",
+    "eyebrow": "KWA NINI UACHE GARI LAKO?",
+    "h2": "Tatizo la kila chaguo lingine",
+    "cross1": "Hakuna teksi.",
+    "cross2": "Hakuna kuegesha usiku kucha.",
+    "cross3": "Hakuna kurudi kulichukua kesho.",
+    "cross4": "Hakuna safari ya pili kulikusanya.",
     "thesis": "Ni wewe tu, gari lako, na njia ya kurudi nyumbani."
   },
   "how": {
-    "eyebrow": "HATUA NNE", "h2": "Jinsi Rotabo inavyofanya kazi",
-    "step1_title": "Omba", "step1_desc": "Mwambie Rotabo ulipo.",
-    "step2_title": "Kutana", "step2_desc": "Dereva wako anakujia.",
-    "step3_title": "Endesha", "step3_desc": "Anaendesha gari lako, ukiwa nawe ndani.",
-    "step4_title": "Nyumbani", "step4_desc": "Mnafika pamoja. Gari linabaki lako njia yote.",
-    "not_taxi1": "Si teksi. Si safari ya kushirikiana. Si gari linaloachwa nyuma.", "not_taxi2": "Gari lako. Njia yako ya kurudi nyumbani.",
+    "eyebrow": "HATUA NNE",
+    "h2": "Jinsi Rotabo inavyofanya kazi",
+    "step1_title": "Omba",
+    "step1_desc": "Mwambie Rotabo ulipo.",
+    "step2_title": "Kutana",
+    "step2_desc": "Dereva wako anakujia.",
+    "step3_title": "Endesha",
+    "step3_desc": "Anaendesha gari lako, ukiwa nawe ndani.",
+    "step4_title": "Nyumbani",
+    "step4_desc": "Mnafika pamoja. Gari linabaki lako njia yote.",
+    "not_taxi1": "Si teksi. Si safari ya kushirikiana. Si gari linaloachwa nyuma.",
+    "not_taxi2": "Gari lako. Njia yako ya kurudi nyumbani.",
     "tab_client": "Nahitaji safari",
     "tab_driver": "Nataka kuendesha",
     "driver_step1_title": "Jisajili",
@@ -207,7 +255,8 @@
     "cta": "Kuwa dereva"
   },
   "safety": {
-    "eyebrow": "WATU WANAOENDESHA", "h2": "Madereva wanaoendesha kwa sababu",
+    "eyebrow": "WATU WANAOENDESHA",
+    "h2": "Madereva wanaoendesha kwa sababu",
     "check1": "Kila dereva anajiunga ili kumzuia mtu asiyefaa kuendesha kutoka barabarani",
     "check2": "Utambulisho na leseni vinathibitishwa kabla ya safari ya kwanza",
     "check3": "Kanuni za maadili zinazoshirikiwa, zinazokubaliwa na kila anayeendesha",
@@ -215,25 +264,35 @@
     "check5": "Mpe kila dereva alama, ripoti tukio lolote"
   },
   "partners_card": {
-    "cat": "WASHIRIKA", "h3": "Kwa migahawa, hoteli na kumbi",
+    "cat": "WASHIRIKA",
+    "h3": "Kwa migahawa, hoteli na kumbi",
     "p": "Waache wageni wako wafurahie jioni na bado waendeshe gari lao wenyewe kurudi nyumbani. Toa Rotabo mezani, mapokezi, au mlangoni.",
     "link": "Zungumza nasi →"
   },
   "drivers_card": {
-    "cat": "MADEREVA", "h3": "Endesha na Rotabo",
+    "cat": "MADEREVA",
+    "h3": "Endesha na Rotabo",
     "p": "Kila safari unayochukua ni safari ambayo hakuna anayeichukua vibaya. Chagua saa zako mwenyewe, endesha magari usiyohitaji kuyamiliki, na wafikishe watu nyumbani kwa njia waliyotaka.",
     "link": "Kuwa dereva →"
   },
   "supporters": {
-    "cat": "WAFADHILI", "h3": "Watu na maeneo yanayosimamia hili",
+    "cat": "WAFADHILI",
+    "h3": "Watu na maeneo yanayosimamia hili",
     "p": "Rotabo inaendelea kutokana na mtu yeyote aliye tayari kuunga mkono wazo kwamba hakuna anayepaswa kuendesha akiwa hafai.",
     "invite": "Tunakaribisha hasa mabenki, makampuni ya bima, chapa za michezo, watengenezaji wa vinywaji vya nishati na visivyo na pombe — na biashara yoyote inayounga mkono uendeshaji bila ulevi.",
     "first": "Bado hakuna wafadhili — kuwa jina la kwanza kwenye orodha hii.",
-    "tier_bronze": "Shaba — CHF 100", "tier_silver": "Fedha — CHF 300", "tier_gold": "Dhahabu — CHF 750", "tier_platinum": "Platinamu — CHF 750+"
+    "tier_bronze": "Shaba — CHF 100",
+    "tier_silver": "Fedha — CHF 300",
+    "tier_gold": "Dhahabu — CHF 750",
+    "tier_platinum": "Platinamu — CHF 750+"
   },
   "footer": {
     "legal": "Rotabo ni jukwaa la teknolojia. Madereva ni watoa huduma huru, si wafanyakazi wa Rotabo.",
-    "terms": "Masharti", "privacy": "Faragha", "driver_terms": "Masharti ya dereva", "supporters": "Wafadhili", "contact": "Wasiliana nasi",
+    "terms": "Masharti",
+    "privacy": "Faragha",
+    "driver_terms": "Masharti ya dereva",
+    "supporters": "Wafadhili",
+    "contact": "Wasiliana nasi",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" },
@@ -249,7 +308,8 @@
     "address_hint": "Anwani yako inaonekana tu kwa wageni waliolipia ufikiaji kamili, sawa na nambari yako ya simu.",
     "tier_label": "Kuonekana",
     "period_1mo": "Mwezi 1",
-    "period_12mo": "Miezi 12"
+    "period_12mo": "Miezi 12",
+    "email_hint": "Tumia anwani halisi — tutatuma msimbo wa uthibitisho huko kabla tangazo lako halijaonekana."
   },
   "find_form": {
     "destination_label": "Unataka kwenda wapi?",
@@ -264,7 +324,10 @@
     "city_label": "Mji / eneo",
     "address_label": "Anwani",
     "submit": "Endelea kulipa",
-    "error": "Kuna hitilafu. Tafadhali jaribu tena."
+    "error": "Kuna hitilafu. Tafadhali jaribu tena.",
+    "country_label": "Nchi",
+    "note_label": "Tuambie zaidi (si lazima)",
+    "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…"
   },
   "drive_form": {
     "title": "Kuwa dereva",
@@ -280,7 +343,10 @@
     "decl3": "Sitakubali au kufanya safari yoyote nikiwa nimeathiriwa na pombe, dawa za kulevya, au kitu kingine chochote.",
     "decl4": "Ninaelewa kwamba naendesha gari kwa jukumu langu mwenyewe kikamilifu na la mteja.",
     "submit": "Endelea kulipa",
-    "error": "Kuna hitilafu. Tafadhali jaribu tena."
+    "error": "Kuna hitilafu. Tafadhali jaribu tena.",
+    "country_label": "Nchi",
+    "note_label": "Tuambie zaidi (si lazima)",
+    "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…"
   },
   "generic_form": {
     "name_label": "Jina lako",
@@ -291,7 +357,8 @@
     "note_label": "Tuambie zaidi (si lazima)",
     "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…",
     "submit": "Endelea kulipa",
-    "error": "Hitilafu imetokea. Tafadhali jaribu tena."
+    "error": "Hitilafu imetokea. Tafadhali jaribu tena.",
+    "country_label": "Nchi"
   },
   "searching_page": {
     "fare_remaining": "Nauli iliyobaki inayokadiriwa: ~CHF {amount}, ilipwe moja kwa moja kwa dereva wako.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "dakika {n} zilizopita",
     "time_hour_ago_one": "saa 1 iliyopita",
     "time_hour_ago_other": "saa {n} zilizopita"
+  },
+
+  "investors_card": {
+    "cat": "WAWEKEZAJI",
+    "h3": "Kuwa mwekezaji",
+    "p": "Rotabo huunganisha watu katika kategoria 11 na lugha 38 duniani kote — bila kamisheni kutoka kwa yeyote anayetoa muda, ujuzi au vifaa vyake. Tunazungumza na wale wanaounga mkono mtindo huu.",
+    "link": "Wasiliana nasi →"
+  },
+
+  "verify_modal": {
+    "title": "Angalia barua pepe yako",
+    "subtitle": "Tumetuma msimbo wa tarakimu 6 kwenye anwani iliyo hapa chini. Uweke ili kuendelea.",
+    "code_label": "Msimbo wa uthibitisho",
+    "submit": "Thibitisha msimbo",
+    "resend": "Tuma msimbo tena",
+    "spam_hint": "Hauuoni? Angalia folda ya taka — barua pepe za kwanza kutoka kwa mtumaji mpya mara nyingine huishia huko.",
+    "error": "Msimbo si sahihi au umeisha muda. Jaribu tena."
   }
 }

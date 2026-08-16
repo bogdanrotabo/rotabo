@@ -31,7 +31,7 @@
     "fineprint": "Menulis di uang kertas adalah pilihanmu sendiri. Periksa hukum setempat."
   },
 
-  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi" },
+  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi", "account": "Akun saya" },
   "hero": {
     "number_intro": "Setiap orang di Rotabo punya nomor. Satu nomor. Milikmu selamanya. Ia mengatakan siapa kamu, di mana kamu, dan apa yang bisa kamu lakukan — dapat ditemukan siapa saja di Bumi.",
     "search_placeholder": "Cari nomor Rotabo — mis. 2244",
@@ -43,10 +43,16 @@
     "lede": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
     "cta_find": "Temukan yang kamu butuhkan",
     "cta_offer": "Tawarkan yang kamu bisa",
-    "cta_find_driver": "Cari pengemudi", "cta_become_driver": "Jadi pengemudi", "cta_translator": "Penerjemah saat dibutuhkan", "cta_become_sponsor": "Jadi sponsor",
+    "cta_find_driver": "Cari pengemudi",
+    "cta_become_driver": "Jadi pengemudi",
+    "cta_translator": "Penerjemah saat dibutuhkan",
+    "cta_become_sponsor": "Jadi sponsor",
     "cta_home_screen": "⬇ Tambahkan Rotabo ke layar utama",
     "fine": "Langsung berfungsi di browser Anda — tanpa perlu unduh aplikasi.",
-    "badge_verified": "Pengguna terverifikasi", "badge_live": "Berbagi perjalanan langsung", "badge_pay": "Google Pay / Apple Pay"
+    "badge_verified": "Pengguna terverifikasi",
+    "badge_live": "Berbagi perjalanan langsung",
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Masuk"
   },
   "works": {
     "eyebrow": "CARA KERJA ROTABO",
@@ -160,6 +166,38 @@
       "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
       "offering_title": "Tawarkan bantuan di jalan",
       "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
+    },
+    "care": {
+      "name": "Kakek-nenek pinjaman",
+      "desc": "Pensiunan 60+ yang memberi keluarga muda beberapa jam pengasuhan, teman mengobrol, dan cerita.",
+      "seeking_title": "Butuh bantuan dengan anak-anak?",
+      "seeking_lead": "Ceritakan apa yang kamu butuhkan dan di mana — beberapa jam pengasuhan dan teman setiap minggu.",
+      "offering_title": "Tawarkan diri jadi kakek atau nenek pinjaman",
+      "offering_lead": "Daftarkan dirimu supaya keluarga di dekatmu yang menghargai waktumu bisa menemukanmu."
+    },
+    "learn": {
+      "name": "Pengajar",
+      "desc": "Tutor dan pengajar untuk mata pelajaran sekolah, bahasa, atau keterampilan — pelajar membantu pelajar, pensiunan berbagi pengalaman, atau siapa pun yang mengajar Excel, memasak, berkebun, dan lainnya.",
+      "seeking_title": "Butuh tutor atau guru?",
+      "seeking_lead": "Ceritakan apa yang ingin kamu pelajari dan di mana.",
+      "offering_title": "Tawarkan diri untuk mengajar",
+      "offering_lead": "Cantumkan keahlianmu supaya orang di dekatmu yang ingin belajar bisa menemukanmu."
+    },
+    "stay": {
+      "name": "Penginapan liburan",
+      "desc": "Tukar rumah liburan — kamu menginap di rumah mereka, mereka di rumahmu — atau saling menerima tamu.",
+      "seeking_title": "Sedang mencari tempat menginap?",
+      "seeking_lead": "Ceritakan ke mana kamu ingin pergi dan kapan.",
+      "offering_title": "Tawarkan rumahmu untuk tukar atau menginap",
+      "offering_lead": "Cantumkan rumahmu supaya yang ingin bertukar atau berkunjung bisa menemukanmu."
+    },
+    "other": {
+      "name": "Hal lain",
+      "desc": "Tidak masuk kategori mana pun? Ceritakan ke Rotabo apa yang terjadi — mungkin ada orang di dekatmu yang bisa membantu.",
+      "seeking_title": "Ada kejadian tak terduga?",
+      "seeking_lead": "Ceritakan apa yang kamu butuhkan dan di mana.",
+      "offering_title": "Tawarkan bantuan untuk apa saja",
+      "offering_lead": "Daftarkan dirimu supaya orang dengan permintaan tak biasa bisa menemukanmu."
     }
   },
   "bridge": {
@@ -168,17 +206,27 @@
     "cta": "Cari penerjemah"
   },
   "problem": {
-    "eyebrow": "MENGAPA HARUS MENINGGALKAN MOBIL ANDA?", "h2": "Masalah dengan semua pilihan lain",
-    "cross1": "Tanpa taksi.", "cross2": "Tanpa parkir semalaman.", "cross3": "Tanpa perlu kembali mengambilnya besok.", "cross4": "Tanpa perlu tumpangan kedua untuk menjemput mobil.",
+    "eyebrow": "MENGAPA HARUS MENINGGALKAN MOBIL ANDA?",
+    "h2": "Masalah dengan semua pilihan lain",
+    "cross1": "Tanpa taksi.",
+    "cross2": "Tanpa parkir semalaman.",
+    "cross3": "Tanpa perlu kembali mengambilnya besok.",
+    "cross4": "Tanpa perlu tumpangan kedua untuk menjemput mobil.",
     "thesis": "Hanya Anda, mobil Anda, dan jalan pulang."
   },
   "how": {
-    "eyebrow": "EMPAT LANGKAH", "h2": "Cara kerja Rotabo",
-    "step1_title": "Ajukan permintaan", "step1_desc": "Beri tahu Rotabo di mana Anda berada.",
-    "step2_title": "Bertemu", "step2_desc": "Pengemudi Anda akan datang menjemput.",
-    "step3_title": "Berkendara", "step3_desc": "Mereka menyetir mobil Anda, dengan Anda di dalamnya.",
-    "step4_title": "Sampai rumah", "step4_desc": "Anda tiba bersama. Mobil tetap menjadi milik Anda sepanjang perjalanan.",
-    "not_taxi1": "Bukan taksi. Bukan layanan tumpangan. Bukan mobil yang ditinggal begitu saja.", "not_taxi2": "Mobil Anda. Jalan pulang Anda.",
+    "eyebrow": "EMPAT LANGKAH",
+    "h2": "Cara kerja Rotabo",
+    "step1_title": "Ajukan permintaan",
+    "step1_desc": "Beri tahu Rotabo di mana Anda berada.",
+    "step2_title": "Bertemu",
+    "step2_desc": "Pengemudi Anda akan datang menjemput.",
+    "step3_title": "Berkendara",
+    "step3_desc": "Mereka menyetir mobil Anda, dengan Anda di dalamnya.",
+    "step4_title": "Sampai rumah",
+    "step4_desc": "Anda tiba bersama. Mobil tetap menjadi milik Anda sepanjang perjalanan.",
+    "not_taxi1": "Bukan taksi. Bukan layanan tumpangan. Bukan mobil yang ditinggal begitu saja.",
+    "not_taxi2": "Mobil Anda. Jalan pulang Anda.",
     "tab_client": "Saya perlu tumpangan",
     "tab_driver": "Saya ingin mengemudi",
     "driver_step1_title": "Daftar",
@@ -207,7 +255,8 @@
     "cta": "Jadi pengemudi"
   },
   "safety": {
-    "eyebrow": "ORANG-ORANG DI BALIK KEMUDI", "h2": "Pengemudi yang menyetir demi sebuah alasan",
+    "eyebrow": "ORANG-ORANG DI BALIK KEMUDI",
+    "h2": "Pengemudi yang menyetir demi sebuah alasan",
     "check1": "Setiap pengemudi bergabung untuk menjaga agar orang yang tidak seharusnya menyetir tetap tidak berada di jalan",
     "check2": "Identitas dan SIM diverifikasi sebelum perjalanan pertama",
     "check3": "Kode etik bersama yang disepakati oleh setiap pengemudi",
@@ -215,25 +264,35 @@
     "check5": "Beri penilaian untuk setiap pengemudi, laporkan setiap insiden"
   },
   "partners_card": {
-    "cat": "MITRA", "h3": "Untuk restoran, hotel, dan tempat acara",
+    "cat": "MITRA",
+    "h3": "Untuk restoran, hotel, dan tempat acara",
     "p": "Biarkan tamu Anda menikmati malam sepenuhnya dan tetap bisa menyetir pulang dengan mobil mereka sendiri. Tawarkan Rotabo di meja makan, di resepsionis, atau di pintu keluar.",
     "link": "Hubungi kami →"
   },
   "drivers_card": {
-    "cat": "PENGEMUDI", "h3": "Menyetir bersama Rotabo",
+    "cat": "PENGEMUDI",
+    "h3": "Menyetir bersama Rotabo",
     "p": "Setiap perjalanan yang Anda jalani adalah perjalanan yang tidak akan berujung buruk bagi siapa pun. Tentukan jam kerja Anda sendiri, kendarai mobil tanpa harus memilikinya, dan antar orang pulang dengan cara yang mereka inginkan.",
     "link": "Jadi pengemudi →"
   },
   "supporters": {
-    "cat": "PENDUKUNG", "h3": "Orang dan tempat di balik semua ini",
+    "cat": "PENDUKUNG",
+    "h3": "Orang dan tempat di balik semua ini",
     "p": "Rotabo terus berjalan berkat semua orang yang bersedia mendukung gagasan bahwa tak seorang pun boleh menyetir saat seharusnya tidak menyetir.",
     "invite": "Kami terutama menyambut bank, perusahaan asuransi, merek olahraga, produsen minuman energi dan minuman ringan — serta bisnis apa pun yang mendukung berkendara tanpa alkohol.",
     "first": "Belum ada pendukung — jadilah nama pertama di daftar ini.",
-    "tier_bronze": "Perunggu — 100 CHF", "tier_silver": "Perak — 300 CHF", "tier_gold": "Emas — 750 CHF", "tier_platinum": "Platinum — di atas 750 CHF"
+    "tier_bronze": "Perunggu — 100 CHF",
+    "tier_silver": "Perak — 300 CHF",
+    "tier_gold": "Emas — 750 CHF",
+    "tier_platinum": "Platinum — di atas 750 CHF"
   },
   "footer": {
     "legal": "Rotabo adalah platform teknologi. Pengemudi adalah penyedia layanan independen, bukan karyawan Rotabo.",
-    "terms": "Ketentuan", "privacy": "Privasi", "driver_terms": "Ketentuan pengemudi", "supporters": "Pendukung", "contact": "Kontak",
+    "terms": "Ketentuan",
+    "privacy": "Privasi",
+    "driver_terms": "Ketentuan pengemudi",
+    "supporters": "Pendukung",
+    "contact": "Kontak",
     "copyright": "© 2026 Rotabo"
   },
   "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" },
@@ -249,7 +308,8 @@
     "address_hint": "Alamatmu hanya terlihat oleh pengunjung yang telah membayar akses penuh, sama seperti nomor teleponmu.",
     "tier_label": "Visibilitas",
     "period_1mo": "1 bulan",
-    "period_12mo": "12 bulan"
+    "period_12mo": "12 bulan",
+    "email_hint": "Pakai alamat asli — kami akan mengirim kode verifikasi ke sana sebelum iklanmu tayang."
   },
   "find_form": {
     "destination_label": "Anda mau ke mana?",
@@ -264,7 +324,10 @@
     "city_label": "Kota / lokasi",
     "address_label": "Alamat",
     "submit": "Lanjutkan ke pembayaran",
-    "error": "Terjadi kesalahan. Silakan coba lagi."
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "country_label": "Negara",
+    "note_label": "Ceritakan lebih banyak (opsional)",
+    "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…"
   },
   "drive_form": {
     "title": "Jadi pengemudi",
@@ -280,7 +343,10 @@
     "decl3": "Saya tidak akan pernah menerima atau menjalankan perjalanan saat berada di bawah pengaruh alkohol, narkoba, atau zat lainnya.",
     "decl4": "Saya memahami bahwa saya mengemudi sepenuhnya atas tanggung jawab saya sendiri dan tanggung jawab klien.",
     "submit": "Lanjutkan ke pembayaran",
-    "error": "Terjadi kesalahan. Silakan coba lagi."
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "country_label": "Negara",
+    "note_label": "Ceritakan lebih banyak (opsional)",
+    "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…"
   },
   "generic_form": {
     "name_label": "Namamu",
@@ -291,7 +357,8 @@
     "note_label": "Beri tahu lebih lanjut (opsional)",
     "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…",
     "submit": "Lanjut ke pembayaran",
-    "error": "Ada yang salah. Silakan coba lagi."
+    "error": "Ada yang salah. Silakan coba lagi.",
+    "country_label": "Negara"
   },
   "searching_page": {
     "fare_remaining": "Perkiraan sisa tarif: ~{amount} CHF, dibayar langsung ke pengemudi Anda.",
@@ -377,5 +444,22 @@
     "time_min_ago_other": "{n} menit lalu",
     "time_hour_ago_one": "1 jam lalu",
     "time_hour_ago_other": "{n} jam lalu"
+  },
+
+  "investors_card": {
+    "cat": "INVESTOR",
+    "h3": "Jadi investor",
+    "p": "Rotabo menghubungkan orang dalam 11 kategori dan 38 bahasa, di seluruh dunia — tanpa komisi dari siapa pun yang menawarkan waktu, keterampilan, atau peralatannya. Kami sedang berbicara dengan orang-orang yang mendukung model ini.",
+    "link": "Hubungi kami →"
+  },
+
+  "verify_modal": {
+    "title": "Cek emailmu",
+    "subtitle": "Kami mengirim kode 6 digit ke alamat di bawah. Masukkan kodenya untuk lanjut.",
+    "code_label": "Kode verifikasi",
+    "submit": "Konfirmasi kode",
+    "resend": "Kirim ulang kode",
+    "spam_hint": "Tidak terlihat? Cek folder Spam atau Junk — email pertama dari pengirim baru kadang masuk ke sana.",
+    "error": "Kode tidak valid atau sudah kedaluwarsa. Coba lagi."
   }
 }

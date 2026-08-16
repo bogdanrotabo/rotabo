@@ -36,7 +36,8 @@
     "safety": "Sicherheit",
     "business": "Für Unternehmen",
     "drive": "Fahrer werden",
-    "drivers": "Fahrer"
+    "drivers": "Fahrer",
+    "account": "Mein Konto"
   },
   "hero": {
     "number_intro": "Jeder auf Rotabo hat eine Nummer. Eine Nummer. Für immer deine. Sie sagt, wer du bist, wo du bist und was du kannst — auffindbar für jeden auf der Welt.",
@@ -57,7 +58,8 @@
     "fine": "Funktioniert direkt im Browser — kein App Store nötig.",
     "badge_verified": "Verifizierte Nutzer",
     "badge_live": "Live-Standort teilen",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Anmelden"
   },
   "works": {
     "eyebrow": "SO FUNKTIONIERT ROTABO",
@@ -171,6 +173,38 @@
       "seeking_lead": "Sag uns, was du brauchst und wo.",
       "offering_title": "Pannenhilfe anbieten",
       "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
+    },
+    "care": {
+      "name": "Leihgroßeltern",
+      "desc": "Rentner ab 60, die jungen Familien ein paar Stunden Kinderbetreuung, Gesellschaft und Geschichten schenken.",
+      "seeking_title": "Brauchst du Hilfe mit den Kindern?",
+      "seeking_lead": "Sag uns, was du brauchst und wo — ein paar Stunden Betreuung und Gesellschaft pro Woche.",
+      "offering_title": "Biete an, Leihgroßelternteil zu sein",
+      "offering_lead": "Trag dich ein, damit Familien in deiner Nähe dich finden, die sich über deine Zeit freuen würden."
+    },
+    "learn": {
+      "name": "Lehrkräfte",
+      "desc": "Nachhilfe und Lehrkräfte für Schulfächer, Sprachen oder Fertigkeiten — Schüler helfen Schülern, Rentner geben Erfahrung weiter, oder jemand bringt dir Excel, Kochen, Gärtnern und mehr bei.",
+      "seeking_title": "Brauchst du Nachhilfe oder eine Lehrkraft?",
+      "seeking_lead": "Sag uns, was du lernen möchtest und wo.",
+      "offering_title": "Biete an zu unterrichten",
+      "offering_lead": "Liste deine Fähigkeiten auf, damit Lernende in deiner Nähe dich finden."
+    },
+    "stay": {
+      "name": "Ferienunterkünfte",
+      "desc": "Ferienhäuser tauschen — du wohnst bei ihnen, sie bei dir — oder euch gegenseitig zu Besuch haben.",
+      "seeking_title": "Suchst du eine Unterkunft?",
+      "seeking_lead": "Sag uns, wohin du möchtest und wann.",
+      "offering_title": "Biete dein Zuhause zum Tausch oder Aufenthalt an",
+      "offering_lead": "Trag dein Zuhause ein, damit andere, die tauschen oder zu Besuch kommen möchten, dich finden."
+    },
+    "other": {
+      "name": "Etwas anderes",
+      "desc": "Passt nirgendwo sonst? Sag Rotabo, was passiert ist — jemand in der Nähe kann vielleicht helfen.",
+      "seeking_title": "Ist etwas Unerwartetes passiert?",
+      "seeking_lead": "Sag uns, was du brauchst und wo.",
+      "offering_title": "Biete an, bei allem zu helfen",
+      "offering_lead": "Trag dich ein, damit Leute mit einem ungewöhnlichen Anliegen dich finden."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Deine Adresse sehen nur Besucher, die für vollen Zugang bezahlt haben, genau wie deine Telefonnummer.",
     "tier_label": "Sichtbarkeit",
     "period_1mo": "1 Monat",
-    "period_12mo": "12 Monate"
+    "period_12mo": "12 Monate",
+    "email_hint": "Nutze eine echte Adresse — wir senden dorthin einen Bestätigungscode, bevor dein Eintrag live geht."
   },
   "find_form": {
     "destination_label": "Wohin möchtest du?",
@@ -299,7 +334,10 @@
     "city_label": "Stadt / Ort",
     "address_label": "Adresse",
     "submit": "Weiter zur Zahlung",
-    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "country_label": "Land",
+    "note_label": "Erzähl uns mehr (optional)",
+    "note_placeholder": "Ein paar Details helfen — was, wann, wie viel…"
   },
   "drive_form": {
     "title": "Fahrer werden",
@@ -315,7 +353,10 @@
     "decl3": "Ich werde niemals eine Fahrt annehmen oder durchführen, während ich unter dem Einfluss von Alkohol, Drogen oder anderen Substanzen stehe.",
     "decl4": "Mir ist bewusst, dass ich vollständig in meiner eigenen Verantwortung und der des Kunden fahre.",
     "submit": "Weiter zur Zahlung",
-    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "country_label": "Land",
+    "note_label": "Erzähl uns mehr (optional)",
+    "note_placeholder": "Ein paar Details helfen — was, wann, wie viel…"
   },
   "generic_form": {
     "name_label": "Dein Name",
@@ -326,7 +367,8 @@
     "note_label": "Erzähl uns mehr (optional)",
     "note_placeholder": "Ein paar Details helfen — was, wann, wie viel…",
     "submit": "Weiter zur Zahlung",
-    "error": "Etwas ist schiefgelaufen. Bitte versuch es noch mal."
+    "error": "Etwas ist schiefgelaufen. Bitte versuch es noch mal.",
+    "country_label": "Land"
   },
   "searching_page": {
     "fare_remaining": "Geschätzter Restbetrag: ~{amount} CHF, direkt an deinen Fahrer zu zahlen.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "vor {n} Minuten",
     "time_hour_ago_one": "vor 1 Stunde",
     "time_hour_ago_other": "vor {n} Stunden"
+  },
+
+  "investors_card": {
+    "cat": "INVESTOREN",
+    "h3": "Investor werden",
+    "p": "Rotabo verbindet Menschen in 11 Kategorien und 38 Sprachen weltweit — ohne Provision von irgendjemandem, der Zeit, Können oder Ausrüstung anbietet. Wir sprechen mit Menschen, die dieses Modell unterstützen.",
+    "link": "Kontakt aufnehmen →"
+  },
+
+  "verify_modal": {
+    "title": "Sieh in dein Postfach",
+    "subtitle": "Wir haben einen 6-stelligen Code an die Adresse unten geschickt. Gib ihn ein, um fortzufahren.",
+    "code_label": "Bestätigungscode",
+    "submit": "Code bestätigen",
+    "resend": "Code erneut senden",
+    "spam_hint": "Nicht zu sehen? Sieh im Spam- oder Junk-Ordner nach — erste E-Mails von einem neuen Absender landen manchmal dort.",
+    "error": "Ungültiger oder abgelaufener Code. Bitte versuch es erneut."
   }
 }

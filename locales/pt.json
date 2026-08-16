@@ -36,7 +36,8 @@
     "safety": "Segurança",
     "business": "Para empresas",
     "drive": "Torna-te condutor",
-    "drivers": "Motoristas"
+    "drivers": "Motoristas",
+    "account": "A minha conta"
   },
   "hero": {
     "number_intro": "Cada pessoa no Rotabo tem um número. Um número. Seu para sempre. Diz quem você é, onde está e o que sabe fazer — encontrável por qualquer pessoa na Terra.",
@@ -57,7 +58,8 @@
     "fine": "Funciona no teu navegador — sem necessidade de app store.",
     "badge_verified": "Utilizadores verificados",
     "badge_live": "Partilha do trajeto em tempo real",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Iniciar sessão"
   },
   "works": {
     "eyebrow": "COMO FUNCIONA A ROTABO",
@@ -171,6 +173,38 @@
       "seeking_lead": "Diz-nos o que precisas e onde.",
       "offering_title": "Oferece ajuda na estrada",
       "offering_lead": "Inscreve as tuas competências para que quem precisa te encontre."
+    },
+    "care": {
+      "name": "Avós emprestados",
+      "desc": "Reformados com 60 anos ou mais que dão às famílias jovens algumas horas de cuidado, companhia e histórias.",
+      "seeking_title": "Precisas de ajuda com as crianças?",
+      "seeking_lead": "Diz-nos do que precisas e onde — algumas horas de cuidado e companhia por semana.",
+      "offering_title": "Oferece-te para ser avô ou avó emprestada",
+      "offering_lead": "Inscreve-te para que te encontrem as famílias próximas que adorariam o teu tempo."
+    },
+    "learn": {
+      "name": "Professores",
+      "desc": "Explicadores e professores para disciplinas, línguas ou competências — estudantes a ajudar estudantes, reformados a partilhar experiência, ou alguém que ensine Excel, cozinha, jardinagem e muito mais.",
+      "seeking_title": "Precisas de um explicador ou professor?",
+      "seeking_lead": "Diz-nos o que queres aprender e onde.",
+      "offering_title": "Oferece-te para ensinar",
+      "offering_lead": "Indica as tuas competências para que quem quer aprender perto de ti te encontre."
+    },
+    "stay": {
+      "name": "Estadias de férias",
+      "desc": "Troquem casas de férias — ficas na deles, eles ficam na tua — ou recebam-se mutuamente.",
+      "seeking_title": "Procuras um sítio para ficar?",
+      "seeking_lead": "Diz-nos para onde gostarias de ir e quando.",
+      "offering_title": "Oferece a tua casa para troca ou estadia",
+      "offering_lead": "Publica a tua casa para que te encontrem quem quer trocar ou visitar."
+    },
+    "other": {
+      "name": "Outra coisa",
+      "desc": "Não encaixa em mais nada? Conta ao Rotabo o que aconteceu — alguém por perto talvez possa ajudar.",
+      "seeking_title": "Aconteceu algo inesperado?",
+      "seeking_lead": "Diz-nos do que precisas e onde.",
+      "offering_title": "Oferece-te para ajudar no que for",
+      "offering_lead": "Inscreve-te para que te encontre quem tem um pedido fora do comum."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "A sua morada só é visível para visitantes que pagaram o acesso completo, tal como o número de telefone.",
     "tier_label": "Visibilidade",
     "period_1mo": "1 mês",
-    "period_12mo": "12 meses"
+    "period_12mo": "12 meses",
+    "email_hint": "Usa um endereço real — vamos enviar para lá um código de verificação antes de o teu anúncio ficar visível."
   },
   "find_form": {
     "destination_label": "Para onde queres ir?",
@@ -299,7 +334,10 @@
     "city_label": "Cidade / localização",
     "address_label": "Morada",
     "submit": "Continuar para o pagamento",
-    "error": "Algo correu mal. Tenta novamente."
+    "error": "Algo correu mal. Tenta novamente.",
+    "country_label": "País",
+    "note_label": "Conta-nos mais (opcional)",
+    "note_placeholder": "Alguns detalhes ajudam — o quê, quando, quanto…"
   },
   "drive_form": {
     "title": "Torna-te condutor",
@@ -315,7 +353,10 @@
     "decl3": "Nunca aceitarei nem realizarei uma viagem sob o efeito de álcool, drogas ou qualquer outra substância.",
     "decl4": "Compreendo que conduzo inteiramente sob a minha própria responsabilidade e a do cliente.",
     "submit": "Continuar para o pagamento",
-    "error": "Algo correu mal. Tenta novamente."
+    "error": "Algo correu mal. Tenta novamente.",
+    "country_label": "País",
+    "note_label": "Conta-nos mais (opcional)",
+    "note_placeholder": "Alguns detalhes ajudam — o quê, quando, quanto…"
   },
   "generic_form": {
     "name_label": "O teu nome",
@@ -326,7 +367,8 @@
     "note_label": "Conta-nos mais (opcional)",
     "note_placeholder": "Alguns detalhes ajudam — o quê, quando, quanto…",
     "submit": "Continuar para o pagamento",
-    "error": "Algo correu mal. Tenta novamente."
+    "error": "Algo correu mal. Tenta novamente.",
+    "country_label": "País"
   },
   "searching_page": {
     "fare_remaining": "Saldo estimado: ~{amount} CHF, pago diretamente ao teu condutor.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "há {n} min",
     "time_hour_ago_one": "há 1 hora",
     "time_hour_ago_other": "há {n} horas"
+  },
+
+  "investors_card": {
+    "cat": "INVESTIDORES",
+    "h3": "Torna-te investidor",
+    "p": "O Rotabo liga pessoas em 11 categorias e 38 línguas, em todo o mundo — sem comissão para quem oferece o seu tempo, as suas competências ou o seu equipamento. Estamos a falar com quem apoia este modelo.",
+    "link": "Fala connosco →"
+  },
+
+  "verify_modal": {
+    "title": "Vê o teu e-mail",
+    "subtitle": "Enviámos um código de 6 dígitos para o endereço abaixo. Introduz-o para continuar.",
+    "code_label": "Código de verificação",
+    "submit": "Confirmar código",
+    "resend": "Reenviar código",
+    "spam_hint": "Não o vês? Vê a pasta de spam ou lixo — os primeiros e-mails de um remetente novo às vezes vão parar lá.",
+    "error": "Código inválido ou expirado. Tenta novamente."
   }
 }

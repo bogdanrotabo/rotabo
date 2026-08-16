@@ -36,7 +36,8 @@
     "safety": "Sigurnost",
     "business": "Za tvrtke",
     "drive": "Postani vozač",
-    "drivers": "Vozači"
+    "drivers": "Vozači",
+    "account": "Moj račun"
   },
   "hero": {
     "number_intro": "Svatko na Rotabu ima broj. Jedan broj. Tvoj zauvijek. Govori tko si, gdje si i što znaš — pronađiv od bilo koga na Zemlji.",
@@ -57,7 +58,8 @@
     "fine": "Radi izravno u pregledniku — nije potrebna trgovina aplikacijama.",
     "badge_verified": "Provjereni korisnici",
     "badge_live": "Dijeljenje vožnje uživo",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Prijava"
   },
   "works": {
     "eyebrow": "KAKO ROTABO FUNKCIONIRA",
@@ -171,6 +173,38 @@
       "seeking_lead": "Reci nam što ti treba i gdje.",
       "offering_title": "Ponudi pomoć na cesti",
       "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
+    },
+    "care": {
+      "name": "Posuđeni bake i djedovi",
+      "desc": "Umirovljenici od 60 godina naviše koji mladim obiteljima daruju nekoliko sati čuvanja, društva i priča.",
+      "seeking_title": "Treba ti pomoć s djecom?",
+      "seeking_lead": "Reci nam što trebaš i gdje — nekoliko sati čuvanja i društva tjedno.",
+      "offering_title": "Ponudi se kao posuđeni djed ili baka",
+      "offering_lead": "Prijavi se da te pronađu obitelji u blizini koje bi se veselile tvom vremenu."
+    },
+    "learn": {
+      "name": "Učitelji",
+      "desc": "Instruktori i učitelji za školske predmete, jezike ili vještine — studenti pomažu studentima, umirovljenici dijele iskustvo, ili netko podučava Excel, kuhanje, vrtlarstvo i još mnogo toga.",
+      "seeking_title": "Trebaš instruktora ili učitelja?",
+      "seeking_lead": "Reci nam što želiš naučiti i gdje.",
+      "offering_title": "Ponudi se za podučavanje",
+      "offering_lead": "Navedi svoje vještine da te pronađu oni koji u blizini žele učiti."
+    },
+    "stay": {
+      "name": "Odmori i smještaj",
+      "desc": "Zamijenite kuće za odmor — ti odsjedaš kod njih, oni kod tebe — ili ugostite jedni druge.",
+      "seeking_title": "Tražiš gdje odsjesti?",
+      "seeking_lead": "Reci nam kamo bi želio ići i kada.",
+      "offering_title": "Ponudi svoj dom za zamjenu ili boravak",
+      "offering_lead": "Dodaj svoj dom da te pronađu oni koji žele zamijeniti ili doći u posjet."
+    },
+    "other": {
+      "name": "Nešto drugo",
+      "desc": "Ne spada nigdje drugdje? Reci Rotabu što se dogodilo — možda netko u blizini može pomoći.",
+      "seeking_title": "Dogodilo se nešto neočekivano?",
+      "seeking_lead": "Reci nam što trebaš i gdje.",
+      "offering_title": "Ponudi pomoć oko bilo čega",
+      "offering_lead": "Prijavi se da te pronađu ljudi s neobičnom zamolbom."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Tvoju adresu vide samo posjetitelji koji su platili puni pristup, jednako kao broj telefona.",
     "tier_label": "Vidljivost",
     "period_1mo": "1 mjesec",
-    "period_12mo": "12 mjeseci"
+    "period_12mo": "12 mjeseci",
+    "email_hint": "Koristi pravu adresu — poslat ćemo na nju kod za potvrdu prije nego što tvoj oglas postane vidljiv."
   },
   "find_form": {
     "destination_label": "Kamo želite ići?",
@@ -299,7 +334,10 @@
     "city_label": "Grad / lokacija",
     "address_label": "Adresa",
     "submit": "Nastavi na plaćanje",
-    "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
+    "error": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+    "country_label": "Država",
+    "note_label": "Reci nam više (neobavezno)",
+    "note_placeholder": "Nekoliko detalja pomaže — što, kada, koliko…"
   },
   "drive_form": {
     "title": "Postani vozač",
@@ -315,7 +353,10 @@
     "decl3": "Nikada neću prihvatiti niti obaviti vožnju pod utjecajem alkohola, droga ili bilo koje druge tvari.",
     "decl4": "Razumijem da vozim isključivo na vlastitu odgovornost i odgovornost klijenta.",
     "submit": "Nastavi na plaćanje",
-    "error": "Nešto je pošlo po zlu. Pokušajte ponovno."
+    "error": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+    "country_label": "Država",
+    "note_label": "Reci nam više (neobavezno)",
+    "note_placeholder": "Nekoliko detalja pomaže — što, kada, koliko…"
   },
   "generic_form": {
     "name_label": "Tvoje ime",
@@ -326,7 +367,8 @@
     "note_label": "Reci nam više (neobavezno)",
     "note_placeholder": "Nekoliko detalja pomaže — što, kada, koliko…",
     "submit": "Nastavi na plaćanje",
-    "error": "Nešto je pošlo po zlu. Pokušaj ponovno."
+    "error": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+    "country_label": "Država"
   },
   "searching_page": {
     "fare_remaining": "Procijenjeni preostali iznos: ~{amount} CHF, plaća se izravno vašem vozaču.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "prije {n} minuta",
     "time_hour_ago_one": "prije 1 sat",
     "time_hour_ago_other": "prije {n} sati"
+  },
+
+  "investors_card": {
+    "cat": "ULAGAČI",
+    "h3": "Postani ulagač",
+    "p": "Rotabo povezuje ljude u 11 kategorija i 38 jezika diljem svijeta — bez provizije od bilo koga tko nudi svoje vrijeme, vještine ili opremu. Razgovaramo s onima koji podržavaju taj model.",
+    "link": "Javi nam se →"
+  },
+
+  "verify_modal": {
+    "title": "Provjeri svoju e-poštu",
+    "subtitle": "Poslali smo šesteroznamenkasti kod na adresu ispod. Unesi ga za nastavak.",
+    "code_label": "Kod za potvrdu",
+    "submit": "Potvrdi kod",
+    "resend": "Pošalji kod ponovno",
+    "spam_hint": "Ne vidiš ga? Provjeri mapu neželjene pošte — prve poruke novog pošiljatelja ponekad završe ondje.",
+    "error": "Neispravan ili istekao kod. Pokušaj ponovno."
   }
 }

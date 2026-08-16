@@ -36,7 +36,8 @@
     "safety": "Seguridad",
     "business": "Para empresas",
     "drive": "Conviértete en conductor",
-    "drivers": "Conductores"
+    "drivers": "Conductores",
+    "account": "Mi cuenta"
   },
   "hero": {
     "number_intro": "Cada persona en Rotabo tiene un número. Un número. Tuyo para siempre. Dice quién eres, dónde estás y qué puedes hacer — localizable por cualquiera en la Tierra.",
@@ -57,7 +58,8 @@
     "fine": "Funciona en tu navegador — no necesitas ninguna tienda de aplicaciones.",
     "badge_verified": "Usuarios verificados",
     "badge_live": "Recorrido compartido en directo",
-    "badge_pay": "Google Pay / Apple Pay"
+    "badge_pay": "Google Pay / Apple Pay",
+    "cta_login": "Iniciar sesión"
   },
   "works": {
     "eyebrow": "CÓMO FUNCIONA ROTABO",
@@ -171,6 +173,38 @@
       "seeking_lead": "Cuéntanos qué necesitas y dónde.",
       "offering_title": "Ofrece ayuda en carretera",
       "offering_lead": "Inscribe tus habilidades para que te encuentren quienes las necesitan."
+    },
+    "care": {
+      "name": "Abuelos prestados",
+      "desc": "Jubilados de 60 años o más que regalan a las familias jóvenes unas horas de cuidado, compañía e historias.",
+      "seeking_title": "¿Necesitas una mano con los niños?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde — unas horas de cuidado y compañía a la semana.",
+      "offering_title": "Ofrécete como abuelo o abuela prestada",
+      "offering_lead": "Apúntate para que te encuentren las familias cercanas a las que les encantaría tu tiempo."
+    },
+    "learn": {
+      "name": "Profesores",
+      "desc": "Tutores y profesores para asignaturas, idiomas o habilidades — estudiantes que ayudan a estudiantes, jubilados que comparten su experiencia, o cualquiera que enseñe Excel, cocina, jardinería y mucho más.",
+      "seeking_title": "¿Necesitas un tutor o un profesor?",
+      "seeking_lead": "Cuéntanos qué quieres aprender y dónde.",
+      "offering_title": "Ofrécete para enseñar",
+      "offering_lead": "Indica tus habilidades para que te encuentren los estudiantes cercanos."
+    },
+    "stay": {
+      "name": "Estancias de vacaciones",
+      "desc": "Intercambia casas de vacaciones — tú te quedas en la suya, ellos en la tuya — u os alojáis mutuamente.",
+      "seeking_title": "¿Buscas un sitio donde alojarte?",
+      "seeking_lead": "Cuéntanos adónde te gustaría ir y cuándo.",
+      "offering_title": "Ofrece tu casa para un intercambio o una estancia",
+      "offering_lead": "Publica tu casa para que te encuentren quienes quieren intercambiar o visitarte."
+    },
+    "other": {
+      "name": "Otra cosa",
+      "desc": "¿No encaja en ningún sitio? Cuéntale a Rotabo qué ha pasado — puede que alguien cerca pueda ayudarte.",
+      "seeking_title": "¿Ha pasado algo inesperado?",
+      "seeking_lead": "Cuéntanos qué necesitas y dónde.",
+      "offering_title": "Ofrécete para ayudar con lo que sea",
+      "offering_lead": "Apúntate para que te encuentre quien tenga una petición poco común."
     }
   },
   "bridge": {
@@ -284,7 +318,8 @@
     "address_hint": "Tu dirección solo la ven los visitantes que han pagado el acceso completo, igual que tu número de teléfono.",
     "tier_label": "Visibilidad",
     "period_1mo": "1 mes",
-    "period_12mo": "12 meses"
+    "period_12mo": "12 meses",
+    "email_hint": "Usa una dirección real — enviaremos ahí un código de verificación antes de publicar tu anuncio."
   },
   "find_form": {
     "destination_label": "¿Adónde quieres ir?",
@@ -299,7 +334,10 @@
     "city_label": "Ciudad / ubicación",
     "address_label": "Dirección",
     "submit": "Continuar al pago",
-    "error": "Algo salió mal. Inténtalo de nuevo."
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "country_label": "País",
+    "note_label": "Cuéntanos más (opcional)",
+    "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…"
   },
   "drive_form": {
     "title": "Conviértete en conductor",
@@ -315,7 +353,10 @@
     "decl3": "Nunca aceptaré ni realizaré un trayecto bajo los efectos del alcohol, drogas o cualquier otra sustancia.",
     "decl4": "Entiendo que conduzco enteramente bajo mi propia responsabilidad y la del cliente.",
     "submit": "Continuar al pago",
-    "error": "Algo salió mal. Inténtalo de nuevo."
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "country_label": "País",
+    "note_label": "Cuéntanos más (opcional)",
+    "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…"
   },
   "generic_form": {
     "name_label": "Tu nombre",
@@ -326,7 +367,8 @@
     "note_label": "Cuéntanos más (opcional)",
     "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…",
     "submit": "Continuar al pago",
-    "error": "Algo salió mal. Inténtalo de nuevo."
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "country_label": "País"
   },
   "searching_page": {
     "fare_remaining": "Saldo estimado: ~{amount} CHF, pagado directamente a tu conductor.",
@@ -412,5 +454,22 @@
     "time_min_ago_other": "hace {n} min",
     "time_hour_ago_one": "hace 1 hora",
     "time_hour_ago_other": "hace {n} horas"
+  },
+
+  "investors_card": {
+    "cat": "INVERSORES",
+    "h3": "Hazte inversor",
+    "p": "Rotabo conecta a personas en 11 categorías y 38 idiomas, en todo el mundo — sin cobrar comisión a nadie que ofrezca su tiempo, sus habilidades o su equipo. Estamos hablando con quienes apoyan ese modelo.",
+    "link": "Ponte en contacto →"
+  },
+
+  "verify_modal": {
+    "title": "Mira tu correo",
+    "subtitle": "Hemos enviado un código de 6 dígitos a la dirección de abajo. Escríbelo para continuar.",
+    "code_label": "Código de verificación",
+    "submit": "Confirmar código",
+    "resend": "Reenviar código",
+    "spam_hint": "¿No lo ves? Mira en la carpeta de spam o correo no deseado — los primeros correos de un remitente nuevo a veces acaban ahí.",
+    "error": "Código no válido o caducado. Inténtalo de nuevo."
   }
 }
