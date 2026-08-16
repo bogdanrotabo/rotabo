@@ -82,9 +82,14 @@
     if (!rate) return "";
     var value = chf * rate;
     try {
+      // The code, not the symbol. "$" is shared by USD, CAD, MXN, AUD and
+      // more, and a Mexican reading "$20.94" as US dollars would think the
+      // site is seventeen times pricier than it is. It also matches how the
+      // price itself is written -- "1 CHF", never "1 Fr.".
       return "≈ " + new Intl.NumberFormat(undefined, {
         style: "currency",
         currency: cur,
+        currencyDisplay: "code",
         maximumFractionDigits: value >= 100 ? 0 : 2
       }).format(value);
     } catch (e) {
