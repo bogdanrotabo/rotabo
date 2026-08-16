@@ -647,6 +647,9 @@
       <p class="here-empty" data-i18n="here.loading">Loading…</p>
     </div>
     <p class="here-note" data-i18n="here.note">Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.</p>
+    <!-- Rough local equivalent, filled by fx.js. Deliberately has no
+         data-i18n: re-translating the page must not wipe it. -->
+    <p class="here-note" id="hereNoteFx" style="margin-top:2px;opacity:.8;"></p>
   </div>
 </section>
 
@@ -1857,6 +1860,7 @@ if ("serviceWorker" in navigator) {
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="/countries.js"></script>
+<script src="/fx.js"></script>
 <script src="/viewer.js"></script>
 <script>
 // Rotabo Number: live list, search, and personalised banknote example.
@@ -1876,6 +1880,16 @@ if ("serviceWorker" in navigator) {
   function countryIsoFor(country){
     return window.RotaboCountries ? window.RotaboCountries.isoFor(country) : "";
   }
+
+  // A franc means nothing to most of the world, so put a rough local
+  // equivalent under the paywall note. Silent for Swiss visitors and for
+  // regions fx.js has no rate for.
+  (function(){
+    var el = document.getElementById("hereNoteFx");
+    if (!el || !window.RotaboFx) return;
+    var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
+    if (one && two) el.textContent = one + "  /  " + two;
+  })();
 
   var EN_CATS = { drive:"Drive", move:"Move", build:"Build", tools:"Tools", home:"Home",
     auto:"Auto", care:"Care", learn:"Learn", stay:"Stay", other:"Other", translator:"Translator" };

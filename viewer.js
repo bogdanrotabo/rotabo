@@ -207,13 +207,21 @@
       else stepEmail(tok.email || "");
     }
   }
+  // "1 CHF" is meaningless to someone who has never held a franc, so each
+  // tier carries a rough local equivalent. Empty for Swiss visitors and
+  // whenever the region is unknown -- see fx.js.
+  function withApprox(label, chf) {
+    var a = window.RotaboFx ? window.RotaboFx.approx(chf) : "";
+    return a ? label + "  " + a : label;
+  }
+
   function stepPay(tok) {
     var q = "?client_reference_id=" + encodeURIComponent("viewer-" + tok.token) + "&prefilled_email=" + encodeURIComponent(tok.email);
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
       '<p>' + esc(t("choose")) + '</p>' +
-      '<a class="rv-btn tier" href="' + TIER_LINKS["1"] + q + '">' + esc(t("tier1")) + '</a>' +
-      '<a class="rv-btn tier" href="' + TIER_LINKS["12"] + q + '">' + esc(t("tier12")) + '</a>' +
+      '<a class="rv-btn tier" href="' + TIER_LINKS["1"] + q + '">' + esc(withApprox(t("tier1"), 1)) + '</a>' +
+      '<a class="rv-btn tier" href="' + TIER_LINKS["12"] + q + '">' + esc(withApprox(t("tier12"), 2)) + '</a>' +
       // Prices are quoted in CHF, but Stripe's Adaptive Pricing is always
       // on for Payment Links, so a buyer abroad is billed in their own
       // currency. Saying so keeps the CHF figure honest without the site
