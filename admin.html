@@ -226,6 +226,7 @@
   var SESSION_KEY = "rotabo_admin_pw";
   var allRows = [];
   var allVisits = [];
+  var visitStats = null;
   var visitsLoaded = false;
 
   var loginView = document.getElementById("loginView");
@@ -245,12 +246,18 @@
   }
 
   function fetchVisits(password){
-    return fetch(FUNCTION_URL + "?resource=visits", {
+    // Send the browser's timezone so the server counts "today" against the
+    // same day boundary this dashboard displays.
+    var tz = "UTC";
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) {}
+    return fetch(FUNCTION_URL + "?resource=visits&tz=" + encodeURIComponent(tz), {
       headers: { "Authorization": "Bearer " + password },
       cache: "no-store"
     }).then(function(res){
       if (res.status === 401) return { ok: false };
-      return res.json().then(function(json){ return { ok: true, data: json.data || [] }; });
+      return res.json().then(function(json){
+        return { ok: true, data: json.data || [], stats: json.stats || null };
+      });
     });
   }
 
@@ -370,14 +377,26 @@
   document.getElementById("searchInput").addEventListener("input", render);
 
   function renderVisitsStats(rows){
-    var total = rows.length;
-    var sessions = {};
-    rows.forEach(function(r){ if (r.session_id) sessions[r.session_id] = true; });
-    var uniqueSessions = Object.keys(sessions).length;
-    var todayStr = new Date().toDateString();
-    var today = rows.filter(function(r){
-      return r.created_at && new Date(r.created_at).toDateString() === todayStr;
-    }).length;
+    // These counters must come from the server: `rows` is only the recent
+    // slice the table shows, capped at 1000 by PostgREST, so counting it
+    // froze TOTAL VISITS at 1000 once the site passed that many visits.
+    // The row-based numbers below stay only as a fallback for a server
+    // that hasn't been redeployed with the stats payload yet.
+    var total, uniqueSessions, today;
+    if (visitStats) {
+      total = visitStats.total;
+      uniqueSessions = visitStats.unique_visitors;
+      today = visitStats.today;
+    } else {
+      total = rows.length;
+      var sessions = {};
+      rows.forEach(function(r){ if (r.session_id) sessions[r.session_id] = true; });
+      uniqueSessions = Object.keys(sessions).length;
+      var todayStr = new Date().toDateString();
+      today = rows.filter(function(r){
+        return r.created_at && new Date(r.created_at).toDateString() === todayStr;
+      }).length;
+    }
     var html = ""
       + '<div class="stat-tile"><div class="n">' + total + '</div><div class="l">TOTAL VISITS</div></div>'
       + '<div class="stat-tile"><div class="n">' + uniqueSessions + '</div><div class="l">UNIQUE VISITORS</div></div>'
@@ -442,6 +461,7 @@
       fetchVisits(password).then(function(res){
         if (res.ok) {
           allVisits = res.data;
+          visitStats = res.stats;
           visitsLoaded = true;
           renderVisits();
         }
