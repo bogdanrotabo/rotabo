@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v69";
+const CACHE_VERSION = "v70";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -14,6 +14,7 @@ const PRECACHE_URLS = [
   "/privacy.html",
   "/browse.html",
   "/viewer.js",
+  "/countries.js",
   "/account.html",
   "/after-payment.html",
   "/manifest.json",

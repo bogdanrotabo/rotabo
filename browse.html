@@ -141,6 +141,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/countries.js"></script>
 <script src="/viewer.js"></script>
 <script>
 (function(){
@@ -443,7 +444,18 @@
       var rows = res.data || [];
       // Country/city filtering is done client-side over the public
       // projection (no private fields ever leave the server unfiltered).
-      if (countryFilter) { var cf = countryFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.country || "").toLowerCase().indexOf(cf) !== -1; }); }
+      if (countryFilter) {
+        // Match on the canonical code when both sides resolve to one, so
+        // "Switzerland" also finds listings saved as "Svizzera" or
+        // "Elvetia". Falls back to the old substring match for rows with
+        // no code yet, or a filter spelling the map doesn't know.
+        var wantIso = window.RotaboCountries ? window.RotaboCountries.isoFor(countryFilter) : "";
+        var cf = countryFilter.toLowerCase();
+        rows = rows.filter(function(r){
+          if (wantIso && r.country_code) return r.country_code === wantIso;
+          return (r.country || "").toLowerCase().indexOf(cf) !== -1;
+        });
+      }
       if (cityFilter) { var cyf = cityFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.city || "").toLowerCase().indexOf(cyf) !== -1; }); }
       // Skip re-render when the filtered result is unchanged, so an unlocked
       // card's revealed contact details aren't wiped by the 5s poll.
