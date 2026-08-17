@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js). This page redirects almost immediately, so the
+     event below is sent as a beacon: it is the one signal that a Stripe
+     checkout actually completed (begin_checkout is fired on the way out). -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSR8ZKJ4RL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZSR8ZKJ4RL', { transport_type: 'beacon' });
+  gtag('event', 'payment_return');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo</title>
 <meta name="robots" content="noindex">
