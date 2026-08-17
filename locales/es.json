@@ -15,7 +15,9 @@
     "unlocked": "Acceso desbloqueado — los detalles ya son visibles.",
     "err_email": "Introduce un correo válido.",
     "err_code": "Código no válido o caducado.",
-    "err_generic": "Algo salió mal. Inténtalo de nuevo."
+    "err_generic": "Algo salió mal. Inténtalo de nuevo.",
+    "listing_gone": "Este anuncio ya no está disponible.",
+    "retry_btn": "Intentar de nuevo"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Ahora mismo nadie está visible. Esta lista se actualiza automáticamente.",
     "call_btn": "📞 Llamar",
     "email_btn": "✉️ Correo electrónico",
+    "country_filter_placeholder": "Filtrar por país…",
+    "search_btn": "Buscar",
     "city_filter_placeholder": "Filtrar por ciudad…",
+    "my_listing_title": "Tu anuncio está publicado",
+    "my_listing_sub": "Esto es lo que otros que exploran ahora esta categoría ven sobre ti.",
     "time_just_now": "justo ahora",
     "time_min_ago_one": "hace 1 min",
     "time_min_ago_other": "hace {n} min",
     "time_hour_ago_one": "hace 1 hora",
     "time_hour_ago_other": "hace {n} horas"
+  },
+  "account_page": {
+    "title": "Mi cuenta",
+    "subtitle": "Inicia sesión para ver todo lo que has publicado, desde cualquier dispositivo.",
+    "email_label": "Correo electrónico",
+    "password_label": "Contraseña",
+    "login_btn": "Iniciar sesión",
+    "signup_btn": "Crear cuenta",
+    "switch_to_signup": "¿Nuevo por aquí? Crea una cuenta",
+    "switch_to_login": "¿Ya tienes una cuenta? Inicia sesión",
+    "forgot_link": "¿Olvidaste tu contraseña?",
+    "reset_sent": "Si ese correo tiene una cuenta, un enlace de restablecimiento está en camino.",
+    "confirm_email_note": "Revisa tu correo para confirmar tu cuenta y luego inicia sesión.",
+    "logout_btn": "Cerrar sesión",
+    "my_listings_title": "Tus anuncios",
+    "empty_note": "Aún no tienes ningún anuncio.",
+    "browse_btn": "Abrir",
+    "status_active": "Activo",
+    "status_pending": "Pago pendiente",
+    "status_expired": "Caducado",
+    "home_link": "Añade tu primer anuncio →",
+    "admin_link": "🔑 Abrir panel de administración — ver a todos los que ofrecen y buscan"
   },
 
   "investors_card": {

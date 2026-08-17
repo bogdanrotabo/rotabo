@@ -15,7 +15,9 @@
     "unlocked": "Juurdepääs avatud — üksikasjad on nüüd nähtavad.",
     "err_email": "Sisesta kehtiv e-post.",
     "err_code": "Vigane või aegunud kood.",
-    "err_generic": "Midagi läks valesti. Proovi uuesti."
+    "err_generic": "Midagi läks valesti. Proovi uuesti.",
+    "listing_gone": "See kuulutus ei ole enam saadaval.",
+    "retry_btn": "Proovi uuesti"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Praegu ei ole keegi nähtav. Nimekiri uueneb automaatselt.",
     "call_btn": "📞 Helista",
     "email_btn": "✉️ E-post",
+    "country_filter_placeholder": "Filtreeri riigi järgi…",
+    "search_btn": "Otsi",
     "city_filter_placeholder": "Filtreeri linna järgi…",
+    "my_listing_title": "Sinu kuulutus on avaldatud",
+    "my_listing_sub": "Seda näevad sinu kohta teised, kes praegu selles kategoorias sirvivad.",
     "time_just_now": "just praegu",
     "time_min_ago_one": "1 minut tagasi",
     "time_min_ago_other": "{n} minutit tagasi",
     "time_hour_ago_one": "1 tund tagasi",
     "time_hour_ago_other": "{n} tundi tagasi"
+  },
+  "account_page": {
+    "title": "Minu konto",
+    "subtitle": "Logi sisse, et näha kõiki oma kuulutusi mis tahes seadmest.",
+    "email_label": "E-post",
+    "password_label": "Parool",
+    "login_btn": "Logi sisse",
+    "signup_btn": "Loo konto",
+    "switch_to_signup": "Uus siin? Loo konto",
+    "switch_to_login": "Konto juba olemas? Logi sisse",
+    "forgot_link": "Unustasid parooli?",
+    "reset_sent": "Kui sellel e-posti aadressil on konto, on lähtestamislink teel.",
+    "confirm_email_note": "Vaata oma e-posti, et konto kinnitada, ja logi seejärel sisse.",
+    "logout_btn": "Logi välja",
+    "my_listings_title": "Sinu kuulutused",
+    "empty_note": "Sul ei ole veel ühtegi kuulutust.",
+    "browse_btn": "Ava",
+    "status_active": "Aktiivne",
+    "status_pending": "Makse ootel",
+    "status_expired": "Aegunud",
+    "home_link": "Lisa oma esimene kuulutus →",
+    "admin_link": "🔑 Ava halduspaneel — vaata kõiki, kes pakuvad ja otsivad"
   },
 
   "investors_card": {

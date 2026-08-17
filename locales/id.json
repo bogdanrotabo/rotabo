@@ -15,7 +15,9 @@
     "unlocked": "Akses terbuka — detail kini terlihat.",
     "err_email": "Masukkan email yang valid.",
     "err_code": "Kode tidak valid atau kedaluwarsa.",
-    "err_generic": "Terjadi kesalahan. Silakan coba lagi."
+    "err_generic": "Terjadi kesalahan. Silakan coba lagi.",
+    "listing_gone": "Iklan ini sudah tidak tersedia.",
+    "retry_btn": "Coba lagi"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Belum ada yang terlihat saat ini. Daftar ini diperbarui otomatis.",
     "call_btn": "📞 Telepon",
     "email_btn": "✉️ Email",
+    "country_filter_placeholder": "Filter berdasarkan negara…",
+    "search_btn": "Cari",
     "city_filter_placeholder": "Filter berdasarkan kota…",
+    "my_listing_title": "Iklanmu sudah tayang",
+    "my_listing_sub": "Inilah yang sekarang dilihat orang lain tentangmu saat menjelajahi kategori ini.",
     "time_just_now": "baru saja",
     "time_min_ago_one": "1 menit lalu",
     "time_min_ago_other": "{n} menit lalu",
     "time_hour_ago_one": "1 jam lalu",
     "time_hour_ago_other": "{n} jam lalu"
+  },
+  "account_page": {
+    "title": "Akun saya",
+    "subtitle": "Masuk untuk melihat semua yang kamu pasang, dari perangkat mana pun.",
+    "email_label": "Email",
+    "password_label": "Kata sandi",
+    "login_btn": "Masuk",
+    "signup_btn": "Buat akun",
+    "switch_to_signup": "Baru di sini? Buat akun",
+    "switch_to_login": "Sudah punya akun? Masuk",
+    "forgot_link": "Lupa kata sandi?",
+    "reset_sent": "Jika email itu punya akun, tautan reset sedang dikirim.",
+    "confirm_email_note": "Periksa emailmu untuk mengonfirmasi akun, lalu masuk.",
+    "logout_btn": "Keluar",
+    "my_listings_title": "Iklanmu",
+    "empty_note": "Kamu belum punya iklan.",
+    "browse_btn": "Buka",
+    "status_active": "Aktif",
+    "status_pending": "Menunggu pembayaran",
+    "status_expired": "Kedaluwarsa",
+    "home_link": "Pasang iklan pertamamu →",
+    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari"
   },
 
   "investors_card": {

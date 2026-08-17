@@ -154,14 +154,20 @@
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var CLAIM_URL = SUPABASE_URL + "/functions/v1/claim-listings";
 
-  var VALID_CATEGORIES = ["drive", "move", "build", "tools", "home", "auto", "care", "learn", "stay", "other"];
+  // Must stay in sync with browse.html's list -- "translator" was once
+  // missing here, and the filter below silently hid paying customers'
+  // translator listings behind "You don't have any listings yet."
+  var VALID_CATEGORIES = ["drive", "translator", "move", "build", "tools", "home", "auto", "care", "learn", "stay", "other"];
   var CATEGORY_LABELS = {
-    drive: "Drive", move: "Move", build: "Build", tools: "Tools", home: "Home",
-    auto: "Auto", care: "Care", learn: "Learn", stay: "Stay", other: "Other"
+    drive: "Drive", translator: "Translator", move: "Move", build: "Build", tools: "Tools",
+    home: "Home", auto: "Auto", care: "Care", learn: "Learn", stay: "Stay", other: "Other"
   };
   var ROLE_LABELS = { seeking: "Seeking", offering: "Offering" };
 
-  var LANG = localStorage.getItem("rotabo_lang") || "en";
+  // Guarded: with cookies/site data blocked, merely touching localStorage
+  // throws and would kill this whole script. English is the safe answer.
+  var LANG = "en";
+  try { LANG = localStorage.getItem("rotabo_lang") || "en"; } catch (e) {}
   var T = {
     title: "My account",
     subtitle: "Log in to see everything you've listed, from any device.",
@@ -191,6 +197,10 @@
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
         if (dict && dict.account_page) Object.assign(T, dict.account_page);
+        // The static header above #content is not rendered through tr(),
+        // so translate it here once the dictionary is in.
+        document.getElementById("pageTitle").textContent = T.title;
+        document.getElementById("pageSub").textContent = T.subtitle;
       })
       .catch(function(){});
   }

@@ -15,7 +15,9 @@
     "unlocked": "Přístup odemčen — podrobnosti jsou nyní viditelné.",
     "err_email": "Zadej platný e-mail.",
     "err_code": "Neplatný nebo vypršelý kód.",
-    "err_generic": "Něco se pokazilo. Zkus to znovu."
+    "err_generic": "Něco se pokazilo. Zkus to znovu.",
+    "listing_gone": "Tento inzerát už není dostupný.",
+    "retry_btn": "Zkusit znovu"
   },
 
   "here": {
@@ -449,6 +451,10 @@
     "call_btn": "📞 Zavolat",
     "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filtrovat podle města…",
+    "country_filter_placeholder": "Filtrovat podle země…",
+    "search_btn": "Hledat",
+    "my_listing_title": "Tvoje nabídka je aktivní",
+    "my_listing_sub": "Tohle o tobě teď vidí ostatní, kteří procházejí tuto kategorii.",
     "time_just_now": "právě teď",
     "time_min_ago_one": "před 1 minutou",
     "time_min_ago_other": "před {n} minutami",
@@ -471,5 +477,28 @@
     "resend": "Poslat kód znovu",
     "spam_hint": "Nevidíš ho? Zkontroluj složku spam — první e-maily od nového odesílatele tam občas spadnou.",
     "error": "Neplatný nebo vypršený kód. Zkus to prosím znovu."
+  },
+
+  "account_page": {
+    "title": "Můj účet",
+    "subtitle": "Přihlas se a uvidíš všechno, co jsi zveřejnil, z jakéhokoli zařízení.",
+    "email_label": "E-mail",
+    "password_label": "Heslo",
+    "login_btn": "Přihlásit se",
+    "signup_btn": "Vytvořit účet",
+    "switch_to_signup": "Jsi tu poprvé? Vytvoř si účet",
+    "switch_to_login": "Už máš účet? Přihlas se",
+    "forgot_link": "Zapomenuté heslo?",
+    "reset_sent": "Pokud k tomuto e-mailu existuje účet, odkaz pro obnovení hesla je na cestě.",
+    "confirm_email_note": "Zkontroluj e-mail a potvrď svůj účet, pak se přihlas.",
+    "logout_btn": "Odhlásit se",
+    "my_listings_title": "Tvoje inzeráty",
+    "empty_note": "Zatím nemáš žádné inzeráty.",
+    "browse_btn": "Otevřít",
+    "status_active": "Aktivní",
+    "status_pending": "Čeká na platbu",
+    "status_expired": "Vypršelý",
+    "home_link": "Přidej svůj první inzerát →",
+    "admin_link": "🔑 Otevřít admin panel — podívej se na všechny, kdo nabízejí a poptávají"
   }
 }

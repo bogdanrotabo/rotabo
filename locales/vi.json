@@ -15,7 +15,9 @@
     "unlocked": "Đã mở khóa — chi tiết giờ đã hiển thị.",
     "err_email": "Vui lòng nhập email hợp lệ.",
     "err_code": "Mã không hợp lệ hoặc đã hết hạn.",
-    "err_generic": "Đã xảy ra lỗi. Vui lòng thử lại."
+    "err_generic": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "listing_gone": "Tin đăng này không còn khả dụng.",
+    "retry_btn": "Thử lại"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Hiện tại chưa có ai hiển thị. Danh sách này tự động làm mới.",
     "call_btn": "📞 Gọi",
     "email_btn": "✉️ Email",
+    "country_filter_placeholder": "Lọc theo quốc gia…",
+    "search_btn": "Tìm kiếm",
     "city_filter_placeholder": "Lọc theo thành phố…",
+    "my_listing_title": "Tin đăng của bạn đã hiển thị",
+    "my_listing_sub": "Đây là những gì người khác đang duyệt hạng mục này nhìn thấy về bạn.",
     "time_just_now": "vừa xong",
     "time_min_ago_one": "1 phút trước",
     "time_min_ago_other": "{n} phút trước",
     "time_hour_ago_one": "1 giờ trước",
     "time_hour_ago_other": "{n} giờ trước"
+  },
+  "account_page": {
+    "title": "Tài khoản của tôi",
+    "subtitle": "Đăng nhập để xem mọi tin bạn đã đăng, từ bất kỳ thiết bị nào.",
+    "email_label": "Email",
+    "password_label": "Mật khẩu",
+    "login_btn": "Đăng nhập",
+    "signup_btn": "Tạo tài khoản",
+    "switch_to_signup": "Mới đến đây? Tạo tài khoản",
+    "switch_to_login": "Đã có tài khoản? Đăng nhập",
+    "forgot_link": "Quên mật khẩu?",
+    "reset_sent": "Nếu email này có tài khoản, liên kết đặt lại mật khẩu đang được gửi đến.",
+    "confirm_email_note": "Kiểm tra email để xác nhận tài khoản, sau đó đăng nhập.",
+    "logout_btn": "Đăng xuất",
+    "my_listings_title": "Tin đăng của bạn",
+    "empty_note": "Bạn chưa có tin đăng nào.",
+    "browse_btn": "Mở",
+    "status_active": "Đang hoạt động",
+    "status_pending": "Chờ thanh toán",
+    "status_expired": "Đã hết hạn",
+    "home_link": "Thêm tin đăng đầu tiên của bạn →",
+    "admin_link": "🔑 Mở bảng quản trị — xem tất cả những người cung cấp và tìm kiếm"
   },
 
   "investors_card": {

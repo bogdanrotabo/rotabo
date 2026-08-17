@@ -15,7 +15,9 @@
     "unlocked": "Käyttöoikeus avattu — tiedot ovat nyt näkyvissä.",
     "err_email": "Anna kelvollinen sähköposti.",
     "err_code": "Virheellinen tai vanhentunut koodi.",
-    "err_generic": "Jokin meni pieleen. Yritä uudelleen."
+    "err_generic": "Jokin meni pieleen. Yritä uudelleen.",
+    "listing_gone": "Tämä ilmoitus ei ole enää saatavilla.",
+    "retry_btn": "Yritä uudelleen"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Kukaan ei ole juuri nyt näkyvissä. Lista päivittyy automaattisesti.",
     "call_btn": "📞 Soita",
     "email_btn": "✉️ Sähköposti",
+    "country_filter_placeholder": "Suodata maan mukaan…",
+    "search_btn": "Hae",
     "city_filter_placeholder": "Suodata kaupungin mukaan…",
+    "my_listing_title": "Ilmoituksesi on julkaistu",
+    "my_listing_sub": "Tämän muut tätä kategoriaa nyt selaavat näkevät sinusta.",
     "time_just_now": "juuri nyt",
     "time_min_ago_one": "1 min sitten",
     "time_min_ago_other": "{n} min sitten",
     "time_hour_ago_one": "1 tunti sitten",
     "time_hour_ago_other": "{n} tuntia sitten"
+  },
+  "account_page": {
+    "title": "Oma tili",
+    "subtitle": "Kirjaudu sisään nähdäksesi kaiken, mitä olet ilmoittanut, miltä tahansa laitteelta.",
+    "email_label": "Sähköposti",
+    "password_label": "Salasana",
+    "login_btn": "Kirjaudu sisään",
+    "signup_btn": "Luo tili",
+    "switch_to_signup": "Uusi täällä? Luo tili",
+    "switch_to_login": "Onko sinulla jo tili? Kirjaudu sisään",
+    "forgot_link": "Unohditko salasanasi?",
+    "reset_sent": "Jos tällä sähköpostilla on tili, palautuslinkki on matkalla.",
+    "confirm_email_note": "Vahvista tilisi sähköpostistasi ja kirjaudu sitten sisään.",
+    "logout_btn": "Kirjaudu ulos",
+    "my_listings_title": "Ilmoituksesi",
+    "empty_note": "Sinulla ei ole vielä yhtään ilmoitusta.",
+    "browse_btn": "Avaa",
+    "status_active": "Aktiivinen",
+    "status_pending": "Maksu odottaa",
+    "status_expired": "Vanhentunut",
+    "home_link": "Lisää ensimmäinen ilmoituksesi →",
+    "admin_link": "🔑 Avaa hallintapaneeli — näe kaikki tarjoajat ja etsijät"
   },
 
   "investors_card": {

@@ -136,6 +136,10 @@
       // codes double as region codes. Reading "de-CH" as Germany would
       // quote euros to someone standing in Switzerland.
       for (var j = 1; j < parts.length; j++) {
+        // A single-letter subtag starts a BCP-47 extension ("-u-ca-buddhist");
+        // its keys collide with country codes (ca = Canada, co = Colombia),
+        // so stop scanning -- a real region always comes before it.
+        if (parts[j].length === 1) break;
         if (/^[A-Z]{2}$/.test(parts[j]) && REGION_CURRENCY[parts[j]]) {
           cachedRegion = parts[j];
           break;
@@ -275,17 +279,19 @@
     if (typeof fn === "function") listeners.push(fn);
   }
 
-  // index.html calls this from the language switcher. Silent when the new
-  // language shares the old currency -- picking Italiano over Français
-  // leaves euros as euros, and there is nothing to redraw.
+  // index.html calls this from the language switcher. The language is
+  // part of the key, not just the currency: Italiano and Português both
+  // pay in euros, but one writes "1,06 EUR" and the other "EUR 1,06" --
+  // comparing currency alone left the hint formatted in the old language.
+  function shownKey() { return chosenLang() + "|" + currency(); }
   function refresh() {
-    var cur = currency();
-    if (cur === lastShown) return;
-    lastShown = cur;
+    var key = shownKey();
+    if (key === lastShown) return;
+    lastShown = key;
     emit();
   }
 
-  lastShown = currency();
+  lastShown = shownKey();
   load();
 
   global.RotaboFx = {

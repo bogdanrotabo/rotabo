@@ -15,7 +15,9 @@
     "unlocked": "Acesso desbloqueado — os detalhes já estão visíveis.",
     "err_email": "Introduza um email válido.",
     "err_code": "Código inválido ou expirado.",
-    "err_generic": "Algo correu mal. Tente novamente."
+    "err_generic": "Algo correu mal. Tente novamente.",
+    "listing_gone": "Este anúncio já não está disponível.",
+    "retry_btn": "Tentar novamente"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Ninguém está visível no momento. Esta lista atualiza automaticamente.",
     "call_btn": "📞 Ligar",
     "email_btn": "✉️ Email",
+    "country_filter_placeholder": "Filtrar por país…",
+    "search_btn": "Pesquisar",
     "city_filter_placeholder": "Filtrar por cidade…",
+    "my_listing_title": "O seu anúncio está online",
+    "my_listing_sub": "É isto que os outros que navegam nesta categoria veem agora sobre você.",
     "time_just_now": "agora mesmo",
     "time_min_ago_one": "há 1 min",
     "time_min_ago_other": "há {n} min",
     "time_hour_ago_one": "há 1 hora",
     "time_hour_ago_other": "há {n} horas"
+  },
+  "account_page": {
+    "title": "A minha conta",
+    "subtitle": "Inicie sessão para ver tudo o que publicou, a partir de qualquer dispositivo.",
+    "email_label": "Email",
+    "password_label": "Palavra-passe",
+    "login_btn": "Iniciar sessão",
+    "signup_btn": "Criar conta",
+    "switch_to_signup": "É novo por aqui? Crie uma conta",
+    "switch_to_login": "Já tem conta? Inicie sessão",
+    "forgot_link": "Esqueceu a palavra-passe?",
+    "reset_sent": "Se esse email tiver uma conta, um link de redefinição está a caminho.",
+    "confirm_email_note": "Verifique o seu email para confirmar a conta e depois inicie sessão.",
+    "logout_btn": "Terminar sessão",
+    "my_listings_title": "Os seus anúncios",
+    "empty_note": "Ainda não tem nenhum anúncio.",
+    "browse_btn": "Abrir",
+    "status_active": "Ativo",
+    "status_pending": "Pagamento pendente",
+    "status_expired": "Expirado",
+    "home_link": "Adicione o seu primeiro anúncio →",
+    "admin_link": "🔑 Abrir painel de administração — ver todos os que oferecem e procuram"
   },
 
   "investors_card": {

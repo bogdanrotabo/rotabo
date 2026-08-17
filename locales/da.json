@@ -15,7 +15,9 @@
     "unlocked": "Adgang låst op — detaljerne er nu synlige.",
     "err_email": "Indtast en gyldig e-mail.",
     "err_code": "Ugyldig eller udløbet kode.",
-    "err_generic": "Noget gik galt. Prøv igen."
+    "err_generic": "Noget gik galt. Prøv igen.",
+    "listing_gone": "Dette opslag er ikke længere tilgængeligt.",
+    "retry_btn": "Prøv igen"
   },
 
   "here": {
@@ -449,6 +451,10 @@
     "call_btn": "📞 Ring",
     "email_btn": "✉️ E-mail",
     "city_filter_placeholder": "Filtrér efter by…",
+    "country_filter_placeholder": "Filtrér efter land…",
+    "search_btn": "Søg",
+    "my_listing_title": "Din annonce er aktiv",
+    "my_listing_sub": "Det her er, hvad andre, der kigger i denne kategori, ser om dig lige nu.",
     "time_just_now": "lige nu",
     "time_min_ago_one": "for 1 minut siden",
     "time_min_ago_other": "for {n} minutter siden",
@@ -471,5 +477,28 @@
     "resend": "Send koden igen",
     "spam_hint": "Kan du ikke se den? Tjek spam- eller uønsket-mappen — de første mails fra en ny afsender lander nogle gange der.",
     "error": "Ugyldig eller udløbet kode. Prøv igen."
+  },
+
+  "account_page": {
+    "title": "Min konto",
+    "subtitle": "Log ind for at se alt det, du har slået op, fra enhver enhed.",
+    "email_label": "E-mail",
+    "password_label": "Adgangskode",
+    "login_btn": "Log ind",
+    "signup_btn": "Opret konto",
+    "switch_to_signup": "Ny her? Opret en konto",
+    "switch_to_login": "Har du allerede en konto? Log ind",
+    "forgot_link": "Glemt din adgangskode?",
+    "reset_sent": "Hvis den e-mail har en konto, er et nulstillingslink på vej.",
+    "confirm_email_note": "Tjek din e-mail for at bekræfte din konto, og log derefter ind.",
+    "logout_btn": "Log ud",
+    "my_listings_title": "Dine annoncer",
+    "empty_note": "Du har ingen annoncer endnu.",
+    "browse_btn": "Åbn",
+    "status_active": "Aktiv",
+    "status_pending": "Afventer betaling",
+    "status_expired": "Udløbet",
+    "home_link": "Tilføj din første annonce →",
+    "admin_link": "🔑 Åbn adminpanelet — se alle, der tilbyder og søger"
   }
 }

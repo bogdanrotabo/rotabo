@@ -15,7 +15,9 @@
     "unlocked": "Åtkomst upplåst — detaljerna är nu synliga.",
     "err_email": "Ange en giltig e-post.",
     "err_code": "Ogiltig eller utgången kod.",
-    "err_generic": "Något gick fel. Försök igen."
+    "err_generic": "Något gick fel. Försök igen.",
+    "listing_gone": "Den här annonsen är inte längre tillgänglig.",
+    "retry_btn": "Försök igen"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Ingen är synlig just nu. Listan uppdateras automatiskt.",
     "call_btn": "📞 Ring",
     "email_btn": "✉️ E-post",
+    "country_filter_placeholder": "Filtrera efter land…",
+    "search_btn": "Sök",
     "city_filter_placeholder": "Filtrera efter stad…",
+    "my_listing_title": "Din annons är publicerad",
+    "my_listing_sub": "Det här är vad andra som just nu bläddrar i den här kategorin ser om dig.",
     "time_just_now": "just nu",
     "time_min_ago_one": "1 min sedan",
     "time_min_ago_other": "{n} min sedan",
     "time_hour_ago_one": "1 timme sedan",
     "time_hour_ago_other": "{n} timmar sedan"
+  },
+  "account_page": {
+    "title": "Mitt konto",
+    "subtitle": "Logga in för att se allt du har lagt upp, från vilken enhet som helst.",
+    "email_label": "E-post",
+    "password_label": "Lösenord",
+    "login_btn": "Logga in",
+    "signup_btn": "Skapa konto",
+    "switch_to_signup": "Ny här? Skapa ett konto",
+    "switch_to_login": "Har du redan ett konto? Logga in",
+    "forgot_link": "Glömt lösenordet?",
+    "reset_sent": "Om det finns ett konto för den e-posten är en återställningslänk på väg.",
+    "confirm_email_note": "Kolla din e-post för att bekräfta kontot och logga sedan in.",
+    "logout_btn": "Logga ut",
+    "my_listings_title": "Dina annonser",
+    "empty_note": "Du har inga annonser ännu.",
+    "browse_btn": "Öppna",
+    "status_active": "Aktiv",
+    "status_pending": "Väntar på betalning",
+    "status_expired": "Utgången",
+    "home_link": "Lägg till din första annons →",
+    "admin_link": "🔑 Öppna adminpanelen — se alla som erbjuder och söker"
   },
 
   "investors_card": {

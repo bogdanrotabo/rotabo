@@ -467,6 +467,7 @@
   html[dir="rtl"] .cross-list p::before{content:"";}
   html[dir="rtl"] .lang-panel{right:auto;left:0;}
   html[dir="rtl"] .lang-option{text-align:right;}
+  html[dir="rtl"] .bridge{text-align:right;}
 
   /* Request / driver forms */
   .modal-overlay{
@@ -1515,8 +1516,16 @@
           return;
         }
         var newId = result.json.id;
-        localStorage.setItem("rotabo_listing_" + payload.category + "_" + payload.role, newId);
-        localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: payload.category, role: payload.role }));
+        // Guarded: storage can be denied outright, and a throw here would
+        // swallow the checkout redirect below -- the one line that must
+        // always run.
+        try {
+          localStorage.setItem("rotabo_listing_" + payload.category + "_" + payload.role, newId);
+          localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: payload.category, role: payload.role }));
+          // A stale viewer-purchase return note (from an abandoned unlock
+          // checkout) must not outrank the listing we are about to pay for.
+          localStorage.removeItem("rotabo_return_to");
+        } catch (e) {}
         if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
         window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId);
       })
@@ -1669,8 +1678,14 @@
     var form = document.getElementById("genericListingForm");
     form.dataset.category = category;
     form.dataset.role = role;
-    document.getElementById("genericModalTitle").textContent = window.rotaboT("categories." + category + "." + role + "_title");
-    document.getElementById("genericModalSub").textContent = window.rotaboT("categories." + category + "." + role + "_lead");
+    // Before any locale has loaded (first tap on a slow connection),
+    // rotaboT returns the raw key path -- keep the modal's built-in
+    // English text rather than titling it "categories.x.y_title".
+    var titleKey = "categories." + category + "." + role + "_title";
+    var leadKey = "categories." + category + "." + role + "_lead";
+    var title = window.rotaboT(titleKey), lead = window.rotaboT(leadKey);
+    if (title !== titleKey) document.getElementById("genericModalTitle").textContent = title;
+    if (lead !== leadKey) document.getElementById("genericModalSub").textContent = lead;
     openModal("genericListingModal");
   };
 
@@ -1735,6 +1750,9 @@
     var code = document.documentElement.getAttribute("lang") || "en";
     var dict = cache[code] || cache.en;
     var val = dict ? getPath(dict, path) : undefined;
+    // Per-key English fallback: a partially translated locale should
+    // surface the English string, not the raw key path.
+    if (val === undefined && cache.en) val = getPath(cache.en, path);
     if (val === undefined) return path;
     if (vars) {
       Object.keys(vars).forEach(function(k){
@@ -1772,7 +1790,13 @@
     document.documentElement.setAttribute("dir", RTL_LANGS.indexOf(code) !== -1 ? "rtl" : "ltr");
   }
 
+  // Guards against two rapid clicks whose fetches resolve out of order:
+  // only the latest selection may repaint the page. Without it, a slow
+  // de.json could land after a quick switch back to English and leave
+  // the page German while everything else says English.
+  var loadSeq = 0;
   function loadLang(code){
+    var seq = ++loadSeq;
     if (cache[code]){
       applyTranslations(cache[code]);
       setLangUI(code);
@@ -1785,17 +1809,21 @@
       })
       .then(function(dict){
         cache[code] = dict;
+        if (seq !== loadSeq) return;
         applyTranslations(dict);
         setLangUI(code);
       })
       .catch(function(err){
         console.error("i18n:", err);
-        if (code !== "en") return loadLang("en");
+        if (seq === loadSeq && code !== "en") return loadLang("en");
       });
   }
 
   function selectLang(code){
-    localStorage.setItem(STORAGE_KEY, code);
+    // Storage can be denied outright (cookies blocked, private mode);
+    // the choice must still apply to this page instead of throwing away
+    // the whole click.
+    try { localStorage.setItem(STORAGE_KEY, code); } catch (e) {}
     loadLang(code);
     closePanel();
     // The "≈ local price" hints follow the chosen language, not the OS
@@ -1870,7 +1898,8 @@
       if (e.key === "Escape") closePanel();
     });
 
-    var saved = localStorage.getItem(STORAGE_KEY);
+    var saved = null;
+    try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) { /* storage denied */ }
     var initial = (saved && LANGS.some(function(l){ return l.code === saved; })) ? saved : "en";
     loadLang(initial);
   });
@@ -1936,6 +1965,24 @@ if ("serviceWorker" in navigator) {
 <script src="/fx.js"></script>
 <script src="/viewer.js"></script>
 <script>
+// A franc means nothing to most of the world, so put a rough local
+// equivalent under the paywall note -- USD when fx.js cannot name the
+// local currency, silent only for Swiss visitors. Deliberately OUTSIDE
+// the Supabase guard below: it depends only on fx.js, which is local
+// and precached, so the hint must survive a failed CDN (offline PWA,
+// blocked networks). Redrawn whenever fx.js says the currency, the
+// language, or the day's rates changed.
+(function(){
+  var el = document.getElementById("hereNoteFx");
+  if (!el || !window.RotaboFx) return;
+  function draw(){
+    var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
+    el.textContent = (one && two) ? one + "  /  " + two : "";
+  }
+  window.RotaboFx.onChange(draw);
+  draw();
+})();
+
 // Rotabo Number: live list, search, and personalised banknote example.
 (function(){
   if (!window.supabase) return;
@@ -1953,22 +2000,6 @@ if ("serviceWorker" in navigator) {
   function countryIsoFor(country){
     return window.RotaboCountries ? window.RotaboCountries.isoFor(country) : "";
   }
-
-  // A franc means nothing to most of the world, so put a rough local
-  // equivalent under the paywall note -- USD when fx.js cannot name the
-  // local currency, silent only for Swiss visitors. Redrawn whenever
-  // fx.js says the currency or the day's rates changed -- the currency
-  // follows the language switcher now, so this line must follow it too.
-  (function(){
-    var el = document.getElementById("hereNoteFx");
-    if (!el || !window.RotaboFx) return;
-    function draw(){
-      var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
-      el.textContent = (one && two) ? one + "  /  " + two : "";
-    }
-    window.RotaboFx.onChange(draw);
-    draw();
-  })();
 
   var EN_CATS = { drive:"Drive", move:"Move", build:"Build", tools:"Tools", home:"Home",
     auto:"Auto", care:"Care", learn:"Learn", stay:"Stay", other:"Other", translator:"Translator" };
@@ -2018,17 +2049,37 @@ if ("serviceWorker" in navigator) {
     window.RotaboViewer.reveal({ number: number, onDetails: function(rows){ renderEntryDetails(el, rows); } });
   });
 
-  var listData = [];
+  // null until Supabase has answered once; [] only when the list is
+  // confirmed empty. Rendering the empty state before the first response
+  // made every page load flash "Be the first" over a live marketplace.
+  var listData = null;
   function renderList(){
     var box = document.getElementById("hereList");
     if (!box) return;
     var d = window.__dict || {};
+    if (listData === null){
+      var loading = (d.here && d.here.loading) || "Loading…";
+      box.innerHTML = '<p class="here-empty">' + esc(loading) + '</p>';
+      return;
+    }
     if (!listData.length){
       var empty = (d.here && d.here.empty) || "Be the first — get your number.";
       box.innerHTML = '<p class="here-empty">' + esc(empty) + '</p>';
       return;
     }
+    // Rebuilding the list wipes any contact details a paying viewer has
+    // just revealed (language switches re-run this via __afterTranslate),
+    // so carry the open ones across the re-render.
+    var openDetails = {};
+    Array.prototype.forEach.call(box.querySelectorAll(".here-entry"), function(el){
+      var det = el.querySelector(".he-details");
+      if (det && !det.hidden && det.innerHTML) openDetails[el.getAttribute("data-num")] = det.innerHTML;
+    });
     box.innerHTML = listData.map(entryHtml).join("");
+    Object.keys(openDetails).forEach(function(num){
+      var det = box.querySelector('.here-entry[data-num="' + num + '"] .he-details');
+      if (det){ det.innerHTML = openDetails[num]; det.hidden = false; }
+    });
   }
   var lastListJson = null;
   function fetchList(){
@@ -2047,25 +2098,33 @@ if ("serviceWorker" in navigator) {
       });
   }
 
+  // Kept so the result card can be re-rendered in the new language when
+  // the visitor switches -- it used to sit untranslated amid a page that
+  // had otherwise re-translated around it.
+  var lastSearch = null;
+  function renderSearchResult(){
+    var out = document.getElementById("numberResult");
+    if (!out || !lastSearch) return;
+    var t = (window.__dict || {}).here || {};
+    out.hidden = false;
+    if (lastSearch.row){
+      out.className = "number-result found";
+      out.innerHTML = entryHtml(lastSearch.row);
+    } else {
+      out.className = "number-result notfound";
+      out.textContent = (t.not_found || "No active Rotabo number {n} yet.").split("{n}").join(lastSearch.num);
+    }
+  }
   function doSearch(){
     var input = document.getElementById("numberSearchInput");
     var out = document.getElementById("numberResult");
     if (!input || !out) return;
     var raw = (input.value || "").replace(/[^0-9]/g, "");
-    if (!raw){ out.hidden = true; return; }
+    if (!raw){ lastSearch = null; out.hidden = true; return; }
     var num = parseInt(raw, 10);
     sb.rpc("find_rotabo_number", { p_number: num }).then(function(res){
-      var d = window.__dict || {};
-      var t = d.here || {};
-      out.hidden = false;
-      if (res && res.data && res.data.length){
-        out.className = "number-result found";
-        out.innerHTML = entryHtml(res.data[0]);
-      } else {
-        out.className = "number-result notfound";
-        var msg = (t.not_found || "No active Rotabo number {n} yet.").split("{n}").join(num);
-        out.textContent = msg;
-      }
+      lastSearch = { num: num, row: (res && res.data && res.data.length) ? res.data[0] : null };
+      renderSearchResult();
     });
   }
 
@@ -2091,6 +2150,7 @@ if ("serviceWorker" in navigator) {
   window.__afterTranslate = function(dict){
     window.__dict = dict;
     renderList();
+    renderSearchResult();
     swapBanknoteNumber();
   };
 

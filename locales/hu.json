@@ -15,7 +15,9 @@
     "unlocked": "Hozzáférés feloldva — a részletek most láthatók.",
     "err_email": "Adj meg egy érvényes e-mailt.",
     "err_code": "Érvénytelen vagy lejárt kód.",
-    "err_generic": "Valami elromlott. Próbáld újra."
+    "err_generic": "Valami elromlott. Próbáld újra.",
+    "listing_gone": "Ez a hirdetés már nem elérhető.",
+    "retry_btn": "Próbáld újra"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Jelenleg senki sem látható. A lista automatikusan frissül.",
     "call_btn": "📞 Hívás",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Szűrés ország szerint…",
+    "search_btn": "Keresés",
     "city_filter_placeholder": "Szűrés város szerint…",
+    "my_listing_title": "A hirdetésed élő",
+    "my_listing_sub": "Ezt látják most rólad azok, akik ebben a kategóriában böngésznek.",
     "time_just_now": "épp most",
     "time_min_ago_one": "1 perce",
     "time_min_ago_other": "{n} perce",
     "time_hour_ago_one": "1 órája",
     "time_hour_ago_other": "{n} órája"
+  },
+  "account_page": {
+    "title": "Fiókom",
+    "subtitle": "Jelentkezz be, hogy bármelyik eszközről lásd mindazt, amit feladtál.",
+    "email_label": "E-mail",
+    "password_label": "Jelszó",
+    "login_btn": "Bejelentkezés",
+    "signup_btn": "Fiók létrehozása",
+    "switch_to_signup": "Új vagy itt? Hozz létre fiókot",
+    "switch_to_login": "Van már fiókod? Jelentkezz be",
+    "forgot_link": "Elfelejtetted a jelszavad?",
+    "reset_sent": "Ha ehhez az e-mailhez tartozik fiók, a visszaállító link már úton van.",
+    "confirm_email_note": "Nézd meg az e-mailjeidet a fiókod megerősítéséhez, majd jelentkezz be.",
+    "logout_btn": "Kijelentkezés",
+    "my_listings_title": "Hirdetéseid",
+    "empty_note": "Még nincs egyetlen hirdetésed sem.",
+    "browse_btn": "Megnyitás",
+    "status_active": "Aktív",
+    "status_pending": "Fizetésre vár",
+    "status_expired": "Lejárt",
+    "home_link": "Add fel az első hirdetésed →",
+    "admin_link": "🔑 Admin felület megnyitása — mindenki látható, aki kínál vagy keres"
   },
 
   "investors_card": {

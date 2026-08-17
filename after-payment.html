@@ -31,16 +31,28 @@
   // category/role the payment was for through Stripe itself, so we
   // recover it from localStorage, set right before the browser left for
   // Stripe, and forward on to the right browse page.
-  var raw = localStorage.getItem("rotabo_last_listing");
   var dest = "/";
-  if (raw) {
-    try {
-      var info = JSON.parse(raw);
-      if (info && info.category && info.role) {
-        dest = "/browse.html?category=" + encodeURIComponent(info.category) + "&role=" + encodeURIComponent(info.role);
+  try {
+    // A viewer-access purchase leaves a return note (set by viewer.js at
+    // the moment the tier link is clicked). It must win over
+    // rotabo_last_listing, which is only ever written when a LISTING is
+    // created and is never cleared -- without this, someone paying to
+    // view a translator was bounced to the page of a listing they
+    // created weeks ago.
+    var back = localStorage.getItem("rotabo_return_to");
+    if (back && back.charAt(0) === "/") {
+      dest = back;
+      localStorage.removeItem("rotabo_return_to");
+    } else {
+      var raw = localStorage.getItem("rotabo_last_listing");
+      if (raw) {
+        var info = JSON.parse(raw);
+        if (info && info.category && info.role) {
+          dest = "/browse.html?category=" + encodeURIComponent(info.category) + "&role=" + encodeURIComponent(info.role);
+        }
       }
-    } catch (e) { /* fall back to home */ }
-  }
+    }
+  } catch (e) { /* storage denied or bad JSON: fall back to home */ }
   window.location.replace(dest);
 })();
 </script>
@@ -49,39 +61,26 @@
   try {
     var sid = localStorage.getItem("rotabo_sid");
     if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : (Date.now() + "-" + Math.random().toString(16).slice(2))); localStorage.setItem("rotabo_sid", sid); }
-    // Visitor country, read from Cloudflare's own trace endpoint on this
-    // origin -- no third-party geo service and no IP kept. Anything that
-    // is not a plain two-letter code (Tor reports "T1", a dev server has
-    // no Cloudflare in front of it) is stored as unknown. Cached for the
-    // session so only the first page load pays for the extra request.
-    function visitorCountry(){
-      var cached = null;
-      try { cached = sessionStorage.getItem("rotabo_geo"); } catch (e) {}
-      if (cached !== null) return Promise.resolve(cached || null);
-      return fetch("/cdn-cgi/trace", { cache: "no-store" })
-        .then(function(res){ return res.ok ? res.text() : ""; })
-        .then(function(txt){
-          var m = /(?:^|\n)loc=([A-Z]{2})(?:\r?\n|$)/.exec(txt || "");
-          var code = m ? m[1] : "";
-          try { sessionStorage.setItem("rotabo_geo", code); } catch (e) {}
-          return code || null;
-        })
-        .catch(function(){ return null; });
-    }
-
-    visitorCountry().then(function(country){
-      fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
-        method: "POST",
-        headers: {
-          "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
-          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
-          "Content-Type": "application/json",
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
-        keepalive: true
-      }).catch(function(){});
-    });
+    // This page navigates away almost immediately (the replace() above),
+    // and a fetch that has not been ISSUED yet dies with the page --
+    // keepalive only saves requests already in flight. So unlike the
+    // other pages, never wait for the geo lookup here: use the cached
+    // country if the session has one, otherwise record the visit without
+    // it. Payment returns are the one page whose visits must not be lost
+    // to a redirect.
+    var country = null;
+    try { country = sessionStorage.getItem("rotabo_geo") || null; } catch (e) {}
+    fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
+      method: "POST",
+      headers: {
+        "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal"
+      },
+      body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
+      keepalive: true
+    }).catch(function(){});
   } catch (e) {}
 })();
 </script>

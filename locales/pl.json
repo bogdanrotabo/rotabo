@@ -15,7 +15,9 @@
     "unlocked": "Dostęp odblokowany — szczegóły są już widoczne.",
     "err_email": "Podaj prawidłowy e-mail.",
     "err_code": "Nieprawidłowy lub wygasły kod.",
-    "err_generic": "Coś poszło nie tak. Spróbuj ponownie."
+    "err_generic": "Coś poszło nie tak. Spróbuj ponownie.",
+    "listing_gone": "To ogłoszenie nie jest już dostępne.",
+    "retry_btn": "Spróbuj ponownie"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Nikt nie jest teraz widoczny. Ta lista odświeża się automatycznie.",
     "call_btn": "📞 Zadzwoń",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Filtruj według kraju…",
+    "search_btn": "Szukaj",
     "city_filter_placeholder": "Filtruj według miasta…",
+    "my_listing_title": "Twoje ogłoszenie jest aktywne",
+    "my_listing_sub": "Tak widzą Cię teraz inni przeglądający tę kategorię.",
     "time_just_now": "przed chwilą",
     "time_min_ago_one": "1 minutę temu",
     "time_min_ago_other": "{n} minut temu",
     "time_hour_ago_one": "1 godzinę temu",
     "time_hour_ago_other": "{n} godzin temu"
+  },
+  "account_page": {
+    "title": "Moje konto",
+    "subtitle": "Zaloguj się, aby zobaczyć wszystkie swoje ogłoszenia — z dowolnego urządzenia.",
+    "email_label": "E-mail",
+    "password_label": "Hasło",
+    "login_btn": "Zaloguj się",
+    "signup_btn": "Utwórz konto",
+    "switch_to_signup": "Nowy tutaj? Utwórz konto",
+    "switch_to_login": "Masz już konto? Zaloguj się",
+    "forgot_link": "Nie pamiętasz hasła?",
+    "reset_sent": "Jeśli do tego e-maila przypisane jest konto, link do resetu jest już w drodze.",
+    "confirm_email_note": "Sprawdź pocztę, aby potwierdzić konto, a następnie zaloguj się.",
+    "logout_btn": "Wyloguj się",
+    "my_listings_title": "Twoje ogłoszenia",
+    "empty_note": "Nie masz jeszcze żadnych ogłoszeń.",
+    "browse_btn": "Otwórz",
+    "status_active": "Aktywne",
+    "status_pending": "Oczekuje na płatność",
+    "status_expired": "Wygasłe",
+    "home_link": "Dodaj swoje pierwsze ogłoszenie →",
+    "admin_link": "🔑 Otwórz panel admina — zobacz wszystkich oferujących i szukających"
   },
 
   "investors_card": {

@@ -146,6 +146,15 @@
 <script src="/viewer.js"></script>
 <script>
 (function(){
+  // Same guard index.html and viewer.js already have: if the Supabase
+  // CDN script failed (offline PWA launch, networks that block
+  // jsdelivr), say so instead of throwing and leaving the spinner
+  // frozen forever with no message.
+  if (!window.supabase) {
+    document.getElementById("pageTitle").textContent = "No connection — please reload";
+    document.getElementById("content").innerHTML = "";
+    return;
+  }
   var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
@@ -163,13 +172,19 @@
     return;
   }
   var browseRole = myRole === "seeking" ? "offering" : "seeking";
-  var listingId = localStorage.getItem("rotabo_listing_" + category + "_" + myRole);
+  // Guarded: with cookies/site data blocked, touching localStorage
+  // throws -- and an unguarded read here used to kill this entire
+  // script, freezing the page at "Loading…" for exactly the paying
+  // users the fallbacks below were written for.
+  var listingId = null;
+  try { listingId = localStorage.getItem("rotabo_listing_" + category + "_" + myRole); } catch (e) {}
 
   // Minimal i18n: reuse the language the visitor already chose on the
   // homepage (persisted in localStorage). No language switcher here on
   // purpose -- this is a working tool for someone who just paid, not a
   // marketing page.
-  var LANG = localStorage.getItem("rotabo_lang") || "en";
+  var LANG = "en";
+  try { LANG = localStorage.getItem("rotabo_lang") || "en"; } catch (e) {}
   var T = {
     eyebrow: category.toUpperCase(),
     offering_title: "{category} providers near you",

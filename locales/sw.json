@@ -15,7 +15,9 @@
     "unlocked": "Ufikiaji umefunguliwa — maelezo sasa yanaonekana.",
     "err_email": "Tafadhali weka barua pepe halali.",
     "err_code": "Msimbo batili au uliokwisha muda.",
-    "err_generic": "Hitilafu imetokea. Tafadhali jaribu tena."
+    "err_generic": "Hitilafu imetokea. Tafadhali jaribu tena.",
+    "listing_gone": "Tangazo hili halipatikani tena.",
+    "retry_btn": "Jaribu tena"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Hakuna anayeonekana kwa sasa. Orodha hii inasasishwa moja kwa moja.",
     "call_btn": "📞 Piga simu",
     "email_btn": "✉️ Barua pepe",
+    "country_filter_placeholder": "Chuja kwa nchi…",
+    "search_btn": "Tafuta",
     "city_filter_placeholder": "Chuja kwa mji…",
+    "my_listing_title": "Tangazo lako liko hewani",
+    "my_listing_sub": "Hivi ndivyo wengine wanaovinjari kategoria hii wanavyokuona sasa.",
     "time_just_now": "sasa hivi",
     "time_min_ago_one": "dakika 1 iliyopita",
     "time_min_ago_other": "dakika {n} zilizopita",
     "time_hour_ago_one": "saa 1 iliyopita",
     "time_hour_ago_other": "saa {n} zilizopita"
+  },
+  "account_page": {
+    "title": "Akaunti yangu",
+    "subtitle": "Ingia ili kuona kila kitu ulichotangaza, kutoka kifaa chochote.",
+    "email_label": "Barua pepe",
+    "password_label": "Nenosiri",
+    "login_btn": "Ingia",
+    "signup_btn": "Fungua akaunti",
+    "switch_to_signup": "Mgeni hapa? Fungua akaunti",
+    "switch_to_login": "Tayari una akaunti? Ingia",
+    "forgot_link": "Umesahau nenosiri?",
+    "reset_sent": "Ikiwa barua pepe hiyo ina akaunti, kiungo cha kuweka upya kiko njiani.",
+    "confirm_email_note": "Angalia barua pepe yako ili kuthibitisha akaunti, kisha ingia.",
+    "logout_btn": "Toka",
+    "my_listings_title": "Matangazo yako",
+    "empty_note": "Bado huna matangazo yoyote.",
+    "browse_btn": "Fungua",
+    "status_active": "Hai",
+    "status_pending": "Inasubiri malipo",
+    "status_expired": "Imekwisha muda",
+    "home_link": "Ongeza tangazo lako la kwanza →",
+    "admin_link": "🔑 Fungua paneli ya msimamizi — ona kila mtu anayetoa na anayetafuta"
   },
 
   "investors_card": {

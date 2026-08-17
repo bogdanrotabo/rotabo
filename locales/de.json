@@ -15,7 +15,9 @@
     "unlocked": "Zugang freigeschaltet — Details sind jetzt sichtbar.",
     "err_email": "Bitte gib eine gültige E-Mail ein.",
     "err_code": "Ungültiger oder abgelaufener Code.",
-    "err_generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    "err_generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "listing_gone": "Dieser Eintrag ist nicht mehr verfügbar.",
+    "retry_btn": "Erneut versuchen"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Gerade ist niemand sichtbar. Diese Liste aktualisiert sich automatisch.",
     "call_btn": "📞 Anrufen",
     "email_btn": "✉️ E-Mail",
+    "country_filter_placeholder": "Nach Land filtern…",
+    "search_btn": "Suchen",
     "city_filter_placeholder": "Nach Stadt filtern…",
+    "my_listing_title": "Dein Eintrag ist online",
+    "my_listing_sub": "Das sehen andere, die gerade in dieser Kategorie stöbern, über dich.",
     "time_just_now": "gerade eben",
     "time_min_ago_one": "vor 1 Minute",
     "time_min_ago_other": "vor {n} Minuten",
     "time_hour_ago_one": "vor 1 Stunde",
     "time_hour_ago_other": "vor {n} Stunden"
+  },
+  "account_page": {
+    "title": "Mein Konto",
+    "subtitle": "Melde dich an, um alles zu sehen, was du eingetragen hast — von jedem Gerät aus.",
+    "email_label": "E-Mail",
+    "password_label": "Passwort",
+    "login_btn": "Anmelden",
+    "signup_btn": "Konto erstellen",
+    "switch_to_signup": "Neu hier? Konto erstellen",
+    "switch_to_login": "Schon ein Konto? Anmelden",
+    "forgot_link": "Passwort vergessen?",
+    "reset_sent": "Falls es zu dieser E-Mail ein Konto gibt, ist ein Link zum Zurücksetzen unterwegs.",
+    "confirm_email_note": "Sieh in dein Postfach, um dein Konto zu bestätigen, und melde dich dann an.",
+    "logout_btn": "Abmelden",
+    "my_listings_title": "Deine Einträge",
+    "empty_note": "Du hast noch keine Einträge.",
+    "browse_btn": "Öffnen",
+    "status_active": "Aktiv",
+    "status_pending": "Zahlung ausstehend",
+    "status_expired": "Abgelaufen",
+    "home_link": "Deinen ersten Eintrag hinzufügen →",
+    "admin_link": "🔑 Admin-Bereich öffnen — alle sehen, die etwas anbieten oder suchen"
   },
 
   "investors_card": {

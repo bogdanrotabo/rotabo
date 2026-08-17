@@ -15,7 +15,9 @@
     "unlocked": "Pristup otključan — detalji su sada vidljivi.",
     "err_email": "Unesi valjanu e-poštu.",
     "err_code": "Nevažeći ili istekli kod.",
-    "err_generic": "Nešto je pošlo po zlu. Pokušaj ponovno."
+    "err_generic": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+    "listing_gone": "Ovaj oglas više nije dostupan.",
+    "retry_btn": "Pokušaj ponovno"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Trenutno nitko nije vidljiv. Popis se automatski osvježava.",
     "call_btn": "📞 Nazovi",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Filtriraj po državi…",
+    "search_btn": "Traži",
     "city_filter_placeholder": "Filtriraj po gradu…",
+    "my_listing_title": "Tvoj oglas je objavljen",
+    "my_listing_sub": "Ovo o tebi sada vide drugi koji pregledavaju ovu kategoriju.",
     "time_just_now": "upravo sada",
     "time_min_ago_one": "prije 1 minutu",
     "time_min_ago_other": "prije {n} minuta",
     "time_hour_ago_one": "prije 1 sat",
     "time_hour_ago_other": "prije {n} sati"
+  },
+  "account_page": {
+    "title": "Moj račun",
+    "subtitle": "Prijavi se da vidiš sve što si objavio, s bilo kojeg uređaja.",
+    "email_label": "E-mail",
+    "password_label": "Lozinka",
+    "login_btn": "Prijavi se",
+    "signup_btn": "Otvori račun",
+    "switch_to_signup": "Novi si ovdje? Otvori račun",
+    "switch_to_login": "Već imaš račun? Prijavi se",
+    "forgot_link": "Zaboravio si lozinku?",
+    "reset_sent": "Ako za taj e-mail postoji račun, poveznica za ponovno postavljanje je na putu.",
+    "confirm_email_note": "Provjeri e-poštu da potvrdiš račun, a zatim se prijavi.",
+    "logout_btn": "Odjavi se",
+    "my_listings_title": "Tvoji oglasi",
+    "empty_note": "Još nemaš nijedan oglas.",
+    "browse_btn": "Otvori",
+    "status_active": "Aktivan",
+    "status_pending": "Čeka se plaćanje",
+    "status_expired": "Istekao",
+    "home_link": "Dodaj svoj prvi oglas →",
+    "admin_link": "🔑 Otvori admin panel — vidi sve koji nude i traže"
   },
 
   "investors_card": {

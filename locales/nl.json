@@ -15,7 +15,9 @@
     "unlocked": "Toegang ontgrendeld — details zijn nu zichtbaar.",
     "err_email": "Voer een geldig e-mailadres in.",
     "err_code": "Ongeldige of verlopen code.",
-    "err_generic": "Er ging iets mis. Probeer het opnieuw."
+    "err_generic": "Er ging iets mis. Probeer het opnieuw.",
+    "listing_gone": "Deze vermelding is niet meer beschikbaar.",
+    "retry_btn": "Opnieuw proberen"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Er is nu niemand zichtbaar. Deze lijst wordt automatisch ververst.",
     "call_btn": "📞 Bellen",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Filter op land…",
+    "search_btn": "Zoeken",
     "city_filter_placeholder": "Filter op stad…",
+    "my_listing_title": "Je vermelding staat online",
+    "my_listing_sub": "Dit is wat anderen die nu in deze categorie kijken over jou zien.",
     "time_just_now": "zojuist",
     "time_min_ago_one": "1 min geleden",
     "time_min_ago_other": "{n} min geleden",
     "time_hour_ago_one": "1 uur geleden",
     "time_hour_ago_other": "{n} uur geleden"
+  },
+  "account_page": {
+    "title": "Mijn account",
+    "subtitle": "Log in om alles te zien wat je hebt geplaatst — vanaf elk apparaat.",
+    "email_label": "E-mail",
+    "password_label": "Wachtwoord",
+    "login_btn": "Inloggen",
+    "signup_btn": "Account aanmaken",
+    "switch_to_signup": "Nieuw hier? Maak een account aan",
+    "switch_to_login": "Al een account? Log in",
+    "forgot_link": "Wachtwoord vergeten?",
+    "reset_sent": "Als er een account bij dit e-mailadres hoort, is er een herstellink onderweg.",
+    "confirm_email_note": "Controleer je e-mail om je account te bevestigen en log daarna in.",
+    "logout_btn": "Uitloggen",
+    "my_listings_title": "Je vermeldingen",
+    "empty_note": "Je hebt nog geen vermeldingen.",
+    "browse_btn": "Openen",
+    "status_active": "Actief",
+    "status_pending": "Betaling in afwachting",
+    "status_expired": "Verlopen",
+    "home_link": "Voeg je eerste vermelding toe →",
+    "admin_link": "🔑 Adminpaneel openen — zie iedereen die aanbiedt en zoekt"
   },
 
   "investors_card": {

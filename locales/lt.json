@@ -15,7 +15,9 @@
     "unlocked": "Prieiga atrakinta — informacija dabar matoma.",
     "err_email": "Įveskite galiojantį el. paštą.",
     "err_code": "Neteisingas arba pasibaigęs kodas.",
-    "err_generic": "Kažkas nepavyko. Bandykite dar kartą."
+    "err_generic": "Kažkas nepavyko. Bandykite dar kartą.",
+    "listing_gone": "Šis skelbimas nebepasiekiamas.",
+    "retry_btn": "Bandyti dar kartą"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Šiuo metu niekas nematomas. Šis sąrašas atsinaujina automatiškai.",
     "call_btn": "📞 Skambinti",
     "email_btn": "✉️ El. paštas",
+    "country_filter_placeholder": "Filtruoti pagal šalį…",
+    "search_btn": "Ieškoti",
     "city_filter_placeholder": "Filtruoti pagal miestą…",
+    "my_listing_title": "Tavo skelbimas paskelbtas",
+    "my_listing_sub": "Štai ką apie tave dabar mato kiti, naršantys šią kategoriją.",
     "time_just_now": "ką tik",
     "time_min_ago_one": "prieš 1 min.",
     "time_min_ago_other": "prieš {n} min.",
     "time_hour_ago_one": "prieš 1 val.",
     "time_hour_ago_other": "prieš {n} val."
+  },
+  "account_page": {
+    "title": "Mano paskyra",
+    "subtitle": "Prisijunk, kad matytum viską, ką paskelbei — iš bet kurio įrenginio.",
+    "email_label": "El. paštas",
+    "password_label": "Slaptažodis",
+    "login_btn": "Prisijungti",
+    "signup_btn": "Sukurti paskyrą",
+    "switch_to_signup": "Naujokas? Sukurk paskyrą",
+    "switch_to_login": "Jau turi paskyrą? Prisijunk",
+    "forgot_link": "Pamiršai slaptažodį?",
+    "reset_sent": "Jei šiuo el. paštu yra paskyra, slaptažodžio atkūrimo nuoroda jau keliauja.",
+    "confirm_email_note": "Patikrink el. paštą, kad patvirtintum paskyrą, tada prisijunk.",
+    "logout_btn": "Atsijungti",
+    "my_listings_title": "Tavo skelbimai",
+    "empty_note": "Dar neturi jokių skelbimų.",
+    "browse_btn": "Atidaryti",
+    "status_active": "Aktyvus",
+    "status_pending": "Laukiama mokėjimo",
+    "status_expired": "Pasibaigęs",
+    "home_link": "Pridėk savo pirmą skelbimą →",
+    "admin_link": "🔑 Atidaryti administratoriaus skydelį — matyti visus, kurie siūlo ir ieško"
   },
 
   "investors_card": {

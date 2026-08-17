@@ -15,7 +15,9 @@
     "unlocked": "Accès débloqué — les détails sont maintenant visibles.",
     "err_email": "Veuillez saisir un e-mail valide.",
     "err_code": "Code invalide ou expiré.",
-    "err_generic": "Une erreur est survenue. Veuillez réessayer."
+    "err_generic": "Une erreur est survenue. Veuillez réessayer.",
+    "listing_gone": "Cette annonce n'est plus disponible.",
+    "retry_btn": "Réessayer"
   },
 
   "here": {
@@ -448,12 +450,38 @@
     "empty_note": "Personne n'est visible pour le moment. Cette liste se met à jour automatiquement.",
     "call_btn": "📞 Appeler",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Filtrer par pays…",
+    "search_btn": "Rechercher",
     "city_filter_placeholder": "Filtrer par ville…",
+    "my_listing_title": "Ton annonce est en ligne",
+    "my_listing_sub": "Voici ce que les autres qui parcourent cette catégorie voient maintenant à ton sujet.",
     "time_just_now": "à l'instant",
     "time_min_ago_one": "il y a 1 min",
     "time_min_ago_other": "il y a {n} min",
     "time_hour_ago_one": "il y a 1 heure",
     "time_hour_ago_other": "il y a {n} heures"
+  },
+  "account_page": {
+    "title": "Mon compte",
+    "subtitle": "Connecte-toi pour voir tout ce que tu as publié, depuis n'importe quel appareil.",
+    "email_label": "E-mail",
+    "password_label": "Mot de passe",
+    "login_btn": "Se connecter",
+    "signup_btn": "Créer un compte",
+    "switch_to_signup": "Nouveau ici ? Créer un compte",
+    "switch_to_login": "Déjà un compte ? Se connecter",
+    "forgot_link": "Mot de passe oublié ?",
+    "reset_sent": "Si un compte existe pour cet e-mail, un lien de réinitialisation est en route.",
+    "confirm_email_note": "Vérifie ta boîte mail pour confirmer ton compte, puis connecte-toi.",
+    "logout_btn": "Se déconnecter",
+    "my_listings_title": "Tes annonces",
+    "empty_note": "Tu n'as pas encore d'annonce.",
+    "browse_btn": "Ouvrir",
+    "status_active": "Active",
+    "status_pending": "Paiement en attente",
+    "status_expired": "Expirée",
+    "home_link": "Ajouter ta première annonce →",
+    "admin_link": "🔑 Ouvrir le panneau admin — voir tous ceux qui offrent et cherchent"
   },
 
   "investors_card": {

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v82";
+const CACHE_VERSION = "v83";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -17,6 +17,7 @@ const PRECACHE_URLS = [
   "/countries.js",
   "/fx.js",
   "/account.html",
+  "/admin.html",
   "/after-payment.html",
   "/manifest.json",
   "/icons/icon-192.png",
@@ -67,17 +68,42 @@ self.addEventListener("activate", function (event) {
   );
 });
 
+// Re-fetch a page in the background and refresh its cached copy, so a
+// deploy that forgot the CACHE_VERSION bump still reaches returning
+// visitors on their next navigation instead of never. The version query
+// gives the request a fresh CDN cache key (see the install comment).
+function revalidate(url) {
+  return fetch(url.pathname + "?swr=" + CACHE_VERSION + "-" + Date.now(), { cache: "no-store" })
+    .then(function (res) {
+      if (!res || res.status !== 200) return;
+      return caches.open(CACHE_NAME).then(function (cache) {
+        return cache.put(url.pathname, res);
+      });
+    })
+    .catch(function () { /* offline: the cached copy stands */ });
+}
+
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
   // Only cache same-origin site assets. Cross-origin requests (Supabase
   // REST/API calls, the Supabase JS CDN script, Stripe, etc.) must always
   // hit the network so dynamic data is never served stale from cache.
-  if (new URL(event.request.url).origin !== self.location.origin) return;
+  var url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then(function (cached) {
-      if (cached) return cached;
+    // ignoreSearch: every real browse.html visit carries ?category=...&
+    // role=..., but the precache stores the bare path. Without this the
+    // precached page was unreachable -- offline deep links fell through
+    // to the index.html fallback, and post-deploy visits could pin the
+    // previous release from the CDN edge. The query only matters to the
+    // page's own JS, never to the static file server.
+    caches.match(event.request, { ignoreSearch: true }).then(function (cached) {
+      if (cached) {
+        if (event.request.mode === "navigate") event.waitUntil(revalidate(url));
+        return cached;
+      }
 
       return fetch(event.request).then(function (response) {
         if (!response || response.status !== 200 || response.type === "opaque") {
@@ -85,7 +111,10 @@ self.addEventListener("fetch", function (event) {
         }
         var responseClone = response.clone();
         caches.open(CACHE_NAME).then(function (cache) {
-          cache.put(event.request, responseClone);
+          // Keyed by bare path: one entry per page instead of one per
+          // ?fbclid/?utm combination (unbounded growth), and the entry
+          // ignoreSearch serves stays the one revalidate() refreshes.
+          cache.put(url.pathname, responseClone);
         });
         return response;
       }).catch(function () {

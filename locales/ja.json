@@ -15,7 +15,9 @@
     "unlocked": "アクセスを解除しました — 詳細が表示されています。",
     "err_email": "有効なメールアドレスを入力してください。",
     "err_code": "無効または期限切れのコードです。",
-    "err_generic": "問題が発生しました。もう一度お試しください。"
+    "err_generic": "問題が発生しました。もう一度お試しください。",
+    "listing_gone": "この掲載は現在ご利用いただけません。",
+    "retry_btn": "もう一度試す"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "現在、表示中の人はいません。このリストは自動的に更新されます。",
     "call_btn": "📞 電話する",
     "email_btn": "✉️ メールアドレス",
+    "country_filter_placeholder": "国で絞り込む…",
+    "search_btn": "検索",
     "city_filter_placeholder": "都市で絞り込む…",
+    "my_listing_title": "あなたの掲載は公開中です",
+    "my_listing_sub": "このカテゴリを閲覧している他の人には、今あなたについてこのように表示されています。",
     "time_just_now": "たった今",
     "time_min_ago_one": "1分前",
     "time_min_ago_other": "{n}分前",
     "time_hour_ago_one": "1時間前",
     "time_hour_ago_other": "{n}時間前"
+  },
+  "account_page": {
+    "title": "マイアカウント",
+    "subtitle": "ログインすると、掲載したすべての内容をどの端末からでも確認できます。",
+    "email_label": "メールアドレス",
+    "password_label": "パスワード",
+    "login_btn": "ログイン",
+    "signup_btn": "アカウントを作成",
+    "switch_to_signup": "初めてですか？アカウントを作成",
+    "switch_to_login": "すでにアカウントをお持ちですか？ログイン",
+    "forgot_link": "パスワードをお忘れですか？",
+    "reset_sent": "そのメールアドレスにアカウントがあれば、再設定用リンクをお送りしています。",
+    "confirm_email_note": "メールを確認してアカウントを認証してから、ログインしてください。",
+    "logout_btn": "ログアウト",
+    "my_listings_title": "あなたの掲載",
+    "empty_note": "まだ掲載がありません。",
+    "browse_btn": "開く",
+    "status_active": "公開中",
+    "status_pending": "支払い待ち",
+    "status_expired": "期限切れ",
+    "home_link": "最初の掲載を追加する →",
+    "admin_link": "🔑 管理パネルを開く — 提供・募集しているすべての人を見る"
   },
 
   "investors_card": {

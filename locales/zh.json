@@ -15,7 +15,9 @@
     "unlocked": "已解锁——详情现在可见。",
     "err_email": "请输入有效的电子邮箱。",
     "err_code": "验证码无效或已过期。",
-    "err_generic": "出了点问题，请重试。"
+    "err_generic": "出了点问题，请重试。",
+    "listing_gone": "此信息已不再可用。",
+    "retry_btn": "重试"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "目前没有人可见。此列表会自动刷新。",
     "call_btn": "📞 拨打电话",
     "email_btn": "✉️ 电子邮箱",
+    "country_filter_placeholder": "按国家筛选…",
+    "search_btn": "搜索",
     "city_filter_placeholder": "按城市筛选…",
+    "my_listing_title": "你的信息已上线",
+    "my_listing_sub": "这就是正在浏览此类别的其他人现在看到的关于你的内容。",
     "time_just_now": "刚刚",
     "time_min_ago_one": "1 分钟前",
     "time_min_ago_other": "{n} 分钟前",
     "time_hour_ago_one": "1 小时前",
     "time_hour_ago_other": "{n} 小时前"
+  },
+  "account_page": {
+    "title": "我的账户",
+    "subtitle": "登录后可在任何设备上查看你发布的所有信息。",
+    "email_label": "电子邮箱",
+    "password_label": "密码",
+    "login_btn": "登录",
+    "signup_btn": "创建账户",
+    "switch_to_signup": "新用户？创建账户",
+    "switch_to_login": "已有账户？登录",
+    "forgot_link": "忘记密码？",
+    "reset_sent": "如果该邮箱已有账户，重置链接正在发送中。",
+    "confirm_email_note": "请查收邮件以确认账户，然后登录。",
+    "logout_btn": "退出登录",
+    "my_listings_title": "你的信息",
+    "empty_note": "你还没有发布任何信息。",
+    "browse_btn": "打开",
+    "status_active": "已生效",
+    "status_pending": "待付款",
+    "status_expired": "已过期",
+    "home_link": "添加你的第一条信息 →",
+    "admin_link": "🔑 打开管理面板 — 查看所有提供者和寻求者"
   },
 
   "investors_card": {

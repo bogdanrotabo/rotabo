@@ -15,7 +15,9 @@
     "unlocked": "Access unlocked — details are now visible.",
     "err_email": "Please enter a valid email.",
     "err_code": "Invalid or expired code.",
-    "err_generic": "Something went wrong. Please try again."
+    "err_generic": "Something went wrong. Please try again.",
+    "listing_gone": "This listing is no longer available.",
+    "retry_btn": "Try again"
   },
 
   "nav": {

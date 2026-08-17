@@ -15,7 +15,9 @@
     "unlocked": "Accesso sbloccato — i dettagli sono ora visibili.",
     "err_email": "Inserisci un'email valida.",
     "err_code": "Codice non valido o scaduto.",
-    "err_generic": "Qualcosa è andato storto. Riprova."
+    "err_generic": "Qualcosa è andato storto. Riprova.",
+    "listing_gone": "Questo annuncio non è più disponibile.",
+    "retry_btn": "Riprova"
   },
 
   "here": {

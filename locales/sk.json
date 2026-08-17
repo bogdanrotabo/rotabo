@@ -15,7 +15,9 @@
     "unlocked": "Prístup odomknutý — podrobnosti sú teraz viditeľné.",
     "err_email": "Zadaj platný e-mail.",
     "err_code": "Neplatný alebo vypršaný kód.",
-    "err_generic": "Niečo sa pokazilo. Skús to znova."
+    "err_generic": "Niečo sa pokazilo. Skús to znova.",
+    "listing_gone": "Tento inzerát už nie je dostupný.",
+    "retry_btn": "Skúsiť znova"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Momentálne nie je nikto viditeľný. Zoznam sa aktualizuje automaticky.",
     "call_btn": "📞 Zavolať",
     "email_btn": "✉️ E-mail",
+    "country_filter_placeholder": "Filtrovať podľa krajiny…",
+    "search_btn": "Hľadať",
     "city_filter_placeholder": "Filtrovať podľa mesta…",
+    "my_listing_title": "Tvoj inzerát je online",
+    "my_listing_sub": "Toto o tebe teraz vidia ostatní, ktorí si prezerajú túto kategóriu.",
     "time_just_now": "práve teraz",
     "time_min_ago_one": "pred 1 minútou",
     "time_min_ago_other": "pred {n} minútami",
     "time_hour_ago_one": "pred 1 hodinou",
     "time_hour_ago_other": "pred {n} hodinami"
+  },
+  "account_page": {
+    "title": "Môj účet",
+    "subtitle": "Prihlás sa a uvidíš všetko, čo si pridal — z akéhokoľvek zariadenia.",
+    "email_label": "E-mail",
+    "password_label": "Heslo",
+    "login_btn": "Prihlásiť sa",
+    "signup_btn": "Vytvoriť účet",
+    "switch_to_signup": "Si tu nový? Vytvor si účet",
+    "switch_to_login": "Už máš účet? Prihlás sa",
+    "forgot_link": "Zabudol si heslo?",
+    "reset_sent": "Ak k tomuto e-mailu existuje účet, odkaz na obnovenie hesla je na ceste.",
+    "confirm_email_note": "Skontroluj si e-mail, potvrď účet a potom sa prihlás.",
+    "logout_btn": "Odhlásiť sa",
+    "my_listings_title": "Tvoje inzeráty",
+    "empty_note": "Zatiaľ nemáš žiadne inzeráty.",
+    "browse_btn": "Otvoriť",
+    "status_active": "Aktívny",
+    "status_pending": "Čaká na platbu",
+    "status_expired": "Vypršal",
+    "home_link": "Pridaj svoj prvý inzerát →",
+    "admin_link": "🔑 Otvoriť admin panel — vidieť všetkých, ktorí ponúkajú a hľadajú"
   },
 
   "investors_card": {

@@ -15,7 +15,9 @@
     "unlocked": "접근 잠금 해제됨 — 세부 정보가 이제 표시됩니다.",
     "err_email": "유효한 이메일을 입력하세요.",
     "err_code": "잘못되었거나 만료된 코드입니다.",
-    "err_generic": "문제가 발생했습니다. 다시 시도하세요."
+    "err_generic": "문제가 발생했습니다. 다시 시도하세요.",
+    "listing_gone": "이 등록 정보는 더 이상 이용할 수 없습니다.",
+    "retry_btn": "다시 시도"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "지금은 아무도 노출되어 있지 않습니다. 이 목록은 자동으로 새로고침됩니다.",
     "call_btn": "📞 전화하기",
     "email_btn": "✉️ 이메일",
+    "country_filter_placeholder": "국가로 필터링…",
+    "search_btn": "검색",
     "city_filter_placeholder": "도시로 필터링…",
+    "my_listing_title": "내 등록 정보가 게시되었습니다",
+    "my_listing_sub": "지금 이 카테고리를 둘러보는 다른 사람들에게 이렇게 보입니다.",
     "time_just_now": "방금 전",
     "time_min_ago_one": "1분 전",
     "time_min_ago_other": "{n}분 전",
     "time_hour_ago_one": "1시간 전",
     "time_hour_ago_other": "{n}시간 전"
+  },
+  "account_page": {
+    "title": "내 계정",
+    "subtitle": "로그인하면 어떤 기기에서든 등록한 모든 정보를 볼 수 있습니다.",
+    "email_label": "이메일",
+    "password_label": "비밀번호",
+    "login_btn": "로그인",
+    "signup_btn": "계정 만들기",
+    "switch_to_signup": "처음이신가요? 계정 만들기",
+    "switch_to_login": "이미 계정이 있으신가요? 로그인",
+    "forgot_link": "비밀번호를 잊으셨나요?",
+    "reset_sent": "해당 이메일로 등록된 계정이 있다면 재설정 링크가 전송됩니다.",
+    "confirm_email_note": "이메일을 확인해 계정을 인증한 뒤 로그인하세요.",
+    "logout_btn": "로그아웃",
+    "my_listings_title": "내 등록 정보",
+    "empty_note": "아직 등록한 정보가 없습니다.",
+    "browse_btn": "열기",
+    "status_active": "활성",
+    "status_pending": "결제 대기 중",
+    "status_expired": "만료됨",
+    "home_link": "첫 등록 정보 추가하기 →",
+    "admin_link": "🔑 관리자 패널 열기 — 제공하고 찾는 모든 사람 보기"
   },
 
   "investors_card": {

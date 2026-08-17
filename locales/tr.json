@@ -15,7 +15,9 @@
     "unlocked": "Erişim açıldı — ayrıntılar artık görünür.",
     "err_email": "Lütfen geçerli bir e-posta gir.",
     "err_code": "Geçersiz veya süresi dolmuş kod.",
-    "err_generic": "Bir şeyler ters gitti. Lütfen tekrar dene."
+    "err_generic": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "listing_gone": "Bu ilan artık mevcut değil.",
+    "retry_btn": "Tekrar dene"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Şu anda kimse görünür değil. Bu liste otomatik olarak yenilenir.",
     "call_btn": "📞 Ara",
     "email_btn": "✉️ E-posta",
+    "country_filter_placeholder": "Ülkeye göre filtrele…",
+    "search_btn": "Ara",
     "city_filter_placeholder": "Şehre göre filtrele…",
+    "my_listing_title": "İlanın yayında",
+    "my_listing_sub": "Şu anda bu kategoriye göz atanlar senin hakkında bunu görüyor.",
     "time_just_now": "az önce",
     "time_min_ago_one": "1 dakika önce",
     "time_min_ago_other": "{n} dakika önce",
     "time_hour_ago_one": "1 saat önce",
     "time_hour_ago_other": "{n} saat önce"
+  },
+  "account_page": {
+    "title": "Hesabım",
+    "subtitle": "Eklediğin her şeyi herhangi bir cihazdan görmek için giriş yap.",
+    "email_label": "E-posta",
+    "password_label": "Şifre",
+    "login_btn": "Giriş yap",
+    "signup_btn": "Hesap oluştur",
+    "switch_to_signup": "Yeni misin? Hesap oluştur",
+    "switch_to_login": "Zaten hesabın var mı? Giriş yap",
+    "forgot_link": "Şifreni mi unuttun?",
+    "reset_sent": "Bu e-postaya ait bir hesap varsa, sıfırlama bağlantısı yolda.",
+    "confirm_email_note": "Hesabını onaylamak için e-postanı kontrol et, sonra giriş yap.",
+    "logout_btn": "Çıkış yap",
+    "my_listings_title": "İlanların",
+    "empty_note": "Henüz hiç ilanın yok.",
+    "browse_btn": "Aç",
+    "status_active": "Aktif",
+    "status_pending": "Ödeme bekleniyor",
+    "status_expired": "Süresi doldu",
+    "home_link": "İlk ilanını ekle →",
+    "admin_link": "🔑 Yönetici panelini aç — sunan ve arayan herkesi gör"
   },
 
   "investors_card": {

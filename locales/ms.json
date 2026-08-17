@@ -15,7 +15,9 @@
     "unlocked": "Akses dibuka — butiran kini kelihatan.",
     "err_email": "Sila masukkan e-mel yang sah.",
     "err_code": "Kod tidak sah atau tamat tempoh.",
-    "err_generic": "Sesuatu tidak kena. Sila cuba lagi."
+    "err_generic": "Sesuatu tidak kena. Sila cuba lagi.",
+    "listing_gone": "Penyenaraian ini tidak lagi tersedia.",
+    "retry_btn": "Cuba lagi"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Tiada sesiapa kelihatan sekarang. Senarai ini dikemas kini secara automatik.",
     "call_btn": "📞 Telefon",
     "email_btn": "✉️ E-mel",
+    "country_filter_placeholder": "Tapis mengikut negara…",
+    "search_btn": "Cari",
     "city_filter_placeholder": "Tapis mengikut bandar…",
+    "my_listing_title": "Penyenaraian anda sudah disiarkan",
+    "my_listing_sub": "Inilah yang dilihat orang lain yang sedang melayari kategori ini tentang anda.",
     "time_just_now": "sebentar tadi",
     "time_min_ago_one": "1 minit lalu",
     "time_min_ago_other": "{n} minit lalu",
     "time_hour_ago_one": "1 jam lalu",
     "time_hour_ago_other": "{n} jam lalu"
+  },
+  "account_page": {
+    "title": "Akaun saya",
+    "subtitle": "Log masuk untuk melihat semua yang anda senaraikan, dari mana-mana peranti.",
+    "email_label": "E-mel",
+    "password_label": "Kata laluan",
+    "login_btn": "Log masuk",
+    "signup_btn": "Cipta akaun",
+    "switch_to_signup": "Baru di sini? Cipta akaun",
+    "switch_to_login": "Sudah ada akaun? Log masuk",
+    "forgot_link": "Lupa kata laluan?",
+    "reset_sent": "Jika e-mel itu mempunyai akaun, pautan set semula sedang dihantar.",
+    "confirm_email_note": "Semak e-mel anda untuk mengesahkan akaun, kemudian log masuk.",
+    "logout_btn": "Log keluar",
+    "my_listings_title": "Penyenaraian anda",
+    "empty_note": "Anda belum mempunyai sebarang penyenaraian.",
+    "browse_btn": "Buka",
+    "status_active": "Aktif",
+    "status_pending": "Menunggu bayaran",
+    "status_expired": "Tamat tempoh",
+    "home_link": "Tambah penyenaraian pertama anda →",
+    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari"
   },
 
   "investors_card": {

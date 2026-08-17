@@ -15,7 +15,9 @@
     "unlocked": "Acces deblocat — detaliile sunt acum vizibile.",
     "err_email": "Introdu un email valid.",
     "err_code": "Cod invalid sau expirat.",
-    "err_generic": "Ceva n-a mers. Încearcă din nou."
+    "err_generic": "Ceva n-a mers. Încearcă din nou.",
+    "listing_gone": "Acest anunț nu mai este disponibil.",
+    "retry_btn": "Încearcă din nou"
   },
 
   "here": {

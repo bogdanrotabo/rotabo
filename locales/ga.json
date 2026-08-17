@@ -15,7 +15,9 @@
     "unlocked": "Rochtain díghlasáilte — tá na sonraí le feiceáil anois.",
     "err_email": "Cuir isteach ríomhphost bailí, le do thoil.",
     "err_code": "Cód neamhbhailí nó as feidhm.",
-    "err_generic": "Chuaigh rud éigin mícheart. Bain triail eile as."
+    "err_generic": "Chuaigh rud éigin mícheart. Bain triail eile as.",
+    "listing_gone": "Níl an liostú seo ar fáil a thuilleadh.",
+    "retry_btn": "Bain triail eile as"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Níl aon duine infheicthe faoi láthair. Nuashonraítear an liosta seo go huathoibríoch.",
     "call_btn": "📞 Glaoigh",
     "email_btn": "✉️ Ríomhphost",
+    "country_filter_placeholder": "Scag de réir tíre…",
+    "search_btn": "Cuardaigh",
     "city_filter_placeholder": "Scag de réir cathrach…",
+    "my_listing_title": "Tá do liostú beo",
+    "my_listing_sub": "Seo a fheiceann daoine eile atá ag brabhsáil sa chatagóir seo fút anois.",
     "time_just_now": "díreach anois",
     "time_min_ago_one": "1 nóiméad ó shin",
     "time_min_ago_other": "{n} nóiméad ó shin",
     "time_hour_ago_one": "1 uair an chloig ó shin",
     "time_hour_ago_other": "{n} uair an chloig ó shin"
+  },
+  "account_page": {
+    "title": "Mo chuntas",
+    "subtitle": "Logáil isteach chun gach rud a liostáil tú a fheiceáil, ó ghléas ar bith.",
+    "email_label": "Ríomhphost",
+    "password_label": "Pasfhocal",
+    "login_btn": "Logáil isteach",
+    "signup_btn": "Cruthaigh cuntas",
+    "switch_to_signup": "Nua anseo? Cruthaigh cuntas",
+    "switch_to_login": "Cuntas agat cheana? Logáil isteach",
+    "forgot_link": "An ndearna tú dearmad ar do phasfhocal?",
+    "reset_sent": "Má tá cuntas ag an ríomhphost sin, tá nasc athshocraithe ar a bhealach.",
+    "confirm_email_note": "Seiceáil do ríomhphost chun do chuntas a dheimhniú, ansin logáil isteach.",
+    "logout_btn": "Logáil amach",
+    "my_listings_title": "Do liostuithe",
+    "empty_note": "Níl aon liostú agat fós.",
+    "browse_btn": "Oscail",
+    "status_active": "Gníomhach",
+    "status_pending": "Íocaíocht ar feitheamh",
+    "status_expired": "As feidhm",
+    "home_link": "Cuir do chéad liostú leis →",
+    "admin_link": "🔑 Oscail an painéal riaracháin — féach gach duine atá ag tairiscint agus ag lorg"
   },
 
   "investors_card": {

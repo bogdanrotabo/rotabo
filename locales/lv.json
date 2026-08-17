@@ -15,7 +15,9 @@
     "unlocked": "Piekļuve atbloķēta — detaļas tagad ir redzamas.",
     "err_email": "Lūdzu, ievadi derīgu e-pastu.",
     "err_code": "Nederīgs vai beidzies kods.",
-    "err_generic": "Kaut kas nogāja greizi. Mēģini vēlreiz."
+    "err_generic": "Kaut kas nogāja greizi. Mēģini vēlreiz.",
+    "listing_gone": "Šis sludinājums vairs nav pieejams.",
+    "retry_btn": "Mēģināt vēlreiz"
   },
 
   "here": {
@@ -438,12 +440,38 @@
     "empty_note": "Šobrīd neviens nav redzams. Šis saraksts atjaunojas automātiski.",
     "call_btn": "📞 Zvanīt",
     "email_btn": "✉️ E-pasts",
+    "country_filter_placeholder": "Filtrēt pēc valsts…",
+    "search_btn": "Meklēt",
     "city_filter_placeholder": "Filtrēt pēc pilsētas…",
+    "my_listing_title": "Tavs sludinājums ir publicēts",
+    "my_listing_sub": "Tā tevi tagad redz citi, kas pārlūko šo kategoriju.",
     "time_just_now": "tikko",
     "time_min_ago_one": "pirms 1 minūtes",
     "time_min_ago_other": "pirms {n} minūtēm",
     "time_hour_ago_one": "pirms 1 stundas",
     "time_hour_ago_other": "pirms {n} stundām"
+  },
+  "account_page": {
+    "title": "Mans konts",
+    "subtitle": "Pieslēdzies, lai redzētu visu, ko esi publicējis — no jebkuras ierīces.",
+    "email_label": "E-pasts",
+    "password_label": "Parole",
+    "login_btn": "Pieslēgties",
+    "signup_btn": "Izveidot kontu",
+    "switch_to_signup": "Šeit pirmo reizi? Izveido kontu",
+    "switch_to_login": "Jau ir konts? Pieslēdzies",
+    "forgot_link": "Aizmirsi paroli?",
+    "reset_sent": "Ja šim e-pastam ir konts, paroles atjaunošanas saite jau ir ceļā.",
+    "confirm_email_note": "Pārbaudi e-pastu, lai apstiprinātu kontu, un tad pieslēdzies.",
+    "logout_btn": "Iziet",
+    "my_listings_title": "Tavi sludinājumi",
+    "empty_note": "Tev vēl nav neviena sludinājuma.",
+    "browse_btn": "Atvērt",
+    "status_active": "Aktīvs",
+    "status_pending": "Gaida maksājumu",
+    "status_expired": "Beidzies",
+    "home_link": "Pievieno savu pirmo sludinājumu →",
+    "admin_link": "🔑 Atvērt administratora paneli — redzēt visus, kas piedāvā un meklē"
   },
 
   "investors_card": {

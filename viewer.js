@@ -23,16 +23,22 @@
   // Reuse the site's existing verified-email token (also set by the
   // listing forms), valid ~29 min after a successful email verification.
   function getToken() {
-    var token = localStorage.getItem("rotabo_verified_token");
-    var email = localStorage.getItem("rotabo_verified_email");
-    var until = parseInt(localStorage.getItem("rotabo_verified_until") || "0", 10);
-    if (token && email && until > Date.now()) return { token: token, email: email };
+    try {
+      var token = localStorage.getItem("rotabo_verified_token");
+      var email = localStorage.getItem("rotabo_verified_email");
+      var until = parseInt(localStorage.getItem("rotabo_verified_until") || "0", 10);
+      if (token && email && until > Date.now()) return { token: token, email: email };
+    } catch (e) { /* storage denied */ }
     return null;
   }
   function storeToken(email, token) {
-    localStorage.setItem("rotabo_verified_email", email);
-    localStorage.setItem("rotabo_verified_token", token);
-    localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60000));
+    // Guarded: with storage denied the token simply lives only as long
+    // as the modal -- the flow must not die on the throw.
+    try {
+      localStorage.setItem("rotabo_verified_email", email);
+      localStorage.setItem("rotabo_verified_token", token);
+      localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60000));
+    } catch (e) {}
   }
 
   // The verified-email token above lives ~29 minutes, which is right for
@@ -41,15 +47,19 @@
   // access is confirmed we trade it for a viewer session, minted server
   // side and capped at the paid-access expiry.
   function getSession() {
-    var token = localStorage.getItem("rotabo_viewer_session");
-    var email = localStorage.getItem("rotabo_verified_email") || "";
-    var until = parseInt(localStorage.getItem("rotabo_viewer_session_until") || "0", 10);
-    if (token && until > Date.now()) return { token: token, email: email };
+    try {
+      var token = localStorage.getItem("rotabo_viewer_session");
+      var email = localStorage.getItem("rotabo_verified_email") || "";
+      var until = parseInt(localStorage.getItem("rotabo_viewer_session_until") || "0", 10);
+      if (token && until > Date.now()) return { token: token, email: email };
+    } catch (e) { /* storage denied */ }
     return null;
   }
   function clearSession() {
-    localStorage.removeItem("rotabo_viewer_session");
-    localStorage.removeItem("rotabo_viewer_session_until");
+    try {
+      localStorage.removeItem("rotabo_viewer_session");
+      localStorage.removeItem("rotabo_viewer_session_until");
+    } catch (e) {}
   }
   // Whichever credential is currently good: the long session first.
   function getCredential() { return getSession() || getToken(); }
@@ -61,11 +71,13 @@
     return sb.rpc("viewer_start_session", { p_token: tok.token }).then(function (r) {
       var row = r && r.data && (Array.isArray(r.data) ? r.data[0] : r.data);
       if (!row || !row.session_token) return;
-      localStorage.setItem("rotabo_viewer_session", row.session_token);
-      localStorage.setItem(
-        "rotabo_viewer_session_until",
-        String(row.session_expires ? new Date(row.session_expires).getTime() : Date.now() + 30 * 86400000)
-      );
+      try {
+        localStorage.setItem("rotabo_viewer_session", row.session_token);
+        localStorage.setItem(
+          "rotabo_viewer_session_until",
+          String(row.session_expires ? new Date(row.session_expires).getTime() : Date.now() + 30 * 86400000)
+        );
+      } catch (e) { /* storage denied: the short token still carries this visit */ }
     }).catch(function () { /* keep the short token */ });
   }
 
@@ -92,7 +104,9 @@
     unlocked: ["unlocked", "Access unlocked — details are now visible."],
     err_email: ["err_email", "Please enter a valid email."],
     err_code: ["err_code", "Invalid or expired code."],
-    err_generic: ["err_generic", "Something went wrong. Please try again."]
+    err_generic: ["err_generic", "Something went wrong. Please try again."],
+    gone: ["listing_gone", "This listing is no longer available."],
+    retry: ["retry_btn", "Try again"]
   };
   function t(k, vars) { var s = STR[k]; return T(s[0], s[1], vars); }
 
@@ -191,8 +205,15 @@
           stepSuccess();
           if (onUnlock) onUnlock();
         });
+      } else if (r && r.error) {
+        // A flaky network or a server hiccup is not "you have not paid".
+        // This used to fall through to toPayment(), which wiped the
+        // 30-day session and showed the Stripe tiers to someone who had
+        // already bought access -- one bad request away from a double
+        // charge. Keep the session and offer a retry instead.
+        stepError(tok);
       } else toPayment();
-    }).catch(function () { toPayment(); });
+    }).catch(function () { stepError(tok); });
 
     // No access (or it lapsed). Any session we hold is worthless now, and
     // the checkout's client_reference_id must carry a verified-email token
@@ -215,7 +236,9 @@
     return a ? label + "  " + a : label;
   }
 
+  var lastPayTok = null;
   function stepPay(tok) {
+    lastPayTok = tok;
     var q = "?client_reference_id=" + encodeURIComponent("viewer-" + tok.token) + "&prefilled_email=" + encodeURIComponent(tok.email);
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
@@ -228,10 +251,55 @@
       // having to carry live exchange rates.
       '<p style="font-size:.85rem;margin-top:6px;">' + esc(t("localcur")) + '</p>' +
       '<p style="font-size:.85rem;margin-top:6px;">' + esc(t("paynote")) + '</p>';
+    // The token baked into these hrefs dies ~30 minutes after the email
+    // was verified, and the webhook resolves the buyer through it. A
+    // checkout opened from a dead link can end up credited to whatever
+    // address Stripe collects instead of the verified one -- so re-check
+    // at click time and route back through the emailed code instead.
+    Array.prototype.forEach.call(box.querySelectorAll("a.rv-btn.tier"), function (a) {
+      a.addEventListener("click", function (e) {
+        if (!getToken()) { e.preventDefault(); stepEmail(tok.email || ""); return; }
+        // Stripe returns every checkout to one fixed page (after-payment
+        // .html), which forwards by rotabo_last_listing -- the page of a
+        // listing this buyer may have created weeks ago. Leave a note so
+        // a viewer purchase comes back HERE instead.
+        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); } catch (err) {}
+      });
+    });
+  }
+  // The listing itself is gone -- expired or deleted after the page
+  // rendered. Before this step existed, reveal() treated "access valid
+  // but zero rows" as "locked" and re-opened the modal, whose access
+  // check succeeded and called reveal() again: an infinite loop of RPCs
+  // behind a modal flashing "unlocked". Now it lands here, once.
+  function stepGone() {
+    if (!overlay) build();
+    onUnlock = null;
+    overlay.classList.add("open");
+    box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>' + esc(t("gone")) + '</p>';
+  }
+  // Transient failure while checking access: keep every credential and
+  // let the viewer retry, instead of treating the hiccup as "unpaid".
+  function stepError(tok) {
+    box.innerHTML =
+      '<h3>' + esc(t("title")) + '</h3>' +
+      '<p>' + esc(t("err_generic")) + '</p>' +
+      '<button class="rv-btn solid" id="rvRetry">' + esc(t("retry")) + '</button>';
+    box.querySelector("#rvRetry").addEventListener("click", function () { stepAccessCheck(tok); });
   }
   function stepSuccess() {
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p class="rv-ok">' + esc(t("unlocked")) + '</p>';
     setTimeout(close, 1400);
+  }
+  // Redraw an open payment step when fx.js changes the currency or the
+  // day's rates arrive after the tiers were first drawn -- otherwise the
+  // modal can disagree with the hint visible on the page behind it.
+  if (window.RotaboFx && window.RotaboFx.onChange) {
+    window.RotaboFx.onChange(function () {
+      if (overlay && overlay.classList.contains("open") && lastPayTok && box.querySelector("a.rv-btn.tier")) {
+        stepPay(lastPayTok);
+      }
+    });
   }
   function showErr(msg) { var e = box.querySelector("#rvErr"); if (e) { e.textContent = msg; e.classList.add("show"); } }
 
@@ -254,8 +322,18 @@
         : sb.rpc("get_listing_details", { p_number: opts.number, p_token: tok.token });
       call.then(function (r) {
         var rows = (r && r.data) || [];
-        if (rows.length) { if (opts.onDetails) opts.onDetails(rows); }
-        else { open(function () { window.RotaboViewer.reveal(opts); }); if (opts.onLocked) opts.onLocked(); }
+        if (rows.length) { if (opts.onDetails) opts.onDetails(rows); return; }
+        // Zero rows means one of two very different things: the
+        // credential lacks paid access, or the listing itself vanished
+        // (expired or deleted) after the page rendered. Re-opening the
+        // modal for the second case used to loop forever -- the access
+        // check succeeded, onUnlock re-ran reveal, zero rows again. Ask
+        // which case it is, once, and only re-open for the first.
+        sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (a) {
+          if (a && a.data === true) stepGone();
+          else open(function () { window.RotaboViewer.reveal(opts); });
+          if (opts.onLocked) opts.onLocked();
+        }).catch(function () { if (opts.onLocked) opts.onLocked(); });
       }).catch(function () { if (opts.onLocked) opts.onLocked(); });
     }
   };
