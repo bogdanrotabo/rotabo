@@ -208,8 +208,8 @@
     }
   }
   // "1 CHF" is meaningless to someone who has never held a franc, so each
-  // tier carries a rough local equivalent. Empty for Swiss visitors and
-  // whenever the region is unknown -- see fx.js.
+  // tier carries a rough local equivalent -- USD when the local currency
+  // is unknown. Empty only for Swiss visitors; see fx.js.
   function withApprox(label, chf) {
     var a = window.RotaboFx ? window.RotaboFx.approx(chf) : "";
     return a ? label + "  " + a : label;

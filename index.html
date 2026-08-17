@@ -1798,6 +1798,9 @@
     localStorage.setItem(STORAGE_KEY, code);
     loadLang(code);
     closePanel();
+    // The "≈ local price" hints follow the chosen language, not the OS
+    // locale -- tell fx.js so anything showing one gets redrawn.
+    if (window.RotaboFx) window.RotaboFx.refresh();
   }
 
   function openPanel(){
@@ -1952,13 +1955,19 @@ if ("serviceWorker" in navigator) {
   }
 
   // A franc means nothing to most of the world, so put a rough local
-  // equivalent under the paywall note. Silent for Swiss visitors and for
-  // regions fx.js has no rate for.
+  // equivalent under the paywall note -- USD when fx.js cannot name the
+  // local currency, silent only for Swiss visitors. Redrawn whenever
+  // fx.js says the currency or the day's rates changed -- the currency
+  // follows the language switcher now, so this line must follow it too.
   (function(){
     var el = document.getElementById("hereNoteFx");
     if (!el || !window.RotaboFx) return;
-    var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
-    if (one && two) el.textContent = one + "  /  " + two;
+    function draw(){
+      var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
+      el.textContent = (one && two) ? one + "  /  " + two : "";
+    }
+    window.RotaboFx.onChange(draw);
+    draw();
   })();
 
   var EN_CATS = { drive:"Drive", move:"Move", build:"Build", tools:"Tools", home:"Home",
