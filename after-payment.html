@@ -11,7 +11,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ZSR8ZKJ4RL', { transport_type: 'beacon' });
-  gtag('event', 'payment_return');
+  // GA4's standard purchase event (a key event by default, and the one
+  // Google Ads imports as a conversion). Stripe's fixed return URL
+  // carries no amount, so only the currency is known here.
+  gtag('event', 'purchase', { currency: 'CHF' });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo</title>
