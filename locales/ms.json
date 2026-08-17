@@ -17,6 +17,7 @@
     "err_code": "Kod tidak sah atau tamat tempoh.",
     "err_generic": "Sesuatu tidak kena. Sila cuba lagi.",
     "listing_gone": "Penyenaraian ini tidak lagi tersedia.",
+    "confirming": "Mengesahkan pembayaran anda…",
     "retry_btn": "Cuba lagi"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Menunggu bayaran",
     "status_expired": "Tamat tempoh",
     "home_link": "Tambah penyenaraian pertama anda →",
-    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari"
+    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari",
+    "new_password_label": "Kata laluan baharu",
+    "set_password_btn": "Simpan kata laluan baharu",
+    "password_updated": "Kata laluan anda telah dikemas kini.",
+    "load_error": "Penyenaraian anda tidak dapat dimuatkan. Sila cuba lagi.",
+    "retry_btn": "Cuba lagi"
   },
 
   "investors_card": {

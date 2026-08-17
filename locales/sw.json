@@ -17,6 +17,7 @@
     "err_code": "Msimbo batili au uliokwisha muda.",
     "err_generic": "Hitilafu imetokea. Tafadhali jaribu tena.",
     "listing_gone": "Tangazo hili halipatikani tena.",
+    "confirming": "Tunathibitisha malipo yako…",
     "retry_btn": "Jaribu tena"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Inasubiri malipo",
     "status_expired": "Imekwisha muda",
     "home_link": "Ongeza tangazo lako la kwanza →",
-    "admin_link": "🔑 Fungua paneli ya msimamizi — ona kila mtu anayetoa na anayetafuta"
+    "admin_link": "🔑 Fungua paneli ya msimamizi — ona kila mtu anayetoa na anayetafuta",
+    "new_password_label": "Nenosiri jipya",
+    "set_password_btn": "Hifadhi nenosiri jipya",
+    "password_updated": "Nenosiri lako limesasishwa.",
+    "load_error": "Matangazo yako hayakuweza kupakiwa. Tafadhali jaribu tena.",
+    "retry_btn": "Jaribu tena"
   },
 
   "investors_card": {

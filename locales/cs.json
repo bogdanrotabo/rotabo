@@ -17,6 +17,7 @@
     "err_code": "Neplatný nebo vypršelý kód.",
     "err_generic": "Něco se pokazilo. Zkus to znovu.",
     "listing_gone": "Tento inzerát už není dostupný.",
+    "confirming": "Potvrzujeme tvou platbu…",
     "retry_btn": "Zkusit znovu"
   },
 
@@ -499,6 +500,11 @@
     "status_pending": "Čeká na platbu",
     "status_expired": "Vypršelý",
     "home_link": "Přidej svůj první inzerát →",
-    "admin_link": "🔑 Otevřít admin panel — podívej se na všechny, kdo nabízejí a poptávají"
+    "admin_link": "🔑 Otevřít admin panel — podívej se na všechny, kdo nabízejí a poptávají",
+    "new_password_label": "Nové heslo",
+    "set_password_btn": "Uložit nové heslo",
+    "password_updated": "Tvoje heslo bylo změněno.",
+    "load_error": "Tvoje inzeráty se nepodařilo načíst. Zkus to prosím znovu.",
+    "retry_btn": "Zkusit znovu"
   }
 }

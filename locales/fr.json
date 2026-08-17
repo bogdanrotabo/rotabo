@@ -17,6 +17,7 @@
     "err_code": "Code invalide ou expiré.",
     "err_generic": "Une erreur est survenue. Veuillez réessayer.",
     "listing_gone": "Cette annonce n'est plus disponible.",
+    "confirming": "Confirmation de votre paiement…",
     "retry_btn": "Réessayer"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Paiement en attente",
     "status_expired": "Expirée",
     "home_link": "Ajouter ta première annonce →",
-    "admin_link": "🔑 Ouvrir le panneau admin — voir tous ceux qui offrent et cherchent"
+    "admin_link": "🔑 Ouvrir le panneau admin — voir tous ceux qui offrent et cherchent",
+    "new_password_label": "Nouveau mot de passe",
+    "set_password_btn": "Enregistrer le nouveau mot de passe",
+    "password_updated": "Votre mot de passe a été mis à jour.",
+    "load_error": "Vos annonces n'ont pas pu être chargées. Veuillez réessayer.",
+    "retry_btn": "Réessayer"
   },
 
   "investors_card": {

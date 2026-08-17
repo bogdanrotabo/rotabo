@@ -141,6 +141,7 @@
         <select id="categoryFilter">
           <option value="">All categories</option>
           <option value="drive">Drive</option>
+          <option value="translator">Translator</option>
           <option value="move">Move</option>
           <option value="build">Build</option>
           <option value="tools">Tools</option>
@@ -252,6 +253,11 @@
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var FUNCTION_URL = SUPABASE_URL + "/functions/v1/admin-listings";
   var SESSION_KEY = "rotabo_admin_pw";
+  // Guarded: with site data blocked, sessionStorage throws -- inside a
+  // .then that used to swallow a *correct* login (dashboard never shown).
+  function getStored(){ try { return sessionStorage.getItem(SESSION_KEY); } catch (e) { return null; } }
+  function setStored(v){ try { sessionStorage.setItem(SESSION_KEY, v); } catch (e) {} }
+  function clearStored(){ try { sessionStorage.removeItem(SESSION_KEY); } catch (e) {} }
   var allRows = [];
   var allVisits = [];
   var visitStats = null;
@@ -271,7 +277,10 @@
       headers: { "Authorization": "Bearer " + password },
       cache: "no-store"
     }).then(function(res){
-      if (res.status === 401) return { ok: false };
+      // Only a real 200 counts: a 500 with an {error} body used to come
+      // back as ok with zero rows -- a wrong password got stored and the
+      // dashboard showed "0 TOTAL SUBMISSIONS".
+      if (!res.ok) return { ok: false, status: res.status };
       return res.json().then(function(json){ return { ok: true, data: json.data || [] }; });
     });
   }
@@ -285,7 +294,10 @@
       headers: { "Authorization": "Bearer " + password },
       cache: "no-store"
     }).then(function(res){
-      if (res.status === 401) return { ok: false };
+      // Only a real 200 counts: a 500 with an {error} body used to come
+      // back as ok with zero rows -- a wrong password got stored and the
+      // dashboard showed "0 TOTAL SUBMISSIONS".
+      if (!res.ok) return { ok: false, status: res.status };
       return res.json().then(function(json){
         return { ok: true, data: json.data || [], stats: json.stats || null };
       });
@@ -297,7 +309,10 @@
       headers: { "Authorization": "Bearer " + password },
       cache: "no-store"
     }).then(function(res){
-      if (res.status === 401) return { ok: false };
+      // Only a real 200 counts: a 500 with an {error} body used to come
+      // back as ok with zero rows -- a wrong password got stored and the
+      // dashboard showed "0 TOTAL SUBMISSIONS".
+      if (!res.ok) return { ok: false, status: res.status };
       return res.json().then(function(json){
         return { ok: true, data: json.data || [], stats: json.stats || null };
       });
@@ -312,10 +327,13 @@
       loginBtn.disabled = false;
       loginBtn.textContent = "Enter";
       if (!res.ok) {
+        // Reset the text too: after one network failure it used to stick
+        // at "Something went wrong" for every later wrong password.
+        loginError.textContent = res.status === 401 ? "Wrong password. Try again." : "Something went wrong. Try again.";
         loginError.classList.add("show");
         return;
       }
-      sessionStorage.setItem(SESSION_KEY, password);
+      setStored(password);
       allRows = res.data;
       showDashboard();
     }).catch(function(){
@@ -330,7 +348,7 @@
     if (passwordInput.value) tryLogin(passwordInput.value);
   });
   passwordInput.addEventListener("keydown", function(e){
-    if (e.key === "Enter" && passwordInput.value) tryLogin(passwordInput.value);
+    if (e.key === "Enter" && passwordInput.value && !loginBtn.disabled) tryLogin(passwordInput.value);
   });
 
   function showDashboard(){
@@ -561,39 +579,83 @@
     document.getElementById(tab.btn).addEventListener("click", function(){ showTab(tab); });
   });
 
+  // The credential for a request: when the admin came in through their
+  // account session, ask the client for a *fresh* token (it auto-refreshes
+  // the ~1h JWT) instead of the one stored at login -- otherwise the first
+  // Visits/Access click an hour later silently 401'd into a blank tab.
+  function credential(){
+    return sb.auth.getSession().then(function(r){
+      var s = r && r.data && r.data.session;
+      if (s && s.access_token) { setStored(s.access_token); return s.access_token; }
+      return getStored();
+    }).catch(function(){ return getStored(); });
+  }
+
+  // A tab whose request failed says so and offers a retry, instead of an
+  // empty table with the "no rows match" note hidden.
+  function showTabError(noteId, retry){
+    var note = document.getElementById(noteId);
+    note.textContent = "Couldn't load this list. ";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "tab-btn";
+    btn.textContent = "Try again";
+    btn.addEventListener("click", retry);
+    note.appendChild(btn);
+    note.style.display = "block";
+  }
+
+  var visitsLoading = false;
   function loadVisits(){
-    var password = sessionStorage.getItem(SESSION_KEY);
-    if (visitsLoaded || !password) return;
-    fetchVisits(password).then(function(res){
-      if (!res.ok) return;
+    if (visitsLoaded || visitsLoading) return;
+    visitsLoading = true;
+    credential().then(function(password){
+      if (!password) throw new Error("no credential");
+      return fetchVisits(password);
+    }).then(function(res){
+      visitsLoading = false;
+      if (!res.ok) { showTabError("visitsEmptyNote", loadVisits); return; }
       allVisits = res.data;
       visitStats = res.stats;
       visitsLoaded = true;
+      document.getElementById("visitsEmptyNote").textContent = "No visits match this filter.";
       renderVisits();
+    }).catch(function(){
+      visitsLoading = false;
+      showTabError("visitsEmptyNote", loadVisits);
     });
   }
 
+  var accessLoading = false;
   function loadAccess(){
-    var password = sessionStorage.getItem(SESSION_KEY);
-    if (accessLoaded || !password) return;
-    fetchAccess(password).then(function(res){
-      if (!res.ok) return;
+    if (accessLoaded || accessLoading) return;
+    accessLoading = true;
+    credential().then(function(password){
+      if (!password) throw new Error("no credential");
+      return fetchAccess(password);
+    }).then(function(res){
+      accessLoading = false;
+      if (!res.ok) { showTabError("accessEmptyNote", loadAccess); return; }
       allAccess = res.data;
       accessStats = res.stats;
       accessLoaded = true;
+      document.getElementById("accessEmptyNote").textContent = "No paid access matches this filter.";
       renderAccess();
+    }).catch(function(){
+      accessLoading = false;
+      showTabError("accessEmptyNote", loadAccess);
     });
   }
 
   function tryStoredPassword(){
-    var storedPassword = sessionStorage.getItem(SESSION_KEY);
+    var storedPassword = getStored();
     if (!storedPassword) return;
     fetchListings(storedPassword).then(function(res){
       if (res.ok) {
         allRows = res.data;
         showDashboard();
       } else {
-        sessionStorage.removeItem(SESSION_KEY);
+        clearStored();
       }
     });
   }
@@ -608,7 +670,7 @@
     fetchListings(session.access_token).then(function(res){
       if (res.ok) {
         allRows = res.data;
-        sessionStorage.setItem(SESSION_KEY, session.access_token);
+        setStored(session.access_token);
         showDashboard();
       } else {
         tryStoredPassword();

@@ -17,6 +17,7 @@
     "err_code": "Virheellinen tai vanhentunut koodi.",
     "err_generic": "Jokin meni pieleen. Yritä uudelleen.",
     "listing_gone": "Tämä ilmoitus ei ole enää saatavilla.",
+    "confirming": "Vahvistetaan maksuasi…",
     "retry_btn": "Yritä uudelleen"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Maksu odottaa",
     "status_expired": "Vanhentunut",
     "home_link": "Lisää ensimmäinen ilmoituksesi →",
-    "admin_link": "🔑 Avaa hallintapaneeli — näe kaikki tarjoajat ja etsijät"
+    "admin_link": "🔑 Avaa hallintapaneeli — näe kaikki tarjoajat ja etsijät",
+    "new_password_label": "Uusi salasana",
+    "set_password_btn": "Tallenna uusi salasana",
+    "password_updated": "Salasanasi on päivitetty.",
+    "load_error": "Ilmoituksiasi ei voitu ladata. Yritä uudelleen.",
+    "retry_btn": "Yritä uudelleen"
   },
 
   "investors_card": {

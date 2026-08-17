@@ -17,6 +17,7 @@
     "err_code": "Mã không hợp lệ hoặc đã hết hạn.",
     "err_generic": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "listing_gone": "Tin đăng này không còn khả dụng.",
+    "confirming": "Đang xác nhận thanh toán của bạn…",
     "retry_btn": "Thử lại"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Chờ thanh toán",
     "status_expired": "Đã hết hạn",
     "home_link": "Thêm tin đăng đầu tiên của bạn →",
-    "admin_link": "🔑 Mở bảng quản trị — xem tất cả những người cung cấp và tìm kiếm"
+    "admin_link": "🔑 Mở bảng quản trị — xem tất cả những người cung cấp và tìm kiếm",
+    "new_password_label": "Mật khẩu mới",
+    "set_password_btn": "Lưu mật khẩu mới",
+    "password_updated": "Mật khẩu của bạn đã được cập nhật.",
+    "load_error": "Không thể tải tin đăng của bạn. Vui lòng thử lại.",
+    "retry_btn": "Thử lại"
   },
 
   "investors_card": {

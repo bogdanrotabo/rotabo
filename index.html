@@ -974,7 +974,7 @@
       </div>
       <div class="form-field">
         <label for="fd_phone" data-i18n="find_form.phone_label">Phone number</label>
-        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
+        <input type="tel" id="fd_phone" name="client_phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+\(\)\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
@@ -1032,7 +1032,7 @@
       </div>
       <div class="form-field">
         <label for="bd_phone" data-i18n="drive_form.phone_label">Phone number</label>
-        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
+        <input type="tel" id="bd_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+\(\)\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
@@ -1042,7 +1042,7 @@
       </div>
       <div class="form-field">
         <label for="bd_license_year" data-i18n="drive_form.license_year_label">Year you obtained your driving licence</label>
-        <input type="number" id="bd_license_year" name="license_year" required min="1950" max="2026" placeholder="2018">
+        <input type="number" id="bd_license_year" name="license_year" required min="1950" max="2099" placeholder="2018">
       </div>
       <div class="form-field">
         <label for="bd_note" data-i18n="drive_form.note_label">Tell us more (optional)</label>
@@ -1110,7 +1110,7 @@
       </div>
       <div class="form-field">
         <label for="gl_phone" data-i18n="generic_form.phone_label">Phone number</label>
-        <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+()\-\s]{6,20}">
+        <input type="tel" id="gl_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+\(\)\-\s]{6,20}">
         <span class="field-hint" data-i18n="visibility.phone_hint">Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.</span>
       </div>
       <div class="form-field">
@@ -1486,15 +1486,28 @@
   var pending = null; // { form, payload, errorEl, sourceModalId, email }
 
   function cachedToken(email){
-    var storedEmail = localStorage.getItem("rotabo_verified_email");
-    var storedToken = localStorage.getItem("rotabo_verified_token");
-    var storedUntil = localStorage.getItem("rotabo_verified_until");
-    if (storedEmail && storedToken && storedUntil
-        && storedEmail.toLowerCase() === email.toLowerCase()
-        && Number(storedUntil) > Date.now()) {
-      return storedToken;
-    }
+    // Guarded: with storage denied this ran inside the submit handler,
+    // after the button was disabled -- the throw left the form stuck.
+    try {
+      var storedEmail = localStorage.getItem("rotabo_verified_email");
+      var storedToken = localStorage.getItem("rotabo_verified_token");
+      var storedUntil = localStorage.getItem("rotabo_verified_until");
+      if (storedEmail && storedToken && storedUntil
+          && storedEmail.toLowerCase() === email.toLowerCase()
+          && Number(storedUntil) > Date.now()) {
+        return storedToken;
+      }
+    } catch (e) {}
     return null;
+  }
+
+  // Resolved through /countries.js (loaded further down the page, which
+  // is fine: this only runs at submit time). It used to be referenced
+  // from the Rotabo-Number script's private helper -- a different IIFE --
+  // so every listing submit died with a ReferenceError after the button
+  // had already been disabled.
+  function countryIsoFor(country){
+    return window.RotaboCountries ? window.RotaboCountries.isoFor(country) : "";
   }
 
   function createListing(payload, token, form, errorEl){
@@ -1591,12 +1604,21 @@
           showError(codeErrorEl);
           return;
         }
-        localStorage.setItem("rotabo_verified_email", pending.email);
-        localStorage.setItem("rotabo_verified_token", result.json.token);
-        localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60_000));
+        // Guarded: the code is already consumed server-side at this point,
+        // so a storage throw here would show "invalid code" for a code that
+        // just worked and leave no way forward.
+        try {
+          localStorage.setItem("rotabo_verified_email", pending.email);
+          localStorage.setItem("rotabo_verified_token", result.json.token);
+          localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60_000));
+        } catch (e) {}
         closeModal("emailCodeModal");
         var p = pending;
         pending = null;
+        // Bring the original form back so a create-listing failure has
+        // somewhere visible to show its error (the source modal was
+        // closed when the code step opened).
+        openModal(p.sourceModalId);
         setSubmitting(p.form, true);
         createListing(p.payload, result.json.token, p.form, p.errorEl);
       })
@@ -1795,8 +1817,22 @@
   // de.json could land after a quick switch back to English and leave
   // the page German while everything else says English.
   var loadSeq = 0;
+  // The per-key English fallback in rotaboT needs cache.en, but a visitor
+  // whose saved language is e.g. "de" never fetched en.json -- so the
+  // fallback silently returned raw key paths. Fetch it once, in the
+  // background, whenever another language is chosen (SW-precached, so
+  // it costs nothing after the first visit).
+  var enWarm = null;
+  function warmEnglish(){
+    if (cache.en || enWarm) return;
+    enWarm = fetch("locales/en.json")
+      .then(function(res){ return res.ok ? res.json() : null; })
+      .then(function(dict){ if (dict && !cache.en) cache.en = dict; })
+      .catch(function(){ enWarm = null; });
+  }
   function loadLang(code){
     var seq = ++loadSeq;
+    if (code !== "en") warmEnglish();
     if (cache[code]){
       applyTranslations(cache[code]);
       setLangUI(code);
@@ -1986,6 +2022,14 @@ if ("serviceWorker" in navigator) {
 // Rotabo Number: live list, search, and personalised banknote example.
 (function(){
   if (!window.supabase) return;
+  // A password-recovery link that lands here (Supabase falls back to the
+  // Site URL) must reach the account page, which owns the "set a new
+  // password" form. Before this, the client below silently consumed the
+  // recovery hash, stored a session, and the password never changed.
+  if (/type=recovery/.test(location.hash) || /type=recovery/.test(location.search)) {
+    location.replace("/account.html" + location.search + location.hash);
+    return;
+  }
   var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {

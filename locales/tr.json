@@ -17,6 +17,7 @@
     "err_code": "Geçersiz veya süresi dolmuş kod.",
     "err_generic": "Bir şeyler ters gitti. Lütfen tekrar dene.",
     "listing_gone": "Bu ilan artık mevcut değil.",
+    "confirming": "Ödemen onaylanıyor…",
     "retry_btn": "Tekrar dene"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Ödeme bekleniyor",
     "status_expired": "Süresi doldu",
     "home_link": "İlk ilanını ekle →",
-    "admin_link": "🔑 Yönetici panelini aç — sunan ve arayan herkesi gör"
+    "admin_link": "🔑 Yönetici panelini aç — sunan ve arayan herkesi gör",
+    "new_password_label": "Yeni şifre",
+    "set_password_btn": "Yeni şifreyi kaydet",
+    "password_updated": "Şifren güncellendi.",
+    "load_error": "İlanların yüklenemedi. Lütfen tekrar dene.",
+    "retry_btn": "Tekrar dene"
   },
 
   "investors_card": {

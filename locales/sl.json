@@ -17,6 +17,7 @@
     "err_code": "Neveljavna ali potekla koda.",
     "err_generic": "Nekaj je šlo narobe. Poskusi znova.",
     "listing_gone": "Ta oglas ni več na voljo.",
+    "confirming": "Potrjujemo tvoje plačilo…",
     "retry_btn": "Poskusi znova"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Čaka na plačilo",
     "status_expired": "Potekel",
     "home_link": "Dodaj svoj prvi oglas →",
-    "admin_link": "🔑 Odpri skrbniško ploščo — poglej vse, ki ponujajo in iščejo"
+    "admin_link": "🔑 Odpri skrbniško ploščo — poglej vse, ki ponujajo in iščejo",
+    "new_password_label": "Novo geslo",
+    "set_password_btn": "Shrani novo geslo",
+    "password_updated": "Tvoje geslo je bilo posodobljeno.",
+    "load_error": "Tvojih oglasov ni bilo mogoče naložiti. Poskusi znova.",
+    "retry_btn": "Poskusi znova"
   },
 
   "investors_card": {

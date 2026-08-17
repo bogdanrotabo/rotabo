@@ -17,6 +17,7 @@
     "err_code": "Neplatný alebo vypršaný kód.",
     "err_generic": "Niečo sa pokazilo. Skús to znova.",
     "listing_gone": "Tento inzerát už nie je dostupný.",
+    "confirming": "Potvrdzujeme tvoju platbu…",
     "retry_btn": "Skúsiť znova"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Čaká na platbu",
     "status_expired": "Vypršal",
     "home_link": "Pridaj svoj prvý inzerát →",
-    "admin_link": "🔑 Otvoriť admin panel — vidieť všetkých, ktorí ponúkajú a hľadajú"
+    "admin_link": "🔑 Otvoriť admin panel — vidieť všetkých, ktorí ponúkajú a hľadajú",
+    "new_password_label": "Nové heslo",
+    "set_password_btn": "Uložiť nové heslo",
+    "password_updated": "Tvoje heslo bolo aktualizované.",
+    "load_error": "Tvoje inzeráty sa nepodarilo načítať. Skús to znova.",
+    "retry_btn": "Skúsiť znova"
   },
 
   "investors_card": {

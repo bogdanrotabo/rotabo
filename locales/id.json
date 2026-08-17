@@ -17,6 +17,7 @@
     "err_code": "Kode tidak valid atau kedaluwarsa.",
     "err_generic": "Terjadi kesalahan. Silakan coba lagi.",
     "listing_gone": "Iklan ini sudah tidak tersedia.",
+    "confirming": "Mengonfirmasi pembayaran Anda…",
     "retry_btn": "Coba lagi"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Menunggu pembayaran",
     "status_expired": "Kedaluwarsa",
     "home_link": "Pasang iklan pertamamu →",
-    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari"
+    "admin_link": "🔑 Buka panel admin — lihat semua yang menawarkan dan mencari",
+    "new_password_label": "Kata sandi baru",
+    "set_password_btn": "Simpan kata sandi baru",
+    "password_updated": "Kata sandi Anda telah diperbarui.",
+    "load_error": "Iklan Anda tidak dapat dimuat. Silakan coba lagi.",
+    "retry_btn": "Coba lagi"
   },
 
   "investors_card": {

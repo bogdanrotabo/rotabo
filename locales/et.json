@@ -17,6 +17,7 @@
     "err_code": "Vigane või aegunud kood.",
     "err_generic": "Midagi läks valesti. Proovi uuesti.",
     "listing_gone": "See kuulutus ei ole enam saadaval.",
+    "confirming": "Kinnitame sinu makset…",
     "retry_btn": "Proovi uuesti"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Makse ootel",
     "status_expired": "Aegunud",
     "home_link": "Lisa oma esimene kuulutus →",
-    "admin_link": "🔑 Ava halduspaneel — vaata kõiki, kes pakuvad ja otsivad"
+    "admin_link": "🔑 Ava halduspaneel — vaata kõiki, kes pakuvad ja otsivad",
+    "new_password_label": "Uus parool",
+    "set_password_btn": "Salvesta uus parool",
+    "password_updated": "Sinu parool on uuendatud.",
+    "load_error": "Sinu kuulutusi ei õnnestunud laadida. Palun proovi uuesti.",
+    "retry_btn": "Proovi uuesti"
   },
 
   "investors_card": {

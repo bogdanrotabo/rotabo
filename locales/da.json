@@ -17,6 +17,7 @@
     "err_code": "Ugyldig eller udløbet kode.",
     "err_generic": "Noget gik galt. Prøv igen.",
     "listing_gone": "Dette opslag er ikke længere tilgængeligt.",
+    "confirming": "Bekræfter din betaling…",
     "retry_btn": "Prøv igen"
   },
 
@@ -499,6 +500,11 @@
     "status_pending": "Afventer betaling",
     "status_expired": "Udløbet",
     "home_link": "Tilføj din første annonce →",
-    "admin_link": "🔑 Åbn adminpanelet — se alle, der tilbyder og søger"
+    "admin_link": "🔑 Åbn adminpanelet — se alle, der tilbyder og søger",
+    "new_password_label": "Ny adgangskode",
+    "set_password_btn": "Gem ny adgangskode",
+    "password_updated": "Din adgangskode er blevet opdateret.",
+    "load_error": "Dine opslag kunne ikke indlæses. Prøv venligst igen.",
+    "retry_btn": "Prøv igen"
   }
 }

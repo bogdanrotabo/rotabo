@@ -17,6 +17,7 @@
     "err_code": "Nevažeći ili istekli kod.",
     "err_generic": "Nešto je pošlo po zlu. Pokušaj ponovno.",
     "listing_gone": "Ovaj oglas više nije dostupan.",
+    "confirming": "Potvrđujemo tvoju uplatu…",
     "retry_btn": "Pokušaj ponovno"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Čeka se plaćanje",
     "status_expired": "Istekao",
     "home_link": "Dodaj svoj prvi oglas →",
-    "admin_link": "🔑 Otvori admin panel — vidi sve koji nude i traže"
+    "admin_link": "🔑 Otvori admin panel — vidi sve koji nude i traže",
+    "new_password_label": "Nova lozinka",
+    "set_password_btn": "Spremi novu lozinku",
+    "password_updated": "Tvoja lozinka je ažurirana.",
+    "load_error": "Tvoje oglase nije bilo moguće učitati. Pokušaj ponovno.",
+    "retry_btn": "Pokušaj ponovno"
   },
 
   "investors_card": {

@@ -17,6 +17,7 @@
     "err_code": "Nieprawidłowy lub wygasły kod.",
     "err_generic": "Coś poszło nie tak. Spróbuj ponownie.",
     "listing_gone": "To ogłoszenie nie jest już dostępne.",
+    "confirming": "Potwierdzamy Twoją płatność…",
     "retry_btn": "Spróbuj ponownie"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Oczekuje na płatność",
     "status_expired": "Wygasłe",
     "home_link": "Dodaj swoje pierwsze ogłoszenie →",
-    "admin_link": "🔑 Otwórz panel admina — zobacz wszystkich oferujących i szukających"
+    "admin_link": "🔑 Otwórz panel admina — zobacz wszystkich oferujących i szukających",
+    "new_password_label": "Nowe hasło",
+    "set_password_btn": "Zapisz nowe hasło",
+    "password_updated": "Twoje hasło zostało zaktualizowane.",
+    "load_error": "Nie udało się wczytać Twoich ogłoszeń. Spróbuj ponownie.",
+    "retry_btn": "Spróbuj ponownie"
   },
 
   "investors_card": {

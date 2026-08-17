@@ -17,6 +17,7 @@
     "err_code": "Codice non valido o scaduto.",
     "err_generic": "Qualcosa è andato storto. Riprova.",
     "listing_gone": "Questo annuncio non è più disponibile.",
+    "confirming": "Conferma del pagamento in corso…",
     "retry_btn": "Riprova"
   },
 
@@ -496,6 +497,11 @@
     "status_pending": "Pagamento in attesa",
     "status_expired": "Scaduto",
     "home_link": "Aggiungi il tuo primo annuncio →",
-    "admin_link": "🔑 Apri il pannello admin — vedi chi offre e chi cerca"
+    "admin_link": "🔑 Apri il pannello admin — vedi chi offre e chi cerca",
+    "new_password_label": "Nuova password",
+    "set_password_btn": "Salva nuova password",
+    "password_updated": "La tua password è stata aggiornata.",
+    "load_error": "Impossibile caricare i tuoi annunci. Riprova.",
+    "retry_btn": "Riprova"
   }
 }

@@ -106,6 +106,7 @@
     err_code: ["err_code", "Invalid or expired code."],
     err_generic: ["err_generic", "Something went wrong. Please try again."],
     gone: ["listing_gone", "This listing is no longer available."],
+    confirming: ["confirming", "Confirming your payment…"],
     retry: ["retry_btn", "Try again"]
   };
   function t(k, vars) { var s = STR[k]; return T(s[0], s[1], vars); }
@@ -222,10 +223,37 @@
     // address Stripe collected. So drop the session and, if there is no
     // fresh verified token, send them back through the emailed code.
     function toPayment() {
+      // Just back from a viewer checkout? Stripe's webhook can land a few
+      // seconds after the browser does, and in that window "no access"
+      // is really "not yet". Showing the tiers again here is how someone
+      // pays twice -- so poll for the access row first.
+      var paidAt = 0;
+      try { paidAt = parseInt(localStorage.getItem("rotabo_viewer_paid_at") || "0", 10); } catch (e) {}
+      if (paidAt && Date.now() - paidAt < 3 * 60000) { stepConfirming(tok, 0); return; }
       clearSession();
       var verified = getToken();
       if (verified) stepPay(verified);
       else stepEmail(tok.email || "");
+    }
+    function stepConfirming(tok, tries) {
+      box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>' + esc(t("confirming")) + '</p>';
+      setTimeout(function () {
+        sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
+          if (r && r.data === true) {
+            try { localStorage.removeItem("rotabo_viewer_paid_at"); } catch (e) {}
+            startSession(tok).then(function () { stepSuccess(); if (onUnlock) onUnlock(); });
+          } else if (tries < 20) {
+            stepConfirming(tok, tries + 1);
+          } else {
+            // ~1 minute with no access row: the checkout was abandoned or
+            // failed. Forget the stamp so the tiers show normally.
+            try { localStorage.removeItem("rotabo_viewer_paid_at"); } catch (e) {}
+            toPayment();
+          }
+        }).catch(function () {
+          if (tries < 20) stepConfirming(tok, tries + 1); else stepError(tok);
+        });
+      }, tries === 0 ? 0 : 3000);
     }
   }
   // "1 CHF" is meaningless to someone who has never held a franc, so each
@@ -263,7 +291,7 @@
         // .html), which forwards by rotabo_last_listing -- the page of a
         // listing this buyer may have created weeks ago. Leave a note so
         // a viewer purchase comes back HERE instead.
-        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); } catch (err) {}
+        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); } catch (err) {}
       });
     });
   }
@@ -321,6 +349,11 @@
         ? sb.rpc("get_listing_details_by_id", { p_id: opts.id, p_token: tok.token })
         : sb.rpc("get_listing_details", { p_number: opts.number, p_token: tok.token });
       call.then(function (r) {
+        // A failed request is neither "locked" nor "gone": supabase-js
+        // resolves with {data:null, error} on network and 5xx failures,
+        // and treating that as zero rows told paying viewers a live
+        // listing was "no longer available".
+        if (r && r.error) { if (opts.onLocked) opts.onLocked(); return; }
         var rows = (r && r.data) || [];
         if (rows.length) { if (opts.onDetails) opts.onDetails(rows); return; }
         // Zero rows means one of two very different things: the

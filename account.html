@@ -188,7 +188,12 @@
     status_pending: "Pending payment",
     status_expired: "Expired",
     home_link: "Add your first listing →",
-    admin_link: "🔑 Open admin panel — see everyone offering and seeking"
+    admin_link: "🔑 Open admin panel — see everyone offering and seeking",
+    new_password_label: "New password",
+    set_password_btn: "Save new password",
+    password_updated: "Your password has been updated.",
+    load_error: "Your listings couldn't be loaded. Please try again.",
+    retry_btn: "Try again"
   };
   function tr(key){ return T[key]; }
 
@@ -245,17 +250,39 @@
       errorBox.classList.add("hidden");
     });
 
-    document.getElementById("forgotLink").addEventListener("click", function(e){
+    var forgotLink = document.getElementById("forgotLink");
+    var resetting = false;
+    forgotLink.addEventListener("click", function(e){
       e.preventDefault();
+      if (resetting) return;
       var email = emailInput.value.trim();
       if (!email) { emailInput.focus(); return; }
-      sb.auth.resetPasswordForEmail(email).then(function(){
-        renderAuthForms(tr("reset_sent"));
-      });
+      resetting = true;
+      errorBox.classList.add("hidden");
+      // The recovery link must come back to THIS page, which owns the
+      // "set a new password" form below. Without redirectTo it landed on
+      // the Site URL (index.html), the session was stored silently and
+      // the password never changed. The redirect URL is also allow-listed
+      // in Supabase; index.html forwards a stray recovery hash here too.
+      sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + "/account.html" })
+        .then(function(res){
+          resetting = false;
+          if (res && res.error) {
+            errorBox.textContent = res.error.message;
+            errorBox.classList.remove("hidden");
+            return;
+          }
+          renderAuthForms(tr("reset_sent"));
+        }, function(){
+          resetting = false;
+          errorBox.textContent = tr("load_error");
+          errorBox.classList.remove("hidden");
+        });
     });
 
     form.addEventListener("submit", function(e){
       e.preventDefault();
+      if (submitBtn.disabled) return;
       errorBox.classList.add("hidden");
       submitBtn.disabled = true;
       var email = emailInput.value.trim();
@@ -266,8 +293,8 @@
         : sb.auth.signUp({ email: email, password: password });
 
       action.then(function(res){
-        submitBtn.disabled = false;
         if (res.error) {
+          submitBtn.disabled = false;
           errorBox.textContent = res.error.message;
           errorBox.classList.remove("hidden");
           return;
@@ -276,10 +303,67 @@
           renderAuthForms(tr("confirm_email_note"));
           return;
         }
+        // Stays disabled: the form is replaced by the dashboard, and a
+        // second click meanwhile would start a second sign-in.
         onAuthed();
+      }, function(){
+        submitBtn.disabled = false;
+        errorBox.textContent = tr("load_error");
+        errorBox.classList.remove("hidden");
       });
     });
   }
+
+  // Shown when the page is opened from a password-recovery email: the
+  // client has just exchanged the link for a session, and the only
+  // sensible thing to do with it is set a new password.
+  function renderNewPasswordForm(){
+    content.innerHTML =
+      '<div class="card">' +
+      '<div class="auth-error hidden" id="pwError"></div>' +
+      '<form id="pwForm" autocomplete="on">' +
+        '<div class="field"><label id="pwLabel"></label>' +
+        '<input type="password" id="pwInput" autocomplete="new-password" minlength="6" required></div>' +
+        '<button type="submit" class="submit-btn" id="pwSubmitBtn"></button>' +
+      '</form>' +
+      '</div>';
+    document.getElementById("pwLabel").textContent = tr("new_password_label");
+    document.getElementById("pwSubmitBtn").textContent = tr("set_password_btn");
+    var form = document.getElementById("pwForm");
+    var input = document.getElementById("pwInput");
+    var btn = document.getElementById("pwSubmitBtn");
+    var errorBox = document.getElementById("pwError");
+    input.focus();
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      if (btn.disabled) return;
+      errorBox.classList.add("hidden");
+      btn.disabled = true;
+      sb.auth.updateUser({ password: input.value }).then(function(res){
+        if (res.error) {
+          btn.disabled = false;
+          errorBox.textContent = res.error.message;
+          errorBox.classList.remove("hidden");
+          return;
+        }
+        recoveryPending = false;
+        onAuthed(tr("password_updated"));
+      }, function(){
+        btn.disabled = false;
+        errorBox.textContent = tr("load_error");
+        errorBox.classList.remove("hidden");
+      });
+    });
+  }
+
+  // Set the moment the client tells us it is processing a recovery link,
+  // so the initial getSession() below shows the new-password form rather
+  // than the dashboard. Also pre-armed from the URL, since the auth event
+  // can fire before or after the first render.
+  var recoveryPending = /type=recovery/.test(location.hash) || /type=recovery/.test(location.search);
+  sb.auth.onAuthStateChange(function(ev){
+    if (ev === "PASSWORD_RECOVERY") { recoveryPending = true; renderNewPasswordForm(); }
+  });
 
   function claimPastListings(session){
     return fetch(CLAIM_URL, {
@@ -298,14 +382,16 @@
     return { key: "expired", label: tr("status_expired") };
   }
 
-  function renderDashboard(session){
+  function renderDashboard(session, message){
     content.innerHTML =
       '<div class="card">' +
+      (message ? '<div class="auth-note"></div>' : '') +
       '<div class="account-header"><div class="account-email"></div>' +
       '<button type="button" class="logout-btn" id="logoutBtn"></button></div>' +
       '<a href="/admin.html" class="admin-banner hidden" id="adminBanner"></a>' +
       '<div id="listingsBox"><div class="spinner"></div></div>' +
       '</div>';
+    if (message) content.querySelector(".auth-note").textContent = message;
     content.querySelector(".account-email").textContent = session.user.email;
     document.getElementById("logoutBtn").textContent = tr("logout_btn");
     document.getElementById("logoutBtn").addEventListener("click", function(){
@@ -326,6 +412,12 @@
         }
       });
 
+    loadListings(session);
+  }
+
+  function loadListings(session){
+    var box0 = document.getElementById("listingsBox");
+    if (box0) box0.innerHTML = '<div class="spinner"></div>';
     sb.from("listings")
       .select("id, category, role, city, country, visible_until, created_at")
       .eq("user_id", session.user.id)
@@ -333,8 +425,19 @@
       .then(function(res){
         var box = document.getElementById("listingsBox");
         if (!box) return;
+        // A failed query is not "no listings": offline or with an expired
+        // token, a paying customer used to read "You don't have any
+        // listings yet" -- say what happened and let them retry.
+        if (res.error) {
+          box.innerHTML = '<p class="empty-note"></p><button type="button" class="logout-btn" style="margin-top:6px;"></button>';
+          box.querySelector(".empty-note").textContent = tr("load_error");
+          var retry = box.querySelector("button");
+          retry.textContent = tr("retry_btn");
+          retry.addEventListener("click", function(){ loadListings(session); });
+          return;
+        }
         var rows = (res.data || []).filter(function(r){ return VALID_CATEGORIES.indexOf(r.category) !== -1; });
-        if (res.error || rows.length === 0) {
+        if (rows.length === 0) {
           box.innerHTML = '<p class="empty-note"></p><a class="forgot-link" href="/#categories" style="margin-top:6px;"></a>';
           box.querySelector(".empty-note").textContent = tr("empty_note");
           box.querySelector("a").textContent = tr("home_link");
@@ -361,15 +464,24 @@
           card.querySelector(".browse-btn").textContent = tr("browse_btn");
           list.appendChild(card);
         });
+      }, function(){
+        var box = document.getElementById("listingsBox");
+        if (!box) return;
+        box.innerHTML = '<p class="empty-note"></p><button type="button" class="logout-btn" style="margin-top:6px;"></button>';
+        box.querySelector(".empty-note").textContent = tr("load_error");
+        var retry = box.querySelector("button");
+        retry.textContent = tr("retry_btn");
+        retry.addEventListener("click", function(){ loadListings(session); });
       });
   }
 
-  function onAuthed(){
+  function onAuthed(message){
     sb.auth.getSession().then(function(sessionRes){
       var session = sessionRes.data && sessionRes.data.session;
       if (!session) { renderAuthForms(); return; }
+      if (recoveryPending) { renderNewPasswordForm(); return; }
       claimPastListings(session).then(function(){
-        renderDashboard(session);
+        renderDashboard(session, message);
       });
     });
   }

@@ -17,6 +17,7 @@
     "err_code": "Cod invalid sau expirat.",
     "err_generic": "Ceva n-a mers. Încearcă din nou.",
     "listing_gone": "Acest anunț nu mai este disponibil.",
+    "confirming": "Se confirmă plata ta…",
     "retry_btn": "Încearcă din nou"
   },
 
@@ -496,6 +497,11 @@
     "status_pending": "Plată în așteptare",
     "status_expired": "Expirată",
     "home_link": "Adaugă prima ta listare →",
-    "admin_link": "🔑 Deschide panoul de admin — vezi pe toți, cei care oferă și cei care caută"
+    "admin_link": "🔑 Deschide panoul de admin — vezi pe toți, cei care oferă și cei care caută",
+    "new_password_label": "Parolă nouă",
+    "set_password_btn": "Salvează parola nouă",
+    "password_updated": "Parola ta a fost actualizată.",
+    "load_error": "Anunțurile tale nu au putut fi încărcate. Încearcă din nou.",
+    "retry_btn": "Încearcă din nou"
   }
 }

@@ -17,6 +17,7 @@
     "err_code": "Ongeldige of verlopen code.",
     "err_generic": "Er ging iets mis. Probeer het opnieuw.",
     "listing_gone": "Deze vermelding is niet meer beschikbaar.",
+    "confirming": "Je betaling wordt bevestigd…",
     "retry_btn": "Opnieuw proberen"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Betaling in afwachting",
     "status_expired": "Verlopen",
     "home_link": "Voeg je eerste vermelding toe →",
-    "admin_link": "🔑 Adminpaneel openen — zie iedereen die aanbiedt en zoekt"
+    "admin_link": "🔑 Adminpaneel openen — zie iedereen die aanbiedt en zoekt",
+    "new_password_label": "Nieuw wachtwoord",
+    "set_password_btn": "Nieuw wachtwoord opslaan",
+    "password_updated": "Je wachtwoord is bijgewerkt.",
+    "load_error": "Je vermeldingen konden niet worden geladen. Probeer het opnieuw.",
+    "retry_btn": "Opnieuw proberen"
   },
 
   "investors_card": {

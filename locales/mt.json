@@ -17,6 +17,7 @@
     "err_code": "Kodiċi invalidu jew skadut.",
     "err_generic": "Xi ħaġa marret ħażin. Erġa' pprova.",
     "listing_gone": "Din il-lista m'għadhiex disponibbli.",
+    "confirming": "Qed nikkonfermaw il-ħlas tiegħek…",
     "retry_btn": "Erġa' pprova"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Ħlas pendenti",
     "status_expired": "Skaduta",
     "home_link": "Żid l-ewwel lista tiegħek →",
-    "admin_link": "🔑 Iftaħ il-panel tal-admin — ara lil kulħadd li qed joffri u jfittex"
+    "admin_link": "🔑 Iftaħ il-panel tal-admin — ara lil kulħadd li qed joffri u jfittex",
+    "new_password_label": "Password ġdida",
+    "set_password_btn": "Issejvja l-password il-ġdida",
+    "password_updated": "Il-password tiegħek ġiet aġġornata.",
+    "load_error": "Il-listi tiegħek ma setgħux jitgħabbew. Jekk jogħġbok erġa' pprova.",
+    "retry_btn": "Erġa' pprova"
   },
 
   "investors_card": {

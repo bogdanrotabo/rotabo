@@ -17,6 +17,7 @@
     "err_code": "無効または期限切れのコードです。",
     "err_generic": "問題が発生しました。もう一度お試しください。",
     "listing_gone": "この掲載は現在ご利用いただけません。",
+    "confirming": "お支払いを確認しています…",
     "retry_btn": "もう一度試す"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "支払い待ち",
     "status_expired": "期限切れ",
     "home_link": "最初の掲載を追加する →",
-    "admin_link": "🔑 管理パネルを開く — 提供・募集しているすべての人を見る"
+    "admin_link": "🔑 管理パネルを開く — 提供・募集しているすべての人を見る",
+    "new_password_label": "新しいパスワード",
+    "set_password_btn": "新しいパスワードを保存",
+    "password_updated": "パスワードが更新されました。",
+    "load_error": "掲載を読み込めませんでした。もう一度お試しください。",
+    "retry_btn": "もう一度試す"
   },
 
   "investors_card": {

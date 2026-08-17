@@ -17,6 +17,7 @@
     "err_code": "Cód neamhbhailí nó as feidhm.",
     "err_generic": "Chuaigh rud éigin mícheart. Bain triail eile as.",
     "listing_gone": "Níl an liostú seo ar fáil a thuilleadh.",
+    "confirming": "Do chuid íocaíochta á dearbhú…",
     "retry_btn": "Bain triail eile as"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Íocaíocht ar feitheamh",
     "status_expired": "As feidhm",
     "home_link": "Cuir do chéad liostú leis →",
-    "admin_link": "🔑 Oscail an painéal riaracháin — féach gach duine atá ag tairiscint agus ag lorg"
+    "admin_link": "🔑 Oscail an painéal riaracháin — féach gach duine atá ag tairiscint agus ag lorg",
+    "new_password_label": "Pasfhocal nua",
+    "set_password_btn": "Sábháil an pasfhocal nua",
+    "password_updated": "Tá do phasfhocal nuashonraithe.",
+    "load_error": "Níorbh fhéidir do chuid liostuithe a lódáil. Bain triail eile as, le do thoil.",
+    "retry_btn": "Bain triail eile as"
   },
 
   "investors_card": {

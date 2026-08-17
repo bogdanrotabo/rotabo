@@ -17,6 +17,7 @@
     "err_code": "验证码无效或已过期。",
     "err_generic": "出了点问题，请重试。",
     "listing_gone": "此信息已不再可用。",
+    "confirming": "正在确认你的付款…",
     "retry_btn": "重试"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "待付款",
     "status_expired": "已过期",
     "home_link": "添加你的第一条信息 →",
-    "admin_link": "🔑 打开管理面板 — 查看所有提供者和寻求者"
+    "admin_link": "🔑 打开管理面板 — 查看所有提供者和寻求者",
+    "new_password_label": "新密码",
+    "set_password_btn": "保存新密码",
+    "password_updated": "你的密码已更新。",
+    "load_error": "无法加载你的信息，请重试。",
+    "retry_btn": "重试"
   },
 
   "investors_card": {

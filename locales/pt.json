@@ -17,6 +17,7 @@
     "err_code": "Código inválido ou expirado.",
     "err_generic": "Algo correu mal. Tente novamente.",
     "listing_gone": "Este anúncio já não está disponível.",
+    "confirming": "A confirmar o seu pagamento…",
     "retry_btn": "Tentar novamente"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Pagamento pendente",
     "status_expired": "Expirado",
     "home_link": "Adicione o seu primeiro anúncio →",
-    "admin_link": "🔑 Abrir painel de administração — ver todos os que oferecem e procuram"
+    "admin_link": "🔑 Abrir painel de administração — ver todos os que oferecem e procuram",
+    "new_password_label": "Nova palavra-passe",
+    "set_password_btn": "Guardar nova palavra-passe",
+    "password_updated": "A sua palavra-passe foi atualizada.",
+    "load_error": "Não foi possível carregar os seus anúncios. Tente novamente.",
+    "retry_btn": "Tentar novamente"
   },
 
   "investors_card": {

@@ -17,6 +17,7 @@
     "err_code": "Érvénytelen vagy lejárt kód.",
     "err_generic": "Valami elromlott. Próbáld újra.",
     "listing_gone": "Ez a hirdetés már nem elérhető.",
+    "confirming": "Fizetésed megerősítése folyamatban…",
     "retry_btn": "Próbáld újra"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Fizetésre vár",
     "status_expired": "Lejárt",
     "home_link": "Add fel az első hirdetésed →",
-    "admin_link": "🔑 Admin felület megnyitása — mindenki látható, aki kínál vagy keres"
+    "admin_link": "🔑 Admin felület megnyitása — mindenki látható, aki kínál vagy keres",
+    "new_password_label": "Új jelszó",
+    "set_password_btn": "Új jelszó mentése",
+    "password_updated": "A jelszavad frissítve lett.",
+    "load_error": "A hirdetéseidet nem sikerült betölteni. Kérlek, próbáld újra.",
+    "retry_btn": "Próbáld újra"
   },
 
   "investors_card": {

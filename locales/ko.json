@@ -17,6 +17,7 @@
     "err_code": "잘못되었거나 만료된 코드입니다.",
     "err_generic": "문제가 발생했습니다. 다시 시도하세요.",
     "listing_gone": "이 등록 정보는 더 이상 이용할 수 없습니다.",
+    "confirming": "결제를 확인하는 중…",
     "retry_btn": "다시 시도"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "결제 대기 중",
     "status_expired": "만료됨",
     "home_link": "첫 등록 정보 추가하기 →",
-    "admin_link": "🔑 관리자 패널 열기 — 제공하고 찾는 모든 사람 보기"
+    "admin_link": "🔑 관리자 패널 열기 — 제공하고 찾는 모든 사람 보기",
+    "new_password_label": "새 비밀번호",
+    "set_password_btn": "새 비밀번호 저장",
+    "password_updated": "비밀번호가 업데이트되었습니다.",
+    "load_error": "등록 정보를 불러올 수 없습니다. 다시 시도해 주세요.",
+    "retry_btn": "다시 시도"
   },
 
   "investors_card": {

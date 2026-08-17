@@ -17,6 +17,7 @@
     "err_code": "Neteisingas arba pasibaigęs kodas.",
     "err_generic": "Kažkas nepavyko. Bandykite dar kartą.",
     "listing_gone": "Šis skelbimas nebepasiekiamas.",
+    "confirming": "Patvirtinamas jūsų mokėjimas…",
     "retry_btn": "Bandyti dar kartą"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Laukiama mokėjimo",
     "status_expired": "Pasibaigęs",
     "home_link": "Pridėk savo pirmą skelbimą →",
-    "admin_link": "🔑 Atidaryti administratoriaus skydelį — matyti visus, kurie siūlo ir ieško"
+    "admin_link": "🔑 Atidaryti administratoriaus skydelį — matyti visus, kurie siūlo ir ieško",
+    "new_password_label": "Naujas slaptažodis",
+    "set_password_btn": "Išsaugoti naują slaptažodį",
+    "password_updated": "Jūsų slaptažodis atnaujintas.",
+    "load_error": "Nepavyko įkelti jūsų skelbimų. Bandykite dar kartą.",
+    "retry_btn": "Bandyti dar kartą"
   },
 
   "investors_card": {

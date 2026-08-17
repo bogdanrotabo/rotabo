@@ -17,6 +17,7 @@
     "err_code": "Invalid or expired code.",
     "err_generic": "Something went wrong. Please try again.",
     "listing_gone": "This listing is no longer available.",
+    "confirming": "Confirming your payment…",
     "retry_btn": "Try again"
   },
 
@@ -494,6 +495,11 @@
     "status_pending": "Pending payment",
     "status_expired": "Expired",
     "home_link": "Add your first listing →",
-    "admin_link": "🔑 Open admin panel — see everyone offering and seeking"
+    "admin_link": "🔑 Open admin panel — see everyone offering and seeking",
+    "new_password_label": "New password",
+    "set_password_btn": "Save new password",
+    "password_updated": "Your password has been updated.",
+    "load_error": "Your listings couldn't be loaded. Please try again.",
+    "retry_btn": "Try again"
   }
 }

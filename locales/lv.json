@@ -17,6 +17,7 @@
     "err_code": "Nederīgs vai beidzies kods.",
     "err_generic": "Kaut kas nogāja greizi. Mēģini vēlreiz.",
     "listing_gone": "Šis sludinājums vairs nav pieejams.",
+    "confirming": "Apstiprinām tavu maksājumu…",
     "retry_btn": "Mēģināt vēlreiz"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Gaida maksājumu",
     "status_expired": "Beidzies",
     "home_link": "Pievieno savu pirmo sludinājumu →",
-    "admin_link": "🔑 Atvērt administratora paneli — redzēt visus, kas piedāvā un meklē"
+    "admin_link": "🔑 Atvērt administratora paneli — redzēt visus, kas piedāvā un meklē",
+    "new_password_label": "Jauna parole",
+    "set_password_btn": "Saglabāt jauno paroli",
+    "password_updated": "Tava parole ir atjaunināta.",
+    "load_error": "Neizdevās ielādēt tavus sludinājumus. Lūdzu, mēģini vēlreiz.",
+    "retry_btn": "Mēģināt vēlreiz"
   },
 
   "investors_card": {

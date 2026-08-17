@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v83";
+const CACHE_VERSION = "v84";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -75,7 +75,7 @@ self.addEventListener("activate", function (event) {
 function revalidate(url) {
   return fetch(url.pathname + "?swr=" + CACHE_VERSION + "-" + Date.now(), { cache: "no-store" })
     .then(function (res) {
-      if (!res || res.status !== 200) return;
+      if (!res || res.status !== 200 || res.redirected) return;
       return caches.open(CACHE_NAME).then(function (cache) {
         return cache.put(url.pathname, res);
       });
@@ -91,6 +91,9 @@ self.addEventListener("fetch", function (event) {
   // hit the network so dynamic data is never served stale from cache.
   var url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+  // Cloudflare's own endpoints are live answers, not site assets: caching
+  // /cdn-cgi/trace froze the visitor's country at their first-ever visit.
+  if (url.pathname.indexOf("/cdn-cgi/") === 0) return;
 
   event.respondWith(
     // ignoreSearch: every real browse.html visit carries ?category=...&
@@ -101,12 +104,18 @@ self.addEventListener("fetch", function (event) {
     // page's own JS, never to the static file server.
     caches.match(event.request, { ignoreSearch: true }).then(function (cached) {
       if (cached) {
-        if (event.request.mode === "navigate") event.waitUntil(revalidate(url));
+        // Pages AND the scripts/dictionaries they call into: refreshing
+        // only the HTML left a new index.html running an old viewer.js
+        // until the next version bump.
+        var dest = event.request.destination;
+        if (event.request.mode === "navigate" || dest === "script" || url.pathname.indexOf("/locales/") === 0) {
+          event.waitUntil(revalidate(url));
+        }
         return cached;
       }
 
       return fetch(event.request).then(function (response) {
-        if (!response || response.status !== 200 || response.type === "opaque") {
+        if (!response || response.status !== 200 || response.type === "opaque" || response.redirected) {
           return response;
         }
         var responseClone = response.clone();

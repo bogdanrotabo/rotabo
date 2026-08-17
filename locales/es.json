@@ -17,6 +17,7 @@
     "err_code": "Código no válido o caducado.",
     "err_generic": "Algo salió mal. Inténtalo de nuevo.",
     "listing_gone": "Este anuncio ya no está disponible.",
+    "confirming": "Confirmando tu pago…",
     "retry_btn": "Intentar de nuevo"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Pago pendiente",
     "status_expired": "Caducado",
     "home_link": "Añade tu primer anuncio →",
-    "admin_link": "🔑 Abrir panel de administración — ver a todos los que ofrecen y buscan"
+    "admin_link": "🔑 Abrir panel de administración — ver a todos los que ofrecen y buscan",
+    "new_password_label": "Nueva contraseña",
+    "set_password_btn": "Guardar nueva contraseña",
+    "password_updated": "Tu contraseña se ha actualizado.",
+    "load_error": "No se pudieron cargar tus anuncios. Inténtalo de nuevo.",
+    "retry_btn": "Intentar de nuevo"
   },
 
   "investors_card": {

@@ -575,7 +575,7 @@
             return;
           }
           listingId = res.data.id;
-          localStorage.setItem("rotabo_listing_" + category + "_" + myRole, listingId);
+          try { localStorage.setItem("rotabo_listing_" + category + "_" + myRole, listingId); } catch (e) {}
           checkStatusAndRender();
         });
     });

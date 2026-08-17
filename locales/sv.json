@@ -17,6 +17,7 @@
     "err_code": "Ogiltig eller utgången kod.",
     "err_generic": "Något gick fel. Försök igen.",
     "listing_gone": "Den här annonsen är inte längre tillgänglig.",
+    "confirming": "Bekräftar din betalning…",
     "retry_btn": "Försök igen"
   },
 
@@ -471,7 +472,12 @@
     "status_pending": "Väntar på betalning",
     "status_expired": "Utgången",
     "home_link": "Lägg till din första annons →",
-    "admin_link": "🔑 Öppna adminpanelen — se alla som erbjuder och söker"
+    "admin_link": "🔑 Öppna adminpanelen — se alla som erbjuder och söker",
+    "new_password_label": "Nytt lösenord",
+    "set_password_btn": "Spara nytt lösenord",
+    "password_updated": "Ditt lösenord har uppdaterats.",
+    "load_error": "Dina annonser kunde inte laddas. Försök igen.",
+    "retry_btn": "Försök igen"
   },
 
   "investors_card": {

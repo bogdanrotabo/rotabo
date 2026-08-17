@@ -17,6 +17,7 @@
     "err_code": "Ungültiger oder abgelaufener Code.",
     "err_generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "listing_gone": "Dieser Eintrag ist nicht mehr verfügbar.",
+    "confirming": "Deine Zahlung wird bestätigt…",
     "retry_btn": "Erneut versuchen"
   },
 
@@ -481,7 +482,12 @@
     "status_pending": "Zahlung ausstehend",
     "status_expired": "Abgelaufen",
     "home_link": "Deinen ersten Eintrag hinzufügen →",
-    "admin_link": "🔑 Admin-Bereich öffnen — alle sehen, die etwas anbieten oder suchen"
+    "admin_link": "🔑 Admin-Bereich öffnen — alle sehen, die etwas anbieten oder suchen",
+    "new_password_label": "Neues Passwort",
+    "set_password_btn": "Neues Passwort speichern",
+    "password_updated": "Dein Passwort wurde aktualisiert.",
+    "load_error": "Deine Einträge konnten nicht geladen werden. Bitte versuche es erneut.",
+    "retry_btn": "Erneut versuchen"
   },
 
   "investors_card": {
