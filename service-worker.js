@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v81";
+const CACHE_VERSION = "v82";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 const LOCALE_CODES = [
@@ -31,12 +31,19 @@ const PRECACHE_URLS = [
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      // Revalidate with the origin instead of trusting the HTTP cache.
-      // Pages' assets carry max-age=600, so a plain addAll() running
-      // within ten minutes of a deploy can precache the previous release
-      // -- and then serve it for the whole life of this cache version.
-      return cache.addAll(PRECACHE_URLS.map(function (url) {
-        return new Request(url, { cache: "no-cache" });
+      // Fetch every asset with a version query, but store it under the
+      // plain URL the pages actually request. The query gives each cache
+      // version a fresh CDN cache key: Pages serves through Fastly with
+      // max-age=600, so fetching the bare URL within ten minutes of a
+      // deploy can return the previous release -- which a cache-first
+      // worker would then serve for the whole life of this version.
+      // ("no-store" only bypasses the local HTTP cache; nothing short of
+      // a new cache key gets past the edge.)
+      return Promise.all(PRECACHE_URLS.map(function (url) {
+        return fetch(url + "?swv=" + CACHE_VERSION, { cache: "no-store" }).then(function (res) {
+          if (!res || res.status !== 200) throw new Error("precache " + url);
+          return cache.put(url, res);
+        });
       }));
     }).then(function () {
       return self.skipWaiting();
