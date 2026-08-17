@@ -13,8 +13,19 @@
   gtag('config', 'G-ZSR8ZKJ4RL', { transport_type: 'beacon' });
   // GA4's standard purchase event (a key event by default, and the one
   // Google Ads imports as a conversion). Stripe's fixed return URL
-  // carries no amount, so only the currency is known here.
-  gtag('event', 'purchase', { currency: 'CHF' });
+  // carries no amount, so the page that sent the browser to Stripe
+  // leaves the CHF figure behind in rotabo_paid_value -- without it
+  // every purchase reports as worth 0, and Performance Max (which bids
+  // on conversion value) has nothing to optimize towards.
+  (function(){
+    var ev = { currency: 'CHF' };
+    try {
+      var v = parseFloat(localStorage.getItem('rotabo_paid_value'));
+      if (isFinite(v) && v > 0) ev.value = v;
+      localStorage.removeItem('rotabo_paid_value');
+    } catch (e) { /* storage denied: report the purchase without a value */ }
+    gtag('event', 'purchase', ev);
+  })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo</title>

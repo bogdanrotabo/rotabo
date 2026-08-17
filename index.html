@@ -941,10 +941,10 @@
     <p data-i18n="supporters.invite">We especially welcome banks, insurers, sports brands, energy-drink and soft-drink makers — and any business that stands behind sober driving.</p>
     <p class="names" data-i18n="supporters.first">No supporters yet — be the first name on this list.</p>
     <div class="sponsor-tiers">
-      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'bronze'})">Bronze — 100 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" data-i18n="supporters.tier_silver" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'silver'})">Silver — 300 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" data-i18n="supporters.tier_gold" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'gold'})">Gold — 750 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum" onclick="if(window.gtag)gtag('event','begin_checkout',{checkout_type:'sponsor',tier:'platinum'})">Platinum — 750 CHF+</a>
+      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze" onclick="if(window.sponsorCheckout)sponsorCheckout('bronze',100)">Bronze — 100 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" data-i18n="supporters.tier_silver" onclick="if(window.sponsorCheckout)sponsorCheckout('silver',300)">Silver — 300 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" data-i18n="supporters.tier_gold" onclick="if(window.sponsorCheckout)sponsorCheckout('gold',750)">Gold — 750 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum" onclick="if(window.sponsorCheckout)sponsorCheckout('platinum',750)">Platinum — 750 CHF+</a>
     </div>
   </div>
 </section>
@@ -1433,6 +1433,13 @@
   ["fd_country", "fd_city", "bd_country", "bd_city", "gl_country", "gl_city"].forEach(wireReopenOnFocus);
 
   var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click" };
+  // Sponsor tiers leave for Stripe straight from their href, so this is
+  // the only moment their price is known: after-payment.html reads it
+  // back as the purchase value (the return URL carries no amount).
+  window.sponsorCheckout = function(tier, chf){
+    if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "sponsor", tier: tier, value: chf, currency: "CHF" });
+    try { localStorage.setItem("rotabo_paid_value", String(chf)); } catch (e) {}
+  };
   window.openModal = function(id){
     document.getElementById(id).classList.add("open");
     document.body.style.overflow = "hidden";
@@ -1467,10 +1474,12 @@
   // The chosen tier (radio button value "1" or "12") picks which of the
   // two Payment Links to send the browser to; the webhook then infers
   // the same tier back from the Stripe amount paid.
-  function tierLinkFor(form){
+  function tierMonthsFor(form){
     var checked = form.querySelector('input[name="tier"]:checked');
-    var months = checked ? checked.value : "1";
-    return TIER_LINKS[months];
+    return checked ? checked.value : "1";
+  }
+  function tierLinkFor(form){
+    return TIER_LINKS[tierMonthsFor(form)];
   }
 
   // ---- Email verification gate ----
@@ -1538,6 +1547,9 @@
           // A stale viewer-purchase return note (from an abandoned unlock
           // checkout) must not outrank the listing we are about to pay for.
           localStorage.removeItem("rotabo_return_to");
+          // What this checkout is worth, for after-payment.html to report
+          // as the purchase value: 1 month costs 1 CHF, 12 months cost 2.
+          localStorage.setItem("rotabo_paid_value", tierMonthsFor(form) === "12" ? "2" : "1");
         } catch (e) {}
         if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
         window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId);

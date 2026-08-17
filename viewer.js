@@ -271,8 +271,8 @@
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
       '<p>' + esc(t("choose")) + '</p>' +
-      '<a class="rv-btn tier" href="' + TIER_LINKS["1"] + q + '">' + esc(withApprox(t("tier1"), 1)) + '</a>' +
-      '<a class="rv-btn tier" href="' + TIER_LINKS["12"] + q + '">' + esc(withApprox(t("tier12"), 2)) + '</a>' +
+      '<a class="rv-btn tier" data-chf="1" href="' + TIER_LINKS["1"] + q + '">' + esc(withApprox(t("tier1"), 1)) + '</a>' +
+      '<a class="rv-btn tier" data-chf="2" href="' + TIER_LINKS["12"] + q + '">' + esc(withApprox(t("tier12"), 2)) + '</a>' +
       // Prices are quoted in CHF, but Stripe's Adaptive Pricing is always
       // on for Payment Links, so a buyer abroad is billed in their own
       // currency. Saying so keeps the CHF figure honest without the site
@@ -291,7 +291,9 @@
         // .html), which forwards by rotabo_last_listing -- the page of a
         // listing this buyer may have created weeks ago. Leave a note so
         // a viewer purchase comes back HERE instead.
-        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); } catch (err) {}
+        // data-chf is what this tier costs; after-payment.html reports it
+        // as the purchase value, since Stripe's return URL carries none.
+        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); localStorage.setItem("rotabo_paid_value", a.getAttribute("data-chf") || "1"); } catch (err) {}
       });
     });
   }
