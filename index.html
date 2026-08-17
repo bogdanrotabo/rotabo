@@ -36,19 +36,53 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Connection directory",
-  "name": "Rotabo",
-  "description": "Rotabo connects people who need something with people who have it, across 11 categories in 38 languages, worldwide.",
-  "url": "https://rotabo.app/",
-  "image": "https://rotabo.app/og-image.png",
-  "areaServed": "Worldwide",
-  "provider": {
-    "@type": "Organization",
-    "name": "Rotabo",
-    "url": "https://rotabo.app/",
-    "logo": "https://rotabo.app/icons/apple-touch-icon-180.png"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rotabo.app/#organization",
+      "name": "Rotabo",
+      "url": "https://rotabo.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rotabo.app/icons/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://rotabo.app/og-image.png",
+      "email": "support@rotabo.app",
+      "slogan": "Need me? Find me.",
+      "foundingLocation": {
+        "@type": "Country",
+        "name": "Switzerland"
+      },
+      "areaServed": "Worldwide"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rotabo.app/#website",
+      "url": "https://rotabo.app/",
+      "name": "Rotabo",
+      "publisher": { "@id": "https://rotabo.app/#organization" },
+      "inLanguage": ["en","it","ro","es","fr","de","pt","zh","ar","ja","ko","ru","ms","hi","sw","vi","th","id","tr","bn","ur","bg","cs","hr","da","et","fi","el","ga","lv","lt","hu","mt","nl","pl","sk","sl","sv"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://rotabo.app/#service",
+      "serviceType": "Connection directory",
+      "name": "Rotabo",
+      "description": "Rotabo connects people who need something with people who have it, across 11 categories in 38 languages, worldwide.",
+      "url": "https://rotabo.app/",
+      "image": "https://rotabo.app/og-image.png",
+      "areaServed": "Worldwide",
+      "provider": { "@id": "https://rotabo.app/#organization" },
+      "offers": {
+        "@type": "Offer",
+        "price": "1",
+        "priceCurrency": "CHF",
+        "description": "List yourself for one month"
+      }
+    }
+  ]
 }
 </script>
 <style>
