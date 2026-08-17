@@ -2127,8 +2127,12 @@ if ("serviceWorker" in navigator) {
   }
   var lastListJson = null;
   function fetchList(){
-    sb.from("public_listings").select("number,name,country,category,role,city")
-      .order("number", { ascending: true })
+    // An RPC, not a view: the old public_listings view was SECURITY DEFINER,
+    // so reading it bypassed row-level security entirely (Supabase's linter
+    // flags that as an error). The function returns the same rows -- already
+    // ordered by number -- through the same gated pattern as every other
+    // call here, with RLS still denying anon any direct table access.
+    sb.rpc("list_public_numbers")
       .then(function(res){
         if (res && res.data){
           var j = JSON.stringify(res.data);
