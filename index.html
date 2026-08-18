@@ -573,6 +573,8 @@
   .tier-option input{position:absolute;opacity:0;}
   .tier-option .tier-price{display:block;font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .tier-option .tier-period{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:2px;}
+  .tier-option .tier-fx{display:block;font-size:.78rem;color:var(--text-eyebrow);margin-top:3px;}
+  .tier-option .tier-fx:empty{display:none;}
   .tier-option:has(input:checked){border-color:var(--violet-2);background:#f3e6f8;}
 </style>
 </head>
@@ -940,11 +942,13 @@
             <input type="radio" name="tier" value="1" checked>
             <span class="tier-price">1 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+            <span class="tier-fx" data-chf="1"></span>
           </label>
           <label class="tier-option">
             <input type="radio" name="tier" value="12">
             <span class="tier-price">2 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+            <span class="tier-fx" data-chf="2"></span>
           </label>
         </div>
       </div>
@@ -1002,11 +1006,13 @@
             <input type="radio" name="tier" value="1" checked>
             <span class="tier-price">1 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+            <span class="tier-fx" data-chf="1"></span>
           </label>
           <label class="tier-option">
             <input type="radio" name="tier" value="12">
             <span class="tier-price">2 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+            <span class="tier-fx" data-chf="2"></span>
           </label>
         </div>
       </div>
@@ -1076,11 +1082,13 @@
             <input type="radio" name="tier" value="1" checked>
             <span class="tier-price">1 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
+            <span class="tier-fx" data-chf="1"></span>
           </label>
           <label class="tier-option">
             <input type="radio" name="tier" value="12">
             <span class="tier-price">2 CHF</span>
             <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
+            <span class="tier-fx" data-chf="2"></span>
           </label>
         </div>
       </div>
@@ -1967,6 +1975,25 @@ if ("serviceWorker" in navigator) {
 <script src="/countries.js"></script>
 <script src="/fx.js"></script>
 <script src="/viewer.js"></script>
+<script>
+// The tier pickers quote francs, and most of the world cannot price a
+// franc. fx.js already works out the reader's own currency, so put its
+// figure under each tier -- the same hint the unlock modal has carried
+// all along, which the listing forms never had. approx() returns "" for
+// Swiss visitors, and .tier-fx:empty collapses, so they see no gap.
+// Redrawn on RotaboFx.onChange: the language switcher changes the
+// currency, and the day's rates can land after the first paint.
+(function(){
+  if (!window.RotaboFx) return;
+  function draw(){
+    Array.prototype.forEach.call(document.querySelectorAll(".tier-fx"), function(el){
+      el.textContent = window.RotaboFx.approx(parseFloat(el.getAttribute("data-chf")) || 1);
+    });
+  }
+  window.RotaboFx.onChange(draw);
+  draw();
+})();
+</script>
 <script>
 // A password-recovery link that lands here (Supabase falls back to the Site
 // URL) must reach /account.html, which owns the "set a new password" form.
