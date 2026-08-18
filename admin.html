@@ -229,6 +229,11 @@
       <div class="stats" id="visitStats"></div>
 
       <div class="filter-row">
+        <select id="visitSegmentFilter">
+          <option value="all">All traffic</option>
+          <option value="organic">Organic only</option>
+          <option value="paid">Google Ads only</option>
+        </select>
         <input type="search" id="visitSearchInput" autocomplete="off" placeholder="Search path, country or referrer…">
       </div>
 
@@ -312,6 +317,11 @@
   var allRows = [];
   var allVisits = [];
   var visitStats = null;
+  // "all" | "organic" | "paid". The server does the splitting, not this
+  // page: the row slice is capped at 1000, so a day of heavy ad traffic
+  // fills every one of those rows and filtering them here would report the
+  // organic segment as empty.
+  var visitSegment = "all";
   var allAccess = [];
   var accessStats = null;
 
@@ -341,6 +351,14 @@
   }
   clearSearchBoxes();
 
+  // Same reasoning as the boxes above: a browser restoring form state across
+  // a reload can leave this select naming a segment the table was never
+  // loaded with, so the dropdown and the rows would disagree.
+  function syncSegmentSelect(){
+    document.getElementById("visitSegmentFilter").value = visitSegment;
+  }
+  syncSegmentSelect();
+
   // Typing focuses the field first; a fill from anywhere else does not. An
   // unfocused edit is put straight back, so the box shows what the table is
   // actually filtered by.
@@ -365,7 +383,10 @@
     var qs = "";
     // Send the browser's timezone so the server counts "today" against the
     // same day boundary this dashboard displays.
-    if (resource === "visits") qs = "?resource=visits&tz=" + encodeURIComponent(browserTz());
+    if (resource === "visits") {
+      qs = "?resource=visits&tz=" + encodeURIComponent(browserTz())
+         + "&segment=" + encodeURIComponent(visitSegment);
+    }
     else if (resource === "access") qs = "?resource=access";
     return fetch(FUNCTION_URL + qs, {
       headers: { "Authorization": "Bearer " + token },
@@ -531,6 +552,12 @@
   });
   bindSearch("searchInput", debounce(render));
 
+  var VISIT_STAT_LABELS = {
+    all:     ["TOTAL VISITS", "UNIQUE VISITORS", "TODAY"],
+    organic: ["ORGANIC VISITS", "ORGANIC VISITORS", "ORGANIC TODAY"],
+    paid:    ["AD VISITS", "AD VISITORS", "AD TODAY"]
+  };
+
   function renderVisitsStats(rows){
     // These counters must come from the server: `rows` is only the recent
     // slice the table shows, capped at 1000 by PostgREST, so counting it
@@ -539,9 +566,22 @@
     // that hasn't been redeployed with the stats payload yet.
     var total, uniqueSessions, today;
     if (visitStats) {
-      total = visitStats.total;
-      uniqueSessions = visitStats.unique_visitors;
-      today = visitStats.today;
+      // Each segment carries its own totals, so switching the table to
+      // Organic doesn't leave the tiles still counting an ad flood that the
+      // rows below no longer list.
+      if (visitSegment === "paid") {
+        total = visitStats.paid_total;
+        uniqueSessions = visitStats.paid_unique;
+        today = visitStats.paid_today;
+      } else if (visitSegment === "organic") {
+        total = visitStats.organic_total;
+        uniqueSessions = visitStats.organic_unique;
+        today = visitStats.organic_today;
+      } else {
+        total = visitStats.total;
+        uniqueSessions = visitStats.unique_visitors;
+        today = visitStats.today;
+      }
     } else {
       total = rows.length;
       var sessions = {};
@@ -552,10 +592,13 @@
         return r.created_at && new Date(r.created_at).toDateString() === todayStr;
       }).length;
     }
+    // The tiles name the segment they are counting, so a screenshot of this
+    // panel can't be read as the whole site's traffic when it isn't.
+    var labels = VISIT_STAT_LABELS[visitSegment] || VISIT_STAT_LABELS.all;
     document.getElementById("visitStats").innerHTML = ""
-      + tile(total, "TOTAL VISITS")
-      + tile(uniqueSessions, "UNIQUE VISITORS")
-      + tile(today, "TODAY");
+      + tile(total, labels[0])
+      + tile(uniqueSessions, labels[1])
+      + tile(today, labels[2]);
   }
 
   // "CH" -> "🇨🇭". Empty for anything that isn't a plain ISO-3166
@@ -721,6 +764,7 @@
   // when the load settles, and redraw with it -- clearing a box that a table
   // was already filtered by would leave the two disagreeing.
   window.addEventListener("load", function(){
+    syncSegmentSelect();
     var filled = ["searchInput", "visitSearchInput", "accessSearchInput"].some(function(id){
       return document.getElementById(id).value !== "";
     });
@@ -777,6 +821,15 @@
     loadTab(activeTab);
   });
 
+  // Changing the segment has to go back to the server, unlike the search
+  // box which filters rows already in hand -- the split happens in SQL. The
+  // select lives inside the Visits panel, so the active tab is that one.
+  document.getElementById("visitSegmentFilter").addEventListener("change", function(){
+    visitSegment = this.value;
+    activeTab.loaded = false;
+    loadTab(activeTab);
+  });
+
   // Clears the stored credential and takes every row off the screen. This
   // page lists each customer's phone and email and there was no way to put
   // it away short of closing the tab.
@@ -784,6 +837,8 @@
     clearStored();
     allRows = []; allVisits = []; allAccess = [];
     visitStats = null; accessStats = null;
+    visitSegment = "all";
+    document.getElementById("visitSegmentFilter").value = "all";
     TABS.forEach(function(tab){
       tab.loaded = false;
       tab.loading = false;
