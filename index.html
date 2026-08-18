@@ -209,11 +209,21 @@
     margin:0 0 28px;
   }
   .tagline .accent{color:var(--violet-3);}
+  /* The three stops are #diamondGrad's own, in its own order: the logo
+     reads light at the centre and dark at the rim, so "Me" runs light to
+     dark across the word. Change one and change the other.
+     The solid colour is the gradient's middle stop and stays put unless
+     the browser can actually clip a background to text -- declaring
+     color:transparent unconditionally is what turns the word invisible
+     where it can't. */
   .me{
-    background:linear-gradient(100deg,#9B3FAF 0%,#C77BD6 100%);
+    color:#a239c9;
+    background:linear-gradient(100deg,#c264e0 0%,#a239c9 45%,#7c2596 100%);
     -webkit-background-clip:text;
     background-clip:text;
-    color:transparent;
+  }
+  @supports ((background-clip:text) or (-webkit-background-clip:text)){
+    .me{color:transparent;}
   }
   .lede{
     max-width:560px;margin:0 auto;
@@ -686,7 +696,9 @@
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <div class="pill" dir="ltr">Need <span class="me">me</span>? Find <span class="me">me</span>.</div>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
-  <h1 class="tagline" dir="ltr">Need <span class="me">me</span>? Find <span class="me">me</span>.<br>On a Banknote!</h1>
+  <!-- Word for word the marketplace heading further down the page, so the
+       site says one thing rather than two. -->
+  <h1 class="tagline" dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h1>
 
   <!-- The 11 marketplace categories, in the same order as the big cards.
        Names reuse the card translation keys, so every language the cards
