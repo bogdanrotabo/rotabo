@@ -1,6 +1,11 @@
 const CACHE_VERSION = "v94";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
+// Where Google tag gateway serves gtag.js and receives its measurement
+// requests, on this site's own domain. Must stay identical to the
+// measurement path set in the Google tag gateway configuration.
+const TAG_GATEWAY_PATH = "/mx";
+
 const LOCALE_CODES = [
   "en","it","ro","es","fr","de","pt","zh","ar","ja","ko","ru","ms","hi","sw",
   "vi","th","id","tr","bn","ur","bg","cs","hr","da","et","fi","el","ga","lv",
@@ -93,6 +98,13 @@ self.addEventListener("fetch", function (event) {
   // Cloudflare's own endpoints are live answers, not site assets: caching
   // /cdn-cgi/trace froze the visitor's country at their first-ever visit.
   if (url.pathname.indexOf("/cdn-cgi/") === 0) return;
+  // Same trap, worse blast radius: Google tag gateway moves gtag.js and
+  // every measurement hit onto this origin, where they look like ordinary
+  // site assets. Cached -- and matched with ignoreSearch, so one entry
+  // answers every ?query -- the tag would freeze at whatever version was
+  // fetched first and the analytics hits would be served from cache
+  // instead of reaching Google at all.
+  if (url.pathname === TAG_GATEWAY_PATH || url.pathname.indexOf(TAG_GATEWAY_PATH + "/") === 0) return;
 
   event.respondWith(
     // ignoreSearch: every real browse.html visit carries ?category=...&
