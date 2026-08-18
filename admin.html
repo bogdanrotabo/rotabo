@@ -50,6 +50,12 @@
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
     font-weight:800;font-size:1rem;cursor:pointer;
   }
+  /* Reachable by the password manager, invisible to everyone else --
+     display:none would make it skip the field and resume hunting. */
+  .login-card input.offscreen{
+    position:absolute;left:-9999px;top:0;width:1px;height:1px;
+    opacity:0;margin:0;padding:0;border:none;
+  }
   .login-error{color:var(--red);font-size:.9rem;margin-top:12px;display:none;}
   .login-error.show{display:block;}
 
@@ -132,8 +138,18 @@
 <div class="wrap">
   <div id="loginView" class="login-card">
     <h1 style="margin-bottom:18px;">Admin</h1>
-    <input type="password" id="passwordInput" placeholder="Password" autocomplete="off">
-    <button type="button" id="loginBtn">Enter</button>
+    <form id="loginForm">
+      <!-- A password field with no username field next to it sends the
+           browser's password manager hunting through the document for one,
+           and it settles on the first text input it finds -- the listings
+           search box, which then filtered the whole table down to nothing.
+           This gives it the field it was looking for. -->
+      <input type="text" id="adminUser" name="username" autocomplete="username"
+             tabindex="-1" aria-hidden="true" class="offscreen">
+      <input type="password" id="passwordInput" name="password"
+             placeholder="Password" autocomplete="current-password">
+      <button type="submit" id="loginBtn">Enter</button>
+    </form>
     <p class="login-error" id="loginError">Wrong password. Try again.</p>
   </div>
 
@@ -307,16 +323,35 @@
   var refreshBtn = document.getElementById("refreshBtn");
   var logoutBtn = document.getElementById("logoutBtn");
 
-  // Browsers both autofill these and restore what was in them across a
-  // reload. An email dropped into the listings search filtered the table
-  // down to nothing, under a "No listings match this filter" note that
-  // read like the dashboard had lost every row. Start every load empty.
+  var SEARCH_BOXES = ["searchInput", "visitSearchInput", "accessSearchInput"];
+
+  // The tables filter on these, never on the boxes themselves. A value the
+  // person did not type -- a password manager refilling a saved login, the
+  // browser restoring form state across a reload -- reaches the DOM but not
+  // this, so it can no longer filter a table down to nothing under a "No
+  // listings match this filter" note that reads like the dashboard lost
+  // every row.
+  var searchTerm = { searchInput: "", visitSearchInput: "", accessSearchInput: "" };
+
   function clearSearchBoxes(){
-    ["searchInput", "visitSearchInput", "accessSearchInput"].forEach(function(id){
+    SEARCH_BOXES.forEach(function(id){
       document.getElementById(id).value = "";
+      searchTerm[id] = "";
     });
   }
   clearSearchBoxes();
+
+  // Typing focuses the field first; a fill from anywhere else does not. An
+  // unfocused edit is put straight back, so the box shows what the table is
+  // actually filtered by.
+  function bindSearch(id, redraw){
+    var el = document.getElementById(id);
+    el.addEventListener("input", function(){
+      if (document.activeElement !== el) { el.value = searchTerm[id]; return; }
+      searchTerm[id] = el.value;
+      redraw();
+    });
+  }
 
   function browserTz(){
     try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) { return "UTC"; }
@@ -374,11 +409,11 @@
     });
   }
 
-  loginBtn.addEventListener("click", function(){
-    if (passwordInput.value) tryLogin(passwordInput.value);
-  });
-  passwordInput.addEventListener("keydown", function(e){
-    if (e.key === "Enter" && passwordInput.value && !loginBtn.disabled) tryLogin(passwordInput.value);
+  // A real form submit, so the button and the Enter key take the same path
+  // and the browser treats this as the login form it is.
+  document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    if (passwordInput.value && !loginBtn.disabled) tryLogin(passwordInput.value);
   });
 
   function enter(rows){
@@ -437,7 +472,7 @@
     var cat = document.getElementById("categoryFilter").value;
     var role = document.getElementById("roleFilter").value;
     var paidFilter = document.getElementById("paidFilter").value;
-    var search = document.getElementById("searchInput").value.trim().toLowerCase();
+    var search = searchTerm.searchInput.trim().toLowerCase();
 
     var rows = allRows.filter(function(r){
       if (cat && r.category !== cat) return false;
@@ -494,7 +529,7 @@
   ["categoryFilter", "roleFilter", "paidFilter"].forEach(function(id){
     document.getElementById(id).addEventListener("change", render);
   });
-  document.getElementById("searchInput").addEventListener("input", debounce(render));
+  bindSearch("searchInput", debounce(render));
 
   function renderVisitsStats(rows){
     // These counters must come from the server: `rows` is only the recent
@@ -534,7 +569,7 @@
   function renderVisits(){
     renderVisitsStats(allVisits);
 
-    var search = document.getElementById("visitSearchInput").value.trim().toLowerCase();
+    var search = searchTerm.visitSearchInput.trim().toLowerCase();
     var rows = allVisits.filter(function(r){
       if (search) {
         var hay = [r.path, r.country, r.referrer].join(" ").toLowerCase();
@@ -570,7 +605,7 @@
     }).join("");
   }
 
-  document.getElementById("visitSearchInput").addEventListener("input", debounce(renderVisits));
+  bindSearch("visitSearchInput", debounce(renderVisits));
 
   function renderAccessStats(rows){
     var s = accessStats;
@@ -596,7 +631,7 @@
   function renderAccess(){
     renderAccessStats(allAccess);
 
-    var search = document.getElementById("accessSearchInput").value.trim().toLowerCase();
+    var search = searchTerm.accessSearchInput.trim().toLowerCase();
     var rows = allAccess.filter(function(r){
       if (!search) return true;
       return (r.email || "").toLowerCase().indexOf(search) !== -1;
@@ -627,7 +662,7 @@
     }).join("");
   }
 
-  document.getElementById("accessSearchInput").addEventListener("input", debounce(renderAccess));
+  bindSearch("accessSearchInput", debounce(renderAccess));
 
   // Tabs are table-driven rather than toggled against each other, so adding
   // one doesn't mean touching every other tab's handler. Each entry names its
