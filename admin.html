@@ -83,7 +83,7 @@
   .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;}
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:40px 0;}
 
-  .tabs{display:flex;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--border);}
+  .tabs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--border);}
   .tab-btn{
     padding:10px 18px;border:none;background:none;cursor:pointer;
     font-family:inherit;font-size:.94rem;font-weight:700;color:var(--text-eyebrow);
@@ -92,6 +92,17 @@
   .tab-btn.active{color:var(--violet-1);border-bottom-color:var(--violet-2);}
   .tab-panel{display:none;}
   .tab-panel.active{display:block;}
+  .tabs-actions{margin-left:auto;display:flex;gap:8px;align-items:center;padding-bottom:8px;}
+  .ghost-btn{
+    padding:7px 14px;border-radius:999px;border:1px solid var(--border);
+    background:#fff;color:var(--violet-1);cursor:pointer;
+    font-family:inherit;font-size:.86rem;font-weight:700;
+  }
+  .ghost-btn:disabled{opacity:.55;cursor:default;}
+  .tag-off{
+    display:inline-block;margin-left:6px;padding:2px 7px;border-radius:999px;
+    background:#f1e7f6;color:var(--text-eyebrow);font-size:.72rem;font-weight:700;
+  }
 </style>
 </head>
 <body>
@@ -129,6 +140,10 @@
       <button type="button" class="tab-btn active" id="tabBtnListings">Listings</button>
       <button type="button" class="tab-btn" id="tabBtnVisits">Visits</button>
       <button type="button" class="tab-btn" id="tabBtnAccess">Paid access</button>
+      <div class="tabs-actions">
+        <button type="button" class="ghost-btn" id="refreshBtn">Refresh</button>
+        <button type="button" class="ghost-btn" id="logoutBtn">Log out</button>
+      </div>
     </div>
 
     <div class="tab-panel active" id="panelListings">
@@ -250,53 +265,64 @@
 (function(){
   var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  // Optional: the SDK is only ever used to read an existing account session.
+  // When the CDN is blocked or down, `window.supabase` is undefined -- this
+  // used to throw here and take the whole page down with it, including the
+  // password prompt, which needs no SDK at all.
+  var sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
   var FUNCTION_URL = SUPABASE_URL + "/functions/v1/admin-listings";
   var SESSION_KEY = "rotabo_admin_pw";
+  // What is in SESSION_KEY: "password" (the shared secret typed into the
+  // prompt) or "session" (an admin account's Supabase token). Without it,
+  // credential() preferred *any* signed-in session over a working password,
+  // so an admin who was also signed into account.html with a second,
+  // non-admin account had every tab 401 -- and the stored password was
+  // overwritten with that account's token, so a reload dropped them back
+  // to the login card.
+  var MODE_KEY = "rotabo_admin_mode";
   // Guarded: with site data blocked, sessionStorage throws -- inside a
   // .then that used to swallow a *correct* login (dashboard never shown).
   function getStored(){ try { return sessionStorage.getItem(SESSION_KEY); } catch (e) { return null; } }
-  function setStored(v){ try { sessionStorage.setItem(SESSION_KEY, v); } catch (e) {} }
-  function clearStored(){ try { sessionStorage.removeItem(SESSION_KEY); } catch (e) {} }
+  function getStoredMode(){ try { return sessionStorage.getItem(MODE_KEY); } catch (e) { return null; } }
+  function setStored(v, mode){
+    try { sessionStorage.setItem(SESSION_KEY, v); sessionStorage.setItem(MODE_KEY, mode); } catch (e) {}
+  }
+  function clearStored(){
+    try { sessionStorage.removeItem(SESSION_KEY); sessionStorage.removeItem(MODE_KEY); } catch (e) {}
+  }
+
   var allRows = [];
   var allVisits = [];
   var visitStats = null;
-  var visitsLoaded = false;
   var allAccess = [];
   var accessStats = null;
-  var accessLoaded = false;
 
   var loginView = document.getElementById("loginView");
   var dashboardView = document.getElementById("dashboardView");
   var passwordInput = document.getElementById("passwordInput");
   var loginBtn = document.getElementById("loginBtn");
   var loginError = document.getElementById("loginError");
+  var refreshBtn = document.getElementById("refreshBtn");
+  var logoutBtn = document.getElementById("logoutBtn");
 
-  function fetchListings(password){
-    return fetch(FUNCTION_URL, {
-      headers: { "Authorization": "Bearer " + password },
-      cache: "no-store"
-    }).then(function(res){
-      // Only a real 200 counts: a 500 with an {error} body used to come
-      // back as ok with zero rows -- a wrong password got stored and the
-      // dashboard showed "0 TOTAL SUBMISSIONS".
-      if (!res.ok) return { ok: false, status: res.status };
-      return res.json().then(function(json){ return { ok: true, data: json.data || [] }; });
-    });
+  function browserTz(){
+    try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) { return "UTC"; }
   }
 
-  function fetchVisits(password){
+  // One request shape for all three tabs.
+  // Only a real 200 counts: a 500 with an {error} body used to come back as
+  // ok with zero rows -- a wrong password got stored and the dashboard
+  // showed "0 TOTAL SUBMISSIONS".
+  function apiGet(resource, token){
+    var qs = "";
     // Send the browser's timezone so the server counts "today" against the
     // same day boundary this dashboard displays.
-    var tz = "UTC";
-    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) {}
-    return fetch(FUNCTION_URL + "?resource=visits&tz=" + encodeURIComponent(tz), {
-      headers: { "Authorization": "Bearer " + password },
+    if (resource === "visits") qs = "?resource=visits&tz=" + encodeURIComponent(browserTz());
+    else if (resource === "access") qs = "?resource=access";
+    return fetch(FUNCTION_URL + qs, {
+      headers: { "Authorization": "Bearer " + token },
       cache: "no-store"
     }).then(function(res){
-      // Only a real 200 counts: a 500 with an {error} body used to come
-      // back as ok with zero rows -- a wrong password got stored and the
-      // dashboard showed "0 TOTAL SUBMISSIONS".
       if (!res.ok) return { ok: false, status: res.status };
       return res.json().then(function(json){
         return { ok: true, data: json.data || [], stats: json.stats || null };
@@ -304,26 +330,18 @@
     });
   }
 
-  function fetchAccess(password){
-    return fetch(FUNCTION_URL + "?resource=access", {
-      headers: { "Authorization": "Bearer " + password },
-      cache: "no-store"
-    }).then(function(res){
-      // Only a real 200 counts: a 500 with an {error} body used to come
-      // back as ok with zero rows -- a wrong password got stored and the
-      // dashboard showed "0 TOTAL SUBMISSIONS".
-      if (!res.ok) return { ok: false, status: res.status };
-      return res.json().then(function(json){
-        return { ok: true, data: json.data || [], stats: json.stats || null };
-      });
-    });
+  function getSession(){
+    if (!sb) return Promise.resolve(null);
+    return sb.auth.getSession().then(function(r){
+      return (r && r.data && r.data.session) || null;
+    }).catch(function(){ return null; });
   }
 
   function tryLogin(password){
     loginError.classList.remove("show");
     loginBtn.disabled = true;
     loginBtn.textContent = "Checking…";
-    fetchListings(password).then(function(res){
+    apiGet("listings", password).then(function(res){
       loginBtn.disabled = false;
       loginBtn.textContent = "Enter";
       if (!res.ok) {
@@ -333,9 +351,8 @@
         loginError.classList.add("show");
         return;
       }
-      setStored(password);
-      allRows = res.data;
-      showDashboard();
+      setStored(password, "password");
+      enter(res.data);
     }).catch(function(){
       loginBtn.disabled = false;
       loginBtn.textContent = "Enter";
@@ -351,33 +368,54 @@
     if (e.key === "Enter" && passwordInput.value && !loginBtn.disabled) tryLogin(passwordInput.value);
   });
 
-  function showDashboard(){
+  function enter(rows){
+    allRows = rows;
+    TABS[0].loaded = true;
     loginView.style.display = "none";
     dashboardView.style.display = "block";
+    selectTab(TABS[0]);
     render();
+  }
+
+  var ESCAPES = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+  // A plain replace rather than a throwaway <div> per cell: the visits table
+  // escapes some 6000 cells, and it rebuilds on every keystroke in its search box.
+  function esc(s){
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, function(c){ return ESCAPES[c]; });
+  }
+
+  // Typing in a search box rebuilds a whole table; at a thousand rows that is
+  // far too much work to redo on every keypress.
+  function debounce(fn){
+    var timer = null;
+    return function(){
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(function(){ timer = null; fn(); }, 150);
+    };
+  }
+
+  function tile(n, label){
+    return '<div class="stat-tile"><div class="n">' + n + '</div><div class="l">' + label + '</div></div>';
   }
 
   function isPaid(row){
     return !!row.stripe_session_id;
   }
+  // Paid once is not the same as on the site today: a paid listing whose
+  // window has closed used to be indistinguishable from a live one.
+  function isLive(row){
+    return isPaid(row) && !!row.visible_until && new Date(row.visible_until).getTime() > Date.now();
+  }
 
   function renderStats(rows){
     var total = rows.length;
     var paid = rows.filter(isPaid).length;
-    var byCategory = {};
-    rows.forEach(function(r){ byCategory[r.category] = (byCategory[r.category] || 0) + 1; });
-    var html = ""
-      + '<div class="stat-tile"><div class="n">' + total + '</div><div class="l">TOTAL SUBMISSIONS</div></div>'
-      + '<div class="stat-tile"><div class="n">' + paid + '</div><div class="l">PAID</div></div>'
-      + '<div class="stat-tile"><div class="n">' + (total - paid) + '</div><div class="l">UNPAID</div></div>';
-    document.getElementById("stats").innerHTML = html;
-  }
-
-  function esc(s){
-    if (s == null) return "";
-    var d = document.createElement("div");
-    d.textContent = String(s);
-    return d.innerHTML;
+    document.getElementById("stats").innerHTML = ""
+      + tile(total, "TOTAL SUBMISSIONS")
+      + tile(paid, "PAID")
+      + tile(rows.filter(isLive).length, "LIVE NOW")
+      + tile(total - paid, "UNPAID");
   }
 
   function render(){
@@ -409,12 +447,20 @@
     }
     emptyNote.style.display = "none";
 
+    var now = Date.now();
     tbody.innerHTML = rows.map(function(r){
       var statusBadge = isPaid(r)
         ? '<span class="badge paid">Paid</span>'
         : '<span class="badge unpaid">Unpaid</span>';
       var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
-      var visibleUntil = r.visible_until ? new Date(r.visible_until).toLocaleString() : "—";
+      // Already HTML -- the expired marker is appended after escaping, so
+      // this one must not be escaped again in the row below.
+      var visibleUntil = "&mdash;";
+      if (r.visible_until) {
+        var until = new Date(r.visible_until);
+        visibleUntil = esc(until.toLocaleString())
+          + (until.getTime() <= now ? ' <span class="tag-off">expired</span>' : "");
+      }
       return "<tr>"
         + "<td>" + esc(created) + "</td>"
         + "<td>" + esc(r.category) + "</td>"
@@ -427,7 +473,7 @@
         + "<td>" + esc(r.country) + "</td>"
         + "<td>" + esc(r.address) + "</td>"
         + "<td>" + esc(r.note) + "</td>"
-        + "<td>" + esc(visibleUntil) + "</td>"
+        + "<td>" + visibleUntil + "</td>"
         + "</tr>";
     }).join("");
   }
@@ -435,7 +481,7 @@
   ["categoryFilter", "roleFilter", "paidFilter"].forEach(function(id){
     document.getElementById(id).addEventListener("change", render);
   });
-  document.getElementById("searchInput").addEventListener("input", render);
+  document.getElementById("searchInput").addEventListener("input", debounce(render));
 
   function renderVisitsStats(rows){
     // These counters must come from the server: `rows` is only the recent
@@ -458,11 +504,10 @@
         return r.created_at && new Date(r.created_at).toDateString() === todayStr;
       }).length;
     }
-    var html = ""
-      + '<div class="stat-tile"><div class="n">' + total + '</div><div class="l">TOTAL VISITS</div></div>'
-      + '<div class="stat-tile"><div class="n">' + uniqueSessions + '</div><div class="l">UNIQUE VISITORS</div></div>'
-      + '<div class="stat-tile"><div class="n">' + today + '</div><div class="l">TODAY</div></div>';
-    document.getElementById("visitStats").innerHTML = html;
+    document.getElementById("visitStats").innerHTML = ""
+      + tile(total, "TOTAL VISITS")
+      + tile(uniqueSessions, "UNIQUE VISITORS")
+      + tile(today, "TODAY");
   }
 
   // "CH" -> "🇨🇭". Empty for anything that isn't a plain ISO-3166
@@ -498,30 +543,45 @@
       var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
       var cc = (r.country || "").toUpperCase();
       var flag = flagFromCode(cc);
+      var session = (r.session_id || "").slice(0, 8);
+      // A missing value reads as a dash here like everywhere else, instead
+      // of a blank cell that looks like a rendering bug.
       return "<tr>"
-        + "<td>" + esc(created) + "</td>"
-        + "<td>" + esc(r.path) + "</td>"
-        + "<td>" + (cc ? (flag ? flag + " " : "") + esc(cc) : "—") + "</td>"
-        + "<td>" + esc(r.referrer || "—") + "</td>"
-        + "<td>" + esc(r.language) + "</td>"
-        + "<td>" + esc((r.session_id || "").slice(0, 8)) + "</td>"
+        + "<td>" + (created ? esc(created) : "&mdash;") + "</td>"
+        + "<td>" + (r.path ? esc(r.path) : "&mdash;") + "</td>"
+        + "<td>" + (cc ? (flag ? flag + " " : "") + esc(cc) : "&mdash;") + "</td>"
+        + "<td>" + (r.referrer ? esc(r.referrer) : "&mdash;") + "</td>"
+        + "<td>" + (r.language ? esc(r.language) : "&mdash;") + "</td>"
+        + "<td>" + (session ? esc(session) : "&mdash;") + "</td>"
         + "</tr>";
     }).join("");
   }
 
-  document.getElementById("visitSearchInput").addEventListener("input", renderVisits);
+  document.getElementById("visitSearchInput").addEventListener("input", debounce(renderVisits));
 
-  function renderAccessStats(){
-    var s = accessStats || { total: 0, active: 0, expired: 0, granted_30d: 0 };
+  function renderAccessStats(rows){
+    var s = accessStats;
+    if (!s) {
+      // Fallback for a server without the stats payload: derived from the
+      // rows on screen, rather than four zeros over a table full of buyers.
+      var now = Date.now();
+      var cutoff = now - 30 * 24 * 60 * 60 * 1000;
+      var active = 0, recent = 0;
+      rows.forEach(function(r){
+        if (r.access_until && new Date(r.access_until).getTime() > now) active++;
+        if (r.updated_at && new Date(r.updated_at).getTime() > cutoff) recent++;
+      });
+      s = { total: rows.length, active: active, expired: rows.length - active, granted_30d: recent };
+    }
     document.getElementById("accessStats").innerHTML = ""
-      + '<div class="stat-tile"><div class="n">' + s.active + '</div><div class="l">ACTIVE NOW</div></div>'
-      + '<div class="stat-tile"><div class="n">' + s.granted_30d + '</div><div class="l">PAID LAST 30 DAYS</div></div>'
-      + '<div class="stat-tile"><div class="n">' + s.total + '</div><div class="l">TOTAL BUYERS</div></div>'
-      + '<div class="stat-tile"><div class="n">' + s.expired + '</div><div class="l">EXPIRED</div></div>';
+      + tile(s.active, "ACTIVE NOW")
+      + tile(s.granted_30d, "PAID LAST 30 DAYS")
+      + tile(s.total, "TOTAL BUYERS")
+      + tile(s.expired, "EXPIRED");
   }
 
   function renderAccess(){
-    renderAccessStats();
+    renderAccessStats(allAccess);
 
     var search = document.getElementById("accessSearchInput").value.trim().toLowerCase();
     var rows = allAccess.filter(function(r){
@@ -548,134 +608,168 @@
       return "<tr>"
         + "<td>" + esc(r.email) + "</td>"
         + "<td>" + badge + "</td>"
-        + "<td>" + esc(until ? until.toLocaleString() : "—") + "</td>"
-        + "<td>" + esc(r.updated_at ? new Date(r.updated_at).toLocaleString() : "—") + "</td>"
+        + "<td>" + (until ? esc(until.toLocaleString()) : "&mdash;") + "</td>"
+        + "<td>" + (r.updated_at ? esc(new Date(r.updated_at).toLocaleString()) : "&mdash;") + "</td>"
         + "</tr>";
     }).join("");
   }
 
-  document.getElementById("accessSearchInput").addEventListener("input", renderAccess);
+  document.getElementById("accessSearchInput").addEventListener("input", debounce(renderAccess));
 
-  // Tabs are table-driven rather than toggled against each other, so
-  // adding one doesn't mean touching every other tab's handler. Each
-  // entry names its button, its panel, and an optional loader that runs
-  // the first time the tab is opened.
+  // Tabs are table-driven rather than toggled against each other, so adding
+  // one doesn't mean touching every other tab's handler. Each entry names its
+  // button, its panel, the resource it reads and where the rows land -- one
+  // loader below serves all three.
   var TABS = [
-    { btn: "tabBtnListings", panel: "panelListings" },
-    { btn: "tabBtnVisits",   panel: "panelVisits",  load: loadVisits },
-    { btn: "tabBtnAccess",   panel: "panelAccess",  load: loadAccess }
+    {
+      btn: "tabBtnListings", panel: "panelListings", resource: "listings",
+      note: "emptyNote", empty: "No listings match this filter.",
+      apply: function(res){ allRows = res.data; render(); }
+    },
+    {
+      btn: "tabBtnVisits", panel: "panelVisits", resource: "visits",
+      note: "visitsEmptyNote", empty: "No visits match this filter.",
+      apply: function(res){ allVisits = res.data; visitStats = res.stats; renderVisits(); }
+    },
+    {
+      btn: "tabBtnAccess", panel: "panelAccess", resource: "access",
+      note: "accessEmptyNote", empty: "No paid access matches this filter.",
+      apply: function(res){ allAccess = res.data; accessStats = res.stats; renderAccess(); }
+    }
   ];
+  var activeTab = TABS[0];
 
-  function showTab(active){
-    TABS.forEach(function(tab){
-      var on = tab === active;
-      document.getElementById(tab.btn).classList.toggle("active", on);
-      document.getElementById(tab.panel).classList.toggle("active", on);
+  function selectTab(tab){
+    activeTab = tab;
+    TABS.forEach(function(t){
+      var on = t === tab;
+      document.getElementById(t.btn).classList.toggle("active", on);
+      document.getElementById(t.panel).classList.toggle("active", on);
     });
-    if (active.load) active.load();
   }
 
   TABS.forEach(function(tab){
-    document.getElementById(tab.btn).addEventListener("click", function(){ showTab(tab); });
+    document.getElementById(tab.btn).addEventListener("click", function(){
+      selectTab(tab);
+      loadTab(tab);
+    });
   });
 
-  // The credential for a request: when the admin came in through their
-  // account session, ask the client for a *fresh* token (it auto-refreshes
-  // the ~1h JWT) instead of the one stored at login -- otherwise the first
-  // Visits/Access click an hour later silently 401'd into a blank tab.
+  // The credential for a request: for an account login, ask the client for a
+  // *fresh* token (it auto-refreshes the ~1h JWT) instead of the one stored
+  // at login -- otherwise the first Visits/Access click an hour later
+  // silently 401'd into a blank tab. A password login keeps the password:
+  // an unrelated account session in this browser is not what let us in.
   function credential(){
-    return sb.auth.getSession().then(function(r){
-      var s = r && r.data && r.data.session;
-      if (s && s.access_token) { setStored(s.access_token); return s.access_token; }
+    if (getStoredMode() !== "session") return Promise.resolve(getStored());
+    return getSession().then(function(s){
+      if (s && s.access_token) { setStored(s.access_token, "session"); return s.access_token; }
       return getStored();
-    }).catch(function(){ return getStored(); });
+    });
   }
 
   // A tab whose request failed says so and offers a retry, instead of an
   // empty table with the "no rows match" note hidden.
-  function showTabError(noteId, retry){
-    var note = document.getElementById(noteId);
+  function showTabError(tab){
+    var note = document.getElementById(tab.note);
     note.textContent = "Couldn't load this list. ";
     var btn = document.createElement("button");
     btn.type = "button";
     btn.className = "tab-btn";
     btn.textContent = "Try again";
-    btn.addEventListener("click", retry);
+    btn.addEventListener("click", function(){ loadTab(tab); });
     note.appendChild(btn);
     note.style.display = "block";
   }
 
-  var visitsLoading = false;
-  function loadVisits(){
-    if (visitsLoaded || visitsLoading) return;
-    visitsLoading = true;
-    credential().then(function(password){
-      if (!password) throw new Error("no credential");
-      return fetchVisits(password);
+  function setBusy(on){
+    refreshBtn.disabled = on;
+    refreshBtn.textContent = on ? "Loading…" : "Refresh";
+  }
+
+  function loadTab(tab){
+    if (tab.loaded || tab.loading) return;
+    tab.loading = true;
+    setBusy(true);
+    credential().then(function(token){
+      if (!token) throw new Error("no credential");
+      return apiGet(tab.resource, token);
     }).then(function(res){
-      visitsLoading = false;
-      if (!res.ok) { showTabError("visitsEmptyNote", loadVisits); return; }
-      allVisits = res.data;
-      visitStats = res.stats;
-      visitsLoaded = true;
-      document.getElementById("visitsEmptyNote").textContent = "No visits match this filter.";
-      renderVisits();
+      tab.loading = false;
+      setBusy(false);
+      if (!res.ok) { showTabError(tab); return; }
+      tab.loaded = true;
+      document.getElementById(tab.note).textContent = tab.empty;
+      tab.apply(res);
     }).catch(function(){
-      visitsLoading = false;
-      showTabError("visitsEmptyNote", loadVisits);
+      tab.loading = false;
+      setBusy(false);
+      showTabError(tab);
     });
   }
 
-  var accessLoading = false;
-  function loadAccess(){
-    if (accessLoaded || accessLoading) return;
-    accessLoading = true;
-    credential().then(function(password){
-      if (!password) throw new Error("no credential");
-      return fetchAccess(password);
-    }).then(function(res){
-      accessLoading = false;
-      if (!res.ok) { showTabError("accessEmptyNote", loadAccess); return; }
-      allAccess = res.data;
-      accessStats = res.stats;
-      accessLoaded = true;
-      document.getElementById("accessEmptyNote").textContent = "No paid access matches this filter.";
-      renderAccess();
-    }).catch(function(){
-      accessLoading = false;
-      showTabError("accessEmptyNote", loadAccess);
-    });
-  }
+  // Without this the dashboard stayed frozen on whatever was true at login:
+  // the only way to see a new listing was a full reload, which on a password
+  // login means typing the password again.
+  refreshBtn.addEventListener("click", function(){
+    activeTab.loaded = false;
+    loadTab(activeTab);
+  });
 
-  function tryStoredPassword(){
-    var storedPassword = getStored();
-    if (!storedPassword) return;
-    fetchListings(storedPassword).then(function(res){
-      if (res.ok) {
-        allRows = res.data;
-        showDashboard();
-      } else {
-        clearStored();
-      }
+  // Clears the stored credential and takes every row off the screen. This
+  // page lists each customer's phone and email and there was no way to put
+  // it away short of closing the tab.
+  logoutBtn.addEventListener("click", function(){
+    clearStored();
+    allRows = []; allVisits = []; allAccess = [];
+    visitStats = null; accessStats = null;
+    TABS.forEach(function(tab){
+      tab.loaded = false;
+      tab.loading = false;
+      document.getElementById(tab.note).style.display = "none";
     });
-  }
+    ["tableBody", "visitsTableBody", "accessTableBody"].forEach(function(id){
+      document.getElementById(id).innerHTML = "";
+    });
+    ["searchInput", "visitSearchInput", "accessSearchInput"].forEach(function(id){
+      document.getElementById(id).value = "";
+    });
+    selectTab(TABS[0]);
+    dashboardView.style.display = "none";
+    loginView.style.display = "block";
+    passwordInput.value = "";
+    loginError.classList.remove("show");
+    passwordInput.focus();
+  });
 
-  // If the visitor is already logged into account.html with an email
-  // listed as an admin, skip the password prompt entirely and use their
-  // session token instead -- one login for everything. Falls back to
-  // the shared password if there's no session or it isn't an admin one.
-  sb.auth.getSession().then(function(sessionRes){
-    var session = sessionRes.data && sessionRes.data.session;
-    if (!session) { tryStoredPassword(); return; }
-    fetchListings(session.access_token).then(function(res){
-      if (res.ok) {
-        allRows = res.data;
-        setStored(session.access_token);
-        showDashboard();
-      } else {
-        tryStoredPassword();
-      }
+  // If the visitor is already logged into account.html with an email listed
+  // as an admin, skip the password prompt entirely and use their session
+  // token instead -- one login for everything. Falls back to the shared
+  // password if there's no session or it isn't an admin one.
+  getSession().then(function(session){
+    if (!session || !session.access_token) return false;
+    return apiGet("listings", session.access_token).then(function(res){
+      if (!res.ok) return false;
+      setStored(session.access_token, "session");
+      enter(res.data);
+      return true;
     });
+  }).then(function(done){
+    if (done) return;
+    var stored = getStored();
+    // A stored *session* token with no session behind it is a stale JWT:
+    // nothing worth retrying, so just ask for the password.
+    if (!stored || getStoredMode() === "session") { clearStored(); return; }
+    return apiGet("listings", stored).then(function(res){
+      if (res.ok) enter(res.data);
+      else clearStored();
+    });
+  }).catch(function(){
+    // Offline, or the function is down. Say so: this path used to reject
+    // unhandled, leaving a password prompt that looked like it simply
+    // wanted the password typed again.
+    loginError.textContent = "Couldn't reach the server. Check your connection and try again.";
+    loginError.classList.add("show");
   });
 })();
 </script>
