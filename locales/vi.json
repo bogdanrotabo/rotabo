@@ -194,6 +194,16 @@
       "offering_title": "Mời đổi nhà hoặc đến ở nhà bạn",
       "offering_lead": "Đăng nhà của bạn để những người muốn đổi hoặc ghé thăm tìm thấy bạn."
     },
+    "pets": {
+      "name": "Thú cưng",
+      "desc": "Bạn làm mất hay nhặt được mèo, chó hoặc thú cưng khác? Đăng ở đây — ai đó gần bạn có thể đã nhìn thấy.",
+      "lost_btn": "Tôi làm mất thú cưng",
+      "found_btn": "Tôi nhặt được thú cưng",
+      "seeking_title": "Bạn làm mất thú cưng?",
+      "seeking_lead": "Hãy kể chuyện gì đã xảy ra và ở đâu, để mọi người quanh đó để ý giúp.",
+      "offering_title": "Bạn nhặt được thú cưng?",
+      "offering_lead": "Viết bạn nhặt được gì và ở đâu, để chủ nuôi liên hệ với bạn."
+    },
     "other": {
       "name": "Việc khác",
       "desc": "Không thuộc mục nào? Kể cho Rotabo nghe chuyện gì đã xảy ra — có thể ai đó gần bạn giúp được.",

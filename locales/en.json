@@ -199,6 +199,16 @@
       "offering_title": "Offer your place for a swap or stay",
       "offering_lead": "List your home so others looking to swap or visit can find you."
     },
+    "pets": {
+      "name": "Pets",
+      "desc": "Lost or found a cat, a dog, or any pet? Post it here — someone nearby may have seen it.",
+      "lost_btn": "I lost a pet",
+      "found_btn": "I found a pet",
+      "seeking_title": "Lost a pet?",
+      "seeking_lead": "Tell us what happened and where, so people nearby can watch out.",
+      "offering_title": "Found a pet?",
+      "offering_lead": "Post what you found and where, so the owner can reach you."
+    },
     "other": {
       "name": "Something Else",
       "desc": "Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.",

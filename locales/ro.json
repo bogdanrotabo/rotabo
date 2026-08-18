@@ -201,6 +201,16 @@
       "offering_title": "Oferă-ți casa pentru schimb sau găzduire",
       "offering_lead": "Listează-ți casa ca alții care vor schimb sau vizită să te găsească."
     },
+    "pets": {
+      "name": "Animale de companie",
+      "desc": "Ai pierdut sau ai găsit o pisică, un câine sau alt animal? Scrie aici — cineva din apropiere poate l-a văzut.",
+      "lost_btn": "Am pierdut un animal",
+      "found_btn": "Am găsit un animal",
+      "seeking_title": "Ai pierdut un animal?",
+      "seeking_lead": "Spune-ne ce s-a întâmplat și unde, ca oamenii din zonă să fie atenți.",
+      "offering_title": "Ai găsit un animal?",
+      "offering_lead": "Scrie ce ai găsit și unde, ca stăpânul să te poată contacta."
+    },
     "other": {
       "name": "Altceva",
       "desc": "Nu se încadrează în nicio categorie? Spune-i lui Rotabo ce s-a întâmplat — cineva din apropiere te-ar putea ajuta.",

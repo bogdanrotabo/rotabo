@@ -194,6 +194,16 @@
       "offering_title": "Ajánld fel az otthonod cserére vagy vendéglátásra",
       "offering_lead": "Hirdesd meg az otthonod, hogy megtaláljanak, akik cserélnének vagy meglátogatnának."
     },
+    "pets": {
+      "name": "Házi kedvencek",
+      "desc": "Elveszett vagy megtaláltál egy macskát, kutyát vagy más kedvencet? Írd meg itt — valaki a közelben talán látta.",
+      "lost_btn": "Elveszett a kedvencem",
+      "found_btn": "Találtam egy állatot",
+      "seeking_title": "Elveszett a kedvenced?",
+      "seeking_lead": "Írd le, mi történt és hol, hogy a környékbeliek figyeljenek.",
+      "offering_title": "Találtál egy állatot?",
+      "offering_lead": "Írd meg, mit találtál és hol, hogy a gazdája elérhessen."
+    },
     "other": {
       "name": "Valami más",
       "desc": "Sehová sem illik? Mondd el a Rotabónak, mi történt — lehet, hogy valaki a közelben tud segíteni.",

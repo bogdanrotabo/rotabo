@@ -201,6 +201,16 @@
       "offering_title": "Tarjoa kotiasi vaihtoon tai majoitukseen",
       "offering_lead": "Ilmoita kotisi, jotta vaihtoa tai vierailua etsivät löytävät sinut."
     },
+    "pets": {
+      "name": "Lemmikit",
+      "desc": "Katosiko tai löytyikö kissa, koira tai muu lemmikki? Kirjoita tähän — joku lähistöllä on ehkä nähnyt sen.",
+      "lost_btn": "Lemmikkini katosi",
+      "found_btn": "Löysin lemmikin",
+      "seeking_title": "Katosiko lemmikki?",
+      "seeking_lead": "Kerro mitä tapahtui ja missä, niin lähistön ihmiset osaavat pitää silmällä.",
+      "offering_title": "Löysitkö lemmikin?",
+      "offering_lead": "Kirjoita kenet löysit ja mistä, niin omistaja voi ottaa yhteyttä."
+    },
     "other": {
       "name": "Jotain muuta",
       "desc": "Ei sovi mihinkään muuhun? Kerro Rotabolle, mitä tapahtui — joku lähellä saattaa pystyä auttamaan.",

@@ -194,6 +194,16 @@
       "offering_title": "Zaproponuj swoje miejsce na zamianę lub pobyt",
       "offering_lead": "Dodaj swój dom, żeby znaleźli cię chętni do zamiany lub odwiedzin."
     },
+    "pets": {
+      "name": "Zwierzęta domowe",
+      "desc": "Zgubiłeś albo znalazłeś kota, psa lub inne zwierzę? Napisz tutaj — ktoś w okolicy mógł je widzieć.",
+      "lost_btn": "Zgubiłem zwierzaka",
+      "found_btn": "Znalazłem zwierzaka",
+      "seeking_title": "Zgubił się zwierzak?",
+      "seeking_lead": "Napisz, co się stało i gdzie, żeby ludzie w okolicy uważali.",
+      "offering_title": "Znalazłeś zwierzaka?",
+      "offering_lead": "Napisz, kogo i gdzie znalazłeś, żeby właściciel mógł się z tobą skontaktować."
+    },
     "other": {
       "name": "Coś innego",
       "desc": "Nie pasuje nigdzie indziej? Powiedz Rotabo, co się stało — ktoś w pobliżu może pomóc.",

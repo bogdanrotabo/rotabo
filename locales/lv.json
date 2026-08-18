@@ -194,6 +194,16 @@
       "offering_title": "Piedāvā savu mājvietu maiņai vai uzturēšanās reizei",
       "offering_lead": "Pievieno savu mājvietu, lai tie, kas vēlas mainīties vai atbraukt ciemos, tevi atrastu."
     },
+    "pets": {
+      "name": "Mājdzīvnieki",
+      "desc": "Pazaudēji vai atradi kaķi, suni vai citu mājdzīvnieku? Ieraksti šeit — kāds tuvumā, iespējams, to redzēja.",
+      "lost_btn": "Pazaudēju mājdzīvnieku",
+      "found_btn": "Atradu mājdzīvnieku",
+      "seeking_title": "Pazaudēji mājdzīvnieku?",
+      "seeking_lead": "Pastāsti, kas notika un kur, lai tuvumā esošie pievērš uzmanību.",
+      "offering_title": "Atradi mājdzīvnieku?",
+      "offering_lead": "Uzraksti, ko un kur atradi, lai saimnieks var ar tevi sazināties."
+    },
     "other": {
       "name": "Kaut kas cits",
       "desc": "Neiederas nekur citur? Pastāsti Rotabo, kas notika — varbūt kāds tuvumā var palīdzēt.",

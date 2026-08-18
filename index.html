@@ -713,6 +713,7 @@
       <button type="button" class="cat-chip" data-cat="cat-care"><span class="chip-emoji" aria-hidden="true">👵</span><span data-i18n="categories.care.name">Borrowed Grandparents</span></button>
       <button type="button" class="cat-chip" data-cat="cat-learn"><span class="chip-emoji" aria-hidden="true">🧑‍🏫</span><span data-i18n="categories.learn.name">Teachers</span></button>
       <button type="button" class="cat-chip" data-cat="cat-stay"><span class="chip-emoji" aria-hidden="true">🏖️</span><span data-i18n="categories.stay.name">Vacation Stays</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-pets"><span class="chip-emoji" aria-hidden="true">🐾</span><span data-i18n="categories.pets.name">Pets</span></button>
       <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji" aria-hidden="true">🆘</span><span data-i18n="categories.other.name">Something Else</span></button>
     </div>
   </nav>
@@ -840,6 +841,21 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('stay','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('stay','offering')">I offer this</button>
+      </div>
+    </div>
+    <!-- Pets is the one category whose two sides aren't "need" and "offer",
+         so it overrides the shared button labels: losing a pet is a seeking
+         listing (the owner is searching) and finding one is an offering
+         listing (the finder has it). That keeps browse.html's existing
+         pairing right -- a lost-pet post is shown to people who found one,
+         and the other way round -- with no new column and no new role. -->
+    <div class="category-card" id="cat-pets">
+      <div class="cat-icon">🐾</div>
+      <h3 data-i18n="categories.pets.name">Pets</h3>
+      <p data-i18n="categories.pets.desc">Lost or found a cat, a dog, or any pet? Post it here — someone nearby may have seen it.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.pets.lost_btn" onclick="openGenericModal('pets','seeking')">I lost a pet</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.pets.found_btn" onclick="openGenericModal('pets','offering')">I found a pet</button>
       </div>
     </div>
     <div class="category-card" id="cat-other">

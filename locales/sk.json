@@ -194,6 +194,16 @@
       "offering_title": "Ponúkni svoje bývanie na výmenu alebo pobyt",
       "offering_lead": "Pridaj svoje bývanie, nech ťa nájdu tí, čo chcú meniť alebo prísť na návštevu."
     },
+    "pets": {
+      "name": "Domáce zvieratá",
+      "desc": "Stratili alebo našli ste mačku, psa či iné zviera? Napíšte to sem — niekto nablízku ho mohol vidieť.",
+      "lost_btn": "Stratil som zviera",
+      "found_btn": "Našiel som zviera",
+      "seeking_title": "Stratilo sa vám zviera?",
+      "seeking_lead": "Napíšte, čo sa stalo a kde, nech sú ľudia v okolí pozorní.",
+      "offering_title": "Našli ste zviera?",
+      "offering_lead": "Napíšte, koho a kde ste našli, nech sa vám majiteľ ozve."
+    },
     "other": {
       "name": "Niečo iné",
       "desc": "Nezapadá to nikam inam? Povedz Rotabu, čo sa stalo — niekto nablízku možno pomôže.",

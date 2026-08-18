@@ -201,6 +201,16 @@
       "offering_title": "Proposez votre logement pour un échange ou un séjour",
       "offering_lead": "Inscris ton logement pour que ceux qui veulent échanger ou venir te trouvent."
     },
+    "pets": {
+      "name": "Animaux de compagnie",
+      "desc": "Vous avez perdu ou trouvé un chat, un chien ou un autre animal ? Publiez-le ici — quelqu'un à proximité l'a peut-être vu.",
+      "lost_btn": "J'ai perdu un animal",
+      "found_btn": "J'ai trouvé un animal",
+      "seeking_title": "Vous avez perdu un animal ?",
+      "seeking_lead": "Dites-nous ce qui s'est passé et où, pour que les gens du quartier ouvrent l'œil.",
+      "offering_title": "Vous avez trouvé un animal ?",
+      "offering_lead": "Indiquez ce que vous avez trouvé et où, pour que le propriétaire puisse vous joindre."
+    },
     "other": {
       "name": "Autre chose",
       "desc": "Ça n'entre dans aucune catégorie ? Raconte à Rotabo ce qui s'est passé — quelqu'un près de toi peut peut-être aider.",

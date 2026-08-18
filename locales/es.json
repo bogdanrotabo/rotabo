@@ -201,6 +201,16 @@
       "offering_title": "Ofrece tu casa para un intercambio o una estancia",
       "offering_lead": "Publica tu casa para que te encuentren quienes quieren intercambiar o visitarte."
     },
+    "pets": {
+      "name": "Mascotas",
+      "desc": "¿Perdiste o encontraste un gato, un perro u otra mascota? Publícalo aquí — alguien cerca puede haberlo visto.",
+      "lost_btn": "Perdí una mascota",
+      "found_btn": "Encontré una mascota",
+      "seeking_title": "¿Perdiste una mascota?",
+      "seeking_lead": "Cuéntanos qué pasó y dónde, para que la gente de la zona esté atenta.",
+      "offering_title": "¿Encontraste una mascota?",
+      "offering_lead": "Publica qué encontraste y dónde, para que el dueño pueda contactarte."
+    },
     "other": {
       "name": "Otra cosa",
       "desc": "¿No encaja en ningún sitio? Cuéntale a Rotabo qué ha pasado — puede que alguien cerca pueda ayudarte.",

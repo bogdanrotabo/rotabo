@@ -201,6 +201,16 @@
       "offering_title": "Offri la tua casa per uno scambio o un soggiorno",
       "offering_lead": "Iscrivi la tua casa così chi cerca uno scambio o una visita possa trovarti."
     },
+    "pets": {
+      "name": "Animali domestici",
+      "desc": "Hai perso o trovato un gatto, un cane o un altro animale? Scrivilo qui — qualcuno lì vicino potrebbe averlo visto.",
+      "lost_btn": "Ho perso un animale",
+      "found_btn": "Ho trovato un animale",
+      "seeking_title": "Hai perso un animale?",
+      "seeking_lead": "Raccontaci cosa è successo e dove, così chi è nei paraggi può fare attenzione.",
+      "offering_title": "Hai trovato un animale?",
+      "offering_lead": "Scrivi cosa hai trovato e dove, così il padrone può contattarti."
+    },
     "other": {
       "name": "Altro",
       "desc": "Non rientra in nessuna categoria? Dì a Rotabo cosa è successo — qualcuno nelle vicinanze potrebbe aiutarti.",

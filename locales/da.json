@@ -201,6 +201,16 @@
       "offering_title": "Tilbyd dit hjem til bytte eller ophold",
       "offering_lead": "Skriv dit hjem op, så andre, der vil bytte eller besøge, kan finde dig."
     },
+    "pets": {
+      "name": "Kæledyr",
+      "desc": "Har du mistet eller fundet en kat, en hund eller et andet kæledyr? Skriv det her — nogen i nærheden har måske set det.",
+      "lost_btn": "Jeg har mistet et kæledyr",
+      "found_btn": "Jeg har fundet et kæledyr",
+      "seeking_title": "Mistet et kæledyr?",
+      "seeking_lead": "Fortæl hvad der skete og hvor, så folk i nærheden kan holde øje.",
+      "offering_title": "Fundet et kæledyr?",
+      "offering_lead": "Skriv hvad du fandt og hvor, så ejeren kan kontakte dig."
+    },
     "other": {
       "name": "Noget andet",
       "desc": "Passer ikke ind andre steder? Fortæl Rotabo, hvad der er sket — måske kan nogen i nærheden hjælpe.",

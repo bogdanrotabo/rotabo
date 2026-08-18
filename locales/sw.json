@@ -194,6 +194,16 @@
       "offering_title": "Toa nyumba yako kwa kubadilishana au kukaa",
       "offering_lead": "Orodhesha nyumba yako ili wanaotaka kubadilishana au kutembelea wakupate."
     },
+    "pets": {
+      "name": "Wanyama wa nyumbani",
+      "desc": "Umepoteza au umepata paka, mbwa au mnyama mwingine wa nyumbani? Andika hapa — mtu wa karibu anaweza kuwa amemwona.",
+      "lost_btn": "Nimepoteza mnyama",
+      "found_btn": "Nimepata mnyama",
+      "seeking_title": "Umepoteza mnyama?",
+      "seeking_lead": "Tuambie kilichotokea na wapi, ili watu wa karibu waangalie.",
+      "offering_title": "Umepata mnyama?",
+      "offering_lead": "Andika ulichopata na wapi, ili mwenye mnyama akupate."
+    },
     "other": {
       "name": "Kitu kingine",
       "desc": "Haiingii popote pengine? Iambie Rotabo kilichotokea — huenda mtu wa karibu akaweza kusaidia.",

@@ -194,6 +194,16 @@
       "offering_title": "Tawarkan rumahmu untuk tukar atau menginap",
       "offering_lead": "Cantumkan rumahmu supaya yang ingin bertukar atau berkunjung bisa menemukanmu."
     },
+    "pets": {
+      "name": "Hewan peliharaan",
+      "desc": "Kehilangan atau menemukan kucing, anjing, atau hewan peliharaan lain? Tulis di sini — mungkin ada orang di dekat sana yang melihatnya.",
+      "lost_btn": "Saya kehilangan hewan",
+      "found_btn": "Saya menemukan hewan",
+      "seeking_title": "Kehilangan hewan peliharaan?",
+      "seeking_lead": "Ceritakan apa yang terjadi dan di mana, agar orang di sekitar bisa ikut mencari.",
+      "offering_title": "Menemukan hewan peliharaan?",
+      "offering_lead": "Tulis apa yang Anda temukan dan di mana, agar pemiliknya bisa menghubungi Anda."
+    },
     "other": {
       "name": "Hal lain",
       "desc": "Tidak masuk kategori mana pun? Ceritakan ke Rotabo apa yang terjadi — mungkin ada orang di dekatmu yang bisa membantu.",

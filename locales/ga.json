@@ -194,6 +194,16 @@
       "offering_title": "Tairg do theach le malartú nó le fanacht",
       "offering_lead": "Cláraigh do theach le go bhfaighidh daoine atá ag lorg malartaithe nó cuairte thú."
     },
+    "pets": {
+      "name": "Peataí",
+      "desc": "Ar chaill nó ar aimsigh tú cat, madra nó peata eile? Cuir suas anseo é — b'fhéidir go bhfaca duine éigin in aice láimhe é.",
+      "lost_btn": "Chaill mé peata",
+      "found_btn": "Fuair mé peata",
+      "seeking_title": "Ar chaill tú peata?",
+      "seeking_lead": "Inis dúinn cad a tharla agus cá háit, ionas go gcoinneoidh daoine in aice láimhe súil amach.",
+      "offering_title": "Ar aimsigh tú peata?",
+      "offering_lead": "Scríobh cad a fuair tú agus cá háit, ionas gur féidir leis an úinéir teagmháil a dhéanamh leat."
+    },
     "other": {
       "name": "Rud éigin eile",
       "desc": "Nach n-oireann sé in aon áit eile? Inis do Rotabo cad a tharla — b'fhéidir go bhféadfadh duine in aice láimhe cabhrú.",

@@ -201,6 +201,16 @@
       "offering_title": "Ponudi svoj dom za zamjenu ili boravak",
       "offering_lead": "Dodaj svoj dom da te pronađu oni koji žele zamijeniti ili doći u posjet."
     },
+    "pets": {
+      "name": "Kućni ljubimci",
+      "desc": "Izgubili ste ili pronašli mačku, psa ili drugog ljubimca? Objavite ovdje — netko u blizini možda ga je vidio.",
+      "lost_btn": "Izgubio sam ljubimca",
+      "found_btn": "Pronašao sam ljubimca",
+      "seeking_title": "Izgubili ste ljubimca?",
+      "seeking_lead": "Napišite što se dogodilo i gdje, da ljudi u blizini pripaze.",
+      "offering_title": "Pronašli ste ljubimca?",
+      "offering_lead": "Napišite koga ste pronašli i gdje, da vam se vlasnik javi."
+    },
     "other": {
       "name": "Nešto drugo",
       "desc": "Ne spada nigdje drugdje? Reci Rotabu što se dogodilo — možda netko u blizini može pomoći.",

@@ -201,6 +201,16 @@
       "offering_title": "Oferece a tua casa para troca ou estadia",
       "offering_lead": "Publica a tua casa para que te encontrem quem quer trocar ou visitar."
     },
+    "pets": {
+      "name": "Animais de estimação",
+      "desc": "Perdeu ou encontrou um gato, um cão ou outro animal? Publique aqui — alguém por perto pode tê-lo visto.",
+      "lost_btn": "Perdi um animal",
+      "found_btn": "Encontrei um animal",
+      "seeking_title": "Perdeu um animal?",
+      "seeking_lead": "Conte-nos o que aconteceu e onde, para que quem estiver por perto fique atento.",
+      "offering_title": "Encontrou um animal?",
+      "offering_lead": "Escreva o que encontrou e onde, para que o dono possa contactá-lo."
+    },
     "other": {
       "name": "Outra coisa",
       "desc": "Não encaixa em mais nada? Conta ao Rotabo o que aconteceu — alguém por perto talvez possa ajudar.",

@@ -194,6 +194,16 @@
       "offering_title": "Evini takas ya da konaklama için teklif et",
       "offering_lead": "Evini ekle ki takas etmek ya da ziyarete gelmek isteyenler seni bulsun."
     },
+    "pets": {
+      "name": "Evcil hayvanlar",
+      "desc": "Kedi, köpek ya da başka bir evcil hayvan mı kaybettiniz veya buldunuz? Buraya yazın — yakınlardaki biri görmüş olabilir.",
+      "lost_btn": "Hayvanımı kaybettim",
+      "found_btn": "Bir hayvan buldum",
+      "seeking_title": "Evcil hayvanınızı mı kaybettiniz?",
+      "seeking_lead": "Ne olduğunu ve nerede olduğunu yazın, yakındakiler gözünü açık tutsun.",
+      "offering_title": "Evcil hayvan mı buldunuz?",
+      "offering_lead": "Ne bulduğunuzu ve nerede bulduğunuzu yazın, sahibi size ulaşsın."
+    },
     "other": {
       "name": "Başka bir şey",
       "desc": "Hiçbir yere uymuyor mu? Rotabo'ya ne olduğunu anlat — yakınlarda biri yardım edebilir.",

@@ -201,6 +201,16 @@
       "offering_title": "Biete dein Zuhause zum Tausch oder Aufenthalt an",
       "offering_lead": "Trag dein Zuhause ein, damit andere, die tauschen oder zu Besuch kommen möchten, dich finden."
     },
+    "pets": {
+      "name": "Haustiere",
+      "desc": "Katze, Hund oder ein anderes Haustier verloren oder gefunden? Melde es hier — jemand in der Nähe hat es vielleicht gesehen.",
+      "lost_btn": "Ich habe ein Tier verloren",
+      "found_btn": "Ich habe ein Tier gefunden",
+      "seeking_title": "Haustier verloren?",
+      "seeking_lead": "Erzähl uns, was passiert ist und wo, damit Leute in der Nähe die Augen offen halten.",
+      "offering_title": "Haustier gefunden?",
+      "offering_lead": "Schreib, was du gefunden hast und wo, damit sich der Besitzer melden kann."
+    },
     "other": {
       "name": "Etwas anderes",
       "desc": "Passt nirgendwo sonst? Sag Rotabo, was passiert ist — jemand in der Nähe kann vielleicht helfen.",

@@ -194,6 +194,16 @@
       "offering_title": "Pasiūlyk savo namus mainams ar apsistojimui",
       "offering_lead": "Įkelk savo namus, kad tave rastų norintys mainytis ar atvykti."
     },
+    "pets": {
+      "name": "Augintiniai",
+      "desc": "Pametėte ar radote katę, šunį arba kitą augintinį? Parašykite čia — kas nors netoliese galbūt jį matė.",
+      "lost_btn": "Pamečiau augintinį",
+      "found_btn": "Radau augintinį",
+      "seeking_title": "Pametėte augintinį?",
+      "seeking_lead": "Parašykite, kas nutiko ir kur, kad aplinkiniai atkreiptų dėmesį.",
+      "offering_title": "Radote augintinį?",
+      "offering_lead": "Parašykite, ką ir kur radote, kad šeimininkas galėtų su jumis susisiekti."
+    },
     "other": {
       "name": "Kažkas kita",
       "desc": "Niekur kitur netinka? Papasakok Rotabo, kas nutiko — galbūt kas nors netoliese gali padėti.",

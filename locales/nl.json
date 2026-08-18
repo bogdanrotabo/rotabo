@@ -201,6 +201,16 @@
       "offering_title": "Bied je huis aan voor een ruil of verblijf",
       "offering_lead": "Zet je huis erbij, zodat anderen die willen ruilen of langskomen je vinden."
     },
+    "pets": {
+      "name": "Huisdieren",
+      "desc": "Kat, hond of ander huisdier kwijt of gevonden? Zet het hier — iemand in de buurt heeft het misschien gezien.",
+      "lost_btn": "Ik ben een huisdier kwijt",
+      "found_btn": "Ik heb een huisdier gevonden",
+      "seeking_title": "Huisdier kwijt?",
+      "seeking_lead": "Vertel wat er gebeurd is en waar, zodat mensen in de buurt kunnen uitkijken.",
+      "offering_title": "Huisdier gevonden?",
+      "offering_lead": "Schrijf wat je gevonden hebt en waar, zodat de eigenaar je kan bereiken."
+    },
     "other": {
       "name": "Iets anders",
       "desc": "Past nergens anders? Vertel Rotabo wat er gebeurd is — misschien kan iemand in de buurt helpen.",
