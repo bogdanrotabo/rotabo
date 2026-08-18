@@ -65,6 +65,8 @@
   .filter-row select, .filter-row input{
     padding:10px 12px;border-radius:10px;border:1px solid var(--border);
     background:#fff;color:var(--text-dark);font-size:.92rem;font-family:inherit;
+    /* type=search, so Safari doesn't hand it its own rounded chrome */
+    -webkit-appearance:none;appearance:none;
   }
 
   table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:.88rem;}
@@ -177,7 +179,7 @@
           <option value="paid">Paid only</option>
           <option value="unpaid">Unpaid only</option>
         </select>
-        <input type="text" id="searchInput" placeholder="Search name, email, city…">
+        <input type="search" id="searchInput" autocomplete="off" placeholder="Search name, email, city…">
       </div>
 
       <div class="table-wrap">
@@ -211,7 +213,7 @@
       <div class="stats" id="visitStats"></div>
 
       <div class="filter-row">
-        <input type="text" id="visitSearchInput" placeholder="Search path, country or referrer…">
+        <input type="search" id="visitSearchInput" autocomplete="off" placeholder="Search path, country or referrer…">
       </div>
 
       <div class="table-wrap">
@@ -239,7 +241,7 @@
       <div class="stats" id="accessStats"></div>
 
       <div class="filter-row">
-        <input type="text" id="accessSearchInput" placeholder="Search email…">
+        <input type="search" id="accessSearchInput" autocomplete="off" placeholder="Search email…">
       </div>
 
       <div class="table-wrap">
@@ -304,6 +306,17 @@
   var loginError = document.getElementById("loginError");
   var refreshBtn = document.getElementById("refreshBtn");
   var logoutBtn = document.getElementById("logoutBtn");
+
+  // Browsers both autofill these and restore what was in them across a
+  // reload. An email dropped into the listings search filtered the table
+  // down to nothing, under a "No listings match this filter" note that
+  // read like the dashboard had lost every row. Start every load empty.
+  function clearSearchBoxes(){
+    ["searchInput", "visitSearchInput", "accessSearchInput"].forEach(function(id){
+      document.getElementById(id).value = "";
+    });
+  }
+  clearSearchBoxes();
 
   function browserTz(){
     try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) { return "UTC"; }
@@ -623,17 +636,17 @@
   var TABS = [
     {
       btn: "tabBtnListings", panel: "panelListings", resource: "listings",
-      note: "emptyNote", empty: "No listings match this filter.",
+      note: "emptyNote", empty: "No listings match this filter.", draw: render,
       apply: function(res){ allRows = res.data; render(); }
     },
     {
       btn: "tabBtnVisits", panel: "panelVisits", resource: "visits",
-      note: "visitsEmptyNote", empty: "No visits match this filter.",
+      note: "visitsEmptyNote", empty: "No visits match this filter.", draw: renderVisits,
       apply: function(res){ allVisits = res.data; visitStats = res.stats; renderVisits(); }
     },
     {
       btn: "tabBtnAccess", panel: "panelAccess", resource: "access",
-      note: "accessEmptyNote", empty: "No paid access matches this filter.",
+      note: "accessEmptyNote", empty: "No paid access matches this filter.", draw: renderAccess,
       apply: function(res){ allAccess = res.data; accessStats = res.stats; renderAccess(); }
     }
   ];
@@ -667,6 +680,19 @@
       return getStored();
     });
   }
+
+  // Chrome can autofill a field after the document has already parsed, so
+  // the clear at the top of this script isn't the last word. Check once more
+  // when the load settles, and redraw with it -- clearing a box that a table
+  // was already filtered by would leave the two disagreeing.
+  window.addEventListener("load", function(){
+    var filled = ["searchInput", "visitSearchInput", "accessSearchInput"].some(function(id){
+      return document.getElementById(id).value !== "";
+    });
+    if (!filled) return;
+    clearSearchBoxes();
+    if (activeTab.loaded) activeTab.draw();
+  });
 
   // A tab whose request failed says so and offers a retry, instead of an
   // empty table with the "no rows match" note hidden.
@@ -731,9 +757,7 @@
     ["tableBody", "visitsTableBody", "accessTableBody"].forEach(function(id){
       document.getElementById(id).innerHTML = "";
     });
-    ["searchInput", "visitSearchInput", "accessSearchInput"].forEach(function(id){
-      document.getElementById(id).value = "";
-    });
+    clearSearchBoxes();
     selectTab(TABS[0]);
     dashboardView.style.display = "none";
     loginView.style.display = "block";
