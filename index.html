@@ -365,6 +365,17 @@
   }
   .cat-btn.need{background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;}
   .cat-btn.offer{background:#fff;border:1px solid var(--border);color:var(--text-dark);}
+  /* Browsing a category was reachable only from a listing you already
+     owned, so a first-time visitor had no way to see anyone -- and no
+     way to reach the unlock the site sells. A quiet third line under
+     the two buttons, deliberately not a third button: posting is still
+     the primary action. role=seeking because browse.html shows the
+     opposite side of whoever asks, and a browser wants the providers. */
+  .cat-browse{
+    text-align:center;font-size:.86rem;font-weight:700;
+    color:var(--violet-1);text-decoration:none;padding-top:2px;
+  }
+  .cat-browse:hover{text-decoration:underline;}
 
   .drivers-section{padding-top:64px;}
   .check-list{max-width:640px;margin:0 auto;}
@@ -706,6 +717,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openModal('findDriverModal')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openModal('becomeDriverModal')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=drive&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-translator">
@@ -715,6 +727,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('translator','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('translator','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=translator&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-move">
@@ -724,6 +737,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('move','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('move','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=move&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-build">
@@ -733,6 +747,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('build','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('build','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=build&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-tools">
@@ -742,6 +757,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('tools','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('tools','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=tools&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-home">
@@ -751,6 +767,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('home','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('home','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=home&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-auto">
@@ -760,6 +777,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('auto','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('auto','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=auto&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-care">
@@ -769,6 +787,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('care','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('care','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=care&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-learn">
@@ -778,6 +797,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('learn','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('learn','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=learn&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-stay">
@@ -787,6 +807,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('stay','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('stay','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=stay&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <!-- Pets is the one category whose two sides aren't "need" and "offer",
@@ -802,6 +823,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.pets.lost_btn" onclick="openGenericModal('pets','seeking')">I lost a pet</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.pets.found_btn" onclick="openGenericModal('pets','offering')">I found a pet</button>
+        <a class="cat-browse" href="/browse.html?category=pets&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
     <div class="category-card" id="cat-other">
@@ -811,6 +833,7 @@
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('other','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('other','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=other&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
   </div>

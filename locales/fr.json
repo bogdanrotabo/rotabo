@@ -125,6 +125,7 @@
     "section_lead": "Choisis ce dont tu as besoin — ou inscris-toi comme quelqu'un qui peut aider.",
     "need_btn": "J'en ai besoin",
     "offer_btn": "Je propose ça",
+    "see_who_btn": "Voir qui est là",
     "drive": {
       "name": "Chauffeur",
       "desc": "Un chauffeur qui vient chez toi et conduit ta propre voiture."

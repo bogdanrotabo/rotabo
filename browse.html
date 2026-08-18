@@ -61,6 +61,7 @@
     background:#eefaf3;border:1px solid #bfe8cf;border-radius:16px;
     padding:18px 20px;margin-bottom:24px;
   }
+  .my-listing:empty{display:none;}
   .my-listing .my-eyebrow{color:var(--green);font-weight:800;font-size:.82rem;letter-spacing:.05em;margin-bottom:6px;}
   .my-listing .my-sub{color:var(--text-body);font-size:.88rem;margin-bottom:10px;}
   .my-listing .my-name{font-weight:800;color:var(--text-dark);font-size:1rem;}
@@ -352,16 +353,6 @@
     }).join("");
   }
 
-  function renderNotRegistered(){
-    content.innerHTML =
-      '<div class="state-card">' +
-      '<p></p>' +
-      '<a class="home-link" href="/"></a>' +
-      '</div>';
-    content.querySelector("p").textContent = tr("not_registered_body");
-    content.querySelector(".home-link").textContent = tr("register_link");
-  }
-
   function renderPendingConfirmation(){
     content.innerHTML =
       '<div class="state-card">' +
@@ -382,6 +373,10 @@
   }
 
   function renderMyListing(){
+    // The page is open to everyone now, so having a listing here is the
+    // exception rather than the rule. Without one there is nothing to
+    // show, and .my-listing:empty keeps the green card from appearing.
+    if (!listingId) return;
     sb.rpc("get_own_listing", { p_id: listingId })
       .then(function(res){
         var box = document.getElementById("myListing");
@@ -546,7 +541,8 @@
       .maybeSingle()
       .then(function(res){
         if (res.error || !res.data) {
-          renderNotRegistered();
+          listingId = null;
+          renderDashboard();
           return;
         }
         if (!res.data.stripe_session_id) {
@@ -571,7 +567,7 @@
     sb.auth.getSession().then(function(sessionRes){
       var session = sessionRes.data && sessionRes.data.session;
       if (!session) {
-        renderNotRegistered();
+        renderDashboard();
         return;
       }
       sb.from("listings")
@@ -584,7 +580,7 @@
         .maybeSingle()
         .then(function(res){
           if (res.error || !res.data) {
-            renderNotRegistered();
+            renderDashboard();
             return;
           }
           listingId = res.data.id;
