@@ -347,7 +347,7 @@
   .idea-section .lede{margin-top:0;margin-bottom:16px;}
   .idea-closing{margin-top:36px;font-size:1.15rem;line-height:1.7;color:var(--text-dark);}
 
-  .categories-section{padding-top:56px;}
+  .categories-section,.bridge-section{padding-top:56px;}
   .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
   .category-card{
     background:var(--bg-card);border:1px solid var(--border);
@@ -743,76 +743,11 @@
   </div>
 </section>
 
-<section class="here-section">
-  <div class="wrap">
-    <h2 class="here-title" data-i18n="here.title">They're already here.</h2>
-    <div class="here-list" id="hereList" aria-live="polite">
-      <p class="here-empty" data-i18n="here.loading">Loading…</p>
-    </div>
-    <p class="here-note" data-i18n="here.note">Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.</p>
-    <!-- Rough local equivalent, filled by fx.js. Deliberately has no
-         data-i18n: re-translating the page must not wipe it. -->
-    <p class="here-note" id="hereNoteFx" style="margin-top:2px;opacity:.8;"></p>
-  </div>
-</section>
-
-<section class="banknote-section">
-  <div class="wrap">
-    <div class="info-card bridge banknote">
-      <h3 data-i18n="banknote.title">Your number travels the world. You don't have to.</h3>
-      <div class="banknote-body" data-i18n-html="banknote.body">
-        <p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo — plus the Rotabo number you get when you register: rotabo2244. Then let it go.</p>
-        <p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p>
-        <p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p>
-        <p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>
-      </div>
-      <p class="banknote-slogan" dir="ltr">On a Banknote!</p>
-      <p class="banknote-fineprint" data-i18n="banknote.fineprint">Writing on banknotes is your own choice. Check your local laws.</p>
-    </div>
-  </div>
-</section>
-
-<section class="works-section">
-  <p class="eyebrow" data-i18n="works.eyebrow">HOW ROTABO WORKS</p>
-  <h2 data-i18n="works.h2">You need something. Someone can help.</h2>
-  <div class="steps">
-    <div class="step-card"><p data-i18n="works.step1">Tell us what you need.</p></div>
-    <div class="step-card"><p data-i18n="works.step2">Find someone nearby who can help.</p></div>
-    <div class="step-card"><p data-i18n="works.step3">Connect directly and agree on the details.</p></div>
-  </div>
-  <p class="works-examples" data-i18n="works.examples">It could be a driver, a van, a moving service, construction equipment, a tool, a delivery or simply someone with the right skills and time.</p>
-  <p class="thesis" data-i18n="works.closing">One network. Thousands of possibilities.</p>
-</section>
-
-<section class="need-driver-section">
-  <p class="eyebrow" data-i18n="need_driver.eyebrow">NEED A DRIVER?</p>
-  <h2 class="tagline" style="font-size:1.8rem;"><span data-i18n="need_driver.tagline1">You drink.</span><br><span class="accent" data-i18n="need_driver.tagline2">They drive.</span><br><span data-i18n="need_driver.tagline3">Your car.</span></h2>
-  <p class="lede" data-i18n="need_driver.body1">Sometimes you don't need a taxi. You just need someone to drive your own car.</p>
-  <p class="lede" data-i18n="need_driver.body2">Rotabo connects you with a verified driver who comes to you and drives you home in your own car when you can't or shouldn't drive.</p>
-  <div class="cta-stack" style="max-width:320px;">
-    <button type="button" class="btn btn-solid" data-i18n="need_driver.cta" onclick="openModal('findDriverModal')">Find a driver</button>
-  </div>
-</section>
-
-<section class="need-other-section">
-  <p class="eyebrow" data-i18n="need_other.eyebrow">NEED SOMETHING ELSE?</p>
-  <div class="steps">
-    <div class="step-card"><h3 data-i18n="need_other.vehicle_title">Need a vehicle?</h3><p data-i18n="need_other.vehicle_desc">Find someone with the right vehicle for your journey, delivery or job.</p></div>
-    <div class="step-card"><h3 data-i18n="need_other.moving_title">Moving?</h3><p data-i18n="need_other.moving_desc">Connect with someone who can help you move furniture, belongings or anything else that needs transporting.</p></div>
-    <div class="step-card"><h3 data-i18n="need_other.equipment_title">Need equipment?</h3><p data-i18n="need_other.equipment_desc">Find tools, machines and construction equipment for the job you need to get done.</p></div>
-    <div class="step-card"><h3 data-i18n="need_other.hand_title">Need a helping hand?</h3><p data-i18n="need_other.hand_desc">Find someone with the skills, experience or time to help.</p></div>
-    <div class="step-card"><h3 data-i18n="need_other.unexpected_title">Something unexpected happened?</h3><p data-i18n="need_other.unexpected_desc">Tell Rotabo what you need. Someone nearby may be able to help.</p></div>
-  </div>
-</section>
-
+<!-- The marketplace sits directly under the hero: it is what the page is
+     for, and the CTA stack that used to introduce it is gone. It keeps
+     id="categories" because that is where "Offer what you can" below and
+     account.html's empty-state link both point. -->
 <section class="categories-section" id="categories">
-  <div class="info-card bridge">
-    <h3 data-i18n="bridge.title">The Bridge — a translator when you need one, for life as an immigrant</h3>
-    <p data-i18n="bridge.body">You're far from home, in a country whose language you barely grasp, and every official letter tightens your stomach. At the counter, at the doctor's, at your child's school, or on the phone with some agency — you don't need a translator all the time, just exactly when it matters. I come with you wherever you need me and translate on the spot, so you understand what's happening and what you have to do. I break official letters down into plain words: what it is, by when, where to sign. I make the calls for you and speak the local language, while you sit beside me at ease. We fill out the applications together, step by step, at the right office. I don't just translate the language — I translate peace of mind, and I hold your hand until you get where you need to be. From “I don't understand” to “I've got this.”</p>
-    <div class="cta-stack" style="max-width:320px;margin-top:24px;">
-      <button type="button" class="btn btn-solid" data-i18n="bridge.cta" onclick="openGenericModal('translator','seeking')">Find a translator</button>
-    </div>
-  </div>
   <p class="eyebrow" data-i18n="categories.section_eyebrow">THE ROTABO MARKETPLACE</p>
   <h2 dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h2>
   <p class="lede" style="text-align:center;max-width:560px;margin:0 auto 8px;" data-i18n="categories.section_lead">Pick what you need — or list yourself as someone who can help.</p>
@@ -915,6 +850,79 @@
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('other','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('other','offering')">I offer this</button>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="here-section">
+  <div class="wrap">
+    <h2 class="here-title" data-i18n="here.title">They're already here.</h2>
+    <div class="here-list" id="hereList" aria-live="polite">
+      <p class="here-empty" data-i18n="here.loading">Loading…</p>
+    </div>
+    <p class="here-note" data-i18n="here.note">Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.</p>
+    <!-- Rough local equivalent, filled by fx.js. Deliberately has no
+         data-i18n: re-translating the page must not wipe it. -->
+    <p class="here-note" id="hereNoteFx" style="margin-top:2px;opacity:.8;"></p>
+  </div>
+</section>
+
+<section class="banknote-section">
+  <div class="wrap">
+    <div class="info-card bridge banknote">
+      <h3 data-i18n="banknote.title">Your number travels the world. You don't have to.</h3>
+      <div class="banknote-body" data-i18n-html="banknote.body">
+        <p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo — plus the Rotabo number you get when you register: rotabo2244. Then let it go.</p>
+        <p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p>
+        <p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p>
+        <p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>
+      </div>
+      <p class="banknote-slogan" dir="ltr">On a Banknote!</p>
+      <p class="banknote-fineprint" data-i18n="banknote.fineprint">Writing on banknotes is your own choice. Check your local laws.</p>
+    </div>
+  </div>
+</section>
+
+<section class="works-section">
+  <p class="eyebrow" data-i18n="works.eyebrow">HOW ROTABO WORKS</p>
+  <h2 data-i18n="works.h2">You need something. Someone can help.</h2>
+  <div class="steps">
+    <div class="step-card"><p data-i18n="works.step1">Tell us what you need.</p></div>
+    <div class="step-card"><p data-i18n="works.step2">Find someone nearby who can help.</p></div>
+    <div class="step-card"><p data-i18n="works.step3">Connect directly and agree on the details.</p></div>
+  </div>
+  <p class="works-examples" data-i18n="works.examples">It could be a driver, a van, a moving service, construction equipment, a tool, a delivery or simply someone with the right skills and time.</p>
+  <p class="thesis" data-i18n="works.closing">One network. Thousands of possibilities.</p>
+</section>
+
+<section class="need-driver-section">
+  <p class="eyebrow" data-i18n="need_driver.eyebrow">NEED A DRIVER?</p>
+  <h2 class="tagline" style="font-size:1.8rem;"><span data-i18n="need_driver.tagline1">You drink.</span><br><span class="accent" data-i18n="need_driver.tagline2">They drive.</span><br><span data-i18n="need_driver.tagline3">Your car.</span></h2>
+  <p class="lede" data-i18n="need_driver.body1">Sometimes you don't need a taxi. You just need someone to drive your own car.</p>
+  <p class="lede" data-i18n="need_driver.body2">Rotabo connects you with a verified driver who comes to you and drives you home in your own car when you can't or shouldn't drive.</p>
+  <div class="cta-stack" style="max-width:320px;">
+    <button type="button" class="btn btn-solid" data-i18n="need_driver.cta" onclick="openModal('findDriverModal')">Find a driver</button>
+  </div>
+</section>
+
+<section class="need-other-section">
+  <p class="eyebrow" data-i18n="need_other.eyebrow">NEED SOMETHING ELSE?</p>
+  <div class="steps">
+    <div class="step-card"><h3 data-i18n="need_other.vehicle_title">Need a vehicle?</h3><p data-i18n="need_other.vehicle_desc">Find someone with the right vehicle for your journey, delivery or job.</p></div>
+    <div class="step-card"><h3 data-i18n="need_other.moving_title">Moving?</h3><p data-i18n="need_other.moving_desc">Connect with someone who can help you move furniture, belongings or anything else that needs transporting.</p></div>
+    <div class="step-card"><h3 data-i18n="need_other.equipment_title">Need equipment?</h3><p data-i18n="need_other.equipment_desc">Find tools, machines and construction equipment for the job you need to get done.</p></div>
+    <div class="step-card"><h3 data-i18n="need_other.hand_title">Need a helping hand?</h3><p data-i18n="need_other.hand_desc">Find someone with the skills, experience or time to help.</p></div>
+    <div class="step-card"><h3 data-i18n="need_other.unexpected_title">Something unexpected happened?</h3><p data-i18n="need_other.unexpected_desc">Tell Rotabo what you need. Someone nearby may be able to help.</p></div>
+  </div>
+</section>
+
+<!-- The Bridge keeps the slot the marketplace vacated. -->
+<section class="bridge-section">
+  <div class="info-card bridge">
+    <h3 data-i18n="bridge.title">The Bridge — a translator when you need one, for life as an immigrant</h3>
+    <p data-i18n="bridge.body">You're far from home, in a country whose language you barely grasp, and every official letter tightens your stomach. At the counter, at the doctor's, at your child's school, or on the phone with some agency — you don't need a translator all the time, just exactly when it matters. I come with you wherever you need me and translate on the spot, so you understand what's happening and what you have to do. I break official letters down into plain words: what it is, by when, where to sign. I make the calls for you and speak the local language, while you sit beside me at ease. We fill out the applications together, step by step, at the right office. I don't just translate the language — I translate peace of mind, and I hold your hand until you get where you need to be. From “I don't understand” to “I've got this.”</p>
+    <div class="cta-stack" style="max-width:320px;margin-top:24px;">
+      <button type="button" class="btn btn-solid" data-i18n="bridge.cta" onclick="openGenericModal('translator','seeking')">Find a translator</button>
     </div>
   </div>
 </section>
