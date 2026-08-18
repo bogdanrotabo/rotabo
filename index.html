@@ -574,60 +574,6 @@
   .tier-option .tier-price{display:block;font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .tier-option .tier-period{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:2px;}
   .tier-option:has(input:checked){border-color:var(--violet-2);background:#f3e6f8;}
-
-  /* ---- Rotabo Number: hero intro, search, live list ---- */
-  .hero-intro{
-    max-width:620px;margin:22px auto 26px;
-    font-size:1.18rem;line-height:1.6;color:var(--text-dark);font-weight:600;
-  }
-  .number-search{
-    display:flex;gap:10px;max-width:460px;margin:0 auto 14px;
-    flex-wrap:wrap;justify-content:center;
-  }
-  .number-search input{
-    flex:1 1 220px;min-width:0;
-    border:1px solid var(--border);border-radius:40px;
-    padding:14px 20px;font-size:1rem;background:#fff;color:var(--text-dark);
-    box-shadow:0 2px 10px rgba(124,37,150,.06);
-  }
-  .number-search input:focus{outline:none;border-color:var(--violet-2);box-shadow:0 0 0 3px rgba(155,63,192,.18);}
-  .number-search .btn{flex:0 0 auto;}
-  .number-result{
-    max-width:460px;margin:0 auto 20px;
-    border:1px solid var(--border);border-radius:14px;background:var(--bg-card);
-    padding:14px 16px;
-  }
-  .number-result.notfound{color:var(--text-eyebrow);font-weight:600;text-align:center;}
-
-  .here-section{padding:24px 24px 8px;}
-  .here-title{text-align:center;color:var(--text-dark);font-size:1.7rem;margin:0 0 22px;}
-  .here-list{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
-  .here-empty{text-align:center;color:var(--text-eyebrow);font-weight:600;padding:10px 0;}
-  .here-entry{
-    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-    border:1px solid var(--border);border-radius:12px;background:var(--bg-card);
-    padding:12px 16px;font-size:1.05rem;
-  }
-  .he-num{font-weight:800;color:var(--violet-1);font-variant-numeric:tabular-nums;unicode-bidi:isolate;}
-  .he-flag{font-size:1.25rem;line-height:1;unicode-bidi:isolate;}
-  .he-name{font-weight:700;color:var(--text-dark);}
-  .he-sep{color:var(--text-eyebrow);}
-  .he-cat{color:var(--text-body);font-weight:600;}
-  .here-entry{cursor:pointer;transition:border-color .15s;}
-  .here-entry:hover{border-color:var(--violet-2);}
-  .he-unlock{margin-left:auto;font-size:1rem;opacity:.55;}
-  html[dir="rtl"] .he-unlock{margin-left:0;margin-right:auto;}
-  .he-details{flex-basis:100%;margin-top:8px;color:var(--text-dark);font-size:.97rem;line-height:1.5;}
-  .he-contact a{color:var(--violet-1);font-weight:700;text-decoration:none;}
-  .here-note{
-    max-width:640px;margin:22px auto 0;text-align:center;
-    color:var(--text-body);font-size:1rem;line-height:1.6;
-  }
-
-  @media (max-width:520px){
-    .here-title{font-size:1.4rem;}
-    .hero-intro{font-size:1.05rem;}
-  }
 </style>
 </head>
 <body>
@@ -703,13 +649,21 @@
     </div>
   </nav>
 
-  <p class="hero-intro" data-i18n="hero.number_intro">Everyone on Rotabo has a number. One number. Yours forever. It says who you are, where you are, and what you can do — findable by anyone on Earth.</p>
-
-  <form class="number-search" id="numberSearch" onsubmit="return false;" dir="ltr">
-    <input type="search" id="numberSearchInput" inputmode="numeric" autocomplete="off" placeholder="Find a Rotabo number — e.g. 2244" data-i18n-placeholder="hero.search_placeholder" aria-label="Find a Rotabo number">
-    <button type="submit" class="btn btn-solid" id="numberSearchBtn" data-i18n="hero.search_btn">Search</button>
-  </form>
-  <div class="number-result" id="numberResult" hidden></div>
+  <!-- The Rotabo idea used to sit halfway down the page; it now opens it,
+       above the CTA stack, so a first-time visitor reads what Rotabo is for
+       before being asked to log in. Same block and same idea.* keys as
+       before -- only its place on the page changed. -->
+  <section class="idea-section">
+    <p class="eyebrow" data-i18n="idea.eyebrow">THE ROTABO IDEA</p>
+    <h2 class="tagline" style="font-size:1.8rem;"><span data-i18n="idea.tagline1">People need things.</span><br><span class="me" data-i18n="idea.tagline2">People have things.</span><br><br><span data-i18n="idea.tagline3">Rotabo connects them.</span></h2>
+    <p class="lede" data-i18n="idea.body1">Everywhere in the world, people need help. And everywhere in the world, someone has the time, skills, equipment or resources to help.</p>
+    <p class="lede" data-i18n="idea.body2">The problem is often simple: they just can't find each other. Rotabo brings them together.</p>
+    <p class="idea-closing">
+      <span data-i18n="idea.closing1">Need something? Find someone.</span><br>
+      <span data-i18n="idea.closing2">Have something to offer? Someone needs it.</span><br>
+      <b data-i18n="idea.closing3">Rotabo connects them.</b>
+    </p>
+  </section>
 
   <!-- The hero's own CTA stack -- get_number, the lede, and the find / offer /
        become-a-driver / translator buttons -- is out of the page while it is
@@ -853,34 +807,6 @@
       </div>
     </div>
   </div>
-</section>
-
-<section class="here-section">
-  <div class="wrap">
-    <h2 class="here-title" data-i18n="here.title">They're already here.</h2>
-    <div class="here-list" id="hereList" aria-live="polite">
-      <p class="here-empty" data-i18n="here.loading">Loading…</p>
-    </div>
-    <p class="here-note" data-i18n="here.note">Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.</p>
-    <!-- Rough local equivalent, filled by fx.js. Deliberately has no
-         data-i18n: re-translating the page must not wipe it. -->
-    <p class="here-note" id="hereNoteFx" style="margin-top:2px;opacity:.8;"></p>
-  </div>
-</section>
-
-<!-- The idea follows the pricing note it explains: a visitor who has just
-     read what unlocking costs is the one who wants to know what Rotabo is
-     for. -->
-<section class="idea-section">
-  <p class="eyebrow" data-i18n="idea.eyebrow">THE ROTABO IDEA</p>
-  <h2 class="tagline" style="font-size:1.8rem;"><span data-i18n="idea.tagline1">People need things.</span><br><span class="me" data-i18n="idea.tagline2">People have things.</span><br><br><span data-i18n="idea.tagline3">Rotabo connects them.</span></h2>
-  <p class="lede" data-i18n="idea.body1">Everywhere in the world, people need help. And everywhere in the world, someone has the time, skills, equipment or resources to help.</p>
-  <p class="lede" data-i18n="idea.body2">The problem is often simple: they just can't find each other. Rotabo brings them together.</p>
-  <p class="idea-closing">
-    <span data-i18n="idea.closing1">Need something? Find someone.</span><br>
-    <span data-i18n="idea.closing2">Have something to offer? Someone needs it.</span><br>
-    <b data-i18n="idea.closing3">Rotabo connects them.</b>
-  </p>
 </section>
 
 <section class="works-section">
@@ -2034,197 +1960,16 @@ if ("serviceWorker" in navigator) {
 <script src="/fx.js"></script>
 <script src="/viewer.js"></script>
 <script>
-// A franc means nothing to most of the world, so put a rough local
-// equivalent under the paywall note -- USD when fx.js cannot name the
-// local currency, silent only for Swiss visitors. Deliberately OUTSIDE
-// the Supabase guard below: it depends only on fx.js, which is local
-// and precached, so the hint must survive a failed CDN (offline PWA,
-// blocked networks). Redrawn whenever fx.js says the currency, the
-// language, or the day's rates changed.
+// A password-recovery link that lands here (Supabase falls back to the Site
+// URL) must reach /account.html, which owns the "set a new password" form.
+// It used to sit at the top of the Rotabo Number block -- the hero number
+// search and the "They're already here" list, both removed -- so it stands
+// alone now, and no longer behind a window.supabase check: the redirect is
+// pure location work and must still happen when the Supabase CDN fails.
 (function(){
-  var el = document.getElementById("hereNoteFx");
-  if (!el || !window.RotaboFx) return;
-  function draw(){
-    var one = window.RotaboFx.approx(1), two = window.RotaboFx.approx(2);
-    el.textContent = (one && two) ? one + "  /  " + two : "";
-  }
-  window.RotaboFx.onChange(draw);
-  draw();
-})();
-
-// Rotabo Number: live list and search.
-(function(){
-  if (!window.supabase) return;
-  // A password-recovery link that lands here (Supabase falls back to the
-  // Site URL) must reach the account page, which owns the "set a new
-  // password" form. Before this, the client below silently consumed the
-  // recovery hash, stored a session, and the password never changed.
   if (/type=recovery/.test(location.hash) || /type=recovery/.test(location.search)) {
     location.replace("/account.html" + location.search + location.hash);
-    return;
   }
-  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
-  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-    global: { fetch: function(u, o){ return fetch(u, Object.assign({}, o, { cache: "no-store" })); } }
-  });
-
-  // Country name -> flag / ISO code. The map itself lives in
-  // /countries.js so browse.html can resolve the same spellings.
-  function flagFor(country){
-    return window.RotaboCountries ? window.RotaboCountries.flagFor(country) : "";
-  }
-  function countryIsoFor(country){
-    return window.RotaboCountries ? window.RotaboCountries.isoFor(country) : "";
-  }
-
-  var EN_CATS = { drive:"Drive", move:"Move", build:"Build", tools:"Tools", home:"Home",
-    auto:"Auto", care:"Care", learn:"Learn", stay:"Stay", other:"Other", translator:"Translator" };
-  function catLabel(cat){
-    var d = window.__dict;
-    if (d && d.categories && d.categories[cat] && d.categories[cat].name) return d.categories[cat].name;
-    return EN_CATS[cat] || cat;
-  }
-  function esc(s){
-    return (s == null ? "" : String(s)).replace(/[&<>"]/g, function(c){
-      return { "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;" }[c];
-    });
-  }
-  function entryHtml(r){
-    var flag = flagFor(r.country);
-    return '<div class="here-entry" data-num="' + r.number + '" role="button" tabindex="0">' +
-      '<span class="he-num" dir="ltr">#' + r.number + '</span>' +
-      (flag ? '<span class="he-flag">' + flag + '</span>' : '') +
-      '<span class="he-name">' + esc(r.name) + '</span>' +
-      '<span class="he-sep">·</span>' +
-      '<span class="he-cat">' + esc(catLabel(r.category)) + '</span>' +
-      '<span class="he-unlock" aria-hidden="true">🔓</span>' +
-      '<div class="he-details" hidden></div>' +
-    '</div>';
-  }
-  function renderEntryDetails(el, rows){
-    var box = el.querySelector(".he-details");
-    if (!box) return;
-    box.innerHTML = (rows || []).map(function(d){
-      var parts = [];
-      if (d.phone) parts.push('<a href="tel:' + esc(d.phone) + '">' + esc(d.phone) + '</a>');
-      if (d.email) parts.push('<a href="mailto:' + esc(d.email) + '">' + esc(d.email) + '</a>');
-      if (d.address) parts.push(esc(d.address));
-      if (d.note) parts.push(esc(d.note));
-      return '<div class="he-contact">' + parts.join(' &middot; ') + '</div>';
-    }).join("");
-    box.hidden = false;
-    var u = el.querySelector(".he-unlock"); if (u) u.textContent = "✓";
-  }
-  document.addEventListener("click", function(e){
-    var el = e.target.closest ? e.target.closest(".here-entry") : null;
-    if (!el || !el.getAttribute("data-num")) return;
-    var box = el.querySelector(".he-details");
-    if (box && !box.hidden) return; // already revealed
-    if (!window.RotaboViewer) return;
-    var number = parseInt(el.getAttribute("data-num"), 10);
-    window.RotaboViewer.reveal({ number: number, onDetails: function(rows){ renderEntryDetails(el, rows); } });
-  });
-
-  // null until Supabase has answered once; [] only when the list is
-  // confirmed empty. Rendering the empty state before the first response
-  // made every page load flash "Be the first" over a live marketplace.
-  var listData = null;
-  function renderList(){
-    var box = document.getElementById("hereList");
-    if (!box) return;
-    var d = window.__dict || {};
-    if (listData === null){
-      var loading = (d.here && d.here.loading) || "Loading…";
-      box.innerHTML = '<p class="here-empty">' + esc(loading) + '</p>';
-      return;
-    }
-    if (!listData.length){
-      var empty = (d.here && d.here.empty) || "Be the first — get your number.";
-      box.innerHTML = '<p class="here-empty">' + esc(empty) + '</p>';
-      return;
-    }
-    // Rebuilding the list wipes any contact details a paying viewer has
-    // just revealed (language switches re-run this via __afterTranslate),
-    // so carry the open ones across the re-render.
-    var openDetails = {};
-    Array.prototype.forEach.call(box.querySelectorAll(".here-entry"), function(el){
-      var det = el.querySelector(".he-details");
-      if (det && !det.hidden && det.innerHTML) openDetails[el.getAttribute("data-num")] = det.innerHTML;
-    });
-    box.innerHTML = listData.map(entryHtml).join("");
-    Object.keys(openDetails).forEach(function(num){
-      var det = box.querySelector('.here-entry[data-num="' + num + '"] .he-details');
-      if (det){ det.innerHTML = openDetails[num]; det.hidden = false; }
-    });
-  }
-  var lastListJson = null;
-  function fetchList(){
-    // An RPC, not a view: the old public_listings view was SECURITY DEFINER,
-    // so reading it bypassed row-level security entirely (Supabase's linter
-    // flags that as an error). The function returns the same rows -- already
-    // ordered by number -- through the same gated pattern as every other
-    // call here, with RLS still denying anon any direct table access.
-    sb.rpc("list_public_numbers")
-      .then(function(res){
-        if (res && res.data){
-          var j = JSON.stringify(res.data);
-          // Skip re-render when nothing changed, so a viewer's just-revealed
-          // contact details aren't wiped by the background poll.
-          if (j === lastListJson) return;
-          lastListJson = j;
-          listData = res.data;
-          renderList();
-        }
-      });
-  }
-
-  // Kept so the result card can be re-rendered in the new language when
-  // the visitor switches -- it used to sit untranslated amid a page that
-  // had otherwise re-translated around it.
-  var lastSearch = null;
-  function renderSearchResult(){
-    var out = document.getElementById("numberResult");
-    if (!out || !lastSearch) return;
-    var t = (window.__dict || {}).here || {};
-    out.hidden = false;
-    if (lastSearch.row){
-      out.className = "number-result found";
-      out.innerHTML = entryHtml(lastSearch.row);
-    } else {
-      out.className = "number-result notfound";
-      out.textContent = (t.not_found || "No active Rotabo number {n} yet.").split("{n}").join(lastSearch.num);
-    }
-  }
-  function doSearch(){
-    var input = document.getElementById("numberSearchInput");
-    var out = document.getElementById("numberResult");
-    if (!input || !out) return;
-    var raw = (input.value || "").replace(/[^0-9]/g, "");
-    if (!raw){ lastSearch = null; out.hidden = true; return; }
-    var num = parseInt(raw, 10);
-    sb.rpc("find_rotabo_number", { p_number: num }).then(function(res){
-      lastSearch = { num: num, row: (res && res.data && res.data.length) ? res.data[0] : null };
-      renderSearchResult();
-    });
-  }
-
-  window.__afterTranslate = function(dict){
-    window.__dict = dict;
-    renderList();
-    renderSearchResult();
-  };
-
-  function init(){
-    var form = document.getElementById("numberSearch");
-    if (form) form.addEventListener("submit", function(e){ e.preventDefault(); doSearch(); });
-    var btn = document.getElementById("numberSearchBtn");
-    if (btn) btn.addEventListener("click", function(e){ e.preventDefault(); doSearch(); });
-    fetchList();
-    setInterval(fetchList, 15000);
-  }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-  else init();
 })();
 </script>
 <script>
