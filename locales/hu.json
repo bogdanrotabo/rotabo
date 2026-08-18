@@ -195,6 +195,8 @@
       "offering_lead": "Hirdesd meg az otthonod, hogy megtaláljanak, akik cserélnének vagy meglátogatnának."
     },
     "pets": {
+      "browse_offering_title": "Akik találtak egy állatot",
+      "browse_seeking_title": "Akik elvesztették a kedvencüket",
       "name": "Házi kedvencek",
       "desc": "Elveszett vagy megtaláltál egy macskát, kutyát vagy más kedvencet? Írd meg itt — valaki a közelben talán látta.",
       "lost_btn": "Elveszett a kedvencem",

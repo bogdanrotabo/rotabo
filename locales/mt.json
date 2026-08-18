@@ -195,6 +195,8 @@
       "offering_lead": "Niżżel id-dar tiegħek biex isibuk dawk li jridu jibdlu jew jiġu jżuruk."
     },
     "pets": {
+      "browse_offering_title": "Min sab annimal",
+      "browse_seeking_title": "Min tilef annimal",
       "name": "Annimali domestiċi",
       "desc": "Tlift jew sibt qattus, kelb jew annimal domestiku ieħor? Iktbu hawn — xi ħadd fil-viċin forsi rah.",
       "lost_btn": "Tlift annimal",

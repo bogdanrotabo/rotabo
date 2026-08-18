@@ -195,6 +195,8 @@
       "offering_lead": "Dodaj swój dom, żeby znaleźli cię chętni do zamiany lub odwiedzin."
     },
     "pets": {
+      "browse_offering_title": "Kto znalazł zwierzaka",
+      "browse_seeking_title": "Kto zgubił zwierzaka",
       "name": "Zwierzęta domowe",
       "desc": "Zgubiłeś albo znalazłeś kota, psa lub inne zwierzę? Napisz tutaj — ktoś w okolicy mógł je widzieć.",
       "lost_btn": "Zgubiłem zwierzaka",

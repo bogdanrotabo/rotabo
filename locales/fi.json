@@ -202,6 +202,8 @@
       "offering_lead": "Ilmoita kotisi, jotta vaihtoa tai vierailua etsivät löytävät sinut."
     },
     "pets": {
+      "browse_offering_title": "Ketkä ovat löytäneet lemmikin",
+      "browse_seeking_title": "Ketkä ovat kadottaneet lemmikin",
       "name": "Lemmikit",
       "desc": "Katosiko tai löytyikö kissa, koira tai muu lemmikki? Kirjoita tähän — joku lähistöllä on ehkä nähnyt sen.",
       "lost_btn": "Lemmikkini katosi",

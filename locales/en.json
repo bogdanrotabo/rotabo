@@ -200,6 +200,8 @@
       "offering_lead": "List your home so others looking to swap or visit can find you."
     },
     "pets": {
+      "browse_offering_title": "People who found a pet",
+      "browse_seeking_title": "People who lost a pet",
       "name": "Pets",
       "desc": "Lost or found a cat, a dog, or any pet? Post it here — someone nearby may have seen it.",
       "lost_btn": "I lost a pet",

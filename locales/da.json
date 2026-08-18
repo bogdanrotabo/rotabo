@@ -202,6 +202,8 @@
       "offering_lead": "Skriv dit hjem op, så andre, der vil bytte eller besøge, kan finde dig."
     },
     "pets": {
+      "browse_offering_title": "Dem der har fundet et kæledyr",
+      "browse_seeking_title": "Dem der har mistet et kæledyr",
       "name": "Kæledyr",
       "desc": "Har du mistet eller fundet en kat, en hund eller et andet kæledyr? Skriv det her — nogen i nærheden har måske set det.",
       "lost_btn": "Jeg har mistet et kæledyr",

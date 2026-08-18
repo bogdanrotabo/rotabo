@@ -202,6 +202,8 @@
       "offering_lead": "Inscris ton logement pour que ceux qui veulent échanger ou venir te trouvent."
     },
     "pets": {
+      "browse_offering_title": "Ceux qui ont trouvé un animal",
+      "browse_seeking_title": "Ceux qui ont perdu un animal",
       "name": "Animaux de compagnie",
       "desc": "Vous avez perdu ou trouvé un chat, un chien ou un autre animal ? Publiez-le ici — quelqu'un à proximité l'a peut-être vu.",
       "lost_btn": "J'ai perdu un animal",

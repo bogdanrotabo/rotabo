@@ -195,6 +195,8 @@
       "offering_lead": "Cantumkan rumahmu supaya yang ingin bertukar atau berkunjung bisa menemukanmu."
     },
     "pets": {
+      "browse_offering_title": "Orang yang menemukan hewan",
+      "browse_seeking_title": "Orang yang kehilangan hewan",
       "name": "Hewan peliharaan",
       "desc": "Kehilangan atau menemukan kucing, anjing, atau hewan peliharaan lain? Tulis di sini — mungkin ada orang di dekat sana yang melihatnya.",
       "lost_btn": "Saya kehilangan hewan",

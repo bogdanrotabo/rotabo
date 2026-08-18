@@ -195,6 +195,8 @@
       "offering_lead": "Įkelk savo namus, kad tave rastų norintys mainytis ar atvykti."
     },
     "pets": {
+      "browse_offering_title": "Kas rado augintinį",
+      "browse_seeking_title": "Kas pametė augintinį",
       "name": "Augintiniai",
       "desc": "Pametėte ar radote katę, šunį arba kitą augintinį? Parašykite čia — kas nors netoliese galbūt jį matė.",
       "lost_btn": "Pamečiau augintinį",

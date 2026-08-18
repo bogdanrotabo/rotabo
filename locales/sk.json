@@ -195,6 +195,8 @@
       "offering_lead": "Pridaj svoje bývanie, nech ťa nájdu tí, čo chcú meniť alebo prísť na návštevu."
     },
     "pets": {
+      "browse_offering_title": "Kto našiel zviera",
+      "browse_seeking_title": "Kto stratil zviera",
       "name": "Domáce zvieratá",
       "desc": "Stratili alebo našli ste mačku, psa či iné zviera? Napíšte to sem — niekto nablízku ho mohol vidieť.",
       "lost_btn": "Stratil som zviera",

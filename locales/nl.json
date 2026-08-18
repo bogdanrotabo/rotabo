@@ -202,6 +202,8 @@
       "offering_lead": "Zet je huis erbij, zodat anderen die willen ruilen of langskomen je vinden."
     },
     "pets": {
+      "browse_offering_title": "Wie een huisdier gevonden heeft",
+      "browse_seeking_title": "Wie een huisdier kwijt is",
       "name": "Huisdieren",
       "desc": "Kat, hond of ander huisdier kwijt of gevonden? Zet het hier — iemand in de buurt heeft het misschien gezien.",
       "lost_btn": "Ik ben een huisdier kwijt",

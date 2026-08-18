@@ -195,6 +195,8 @@
       "offering_lead": "Đăng nhà của bạn để những người muốn đổi hoặc ghé thăm tìm thấy bạn."
     },
     "pets": {
+      "browse_offering_title": "Những người nhặt được thú cưng",
+      "browse_seeking_title": "Những người làm mất thú cưng",
       "name": "Thú cưng",
       "desc": "Bạn làm mất hay nhặt được mèo, chó hoặc thú cưng khác? Đăng ở đây — ai đó gần bạn có thể đã nhìn thấy.",
       "lost_btn": "Tôi làm mất thú cưng",

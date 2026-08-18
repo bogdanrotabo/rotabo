@@ -202,6 +202,8 @@
       "offering_lead": "Publica tu casa para que te encuentren quienes quieren intercambiar o visitarte."
     },
     "pets": {
+      "browse_offering_title": "Quienes encontraron una mascota",
+      "browse_seeking_title": "Quienes perdieron una mascota",
       "name": "Mascotas",
       "desc": "¿Perdiste o encontraste un gato, un perro u otra mascota? Publícalo aquí — alguien cerca puede haberlo visto.",
       "lost_btn": "Perdí una mascota",

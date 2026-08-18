@@ -202,6 +202,8 @@
       "offering_lead": "Publica a tua casa para que te encontrem quem quer trocar ou visitar."
     },
     "pets": {
+      "browse_offering_title": "Quem encontrou um animal",
+      "browse_seeking_title": "Quem perdeu um animal",
       "name": "Animais de estimação",
       "desc": "Perdeu ou encontrou um gato, um cão ou outro animal? Publique aqui — alguém por perto pode tê-lo visto.",
       "lost_btn": "Perdi um animal",

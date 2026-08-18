@@ -195,6 +195,8 @@
       "offering_lead": "Lägg upp ditt hem så att andra som vill byta eller hälsa på hittar dig."
     },
     "pets": {
+      "browse_offering_title": "De som hittat ett husdjur",
+      "browse_seeking_title": "De som tappat bort ett husdjur",
       "name": "Husdjur",
       "desc": "Har du tappat bort eller hittat en katt, en hund eller ett annat husdjur? Skriv här — någon i närheten kanske har sett det.",
       "lost_btn": "Jag har tappat bort ett husdjur",

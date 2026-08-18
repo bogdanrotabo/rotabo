@@ -195,6 +195,8 @@
       "offering_lead": "登记你的住处，让想交换或来做客的人找到你。"
     },
     "pets": {
+      "browse_offering_title": "捡到宠物的人",
+      "browse_seeking_title": "丢失宠物的人",
       "name": "宠物",
       "desc": "走失或捡到猫、狗或其他宠物？发布在这里——附近的人可能见过它。",
       "lost_btn": "我的宠物走失了",

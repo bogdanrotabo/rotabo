@@ -237,10 +237,15 @@
         if (dict && dict.browse_page) {
           Object.assign(T, dict.browse_page);
         }
-        if (dict && dict.categories && dict.categories[category] && dict.categories[category].name) {
-          categoryName = dict.categories[category].name;
-        }
-        var title = myRole === "seeking" ? tr("offering_title", { category: categoryName }) : tr("seeking_title", { category: categoryName });
+        var catDict = (dict && dict.categories && dict.categories[category]) || {};
+        if (catDict.name) categoryName = catDict.name;
+        // The two titles below are built from a template that assumes the
+        // category is a service being supplied -- true for eleven of them,
+        // nonsense for pets, where "Pets providers near you" greets someone
+        // whose cat is missing. A category may therefore carry its own pair
+        // of finished titles; everything without them keeps the template.
+        var titleKey = myRole === "seeking" ? "offering_title" : "seeking_title";
+        var title = catDict["browse_" + titleKey] || tr(titleKey, { category: categoryName });
         document.getElementById("pageEyebrow").textContent = categoryName.toUpperCase();
         document.getElementById("pageTitle").textContent = title;
         document.getElementById("pageSub").textContent = T.subtitle;

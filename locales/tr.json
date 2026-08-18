@@ -195,6 +195,8 @@
       "offering_lead": "Evini ekle ki takas etmek ya da ziyarete gelmek isteyenler seni bulsun."
     },
     "pets": {
+      "browse_offering_title": "Hayvan bulanlar",
+      "browse_seeking_title": "Hayvanını kaybedenler",
       "name": "Evcil hayvanlar",
       "desc": "Kedi, köpek ya da başka bir evcil hayvan mı kaybettiniz veya buldunuz? Buraya yazın — yakınlardaki biri görmüş olabilir.",
       "lost_btn": "Hayvanımı kaybettim",

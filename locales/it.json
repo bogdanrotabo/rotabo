@@ -202,6 +202,8 @@
       "offering_lead": "Iscrivi la tua casa così chi cerca uno scambio o una visita possa trovarti."
     },
     "pets": {
+      "browse_offering_title": "Chi ha trovato un animale",
+      "browse_seeking_title": "Chi ha perso un animale",
       "name": "Animali domestici",
       "desc": "Hai perso o trovato un gatto, un cane o un altro animale? Scrivilo qui — qualcuno lì vicino potrebbe averlo visto.",
       "lost_btn": "Ho perso un animale",

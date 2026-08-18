@@ -202,6 +202,8 @@
       "offering_lead": "Listează-ți casa ca alții care vor schimb sau vizită să te găsească."
     },
     "pets": {
+      "browse_offering_title": "Cine a găsit un animal",
+      "browse_seeking_title": "Cine a pierdut un animal",
       "name": "Animale de companie",
       "desc": "Ai pierdut sau ai găsit o pisică, un câine sau alt animal? Scrie aici — cineva din apropiere poate l-a văzut.",
       "lost_btn": "Am pierdut un animal",

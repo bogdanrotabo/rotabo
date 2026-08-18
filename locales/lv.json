@@ -195,6 +195,8 @@
       "offering_lead": "Pievieno savu mājvietu, lai tie, kas vēlas mainīties vai atbraukt ciemos, tevi atrastu."
     },
     "pets": {
+      "browse_offering_title": "Kas atradis mājdzīvnieku",
+      "browse_seeking_title": "Kas pazaudējis mājdzīvnieku",
       "name": "Mājdzīvnieki",
       "desc": "Pazaudēji vai atradi kaķi, suni vai citu mājdzīvnieku? Ieraksti šeit — kāds tuvumā, iespējams, to redzēja.",
       "lost_btn": "Pazaudēju mājdzīvnieku",

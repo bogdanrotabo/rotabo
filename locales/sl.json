@@ -195,6 +195,8 @@
       "offering_lead": "Dodaj svoj dom, da te najdejo tisti, ki bi radi zamenjali ali prišli na obisk."
     },
     "pets": {
+      "browse_offering_title": "Kdo je našel ljubljenčka",
+      "browse_seeking_title": "Kdo je izgubil ljubljenčka",
       "name": "Hišni ljubljenčki",
       "desc": "Ste izgubili ali našli mačko, psa ali drugega ljubljenčka? Objavite tukaj — nekdo v bližini ga je morda videl.",
       "lost_btn": "Izgubil sem ljubljenčka",

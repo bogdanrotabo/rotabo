@@ -195,6 +195,8 @@
       "offering_lead": "Senaraikan rumah anda supaya mereka yang ingin bertukar atau melawat dapat menemui anda."
     },
     "pets": {
+      "browse_offering_title": "Sesiapa yang menjumpai haiwan",
+      "browse_seeking_title": "Sesiapa yang kehilangan haiwan",
       "name": "Haiwan peliharaan",
       "desc": "Kehilangan atau menjumpai kucing, anjing atau haiwan peliharaan lain? Siarkan di sini — mungkin ada orang berdekatan yang ternampak.",
       "lost_btn": "Saya kehilangan haiwan",
