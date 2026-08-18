@@ -582,7 +582,7 @@
   .tier-option .tier-period{display:block;font-size:.82rem;color:var(--text-eyebrow);margin-top:2px;}
   .tier-option:has(input:checked){border-color:var(--violet-2);background:#f3e6f8;}
 
-  /* ---- Rotabo Number: hero intro, search, live list, banknote ---- */
+  /* ---- Rotabo Number: hero intro, search, live list ---- */
   .hero-intro{
     max-width:620px;margin:22px auto 26px;
     font-size:1.18rem;line-height:1.6;color:var(--text-dark);font-weight:600;
@@ -631,20 +631,8 @@
     color:var(--text-body);font-size:1rem;line-height:1.6;
   }
 
-  .banknote-section{padding:16px 24px 8px;}
-  .banknote-section .info-card.bridge{max-width:820px;margin:0 auto;}
-  .banknote-body p{margin:0 0 14px;line-height:1.75;}
-  .banknote-body p:last-child{margin-bottom:0;}
-  .banknote-slogan{
-    text-align:center;font-weight:800;letter-spacing:.01em;
-    font-size:1.9rem;color:var(--violet-1);margin:26px 0 10px;
-  }
-  .banknote-fineprint{
-    text-align:center;font-size:.86rem;color:var(--text-eyebrow);margin:0;
-  }
   @media (max-width:520px){
     .here-title{font-size:1.4rem;}
-    .banknote-slogan{font-size:1.5rem;}
     .hero-intro{font-size:1.05rem;}
   }
 </style>
@@ -899,22 +887,6 @@
     <span data-i18n="idea.closing2">Have something to offer? Someone needs it.</span><br>
     <b data-i18n="idea.closing3">Rotabo connects them.</b>
   </p>
-</section>
-
-<section class="banknote-section">
-  <div class="wrap">
-    <div class="info-card bridge banknote">
-      <h3 data-i18n="banknote.title">Your number travels the world. You don't have to.</h3>
-      <div class="banknote-body" data-i18n-html="banknote.body">
-        <p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo — plus the Rotabo number you get when you register: rotabo2244. Then let it go.</p>
-        <p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p>
-        <p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p>
-        <p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>
-      </div>
-      <p class="banknote-slogan" dir="ltr">On a Banknote!</p>
-      <p class="banknote-fineprint" data-i18n="banknote.fineprint">Writing on banknotes is your own choice. Check your local laws.</p>
-    </div>
-  </div>
 </section>
 
 <section class="works-section">
@@ -2093,7 +2065,7 @@ if ("serviceWorker" in navigator) {
   draw();
 })();
 
-// Rotabo Number: live list, search, and personalised banknote example.
+// Rotabo Number: live list and search.
 (function(){
   if (!window.supabase) return;
   // A password-recovery link that lands here (Supabase falls back to the
@@ -2250,30 +2222,10 @@ if ("serviceWorker" in navigator) {
     });
   }
 
-  var myNumber = null;
-  function swapBanknoteNumber(){
-    if (!myNumber) return;
-    var body = document.querySelector(".banknote-body");
-    if (!body) return;
-    if (body.innerHTML.indexOf("rotabo2244") !== -1){
-      body.innerHTML = body.innerHTML.split("rotabo2244").join("rotabo" + myNumber);
-    }
-  }
-  function loadMyNumber(){
-    sb.auth.getSession().then(function(s){
-      if (s && s.data && s.data.session){
-        sb.rpc("my_rotabo_number").then(function(res){
-          if (res && res.data){ myNumber = res.data; swapBanknoteNumber(); }
-        });
-      }
-    }).catch(function(){});
-  }
-
   window.__afterTranslate = function(dict){
     window.__dict = dict;
     renderList();
     renderSearchResult();
-    swapBanknoteNumber();
   };
 
   function init(){
@@ -2283,7 +2235,6 @@ if ("serviceWorker" in navigator) {
     if (btn) btn.addEventListener("click", function(e){ e.preventDefault(); doSearch(); });
     fetchList();
     setInterval(fetchList, 15000);
-    loadMyNumber();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
