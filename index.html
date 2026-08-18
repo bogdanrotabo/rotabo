@@ -143,29 +143,32 @@
     position:relative;
     margin:0 -24px 18px;          /* bleed out to the hero's own padding */
   }
-  .cat-strip::before,
-  .cat-strip::after{
-    content:"";position:absolute;top:0;bottom:0;width:26px;
-    pointer-events:none;z-index:1;
-  }
-  .cat-strip::before{left:0;background:linear-gradient(to right,#f5eaf9,rgba(245,234,249,0));}
-  .cat-strip::after{right:0;background:linear-gradient(to left,#f5eaf9,rgba(245,234,249,0));}
+  /* This was one horizontally scrolling row with a fade at each end. With
+     twelve categories that row is ~1580px wide, so on a normal screen it
+     showed four chips and hid eight behind a gesture with no scrollbar --
+     the last category read as simply missing. A grid shows all twelve at
+     once: six and six. The columns are `auto`, not `1fr`, because the
+     labels run from "Home" to "Borrowed Grandparents" and equal columns
+     would strand the short ones in empty space. */
   .cat-strip-scroll{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(6,auto);
+    justify-content:center;
     gap:10px;
-    /* "safe" keeps the first chip reachable once the row overflows;
-       browsers that don't know it fall back to flex-start, which is
-       equally un-clipped. */
-    justify-content:safe center;
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-    -ms-overflow-style:none;
     padding:2px 24px;
-    scroll-padding-inline:24px;
   }
-  .cat-strip-scroll::-webkit-scrollbar{display:none;}
+  /* Six across needs roughly 900px: the wider of the two rows is about
+     835px on its own. Below that the count steps down rather than letting
+     the grid push the page into a horizontal scroll. */
+  @media (max-width:900px){
+    .cat-strip-scroll{grid-template-columns:repeat(3,auto);}
+  }
+  @media (max-width:520px){
+    .cat-strip-scroll{grid-template-columns:repeat(2,minmax(0,1fr));}
+    /* At two columns the longest label no longer fits on one line, and
+       nowrap here would be what finally overflows the page. */
+    .cat-strip-scroll .cat-chip{white-space:normal;text-align:center;}
+  }
   .cat-chip{
     flex:0 0 auto;
     display:inline-flex;align-items:center;gap:7px;
