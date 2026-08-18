@@ -310,7 +310,7 @@
     "contact": "联系我们",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…" },
+  "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…", "no_matches": "没有匹配项" },
   "install_modal": {
     "title": "将 Rotabo 添加到主屏幕",
     "generic": "打开浏览器菜单，寻找「安装应用」或「添加到主屏幕」。",

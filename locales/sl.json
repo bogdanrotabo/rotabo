@@ -310,7 +310,7 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…" },
+  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…", "no_matches": "Ni zadetkov" },
   "install_modal": {
     "title": "Dodaj Rotabo na začetni zaslon",
     "generic": "Odprite meni brskalnika in poiščite \"Namesti aplikacijo\" ali \"Dodaj na začetni zaslon\".",

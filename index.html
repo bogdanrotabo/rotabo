@@ -1875,7 +1875,15 @@
     var empty = document.createElement("div");
     empty.id = "langEmpty";
     empty.className = "lang-empty";
-    empty.textContent = "No matches";
+    // The one string in this panel built in JS rather than markup, so it
+    // was the one string no locale ever reached: every language saw the
+    // English "No matches". data-i18n hands it to applyTranslations for
+    // later switches, and rotaboT fills it in now -- rotaboT echoes the
+    // key path back when the dictionary has not landed yet, which is the
+    // signal to keep the English default.
+    empty.setAttribute("data-i18n", "lang_selector.no_matches");
+    var noMatch = window.rotaboT && window.rotaboT("lang_selector.no_matches");
+    empty.textContent = (noMatch && noMatch !== "lang_selector.no_matches") ? noMatch : "No matches";
     empty.style.display = "none";
     list.appendChild(empty);
   }

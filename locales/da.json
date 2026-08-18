@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Sprog",
-    "search_placeholder": "Søg efter sprog…"
+    "search_placeholder": "Søg efter sprog…",
+    "no_matches": "Ingen resultater"
   },
   "install_modal": {
     "title": "Føj Rotabo til din hjemmeskærm",

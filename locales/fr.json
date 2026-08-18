@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Langue",
-    "search_placeholder": "Rechercher une langue…"
+    "search_placeholder": "Rechercher une langue…",
+    "no_matches": "Aucun résultat"
   },
   "install_modal": {
     "title": "Ajoutez Rotabo à votre écran d'accueil",

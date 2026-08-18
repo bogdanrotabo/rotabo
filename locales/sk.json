@@ -310,7 +310,7 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…" },
+  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…", "no_matches": "Žiadne výsledky" },
   "install_modal": {
     "title": "Pridať Rotabo na plochu",
     "generic": "Otvorte menu prehliadača a vyhľadajte \"Inštalovať aplikáciu\" alebo \"Pridať na plochu\".",

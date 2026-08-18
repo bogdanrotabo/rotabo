@@ -325,7 +325,8 @@
   },
   "lang_selector": {
     "label": "Limbă",
-    "search_placeholder": "Caută o limbă…"
+    "search_placeholder": "Caută o limbă…",
+    "no_matches": "Niciun rezultat"
   },
   "install_modal": {
     "title": "Adaugă Rotabo pe ecranul principal",

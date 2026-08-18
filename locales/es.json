@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Idioma",
-    "search_placeholder": "Buscar idioma…"
+    "search_placeholder": "Buscar idioma…",
+    "no_matches": "Sin resultados"
   },
   "install_modal": {
     "title": "Añade Rotabo a tu pantalla de inicio",

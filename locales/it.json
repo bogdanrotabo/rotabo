@@ -325,7 +325,8 @@
   },
   "lang_selector": {
     "label": "Lingua",
-    "search_placeholder": "Cerca una lingua…"
+    "search_placeholder": "Cerca una lingua…",
+    "no_matches": "Nessun risultato"
   },
   "install_modal": {
     "title": "Aggiungi Rotabo alla schermata Home",

@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Jezik",
-    "search_placeholder": "Pretraži jezik…"
+    "search_placeholder": "Pretraži jezik…",
+    "no_matches": "Nema rezultata"
   },
   "install_modal": {
     "title": "Dodaj Rotabo na početni zaslon",

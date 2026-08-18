@@ -310,7 +310,7 @@
     "contact": "Liên hệ",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…" },
+  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…", "no_matches": "Không có kết quả" },
   "install_modal": {
     "title": "Thêm Rotabo vào màn hình chính",
     "generic": "Mở menu trình duyệt của bạn và tìm \"Cài đặt ứng dụng\" hoặc \"Thêm vào màn hình chính\".",

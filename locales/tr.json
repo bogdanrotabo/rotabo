@@ -310,7 +310,7 @@
     "contact": "İletişim",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…" },
+  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…", "no_matches": "Sonuç yok" },
   "install_modal": {
     "title": "Rotabo'yu ana ekrana ekle",
     "generic": "Tarayıcı menünüzü açın ve \"Uygulamayı yükle\" veya \"Ana ekrana ekle\" seçeneğini arayın.",

@@ -310,7 +310,7 @@
     "contact": "Kapcsolat",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…" },
+  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…", "no_matches": "Nincs találat" },
   "install_modal": {
     "title": "Rotabo hozzáadása a kezdőképernyőhöz",
     "generic": "Nyisd meg a böngésző menüjét, és keresd az \"Alkalmazás telepítése\" vagy \"Hozzáadás a kezdőképernyőhöz\" lehetőséget.",

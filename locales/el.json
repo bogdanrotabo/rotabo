@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Γλώσσα",
-    "search_placeholder": "Αναζήτηση γλώσσας…"
+    "search_placeholder": "Αναζήτηση γλώσσας…",
+    "no_matches": "Δεν βρέθηκαν αποτελέσματα"
   },
   "install_modal": {
     "title": "Προσθέστε το Rotabo στην αρχική οθόνη",

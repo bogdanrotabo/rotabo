@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Език",
-    "search_placeholder": "Търсене на език…"
+    "search_placeholder": "Търсене на език…",
+    "no_matches": "Няма резултати"
   },
   "install_modal": {
     "title": "Добавете Rotabo към началния екран",

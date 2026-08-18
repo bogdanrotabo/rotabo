@@ -310,7 +310,7 @@
     "contact": "संपर्क करें",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "भाषा", "search_placeholder": "भाषा खोजें…" },
+  "lang_selector": { "label": "भाषा", "search_placeholder": "भाषा खोजें…", "no_matches": "कोई परिणाम नहीं" },
   "install_modal": {
     "title": "Rotabo को होम स्क्रीन पर जोड़ें",
     "generic": "अपने ब्राउज़र का मेनू खोलें और \"ऐप इंस्टॉल करें\" या \"होम स्क्रीन पर जोड़ें\" खोजें।",

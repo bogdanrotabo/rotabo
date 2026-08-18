@@ -310,7 +310,7 @@
     "contact": "Kontaktai",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…" },
+  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…", "no_matches": "Nėra rezultatų" },
   "install_modal": {
     "title": "Pridėti Rotabo prie pagrindinio ekrano",
     "generic": "Atidarykite naršyklės meniu ir raskite \"Įdiegti programą\" arba \"Pridėti prie pagrindinio ekrano\".",

@@ -310,7 +310,7 @@
     "contact": "Kontak",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…" },
+  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…", "no_matches": "Tidak ada hasil" },
   "install_modal": {
     "title": "Tambahkan Rotabo ke layar utama",
     "generic": "Buka menu browser Anda dan cari \"Instal aplikasi\" atau \"Tambahkan ke Layar Utama\".",

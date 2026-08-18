@@ -310,7 +310,7 @@
     "contact": "Kontakti",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…" },
+  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…", "no_matches": "Nav rezultātu" },
   "install_modal": {
     "title": "Pievieno Rotabo sākuma ekrānam",
     "generic": "Atveriet pārlūkprogrammas izvēlni un meklējiet \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",

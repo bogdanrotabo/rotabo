@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Idioma",
-    "search_placeholder": "Procurar idioma…"
+    "search_placeholder": "Procurar idioma…",
+    "no_matches": "Sem resultados"
   },
   "install_modal": {
     "title": "Adiciona o Rotabo ao ecrã principal",

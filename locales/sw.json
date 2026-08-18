@@ -310,7 +310,7 @@
     "contact": "Wasiliana nasi",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…" },
+  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…", "no_matches": "Hakuna matokeo" },
   "install_modal": {
     "title": "Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "generic": "Fungua menyu ya kivinjari chako na utafute \"Sakinisha programu\" au \"Ongeza kwenye Skrini ya Nyumbani\".",

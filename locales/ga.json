@@ -310,7 +310,7 @@
     "contact": "Teagmháil",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…" },
+  "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…", "no_matches": "Gan torthai" },
   "install_modal": {
     "title": "Cuir Rotabo le do scáileán baile",
     "generic": "Oscail roghchlár do bhrabhsálaí agus cuardaigh \"Suiteáil aip\" nó \"Cuir leis an Scáileán Baile\".",

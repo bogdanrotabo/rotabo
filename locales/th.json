@@ -310,7 +310,7 @@
     "contact": "ติดต่อเรา",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "ภาษา", "search_placeholder": "ค้นหาภาษา…" },
+  "lang_selector": { "label": "ภาษา", "search_placeholder": "ค้นหาภาษา…", "no_matches": "ไม่พบรายการ" },
   "install_modal": {
     "title": "เพิ่ม Rotabo ไปยังหน้าจอหลัก",
     "generic": "เปิดเมนูเบราว์เซอร์ของคุณแล้วมองหา \"ติดตั้งแอป\" หรือ \"เพิ่มไปยังหน้าจอหลัก\"",

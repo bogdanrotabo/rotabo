@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Keel",
-    "search_placeholder": "Otsi keelt…"
+    "search_placeholder": "Otsi keelt…",
+    "no_matches": "Tulemusi pole"
   },
   "install_modal": {
     "title": "Lisa Rotabo avakuvale",

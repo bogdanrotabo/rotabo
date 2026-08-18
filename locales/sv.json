@@ -310,7 +310,7 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…" },
+  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…", "no_matches": "Inga träffar" },
   "install_modal": {
     "title": "Lägg till Rotabo på hemskärmen",
     "generic": "Öppna webbläsarens meny och leta efter \"Installera app\" eller \"Lägg till på hemskärmen\".",

@@ -310,7 +310,7 @@
     "contact": "Контакты",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Язык", "search_placeholder": "Поиск языка…" },
+  "lang_selector": { "label": "Язык", "search_placeholder": "Поиск языка…", "no_matches": "Ничего не найдено" },
   "install_modal": {
     "title": "Добавить Rotabo на главный экран",
     "generic": "Откройте меню браузера и найдите \"Установить приложение\" или \"Добавить на главный экран\".",

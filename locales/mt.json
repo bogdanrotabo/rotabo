@@ -310,7 +310,7 @@
     "contact": "Kuntatt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…" },
+  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…", "no_matches": "L-ebda riżultat" },
   "install_modal": {
     "title": "Żid Rotabo mal-iskrin ta' dar",
     "generic": "Iftaħ il-menu tal-browser tiegħek u fittex \"Installa l-app\" jew \"Żid mal-Iskrin ta' Dar\".",

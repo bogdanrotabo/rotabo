@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Sprache",
-    "search_placeholder": "Sprache suchen…"
+    "search_placeholder": "Sprache suchen…",
+    "no_matches": "Keine Treffer"
   },
   "install_modal": {
     "title": "Rotabo zum Startbildschirm hinzufügen",

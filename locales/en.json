@@ -323,7 +323,8 @@
   },
   "lang_selector": {
     "label": "Language",
-    "search_placeholder": "Search language…"
+    "search_placeholder": "Search language…",
+    "no_matches": "No matches"
   },
   "install_modal": {
     "title": "Add Rotabo to your home screen",

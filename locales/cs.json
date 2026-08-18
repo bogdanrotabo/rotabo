@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Jazyk",
-    "search_placeholder": "Hledat jazyk…"
+    "search_placeholder": "Hledat jazyk…",
+    "no_matches": "Žádné výsledky"
   },
   "install_modal": {
     "title": "Přidat Rotabo na plochu",

@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Kieli",
-    "search_placeholder": "Hae kieltä…"
+    "search_placeholder": "Hae kieltä…",
+    "no_matches": "Ei tuloksia"
   },
   "install_modal": {
     "title": "Lisää Rotabo aloitusnäytölle",

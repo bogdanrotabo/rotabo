@@ -310,7 +310,7 @@
     "contact": "문의하기",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "언어", "search_placeholder": "언어 검색…" },
+  "lang_selector": { "label": "언어", "search_placeholder": "언어 검색…", "no_matches": "검색 결과 없음" },
   "install_modal": {
     "title": "Rotabo를 홈 화면에 추가",
     "generic": "브라우저 메뉴를 열고 \"앱 설치\" 또는 \"홈 화면에 추가\"를 찾으세요.",

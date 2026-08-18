@@ -319,7 +319,8 @@
   },
   "lang_selector": {
     "label": "Taal",
-    "search_placeholder": "Zoek een taal…"
+    "search_placeholder": "Zoek een taal…",
+    "no_matches": "Geen resultaten"
   },
   "install_modal": {
     "title": "Voeg Rotabo toe aan je beginscherm",

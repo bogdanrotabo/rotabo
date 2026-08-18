@@ -310,7 +310,7 @@
     "contact": "تواصل معنا",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "اللغة", "search_placeholder": "ابحث عن لغة…" },
+  "lang_selector": { "label": "اللغة", "search_placeholder": "ابحث عن لغة…", "no_matches": "لا توجد نتائج" },
   "install_modal": {
     "title": "أضف Rotabo إلى شاشتك الرئيسية",
     "generic": "افتح قائمة متصفحك وابحث عن \"تثبيت التطبيق\" أو \"إضافة إلى الشاشة الرئيسية\".",

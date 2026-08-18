@@ -2,30 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js). This page redirects almost immediately, so the
-     event below is sent as a beacon: it is the one signal that a Stripe
-     checkout actually completed (begin_checkout is fired on the way out). -->
+<!-- Google tag (gtag.js). Only the bootstrap lives here: the purchase
+     event itself is fired further down, together with the redirect it
+     has to outlive. -->
 <script async src="/mx/gtag/js?id=G-ZSR8ZKJ4RL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ZSR8ZKJ4RL', { transport_type: 'beacon' });
-  // GA4's standard purchase event (a key event by default, and the one
-  // Google Ads imports as a conversion). Stripe's fixed return URL
-  // carries no amount, so the page that sent the browser to Stripe
-  // leaves the CHF figure behind in rotabo_paid_value -- without it
-  // every purchase reports as worth 0, and Performance Max (which bids
-  // on conversion value) has nothing to optimize towards.
-  (function(){
-    var ev = { currency: 'CHF' };
-    try {
-      var v = parseFloat(localStorage.getItem('rotabo_paid_value'));
-      if (isFinite(v) && v > 0) ev.value = v;
-      localStorage.removeItem('rotabo_paid_value');
-    } catch (e) { /* storage denied: report the purchase without a value */ }
-    gtag('event', 'purchase', ev);
-  })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo</title>
@@ -49,13 +34,30 @@
 <body>
 <div class="spinner"></div>
 <script>
+// Everything this page has to do happens in one block, in one order,
+// because all of it races the same redirect.
+//
+// The order matters and used to be wrong. The purchase event was fired
+// in <head> while gtag.js was still loading -- it is async -- and the
+// very next script called location.replace(). A queued event is not a
+// sent one: transport_type 'beacon' can only rescue a request already
+// in flight, so whenever the navigation committed first (a same-origin
+// page the service worker answers from cache: almost always) the
+// purchase was simply never transmitted. It is the only primary
+// conversion this account has, so the loss was invisible and total.
+// The site_visits insert had the same problem for the same reason,
+// sitting in a script placed *after* the redirect despite its own
+// comment saying payment returns must never lose a visit.
+//
+// Now: work out where to go, send both signals, and only leave once
+// gtag says the purchase is away (or a timer says it never will be).
 (function(){
-  // Stripe Payment Links redirect here unconditionally after any
-  // successful checkout (both the 1-month and 12-month tier links point
-  // at this single fixed URL) -- we don't get to pass which
-  // category/role the payment was for through Stripe itself, so we
-  // recover it from localStorage, set right before the browser left for
-  // Stripe, and forward on to the right browse page.
+  // ----- 1. where Stripe should have sent us -----
+  // Payment Links redirect here unconditionally after any successful
+  // checkout (both the 1-month and 12-month tier links point at this
+  // single fixed URL) -- we don't get to pass which category/role the
+  // payment was for through Stripe itself, so we recover it from
+  // localStorage, set right before the browser left for Stripe.
   var dest = "/";
   try {
     // A viewer-access purchase leaves a return note (set by viewer.js at
@@ -78,28 +80,23 @@
       }
     }
   } catch (e) { /* storage denied or bad JSON: fall back to home */ }
-  window.location.replace(dest);
-})();
-</script>
-<script>
-(function(){
+
+  // ----- 2. record the visit, before anything can navigate -----
+  // keepalive lets the request outlive the page, but only once it has
+  // actually been issued -- hence its place here rather than after the
+  // redirect. Never wait for a geo lookup: use the country this session
+  // already cached, or record the visit without one.
   try {
     var sid = localStorage.getItem("rotabo_sid");
     if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : (Date.now() + "-" + Math.random().toString(16).slice(2))); localStorage.setItem("rotabo_sid", sid); }
-    // This page navigates away almost immediately (the replace() above),
-    // and a fetch that has not been ISSUED yet dies with the page --
-    // keepalive only saves requests already in flight. So unlike the
-    // other pages, never wait for the geo lookup here: use the cached
-    // country if the session has one, otherwise record the visit without
-    // it. Payment returns are the one page whose visits must not be lost
-    // to a redirect.
     var country = null;
     try { country = sessionStorage.getItem("rotabo_geo") || null; } catch (e) {}
+    var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
     fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
       method: "POST",
       headers: {
-        "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+        "apikey": KEY,
+        "Authorization": "Bearer " + KEY,
         "Content-Type": "application/json",
         "Prefer": "return=minimal"
       },
@@ -107,6 +104,34 @@
       keepalive: true
     }).catch(function(){});
   } catch (e) {}
+
+  // ----- 3. leave, but not before the purchase is on its way -----
+  var gone = false;
+  function go(){
+    if (gone) return;
+    gone = true;
+    window.location.replace(dest);
+  }
+
+  // GA4's standard purchase event (a key event by default, and the one
+  // Google Ads imports as a conversion). Stripe's fixed return URL
+  // carries no amount, so the page that sent the browser to Stripe
+  // leaves the CHF figure behind in rotabo_paid_value -- without it
+  // every purchase reports as worth 0, and Performance Max (which bids
+  // on conversion value) has nothing to optimize towards.
+  var ev = { currency: 'CHF', event_callback: go, event_timeout: 1200 };
+  try {
+    var v = parseFloat(localStorage.getItem('rotabo_paid_value'));
+    if (isFinite(v) && v > 0) ev.value = v;
+    localStorage.removeItem('rotabo_paid_value');
+  } catch (e) { /* storage denied: report the purchase without a value */ }
+  gtag('event', 'purchase', ev);
+
+  // event_callback needs gtag.js to have loaded to fire at all, and an
+  // ad blocker means it never will. This is the floor under that: the
+  // buyer waits at most a second and a half, staring at a spinner they
+  // were already going to see, and never gets stranded here.
+  setTimeout(go, 1500);
 })();
 </script>
 </body>
