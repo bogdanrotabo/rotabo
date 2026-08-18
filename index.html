@@ -414,6 +414,11 @@
     text-decoration:none;
   }
   .tier-btn:hover{background:var(--bg-card);}
+  /* The sponsor amounts are francs too, so they get the same local
+     figure the listing tiers carry. Same .tier-fx class, so the draw
+     loop further down picks these up with no extra wiring. */
+  .tier-btn .tier-fx{display:block;font-weight:600;font-size:.8rem;color:var(--text-eyebrow);margin-top:3px;}
+  .tier-btn .tier-fx:empty{display:none;}
 
   footer{
     border-top:1px solid var(--border);
@@ -897,10 +902,10 @@
          sale would have been booked as 750. Verified against Stripe on
          2026-08-19: 100 / 300 / 750 / 10 000 CHF, VAT added on top at checkout. -->
     <div class="sponsor-tiers">
-      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" data-i18n="supporters.tier_bronze" onclick="if(window.sponsorCheckout)sponsorCheckout('bronze',100)">Bronze — 100 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" data-i18n="supporters.tier_silver" onclick="if(window.sponsorCheckout)sponsorCheckout('silver',300)">Silver — 300 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" data-i18n="supporters.tier_gold" onclick="if(window.sponsorCheckout)sponsorCheckout('gold',750)">Gold — 750 CHF</a>
-      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" data-i18n="supporters.tier_platinum" onclick="if(window.sponsorCheckout)sponsorCheckout('platinum',10000)">Platinum — 10 000 CHF</a>
+      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('bronze',100)"><span data-i18n="supporters.tier_bronze">Bronze — 100 CHF</span><span class="tier-fx" data-chf="100"></span></a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('silver',300)"><span data-i18n="supporters.tier_silver">Silver — 300 CHF</span><span class="tier-fx" data-chf="300"></span></a>
+      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('gold',750)"><span data-i18n="supporters.tier_gold">Gold — 750 CHF</span><span class="tier-fx" data-chf="750"></span></a>
+      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('platinum',10000)"><span data-i18n="supporters.tier_platinum">Platinum — 10 000 CHF</span><span class="tier-fx" data-chf="10000"></span></a>
     </div>
   </div>
 </section>
