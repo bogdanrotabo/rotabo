@@ -725,17 +725,15 @@
   </form>
   <div class="number-result" id="numberResult" hidden></div>
 
-  <div class="cta-stack" style="max-width:360px;margin-top:8px;">
-    <a class="btn btn-solid" href="#categories" data-i18n="hero.get_number">Get your number</a>
-  </div>
-
-  <p class="lede" data-i18n="hero.lede">Pick what you need — or list yourself as someone who can help.</p>
-
+  <!-- The hero's own CTA stack -- get_number, the lede, and the find / offer /
+       become-a-driver / translator buttons -- is out of the page while it is
+       reworked. Their hero.* keys stay in all 38 locale files so the block can
+       come back already translated. Nothing is orphaned: becomeDriverModal is
+       still reachable from the nav link and from every category card's "I offer
+       this", the translator flow from the translator category, and
+       cta_become_driver_click still fires because MODAL_GA_EVENTS keys off the
+       modal id, not off the button that opened it. -->
   <div class="cta-stack">
-    <a class="btn btn-solid" href="#categories" data-i18n="hero.cta_find">Find what you need</a>
-    <a class="btn btn-outline" href="#categories" data-i18n="hero.cta_offer">Offer what you can</a>
-    <button type="button" class="btn btn-outline" data-i18n="hero.cta_become_driver" onclick="openModal('becomeDriverModal')">Become a driver</button>
-    <button type="button" class="btn btn-outline" data-i18n="hero.cta_translator" onclick="openGenericModal('translator','seeking')">Translator on demand</button>
     <a class="btn btn-outline" href="/account.html" data-i18n="hero.cta_login">Log in</a>
     <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
   </div>
