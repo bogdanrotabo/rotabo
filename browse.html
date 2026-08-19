@@ -103,6 +103,27 @@
     font-weight:800;font-size:.95rem;text-decoration:none;flex-shrink:0;
   }
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:24px 0;}
+
+  /* The locked state, which is now what a stranger sees on this page:
+     a headcount, a price and a button, and nothing at all about the
+     people behind it. */
+  .locked-card{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:36px 28px;text-align:center;
+  }
+  .locked-card .lock{font-size:2rem;line-height:1;margin-bottom:12px;}
+  .locked-card .locked-count{color:var(--text-dark);font-size:1.2rem;font-weight:800;margin:0 0 10px;}
+  .locked-card .locked-body{color:var(--text-body);font-size:.98rem;line-height:1.55;margin:0 auto 16px;max-width:420px;}
+  .locked-card .locked-price{
+    display:flex;flex-wrap:wrap;gap:4px 20px;justify-content:center;
+    color:var(--violet-1);font-weight:700;font-size:.95rem;margin:0 0 20px;
+  }
+  .locked-card .locked-btn{
+    display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;
+    background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
+    border-radius:12px;padding:14px 26px;
+    font-weight:800;font-size:1rem;font-family:inherit;
+  }
 </style>
 </head>
 <body>
@@ -198,7 +219,12 @@
     eyebrow: category.toUpperCase(),
     offering_title: "{category} providers near you",
     seeking_title: "People who need {category}",
-    subtitle: "Browse everyone here for free. Unlock full access to see phone and address.",
+    subtitle: "Unlock full access to see who is here, with phone and address.",
+    locked_count_one: "1 person is here right now.",
+    locked_count_other: "{n} people are here right now.",
+    locked_body: "To see who they are — name, city, phone and address — unlock full access. One payment covers every category, not just this one.",
+    locked_btn: "Unlock full access",
+    locked_empty: "Nobody is here yet. There is nothing to unlock — come back later, or add yourself from the home page.",
     unlock_btn: "🔓 See contact",
     loading: "Loading…",
     not_registered_body: "You don’t have a listing on this device yet.",
@@ -452,11 +478,99 @@
     }
   }
 
+  function viewerToken(){ return window.RotaboViewer ? window.RotaboViewer.token() : null; }
+
+  // The dashboard belongs to whoever paid; everyone else gets the locked
+  // card. browse_public enforces the same thing server-side -- this only
+  // decides which page to draw.
+  function renderGateOrDashboard(){
+    if (!window.RotaboViewer) { renderLocked(); return; }
+    // Straight back from a checkout: hand over to the modal, which polls
+    // for the access row Stripe's webhook is still writing, rather than
+    // showing the price to someone who has just paid it.
+    if (window.RotaboViewer.justPaid()) {
+      renderLocked();
+      window.RotaboViewer.open(function(){ renderDashboard(); });
+      return;
+    }
+    window.RotaboViewer.checkAccess().then(function(ok){
+      if (ok) renderDashboard(); else renderLocked();
+    });
+  }
+
+  // One tier, priced in CHF with the visitor's own currency beside it --
+  // read from the strings the unlock modal uses, so the page in front of
+  // the modal can never quote a different number than the modal itself.
+  function tierText(key, fallback, chf){
+    var v = (window.__dict && window.__dict.viewer) || {};
+    var label = v[key] || fallback;
+    var approx = window.RotaboFx ? window.RotaboFx.approx(chf) : "";
+    return approx ? label + "  " + approx : label;
+  }
+  function fillTiers(el){
+    if (!el) return;
+    el.innerHTML = '<span></span><span></span>';
+    var spans = el.querySelectorAll("span");
+    spans[0].textContent = tierText("tier1", "1 CHF — 1 month", 1);
+    spans[1].textContent = tierText("tier12", "2 CHF — 1 year", 2);
+  }
+
+  // What a stranger sees. Names, cities and numbers are all part of what
+  // the payment buys now, so the only thing this page gives away is the
+  // headcount -- which is also the guard against charging for an empty
+  // category: at zero there is nothing to sell and no button to press.
+  function renderLocked(){
+    if (listPollTimer) { clearInterval(listPollTimer); listPollTimer = null; }
+    lastBrowseSig = null;
+    content.innerHTML =
+      '<div class="my-listing" id="myListing"></div>' +
+      '<div class="locked-card">' +
+      '<div class="lock">🔒</div>' +
+      '<p class="locked-count"></p>' +
+      '<p class="locked-body"></p>' +
+      '<p class="locked-price"></p>' +
+      '<button type="button" class="locked-btn"></button>' +
+      '</div>';
+    renderMyListing();
+    var card = content.querySelector(".locked-card");
+    var countEl = card.querySelector(".locked-count");
+    var bodyEl = card.querySelector(".locked-body");
+    var priceEl = card.querySelector(".locked-price");
+    var btn = card.querySelector(".locked-btn");
+    bodyEl.textContent = tr("locked_body");
+    fillTiers(priceEl);
+    btn.textContent = tr("locked_btn");
+    btn.addEventListener("click", function(){
+      if (!window.RotaboViewer) return;
+      window.RotaboViewer.open(function(){ renderDashboard(); });
+    });
+    // Same reason viewer.js redraws its own tiers: the day's rates and
+    // the chosen language can both land after the first paint.
+    if (window.RotaboFx && window.RotaboFx.onChange) {
+      window.RotaboFx.onChange(function(){ if (document.body.contains(priceEl)) fillTiers(priceEl); });
+    }
+    sb.rpc("browse_count", { p_category: category, p_role: browseRole }).then(function(res){
+      if (!document.body.contains(countEl)) return;
+      // A failed count is not "nobody": leave the headline empty and keep
+      // the unlock button, rather than telling a full category it is bare.
+      if (res.error || typeof res.data !== "number") { countEl.remove(); return; }
+      if (res.data === 0) {
+        card.innerHTML = '<p class="locked-count"></p><a class="home-link" href="/"></a>';
+        card.querySelector(".locked-count").textContent = tr("locked_empty");
+        card.querySelector(".home-link").textContent = tr("register_link");
+        return;
+      }
+      countEl.textContent = res.data === 1
+        ? tr("locked_count_one")
+        : tr("locked_count_other", { n: res.data });
+    });
+  }
+
   var lastBrowseSig = null;
   var loadListingsRequestId = 0;
   function loadListings(){
     var requestId = ++loadListingsRequestId;
-    sb.rpc("browse_public", { p_category: category, p_role: browseRole })
+    sb.rpc("browse_public", { p_category: category, p_role: browseRole, p_token: viewerToken() })
       .then(function(res){
       // A later filter change or poll tick may have started a newer
       // request that resolves before this one -- discard stale results.
@@ -466,6 +580,11 @@
       if (res.error) return;
 
       var rows = res.data || [];
+      // Access can lapse while the page is open: the viewer session is
+      // minted capped at the paid-access expiry, so it dies with it and
+      // browse_public goes quiet. Zero rows with no credential left is
+      // not an empty category, it is the paywall closing again.
+      if (rows.length === 0 && !viewerToken()) { renderLocked(); return; }
       // Country/city filtering is done client-side over the public
       // projection (no private fields ever leave the server unfiltered).
       if (countryFilter) {
@@ -542,7 +661,7 @@
       .then(function(res){
         if (res.error || !res.data) {
           listingId = null;
-          renderDashboard();
+          renderGateOrDashboard();
           return;
         }
         if (!res.data.stripe_session_id) {
@@ -550,7 +669,7 @@
           setTimeout(checkStatusAndRender, 3000);
           return;
         }
-        renderDashboard();
+        renderGateOrDashboard();
       });
   }
 
@@ -567,7 +686,7 @@
     sb.auth.getSession().then(function(sessionRes){
       var session = sessionRes.data && sessionRes.data.session;
       if (!session) {
-        renderDashboard();
+        renderGateOrDashboard();
         return;
       }
       sb.from("listings")
@@ -580,7 +699,7 @@
         .maybeSingle()
         .then(function(res){
           if (res.error || !res.data) {
-            renderDashboard();
+            renderGateOrDashboard();
             return;
           }
           listingId = res.data.id;

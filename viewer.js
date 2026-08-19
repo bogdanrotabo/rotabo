@@ -1,11 +1,12 @@
 /*
- * Rotabo viewer access: shared "unlock full details" flow used by the
- * homepage list and browse.html. Browsing (number, name, flag, category)
- * is free; phone / address / description are served only through the
- * SECURITY DEFINER functions get_listing_details / get_listing_details_by_id,
- * and only after the viewer proves a verified email that holds active paid
- * access (viewer_access). Payment reuses the SAME two Stripe Payment Links
- * as listings, told apart by client_reference_id = "viewer-<token>".
+ * Rotabo viewer access: shared "unlock full access" flow used by the
+ * homepage list and browse.html. Nothing about the people here is free:
+ * the list itself (browse_public) and their phone / address / description
+ * (get_listing_details / get_listing_details_by_id) are all SECURITY
+ * DEFINER functions that answer only for a verified email holding active
+ * paid access (viewer_access). browse_count -- a bare headcount, no names
+ * -- is all a stranger gets. Payment reuses the SAME two Stripe Payment
+ * Links as listings, told apart by client_reference_id = "viewer-<token>".
  */
 (function () {
   if (!window.supabase) return;
@@ -90,7 +91,7 @@
   }
   var STR = {
     title: ["title", "Unlock full access"],
-    intro: ["intro", "Browsing is free. To see phone numbers and addresses and contact anyone, unlock full access to every listing."],
+    intro: ["intro", "One small payment opens the whole site: see who is here, with their phone numbers and addresses, and contact anyone."],
     email_ph: ["email_placeholder", "your@email.com"],
     send: ["send_btn", "Send code"],
     code_ph: ["code_placeholder", "6-digit code"],
@@ -100,7 +101,7 @@
     tier1: ["tier1", "1 CHF — 1 month"],
     tier12: ["tier12", "2 CHF — 1 year"],
     localcur: ["local_currency", "Charged in your local currency."],
-    paynote: ["pay_note", "After paying, come back and tap the listing again to reveal the details."],
+    paynote: ["pay_note", "After paying, come back to this page — everyone here becomes visible."],
     unlocked: ["unlocked", "Access unlocked — details are now visible."],
     err_email: ["err_email", "Please enter a valid email."],
     err_code: ["err_code", "Invalid or expired code."],
@@ -342,6 +343,29 @@
   // ----- public API -----
   window.RotaboViewer = {
     hasToken: function () { return !!getCredential(); },
+    // Does the credential on this device hold paid access right now?
+    // A transient failure answers false: the caller shows its locked
+    // state, whose button re-opens the modal, and stepAccessCheck there
+    // is the one place that tells "has not paid" from "could not tell".
+    checkAccess: function () {
+      var tok = getCredential();
+      if (!tok) return Promise.resolve(false);
+      return sb.rpc("viewer_has_access", { p_token: tok.token })
+        .then(function (r) { return !!(r && r.data === true); })
+        .catch(function () { return false; });
+    },
+    // browse_public answers nothing without this -- the list of who is
+    // here is part of what the payment buys, not just the phone number.
+    token: function () { var tok = getCredential(); return tok ? tok.token : null; },
+    // Just back from a viewer checkout? Stripe's webhook can land a few
+    // seconds after the browser does, and in that window "no access" is
+    // really "not yet" -- so a page finding no access should hand over
+    // to the modal, which polls, rather than quoting the price again.
+    justPaid: function () {
+      var at = 0;
+      try { at = parseInt(localStorage.getItem("rotabo_viewer_paid_at") || "0", 10); } catch (e) {}
+      return !!at && Date.now() - at < 3 * 60000;
+    },
     open: open,
     // Reveal a listing's details. opts: {id} or {number}, onDetails(rows), onLocked()
     reveal: function (opts) {
