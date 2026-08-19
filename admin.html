@@ -158,6 +158,7 @@
       <button type="button" class="tab-btn active" id="tabBtnListings">Listings</button>
       <button type="button" class="tab-btn" id="tabBtnVisits">Visits</button>
       <button type="button" class="tab-btn" id="tabBtnAccess">Paid access</button>
+      <button type="button" class="tab-btn" id="tabBtnPayments">Payments</button>
       <div class="tabs-actions">
         <button type="button" class="ghost-btn" id="refreshBtn">Refresh</button>
         <button type="button" class="ghost-btn" id="logoutBtn">Log out</button>
@@ -281,6 +282,39 @@
       </div>
       <p class="empty-note" id="accessEmptyNote" style="display:none;">No paid access matches this filter.</p>
     </div>
+
+    <div class="tab-panel" id="panelPayments">
+      <h1>Payments</h1>
+      <p class="sub">Every completed checkout: who paid, what for, when and how much &mdash; with everything the payer wrote on the listing it bought. Rows marked <em>reconstructed</em> predate this ledger: their tier is certain, but the amount is the list price rather than what Stripe actually captured.</p>
+
+      <div class="stats" id="paymentStats"></div>
+
+      <div class="filter-row">
+        <input type="search" id="paymentSearchInput" autocomplete="off" placeholder="Search email, name, product&hellip;">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>When</th>
+              <th>Amount</th>
+              <th>For</th>
+              <th>Paid by</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email on listing</th>
+              <th>City</th>
+              <th>Country</th>
+              <th>Address</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody id="paymentsTableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty-note" id="paymentsEmptyNote" style="display:none;">No payments match this filter.</p>
+    </div>
   </div>
 </div>
 
@@ -325,6 +359,8 @@
   var visitSegment = "all";
   var allAccess = [];
   var accessStats = null;
+  var allPayments = [];
+  var paymentStats = null;
 
   var loginView = document.getElementById("loginView");
   var dashboardView = document.getElementById("dashboardView");
@@ -342,7 +378,7 @@
   // this, so it can no longer filter a table down to nothing under a "No
   // listings match this filter" note that reads like the dashboard lost
   // every row.
-  var searchTerm = { searchInput: "", visitSearchInput: "", accessSearchInput: "" };
+  var searchTerm = { searchInput: "", visitSearchInput: "", accessSearchInput: "", paymentSearchInput: "" };
 
   function clearSearchBoxes(){
     SEARCH_BOXES.forEach(function(id){
@@ -389,6 +425,7 @@
          + "&segment=" + encodeURIComponent(visitSegment);
     }
     else if (resource === "access") qs = "?resource=access";
+    else if (resource === "payments") qs = "?resource=payments";
     return fetch(FUNCTION_URL + qs, {
       headers: { "Authorization": "Bearer " + token },
       cache: "no-store"
@@ -712,6 +749,87 @@
   // one doesn't mean touching every other tab's handler. Each entry names its
   // button, its panel, the resource it reads and where the rows land -- one
   // loader below serves all three.
+  // Adaptive Pricing means a buyer abroad is charged in their own currency,
+  // so amounts arrive in whatever Stripe captured and must never be summed
+  // across currencies -- the tile lists each one separately instead.
+  var ZERO_DECIMAL = { bif:1, clp:1, djf:1, gnf:1, jpy:1, kmf:1, krw:1, mga:1,
+                       pyg:1, rwf:1, ugx:1, vnd:1, vuv:1, xaf:1, xof:1, xpf:1 };
+  function money(minor, currency){
+    if (minor == null) return "\u2014";
+    var cur = String(currency || "chf").toLowerCase();
+    var value = ZERO_DECIMAL[cur] ? minor : minor / 100;
+    try {
+      return new Intl.NumberFormat(undefined, { style: "currency", currency: cur.toUpperCase() }).format(value);
+    } catch (e) {
+      return value + " " + cur.toUpperCase();
+    }
+  }
+
+  function paymentFor(r){
+    var period = r.months === 12 ? "12 months" : (r.months === 1 ? "1 month" : "");
+    if (r.kind === "manual") return r.product || "Manual \u2014 needs fulfilment";
+    if (r.kind === "viewer") return "Viewer access" + (period ? " \u00b7 " + period : "");
+    var l = r.listings || {};
+    var what = [l.category, l.role].filter(Boolean).join(" / ");
+    return "Listing" + (what ? " \u00b7 " + what : "") + (period ? " \u00b7 " + period : "");
+  }
+
+  function renderPaymentStats(){
+    var s = paymentStats || { total: allPayments.length, listings: 0, viewer: 0, manual: 0, by_currency: {} };
+    var cur = s.by_currency || {};
+    var taken = Object.keys(cur).map(function(k){ return money(cur[k].minor, k); }).join(" \u00b7 ");
+    document.getElementById("paymentStats").innerHTML = ""
+      + tile(s.total, "PAYMENTS")
+      + tile(esc(taken || "\u2014"), "TAKEN")
+      + tile(s.listings, "LISTINGS")
+      + tile(s.viewer + " / " + s.manual, "UNLOCKS / MANUAL");
+  }
+
+  function renderPayments(){
+    renderPaymentStats();
+
+    var search = searchTerm.paymentSearchInput.trim().toLowerCase();
+    var rows = allPayments.filter(function(r){
+      if (!search) return true;
+      var l = r.listings || {};
+      return [r.email, r.product, l.name, l.email, l.phone, l.city, l.country, l.note]
+        .some(function(v){ return String(v == null ? "" : v).toLowerCase().indexOf(search) !== -1; });
+    });
+
+    var tbody = document.getElementById("paymentsTableBody");
+    var emptyNote = document.getElementById("paymentsEmptyNote");
+    if (rows.length === 0) {
+      tbody.innerHTML = "";
+      emptyNote.style.display = "block";
+      return;
+    }
+    emptyNote.style.display = "none";
+
+    tbody.innerHTML = rows.map(function(r){
+      var l = r.listings || {};
+      var when = r.created_at ? new Date(r.created_at).toLocaleString() : "";
+      // A row with no Stripe event id was reconstructed from an older
+      // listing, not observed at payment time. Say so on the amount
+      // itself, which is the only field that is an estimate.
+      var amount = esc(money(r.amount_total, r.currency))
+        + (r.stripe_event_id ? "" : ' <span class="badge unpaid">reconstructed</span>');
+      function cell(v){ return "<td>" + (v ? esc(String(v)) : "&mdash;") + "</td>"; }
+      return "<tr>"
+        + cell(when)
+        + "<td>" + amount + "</td>"
+        + cell(paymentFor(r))
+        + cell(r.email)
+        + cell(l.name)
+        + cell(l.phone)
+        + cell(l.email)
+        + cell(l.city)
+        + cell(l.country)
+        + cell(l.address)
+        + cell(l.note)
+        + "</tr>";
+    }).join("");
+  }
+
   var TABS = [
     {
       btn: "tabBtnListings", panel: "panelListings", resource: "listings",
@@ -727,6 +845,11 @@
       btn: "tabBtnAccess", panel: "panelAccess", resource: "access",
       note: "accessEmptyNote", empty: "No paid access matches this filter.", draw: renderAccess,
       apply: function(res){ allAccess = res.data; accessStats = res.stats; renderAccess(); }
+    }
+    ,{
+      btn: "tabBtnPayments", panel: "panelPayments", resource: "payments",
+      note: "paymentsEmptyNote", empty: "No payments match this filter.", draw: renderPayments,
+      apply: function(res){ allPayments = res.data; paymentStats = res.stats; renderPayments(); }
     }
   ];
   var activeTab = TABS[0];
@@ -845,7 +968,7 @@
       tab.loading = false;
       document.getElementById(tab.note).style.display = "none";
     });
-    ["tableBody", "visitsTableBody", "accessTableBody"].forEach(function(id){
+    ["tableBody", "visitsTableBody", "accessTableBody", "paymentsTableBody"].forEach(function(id){
       document.getElementById(id).innerHTML = "";
     });
     clearSearchBoxes();
