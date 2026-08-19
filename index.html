@@ -422,7 +422,7 @@
     padding:12px 20px;border-radius:12px;
     background:#fff;border:1px solid var(--border);
     color:var(--violet-1);font-weight:800;font-size:.98rem;
-    text-decoration:none;
+    text-decoration:none;font-family:inherit;cursor:pointer;text-align:center;
   }
   .tier-btn:hover{background:var(--bg-card);}
   /* The sponsor amounts are francs too, so they get the same local
@@ -430,6 +430,22 @@
      loop further down picks these up with no extra wiring. */
   .tier-btn .tier-fx{display:block;font-weight:600;font-size:.8rem;color:var(--text-eyebrow);margin-top:3px;}
   .tier-btn .tier-fx:empty{display:none;}
+  /* The paid names. One row per sponsor: tier badge, the name (linked
+     when they gave a website), city. */
+  .sponsor-list{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
+  .sponsor-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .sponsor-row .s-tier{
+    font-size:.76rem;font-weight:800;letter-spacing:.04em;
+    border:1px solid var(--border);border-radius:20px;padding:2px 10px;
+    background:#fff;color:var(--text-eyebrow);
+  }
+  .sponsor-row .s-tier.bronze{color:#a26a34;border-color:#e0c3a4;}
+  .sponsor-row .s-tier.silver{color:#6d7480;border-color:#cdd3da;}
+  .sponsor-row .s-tier.gold{color:#a87f1d;border-color:#e6cf8d;}
+  .sponsor-row .s-tier.platinum{color:#7c2d9c;border-color:#d9b1ea;}
+  .sponsor-row .s-name{color:var(--text-dark);font-weight:800;font-size:1.05rem;}
+  .sponsor-row a.s-name{color:var(--violet-2);}
+  .sponsor-row .s-loc{color:var(--text-eyebrow);font-size:.9rem;font-weight:600;}
 
   footer{
     border-top:1px solid var(--border);
@@ -917,18 +933,29 @@
     <p data-i18n="supporters.p">Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.</p>
     <p data-i18n="supporters.invite">We especially welcome banks, insurers, sports brands, energy-drink and soft-drink makers — and any business that stands behind sober driving.</p>
     <p class="names" data-i18n="supporters.first">No supporters yet — be the first name on this list.</p>
-    <!-- Each figure here must equal what its Payment Link actually charges:
-         the label is what the sponsor is promised and the second argument is
-         what after-payment.html reports to GA4 as the purchase value. They
-         drifted once -- Platinum read "750 CHF+" while Stripe charged 10 000,
-         so the button understated the price thirteenfold and every Platinum
-         sale would have been booked as 750. Verified against Stripe on
-         2026-08-19: 100 / 300 / 750 / 10 000 CHF, VAT added on top at checkout. -->
+    <!-- Filled from sponsors_public: display name, tier, city, website --
+         never contact details. A new sponsor appears here the moment the
+         Stripe webhook flips their row visible, no deploy involved. The
+         names live in their own element because the i18n engine keeps
+         rewriting the "be the first" <p> above on every language switch;
+         that <p> is hidden, not removed, once anyone is on the list. -->
+    <div class="sponsor-list" id="sponsorList" hidden></div>
+    <!-- Each figure here must equal what its Payment Link (SPONSOR_LINKS,
+         in the script below) actually charges: the label is what the
+         sponsor is promised, and SPONSOR_PRICES for the picked tier
+         becomes the GA4 purchase value. They drifted once -- Platinum
+         read "750 CHF+" while Stripe charged 10 000. Verified against
+         Stripe on 2026-08-19: 100 / 300 / 750 / 10 000 CHF, VAT added on
+         top at checkout. The buttons no longer leave for Stripe: they
+         open the sponsor form, which collects a verified email and the
+         name for the list, then sends the checkout off carrying
+         client_reference_id=sponsor-<id> so the webhook can put that
+         name on the list by itself. -->
     <div class="sponsor-tiers">
-      <a class="tier-btn" href="https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('bronze',100)"><span data-i18n="supporters.tier_bronze">Bronze — 100 CHF</span><span class="tier-fx" data-chf="100"></span></a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('silver',300)"><span data-i18n="supporters.tier_silver">Silver — 300 CHF</span><span class="tier-fx" data-chf="300"></span></a>
-      <a class="tier-btn" href="https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('gold',750)"><span data-i18n="supporters.tier_gold">Gold — 750 CHF</span><span class="tier-fx" data-chf="750"></span></a>
-      <a class="tier-btn" href="https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08" target="_blank" rel="noopener" onclick="if(window.sponsorCheckout)sponsorCheckout('platinum',10000)"><span data-i18n="supporters.tier_platinum">Platinum — 10 000 CHF</span><span class="tier-fx" data-chf="10000"></span></a>
+      <button type="button" class="tier-btn" onclick="openSponsorModal('bronze')"><span data-i18n="supporters.tier_bronze">Bronze — 100 CHF</span><span class="tier-fx" data-chf="100"></span></button>
+      <button type="button" class="tier-btn" onclick="openSponsorModal('silver')"><span data-i18n="supporters.tier_silver">Silver — 300 CHF</span><span class="tier-fx" data-chf="300"></span></button>
+      <button type="button" class="tier-btn" onclick="openSponsorModal('gold')"><span data-i18n="supporters.tier_gold">Gold — 750 CHF</span><span class="tier-fx" data-chf="750"></span></button>
+      <button type="button" class="tier-btn" onclick="openSponsorModal('platinum')"><span data-i18n="supporters.tier_platinum">Platinum — 10 000 CHF</span><span class="tier-fx" data-chf="10000"></span></button>
     </div>
   </div>
 </section>
@@ -1129,6 +1156,94 @@
       </div>
       <button type="submit" class="form-submit" data-i18n="generic_form.submit">Continue to payment</button>
       <p class="form-error" id="genericListingError" data-i18n="generic_form.error">Something went wrong. Please try again.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Sponsors used to leave for Stripe straight from the tier buttons,
+     so nothing about them was ever collected and every supporters-list
+     entry had to be typed in by hand from the Stripe email. Now they get
+     the same treatment as listers: this form, the emailed-code gate
+     (emailCodeModal below), create-sponsor, and a checkout that carries
+     the pending row's id -- after which the webhook puts the chosen name
+     on the list by itself. -->
+<div class="modal-overlay" id="sponsorModal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" onclick="closeModal('sponsorModal')" aria-label="Close">✕</button>
+    <h3 data-i18n="supporters.form_title">Become a supporter</h3>
+    <p class="modal-sub" data-i18n="supporters.form_sub">After payment, the name below appears on the supporters list — with a link if you add a website.</p>
+    <form id="sponsorForm" novalidate>
+      <div class="form-field">
+        <label for="sp_name" data-i18n="supporters.display_name_label">Name to show on the list</label>
+        <input type="text" id="sp_name" name="display_name" required autocomplete="organization">
+        <span class="field-hint" data-i18n="supporters.display_name_hint">Your own name or your company's — exactly as it should appear.</span>
+      </div>
+      <div class="form-field">
+        <label data-i18n="supporters.type_label">This is</label>
+        <div class="tier-picker">
+          <label class="tier-option">
+            <input type="radio" name="sponsor_type" value="company" checked>
+            <span class="tier-price" data-i18n="supporters.type_company">A company</span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="sponsor_type" value="person">
+            <span class="tier-price" data-i18n="supporters.type_person">A person</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="sp_email" data-i18n="generic_form.email_label">Email</label>
+        <input type="email" id="sp_email" name="email" required autocomplete="email">
+        <span class="field-hint" data-i18n="supporters.email_hint">Use a real address — we'll send a verification code here before payment. Never shown on the list.</span>
+      </div>
+      <div class="form-field">
+        <label for="sp_country" data-i18n="generic_form.country_label">Country</label>
+        <input type="text" id="sp_country" name="country" required autocomplete="country-name" list="countryList">
+      </div>
+      <div class="form-field">
+        <label for="sp_city" data-i18n="generic_form.city_label">City / area</label>
+        <input type="text" id="sp_city" name="city" required autocomplete="address-level2" list="cityList">
+      </div>
+      <div class="form-field">
+        <label for="sp_phone" data-i18n="generic_form.phone_label">Phone number</label>
+        <input type="tel" id="sp_phone" name="phone" required autocomplete="tel" placeholder="+41 79 123 45 67" pattern="[0-9+\(\)\-\s]{6,20}">
+        <span class="field-hint" data-i18n="supporters.phone_hint">Only so we can reach you about your sponsorship. Never shown on the list.</span>
+      </div>
+      <div class="form-field">
+        <label for="sp_website" data-i18n="supporters.website_label">Website (optional)</label>
+        <input type="text" id="sp_website" name="website_url" autocomplete="url" placeholder="https://…">
+      </div>
+      <div class="form-field">
+        <label data-i18n="supporters.tier_pick_label">Sponsorship</label>
+        <div class="tier-picker">
+          <label class="tier-option">
+            <input type="radio" name="tier" value="bronze" checked>
+            <span class="tier-price">Bronze</span>
+            <span class="tier-period">100 CHF</span>
+            <span class="tier-fx" data-chf="100"></span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="silver">
+            <span class="tier-price">Silver</span>
+            <span class="tier-period">300 CHF</span>
+            <span class="tier-fx" data-chf="300"></span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="gold">
+            <span class="tier-price">Gold</span>
+            <span class="tier-period">750 CHF</span>
+            <span class="tier-fx" data-chf="750"></span>
+          </label>
+          <label class="tier-option">
+            <input type="radio" name="tier" value="platinum">
+            <span class="tier-price">Platinum</span>
+            <span class="tier-period">10 000 CHF</span>
+            <span class="tier-fx" data-chf="10000"></span>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="form-submit" data-i18n="generic_form.submit">Continue to payment</button>
+      <p class="form-error" id="sponsorError" data-i18n="generic_form.error">Something went wrong. Please try again.</p>
     </form>
   </div>
 </div>
@@ -1420,15 +1535,26 @@
       if (!input.value.trim() && previousValue) input.value = previousValue;
     });
   }
-  ["fd_country", "fd_city", "bd_country", "bd_city", "gl_country", "gl_city"].forEach(wireReopenOnFocus);
+  ["fd_country", "fd_city", "bd_country", "bd_city", "gl_country", "gl_city", "sp_country", "sp_city"].forEach(wireReopenOnFocus);
 
-  var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click" };
-  // Sponsor tiers leave for Stripe straight from their href, so this is
-  // the only moment their price is known: after-payment.html reads it
-  // back as the purchase value (the return URL carries no amount).
-  window.sponsorCheckout = function(tier, chf){
-    if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "sponsor", tier: tier, value: chf, currency: "CHF" });
-    try { localStorage.setItem("rotabo_paid_value", String(chf)); } catch (e) {}
+  var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click", sponsorModal: "cta_sponsor_click" };
+  // The four sponsorship Payment Links and their list prices. The tier
+  // buttons in the supporters section only open the form now; the
+  // redirect to Stripe happens in createSponsor below, once the email
+  // is verified and the pending sponsors row exists to reference --
+  // that reference (client_reference_id = "sponsor-<id>") is how the
+  // webhook knows which name to put on the list.
+  var SPONSOR_LINKS = {
+    bronze:   "https://buy.stripe.com/5kQdR24kK2oB7CCccA0co05",
+    silver:   "https://buy.stripe.com/3cI6oA9F40gt5uua4s0co07",
+    gold:     "https://buy.stripe.com/3cI00c04ufbn2ii6Sg0co06",
+    platinum: "https://buy.stripe.com/4gMbIUbNcbZbf5490o0co08"
+  };
+  var SPONSOR_PRICES = { bronze: 100, silver: 300, gold: 750, platinum: 10000 };
+  window.openSponsorModal = function(tier){
+    var radio = document.querySelector('#sponsorForm input[name="tier"][value="' + tier + '"]');
+    if (radio) radio.checked = true;
+    openModal("sponsorModal");
   };
   window.openModal = function(id){
     document.getElementById(id).classList.add("open");
@@ -1550,15 +1676,54 @@
       });
   }
 
-  function submitWithVerification(form, payload, errorEl, sourceModalId){
+  // The sponsor twin of createListing: same verified-email token, a
+  // pending sponsors row instead of a pending listing, and a checkout
+  // whose client_reference_id ("sponsor-<id>") tells the webhook which
+  // name to make visible on the supporters list once the payment lands.
+  function createSponsor(payload, token, form, errorEl){
+    return fetch(FUNCTIONS_URL + "/create-sponsor", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.assign({}, payload, { token: token }))
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+      .then(function(result){
+        if (!result.ok) {
+          setSubmitting(form, false);
+          showError(errorEl);
+          return;
+        }
+        var newId = result.json.id;
+        var chf = SPONSOR_PRICES[payload.tier] || 100;
+        // Guarded like createListing: storage can be denied, and the
+        // redirect below must always run.
+        try {
+          // Stripe returns every checkout to after-payment.html, which
+          // forwards by rotabo_last_listing -- wrong for a sponsor.
+          // Come back to the supporters list, where the paid name is.
+          localStorage.setItem("rotabo_return_to", "/#sponsor");
+          // What this checkout is worth, for the GA4 purchase value.
+          localStorage.setItem("rotabo_paid_value", String(chf));
+        } catch (e) {}
+        if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "sponsor", tier: payload.tier, value: chf, currency: "CHF" });
+        window.location.href = SPONSOR_LINKS[payload.tier] + "?client_reference_id=" + encodeURIComponent("sponsor-" + newId) + "&prefilled_email=" + encodeURIComponent(payload.email);
+      })
+      .catch(function(){
+        setSubmitting(form, false);
+        showError(errorEl);
+      });
+  }
+
+  // createFn defaults to createListing; the sponsor form passes
+  // createSponsor so the same emailed-code gate serves both.
+  function submitWithVerification(form, payload, errorEl, sourceModalId, createFn){
     var email = payload.email;
     var token = cachedToken(email);
     if (token) {
-      createListing(payload, token, form, errorEl);
+      (createFn || createListing)(payload, token, form, errorEl);
       return;
     }
 
-    pending = { form: form, payload: payload, errorEl: errorEl, sourceModalId: sourceModalId, email: email };
+    pending = { form: form, payload: payload, errorEl: errorEl, sourceModalId: sourceModalId, email: email, createFn: createFn };
 
     fetch(FUNCTIONS_URL + "/verify-email", {
       method: "POST",
@@ -1622,7 +1787,7 @@
         // closed when the code step opened).
         openModal(p.sourceModalId);
         setSubmitting(p.form, true);
-        createListing(p.payload, result.json.token, p.form, p.errorEl);
+        (p.createFn || createListing)(p.payload, result.json.token, p.form, p.errorEl);
       })
       .catch(function(){
         setSubmitting(codeForm, false);
@@ -1643,6 +1808,86 @@
     });
   });
 
+
+  document.getElementById("sponsorForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var form = e.target;
+    var errorEl = document.getElementById("sponsorError");
+    hideError(errorEl);
+    normalizePhone(form.phone, form.country);
+    if (!form.reportValidity()) return;
+    setSubmitting(form, true);
+
+    var tierRadio = form.querySelector('input[name="tier"]:checked');
+    var typeRadio = form.querySelector('input[name="sponsor_type"]:checked');
+    var payload = {
+      tier: tierRadio ? tierRadio.value : "bronze",
+      sponsor_type: typeRadio ? typeRadio.value : "company",
+      display_name: form.display_name.value.trim(),
+      email: form.email.value.trim(),
+      country: form.country.value.trim(),
+      city: form.city.value.trim(),
+      phone: form.phone.value.trim(),
+      website_url: form.website_url.value.trim() || null
+    };
+
+    submitWithVerification(form, payload, errorEl, "sponsorModal", createSponsor);
+  });
+
+  // ---- the supporters list itself ----
+  // The whole product a sponsor buys. sponsors_public serves only what
+  // belongs in public -- display name, tier, city, website -- so this
+  // renders straight from the database and a new sponsor appears the
+  // moment the webhook flips their row visible, no deploy involved.
+  (function(){
+    var ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+    fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/rpc/sponsors_public", {
+      method: "POST",
+      headers: { "apikey": ANON_KEY, "Authorization": "Bearer " + ANON_KEY, "Content-Type": "application/json" },
+      body: "{}"
+    }).then(function(res){ return res.ok ? res.json() : []; })
+      .then(function(rows){
+        if (!rows || !rows.length) return;
+        var list = document.getElementById("sponsorList");
+        if (!list) return;
+        list.innerHTML = "";
+        rows.forEach(function(row){
+          var div = document.createElement("div");
+          div.className = "sponsor-row";
+          var badge = document.createElement("span");
+          var tier = typeof row.tier === "string" ? row.tier : "";
+          badge.className = "s-tier " + tier;
+          badge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+          // The name links out only to an https URL create-sponsor
+          // itself normalised; everything renders via textContent --
+          // these strings are typed by sponsors, not by us.
+          var name;
+          if (row.website_url && /^https:\/\//i.test(row.website_url)) {
+            name = document.createElement("a");
+            name.href = row.website_url;
+            name.target = "_blank";
+            name.rel = "noopener nofollow";
+          } else {
+            name = document.createElement("span");
+          }
+          name.className = "s-name";
+          name.textContent = row.display_name || "";
+          var loc = document.createElement("span");
+          loc.className = "s-loc";
+          loc.textContent = [row.city, row.country].filter(Boolean).join(", ");
+          div.appendChild(badge);
+          div.appendChild(name);
+          div.appendChild(loc);
+          list.appendChild(div);
+        });
+        list.hidden = false;
+        // The "be the first name on this list" line has been overtaken
+        // by events. hidden, not removed: the i18n engine still owns it.
+        var firstP = document.querySelector(".supporters .names");
+        if (firstP) firstP.hidden = true;
+      })
+      .catch(function(){ /* the empty-state line simply stays */ });
+  })();
   document.getElementById("findDriverForm").addEventListener("submit", function(e){
     e.preventDefault();
     var form = e.target;
