@@ -1024,7 +1024,7 @@
   <div class="modal-box">
     <button type="button" class="modal-close" onclick="closeModal('becomeDriverModal')" aria-label="Close">✕</button>
     <h3 data-i18n="drive_form.title">Become a driver</h3>
-    <p class="modal-sub" data-i18n="drive_form.subtitle">Create your driver listing. Choose how long you want to stay visible, then start browsing people looking for a driver.</p>
+    <p class="modal-sub" data-i18n="drive_form.subtitle">Create your driver listing. Choose how long you want to stay visible — people looking for a driver can then call you directly.</p>
     <form id="becomeDriverForm" novalidate>
       <div class="form-field">
         <label for="bd_name" data-i18n="drive_form.name_label">Your name</label>
@@ -1394,16 +1394,30 @@
     var code = findDialCode(countryInput.value);
     if (!code) return;
     var digits = raw.replace(/[^0-9]/g, "");
-    // Much of Europe writes the international form as "0041 79 …": the 00
-    // is the same thing as the +, so it has to go first. Without this the
-    // trunk-zero rule below eats only one of the two zeros and the number
-    // is stored as "+41 041 79 …", which dials nowhere -- and the phone
-    // number is the whole thing a viewer pays to see.
-    if (digits.indexOf("00") === 0) digits = digits.slice(2);
-    if (digits.indexOf(code) === 0) digits = digits.slice(code.length);
-    if (digits.charAt(0) === "0") digits = digits.slice(1);
+
+    // Much of Europe writes the international form as "0041 79 …". The
+    // 00 means exactly what the + means, so strip it and treat what
+    // follows as an international number. Only in that case is a leading
+    // country code really a country code: a bare national number that
+    // happens to start with its own dial code is the common case, not
+    // the exception, and slicing it there destroyed real numbers --
+    // Italian mobiles start 39x, Norwegian and Danish subscribers 47x
+    // and 45x, and "391 234 5678" was being stored as "+39 12345678".
+    var international = false;
+    if (digits.indexOf("00") === 0) { digits = digits.slice(2); international = true; }
+    if (international && digits.indexOf(code) === 0) digits = digits.slice(code.length);
+
+    // The trunk zero is dropped almost everywhere when the country code
+    // goes on -- but not in Italy, where 0 is part of the landline
+    // number itself: Rome is +39 06, not +39 6. Stripping it there gave
+    // the viewer who paid to see the number a number that dials nowhere.
+    if (digits.charAt(0) === "0" && KEEPS_TRUNK_ZERO.indexOf(code) === -1) digits = digits.slice(1);
+
     if (digits) phoneInput.value = "+" + code + " " + digits;
   }
+  // Dial codes whose national numbers keep their leading zero in the
+  // international form. Italy is the well-known one.
+  var KEEPS_TRUNK_ZERO = ["39"];
 
   // Wires the country->phone behavior onto one form's pair of fields.
   function wirePhoneCountry(countryId, phoneId){
@@ -1681,7 +1695,12 @@
           localStorage.setItem("rotabo_paid_value", tierMonthsFor(form) === "12" ? "2" : "1");
         } catch (e) {}
         if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
-        window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId);
+        // prefilled_email: the sponsor and viewer checkouts have always sent
+        // it and this one never did, so the person who just proved this
+        // address owns the listing had to type it again at Stripe. It is
+        // also the address the webhook falls back to when it cannot resolve
+        // the buyer any other way, so agreeing with the listing is better.
+        window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId) + "&prefilled_email=" + encodeURIComponent(payload.email);
       })
       .catch(function(){
         setSubmitting(form, false);
@@ -1728,6 +1747,14 @@
 
   // createFn defaults to createListing; the sponsor form passes
   // createSponsor so the same emailed-code gate serves both.
+  // Which flow is asking for a code. verify-email only mints a permanent
+  // Rotabo number for a listing -- a sponsor was being handed one along
+  // with an email promising it "goes live together with your listing",
+  // for a listing they were never making.
+  function purposeFor(createFn){
+    return createFn === createSponsor ? "sponsor" : "listing";
+  }
+
   function submitWithVerification(form, payload, errorEl, sourceModalId, createFn){
     var email = payload.email;
     var token = cachedToken(email);
@@ -1741,7 +1768,7 @@
     fetch(FUNCTIONS_URL + "/verify-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "send", email: email })
+      body: JSON.stringify({ action: "send", email: email, purpose: purposeFor(createFn) })
     }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, status: res.status, json: json }; }); })
       .then(function(result){
         // 429 is the rate limit on send: a code went to this address
@@ -1833,7 +1860,7 @@
     fetch(FUNCTIONS_URL + "/verify-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "send", email: pending.email })
+      body: JSON.stringify({ action: "send", email: pending.email, purpose: purposeFor(pending.createFn) })
     }).then(function(res){
       if (!res.ok && res.status !== 429) showError(resendErrorEl);
     }).catch(function(){

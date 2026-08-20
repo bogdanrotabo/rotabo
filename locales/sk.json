@@ -21,13 +21,6 @@
     "retry_btn": "Skúsiť znova"
   },
 
-  "here": {
-    "title": "Už sú tu.",
-    "note": "Prehliadanie je zadarmo. Odomkni všetky podrobnosti a kontaktuj kohokoľvek — 1 CHF na mesiac, 2 CHF na rok.",
-    "loading": "Načítava sa…",
-    "empty": "Buď prvý — získaj svoje číslo.",
-    "not_found": "Zatiaľ žiadne aktívne číslo Rotabo {n}."
-  },
   "banknote": {
     "title": "Tvoje číslo cestuje po svete. Ty nemusíš.",
     "body": "<p>Vytiahni z peňaženky bankovku. Akúkoľvek. Skôr než ju minieš, napíš na ňu šesť malých znakov: rotabo — plus tvoje číslo Rotabo, ktoré dostaneš po registrácii: rotabo2244. Potom ju nechaj ísť.</p><p>Zajtra zaplatí niekomu kávu. Budúci týždeň bude drobnými v taxíku o tri mestá ďalej. Budúci mesiac prekročí hranicu vo vrecku cudzinca. Peniaze sa nikdy neprestanú pohybovať — a teraz ani tvoje meno.</p><p>Niekde sa niekto pozrie na bankovku vo svojej ruke. Vidí to: rotabo2244. Zvedavosť urobí zvyšok. Napíše to na rotabo.app — a si tam. Tvoje meno. Tvoja vlajka. Čo ponúkaš. Skutočný človek, nájditeľný kýmkoľvek, kdekoľvek, kto kedy drží ten kus papiera.</p><p>Žiadny billboard necestuje tak ďaleko. Žiadna reklama nežije tak dlho. Bankovka zostáva v obehu roky a prejde stovkami rúk — a každá z nich ťa môže nájsť. Jedno pero. Jedno číslo. Celý svet sa stane tvojou reklamou.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Staň sa vodičom",
-    "subtitle": "Vytvor si ponuku vodiča. Vyber si, ako dlho chceš byť viditeľný, a potom si začni prezerať ľudí, ktorí hľadajú vodiča.",
+    "subtitle": "Vytvor si inzerát vodiča. Vyber, ako dlho chceš byť viditeľný — kto hľadá vodiča, ti môže zavolať priamo.",
     "name_label": "Tvoje meno",
     "phone_label": "Telefónne číslo",
     "email_label": "E-mail",

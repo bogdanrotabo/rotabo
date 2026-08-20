@@ -21,13 +21,6 @@
     "retry_btn": "Opnieuw proberen"
   },
 
-  "here": {
-    "title": "Ze zijn er al.",
-    "note": "Bladeren is gratis. Ontgrendel alle details en neem contact op met iedereen — 1 CHF voor een maand, 2 CHF voor een jaar.",
-    "loading": "Laden…",
-    "empty": "Wees de eerste — haal je nummer.",
-    "not_found": "Nog geen actief Rotabo-nummer {n}."
-  },
   "banknote": {
     "title": "Je nummer reist de wereld rond. Jij hoeft dat niet.",
     "body": "<p>Haal een bankbiljet uit je portemonnee. Welke dan ook. Voordat je het uitgeeft, schrijf er zes kleine tekens op: rotabo — plus jouw Rotabo-nummer, dat je na registratie krijgt: rotabo2244. Laat het dan los.</p><p>Morgen betaalt het iemands koffie. Volgende week is het wisselgeld in een taxi drie steden verderop. Volgende maand steekt het een grens over in de zak van een vreemde. Geld stopt nooit met bewegen — en nu je naam ook niet meer.</p><p>Ergens kijkt iemand naar het biljet in zijn hand. Hij ziet het: rotabo2244. Nieuwsgierigheid doet de rest. Hij typt het in op rotabo.app — en daar ben jij. Je naam. Je vlag. Wat je aanbiedt. Een echt mens, vindbaar voor iedereen, overal, die dat stukje papier ooit vasthoudt.</p><p>Geen reclamebord reist zo ver. Geen advertentie leeft zo lang. Een bankbiljet blijft jarenlang in omloop en gaat door honderden handen — en elk daarvan kan jou vinden. Eén pen. Eén nummer. De hele wereld wordt jouw advertentie.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Word chauffeur",
-    "subtitle": "Maak je chauffeursvermelding aan. Kies hoelang je zichtbaar wilt blijven en begin daarna met het bekijken van mensen die een chauffeur zoeken.",
+    "subtitle": "Maak je chauffeursadvertentie. Kies hoe lang je zichtbaar wilt blijven — wie een chauffeur zoekt, kan je direct bellen.",
     "name_label": "Je naam",
     "phone_label": "Telefoonnummer",
     "email_label": "E-mail",

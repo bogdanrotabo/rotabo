@@ -21,13 +21,6 @@
     "retry_btn": "Încearcă din nou"
   },
 
-  "here": {
-    "title": "Sunt deja aici.",
-    "note": "Navigarea e gratuită. Deblochează toate detaliile și contactează pe oricine — 1 CHF pentru o lună, 2 CHF pentru un an.",
-    "loading": "Se încarcă…",
-    "empty": "Fii primul — ia-ți numărul.",
-    "not_found": "Niciun număr Rotabo activ {n} încă."
-  },
   "banknote": {
     "title": "Numărul tău călătorește prin lume. Tu nu trebuie.",
     "body": "<p>Scoate o bancnotă din portofel. Oricare. Înainte s-o cheltui, scrie pe ea șase caractere mici: rotabo — plus numărul tău Rotabo, pe care îl primești după înregistrare: rotabo2244. Apoi las-o să plece.</p><p>Mâine plătește cafeaua cuiva. Săptămâna viitoare e rest într-un taxi la trei orașe distanță. Luna viitoare trece o graniță în buzunarul unui străin. Banii nu se opresc niciodată din mișcare — și acum, nici numele tău.</p><p>Undeva, cineva privește bancnota din mâna sa. O vede: rotabo2244. Curiozitatea face restul. O tastează pe rotabo.app — și acolo ești. Numele tău. Steagul tău. Ce oferi. O persoană reală, găsibilă de oricine, oriunde, care ține vreodată acea bucată de hârtie.</p><p>Niciun panou publicitar nu ajunge atât de departe. Nicio reclamă nu trăiește atât de mult. O bancnotă rămâne în circulație ani de zile, trecând prin sute de mâini — și fiecare dintre ele te poate găsi. Un pix. Un număr. Lumea întreagă devine reclama ta.</p>",
@@ -384,7 +377,7 @@
   },
   "drive_form": {
     "title": "Devino șofer",
-    "subtitle": "Creează-ți listarea de șofer. Alege cât timp vrei să rămâi vizibil, apoi poți începe să răsfoiești cine caută un șofer.",
+    "subtitle": "Creează-ți anunțul de șofer. Alege cât timp vrei să rămâi vizibil — cine caută un șofer te poate suna direct.",
     "name_label": "Numele tău",
     "phone_label": "Număr de telefon",
     "email_label": "Email",

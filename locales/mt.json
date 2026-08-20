@@ -21,13 +21,6 @@
     "retry_btn": "Erġa' pprova"
   },
 
-  "here": {
-    "title": "Diġà qegħdin hawn.",
-    "note": "It-tfittxija hija b'xejn. Iftaħ id-dettalji kollha u kkuntattja lil kulħadd — 1 CHF għal xahar, 2 CHF għal sena.",
-    "loading": "Qed jitgħabba…",
-    "empty": "Kun l-ewwel — ikseb in-numru tiegħek.",
-    "not_found": "Għad m'hemmx numru Rotabo attiv {n}."
-  },
   "banknote": {
     "title": "In-numru tiegħek jivvjaġġa mad-dinja. Int le.",
     "body": "<p>Oħroġ karta tal-flus mill-kartiera tiegħek. Kwalunkwe waħda. Qabel ma tonfoqha, ikteb fuqha sitt karattri żgħar: rotabo — flimkien man-numru Rotabo tiegħek, li tirċievi wara r-reġistrazzjoni: rotabo2244. Imbagħad ħalliha tmur.</p><p>Għada tħallas il-kafè ta' xi ħadd. Il-ġimgħa d-dieħla tkun bqija f'taksi tliet bliet 'il bogħod. Ix-xahar id-dieħel taqsam fruntiera fil-but ta' barrani. Il-flus qatt ma jieqfu jiċċaqilqu — u issa, lanqas ismek.</p><p>X'imkien, xi ħadd iħares lejn il-karta f'idu. Jaraha: rotabo2244. Il-kurżità tagħmel il-bqija. Jittajpjaha fuq rotabo.app — u hemm int. Ismek. Il-bandiera tiegħek. X'toffri. Persuna vera, li tinstab minn kulħadd, kullimkien, li qatt iżomm dik il-biċċa karta.</p><p>L-ebda billboard ma jivvjaġġa daqshekk 'il bogħod. L-ebda reklam ma jgħix daqshekk twil. Il-karta tal-flus tibqa' fiċ-ċirkolazzjoni għal snin, tgħaddi minn mijiet ta' idejn — u kull waħda minnhom tista' ssibek. Pinna waħda. Numru wieħed. Id-dinja kollha ssir ir-reklam tiegħek.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Sir sewwieq",
-    "subtitle": "Oħloq il-lista tiegħek bħala sewwieq. Agħżel kemm żmien trid tibqa' viżibbli, imbagħad ibda tfittex nies li qed ifittxu sewwieq.",
+    "subtitle": "Oħloq ir-reklam tiegħek bħala sewwieq. Agħżel kemm trid tibqa' viżibbli — min qed ifittex sewwieq jista' jċemplek direttament.",
     "name_label": "Ismek",
     "phone_label": "Numru tat-telefon",
     "email_label": "Email",

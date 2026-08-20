@@ -21,13 +21,6 @@
     "retry_btn": "Försök igen"
   },
 
-  "here": {
-    "title": "De är redan här.",
-    "note": "Att bläddra är gratis. Lås upp alla detaljer och kontakta vem som helst — 1 CHF för en månad, 2 CHF för ett år.",
-    "loading": "Laddar…",
-    "empty": "Var först — skaffa ditt nummer.",
-    "not_found": "Ännu inget aktivt Rotabo-nummer {n}."
-  },
   "banknote": {
     "title": "Ditt nummer reser jorden runt. Det behöver inte du.",
     "body": "<p>Ta en sedel ur plånboken. Vilken som helst. Innan du spenderar den, skriv sex små tecken på den: rotabo — plus ditt Rotabo-nummer, som du får efter registreringen: rotabo2244. Släpp den sedan.</p><p>Imorgon betalar den någons kaffe. Nästa vecka är den växel i en taxi tre städer bort. Nästa månad korsar den en gräns i en främlings ficka. Pengar slutar aldrig röra sig — och nu gör inte ditt namn det heller.</p><p>Någonstans tittar någon på sedeln i sin hand. De ser det: rotabo2244. Nyfikenheten gör resten. De skriver in det på rotabo.app — och där är du. Ditt namn. Din flagga. Vad du erbjuder. En verklig människa, hittbar av vem som helst, var som helst, som någonsin håller den papperslappen.</p><p>Ingen reklamtavla reser så långt. Ingen annons lever så länge. En sedel är i omlopp i åratal och passerar genom hundratals händer — och var och en av dem kan hitta dig. En penna. Ett nummer. Hela världen blir din reklam.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Bli förare",
-    "subtitle": "Skapa din förarannons. Välj hur länge du vill vara synlig och börja sedan bläddra bland personer som söker en förare.",
+    "subtitle": "Skapa din förarannons. Välj hur länge du vill vara synlig — den som söker en förare kan ringa dig direkt.",
     "name_label": "Ditt namn",
     "phone_label": "Telefonnummer",
     "email_label": "E-post",

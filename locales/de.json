@@ -21,13 +21,6 @@
     "retry_btn": "Erneut versuchen"
   },
 
-  "here": {
-    "title": "Sie sind schon hier.",
-    "note": "Stöbern ist kostenlos. Schalte alle Details frei und kontaktiere jeden — 1 CHF für einen Monat, 2 CHF für ein Jahr.",
-    "loading": "Wird geladen…",
-    "empty": "Sei der Erste — hol dir deine Nummer.",
-    "not_found": "Noch keine aktive Rotabo-Nummer {n}."
-  },
   "banknote": {
     "title": "Deine Nummer reist um die Welt. Du musst es nicht.",
     "body": "<p>Nimm einen Geldschein aus deiner Brieftasche. Irgendeinen. Bevor du ihn ausgibst, schreib sechs kleine Zeichen darauf: rotabo — plus deine Rotabo-Nummer, die du nach der Anmeldung bekommst: rotabo2244. Dann lass ihn los.</p><p>Morgen bezahlt er jemandes Kaffee. Nächste Woche ist er Wechselgeld in einem Taxi drei Städte weiter. Nächsten Monat überquert er eine Grenze in der Tasche eines Fremden. Geld hört nie auf, sich zu bewegen — und jetzt auch dein Name nicht mehr.</p><p>Irgendwo schaut jemand auf den Schein in seiner Hand. Er sieht es: rotabo2244. Die Neugier erledigt den Rest. Er tippt es auf rotabo.app ein — und da bist du. Dein Name. Deine Flagge. Was du anbietest. Ein echter Mensch, auffindbar für jeden, überall, der dieses Stück Papier je in Händen hält.</p><p>Keine Plakatwand reist so weit. Keine Anzeige lebt so lange. Ein Geldschein bleibt jahrelang im Umlauf und geht durch Hunderte Hände — und jede einzelne kann dich finden. Ein Stift. Eine Nummer. Die ganze Welt wird zu deiner Werbung.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Fahrer werden",
-    "subtitle": "Erstelle dein Fahrerprofil. Wähle, wie lange du sichtbar bleiben willst, und stöbere dann durch Leute, die einen Fahrer suchen.",
+    "subtitle": "Erstelle deine Fahrer-Anzeige. Wähle, wie lange du sichtbar bleiben willst — wer einen Fahrer sucht, kann dich direkt anrufen.",
     "name_label": "Dein Name",
     "phone_label": "Telefonnummer",
     "email_label": "E-Mail",

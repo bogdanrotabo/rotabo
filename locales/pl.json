@@ -21,13 +21,6 @@
     "retry_btn": "Spróbuj ponownie"
   },
 
-  "here": {
-    "title": "Oni już tu są.",
-    "note": "Przeglądanie jest darmowe. Odblokuj wszystkie szczegóły i skontaktuj się z każdym — 1 CHF za miesiąc, 2 CHF za rok.",
-    "loading": "Ładowanie…",
-    "empty": "Bądź pierwszy — zdobądź swój numer.",
-    "not_found": "Nie ma jeszcze aktywnego numeru Rotabo {n}."
-  },
   "banknote": {
     "title": "Twój numer podróżuje po świecie. Ty nie musisz.",
     "body": "<p>Wyjmij banknot z portfela. Dowolny. Zanim go wydasz, napisz na nim sześć małych znaków: rotabo — plus twój numer Rotabo, który dostajesz po rejestracji: rotabo2244. Potem pozwól mu odejść.</p><p>Jutro zapłaci za czyjąś kawę. Za tydzień będzie resztą w taksówce trzy miasta dalej. Za miesiąc przekroczy granicę w kieszeni nieznajomego. Pieniądze nigdy nie przestają się poruszać — a teraz twoje imię też nie.</p><p>Gdzieś ktoś patrzy na banknot w swojej dłoni. Widzi to: rotabo2244. Ciekawość robi resztę. Wpisuje to na rotabo.app — i oto jesteś. Twoje imię. Twoja flaga. To, co oferujesz. Prawdziwy człowiek, do znalezienia przez każdego, wszędzie, kto kiedykolwiek trzyma ten kawałek papieru.</p><p>Żaden billboard nie podróżuje tak daleko. Żadna reklama nie żyje tak długo. Banknot pozostaje w obiegu latami, przechodząc przez setki rąk — i każda z nich może cię znaleźć. Jeden długopis. Jeden numer. Cały świat staje się twoją reklamą.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Zostań kierowcą",
-    "subtitle": "Utwórz swoje ogłoszenie kierowcy. Wybierz, jak długo chcesz być widoczny, a potem zacznij przeglądać osoby szukające kierowcy.",
+    "subtitle": "Utwórz swoje ogłoszenie kierowcy. Wybierz, jak długo chcesz być widoczny — kto szuka kierowcy, może zadzwonić do ciebie bezpośrednio.",
     "name_label": "Twoje imię",
     "phone_label": "Numer telefonu",
     "email_label": "E-mail",

@@ -21,13 +21,6 @@
     "retry_btn": "Tekrar dene"
   },
 
-  "here": {
-    "title": "Onlar çoktan burada.",
-    "note": "Göz atmak ücretsiz. Tüm ayrıntıları aç ve herkesle iletişime geç — bir ay için 1 CHF, bir yıl için 2 CHF.",
-    "loading": "Yükleniyor…",
-    "empty": "İlk sen ol — numaranı al.",
-    "not_found": "Henüz aktif bir Rotabo numarası {n} yok."
-  },
   "banknote": {
     "title": "Numaran dünyayı dolaşır. Senin dolaşmana gerek yok.",
     "body": "<p>Cüzdanından bir banknot çıkar. Herhangi biri. Harcamadan önce üzerine altı küçük karakter yaz: rotabo — artı kayıt olduktan sonra aldığın Rotabo numaran: rotabo2244. Sonra bırak gitsin.</p><p>Yarın birinin kahvesini öder. Gelecek hafta üç şehir ötede bir takside para üstüdür. Gelecek ay bir yabancının cebinde sınırı geçer. Para asla hareket etmeyi bırakmaz — ve artık adın da bırakmıyor.</p><p>Bir yerlerde biri elindeki banknota bakar. Onu görür: rotabo2244. Gerisini merak halleder. Bunu rotabo.app adresine yazar — ve işte oradasın. Adın. Bayrağın. Ne sunduğun. O kağıt parçasını tutan herkesin, her yerde bulabileceği gerçek bir insan.</p><p>Hiçbir reklam panosu bu kadar uzağa gitmez. Hiçbir ilan bu kadar uzun yaşamaz. Bir banknot yıllarca dolaşımda kalır, yüzlerce elden geçer — ve her biri seni bulabilir. Bir kalem. Bir numara. Tüm dünya senin reklamın olur.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Sürücü ol",
-    "subtitle": "Sürücü ilanını oluştur. Ne kadar süre görünür kalmak istediğini seç, ardından sürücü arayan kişilere göz atmaya başla.",
+    "subtitle": "Şoför ilanını oluştur. Ne kadar süre görünür kalmak istediğini seç — şoför arayanlar seni doğrudan arayabilir.",
     "name_label": "Adın",
     "phone_label": "Telefon numarası",
     "email_label": "E-posta",

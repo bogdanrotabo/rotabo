@@ -21,13 +21,6 @@
     "retry_btn": "Proovi uuesti"
   },
 
-  "here": {
-    "title": "Nad on juba siin.",
-    "note": "Sirvimine on tasuta. Ava kõik üksikasjad ja võta kellegagi ühendust — 1 CHF kuu eest, 2 CHF aasta eest.",
-    "loading": "Laadimine…",
-    "empty": "Ole esimene — hangi oma number.",
-    "not_found": "Aktiivset Rotabo numbrit {n} veel pole."
-  },
   "banknote": {
     "title": "Sinu number rändab mööda maailma. Sinul pole vaja.",
     "body": "<p>Võta rahakotist rahatäht. Ükskõik milline. Enne kui selle kulutad, kirjuta sellele kuus väikest märki: rotabo — pluss sinu Rotabo number, mille saad pärast registreerumist: rotabo2244. Siis lase sel minna.</p><p>Homme maksab see kellegi kohvi. Järgmisel nädalal on see vahetusraha taksos kolme linna kaugusel. Järgmisel kuul ületab see piiri võõra taskus. Raha ei lakka kunagi liikumast — ja nüüd ka sinu nimi mitte.</p><p>Kuskil vaatab keegi oma käes olevat rahatähte. Ta näeb seda: rotabo2244. Uudishimu teeb ülejäänu. Ta trükib selle aadressile rotabo.app — ja seal sa oledki. Sinu nimi. Sinu lipp. Mida sa pakud. Tõeline inimene, keda saab leida igaüks, kõikjal, kes seda paberitükki kunagi käes hoiab.</p><p>Ükski reklaamtahvel ei rända nii kaugele. Ükski reklaam ei ela nii kaua. Rahatäht püsib käibel aastaid ja läbib sadu käsi — ja igaüks neist võib sind leida. Üks pastakas. Üks number. Kogu maailmast saab sinu reklaam.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Hakka juhiks",
-    "subtitle": "Loo oma juhikuulutus. Vali, kui kauaks soovid nähtavaks jääda, ning hakka seejärel sirvima juhti otsivaid inimesi.",
+    "subtitle": "Loo oma juhikuulutus. Vali, kui kaua soovid nähtav olla — juhti otsivad inimesed saavad sulle otse helistada.",
     "name_label": "Sinu nimi",
     "phone_label": "Telefoninumber",
     "email_label": "E-post",

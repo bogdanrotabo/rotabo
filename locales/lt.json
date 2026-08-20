@@ -21,13 +21,6 @@
     "retry_btn": "Bandyti dar kartą"
   },
 
-  "here": {
-    "title": "Jie jau čia.",
-    "note": "Naršyti nemokama. Atrakink visą informaciją ir susisiek su bet kuo — 1 CHF mėnesiui, 2 CHF metams.",
-    "loading": "Įkeliama…",
-    "empty": "Būk pirmas — gauk savo numerį.",
-    "not_found": "Aktyvaus Rotabo numerio {n} dar nėra."
-  },
   "banknote": {
     "title": "Tavo numeris keliauja po pasaulį. Tau nereikia.",
     "body": "<p>Išsiimk iš piniginės banknotą. Bet kokį. Prieš išleisdamas, užrašyk ant jo šešis mažus ženklus: rotabo — plius tavo Rotabo numeris, kurį gauni po registracijos: rotabo2244. Tada paleisk jį.</p><p>Rytoj jis sumokės už kažkieno kavą. Kitą savaitę bus grąža taksi už trijų miestų. Kitą mėnesį kirs sieną nepažįstamojo kišenėje. Pinigai niekada nenustoja judėti — o dabar ir tavo vardas.</p><p>Kažkur kažkas pažvelgia į banknotą savo rankoje. Pamato: rotabo2244. Smalsumas padaro likusią dalį. Jis įveda tai svetainėje rotabo.app — ir štai tu. Tavo vardas. Tavo vėliava. Ką siūlai. Tikras žmogus, surandamas bet kam, bet kur, kas kada nors laiko tą popieriaus gabalėlį.</p><p>Joks reklaminis stendas nekeliauja taip toli. Jokia reklama negyvena taip ilgai. Banknotas lieka apyvartoje metų metus ir pereina per šimtus rankų — ir kiekviena iš jų gali tave rasti. Vienas rašiklis. Vienas numeris. Visas pasaulis tampa tavo reklama.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Tapk vairuotoju",
-    "subtitle": "Sukurk savo vairuotojo skelbimą. Pasirink, kiek laiko nori būti matomas, o tada pradėk naršyti žmones, ieškančius vairuotojo.",
+    "subtitle": "Sukurk savo vairuotojo skelbimą. Pasirink, kiek laiko nori būti matomas — ieškantieji vairuotojo galės tau paskambinti tiesiogiai.",
     "name_label": "Tavo vardas",
     "phone_label": "Telefono numeris",
     "email_label": "El. paštas",

@@ -343,10 +343,29 @@
   function getStored(){ try { return sessionStorage.getItem(SESSION_KEY); } catch (e) { return null; } }
   function getStoredMode(){ try { return sessionStorage.getItem(MODE_KEY); } catch (e) { return null; } }
   function setStored(v, mode){
+    // Any deliberate login is the end of a logged-out state.
+    clearLoggedOut();
     try { sessionStorage.setItem(SESSION_KEY, v); sessionStorage.setItem(MODE_KEY, mode); } catch (e) {}
   }
+  // "Log out" exists because this page lists every customer's phone and
+  // email and there had to be a way to put that away. For a session-mode
+  // admin it was only half true: the Supabase session lives in
+  // localStorage and survived, so F5 walked straight back into the
+  // dashboard with no password. This flag is what the auto-login below
+  // checks; it is session-scoped, so closing the tab forgets it, and it
+  // does not sign the person out of account.html site-wide.
+  var LOGGED_OUT_KEY = "rotabo_admin_logged_out";
   function clearStored(){
     try { sessionStorage.removeItem(SESSION_KEY); sessionStorage.removeItem(MODE_KEY); } catch (e) {}
+  }
+  function markLoggedOut(){
+    try { sessionStorage.setItem(LOGGED_OUT_KEY, "1"); } catch (e) {}
+  }
+  function isLoggedOut(){
+    try { return sessionStorage.getItem(LOGGED_OUT_KEY) === "1"; } catch (e) { return false; }
+  }
+  function clearLoggedOut(){
+    try { sessionStorage.removeItem(LOGGED_OUT_KEY); } catch (e) {}
   }
 
   var allRows = [];
@@ -370,7 +389,11 @@
   var refreshBtn = document.getElementById("refreshBtn");
   var logoutBtn = document.getElementById("logoutBtn");
 
-  var SEARCH_BOXES = ["searchInput", "visitSearchInput", "accessSearchInput"];
+  // paymentSearchInput belongs here too: without it the Payments box
+  // had no listener, no autofill sweep and no clearing on logout -- an
+  // admin typing a name saw the text appear over a table that had not
+  // been filtered at all, and read the whole ledger as the result.
+  var SEARCH_BOXES = ["searchInput", "visitSearchInput", "accessSearchInput", "paymentSearchInput"];
 
   // The tables filter on these, never on the boxes themselves. A value the
   // person did not type -- a password manager refilling a saved login, the
@@ -744,6 +767,7 @@
   }
 
   bindSearch("accessSearchInput", debounce(renderAccess));
+  bindSearch("paymentSearchInput", debounce(renderPayments));
 
   // Tabs are table-driven rather than toggled against each other, so adding
   // one doesn't mean touching every other tab's handler. Each entry names its
@@ -895,7 +919,7 @@
   // was already filtered by would leave the two disagreeing.
   window.addEventListener("load", function(){
     syncSegmentSelect();
-    var filled = ["searchInput", "visitSearchInput", "accessSearchInput"].some(function(id){
+    var filled = SEARCH_BOXES.some(function(id){
       return document.getElementById(id).value !== "";
     });
     if (!filled) return;
@@ -965,6 +989,7 @@
   // it away short of closing the tab.
   logoutBtn.addEventListener("click", function(){
     clearStored();
+    markLoggedOut();
     allRows = []; allVisits = []; allAccess = [];
     visitStats = null; accessStats = null;
     visitSegment = "all";
@@ -991,6 +1016,10 @@
   // token instead -- one login for everything. Falls back to the shared
   // password if there's no session or it isn't an admin one.
   getSession().then(function(session){
+    // A session-mode admin who pressed "Log out" must not be walked back
+    // in by the next page load; the Supabase session itself is left alone
+    // so they stay logged in to account.html.
+    if (isLoggedOut()) return false;
     if (!session || !session.access_token) return false;
     return apiGet("listings", session.access_token).then(function(res){
       if (!res.ok) return false;

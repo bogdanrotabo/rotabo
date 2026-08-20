@@ -21,13 +21,6 @@
     "retry_btn": "Bain triail eile as"
   },
 
-  "here": {
-    "title": "Tá siad anseo cheana féin.",
-    "note": "Tá brabhsáil saor in aisce. Díghlasáil na sonraí go léir agus déan teagmháil le haon duine — 1 CHF ar feadh míosa, 2 CHF ar feadh bliana.",
-    "loading": "Á lódáil…",
-    "empty": "Bí ar an gcéad duine — faigh d'uimhir.",
-    "not_found": "Níl uimhir Rotabo ghníomhach {n} ann fós."
-  },
   "banknote": {
     "title": "Taistealaíonn d'uimhir an domhan. Ní gá duitse.",
     "body": "<p>Tóg nóta bainc as do sparán. Aon cheann. Sula gcaitheann tú é, scríobh sé charachtar bheaga air: rotabo — móide d'uimhir Rotabo, an ceann a fhaigheann tú tar éis duit clárú: rotabo2244. Ansin lig dó imeacht.</p><p>Amárach íocann sé caife duine éigin. An tseachtain seo chugainn is sóinseáil é i dtacsaí trí chathair ar shiúl. An mhí seo chugainn trasnaíonn sé teorainn i bpóca strainséir. Ní stopann airgead riamh ag bogadh — agus anois ní stopann d'ainm ach oiread.</p><p>Áit éigin, féachann duine ar an nóta ina lámh. Feiceann sé é: rotabo2244. Déanann an fhiosracht an chuid eile. Clóscríobhann sé isteach ar rotabo.app é — agus sin tú. D'ainm. Do bhratach. Cad a chuireann tú ar fáil. Fíordhuine, inaimsithe ag aon duine, áit ar bith, a choinníonn an píosa páipéir sin riamh.</p><p>Ní thaistealaíonn aon chlár fógraíochta chomh fada sin. Ní mhaireann aon fhógra chomh fada sin. Fanann nóta bainc i gcúrsaíocht ar feadh blianta, ag dul trí na céadta lámh — agus is féidir le gach ceann acu tú a aimsiú. Peann amháin. Uimhir amháin. Éiríonn an domhan iomlán mar d'fhógra.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Bí i do thiománaí",
-    "subtitle": "Cruthaigh do liostú tiománaí. Roghnaigh cá fhad ar mhaith leat a bheith infheicthe, agus ansin tosaigh ag brabhsáil daoine atá ag lorg tiománaí.",
+    "subtitle": "Cruthaigh do liostáil tiománaí. Roghnaigh cé chomh fada agus is mian leat a bheith le feiceáil — is féidir le daoine atá ag lorg tiománaí glaoch ort go díreach.",
     "name_label": "D'ainm",
     "phone_label": "Uimhir theileafóin",
     "email_label": "Ríomhphost",

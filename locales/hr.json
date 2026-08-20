@@ -21,13 +21,6 @@
     "retry_btn": "Pokušaj ponovno"
   },
 
-  "here": {
-    "title": "Već su ovdje.",
-    "note": "Pregledavanje je besplatno. Otključaj sve detalje i kontaktiraj bilo koga — 1 CHF za mjesec, 2 CHF za godinu.",
-    "loading": "Učitavanje…",
-    "empty": "Budi prvi — nabavi svoj broj.",
-    "not_found": "Još nema aktivnog Rotabo broja {n}."
-  },
   "banknote": {
     "title": "Tvoj broj putuje svijetom. Ti ne moraš.",
     "body": "<p>Izvadi novčanicu iz novčanika. Bilo koju. Prije nego je potrošiš, napiši na nju šest malih znakova: rotabo — plus tvoj Rotabo broj, koji dobiješ nakon registracije: rotabo2244. Zatim je pusti.</p><p>Sutra plaća nečiju kavu. Sljedeći tjedan je sitniš u taksiju tri grada dalje. Sljedeći mjesec prelazi granicu u džepu stranca. Novac se nikad ne prestaje kretati — a sada ni tvoje ime.</p><p>Negdje netko pogleda novčanicu u svojoj ruci. Vidi je: rotabo2244. Znatiželja učini ostalo. Utipka je na rotabo.app — i eto tebe. Tvoje ime. Tvoja zastava. Ono što nudiš. Stvarna osoba, pronađiva od bilo koga, bilo gdje, tko ikad drži taj komad papira.</p><p>Nijedan pano ne putuje tako daleko. Nijedan oglas ne živi tako dugo. Novčanica ostaje u optjecaju godinama, prolazeći kroz stotine ruku — i svaka od njih te može pronaći. Jedna olovka. Jedan broj. Cijeli svijet postaje tvoj oglas.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Postani vozač",
-    "subtitle": "Kreiraj svoj oglas za vozača. Odaberi koliko dugo želiš biti vidljiv, a zatim počni pregledavati ljude koji traže vozača.",
+    "subtitle": "Izradi svoj oglas za vozača. Odaberi koliko dugo želiš biti vidljiv — tko traži vozača može te nazvati izravno.",
     "name_label": "Vaše ime",
     "phone_label": "Broj telefona",
     "email_label": "E-mail",

@@ -21,13 +21,6 @@
     "retry_btn": "Riprova"
   },
 
-  "here": {
-    "title": "Sono già qui.",
-    "note": "Sfogliare è gratis. Sblocca tutti i dettagli e contatta chiunque — 1 CHF per un mese, 2 CHF per un anno.",
-    "loading": "Caricamento…",
-    "empty": "Sii il primo — ottieni il tuo numero.",
-    "not_found": "Nessun numero Rotabo attivo {n} ancora."
-  },
   "banknote": {
     "title": "Il tuo numero viaggia per il mondo. Tu no.",
     "body": "<p>Prendi una banconota dal portafoglio. Una qualsiasi. Prima di spenderla, scrivici sopra sei piccoli caratteri: rotabo — più il tuo numero Rotabo, quello che ricevi dopo la registrazione: rotabo2244. Poi lasciala andare.</p><p>Domani paga il caffè di qualcuno. La settimana prossima è resto in un taxi a tre città di distanza. Il mese prossimo attraversa un confine nella tasca di uno sconosciuto. Il denaro non smette mai di muoversi — e ora nemmeno il tuo nome.</p><p>Da qualche parte, qualcuno guarda la banconota nella sua mano. La vede: rotabo2244. La curiosità fa il resto. La digita su rotabo.app — ed eccoti lì. Il tuo nome. La tua bandiera. Ciò che offri. Una persona reale, trovabile da chiunque, ovunque, tenga mai quel pezzo di carta.</p><p>Nessun cartellone viaggia così lontano. Nessun annuncio vive così a lungo. Una banconota resta in circolazione per anni, passando per centinaia di mani — e ognuna di esse può trovarti. Una penna. Un numero. Il mondo intero diventa la tua pubblicità.</p>",
@@ -384,7 +377,7 @@
   },
   "drive_form": {
     "title": "Diventa autista",
-    "subtitle": "Crea il tuo annuncio da autista. Scegli per quanto tempo restare visibile, poi potrai iniziare a sfogliare chi cerca un autista.",
+    "subtitle": "Crea il tuo annuncio da autista. Scegli per quanto tempo restare visibile — chi cerca un autista potrà chiamarti direttamente.",
     "name_label": "Il tuo nome",
     "phone_label": "Numero di telefono",
     "email_label": "Email",

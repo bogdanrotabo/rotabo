@@ -21,13 +21,6 @@
     "retry_btn": "Próbáld újra"
   },
 
-  "here": {
-    "title": "Már itt vannak.",
-    "note": "A böngészés ingyenes. Oldd fel az összes részletet, és lépj kapcsolatba bárkivel — 1 CHF egy hónapra, 2 CHF egy évre.",
-    "loading": "Betöltés…",
-    "empty": "Legyél az első — szerezd meg a számod.",
-    "not_found": "Még nincs aktív Rotabo-szám {n}."
-  },
   "banknote": {
     "title": "A számod bejárja a világot. Neked nem kell.",
     "body": "<p>Végy ki egy bankjegyet a pénztárcádból. Bármelyiket. Mielőtt elköltenéd, írj rá hat kis karaktert: rotabo — plusz a Rotabo-számod, amit a regisztráció után kapsz: rotabo2244. Aztán engedd útjára.</p><p>Holnap valakinek a kávéját fizeti. Jövő héten aprópénz egy taxiban három várossal odébb. Jövő hónapban határt lép át egy idegen zsebében. A pénz sosem áll meg — és mostantól a neved sem.</p><p>Valahol valaki ránéz a kezében lévő bankjegyre. Meglátja: rotabo2244. A kíváncsiság elvégzi a többit. Beírja a rotabo.app-ba — és ott vagy. A neved. A zászlód. Amit kínálsz. Egy valódi ember, akit bárki, bárhol megtalálhat, aki valaha kézbe veszi azt a papírdarabot.</p><p>Egyetlen óriásplakát sem utazik ilyen messzire. Egyetlen hirdetés sem él ilyen sokáig. Egy bankjegy évekig forgalomban marad, több száz kézen megy át — és mindegyik megtalálhat téged. Egy toll. Egy szám. Az egész világ a hirdetéseddé válik.</p>",
@@ -358,7 +351,7 @@
   },
   "drive_form": {
     "title": "Legyél sofőr",
-    "subtitle": "Hozd létre a sofőrhirdetésed. Válaszd ki, mennyi ideig szeretnél látható maradni, majd kezdd el böngészni, kik keresnek sofőrt.",
+    "subtitle": "Hozd létre a sofőrhirdetésedet. Válaszd ki, meddig szeretnél látható maradni — aki sofőrt keres, közvetlenül felhívhat.",
     "name_label": "A neved",
     "phone_label": "Telefonszám",
     "email_label": "E-mail",

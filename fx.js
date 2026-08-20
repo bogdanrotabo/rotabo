@@ -161,13 +161,23 @@
   // "USD" is the answer of last resort throughout: better a hint in the
   // world's reference currency than no hint at all.
   function currency() {
+    // Where the reader is standing beats the language they picked, for
+    // Switzerland and Liechtenstein only. Every price on the site is
+    // already in CHF, so a conversion is noise there -- and it used to
+    // appear the moment a Swiss visitor touched the language switcher:
+    // CH is listed under de/fr/it but under none of the other 35, so
+    // picking English quoted GBP, Portuguese quoted EUR, Polish PLN,
+    // all next to a figure already written in francs. That is precisely
+    // the audience this site is for.
+    var here = region();
+    if (here === "CH" || here === "LI") return "CHF";
+
     var lang = chosenLang();
-    if (!lang) return REGION_CURRENCY[region()] || "USD";
+    if (!lang) return REGION_CURRENCY[here] || "USD";
 
     var list = LANG_REGIONS[lang];
-    if (!list) return REGION_CURRENCY[region()] || "USD";
+    if (!list) return REGION_CURRENCY[here] || "USD";
 
-    var here = region();
     if (here && list.indexOf(here) !== -1) return REGION_CURRENCY[here];
     return REGION_CURRENCY[list[0]] || "USD";
   }

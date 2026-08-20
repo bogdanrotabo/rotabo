@@ -21,13 +21,6 @@
     "retry_btn": "Yritä uudelleen"
   },
 
-  "here": {
-    "title": "He ovat jo täällä.",
-    "note": "Selailu on ilmaista. Avaa kaikki tiedot ja ota yhteyttä keneen tahansa — 1 CHF kuukaudeksi, 2 CHF vuodeksi.",
-    "loading": "Ladataan…",
-    "empty": "Ole ensimmäinen — hanki numerosi.",
-    "not_found": "Ei vielä aktiivista Rotabo-numeroa {n}."
-  },
   "banknote": {
     "title": "Numerosi matkaa maailmalla. Sinun ei tarvitse.",
     "body": "<p>Ota seteli lompakostasi. Mikä tahansa. Ennen kuin käytät sen, kirjoita siihen kuusi pientä merkkiä: rotabo — ja perään Rotabo-numerosi, jonka saat rekisteröitymisen jälkeen: rotabo2244. Päästä se sitten menemään.</p><p>Huomenna se maksaa jonkun kahvin. Ensi viikolla se on vaihtorahaa taksissa kolmen kaupungin päässä. Ensi kuussa se ylittää rajan tuntemattoman taskussa. Raha ei koskaan lakkaa liikkumasta — eikä nyt myöskään nimesi.</p><p>Jossain joku katsoo kädessään olevaa seteliä. Hän näkee sen: rotabo2244. Uteliaisuus tekee lopun. Hän kirjoittaa sen osoitteeseen rotabo.app — ja siinä olet. Nimesi. Lippusi. Mitä tarjoat. Todellinen ihminen, jonka kuka tahansa, missä tahansa, joka koskaan pitää sitä paperinpalaa, voi löytää.</p><p>Mikään mainostaulu ei matkaa niin kauas. Mikään mainos ei elä niin kauan. Seteli pysyy liikkeessä vuosia ja kulkee satojen käsien läpi — ja jokainen niistä voi löytää sinut. Yksi kynä. Yksi numero. Koko maailmasta tulee mainoksesi.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Ryhdy kuljettajaksi",
-    "subtitle": "Luo kuljettajailmoituksesi. Valitse, kuinka kauan haluat olla näkyvissä, ja ala sitten selata kuljettajaa etsiviä ihmisiä.",
+    "subtitle": "Luo kuljettajailmoituksesi. Valitse, kuinka kauan haluat näkyä — kuljettajaa etsivät voivat soittaa sinulle suoraan.",
     "name_label": "Nimesi",
     "phone_label": "Puhelinnumero",
     "email_label": "Sähköposti",

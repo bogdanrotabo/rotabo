@@ -50,13 +50,6 @@
     "badge_live": "Live journey sharing",
     "badge_pay": "Google Pay / Apple Pay"
   },
-  "here": {
-    "title": "They're already here.",
-    "note": "Browsing is free. Unlock full details and contact anyone — 1 CHF for a month, 2 CHF for a year.",
-    "loading": "Loading…",
-    "empty": "Be the first — get your number.",
-    "not_found": "No active Rotabo number {n} yet."
-  },
   "banknote": {
     "title": "Your number travels the world. You don't have to.",
     "body": "<p>Take a banknote out of your wallet. Any one. Before you spend it, write six small characters on it: rotabo — plus the Rotabo number you get when you register: rotabo2244. Then let it go.</p><p>Tomorrow it pays for someone's coffee. Next week it's change in a taxi three cities away. Next month it crosses a border in a stranger's pocket. Money never stops moving — and now, neither does your name.</p><p>Somewhere, someone looks down at the note in their hand. They see it: rotabo2244. Curiosity does the rest. They type it into rotabo.app — and there you are. Your name. Your flag. What you offer. A real person, findable by anyone, anywhere, who ever holds that piece of paper.</p><p>No billboard travels this far. No ad lives this long. A banknote stays in circulation for years, passing through hundreds of hands — and every single one of them can find you. One pen. One number. The whole world becomes your advertisement.</p>",
@@ -382,7 +375,7 @@
   },
   "drive_form": {
     "title": "Become a driver",
-    "subtitle": "Create your driver listing. Choose how long you want to stay visible, then start browsing people looking for a driver.",
+    "subtitle": "Create your driver listing. Choose how long you want to stay visible — people looking for a driver can then call you directly.",
     "name_label": "Your name",
     "phone_label": "Phone number",
     "email_label": "Email",

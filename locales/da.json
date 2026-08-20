@@ -21,13 +21,6 @@
     "retry_btn": "Prøv igen"
   },
 
-  "here": {
-    "title": "De er her allerede.",
-    "note": "At kigge er gratis. Lås alle detaljer op og kontakt hvem som helst — 1 CHF for en måned, 2 CHF for et år.",
-    "loading": "Indlæser…",
-    "empty": "Vær den første — få dit nummer.",
-    "not_found": "Endnu intet aktivt Rotabo-nummer {n}."
-  },
   "banknote": {
     "title": "Dit nummer rejser verden rundt. Det behøver du ikke.",
     "body": "<p>Tag en pengeseddel op af din pung. En hvilken som helst. Før du bruger den, skriv seks små tegn på den: rotabo — plus dit Rotabo-nummer, som du får efter tilmeldingen: rotabo2244. Slip den så.</p><p>I morgen betaler den nogens kaffe. Næste uge er den byttepenge i en taxa tre byer væk. Næste måned krydser den en grænse i en fremmeds lomme. Penge holder aldrig op med at bevæge sig — og nu gør dit navn det heller ikke.</p><p>Et sted kigger nogen på sedlen i hånden. De ser det: rotabo2244. Nysgerrigheden gør resten. De taster det ind på rotabo.app — og der er du. Dit navn. Dit flag. Hvad du tilbyder. Et rigtigt menneske, findbar for alle, overalt, som nogensinde holder det stykke papir.</p><p>Ingen reklametavle rejser så langt. Ingen annonce lever så længe. En pengeseddel er i omløb i årevis og går gennem hundredvis af hænder — og hver eneste kan finde dig. En kuglepen. Et nummer. Hele verden bliver din reklame.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Bliv chauffør",
-    "subtitle": "Opret din chaufførannonce. Vælg, hvor længe du vil være synlig, og begynd derefter at se på folk, der søger en chauffør.",
+    "subtitle": "Opret dit chaufføropslag. Vælg hvor længe du vil være synlig — folk der søger en chauffør kan ringe direkte til dig.",
     "name_label": "Dit navn",
     "phone_label": "Telefonnummer",
     "email_label": "E-mail",

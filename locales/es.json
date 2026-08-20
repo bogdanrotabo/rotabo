@@ -21,13 +21,6 @@
     "retry_btn": "Intentar de nuevo"
   },
 
-  "here": {
-    "title": "Ya están aquí.",
-    "note": "Navegar es gratis. Desbloquea todos los detalles y contacta con cualquiera — 1 CHF por un mes, 2 CHF por un año.",
-    "loading": "Cargando…",
-    "empty": "Sé el primero — consigue tu número.",
-    "not_found": "Aún no hay un número Rotabo activo {n}."
-  },
   "banknote": {
     "title": "Tu número viaja por el mundo. Tú no tienes que hacerlo.",
     "body": "<p>Saca un billete de tu cartera. Cualquiera. Antes de gastarlo, escribe sobre él seis pequeños caracteres: rotabo — más tu número Rotabo, el que recibes al registrarte: rotabo2244. Luego déjalo ir.</p><p>Mañana paga el café de alguien. La próxima semana es cambio en un taxi a tres ciudades de distancia. El próximo mes cruza una frontera en el bolsillo de un desconocido. El dinero nunca deja de moverse — y ahora, tampoco tu nombre.</p><p>En algún lugar, alguien mira el billete en su mano. Lo ve: rotabo2244. La curiosidad hace el resto. Lo escribe en rotabo.app — y ahí estás. Tu nombre. Tu bandera. Lo que ofreces. Una persona real, localizable por cualquiera, en cualquier lugar, que alguna vez sostenga ese trozo de papel.</p><p>Ninguna valla publicitaria viaja tan lejos. Ningún anuncio vive tanto tiempo. Un billete permanece en circulación durante años, pasando por cientos de manos — y cada una de ellas puede encontrarte. Un bolígrafo. Un número. El mundo entero se convierte en tu anuncio.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Conviértete en conductor",
-    "subtitle": "Crea tu perfil de conductor. Elige cuánto tiempo quieres estar visible y luego empieza a explorar la gente que busca un conductor.",
+    "subtitle": "Crea tu anuncio de conductor. Elige cuánto tiempo quieres estar visible — quien busque conductor podrá llamarte directamente.",
     "name_label": "Tu nombre",
     "phone_label": "Número de teléfono",
     "email_label": "Correo electrónico",

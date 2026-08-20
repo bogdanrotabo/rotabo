@@ -62,6 +62,9 @@
     padding:18px 20px;margin-bottom:24px;
   }
   .my-listing:empty{display:none;}
+  /* An expired listing is not good news, and the green card said it was. */
+  .my-listing.expired{background:#f6f4f8;border-color:var(--border);}
+  .my-listing.expired .my-eyebrow{color:var(--text-eyebrow);}
   .my-listing .my-eyebrow{color:var(--green);font-weight:800;font-size:.82rem;letter-spacing:.05em;margin-bottom:6px;}
   .my-listing .my-sub{color:var(--text-body);font-size:.88rem;margin-bottom:10px;}
   .my-listing .my-name{font-weight:800;color:var(--text-dark);font-size:1rem;}
@@ -255,6 +258,14 @@
     }
     return str;
   }
+  // account.html already names this state in all 38 languages, and it is
+  // the same row being described, so the two pages borrow one word rather
+  // than carrying two translations of it that could drift apart.
+  function trAccount(key, fallback){
+    var d = window.__dict;
+    var val = d && d.account_page && d.account_page[key];
+    return val || fallback;
+  }
 
   function loadTranslations(){
     return fetch("locales/" + LANG + ".json")
@@ -408,6 +419,13 @@
         var box = document.getElementById("myListing");
         var row = res.data && res.data[0];
         if (!box || res.error || !row) return;
+        // An expired listing still comes back from get_own_listing, and
+        // the card used to announce "Your listing is live" over it --
+        // at exactly the moment browse_public had stopped showing them
+        // to anyone and account.html was calling the same row "Expired".
+        // The two pages now agree, and the owner gets the one signal
+        // that matters: this needs renewing.
+        var live = row.visible_until && new Date(row.visible_until).getTime() > Date.now();
         var location = [row.city, row.country].filter(Boolean).join(", ");
         var html = '<div class="my-eyebrow"></div><p class="my-sub"></p>'
           + '<div class="my-name"></div>'
@@ -415,8 +433,10 @@
           + '<div class="my-detail my-address"></div>'
           + '<div class="my-detail my-note"></div>';
         box.innerHTML = html;
-        box.querySelector(".my-eyebrow").textContent = tr("my_listing_title");
-        box.querySelector(".my-sub").textContent = tr("my_listing_sub");
+        box.classList.toggle("expired", !live);
+        box.querySelector(".my-eyebrow").textContent = live ? tr("my_listing_title") : trAccount("status_expired", "Expired");
+        var subEl = box.querySelector(".my-sub");
+        if (live) { subEl.textContent = tr("my_listing_sub"); } else { subEl.remove(); }
         box.querySelector(".my-name").textContent = row.name;
         var locEl = box.querySelector(".my-location");
         if (location) { locEl.textContent = location; } else { locEl.remove(); }
@@ -469,7 +489,18 @@
         input.value = "";
       });
       input.addEventListener("blur", function(){
-        if (!input.value.trim() && previousValue) { input.value = previousValue; }
+        if (!input.value.trim() && previousValue) {
+          input.value = previousValue;
+          // Putting the text back is not enough: focus blanked the box
+          // without an input event, so anything that ran applyFilter in
+          // between (Enter, or typing and deleting a character) left the
+          // globals empty while the box reads "Switzerland". The list --
+          // and every 5s poll after it -- then showed every country
+          // under a filter the user could see but not clear. Re-apply
+          // what the box now says, so the two can never disagree.
+          narrowCityListToCountry(filterInput.value);
+          applyFilter();
+        }
       });
     });
     loadListings();
@@ -655,7 +686,21 @@
     });
   }
 
-  function checkStatusAndRender(){
+  // A checkout that was never completed leaves a listings row with no
+  // stripe_session_id forever, and index.html stored its id before the
+  // browser ever left for Stripe. Polling it without a limit turned this
+  // page into a permanent spinner for that category: no headcount, no
+  // locked card, no way to buy viewer access, and a get_listing_status
+  // every 3 seconds for as long as the tab stayed open. Give the wait a
+  // ceiling, then forget the id and show the page everyone else gets.
+  var PENDING_POLL_MS = 3000;
+  var PENDING_POLL_MAX = 40;   // ~2 minutes, well past a normal webhook
+  function forgetListing(){
+    listingId = null;
+    try { localStorage.removeItem("rotabo_listing_" + category + "_" + myRole); } catch (e) {}
+  }
+  function checkStatusAndRender(tries){
+    tries = tries || 0;
     sb.rpc("get_listing_status", { p_id: listingId })
       .maybeSingle()
       .then(function(res){
@@ -665,14 +710,20 @@
           return;
         }
         if (!res.data.stripe_session_id) {
+          if (tries >= PENDING_POLL_MAX) {
+            // Either abandoned at Stripe or a webhook that is never
+            // coming. Either way this is not a payment being confirmed.
+            forgetListing();
+            renderGateOrDashboard();
+            return;
+          }
           renderPendingConfirmation();
-          setTimeout(checkStatusAndRender, 3000);
+          setTimeout(function(){ checkStatusAndRender(tries + 1); }, PENDING_POLL_MS);
           return;
         }
         renderGateOrDashboard();
       });
   }
-
   function init(){
     if (listingId) {
       checkStatusAndRender();
@@ -689,11 +740,18 @@
         renderGateOrDashboard();
         return;
       }
+      // Only a listing that was actually paid for. Ordering by created_at
+      // alone handed back an abandoned checkout whenever someone
+      // re-submitted the form on top of a live listing, and the line
+      // below then wrote that pending id into this device's storage --
+      // spreading the "Confirming your payment…" spinner from the device
+      // that walked away from Stripe to every other device they log in on.
       sb.from("listings")
         .select("id")
         .eq("category", category)
         .eq("role", myRole)
         .eq("user_id", session.user.id)
+        .not("stripe_session_id", "is", null)
         .order("created_at", { ascending: false })
         .limit(1)
         .maybeSingle()

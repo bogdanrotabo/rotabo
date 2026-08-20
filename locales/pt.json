@@ -21,13 +21,6 @@
     "retry_btn": "Tentar novamente"
   },
 
-  "here": {
-    "title": "Eles já estão aqui.",
-    "note": "Navegar é grátis. Desbloqueie todos os detalhes e contacte qualquer pessoa — 1 CHF por um mês, 2 CHF por um ano.",
-    "loading": "A carregar…",
-    "empty": "Seja o primeiro — obtenha o seu número.",
-    "not_found": "Ainda não há um número Rotabo ativo {n}."
-  },
   "banknote": {
     "title": "O seu número viaja pelo mundo. Você não precisa.",
     "body": "<p>Tire uma nota do seu bolso. Qualquer uma. Antes de a gastar, escreva nela seis pequenos caracteres: rotabo — mais o seu número Rotabo, o que recebe depois do registo: rotabo2244. Depois deixe-a ir.</p><p>Amanhã paga o café de alguém. Na próxima semana é troco num táxi a três cidades de distância. No próximo mês atravessa uma fronteira no bolso de um desconhecido. O dinheiro nunca para de circular — e agora, o seu nome também não.</p><p>Nalgum lugar, alguém olha para a nota na sua mão. Vê-a: rotabo2244. A curiosidade faz o resto. Digita-a em rotabo.app — e aí está você. O seu nome. A sua bandeira. O que oferece. Uma pessoa real, encontrável por qualquer pessoa, em qualquer lugar, que alguma vez segure aquele pedaço de papel.</p><p>Nenhum outdoor viaja tão longe. Nenhum anúncio vive tanto tempo. Uma nota permanece em circulação durante anos, passando por centenas de mãos — e cada uma delas pode encontrá-lo. Uma caneta. Um número. O mundo inteiro torna-se o seu anúncio.</p>",
@@ -369,7 +362,7 @@
   },
   "drive_form": {
     "title": "Torna-te condutor",
-    "subtitle": "Crie seu anúncio de motorista. Escolha por quanto tempo quer ficar visível e comece a procurar pessoas que estão à procura de um motorista.",
+    "subtitle": "Crie o seu anúncio de motorista. Escolha durante quanto tempo quer ficar visível — quem procura um motorista pode ligar-lhe diretamente.",
     "name_label": "O teu nome",
     "phone_label": "Número de telefone",
     "email_label": "Email",

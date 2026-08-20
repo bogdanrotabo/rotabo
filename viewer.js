@@ -23,7 +23,22 @@
 
   // Reuse the site's existing verified-email token (also set by the
   // listing forms), valid ~29 min after a successful email verification.
+  // With site data blocked (Safari "Block All Cookies", Chrome's
+  // per-site block, a sandboxed iframe) every setItem throws and every
+  // getItem comes back empty, so a token that was just verified vanished
+  // between one step of the modal and the next: toPayment re-read it
+  // from storage, got null, and sent the buyer back to the email box --
+  // forever, with the Stripe buttons unreachable. Keeping the live
+  // credential in memory costs nothing when storage works and is the
+  // only thing that works when it does not. It dies with the page,
+  // which is exactly the lifetime such a browser is asking for.
+  var memToken = null;    // freshly verified email token
+  var memSession = null;  // viewer session minted from it
+
+  // The verified-email token, from memory first: storage may be denied,
+  // and when it is not, the two hold the same thing anyway.
   function getToken() {
+    if (memToken && memToken.until > Date.now()) return { token: memToken.token, email: memToken.email };
     try {
       var token = localStorage.getItem("rotabo_verified_token");
       var email = localStorage.getItem("rotabo_verified_email");
@@ -33,12 +48,14 @@
     return null;
   }
   function storeToken(email, token) {
+    var until = Date.now() + 29 * 60000;
+    memToken = { token: token, email: email, until: until };
     // Guarded: with storage denied the token simply lives only as long
-    // as the modal -- the flow must not die on the throw.
+    // as the page -- the flow must not die on the throw.
     try {
       localStorage.setItem("rotabo_verified_email", email);
       localStorage.setItem("rotabo_verified_token", token);
-      localStorage.setItem("rotabo_verified_until", String(Date.now() + 29 * 60000));
+      localStorage.setItem("rotabo_verified_until", String(until));
     } catch (e) {}
   }
 
@@ -48,6 +65,7 @@
   // access is confirmed we trade it for a viewer session, minted server
   // side and capped at the paid-access expiry.
   function getSession() {
+    if (memSession && memSession.until > Date.now()) return { token: memSession.token, email: memSession.email };
     try {
       var token = localStorage.getItem("rotabo_viewer_session");
       var email = localStorage.getItem("rotabo_verified_email") || "";
@@ -57,6 +75,7 @@
     return null;
   }
   function clearSession() {
+    memSession = null;
     try {
       localStorage.removeItem("rotabo_viewer_session");
       localStorage.removeItem("rotabo_viewer_session_until");
@@ -65,6 +84,14 @@
   // Whichever credential is currently good: the long session first.
   function getCredential() { return getSession() || getToken(); }
 
+  // The "a checkout just started" marker, read by justPaid() and by
+  // browse.html to know not to quote a price at someone mid-payment.
+  // It has to be cleared the moment access is confirmed, on every path
+  // that confirms it.
+  function clearPaidStamp() {
+    try { localStorage.removeItem("rotabo_viewer_paid_at"); } catch (e) {}
+  }
+
   // Swap a fresh verified-email token for a session. Best effort -- if it
   // fails the viewer simply keeps using the short token as before.
   function startSession(tok) {
@@ -72,13 +99,16 @@
     return sb.rpc("viewer_start_session", { p_token: tok.token }).then(function (r) {
       var row = r && r.data && (Array.isArray(r.data) ? r.data[0] : r.data);
       if (!row || !row.session_token) return;
+      var until = row.session_expires ? new Date(row.session_expires).getTime() : Date.now() + 30 * 86400000;
+      // In memory as well, so a browser that refuses storage still holds
+      // a working credential for the rest of the visit -- without it the
+      // page told a paying viewer "Access unlocked" and then immediately
+      // re-locked, because browse_public was called with a null token.
+      memSession = { token: row.session_token, email: tok.email || "", until: until };
       try {
         localStorage.setItem("rotabo_viewer_session", row.session_token);
-        localStorage.setItem(
-          "rotabo_viewer_session_until",
-          String(row.session_expires ? new Date(row.session_expires).getTime() : Date.now() + 30 * 86400000)
-        );
-      } catch (e) { /* storage denied: the short token still carries this visit */ }
+        localStorage.setItem("rotabo_viewer_session_until", String(until));
+      } catch (e) { /* storage denied: memSession carries this visit */ }
     }).catch(function () { /* keep the short token */ });
   }
 
@@ -171,9 +201,18 @@
       var email = (input.value || "").trim().toLowerCase();
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showErr(t("err_email")); return; }
       var btn = this; btn.disabled = true;
-      post({ action: "send", email: email }).then(function (r) {
+      // purpose tells verify-email this is not a listing, so it does not
+      // hand out a permanent Rotabo number and promise it "goes live
+      // together with your listing" to somebody buying viewer access.
+      post({ action: "send", email: email, purpose: "viewer" }).then(function (r) {
         btn.disabled = false;
-        if (!r.ok) { showErr(t("err_generic")); return; }
+        // 429 is verify-email's own rate limit: a code went to this
+        // address less than a minute ago and is still valid. Showing the
+        // generic error here left the buyer staring at the email box with
+        // a working code in their inbox and no field to type it into.
+        // index.html has treated 429 as "go on to the code step" for a
+        // while; this modal is the other half of the same flow.
+        if (!r.ok && r.status !== 429) { showErr(t("err_generic")); return; }
         stepCode(email);
       }).catch(function () { btn.disabled = false; showErr(t("err_generic")); });
     });
@@ -201,6 +240,12 @@
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>…</p>';
     sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
       if (r && r.data === true) {
+        // The webhook usually lands before the buyer gets back, and this
+        // branch forgot to clear the "just paid" stamp -- so for the next
+        // three minutes justPaid() stayed true and every browse.html load
+        // repainted the locked card, prices and all, at someone who had
+        // just paid, then flashed the modal over it.
+        clearPaidStamp();
         // Access confirmed: mint the long session before showing success,
         // so the next visit needs no emailed code.
         startSession(tok).then(function () {
@@ -232,27 +277,41 @@
       try { paidAt = parseInt(localStorage.getItem("rotabo_viewer_paid_at") || "0", 10); } catch (e) {}
       if (paidAt && Date.now() - paidAt < 3 * 60000) { stepConfirming(tok, 0); return; }
       clearSession();
-      var verified = getToken();
+      // getToken() answers from memory first now, so a browser that
+      // refuses storage arrives here holding the token it just verified
+      // instead of null -- which used to bounce the buyer back to the
+      // email box on every attempt, with the Stripe buttons unreachable.
+      // `tok` is the belt to that braces: it is the credential this
+      // check was called with.
+      var verified = getToken() || tok;
       if (verified) stepPay(verified);
       else stepEmail(tok.email || "");
     }
+    // A checkout that Stripe has taken the money for but whose webhook is
+    // still in flight. Poll for the access row rather than quoting the
+    // price again -- the one thing that must never happen here is showing
+    // the tier buttons to somebody who has already paid, because
+    // grant_viewer_access simply stacks the months and the second
+    // payment buys nothing they wanted.
+    var CONFIRM_TRIES = 60;   // ~3 minutes, matching the justPaid window
     function stepConfirming(tok, tries) {
       box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>' + esc(t("confirming")) + '</p>';
       setTimeout(function () {
         sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
           if (r && r.data === true) {
-            try { localStorage.removeItem("rotabo_viewer_paid_at"); } catch (e) {}
+            clearPaidStamp();
             startSession(tok).then(function () { stepSuccess(); if (onUnlock) onUnlock(); });
-          } else if (tries < 20) {
+          } else if (tries < CONFIRM_TRIES) {
             stepConfirming(tok, tries + 1);
           } else {
-            // ~1 minute with no access row: the checkout was abandoned or
-            // failed. Forget the stamp so the tiers show normally.
-            try { localStorage.removeItem("rotabo_viewer_paid_at"); } catch (e) {}
-            toPayment();
+            // Three minutes and still no access row. This used to fall
+            // through to the tiers, inviting a second payment for a
+            // checkout that had very likely succeeded; a retry button
+            // costs the buyer a tap and cannot cost them a franc.
+            stepError(tok);
           }
         }).catch(function () {
-          if (tries < 20) stepConfirming(tok, tries + 1); else stepError(tok);
+          if (tries < CONFIRM_TRIES) stepConfirming(tok, tries + 1); else stepError(tok);
         });
       }, tries === 0 ? 0 : 3000);
     }
@@ -287,7 +346,11 @@
     // at click time and route back through the emailed code instead.
     Array.prototype.forEach.call(box.querySelectorAll("a.rv-btn.tier"), function (a) {
       a.addEventListener("click", function (e) {
-        if (!getToken()) { e.preventDefault(); stepEmail(tok.email || ""); return; }
+        // Same reason as toPayment: with storage denied getToken() used
+        // to be null here too, so the tier link cancelled its own click
+        // and the purchase could never start. tok is the credential the
+        // pay step was rendered with, and it is what the href carries.
+        if (!getToken() && !tok) { e.preventDefault(); stepEmail(""); return; }
         // Stripe returns every checkout to one fixed page (after-payment
         // .html), which forwards by rotabo_last_listing -- the page of a
         // listing this buyer may have created weeks ago. Leave a note so
@@ -337,7 +400,7 @@
   function post(body) {
     return fetch(FUNCTIONS_URL + "/verify-email", {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body)
-    }).then(function (res) { return res.json().then(function (json) { return { ok: res.ok, json: json }; }); });
+    }).then(function (res) { return res.json().then(function (json) { return { ok: res.ok, status: res.status, json: json }; }); });
   }
 
   // ----- public API -----
