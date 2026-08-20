@@ -1263,6 +1263,7 @@
       <button type="submit" class="form-submit" data-i18n="verify_modal.submit">Confirm code</button>
       <p class="form-error" id="emailCodeError" data-i18n="verify_modal.error">Invalid or expired code. Please try again.</p>
       <button type="button" class="link-btn" id="resendCodeBtn" data-i18n="verify_modal.resend">Resend code</button>
+      <p class="form-error" id="resendError" data-i18n="generic_form.error">Something went wrong. Please try again.</p>
     </form>
   </div>
 </div>
@@ -1393,6 +1394,12 @@
     var code = findDialCode(countryInput.value);
     if (!code) return;
     var digits = raw.replace(/[^0-9]/g, "");
+    // Much of Europe writes the international form as "0041 79 …": the 00
+    // is the same thing as the +, so it has to go first. Without this the
+    // trunk-zero rule below eats only one of the two zeros and the number
+    // is stored as "+41 041 79 …", which dials nowhere -- and the phone
+    // number is the whole thing a viewer pays to see.
+    if (digits.indexOf("00") === 0) digits = digits.slice(2);
     if (digits.indexOf(code) === 0) digits = digits.slice(code.length);
     if (digits.charAt(0) === "0") digits = digits.slice(1);
     if (digits) phoneInput.value = "+" + code + " " + digits;
@@ -1409,6 +1416,7 @@
   wirePhoneCountry("fd_country", "fd_phone");
   wirePhoneCountry("bd_country", "bd_phone");
   wirePhoneCountry("gl_country", "gl_phone");
+  wirePhoneCountry("sp_country", "sp_phone");
 
   // Major cities grouped by country, drawn from the same set already in
   // #cityList. When the visitor picks a recognized country, the shared
@@ -1515,6 +1523,7 @@
   wireCountryCity("fd_country");
   wireCountryCity("bd_country");
   wireCountryCity("gl_country");
+  wireCountryCity("sp_country");
 
   // Browsers only pop open a <datalist>'s full option list when the
   // field is empty (or partially typed) -- once it already holds a
@@ -1556,11 +1565,15 @@
     if (radio) radio.checked = true;
     openModal("sponsorModal");
   };
-  window.openModal = function(id){
+  // silent skips the modal's cta_* GA event, for reopens the visitor did
+  // not ask for (coming back from the code step, say) -- those used to
+  // count as a second click on the button that opened it in the first place.
+  function showModal(id, silent){
     document.getElementById(id).classList.add("open");
     document.body.style.overflow = "hidden";
-    if (window.gtag && MODAL_GA_EVENTS[id]) gtag("event", MODAL_GA_EVENTS[id]);
-  };
+    if (!silent && window.gtag && MODAL_GA_EVENTS[id]) gtag("event", MODAL_GA_EVENTS[id]);
+  }
+  window.openModal = function(id){ showModal(id, false); };
   window.closeModal = function(id){
     document.getElementById(id).classList.remove("open");
     document.body.style.overflow = "";
@@ -1729,9 +1742,16 @@
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "send", email: email })
-    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, status: res.status, json: json }; }); })
       .then(function(result){
-        if (!result.ok) {
+        // 429 is the rate limit on send: a code went to this address
+        // less than a minute ago and is still valid. That is exactly
+        // what happens to someone who closed the code modal (Escape
+        // closes every modal) and submitted the form again -- telling
+        // them "something went wrong" stranded them with a working code
+        // sitting in their inbox. Treat it as the code step, not a
+        // failure.
+        if (!result.ok && result.status !== 429) {
           setSubmitting(form, false);
           showError(errorEl);
           pending = null;
@@ -1742,6 +1762,7 @@
         document.getElementById("verifyModalEmail").textContent = email;
         document.getElementById("vc_code").value = "";
         hideError(document.getElementById("emailCodeError"));
+        hideError(document.getElementById("resendError"));
         openModal("emailCodeModal");
       })
       .catch(function(){
@@ -1785,7 +1806,10 @@
         // Bring the original form back so a create-listing failure has
         // somewhere visible to show its error (the source modal was
         // closed when the code step opened).
-        openModal(p.sourceModalId);
+        // Silent: openModal fires the modal's cta_* GA event, and this is a
+        // reopen of a modal the visitor already opened once -- counting it
+        // again inflated every cta_ metric by one per verified submission.
+        showModal(p.sourceModalId, true);
         setSubmitting(p.form, true);
         (p.createFn || createListing)(p.payload, result.json.token, p.form, p.errorEl);
       })
@@ -1798,11 +1822,22 @@
   document.getElementById("resendCodeBtn").addEventListener("click", function(){
     if (!pending) return;
     var btn = this;
+    var resendErrorEl = document.getElementById("resendError");
+    hideError(resendErrorEl);
     btn.disabled = true;
+    // A resend that failed used to look exactly like one that worked --
+    // the response was thrown away, so the button greyed out for a
+    // minute and no code ever came, with nothing on screen to say why.
+    // 429 is the server's own "a code went out less than a minute ago",
+    // which is not something to apologise for; anything else is.
     fetch(FUNCTIONS_URL + "/verify-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "send", email: pending.email })
+    }).then(function(res){
+      if (!res.ok && res.status !== 429) showError(resendErrorEl);
+    }).catch(function(){
+      showError(resendErrorEl);
     }).finally(function(){
       setTimeout(function(){ btn.disabled = false; }, 60_000);
     });
@@ -1858,11 +1893,12 @@
           var tier = typeof row.tier === "string" ? row.tier : "";
           badge.className = "s-tier " + tier;
           badge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
-          // The name links out only to an https URL create-sponsor
-          // itself normalised; everything renders via textContent --
+          // The name links out only to an http(s) URL create-sponsor itself
+          // normalised (it prepends https:// to a bare domain and keeps a
+          // scheme the sponsor typed); everything renders via textContent --
           // these strings are typed by sponsors, not by us.
           var name;
-          if (row.website_url && /^https:\/\//i.test(row.website_url)) {
+          if (row.website_url && /^https?:\/\//i.test(row.website_url)) {
             name = document.createElement("a");
             name.href = row.website_url;
             name.target = "_blank";

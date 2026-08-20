@@ -769,20 +769,26 @@
     var period = r.months === 12 ? "12 months" : (r.months === 1 ? "1 month" : "");
     if (r.kind === "manual") return r.product || "Manual \u2014 needs fulfilment";
     if (r.kind === "viewer") return "Viewer access" + (period ? " \u00b7 " + period : "");
+    // Sponsorships have been fulfilled automatically since stripe-webhook
+    // v19 and arrive as their own kind. Without this they fell through to
+    // the listing branch below, so a 750 CHF Gold sponsorship read
+    // "Listing" with no category next to it.
+    if (r.kind === "sponsor") return r.product || "Sponsorship";
     var l = r.listings || {};
     var what = [l.category, l.role].filter(Boolean).join(" / ");
     return "Listing" + (what ? " \u00b7 " + what : "") + (period ? " \u00b7 " + period : "");
   }
 
   function renderPaymentStats(){
-    var s = paymentStats || { total: allPayments.length, listings: 0, viewer: 0, manual: 0, by_currency: {} };
+    var s = paymentStats || { total: allPayments.length, listings: 0, viewer: 0, manual: 0, sponsor: 0, by_currency: {} };
     var cur = s.by_currency || {};
     var taken = Object.keys(cur).map(function(k){ return money(cur[k].minor, k); }).join(" \u00b7 ");
     document.getElementById("paymentStats").innerHTML = ""
       + tile(s.total, "PAYMENTS")
       + tile(esc(taken || "\u2014"), "TAKEN")
       + tile(s.listings, "LISTINGS")
-      + tile(s.viewer + " / " + s.manual, "UNLOCKS / MANUAL");
+      + tile(s.viewer, "UNLOCKS")
+      + tile((s.sponsor || 0) + " / " + s.manual, "SPONSORS / MANUAL");
   }
 
   function renderPayments(){
