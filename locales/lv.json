@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERI",
-    "h3": "Restorāniem, viesnīcām un pasākumu vietām",
-    "p": "Ļauj saviem viesiem baudīt vakaru un tomēr aizbraukt mājās ar savu pašu mašīnu. Piedāvā Rotabo pie galda, reģistratūrā vai pie durvīm.",
+    "h3": "Viesnīcām, telpām un kopienām",
+    "p": "Viesi prasa lietas, ko reģistratūra nevar atrisināt: šoferi, tulku, furgonu, darbarīku. Norādiet viņiem uz Rotabo vai pievienojiet tam savu vārdu.",
     "link": "Sazinies ar mums →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "ATBALSTĪTĀJI",
     "h3": "Cilvēki un vietas aiz šī visa",
-    "p": "Rotabo pastāv, pateicoties ikvienam, kas gatavs atbalstīt ideju, ka nevienam nevajadzētu braukt, kad to nedrīkst darīt.",
-    "invite": "Īpaši gaidām bankas, apdrošinātājus, sporta zīmolus, enerģijas un bezalkoholisko dzērienu ražotājus — un jebkuru uzņēmumu, kas atbalsta braukšanu skaidrā prātā.",
+    "p": "Rotabo tur cilvēki un uzņēmumi, kas par to galvo ar savu vārdu, lai atrast kādu tuvumā nekad nebūtu atkarīgs no tā, kuru jau pazīsti.",
+    "invite": "Īpaši gaidām viesnīcas, tirdzniecības kameras, pārcelšanās un relokācijas uzņēmumus, dzīvojamos kvartālus un organizācijas, kas palīdz cilvēkiem iekārtoties jaunā vietā.",
     "first": "Vēl nav atbalstītāju — kļūsti par pirmo vārdu šajā sarakstā.",
     "form_title": "Kļūsti par atbalstītāju",
     "form_sub": "Pēc samaksas zemāk norādītais vārds parādās atbalstītāju sarakstā — ar saiti, ja pievienosi vietni.",
@@ -302,7 +302,7 @@
     "website_label": "Tīmekļa vietne (nav obligāti)",
     "tier_pick_label": "Sponsorēšana",
     "tier_bronze": "Bronza — 100 CHF",
-    "tier_silver": "Sudrabs — 300 CHF",
+    "tier_silver": "Sudrabs — 300 CHF + PVN",
     "tier_gold": "Zelts — 750 CHF",
     "tier_platinum": "Platīns — 10 000 CHF"
   },

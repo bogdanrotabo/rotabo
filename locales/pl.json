@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERZY",
-    "h3": "Dla restauracji, hoteli i lokali",
-    "p": "Pozwól swoim gościom cieszyć się wieczorem i mimo to wrócić do domu własnym samochodem. Zaproponuj Rotabo przy stoliku, w recepcji lub przy drzwiach.",
+    "h3": "Dla hoteli, obiektów i społeczności",
+    "p": "Goście pytają o rzeczy, których recepcja nie rozwiąże: kierowcę, tłumacza, dostawczaka, narzędzie. Skierujcie ich do Rotabo albo dołóżcie do tego swoją nazwę.",
     "link": "Porozmawiajmy →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "WSPIERAJĄCY",
     "h3": "Ludzie i miejsca, które za tym stoją",
-    "p": "Rotabo działa dzięki każdemu, kto chce stanąć za ideą, że nikt nie powinien prowadzić, kiedy nie powinien.",
-    "invite": "Szczególnie zapraszamy banki, ubezpieczycieli, marki sportowe, producentów napojów energetycznych i bezalkoholowych — oraz każdą firmę wspierającą trzeźwą jazdę.",
+    "p": "Rotabo działa dzięki ludziom i firmom, które firmują je swoim nazwiskiem, żeby znalezienie kogoś w pobliżu nigdy nie zależało od tego, kogo się już zna.",
+    "invite": "Szczególnie zapraszamy hotele, izby handlowe, firmy przeprowadzkowe i relokacyjne, osiedla mieszkaniowe oraz organizacje, które pomagają ludziom zadomowić się w nowym miejscu.",
     "first": "Jeszcze brak wspierających — bądź pierwszym nazwiskiem na tej liście.",
     "form_title": "Zostań wspierającym",
     "form_sub": "Po zapłaceniu poniższa nazwa pojawi się na liście wspierających — z linkiem, jeśli dodasz stronę.",
@@ -302,7 +302,7 @@
     "website_label": "Strona internetowa (opcjonalnie)",
     "tier_pick_label": "Sponsoring",
     "tier_bronze": "Brąz — 100 CHF",
-    "tier_silver": "Srebro — 300 CHF",
+    "tier_silver": "Srebro — 300 CHF + VAT",
     "tier_gold": "Złoto — 750 CHF",
     "tier_platinum": "Platyna — 10 000 CHF"
   },

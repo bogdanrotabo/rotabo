@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERJI",
-    "h3": "Za restavracije, hotele in prizorišča",
-    "p": "Naj vaši gostje uživajo večer in se kljub temu odpeljejo domov z lastnim avtomobilom. Ponudite Rotabo za mizo, na recepciji ali pri vratih.",
+    "h3": "Za hotele, prostore in skupnosti",
+    "p": "Gostje sprašujejo za stvari, ki jih recepcija ne more rešiti: voznika, prevajalca, kombi, orodje. Napotite jih na Rotabo ali zraven dodajte svoje ime.",
     "link": "Kontaktirajte nas →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "PODPORNIKI",
     "h3": "Ljudje in kraji, ki stojijo za tem",
-    "p": "Rotabo ohranja pri življenju vsak, ki je pripravljen stopiti za idejo, da nihče ne bi smel voziti, kadar ne bi smel.",
-    "invite": "Še posebej dobrodošli so banke, zavarovalnice, športne znamke, proizvajalci energijskih in brezalkoholnih pijač — ter vsako podjetje, ki podpira trezno vožnjo.",
+    "p": "Rotabo poganjajo ljudje in podjetja, ki zanj jamčijo s svojim imenom, da iskanje nekoga v bližini nikoli ni odvisno od tega, koga že poznate.",
+    "invite": "Posebej vabimo hotele, gospodarske zbornice, selitvena in relokacijska podjetja, stanovanjske soseske ter organizacije, ki ljudem pomagajo, da se ustalijo na novem kraju.",
     "first": "Še ni podpornikov — bodi prvo ime na tem seznamu.",
     "form_title": "Postani podpornik",
     "form_sub": "Po plačilu se spodnje ime pojavi na seznamu podpornikov — s povezavo, če dodaš spletno stran.",
@@ -302,7 +302,7 @@
     "website_label": "Spletna stran (neobvezno)",
     "tier_pick_label": "Sponzorstvo",
     "tier_bronze": "Bron — 100 CHF",
-    "tier_silver": "Srebro — 300 CHF",
+    "tier_silver": "Srebro — 300 CHF + DDV",
     "tier_gold": "Zlato — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },

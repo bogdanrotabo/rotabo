@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERS",
-    "h3": "För restauranger, hotell och lokaler",
-    "p": "Låt dina gäster njuta av kvällen och ändå köra hem i sin egen bil. Erbjud Rotabo vid bordet, i receptionen eller vid dörren.",
+    "h3": "För hotell, lokaler och gemenskaper",
+    "p": "Gästerna frågar efter saker som en reception inte kan lösa: en förare, en tolk, en skåpbil, ett verktyg. Hänvisa dem till Rotabo, eller sätt ditt namn på det.",
     "link": "Kontakta oss →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "SUPPORTRAR",
     "h3": "Människorna och platserna bakom detta",
-    "p": "Rotabo hålls igång av alla som är villiga att stå bakom tanken att ingen ska köra när de inte borde.",
-    "invite": "Vi välkomnar särskilt banker, försäkringsbolag, sportvarumärken, tillverkare av energidrycker och läsk — samt alla företag som stöder nykter körning.",
+    "p": "Rotabo hålls igång av de människor och företag som sätter sitt namn bakom det, så att hitta någon i närheten aldrig hänger på vem man redan känner.",
+    "invite": "Vi välkomnar särskilt hotell, handelskammare, flytt- och relocationföretag, bostadsområden och de organisationer som hjälper människor att komma på plats någonstans nytt.",
     "first": "Inga supportrar än — bli det första namnet på listan.",
     "form_title": "Bli supporter",
     "form_sub": "Efter betalningen visas namnet nedan på supporterlistan — med länk om du lägger till en webbplats.",
@@ -302,7 +302,7 @@
     "website_label": "Webbplats (valfritt)",
     "tier_pick_label": "Sponsorskap",
     "tier_bronze": "Brons — 100 CHF",
-    "tier_silver": "Silver — 300 CHF",
+    "tier_silver": "Silver — 300 CHF + moms",
     "tier_gold": "Guld — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },

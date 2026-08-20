@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERIAI",
-    "h3": "Restoranams, viešbučiams ir renginių vietoms",
-    "p": "Leisk savo svečiams mėgautis vakaru ir vis tiek parvažiuoti namo savo automobiliu. Pasiūlyk Rotabo prie stalo, registratūroje ar prie durų.",
+    "h3": "Viešbučiams, erdvėms ir bendruomenėms",
+    "p": "Svečiai prašo dalykų, kurių registratūra neišspręs: vairuotojo, vertėjo, furgono, įrankio. Nukreipkite juos į Rotabo arba prisidėkite savo vardu.",
     "link": "Susisiek su mumis →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "RĖMĖJAI",
     "h3": "Žmonės ir vietos, stovintys už viso to",
-    "p": "Rotabo gyvuoja dėl kiekvieno, pasiryžusio palaikyti idėją, kad niekas neturėtų vairuoti, kai neturėtų.",
-    "invite": "Ypač laukiame bankų, draudimo bendrovių, sporto prekių ženklų, energetinių ir gaiviųjų gėrimų gamintojų — bei bet kokio verslo, palaikančio blaivų vairavimą.",
+    "p": "Rotabo laiko žmonės ir įmonės, kurios už jį laiduoja savo vardu, kad rasti ką nors netoliese niekada nepriklausytų nuo to, ką jau pažįsti.",
+    "invite": "Ypač laukiame viešbučių, prekybos rūmų, perkraustymo ir persikėlimo įmonių, gyvenamųjų kvartalų ir organizacijų, kurios padeda žmonėms įsikurti naujoje vietoje.",
     "first": "Kol kas rėmėjų nėra — būk pirmasis vardas šiame sąraše.",
     "form_title": "Tapk rėmėju",
     "form_sub": "Po apmokėjimo žemiau esantis vardas atsiras rėmėjų sąraše — su nuoroda, jei pridėsi svetainę.",
@@ -302,7 +302,7 @@
     "website_label": "Svetainė (neprivaloma)",
     "tier_pick_label": "Rėmimas",
     "tier_bronze": "Bronza — 100 CHF",
-    "tier_silver": "Sidabras — 300 CHF",
+    "tier_silver": "Sidabras — 300 CHF + PVM",
     "tier_gold": "Auksas — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },

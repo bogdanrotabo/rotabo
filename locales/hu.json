@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNEREK",
-    "h3": "Éttermeknek, szállodáknak és helyszíneknek",
-    "p": "Hagyd, hogy vendégeid élvezzék az estét, és mégis a saját autójukkal menjenek haza. Kínáld fel a Rotabo-t az asztalnál, a recepción vagy az ajtóban.",
+    "h3": "Szállodáknak, helyszíneknek és közösségeknek",
+    "p": "A vendégek olyasmit kérnek, amit egy recepció nem tud megoldani: sofőrt, tolmácsot, furgont, szerszámot. Irányítsa őket a Rotabóhoz, vagy tegye rá a nevét.",
     "link": "Beszéljünk →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "TÁMOGATÓK",
     "h3": "Az emberek és helyek e mögött",
-    "p": "A Rotabo-t mindenki életben tartja, aki hajlandó kiállni amellett, hogy senkinek sem szabad vezetnie, ha nem szabadna.",
-    "invite": "Különösen szívesen látjuk a bankokat, biztosítókat, sportmárkákat, energiaital- és üdítőgyártókat — és minden vállalkozást, amely a józan vezetést támogatja.",
+    "p": "A Rotabót azok az emberek és cégek tartják életben, akik a nevüket adják hozzá, hogy a közelben lévő segítség megtalálása soha ne azon múljon, kit ismer már.",
+    "invite": "Különösen várjuk a szállodákat, kereskedelmi kamarákat, költöztető és relokációs cégeket, lakóparkokat és azokat a szervezeteket, amelyek az új helyen való beilleszkedésben segítenek.",
     "first": "Még nincs támogató — legyél az első név ezen a listán.",
     "form_title": "Légy támogató",
     "form_sub": "Fizetés után az alábbi név megjelenik a támogatók listáján — linkkel, ha megadsz egy weboldalt.",
@@ -302,7 +302,7 @@
     "website_label": "Weboldal (nem kötelező)",
     "tier_pick_label": "Támogatás",
     "tier_bronze": "Bronz — 100 CHF",
-    "tier_silver": "Ezüst — 300 CHF",
+    "tier_silver": "Ezüst — 300 CHF + áfa",
     "tier_gold": "Arany — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },

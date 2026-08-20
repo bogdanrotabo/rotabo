@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "WASHIRIKA",
-    "h3": "Kwa migahawa, hoteli na kumbi",
-    "p": "Waache wageni wako wafurahie jioni na bado waendeshe gari lao wenyewe kurudi nyumbani. Toa Rotabo mezani, mapokezi, au mlangoni.",
+    "h3": "Kwa hoteli, kumbi na jamii",
+    "p": "Wageni wako huuliza mambo ambayo mapokezi hayawezi kuyatatua: dereva, mkalimani, gari la mizigo, kifaa. Waelekeze Rotabo, au weka jina lako hapo.",
     "link": "Zungumza nasi →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "WAFADHILI",
     "h3": "Watu na maeneo yanayosimamia hili",
-    "p": "Rotabo inaendelea kutokana na mtu yeyote aliye tayari kuunga mkono wazo kwamba hakuna anayepaswa kuendesha akiwa hafai.",
-    "invite": "Tunakaribisha hasa mabenki, makampuni ya bima, chapa za michezo, watengenezaji wa vinywaji vya nishati na visivyo na pombe — na biashara yoyote inayounga mkono uendeshaji bila ulevi.",
+    "p": "Rotabo huendeshwa na watu na biashara wanaoweka majina yao nyuma yake, ili kumpata mtu wa karibu kusitegemee kamwe unamjua nani tayari.",
+    "invite": "Tunakaribisha hasa hoteli, vyama vya biashara, kampuni za uhamishaji na kuhamia, jumuiya za makazi, na mashirika yanayosaidia watu kutulia mahali papya.",
     "first": "Bado hakuna wafadhili — kuwa jina la kwanza kwenye orodha hii.",
     "form_title": "Kuwa mfadhili",
     "form_sub": "Baada ya kulipa, jina lililo hapa chini litaonekana kwenye orodha ya wafadhili — pamoja na kiungo ukiongeza tovuti.",
@@ -302,7 +302,7 @@
     "website_label": "Tovuti (hiari)",
     "tier_pick_label": "Ufadhili",
     "tier_bronze": "Shaba — CHF 100",
-    "tier_silver": "Fedha — CHF 300",
+    "tier_silver": "Fedha — CHF 300 + VAT",
     "tier_gold": "Dhahabu — CHF 750",
     "tier_platinum": "Platinamu — CHF 10 000"
   },

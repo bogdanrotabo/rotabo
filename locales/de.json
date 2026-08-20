@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "PARTNER",
-    "h3": "Für Restaurants, Hotels und Locations",
-    "p": "Lass deine Gäste den Abend genießen und trotzdem mit dem eigenen Auto nach Hause fahren. Biete Rotabo am Tisch, an der Rezeption oder am Ausgang an.",
+    "h3": "Für Hotels, Veranstaltungsorte und Gemeinschaften",
+    "p": "Ihre Gäste fragen nach Dingen, die eine Rezeption nicht lösen kann: einen Fahrer, einen Dolmetscher, einen Transporter, ein Werkzeug. Verweisen Sie sie auf Rotabo, oder setzen Sie Ihren Namen darauf.",
     "link": "Sprich mit uns →"
   },
   "drivers_card": {
@@ -294,8 +294,8 @@
   "supporters": {
     "cat": "UNTERSTÜTZER",
     "h3": "Die Menschen und Orte dahinter",
-    "p": "Rotabo lebt von allen, die bereit sind, hinter der Idee zu stehen, dass niemand fahren sollte, wenn er es nicht sollte.",
-    "invite": "Wir freuen uns besonders über Banken, Versicherungen, Sportmarken, Hersteller von Energy- und Softdrinks — und jedes Unternehmen, das sich für nüchternes Fahren einsetzt.",
+    "p": "Rotabo lebt von den Menschen und Unternehmen, die ihren Namen dahinterstellen, damit es nie davon abhängt, wen man bereits kennt, um jemanden in der Nähe zu finden.",
+    "invite": "Besonders willkommen sind Hotels, Handelskammern, Umzugs- und Relocation-Firmen, Wohnanlagen und Organisationen, die Menschen beim Ankommen an einem neuen Ort helfen.",
     "first": "Noch keine Unterstützer — sei der erste Name auf dieser Liste.",
     "form_title": "Unterstützer werden",
     "form_sub": "Nach der Zahlung erscheint der Name unten auf der Unterstützerliste — mit Link, wenn du eine Website angibst.",
@@ -309,7 +309,7 @@
     "website_label": "Website (optional)",
     "tier_pick_label": "Sponsoring",
     "tier_bronze": "Bronze — 100 CHF",
-    "tier_silver": "Silber — 300 CHF",
+    "tier_silver": "Silber — 300 CHF + MwSt.",
     "tier_gold": "Gold — 750 CHF",
     "tier_platinum": "Platin — 10 000 CHF"
   },

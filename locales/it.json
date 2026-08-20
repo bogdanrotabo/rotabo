@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "PARTNER",
-    "h3": "Per ristoranti, hotel e locali",
-    "p": "Lascia che i tuoi ospiti si godano la serata e tornino comunque a casa con la propria auto. Offri Rotabo al tavolo, alla reception o all'uscita.",
+    "h3": "Per hotel, strutture e comunità",
+    "p": "I vostri ospiti chiedono cose che una reception non può risolvere: un autista, un interprete, un furgone, un attrezzo. Indirizzateli a Rotabo, o metteteci il vostro nome.",
     "link": "Contattaci →"
   },
   "investors_card": {
@@ -300,8 +300,8 @@
   "supporters": {
     "cat": "SOSTENITORI",
     "h3": "Le persone e i luoghi dietro tutto questo",
-    "p": "Rotabo va avanti grazie a chiunque sia disposto a sostenere l'idea che nessuno dovrebbe guidare quando non dovrebbe.",
-    "invite": "Diamo particolarmente il benvenuto a banche, assicurazioni, marchi sportivi, produttori di bevande energetiche e analcoliche — e a qualsiasi azienda che sostiene la guida sobria.",
+    "p": "Rotabo va avanti grazie alle persone e alle aziende che ci mettono il proprio nome, perché trovare qualcuno vicino non dipenda mai da chi già si conosce.",
+    "invite": "Diamo il benvenuto soprattutto a hotel, camere di commercio, imprese di traslochi e relocation, complessi residenziali e alle organizzazioni che aiutano le persone a sistemarsi in un posto nuovo.",
     "first": "Ancora nessun sostenitore — sii il primo nome in questa lista.",
     "form_title": "Diventa sostenitore",
     "form_sub": "Dopo il pagamento, il nome qui sotto appare nella lista dei sostenitori — con link se aggiungi un sito.",
@@ -315,7 +315,7 @@
     "website_label": "Sito web (facoltativo)",
     "tier_pick_label": "Sponsorizzazione",
     "tier_bronze": "Bronzo — 100 CHF",
-    "tier_silver": "Argento — 300 CHF",
+    "tier_silver": "Argento — 300 CHF + IVA",
     "tier_gold": "Oro — 750 CHF",
     "tier_platinum": "Platino — 10 000 CHF"
   },

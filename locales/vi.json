@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "ĐỐI TÁC",
-    "h3": "Dành cho nhà hàng, khách sạn và địa điểm tổ chức",
-    "p": "Hãy để khách của bạn tận hưởng trọn vẹn buổi tối và vẫn có thể tự lái xe về nhà. Giới thiệu Rotabo ngay tại bàn, quầy lễ tân, hoặc cửa ra vào.",
+    "h3": "Dành cho khách sạn, địa điểm và cộng đồng",
+    "p": "Khách của bạn hỏi những thứ mà quầy lễ tân không giải quyết được: một tài xế, một phiên dịch, một chiếc xe tải nhỏ, một dụng cụ. Hãy chỉ họ đến Rotabo, hoặc đặt tên bạn cạnh nó.",
     "link": "Liên hệ với chúng tôi →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "NHÀ TÀI TRỢ",
     "h3": "Những con người và địa điểm đứng sau dự án này",
-    "p": "Rotabo được duy trì nhờ bất kỳ ai sẵn sàng ủng hộ ý tưởng rằng không ai nên lái xe khi không nên lái.",
-    "invite": "Chúng tôi đặc biệt chào đón các ngân hàng, công ty bảo hiểm, thương hiệu thể thao, nhà sản xuất nước tăng lực và nước giải khát — cùng bất kỳ doanh nghiệp nào ủng hộ việc lái xe không rượu bia.",
+    "p": "Rotabo tồn tại nhờ những người và doanh nghiệp đặt tên mình phía sau nó, để việc tìm một người ở gần không bao giờ phụ thuộc vào việc bạn đã quen ai.",
+    "invite": "Chúng tôi đặc biệt chào đón khách sạn, phòng thương mại, các công ty chuyển nhà và chuyển cư, khu dân cư, cùng những tổ chức giúp mọi người an cư ở một nơi mới.",
     "first": "Chưa có nhà tài trợ nào — hãy là cái tên đầu tiên trong danh sách này.",
     "form_title": "Trở thành nhà tài trợ",
     "form_sub": "Sau khi thanh toán, tên bên dưới sẽ xuất hiện trong danh sách nhà tài trợ — kèm liên kết nếu bạn thêm trang web.",
@@ -302,7 +302,7 @@
     "website_label": "Trang web (không bắt buộc)",
     "tier_pick_label": "Tài trợ",
     "tier_bronze": "Đồng — 100 CHF",
-    "tier_silver": "Bạc — 300 CHF",
+    "tier_silver": "Bạc — 300 CHF + VAT",
     "tier_gold": "Vàng — 750 CHF",
     "tier_platinum": "Bạch kim — 10 000 CHF"
   },

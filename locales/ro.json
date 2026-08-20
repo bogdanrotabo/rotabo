@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "PARTENERI",
-    "h3": "Pentru restaurante, hoteluri și localuri",
-    "p": "Lasă-ți oaspeții să se bucure de seară și să ajungă totuși acasă cu propria mașină. Oferă Rotabo la masă, la recepție sau la ușă.",
+    "h3": "Pentru hoteluri, spații și comunități",
+    "p": "Oaspeții vă cer lucruri pe care recepția nu le poate rezolva: un șofer, un traducător, o dubă, o sculă. Trimiteți-i către Rotabo, sau puneți-vă numele pe el.",
     "link": "Contactează-ne →"
   },
   "investors_card": {
@@ -300,8 +300,8 @@
   "supporters": {
     "cat": "SUSȚINĂTORI",
     "h3": "Oamenii și locurile din spatele acestei idei",
-    "p": "Rotabo continuă să existe datorită celor dispuși să susțină ideea că nimeni nu ar trebui să conducă atunci când n-ar trebui.",
-    "invite": "Salutăm în special băncile, asigurările, mărcile sportive, producătorii de băuturi energizante și nealcoolice — și orice afacere care susține condusul responsabil, fără alcool.",
+    "p": "Rotabo merge înainte datorită oamenilor și firmelor care își pun numele în spatele lui, pentru ca găsirea cuiva din apropiere să nu depindă niciodată de cine cunoști deja.",
+    "invite": "Așteptăm mai ales hoteluri, camere de comerț, firme de relocare și mutări, ansambluri rezidențiale și organizațiile care ajută oamenii să se așeze într-un loc nou.",
     "first": "Niciun susținător încă — fii primul nume de pe listă.",
     "form_title": "Devino susținător",
     "form_sub": "După plată, numele de mai jos apare în lista susținătorilor — cu link dacă adaugi un site.",
@@ -315,7 +315,7 @@
     "website_label": "Site web (opțional)",
     "tier_pick_label": "Sponsorizare",
     "tier_bronze": "Bronz — 100 CHF",
-    "tier_silver": "Argint — 300 CHF",
+    "tier_silver": "Argint — 300 CHF + TVA",
     "tier_gold": "Aur — 750 CHF",
     "tier_platinum": "Platină — 10 000 CHF"
   },

@@ -279,8 +279,8 @@
   },
   "partners_card": {
     "cat": "PARTNERS",
-    "h3": "For restaurants, hotels and venues",
-    "p": "Let your guests enjoy the evening and still drive home in their own car. Offer Rotabo at the table, at reception, or at the door.",
+    "h3": "For hotels, venues and communities",
+    "p": "Your guests ask for things a front desk cannot solve: a driver, a translator, a van, a spare tool. Point them to Rotabo, or put your name on it.",
     "link": "Talk to us →"
   },
   "investors_card": {
@@ -298,8 +298,8 @@
   "supporters": {
     "cat": "SUPPORTERS",
     "h3": "People and places behind this",
-    "p": "Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.",
-    "invite": "We especially welcome banks, insurers, sports brands, energy-drink and soft-drink makers — and any business that stands behind sober driving.",
+    "p": "Rotabo is kept going by the people and businesses who put their name behind it, so that finding someone nearby never depends on who you already know.",
+    "invite": "We especially welcome hotels, chambers of commerce, relocation and moving companies, residential communities, and the organisations that help people settle in somewhere new.",
     "first": "No supporters yet — be the first name on this list.",
     "form_title": "Become a supporter",
     "form_sub": "After payment, the name below appears on the supporters list — with a link if you add a website.",
@@ -313,7 +313,7 @@
     "website_label": "Website (optional)",
     "tier_pick_label": "Sponsorship",
     "tier_bronze": "Bronze — 100 CHF",
-    "tier_silver": "Silver — 300 CHF",
+    "tier_silver": "Silver — 300 CHF + VAT",
     "tier_gold": "Gold — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },

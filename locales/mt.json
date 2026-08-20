@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "SĦAB",
-    "h3": "Għal ristoranti, lukandi u postijiet",
-    "p": "Ħalli lill-mistiedna tiegħek igawdu s-serata u xorta jsuqu lura d-dar bil-karrozza tagħhom stess. Offri Rotabo fil-mejda, fir-reception, jew fil-bieb.",
+    "h3": "Għal lukandi, postijiet u komunitajiet",
+    "p": "Il-mistednin tiegħek jitolbu affarijiet li r-reception ma tistax issolvi: xufier, interpretu, vann, għodda. Ibgħathom lejn Rotabo, jew qiegħed ismek maġenbu.",
     "link": "Kellimna →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "SPONSORS",
     "h3": "In-nies u l-postijiet wara dan kollu",
-    "p": "Rotabo tibqa' sejra bis-saħħa ta' kull min lest jappoġġja l-idea li ħadd m'għandu jsuq meta m'għandux.",
-    "invite": "Nilqgħu b'mod speċjali banek, kumpaniji tal-assigurazzjoni, marki sportivi, manifatturi ta' xarbiet enerġetiċi u mhux alkoħoliċi — u kwalunkwe negozju li jappoġġja s-sewqan bla alkoħol.",
+    "p": "Rotabo jinżamm għaddej mill-persuni u n-negozji li jqiegħdu isimhom warajh, biex issib lil xi ħadd fil-qrib qatt ma jiddependi minn min diġà taf.",
+    "invite": "Nilqgħu b'mod partikolari lukandi, kmamar tal-kummerċ, kumpaniji tat-tqanqil u r-rilokazzjoni, komunitajiet residenzjali, u l-organizzazzjonijiet li jgħinu lin-nies jistabbilixxu ruħhom f'post ġdid.",
     "first": "Għad m'hemm ebda sostenituri — kun l-ewwel isem f'din il-lista.",
     "form_title": "Sir sostenitur",
     "form_sub": "Wara l-ħlas, l-isem hawn taħt jidher fil-lista tas-sostenituri — b'link jekk iżżid sit web.",
@@ -302,7 +302,7 @@
     "website_label": "Sit web (mhux obbligatorju)",
     "tier_pick_label": "Sponsorizzazzjoni",
     "tier_bronze": "Bronż — 100 CHF",
-    "tier_silver": "Fidda — 300 CHF",
+    "tier_silver": "Fidda — 300 CHF + VAT",
     "tier_gold": "Deheb — 750 CHF",
     "tier_platinum": "Platinu — 10 000 CHF"
   },

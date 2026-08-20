@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "RAKAN KONGSI",
-    "h3": "Untuk restoran, hotel dan tempat acara",
-    "p": "Biarkan tetamu anda menikmati malam sepenuhnya dan tetap boleh memandu pulang dengan kereta mereka sendiri. Tawarkan Rotabo di meja, di kaunter penerimaan, atau di pintu.",
+    "h3": "Untuk hotel, tempat dan komuniti",
+    "p": "Tetamu anda meminta perkara yang kaunter penyambut tetamu tidak dapat selesaikan: pemandu, jurubahasa, van, sebuah alat. Tunjukkan mereka ke Rotabo, atau letakkan nama anda padanya.",
     "link": "Hubungi kami →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "PENYOKONG",
     "h3": "Orang dan tempat di sebalik usaha ini",
-    "p": "Rotabo terus beroperasi berkat semua orang yang sanggup menyokong prinsip bahawa tiada sesiapa patut memandu pada waktu mereka tidak sepatutnya memandu.",
-    "invite": "Kami amat mengalu-alukan bank, syarikat insurans, jenama sukan, pengeluar minuman tenaga dan minuman ringan — serta mana-mana perniagaan yang menyokong pemanduan tanpa alkohol.",
+    "p": "Rotabo terus berjalan berkat orang dan perniagaan yang meletakkan nama mereka di belakangnya, supaya mencari seseorang berdekatan tidak pernah bergantung pada siapa yang anda sudah kenal.",
+    "invite": "Kami amat mengalu-alukan hotel, dewan perniagaan, syarikat pemindahan dan penempatan, komuniti kediaman, serta organisasi yang membantu orang ramai menetap di tempat baharu.",
     "first": "Belum ada penyokong — jadilah nama pertama dalam senarai ini.",
     "form_title": "Jadi penyokong",
     "form_sub": "Selepas pembayaran, nama di bawah muncul dalam senarai penyokong — dengan pautan jika anda menambah laman web.",
@@ -302,7 +302,7 @@
     "website_label": "Laman web (pilihan)",
     "tier_pick_label": "Penajaan",
     "tier_bronze": "Gangsa — 100 CHF",
-    "tier_silver": "Perak — 300 CHF",
+    "tier_silver": "Perak — 300 CHF + VAT",
     "tier_gold": "Emas — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },

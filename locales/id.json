@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "MITRA",
-    "h3": "Untuk restoran, hotel, dan tempat acara",
-    "p": "Biarkan tamu Anda menikmati malam sepenuhnya dan tetap bisa menyetir pulang dengan mobil mereka sendiri. Tawarkan Rotabo di meja makan, di resepsionis, atau di pintu keluar.",
+    "h3": "Untuk hotel, tempat, dan komunitas",
+    "p": "Tamu Anda meminta hal-hal yang tidak bisa diselesaikan resepsionis: sopir, penerjemah, mobil van, sebuah alat. Arahkan mereka ke Rotabo, atau cantumkan nama Anda di sana.",
     "link": "Hubungi kami →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "PENDUKUNG",
     "h3": "Orang dan tempat di balik semua ini",
-    "p": "Rotabo terus berjalan berkat semua orang yang bersedia mendukung gagasan bahwa tak seorang pun boleh menyetir saat seharusnya tidak menyetir.",
-    "invite": "Kami terutama menyambut bank, perusahaan asuransi, merek olahraga, produsen minuman energi dan minuman ringan — serta bisnis apa pun yang mendukung berkendara tanpa alkohol.",
+    "p": "Rotabo berjalan berkat orang-orang dan perusahaan yang menaruh namanya di belakangnya, agar menemukan seseorang di dekat Anda tidak pernah bergantung pada siapa yang sudah Anda kenal.",
+    "invite": "Kami khususnya menyambut hotel, kamar dagang, perusahaan pindahan dan relokasi, komunitas hunian, serta organisasi yang membantu orang menetap di tempat baru.",
     "first": "Belum ada pendukung — jadilah nama pertama di daftar ini.",
     "form_title": "Jadilah pendukung",
     "form_sub": "Setelah pembayaran, nama di bawah muncul di daftar pendukung — dengan tautan jika kamu menambahkan situs web.",
@@ -302,7 +302,7 @@
     "website_label": "Situs web (opsional)",
     "tier_pick_label": "Sponsor",
     "tier_bronze": "Perunggu — 100 CHF",
-    "tier_silver": "Perak — 300 CHF",
+    "tier_silver": "Perak — 300 CHF + PPN",
     "tier_gold": "Emas — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },

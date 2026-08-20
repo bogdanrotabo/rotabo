@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "PARTNERID",
-    "h3": "Restoranidele, hotellidele ja üritustele",
-    "p": "Lase oma külalistel õhtust nautida ja ikkagi sõita koju oma autoga. Paku Rotabot laua taga, vastuvõtus või ukse juures.",
+    "h3": "Hotellidele, kohtadele ja kogukondadele",
+    "p": "Külalised küsivad asju, mida vastuvõtt ei lahenda: juhti, tõlki, kaubikut, tööriista. Suunake nad Rotabosse või pange sinna oma nimi.",
     "link": "Võta meiega ühendust →"
   },
   "drivers_card": {
@@ -294,8 +294,8 @@
   "supporters": {
     "cat": "TOETAJAD",
     "h3": "Inimesed ja kohad selle taga",
-    "p": "Rotabo püsib tänu kõigile, kes on valmis toetama mõtet, et keegi ei tohiks juhtida siis, kui ta ei tohi.",
-    "invite": "Tervitame eriti panku, kindlustusseltse, spordibrände, energiajookide ja karastusjookide tootjaid — ning igat ettevõtet, kes toetab kainelt sõitmist.",
+    "p": "Rotabot hoiavad käigus inimesed ja ettevõtted, kes panevad selle taha oma nime, et kellegi leidmine lähedalt ei sõltuks kunagi sellest, keda sa juba tunned.",
+    "invite": "Eriti ootame hotelle, kaubanduskodasid, kolimis- ja ümberasumisfirmasid, elurajoone ning organisatsioone, kes aitavad inimestel uues kohas sisse elada.",
     "first": "Toetajaid pole veel — ole selles nimekirjas esimene nimi.",
     "form_title": "Hakka toetajaks",
     "form_sub": "Pärast maksmist ilmub allolev nimi toetajate nimekirja — koos lingiga, kui lisad veebilehe.",
@@ -309,7 +309,7 @@
     "website_label": "Veebileht (valikuline)",
     "tier_pick_label": "Sponsorlus",
     "tier_bronze": "Pronks — 100 CHF",
-    "tier_silver": "Hõbe — 300 CHF",
+    "tier_silver": "Hõbe — 300 CHF + km",
     "tier_gold": "Kuld — 750 CHF",
     "tier_platinum": "Plaatina — 10 000 CHF"
   },

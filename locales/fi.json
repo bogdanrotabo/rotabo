@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "KUMPPANIT",
-    "h3": "Ravintoloille, hotelleille ja tapahtumapaikoille",
-    "p": "Anna vieraidesi nauttia illasta ja silti ajaa kotiin omalla autollaan. Tarjoa Rotaboa pöydässä, vastaanotossa tai ovella.",
+    "h3": "Hotelleille, tiloille ja yhteisöille",
+    "p": "Vieraat kysyvät asioita, joita vastaanotto ei voi ratkaista: kuljettajaa, tulkkia, pakettiautoa, työkalua. Ohjaa heidät Rotaboon tai liitä siihen nimesi.",
     "link": "Ota yhteyttä →"
   },
   "drivers_card": {
@@ -294,8 +294,8 @@
   "supporters": {
     "cat": "TUKIJAT",
     "h3": "Ihmiset ja paikat tämän takana",
-    "p": "Rotabo pysyy käynnissä kaikkien niiden ansiosta, jotka ovat valmiita seisomaan ajatuksen takana, ettei kenenkään pitäisi ajaa silloin, kun ei pitäisi.",
-    "invite": "Toivotamme erityisen tervetulleiksi pankit, vakuutusyhtiöt, urheilubrändit, energiajuoma- ja virvoitusjuomavalmistajat — ja minkä tahansa yrityksen, joka tukee selvin päin ajamista.",
+    "p": "Rotabo pysyy pystyssä niiden ihmisten ja yritysten ansiosta, jotka antavat sille nimensä, jotta lähellä olevan avun löytäminen ei koskaan riipu siitä, kenet jo tuntee.",
+    "invite": "Toivotamme erityisesti tervetulleiksi hotellit, kauppakamarit, muutto- ja relokaatioyritykset, asuinalueet sekä järjestöt, jotka auttavat ihmisiä asettumaan uuteen paikkaan.",
     "first": "Ei vielä tukijoita — ole ensimmäinen nimi tällä listalla.",
     "form_title": "Ryhdy tukijaksi",
     "form_sub": "Maksun jälkeen alla oleva nimi näkyy tukijoiden listalla — linkin kanssa, jos lisäät verkkosivun.",
@@ -309,7 +309,7 @@
     "website_label": "Verkkosivu (valinnainen)",
     "tier_pick_label": "Sponsorointi",
     "tier_bronze": "Pronssi — 100 CHF",
-    "tier_silver": "Hopea — 300 CHF",
+    "tier_silver": "Hopea — 300 CHF + alv",
     "tier_gold": "Kulta — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },

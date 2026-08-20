@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "SOCIOS",
-    "h3": "Para restaurantes, hoteles y locales",
-    "p": "Deja que tus clientes disfruten de la noche y aun así vuelvan a casa en su propio coche. Ofrece Rotabo en la mesa, en la recepción o en la puerta.",
+    "h3": "Para hoteles, espacios y comunidades",
+    "p": "Sus huéspedes piden cosas que una recepción no puede resolver: un conductor, un intérprete, una furgoneta, una herramienta. Diríjalos a Rotabo, o ponga su nombre en él.",
     "link": "Habla con nosotros →"
   },
   "drivers_card": {
@@ -294,8 +294,8 @@
   "supporters": {
     "cat": "COLABORADORES",
     "h3": "Las personas y lugares detrás de esto",
-    "p": "Rotabo sigue adelante gracias a quienes están dispuestos a defender la idea de que nadie debería conducir cuando no debe.",
-    "invite": "Damos especialmente la bienvenida a bancos, aseguradoras, marcas deportivas, fabricantes de bebidas energéticas y refrescos — y a cualquier empresa que apoye conducir sin alcohol.",
+    "p": "Rotabo sigue adelante gracias a las personas y empresas que ponen su nombre detrás, para que encontrar a alguien cerca nunca dependa de a quién ya conoces.",
+    "invite": "Damos la bienvenida especialmente a hoteles, cámaras de comercio, empresas de mudanzas y relocation, comunidades residenciales y las organizaciones que ayudan a instalarse en un lugar nuevo.",
     "first": "Aún no hay patrocinadores — sé el primer nombre en esta lista.",
     "form_title": "Hazte colaborador",
     "form_sub": "Después de pagar, el nombre de abajo aparece en la lista de colaboradores — con enlace si añades una web.",
@@ -309,7 +309,7 @@
     "website_label": "Sitio web (opcional)",
     "tier_pick_label": "Patrocinio",
     "tier_bronze": "Bronce — 100 CHF",
-    "tier_silver": "Plata — 300 CHF",
+    "tier_silver": "Plata — 300 CHF + IVA",
     "tier_gold": "Oro — 750 CHF",
     "tier_platinum": "Platino — 10 000 CHF"
   },

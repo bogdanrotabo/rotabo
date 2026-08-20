@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "COMHPHÁIRTITHE",
-    "h3": "Do bhialanna, óstáin agus ionaid",
-    "p": "Lig do d'aíonna taitneamh a bhaint as an oíche agus tiomáint abhaile ina gcarr féin fós. Tairg Rotabo ag an mbord, ag an bhfáiltiú, nó ag an doras.",
+    "h3": "Do óstáin, ionaid agus pobail",
+    "p": "Iarrann do chuid aíonna rudaí nach féidir le deasc fáiltithe a réiteach: tiománaí, ateangaire, veain, uirlis. Cuir chuig Rotabo iad, nó cuir d'ainm leis.",
     "link": "Labhair linn →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "TACAÍONTÓIRÍ",
     "h3": "Na daoine agus na háiteanna taobh thiar de seo",
-    "p": "Coinníonn éinne atá sásta seasamh taobh thiar den smaoineamh nár chóir d'aon duine tiomáint nuair nár chóir dóibh, Rotabo ag imeacht.",
-    "invite": "Cuirimid fáilte ar leith roimh bhainc, cuideachtaí árachais, brandaí spóirt, déantúsóirí deochanna fuinnimh agus deochanna boga — agus roimh aon ghnó a sheasann le tiomáint sobriety.",
+    "p": "Coinnítear Rotabo ag imeacht ag na daoine agus na gnóthaí a chuireann a n-ainm taobh thiar de, ionas nach mbeidh duine a aimsiú in aice láimhe ag brath riamh ar cé atá ar aithne agat cheana.",
+    "invite": "Cuirimid fáilte ar leith roimh óstáin, cumainn tráchtála, comhlachtaí aistrithe agus athlonnaithe, pobail chónaithe, agus na heagraíochtaí a chuidíonn le daoine socrú isteach in áit nua.",
     "first": "Níl aon tacadóirí fós — bí ar an gcéad ainm ar an liosta seo.",
     "form_title": "Bí i do thacadóir",
     "form_sub": "Tar éis íoc, feicfear an t-ainm thíos ar liosta na dtacadóirí — le nasc má chuireann tú suíomh leis.",
@@ -302,7 +302,7 @@
     "website_label": "Suíomh gréasáin (roghnach)",
     "tier_pick_label": "Urraíocht",
     "tier_bronze": "Cré-umha — 100 CHF",
-    "tier_silver": "Airgead — 300 CHF",
+    "tier_silver": "Airgead — 300 CHF + CBL",
     "tier_gold": "Ór — 750 CHF",
     "tier_platinum": "Platanam — 10 000 CHF"
   },

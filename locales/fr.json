@@ -281,8 +281,8 @@
   },
   "partners_card": {
     "cat": "PARTENAIRES",
-    "h3": "Pour les restaurants, hôtels et établissements",
-    "p": "Laissez vos clients profiter de leur soirée tout en rentrant chez eux dans leur propre voiture. Proposez Rotabo à table, à la réception ou à la sortie.",
+    "h3": "Pour les hôtels, les lieux d'accueil et les communautés",
+    "p": "Vos clients demandent des choses qu'une réception ne peut pas résoudre: un chauffeur, un interprète, une camionnette, un outil. Orientez-les vers Rotabo, ou associez-y votre nom.",
     "link": "Contactez-nous →"
   },
   "drivers_card": {
@@ -294,8 +294,8 @@
   "supporters": {
     "cat": "SOUTIENS",
     "h3": "Les personnes et les lieux derrière ce projet",
-    "p": "Rotabo continue grâce à tous ceux qui sont prêts à défendre l'idée que personne ne devrait conduire quand il ne le devrait pas.",
-    "invite": "Nous accueillons particulièrement les banques, les assureurs, les marques sportives, les fabricants de boissons énergisantes et de sodas — et toute entreprise qui soutient la conduite sans alcool.",
+    "p": "Rotabo existe grâce aux personnes et aux entreprises qui y associent leur nom, pour que trouver quelqu'un près de chez soi ne dépende jamais de ceux qu'on connaît déjà.",
+    "invite": "Nous accueillons tout particulièrement les hôtels, les chambres de commerce, les sociétés de déménagement et de relocation, les résidences et les organisations qui aident les gens à s'installer ailleurs.",
     "first": "Pas encore de soutien — sois le premier nom sur cette liste.",
     "form_title": "Devenir supporter",
     "form_sub": "Après le paiement, le nom ci-dessous apparaît sur la liste des supporters — avec un lien si vous ajoutez un site.",
@@ -309,7 +309,7 @@
     "website_label": "Site web (facultatif)",
     "tier_pick_label": "Sponsoring",
     "tier_bronze": "Bronze — 100 CHF",
-    "tier_silver": "Argent — 300 CHF",
+    "tier_silver": "Argent — 300 CHF + TVA",
     "tier_gold": "Or — 750 CHF",
     "tier_platinum": "Platine — 10 000 CHF"
   },

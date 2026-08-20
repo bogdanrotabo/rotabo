@@ -274,8 +274,8 @@
   },
   "partners_card": {
     "cat": "PARTNERLER",
-    "h3": "Restoranlar, oteller ve mekanlar için",
-    "p": "Misafirlerin akşamın tadını çıkarsın, yine de kendi arabalarıyla eve gitsin. Rotabo'yu masada, resepsiyonda ya da kapıda sun.",
+    "h3": "Oteller, mekânlar ve topluluklar için",
+    "p": "Misafirleriniz resepsiyonun çözemeyeceği şeyler ister: bir şoför, bir tercüman, bir minibüs, bir alet. Onları Rotabo'ya yönlendirin ya da adınızı yanına koyun.",
     "link": "Bizimle konuş →"
   },
   "drivers_card": {
@@ -287,8 +287,8 @@
   "supporters": {
     "cat": "DESTEKÇİLER",
     "h3": "Bunun arkasındaki insanlar ve mekanlar",
-    "p": "Rotabo, kimsenin uygun olmayan durumda araç kullanmaması gerektiği fikrinin arkasında durmaya istekli herkes sayesinde ayakta kalıyor.",
-    "invite": "Özellikle bankaları, sigorta şirketlerini, spor markalarını, enerji içeceği ve alkolsüz içecek üreticilerini — ve ayık sürüşü destekleyen her işletmeyi memnuniyetle karşılıyoruz.",
+    "p": "Rotabo, arkasına adını koyan insanlar ve şirketler sayesinde ayakta duruyor, yakında birini bulmak asla kimi tanıdığınıza bağlı olmasın diye.",
+    "invite": "Özellikle otelleri, ticaret odalarını, nakliye ve yerleşim şirketlerini, konut sitelerini ve insanların yeni bir yere yerleşmesine yardım eden kuruluşları bekliyoruz.",
     "first": "Henüz destekçi yok — bu listedeki ilk isim ol.",
     "form_title": "Destekçi ol",
     "form_sub": "Ödemeden sonra aşağıdaki isim destekçiler listesinde görünür — bir site eklersen bağlantıyla birlikte.",
@@ -302,7 +302,7 @@
     "website_label": "Web sitesi (isteğe bağlı)",
     "tier_pick_label": "Sponsorluk",
     "tier_bronze": "Bronz — 100 CHF",
-    "tier_silver": "Gümüş — 300 CHF",
+    "tier_silver": "Gümüş — 300 CHF + KDV",
     "tier_gold": "Altın — 750 CHF",
     "tier_platinum": "Platin — 10 000 CHF"
   },
