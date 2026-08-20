@@ -210,6 +210,10 @@
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
         if (dict && dict.account_page) Object.assign(T, dict.account_page);
+        // Same omission as browse.html had: without these an Arabic or
+        // Urdu reader gets the right words in the wrong direction.
+        document.documentElement.setAttribute("lang", LANG);
+        document.documentElement.setAttribute("dir", ["ar", "ur"].indexOf(LANG) !== -1 ? "rtl" : "ltr");
         // The static header above #content is not rendered through tr(),
         // so translate it here once the dictionary is in.
         document.getElementById("pageTitle").textContent = T.title;
@@ -528,6 +532,19 @@
         .catch(function(){ return null; });
     }
 
+    // The visits table stores the query string, and account.html is where
+    // a password-recovery link lands with its token in that query string.
+    // Analytics is not a place to write down credentials, so anything
+    // that looks like one is dropped before the row is sent. gclid stays:
+    // the paid/organic split is derived from it.
+    function safePath(){
+      try {
+        var u = new URL(location.href);
+        ["code","token","token_hash","access_token","refresh_token","otp","secret","password","email_otp"].forEach(function(k){ u.searchParams.delete(k); });
+        return u.pathname + (u.search || "");
+      } catch (e) { return location.pathname; }
+    }
+
     visitorCountry().then(function(country){
       fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
         method: "POST",
@@ -537,7 +554,7 @@
           "Content-Type": "application/json",
           "Prefer": "return=minimal"
         },
-        body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
+        body: JSON.stringify({ path: safePath(), referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
         keepalive: true
       }).catch(function(){});
     });

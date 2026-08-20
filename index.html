@@ -433,6 +433,9 @@
   /* The paid names. One row per sponsor: tier badge, the name (linked
      when they gave a website), city. */
   .sponsor-list{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
+  /* display:flex beats the hidden attribute, so the empty box showed
+     before the supporters had loaded (and stayed if there were none). */
+  .sponsor-list[hidden]{display:none;}
   .sponsor-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
   .sponsor-row .s-tier{
     font-size:.76rem;font-weight:800;letter-spacing:.04em;
@@ -1693,6 +1696,10 @@
           // What this checkout is worth, for after-payment.html to report
           // as the purchase value: 1 month costs 1 CHF, 12 months cost 2.
           localStorage.setItem("rotabo_paid_value", tierMonthsFor(form) === "12" ? "2" : "1");
+          // A GA4 purchase with no transaction_id cannot be deduplicated
+          // and reports as (not set). Stripe's fixed return URL carries
+          // nothing, so the id is minted here and read back after payment.
+          localStorage.setItem("rotabo_paid_id", newId);
         } catch (e) {}
         if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
         // prefilled_email: the sponsor and viewer checkouts have always sent
@@ -1735,6 +1742,7 @@
           localStorage.setItem("rotabo_return_to", "/#sponsor");
           // What this checkout is worth, for the GA4 purchase value.
           localStorage.setItem("rotabo_paid_value", String(chf));
+          localStorage.setItem("rotabo_paid_id", "sponsor-" + newId);
         } catch (e) {}
         if (window.gtag) gtag("event", "begin_checkout", { checkout_type: "sponsor", tier: payload.tier, value: chf, currency: "CHF" });
         window.location.href = SPONSOR_LINKS[payload.tier] + "?client_reference_id=" + encodeURIComponent("sponsor-" + newId) + "&prefilled_email=" + encodeURIComponent(payload.email);
@@ -2185,7 +2193,7 @@
     // On mobile the panel opens as a full-width bottom sheet meant to
     // be scrolled through, not typed into -- autofocusing the search
     // field there just pops the keyboard up over the options list.
-    if (window.innerWidth >= 640) {
+    if (window.innerWidth > 640) {   // the bottom-sheet media query is max-width:640, so 640 itself is mobile
       document.getElementById("langSearch").focus();
     }
   }
@@ -2393,6 +2401,19 @@ if ("serviceWorker" in navigator) {
         .catch(function(){ return null; });
     }
 
+    // The visits table stores the query string, and account.html is where
+    // a password-recovery link lands with its token in that query string.
+    // Analytics is not a place to write down credentials, so anything
+    // that looks like one is dropped before the row is sent. gclid stays:
+    // the paid/organic split is derived from it.
+    function safePath(){
+      try {
+        var u = new URL(location.href);
+        ["code","token","token_hash","access_token","refresh_token","otp","secret","password","email_otp"].forEach(function(k){ u.searchParams.delete(k); });
+        return u.pathname + (u.search || "");
+      } catch (e) { return location.pathname; }
+    }
+
     visitorCountry().then(function(country){
       fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
         method: "POST",
@@ -2402,7 +2423,7 @@ if ("serviceWorker" in navigator) {
           "Content-Type": "application/json",
           "Prefer": "return=minimal"
         },
-        body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
+        body: JSON.stringify({ path: safePath(), referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
         keepalive: true
       }).catch(function(){});
     });

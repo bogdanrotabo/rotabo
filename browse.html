@@ -272,6 +272,11 @@
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
         window.__dict = dict; // let viewer.js localize its unlock modal
+        // index.html sets these on every language change; this page never
+        // did, so an Arabic or Urdu reader got Arabic text laid out
+        // left-to-right, with the header and the cards on the wrong side.
+        document.documentElement.setAttribute("lang", LANG);
+        document.documentElement.setAttribute("dir", ["ar", "ur"].indexOf(LANG) !== -1 ? "rtl" : "ltr");
         if (dict && dict.browse_page) {
           Object.assign(T, dict.browse_page);
         }
@@ -296,6 +301,8 @@
   var listPollTimer = null;
   var countryFilter = "";
   var cityFilter = "";
+  // Bound once; see renderLocked.
+  var fxRedrawBound = false;
 
   // Major cities grouped by country, same set as #cityList. Narrows the
   // shared datalist to the picked country's cities as you type in the
@@ -406,6 +413,17 @@
     if (mins === 1) return tr("time_min_ago_one");
     if (mins < 60) return tr("time_min_ago_other", { n: mins });
     var hrs = Math.round(mins / 60);
+    // Past a day the hour count stops being information: a listing from
+    // three months ago read "2184 hours ago". There is no translated
+    // day or week unit to fall back on, so hand the job to the browser,
+    // which knows how to write a date in the reader's own language.
+    if (hrs >= 24) {
+      try {
+        return new Date(iso).toLocaleDateString(LANG || undefined, { day: "numeric", month: "short" });
+      } catch (e) {
+        return new Date(iso).toLocaleDateString();
+      }
+    }
     return hrs === 1 ? tr("time_hour_ago_one") : tr("time_hour_ago_other", { n: hrs });
   }
 
@@ -448,12 +466,25 @@
   }
 
   function renderDashboard(){
+    // The filter boxes are recreated empty by the innerHTML below, so the
+    // globals have to go with them. Leaving them set meant a viewer who
+    // had typed "Switzerland", then hit the paywall and paid, came back
+    // to a full-looking dashboard silently filtered to one country by a
+    // box that showed nothing.
+    countryFilter = "";
+    cityFilter = "";
+    lastBrowseSig = null;
     content.innerHTML =
       '<div class="my-listing" id="myListing"></div>' +
       '<div class="filter-field"><input type="text" id="countryFilter" class="city-filter" list="countryList" autocomplete="off"><button type="button" class="filter-btn" id="countryFilterBtn"></button></div>' +
       '<div class="filter-field"><input type="text" id="cityFilter" class="city-filter" list="cityList" autocomplete="off"></div>' +
       '<div class="request-list" id="requestList"></div>';
     renderMyListing();
+    // The page subtitle is the paywall's pitch ("Unlock full access to
+    // see who is here"). Once they have, it is stale advice sitting
+    // above the very thing it is asking them to buy.
+    var subEl = document.getElementById("pageSub");
+    if (subEl) subEl.textContent = "";
     var filterInput = document.getElementById("countryFilter");
     var filterBtn = document.getElementById("countryFilterBtn");
     var cityInput = document.getElementById("cityFilter");
@@ -572,13 +603,24 @@
     fillTiers(priceEl);
     btn.textContent = tr("locked_btn");
     btn.addEventListener("click", function(){
-      if (!window.RotaboViewer) return;
+      if (!window.RotaboViewer) {
+        // viewer.js failed to load (blocked script, a bad cache entry).
+        // A button that does nothing at all is worse than one that says
+        // so by trying again: a reload re-fetches it.
+        location.reload();
+        return;
+      }
       window.RotaboViewer.open(function(){ renderDashboard(); });
     });
-    // Same reason viewer.js redraws its own tiers: the day's rates and
-    // the chosen language can both land after the first paint.
-    if (window.RotaboFx && window.RotaboFx.onChange) {
-      window.RotaboFx.onChange(function(){ if (document.body.contains(priceEl)) fillTiers(priceEl); });
+    // Registered once for the life of the page, not once per render:
+    // renderLocked can run again (access lapses, a checkout comes back)
+    // and every extra listener kept a detached node alive for nothing.
+    if (!fxRedrawBound && window.RotaboFx && window.RotaboFx.onChange) {
+      fxRedrawBound = true;
+      window.RotaboFx.onChange(function(){
+        var el = document.querySelector(".locked-price");
+        if (el) fillTiers(el);
+      });
     }
     sb.rpc("browse_count", { p_category: category, p_role: browseRole }).then(function(res){
       if (!document.body.contains(countEl)) return;
@@ -796,6 +838,19 @@
         .catch(function(){ return null; });
     }
 
+    // The visits table stores the query string, and account.html is where
+    // a password-recovery link lands with its token in that query string.
+    // Analytics is not a place to write down credentials, so anything
+    // that looks like one is dropped before the row is sent. gclid stays:
+    // the paid/organic split is derived from it.
+    function safePath(){
+      try {
+        var u = new URL(location.href);
+        ["code","token","token_hash","access_token","refresh_token","otp","secret","password","email_otp"].forEach(function(k){ u.searchParams.delete(k); });
+        return u.pathname + (u.search || "");
+      } catch (e) { return location.pathname; }
+    }
+
     visitorCountry().then(function(country){
       fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
         method: "POST",
@@ -805,7 +860,7 @@
           "Content-Type": "application/json",
           "Prefer": "return=minimal"
         },
-        body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
+        body: JSON.stringify({ path: safePath(), referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
         keepalive: true
       }).catch(function(){});
     });

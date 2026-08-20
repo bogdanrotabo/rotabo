@@ -67,7 +67,25 @@
     "Kazakhstan":"KZ","Uzbekistan":"UZ","Turkmenistan":"TM","Kyrgyzstan":"KG","Tajikistan":"TJ",
     "Azerbaijan":"AZ","Armenia":"AM","Georgia":"GE","Afghanistan":"AF","Mongolia":"MN",
     "Cuba":"CU","Dominican Republic":"DO","Haiti":"HT","Jamaica":"JM","Guatemala":"GT","Honduras":"HN",
-    "El Salvador":"SV","Nicaragua":"NI","Costa Rica":"CR","Panama":"PA","Trinidad and Tobago":"TT"
+    "El Salvador":"SV","Nicaragua":"NI","Costa Rica":"CR","Panama":"PA","Trinidad and Tobago":"TT",
+    // The remaining 53 countries the forms offer in #countryList. Without
+    // them isoFor() returned nothing, so browse.html's country filter fell
+    // back to substring matching -- "Niger" then also matched Nigeria, and
+    // a listing saved under a translated country name matched nothing.
+    "Antigua and Barbuda":"AG","Bahamas":"BS","Barbados":"BB","Belize":"BZ",
+    "Benin":"BJ","Bhutan":"BT","Botswana":"BW","Burkina Faso":"BF","Burundi":"BI",
+    "Cabo Verde":"CV","Cape Verde":"CV","Central African Republic":"CF","Chad":"TD",
+    "Comoros":"KM","Democratic Republic of the Congo":"CD","DR Congo":"CD",
+    "Djibouti":"DJ","Dominica":"DM","Equatorial Guinea":"GQ","Eritrea":"ER",
+    "Eswatini":"SZ","Swaziland":"SZ","Gabon":"GA","Gambia":"GM","Grenada":"GD",
+    "Guinea":"GN","Guinea-Bissau":"GW","Guyana":"GY","Kiribati":"KI",
+    "Lesotho":"LS","Liberia":"LR","Madagascar":"MG","Malawi":"MW","Maldives":"MV",
+    "Marshall Islands":"MH","Mauritania":"MR","Mauritius":"MU","Micronesia":"FM",
+    "Namibia":"NA","Nauru":"NR","Niger":"NE","Palau":"PW",
+    "Saint Kitts and Nevis":"KN","Saint Lucia":"LC","Saint Vincent and the Grenadines":"VC",
+    "Samoa":"WS","Sao Tome and Principe":"ST","Seychelles":"SC","Sierra Leone":"SL",
+    "Solomon Islands":"SB","Suriname":"SR","Timor-Leste":"TL","East Timor":"TL",
+    "Togo":"TG","Tonga":"TO","Tuvalu":"TV","Vanuatu":"VU"
   };
   var NAME_TO_ISO = {};
   Object.keys(RAW_ISO).forEach(function(k){ NAME_TO_ISO[norm(k)] = RAW_ISO[k]; });

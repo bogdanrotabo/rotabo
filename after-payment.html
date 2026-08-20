@@ -87,6 +87,19 @@
   // redirect. Never wait for a geo lookup: use the country this session
   // already cached, or record the visit without one.
   try {
+    // The visits table stores the query string, and account.html is where
+    // a password-recovery link lands with its token in that query string.
+    // Analytics is not a place to write down credentials, so anything
+    // that looks like one is dropped before the row is sent. gclid stays:
+    // the paid/organic split is derived from it.
+    function safePath(){
+      try {
+        var u = new URL(location.href);
+        ["code","token","token_hash","access_token","refresh_token","otp","secret","password","email_otp"].forEach(function(k){ u.searchParams.delete(k); });
+        return u.pathname + (u.search || "");
+      } catch (e) { return location.pathname; }
+    }
+
     var sid = localStorage.getItem("rotabo_sid");
     if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : (Date.now() + "-" + Math.random().toString(16).slice(2))); localStorage.setItem("rotabo_sid", sid); }
     var country = null;
@@ -100,7 +113,7 @@
         "Content-Type": "application/json",
         "Prefer": "return=minimal"
       },
-      body: JSON.stringify({ path: location.pathname + location.search, referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
+      body: JSON.stringify({ path: safePath(), referrer: document.referrer || null, language: navigator.language || null, session_id: sid, country: country }),
       keepalive: true
     }).catch(function(){});
   } catch (e) {}
@@ -124,8 +137,15 @@
     var v = parseFloat(localStorage.getItem('rotabo_paid_value'));
     if (isFinite(v) && v > 0) ev.value = v;
     localStorage.removeItem('rotabo_paid_value');
+    // transaction_id is how GA4 deduplicates purchases. Without it every
+    // purchase reported as (not set) and two deliveries of the same
+    // conversion could both be counted -- which matters here because
+    // purchase is the only primary conversion this account has, and
+    // Google Ads bids on it. The page that sent the browser to Stripe
+    // leaves the id behind, since Stripe's fixed return URL carries none.
+    var txn = localStorage.getItem('rotabo_paid_id');
+    if (txn) { ev.transaction_id = txn; localStorage.removeItem('rotabo_paid_id'); }
   } catch (e) { /* storage denied: report the purchase without a value */ }
-  gtag('event', 'purchase', ev);
 
   // event_callback needs gtag.js to have loaded to fire at all, and an
   // ad blocker means it never will. This is the floor under that: the

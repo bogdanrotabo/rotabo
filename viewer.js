@@ -357,7 +357,7 @@
         // a viewer purchase comes back HERE instead.
         // data-chf is what this tier costs; after-payment.html reports it
         // as the purchase value, since Stripe's return URL carries none.
-        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); localStorage.setItem("rotabo_paid_value", a.getAttribute("data-chf") || "1"); } catch (err) {}
+        try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); localStorage.setItem("rotabo_paid_value", a.getAttribute("data-chf") || "1"); localStorage.setItem("rotabo_paid_id", "viewer-" + tok.token.slice(0, 24)); } catch (err) {}
       });
     });
   }
@@ -372,9 +372,15 @@
     overlay.classList.add("open");
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>' + esc(t("gone")) + '</p>';
   }
-  // Transient failure while checking access: keep every credential and
-  // let the viewer retry, instead of treating the hiccup as "unpaid".
+  // Transient failure while checking access, or while fetching details:
+  // keep every credential and let the viewer retry, instead of treating
+  // the hiccup as "unpaid". reveal() can reach this with the modal never
+  // built (a viewer with a live session taps "See contact" and the
+  // request fails), so it opens the modal itself rather than writing
+  // into a box that is not there.
   function stepError(tok) {
+    if (!overlay) build();
+    overlay.classList.add("open");
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
       '<p>' + esc(t("err_generic")) + '</p>' +
@@ -441,8 +447,10 @@
         // A failed request is neither "locked" nor "gone": supabase-js
         // resolves with {data:null, error} on network and 5xx failures,
         // and treating that as zero rows told paying viewers a live
-        // listing was "no longer available".
-        if (r && r.error) { if (opts.onLocked) opts.onLocked(); return; }
+        // listing was "no longer available". Callers may pass onLocked to
+        // react, but browse.html does not, and reporting nothing at all
+        // left the "See contact" button doing visibly nothing. Say so.
+        if (r && r.error) { stepError(tok); if (opts.onLocked) opts.onLocked(); return; }
         var rows = (r && r.data) || [];
         if (rows.length) { if (opts.onDetails) opts.onDetails(rows); return; }
         // Zero rows means one of two very different things: the
