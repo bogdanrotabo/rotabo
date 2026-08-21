@@ -949,8 +949,11 @@
          sponsor is promised, and SPONSOR_PRICES for the picked tier
          becomes the GA4 purchase value. They drifted once -- Platinum
          read "750 CHF+" while Stripe charged 10 000. Verified against
-         Stripe on 2026-08-19: 100 / 300 / 750 / 10 000 CHF, VAT added on
-         top at checkout. The buttons no longer leave for Stripe: they
+         Stripe on 2026-08-19: 100 / 300 / 750 / 10 000 CHF, and those
+         are the final amounts -- nothing is added at checkout, so no
+         label may promise "+ VAT". A locale sweep once did exactly
+         that on silver alone, which read as though the other three
+         were tax-inclusive. The buttons no longer leave for Stripe: they
          open the sponsor form, which collects a verified email and the
          name for the list, then sends the checkout off carrying
          client_reference_id=sponsor-<id> so the webhook can put that
