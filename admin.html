@@ -515,6 +515,33 @@
     return String(s).replace(/[&<>"']/g, function(c){ return ESCAPES[c]; });
   }
 
+  // A paid click lands as "/?gad_source=5&gad_campaignid=...&gclid=" plus
+  // ninety characters of identifier, which pushed country, referrer and
+  // language off the right edge of the visits table. The page is what the
+  // row is about and the gclid only says how they arrived, so the query
+  // collapses to that one fact. Nothing is lost: the untouched value stays
+  // on the cell title, one hover away.
+  function shortPath(v){
+    var q = v.indexOf("?");
+    if (q === -1) return v;
+    var base = v.slice(0, q) || "/";
+    var qs = v.slice(q + 1);
+    if (/(^|&)(gclid|gbraid|wbraid|gad_source|gad_campaignid)=/.test(qs)) return base + "  \u00b7 ads";
+    var n = qs.split("&").filter(Boolean).length;
+    return base + "  \u00b7 " + n + (n === 1 ? " param" : " params");
+  }
+
+  // Referrers are whole URLs. The host is what names the source; the path
+  // after it almost never earns the width it takes.
+  function shortRef(v){
+    var s = v;
+    try {
+      var u = new URL(v);
+      s = u.hostname.replace(/^www\./, "") + (u.pathname !== "/" ? u.pathname : "");
+    } catch (e) { /* not a URL: show it as stored */ }
+    return s.length > 40 ? s.slice(0, 39) + "\u2026" : s;
+  }
+
   // Typing in a search box rebuilds a whole table; at a thousand rows that is
   // far too much work to redo on every keypress.
   function debounce(fn){
@@ -700,9 +727,9 @@
       // of a blank cell that looks like a rendering bug.
       return "<tr>"
         + "<td>" + (created ? esc(created) : "&mdash;") + "</td>"
-        + "<td>" + (r.path ? esc(r.path) : "&mdash;") + "</td>"
+        + "<td title=\"" + esc(r.path) + "\">" + (r.path ? esc(shortPath(r.path)) : "&mdash;") + "</td>"
         + "<td>" + (cc ? (flag ? flag + " " : "") + esc(cc) : "&mdash;") + "</td>"
-        + "<td>" + (r.referrer ? esc(r.referrer) : "&mdash;") + "</td>"
+        + "<td title=\"" + esc(r.referrer) + "\">" + (r.referrer ? esc(shortRef(r.referrer)) : "&mdash;") + "</td>"
         + "<td>" + (r.language ? esc(r.language) : "&mdash;") + "</td>"
         + "<td>" + (session ? esc(session) : "&mdash;") + "</td>"
         + "</tr>";

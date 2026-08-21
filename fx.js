@@ -149,6 +149,42 @@
     return cachedRegion;
   }
 
+  // The country the visitor is actually connecting from, as Cloudflare
+  // reports it on this origin. Every page already fetches this and shares
+  // one sessionStorage key, so whichever runs first pays for the request.
+  //
+  // region() above reads the browser's locale, and the note there said
+  // there was no geolocation here by design because a wrong guess would
+  // mislabel a price. This is not a guess -- it is the connection's own
+  // country, which the site already trusted enough to store. Locale alone
+  // quoted lei to a Romanian living in Zurich: an immigrant keeps their
+  // own language on their own laptop, and never reports -CH. That is the
+  // half of the audience the CH exception below was never reaching.
+  var GEO_KEY = "rotabo_geo";
+  function geoRegion() {
+    var code = "";
+    try { code = sessionStorage.getItem(GEO_KEY) || ""; } catch (e) { /* private mode */ }
+    code = String(code).toUpperCase();
+    return (/^[A-Z]{2}$/.test(code) && REGION_CURRENCY[code]) ? code : "";
+  }
+
+  // Nothing is drawn twice for nothing: refresh() emits only when the
+  // answer actually changed, so a locale that already agreed costs a
+  // request and no repaint. Skipped entirely once the key is set.
+  function loadGeo() {
+    var have = null;
+    try { have = sessionStorage.getItem(GEO_KEY); } catch (e) { return; }
+    if (have !== null || !global.fetch) return;
+    global.fetch("/cdn-cgi/trace", { cache: "no-store" })
+      .then(function (res) { return res.ok ? res.text() : ""; })
+      .then(function (txt) {
+        var m = /(?:^|\n)loc=([A-Z]{2})(?:\r?\n|$)/.exec(txt || "");
+        try { sessionStorage.setItem(GEO_KEY, m ? m[1] : ""); } catch (e) {}
+        refresh();
+      })
+      .catch(function () { /* the locale's own region still answers */ });
+  }
+
   // The language the visitor chose, or "" if they never opened the
   // switcher. index.html writes this key; browse.html and account.html
   // read it too, so every page agrees without passing anything around.
@@ -169,7 +205,7 @@
     // picking English quoted GBP, Portuguese quoted EUR, Polish PLN,
     // all next to a figure already written in francs. That is precisely
     // the audience this site is for.
-    var here = region();
+    var here = geoRegion() || region();
     if (here === "CH" || here === "LI") return "CHF";
 
     var lang = chosenLang();
@@ -303,6 +339,7 @@
 
   lastShown = shownKey();
   load();
+  loadGeo();
 
   global.RotaboFx = {
     approx: approx,

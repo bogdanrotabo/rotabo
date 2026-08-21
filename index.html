@@ -377,6 +377,18 @@
     color:var(--violet-1);text-decoration:none;padding-top:2px;
   }
   .cat-browse:hover{text-decoration:underline;}
+  /* The quiet line was 20px tall next to the two 44px buttons above it,
+     so the one action on the card that leads to the unlock was the
+     hardest thing on it to hit with a thumb. Height only, and only
+     where a finger is doing the pointing: it stays a line rather than
+     becoming the third button the comment above rules out, and the
+     desktop card keeps its spacing. */
+  @media (pointer: coarse){
+    .cat-browse{
+      min-height:44px;padding-top:0;
+      display:flex;align-items:center;justify-content:center;
+    }
+  }
 
   .drivers-section{padding-top:64px;}
   .check-list{max-width:640px;margin:0 auto;}
