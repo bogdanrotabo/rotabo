@@ -192,10 +192,14 @@
           <option value="seeking">Seeking</option>
           <option value="offering">Offering</option>
         </select>
+        <!-- Was paid/unpaid. Listings are free since 2026-08-22, so that
+             split put every new listing under "unpaid" and answered a
+             question nobody has any more. Whether it is on the site does. -->
         <select id="paidFilter">
-          <option value="">All (paid + unpaid)</option>
-          <option value="paid">Paid only</option>
-          <option value="unpaid">Unpaid only</option>
+          <option value="">All listings</option>
+          <option value="live">Live now</option>
+          <option value="expired">Expired</option>
+          <option value="never">Never published</option>
         </select>
         <input type="search" id="searchInput" autocomplete="off" placeholder="Search name, email, city…">
       </div>
@@ -272,6 +276,7 @@
           <thead>
             <tr>
               <th>Email</th>
+              <th>Category</th>
               <th>Status</th>
               <th>Access until</th>
               <th>Last payment</th>
@@ -556,23 +561,35 @@
     return '<div class="stat-tile"><div class="n">' + n + '</div><div class="l">' + label + '</div></div>';
   }
 
-  function isPaid(row){
-    return !!row.stripe_session_id;
-  }
-  // Paid once is not the same as on the site today: a paid listing whose
-  // window has closed used to be indistinguishable from a live one.
+  // Listings stopped being paid for on 2026-08-22: create-listing sets
+  // visible_until itself and no checkout follows, so stripe_session_id is
+  // null on every listing made since. Nothing on this tab asks about money
+  // any more -- the Payments tab is where that question belongs, and it
+  // reads the payments ledger rather than guessing from a session id.
+  //
+  // Live means on the site right now, and that is visible_until alone.
+  // This used to also require isPaid, which was correct while a listing
+  // could only go live by being paid for, and became wrong the day they
+  // went free: every free listing was on the site and counted as neither
+  // live nor paid, so LIVE NOW read zero while the site filled up.
   function isLive(row){
-    return isPaid(row) && !!row.visible_until && new Date(row.visible_until).getTime() > Date.now();
+    return !!row.visible_until && new Date(row.visible_until).getTime() > Date.now();
+  }
+  // Never went live at all: the pre-2026-08-22 listings whose owner filled
+  // the form, verified their email, and then abandoned the checkout.
+  function neverPublished(row){
+    return !row.visible_until;
   }
 
   function renderStats(rows){
     var total = rows.length;
-    var paid = rows.filter(isPaid).length;
+    var live = rows.filter(isLive).length;
+    var never = rows.filter(neverPublished).length;
     document.getElementById("stats").innerHTML = ""
       + tile(total, "TOTAL SUBMISSIONS")
-      + tile(paid, "PAID")
-      + tile(rows.filter(isLive).length, "LIVE NOW")
-      + tile(total - paid, "UNPAID");
+      + tile(live, "LIVE NOW")
+      + tile(total - live - never, "EXPIRED")
+      + tile(never, "NEVER PUBLISHED");
   }
 
   function render(){
@@ -586,8 +603,9 @@
     var rows = allRows.filter(function(r){
       if (cat && r.category !== cat) return false;
       if (role && r.role !== role) return false;
-      if (paidFilter === "paid" && !isPaid(r)) return false;
-      if (paidFilter === "unpaid" && isPaid(r)) return false;
+      if (paidFilter === "live" && !isLive(r)) return false;
+      if (paidFilter === "expired" && (isLive(r) || neverPublished(r))) return false;
+      if (paidFilter === "never" && !neverPublished(r)) return false;
       if (search) {
         var hay = [r.name, r.email, r.city, r.country, r.phone].join(" ").toLowerCase();
         if (hay.indexOf(search) === -1) return false;
@@ -606,9 +624,14 @@
 
     var now = Date.now();
     tbody.innerHTML = rows.map(function(r){
-      var statusBadge = isPaid(r)
-        ? '<span class="badge paid">Paid</span>'
-        : '<span class="badge unpaid">Unpaid</span>';
+      // Was Paid/Unpaid, which since listings went free labelled every new
+      // listing "Unpaid" -- true of the money and false of everything the
+      // word implies. What matters here is whether it is on the site.
+      var statusBadge = isLive(r)
+        ? '<span class="badge paid">Live</span>'
+        : (neverPublished(r)
+          ? '<span class="badge unpaid">Never published</span>'
+          : '<span class="badge unpaid">Expired</span>');
       var created = r.created_at ? new Date(r.created_at).toLocaleString() : "";
       // Already HTML -- the expired marker is appended after escaping, so
       // this one must not be escaped again in the row below.
@@ -784,8 +807,17 @@
       var badge = isActive
         ? '<span class="badge paid">Active</span>'
         : '<span class="badge unpaid">Expired</span>';
+      // Access is per category since 2026-08-22, so the same email appears
+      // once per category it unlocked. Without this column two rows for one
+      // buyer looked like a duplicate.  "*" is every category at once, which
+      // is what the pre-change rows were migrated to and what a manual grant
+      // still uses.
+      var cat = r.category === "*"
+        ? '<em>every category</em>'
+        : esc(r.category || "—");
       return "<tr>"
         + "<td>" + esc(r.email) + "</td>"
+        + "<td>" + cat + "</td>"
         + "<td>" + badge + "</td>"
         + "<td>" + (until ? esc(until.toLocaleString()) : "&mdash;") + "</td>"
         + "<td>" + (r.updated_at ? esc(new Date(r.updated_at).toLocaleString()) : "&mdash;") + "</td>"
