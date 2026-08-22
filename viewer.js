@@ -352,7 +352,10 @@
     box.innerHTML =
       '<h3>' + esc(t("need_title")) + '</h3>' +
       '<p>' + esc(t("need_body")) + '</p>' +
-      '<a class="rv-btn solid" href="/#add">' + esc(t("need_btn")) + '</a>';
+      // #categories, not #add: there is no #add anchor on the homepage,
+      // so that link quietly landed people at the top of the page. The
+      // category tiles are what open the listing forms.
+      '<a class="rv-btn solid" href="/#categories">' + esc(t("need_btn")) + '</a>';
   }
 
   var lastPayTok = null;

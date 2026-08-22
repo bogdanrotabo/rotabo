@@ -571,10 +571,13 @@
   }
   function fillTiers(el){
     if (!el) return;
-    el.innerHTML = '<span></span><span></span>';
-    var spans = el.querySelectorAll("span");
-    spans[0].textContent = tierText("tier1", "1 CHF — 1 month", 1);
-    spans[1].textContent = tierText("tier12", "2 CHF — 1 year", 2);
+    // One tier since 2026-08-22. This used to write two spans, 1 CHF and
+    // 2 CHF, and it is a separate code path from the modal's own price
+    // list -- so when the 1 CHF month was dropped from viewer.js, this
+    // card went on quoting it. Whatever this shows, the modal behind the
+    // button must show the same, which is why both read the same string.
+    el.innerHTML = '<span></span>';
+    el.querySelector("span").textContent = tierText("tier12", "2 CHF — 1 year", 2);
   }
 
   // What a stranger sees. Names, cities and numbers are all part of what
