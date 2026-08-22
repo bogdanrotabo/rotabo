@@ -1700,6 +1700,14 @@
           // purchase, so they are cleared rather than set.
           localStorage.removeItem("rotabo_paid_value");
           localStorage.removeItem("rotabo_paid_id");
+          // And the viewer "just paid" stamp, which is the reason this
+          // needed fixing: someone who had clicked an unlock price earlier
+          // still carried the stamp, so publishing a free listing landed
+          // them on browse.html, where justPaid() was true, and the modal
+          // opened on "Confirming your payment…" and polled for three
+          // minutes for a payment that was never made. Publishing a
+          // listing is not a viewer purchase and must clear it.
+          localStorage.removeItem("rotabo_viewer_paid_at");
         } catch (e) {}
         // Was begin_checkout. Nothing is being checked out now, and
         // leaving it would show a funnel in GA4 that no longer exists.

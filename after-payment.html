@@ -159,6 +159,11 @@
   // and counting free listings at zero would drag that value down. It
   // gets its own event instead, to be imported as a conversion in Ads.
   if (/(?:^|[?&])free=1(?:&|$)/.test(location.search)) {
+    // Nothing was paid, so no stamp from an earlier unlock attempt may
+    // survive into the page we are about to hand over to: browse.html
+    // reads it, believes a checkout is landing, and opens the modal on
+    // "Confirming your payment…" for three minutes.
+    try { localStorage.removeItem('rotabo_viewer_paid_at'); } catch (e) {}
     gtag('event', 'listing_published', { event_callback: go, event_timeout: 1200 });
   } else {
     gtag('event', 'purchase', ev);

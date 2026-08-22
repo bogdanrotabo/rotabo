@@ -225,7 +225,7 @@
     subtitle: "Unlock full access to see who is here, with phone and address.",
     locked_count_one: "1 person is here right now.",
     locked_count_other: "{n} people are here right now.",
-    locked_body: "To see who they are — name, city, phone and address — you need to be here too. Publishing your own listing is free. After that, 2 CHF opens every category for a year, not just this one.",
+    locked_body: "To see who they are — name, city, phone and address — you need to be here too. Publishing your own listing is free. After that, 2 CHF opens this category for a year.",
     locked_btn: "Unlock full access",
     locked_empty: "Nobody is here yet. There is nothing to unlock — come back later, or add yourself from the home page.",
     unlock_btn: "🔓 See contact",
@@ -552,10 +552,13 @@
     // showing the price to someone who has just paid it.
     if (window.RotaboViewer.justPaid()) {
       renderLocked();
-      window.RotaboViewer.open(function(){ renderDashboard(); });
+      window.RotaboViewer.open(function(){ renderDashboard(); }, category);
       return;
     }
-    window.RotaboViewer.checkAccess().then(function(ok){
+    // The category is the whole question now: access is bought one
+    // category at a time, so someone who unlocked Drive must still see
+    // the locked card on Care.
+    window.RotaboViewer.checkAccess(category).then(function(ok){
       if (ok) renderDashboard(); else renderLocked();
     });
   }
@@ -613,7 +616,7 @@
         location.reload();
         return;
       }
-      window.RotaboViewer.open(function(){ renderDashboard(); });
+      window.RotaboViewer.open(function(){ renderDashboard(); }, category);
     });
     // Registered once for the life of the page, not once per render:
     // renderLocked can run again (access lapses, a checkout comes back)

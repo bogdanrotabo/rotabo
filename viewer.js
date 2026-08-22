@@ -121,7 +121,7 @@
   }
   var STR = {
     title: ["title", "Unlock full access"],
-    intro: ["intro", "One small payment opens the whole site: see who is here, with their phone numbers and addresses, and contact anyone."],
+    intro: ["intro", "One small payment opens this category: see who is here, with their phone numbers and addresses, and contact anyone."],
     email_ph: ["email_placeholder", "your@email.com"],
     send: ["send_btn", "Send code"],
     code_ph: ["code_placeholder", "6-digit code"],
@@ -189,9 +189,16 @@
     overlay.querySelector(".rv-close").addEventListener("click", close);
     overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
   }
-  function open(cb) {
+  // Which category this modal is selling, since 2026-08-22: access is
+  // bought one category at a time, not for the whole site. browse.html
+  // passes the category it is showing. Null means "no category context"
+  // -- the modal then asks only whether the visitor has access to
+  // anything at all, which is all it can honestly check.
+  var activeCategory = null;
+  function open(cb, category) {
     if (!overlay) build();
     onUnlock = cb || null;
+    activeCategory = category || null;
     overlay.classList.add("open");
     var tok = getCredential();
     if (tok) stepAccessCheck(tok); else stepEmail();
@@ -250,7 +257,13 @@
   }
   function stepAccessCheck(tok) {
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>…</p>';
-    sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
+    // Access is per category now. With a category in hand, ask about that
+    // one -- asking the global question would tell someone who bought
+    // Drive that Care is already unlocked, and then show them an empty list.
+    var accessRpc = activeCategory
+      ? sb.rpc("viewer_has_access_for", { p_token: tok.token, p_category: activeCategory })
+      : sb.rpc("viewer_has_access", { p_token: tok.token });
+    accessRpc.then(function (r) {
       if (r && r.data === true) {
         // The webhook usually lands before the buyer gets back, and this
         // branch forgot to clear the "just paid" stamp -- so for the next
@@ -318,7 +331,10 @@
     function stepConfirming(tok, tries) {
       box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>' + esc(t("confirming")) + '</p>';
       setTimeout(function () {
-        sb.rpc("viewer_has_access", { p_token: tok.token }).then(function (r) {
+        var poll = activeCategory
+          ? sb.rpc("viewer_has_access_for", { p_token: tok.token, p_category: activeCategory })
+          : sb.rpc("viewer_has_access", { p_token: tok.token });
+        poll.then(function (r) {
           if (r && r.data === true) {
             clearPaidStamp();
             startSession(tok).then(function () { stepSuccess(); if (onUnlock) onUnlock(); });
@@ -394,6 +410,24 @@
         // data-chf is what this tier costs; after-payment.html reports it
         // as the purchase value, since Stripe's return URL carries none.
         try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); localStorage.setItem("rotabo_paid_value", a.getAttribute("data-chf") || "1"); localStorage.setItem("rotabo_paid_id", "viewer-" + tok.token.slice(0, 24)); } catch (err) {}
+        // Which category this money is for. Stripe's Payment Link carries
+        // nothing of ours except client_reference_id, and that already
+        // carries the token the webhook resolves the buyer through -- so
+        // the category is written down here instead, and grant_viewer_access
+        // reads it when the webhook comes back. Deliberately NOT a change
+        // to stripe-webhook: that is the money path.
+        //
+        // The redirect waits for the write, because a grant with no note
+        // falls back to every category -- generous, but not what was sold.
+        // It waits at most 2.5 seconds; nobody is stranded by a slow RPC.
+        if (!activeCategory) return;
+        e.preventDefault();
+        var href = a.getAttribute("href");
+        var went = false;
+        var go = function () { if (!went) { went = true; window.location.href = href; } };
+        setTimeout(go, 2500);
+        sb.rpc("viewer_note_category", { p_token: tok.token, p_category: activeCategory })
+          .then(go, go);
       });
     });
   }
@@ -452,10 +486,16 @@
     // A transient failure answers false: the caller shows its locked
     // state, whose button re-opens the modal, and stepAccessCheck there
     // is the one place that tells "has not paid" from "could not tell".
-    checkAccess: function () {
+    // Pass the category the page is showing: access is sold one category
+    // at a time, so the global question would unlock a page nothing was
+    // bought for. Without one, it answers "has paid for anything".
+    checkAccess: function (category) {
       var tok = getCredential();
       if (!tok) return Promise.resolve(false);
-      return sb.rpc("viewer_has_access", { p_token: tok.token })
+      var rpc = category
+        ? sb.rpc("viewer_has_access_for", { p_token: tok.token, p_category: category })
+        : sb.rpc("viewer_has_access", { p_token: tok.token });
+      return rpc
         .then(function (r) { return !!(r && r.data === true); })
         .catch(function () { return false; });
     },
