@@ -128,8 +128,20 @@
     verify: ["verify_btn", "Verify"],
     sent: ["code_sent", "We sent a code to {email}."],
     choose: ["choose", "Choose your access:"],
+    // tier1 (1 CHF for a month) is no longer offered -- since 2026-08-22
+    // there is a single tier. The string stays defined, and translated in
+    // all 38 locales, so restoring the two-tier modal is one line in
+    // stepPay rather than another pass over the locale files.
     tier1: ["tier1", "1 CHF — 1 month"],
     tier12: ["tier12", "2 CHF — 1 year"],
+    // Shown instead of the price when the visitor has no listing of their
+    // own. Rotabo has the supply problem every marketplace starts with,
+    // and someone who wants to see the list is exactly the person who
+    // should be on it: listing is free, so this costs them a minute, not
+    // a franc.
+    need_title: ["need_listing_title", "First put yourself on the list — it is free"],
+    need_body: ["need_listing_body", "Rotabo shows you who is here once you are here too. Publishing your own listing costs nothing and takes a minute: say what you need, or what you can do. Then come back and unlock the full list."],
+    need_btn: ["need_listing_btn", "Add my free listing"],
     localcur: ["local_currency", "Charged in your local currency."],
     paynote: ["pay_note", "After paying, come back to this page — everyone here becomes visible."],
     unlocked: ["unlocked", "Access unlocked — details are now visible."],
@@ -284,8 +296,17 @@
       // `tok` is the belt to that braces: it is the credential this
       // check was called with.
       var verified = getToken() || tok;
-      if (verified) stepPay(verified);
-      else stepEmail(tok.email || "");
+      if (!verified) { stepEmail(tok.email || ""); return; }
+      // Since 2026-08-22 the list is only sold to people who are on it.
+      // viewer_has_listing resolves the token to an email the same way
+      // viewer_email_for_token does and answers whether that address has
+      // a listing that is visible right now. A network failure must not
+      // block a sale, so anything other than a clear false falls through
+      // to the price -- the gate is there to steer, not to punish.
+      sb.rpc("viewer_has_listing", { p_token: verified.token }).then(function (r) {
+        if (r && !r.error && r.data === false) stepNeedListing(verified);
+        else stepPay(verified);
+      }).catch(function () { stepPay(verified); });
     }
     // A checkout that Stripe has taken the money for but whose webhook is
     // still in flight. Poll for the access row rather than quoting the
@@ -324,6 +345,16 @@
     return a ? label + "  " + a : label;
   }
 
+  // The dead end that is not a dead end: no listing of their own, so
+  // there is nothing to sell them yet. Sends them to the homepage forms,
+  // which since 2026-08-22 publish for free, and leaves the modal behind.
+  function stepNeedListing(tok) {
+    box.innerHTML =
+      '<h3>' + esc(t("need_title")) + '</h3>' +
+      '<p>' + esc(t("need_body")) + '</p>' +
+      '<a class="rv-btn solid" href="/#add">' + esc(t("need_btn")) + '</a>';
+  }
+
   var lastPayTok = null;
   function stepPay(tok) {
     lastPayTok = tok;
@@ -331,7 +362,9 @@
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
       '<p>' + esc(t("choose")) + '</p>' +
-      '<a class="rv-btn tier" data-chf="1" href="' + TIER_LINKS["1"] + q + '">' + esc(withApprox(t("tier1"), 1)) + '</a>' +
+      // One tier since 2026-08-22. The 1 CHF month is still a live Stripe
+      // Payment Link and TIER_LINKS still carries it, so putting the
+      // second button back is one line.
       '<a class="rv-btn tier" data-chf="2" href="' + TIER_LINKS["12"] + q + '">' + esc(withApprox(t("tier12"), 2)) + '</a>' +
       // Prices are quoted in CHF, but Stripe's Adaptive Pricing is always
       // on for Payment Links, so a buyer abroad is billed in their own

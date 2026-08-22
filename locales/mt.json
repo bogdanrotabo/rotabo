@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "L-ewwel niżżel lilek innifsek — huwa bla ħlas",
+    "need_listing_body": "Rotabo jurik min hu hawn ladarba tkun hawn int ukoll. L-avviż tiegħek ma jiswa xejn u jieħu minuta: għid x'għandek bżonn, jew x'taf tagħmel. Imbagħad erġa' lura u iftaħ il-lista sħiħa.",
+    "need_listing_btn": "Żid l-avviż bla ħlas tiegħi",
     "title": "Iftaħ aċċess sħiħ",
     "intro": "Ħlas żgħir wieħed jiftaħ is-sit kollu: ara min hawn, bin-numri tat-telefown u l-indirizzi, u kkuntattja lil kulħadd.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Mess <strong>\"Żid\"</strong> fin-naħa ta' fuq lemin — lest."
   },
   "visibility": {
+    "free_notice": "Il-pubblikazzjoni hija bla ħlas — l-avviż tiegħek jibqa' viżibbli għal 12-il xahar.",
+    "publish_btn": "Ippubblika l-avviż tiegħi",
     "phone_hint": "Inkludi l-kodiċi tal-pajjiż tiegħek. In-numru tiegħek jidher biss għal viżitaturi li ħallsu għal aċċess sħiħ — mhux għal kulħadd li jfittex.",
     "address_hint": "L-indirizz tiegħek jidher biss għal viżitaturi li ħallsu għal aċċess sħiħ, l-istess bħan-numru tat-telefon.",
     "tier_label": "Viżibbiltà",
@@ -453,7 +458,7 @@
     "subtitle": "Iftaħ aċċess sħiħ biex tara min hawn, bit-telefown u l-indirizz.",
     "locked_count_one": "Bħalissa hawn 1 persuna.",
     "locked_count_other": "Bħalissa hawn {n} persuni.",
-    "locked_body": "Biex tara min huma — isem, belt, telefown u indirizz — iftaħ aċċess sħiħ. Ħlas wieħed ikopri l-kategoriji kollha, mhux din biss.",
+    "locked_body": "Biex tara min huma — isem, belt, telefon u indirizz — trid tkun hawn int ukoll. L-avviż tiegħek huwa bla ħlas. Wara, 2 CHF jiftħu l-kategoriji kollha għal sena, mhux biss din.",
     "locked_btn": "Iftaħ aċċess sħiħ",
     "locked_empty": "Għad m'hawn ħadd. M'hemm xejn x'tiftaħ — erġa' lura aktar tard, jew żid lilek innifsek mill-paġna ewlenija.",
     "loading": "Qed jgħabbi…",

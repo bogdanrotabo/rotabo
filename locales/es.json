@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Primero apúntate tú — es gratis",
+    "need_listing_body": "Rotabo te muestra quién está aquí en cuanto tú también estás. Publicar tu propio anuncio no cuesta nada y lleva un minuto: di qué necesitas o qué sabes hacer. Luego vuelve y desbloquea la lista completa.",
+    "need_listing_btn": "Añadir mi anuncio gratis",
     "title": "Desbloquear acceso completo",
     "intro": "Un pequeño pago abre todo el sitio: ve quién está aquí, con sus teléfonos y direcciones, y contacta con cualquiera.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Toca <strong>\"Añadir\"</strong> en la esquina superior derecha — listo."
   },
   "visibility": {
+    "free_notice": "Publicar es gratis: tu anuncio queda visible 12 meses.",
+    "publish_btn": "Publicar mi anuncio",
     "phone_hint": "Incluye el código de tu país. Tu número solo lo ven los visitantes que han pagado el acceso completo — no cualquiera que navega.",
     "address_hint": "Tu dirección solo la ven los visitantes que han pagado el acceso completo, igual que tu número de teléfono.",
     "tier_label": "Visibilidad",
@@ -464,7 +469,7 @@
     "subtitle": "Desbloquea el acceso completo para ver quién está aquí, con teléfono y dirección.",
     "locked_count_one": "1 persona está aquí ahora mismo.",
     "locked_count_other": "{n} personas están aquí ahora mismo.",
-    "locked_body": "Para ver quiénes son — nombre, ciudad, teléfono y dirección — desbloquea el acceso completo. Un solo pago cubre todas las categorías, no solo esta.",
+    "locked_body": "Para ver quiénes son — nombre, ciudad, teléfono y dirección — tienes que estar aquí tú también. Publicar tu anuncio es gratis. Después, 2 CHF abren todas las categorías durante un año, no solo esta.",
     "locked_btn": "Desbloquear acceso completo",
     "locked_empty": "Aún no hay nadie aquí. No hay nada que desbloquear — vuelve más tarde o añádete desde la página principal.",
     "loading": "Cargando…",

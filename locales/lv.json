@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Vispirms ierakstiet arī sevi — tas ir bez maksas",
+    "need_listing_body": "Rotabo parāda, kas šeit ir, tiklīdz arī jūs esat šeit. Savs sludinājums neko nemaksā un aizņem minūti: pasakiet, kas jums vajadzīgs vai ko protat. Tad atgriezieties un atveriet visu sarakstu.",
+    "need_listing_btn": "Pievienot manu bezmaksas sludinājumu",
     "title": "Atbloķēt pilnu piekļuvi",
     "intro": "Viens neliels maksājums atver visu vietni: skati, kas šeit ir, ar tālruņu numuriem un adresēm, un sazinies ar jebkuru.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Pieskarieties <strong>\"Pievienot\"</strong> augšējā labajā stūrī — gatavs."
   },
   "visibility": {
+    "free_notice": "Publicēšana ir bez maksas — jūsu sludinājums paliek redzams 12 mēnešus.",
+    "publish_btn": "Publicēt manu sludinājumu",
     "phone_hint": "Norādi savas valsts kodu. Tavu numuru redz tikai apmeklētāji, kuri samaksājuši par pilnu piekļuvi — nevis ikviens, kas pārlūko.",
     "address_hint": "Tavu adresi redz tikai apmeklētāji, kuri samaksājuši par pilnu piekļuvi, tāpat kā tālruņa numuru.",
     "tier_label": "Redzamība",
@@ -453,7 +458,7 @@
     "subtitle": "Atbloķē pilnu piekļuvi, lai redzētu, kas šeit ir, ar tālruni un adresi.",
     "locked_count_one": "Šobrīd šeit ir 1 cilvēks.",
     "locked_count_other": "Šobrīd šeit ir {n} cilvēki.",
-    "locked_body": "Lai redzētu, kas viņi ir — vārds, pilsēta, tālrunis un adrese — atbloķē pilnu piekļuvi. Viens maksājums sedz visas kategorijas, ne tikai šo.",
+    "locked_body": "Lai redzētu, kas viņi ir — vārds, pilsēta, tālrunis un adrese — arī jums jābūt šeit. Savs sludinājums ir bez maksas. Pēc tam 2 CHF atver visas kategorijas uz gadu, ne tikai šo.",
     "locked_btn": "Atbloķēt pilnu piekļuvi",
     "locked_empty": "Šeit vēl neviena nav. Nav ko atbloķēt — atgriezies vēlāk vai pievieno sevi no sākumlapas.",
     "loading": "Notiek ielāde…",

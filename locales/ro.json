@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Întâi pune-te și tu pe listă — e gratuit",
+    "need_listing_body": "Rotabo îți arată cine e aici din momentul în care ești și tu aici. Propriul tău anunț nu costă nimic și îți ia un minut: spune de ce ai nevoie sau ce știi să faci. Apoi revino și deblochează lista întreagă.",
+    "need_listing_btn": "Adaugă anunțul meu gratuit",
     "title": "Deblochează accesul complet",
     "intro": "O singură plată mică deschide tot site-ul: vezi cine e aici, cu numerele lor de telefon și adresele, și contactează pe oricine.",
     "email_placeholder": "your@email.com",
@@ -350,6 +353,8 @@
     "spam_hint": "Nu-l vezi? Verifică folderul Spam sau Junk — primele emailuri de la un expeditor nou uneori ajung acolo."
   },
   "visibility": {
+    "free_notice": "Publicarea e gratuită — anunțul tău rămâne vizibil 12 luni.",
+    "publish_btn": "Publică anunțul meu",
     "email_hint": "Folosește o adresă reală — trimitem aici un cod de verificare înainte ca listarea ta să devină vizibilă.",
     "phone_hint": "Include prefixul țării. Numărul tău e vizibil doar pentru vizitatorii care au plătit acces complet — nu pentru oricine navighează.",
     "address_hint": "Adresa ta e vizibilă doar pentru vizitatorii care au plătit acces complet, la fel ca numărul de telefon.",
@@ -479,7 +484,7 @@
     "subtitle": "Deblochează accesul complet ca să vezi cine e aici, cu telefon și adresă.",
     "locked_count_one": "1 persoană e aici chiar acum.",
     "locked_count_other": "{n} persoane sunt aici chiar acum.",
-    "locked_body": "Ca să vezi cine sunt — nume, oraș, telefon și adresă — deblochează accesul complet. O singură plată acoperă toate categoriile, nu doar pe aceasta.",
+    "locked_body": "Ca să vezi cine sunt — nume, oraș, telefon și adresă — trebuie să fii și tu aici. Propriul tău anunț e gratuit. După aceea, 2 CHF îți deschid toate categoriile pentru un an, nu doar pe aceasta.",
     "locked_btn": "Deblochează accesul complet",
     "locked_empty": "Încă nu e nimeni aici. Nu e nimic de deblocat — revino mai târziu sau adaugă-te de pe pagina principală.",
     "loading": "Se încarcă…",

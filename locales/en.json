@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "First put yourself on the list — it is free",
+    "need_listing_body": "Rotabo shows you who is here once you are here too. Publishing your own listing costs nothing and takes a minute: say what you need, or what you can do. Then come back and unlock the full list.",
+    "need_listing_btn": "Add my free listing",
     "title": "Unlock full access",
     "intro": "One small payment opens the whole site: see who is here, with their phone numbers and addresses, and contact anyone.",
     "email_placeholder": "your@email.com",
@@ -348,6 +351,8 @@
     "spam_hint": "Don't see it? Check your Spam or Junk folder — first emails from a new sender sometimes land there."
   },
   "visibility": {
+    "free_notice": "Publishing is free — your listing stays visible for 12 months.",
+    "publish_btn": "Publish my listing",
     "email_hint": "Use a real address — we'll send a verification code here before your listing goes live.",
     "phone_hint": "Include your country code. Your phone is shown only to viewers who paid for full access — not to everyone browsing.",
     "address_hint": "Your address is shown only to viewers who paid for full access, same as your phone number.",
@@ -477,7 +482,7 @@
     "subtitle": "Unlock full access to see who is here, with phone and address.",
     "locked_count_one": "1 person is here right now.",
     "locked_count_other": "{n} people are here right now.",
-    "locked_body": "To see who they are — name, city, phone and address — unlock full access. One payment covers every category, not just this one.",
+    "locked_body": "To see who they are — name, city, phone and address — you need to be here too. Publishing your own listing is free. After that, 2 CHF opens every category for a year, not just this one.",
     "locked_btn": "Unlock full access",
     "locked_empty": "Nobody is here yet. There is nothing to unlock — come back later, or add yourself from the home page.",
     "loading": "Loading…",

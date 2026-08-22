@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Cuir tú féin ar an liosta ar dtús — tá sé saor in aisce",
+    "need_listing_body": "Taispeánann Rotabo duit cé atá anseo chomh luath is atá tú féin anseo. Ní chosnaíonn d'fhógra féin faic agus ní thógann sé ach nóiméad: abair cad atá uait, nó cad is féidir leat a dhéanamh. Tar ar ais ansin agus oscail an liosta iomlán.",
+    "need_listing_btn": "Cuir m'fhógra saor in aisce leis",
     "title": "Díghlasáil rochtain iomlán",
     "intro": "Osclaíonn íocaíocht bheag amháin an suíomh ar fad: féach cé atá anseo, lena n-uimhreacha gutháin agus a seoltaí, agus déan teagmháil le duine ar bith.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Tapáil <strong>\"Cuir Leis\"</strong> sa chúinne uachtarach ar dheis — críochnaithe."
   },
   "visibility": {
+    "free_notice": "Tá sé saor in aisce fógra a chur suas — fanann sé le feiceáil ar feadh 12 mhí.",
+    "publish_btn": "Foilsigh m'fhógra",
     "phone_hint": "Cuir cód do thíre san áireamh. Ní fheiceann ach cuairteoirí a d'íoc as rochtain iomlán d'uimhir — ní gach duine a bhíonn ag brabhsáil.",
     "address_hint": "Ní fheiceann ach cuairteoirí a d'íoc as rochtain iomlán do sheoladh, díreach cosúil le d'uimhir gutháin.",
     "tier_label": "Infheictheacht",
@@ -453,7 +458,7 @@
     "subtitle": "Díghlasáil rochtain iomlán le feiceáil cé atá anseo, le guthán agus seoladh.",
     "locked_count_one": "Tá 1 duine anseo faoi láthair.",
     "locked_count_other": "Tá {n} duine anseo faoi láthair.",
-    "locked_body": "Le feiceáil cé hiad — ainm, cathair, guthán agus seoladh — díghlasáil rochtain iomlán. Clúdaíonn íocaíocht amháin gach catagóir, ní hamháin an ceann seo.",
+    "locked_body": "Le feiceáil cé hiad — ainm, cathair, fón agus seoladh — caithfidh tú féin a bheith anseo freisin. Tá d'fhógra féin saor in aisce. Ina dhiaidh sin, osclaíonn 2 CHF gach catagóir ar feadh bliana, ní hé an ceann seo amháin.",
     "locked_btn": "Díghlasáil rochtain iomlán",
     "locked_empty": "Níl aon duine anseo fós. Níl aon rud le díghlasáil — fill ar ball, nó cuir tú féin leis ón leathanach baile.",
     "loading": "Á lódáil…",

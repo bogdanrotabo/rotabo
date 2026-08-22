@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Tragen Sie sich zuerst selbst ein — kostenlos",
+    "need_listing_body": "Rotabo zeigt Ihnen, wer hier ist, sobald Sie auch hier sind. Ein eigener Eintrag kostet nichts und dauert eine Minute: sagen Sie, was Sie brauchen oder was Sie können. Kommen Sie dann zurück und schalten Sie die ganze Liste frei.",
+    "need_listing_btn": "Kostenlosen Eintrag hinzufügen",
     "title": "Vollen Zugang freischalten",
     "intro": "Eine kleine Zahlung öffnet die ganze Seite: sieh, wer hier ist, mit Telefonnummern und Adressen, und kontaktiere jeden.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Tippe oben rechts auf <strong>„Hinzufügen“</strong> — fertig."
   },
   "visibility": {
+    "free_notice": "Das Eintragen ist kostenlos — Ihr Eintrag bleibt 12 Monate sichtbar.",
+    "publish_btn": "Eintrag veröffentlichen",
     "phone_hint": "Gib deine Ländervorwahl an. Deine Nummer sehen nur Besucher, die für vollen Zugang bezahlt haben — nicht jeder, der stöbert.",
     "address_hint": "Deine Adresse sehen nur Besucher, die für vollen Zugang bezahlt haben, genau wie deine Telefonnummer.",
     "tier_label": "Sichtbarkeit",
@@ -464,7 +469,7 @@
     "subtitle": "Schalte vollen Zugang frei, um zu sehen, wer hier ist, mit Telefon und Adresse.",
     "locked_count_one": "1 Person ist gerade hier.",
     "locked_count_other": "{n} Personen sind gerade hier.",
-    "locked_body": "Um zu sehen, wer sie sind — Name, Stadt, Telefon und Adresse — schalte vollen Zugang frei. Eine Zahlung gilt für alle Kategorien, nicht nur diese.",
+    "locked_body": "Um zu sehen, wer sie sind — Name, Stadt, Telefon und Adresse — müssen Sie auch hier sein. Ihr eigener Eintrag ist kostenlos. Danach öffnen 2 CHF alle Kategorien für ein Jahr, nicht nur diese.",
     "locked_btn": "Vollen Zugang freischalten",
     "locked_empty": "Hier ist noch niemand. Es gibt nichts freizuschalten — komm später wieder oder trag dich auf der Startseite ein.",
     "loading": "Wird geladen…",

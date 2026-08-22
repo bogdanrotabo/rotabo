@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Primeiro inscreva-se também — é gratuito",
+    "need_listing_body": "O Rotabo mostra-lhe quem está aqui assim que você também estiver. O seu próprio anúncio não custa nada e leva um minuto: diga o que precisa, ou o que sabe fazer. Depois volte e desbloqueie a lista completa.",
+    "need_listing_btn": "Adicionar o meu anúncio gratuito",
     "title": "Desbloquear acesso completo",
     "intro": "Um pequeno pagamento abre todo o site: veja quem está aqui, com telefones e moradas, e contacte qualquer pessoa.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Toca em <strong>\"Adicionar\"</strong> no canto superior direito — pronto."
   },
   "visibility": {
+    "free_notice": "Publicar é gratuito — o seu anúncio fica visível 12 meses.",
+    "publish_btn": "Publicar o meu anúncio",
     "phone_hint": "Inclua o indicativo do seu país. O seu número só é visível para visitantes que pagaram o acesso completo — não para todos os que navegam.",
     "address_hint": "A sua morada só é visível para visitantes que pagaram o acesso completo, tal como o número de telefone.",
     "tier_label": "Visibilidade",
@@ -464,7 +469,7 @@
     "subtitle": "Desbloqueie o acesso completo para ver quem está aqui, com telefone e morada.",
     "locked_count_one": "1 pessoa está aqui neste momento.",
     "locked_count_other": "{n} pessoas estão aqui neste momento.",
-    "locked_body": "Para ver quem são — nome, cidade, telefone e morada — desbloqueie o acesso completo. Um único pagamento cobre todas as categorias, não só esta.",
+    "locked_body": "Para ver quem são — nome, cidade, telefone e morada — tem de estar aqui também. O seu próprio anúncio é gratuito. Depois, 2 CHF abrem todas as categorias durante um ano, não apenas esta.",
     "locked_btn": "Desbloquear acesso completo",
     "locked_empty": "Ainda não há ninguém aqui. Não há nada para desbloquear — volte mais tarde ou adicione-se na página inicial.",
     "loading": "A carregar…",

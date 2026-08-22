@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Skriv dig på listen først — det er gratis",
+    "need_listing_body": "Rotabo viser dig, hvem der er her, når du selv er her. Din egen annonce koster ingenting og tager et minut: skriv, hvad du har brug for, eller hvad du kan. Kom så tilbage og lås hele listen op.",
+    "need_listing_btn": "Tilføj min gratis annonce",
     "title": "Lås fuld adgang op",
     "intro": "En lille betaling åbner hele siden: se hvem der er her, med telefonnumre og adresser, og kontakt hvem som helst.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Tryk på <strong>\"Tilføj\"</strong> øverst til højre — færdig."
   },
   "visibility": {
+    "free_notice": "Det er gratis at oprette — din annonce er synlig i 12 måneder.",
+    "publish_btn": "Offentliggør min annonce",
     "phone_hint": "Angiv din landekode. Dit nummer ses kun af besøgende, der har betalt for fuld adgang — ikke af alle, der kigger.",
     "address_hint": "Din adresse ses kun af besøgende, der har betalt for fuld adgang, ligesom dit telefonnummer.",
     "tier_label": "Synlighed",
@@ -464,7 +469,7 @@
     "subtitle": "Lås fuld adgang op for at se, hvem der er her, med telefon og adresse.",
     "locked_count_one": "1 person er her lige nu.",
     "locked_count_other": "{n} personer er her lige nu.",
-    "locked_body": "For at se, hvem de er — navn, by, telefon og adresse — lås fuld adgang op. Én betaling dækker alle kategorier, ikke kun denne.",
+    "locked_body": "For at se, hvem de er — navn, by, telefon og adresse — skal du også selv være her. Din egen annonce er gratis. Derefter åbner 2 CHF alle kategorier i et år, ikke kun denne.",
     "locked_btn": "Lås fuld adgang op",
     "locked_empty": "Der er ingen her endnu. Der er intet at låse op — kom tilbage senere, eller tilføj dig selv fra forsiden.",
     "loading": "Indlæser…",

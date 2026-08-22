@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Skriv upp dig själv först — det är gratis",
+    "need_listing_body": "Rotabo visar dig vilka som är här när du själv är här. Din egen annons kostar ingenting och tar en minut: skriv vad du behöver, eller vad du kan. Kom sedan tillbaka och lås upp hela listan.",
+    "need_listing_btn": "Lägg till min gratisannons",
     "title": "Lås upp full åtkomst",
     "intro": "En liten betalning öppnar hela sajten: se vem som är här, med telefonnummer och adresser, och kontakta vem som helst.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Tryck på <strong>\"Lägg till\"</strong> uppe till höger — klart."
   },
   "visibility": {
+    "free_notice": "Det är gratis att publicera — din annons syns i 12 månader.",
+    "publish_btn": "Publicera min annons",
     "phone_hint": "Ange din landskod. Ditt nummer syns bara för besökare som betalat för full åtkomst — inte för alla som bläddrar.",
     "address_hint": "Din adress syns bara för besökare som betalat för full åtkomst, precis som ditt telefonnummer.",
     "tier_label": "Synlighet",
@@ -453,7 +458,7 @@
     "subtitle": "Lås upp full åtkomst för att se vem som är här, med telefon och adress.",
     "locked_count_one": "1 person är här just nu.",
     "locked_count_other": "{n} personer är här just nu.",
-    "locked_body": "För att se vilka de är — namn, stad, telefon och adress — lås upp full åtkomst. En betalning täcker alla kategorier, inte bara den här.",
+    "locked_body": "För att se vilka de är — namn, stad, telefon och adress — måste du också vara här. Din egen annons är gratis. Sedan öppnar 2 CHF alla kategorier i ett år, inte bara den här.",
     "locked_btn": "Lås upp full åtkomst",
     "locked_empty": "Ingen är här ännu. Det finns inget att låsa upp — kom tillbaka senare eller lägg till dig själv från startsidan.",
     "loading": "Laddar…",

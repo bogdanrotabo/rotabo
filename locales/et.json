@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Pane esmalt end kirja — see on tasuta",
+    "need_listing_body": "Rotabo näitab, kes siin on, kui ka sina oled siin. Oma kuulutus ei maksa midagi ja võtab minuti: ütle, mida vajad või mida oskad. Siis tule tagasi ja ava kogu nimekiri.",
+    "need_listing_btn": "Lisa minu tasuta kuulutus",
     "title": "Ava täielik juurdepääs",
     "intro": "Üks väike makse avab kogu saidi: vaata, kes siin on, koos telefoninumbrite ja aadressidega, ja võta ühendust kellega tahes.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Puuduta paremas ülanurgas <strong>\"Lisa\"</strong> — valmis."
   },
   "visibility": {
+    "free_notice": "Kuulutuse lisamine on tasuta — see jääb nähtavaks 12 kuuks.",
+    "publish_btn": "Avalda minu kuulutus",
     "phone_hint": "Lisa oma riigi suunakood. Sinu numbrit näevad ainult külastajad, kes on maksnud täieliku juurdepääsu eest — mitte kõik, kes sirvivad.",
     "address_hint": "Sinu aadressi näevad ainult külastajad, kes on maksnud täieliku juurdepääsu eest, nagu ka telefoninumbrit.",
     "tier_label": "Nähtavus",
@@ -464,7 +469,7 @@
     "subtitle": "Ava täielik ligipääs, et näha, kes siin on, koos telefoni ja aadressiga.",
     "locked_count_one": "Praegu on siin 1 inimene.",
     "locked_count_other": "Praegu on siin {n} inimest.",
-    "locked_body": "Et näha, kes nad on — nimi, linn, telefon ja aadress — ava täielik ligipääs. Üks makse katab kõik kategooriad, mitte ainult selle.",
+    "locked_body": "Et näha, kes nad on — nimi, linn, telefon ja aadress — pead ka ise siin olema. Oma kuulutus on tasuta. Pärast seda avab 2 CHF kõik kategooriad aastaks, mitte ainult selle.",
     "locked_btn": "Ava täielik juurdepääs",
     "locked_empty": "Siin pole veel kedagi. Pole midagi avada — tule hiljem tagasi või lisa end avalehelt.",
     "loading": "Laadimine…",

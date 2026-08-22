@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Najprej se vpišite še vi — brezplačno je",
+    "need_listing_body": "Rotabo vam pokaže, kdo je tukaj, ko ste tukaj tudi vi. Lasten oglas nič ne stane in vzame minuto: povejte, kaj potrebujete ali kaj znate. Nato se vrnite in odklenite celoten seznam.",
+    "need_listing_btn": "Dodaj moj brezplačni oglas",
     "title": "Odkleni poln dostop",
     "intro": "Eno majhno plačilo odpre celotno stran: poglej, kdo je tukaj, s telefonskimi številkami in naslovi, in stopi v stik s komer koli.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Dotaknite se <strong>\"Dodaj\"</strong> zgoraj desno — končano."
   },
   "visibility": {
+    "free_notice": "Objava je brezplačna — vaš oglas ostane viden 12 mesecev.",
+    "publish_btn": "Objavi moj oglas",
     "phone_hint": "Navedi svojo klicno kodo države. Tvojo številko vidijo le obiskovalci, ki so plačali poln dostop — ne vsak, ki brska.",
     "address_hint": "Tvoj naslov vidijo le obiskovalci, ki so plačali poln dostop, enako kot telefonsko številko.",
     "tier_label": "Vidnost",
@@ -453,7 +458,7 @@
     "subtitle": "Odkleni poln dostop, da vidiš, kdo je tukaj, s telefonom in naslovom.",
     "locked_count_one": "Trenutno je tukaj 1 oseba.",
     "locked_count_other": "Trenutno je tukaj {n} oseb.",
-    "locked_body": "Da vidiš, kdo so — ime, mesto, telefon in naslov — odkleni poln dostop. Eno plačilo pokriva vse kategorije, ne le te.",
+    "locked_body": "Da vidite, kdo so — ime, mesto, telefon in naslov — morate biti tukaj tudi vi. Lasten oglas je brezplačen. Nato 2 CHF odpreta vse kategorije za eno leto, ne samo to.",
     "locked_btn": "Odkleni poln dostop",
     "locked_empty": "Tukaj še ni nikogar. Ničesar ni za odkleniti — vrni se pozneje ali se dodaj z domače strani.",
     "loading": "Nalaganje…",

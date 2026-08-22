@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Önce kendinizi de listeye yazın — ücretsiz",
+    "need_listing_body": "Rotabo, siz de burada olduğunuzda kimlerin burada olduğunu gösterir. Kendi ilanınız hiçbir şeye mal olmaz ve bir dakika sürer: neye ihtiyacınız olduğunu ya da ne yapabildiğinizi yazın. Sonra dönün ve listenin tamamını açın.",
+    "need_listing_btn": "Ücretsiz ilanımı ekle",
     "title": "Tam erişimi aç",
     "intro": "Küçük bir ödeme tüm siteyi açar: burada kimlerin olduğunu telefon numaraları ve adresleriyle gör, herkesle iletişime geç.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Sağ üstteki <strong>\"Ekle\"</strong>ye dokun — bitti."
   },
   "visibility": {
+    "free_notice": "İlan vermek ücretsiz — ilanınız 12 ay boyunca görünür kalır.",
+    "publish_btn": "İlanımı yayınla",
     "phone_hint": "Ülke kodunu ekle. Numaranı yalnızca tam erişim için ödeme yapan ziyaretçiler görür — göz atan herkes değil.",
     "address_hint": "Adresini yalnızca tam erişim için ödeme yapan ziyaretçiler görür, tıpkı telefon numaran gibi.",
     "tier_label": "Görünürlük",
@@ -453,7 +458,7 @@
     "subtitle": "Burada kimlerin olduğunu telefon ve adresle görmek için tam erişimi aç.",
     "locked_count_one": "Şu anda burada 1 kişi var.",
     "locked_count_other": "Şu anda burada {n} kişi var.",
-    "locked_body": "Kim olduklarını görmek için — isim, şehir, telefon ve adres — tam erişimi aç. Tek ödeme sadece bu değil, tüm kategorileri kapsar.",
+    "locked_body": "Kim olduklarını görmek için — ad, şehir, telefon ve adres — sizin de burada olmanız gerekir. Kendi ilanınız ücretsizdir. Ardından 2 CHF, yalnızca bu kategoriyi değil, tüm kategorileri bir yıllığına açar.",
     "locked_btn": "Tam erişimi aç",
     "locked_empty": "Henüz burada kimse yok. Açılacak bir şey yok — daha sonra tekrar gel ya da ana sayfadan kendini ekle.",
     "loading": "Yükleniyor…",

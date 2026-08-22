@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Lisää ensin itsesi listalle — se on ilmaista",
+    "need_listing_body": "Rotabo näyttää, keitä täällä on, kun olet itsekin täällä. Oma ilmoitus ei maksa mitään ja vie minuutin: kerro, mitä tarvitset tai mitä osaat. Palaa sitten ja avaa koko lista.",
+    "need_listing_btn": "Lisää ilmainen ilmoitukseni",
     "title": "Avaa täysi käyttöoikeus",
     "intro": "Yksi pieni maksu avaa koko sivuston: katso, kuka täällä on, puhelinnumeroineen ja osoitteineen, ja ota yhteyttä kehen tahansa.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Napauta oikeassa yläkulmassa <strong>\"Lisää\"</strong> — valmis."
   },
   "visibility": {
+    "free_notice": "Ilmoituksen julkaiseminen on ilmaista — se näkyy 12 kuukautta.",
+    "publish_btn": "Julkaise ilmoitukseni",
     "phone_hint": "Lisää maasi suuntanumero. Numerosi näkyy vain kävijöille, jotka ovat maksaneet täydestä pääsystä — ei kaikille, jotka selaavat.",
     "address_hint": "Osoitteesi näkyy vain kävijöille, jotka ovat maksaneet täydestä pääsystä, aivan kuten puhelinnumerosi.",
     "tier_label": "Näkyvyys",
@@ -464,7 +469,7 @@
     "subtitle": "Avaa täysi käyttöoikeus nähdäksesi, kuka täällä on, puhelimineen ja osoitteineen.",
     "locked_count_one": "Täällä on juuri nyt 1 henkilö.",
     "locked_count_other": "Täällä on juuri nyt {n} henkilöä.",
-    "locked_body": "Nähdäksesi keitä he ovat — nimi, kaupunki, puhelin ja osoite — avaa täysi käyttöoikeus. Yksi maksu kattaa kaikki kategoriat, ei vain tätä.",
+    "locked_body": "Nähdäksesi keitä he ovat — nimi, kaupunki, puhelin ja osoite — sinun on oltava täällä myös. Oma ilmoitus on ilmainen. Sen jälkeen 2 CHF avaa kaikki kategoriat vuodeksi, ei vain tätä.",
     "locked_btn": "Avaa täysi käyttöoikeus",
     "locked_empty": "Täällä ei ole vielä ketään. Avattavaa ei ole — palaa myöhemmin tai lisää itsesi etusivulta.",
     "loading": "Ladataan…",

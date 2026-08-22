@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Najprv sa zapíšte aj vy — je to zadarmo",
+    "need_listing_body": "Rotabo vám ukáže, kto je tu, hneď ako tu budete aj vy. Vlastný inzerát nič nestojí a zaberie minútu: napíšte, čo potrebujete alebo čo viete. Potom sa vráťte a odomknite celý zoznam.",
+    "need_listing_btn": "Pridať môj inzerát zadarmo",
     "title": "Odomknúť plný prístup",
     "intro": "Jedna malá platba otvorí celý web: pozri sa, kto tu je, s telefónnymi číslami a adresami, a kontaktuj kohokoľvek.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Ťuknite na <strong>„Pridať“</strong> vpravo hore — hotovo."
   },
   "visibility": {
+    "free_notice": "Zverejnenie je zadarmo — váš inzerát zostáva viditeľný 12 mesiacov.",
+    "publish_btn": "Zverejniť môj inzerát",
     "phone_hint": "Uveď svoju telefónnu predvoľbu krajiny. Tvoje číslo vidia len návštevníci, ktorí zaplatili plný prístup — nie každý, kto prehliada.",
     "address_hint": "Tvoju adresu vidia len návštevníci, ktorí zaplatili plný prístup, rovnako ako telefónne číslo.",
     "tier_label": "Viditeľnosť",
@@ -453,7 +458,7 @@
     "subtitle": "Odomkni plný prístup, aby si videl, kto tu je, s telefónom a adresou.",
     "locked_count_one": "Práve teraz je tu 1 človek.",
     "locked_count_other": "Práve teraz je tu {n} ľudí.",
-    "locked_body": "Aby si videl, kto to je — meno, mesto, telefón a adresa — odomkni plný prístup. Jedna platba pokrýva všetky kategórie, nielen túto.",
+    "locked_body": "Aby ste videli, kto sú — meno, mesto, telefón a adresa — musíte tu byť aj vy. Vlastný inzerát je zadarmo. Potom 2 CHF otvoria všetky kategórie na rok, nielen túto.",
     "locked_btn": "Odomknúť plný prístup",
     "locked_empty": "Zatiaľ tu nikto nie je. Nie je čo odomykať — vráť sa neskôr alebo sa pridaj z úvodnej stránky.",
     "loading": "Načítava sa…",

@@ -1016,24 +1016,16 @@
         <label for="fd_note" data-i18n="find_form.note_label">Tell us more (optional)</label>
         <input type="text" id="fd_note" name="note" data-i18n-placeholder="find_form.note_placeholder" placeholder="A few details help — what, when, how much…">
       </div>
+      <!-- FREE LISTING PERIOD, from 2026-08-22. The 1 CHF / 2 CHF tier
+           picker that stood here is gone: create-listing sets twelve
+           months of visibility itself and no checkout follows. To charge
+           again, restore this block in all three listing forms, put the
+           Stripe redirect back at the end of createListing(), and drop
+           visible_until from the edge function. -->
       <div class="form-field">
-        <label data-i18n="visibility.tier_label">Visibility</label>
-        <div class="tier-picker">
-          <label class="tier-option">
-            <input type="radio" name="tier" value="1" checked>
-            <span class="tier-price">1 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
-            <span class="tier-fx" data-chf="1"></span>
-          </label>
-          <label class="tier-option">
-            <input type="radio" name="tier" value="12">
-            <span class="tier-price">2 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
-            <span class="tier-fx" data-chf="2"></span>
-          </label>
-        </div>
+        <span class="field-hint" data-i18n="visibility.free_notice">Publishing is free — your listing stays visible for 12 months.</span>
       </div>
-      <button type="submit" class="form-submit" data-i18n="find_form.submit">Continue to payment</button>
+      <button type="submit" class="form-submit" data-i18n="visibility.publish_btn">Publish my listing</button>
       <p class="form-error" id="findDriverError" data-i18n="find_form.error">Something went wrong. Please try again.</p>
     </form>
   </div>
@@ -1080,22 +1072,14 @@
         <label for="bd_note" data-i18n="drive_form.note_label">Tell us more (optional)</label>
         <input type="text" id="bd_note" name="note" data-i18n-placeholder="drive_form.note_placeholder" placeholder="A few details help — what, when, how much…">
       </div>
+      <!-- FREE LISTING PERIOD, from 2026-08-22. The 1 CHF / 2 CHF tier
+           picker that stood here is gone: create-listing sets twelve
+           months of visibility itself and no checkout follows. To charge
+           again, restore this block in all three listing forms, put the
+           Stripe redirect back at the end of createListing(), and drop
+           visible_until from the edge function. -->
       <div class="form-field">
-        <label data-i18n="visibility.tier_label">Visibility</label>
-        <div class="tier-picker">
-          <label class="tier-option">
-            <input type="radio" name="tier" value="1" checked>
-            <span class="tier-price">1 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
-            <span class="tier-fx" data-chf="1"></span>
-          </label>
-          <label class="tier-option">
-            <input type="radio" name="tier" value="12">
-            <span class="tier-price">2 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
-            <span class="tier-fx" data-chf="2"></span>
-          </label>
-        </div>
+        <span class="field-hint" data-i18n="visibility.free_notice">Publishing is free — your listing stays visible for 12 months.</span>
       </div>
       <div class="form-check">
         <input type="checkbox" id="bd_decl1" required>
@@ -1113,7 +1097,7 @@
         <input type="checkbox" id="bd_decl4" required>
         <label for="bd_decl4" data-i18n="drive_form.decl4">I understand that I drive entirely at my own responsibility and that of the client.</label>
       </div>
-      <button type="submit" class="form-submit" data-i18n="drive_form.submit">Continue to payment</button>
+      <button type="submit" class="form-submit" data-i18n="visibility.publish_btn">Publish my listing</button>
       <p class="form-error" id="becomeDriverError" data-i18n="drive_form.error">Something went wrong. Please try again.</p>
     </form>
   </div>
@@ -1156,24 +1140,16 @@
         <label for="gl_note" data-i18n="generic_form.note_label">Tell us more (optional)</label>
         <input type="text" id="gl_note" name="note" data-i18n-placeholder="generic_form.note_placeholder" placeholder="A few details help — what, when, how much…">
       </div>
+      <!-- FREE LISTING PERIOD, from 2026-08-22. The 1 CHF / 2 CHF tier
+           picker that stood here is gone: create-listing sets twelve
+           months of visibility itself and no checkout follows. To charge
+           again, restore this block in all three listing forms, put the
+           Stripe redirect back at the end of createListing(), and drop
+           visible_until from the edge function. -->
       <div class="form-field">
-        <label data-i18n="visibility.tier_label">Visibility</label>
-        <div class="tier-picker">
-          <label class="tier-option">
-            <input type="radio" name="tier" value="1" checked>
-            <span class="tier-price">1 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_1mo">1 month</span>
-            <span class="tier-fx" data-chf="1"></span>
-          </label>
-          <label class="tier-option">
-            <input type="radio" name="tier" value="12">
-            <span class="tier-price">2 CHF</span>
-            <span class="tier-period" data-i18n="visibility.period_12mo">12 months</span>
-            <span class="tier-fx" data-chf="2"></span>
-          </label>
-        </div>
+        <span class="field-hint" data-i18n="visibility.free_notice">Publishing is free — your listing stays visible for 12 months.</span>
       </div>
-      <button type="submit" class="form-submit" data-i18n="generic_form.submit">Continue to payment</button>
+      <button type="submit" class="form-submit" data-i18n="visibility.publish_btn">Publish my listing</button>
       <p class="form-error" id="genericListingError" data-i18n="generic_form.error">Something went wrong. Please try again.</p>
     </form>
   </div>
@@ -1638,9 +1614,12 @@
     el.classList.remove("show");
   }
 
-  // The chosen tier (radio button value "1" or "12") picks which of the
-  // two Payment Links to send the browser to; the webhook then infers
-  // the same tier back from the Stripe amount paid.
+  // UNUSED since 2026-08-22, kept deliberately. These two picked which of
+  // the two listing Payment Links to send the browser to, from the tier
+  // radios that the free-listing period removed from the three forms.
+  // Nothing calls them now; they are the other half of the restore path
+  // described at the forms and in create-listing, so that charging for
+  // listings again is putting markup back rather than rewriting logic.
   function tierMonthsFor(form){
     var checked = form.querySelector('input[name="tier"]:checked');
     return checked ? checked.value : "1";
@@ -1706,29 +1685,30 @@
         }
         var newId = result.json.id;
         // Guarded: storage can be denied outright, and a throw here would
-        // swallow the checkout redirect below -- the one line that must
-        // always run.
+        // swallow the redirect below -- the one line that must always run.
         try {
           localStorage.setItem("rotabo_listing_" + payload.category + "_" + payload.role, newId);
           localStorage.setItem("rotabo_last_listing", JSON.stringify({ category: payload.category, role: payload.role }));
           // A stale viewer-purchase return note (from an abandoned unlock
-          // checkout) must not outrank the listing we are about to pay for.
+          // checkout) must not outrank the listing just published.
           localStorage.removeItem("rotabo_return_to");
-          // What this checkout is worth, for after-payment.html to report
-          // as the purchase value: 1 month costs 1 CHF, 12 months cost 2.
-          localStorage.setItem("rotabo_paid_value", tierMonthsFor(form) === "12" ? "2" : "1");
-          // A GA4 purchase with no transaction_id cannot be deduplicated
-          // and reports as (not set). Stripe's fixed return URL carries
-          // nothing, so the id is minted here and read back after payment.
-          localStorage.setItem("rotabo_paid_id", newId);
+          // FREE LISTING PERIOD, from 2026-08-22. There is no checkout any
+          // more: create-listing (v13) sets visible_until itself and the
+          // row is live the moment it is written. These two keys carried
+          // the amount and the id into after-payment.html's purchase
+          // event; a free listing has no amount and must not report as a
+          // purchase, so they are cleared rather than set.
+          localStorage.removeItem("rotabo_paid_value");
+          localStorage.removeItem("rotabo_paid_id");
         } catch (e) {}
-        if (window.gtag) gtag("event", "begin_checkout", { checkout_type: payload.category + "_" + payload.role });
-        // prefilled_email: the sponsor and viewer checkouts have always sent
-        // it and this one never did, so the person who just proved this
-        // address owns the listing had to type it again at Stripe. It is
-        // also the address the webhook falls back to when it cannot resolve
-        // the buyer any other way, so agreeing with the listing is better.
-        window.location.href = tierLinkFor(form) + "?client_reference_id=" + encodeURIComponent(newId) + "&prefilled_email=" + encodeURIComponent(payload.email);
+        // Was begin_checkout. Nothing is being checked out now, and
+        // leaving it would show a funnel in GA4 that no longer exists.
+        if (window.gtag) gtag("event", "listing_submitted", { listing_type: payload.category + "_" + payload.role });
+        // Same landing page as a paid listing used to reach, because it
+        // already knows how to send someone on to the browse page for the
+        // category and role they just listed in. ?free=1 tells it to
+        // report listing_published instead of purchase.
+        window.location.href = "/after-payment.html?free=1";
       })
       .catch(function(){
         setSubmitting(form, false);

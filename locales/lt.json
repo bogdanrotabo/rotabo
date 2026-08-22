@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Pirmiausia įsirašykite ir jūs — tai nemokama",
+    "need_listing_body": "Rotabo parodo, kas čia yra, kai ir jūs esate čia. Savas skelbimas nieko nekainuoja ir užtrunka minutę: parašykite, ko jums reikia arba ką mokate. Paskui grįžkite ir atrakinkite visą sąrašą.",
+    "need_listing_btn": "Pridėti mano nemokamą skelbimą",
     "title": "Atrakinti visą prieigą",
     "intro": "Vienas nedidelis mokėjimas atveria visą svetainę: pažiūrėk, kas čia yra, su telefonų numeriais ir adresais, ir susisiek su bet kuo.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Palieskite <strong>\"Pridėti\"</strong> viršuje dešinėje — atlikta."
   },
   "visibility": {
+    "free_notice": "Skelbti nemokama — jūsų skelbimas matomas 12 mėnesių.",
+    "publish_btn": "Paskelbti mano skelbimą",
     "phone_hint": "Nurodyk savo šalies telefono kodą. Tavo numerį mato tik lankytojai, sumokėję už visą prieigą — ne visi, kurie naršo.",
     "address_hint": "Tavo adresą mato tik lankytojai, sumokėję už visą prieigą, kaip ir telefono numerį.",
     "tier_label": "Matomumas",
@@ -453,7 +458,7 @@
     "subtitle": "Atrakink pilną prieigą, kad pamatytum, kas čia yra, su telefonu ir adresu.",
     "locked_count_one": "Šiuo metu čia yra 1 žmogus.",
     "locked_count_other": "Šiuo metu čia yra {n} žmonių.",
-    "locked_body": "Kad pamatytum, kas jie — vardas, miestas, telefonas ir adresas — atrakink pilną prieigą. Vienas mokėjimas apima visas kategorijas, ne tik šią.",
+    "locked_body": "Kad pamatytumėte, kas jie — vardas, miestas, telefonas ir adresas — turite būti čia ir jūs. Savas skelbimas nemokamas. Po to 2 CHF atveria visas kategorijas metams, ne tik šią.",
     "locked_btn": "Atrakinti visą prieigą",
     "locked_empty": "Čia dar nieko nėra. Nėra ko atrakinti — grįžk vėliau arba pridėk save iš pagrindinio puslapio.",
     "loading": "Kraunama…",

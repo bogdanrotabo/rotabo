@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Daftarkan diri Anda dulu — gratis",
+    "need_listing_body": "Rotabo menunjukkan siapa yang ada di sini begitu Anda juga ada di sini. Memasang iklan sendiri tidak dipungut biaya dan hanya butuh satu menit: sebutkan apa yang Anda butuhkan, atau apa yang bisa Anda kerjakan. Lalu kembali dan buka seluruh daftar.",
+    "need_listing_btn": "Tambahkan iklan gratis saya",
     "title": "Buka akses penuh",
     "intro": "Satu pembayaran kecil membuka seluruh situs: lihat siapa yang ada di sini, dengan nomor telepon dan alamat mereka, dan hubungi siapa saja.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Ketuk <strong>\"Tambah\"</strong> di pojok kanan atas — selesai."
   },
   "visibility": {
+    "free_notice": "Memasang iklan gratis — iklan Anda tetap terlihat selama 12 bulan.",
+    "publish_btn": "Pasang iklan saya",
     "phone_hint": "Sertakan kode negaramu. Nomormu hanya terlihat oleh pengunjung yang telah membayar akses penuh — bukan semua orang yang menjelajah.",
     "address_hint": "Alamatmu hanya terlihat oleh pengunjung yang telah membayar akses penuh, sama seperti nomor teleponmu.",
     "tier_label": "Visibilitas",
@@ -453,7 +458,7 @@
     "subtitle": "Buka akses penuh untuk melihat siapa yang ada di sini, dengan telepon dan alamat.",
     "locked_count_one": "Saat ini ada 1 orang di sini.",
     "locked_count_other": "Saat ini ada {n} orang di sini.",
-    "locked_body": "Untuk melihat siapa mereka — nama, kota, telepon, dan alamat — buka akses penuh. Satu pembayaran mencakup semua kategori, bukan hanya yang ini.",
+    "locked_body": "Untuk melihat siapa mereka — nama, kota, telepon, dan alamat — Anda juga harus ada di sini. Memasang iklan sendiri gratis. Setelah itu, 2 CHF membuka semua kategori selama setahun, bukan hanya yang ini.",
     "locked_btn": "Buka akses penuh",
     "locked_empty": "Belum ada siapa pun di sini. Tidak ada yang perlu dibuka — kembalilah nanti, atau tambahkan dirimu dari halaman utama.",
     "loading": "Memuat…",

@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Daftarkan diri anda dahulu — ia percuma",
+    "need_listing_body": "Rotabo menunjukkan siapa yang ada di sini sebaik sahaja anda juga ada di sini. Iklan anda sendiri tidak dikenakan bayaran dan mengambil masa seminit: nyatakan apa yang anda perlukan, atau apa yang anda boleh lakukan. Kemudian kembali dan buka senarai penuh.",
+    "need_listing_btn": "Tambah iklan percuma saya",
     "title": "Buka akses penuh",
     "intro": "Satu bayaran kecil membuka seluruh laman: lihat siapa yang ada di sini, dengan nombor telefon dan alamat mereka, dan hubungi sesiapa sahaja.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Ketik <strong>\"Tambah\"</strong> di penjuru kanan atas — selesai."
   },
   "visibility": {
+    "free_notice": "Penyiaran adalah percuma — iklan anda kekal dipaparkan selama 12 bulan.",
+    "publish_btn": "Siarkan iklan saya",
     "phone_hint": "Sertakan kod negara anda. Nombor anda hanya dilihat oleh pelawat yang telah membayar akses penuh — bukan semua orang yang melayari.",
     "address_hint": "Alamat anda hanya dilihat oleh pelawat yang telah membayar akses penuh, sama seperti nombor telefon anda.",
     "tier_label": "Keterlihatan",
@@ -453,7 +458,7 @@
     "subtitle": "Buka akses penuh untuk melihat siapa yang ada di sini, dengan telefon dan alamat.",
     "locked_count_one": "Ada 1 orang di sini sekarang.",
     "locked_count_other": "Ada {n} orang di sini sekarang.",
-    "locked_body": "Untuk melihat siapa mereka — nama, bandar, telefon dan alamat — buka akses penuh. Satu bayaran meliputi semua kategori, bukan yang ini sahaja.",
+    "locked_body": "Untuk melihat siapa mereka — nama, bandar, telefon dan alamat — anda juga perlu ada di sini. Iklan anda sendiri adalah percuma. Selepas itu, 2 CHF membuka semua kategori selama setahun, bukan hanya yang ini.",
     "locked_btn": "Buka akses penuh",
     "locked_empty": "Belum ada sesiapa di sini. Tiada apa untuk dibuka — kembali kemudian, atau tambah diri anda dari halaman utama.",
     "loading": "Memuatkan…",

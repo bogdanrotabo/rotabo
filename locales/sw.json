@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Kwanza jiandikishe wewe pia — ni bure",
+    "need_listing_body": "Rotabo inakuonyesha nani yuko hapa pale wewe pia unapokuwa hapa. Tangazo lako mwenyewe haligharimu chochote na linachukua dakika moja: sema unachohitaji, au unachoweza kufanya. Kisha rudi na ufungue orodha nzima.",
+    "need_listing_btn": "Ongeza tangazo langu la bure",
     "title": "Fungua ufikiaji kamili",
     "intro": "Malipo madogo moja hufungua tovuti nzima: ona ni nani yuko hapa, pamoja na namba zao za simu na anwani, na wasiliana na yeyote.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Gusa <strong>\"Ongeza\"</strong> kona ya juu kulia — imekamilika."
   },
   "visibility": {
+    "free_notice": "Kuchapisha ni bure — tangazo lako linabaki likionekana kwa miezi 12.",
+    "publish_btn": "Chapisha tangazo langu",
     "phone_hint": "Jumuisha msimbo wa nchi yako. Nambari yako inaonekana tu kwa wageni waliolipia ufikiaji kamili — si kila anayevinjari.",
     "address_hint": "Anwani yako inaonekana tu kwa wageni waliolipia ufikiaji kamili, sawa na nambari yako ya simu.",
     "tier_label": "Kuonekana",
@@ -453,7 +458,7 @@
     "subtitle": "Fungua ufikiaji kamili uone ni nani yuko hapa, pamoja na simu na anwani.",
     "locked_count_one": "Kwa sasa kuna mtu 1 hapa.",
     "locked_count_other": "Kwa sasa kuna watu {n} hapa.",
-    "locked_body": "Ili kuona ni akina nani — jina, mji, simu na anwani — fungua ufikiaji kamili. Malipo moja yanafunika kategoria zote, si hii tu.",
+    "locked_body": "Ili kuona wao ni nani — jina, mji, simu na anwani — ni lazima wewe pia uwe hapa. Tangazo lako mwenyewe ni bure. Baada ya hapo, CHF 2 zinafungua kategoria zote kwa mwaka mmoja, si hii tu.",
     "locked_btn": "Fungua ufikiaji kamili",
     "locked_empty": "Hakuna mtu hapa bado. Hakuna cha kufungua — rudi baadaye, au jiongeze kupitia ukurasa wa mwanzo.",
     "loading": "Inapakia…",

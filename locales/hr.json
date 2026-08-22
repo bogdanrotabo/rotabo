@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Prvo se i vi upišite — besplatno je",
+    "need_listing_body": "Rotabo vam pokazuje tko je ovdje čim ste i vi ovdje. Vlastiti oglas ne košta ništa i traje minutu: recite što trebate ili što znate raditi. Zatim se vratite i otključajte cijeli popis.",
+    "need_listing_btn": "Dodaj moj besplatni oglas",
     "title": "Otključaj puni pristup",
     "intro": "Jedna mala uplata otvara cijelu stranicu: pogledaj tko je ovdje, s brojevima telefona i adresama, i kontaktiraj bilo koga.",
     "email_placeholder": "your@email.com",
@@ -335,6 +338,8 @@
     "ios_step3": "Dodirnite <strong>\"Dodaj\"</strong> u gornjem desnom kutu — gotovo."
   },
   "visibility": {
+    "free_notice": "Objava je besplatna — vaš oglas ostaje vidljiv 12 mjeseci.",
+    "publish_btn": "Objavi moj oglas",
     "phone_hint": "Uključi svoj pozivni broj države. Tvoj broj vide samo posjetitelji koji su platili puni pristup — ne svatko tko pregledava.",
     "address_hint": "Tvoju adresu vide samo posjetitelji koji su platili puni pristup, jednako kao broj telefona.",
     "tier_label": "Vidljivost",
@@ -464,7 +469,7 @@
     "subtitle": "Otključaj puni pristup da vidiš tko je ovdje, s telefonom i adresom.",
     "locked_count_one": "Trenutno je ovdje 1 osoba.",
     "locked_count_other": "Trenutno je ovdje {n} osoba.",
-    "locked_body": "Da vidiš tko su — ime, grad, telefon i adresa — otključaj puni pristup. Jedna uplata pokriva sve kategorije, ne samo ovu.",
+    "locked_body": "Da biste vidjeli tko su — ime, grad, telefon i adresa — morate i vi biti ovdje. Vlastiti oglas je besplatan. Nakon toga 2 CHF otvaraju sve kategorije na godinu dana, ne samo ovu.",
     "locked_btn": "Otključaj puni pristup",
     "locked_empty": "Ovdje još nema nikoga. Nema se što otključati — vrati se kasnije ili se dodaj s početne stranice.",
     "loading": "Učitavanje…",

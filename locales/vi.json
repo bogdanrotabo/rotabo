@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Hãy tự ghi tên mình trước — miễn phí",
+    "need_listing_body": "Rotabo cho bạn thấy ai đang ở đây khi bạn cũng có mặt ở đây. Tin của chính bạn không tốn gì và chỉ mất một phút: nói bạn cần gì, hoặc bạn làm được gì. Sau đó quay lại và mở khoá toàn bộ danh sách.",
+    "need_listing_btn": "Thêm tin miễn phí của tôi",
     "title": "Mở khóa quyền truy cập đầy đủ",
     "intro": "Một khoản thanh toán nhỏ mở ra toàn bộ trang web: xem ai đang ở đây, cùng số điện thoại và địa chỉ của họ, và liên hệ với bất kỳ ai.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Nhấn <strong>\"Thêm\"</strong> ở góc trên bên phải — xong."
   },
   "visibility": {
+    "free_notice": "Đăng tin miễn phí — tin của bạn hiển thị trong 12 tháng.",
+    "publish_btn": "Đăng tin của tôi",
     "phone_hint": "Bao gồm mã quốc gia của bạn. Số của bạn chỉ hiển thị cho khách đã trả phí truy cập đầy đủ — không phải mọi người duyệt xem.",
     "address_hint": "Địa chỉ của bạn chỉ hiển thị cho khách đã trả phí truy cập đầy đủ, giống như số điện thoại của bạn.",
     "tier_label": "Hiển thị",
@@ -453,7 +458,7 @@
     "subtitle": "Mở khóa quyền truy cập đầy đủ để xem ai đang ở đây, cùng điện thoại và địa chỉ.",
     "locked_count_one": "Hiện có 1 người ở đây.",
     "locked_count_other": "Hiện có {n} người ở đây.",
-    "locked_body": "Để xem họ là ai — tên, thành phố, điện thoại và địa chỉ — hãy mở khóa quyền truy cập đầy đủ. Một lần thanh toán bao gồm mọi danh mục, không chỉ danh mục này.",
+    "locked_body": "Để biết họ là ai — tên, thành phố, điện thoại và địa chỉ — bạn cũng phải có mặt ở đây. Tin của chính bạn là miễn phí. Sau đó, 2 CHF mở mọi hạng mục trong một năm, không chỉ hạng mục này.",
     "locked_btn": "Mở khóa quyền truy cập đầy đủ",
     "locked_empty": "Chưa có ai ở đây. Không có gì để mở khóa — hãy quay lại sau, hoặc thêm chính bạn từ trang chủ.",
     "loading": "Đang tải…",

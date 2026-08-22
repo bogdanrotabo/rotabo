@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Először írja fel magát is — ingyenes",
+    "need_listing_body": "A Rotabo akkor mutatja meg, ki van itt, ha ön is itt van. A saját hirdetés semmibe sem kerül, és egy percet vesz igénybe: mondja el, mire van szüksége, vagy mihez ért. Utána térjen vissza, és nyissa meg a teljes listát.",
+    "need_listing_btn": "Ingyenes hirdetésem hozzáadása",
     "title": "Teljes hozzáférés feloldása",
     "intro": "Egyetlen kis fizetés megnyitja az egész oldalt: nézd meg, ki van itt, telefonszámokkal és címekkel, és lépj kapcsolatba bárkivel.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Koppints a jobb felső sarokban a <strong>„Hozzáadás”</strong> gombra — kész."
   },
   "visibility": {
+    "free_notice": "A hirdetés feladása ingyenes — 12 hónapig látható marad.",
+    "publish_btn": "Hirdetésem közzététele",
     "phone_hint": "Add meg az országhívószámod. A számodat csak azok a látogatók látják, akik fizettek a teljes hozzáférésért — nem mindenki, aki böngész.",
     "address_hint": "A címedet csak azok a látogatók látják, akik fizettek a teljes hozzáférésért, ugyanúgy, mint a telefonszámodat.",
     "tier_label": "Láthatóság",
@@ -453,7 +458,7 @@
     "subtitle": "Oldd fel a teljes hozzáférést, hogy lásd, ki van itt, telefonnal és címmel.",
     "locked_count_one": "Most 1 ember van itt.",
     "locked_count_other": "Most {n} ember van itt.",
-    "locked_body": "Hogy lásd, kik ők — név, város, telefon és cím — oldd fel a teljes hozzáférést. Egy fizetés minden kategóriára érvényes, nem csak erre.",
+    "locked_body": "Ahhoz, hogy lássa, kik ők — név, város, telefon és cím —, önnek is itt kell lennie. A saját hirdetés ingyenes. Utána 2 CHF egy évre megnyitja az összes kategóriát, nem csak ezt.",
     "locked_btn": "Teljes hozzáférés feloldása",
     "locked_empty": "Még nincs itt senki. Nincs mit feloldani — gyere vissza később, vagy add hozzá magad a főoldalról.",
     "loading": "Betöltés…",

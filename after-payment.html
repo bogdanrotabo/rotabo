@@ -147,6 +147,23 @@
     if (txn) { ev.transaction_id = txn; localStorage.removeItem('rotabo_paid_id'); }
   } catch (e) { /* storage denied: report the purchase without a value */ }
 
+  // Sending it. This line did not exist until 2026-08-22: ev was built
+  // above, documented at length, and then never handed to gtag, so GA4
+  // recorded no purchases at all and Google Ads -- whose only primary
+  // conversion is purchase -- had nothing to bid on. Nobody noticed
+  // because the redirect below is on a timer and works either way.
+  //
+  // ?free=1 is how index.html arrives here after publishing a listing
+  // during the free period. That is not a purchase and must not be
+  // reported as one: purchase carries the value Performance Max bids on,
+  // and counting free listings at zero would drag that value down. It
+  // gets its own event instead, to be imported as a conversion in Ads.
+  if (/(?:^|[?&])free=1(?:&|$)/.test(location.search)) {
+    gtag('event', 'listing_published', { event_callback: go, event_timeout: 1200 });
+  } else {
+    gtag('event', 'purchase', ev);
+  }
+
   // event_callback needs gtag.js to have loaded to fire at all, and an
   // ad blocker means it never will. This is the floor under that: the
   // buyer waits at most a second and a half, staring at a spinner they

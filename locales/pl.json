@@ -1,5 +1,8 @@
 {
   "viewer": {
+    "need_listing_title": "Najpierw wpisz się i ty — to nic nie kosztuje",
+    "need_listing_body": "Rotabo pokazuje, kto tu jest, gdy ty też tu jesteś. Własne ogłoszenie nic nie kosztuje i zajmuje minutę: napisz, czego potrzebujesz albo co potrafisz. Potem wróć i odblokuj całą listę.",
+    "need_listing_btn": "Dodaj moje bezpłatne ogłoszenie",
     "title": "Odblokuj pełny dostęp",
     "intro": "Jedna mała płatność otwiera całą stronę: zobacz, kto tu jest, z numerami telefonów i adresami, i skontaktuj się z każdym.",
     "email_placeholder": "your@email.com",
@@ -324,6 +327,8 @@
     "ios_step3": "Stuknij <strong>\"Dodaj\"</strong> w prawym górnym rogu — gotowe."
   },
   "visibility": {
+    "free_notice": "Dodanie ogłoszenia jest bezpłatne — pozostaje widoczne przez 12 miesięcy.",
+    "publish_btn": "Opublikuj moje ogłoszenie",
     "phone_hint": "Podaj swój numer kierunkowy kraju. Twój numer widzą tylko odwiedzający, którzy zapłacili za pełny dostęp — nie każdy, kto przegląda.",
     "address_hint": "Twój adres widzą tylko odwiedzający, którzy zapłacili za pełny dostęp, tak samo jak numer telefonu.",
     "tier_label": "Widoczność",
@@ -453,7 +458,7 @@
     "subtitle": "Odblokuj pełny dostęp, aby zobaczyć, kto tu jest, z telefonem i adresem.",
     "locked_count_one": "1 osoba jest tu teraz.",
     "locked_count_other": "{n} osób jest tu teraz.",
-    "locked_body": "Aby zobaczyć, kim są — imię, miasto, telefon i adres — odblokuj pełny dostęp. Jedna płatność obejmuje wszystkie kategorie, nie tylko tę.",
+    "locked_body": "Żeby zobaczyć, kim są — imię, miasto, telefon i adres — musisz być tu i ty. Własne ogłoszenie jest bezpłatne. Potem 2 CHF otwierają wszystkie kategorie na rok, nie tylko tę.",
     "locked_btn": "Odblokuj pełny dostęp",
     "locked_empty": "Nikogo tu jeszcze nie ma. Nie ma nic do odblokowania — wróć później albo dodaj się ze strony głównej.",
     "loading": "Ładowanie…",
