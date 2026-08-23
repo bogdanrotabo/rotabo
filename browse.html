@@ -188,7 +188,7 @@
     document.getElementById("content").innerHTML = "";
     return;
   }
-  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
+  var SUPABASE_URL = "https://auth.rotabo.app";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     global: { fetch: function(url, options){ return fetch(url, Object.assign({}, options, { cache: "no-store" })); } }
@@ -868,7 +868,7 @@
     }
 
     visitorCountry().then(function(country){
-      fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
+      fetch("https://auth.rotabo.app/rest/v1/site_visits", {
         method: "POST",
         headers: {
           "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",

@@ -10,7 +10,7 @@
  */
 (function () {
   if (!window.supabase) return;
-  var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
+  var SUPABASE_URL = "https://auth.rotabo.app";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
   var FUNCTIONS_URL = SUPABASE_URL + "/functions/v1";
   var TIER_LINKS = {

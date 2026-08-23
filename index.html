@@ -1691,7 +1691,7 @@
   // cached in localStorage per-email for 30 minutes so a visitor who
   // just verified doesn't have to redo it if they submit a second form
   // in the same session.
-  var FUNCTIONS_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co/functions/v1";
+  var FUNCTIONS_URL = "https://auth.rotabo.app/functions/v1";
   var pending = null; // { form, payload, errorEl, sourceModalId, email }
 
   function cachedToken(email){
@@ -2013,7 +2013,7 @@
   // moment the webhook flips their row visible, no deploy involved.
   (function(){
     var ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
-    fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/rpc/sponsors_public", {
+    fetch("https://auth.rotabo.app/rest/v1/rpc/sponsors_public", {
       method: "POST",
       headers: { "apikey": ANON_KEY, "Authorization": "Bearer " + ANON_KEY, "Content-Type": "application/json" },
       body: "{}"
@@ -2523,7 +2523,7 @@ if ("serviceWorker" in navigator) {
     }
 
     visitorCountry().then(function(country){
-      fetch("https://caqfbpzwdgnwjoaedjrg.supabase.co/rest/v1/site_visits", {
+      fetch("https://auth.rotabo.app/rest/v1/site_visits", {
         method: "POST",
         headers: {
           "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
