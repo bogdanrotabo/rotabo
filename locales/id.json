@@ -4,6 +4,9 @@
     "invite": "Tempat ini disediakan untuk organisasi yang mendukung gagasan ini. Tidak dipungut biaya, dan tidak akan pernah."
   },
   "viewer": {
+    "google_btn": "Lanjutkan dengan Google",
+    "google_or": "atau",
+    "err_google": "Masuk dengan Google tidak berhasil. Gunakan email Anda saja.",
     "intro_all": "Satu kali bayar membuka seluruh situs: kamu lihat siapa saja yang ada di sini, di semua kategori, lengkap dengan nomor telepon dan alamat, dan bisa menghubungi siapa pun.",
     "pw_new_title": "Pilih kata sandi",
     "pw_new_body": "Emailmu sudah terverifikasi. Pilih kata sandi dan ini menjadi akun Rotabo-mu: lain kali kamu tinggal masuk, dari perangkat mana pun, tanpa menunggu kode.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} jam lalu"
   },
   "account_page": {
+    "google_btn": "Lanjutkan dengan Google",
+    "google_or": "atau",
+    "google_error": "Masuk dengan Google tidak berhasil. Gunakan email Anda saja.",
     "title": "Akun saya",
     "subtitle": "Masuk untuk melihat semua yang kamu pasang, dari perangkat mana pun.",
     "email_label": "Email",

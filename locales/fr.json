@@ -4,6 +4,9 @@
     "invite": "Cette place est réservée à une organisation qui soutient cette idée. Elle ne coûte rien, et ne coûtera jamais rien."
   },
   "viewer": {
+    "google_btn": "Continuer avec Google",
+    "google_or": "ou",
+    "err_google": "La connexion avec Google n'a pas abouti. Utilisez plutôt votre e-mail.",
     "intro_all": "Un seul paiement ouvre tout le site : voyez qui est là, dans toutes les catégories, avec leurs numéros de téléphone et leurs adresses, et contactez qui vous voulez.",
     "pw_new_title": "Choisissez un mot de passe",
     "pw_new_body": "Votre e-mail est confirmé. Choisissez un mot de passe et ceci devient votre compte Rotabo : la prochaine fois, vous vous connectez directement, depuis n'importe quel appareil, sans attendre de code.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "il y a {n} heures"
   },
   "account_page": {
+    "google_btn": "Continuer avec Google",
+    "google_or": "ou",
+    "google_error": "La connexion avec Google n'a pas abouti. Utilisez plutôt votre e-mail.",
     "title": "Mon compte",
     "subtitle": "Connecte-toi pour voir tout ce que tu as publié, depuis n'importe quel appareil.",
     "email_label": "E-mail",

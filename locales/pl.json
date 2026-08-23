@@ -4,6 +4,9 @@
     "invite": "To miejsce jest zarezerwowane dla organizacji, która stoi za tą ideą. Nic nie kosztuje i nigdy nie będzie kosztować."
   },
   "viewer": {
+    "google_btn": "Kontynuuj przez Google",
+    "google_or": "lub",
+    "err_google": "Logowanie przez Google się nie powiodło. Użyj swojego adresu e-mail.",
     "intro_all": "Jedna płatność otwiera całą stronę: widzisz, kto tu jest, we wszystkich kategoriach, z numerami telefonów i adresami, i możesz skontaktować się z każdym.",
     "pw_new_title": "Wybierz hasło",
     "pw_new_body": "Twój e-mail jest potwierdzony. Wybierz hasło i to staje się twoim kontem Rotabo: następnym razem po prostu się logujesz, z dowolnego urządzenia, bez czekania na kod.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} godzin temu"
   },
   "account_page": {
+    "google_btn": "Kontynuuj przez Google",
+    "google_or": "lub",
+    "google_error": "Logowanie przez Google się nie powiodło. Użyj swojego adresu e-mail.",
     "title": "Moje konto",
     "subtitle": "Zaloguj się, aby zobaczyć wszystkie swoje ogłoszenia — z dowolnego urządzenia.",
     "email_label": "E-mail",

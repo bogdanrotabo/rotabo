@@ -4,6 +4,9 @@
     "invite": "Locul acesta e păstrat pentru o organizație care crede în ideea asta. Nu costă nimic și nu va costa niciodată."
   },
   "viewer": {
+    "google_btn": "Continuă cu Google",
+    "google_or": "sau",
+    "err_google": "Autentificarea cu Google nu a reușit. Folosește adresa ta de email.",
     "intro_all": "O singură plată deschide tot site-ul: vezi cine e aici, în toate categoriile, cu numerele lor de telefon și adresele, și contactează pe oricine.",
     "pw_new_title": "Alege-ți o parolă",
     "pw_new_body": "Emailul tău e confirmat. Alege o parolă și asta devine contul tău Rotabo: data viitoare intri direct, de pe orice dispozitiv, fără să mai aștepți vreun cod.",
@@ -520,6 +523,9 @@
     "time_hour_ago_other": "acum {n} ore"
   },
   "account_page": {
+    "google_btn": "Continuă cu Google",
+    "google_or": "sau",
+    "google_error": "Autentificarea cu Google nu a reușit. Folosește adresa ta de email.",
     "title": "Contul meu",
     "subtitle": "Loghează-te ca să vezi tot ce ai listat, de pe orice dispozitiv.",
     "email_label": "Email",

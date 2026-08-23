@@ -4,6 +4,9 @@
     "invite": "Dieser Platz ist für eine Organisation reserviert, die hinter der Idee steht. Er kostet nichts, und das wird er nie."
   },
   "viewer": {
+    "google_btn": "Weiter mit Google",
+    "google_or": "oder",
+    "err_google": "Die Anmeldung mit Google hat nicht geklappt. Nutzen Sie stattdessen Ihre E-Mail.",
     "intro_all": "Eine einzige Zahlung öffnet die ganze Seite: Sieh, wer hier ist, in jeder Kategorie, mit Telefonnummern und Adressen, und kontaktiere jeden.",
     "pw_new_title": "Wähl dir ein Passwort",
     "pw_new_body": "Deine E-Mail ist bestätigt. Wähl ein Passwort, und daraus wird dein Rotabo-Konto: Beim nächsten Mal meldest du dich einfach an, von jedem Gerät, ohne auf einen Code zu warten.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "vor {n} Stunden"
   },
   "account_page": {
+    "google_btn": "Weiter mit Google",
+    "google_or": "oder",
+    "google_error": "Die Anmeldung mit Google hat nicht geklappt. Nutzen Sie stattdessen Ihre E-Mail.",
     "title": "Mein Konto",
     "subtitle": "Melde dich an, um alles zu sehen, was du eingetragen hast — von jedem Gerät aus.",
     "email_label": "E-Mail",

@@ -4,6 +4,9 @@
     "invite": "Nafasi hii imehifadhiwa kwa shirika linaloliunga mkono wazo hili. Haigharimu chochote, wala haitawahi."
   },
   "viewer": {
+    "google_btn": "Endelea na Google",
+    "google_or": "au",
+    "err_google": "Kuingia kwa Google hakukufaulu. Tumia barua pepe yako badala yake.",
     "intro_all": "Malipo moja hufungua tovuti nzima: unaona nani yupo hapa, katika kila kategoria, pamoja na namba za simu na anwani, na unaweza kuwasiliana na yeyote.",
     "pw_new_title": "Chagua nenosiri",
     "pw_new_body": "Barua pepe yako imethibitishwa. Chagua nenosiri na hii inakuwa akaunti yako ya Rotabo: mara ijayo unaingia moja kwa moja, kutoka kifaa chochote, bila kusubiri msimbo.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "saa {n} zilizopita"
   },
   "account_page": {
+    "google_btn": "Endelea na Google",
+    "google_or": "au",
+    "google_error": "Kuingia kwa Google hakukufaulu. Tumia barua pepe yako badala yake.",
     "title": "Akaunti yangu",
     "subtitle": "Ingia ili kuona kila kitu ulichotangaza, kutoka kifaa chochote.",
     "email_label": "Barua pepe",

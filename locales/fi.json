@@ -4,6 +4,9 @@
     "invite": "Tämä paikka on varattu järjestölle, joka seisoo ajatuksen takana. Se ei maksa mitään, eikä koskaan tule maksamaan."
   },
   "viewer": {
+    "google_btn": "Jatka Google-tunnuksilla",
+    "google_or": "tai",
+    "err_google": "Google-kirjautuminen ei onnistunut. Käytä sähköpostiasi.",
     "intro_all": "Yksi maksu avaa koko sivuston: näet, keitä täällä on, kaikissa kategorioissa, puhelinnumeroineen ja osoitteineen, ja voit ottaa yhteyttä kehen tahansa.",
     "pw_new_title": "Valitse salasana",
     "pw_new_body": "Sähköpostisi on vahvistettu. Valitse salasana, niin tästä tulee Rotabo-tilisi: ensi kerralla kirjaudut vain sisään, millä tahansa laitteella, ilman koodin odottamista.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "{n} tuntia sitten"
   },
   "account_page": {
+    "google_btn": "Jatka Google-tunnuksilla",
+    "google_or": "tai",
+    "google_error": "Google-kirjautuminen ei onnistunut. Käytä sähköpostiasi.",
     "title": "Oma tili",
     "subtitle": "Kirjaudu sisään nähdäksesi kaiken, mitä olet ilmoittanut, miltä tahansa laitteelta.",
     "email_label": "Sähköposti",

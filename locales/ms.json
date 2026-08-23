@@ -4,6 +4,9 @@
     "invite": "Tempat ini disediakan untuk organisasi yang menyokong idea ini. Ia tidak dikenakan bayaran, dan tidak akan sesekali."
   },
   "viewer": {
+    "google_btn": "Teruskan dengan Google",
+    "google_or": "atau",
+    "err_google": "Log masuk Google tidak berjaya. Gunakan e-mel anda sebaliknya.",
     "intro_all": "Satu bayaran membuka seluruh laman: anda lihat siapa yang ada di sini, dalam semua kategori, dengan nombor telefon dan alamat, dan boleh menghubungi sesiapa sahaja.",
     "pw_new_title": "Pilih kata laluan",
     "pw_new_body": "E-mel anda telah disahkan. Pilih kata laluan dan ini menjadi akaun Rotabo anda: kali seterusnya anda hanya log masuk, dari mana-mana peranti, tanpa menunggu kod.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} jam lalu"
   },
   "account_page": {
+    "google_btn": "Teruskan dengan Google",
+    "google_or": "atau",
+    "google_error": "Log masuk Google tidak berjaya. Gunakan e-mel anda sebaliknya.",
     "title": "Akaun saya",
     "subtitle": "Log masuk untuk melihat semua yang anda senaraikan, dari mana-mana peranti.",
     "email_label": "E-mel",

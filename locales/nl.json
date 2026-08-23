@@ -4,6 +4,9 @@
     "invite": "Deze plek is gereserveerd voor een organisatie die achter het idee staat. Het kost niets, en dat zal het nooit doen."
   },
   "viewer": {
+    "google_btn": "Doorgaan met Google",
+    "google_or": "of",
+    "err_google": "Inloggen met Google is niet gelukt. Gebruik in plaats daarvan je e-mail.",
     "intro_all": "Eén betaling opent de hele site: zie wie hier is, in elke categorie, met hun telefoonnummers en adressen, en neem contact op met wie je wilt.",
     "pw_new_title": "Kies een wachtwoord",
     "pw_new_body": "Je e-mailadres is bevestigd. Kies een wachtwoord en dit wordt je Rotabo-account: de volgende keer log je gewoon in, op elk apparaat, zonder op een code te wachten.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "{n} uur geleden"
   },
   "account_page": {
+    "google_btn": "Doorgaan met Google",
+    "google_or": "of",
+    "google_error": "Inloggen met Google is niet gelukt. Gebruik in plaats daarvan je e-mail.",
     "title": "Mijn account",
     "subtitle": "Log in om alles te zien wat je hebt geplaatst — vanaf elk apparaat.",
     "email_label": "E-mail",

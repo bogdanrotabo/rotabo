@@ -4,6 +4,9 @@
     "invite": "Tá an áit seo curtha in áirithe d'eagraíocht a sheasann leis an smaoineamh. Níl aon chostas air, agus ní bheidh choíche."
   },
   "viewer": {
+    "google_btn": "Lean ar aghaidh le Google",
+    "google_or": "nó",
+    "err_google": "Níor éirigh leis an sínithe isteach le Google. Bain úsáid as do ríomhphost ina áit.",
     "intro_all": "Osclaíonn íocaíocht amháin an suíomh ar fad: feiceann tú cé atá anseo, i ngach catagóir, lena n-uimhreacha gutháin agus a seoltaí, agus is féidir leat teagmháil a dhéanamh le duine ar bith.",
     "pw_new_title": "Roghnaigh pasfhocal",
     "pw_new_body": "Tá do ríomhphost deimhnithe. Roghnaigh pasfhocal agus is é seo do chuntas Rotabo: an chéad uair eile logálann tú isteach díreach, ó aon ghléas, gan fanacht le cód.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} uair an chloig ó shin"
   },
   "account_page": {
+    "google_btn": "Lean ar aghaidh le Google",
+    "google_or": "nó",
+    "google_error": "Níor éirigh leis an sínithe isteach le Google. Bain úsáid as do ríomhphost ina áit.",
     "title": "Mo chuntas",
     "subtitle": "Logáil isteach chun gach rud a liostáil tú a fheiceáil, ó ghléas ar bith.",
     "email_label": "Ríomhphost",

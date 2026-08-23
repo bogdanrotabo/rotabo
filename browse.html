@@ -555,6 +555,16 @@
       window.RotaboViewer.open(function(){ renderDashboard(); }, category);
       return;
     }
+    // Same for a return from Google: the page left and came back, so the
+    // modal the visitor was standing in no longer exists and they would be
+    // looking at the locked card again, signed in, with nothing to show
+    // for it. open() trades the session for a viewer token by itself, so
+    // re-opening is the whole fix.
+    if (window.RotaboViewer.justSignedIn()) {
+      renderLocked();
+      window.RotaboViewer.open(function(){ renderDashboard(); }, category);
+      return;
+    }
     // The category is the whole question now: access is bought one
     // category at a time, so someone who unlocked Drive must still see
     // the locked card on Care.

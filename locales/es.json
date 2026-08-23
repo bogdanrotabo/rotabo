@@ -4,6 +4,9 @@
     "invite": "Este lugar está reservado para una organización que apoye la idea. No cuesta nada, y nunca costará."
   },
   "viewer": {
+    "google_btn": "Continuar con Google",
+    "google_or": "o",
+    "err_google": "El inicio de sesión con Google no funcionó. Usa tu correo electrónico.",
     "intro_all": "Un solo pago abre todo el sitio: mira quién está aquí, en todas las categorías, con sus números de teléfono y sus direcciones, y contacta con quien quieras.",
     "pw_new_title": "Elige una contraseña",
     "pw_new_body": "Tu correo está confirmado. Elige una contraseña y esto se convierte en tu cuenta de Rotabo: la próxima vez entras directamente, desde cualquier dispositivo, sin esperar ningún código.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "hace {n} horas"
   },
   "account_page": {
+    "google_btn": "Continuar con Google",
+    "google_or": "o",
+    "google_error": "El inicio de sesión con Google no funcionó. Usa tu correo electrónico.",
     "title": "Mi cuenta",
     "subtitle": "Inicia sesión para ver todo lo que has publicado, desde cualquier dispositivo.",
     "email_label": "Correo electrónico",

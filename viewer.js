@@ -129,6 +129,15 @@
     intro: ["intro_all", "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone."],
     email_ph: ["email_placeholder", "your@email.com"],
     send: ["send_btn", "Send code"],
+    // Signing in with Google skips the code and the password both, and it
+    // proves the address better than we can: we mail a code and hope the
+    // right person reads it, Google already knows. Kept alongside the
+    // email box rather than replacing it -- plenty of people here do not
+    // have a Google account, and losing them to save two steps for the
+    // rest would be a bad trade.
+    google: ["google_btn", "Continue with Google"],
+    google_or: ["google_or", "or"],
+    err_google: ["err_google", "Google sign-in did not go through. Use your email instead."],
     code_ph: ["code_placeholder", "6-digit code"],
     verify: ["verify_btn", "Verify"],
     sent: ["code_sent", "We sent a code to {email}."],
@@ -187,6 +196,15 @@
       ".rv-box input:focus{outline:none;border-color:#9b3fc0;box-shadow:0 0 0 3px rgba(155,63,192,.18);}" +
       ".rv-btn{display:block;width:100%;box-sizing:border-box;border:none;border-radius:40px;padding:14px 18px;font-size:1rem;font-weight:700;cursor:pointer;margin-bottom:10px;text-align:center;text-decoration:none;}" +
       ".rv-btn.solid{background:#9333a8;color:#fff;}" +
+      // White with a grey border and the four-colour G is the shape people
+      // already recognise from every other sign-in; dressing it in Rotabo
+      // violet would only make them look twice at the one button that has
+      // to be instantly obvious.
+      ".rv-btn.google{background:#fff;color:#3c4043;border:1px solid #dadce0;display:flex;align-items:center;justify-content:center;gap:10px;}" +
+      ".rv-btn.google:hover{background:#f7f8f8;}" +
+      ".rv-btn.google[disabled]{opacity:.6;cursor:default;}" +
+      ".rv-or{display:flex;align-items:center;gap:10px;margin:2px 0 12px;color:#9a86a6;font-size:.85rem;}" +
+      ".rv-or::before,.rv-or::after{content:'';flex:1;height:1px;background:#eadcf2;}" +
       ".rv-btn.tier{background:#f3e6f8;color:#7c2d9c;border:1px solid #e2c3ee;}" +
       ".rv-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.6rem;line-height:1;color:#8a7a94;cursor:pointer;}" +
       ".rv-err{color:#b23f78;font-weight:600;font-size:.9rem;margin:0 0 10px;display:none;}" +
@@ -242,13 +260,48 @@
 
   function esc(s) { return (s == null ? "" : String(s)).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
+  // Google's own four-colour G. Inline because the modal must not depend
+  // on a network fetch to draw its first screen, and because a strict CSP
+  // is easier to keep when nothing loads from google's CDN.
+  var GOOGLE_G =
+    '<svg viewBox="0 0 48 48" width="19" height="19" aria-hidden="true">' +
+    '<path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.6-4.5 6.4l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.5 6.6-15z"/>' +
+    '<path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-.3.1-6.7 5.2-.1.3C8 40.8 15.4 46 24 46z"/>' +
+    '<path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.7-2.9-.7-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.5 9.9l7-5.5z"/>' +
+    '<path fill="#EB4335" d="M24 9.5c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 3.4 29.9 1 24 1 15.4 1 8 6.2 4.5 14.1l7 5.5C13.3 14.3 18.2 9.5 24 9.5z"/>' +
+    '</svg>';
+
+  // The whole page leaves for Google and comes back at redirectTo, by
+  // which time this modal no longer exists. The marker is what tells the
+  // page to re-open it -- the same trick justPaid() plays for a return
+  // from Stripe. sessionStorage, not localStorage: a sign-in abandoned
+  // halfway should not re-open the modal in a tab opened next week.
+  function googleSignIn(btn) {
+    btn.disabled = true;
+    try { sessionStorage.setItem("rotabo_viewer_oauth", "1"); } catch (e) {}
+    function failed() {
+      btn.disabled = false;
+      try { sessionStorage.removeItem("rotabo_viewer_oauth"); } catch (e) {}
+      showErr(t("err_google"));
+    }
+    sb.auth.signInWithOAuth({
+      provider: "google",
+      // Without the hash: supabase-js puts the session in the fragment on
+      // its way back, and a stale one of ours would collide with it.
+      options: { redirectTo: location.href.split("#")[0] }
+    }).then(function (r) { if (r && r.error) failed(); }).catch(failed);
+  }
+
   function stepEmail(prefill) {
     box.innerHTML =
       '<h3>' + esc(t("title")) + '</h3>' +
       '<p>' + esc(t("intro")) + '</p>' +
       '<p class="rv-err" id="rvErr"></p>' +
+      '<button class="rv-btn google" id="rvGoogle">' + GOOGLE_G + '<span>' + esc(t("google")) + '</span></button>' +
+      '<div class="rv-or"><span>' + esc(t("google_or")) + '</span></div>' +
       '<input type="email" id="rvEmail" autocomplete="email" placeholder="' + esc(t("email_ph")) + '">' +
       '<button class="rv-btn solid" id="rvSend">' + esc(t("send")) + '</button>';
+    box.querySelector("#rvGoogle").addEventListener("click", function () { googleSignIn(this); });
     var input = box.querySelector("#rvEmail");
     if (prefill) input.value = prefill;
     box.querySelector("#rvSend").addEventListener("click", function () {
@@ -568,6 +621,19 @@
       var at = 0;
       try { at = parseInt(localStorage.getItem("rotabo_viewer_paid_at") || "0", 10); } catch (e) {}
       return !!at && Date.now() - at < 3 * 60000;
+    },
+    // Just back from Google? The page navigated away and returned, so the
+    // modal the visitor was standing in is gone and they would be looking
+    // at the locked card again, signed in, wondering what happened. The
+    // marker is read once and cleared: re-opening on a later reload would
+    // be worse than not re-opening at all.
+    justSignedIn: function () {
+      var v = null;
+      try {
+        v = sessionStorage.getItem("rotabo_viewer_oauth");
+        if (v) sessionStorage.removeItem("rotabo_viewer_oauth");
+      } catch (e) {}
+      return !!v;
     },
     open: open,
     // Reveal a listing's details. opts: {id} or {number}, onDetails(rows), onLocked()

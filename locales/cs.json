@@ -4,6 +4,9 @@
     "invite": "Toto místo je vyhrazeno organizaci, která se za tuto myšlenku postaví. Nic nestojí a nikdy stát nebude."
   },
   "viewer": {
+    "google_btn": "Pokračovat přes Google",
+    "google_or": "nebo",
+    "err_google": "Přihlášení přes Google se nezdařilo. Použijte svůj e-mail.",
     "intro_all": "Jedna platba otevře celý web: uvidíš, kdo tu je, ve všech kategoriích, s telefonními čísly a adresami, a můžeš kohokoli kontaktovat.",
     "pw_new_title": "Zvol si heslo",
     "pw_new_body": "Tvůj e-mail je potvrzený. Zvol si heslo a tohle se stane tvým účtem Rotabo: příště se prostě přihlásíš, z jakéhokoli zařízení, bez čekání na kód.",
@@ -523,6 +526,9 @@
   },
 
   "account_page": {
+    "google_btn": "Pokračovat přes Google",
+    "google_or": "nebo",
+    "google_error": "Přihlášení přes Google se nezdařilo. Použijte svůj e-mail.",
     "title": "Můj účet",
     "subtitle": "Přihlas se a uvidíš všechno, co jsi zveřejnil, z jakéhokoli zařízení.",
     "email_label": "E-mail",

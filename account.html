@@ -63,6 +63,23 @@
     font-weight:800;font-size:1rem;cursor:pointer;margin-top:4px;
   }
   .submit-btn:disabled{opacity:.6;cursor:default;}
+  /* White with a grey border and the four-colour G is the shape people
+     already recognise from every other sign-in. Dressing it in Rotabo
+     violet would only make them look twice at the one button that has to
+     be instantly obvious. */
+  .google-btn{
+    width:100%;padding:12px;border-radius:12px;border:1px solid #dadce0;
+    background:#fff;color:#3c4043;font-family:inherit;
+    font-weight:700;font-size:.98rem;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .google-btn:hover{background:#f7f8f8;}
+  .google-btn:disabled{opacity:.6;cursor:default;}
+  .auth-or{
+    display:flex;align-items:center;gap:10px;
+    margin:14px 0;color:#9a86a6;font-size:.85rem;
+  }
+  .auth-or::before,.auth-or::after{content:"";flex:1;height:1px;background:#eadcf2;}
   .switch-mode{
     text-align:center;margin-top:16px;font-size:.92rem;
   }
@@ -160,6 +177,18 @@
   var SUPABASE_URL = "https://caqfbpzwdgnwjoaedjrg.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // Google's own four-colour G, inline so the sign-in button never waits
+  // on a network fetch to draw, and so nothing has to load from Google's
+  // CDN. Same markup as the one in viewer.js -- if one changes, change
+  // both, or the two sign-in buttons stop looking like the same button.
+  var GOOGLE_G =
+    '<svg viewBox="0 0 48 48" width="19" height="19" aria-hidden="true">' +
+    '<path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.6-4.5 6.4l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.5 6.6-15z"/>' +
+    '<path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-.3.1-6.7 5.2-.1.3C8 40.8 15.4 46 24 46z"/>' +
+    '<path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.7-2.9-.7-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.5 9.9l7-5.5z"/>' +
+    '<path fill="#EB4335" d="M24 9.5c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 3.4 29.9 1 24 1 15.4 1 8 6.2 4.5 14.1l7 5.5C13.3 14.3 18.2 9.5 24 9.5z"/>' +
+    '</svg>';
   var CLAIM_URL = SUPABASE_URL + "/functions/v1/claim-listings";
 
   // Must stay in sync with browse.html's list -- "translator" was once
@@ -230,6 +259,11 @@
       '<div class="card">' +
       (message ? '<div class="auth-note"></div>' : '') +
       '<div class="auth-error hidden" id="authError"></div>' +
+      // Above the form, not below it: for anyone who has a Google account
+      // this is the whole page, and burying it under two fields and a
+      // submit button is how you make people fill in the fields anyway.
+      '<button type="button" class="google-btn" id="googleBtn">' + GOOGLE_G + '<span></span></button>' +
+      '<div class="auth-or"><span></span></div>' +
       '<form id="authForm" autocomplete="on">' +
         '<div class="field"><label id="emailLabel"></label>' +
         '<input type="email" id="authEmail" autocomplete="username" required></div>' +
@@ -247,12 +281,33 @@
     document.getElementById("authSubmitBtn").textContent = tr("login_btn");
     document.getElementById("switchModeBtn").textContent = tr("switch_to_signup");
     document.getElementById("forgotLink").textContent = tr("forgot_link");
+    document.querySelector("#googleBtn span").textContent = tr("google_btn");
+    content.querySelector(".auth-or span").textContent = tr("google_or");
 
     var form = document.getElementById("authForm");
     var emailInput = document.getElementById("authEmail");
     var passwordInput = document.getElementById("authPassword");
     var submitBtn = document.getElementById("authSubmitBtn");
     var errorBox = document.getElementById("authError");
+
+    // signInWithOAuth navigates the whole page away. Coming back here is
+    // enough on its own: the getSession() at the bottom of this file finds
+    // the session and draws the dashboard, so there is nothing to remember
+    // across the redirect the way browse.html has to.
+    document.getElementById("googleBtn").addEventListener("click", function(){
+      var gb = this;
+      gb.disabled = true;
+      errorBox.classList.add("hidden");
+      function failed(){
+        gb.disabled = false;
+        errorBox.textContent = tr("google_error");
+        errorBox.classList.remove("hidden");
+      }
+      sb.auth.signInWithOAuth({
+        provider: "google",
+        options: { redirectTo: location.origin + "/account.html" }
+      }).then(function(r){ if (r && r.error) failed(); }).catch(failed);
+    });
 
     document.getElementById("switchModeBtn").addEventListener("click", function(){
       loginMode = !loginMode;

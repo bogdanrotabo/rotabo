@@ -4,6 +4,9 @@
     "invite": "This place is held for an organisation that stands behind the idea. It costs nothing, and it never will."
   },
   "viewer": {
+    "google_btn": "Continue with Google",
+    "google_or": "or",
+    "err_google": "Google sign-in did not go through. Use your email instead.",
     "intro_all": "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone.",
     "pw_new_title": "Choose a password",
     "pw_new_body": "Your email is confirmed. Pick a password and this becomes your Rotabo account: next time you simply sign in, from any device, with no code to wait for.",
@@ -518,6 +521,9 @@
     "time_hour_ago_other": "{n} hours ago"
   },
   "account_page": {
+    "google_btn": "Continue with Google",
+    "google_or": "or",
+    "google_error": "Google sign-in did not go through. Use your email instead.",
     "title": "My account",
     "subtitle": "Log in to see everything you've listed, from any device.",
     "email_label": "Email",

@@ -4,6 +4,9 @@
     "invite": "See koht on hoitud organisatsioonile, kes seisab selle mõtte taga. See ei maksa midagi ega hakka kunagi maksma."
   },
   "viewer": {
+    "google_btn": "Jätka Google'iga",
+    "google_or": "või",
+    "err_google": "Google'iga sisselogimine ebaõnnestus. Kasutage oma e-posti aadressi.",
     "intro_all": "Üks makse avab kogu saidi: näed, kes siin on, kõigis kategooriates, koos telefoninumbrite ja aadressidega, ja saad kellega tahes ühendust võtta.",
     "pw_new_title": "Vali parool",
     "pw_new_body": "Sinu e-post on kinnitatud. Vali parool ja sellest saab sinu Rotabo konto: järgmisel korral lihtsalt logid sisse, mis tahes seadmest, ilma koodi ootamata.",
@@ -505,6 +508,9 @@
     "time_hour_ago_other": "{n} tundi tagasi"
   },
   "account_page": {
+    "google_btn": "Jätka Google'iga",
+    "google_or": "või",
+    "google_error": "Google'iga sisselogimine ebaõnnestus. Kasutage oma e-posti aadressi.",
     "title": "Minu konto",
     "subtitle": "Logi sisse, et näha kõiki oma kuulutusi mis tahes seadmest.",
     "email_label": "E-post",

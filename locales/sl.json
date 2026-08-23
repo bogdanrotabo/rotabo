@@ -4,6 +4,9 @@
     "invite": "To mesto je namenjeno organizaciji, ki stoji za to zamislijo. Ne stane nič in nikoli ne bo."
   },
   "viewer": {
+    "google_btn": "Nadaljuj z Googlom",
+    "google_or": "ali",
+    "err_google": "Prijava z Googlom ni uspela. Uporabite svoj e-naslov.",
     "intro_all": "Eno samo plačilo odpre celotno stran: vidiš, kdo je tu, v vseh kategorijah, s telefonskimi številkami in naslovi, in lahko kogar koli kontaktiraš.",
     "pw_new_title": "Izberi geslo",
     "pw_new_body": "Tvoj e-naslov je potrjen. Izberi geslo in to postane tvoj račun Rotabo: naslednjič se preprosto prijaviš, s katere koli naprave, brez čakanja na kodo.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "pred {n} urami"
   },
   "account_page": {
+    "google_btn": "Nadaljuj z Googlom",
+    "google_or": "ali",
+    "google_error": "Prijava z Googlom ni uspela. Uporabite svoj e-naslov.",
     "title": "Moj račun",
     "subtitle": "Prijavi se in si oglej vse, kar si objavil — s katere koli naprave.",
     "email_label": "E-pošta",

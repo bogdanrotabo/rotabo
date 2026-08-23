@@ -122,10 +122,19 @@
   }
   .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);}
   .brand svg{width:26px;height:34px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
-  nav.links{display:flex;flex-wrap:wrap;}
-  nav.links a{color:#5c4d68;text-decoration:none;font-size:1.02rem;margin-right:32px;margin-bottom:8px;}
-  nav.links a:last-child{margin-right:0;}
-  nav.links a:hover{color:var(--violet-1);}
+  /* Boxed rather than bare text: three links in a row read as decoration
+     until they have an edge, and "My account" is where a returning
+     visitor goes. Spacing is gap now instead of margin-right, which is
+     also why the two html[dir="rtl"] nav rules are gone -- they existed
+     only to mirror that margin by hand, and gap needs no mirroring. */
+  nav.links{display:flex;flex-wrap:wrap;gap:10px;}
+  nav.links a{
+    color:var(--violet-1);text-decoration:none;
+    font-size:1.02rem;font-weight:700;
+    border:1px solid var(--border);border-radius:10px;
+    padding:9px 16px;
+  }
+  nav.links a:hover{background:#faf4fd;border-color:var(--violet-2);}
 
   .hero{
     text-align:center;
@@ -509,7 +518,7 @@
   @media (max-width:640px){
     .tagline{font-size:2rem;}
     .steps,.cards-2col,.category-grid{grid-template-columns:1fr;}
-    nav.links a{font-size:.95rem;margin-right:20px;}
+    nav.links a{font-size:.95rem;padding:8px 12px;}
   }
 
   /* Language selector */
@@ -570,8 +579,6 @@
   html[dir="rtl"] .lang-panel-close{margin:0 auto 8px 0;}
 
   /* RTL support */
-  html[dir="rtl"] nav.links a{margin-right:0;margin-left:32px;}
-  html[dir="rtl"] nav.links a:last-child{margin-left:0;}
   html[dir="rtl"] .badges span .dot{margin-right:0;margin-left:8px;}
   html[dir="rtl"] .check-list p{padding-left:0;padding-right:32px;}
   html[dir="rtl"] .check-list p::before{left:auto;right:0;}

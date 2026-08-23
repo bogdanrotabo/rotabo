@@ -4,6 +4,9 @@
     "invite": "Bu yer, bu fikrin arkasında duran bir kuruluş için ayrıldı. Hiçbir ücreti yok ve hiçbir zaman olmayacak."
   },
   "viewer": {
+    "google_btn": "Google ile devam et",
+    "google_or": "veya",
+    "err_google": "Google ile giriş yapılamadı. Bunun yerine e-postanızı kullanın.",
     "intro_all": "Tek bir ödeme tüm siteyi açar: burada kimin olduğunu görürsün, her kategoride, telefon numaraları ve adresleriyle, ve istediğin kişiye ulaşırsın.",
     "pw_new_title": "Bir şifre seç",
     "pw_new_body": "E-postan doğrulandı. Bir şifre seç, bu senin Rotabo hesabın olsun: bir dahaki sefere kod beklemeden, hangi cihazdan olursa olsun doğrudan giriş yaparsın.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} saat önce"
   },
   "account_page": {
+    "google_btn": "Google ile devam et",
+    "google_or": "veya",
+    "google_error": "Google ile giriş yapılamadı. Bunun yerine e-postanızı kullanın.",
     "title": "Hesabım",
     "subtitle": "Eklediğin her şeyi herhangi bir cihazdan görmek için giriş yap.",
     "email_label": "E-posta",

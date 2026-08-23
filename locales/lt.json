@@ -4,6 +4,9 @@
     "invite": "Ši vieta skirta organizacijai, kuri palaiko šią idėją. Tai nieko nekainuoja ir niekada nekainuos."
   },
   "viewer": {
+    "google_btn": "Tęsti su Google",
+    "google_or": "arba",
+    "err_google": "Prisijungti su Google nepavyko. Naudokite savo el. paštą.",
     "intro_all": "Vienas mokėjimas atveria visą svetainę: matote, kas čia yra, visose kategorijose, su telefono numeriais ir adresais, ir galite susisiekti su bet kuo.",
     "pw_new_title": "Pasirinkite slaptažodį",
     "pw_new_body": "Jūsų el. paštas patvirtintas. Pasirinkite slaptažodį ir tai taps jūsų Rotabo paskyra: kitą kartą tiesiog prisijungiate, iš bet kurio įrenginio, nelaukdami jokio kodo.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "prieš {n} val."
   },
   "account_page": {
+    "google_btn": "Tęsti su Google",
+    "google_or": "arba",
+    "google_error": "Prisijungti su Google nepavyko. Naudokite savo el. paštą.",
     "title": "Mano paskyra",
     "subtitle": "Prisijunk, kad matytum viską, ką paskelbei — iš bet kurio įrenginio.",
     "email_label": "El. paštas",

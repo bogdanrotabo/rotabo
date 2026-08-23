@@ -4,6 +4,9 @@
     "invite": "这个位置留给认同这个想法的机构。不收取任何费用，将来也不会。"
   },
   "viewer": {
+    "google_btn": "使用 Google 继续",
+    "google_or": "或",
+    "err_google": "Google 登录未成功。请改用你的邮箱。",
     "intro_all": "一次付款打开整个网站：看到每个分类里都有谁，附电话和地址，可以联系任何人。",
     "pw_new_title": "设置密码",
     "pw_new_body": "邮箱已确认。设置一个密码，这就成为你的 Rotabo 账户：下次直接登录，任何设备都行，不用再等验证码。",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} 小时前"
   },
   "account_page": {
+    "google_btn": "使用 Google 继续",
+    "google_or": "或",
+    "google_error": "Google 登录未成功。请改用你的邮箱。",
     "title": "我的账户",
     "subtitle": "登录后可在任何设备上查看你发布的所有信息。",
     "email_label": "电子邮箱",

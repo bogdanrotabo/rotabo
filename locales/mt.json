@@ -4,6 +4,9 @@
     "invite": "Dan il-post huwa merfugħ għal organizzazzjoni li temmen f'din l-idea. Ma jiswa xejn, u qatt mhu se jiswa."
   },
   "viewer": {
+    "google_btn": "Kompli b'Google",
+    "google_or": "jew",
+    "err_google": "L-illoggjar b'Google ma rnexxiex. Uża l-email tiegħek minflok.",
     "intro_all": "Ħlas wieħed jiftaħ is-sit kollu: tara min hemm hawn, f'kull kategorija, bin-numri tat-telefon u l-indirizzi tagħhom, u tikkuntattja lil min trid.",
     "pw_new_title": "Agħżel password",
     "pw_new_body": "L-email tiegħek ġiet ikkonfermata. Agħżel password u dan isir il-kont Rotabo tiegħek: id-darba li jmiss tidħol direttament, minn kwalunkwe apparat, mingħajr ma tistenna kodiċi.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} sigħat ilu"
   },
   "account_page": {
+    "google_btn": "Kompli b'Google",
+    "google_or": "jew",
+    "google_error": "L-illoggjar b'Google ma rnexxiex. Uża l-email tiegħek minflok.",
     "title": "Il-kont tiegħi",
     "subtitle": "Idħol biex tara dak kollu li elenkajt, minn kwalunkwe apparat.",
     "email_label": "Email",

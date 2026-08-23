@@ -4,6 +4,9 @@
     "invite": "Vị trí này dành cho một tổ chức đồng hành cùng ý tưởng này. Hoàn toàn miễn phí, và sẽ luôn như vậy."
   },
   "viewer": {
+    "google_btn": "Tiếp tục với Google",
+    "google_or": "hoặc",
+    "err_google": "Đăng nhập bằng Google không thành công. Hãy dùng email của bạn.",
     "intro_all": "Một lần thanh toán mở toàn bộ trang: bạn thấy ai đang ở đây, trong mọi hạng mục, kèm số điện thoại và địa chỉ, và liên hệ với bất kỳ ai.",
     "pw_new_title": "Chọn mật khẩu",
     "pw_new_body": "Email của bạn đã được xác nhận. Chọn mật khẩu và đây trở thành tài khoản Rotabo của bạn: lần sau bạn chỉ cần đăng nhập, từ bất kỳ thiết bị nào, không phải chờ mã.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} giờ trước"
   },
   "account_page": {
+    "google_btn": "Tiếp tục với Google",
+    "google_or": "hoặc",
+    "google_error": "Đăng nhập bằng Google không thành công. Hãy dùng email của bạn.",
     "title": "Tài khoản của tôi",
     "subtitle": "Đăng nhập để xem mọi tin bạn đã đăng, từ bất kỳ thiết bị nào.",
     "email_label": "Email",

@@ -4,6 +4,9 @@
     "invite": "Den här platsen är reserverad för en organisation som står bakom idén. Den kostar ingenting, och kommer aldrig att göra det."
   },
   "viewer": {
+    "google_btn": "Fortsätt med Google",
+    "google_or": "eller",
+    "err_google": "Google-inloggningen gick inte igenom. Använd din e-post i stället.",
     "intro_all": "En enda betalning öppnar hela sajten: du ser vem som är här, i alla kategorier, med telefonnummer och adresser, och kan kontakta vem som helst.",
     "pw_new_title": "Välj ett lösenord",
     "pw_new_body": "Din e-post är bekräftad. Välj ett lösenord så blir det här ditt Rotabo-konto: nästa gång loggar du bara in, från vilken enhet som helst, utan att vänta på någon kod.",
@@ -494,6 +497,9 @@
     "time_hour_ago_other": "{n} timmar sedan"
   },
   "account_page": {
+    "google_btn": "Fortsätt med Google",
+    "google_or": "eller",
+    "google_error": "Google-inloggningen gick inte igenom. Använd din e-post i stället.",
     "title": "Mitt konto",
     "subtitle": "Logga in för att se allt du har lagt upp, från vilken enhet som helst.",
     "email_label": "E-post",
