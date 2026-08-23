@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Viens maksājums atver visu vietni: redzi, kas šeit ir, visās kategorijās, ar tālruņa numuriem un adresēm, un vari sazināties ar jebkuru.",
+    "pw_new_title": "Izvēlies paroli",
+    "pw_new_body": "Tavs e-pasts ir apstiprināts. Izvēlies paroli, un šis kļūst par tavu Rotabo kontu: nākamreiz vienkārši pieslēdzies, no jebkuras ierīces, negaidot nekādu kodu.",
+    "pw_have_title": "Ievadi savu paroli",
+    "pw_have_body": "Šim e-pastam jau ir Rotabo konts. Pieslēdzies, un viss atbloķētais nāk tev līdzi.",
+    "pw_placeholder": "Parole (vismaz 8 rakstzīmes)",
+    "pw_btn": "Tālāk",
+    "err_pw_short": "Izmanto vismaz 8 rakstzīmes.",
+    "err_pw_wrong": "Šī parole neatbilst šim e-pastam.",
+    "forgot_pw": "Aizmirsi paroli?",
     "need_listing_title": "Vispirms ierakstiet arī sevi — tas ir bez maksas",
     "need_listing_body": "Rotabo parāda, kas šeit ir, tiklīdz arī jūs esat šeit. Savs sludinājums neko nemaksā un aizņem minūti: pasakiet, kas jums vajadzīgs vai ko protat. Tad atgriezieties un atveriet visu sarakstu.",
     "need_listing_btn": "Pievienot manu bezmaksas sludinājumu",

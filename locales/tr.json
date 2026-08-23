@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Tek bir ödeme tüm siteyi açar: burada kimin olduğunu görürsün, her kategoride, telefon numaraları ve adresleriyle, ve istediğin kişiye ulaşırsın.",
+    "pw_new_title": "Bir şifre seç",
+    "pw_new_body": "E-postan doğrulandı. Bir şifre seç, bu senin Rotabo hesabın olsun: bir dahaki sefere kod beklemeden, hangi cihazdan olursa olsun doğrudan giriş yaparsın.",
+    "pw_have_title": "Şifreni gir",
+    "pw_have_body": "Bu e-postanın zaten bir Rotabo hesabı var. Giriş yap, açtığın her şey seninle gelir.",
+    "pw_placeholder": "Şifre (en az 8 karakter)",
+    "pw_btn": "Devam",
+    "err_pw_short": "En az 8 karakter kullan.",
+    "err_pw_wrong": "Bu şifre bu e-postayla eşleşmiyor.",
+    "forgot_pw": "Şifreni mi unuttun?",
     "need_listing_title": "Önce kendinizi de listeye yazın — ücretsiz",
     "need_listing_body": "Rotabo, siz de burada olduğunuzda kimlerin burada olduğunu gösterir. Kendi ilanınız hiçbir şeye mal olmaz ve bir dakika sürer: neye ihtiyacınız olduğunu ya da ne yapabildiğinizi yazın. Sonra dönün ve listenin tamamını açın.",
     "need_listing_btn": "Ücretsiz ilanımı ekle",

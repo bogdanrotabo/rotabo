@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Yksi maksu avaa koko sivuston: näet, keitä täällä on, kaikissa kategorioissa, puhelinnumeroineen ja osoitteineen, ja voit ottaa yhteyttä kehen tahansa.",
+    "pw_new_title": "Valitse salasana",
+    "pw_new_body": "Sähköpostisi on vahvistettu. Valitse salasana, niin tästä tulee Rotabo-tilisi: ensi kerralla kirjaudut vain sisään, millä tahansa laitteella, ilman koodin odottamista.",
+    "pw_have_title": "Kirjoita salasanasi",
+    "pw_have_body": "Tällä sähköpostilla on jo Rotabo-tili. Kirjaudu sisään, niin kaikki avaamasi tulee mukanasi.",
+    "pw_placeholder": "Salasana (vähintään 8 merkkiä)",
+    "pw_btn": "Jatka",
+    "err_pw_short": "Käytä vähintään 8 merkkiä.",
+    "err_pw_wrong": "Tämä salasana ei täsmää tähän sähköpostiin.",
+    "forgot_pw": "Unohtuiko salasana?",
     "need_listing_title": "Lisää ensin itsesi listalle — se on ilmaista",
     "need_listing_body": "Rotabo näyttää, keitä täällä on, kun olet itsekin täällä. Oma ilmoitus ei maksa mitään ja vie minuutin: kerro, mitä tarvitset tai mitä osaat. Palaa sitten ja avaa koko lista.",
     "need_listing_btn": "Lisää ilmainen ilmoitukseni",

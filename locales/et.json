@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Üks makse avab kogu saidi: näed, kes siin on, kõigis kategooriates, koos telefoninumbrite ja aadressidega, ja saad kellega tahes ühendust võtta.",
+    "pw_new_title": "Vali parool",
+    "pw_new_body": "Sinu e-post on kinnitatud. Vali parool ja sellest saab sinu Rotabo konto: järgmisel korral lihtsalt logid sisse, mis tahes seadmest, ilma koodi ootamata.",
+    "pw_have_title": "Sisesta oma parool",
+    "pw_have_body": "Sellel e-postil on juba Rotabo konto. Logi sisse ja kõik avatu tuleb sinuga kaasa.",
+    "pw_placeholder": "Parool (vähemalt 8 märki)",
+    "pw_btn": "Edasi",
+    "err_pw_short": "Kasuta vähemalt 8 märki.",
+    "err_pw_wrong": "See parool ei sobi selle e-postiga.",
+    "forgot_pw": "Unustasid parooli?",
     "need_listing_title": "Pane esmalt end kirja — see on tasuta",
     "need_listing_body": "Rotabo näitab, kes siin on, kui ka sina oled siin. Oma kuulutus ei maksa midagi ja võtab minuti: ütle, mida vajad või mida oskad. Siis tule tagasi ja ava kogu nimekiri.",
     "need_listing_btn": "Lisa minu tasuta kuulutus",

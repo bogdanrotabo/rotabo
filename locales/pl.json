@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Jedna płatność otwiera całą stronę: widzisz, kto tu jest, we wszystkich kategoriach, z numerami telefonów i adresami, i możesz skontaktować się z każdym.",
+    "pw_new_title": "Wybierz hasło",
+    "pw_new_body": "Twój e-mail jest potwierdzony. Wybierz hasło i to staje się twoim kontem Rotabo: następnym razem po prostu się logujesz, z dowolnego urządzenia, bez czekania na kod.",
+    "pw_have_title": "Wpisz swoje hasło",
+    "pw_have_body": "Ten e-mail ma już konto w Rotabo. Zaloguj się, a wszystko, co masz odblokowane, idzie z tobą.",
+    "pw_placeholder": "Hasło (co najmniej 8 znaków)",
+    "pw_btn": "Dalej",
+    "err_pw_short": "Użyj co najmniej 8 znaków.",
+    "err_pw_wrong": "To hasło nie pasuje do tego adresu e-mail.",
+    "forgot_pw": "Nie pamiętasz hasła?",
     "need_listing_title": "Najpierw wpisz się i ty — to nic nie kosztuje",
     "need_listing_body": "Rotabo pokazuje, kto tu jest, gdy ty też tu jesteś. Własne ogłoszenie nic nie kosztuje i zajmuje minutę: napisz, czego potrzebujesz albo co potrafisz. Potem wróć i odblokuj całą listę.",
     "need_listing_btn": "Dodaj moje bezpłatne ogłoszenie",

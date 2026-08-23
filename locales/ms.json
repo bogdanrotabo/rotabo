@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Satu bayaran membuka seluruh laman: anda lihat siapa yang ada di sini, dalam semua kategori, dengan nombor telefon dan alamat, dan boleh menghubungi sesiapa sahaja.",
+    "pw_new_title": "Pilih kata laluan",
+    "pw_new_body": "E-mel anda telah disahkan. Pilih kata laluan dan ini menjadi akaun Rotabo anda: kali seterusnya anda hanya log masuk, dari mana-mana peranti, tanpa menunggu kod.",
+    "pw_have_title": "Masukkan kata laluan anda",
+    "pw_have_body": "E-mel ini sudah mempunyai akaun Rotabo. Log masuk dan semua yang telah anda buka ikut bersama anda.",
+    "pw_placeholder": "Kata laluan (sekurang-kurangnya 8 aksara)",
+    "pw_btn": "Teruskan",
+    "err_pw_short": "Sila guna sekurang-kurangnya 8 aksara.",
+    "err_pw_wrong": "Kata laluan itu tidak sepadan dengan e-mel ini.",
+    "forgot_pw": "Lupa kata laluan?",
     "need_listing_title": "Daftarkan diri anda dahulu — ia percuma",
     "need_listing_body": "Rotabo menunjukkan siapa yang ada di sini sebaik sahaja anda juga ada di sini. Iklan anda sendiri tidak dikenakan bayaran dan mengambil masa seminit: nyatakan apa yang anda perlukan, atau apa yang anda boleh lakukan. Kemudian kembali dan buka senarai penuh.",
     "need_listing_btn": "Tambah iklan percuma saya",

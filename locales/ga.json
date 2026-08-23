@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Osclaíonn íocaíocht amháin an suíomh ar fad: feiceann tú cé atá anseo, i ngach catagóir, lena n-uimhreacha gutháin agus a seoltaí, agus is féidir leat teagmháil a dhéanamh le duine ar bith.",
+    "pw_new_title": "Roghnaigh pasfhocal",
+    "pw_new_body": "Tá do ríomhphost deimhnithe. Roghnaigh pasfhocal agus is é seo do chuntas Rotabo: an chéad uair eile logálann tú isteach díreach, ó aon ghléas, gan fanacht le cód.",
+    "pw_have_title": "Cuir isteach do phasfhocal",
+    "pw_have_body": "Tá cuntas Rotabo ag an ríomhphost seo cheana féin. Logáil isteach agus tagann gach rud a d'oscail tú leat.",
+    "pw_placeholder": "Pasfhocal (8 gcarachtar ar a laghad)",
+    "pw_btn": "Ar aghaidh",
+    "err_pw_short": "Bain úsáid as 8 gcarachtar ar a laghad.",
+    "err_pw_wrong": "Ní oireann an pasfhocal sin don ríomhphost seo.",
+    "forgot_pw": "Pasfhocal dearmadta?",
     "need_listing_title": "Cuir tú féin ar an liosta ar dtús — tá sé saor in aisce",
     "need_listing_body": "Taispeánann Rotabo duit cé atá anseo chomh luath is atá tú féin anseo. Ní chosnaíonn d'fhógra féin faic agus ní thógann sé ach nóiméad: abair cad atá uait, nó cad is féidir leat a dhéanamh. Tar ar ais ansin agus oscail an liosta iomlán.",
     "need_listing_btn": "Cuir m'fhógra saor in aisce leis",

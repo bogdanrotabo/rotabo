@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "En enkelt betaling åbner hele sitet: du ser, hvem der er her, i alle kategorier, med telefonnumre og adresser, og kan kontakte hvem som helst.",
+    "pw_new_title": "Vælg en adgangskode",
+    "pw_new_body": "Din e-mail er bekræftet. Vælg en adgangskode, så bliver det her din Rotabo-konto: næste gang logger du bare ind, fra en hvilken som helst enhed, uden at vente på en kode.",
+    "pw_have_title": "Skriv din adgangskode",
+    "pw_have_body": "Denne e-mail har allerede en Rotabo-konto. Log ind, så følger alt det, du har låst op, med dig.",
+    "pw_placeholder": "Adgangskode (mindst 8 tegn)",
+    "pw_btn": "Fortsæt",
+    "err_pw_short": "Brug mindst 8 tegn.",
+    "err_pw_wrong": "Den adgangskode passer ikke til denne e-mail.",
+    "forgot_pw": "Glemt adgangskode?",
     "need_listing_title": "Skriv dig på listen først — det er gratis",
     "need_listing_body": "Rotabo viser dig, hvem der er her, når du selv er her. Din egen annonce koster ingenting og tager et minut: skriv, hvad du har brug for, eller hvad du kan. Kom så tilbage og lås hele listen op.",
     "need_listing_btn": "Tilføj min gratis annonce",

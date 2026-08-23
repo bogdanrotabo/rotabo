@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Eén betaling opent de hele site: zie wie hier is, in elke categorie, met hun telefoonnummers en adressen, en neem contact op met wie je wilt.",
+    "pw_new_title": "Kies een wachtwoord",
+    "pw_new_body": "Je e-mailadres is bevestigd. Kies een wachtwoord en dit wordt je Rotabo-account: de volgende keer log je gewoon in, op elk apparaat, zonder op een code te wachten.",
+    "pw_have_title": "Voer je wachtwoord in",
+    "pw_have_body": "Dit e-mailadres heeft al een Rotabo-account. Log in en alles wat je hebt vrijgeschakeld gaat met je mee.",
+    "pw_placeholder": "Wachtwoord (minstens 8 tekens)",
+    "pw_btn": "Doorgaan",
+    "err_pw_short": "Gebruik minstens 8 tekens.",
+    "err_pw_wrong": "Dat wachtwoord hoort niet bij dit e-mailadres.",
+    "forgot_pw": "Wachtwoord vergeten?",
     "need_listing_title": "Zet eerst jezelf op de lijst — het is gratis",
     "need_listing_body": "Rotabo laat je zien wie hier is zodra je er zelf ook bent. Je eigen advertentie kost niets en duurt een minuut: zeg wat je nodig hebt, of wat je kunt. Kom daarna terug en ontgrendel de hele lijst.",
     "need_listing_btn": "Mijn gratis advertentie toevoegen",

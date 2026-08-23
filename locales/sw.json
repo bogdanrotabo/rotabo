@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Malipo moja hufungua tovuti nzima: unaona nani yupo hapa, katika kila kategoria, pamoja na namba za simu na anwani, na unaweza kuwasiliana na yeyote.",
+    "pw_new_title": "Chagua nenosiri",
+    "pw_new_body": "Barua pepe yako imethibitishwa. Chagua nenosiri na hii inakuwa akaunti yako ya Rotabo: mara ijayo unaingia moja kwa moja, kutoka kifaa chochote, bila kusubiri msimbo.",
+    "pw_have_title": "Weka nenosiri lako",
+    "pw_have_body": "Barua pepe hii tayari ina akaunti ya Rotabo. Ingia na kila kitu ulichofungua kinakuja nawe.",
+    "pw_placeholder": "Nenosiri (angalau herufi 8)",
+    "pw_btn": "Endelea",
+    "err_pw_short": "Tafadhali tumia angalau herufi 8.",
+    "err_pw_wrong": "Nenosiri hilo halilingani na barua pepe hii.",
+    "forgot_pw": "Umesahau nenosiri?",
     "need_listing_title": "Kwanza jiandikishe wewe pia — ni bure",
     "need_listing_body": "Rotabo inakuonyesha nani yuko hapa pale wewe pia unapokuwa hapa. Tangazo lako mwenyewe haligharimu chochote na linachukua dakika moja: sema unachohitaji, au unachoweza kufanya. Kisha rudi na ufungue orodha nzima.",
     "need_listing_btn": "Ongeza tangazo langu la bure",

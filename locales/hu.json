@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Egyetlen fizetés megnyitja az egész oldalt: látod, ki van itt, minden kategóriában, telefonszámmal és címmel, és bárkivel kapcsolatba léphetsz.",
+    "pw_new_title": "Válassz jelszót",
+    "pw_new_body": "Az e-mailed megerősítve. Válassz egy jelszót, és ez lesz a Rotabo-fiókod: legközelebb egyszerűen belépsz, bármelyik eszközről, kód nélkül.",
+    "pw_have_title": "Írd be a jelszavad",
+    "pw_have_body": "Ehhez az e-mailhez már tartozik Rotabo-fiók. Lépj be, és minden feloldott veled marad.",
+    "pw_placeholder": "Jelszó (legalább 8 karakter)",
+    "pw_btn": "Tovább",
+    "err_pw_short": "Használj legalább 8 karaktert.",
+    "err_pw_wrong": "Ez a jelszó nem ehhez az e-mailhez tartozik.",
+    "forgot_pw": "Elfelejtetted a jelszavad?",
     "need_listing_title": "Először írja fel magát is — ingyenes",
     "need_listing_body": "A Rotabo akkor mutatja meg, ki van itt, ha ön is itt van. A saját hirdetés semmibe sem kerül, és egy percet vesz igénybe: mondja el, mire van szüksége, vagy mihez ért. Utána térjen vissza, és nyissa meg a teljes listát.",
     "need_listing_btn": "Ingyenes hirdetésem hozzáadása",

@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Ħlas wieħed jiftaħ is-sit kollu: tara min hemm hawn, f'kull kategorija, bin-numri tat-telefon u l-indirizzi tagħhom, u tikkuntattja lil min trid.",
+    "pw_new_title": "Agħżel password",
+    "pw_new_body": "L-email tiegħek ġiet ikkonfermata. Agħżel password u dan isir il-kont Rotabo tiegħek: id-darba li jmiss tidħol direttament, minn kwalunkwe apparat, mingħajr ma tistenna kodiċi.",
+    "pw_have_title": "Daħħal il-password tiegħek",
+    "pw_have_body": "Din l-email diġà għandha kont Rotabo. Idħol u kulma ftaħt jiġi miegħek.",
+    "pw_placeholder": "Password (mill-inqas 8 karattri)",
+    "pw_btn": "Kompli",
+    "err_pw_short": "Uża mill-inqas 8 karattri.",
+    "err_pw_wrong": "Dik il-password ma taqbilx ma' din l-email.",
+    "forgot_pw": "Insejt il-password?",
     "need_listing_title": "L-ewwel niżżel lilek innifsek — huwa bla ħlas",
     "need_listing_body": "Rotabo jurik min hu hawn ladarba tkun hawn int ukoll. L-avviż tiegħek ma jiswa xejn u jieħu minuta: għid x'għandek bżonn, jew x'taf tagħmel. Imbagħad erġa' lura u iftaħ il-lista sħiħa.",
     "need_listing_btn": "Żid l-avviż bla ħlas tiegħi",

@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Un solo pago abre todo el sitio: mira quién está aquí, en todas las categorías, con sus números de teléfono y sus direcciones, y contacta con quien quieras.",
+    "pw_new_title": "Elige una contraseña",
+    "pw_new_body": "Tu correo está confirmado. Elige una contraseña y esto se convierte en tu cuenta de Rotabo: la próxima vez entras directamente, desde cualquier dispositivo, sin esperar ningún código.",
+    "pw_have_title": "Escribe tu contraseña",
+    "pw_have_body": "Este correo ya tiene una cuenta de Rotabo. Inicia sesión y todo lo que has desbloqueado va contigo.",
+    "pw_placeholder": "Contraseña (al menos 8 caracteres)",
+    "pw_btn": "Continuar",
+    "err_pw_short": "Usa al menos 8 caracteres.",
+    "err_pw_wrong": "Esa contraseña no coincide con este correo.",
+    "forgot_pw": "¿Olvidaste tu contraseña?",
     "need_listing_title": "Primero apúntate tú — es gratis",
     "need_listing_body": "Rotabo te muestra quién está aquí en cuanto tú también estás. Publicar tu propio anuncio no cuesta nada y lleva un minuto: di qué necesitas o qué sabes hacer. Luego vuelve y desbloquea la lista completa.",
     "need_listing_btn": "Añadir mi anuncio gratis",

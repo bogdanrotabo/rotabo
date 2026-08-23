@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "一次付款打开整个网站：看到每个分类里都有谁，附电话和地址，可以联系任何人。",
+    "pw_new_title": "设置密码",
+    "pw_new_body": "邮箱已确认。设置一个密码，这就成为你的 Rotabo 账户：下次直接登录，任何设备都行，不用再等验证码。",
+    "pw_have_title": "输入你的密码",
+    "pw_have_body": "这个邮箱已经有 Rotabo 账户了。登录后，你解锁的一切都跟着你走。",
+    "pw_placeholder": "密码（至少 8 个字符）",
+    "pw_btn": "继续",
+    "err_pw_short": "请至少使用 8 个字符。",
+    "err_pw_wrong": "这个密码与该邮箱不匹配。",
+    "forgot_pw": "忘记密码？",
     "need_listing_title": "请先把自己也登记上——免费",
     "need_listing_body": "当您也在这里时，Rotabo 才会向您显示这里有谁。登记自己的信息不花钱，只需一分钟：说明您需要什么，或者您能做什么。然后回来解锁完整名单。",
     "need_listing_btn": "免费添加我的信息",

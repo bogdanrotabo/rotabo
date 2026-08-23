@@ -121,7 +121,12 @@
   }
   var STR = {
     title: ["title", "Unlock full access"],
-    intro: ["intro", "One small payment opens this category: see who is here, with their phone numbers and addresses, and contact anyone."],
+    // Cheie noua, nu textul vechi tradus: din 23 august cei 2 franci
+    // deschid tot site-ul, nu categoria rasfoita. Cele 38 de locale au
+    // inca traducerea veche, care spune "aceasta categorie" -- daca as fi
+    // pastrat cheia, fiecare neenglez ar fi citit o minciuna despre ce
+    // cumpara. Asa citeste englezeste pana traduc, ceea ce e mai putin rau.
+    intro: ["intro_all", "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone."],
     email_ph: ["email_placeholder", "your@email.com"],
     send: ["send_btn", "Send code"],
     code_ph: ["code_placeholder", "6-digit code"],
@@ -150,7 +155,21 @@
     err_generic: ["err_generic", "Something went wrong. Please try again."],
     gone: ["listing_gone", "This listing is no longer available."],
     confirming: ["confirming", "Confirming your payment…"],
-    retry: ["retry_btn", "Try again"]
+    retry: ["retry_btn", "Try again"],
+    // Since 2026-08-23 the emailed code no longer ends in a 29-minute
+    // token and nothing else: it ends in an account. Someone who paid was
+    // never a user before -- just a row keyed by email, good only in the
+    // browser they paid from. That is how thousands of sessions had
+    // produced eight people.
+    pw_new_title: ["pw_new_title", "Choose a password"],
+    pw_new_body: ["pw_new_body", "Your email is confirmed. Pick a password and this becomes your Rotabo account: next time you simply sign in, from any device, with no code to wait for."],
+    pw_have_title: ["pw_have_title", "Enter your password"],
+    pw_have_body: ["pw_have_body", "This email already has a Rotabo account. Sign in and everything you have unlocked comes with you."],
+    pw_ph: ["pw_placeholder", "Password (at least 8 characters)"],
+    pw_btn: ["pw_btn", "Continue"],
+    err_pw_short: ["err_pw_short", "Please use at least 8 characters."],
+    err_pw_wrong: ["err_pw_wrong", "That password does not match this email."],
+    forgot: ["forgot_pw", "Forgotten your password?"]
   };
   function t(k, vars) { var s = STR[k]; return T(s[0], s[1], vars); }
 
@@ -201,7 +220,23 @@
     activeCategory = category || null;
     overlay.classList.add("open");
     var tok = getCredential();
-    if (tok) stepAccessCheck(tok); else stepEmail();
+    if (tok) { stepAccessCheck(tok); return; }
+    // Logat, dar fara credential in browserul asta. Asta e tot rostul
+    // contului: sesiunea se preschimba in token de vizionare fara sa mai
+    // treaca prin email. Inainte, al doilea telefon cerea iar un cod
+    // desi omul platise, si de acolo multi renuntau.
+    box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>…</p>';
+    sb.auth.getSession().then(function (res) {
+      var session = res && res.data && res.data.session;
+      var email = session && session.user && session.user.email;
+      if (!session || !email) { stepEmail(); return; }
+      sb.rpc("viewer_token_for_session").then(function (r) {
+        if (r && !r.error && r.data) {
+          storeToken(email, r.data);
+          stepAccessCheck({ token: r.data, email: email });
+        } else stepEmail(email);
+      }).catch(function () { stepEmail(email); });
+    }).catch(function () { stepEmail(); });
   }
   function close() { if (overlay) overlay.classList.remove("open"); }
 
@@ -251,8 +286,44 @@
         btn.disabled = false;
         if (!r.ok || !r.json || !r.json.token) { showErr(t("err_code")); return; }
         storeToken(email, r.json.token);
-        stepAccessCheck({ token: r.json.token, email: email });
+        stepPassword({ token: r.json.token, email: email }, r.json.has_account === true);
       }).catch(function () { btn.disabled = false; showErr(t("err_code")); });
+    });
+  }
+  // Intre codul pe email si verificarea accesului: aici o adresa
+  // verificata devine cont. Nimic din ce vede omul azi nu se schimba --
+  // accesul platit si anunturile sunt legate de email, nu de user id.
+  // Se schimba ce i se intampla pe al doilea telefon, unde inainte o lua
+  // de la zero, cu un cod nou, desi platise.
+  function stepPassword(tok, hasAccount) {
+    var isNew = !hasAccount;
+    box.innerHTML =
+      '<h3>' + esc(t(isNew ? "pw_new_title" : "pw_have_title")) + '</h3>' +
+      '<p>' + esc(t(isNew ? "pw_new_body" : "pw_have_body")) + '</p>' +
+      '<p class="rv-err" id="rvErr"></p>' +
+      '<input type="password" id="rvPw" autocomplete="' + (isNew ? "new-password" : "current-password") + '" placeholder="' + esc(t("pw_ph")) + '">' +
+      '<button class="rv-btn solid" id="rvPwGo">' + esc(t("pw_btn")) + '</button>' +
+      (isNew ? "" : '<p style="text-align:center;margin:0;"><a href="/account.html" style="color:#9b3fc0;font-size:.9rem;">' + esc(t("forgot")) + '</a></p>');
+    var input = box.querySelector("#rvPw");
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter") box.querySelector("#rvPwGo").click(); });
+    box.querySelector("#rvPwGo").addEventListener("click", function () {
+      var pw = input.value || "";
+      if (pw.length < 8) { showErr(t("err_pw_short")); return; }
+      var btn = this; btn.disabled = true;
+      var work = isNew
+        ? post({ action: "set_password", email: tok.email, token: tok.token, password: pw })
+            .then(function () { return sb.auth.signInWithPassword({ email: tok.email, password: pw }); })
+        : sb.auth.signInWithPassword({ email: tok.email, password: pw });
+      // Un esec la creare sau la logare nu are voie sa coste omul accesul
+      // pe care poate l-a si platit: fiecare drum de aici se termina tot
+      // in stepAccessCheck, cu token-ul de email verificat in mana. Doar
+      // parola gresita a cuiva cu cont deja se opreste si se anunta --
+      // acolo mai departe nu are sens.
+      work.then(function (res) {
+        btn.disabled = false;
+        if (!isNew && res && res.error) { showErr(t("err_pw_wrong")); return; }
+        stepAccessCheck(tok);
+      }).catch(function () { btn.disabled = false; stepAccessCheck(tok); });
     });
   }
   function stepAccessCheck(tok) {
@@ -260,9 +331,10 @@
     // Access is per category now. With a category in hand, ask about that
     // one -- asking the global question would tell someone who bought
     // Drive that Care is already unlocked, and then show them an empty list.
-    var accessRpc = activeCategory
-      ? sb.rpc("viewer_has_access_for", { p_token: tok.token, p_category: activeCategory })
-      : sb.rpc("viewer_has_access", { p_token: tok.token });
+    // Accesul e global din 23 august: o singura plata de 2 franci deschide
+    // toate categoriile, un an. Intrebarea pe categorie nu mai distinge
+    // nimic, asa ca nu se mai pune.
+    var accessRpc = sb.rpc("viewer_has_access", { p_token: tok.token });
     accessRpc.then(function (r) {
       if (r && r.data === true) {
         // The webhook usually lands before the buyer gets back, and this
@@ -410,24 +482,10 @@
         // data-chf is what this tier costs; after-payment.html reports it
         // as the purchase value, since Stripe's return URL carries none.
         try { localStorage.setItem("rotabo_return_to", location.pathname + location.search); localStorage.setItem("rotabo_viewer_paid_at", String(Date.now())); localStorage.setItem("rotabo_paid_value", a.getAttribute("data-chf") || "1"); localStorage.setItem("rotabo_paid_id", "viewer-" + tok.token.slice(0, 24)); } catch (err) {}
-        // Which category this money is for. Stripe's Payment Link carries
-        // nothing of ours except client_reference_id, and that already
-        // carries the token the webhook resolves the buyer through -- so
-        // the category is written down here instead, and grant_viewer_access
-        // reads it when the webhook comes back. Deliberately NOT a change
-        // to stripe-webhook: that is the money path.
-        //
-        // The redirect waits for the write, because a grant with no note
-        // falls back to every category -- generous, but not what was sold.
-        // It waits at most 2.5 seconds; nobody is stranded by a slow RPC.
-        if (!activeCategory) return;
-        e.preventDefault();
-        var href = a.getAttribute("href");
-        var went = false;
-        var go = function () { if (!went) { went = true; window.location.href = href; } };
-        setTimeout(go, 2500);
-        sb.rpc("viewer_note_category", { p_token: tok.token, p_category: activeCategory })
-          .then(go, go);
+        // Aici se scria, inainte de checkout, categoria pentru care se
+        // plateste, si redirectul astepta scrierea. Nu mai are ce sa scrie:
+        // plata deschide toate categoriile. Link-ul navigheaza direct, si
+        // dispare si intarzierea de pana la 2,5 secunde dintre click si Stripe.
       });
     });
   }

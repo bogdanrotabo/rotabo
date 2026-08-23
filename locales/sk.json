@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Jedna platba otvorí celú stránku: uvidíš, kto tu je, vo všetkých kategóriách, s telefónnymi číslami a adresami, a môžeš kohokoľvek kontaktovať.",
+    "pw_new_title": "Zvoľ si heslo",
+    "pw_new_body": "Tvoj e-mail je potvrdený. Zvoľ si heslo a toto sa stane tvojím účtom Rotabo: nabudúce sa jednoducho prihlásiš, z akéhokoľvek zariadenia, bez čakania na kód.",
+    "pw_have_title": "Zadaj svoje heslo",
+    "pw_have_body": "Tento e-mail už má účet na Rotabo. Prihlás sa a všetko, čo máš odomknuté, ide s tebou.",
+    "pw_placeholder": "Heslo (aspoň 8 znakov)",
+    "pw_btn": "Pokračovať",
+    "err_pw_short": "Použi aspoň 8 znakov.",
+    "err_pw_wrong": "Toto heslo k tomuto e-mailu nepatrí.",
+    "forgot_pw": "Zabudnuté heslo?",
     "need_listing_title": "Najprv sa zapíšte aj vy — je to zadarmo",
     "need_listing_body": "Rotabo vám ukáže, kto je tu, hneď ako tu budete aj vy. Vlastný inzerát nič nestojí a zaberie minútu: napíšte, čo potrebujete alebo čo viete. Potom sa vráťte a odomknite celý zoznam.",
     "need_listing_btn": "Pridať môj inzerát zadarmo",

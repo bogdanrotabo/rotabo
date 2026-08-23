@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Một lần thanh toán mở toàn bộ trang: bạn thấy ai đang ở đây, trong mọi hạng mục, kèm số điện thoại và địa chỉ, và liên hệ với bất kỳ ai.",
+    "pw_new_title": "Chọn mật khẩu",
+    "pw_new_body": "Email của bạn đã được xác nhận. Chọn mật khẩu và đây trở thành tài khoản Rotabo của bạn: lần sau bạn chỉ cần đăng nhập, từ bất kỳ thiết bị nào, không phải chờ mã.",
+    "pw_have_title": "Nhập mật khẩu của bạn",
+    "pw_have_body": "Email này đã có tài khoản Rotabo. Đăng nhập và mọi thứ bạn đã mở khóa đi theo bạn.",
+    "pw_placeholder": "Mật khẩu (ít nhất 8 ký tự)",
+    "pw_btn": "Tiếp tục",
+    "err_pw_short": "Hãy dùng ít nhất 8 ký tự.",
+    "err_pw_wrong": "Mật khẩu đó không khớp với email này.",
+    "forgot_pw": "Quên mật khẩu?",
     "need_listing_title": "Hãy tự ghi tên mình trước — miễn phí",
     "need_listing_body": "Rotabo cho bạn thấy ai đang ở đây khi bạn cũng có mặt ở đây. Tin của chính bạn không tốn gì và chỉ mất một phút: nói bạn cần gì, hoặc bạn làm được gì. Sau đó quay lại và mở khoá toàn bộ danh sách.",
     "need_listing_btn": "Thêm tin miễn phí của tôi",

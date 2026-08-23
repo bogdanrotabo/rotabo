@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Um único pagamento abre o site inteiro: veja quem está aqui, em todas as categorias, com os telefones e as moradas, e contacte quem quiser.",
+    "pw_new_title": "Escolha uma palavra-passe",
+    "pw_new_body": "O seu email está confirmado. Escolha uma palavra-passe e isto passa a ser a sua conta Rotabo: da próxima vez entra directamente, de qualquer dispositivo, sem esperar por nenhum código.",
+    "pw_have_title": "Escreva a sua palavra-passe",
+    "pw_have_body": "Este email já tem conta na Rotabo. Entre e tudo o que desbloqueou vai consigo.",
+    "pw_placeholder": "Palavra-passe (pelo menos 8 caracteres)",
+    "pw_btn": "Continuar",
+    "err_pw_short": "Use pelo menos 8 caracteres.",
+    "err_pw_wrong": "Essa palavra-passe não corresponde a este email.",
+    "forgot_pw": "Esqueceu-se da palavra-passe?",
     "need_listing_title": "Primeiro inscreva-se também — é gratuito",
     "need_listing_body": "O Rotabo mostra-lhe quem está aqui assim que você também estiver. O seu próprio anúncio não custa nada e leva um minuto: diga o que precisa, ou o que sabe fazer. Depois volte e desbloqueie a lista completa.",
     "need_listing_btn": "Adicionar o meu anúncio gratuito",

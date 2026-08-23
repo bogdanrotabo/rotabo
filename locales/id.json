@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Satu kali bayar membuka seluruh situs: kamu lihat siapa saja yang ada di sini, di semua kategori, lengkap dengan nomor telepon dan alamat, dan bisa menghubungi siapa pun.",
+    "pw_new_title": "Pilih kata sandi",
+    "pw_new_body": "Emailmu sudah terverifikasi. Pilih kata sandi dan ini menjadi akun Rotabo-mu: lain kali kamu tinggal masuk, dari perangkat mana pun, tanpa menunggu kode.",
+    "pw_have_title": "Masukkan kata sandimu",
+    "pw_have_body": "Email ini sudah punya akun Rotabo. Masuk, dan semua yang sudah kamu buka ikut bersamamu.",
+    "pw_placeholder": "Kata sandi (minimal 8 karakter)",
+    "pw_btn": "Lanjut",
+    "err_pw_short": "Gunakan minimal 8 karakter.",
+    "err_pw_wrong": "Kata sandi itu tidak cocok dengan email ini.",
+    "forgot_pw": "Lupa kata sandi?",
     "need_listing_title": "Daftarkan diri Anda dulu — gratis",
     "need_listing_body": "Rotabo menunjukkan siapa yang ada di sini begitu Anda juga ada di sini. Memasang iklan sendiri tidak dipungut biaya dan hanya butuh satu menit: sebutkan apa yang Anda butuhkan, atau apa yang bisa Anda kerjakan. Lalu kembali dan buka seluruh daftar.",
     "need_listing_btn": "Tambahkan iklan gratis saya",

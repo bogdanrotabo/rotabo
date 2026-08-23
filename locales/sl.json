@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Eno samo plačilo odpre celotno stran: vidiš, kdo je tu, v vseh kategorijah, s telefonskimi številkami in naslovi, in lahko kogar koli kontaktiraš.",
+    "pw_new_title": "Izberi geslo",
+    "pw_new_body": "Tvoj e-naslov je potrjen. Izberi geslo in to postane tvoj račun Rotabo: naslednjič se preprosto prijaviš, s katere koli naprave, brez čakanja na kodo.",
+    "pw_have_title": "Vnesi svoje geslo",
+    "pw_have_body": "Ta e-naslov že ima račun Rotabo. Prijavi se in vse odklenjeno ostane s teboj.",
+    "pw_placeholder": "Geslo (vsaj 8 znakov)",
+    "pw_btn": "Naprej",
+    "err_pw_short": "Uporabi vsaj 8 znakov.",
+    "err_pw_wrong": "To geslo ne ustreza temu e-naslovu.",
+    "forgot_pw": "Pozabljeno geslo?",
     "need_listing_title": "Najprej se vpišite še vi — brezplačno je",
     "need_listing_body": "Rotabo vam pokaže, kdo je tukaj, ko ste tukaj tudi vi. Lasten oglas nič ne stane in vzame minuto: povejte, kaj potrebujete ali kaj znate. Nato se vrnite in odklenite celoten seznam.",
     "need_listing_btn": "Dodaj moj brezplačni oglas",

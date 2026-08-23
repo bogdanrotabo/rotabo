@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Jedno plaćanje otvara cijelu stranicu: vidiš tko je ovdje, u svim kategorijama, s brojevima telefona i adresama, i možeš kontaktirati bilo koga.",
+    "pw_new_title": "Odaberi lozinku",
+    "pw_new_body": "Tvoj e-mail je potvrđen. Odaberi lozinku i ovo postaje tvoj Rotabo račun: sljedeći put se jednostavno prijaviš, s bilo kojeg uređaja, bez čekanja na kod.",
+    "pw_have_title": "Unesi svoju lozinku",
+    "pw_have_body": "Ovaj e-mail već ima Rotabo račun. Prijavi se i sve otključano ostaje uz tebe.",
+    "pw_placeholder": "Lozinka (najmanje 8 znakova)",
+    "pw_btn": "Nastavi",
+    "err_pw_short": "Koristi najmanje 8 znakova.",
+    "err_pw_wrong": "Ta lozinka ne odgovara ovom e-mailu.",
+    "forgot_pw": "Zaboravljena lozinka?",
     "need_listing_title": "Prvo se i vi upišite — besplatno je",
     "need_listing_body": "Rotabo vam pokazuje tko je ovdje čim ste i vi ovdje. Vlastiti oglas ne košta ništa i traje minutu: recite što trebate ili što znate raditi. Zatim se vratite i otključajte cijeli popis.",
     "need_listing_btn": "Dodaj moj besplatni oglas",

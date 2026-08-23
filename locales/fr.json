@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "Un seul paiement ouvre tout le site : voyez qui est là, dans toutes les catégories, avec leurs numéros de téléphone et leurs adresses, et contactez qui vous voulez.",
+    "pw_new_title": "Choisissez un mot de passe",
+    "pw_new_body": "Votre e-mail est confirmé. Choisissez un mot de passe et ceci devient votre compte Rotabo : la prochaine fois, vous vous connectez directement, depuis n'importe quel appareil, sans attendre de code.",
+    "pw_have_title": "Saisissez votre mot de passe",
+    "pw_have_body": "Cette adresse a déjà un compte Rotabo. Connectez-vous et tout ce que vous avez débloqué vous suit.",
+    "pw_placeholder": "Mot de passe (au moins 8 caractères)",
+    "pw_btn": "Continuer",
+    "err_pw_short": "Utilisez au moins 8 caractères.",
+    "err_pw_wrong": "Ce mot de passe ne correspond pas à cette adresse.",
+    "forgot_pw": "Mot de passe oublié ?",
     "need_listing_title": "Inscrivez-vous d'abord — c'est gratuit",
     "need_listing_body": "Rotabo vous montre qui est là dès que vous y êtes aussi. Publier votre propre annonce ne coûte rien et prend une minute : dites ce dont vous avez besoin, ou ce que vous savez faire. Revenez ensuite et débloquez toute la liste.",
     "need_listing_btn": "Ajouter mon annonce gratuite",

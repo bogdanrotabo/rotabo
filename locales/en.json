@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone.",
+    "pw_new_title": "Choose a password",
+    "pw_new_body": "Your email is confirmed. Pick a password and this becomes your Rotabo account: next time you simply sign in, from any device, with no code to wait for.",
+    "pw_have_title": "Enter your password",
+    "pw_have_body": "This email already has a Rotabo account. Sign in and everything you have unlocked comes with you.",
+    "pw_placeholder": "Password (at least 8 characters)",
+    "pw_btn": "Continue",
+    "err_pw_short": "Please use at least 8 characters.",
+    "err_pw_wrong": "That password does not match this email.",
+    "forgot_pw": "Forgotten your password?",
     "need_listing_title": "First put yourself on the list — it is free",
     "need_listing_body": "Rotabo shows you who is here once you are here too. Publishing your own listing costs nothing and takes a minute: say what you need, or what you can do. Then come back and unlock the full list.",
     "need_listing_btn": "Add my free listing",

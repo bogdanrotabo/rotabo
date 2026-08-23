@@ -1,5 +1,15 @@
 {
   "viewer": {
+    "intro_all": "O singură plată deschide tot site-ul: vezi cine e aici, în toate categoriile, cu numerele lor de telefon și adresele, și contactează pe oricine.",
+    "pw_new_title": "Alege-ți o parolă",
+    "pw_new_body": "Emailul tău e confirmat. Alege o parolă și asta devine contul tău Rotabo: data viitoare intri direct, de pe orice dispozitiv, fără să mai aștepți vreun cod.",
+    "pw_have_title": "Scrie-ți parola",
+    "pw_have_body": "Emailul ăsta are deja cont pe Rotabo. Intră în cont și tot ce ai deblocat vine cu tine.",
+    "pw_placeholder": "Parola (cel puțin 8 caractere)",
+    "pw_btn": "Continuă",
+    "err_pw_short": "Folosește cel puțin 8 caractere.",
+    "err_pw_wrong": "Parola nu se potrivește cu acest email.",
+    "forgot_pw": "Ți-ai uitat parola?",
     "need_listing_title": "Întâi pune-te și tu pe listă — e gratuit",
     "need_listing_body": "Rotabo îți arată cine e aici din momentul în care ești și tu aici. Propriul tău anunț nu costă nimic și îți ia un minut: spune de ce ai nevoie sau ce știi să faci. Apoi revino și deblochează lista întreagă.",
     "need_listing_btn": "Adaugă anunțul meu gratuit",
