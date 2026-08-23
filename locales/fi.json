@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Pääkumppani",
+    "invite": "Tämä paikka on varattu järjestölle, joka seisoo ajatuksen takana. Se ei maksa mitään, eikä koskaan tule maksamaan."
+  },
   "viewer": {
     "intro_all": "Yksi maksu avaa koko sivuston: näet, keitä täällä on, kaikissa kategorioissa, puhelinnumeroineen ja osoitteineen, ja voit ottaa yhteyttä kehen tahansa.",
     "pw_new_title": "Valitse salasana",

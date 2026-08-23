@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Hauptpartner",
+    "invite": "Dieser Platz ist für eine Organisation reserviert, die hinter der Idee steht. Er kostet nichts, und das wird er nie."
+  },
   "viewer": {
     "intro_all": "Eine einzige Zahlung öffnet die ganze Seite: Sieh, wer hier ist, in jeder Kategorie, mit Telefonnummern und Adressen, und kontaktiere jeden.",
     "pw_new_title": "Wähl dir ein Passwort",

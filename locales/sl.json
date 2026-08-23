@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Glavni partner",
+    "invite": "To mesto je namenjeno organizaciji, ki stoji za to zamislijo. Ne stane nič in nikoli ne bo."
+  },
   "viewer": {
     "intro_all": "Eno samo plačilo odpre celotno stran: vidiš, kdo je tu, v vseh kategorijah, s telefonskimi številkami in naslovi, in lahko kogar koli kontaktiraš.",
     "pw_new_title": "Izberi geslo",

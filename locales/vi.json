@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Đối tác chính",
+    "invite": "Vị trí này dành cho một tổ chức đồng hành cùng ý tưởng này. Hoàn toàn miễn phí, và sẽ luôn như vậy."
+  },
   "viewer": {
     "intro_all": "Một lần thanh toán mở toàn bộ trang: bạn thấy ai đang ở đây, trong mọi hạng mục, kèm số điện thoại và địa chỉ, và liên hệ với bất kỳ ai.",
     "pw_new_title": "Chọn mật khẩu",

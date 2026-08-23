@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Hovedpartner",
+    "invite": "Denne plads er reserveret til en organisation, der står bag idéen. Det koster intet, og det kommer det aldrig til."
+  },
   "viewer": {
     "intro_all": "En enkelt betaling åbner hele sitet: du ser, hvem der er her, i alle kategorier, med telefonnumre og adresser, og kan kontakte hvem som helst.",
     "pw_new_title": "Vælg en adgangskode",

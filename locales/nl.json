@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Hoofdpartner",
+    "invite": "Deze plek is gereserveerd voor een organisatie die achter het idee staat. Het kost niets, en dat zal het nooit doen."
+  },
   "viewer": {
     "intro_all": "Eén betaling opent de hele site: zie wie hier is, in elke categorie, met hun telefoonnummers en adressen, en neem contact op met wie je wilt.",
     "pw_new_title": "Kies een wachtwoord",

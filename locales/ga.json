@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Príomhpháirtí",
+    "invite": "Tá an áit seo curtha in áirithe d'eagraíocht a sheasann leis an smaoineamh. Níl aon chostas air, agus ní bheidh choíche."
+  },
   "viewer": {
     "intro_all": "Osclaíonn íocaíocht amháin an suíomh ar fad: feiceann tú cé atá anseo, i ngach catagóir, lena n-uimhreacha gutháin agus a seoltaí, agus is féidir leat teagmháil a dhéanamh le duine ar bith.",
     "pw_new_title": "Roghnaigh pasfhocal",

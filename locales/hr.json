@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Glavni partner",
+    "invite": "Ovo je mjesto sačuvano za organizaciju koja stoji iza ove ideje. Ne košta ništa i nikada neće."
+  },
   "viewer": {
     "intro_all": "Jedno plaćanje otvara cijelu stranicu: vidiš tko je ovdje, u svim kategorijama, s brojevima telefona i adresama, i možeš kontaktirati bilo koga.",
     "pw_new_title": "Odaberi lozinku",

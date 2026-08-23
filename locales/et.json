@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Peapartner",
+    "invite": "See koht on hoitud organisatsioonile, kes seisab selle mõtte taga. See ei maksa midagi ega hakka kunagi maksma."
+  },
   "viewer": {
     "intro_all": "Üks makse avab kogu saidi: näed, kes siin on, kõigis kategooriates, koos telefoninumbrite ja aadressidega, ja saad kellega tahes ühendust võtta.",
     "pw_new_title": "Vali parool",

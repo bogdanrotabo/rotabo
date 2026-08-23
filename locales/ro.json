@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Partener Principal",
+    "invite": "Locul acesta e păstrat pentru o organizație care crede în ideea asta. Nu costă nimic și nu va costa niciodată."
+  },
   "viewer": {
     "intro_all": "O singură plată deschide tot site-ul: vezi cine e aici, în toate categoriile, cu numerele lor de telefon și adresele, și contactează pe oricine.",
     "pw_new_title": "Alege-ți o parolă",

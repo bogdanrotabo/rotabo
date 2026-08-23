@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Fő partner",
+    "invite": "Ez a hely egy olyan szervezetnek van fenntartva, amely kiáll az ötlet mellett. Semmibe sem kerül, és soha nem is fog."
+  },
   "viewer": {
     "intro_all": "Egyetlen fizetés megnyitja az egész oldalt: látod, ki van itt, minden kategóriában, telefonszámmal és címmel, és bárkivel kapcsolatba léphetsz.",
     "pw_new_title": "Válassz jelszót",

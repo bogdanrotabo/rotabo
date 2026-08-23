@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Mitra Utama",
+    "invite": "Tempat ini disediakan untuk organisasi yang mendukung gagasan ini. Tidak dipungut biaya, dan tidak akan pernah."
+  },
   "viewer": {
     "intro_all": "Satu kali bayar membuka seluruh situs: kamu lihat siapa saja yang ada di sini, di semua kategori, lengkap dengan nomor telepon dan alamat, dan bisa menghubungi siapa pun.",
     "pw_new_title": "Pilih kata sandi",

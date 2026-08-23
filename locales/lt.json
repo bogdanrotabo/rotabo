@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Pagrindinis partneris",
+    "invite": "Ši vieta skirta organizacijai, kuri palaiko šią idėją. Tai nieko nekainuoja ir niekada nekainuos."
+  },
   "viewer": {
     "intro_all": "Vienas mokėjimas atveria visą svetainę: matote, kas čia yra, visose kategorijose, su telefono numeriais ir adresais, ir galite susisiekti su bet kuo.",
     "pw_new_title": "Pasirinkite slaptažodį",

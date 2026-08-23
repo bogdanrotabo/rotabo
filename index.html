@@ -136,6 +136,40 @@
     font-size:.9rem;font-weight:600;
     margin:0 0 18px;
   }
+  /* Main partner band -- see the comment on its markup in the hero.
+     The label is three times the size of the origin badge right below it
+     (0.9rem -> 2.7rem), which also makes it larger than the tagline. That
+     is deliberate and was asked for: it is the first thing the page says.
+     It is a flat 2.7rem rather than a clamp() so the ratio holds on a
+     phone too -- a clamp that fits everything on one line dropped it to
+     1.7x there, which is not what "three times bigger" means. Measured at
+     375px in the eleven longest locales: every one either fits on one
+     line or wraps to two, and none overflows. break-word is the seatbelt
+     for a locale added later with one very long word. */
+  .main-partner{
+    max-width:720px;
+    margin:0 auto 26px;
+    padding:22px 20px;
+    background:#fff;
+    border:2px solid var(--border);
+    border-radius:18px;
+  }
+  .mp-label{
+    margin:0;
+    font-size:2.7rem;
+    line-height:1.15;letter-spacing:-.01em;
+    overflow-wrap:break-word;
+    font-weight:800;color:var(--violet-1);
+  }
+  .mp-invite{
+    margin:10px 0 0;
+    font-size:.95rem;font-weight:600;color:var(--text-eyebrow);
+  }
+  .mp-list{display:flex;flex-direction:column;gap:6px;margin-top:14px;}
+  .mp-list[hidden]{display:none;}
+  .mp-name{font-size:1.35rem;font-weight:800;color:var(--text-dark);text-decoration:none;}
+  a.mp-name{color:var(--violet-2);}
+  .mp-loc{font-size:.9rem;font-weight:600;color:var(--text-eyebrow);}
   /* Category strip — one row of chips that never wraps. When the viewport
      is too narrow for all 11, the row scrolls sideways instead; the edge
      fades hint that there is more to see. */
@@ -368,27 +402,26 @@
   .cat-btn.offer{background:#fff;border:1px solid var(--border);color:var(--text-dark);}
   /* Browsing a category was reachable only from a listing you already
      owned, so a first-time visitor had no way to see anyone -- and no
-     way to reach the unlock the site sells. A quiet third line under
-     the two buttons, deliberately not a third button: posting is still
-     the primary action. role=seeking because browse.html shows the
-     opposite side of whoever asks, and a browser wants the providers. */
+     way to reach the unlock the site sells. role=seeking because
+     browse.html shows the opposite side of whoever asks, and someone
+     browsing wants the providers.
+
+     This was a quiet text line for a while, deliberately not a third
+     button, on the theory that posting should stay the primary action.
+     The traffic said otherwise: of 4.860 sessions that reached the home
+     page, 113 ever opened a category list. The card offered three
+     actions and only two of them looked like actions. It now carries
+     the same box as .cat-btn.offer -- same border, same radius, same
+     padding -- and keeps its violet text so the three still read as a
+     set rather than three copies of one thing. Do not quietly demote
+     it back to a bare line. */
   .cat-browse{
-    text-align:center;font-size:.86rem;font-weight:700;
-    color:var(--violet-1);text-decoration:none;padding-top:2px;
+    border-radius:10px;padding:11px 14px;font-size:.9rem;font-weight:800;
+    background:#fff;border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;color:var(--violet-1);text-decoration:none;
   }
   .cat-browse:hover{text-decoration:underline;}
-  /* The quiet line was 20px tall next to the two 44px buttons above it,
-     so the one action on the card that leads to the unlock was the
-     hardest thing on it to hit with a thumb. Height only, and only
-     where a finger is doing the pointing: it stays a line rather than
-     becoming the third button the comment above rules out, and the
-     desktop card keeps its spacing. */
-  @media (pointer: coarse){
-    .cat-browse{
-      min-height:44px;padding-top:0;
-      display:flex;align-items:center;justify-content:center;
-    }
-  }
 
   .drivers-section{padding-top:64px;}
   .check-list{max-width:640px;margin:0 auto;}
@@ -672,6 +705,20 @@
 </header>
 
 <section class="hero">
+  <!-- Main partner band. Sits above everything else, deliberately larger
+       than the tagline: it is the first credibility signal a stranger
+       gets, and the only one on the page that comes from someone other
+       than us. Rendered from sponsors_public where tier = 'principal',
+       and those rows are filtered out of the supporters list further
+       down so a main partner is never shown twice. Until one exists the
+       invitation line stands in its place -- an empty heading would read
+       as broken, and a heading with nothing under it would imply a
+       partner we do not have. -->
+  <div class="main-partner">
+    <p class="mp-label" data-i18n="main_partner.label">Main Partner</p>
+    <div class="mp-list" id="mainPartnerList" hidden></div>
+    <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite">This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
+  </div>
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
   <!-- Word for word the marketplace heading further down the page, so the
@@ -1913,6 +1960,45 @@
     submitWithVerification(form, payload, errorEl, "sponsorModal", createSponsor);
   });
 
+  // Fills the band in the hero. Same rules as the supporters list below:
+  // every string is written by a partner, not by us, so it goes in via
+  // textContent, and the name becomes a link only for an http(s) URL that
+  // create-sponsor already normalised. With no partner the band keeps its
+  // invitation line and shows no empty list.
+  function renderMainPartner(rows){
+    var list = document.getElementById("mainPartnerList");
+    if (!list || !rows || !rows.length) return;
+    list.innerHTML = "";
+    rows.forEach(function(row){
+      var line = document.createElement("div");
+      var name;
+      if (row.website_url && /^https?:\/\//i.test(row.website_url)) {
+        name = document.createElement("a");
+        name.href = row.website_url;
+        name.target = "_blank";
+        name.rel = "noopener nofollow";
+      } else {
+        name = document.createElement("span");
+      }
+      name.className = "mp-name";
+      name.textContent = row.display_name || "";
+      line.appendChild(name);
+      var where = [row.city, row.country].filter(Boolean).join(", ");
+      if (where) {
+        var loc = document.createElement("span");
+        loc.className = "mp-loc";
+        loc.textContent = " " + where;
+        line.appendChild(loc);
+      }
+      list.appendChild(line);
+    });
+    list.hidden = false;
+    // The invitation has been overtaken by events. Hidden rather than
+    // removed: the i18n engine still rewrites it on every language switch.
+    var invite = document.getElementById("mainPartnerInvite");
+    if (invite) invite.hidden = true;
+  }
+
   // ---- the supporters list itself ----
   // The whole product a sponsor buys. sponsors_public serves only what
   // belongs in public -- display name, tier, city, website -- so this
@@ -1927,6 +2013,12 @@
     }).then(function(res){ return res.ok ? res.json() : []; })
       .then(function(rows){
         if (!rows || !rows.length) return;
+        // A main partner belongs in its own band at the top of the page,
+        // not in the supporters list -- filtered out here so that one row
+        // can never render in both places.
+        renderMainPartner(rows.filter(function(r){ return r.tier === "principal"; }));
+        rows = rows.filter(function(r){ return r.tier !== "principal"; });
+        if (!rows.length) return;
         var list = document.getElementById("sponsorList");
         if (!list) return;
         list.innerHTML = "";

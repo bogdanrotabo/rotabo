@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Galvenais partneris",
+    "invite": "Šī vieta ir paredzēta organizācijai, kas atbalsta šo ideju. Tas neko nemaksā un nekad nemaksās."
+  },
   "viewer": {
     "intro_all": "Viens maksājums atver visu vietni: redzi, kas šeit ir, visās kategorijās, ar tālruņa numuriem un adresēm, un vari sazināties ar jebkuru.",
     "pw_new_title": "Izvēlies paroli",

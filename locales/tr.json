@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Ana Ortak",
+    "invite": "Bu yer, bu fikrin arkasında duran bir kuruluş için ayrıldı. Hiçbir ücreti yok ve hiçbir zaman olmayacak."
+  },
   "viewer": {
     "intro_all": "Tek bir ödeme tüm siteyi açar: burada kimin olduğunu görürsün, her kategoride, telefon numaraları ve adresleriyle, ve istediğin kişiye ulaşırsın.",
     "pw_new_title": "Bir şifre seç",

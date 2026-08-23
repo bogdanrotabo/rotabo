@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Main Partner",
+    "invite": "This place is held for an organisation that stands behind the idea. It costs nothing, and it never will."
+  },
   "viewer": {
     "intro_all": "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone.",
     "pw_new_title": "Choose a password",

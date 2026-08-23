@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Sieħeb Ewlieni",
+    "invite": "Dan il-post huwa merfugħ għal organizzazzjoni li temmen f'din l-idea. Ma jiswa xejn, u qatt mhu se jiswa."
+  },
   "viewer": {
     "intro_all": "Ħlas wieħed jiftaħ is-sit kollu: tara min hemm hawn, f'kull kategorija, bin-numri tat-telefon u l-indirizzi tagħhom, u tikkuntattja lil min trid.",
     "pw_new_title": "Agħżel password",

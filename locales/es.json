@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Socio principal",
+    "invite": "Este lugar está reservado para una organización que apoye la idea. No cuesta nada, y nunca costará."
+  },
   "viewer": {
     "intro_all": "Un solo pago abre todo el sitio: mira quién está aquí, en todas las categorías, con sus números de teléfono y sus direcciones, y contacta con quien quieras.",
     "pw_new_title": "Elige una contraseña",

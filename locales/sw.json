@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Mshirika Mkuu",
+    "invite": "Nafasi hii imehifadhiwa kwa shirika linaloliunga mkono wazo hili. Haigharimu chochote, wala haitawahi."
+  },
   "viewer": {
     "intro_all": "Malipo moja hufungua tovuti nzima: unaona nani yupo hapa, katika kila kategoria, pamoja na namba za simu na anwani, na unaweza kuwasiliana na yeyote.",
     "pw_new_title": "Chagua nenosiri",

@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Rakan Utama",
+    "invite": "Tempat ini disediakan untuk organisasi yang menyokong idea ini. Ia tidak dikenakan bayaran, dan tidak akan sesekali."
+  },
   "viewer": {
     "intro_all": "Satu bayaran membuka seluruh laman: anda lihat siapa yang ada di sini, dalam semua kategori, dengan nombor telefon dan alamat, dan boleh menghubungi sesiapa sahaja.",
     "pw_new_title": "Pilih kata laluan",

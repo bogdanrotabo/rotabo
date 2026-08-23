@@ -1,4 +1,8 @@
 {
+  "main_partner": {
+    "label": "Hlavní partner",
+    "invite": "Toto místo je vyhrazeno organizaci, která se za tuto myšlenku postaví. Nic nestojí a nikdy stát nebude."
+  },
   "viewer": {
     "intro_all": "Jedna platba otevře celý web: uvidíš, kdo tu je, ve všech kategoriích, s telefonními čísly a adresami, a můžeš kohokoli kontaktovat.",
     "pw_new_title": "Zvol si heslo",
