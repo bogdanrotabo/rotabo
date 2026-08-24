@@ -145,6 +145,44 @@
     font-size:.9rem;font-weight:600;
     margin:0 0 18px;
   }
+  /* Live visitor counter. A thin band under the header rather than a chip
+     inside it: the header already carries the brand, three links and the
+     language switcher, and on a 375px screen a fourth item pushed the
+     switcher off. The numbers come from site_pulse() -- the total is
+     distinct sessions ever, the "now" is anyone whose heartbeat landed in
+     the last 90 seconds. Both are real; nothing here is padded. The band
+     stays hidden until the first answer arrives, so a visitor never sees
+     a zero that only means "not loaded yet". */
+  .pulse-bar{
+    display:none;
+    gap:18px;
+    align-items:center;justify-content:center;flex-wrap:wrap;
+    padding:9px 16px;
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    font-size:.85rem;font-weight:600;
+    color:var(--text-eyebrow);
+  }
+  .pulse-bar[data-ready="1"]{display:flex;}
+  .pulse-item{display:inline-flex;align-items:center;gap:7px;}
+  .pulse-num{
+    font-weight:800;color:var(--violet-1);
+    font-variant-numeric:tabular-nums;
+  }
+  /* The dot is the only thing on the page that moves on its own. It is
+     what makes the number read as live rather than printed. */
+  .pulse-dot{
+    width:8px;height:8px;border-radius:50%;
+    background:#22a45d;
+    animation:pulseDot 2s ease-in-out infinite;
+  }
+  @keyframes pulseDot{
+    0%,100%{opacity:1;transform:scale(1);}
+    50%{opacity:.35;transform:scale(.8);}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .pulse-dot{animation:none;}
+  }
   /* Main partner band -- see the comment on its markup in the hero.
      The label is three times the size of the origin badge right below it
      (0.9rem -> 2.7rem), which also makes it larger than the tagline. That
@@ -588,6 +626,74 @@
   html[dir="rtl"] .bridge{text-align:right;}
 
   /* Request / driver forms */
+  /* Ideas board and agent form. Both sit at the foot of the page, after
+     the marketplace has made its case: they are for someone who already
+     read what Rotabo is, not for someone still deciding. */
+  .board-section{
+    max-width:820px;
+    margin:0 auto;
+    padding:48px 24px;
+  }
+  .board-section h2{
+    margin:0 0 8px;
+    font-size:1.7rem;font-weight:800;color:var(--violet-1);
+  }
+  .board-sub{
+    margin:0 0 22px;
+    color:var(--text-eyebrow);font-size:.98rem;font-weight:600;
+    line-height:1.5;
+  }
+  .board-form{
+    background:#fff;border:1px solid var(--border);border-radius:14px;
+    padding:18px;margin-bottom:26px;
+  }
+  .board-form textarea{
+    width:100%;box-sizing:border-box;
+    min-height:96px;resize:vertical;
+    font:inherit;padding:10px 12px;
+    border:1px solid var(--border);border-radius:10px;
+  }
+  .board-form input[type="text"],
+  .board-form input[type="email"]{
+    width:100%;box-sizing:border-box;
+    font:inherit;padding:10px 12px;
+    border:1px solid var(--border);border-radius:10px;
+  }
+  .board-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;}
+  .board-row > *{flex:1 1 220px;}
+  .board-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;}
+  .board-count{font-size:.82rem;color:var(--text-eyebrow);font-variant-numeric:tabular-nums;}
+  /* Shown to someone who is not signed in, in place of the form. Writing
+     needs an account -- that is what keeps the board from filling with
+     machine-written noise on day one. */
+  .board-locked{
+    background:#fff;border:1px dashed var(--border);border-radius:14px;
+    padding:18px;margin-bottom:26px;
+    color:var(--text-eyebrow);font-weight:600;
+  }
+  .board-locked a{color:var(--violet-1);font-weight:800;}
+  .board-list{display:flex;flex-direction:column;gap:14px;}
+  .board-post{
+    background:#fff;border:1px solid var(--border);border-radius:14px;
+    padding:16px 18px;
+  }
+  .board-post.is-reply{
+    margin-left:26px;
+    border-left:3px solid var(--border);
+  }
+  .board-meta{
+    display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;
+    font-size:.82rem;color:var(--text-eyebrow);margin-bottom:6px;
+  }
+  .board-author{font-weight:800;color:var(--violet-1);font-size:.92rem;}
+  /* pre-wrap keeps the line breaks someone typed; the text itself is set
+     with textContent, never innerHTML, so a post can never inject markup. */
+  .board-body{margin:0;white-space:pre-wrap;line-height:1.55;overflow-wrap:break-word;}
+  .board-reply-btn{
+    margin-top:8px;background:none;border:0;padding:0;cursor:pointer;
+    font:inherit;font-size:.84rem;font-weight:700;color:var(--violet-1);
+  }
+  .board-empty{color:var(--text-eyebrow);font-weight:600;}
   .modal-overlay{
     display:none;position:fixed;inset:0;z-index:100;
     background:rgba(58,22,80,.45);
@@ -710,6 +816,19 @@
     </div>
   </div>
 </header>
+
+<!-- Live counter. Hidden until site_pulse() answers: see the CSS note. -->
+<div class="pulse-bar" id="pulseBar" role="status" aria-live="polite">
+  <span class="pulse-item">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    <span class="pulse-num" id="pulseOnline">–</span>
+    <span data-i18n="pulse.online">online now</span>
+  </span>
+  <span class="pulse-item">
+    <span class="pulse-num" id="pulseTotal">–</span>
+    <span data-i18n="pulse.total">visitors so far</span>
+  </span>
+</div>
 
 <section class="hero">
   <!-- Main partner band. Sits above everything else, deliberately larger
@@ -1031,6 +1150,62 @@
       <button type="button" class="tier-btn" onclick="openSponsorModal('platinum')"><span data-i18n="supporters.tier_platinum">Platinum — 10 000 CHF</span><span class="tier-fx" data-chf="10000"></span></button>
     </div>
   </div>
+</section>
+
+<!-- Ideas and problems. Public on purpose: a suggestion box nobody can
+     read is a suggestion box nobody writes to. Writing needs an account,
+     reading needs nothing. Replies are one level deep -- enough to answer
+     someone, not enough to become a forum that needs moderating daily. -->
+<section class="board-section" id="ideas">
+  <h2 data-i18n="ideas.title">Ideas and problems</h2>
+  <p class="board-sub" data-i18n="ideas.subtitle">What do you need that Rotabo does not do yet? What went wrong for you? Write it here — everyone can read it, and I read all of it.</p>
+
+  <div class="board-locked" id="ideasLocked" hidden>
+    <span data-i18n="ideas.locked">Sign in to write. Reading is open to everyone.</span>
+    <a href="/account.html" data-i18n="ideas.sign_in">Sign in</a>
+  </div>
+
+  <form class="board-form" id="ideasForm" hidden novalidate>
+    <div class="board-row">
+      <input type="text" id="ideaName" maxlength="60" data-i18n-placeholder="ideas.name_placeholder" placeholder="Your name" autocomplete="name">
+    </div>
+    <textarea id="ideaBody" maxlength="2000" data-i18n-placeholder="ideas.body_placeholder" placeholder="Write your idea or your problem…"></textarea>
+    <div class="board-actions">
+      <button type="submit" class="form-submit" data-i18n="ideas.submit">Post</button>
+      <span class="board-count" id="ideaCount">0 / 2000</span>
+      <span class="form-error" id="ideaError" hidden data-i18n="generic_form.error">Something went wrong. Please try again.</span>
+    </div>
+  </form>
+
+  <div class="board-list" id="ideasList">
+    <p class="board-empty" id="ideasEmpty" data-i18n="ideas.empty">Nothing here yet. Be the first.</p>
+  </div>
+</section>
+
+<!-- Become a Rotabo agent. Deliberately vague on terms: what an agent
+     gets is a conversation, not a number promised by a web page. The form
+     only writes -- applications are read in the database, never listed
+     back to the site. -->
+<section class="board-section" id="agent">
+  <h2 data-i18n="agent.title">Become a Rotabo agent</h2>
+  <p class="board-sub" data-i18n="agent.subtitle">Rotabo works where someone brings it. If you want to be the person who opens your city — talking to the people who offer services, and to the organisations that meet the people who need them — write to me. Tell me where you are and what you would start with.</p>
+
+  <form class="board-form" id="agentForm" novalidate>
+    <div class="board-row">
+      <input type="text" id="agName" maxlength="120" required data-i18n-placeholder="agent.name_placeholder" placeholder="Your name" autocomplete="name">
+      <input type="email" id="agEmail" maxlength="160" required data-i18n-placeholder="agent.email_placeholder" placeholder="Email" autocomplete="email">
+    </div>
+    <div class="board-row">
+      <input type="text" id="agCountry" maxlength="80" data-i18n-placeholder="agent.country_placeholder" placeholder="Country" autocomplete="country-name" list="countryList">
+      <input type="text" id="agCity" maxlength="80" data-i18n-placeholder="agent.city_placeholder" placeholder="City" autocomplete="address-level2" list="cityList">
+    </div>
+    <textarea id="agMessage" maxlength="2000" data-i18n-placeholder="agent.message_placeholder" placeholder="What would you start with?"></textarea>
+    <div class="board-actions">
+      <button type="submit" class="form-submit" data-i18n="agent.submit">Send</button>
+      <span class="board-count" id="agentOk" hidden data-i18n="agent.sent">Thank you — I will write back.</span>
+      <span class="form-error" id="agentError" hidden data-i18n="generic_form.error">Something went wrong. Please try again.</span>
+    </div>
+  </form>
 </section>
 
 <div class="modal-overlay" id="findDriverModal">
@@ -2467,6 +2642,224 @@ if ("serviceWorker" in navigator) {
 })();
 </script>
 <script>
+// Ideas board and agent form.
+//
+// A second Supabase client on the page, with the default storage key, so
+// it reads the same signed-in session viewer.js and account.html write.
+// Creating one is cheaper than threading the existing client out of
+// viewer.js's closure, and they cannot disagree: there is one session.
+(function(){
+  if (!window.supabase) return;
+  var sb = window.supabase.createClient(
+    "https://auth.rotabo.app",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w"
+  );
+
+  var listEl   = document.getElementById("ideasList");
+  var emptyEl  = document.getElementById("ideasEmpty");
+  var formEl   = document.getElementById("ideasForm");
+  var lockedEl = document.getElementById("ideasLocked");
+  var nameEl   = document.getElementById("ideaName");
+  var bodyEl   = document.getElementById("ideaBody");
+  var countEl  = document.getElementById("ideaCount");
+  var errEl    = document.getElementById("ideaError");
+  var me = null;            // the signed-in user, once known
+  var replyTo = null;       // id of the post being answered, or null
+
+  // The page's own translator. It answers the key path back when a key is
+  // missing, which would put "ideas.reply" on a button -- so the English
+  // wording stands in for that case.
+  function t(key, fallback){
+    try {
+      if (window.rotaboT) {
+        var v = window.rotaboT(key);
+        if (v && v !== key) return v;
+      }
+    } catch (e) {}
+    return fallback;
+  }
+
+  // "3 min", "2 h", "5 d". Deliberately not a date: a board is read for
+  // how fresh it is, and a bare number needs no translation.
+  function ago(iso){
+    var s = Math.max(0, (Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 60)    return Math.floor(s) + "s";
+    if (s < 3600)  return Math.floor(s / 60) + "m";
+    if (s < 86400) return Math.floor(s / 3600) + "h";
+    return Math.floor(s / 86400) + "d";
+  }
+
+  function postNode(row, isReply){
+    var wrap = document.createElement("div");
+    wrap.className = "board-post" + (isReply ? " is-reply" : "");
+
+    var meta = document.createElement("div");
+    meta.className = "board-meta";
+    var who = document.createElement("span");
+    who.className = "board-author";
+    who.textContent = row.author_name;          // never innerHTML
+    var when = document.createElement("span");
+    when.textContent = ago(row.created_at);
+    meta.appendChild(who); meta.appendChild(when);
+
+    var body = document.createElement("p");
+    body.className = "board-body";
+    body.textContent = row.body;                // never innerHTML
+
+    wrap.appendChild(meta); wrap.appendChild(body);
+
+    // Only top-level posts can be answered: one level deep, on purpose.
+    if (!isReply && me) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "board-reply-btn";
+      btn.textContent = t("ideas.reply", "Reply");
+      btn.addEventListener("click", function(){
+        replyTo = row.id;
+        bodyEl.placeholder = t("ideas.replying_to", "Replying to") + " " + row.author_name + "…";
+        bodyEl.focus();
+        formEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+      wrap.appendChild(btn);
+    }
+    return wrap;
+  }
+
+  function load(){
+    if (!listEl) return;
+    sb.from("ideas")
+      .select("id,parent_id,author_name,body,created_at")
+      .order("created_at", { ascending: false })
+      .limit(200)
+      .then(function(res){
+        var rows = (res && res.data) || [];
+        if (!rows.length) { if (emptyEl) emptyEl.hidden = false; return; }
+        if (emptyEl) emptyEl.hidden = true;
+
+        var kids = {};
+        rows.forEach(function(r){
+          if (!r.parent_id) return;
+          (kids[r.parent_id] = kids[r.parent_id] || []).push(r);
+        });
+
+        // Clear whatever was drawn before, keeping the empty-state node.
+        Array.prototype.slice.call(listEl.children).forEach(function(n){
+          if (n !== emptyEl) listEl.removeChild(n);
+        });
+
+        rows.filter(function(r){ return !r.parent_id; }).forEach(function(r){
+          listEl.appendChild(postNode(r, false));
+          // Replies read oldest-first under their parent: a conversation
+          // reads down, even though the board itself reads newest-first.
+          (kids[r.id] || []).slice().reverse().forEach(function(k){
+            listEl.appendChild(postNode(k, true));
+          });
+        });
+      })
+      .catch(function(){});
+  }
+
+  if (bodyEl && countEl) {
+    bodyEl.addEventListener("input", function(){
+      countEl.textContent = bodyEl.value.length + " / 2000";
+    });
+  }
+
+  if (formEl) {
+    formEl.addEventListener("submit", function(e){
+      e.preventDefault();
+      if (errEl) errEl.hidden = true;
+      var body = (bodyEl.value || "").trim();
+      var who  = (nameEl.value || "").trim();
+      if (body.length < 3 || !who) return;
+      var btn = formEl.querySelector("button[type=submit]");
+      if (btn) btn.disabled = true;
+
+      sb.from("ideas").insert({
+        user_id: me.id,
+        parent_id: replyTo,
+        author_name: who.slice(0, 60),
+        body: body.slice(0, 2000)
+      }).then(function(res){
+        if (btn) btn.disabled = false;
+        if (res && res.error) { if (errEl) errEl.hidden = false; return; }
+        bodyEl.value = "";
+        if (countEl) countEl.textContent = "0 / 2000";
+        replyTo = null;
+        bodyEl.placeholder = t("ideas.body_placeholder", "Write your idea or your problem…");
+        load();
+      }).catch(function(){
+        if (btn) btn.disabled = false;
+        if (errEl) errEl.hidden = false;
+      });
+    });
+  }
+
+  // Who is here decides whether the form or the locked note is shown.
+  sb.auth.getSession().then(function(res){
+    var session = res && res.data && res.data.session;
+    me = session ? session.user : null;
+    if (me) {
+      if (formEl) formEl.hidden = false;
+      if (lockedEl) lockedEl.hidden = true;
+      // A sensible default the writer can overwrite -- never the address
+      // itself, which is not the board's business to show.
+      if (nameEl && !nameEl.value) {
+        nameEl.value = (me.email || "").split("@")[0].slice(0, 60);
+      }
+    } else {
+      if (formEl) formEl.hidden = true;
+      if (lockedEl) lockedEl.hidden = false;
+    }
+    load();
+  }).catch(function(){ load(); });
+
+  // The reply buttons are drawn by hand, not by data-i18n, so a language
+  // change would leave them in the old wording. Redrawing the list is the
+  // cheapest way to keep them honest.
+  window.__afterTranslate = function(){ load(); };
+
+  // Become an agent. Writes only: there is no policy that reads this
+  // table back, so nobody can list who else applied.
+  var agForm = document.getElementById("agentForm");
+  if (agForm) {
+    agForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var ok  = document.getElementById("agentOk");
+      var err = document.getElementById("agentError");
+      if (ok) ok.hidden = true;
+      if (err) err.hidden = true;
+
+      var name  = (document.getElementById("agName").value || "").trim();
+      var email = (document.getElementById("agEmail").value || "").trim();
+      if (name.length < 2 || !/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) {
+        if (err) err.hidden = false;
+        return;
+      }
+      var btn = agForm.querySelector("button[type=submit]");
+      if (btn) btn.disabled = true;
+
+      sb.from("agent_applications").insert({
+        user_id: me ? me.id : null,
+        name: name.slice(0, 120),
+        email: email.slice(0, 160),
+        country: (document.getElementById("agCountry").value || "").trim().slice(0, 80) || null,
+        city:    (document.getElementById("agCity").value    || "").trim().slice(0, 80) || null,
+        message: (document.getElementById("agMessage").value || "").trim().slice(0, 2000) || null
+      }).then(function(res){
+        if (btn) btn.disabled = false;
+        if (res && res.error) { if (err) err.hidden = false; return; }
+        agForm.reset();
+        if (ok) ok.hidden = false;
+      }).catch(function(){
+        if (btn) btn.disabled = false;
+        if (err) err.hidden = false;
+      });
+    });
+  }
+})();
+</script>
+<script>
 // Hero category strip: a chip scrolls to its big card and pulses it once.
 (function(){
   var strip = document.getElementById("catStrip");
@@ -2489,6 +2882,9 @@ if ("serviceWorker" in navigator) {
   try {
     var sid = localStorage.getItem("rotabo_sid");
     if (!sid) { sid = (crypto.randomUUID ? crypto.randomUUID() : (Date.now() + "-" + Math.random().toString(16).slice(2))); localStorage.setItem("rotabo_sid", sid); }
+    // Written out once instead of pasted into every call. It is the public
+    // anon key -- safe in the page, it only opens what RLS already allows.
+    var ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
     // Visitor country, read from Cloudflare's own trace endpoint on this
     // origin -- no third-party geo service and no IP kept. Anything that
     // is not a plain two-letter code (Tor reports "T1", a dev server has
@@ -2526,8 +2922,8 @@ if ("serviceWorker" in navigator) {
       fetch("https://auth.rotabo.app/rest/v1/site_visits", {
         method: "POST",
         headers: {
-          "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
-          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w",
+          "apikey": ANON_KEY,
+          "Authorization": "Bearer " + ANON_KEY,
           "Content-Type": "application/json",
           "Prefer": "return=minimal"
         },
@@ -2535,6 +2931,50 @@ if ("serviceWorker" in navigator) {
         keepalive: true
       }).catch(function(){});
     });
+
+    // Live counter. Same sid as the visit row above, so one person is one
+    // visitor in both numbers. site_pulse() writes the heartbeat and reads
+    // both figures in a single round trip.
+    //
+    // The heartbeat stops while the tab is hidden: a browser with forty
+    // background tabs would otherwise report forty people online, and the
+    // number has to mean what it says. It resumes on the next look.
+    var pulseBar    = document.getElementById("pulseBar");
+    var pulseOnline = document.getElementById("pulseOnline");
+    var pulseTotal  = document.getElementById("pulseTotal");
+    var pulseTimer  = null;
+
+    function pulse(){
+      if (document.hidden) return;
+      fetch("https://auth.rotabo.app/rest/v1/rpc/site_pulse", {
+        method: "POST",
+        headers: {
+          "apikey": ANON_KEY,
+          "Authorization": "Bearer " + ANON_KEY,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ p_session: sid })
+      })
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(rows){
+          var row = rows && rows[0];
+          if (!row || !pulseBar) return;
+          pulseTotal.textContent  = Number(row.total).toLocaleString();
+          pulseOnline.textContent = Number(row.online).toLocaleString();
+          pulseBar.setAttribute("data-ready", "1");
+        })
+        .catch(function(){});
+    }
+
+    if (pulseBar) {
+      pulse();
+      pulseTimer = setInterval(pulse, 45000);
+      // A tab brought back to the front should not wait up to 45s to be
+      // counted again -- by then its own heartbeat has already expired.
+      document.addEventListener("visibilitychange", function(){
+        if (!document.hidden) pulse();
+      });
+    }
   } catch (e) {}
 })();
 </script>

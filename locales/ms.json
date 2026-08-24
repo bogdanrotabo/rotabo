@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "dalam talian sekarang",
+    "total": "pelawat setakat ini"
+  },
+  "ideas": {
+    "title": "Idea dan masalah",
+    "subtitle": "Apa yang anda perlukan yang Rotabo belum lakukan? Apa yang tidak menjadi? Tulis di sini — semua orang boleh membacanya, dan saya membaca semuanya.",
+    "locked": "Log masuk untuk menulis. Membaca terbuka kepada semua.",
+    "sign_in": "Log masuk",
+    "name_placeholder": "Nama anda",
+    "body_placeholder": "Tulis idea atau masalah anda…",
+    "submit": "Hantar",
+    "empty": "Belum ada apa-apa di sini. Jadilah yang pertama.",
+    "reply": "Balas",
+    "replying_to": "Membalas kepada"
+  },
+  "agent": {
+    "title": "Jadi ejen Rotabo",
+    "subtitle": "Rotabo berfungsi di tempat seseorang membawanya. Sebagai ejen, anda membuka cawangan Rotabo untuk bandar anda — dan semua yang mendaftar di sana muncul bersama di laman, negara demi negara dan bandar demi bandar. Begitulah mereka yang menawarkan perkhidmatan dan mereka yang memerlukannya bertemu. Beritahu saya di mana anda berada dan apa yang akan anda mulakan.",
+    "name_placeholder": "Nama anda",
+    "email_placeholder": "E-mel",
+    "country_placeholder": "Negara",
+    "city_placeholder": "Bandar",
+    "message_placeholder": "Apa yang akan anda mulakan?",
+    "submit": "Hantar",
+    "sent": "Terima kasih — saya akan membalas."
+  },  "main_partner": {
     "label": "Rakan Utama",
     "invite": "Tempat ini disediakan untuk organisasi yang menyokong idea ini. Ia tidak dikenakan bayaran, dan tidak akan sesekali."
   },

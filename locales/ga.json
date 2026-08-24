@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "ar líne anois",
+    "total": "cuairteoirí go dtí seo"
+  },
+  "ideas": {
+    "title": "Smaointe agus fadhbanna",
+    "subtitle": "Cad atá uait nach ndéanann Rotabo fós? Cad a chuaigh amú? Scríobh anseo é — is féidir le duine ar bith é a léamh, agus léim gach rud.",
+    "locked": "Sínigh isteach chun scríobh. Tá an léamh oscailte do chách.",
+    "sign_in": "Sínigh isteach",
+    "name_placeholder": "D'ainm",
+    "body_placeholder": "Scríobh do smaoineamh nó d'fhadhb…",
+    "submit": "Postáil",
+    "empty": "Níl aon rud anseo fós. Bí ar an gcéad duine.",
+    "reply": "Freagair",
+    "replying_to": "Freagra ar"
+  },
+  "agent": {
+    "title": "Bí i do ghníomhaire Rotabo",
+    "subtitle": "Oibríonn Rotabo san áit a dtugann duine éigin ann é. Mar ghníomhaire osclaíonn tú brainse Rotabo do do chathair — agus tá gach duine a chláraíonn ann le chéile ar an suíomh, tír ar thír agus cathair ar chathair. Sin mar a aimsíonn na daoine a chuireann rud ar fáil agus na daoine a bhfuil sé uathu a chéile. Inis dom cá bhfuil tú agus cad leis a dtosófá.",
+    "name_placeholder": "D'ainm",
+    "email_placeholder": "Ríomhphost",
+    "country_placeholder": "Tír",
+    "city_placeholder": "Cathair",
+    "message_placeholder": "Cad leis a dtosófá?",
+    "submit": "Seol",
+    "sent": "Go raibh maith agat — scríobhfaidh mé ar ais."
+  },  "main_partner": {
     "label": "Príomhpháirtí",
     "invite": "Tá an áit seo curtha in áirithe d'eagraíocht a sheasann leis an smaoineamh. Níl aon chostas air, agus ní bheidh choíche."
   },

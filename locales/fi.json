@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "nyt paikalla",
+    "total": "kävijää tähän mennessä"
+  },
+  "ideas": {
+    "title": "Ideat ja ongelmat",
+    "subtitle": "Mitä tarvitset, mitä Rotabo ei vielä tee? Mikä meni pieleen? Kirjoita tähän — kaikki voivat lukea, ja minä luen kaiken.",
+    "locked": "Kirjoittaminen vaatii kirjautumisen. Lukeminen on avoinna kaikille.",
+    "sign_in": "Kirjaudu",
+    "name_placeholder": "Nimesi",
+    "body_placeholder": "Kirjoita ideasi tai ongelmasi…",
+    "submit": "Julkaise",
+    "empty": "Täällä ei ole vielä mitään. Ole ensimmäinen.",
+    "reply": "Vastaa",
+    "replying_to": "Vastaus käyttäjälle"
+  },
+  "agent": {
+    "title": "Ryhdy Rotabo-agentiksi",
+    "subtitle": "Rotabo toimii siellä, minne joku sen vie. Agenttina avaat Rotabo-osaston omalle kaupungillesi — ja kaikki sinne ilmoittautuneet näkyvät yhdessä sivustolla, maa maalta ja kaupunki kaupungilta. Niin palveluja tarjoavat ja niitä tarvitsevat löytävät toisensa. Kerro missä olet ja mistä aloittaisit.",
+    "name_placeholder": "Nimesi",
+    "email_placeholder": "Sähköposti",
+    "country_placeholder": "Maa",
+    "city_placeholder": "Kaupunki",
+    "message_placeholder": "Mistä aloittaisit?",
+    "submit": "Lähetä",
+    "sent": "Kiitos — vastaan sinulle."
+  },  "main_partner": {
     "label": "Pääkumppani",
     "invite": "Tämä paikka on varattu järjestölle, joka seisoo ajatuksen takana. Se ei maksa mitään, eikä koskaan tule maksamaan."
   },

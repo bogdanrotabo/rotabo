@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "most online",
+    "total": "látogató eddig"
+  },
+  "ideas": {
+    "title": "Ötletek és problémák",
+    "subtitle": "Mire van szüksége, amit a Rotabo még nem tud? Mi ment félre? Írja meg ide — bárki elolvashatja, és én mindent elolvasok.",
+    "locked": "Az íráshoz jelentkezzen be. Az olvasás mindenki előtt nyitva áll.",
+    "sign_in": "Bejelentkezés",
+    "name_placeholder": "Az Ön neve",
+    "body_placeholder": "Írja le az ötletét vagy a problémáját…",
+    "submit": "Közzététel",
+    "empty": "Itt még nincs semmi. Legyen az első.",
+    "reply": "Válasz",
+    "replying_to": "Válasz neki:"
+  },
+  "agent": {
+    "title": "Legyen Rotabo-ügynök",
+    "subtitle": "A Rotabo ott működik, ahová valaki elviszi. Ügynökként megnyitja a Rotabo helyi képviseletét a városában — és mindenki, aki ott feliratkozik, együtt szerepel az oldalon, országonként és városonként. Így találják meg egymást azok, akik kínálnak valamit, és azok, akiknek szükségük van rá. Mondja el, hol van, és mivel kezdené.",
+    "name_placeholder": "Az Ön neve",
+    "email_placeholder": "E-mail",
+    "country_placeholder": "Ország",
+    "city_placeholder": "Város",
+    "message_placeholder": "Mivel kezdené?",
+    "submit": "Küldés",
+    "sent": "Köszönöm — válaszolni fogok."
+  },  "main_partner": {
     "label": "Fő partner",
     "invite": "Ez a hely egy olyan szervezetnek van fenntartva, amely kiáll az ötlet mellett. Semmibe sem kerül, és soha nem is fog."
   },

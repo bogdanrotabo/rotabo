@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "online sekarang",
+    "total": "pengunjung sejauh ini"
+  },
+  "ideas": {
+    "title": "Ide dan masalah",
+    "subtitle": "Apa yang Anda butuhkan yang belum bisa dilakukan Rotabo? Apa yang tidak berjalan baik? Tulis di sini — semua orang bisa membacanya, dan saya membaca semuanya.",
+    "locked": "Masuk untuk menulis. Membaca terbuka untuk semua.",
+    "sign_in": "Masuk",
+    "name_placeholder": "Nama Anda",
+    "body_placeholder": "Tulis ide atau masalah Anda…",
+    "submit": "Kirim",
+    "empty": "Belum ada apa-apa di sini. Jadilah yang pertama.",
+    "reply": "Balas",
+    "replying_to": "Membalas"
+  },
+  "agent": {
+    "title": "Jadilah agen Rotabo",
+    "subtitle": "Rotabo bekerja di tempat seseorang membawanya. Sebagai agen, Anda membuka cabang Rotabo untuk kota Anda — dan semua yang mendaftar di sana tampil bersama di situs, negara demi negara dan kota demi kota. Begitulah orang yang menawarkan jasa dan orang yang membutuhkannya saling menemukan. Beri tahu saya di mana Anda dan akan mulai dari apa.",
+    "name_placeholder": "Nama Anda",
+    "email_placeholder": "Email",
+    "country_placeholder": "Negara",
+    "city_placeholder": "Kota",
+    "message_placeholder": "Akan mulai dari apa?",
+    "submit": "Kirim",
+    "sent": "Terima kasih — saya akan membalas."
+  },  "main_partner": {
     "label": "Mitra Utama",
     "invite": "Tempat ini disediakan untuk organisasi yang mendukung gagasan ini. Tidak dipungut biaya, dan tidak akan pernah."
   },

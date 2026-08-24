@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "mtandaoni sasa",
+    "total": "wageni hadi sasa"
+  },
+  "ideas": {
+    "title": "Mawazo na matatizo",
+    "subtitle": "Unahitaji nini ambacho Rotabo bado haifanyi? Nini hakikwenda sawa? Andika hapa — kila mtu anaweza kusoma, nami nasoma yote.",
+    "locked": "Ingia ili kuandika. Kusoma kuko wazi kwa wote.",
+    "sign_in": "Ingia",
+    "name_placeholder": "Jina lako",
+    "body_placeholder": "Andika wazo au tatizo lako…",
+    "submit": "Chapisha",
+    "empty": "Bado hakuna kitu hapa. Kuwa wa kwanza.",
+    "reply": "Jibu",
+    "replying_to": "Kujibu"
+  },
+  "agent": {
+    "title": "Kuwa wakala wa Rotabo",
+    "subtitle": "Rotabo hufanya kazi mahali ambapo mtu anaipeleka. Kama wakala unafungua tawi la Rotabo kwa mji wako — na kila anayejiandikisha hapo anaonekana pamoja kwenye tovuti, nchi kwa nchi na mji kwa mji. Ndivyo wanaotoa huduma na wanaozihitaji wanavyopatana. Niambie uko wapi na ungeanza na nini.",
+    "name_placeholder": "Jina lako",
+    "email_placeholder": "Barua pepe",
+    "country_placeholder": "Nchi",
+    "city_placeholder": "Mji",
+    "message_placeholder": "Ungeanza na nini?",
+    "submit": "Tuma",
+    "sent": "Asante — nitakujibu."
+  },  "main_partner": {
     "label": "Mshirika Mkuu",
     "invite": "Nafasi hii imehifadhiwa kwa shirika linaloliunga mkono wazo hili. Haigharimu chochote, wala haitawahi."
   },

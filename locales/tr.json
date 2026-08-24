@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "şu anda çevrimiçi",
+    "total": "ziyaretçi şu ana kadar"
+  },
+  "ideas": {
+    "title": "Fikirler ve sorunlar",
+    "subtitle": "Rotabo'nun henüz yapmadığı neye ihtiyacınız var? Ne ters gitti? Buraya yazın — herkes okuyabilir, ben de hepsini okuyorum.",
+    "locked": "Yazmak için giriş yapın. Okumak herkese açık.",
+    "sign_in": "Giriş yap",
+    "name_placeholder": "Adınız",
+    "body_placeholder": "Fikrinizi veya sorununuzu yazın…",
+    "submit": "Gönder",
+    "empty": "Burada henüz bir şey yok. İlk siz olun.",
+    "reply": "Yanıtla",
+    "replying_to": "Şuna yanıt:"
+  },
+  "agent": {
+    "title": "Rotabo temsilcisi olun",
+    "subtitle": "Rotabo, birinin götürdüğü yerde işler. Temsilci olarak şehriniz için bir Rotabo şubesi açarsınız — ve orada kaydolan herkes sitede bir arada, ülke ülke ve şehir şehir görünür. Bir şey sunanlarla ona ihtiyacı olanlar işte böyle birbirini bulur. Nerede olduğunuzu ve neyle başlayacağınızı söyleyin.",
+    "name_placeholder": "Adınız",
+    "email_placeholder": "E-posta",
+    "country_placeholder": "Ülke",
+    "city_placeholder": "Şehir",
+    "message_placeholder": "Neyle başlardınız?",
+    "submit": "Gönder",
+    "sent": "Teşekkürler — size geri yazacağım."
+  },  "main_partner": {
     "label": "Ana Ortak",
     "invite": "Bu yer, bu fikrin arkasında duran bir kuruluş için ayrıldı. Hiçbir ücreti yok ve hiçbir zaman olmayacak."
   },

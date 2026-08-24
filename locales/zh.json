@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "当前在线",
+    "total": "累计访客"
+  },
+  "ideas": {
+    "title": "想法与问题",
+    "subtitle": "您需要什么而 Rotabo 还做不到？哪里出了问题？写在这里——所有人都能看到，我全部都会读。",
+    "locked": "登录后才能发言。阅读对所有人开放。",
+    "sign_in": "登录",
+    "name_placeholder": "您的名字",
+    "body_placeholder": "写下您的想法或问题…",
+    "submit": "发布",
+    "empty": "这里还什么都没有。来做第一个。",
+    "reply": "回复",
+    "replying_to": "回复"
+  },
+  "agent": {
+    "title": "成为 Rotabo 代表",
+    "subtitle": "Rotabo 在有人带它去的地方才运转。作为代表，您为自己的城市开设一个 Rotabo 分部——在那里登记的每一个人都会一起出现在网站上，按国家、按城市排列。提供服务的人和需要服务的人，就是这样彼此找到的。告诉我您在哪里，会从什么开始。",
+    "name_placeholder": "您的名字",
+    "email_placeholder": "电子邮件",
+    "country_placeholder": "国家",
+    "city_placeholder": "城市",
+    "message_placeholder": "您会从什么开始？",
+    "submit": "发送",
+    "sent": "谢谢——我会回信。"
+  },  "main_partner": {
     "label": "主要合作伙伴",
     "invite": "这个位置留给认同这个想法的机构。不收取任何费用，将来也不会。"
   },

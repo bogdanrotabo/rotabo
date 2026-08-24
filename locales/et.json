@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "praegu võrgus",
+    "total": "külastajat seni"
+  },
+  "ideas": {
+    "title": "Ideed ja probleemid",
+    "subtitle": "Mida vajate, mida Rotabo veel ei tee? Mis läks valesti? Kirjutage siia — igaüks saab lugeda ja mina loen kõike.",
+    "locked": "Kirjutamiseks logi sisse. Lugemine on kõigile avatud.",
+    "sign_in": "Logi sisse",
+    "name_placeholder": "Teie nimi",
+    "body_placeholder": "Kirjutage oma idee või probleem…",
+    "submit": "Postita",
+    "empty": "Siin pole veel midagi. Olge esimene.",
+    "reply": "Vasta",
+    "replying_to": "Vastus kasutajale"
+  },
+  "agent": {
+    "title": "Hakka Rotabo agendiks",
+    "subtitle": "Rotabo toimib seal, kuhu keegi selle viib. Agendina avate oma linnale Rotabo haru — ja kõik, kes seal end kirja panevad, on saidil koos, riik riigi ja linn linna haaval. Nii leiavad teenuse pakkujad ja seda vajajad üksteist. Öelge, kus te olete ja millest alustaksite.",
+    "name_placeholder": "Teie nimi",
+    "email_placeholder": "E-post",
+    "country_placeholder": "Riik",
+    "city_placeholder": "Linn",
+    "message_placeholder": "Millest alustaksite?",
+    "submit": "Saada",
+    "sent": "Aitäh — ma vastan."
+  },  "main_partner": {
     "label": "Peapartner",
     "invite": "See koht on hoitud organisatsioonile, kes seisab selle mõtte taga. See ei maksa midagi ega hakka kunagi maksma."
   },

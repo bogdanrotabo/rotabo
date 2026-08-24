@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "práve online",
+    "total": "návštevníkov doteraz"
+  },
+  "ideas": {
+    "title": "Nápady a problémy",
+    "subtitle": "Čo potrebujete, čo Rotabo ešte nevie? Čo sa nepodarilo? Napíšte to sem — môže to čítať každý a ja čítam všetko.",
+    "locked": "Na písanie sa prihláste. Čítanie je otvorené všetkým.",
+    "sign_in": "Prihlásiť sa",
+    "name_placeholder": "Vaše meno",
+    "body_placeholder": "Napíšte svoj nápad alebo problém…",
+    "submit": "Uverejniť",
+    "empty": "Zatiaľ tu nič nie je. Buďte prvý.",
+    "reply": "Odpovedať",
+    "replying_to": "Odpoveď pre"
+  },
+  "agent": {
+    "title": "Staňte sa agentom Rotabo",
+    "subtitle": "Rotabo funguje tam, kam ho niekto prinesie. Ako agent otvoríte pobočku Rotabo pre svoje mesto — a všetci, ktorí sa tam zapíšu, sú na stránke pokope, krajina po krajine a mesto po meste. Tak sa tí, čo niečo ponúkajú, a tí, čo to potrebujú, nájdu. Povedzte mi, kde ste a čím by ste začali.",
+    "name_placeholder": "Vaše meno",
+    "email_placeholder": "E-mail",
+    "country_placeholder": "Krajina",
+    "city_placeholder": "Mesto",
+    "message_placeholder": "Čím by ste začali?",
+    "submit": "Odoslať",
+    "sent": "Ďakujem — ozvem sa."
+  },  "main_partner": {
     "label": "Hlavný partner",
     "invite": "Toto miesto je vyhradené pre organizáciu, ktorá stojí za touto myšlienkou. Nič nestojí a nikdy stáť nebude."
   },

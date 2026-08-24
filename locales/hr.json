@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "sada na mreži",
+    "total": "posjetitelja dosad"
+  },
+  "ideas": {
+    "title": "Ideje i problemi",
+    "subtitle": "Što vam treba, a Rotabo još ne radi? Što je pošlo po zlu? Napišite ovdje — svatko može pročitati, a ja čitam sve.",
+    "locked": "Za pisanje se prijavite. Čitanje je otvoreno svima.",
+    "sign_in": "Prijava",
+    "name_placeholder": "Vaše ime",
+    "body_placeholder": "Napišite svoju ideju ili problem…",
+    "submit": "Objavi",
+    "empty": "Ovdje još nema ničega. Budite prvi.",
+    "reply": "Odgovori",
+    "replying_to": "Odgovor za"
+  },
+  "agent": {
+    "title": "Postanite Rotabo agent",
+    "subtitle": "Rotabo radi ondje kamo ga netko donese. Kao agent otvarate podružnicu Rotaba za svoj grad — i svi koji se ondje upišu na stranici stoje zajedno, država po država i grad po grad. Tako se oni koji nešto nude i oni kojima to treba pronađu. Recite mi gdje ste i čime biste počeli.",
+    "name_placeholder": "Vaše ime",
+    "email_placeholder": "E-pošta",
+    "country_placeholder": "Država",
+    "city_placeholder": "Grad",
+    "message_placeholder": "Čime biste počeli?",
+    "submit": "Pošalji",
+    "sent": "Hvala — javit ću se."
+  },  "main_partner": {
     "label": "Glavni partner",
     "invite": "Ovo je mjesto sačuvano za organizaciju koja stoji iza ove ideje. Ne košta ništa i nikada neće."
   },

@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "online acum",
+    "total": "vizitatori până acum"
+  },
+  "ideas": {
+    "title": "Idei și probleme",
+    "subtitle": "De ce aveți nevoie și Rotabo încă nu face? Ce v-a mers prost? Scrieți aici — poate citi oricine, iar eu citesc tot.",
+    "locked": "Ca să scrieți trebuie să intrați în cont. Cititul e liber pentru toți.",
+    "sign_in": "Intră în cont",
+    "name_placeholder": "Numele dumneavoastră",
+    "body_placeholder": "Scrieți ideea sau problema…",
+    "submit": "Publică",
+    "empty": "Încă nimic aici. Fiți primul.",
+    "reply": "Răspunde",
+    "replying_to": "Răspuns pentru"
+  },
+  "agent": {
+    "title": "Devino agent Rotabo",
+    "subtitle": "Rotabo merge acolo unde îl duce cineva. Ca agent deschizi o filială Rotabo pentru orașul tău — și toți cei înscriși acolo apar la un loc, țară cu țară și oraș cu oraș, pe sit. Așa se găsesc între ei cei care oferă ceva și cei care au nevoie. Spune-mi unde ești și cu ce ai începe.",
+    "name_placeholder": "Numele dumneavoastră",
+    "email_placeholder": "Email",
+    "country_placeholder": "Țara",
+    "city_placeholder": "Orașul",
+    "message_placeholder": "Cu ce ați începe?",
+    "submit": "Trimite",
+    "sent": "Mulțumesc — vă voi răspunde."
+  },  "main_partner": {
     "label": "Partener Principal",
     "invite": "Locul acesta e păstrat pentru o organizație care crede în ideea asta. Nu costă nimic și nu va costa niciodată."
   },

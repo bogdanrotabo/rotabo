@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "nu online",
+    "total": "bezoekers tot nu toe"
+  },
+  "ideas": {
+    "title": "Ideeën en problemen",
+    "subtitle": "Wat heeft u nodig dat Rotabo nog niet doet? Wat ging er mis? Schrijf het hier — iedereen kan het lezen, en ik lees alles.",
+    "locked": "Om te schrijven moet u inloggen. Lezen staat open voor iedereen.",
+    "sign_in": "Inloggen",
+    "name_placeholder": "Uw naam",
+    "body_placeholder": "Schrijf uw idee of uw probleem…",
+    "submit": "Plaatsen",
+    "empty": "Nog niets. Wees de eerste.",
+    "reply": "Reageren",
+    "replying_to": "Antwoord aan"
+  },
+  "agent": {
+    "title": "Word Rotabo-agent",
+    "subtitle": "Rotabo werkt daar waar iemand het brengt. Als agent opent u een Rotabo-vestiging voor uw stad — en iedereen die zich daar inschrijft staat samen op de site, land voor land en stad voor stad. Zo vinden wie iets aanbiedt en wie het nodig heeft elkaar. Vertel me waar u bent en waarmee u zou beginnen.",
+    "name_placeholder": "Uw naam",
+    "email_placeholder": "E-mail",
+    "country_placeholder": "Land",
+    "city_placeholder": "Stad",
+    "message_placeholder": "Waarmee zou u beginnen?",
+    "submit": "Versturen",
+    "sent": "Dank u — ik schrijf terug."
+  },  "main_partner": {
     "label": "Hoofdpartner",
     "invite": "Deze plek is gereserveerd voor een organisatie die achter het idee staat. Het kost niets, en dat zal het nooit doen."
   },

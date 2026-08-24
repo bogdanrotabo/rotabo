@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "tagad tiešsaistē",
+    "total": "apmeklētāju līdz šim"
+  },
+  "ideas": {
+    "title": "Idejas un problēmas",
+    "subtitle": "Kas jums ir vajadzīgs, ko Rotabo vēl nedara? Kas nogāja greizi? Uzrakstiet šeit — to var izlasīt ikviens, un es izlasu visu.",
+    "locked": "Lai rakstītu, jāpiesakās. Lasīt var ikviens.",
+    "sign_in": "Pieteikties",
+    "name_placeholder": "Jūsu vārds",
+    "body_placeholder": "Uzrakstiet savu ideju vai problēmu…",
+    "submit": "Publicēt",
+    "empty": "Šeit vēl nekā nav. Esiet pirmais.",
+    "reply": "Atbildēt",
+    "replying_to": "Atbilde lietotājam"
+  },
+  "agent": {
+    "title": "Kļūsti par Rotabo aģentu",
+    "subtitle": "Rotabo darbojas tur, kur kāds to aizved. Kā aģents jūs atverat Rotabo nodaļu savai pilsētai — un visi, kas tur pieteikušies, ir vietnē kopā, valsts pēc valsts un pilsēta pēc pilsētas. Tā tie, kas piedāvā, un tie, kam vajag, atrod cits citu. Pastāstiet, kur esat un ar ko sāktu.",
+    "name_placeholder": "Jūsu vārds",
+    "email_placeholder": "E-pasts",
+    "country_placeholder": "Valsts",
+    "city_placeholder": "Pilsēta",
+    "message_placeholder": "Ar ko sāktu?",
+    "submit": "Nosūtīt",
+    "sent": "Paldies — es atbildēšu."
+  },  "main_partner": {
     "label": "Galvenais partneris",
     "invite": "Šī vieta ir paredzēta organizācijai, kas atbalsta šo ideju. Tas neko nemaksā un nekad nemaksās."
   },

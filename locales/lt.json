@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "dabar prisijungę",
+    "total": "lankytojų iki šiol"
+  },
+  "ideas": {
+    "title": "Idėjos ir problemos",
+    "subtitle": "Ko jums reikia, ko Rotabo dar nedaro? Kas nepavyko? Parašykite čia — perskaityti gali bet kas, o aš skaitau viską.",
+    "locked": "Norint rašyti, reikia prisijungti. Skaityti gali visi.",
+    "sign_in": "Prisijungti",
+    "name_placeholder": "Jūsų vardas",
+    "body_placeholder": "Parašykite savo idėją arba problemą…",
+    "submit": "Paskelbti",
+    "empty": "Čia dar nieko nėra. Būkite pirmas.",
+    "reply": "Atsakyti",
+    "replying_to": "Atsakymas"
+  },
+  "agent": {
+    "title": "Tapkite Rotabo agentu",
+    "subtitle": "Rotabo veikia ten, kur kas nors jį nuveža. Kaip agentas atidarote Rotabo skyrių savo miestui — ir visi, kurie ten užsiregistruoja, svetainėje matomi kartu, šalis po šalies ir miestas po miesto. Taip tie, kurie siūlo, ir tie, kuriems reikia, randa vieni kitus. Pasakykite, kur esate ir nuo ko pradėtumėte.",
+    "name_placeholder": "Jūsų vardas",
+    "email_placeholder": "El. paštas",
+    "country_placeholder": "Šalis",
+    "city_placeholder": "Miestas",
+    "message_placeholder": "Nuo ko pradėtumėte?",
+    "submit": "Siųsti",
+    "sent": "Ačiū — atsakysiu."
+  },  "main_partner": {
     "label": "Pagrindinis partneris",
     "invite": "Ši vieta skirta organizacijai, kuri palaiko šią idėją. Tai nieko nekainuoja ir niekada nekainuos."
   },

@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "online issa",
+    "total": "viżitaturi s'issa"
+  },
+  "ideas": {
+    "title": "Ideat u problemi",
+    "subtitle": "X'għandek bżonn li Rotabo għadu ma jagħmilx? X'mar ħażin? Ikteb hawn — kulħadd jista' jaqra, u jien naqra kollox.",
+    "locked": "Biex tikteb idħol fil-kont. Il-qari huwa miftuħ għal kulħadd.",
+    "sign_in": "Idħol",
+    "name_placeholder": "Ismek",
+    "body_placeholder": "Ikteb l-idea jew il-problema tiegħek…",
+    "submit": "Ippubblika",
+    "empty": "Għad m'hawn xejn. Kun l-ewwel wieħed.",
+    "reply": "Wieġeb",
+    "replying_to": "Tweġiba lil"
+  },
+  "agent": {
+    "title": "Sir aġent ta' Rotabo",
+    "subtitle": "Rotabo jaħdem fejn xi ħadd iġibu. Bħala aġent tiftaħ fergħa ta' Rotabo għall-belt tiegħek — u kull min jirreġistra hemm jidher flimkien fuq is-sit, pajjiż b'pajjiż u belt b'belt. Hekk isibu lil xulxin dawk li joffru xi ħaġa u dawk li għandhom bżonnha. Għidli fejn int u b'xiex tibda.",
+    "name_placeholder": "Ismek",
+    "email_placeholder": "Email",
+    "country_placeholder": "Pajjiż",
+    "city_placeholder": "Belt",
+    "message_placeholder": "B'xiex tibda?",
+    "submit": "Ibgħat",
+    "sent": "Grazzi — inwieġbek."
+  },  "main_partner": {
     "label": "Sieħeb Ewlieni",
     "invite": "Dan il-post huwa merfugħ għal organizzazzjoni li temmen f'din l-idea. Ma jiswa xejn, u qatt mhu se jiswa."
   },

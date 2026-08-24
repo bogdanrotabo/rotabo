@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "en ligne maintenant",
+    "total": "visiteurs jusqu'ici"
+  },
+  "ideas": {
+    "title": "Idées et problèmes",
+    "subtitle": "De quoi avez-vous besoin que Rotabo ne fait pas encore ? Qu'est-ce qui n'a pas marché ? Écrivez-le ici — tout le monde peut le lire, et je lis tout.",
+    "locked": "Pour écrire, il faut se connecter. La lecture est ouverte à tous.",
+    "sign_in": "Se connecter",
+    "name_placeholder": "Votre nom",
+    "body_placeholder": "Écrivez votre idée ou votre problème…",
+    "submit": "Publier",
+    "empty": "Rien encore. Soyez le premier.",
+    "reply": "Répondre",
+    "replying_to": "En réponse à"
+  },
+  "agent": {
+    "title": "Devenez agent Rotabo",
+    "subtitle": "Rotabo fonctionne là où quelqu'un l'apporte. Comme agent, vous ouvrez une antenne Rotabo pour votre ville — et tous ceux qui s'y inscrivent apparaissent ensemble, pays par pays et ville par ville, sur le site. C'est ainsi que ceux qui offrent quelque chose et ceux qui en ont besoin se trouvent. Dites-moi où vous êtes et par quoi vous commenceriez.",
+    "name_placeholder": "Votre nom",
+    "email_placeholder": "Email",
+    "country_placeholder": "Pays",
+    "city_placeholder": "Ville",
+    "message_placeholder": "Par quoi commenceriez-vous ?",
+    "submit": "Envoyer",
+    "sent": "Merci — je vous répondrai."
+  },  "main_partner": {
     "label": "Partenaire principal",
     "invite": "Cette place est réservée à une organisation qui soutient cette idée. Elle ne coûte rien, et ne coûtera jamais rien."
   },

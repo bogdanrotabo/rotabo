@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "đang trực tuyến",
+    "total": "lượt khách đến nay"
+  },
+  "ideas": {
+    "title": "Ý tưởng và vấn đề",
+    "subtitle": "Bạn cần gì mà Rotabo chưa làm được? Điều gì đã không ổn? Hãy viết ở đây — ai cũng đọc được, và tôi đọc tất cả.",
+    "locked": "Đăng nhập để viết. Đọc thì mở cho mọi người.",
+    "sign_in": "Đăng nhập",
+    "name_placeholder": "Tên bạn",
+    "body_placeholder": "Viết ý tưởng hoặc vấn đề của bạn…",
+    "submit": "Đăng",
+    "empty": "Chưa có gì ở đây. Hãy là người đầu tiên.",
+    "reply": "Trả lời",
+    "replying_to": "Trả lời"
+  },
+  "agent": {
+    "title": "Trở thành đại diện Rotabo",
+    "subtitle": "Rotabo hoạt động ở nơi có người mang nó tới. Là đại diện, bạn mở một chi nhánh Rotabo cho thành phố mình — và tất cả những ai đăng ký ở đó đều hiện lên cùng nhau trên trang, theo từng quốc gia và từng thành phố. Đó là cách người cung cấp dịch vụ và người cần dịch vụ tìm thấy nhau. Cho tôi biết bạn ở đâu và sẽ bắt đầu từ đâu.",
+    "name_placeholder": "Tên bạn",
+    "email_placeholder": "Email",
+    "country_placeholder": "Quốc gia",
+    "city_placeholder": "Thành phố",
+    "message_placeholder": "Bạn sẽ bắt đầu từ đâu?",
+    "submit": "Gửi",
+    "sent": "Cảm ơn — tôi sẽ trả lời."
+  },  "main_partner": {
     "label": "Đối tác chính",
     "invite": "Vị trí này dành cho một tổ chức đồng hành cùng ý tưởng này. Hoàn toàn miễn phí, và sẽ luôn như vậy."
   },

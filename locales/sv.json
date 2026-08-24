@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "online nu",
+    "total": "besökare hittills"
+  },
+  "ideas": {
+    "title": "Idéer och problem",
+    "subtitle": "Vad behöver du som Rotabo ännu inte gör? Vad gick fel? Skriv det här — alla kan läsa det, och jag läser allt.",
+    "locked": "Logga in för att skriva. Att läsa är öppet för alla.",
+    "sign_in": "Logga in",
+    "name_placeholder": "Ditt namn",
+    "body_placeholder": "Skriv din idé eller ditt problem…",
+    "submit": "Publicera",
+    "empty": "Inget här ännu. Bli den första.",
+    "reply": "Svara",
+    "replying_to": "Svar till"
+  },
+  "agent": {
+    "title": "Bli Rotabo-agent",
+    "subtitle": "Rotabo fungerar där någon tar det. Som agent öppnar du en Rotabo-avdelning för din stad — och alla som anmäler sig där står tillsammans på sajten, land för land och stad för stad. Så hittar de som erbjuder något och de som behöver det varandra. Berätta var du är och vad du skulle börja med.",
+    "name_placeholder": "Ditt namn",
+    "email_placeholder": "E-post",
+    "country_placeholder": "Land",
+    "city_placeholder": "Stad",
+    "message_placeholder": "Vad skulle du börja med?",
+    "submit": "Skicka",
+    "sent": "Tack — jag svarar."
+  },  "main_partner": {
     "label": "Huvudpartner",
     "invite": "Den här platsen är reserverad för en organisation som står bakom idén. Den kostar ingenting, och kommer aldrig att göra det."
   },

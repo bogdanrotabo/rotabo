@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "online nu",
+    "total": "besøgende indtil nu"
+  },
+  "ideas": {
+    "title": "Idéer og problemer",
+    "subtitle": "Hvad har du brug for, som Rotabo endnu ikke gør? Hvad gik galt? Skriv det her — alle kan læse det, og jeg læser det hele.",
+    "locked": "Log ind for at skrive. Læsning er åben for alle.",
+    "sign_in": "Log ind",
+    "name_placeholder": "Dit navn",
+    "body_placeholder": "Skriv din idé eller dit problem…",
+    "submit": "Slå op",
+    "empty": "Ikke noget her endnu. Vær den første.",
+    "reply": "Svar",
+    "replying_to": "Svar til"
+  },
+  "agent": {
+    "title": "Bliv Rotabo-agent",
+    "subtitle": "Rotabo virker der, hvor nogen bringer det hen. Som agent åbner du en Rotabo-afdeling for din by — og alle, der melder sig der, står samlet på siden, land for land og by for by. Sådan finder de, der tilbyder noget, og de, der har brug for det, hinanden. Fortæl mig, hvor du er, og hvad du ville begynde med.",
+    "name_placeholder": "Dit navn",
+    "email_placeholder": "E-mail",
+    "country_placeholder": "Land",
+    "city_placeholder": "By",
+    "message_placeholder": "Hvad ville du begynde med?",
+    "submit": "Send",
+    "sent": "Tak — jeg skriver tilbage."
+  },  "main_partner": {
     "label": "Hovedpartner",
     "invite": "Denne plads er reserveret til en organisation, der står bag idéen. Det koster intet, og det kommer det aldrig til."
   },

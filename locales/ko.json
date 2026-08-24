@@ -1,5 +1,31 @@
 {
-  "main_partner": {
+  "pulse": {
+    "online": "지금 접속 중",
+    "total": "지금까지 방문자"
+  },
+  "ideas": {
+    "title": "아이디어와 문제",
+    "subtitle": "Rotabo가 아직 못 하는 것 중 필요하신 게 무엇인가요? 무엇이 잘못되었나요? 여기에 적어 주세요. 누구나 읽을 수 있고, 저는 전부 읽습니다.",
+    "locked": "글을 쓰려면 로그인하세요. 읽기는 모두에게 열려 있습니다.",
+    "sign_in": "로그인",
+    "name_placeholder": "이름",
+    "body_placeholder": "아이디어나 문제를 적어 주세요…",
+    "submit": "올리기",
+    "empty": "아직 아무것도 없습니다. 첫 번째가 되어 주세요.",
+    "reply": "답글",
+    "replying_to": "답글 대상:"
+  },
+  "agent": {
+    "title": "Rotabo 에이전트 되기",
+    "subtitle": "Rotabo는 누군가 가져간 곳에서 작동합니다. 에이전트로서 당신의 도시에 Rotabo 지부를 엽니다 — 그곳에 등록한 모든 사람이 사이트에 함께, 나라별·도시별로 표시됩니다. 제공하는 사람과 필요한 사람이 서로를 찾는 방식이 바로 이것입니다. 어디에 계신지, 무엇부터 시작할지 알려 주세요.",
+    "name_placeholder": "이름",
+    "email_placeholder": "이메일",
+    "country_placeholder": "국가",
+    "city_placeholder": "도시",
+    "message_placeholder": "무엇부터 시작하시겠습니까?",
+    "submit": "보내기",
+    "sent": "감사합니다 — 답장 드리겠습니다."
+  },  "main_partner": {
     "label": "주요 파트너",
     "invite": "이 자리는 이 생각에 함께해 주실 단체를 위해 비워 두었습니다. 비용은 없으며, 앞으로도 없습니다."
   },
