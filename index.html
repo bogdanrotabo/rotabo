@@ -214,6 +214,26 @@
   }
   .mp-list{display:flex;flex-direction:column;gap:6px;margin-top:14px;}
   .mp-list[hidden]{display:none;}
+
+  /* The band is Rotabo's page, but the mark standing in it is TopTen's, so it
+     keeps TopTen's ground: near-black, with the gold that only reads against
+     it. Redrawn in this page's lavender it would be a different wordmark. */
+  .mp-topten{
+    display:inline-flex;flex-direction:column;align-items:center;gap:5px;
+    margin-top:16px;padding:16px 30px;
+    background:#08090c;border:1px solid #23252c;border-radius:16px;
+    text-decoration:none;
+  }
+  .mp-topten:hover{border-color:#ffc233;}
+  .mp-topten[hidden]{display:none;}
+  .mp-topten .mp-tt-mark{
+    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;
+    color:#f2f3f5;line-height:1.1;
+  }
+  .mp-topten .mp-tt-mark b{color:#ffc233;font-weight:800;}
+  .mp-topten .mp-tt-tag{
+    font-size:.82rem;font-weight:700;color:#8b8f98;
+  }
   .mp-name{font-size:1.35rem;font-weight:800;color:var(--text-dark);text-decoration:none;}
   a.mp-name{color:var(--violet-2);}
   .mp-loc{font-size:.9rem;font-weight:600;color:var(--text-eyebrow);}
@@ -867,7 +887,16 @@
   <div class="main-partner">
     <p class="mp-label" data-i18n="main_partner.label">Main Partner</p>
     <div class="mp-list" id="mainPartnerList" hidden></div>
-    <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite">This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
+    <!-- TopTen.one holds the band until a paying partner takes it. Its own
+         wordmark on its own ground, linking straight out to the site; the
+         invitation below is hidden while the place is occupied, and
+         renderMainPartner() hides this the moment a real principal sponsor
+         exists, so the band never shows two. -->
+    <a class="mp-topten" id="mainPartnerTopten" href="https://topten.one" target="_blank" rel="noopener">
+      <span class="mp-tt-mark">TopTen<b>.one</b></span>
+      <span class="mp-tt-tag">Be the one.</span>
+    </a>
+    <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
   </div>
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
@@ -2217,6 +2246,10 @@
     // removed: the i18n engine still rewrites it on every language switch.
     var invite = document.getElementById("mainPartnerInvite");
     if (invite) invite.hidden = true;
+    // A paying partner takes the band; the stand-in steps out rather than
+    // sharing it.
+    var tt = document.getElementById("mainPartnerTopten");
+    if (tt) tt.hidden = true;
   }
 
   // ---- the supporters list itself ----
