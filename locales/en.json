@@ -363,14 +363,16 @@
     "tier_gold": "Gold — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },
+  "share": {
+    "title": "Share Rotabo",
+    "copyLink": "Copy link"
+  },
   "footer": {
     "legal": "Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.",
     "terms": "Terms",
     "privacy": "Privacy",
     "driver_terms": "Driver terms",
     "supporters": "Supporters",
-    "share": "Share Rotabo",
-    "copyLink": "Copy link",
     "contact": "Contact",
     "copyright": "© 2026 Rotabo"
   },

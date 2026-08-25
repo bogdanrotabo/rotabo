@@ -561,21 +561,21 @@
      in it, so a button could only ever look like it worked. The phone's own
      share sheet reaches them, and it is offered as "More" below on the
      browsers that have one. */
-  footer .sharebar{
+  .sharebar{
     display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-    gap:8px;max-width:520px;margin:0 auto 26px;padding:14px 16px;
+    gap:8px;max-width:520px;margin:22px auto 6px;padding:14px 16px;
     border:1px solid var(--border);border-radius:14px;background:var(--bg-card);
   }
-  footer .sharebar .sb-k{
+  .sharebar .sb-k{
     width:100%;font-size:.72rem;font-weight:800;letter-spacing:.14em;
     text-transform:uppercase;color:var(--text-eyebrow);
   }
-  footer .sharebar .sb-btn{
+  .sharebar .sb-btn{
     padding:6px 13px;border-radius:999px;border:1px solid var(--border);
     background:#fff;color:var(--text-body);font-size:.82rem;font-weight:700;
     text-decoration:none;cursor:pointer;font-family:inherit;line-height:1.4;
   }
-  footer .sharebar .sb-btn:hover{color:var(--violet-2);border-color:var(--violet-2);}
+  .sharebar .sb-btn:hover{color:var(--violet-2);border-color:var(--violet-2);}
 
   @media (max-width:640px){
     .tagline{font-size:2rem;}
@@ -895,6 +895,20 @@
       <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji" aria-hidden="true">🆘</span><span data-i18n="categories.other.name">Something Else</span></button>
     </div>
   </nav>
+
+  <div class="sharebar">
+    <span class="sb-k" data-i18n="share.title">Share Rotabo</span>
+    <button class="sb-btn" type="button" data-share-copy data-i18n="share.copyLink">Copy link</button>
+    <a class="sb-btn" href="https://x.com/intent/post?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.&url=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">X</a>
+    <a class="sb-btn" href="https://wa.me/?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%20https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sb-btn" href="https://t.me/share/url?url=https%3A%2F%2Frotabo.app%2F&text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them." target="_blank" rel="noopener">Telegram</a>
+    <a class="sb-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">Facebook</a>
+    <a class="sb-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="sb-btn" href="https://www.threads.net/intent/post?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%20https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">Threads</a>
+    <a class="sb-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Frotabo.app%2F&title=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them." target="_blank" rel="noopener">Reddit</a>
+    <a class="sb-btn" href="mailto:?subject=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.&body=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%0A%0Ahttps%3A%2F%2Frotabo.app%2F">Email</a>
+    <button class="sb-btn" type="button" data-share-sheet hidden>More</button>
+  </div>
 
   <!-- The Rotabo idea used to sit halfway down the page; it now opens it,
        above the CTA stack, so a first-time visitor reads what Rotabo is for
@@ -1539,19 +1553,6 @@
 </div>
 
 <footer>
-  <div class="sharebar">
-    <span class="sb-k" data-i18n="footer.share">Share Rotabo</span>
-    <button class="sb-btn" type="button" data-share-copy data-i18n="footer.copyLink">Copy link</button>
-    <a class="sb-btn" href="https://x.com/intent/post?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.&url=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">X</a>
-    <a class="sb-btn" href="https://wa.me/?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%20https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sb-btn" href="https://t.me/share/url?url=https%3A%2F%2Frotabo.app%2F&text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them." target="_blank" rel="noopener">Telegram</a>
-    <a class="sb-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">Facebook</a>
-    <a class="sb-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="sb-btn" href="https://www.threads.net/intent/post?text=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%20https%3A%2F%2Frotabo.app%2F" target="_blank" rel="noopener">Threads</a>
-    <a class="sb-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Frotabo.app%2F&title=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them." target="_blank" rel="noopener">Reddit</a>
-    <a class="sb-btn" href="mailto:?subject=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.&body=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%0A%0Ahttps%3A%2F%2Frotabo.app%2F">Email</a>
-    <button class="sb-btn" type="button" data-share-sheet hidden>More</button>
-  </div>
   <p class="legal" data-i18n="footer.legal">Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.</p>
   <div class="flinks">
     <a href="/terms.html" data-i18n="footer.terms">Terms</a>
@@ -3022,7 +3023,7 @@ if ("serviceWorker" in navigator) {
    phone's own share sheet -- the only way into Instagram, TikTok, YouTube and
    Snapchat, none of which can be linked into from a page. */
 (function(){
-  var bar = document.querySelector("footer .sharebar");
+  var bar = document.querySelector(".sharebar");
   if (!bar || !bar.querySelector) return;
 
   var SITE = "https://rotabo.app/";
