@@ -359,6 +359,10 @@
     "tier_gold": "Kulta — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Jaa Rotabo",
+    "copyLink": "Kopioi linkki"
+  },
   "footer": {
     "legal": "Rotabo on teknologia-alusta. Kuljettajat ovat itsenäisiä palveluntarjoajia, eivät Rotabon työntekijöitä.",
     "terms": "Käyttöehdot",
@@ -579,5 +583,26 @@
     "resend": "Lähetä koodi uudelleen",
     "spam_hint": "Etkö näe sitä? Tarkista roskaposti — uuden lähettäjän ensimmäiset viestit päätyvät joskus sinne.",
     "error": "Virheellinen tai vanhentunut koodi. Yritä uudelleen."
+  },
+  "picker": {
+    "title_frame": "Valitse kaupunki, jossa haluat nähdä {what}",
+    "you_are_in": "Näytät olevan täällä: {country} — ",
+    "change_country": "muualla",
+    "search_placeholder": "Kirjoita kaupunki, tai lähin sinua",
+    "no_match": "Ei kaupunkia tällä nimellä. Kirjoita vähemmän kirjaimia, tai valitse lähin iso kaupunki.",
+    "what": {
+      "drive": "parhaat kuljettajat ja taksiyritykset",
+      "translator": "parhaat kääntäjät ja tulkit",
+      "move": "parhaat muuttofirmat ja pakettiauton kuljettajat",
+      "build": "parhaat rakentajat ja käsityöläiset",
+      "tools": "työkalut, joita ihmiset lainaavat",
+      "home": "parhaan avun kotona",
+      "auto": "parhaat automekaanikot ja avun auton kanssa",
+      "care": "ihmiset, jotka tarjoavat seuraa ja hoivaa",
+      "learn": "parhaat opettajat ja tukiopettajat",
+      "stay": "paikat, joissa ihmiset tarjoavat majoitusta",
+      "pets": "parhaat lemmikkihoitajat ja koiranulkoiluttajat",
+      "other": "kaiken muun, mitä ihmiset tarjoavat"
+    }
   }
 }

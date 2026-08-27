@@ -352,6 +352,10 @@
     "tier_gold": "Zlato — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Deli Rotabo",
+    "copyLink": "Kopiraj povezavo"
+  },
   "footer": {
     "legal": "Rotabo je tehnološka platforma. Vozniki so neodvisni ponudniki storitev, ne zaposleni pri Rotabo.",
     "terms": "Pogoji",
@@ -568,5 +572,26 @@
     "resend": "Ponovno pošlji kodo",
     "spam_hint": "Je ne vidiš? Preveri mapo z vsiljeno pošto — prva sporočila novega pošiljatelja včasih pristanejo tam.",
     "error": "Neveljavna ali potekla koda. Poskusi znova."
+  },
+  "picker": {
+    "title_frame": "Izberite mesto, kjer želite videti {what}",
+    "you_are_in": "Videti je, da ste tu: {country} — ",
+    "change_country": "drugje",
+    "search_placeholder": "Vpišite mesto ali najbližje vam",
+    "no_match": "Mesta s tem imenom ni. Vpišite manj črk ali izberite najbližje veliko mesto.",
+    "what": {
+      "drive": "najboljše voznike in taksi službe",
+      "translator": "najboljše prevajalce in tolmače",
+      "move": "najboljša selitvena podjetja in voznike kombijev",
+      "build": "najboljše gradbenike in obrtnike",
+      "tools": "orodje, ki ga ljudje posojajo",
+      "home": "najboljšo pomoč pri hiši",
+      "auto": "najboljše avtomehanike in pomoč pri avtu",
+      "care": "ljudi, ki ponujajo družbo in oskrbo",
+      "learn": "najboljše učitelje in inštruktorje",
+      "stay": "kraje, kjer ljudje ponujajo prenočišče",
+      "pets": "najboljše varuhe živali in sprehajalce psov",
+      "other": "vse drugo, kar ljudje ponujajo"
+    }
   }
 }

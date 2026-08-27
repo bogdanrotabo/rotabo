@@ -359,6 +359,10 @@
     "tier_gold": "Ouro — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Partilhar o Rotabo",
+    "copyLink": "Copiar a ligação"
+  },
   "footer": {
     "legal": "A Rotabo é uma plataforma tecnológica. Os condutores são prestadores independentes, não funcionários da Rotabo.",
     "terms": "Termos",
@@ -579,5 +583,26 @@
     "resend": "Reenviar código",
     "spam_hint": "Não o vês? Vê a pasta de spam ou lixo — os primeiros e-mails de um remetente novo às vezes vão parar lá.",
     "error": "Código inválido ou expirado. Tenta novamente."
+  },
+  "picker": {
+    "title_frame": "Escolha a cidade onde quer ver {what}",
+    "you_are_in": "Parece estar aqui: {country} — ",
+    "change_country": "noutro sítio",
+    "search_placeholder": "Escreva uma cidade, ou a mais próxima de si",
+    "no_match": "Nenhuma cidade com esse nome. Escreva menos letras, ou escolha a cidade grande mais próxima.",
+    "what": {
+      "drive": "os melhores motoristas e empresas de táxi",
+      "translator": "os melhores tradutores e intérpretes",
+      "move": "as melhores empresas de mudanças e motoristas de carrinha",
+      "build": "os melhores construtores e artesãos",
+      "tools": "as ferramentas que as pessoas emprestam",
+      "home": "a melhor ajuda em casa",
+      "auto": "os melhores mecânicos e ajuda para o carro",
+      "care": "as pessoas que oferecem companhia e apoio",
+      "learn": "os melhores professores e explicadores",
+      "stay": "os sítios onde as pessoas oferecem alojamento",
+      "pets": "os melhores cuidadores de animais e passeadores de cães",
+      "other": "tudo o resto que as pessoas oferecem"
+    }
   }
 }

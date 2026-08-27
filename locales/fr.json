@@ -359,6 +359,10 @@
     "tier_gold": "Or — 750 CHF",
     "tier_platinum": "Platine — 10 000 CHF"
   },
+  "share": {
+    "title": "Partager Rotabo",
+    "copyLink": "Copier le lien"
+  },
   "footer": {
     "legal": "Rotabo est une plateforme technologique. Les chauffeurs sont des prestataires indépendants, non des employés de Rotabo.",
     "terms": "Conditions",
@@ -579,5 +583,26 @@
     "resend": "Renvoyer le code",
     "spam_hint": "Tu ne le vois pas ? Regarde dans les spams ou les indésirables — les premiers e-mails d'un nouvel expéditeur y atterrissent parfois.",
     "error": "Code invalide ou expiré. Réessaie."
+  },
+  "picker": {
+    "title_frame": "Choisissez la ville où vous voulez voir {what}",
+    "you_are_in": "Vous semblez être ici : {country} — ",
+    "change_country": "ailleurs",
+    "search_placeholder": "Tapez une ville, ou la plus proche de chez vous",
+    "no_match": "Aucune ville de ce nom. Tapez moins de lettres, ou choisissez la grande ville la plus proche.",
+    "what": {
+      "drive": "les meilleurs chauffeurs et compagnies de taxi",
+      "translator": "les meilleurs traducteurs et interprètes",
+      "move": "les meilleurs déménageurs et chauffeurs de camionnette",
+      "build": "les meilleurs maçons et artisans",
+      "tools": "les outils que les gens prêtent",
+      "home": "la meilleure aide à la maison",
+      "auto": "les meilleurs mécaniciens et l'aide pour la voiture",
+      "care": "les personnes qui offrent compagnie et accompagnement",
+      "learn": "les meilleurs professeurs et tuteurs",
+      "stay": "les endroits où l'on propose de vous loger",
+      "pets": "les meilleurs gardiens d'animaux et promeneurs de chiens",
+      "other": "tout ce que les gens proposent d'autre"
+    }
   }
 }

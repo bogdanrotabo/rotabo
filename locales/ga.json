@@ -352,6 +352,10 @@
     "tier_gold": "Ór — 750 CHF",
     "tier_platinum": "Platanam — 10 000 CHF"
   },
+  "share": {
+    "title": "Roinn Rotabo",
+    "copyLink": "Cóipeáil an nasc"
+  },
   "footer": {
     "legal": "Is ardán teicneolaíochta é Rotabo. Is soláthraithe neamhspleácha iad na tiománaithe, ní fostaithe de chuid Rotabo iad.",
     "terms": "Téarmaí",
@@ -568,5 +572,26 @@
     "resend": "Seol an cód arís",
     "spam_hint": "Nach bhfeiceann tú é? Féach san fhillteán turscair — bíonn na chéad ríomhphoist ó sheoltóir nua ann uaireanta.",
     "error": "Cód neamhbhailí nó as dáta. Bain triail eile as."
+  },
+  "picker": {
+    "title_frame": "Roghnaigh an chathair inar mian leat {what} a fheiceáil",
+    "you_are_in": "Is cosúil go bhfuil tú anseo: {country} — ",
+    "change_country": "áit éigin eile",
+    "search_placeholder": "Clóscríobh cathair, nó an ceann is gaire duit",
+    "no_match": "Níl cathair ann leis an ainm sin. Clóscríobh níos lú litreacha, nó roghnaigh an chathair mhór is gaire.",
+    "what": {
+      "drive": "na tiománaithe agus na comhlachtaí tacsaí is fearr",
+      "translator": "na haistritheoirí agus na hateangairí is fearr",
+      "move": "na comhlachtaí aistrithe tí agus na tiománaithe veain is fearr",
+      "build": "na tógálaithe agus na ceardaithe is fearr",
+      "tools": "na huirlisí a thugann daoine ar iasacht",
+      "home": "an cúnamh is fearr timpeall an tí",
+      "auto": "na meicneoirí agus an cúnamh gluaisteáin is fearr",
+      "care": "na daoine a thairgeann comhluadar agus cúram",
+      "learn": "na múinteoirí agus na teagascóirí is fearr",
+      "stay": "na háiteanna a dtairgeann daoine lóistín iontu",
+      "pets": "na feighlithe peataí agus na siúlóirí madraí is fearr",
+      "other": "gach rud eile a thairgeann daoine"
+    }
   }
 }

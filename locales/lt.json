@@ -352,6 +352,10 @@
     "tier_gold": "Auksas — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Bendrinti Rotabo",
+    "copyLink": "Kopijuoti nuorodą"
+  },
   "footer": {
     "legal": "Rotabo yra technologijų platforma. Vairuotojai yra nepriklausomi paslaugų teikėjai, o ne Rotabo darbuotojai.",
     "terms": "Sąlygos",
@@ -568,5 +572,26 @@
     "resend": "Siųsti kodą dar kartą",
     "spam_hint": "Nematai? Patikrink šlamšto aplanką — pirmieji laiškai iš naujo siuntėjo kartais patenka ten.",
     "error": "Neteisingas arba pasibaigęs kodas. Bandyk dar kartą."
+  },
+  "picker": {
+    "title_frame": "Pasirinkite miestą, kuriame norite pamatyti {what}",
+    "you_are_in": "Panašu, kad esate čia: {country} — ",
+    "change_country": "kitur",
+    "search_placeholder": "Įveskite miestą arba artimiausią jums",
+    "no_match": "Tokio pavadinimo miesto nėra. Įveskite mažiau raidžių arba pasirinkite artimiausią didelį miestą.",
+    "what": {
+      "drive": "geriausius vairuotojus ir taksi įmones",
+      "translator": "geriausius vertėjus raštu ir žodžiu",
+      "move": "geriausias perkraustymo įmones ir furgonų vairuotojus",
+      "build": "geriausius statybininkus ir meistrus",
+      "tools": "įrankius, kuriuos žmonės skolina",
+      "home": "geriausią pagalbą namuose",
+      "auto": "geriausius automechanikus ir pagalbą su automobiliu",
+      "care": "žmones, siūlančius draugiją ir priežiūrą",
+      "learn": "geriausius mokytojus ir korepetitorius",
+      "stay": "vietas, kur žmonės siūlo apsistoti",
+      "pets": "geriausius augintinių prižiūrėtojus ir šunų vedžiotojus",
+      "other": "visa kita, ką žmonės siūlo"
+    }
   }
 }

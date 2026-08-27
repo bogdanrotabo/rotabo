@@ -359,6 +359,10 @@
     "tier_gold": "Guld — 750 CHF",
     "tier_platinum": "Platin — 10 000 CHF"
   },
+  "share": {
+    "title": "Del Rotabo",
+    "copyLink": "Kopiér link"
+  },
   "footer": {
     "legal": "Rotabo er en teknologiplatform. Chauffører er selvstændige udbydere, ikke ansat af Rotabo.",
     "terms": "Vilkår",
@@ -580,5 +584,26 @@
     "password_updated": "Din adgangskode er blevet opdateret.",
     "load_error": "Dine opslag kunne ikke indlæses. Prøv venligst igen.",
     "retry_btn": "Prøv igen"
+  },
+  "picker": {
+    "title_frame": "Vælg byen, hvor du vil se {what}",
+    "you_are_in": "Du ser ud til at være i {country} — ",
+    "change_country": "et andet sted",
+    "search_placeholder": "Skriv en by, eller den nærmeste ved dig",
+    "no_match": "Ingen by med det navn. Skriv færre bogstaver, eller vælg den nærmeste store by.",
+    "what": {
+      "drive": "de bedste chauffører og taxiselskaber",
+      "translator": "de bedste oversættere og tolke",
+      "move": "de bedste flyttefirmaer og varevognschauffører",
+      "build": "de bedste byggefolk og håndværkere",
+      "tools": "værktøjet som folk låner ud",
+      "home": "den bedste hjælp i hjemmet",
+      "auto": "de bedste mekanikere og hjælp til bilen",
+      "care": "dem der tilbyder selskab og omsorg",
+      "learn": "de bedste lærere og undervisere",
+      "stay": "stederne hvor folk tilbyder overnatning",
+      "pets": "de bedste dyrepassere og hundeluftere",
+      "other": "alt det andet folk tilbyder"
+    }
   }
 }

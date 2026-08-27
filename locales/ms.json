@@ -352,6 +352,10 @@
     "tier_gold": "Emas — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },
+  "share": {
+    "title": "Kongsi Rotabo",
+    "copyLink": "Salin pautan"
+  },
   "footer": {
     "legal": "Rotabo ialah platform teknologi. Pemandu adalah penyedia perkhidmatan bebas, bukan pekerja Rotabo.",
     "terms": "Terma",
@@ -568,5 +572,26 @@
     "resend": "Hantar kod semula",
     "spam_hint": "Tidak nampak? Semak folder Spam atau Junk — e-mel pertama daripada penghantar baharu kadangkala masuk ke sana.",
     "error": "Kod tidak sah atau telah tamat tempoh. Cuba lagi."
+  },
+  "picker": {
+    "title_frame": "Pilih bandar tempat anda mahu melihat {what}",
+    "you_are_in": "Nampaknya anda di {country} — ",
+    "change_country": "di tempat lain",
+    "search_placeholder": "Taip nama bandar, atau yang paling dekat dengan anda",
+    "no_match": "Tiada bandar dengan nama itu. Taip kurang huruf, atau pilih bandar besar yang paling dekat.",
+    "what": {
+      "drive": "pemandu dan syarikat teksi terbaik",
+      "translator": "penterjemah dan jurubahasa terbaik",
+      "move": "syarikat pindah rumah dan pemandu van terbaik",
+      "build": "tukang bina dan tukang mahir terbaik",
+      "tools": "alatan yang orang pinjamkan",
+      "home": "bantuan terbaik di rumah",
+      "auto": "mekanik dan bantuan kereta terbaik",
+      "care": "orang yang menawarkan teman dan penjagaan",
+      "learn": "guru dan tutor terbaik",
+      "stay": "tempat yang orang tawarkan untuk menumpang",
+      "pets": "penjaga haiwan dan pembawa anjing bersiar terbaik",
+      "other": "segala yang lain yang orang tawarkan"
+    }
   }
 }

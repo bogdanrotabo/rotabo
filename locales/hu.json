@@ -352,6 +352,10 @@
     "tier_gold": "Arany — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Rotabo megosztása",
+    "copyLink": "Link másolása"
+  },
   "footer": {
     "legal": "A Rotabo egy technológiai platform. A sofőrök független szolgáltatók, nem a Rotabo alkalmazottai.",
     "terms": "Feltételek",
@@ -568,5 +572,26 @@
     "resend": "Kód újraküldése",
     "spam_hint": "Nem látod? Nézd meg a spam mappát — új feladó első levelei néha oda kerülnek.",
     "error": "Érvénytelen vagy lejárt kód. Próbáld újra."
+  },
+  "picker": {
+    "title_frame": "Válassza ki a várost, ahol látni szeretné {what}",
+    "you_are_in": "Úgy tűnik, itt van: {country} — ",
+    "change_country": "máshol",
+    "search_placeholder": "Írjon be egy várost, vagy a legközelebbit",
+    "no_match": "Nincs ilyen nevű város. Írjon be kevesebb betűt, vagy válassza a legközelebbi nagyvárost.",
+    "what": {
+      "drive": "a legjobb sofőröket és taxitársaságokat",
+      "translator": "a legjobb fordítókat és tolmácsokat",
+      "move": "a legjobb költöztetőket és furgonsofőröket",
+      "build": "a legjobb építőket és mestereket",
+      "tools": "a szerszámokat, amiket az emberek kölcsönadnak",
+      "home": "a legjobb segítséget a ház körül",
+      "auto": "a legjobb autószerelőket és autós segítséget",
+      "care": "azokat, akik társaságot és gondozást kínálnak",
+      "learn": "a legjobb tanárokat és korrepetálókat",
+      "stay": "a helyeket, ahol az emberek szállást kínálnak",
+      "pets": "a legjobb állatfelügyelőket és kutyasétáltatókat",
+      "other": "mindent mást, amit az emberek kínálnak"
+    }
   }
 }

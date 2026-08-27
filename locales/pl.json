@@ -352,6 +352,10 @@
     "tier_gold": "Złoto — 750 CHF",
     "tier_platinum": "Platyna — 10 000 CHF"
   },
+  "share": {
+    "title": "Udostępnij Rotabo",
+    "copyLink": "Skopiuj link"
+  },
   "footer": {
     "legal": "Rotabo to platforma technologiczna. Kierowcy są niezależnymi usługodawcami, a nie pracownikami Rotabo.",
     "terms": "Regulamin",
@@ -568,5 +572,26 @@
     "resend": "Wyślij kod ponownie",
     "spam_hint": "Nie widzisz go? Sprawdź folder spam — pierwsze wiadomości od nowego nadawcy czasem tam trafiają.",
     "error": "Nieprawidłowy lub wygasły kod. Spróbuj ponownie."
+  },
+  "picker": {
+    "title_frame": "Wybierzcie miasto, w którym chcecie zobaczyć {what}",
+    "you_are_in": "Wygląda na to, że jesteście tutaj: {country} — ",
+    "change_country": "gdzie indziej",
+    "search_placeholder": "Wpiszcie miasto, albo najbliższe wam",
+    "no_match": "Nie ma miasta o tej nazwie. Wpiszcie mniej liter, albo wybierzcie najbliższe duże miasto.",
+    "what": {
+      "drive": "najlepszych kierowców i firmy taksówkowe",
+      "translator": "najlepszych tłumaczy pisemnych i ustnych",
+      "move": "najlepsze firmy przeprowadzkowe i kierowców furgonetek",
+      "build": "najlepszych budowlańców i fachowców",
+      "tools": "narzędzia, które ludzie wypożyczają",
+      "home": "najlepszą pomoc w domu",
+      "auto": "najlepszych mechaników i pomoc przy samochodzie",
+      "care": "osoby oferujące towarzystwo i opiekę",
+      "learn": "najlepszych nauczycieli i korepetytorów",
+      "stay": "miejsca, w których ludzie oferują nocleg",
+      "pets": "najlepszych opiekunów zwierząt i wyprowadzających psy",
+      "other": "wszystko inne, co ludzie oferują"
+    }
   }
 }

@@ -2601,8 +2601,13 @@
     var seq = ++loadSeq;
     if (code !== "en") warmEnglish();
     if (cache[code]){
-      applyTranslations(cache[code]);
+      // Language and direction go on the document first: applyTranslations
+      // fires __afterTranslate, and a listener there (the city picker, which
+      // localises country names) would otherwise read the language the
+      // visitor has just left. It also stops a screen reader announcing the
+      // new text under the old language.
       setLangUI(code);
+      applyTranslations(cache[code]);
       return Promise.resolve();
     }
     return fetch("locales/" + code + ".json")
@@ -2613,8 +2618,8 @@
       .then(function(dict){
         cache[code] = dict;
         if (seq !== loadSeq) return;
-        applyTranslations(dict);
         setLangUI(code);
+        applyTranslations(dict);
       })
       .catch(function(err){
         console.error("i18n:", err);
@@ -3107,6 +3112,9 @@ if ("serviceWorker" in navigator) {
     if (modal.classList.contains("open")) {
       paintTitle();
       paintWhere();
+      // The country names are localised, so the open list is now stale -- and
+      // needs re-sorting, not just relabelling.
+      if (state.mode === "countries") renderCountries(true);
     }
   };
 
@@ -3206,12 +3214,20 @@ if ("serviceWorker" in navigator) {
     var q = (search.value || "").trim().toLowerCase();
     var all = (C && C.allIso) ? C.allIso() : [];
     var named = all.map(function(iso){
-      return { iso: iso, name: C.nameForIso(iso), flag: C.flagForIso(iso) };
+      // Two names per country: the localised one people read, and the
+      // English one they may still type -- someone on the German page
+      // searching "Switzerland" should not come up empty.
+      return { iso: iso, name: countryName(iso), en: C.nameForIso(iso), flag: C.flagForIso(iso) };
     }).filter(function(x){ return x.name && citiesFor(x.iso).length; });
     if (q) {
-      named = named.filter(function(x){ return x.name.toLowerCase().indexOf(q) !== -1; });
+      named = named.filter(function(x){
+        return x.name.toLowerCase().indexOf(q) !== -1 ||
+               (x.en || "").toLowerCase().indexOf(q) !== -1;
+      });
     }
-    named.sort(function(a,b){ return a.name.localeCompare(b.name); });
+    // Alphabetical order is not the same in every language.
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    named.sort(function(a,b){ return a.name.localeCompare(b.name, lang); });
     draw(named.map(function(x){ return x.flag + "  " + x.name; }), function(label){
       var picked = named.filter(function(x){ return (x.flag + "  " + x.name) === label; })[0];
       if (!picked) return;
@@ -3224,9 +3240,29 @@ if ("serviceWorker" in navigator) {
     }, fresh);
   }
 
+  // countries.js carries English names only, so the German page read
+  // "Sie sind wohl hier: Germany". Intl.DisplayNames is already in the
+  // browser and knows every language this site speaks, so localising the
+  // country costs no dictionary and no request. Browsers without it, and
+  // region codes it does not recognise, fall back to the English name.
+  var displayNames = null, displayNamesLang = "";
+  function countryName(iso){
+    var C = window.RotaboCountries;
+    var fallback = C ? C.nameForIso(iso) : "";
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    if (typeof Intl === "undefined" || !Intl.DisplayNames) return fallback;
+    if (displayNamesLang !== lang) {
+      try { displayNames = new Intl.DisplayNames([lang], { type: "region" }); }
+      catch (e) { displayNames = null; }
+      displayNamesLang = lang;
+    }
+    if (!displayNames) return fallback;
+    try { return displayNames.of(iso) || fallback; } catch (e) { return fallback; }
+  }
+
   function paintWhere(){
     var C = window.RotaboCountries;
-    var name = C ? C.nameForIso(state.iso) : "";
+    var name = C ? countryName(state.iso) : "";
     if (!name) { where.hidden = true; return; }
     where.hidden = false;
     flagEl.textContent = C.flagForIso(state.iso);

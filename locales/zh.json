@@ -352,6 +352,10 @@
     "tier_gold": "黄金 — 750 CHF",
     "tier_platinum": "铂金 — 10 000 CHF"
   },
+  "share": {
+    "title": "分享 Rotabo",
+    "copyLink": "复制链接"
+  },
   "footer": {
     "legal": "Rotabo 是一个技术平台。司机为独立服务提供者，并非 Rotabo 的雇员。",
     "terms": "条款",
@@ -568,5 +572,26 @@
     "resend": "重新发送验证码",
     "spam_hint": "没看到？请查看垃圾邮件文件夹 — 新发件人的第一封邮件有时会落在那里。",
     "error": "验证码无效或已过期，请重试。"
+  },
+  "picker": {
+    "title_frame": "选择您想查看{what}的城市",
+    "you_are_in": "看起来您在{country} — ",
+    "change_country": "换个地方",
+    "search_placeholder": "输入城市名，或离您最近的城市",
+    "no_match": "没有这个名字的城市。少输入几个字，或选择最近的大城市。",
+    "what": {
+      "drive": "最好的司机和出租车公司",
+      "translator": "最好的笔译和口译",
+      "move": "最好的搬家公司和货车司机",
+      "build": "最好的建筑工和手艺人",
+      "tools": "大家出借的工具",
+      "home": "最好的家务帮手",
+      "auto": "最好的汽修师傅和汽车帮助",
+      "care": "提供陪伴和照护的人",
+      "learn": "最好的老师和家教",
+      "stay": "大家提供住宿的地方",
+      "pets": "最好的宠物看护和遛狗人",
+      "other": "大家提供的其他一切"
+    }
   }
 }

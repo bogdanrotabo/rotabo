@@ -352,6 +352,10 @@
     "tier_gold": "Zelts — 750 CHF",
     "tier_platinum": "Platīns — 10 000 CHF"
   },
+  "share": {
+    "title": "Kopīgojiet Rotabo",
+    "copyLink": "Kopēt saiti"
+  },
   "footer": {
     "legal": "Rotabo ir tehnoloģiju platforma. Šoferi ir neatkarīgi pakalpojumu sniedzēji, nevis Rotabo darbinieki.",
     "terms": "Noteikumi",
@@ -568,5 +572,26 @@
     "resend": "Nosūtīt kodu vēlreiz",
     "spam_hint": "Neredzi to? Pārbaudi mēstuļu mapi — pirmās vēstules no jauna sūtītāja dažreiz nonāk tur.",
     "error": "Nederīgs vai novecojis kods. Mēģini vēlreiz."
+  },
+  "picker": {
+    "title_frame": "Izvēlieties pilsētu, kurā vēlaties redzēt {what}",
+    "you_are_in": "Šķiet, ka esat šeit: {country} — ",
+    "change_country": "citur",
+    "search_placeholder": "Ierakstiet pilsētu vai tuvāko jums",
+    "no_match": "Nav pilsētas ar tādu nosaukumu. Ierakstiet mazāk burtu vai izvēlieties tuvāko lielo pilsētu.",
+    "what": {
+      "drive": "labākos šoferus un taksometru uzņēmumus",
+      "translator": "labākos tulkotājus un tulkus",
+      "move": "labākos pārvākšanās uzņēmumus un furgonu vadītājus",
+      "build": "labākos celtniekus un amatniekus",
+      "tools": "darbarīkus, ko cilvēki aizdod",
+      "home": "labāko palīdzību mājās",
+      "auto": "labākos automehāniķus un palīdzību ar auto",
+      "care": "cilvēkus, kas piedāvā sabiedrību un aprūpi",
+      "learn": "labākos skolotājus un pasniedzējus",
+      "stay": "vietas, kur cilvēki piedāvā naktsmītni",
+      "pets": "labākos mājdzīvnieku pieskatītājus un suņu pastaigu vedējus",
+      "other": "visu pārējo, ko cilvēki piedāvā"
+    }
   }
 }

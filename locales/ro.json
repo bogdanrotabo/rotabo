@@ -365,6 +365,10 @@
     "tier_gold": "Aur — 750 CHF",
     "tier_platinum": "Platină — 10 000 CHF"
   },
+  "share": {
+    "title": "Distribuie Rotabo",
+    "copyLink": "Copiază linkul"
+  },
   "footer": {
     "legal": "Rotabo este o platformă tehnologică. Șoferii sunt furnizori independenți, nu angajați ai Rotabo.",
     "terms": "Termeni",
@@ -577,5 +581,26 @@
     "password_updated": "Parola ta a fost actualizată.",
     "load_error": "Anunțurile tale nu au putut fi încărcate. Încearcă din nou.",
     "retry_btn": "Încearcă din nou"
+  },
+  "picker": {
+    "title_frame": "Alegeți orașul unde vreți să vedeți {what}",
+    "you_are_in": "Se pare că sunteți în {country} — ",
+    "change_country": "altundeva",
+    "search_placeholder": "Scrieți un oraș, sau cel mai apropiat de dumneavoastră",
+    "no_match": "Niciun oraș cu numele ăsta. Scrieți mai puține litere, sau alegeți orașul mare cel mai apropiat.",
+    "what": {
+      "drive": "cei mai buni șoferi și companii de taxi",
+      "translator": "cei mai buni traducători și interpreți",
+      "move": "cele mai bune firme de mutări și șoferi de dubă",
+      "build": "cei mai buni constructori și meseriași",
+      "tools": "sculele pe care le dau oamenii cu împrumut",
+      "home": "cel mai bun ajutor prin casă",
+      "auto": "cei mai buni mecanici și ajutor pentru mașină",
+      "care": "oamenii care oferă companie și îngrijire",
+      "learn": "cei mai buni profesori și meditatori",
+      "stay": "locurile unde oamenii oferă cazare",
+      "pets": "cei mai buni îngrijitori de animale și plimbători de câini",
+      "other": "tot ce mai oferă oamenii"
+    }
   }
 }

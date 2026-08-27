@@ -352,6 +352,10 @@
     "tier_gold": "Emas — 750 CHF",
     "tier_platinum": "Platinum — 10 000 CHF"
   },
+  "share": {
+    "title": "Bagikan Rotabo",
+    "copyLink": "Salin tautan"
+  },
   "footer": {
     "legal": "Rotabo adalah platform teknologi. Pengemudi adalah penyedia layanan independen, bukan karyawan Rotabo.",
     "terms": "Ketentuan",
@@ -568,5 +572,26 @@
     "resend": "Kirim ulang kode",
     "spam_hint": "Tidak terlihat? Cek folder Spam atau Junk — email pertama dari pengirim baru kadang masuk ke sana.",
     "error": "Kode tidak valid atau sudah kedaluwarsa. Coba lagi."
+  },
+  "picker": {
+    "title_frame": "Pilih kota tempat Anda ingin melihat {what}",
+    "you_are_in": "Sepertinya Anda di {country} — ",
+    "change_country": "di tempat lain",
+    "search_placeholder": "Ketik nama kota, atau yang paling dekat dengan Anda",
+    "no_match": "Tidak ada kota dengan nama itu. Ketik lebih sedikit huruf, atau pilih kota besar terdekat.",
+    "what": {
+      "drive": "sopir dan perusahaan taksi terbaik",
+      "translator": "penerjemah dan juru bahasa terbaik",
+      "move": "jasa pindahan dan sopir van terbaik",
+      "build": "tukang bangunan dan tukang ahli terbaik",
+      "tools": "peralatan yang dipinjamkan orang",
+      "home": "bantuan terbaik di rumah",
+      "auto": "montir dan bantuan mobil terbaik",
+      "care": "orang yang menawarkan teman dan perawatan",
+      "learn": "guru dan tutor terbaik",
+      "stay": "tempat yang ditawarkan orang untuk menginap",
+      "pets": "penjaga hewan dan pengajak jalan anjing terbaik",
+      "other": "semua hal lain yang ditawarkan orang"
+    }
   }
 }

@@ -352,6 +352,10 @@
     "tier_gold": "Dhahabu — CHF 750",
     "tier_platinum": "Platinamu — CHF 10 000"
   },
+  "share": {
+    "title": "Shiriki Rotabo",
+    "copyLink": "Nakili kiungo"
+  },
   "footer": {
     "legal": "Rotabo ni jukwaa la teknolojia. Madereva ni watoa huduma huru, si wafanyakazi wa Rotabo.",
     "terms": "Masharti",
@@ -568,5 +572,26 @@
     "resend": "Tuma msimbo tena",
     "spam_hint": "Hauuoni? Angalia folda ya taka — barua pepe za kwanza kutoka kwa mtumaji mpya mara nyingine huishia huko.",
     "error": "Msimbo si sahihi au umeisha muda. Jaribu tena."
+  },
+  "picker": {
+    "title_frame": "Chagua mji ambapo unataka kuona {what}",
+    "you_are_in": "Inaonekana uko {country} — ",
+    "change_country": "mahali pengine",
+    "search_placeholder": "Andika mji, au ulio karibu nawe zaidi",
+    "no_match": "Hakuna mji wenye jina hilo. Andika herufi chache, au chagua mji mkubwa ulio karibu zaidi.",
+    "what": {
+      "drive": "madereva na kampuni bora za teksi",
+      "translator": "wafasiri na wakalimani bora",
+      "move": "kampuni bora za kuhamisha na madereva wa magari madogo",
+      "build": "wajenzi na mafundi bora",
+      "tools": "vifaa ambavyo watu wanaazima",
+      "home": "msaada bora nyumbani",
+      "auto": "mafundi bora wa magari na msaada wa gari",
+      "care": "watu wanaotoa uandamani na utunzaji",
+      "learn": "walimu na wakufunzi bora",
+      "stay": "sehemu ambazo watu wanatoa malazi",
+      "pets": "walezi bora wa wanyama na watembezaji wa mbwa",
+      "other": "kila kitu kingine ambacho watu wanatoa"
+    }
   }
 }

@@ -359,6 +359,10 @@
     "tier_gold": "Kuld — 750 CHF",
     "tier_platinum": "Plaatina — 10 000 CHF"
   },
+  "share": {
+    "title": "Jagage Rotabot",
+    "copyLink": "Kopeeri link"
+  },
   "footer": {
     "legal": "Rotabo on tehnoloogiaplatvorm. Juhid on sõltumatud teenusepakkujad, mitte Rotabo töötajad.",
     "terms": "Tingimused",
@@ -579,5 +583,26 @@
     "resend": "Saada kood uuesti",
     "spam_hint": "Ei näe seda? Vaata rämpsposti kausta — uue saatja esimesed kirjad satuvad vahel sinna.",
     "error": "Vigane või aegunud kood. Proovi uuesti."
+  },
+  "picker": {
+    "title_frame": "Valige linn, kus soovite näha {what}",
+    "you_are_in": "Tundub, et olete siin: {country} — ",
+    "change_country": "mujal",
+    "search_placeholder": "Kirjutage linn või teile lähim",
+    "no_match": "Sellise nimega linna ei ole. Kirjutage vähem tähti või valige lähim suur linn.",
+    "what": {
+      "drive": "parimaid juhte ja taksofirmasid",
+      "translator": "parimaid tõlkijaid ja tõlke",
+      "move": "parimaid kolimisfirmasid ja kaubikujuhte",
+      "build": "parimaid ehitajaid ja käsitöölisi",
+      "tools": "tööriistu, mida inimesed laenavad",
+      "home": "parimat abi kodus",
+      "auto": "parimaid automehaanikuid ja abi autoga",
+      "care": "inimesi, kes pakuvad seltsi ja hoolt",
+      "learn": "parimaid õpetajaid ja juhendajaid",
+      "stay": "kohti, kus inimesed pakuvad peavarju",
+      "pets": "parimaid lemmikloomahoidjaid ja koerte jalutajaid",
+      "other": "kõike muud, mida inimesed pakuvad"
+    }
   }
 }

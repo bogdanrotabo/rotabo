@@ -352,6 +352,10 @@
     "tier_gold": "Zlato — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Zdieľať Rotabo",
+    "copyLink": "Skopírovať odkaz"
+  },
   "footer": {
     "legal": "Rotabo je technologická platforma. Vodiči sú nezávislí poskytovatelia, nie zamestnanci Rotabo.",
     "terms": "Podmienky",
@@ -568,5 +572,26 @@
     "resend": "Poslať kód znova",
     "spam_hint": "Nevidíš ho? Skontroluj priečinok spam — prvé e-maily od nového odosielateľa tam občas spadnú.",
     "error": "Neplatný alebo vypršaný kód. Skús to znova."
+  },
+  "picker": {
+    "title_frame": "Vyberte mesto, kde chcete vidieť {what}",
+    "you_are_in": "Vyzerá to, že ste tu: {country} — ",
+    "change_country": "inde",
+    "search_placeholder": "Napíšte mesto, alebo to najbližšie k vám",
+    "no_match": "Mesto s takým názvom neexistuje. Napíšte menej písmen, alebo vyberte najbližšie veľké mesto.",
+    "what": {
+      "drive": "najlepších vodičov a taxislužby",
+      "translator": "najlepších prekladateľov a tlmočníkov",
+      "move": "najlepšie sťahovacie firmy a vodičov dodávok",
+      "build": "najlepších stavbárov a remeselníkov",
+      "tools": "náradie, ktoré ľudia požičiavajú",
+      "home": "najlepšiu pomoc v domácnosti",
+      "auto": "najlepších automechanikov a pomoc s autom",
+      "care": "ľudí, ktorí ponúkajú spoločnosť a starostlivosť",
+      "learn": "najlepších učiteľov a doučovateľov",
+      "stay": "miesta, kde ľudia ponúkajú ubytovanie",
+      "pets": "najlepších opatrovateľov zvierat a venčiteľov psov",
+      "other": "všetko ostatné, čo ľudia ponúkajú"
+    }
   }
 }

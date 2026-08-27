@@ -352,6 +352,10 @@
     "tier_gold": "Deheb — 750 CHF",
     "tier_platinum": "Platinu — 10 000 CHF"
   },
+  "share": {
+    "title": "Aqsam Rotabo",
+    "copyLink": "Ikkopja l-link"
+  },
   "footer": {
     "legal": "Rotabo hija pjattaforma teknoloġika. Is-sewwieqa huma fornituri indipendenti, mhux impjegati ta' Rotabo.",
     "terms": "Termini",
@@ -568,5 +572,26 @@
     "resend": "Erġa' ibgħat il-kodiċi",
     "spam_hint": "Ma tarahx? Iċċekkja l-folder tal-ispam — l-ewwel emails minn mittent ġdid xi kultant jispiċċaw hemm.",
     "error": "Kodiċi invalidu jew skadut. Erġa' pprova."
+  },
+  "picker": {
+    "title_frame": "Agħżel il-belt fejn trid tara {what}",
+    "you_are_in": "Jidher li int hawn: {country} — ",
+    "change_country": "band'oħra",
+    "search_placeholder": "Ikteb belt, jew l-eqreb waħda għalik",
+    "no_match": "M'hemm l-ebda belt b'dak l-isem. Ikteb inqas ittri, jew agħżel l-eqreb belt kbira.",
+    "what": {
+      "drive": "l-aħjar sewwieqa u kumpaniji tat-taxi",
+      "translator": "l-aħjar tradutturi u interpreti",
+      "move": "l-aħjar kumpaniji tat-tqanqil u sewwieqa tal-vannijiet",
+      "build": "l-aħjar bennejja u nies tas-sengħa",
+      "tools": "l-għodda li n-nies isellfu",
+      "home": "l-aħjar għajnuna fid-dar",
+      "auto": "l-aħjar mekkaniks u għajnuna għall-karozza",
+      "care": "in-nies li joffru kumpanija u kura",
+      "learn": "l-aħjar għalliema u tuturi",
+      "stay": "il-postijiet fejn in-nies joffru fejn toqgħod",
+      "pets": "l-aħjar min jieħu ħsieb l-annimali u min jimxi l-klieb",
+      "other": "kull ħaġ'oħra li joffru n-nies"
+    }
   }
 }

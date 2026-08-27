@@ -352,6 +352,10 @@
     "tier_gold": "Guld — 750 CHF",
     "tier_platinum": "Platina — 10 000 CHF"
   },
+  "share": {
+    "title": "Dela Rotabo",
+    "copyLink": "Kopiera länk"
+  },
   "footer": {
     "legal": "Rotabo är en teknikplattform. Förarna är oberoende leverantörer, inte anställda hos Rotabo.",
     "terms": "Villkor",
@@ -568,5 +572,26 @@
     "resend": "Skicka koden igen",
     "spam_hint": "Ser du den inte? Kolla skräpposten — de första mejlen från en ny avsändare hamnar ibland där.",
     "error": "Ogiltig eller utgången kod. Försök igen."
+  },
+  "picker": {
+    "title_frame": "Välj staden där du vill se {what}",
+    "you_are_in": "Du verkar vara i {country} — ",
+    "change_country": "någon annanstans",
+    "search_placeholder": "Skriv en stad, eller den närmaste dig",
+    "no_match": "Ingen stad med det namnet. Skriv färre bokstäver, eller välj den närmaste stora staden.",
+    "what": {
+      "drive": "de bästa förarna och taxibolagen",
+      "translator": "de bästa översättarna och tolkarna",
+      "move": "de bästa flyttfirmorna och skåpbilsförarna",
+      "build": "de bästa byggarna och hantverkarna",
+      "tools": "verktygen som folk lånar ut",
+      "home": "den bästa hjälpen hemma",
+      "auto": "de bästa mekanikerna och hjälpen med bilen",
+      "care": "de som erbjuder sällskap och omsorg",
+      "learn": "de bästa lärarna och handledarna",
+      "stay": "ställena där folk erbjuder boende",
+      "pets": "de bästa djurpassarna och hundrastarna",
+      "other": "allt annat som folk erbjuder"
+    }
   }
 }

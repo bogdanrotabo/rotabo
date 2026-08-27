@@ -352,6 +352,10 @@
     "tier_gold": "Vàng — 750 CHF",
     "tier_platinum": "Bạch kim — 10 000 CHF"
   },
+  "share": {
+    "title": "Chia sẻ Rotabo",
+    "copyLink": "Sao chép liên kết"
+  },
   "footer": {
     "legal": "Rotabo là một nền tảng công nghệ. Tài xế là nhà cung cấp dịch vụ độc lập, không phải nhân viên của Rotabo.",
     "terms": "Điều khoản",
@@ -568,5 +572,26 @@
     "resend": "Gửi lại mã",
     "spam_hint": "Không thấy? Kiểm tra thư mục Spam hoặc Junk — email đầu tiên từ người gửi mới đôi khi rơi vào đó.",
     "error": "Mã không hợp lệ hoặc đã hết hạn. Vui lòng thử lại."
+  },
+  "picker": {
+    "title_frame": "Chọn thành phố nơi bạn muốn xem {what}",
+    "you_are_in": "Có vẻ bạn đang ở {country} — ",
+    "change_country": "nơi khác",
+    "search_placeholder": "Nhập một thành phố, hoặc nơi gần bạn nhất",
+    "no_match": "Không có thành phố nào tên như vậy. Nhập ít chữ hơn, hoặc chọn thành phố lớn gần nhất.",
+    "what": {
+      "drive": "những tài xế và hãng taxi tốt nhất",
+      "translator": "những biên dịch và phiên dịch tốt nhất",
+      "move": "những công ty chuyển nhà và tài xế xe tải nhỏ tốt nhất",
+      "build": "những thợ xây và thợ lành nghề tốt nhất",
+      "tools": "những dụng cụ mọi người cho mượn",
+      "home": "sự trợ giúp việc nhà tốt nhất",
+      "auto": "những thợ sửa xe và trợ giúp về xe tốt nhất",
+      "care": "những người nhận bầu bạn và chăm sóc",
+      "learn": "những giáo viên và gia sư tốt nhất",
+      "stay": "những chỗ mọi người cho ở nhờ",
+      "pets": "những người trông thú cưng và dắt chó tốt nhất",
+      "other": "mọi thứ khác mà mọi người cung cấp"
+    }
   }
 }
