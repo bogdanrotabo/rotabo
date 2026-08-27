@@ -579,5 +579,26 @@
     "password_updated": "Your password has been updated.",
     "load_error": "Your listings couldn't be loaded. Please try again.",
     "retry_btn": "Try again"
+  },
+  "picker": {
+    "title_frame": "Choose the city where you want to see {what}",
+    "you_are_in": "It looks like you are in {country} — ",
+    "change_country": "somewhere else",
+    "search_placeholder": "Type a city, or the one nearest to you",
+    "no_match": "No city by that name. Type fewer letters, or pick the nearest big one.",
+    "what": {
+      "drive": "the best drivers and taxi companies",
+      "translator": "the best translators and interpreters",
+      "move": "the best movers and van drivers",
+      "build": "the best builders and tradesmen",
+      "tools": "the tools people are lending out",
+      "home": "the best help around the house",
+      "auto": "the best mechanics and car help",
+      "care": "the people offering company and care",
+      "learn": "the best teachers and tutors",
+      "stay": "the places people offer to stay in",
+      "pets": "the best pet sitters and dog walkers",
+      "other": "everything else people are offering"
+    }
   }
 }

@@ -237,11 +237,25 @@
     return iso ? iso2ToFlag(iso) : "";
   }
 
+  // The reverse direction, for callers who start from a code rather than a
+  // name: Cloudflare tells the city picker "DE" and it has to say Germany.
+  // First spelling wins, and RAW_ISO lists the English one first.
+  var ISO_TO_NAME = {};
+  Object.keys(RAW_ISO).forEach(function(k){
+    var iso = RAW_ISO[k];
+    if (!ISO_TO_NAME[iso]) ISO_TO_NAME[iso] = k.trim();
+  });
+
   global.RotaboCountries = {
     norm: norm,
     // "" when the name is not recognised, so callers can fall back to
     // raw-text matching rather than silently dropping the row.
     isoFor: function (name) { return NAME_TO_ISO[norm(name)] || ""; },
-    flagFor: flagFor
+    flagFor: flagFor,
+    flagForIso: function (iso) { return iso2ToFlag(String(iso || "").toUpperCase()); },
+    nameForIso: function (iso) { return ISO_TO_NAME[String(iso || "").toUpperCase()] || ""; },
+    // Every code we have a name for, so the picker can offer the whole list
+    // when someone says they are somewhere else.
+    allIso: function () { return Object.keys(ISO_TO_NAME).sort(); }
   };
 })(window);

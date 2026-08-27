@@ -491,6 +491,17 @@
     filterInput.placeholder = tr("country_filter_placeholder");
     filterBtn.textContent = tr("search_btn");
     cityInput.placeholder = tr("city_filter_placeholder");
+    // The city picker on the home page has already asked which city, and
+    // arriving here to an empty filter would throw that answer away and show
+    // the whole world again. Country comes as an ISO code from the same
+    // picker; the filter matches on names, so it is turned back into one.
+    var wantCity = params.get("city");
+    var wantCc = params.get("cc");
+    if (wantCity) { cityInput.value = wantCity; cityFilter = wantCity.trim(); }
+    if (wantCc && window.RotaboCountries && window.RotaboCountries.nameForIso) {
+      var ccName = window.RotaboCountries.nameForIso(wantCc);
+      if (ccName) { filterInput.value = ccName; countryFilter = ccName; }
+    }
     function applyFilter(){
       countryFilter = filterInput.value.trim();
       cityFilter = cityInput.value.trim();
