@@ -195,7 +195,11 @@
      very long word. */
   .free-line{
     max-width:720px;
-    margin:0 auto 16px;
+    /* 34px, not the 16px it shipped with: the partner card underneath used
+       to be a white box with a border, and that border was what separated
+       two blocks of violet 800-weight text. With the card gone they ran
+       together into one paragraph the eye could not split. */
+    margin:0 auto 34px;
     font-size:clamp(1.6rem, 5.6vw, 2.7rem);
     line-height:1.14;letter-spacing:-.01em;
     overflow-wrap:break-word;
@@ -214,10 +218,6 @@
   .main-partner{
     max-width:720px;
     margin:0 auto 26px;
-    padding:22px 20px;
-    background:#fff;
-    border:2px solid var(--border);
-    border-radius:18px;
   }
   .mp-label{
     margin:0;
@@ -966,10 +966,13 @@
        two were being read as one. -->
   <p class="free-line" data-i18n="hero.free_line">Free to join, free to post &mdash; what you need, or what you offer.</p>
 
-  <!-- Main partner band. Sits above everything else, deliberately larger
-       than the tagline: it is the first credibility signal a stranger
-       gets, and the only one on the page that comes from someone other
-       than us. Rendered from sponsors_public where tier = 'principal',
+  <!-- Main partner band. Second on the page, under the free-signup line and
+       deliberately larger than the tagline: it is the first credibility
+       signal a stranger gets, and the only one that comes from someone
+       other than us. It carried a white card with a border until the white
+       was the loudest thing in a violet page; the label and the TopTen
+       block each carry their own weight, so the card was doing nothing but
+       shouting. Rendered from sponsors_public where tier = 'principal',
        and those rows are filtered out of the supporters list further
        down so a main partner is never shown twice. Until one exists the
        invitation line stands in its place -- an empty heading would read
