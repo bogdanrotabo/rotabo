@@ -1,0 +1,100 @@
+taxi|car, ride, airport|masina, cursa, aeroport
+ride_hailing|car, app, ride|masina, aplicatie, cursa
+chauffeur|limousine, car|limuzina, masina
+driving_school|car, licence, lessons|masina, permis, ore de condus
+translation|documents, contract, certificate|documente, acte, contract
+interpreting|meeting, court, conference|sedinta, tribunal, conferinta
+sworn_translation|certificate, diploma, deed|certificat, diploma, act
+language_school|course, textbook, lessons|curs, manual, lectii
+removals|boxes, furniture, van, truck|cutii, mobila, duba, camion
+international_removals|container, truck, customs|container, camion, vama
+courier|parcel, envelope, package|colet, plic, pachet
+freight_forwarding|goods, pallet, container|marfa, palet, container
+refrigerated_transport|fridge, freezer, perishables|frigider, congelator, marfa perisabila
+haulage|truck, trailer, lorry|tir, camion, remorca, semiremorca
+storage_warehousing|pallet, shelving, warehouse|palet, raft, hala, depozit
+customs_brokerage|declaration, papers, duty|declaratie, acte vamale, taxe
+excavation|excavator, bulldozer, soil, trench|excavator, buldozer, pamant, sapatura
+crane_hire|crane, boom, load|macara, brat, greutate
+scaffolding|scaffold, tube, platform|schela, teava, platforma
+demolition|rubble, breaker, hammer|moloz, picon, ciocan demolator
+concrete_works|concrete, cement, formwork, rebar|beton, ciment, cofraj, armatura
+surveying|theodolite, plan, map, plot|teodolit, plan, harta, teren
+tool_hire|drill, grinder, saw, tools|bormasina, polizor, flex, scule, unelte
+machinery_rental|machines, forklift, loader, plant|utilaje, motostivuitor, buldoexcavator, masini
+generator_hire|generator, power, cable|generator, curent, cablu
+electrical_installation|cable, socket, switchboard, fuse, lights|cablu, priza, tablou, siguranta, becuri
+plumbing|pipe, tap, sink, boiler, toilet, bath|teava, robinet, chiuveta, boiler, wc, cada
+heating_hvac|boiler, radiator, furnace|centrala, calorifer, radiator, cazan
+air_conditioning|ac unit, split, fan|aparat de aer, split, ventilator
+painting_decorating|paint, brush, wallpaper, filler|vopsea, bidinea, tapet, glet
+carpentry|wood, furniture, door, wardrobe, stairs|lemn, mobila, usa, dulap, scara
+flooring|parquet, tiles, carpet, linoleum|parchet, gresie, faianta, mocheta, linoleum
+roofing|tiles, sheet metal, gutter, downpipe|tigla, tabla, jgheab, burlan
+locksmith|lock, padlock, key, security door|yala, lacat, cheie, usa metalica
+cleaning_services|vacuum, mop, detergent|aspirator, mop, detergent
+gardening_landscaping|lawn, grass, trees, hedge, mower|gazon, iarba, copaci, gard viu, motocositoare
+renovation|brick, plasterboard, site, tools|caramida, rigips, santier, scule
+car_repair|car, engine, brakes, clutch, timing belt|masina, motor, frane, ambreiaj, distributie
+mobile_mechanic|battery, jump leads, breakdown|baterie, acumulator, cabluri, pana
+tyre_service|tyres, rim, wheel|anvelope, cauciucuri, janta, roata
+bodywork_paint|body, bumper, wing, car paint|caroserie, bara, aripa, vopsea auto
+towing_recovery|flatbed, winch, cable|platforma, troliu, cablu
+childcare|toys, pram, playgroup|jucarii, carucior, joaca
+elderly_care|wheelchair, medication, meals|carucior rulant, medicamente, mese
+home_nursing|drip, blood pressure monitor, dressing|perfuzie, tensiometru, pansament
+private_tutoring|textbook, homework, exam|manual, teme, examen, caiet
+music_lessons|piano, guitar, violin, drums, instrument|pian, chitara, vioara, tobe, instrument
+sports_coaching|ball, gym, pitch, court|minge, sala, teren
+it_training|computer, laptop, excel, office|calculator, laptop, excel, office
+vocational_training|diploma, certificate, course|diploma, atestat, curs
+holiday_lettings|apartment, house, villa, cabin|apartament, casa, vila, cabana
+guesthouse_bnb|room, breakfast, beds|camera, mic dejun, paturi
+property_management|building, apartment, rent, block|bloc, apartament, chirie, imobil
+veterinary|dog, cat, animal, vaccine|caine, pisica, animal, vaccin
+dog_walking|dog, lead, walk|caine, lesa, plimbare
+pet_grooming|dog, cat, fur, clippers|caine, pisica, blana, foarfeca
+general_practice|prescription, consultation, tests|reteta, consultatie, analize
+dentistry|tooth, molar, denture, implant, braces|dinte, masea, proteza, implant, aparat dentar
+physiotherapy|massage, machine, recovery|masaj, aparat, recuperare
+psychology|counselling, session, therapy|consiliere, sedinta, terapie
+pharmacy|medicines, prescription, supplements|medicamente, reteta, suplimente
+optometry|glasses, lenses, frames|ochelari, lentile, rame, dioptrii
+medical_laboratory|tests, blood, samples|analize, sange, probe
+software_development|code, application, program, api|cod, aplicatie, program, api
+web_development|website, page, online shop, wordpress|site, pagina, magazin online, wordpress
+it_support|pc, computer, laptop, printer, network, router, server|pc, calculator, laptop, imprimanta, retea, router, server
+cybersecurity|firewall, password, virus, backup|firewall, parola, virus, backup
+data_ai|database, report, algorithm, dashboard|baza de date, raport, algoritm, dashboard
+cloud_hosting|server, domain, email, backup|server, domeniu, email, backup
+accounting|invoices, balance, ledger, receipts|facturi, bilant, registru, chitante
+audit_tax|return, tax, vat, invoices|declaratie, impozit, tva, facturi
+legal_services|contract, case, file, deed|contract, proces, dosar, act
+hr_recruitment|cv, employee, vacancy, contract|cv, angajat, post, contract
+management_consulting|business plan, report, strategy|plan de afaceri, raport, strategie
+insurance_brokerage|policy, claim, car insurance|polita, dauna, rca, casco
+real_estate_agency|apartment, house, land, commercial space|apartament, casa, teren, spatiu comercial
+architecture|plan, project, drawing, permit|plan, proiect, schita, autorizatie
+manufacturing|production line, machines, factory, parts|linie de productie, utilaje, fabrica, piese
+cnc_machining|lathe, mill, part, metal|strung, freza, piesa, metal
+metalwork_welding|iron, steel, gate, railing, hall|fier, otel, poarta, balustrada, hala
+restaurant|menu, kitchen, food, tables|meniu, bucatarie, mancare, mese
+catering|platters, food, cutlery, buffet|platouri, mancare, tacamuri, bufet
+hotel|room, reception, beds|camera, receptie, paturi
+event_management|marquee, stage, sound, wedding|cort, scena, sonorizare, nunta
+agriculture|tractor, combine, land, seeds, fertiliser|tractor, combina, teren, seminte, ingrasamant
+forestry|wood, logs, chainsaw, forest|lemn, busteni, drujba, padure
+waste_recycling|skip, rubbish, scrap metal, waste|container, gunoi, fier vechi, deseuri
+renewable_energy|solar panels, inverter, turbine, battery|panouri solare, invertor, turbina, baterie
+marketing_agency|campaign, advert, poster, leads|campanie, reclama, afis, clienti
+graphic_design|logo, poster, banner, catalogue|logo, afis, banner, catalog
+photography|camera, photos, album, studio|aparat foto, poze, album, studio
+video_production|video camera, drone, editing, film|camera video, drona, montaj, film
+printing_signage|banner, poster, sticker, sign, print|banner, afis, autocolant, firma luminoasa, tipar
+wholesale|goods, pallet, warehouse, stock|marfa, palet, depozit, stoc
+ecommerce|online shop, parcel, orders, stock|magazin online, colet, comenzi, stoc
+security_services|cameras, alarm, guard, monitoring|camere, alarma, agent, monitorizare
+hairdressing|hair, scissors, dryer, hair dye|par, foarfeca, uscator, vopsea de par
+beauty_salon|nails, lashes, makeup, skin|unghii, gene, machiaj, ten
+massage_therapy|massage table, oils, spa|masa de masaj, uleiuri, spa
+fitness_training|machines, weights, gym, bike|aparate, greutati, sala, bicicleta

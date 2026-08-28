@@ -731,12 +731,28 @@
   html[data-mode="business"] .pro-search{display:block;margin-top:34px;}
   html[data-mode="business"] .category-grid{display:none;}
   html[data-mode="business"] .cat-strip{display:none;}
+  /* Written for a person, not a company: the two doors, "how it works" for
+     someone who needs a hand, "need something else", the Bridge, and the
+     invitation to offer what you can. A firm scrolls past all five to reach
+     the bar, so on that side they are not there. */
+  html[data-mode="business"] .doors,
+  html[data-mode="business"] .works-section,
+  html[data-mode="business"] .need-other-section,
+  html[data-mode="business"] .bridge-section,
+  html[data-mode="business"] .offer-section{display:none;}
   /* The h1 two lines above already says it. */
   html[data-mode="business"] .categories-section > h2{display:none;}
   /* Five times the 260px the country picker uses. A hundred fields behind a
      seven-line window is a list nobody scrolls; capped against the viewport
      so it cannot grow taller than the screen it opens on. */
   html[data-mode="business"] .cascade{max-height:min(1300px, 78vh);}
+  .cat-icon--mark{
+    display:flex;align-items:center;justify-content:center;gap:5px;
+    line-height:0;margin-bottom:14px;
+  }
+  .cat-icon--mark svg{width:25px;height:33px;}
+  .chip-emoji--mark{display:inline-flex;align-items:center;gap:3px;line-height:0;}
+  .chip-emoji--mark svg{width:11px;height:14px;}
   html[data-mode="business"] .category-grid.pro-open{display:grid;}
 
   .pro-search .cascade-wrap{max-width:620px;margin:0 auto;}
@@ -1349,7 +1365,7 @@
       <button type="button" class="cat-chip" data-cat="cat-learn"><span class="chip-emoji" aria-hidden="true">🧑‍🏫</span><span data-i18n="categories.learn.name">Teachers</span></button>
       <button type="button" class="cat-chip" data-cat="cat-stay"><span class="chip-emoji" aria-hidden="true">🏖️</span><span data-i18n="categories.stay.name">Vacation Stays</span></button>
       <button type="button" class="cat-chip" data-cat="cat-pets"><span class="chip-emoji" aria-hidden="true">🐾</span><span data-i18n="categories.pets.name">Pets</span></button>
-      <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji" aria-hidden="true">🆘</span><span data-i18n="categories.other.name">Something Else</span></button>
+      <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji chip-emoji--mark" aria-hidden="true"><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg></span><span data-i18n="categories.other.name">Something Else</span></button>
     </div>
   </nav>
 
@@ -1567,7 +1583,12 @@
       </div>
     </div>
     <div class="category-card" id="cat-other">
-      <div class="cat-icon">🆘</div>
+      <!-- The mark, not an emergency sign. This card is where every field
+           without a card of its own lands, which is most of them. -->
+      <div class="cat-icon cat-icon--mark">
+        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
+      </div>
       <h3 data-i18n="categories.other.name">Something Else</h3>
       <p data-i18n="categories.other.desc">Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.</p>
       <div class="cat-actions">
