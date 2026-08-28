@@ -78,7 +78,7 @@
     "fineprint": "在钞票上书写是你自己的选择。请查阅当地法律。"
   },
 
-  "nav": { "how": "如何运作", "safety": "安全保障", "business": "企业", "drive": "成为司机", "drivers": "司机", "account": "我的账户" },
+  "nav": { "how": "如何运作", "safety": "安全保障", "business": "企业", "personal": "个人", "drive": "成为司机", "drivers": "司机", "account": "我的账户" },
   "hero": {
     "free_line": "注册免费，发布免费 — 您需要什么，或者您提供什么。",
     "number_intro": "Rotabo 上的每个人都有一个号码。一个号码。永远属于你。它说明你是谁、你在哪里、你能做什么——地球上任何人都能找到你。",

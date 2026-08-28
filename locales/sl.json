@@ -78,7 +78,7 @@
     "fineprint": "Pisanje po bankovcih je tvoja lastna izbira. Preveri lokalne zakone."
   },
 
-  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Podjetja", "drive": "Postani voznik", "drivers": "Vozniki", "account": "Moj račun" },
+  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Podjetja", "personal": "Za posameznike", "drive": "Postani voznik", "drivers": "Vozniki", "account": "Moj račun" },
   "hero": {
     "free_line": "Registracija brezplačna, objava brezplačna — kaj potrebujete ali kaj ponujate.",
     "number_intro": "Vsak na Rotabu ima številko. Eno številko. Za vedno tvojo. Pove, kdo si, kje si in kaj znaš — najdljiv za kogar koli na Zemlji.",
