@@ -731,11 +731,11 @@
   html[data-mode="business"] .pro-search{display:block;margin-top:34px;}
   html[data-mode="business"] .category-grid{display:none;}
   html[data-mode="business"] .cat-strip{display:none;}
-  /* Written for a person, not a company: the two doors, "how it works" for
-     someone who needs a hand, "need something else", the Bridge, and the
-     invitation to offer what you can. A firm scrolls past all five to reach
-     the bar, so on that side they are not there. */
-  html[data-mode="business"] .doors,
+  /* Written for a person, not a company: "how it works" for someone who
+     needs a hand, "need something else", the Bridge, and the invitation to
+     offer what you can. A firm scrolls past all four to reach the bar, so
+     on that side they are not there. The two doors stay -- their wording
+     switches to the company narrative with the rest of the dictionary. */
   html[data-mode="business"] .works-section,
   html[data-mode="business"] .need-other-section,
   html[data-mode="business"] .bridge-section,
@@ -4442,6 +4442,17 @@ if ("serviceWorker" in navigator) {
     if (none) none.hidden = true;
     window.RotaboShowCategory("other");
   }
+
+  /* The two doors under the free line. On the personal side they jump to
+     the twelve cards; here the grid stays down until something asks for a
+     card, so the anchor alone would scroll to nothing. They open Rotabo
+     Market -- the card where a company registers whatever it does. */
+  [].slice.call(document.querySelectorAll(".doors a[href]")).forEach(function(door){
+    door.addEventListener("click", function(e){
+      e.preventDefault();
+      window.RotaboShowCategory("other");
+    });
+  });
 
   var go = document.getElementById("proGo");
   if (go) {
