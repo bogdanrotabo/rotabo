@@ -264,6 +264,35 @@
     .ticker__track{animation:none;}
   }
 
+  /* The second band. Gold whatever the palette says, because it is the
+     business side seen from the personal one -- swapped with the page it
+     would stop meaning anything. Violet lettering, since #ffd41a cannot
+     carry white, and the deeper violet clears 4.7 against the dark end. */
+  .ticker--biz{
+    background:linear-gradient(90deg,#e0a005 0%,#ffd41a 38%,#ffe873 62%,#ffd41a 100%);
+    border-bottom:1px solid #c98a00;
+  }
+  .ticker--biz .tick{color:#5f2270;}
+  .ticker--biz .tick__cat,
+  .ticker--biz .tick__where,
+  .ticker--biz .tick__num{color:#5f2270;}
+  .ticker--biz .tick__where::before,
+  .ticker--biz .tick__num::before{color:#8a4a9e;}
+  .ticker--biz .tick--sponsor .tick__label{color:#5f2270;opacity:.9;}
+  .ticker--biz .tick__dot{background:#5f2270;box-shadow:0 0 0 3px rgba(95,34,112,.20);}
+
+  /* The way back wears the other side's colour, on both sides. A yellow box
+     on a yellow page says nothing; violet says where it goes. */
+  html[data-mode="business"] nav.links a.biz{
+    background:linear-gradient(100deg,#a239c9 0%,#7c2596 100%);
+    border-color:#5f2270;
+    color:#fff;
+  }
+  html[data-mode="business"] nav.links a.biz:hover{
+    background:linear-gradient(100deg,#7c2596 0%,#5f2270 100%);
+    border-color:#4a1a58;
+  }
+
   header{
     border-bottom:1px solid var(--border);
     background:linear-gradient(180deg,var(--hdr-top),var(--hdr-bot));
@@ -1189,6 +1218,13 @@
      stays hidden until there is something to run, so a database that does not
      answer leaves no violet stripe with nothing in it. -->
 <div class="ticker" id="ticker" hidden aria-label="Sponsors and latest listings">
+  <div class="ticker__track"></div>
+</div>
+
+<!-- The business side showing through on the personal page. Its colours are
+     fixed rather than taken from the palette: it is the other half of the
+     site, so it stays gold here and is not drawn at all over there. -->
+<div class="ticker ticker--biz" id="tickerBiz" hidden aria-label="Rotabo for business">
   <div class="ticker__track"></div>
 </div>
 
@@ -3834,9 +3870,14 @@ if ("serviceWorker" in navigator) {
    name; the band deliberately shows the Rotabo number instead, which is the
    identity this site already publishes and looks people up by. */
 (function(){
-  var strip = document.getElementById("ticker");
+  var strip    = document.getElementById("ticker");
+  var bizStrip = document.getElementById("tickerBiz");
   if (!strip || !window.supabase) return;
-  var track = strip.querySelector(".ticker__track");
+
+  // Which side of the site this is. business.html is index.html with this
+  // one attribute set, so everything that differs between the two hangs off
+  // it rather than off a second copy of the page.
+  var isBiz = document.documentElement.getAttribute("data-mode") === "business";
 
   var sb = window.supabase.createClient(
     "https://auth.rotabo.app",
@@ -3900,7 +3941,17 @@ if ("serviceWorker" in navigator) {
          + '</span>';
   }
 
-  function cells(){
+  /* An invitation, in the shape of a ticker cell: the business band is not a
+     list of anybody yet, and an empty band is worse than one that says what
+     it is for. */
+  function inviteCell(href){
+    return '<a class="tick tick--invite" href="' + esc(href) + '">'
+         + '<span class="tick__dot"></span>'
+         + '<span class="tick__cat">' + esc(T("ticker.company", "Your company can be here — registration is free")) + '</span>'
+         + '</a>';
+  }
+
+  function sponsorCells(){
     var out = [];
     // topten.one is the standing sponsor and is not in the table, so it is
     // written here. Anything the table does hold joins it rather than
@@ -3909,15 +3960,30 @@ if ("serviceWorker" in navigator) {
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });
+    return out;
+  }
+
+  // The two bands carry different things, and which is which depends on the
+  // side of the site being read. On the personal side the top band is the
+  // people who have listed themselves and the second one is the business
+  // side showing through; on the business side there is one band, and it is
+  // the business one.
+  function cells(){
+    if (isBiz) return sponsorCells().concat([inviteCell("#categories")]);
+    var out = sponsorCells();
     listings.forEach(function(row){ out.push(listingCell(row)); });
     return out;
   }
 
-  function paint(){
-    if (!loaded) return;
-    var base = cells();
-    if (!base.length) { strip.hidden = true; return; }
-    strip.hidden = false;
+  function bizCells(){
+    return sponsorCells().concat([inviteCell("/business.html")]);
+  }
+
+  function paintInto(el, base){
+    if (!el) return;
+    var trk = el.querySelector(".ticker__track");
+    if (!base.length) { el.hidden = true; return; }
+    el.hidden = false;
 
     /* One pass of the list can be narrower than the screen -- five listings on
        a desktop is -- and then the track slides off and leaves the band empty
@@ -3925,17 +3991,25 @@ if ("serviceWorker" in navigator) {
        window, and only then print the whole thing twice for the -50% loop.
        The same string can be reused here: unlike the strip on topten.one,
        nothing in these cells mints an id as it is built. */
-    track.innerHTML = base.join("");
-    var one = track.scrollWidth || 1;
+    trk.innerHTML = base.join("");
+    var one = trk.scrollWidth || 1;
     var copies = Math.max(1, Math.ceil((window.innerWidth + 80) / one));
     var pass = "";
     for (var i = 0; i < copies; i++) pass += base.join("");
-    track.innerHTML = pass + pass;
+    trk.innerHTML = pass + pass;
 
     // Constant speed rather than constant duration, so the band reads the
     // same whether it is carrying six entries or six hundred.
-    var half = track.scrollWidth / 2;
-    track.style.animationDuration = Math.max(14, Math.round(half / 55)) + "s";
+    var half = trk.scrollWidth / 2;
+    trk.style.animationDuration = Math.max(14, Math.round(half / 55)) + "s";
+  }
+
+  function paint(){
+    if (!loaded) return;
+    paintInto(strip, cells());
+    // The second band only exists on the personal side. On the business side
+    // the top band is already carrying it.
+    if (!isBiz) paintInto(bizStrip, bizCells());
   }
 
   Promise.all([
