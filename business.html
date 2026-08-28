@@ -786,12 +786,20 @@
   .biz-list__chev{flex:0 0 auto;color:var(--ink-strong);font-size:.8rem;}
   .biz-list__box[aria-expanded="true"] .biz-list__chev{transform:rotate(180deg);}
 
-  .biz-row{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  /* Under .cascade, not on its own: .cascade-row sets display:block further
+     down the sheet at the same specificity, so a bare .biz-row lost and the
+     row rendered as one run of text -- "1Sponsoritopten.one". */
+  .cascade .biz-row{display:flex;align-items:center;gap:10px;text-decoration:none;}
   .biz-row__n{
     flex:0 0 auto;min-width:28px;
     font-variant-numeric:tabular-nums;font-weight:700;
     color:var(--text-eyebrow);
   }
+  /* An en dash before the place. Written as a six-digit CSS escape rather
+     than the character itself: a perl -i pass over this file re-encoded
+     every accented byte in it the one time the character went in directly,
+     and the generator refused the result. */
+  .biz-row__where::before{content:"\002013";margin-inline-end:8px;color:var(--text-eyebrow);}
   .biz-row__where{color:var(--text-body);}
   .biz-row__num{color:var(--text-eyebrow);font-variant-numeric:tabular-nums;}
   .biz-row--sponsor .biz-row__label{
