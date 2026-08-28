@@ -1354,6 +1354,7 @@
        applyTranslations() (which rewrites textContent) can't eat it. -->
   <nav class="cat-strip" aria-label="Marketplace categories">
     <div class="cat-strip-scroll" id="catStrip">
+      <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji chip-emoji--mark" aria-hidden="true"><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg></span><span data-i18n="categories.other.name">Something Else</span></button>
       <button type="button" class="cat-chip" data-cat="cat-drive"><span class="chip-emoji" aria-hidden="true">🚗</span><span data-i18n="categories.drive.name">Drive</span></button>
       <button type="button" class="cat-chip" data-cat="cat-translator"><span class="chip-emoji" aria-hidden="true">🗣️</span><span data-i18n="categories.translator.name">Translator</span></button>
       <button type="button" class="cat-chip" data-cat="cat-move"><span class="chip-emoji" aria-hidden="true">📦</span><span data-i18n="categories.move.name">Move</span></button>
@@ -1365,7 +1366,6 @@
       <button type="button" class="cat-chip" data-cat="cat-learn"><span class="chip-emoji" aria-hidden="true">🧑‍🏫</span><span data-i18n="categories.learn.name">Teachers</span></button>
       <button type="button" class="cat-chip" data-cat="cat-stay"><span class="chip-emoji" aria-hidden="true">🏖️</span><span data-i18n="categories.stay.name">Vacation Stays</span></button>
       <button type="button" class="cat-chip" data-cat="cat-pets"><span class="chip-emoji" aria-hidden="true">🐾</span><span data-i18n="categories.pets.name">Pets</span></button>
-      <button type="button" class="cat-chip" data-cat="cat-other"><span class="chip-emoji chip-emoji--mark" aria-hidden="true"><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg></span><span data-i18n="categories.other.name">Something Else</span></button>
     </div>
   </nav>
 
@@ -1466,6 +1466,21 @@
   </div>
 
   <div class="category-grid">
+    <div class="category-card" id="cat-other">
+      <!-- The mark, not an emergency sign. This card is where every field
+           without a card of its own lands, which is most of them. -->
+      <div class="cat-icon cat-icon--mark">
+        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
+      </div>
+      <h3 data-i18n="categories.other.name">Something Else</h3>
+      <p data-i18n="categories.other.desc">Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.</p>
+      <div class="cat-actions">
+        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('other','seeking')">I need this</button>
+        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('other','offering')">I offer this</button>
+        <a class="cat-browse" href="/browse.html?category=other&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
+      </div>
+    </div>
     <div class="category-card" id="cat-drive">
       <div class="cat-icon">🚗</div>
       <h3 data-i18n="categories.drive.name">Drive</h3>
@@ -1580,21 +1595,6 @@
         <button type="button" class="cat-btn need" data-i18n="categories.pets.lost_btn" onclick="openGenericModal('pets','seeking')">I lost a pet</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.pets.found_btn" onclick="openGenericModal('pets','offering')">I found a pet</button>
         <a class="cat-browse" href="/browse.html?category=pets&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
-      </div>
-    </div>
-    <div class="category-card" id="cat-other">
-      <!-- The mark, not an emergency sign. This card is where every field
-           without a card of its own lands, which is most of them. -->
-      <div class="cat-icon cat-icon--mark">
-        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
-        <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
-      </div>
-      <h3 data-i18n="categories.other.name">Something Else</h3>
-      <p data-i18n="categories.other.desc">Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.</p>
-      <div class="cat-actions">
-        <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('other','seeking')">I need this</button>
-        <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('other','offering')">I offer this</button>
-        <a class="cat-browse" href="/browse.html?category=other&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
   </div>
