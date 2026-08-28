@@ -1,0 +1,113 @@
+taxi|Taxi|Taxi, rit, luchthaven, transfer
+ride_hailing|Ride-hailing|Uber, Bolt, app, chauffeur
+chauffeur|Chauffeursdienst|Privéchauffeur, limousine, bestuurder
+driving_school|Rijschool|Rijlessen, instructeur, rijbewijs
+translation|Vertaling|Vertaler, documenten, akten, contract
+interpreting|Tolken|Tolk, simultaan, congres, rechtbank
+sworn_translation|Beëdigde vertaling|Beëdigd, gewaarmerkt, akte, diploma
+language_school|Taalschool|Taalcursus, lessen, docent
+removals|Verhuizingen|Verhuisbedrijf, meubels, dozen, bus
+international_removals|Internationale verhuizingen|Buitenland, overzee, container, douane
+courier|Koeriersdienst|Koerier, pakket, spoed, bezorging
+freight_forwarding|Expeditie|Expediteur, logistiek, pallet, vracht
+refrigerated_transport|Koeltransport|Koelketen, diepvries, bederfelijk
+haulage|Wegtransport|Vrachtwagen, oplegger, aanhanger
+storage_warehousing|Opslag|Magazijn, loods, pallet, opslagruimte
+customs_brokerage|Douane-expediteur|Douane, import, export, aangifte
+excavation|Grondwerk|Graafmachine, sleuf, uitgraving, grond
+crane_hire|Kraanverhuur|Kraan, hijswerk, autokraan
+scaffolding|Steigerbouw|Steiger, platform, gevel
+demolition|Sloopwerk|Slopen, ontmanteling, puin
+concrete_works|Betonwerk|Beton, dekvloer, fundering, bekisting
+surveying|Landmeting|Landmeter, kadaster, opmeting, plan
+tool_hire|Gereedschapsverhuur|Gereedschap, boormachine, slijptol
+machinery_rental|Machineverhuur|Machines, heftruck, bouwmachines
+generator_hire|Aggregaatverhuur|Generator, aggregaat, stroom
+electrical_installation|Elektrische installatie|Elektricien, kabel, stopcontact, groepenkast, zekering
+plumbing|Loodgieterswerk|Loodgieter, leiding, kraan, boiler, lek, badkamer
+heating_hvac|Verwarming|CV-monteur, ketel, radiatoren, warmtepomp
+air_conditioning|Airconditioning|Airco, koeling, split, ventilatie
+painting_decorating|Schilderwerk|Schilder, verf, behang, plamuur
+carpentry|Timmerwerk|Timmerman, hout, meubels, deur, kast
+flooring|Vloeren|Parket, laminaat, tegels, tapijt
+roofing|Dakwerk|Dakdekker, dakpannen, goot, isolatie
+locksmith|Slotenmaker|Slot, sleutels, deuropening, veiligheidsdeur
+cleaning_services|Schoonmaak|Schoonmaakbedrijf, werkster, kantoren
+gardening_landscaping|Tuinonderhoud en hoveniers|Hovenier, gazon, haag, bomen, snoeien
+renovation|Renovatie|Aannemer, verbouwing, klusbedrijf
+car_repair|Autogarage|Garage, monteur, onderhoud, motor, remmen, APK
+mobile_mechanic|Mobiele monteur|Pechhulp, aan huis, accu, storing
+tyre_service|Bandenservice|Banden, velgen, lekke band, balanceren
+bodywork_paint|Schadeherstel en spuiterij|Plaatwerker, deuk, spuiten, schade
+towing_recovery|Sleepdienst|Slepen, berging, lier
+childcare|Kinderopvang|Crèche, gastouder, oppas, babysitter
+elderly_care|Ouderenzorg|Verzorgende, begeleiding, verzorgingshuis
+home_nursing|Thuisverpleging|Verpleegkundige, thuiszorg, palliatief
+private_tutoring|Bijles|Huiswerkbegeleiding, examens, privéleraar
+music_lessons|Muziekles|Piano, gitaar, viool, zang, muziekleraar
+sports_coaching|Sporttraining|Trainer, voetbal, tennis, coaching
+it_training|IT-cursussen|Computercursus, Excel, programmeren
+vocational_training|Beroepsopleiding|Leerwerktraject, certificaat, bijscholing
+holiday_lettings|Vakantieverhuur|Vakantiehuis, appartement, Airbnb, korte termijn
+guesthouse_bnb|Bed and breakfast|Pension, gastenverblijf, kamer, ontbijt
+property_management|Vastgoedbeheer|VvE-beheer, beheerder, huur, pand
+veterinary|Dierenarts|Dierenkliniek, vaccinatie, hond, kat
+dog_walking|Hondenuitlaatservice|Uitlaten, riem, wandeling
+pet_grooming|Trimsalon|Trimmen, hondenkapper, vacht
+general_practice|Huisartsenpraktijk|Huisarts, dokter, spreekuur, recept
+dentistry|Tandheelkunde|Tandarts, praktijk, orthodontist, implantaat, prothese
+physiotherapy|Fysiotherapie|Fysiotherapeut, revalidatie, herstel
+psychology|Psychologie|Psycholoog, psychotherapie, therapie, gesprek
+pharmacy|Apotheek|Apotheker, medicijnen, recept, drogisterij
+optometry|Optiek|Opticien, bril, contactlenzen, ogen
+medical_laboratory|Medisch laboratorium|Lab, bloedonderzoek, analyses, diagnostiek
+software_development|Softwareontwikkeling|Programmeur, developer, code, softwarehuis
+web_development|Webontwikkeling|Website, webdesign, webshop, WordPress
+it_support|IT-ondersteuning|Helpdesk, systeembeheerder, pc, computer, printer, netwerk, server
+cybersecurity|Cyberbeveiliging|Firewall, pentest, back-up, virus
+data_ai|Data en AI|Machine learning, data-analyse, kunstmatige intelligentie
+cloud_hosting|Cloud en hosting|Server, hosting, domein, AWS, Azure
+accounting|Boekhouding|Boekhouder, administratiekantoor, loonadministratie, facturen
+audit_tax|Audit en belastingen|Accountant, belastingadviseur, aangifte, btw
+legal_services|Juridische diensten|Advocaat, jurist, kantoor, notaris, contract, procedure
+hr_recruitment|Werving en selectie|Recruiter, uitzendbureau, headhunter, kandidaten
+management_consulting|Managementadvies|Consultant, strategie, businessplan
+insurance_brokerage|Verzekeringsmakelaar|Verzekering, tussenpersoon, polis, schade
+real_estate_agency|Makelaardij|Makelaar, woning, huis, grond
+architecture|Architectuur|Architect, ontwerp, vergunning, tekeningen
+manufacturing|Industriële productie|Fabriek, productie, industrie, assemblage
+cnc_machining|CNC-verspaning|Frezen, draaien, draaibank, verspaning
+metalwork_welding|Metaalbewerking en lassen|Lasser, smid, staal, hek, leuning
+restaurant|Restaurant|Eetcafé, pizzeria, keuken, menukaart
+catering|Catering|Banqueting, buffet, maaltijden, feesten
+hotel|Hotel|Accommodatie, hostel, motel, kamer, receptie
+event_management|Evenementenorganisatie|Evenementen, weddingplanner, congres, podium
+agriculture|Landbouw|Boerderij, tractor, oogst, vee, akkers
+forestry|Bosbouw|Houtkap, hout, bos, kettingzaag
+waste_recycling|Afval en recycling|Vuilnis, schroot, container, ontruiming
+renewable_energy|Duurzame energie|Zonnepanelen, zonne-energie, wind, omvormer, warmtepomp
+marketing_agency|Marketingbureau|Reclame, SEO, social media, campagne
+graphic_design|Grafisch ontwerp|Ontwerper, logo, poster, brochure
+photography|Fotografie|Fotograaf, studio, bruiloft, camera
+video_production|Videoproductie|Videograaf, opnames, montage, drone
+printing_signage|Drukwerk en belettering|Drukkerij, banner, stickers, lichtreclame
+wholesale|Groothandel|Distributeur, leverancier, magazijn, goederen
+ecommerce|E-commerce|Webshop, webwinkel, bestellingen, verzending
+security_services|Beveiligingsdiensten|Bewaking, beveiliger, alarm, camera's
+hairdressing|Kapper|Kapsalon, barbier, knippen, verven
+beauty_salon|Schoonheidssalon|Schoonheidsspecialiste, nagels, wimpers, make-up
+massage_therapy|Massage|Masseur, wellness, spa, ontspanning
+fitness_training|Fitnesstraining|Personal trainer, sportschool, gewichten, hometrainer
+shop_general|Detailhandel|Winkel, zaak, kassa, verkoop
+shop_bicycle|Fietsenwinkel en reparatie|Fiets, e-bike, step, ketting, wiel
+shop_auto_parts|Auto-onderdelen|Onderdelen, accessoires, filter, remblokken, olie
+shop_hardware|Bouwmarkt en ijzerwaren|Doe-het-zelf, schroeven, spijkers, gereedschap, cement
+shop_furniture|Meubelwinkel|Meubels, bank, kast, bed, keuken
+shop_electronics|Elektronica en witgoed|Televisie, koelkast, wasmachine, telefoon
+shop_clothing|Kledingwinkel|Kleding, mode, schoenen, textiel
+shop_grocery|Supermarkt|Kruidenier, buurtwinkel, brood, melk, groente
+shop_sports|Sportwinkel|Sportartikelen, sportschoenen, ski, tent
+shop_books|Boekhandel en kantoorartikelen|Boeken, schriften, pennen, kantoorbenodigdheden
+shop_florist|Bloemenwinkel|Bloemen, boeket, rozen, krans
+shop_pet|Dierenwinkel|Diervoeding, dierbenodigdheden, aquarium, kooi
+motorcycle_repair|Motorwerkplaats|Motor, scooter, brommer, helm, ketting

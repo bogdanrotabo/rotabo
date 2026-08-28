@@ -4337,8 +4337,8 @@ if ("serviceWorker" in navigator) {
        2  only a synonym does  */
   function rank(d, words){
     var name = fold(label(d.slug));
-    var nameWords = name.split(/[^a-z0-9]+/).filter(Boolean);
-    var syn = fold(synonyms(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
+    var nameWords = name.split(/[\s,.\/()'"-]+/).filter(Boolean);
+    var syn = fold(synonyms(d.slug)).split(/[\s,.\/()'"-]+/).filter(Boolean);
     if (!words.every(function(w){ return stemMatch(w, nameWords.concat(syn)); })) return -1;
     if (name.indexOf(words.join(" ")) === 0) return 0;
     if (words.every(function(w){ return stemMatch(w, nameWords); })) return 1;

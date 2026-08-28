@@ -1,0 +1,113 @@
+taxi|Taksówka|Taxi, kurs, lotnisko, transfer
+ride_hailing|Przewóz osób|Uber, Bolt, aplikacja, kierowca
+chauffeur|Usługi szoferskie|Kierowca prywatny, limuzyna, szofer
+driving_school|Szkoła jazdy|Nauka jazdy, instruktor, prawo jazdy
+translation|Tłumaczenia|Tłumacz, dokumenty, akty, umowa
+interpreting|Tłumaczenia ustne|Tłumacz ustny, symultaniczne, konferencja, sąd
+sworn_translation|Tłumaczenia przysięgłe|Przysięgły, uwierzytelnione, akt, dyplom
+language_school|Szkoła językowa|Kursy językowe, lekcje, lektor
+removals|Przeprowadzki|Firma przeprowadzkowa, meble, kartony, bus
+international_removals|Przeprowadzki międzynarodowe|Zagranica, kontener, cło
+courier|Kurier|Paczka, przesyłka, ekspres, dostawa
+freight_forwarding|Spedycja|Spedytor, logistyka, paleta, ładunek
+refrigerated_transport|Transport chłodniczy|Chłodnia, mrożonki, łańcuch chłodniczy
+haulage|Transport ciężarowy|Tir, ciężarówka, naczepa, przyczepa
+storage_warehousing|Magazynowanie|Magazyn, hala, paleta, przechowywanie
+customs_brokerage|Agencja celna|Cło, import, eksport, odprawa
+excavation|Roboty ziemne|Koparka, wykop, niwelacja, ziemia
+crane_hire|Wynajem dźwigów|Dźwig, żuraw, podnoszenie
+scaffolding|Rusztowania|Rusztowanie, podest, elewacja
+demolition|Rozbiórki|Wyburzanie, demontaż, gruz
+concrete_works|Roboty betonowe|Beton, wylewka, fundament, szalunek
+surveying|Geodezja|Geodeta, kataster, pomiary, mapa
+tool_hire|Wypożyczalnia narzędzi|Narzędzia, wiertarka, szlifierka
+machinery_rental|Wynajem maszyn|Maszyny, wózek widłowy, sprzęt budowlany
+generator_hire|Wynajem agregatów|Agregat, generator, prąd
+electrical_installation|Instalacje elektryczne|Elektryk, kabel, gniazdko, rozdzielnia, bezpiecznik
+plumbing|Hydraulika|Hydraulik, rura, kran, bojler, wyciek, łazienka
+heating_hvac|Ogrzewanie|Piec, kocioł, grzejniki, pompa ciepła
+air_conditioning|Klimatyzacja|Klima, chłodzenie, split, wentylacja
+painting_decorating|Malowanie i wykończenia|Malarz, farba, tapeta, gładź
+carpentry|Stolarka|Stolarz, drewno, meble, drzwi, szafa
+flooring|Podłogi|Parkiet, panele, płytki, wykładzina
+roofing|Dekarstwo|Dekarz, dachówka, rynna, izolacja
+locksmith|Ślusarz i zamki|Zamek, klucze, awaryjne otwieranie, drzwi antywłamaniowe
+cleaning_services|Sprzątanie|Firma sprzątająca, sprzątaczka, biura
+gardening_landscaping|Ogrodnictwo|Ogrodnik, trawnik, żywopłot, drzewa, przycinanie
+renovation|Remonty|Remont, wykonawca, budowa, wykończenia
+car_repair|Warsztat samochodowy|Mechanik, przegląd, silnik, hamulce
+mobile_mechanic|Mechanik mobilny|Pomoc drogowa, na miejscu, akumulator, awaria
+tyre_service|Wulkanizacja|Opony, felgi, przebita opona, wyważanie
+bodywork_paint|Blacharstwo i lakiernictwo|Blacharz, lakiernik, wgniecenie, szkoda
+towing_recovery|Holowanie|Laweta, pomoc drogowa, wyciągarka
+childcare|Opieka nad dziećmi|Żłobek, niania, opiekunka, przedszkole
+elderly_care|Opieka nad seniorami|Opiekunka, towarzystwo, dom opieki
+home_nursing|Pielęgniarstwo domowe|Pielęgniarka, opieka, paliatywna
+private_tutoring|Korepetycje|Korepetytor, zadania, egzaminy, nauka
+music_lessons|Lekcje muzyki|Pianino, gitara, skrzypce, śpiew, nauczyciel
+sports_coaching|Trening sportowy|Trener, piłka nożna, tenis, przygotowanie
+it_training|Kursy komputerowe|Kurs komputerowy, Excel, programowanie
+vocational_training|Szkolenia zawodowe|Kwalifikacje, certyfikat, kurs zawodowy
+holiday_lettings|Wynajem wakacyjny|Apartament, domek, Airbnb, krótki termin
+guesthouse_bnb|Pensjonat|Kwatery, pokoje, śniadanie, agroturystyka
+property_management|Zarządzanie nieruchomościami|Zarządca, wspólnota, czynsz, administracja
+veterinary|Weterynarz|Lecznica, szczepienie, pies, kot
+dog_walking|Wyprowadzanie psów|Spacery, smycz, opieka nad psem
+pet_grooming|Strzyżenie zwierząt|Groomer, salon dla psów, sierść
+general_practice|Lekarz rodzinny|Lekarz, internista, przychodnia, recepta
+dentistry|Stomatologia|Dentysta, gabinet, ortodonta, implant, proteza
+physiotherapy|Fizjoterapia|Fizjoterapeuta, rehabilitacja, masaż leczniczy
+psychology|Psychologia|Psycholog, psychoterapia, terapia, konsultacja
+pharmacy|Apteka|Farmaceuta, leki, recepta, suplementy
+optometry|Optyka|Optyk, okulary, soczewki, wzrok
+medical_laboratory|Laboratorium medyczne|Badania, krew, analizy, diagnostyka
+software_development|Tworzenie oprogramowania|Programista, developer, kod, software house
+web_development|Tworzenie stron www|Strona internetowa, sklep internetowy, WordPress
+it_support|Wsparcie IT|Helpdesk, administrator, komputer, drukarka, sieć, serwer
+cybersecurity|Cyberbezpieczeństwo|Bezpieczeństwo IT, firewall, pentest, kopie zapasowe
+data_ai|Dane i sztuczna inteligencja|Uczenie maszynowe, analiza danych, baza danych
+cloud_hosting|Chmura i hosting|Serwer, hosting, domena, AWS, Azure
+accounting|Księgowość|Księgowa, biuro rachunkowe, kadry i płace, faktury
+audit_tax|Audyt i podatki|Biegły rewident, doradca podatkowy, deklaracja, VAT
+legal_services|Usługi prawne|Adwokat, radca prawny, kancelaria, notariusz, umowa
+hr_recruitment|Rekrutacja i HR|Rekruter, agencja pracy, headhunter, kandydaci
+management_consulting|Doradztwo biznesowe|Konsultant, strategia, biznesplan
+insurance_brokerage|Broker ubezpieczeniowy|Ubezpieczenia, polisa, szkoda, OC
+real_estate_agency|Biuro nieruchomości|Pośrednik, mieszkanie, dom, działka
+architecture|Architektura|Architekt, projekt, pozwolenie, rysunki
+manufacturing|Produkcja przemysłowa|Fabryka, produkcja, przemysł, montaż
+cnc_machining|Obróbka CNC|Frezowanie, toczenie, tokarka, obróbka
+metalwork_welding|Ślusarstwo i spawanie|Spawacz, stal, brama, balustrada
+restaurant|Restauracja|Bar, pizzeria, kuchnia, menu, jadłodajnia
+catering|Catering|Bankiety, bufet, posiłki, imprezy
+hotel|Hotel|Nocleg, hostel, motel, pokój, recepcja
+event_management|Organizacja imprez|Eventy, wesela, konferencje, scena
+agriculture|Rolnictwo|Gospodarstwo, traktor, żniwa, hodowla, pola
+forestry|Leśnictwo|Wycinka, drewno, las, piła
+waste_recycling|Odpady i recykling|Śmieci, złom, kontener, wywóz
+renewable_energy|Energia odnawialna|Fotowoltaika, solar, wiatrak, falownik, pompa ciepła
+marketing_agency|Agencja marketingowa|Reklama, SEO, social media, kampania
+graphic_design|Grafika|Grafik, logo, plakat, katalog
+photography|Fotografia|Fotograf, studio, ślub, aparat
+video_production|Produkcja wideo|Filmowanie, montaż, dron, kamera
+printing_signage|Drukarnia i reklama|Druk, baner, naklejki, szyld
+wholesale|Handel hurtowy|Hurtownia, dystrybutor, magazyn, towar
+ecommerce|Handel internetowy|Sklep internetowy, e-commerce, zamówienia, wysyłka
+security_services|Usługi ochrony|Ochrona, agencja ochrony, alarm, kamery
+hairdressing|Fryzjerstwo|Fryzjer, barber, strzyżenie, farbowanie
+beauty_salon|Salon kosmetyczny|Kosmetyczka, paznokcie, rzęsy, makijaż
+massage_therapy|Masaż|Masażysta, wellness, spa, relaks
+fitness_training|Trening fitness|Trener personalny, siłownia, ciężary, rowerek
+shop_general|Handel detaliczny|Sklep, kasa, sprzedaż, punkt
+shop_bicycle|Sklep i serwis rowerowy|Rower, hulajnoga, łańcuch, koło
+shop_auto_parts|Części samochodowe|Części, akcesoria, filtr, klocki, olej
+shop_hardware|Sklep budowlany|Śruby, gwoździe, narzędzia, cement, market budowlany
+shop_furniture|Sklep meblowy|Meble, kanapa, szafa, łóżko, kuchnia
+shop_electronics|Elektronika i AGD|Telewizor, lodówka, pralka, telefon
+shop_clothing|Sklep odzieżowy|Odzież, moda, buty, tekstylia
+shop_grocery|Sklep spożywczy|Spożywczak, supermarket, chleb, mleko, warzywa
+shop_sports|Sklep sportowy|Artykuły sportowe, buty sportowe, narty, namiot
+shop_books|Księgarnia i papierniczy|Książki, zeszyty, długopisy, artykuły biurowe
+shop_florist|Kwiaciarnia|Kwiaty, bukiet, róże, wieniec
+shop_pet|Sklep zoologiczny|Karma, akcesoria, akwarium, klatka
+motorcycle_repair|Serwis motocyklowy|Motocykl, skuter, motorower, kask, łańcuch

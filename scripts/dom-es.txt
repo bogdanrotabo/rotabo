@@ -1,0 +1,113 @@
+taxi|Taxi|Taxi, carrera, aeropuerto, traslado
+ride_hailing|VTC|Uber, Bolt, Cabify, aplicación
+chauffeur|Servicio de chófer|Chófer privado, limusina, conductor
+driving_school|Autoescuela|Clases de conducir, instructor, carné
+translation|Traducción|Traductor, documentos, actas, contrato
+interpreting|Interpretación|Intérprete, simultánea, congreso, juzgado
+sworn_translation|Traducción jurada|Jurada, certificada, acta, título
+language_school|Academia de idiomas|Cursos de idiomas, clases, profesor
+removals|Mudanzas|Empresa de mudanzas, muebles, cajas, furgoneta
+international_removals|Mudanzas internacionales|Extranjero, ultramar, contenedor, aduana
+courier|Mensajería|Paquete, sobre, urgente, reparto
+freight_forwarding|Transitario|Logística, carga, palé, mercancía
+refrigerated_transport|Transporte frigorífico|Cadena de frío, congelado, perecedero
+haulage|Transporte de mercancías|Camión, tráiler, remolque, carretera
+storage_warehousing|Almacenaje|Almacén, nave, palé, guardamuebles
+customs_brokerage|Agencia de aduanas|Aduana, importación, exportación, despacho
+excavation|Excavación y movimiento de tierras|Excavadora, zanja, desmonte, tierra
+crane_hire|Alquiler de grúas|Grúa, elevación, autogrúa
+scaffolding|Andamios|Andamiaje, plataforma, fachada
+demolition|Demoliciones|Derribo, desmontaje, escombros
+concrete_works|Trabajos de hormigón|Hormigón, solera, cimentación, encofrado
+surveying|Topografía|Topógrafo, catastro, levantamiento, plano
+tool_hire|Alquiler de herramientas|Herramientas, taladro, radial, maquinaria menor
+machinery_rental|Alquiler de maquinaria|Maquinaria, carretilla elevadora, obra
+generator_hire|Alquiler de generadores|Generador, grupo electrógeno, corriente
+electrical_installation|Instalaciones eléctricas|Electricista, cable, enchufe, cuadro, fusible
+plumbing|Fontanería|Fontanero, tubería, grifo, calentador, fuga, baño
+heating_hvac|Calefacción|Calderas, radiadores, suelo radiante, climatización
+air_conditioning|Aire acondicionado|Clima, refrigeración, split, ventilación
+painting_decorating|Pintura y decoración|Pintor, pintura, papel pintado, alisado
+carpentry|Carpintería|Carpintero, madera, muebles, puerta, armario
+flooring|Pavimentos y suelos|Parqué, laminado, baldosas, moqueta
+roofing|Cubiertas y tejados|Tejado, teja, canalón, impermeabilización
+locksmith|Cerrajería|Cerrajero, cerradura, llaves, apertura de puertas
+cleaning_services|Limpieza|Empresa de limpieza, limpiadora, oficinas
+gardening_landscaping|Jardinería y paisajismo|Jardinero, césped, seto, árboles, poda
+renovation|Reformas|Constructor, obra, rehabilitación, albañilería
+car_repair|Taller mecánico|Taller, mecánico, revisión, motor, frenos, ITV
+mobile_mechanic|Mecánico a domicilio|Asistencia, in situ, batería, avería
+tyre_service|Neumáticos|Ruedas, llantas, pinchazo, equilibrado
+bodywork_paint|Chapa y pintura|Chapista, abolladura, siniestro, carrocería
+towing_recovery|Grúa y asistencia|Remolque, grúa, cabrestante
+childcare|Cuidado de niños|Guardería, niñera, canguro, escuela infantil
+elderly_care|Cuidado de mayores|Cuidadora, acompañamiento, residencia
+home_nursing|Enfermería a domicilio|Enfermera, cuidados, paliativos
+private_tutoring|Clases particulares|Refuerzo, deberes, exámenes, profesor particular
+music_lessons|Clases de música|Piano, guitarra, violín, canto, profesor
+sports_coaching|Entrenamiento deportivo|Entrenador, fútbol, tenis, preparación
+it_training|Formación informática|Cursos de informática, Excel, ofimática, programación
+vocational_training|Formación profesional|Aprendizaje, certificado, reciclaje
+holiday_lettings|Alquiler vacacional|Apartamento, casa rural, Airbnb, corta estancia
+guesthouse_bnb|Casa de huéspedes|Pensión, hostal, habitación, desayuno
+property_management|Administración de fincas|Administrador, comunidad, alquiler, inmueble
+veterinary|Veterinaria|Veterinario, clínica veterinaria, vacuna, perro, gato
+dog_walking|Paseo de perros|Paseador, correa, salidas
+pet_grooming|Peluquería canina|Peluquería de mascotas, corte, pelo
+general_practice|Medicina general|Médico, médico de familia, consulta, receta
+dentistry|Odontología|Dentista, clínica dental, ortodoncia, implante, prótesis
+physiotherapy|Fisioterapia|Fisioterapeuta, rehabilitación, recuperación
+psychology|Psicología|Psicólogo, psicoterapia, terapia, consulta
+pharmacy|Farmacia|Farmacéutico, medicamentos, receta, parafarmacia
+optometry|Óptica|Óptico, gafas, lentillas, vista
+medical_laboratory|Laboratorio clínico|Análisis, extracción, sangre, diagnóstico
+software_development|Desarrollo de software|Programador, desarrollador, código, software
+web_development|Desarrollo web|Página web, diseño web, tienda online, WordPress
+it_support|Soporte informático|Asistencia, administrador de sistemas, PC, ordenador, impresora, red, servidor
+cybersecurity|Ciberseguridad|Seguridad informática, cortafuegos, pentesting, copias
+data_ai|Datos e inteligencia artificial|Aprendizaje automático, análisis de datos, base de datos
+cloud_hosting|Cloud y alojamiento|Servidor, hosting, dominio, AWS, Azure
+accounting|Contabilidad|Contable, asesoría, nóminas, facturas, gestoría
+audit_tax|Auditoría y fiscalidad|Auditor, asesor fiscal, declaración, IVA
+legal_services|Servicios jurídicos|Abogado, despacho, notario, contrato, pleito
+hr_recruitment|Recursos humanos y selección|Reclutador, ETT, headhunter, candidatos
+management_consulting|Consultoría de gestión|Consultor, estrategia, plan de negocio
+insurance_brokerage|Correduría de seguros|Seguros, corredor, póliza, siniestro
+real_estate_agency|Agencia inmobiliaria|Inmobiliaria, agente, piso, casa, terreno
+architecture|Arquitectura|Arquitecto, proyecto, licencia de obra, planos
+manufacturing|Producción industrial|Fábrica, fabricación, industria, montaje
+cnc_machining|Mecanizado CNC|Fresado, torneado, torno, mecanizado
+metalwork_welding|Carpintería metálica y soldadura|Soldador, cerrajero, acero, portón, barandilla
+restaurant|Restaurante|Bar, pizzería, cocina, carta, mesón
+catering|Catering|Banquetes, bufé, comidas, eventos
+hotel|Hotel|Alojamiento, hostal, motel, habitación, recepción
+event_management|Organización de eventos|Eventos, bodas, congresos, escenario
+agriculture|Agricultura|Finca, tractor, cosecha, ganado, campos
+forestry|Silvicultura|Tala, madera, monte, motosierra
+waste_recycling|Residuos y reciclaje|Basura, chatarra, contenedor, vaciados
+renewable_energy|Energías renovables|Fotovoltaica, solar, eólica, inversor, aerotermia
+marketing_agency|Agencia de marketing|Publicidad, SEO, redes sociales, campaña
+graphic_design|Diseño gráfico|Diseñador, logotipo, cartel, catálogo
+photography|Fotografía|Fotógrafo, estudio, bodas, cámara
+video_production|Producción audiovisual|Vídeo, rodaje, edición, dron
+printing_signage|Imprenta y rotulación|Imprenta, lona, pegatinas, rótulo
+wholesale|Venta al por mayor|Mayorista, distribuidor, almacén, mercancía
+ecommerce|Comercio electrónico|Tienda online, e-commerce, pedidos, envíos
+security_services|Servicios de seguridad|Vigilancia, vigilante, alarma, cámaras
+hairdressing|Peluquería|Peluquero, barbería, corte, tinte
+beauty_salon|Centro de estética|Estética, uñas, pestañas, maquillaje
+massage_therapy|Masajes|Masajista, bienestar, spa, relajación
+fitness_training|Entrenamiento personal|Entrenador personal, gimnasio, pesas, bicicleta estática
+shop_general|Comercio minorista|Tienda, comercio, caja, venta
+shop_bicycle|Tienda y taller de bicicletas|Bicicleta, bici, patinete, cadena, rueda
+shop_auto_parts|Recambios de automóvil|Recambios, accesorios, filtro, pastillas, aceite
+shop_hardware|Ferretería y bricolaje|Ferretería, tornillos, clavos, herramientas, cemento
+shop_furniture|Tienda de muebles|Muebles, sofá, armario, cama, cocina
+shop_electronics|Electrónica y electrodomésticos|Televisor, nevera, lavadora, móvil
+shop_clothing|Tienda de ropa|Ropa, moda, calzado, textil
+shop_grocery|Alimentación|Supermercado, ultramarinos, pan, leche, verdura
+shop_sports|Tienda de deportes|Artículos deportivos, zapatillas, esquí, tienda de campaña
+shop_books|Librería y papelería|Libros, cuadernos, bolígrafos, material de oficina
+shop_florist|Floristería|Flores, ramo, rosas, corona
+shop_pet|Tienda de mascotas|Pienso, accesorios para mascotas, acuario, jaula
+motorcycle_repair|Taller de motos|Moto, ciclomotor, scooter, casco, cadena

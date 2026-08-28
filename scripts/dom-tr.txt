@@ -1,0 +1,113 @@
+taxi|Taksi|Taksi, sefer, havalimanı, transfer
+ride_hailing|Araç çağırma|Uber, Bolt, uygulama, sürücü
+chauffeur|Şoför hizmeti|Özel şoför, limuzin, sürücü
+driving_school|Sürücü kursu|Direksiyon dersi, eğitmen, ehliyet
+translation|Çeviri|Çevirmen, tercüman, belgeler, sözleşme
+interpreting|Sözlü çeviri|Tercüman, simultane, konferans, mahkeme
+sworn_translation|Yeminli tercüme|Yeminli, onaylı, belge, diploma
+language_school|Dil okulu|Dil kursları, dersler, öğretmen
+removals|Nakliyat|Evden eve nakliyat, mobilya, koli, kamyonet
+international_removals|Uluslararası nakliyat|Yurt dışı, konteyner, gümrük
+courier|Kurye|Paket, zarf, ekspres, teslimat
+freight_forwarding|Forwarder|Lojistik, yük, palet, sevkiyat
+refrigerated_transport|Soğuk zincir taşımacılığı|Frigorifik, dondurulmuş, bozulabilir
+haulage|Kara taşımacılığı|Tır, kamyon, römork, dorse
+storage_warehousing|Depolama|Depo, antrepo, palet, eşya deposu
+customs_brokerage|Gümrük müşavirliği|Gümrük, ithalat, ihracat, beyanname
+excavation|Hafriyat|Ekskavatör, kazı, kanal, toprak
+crane_hire|Vinç kiralama|Vinç, kaldırma, mobil vinç
+scaffolding|İskele|Yapı iskelesi, platform, cephe
+demolition|Yıkım|Söküm, moloz, yıkım işleri
+concrete_works|Beton işleri|Beton, şap, temel, kalıp
+surveying|Harita ve kadastro|Harita mühendisi, kadastro, ölçüm, plan
+tool_hire|Alet kiralama|Aletler, matkap, taşlama
+machinery_rental|Makine kiralama|İş makinesi, forklift, ekipman
+generator_hire|Jeneratör kiralama|Jeneratör, elektrik, güç
+electrical_installation|Elektrik tesisatı|Elektrikçi, kablo, priz, pano, sigorta
+plumbing|Sıhhi tesisat|Tesisatçı, boru, musluk, kombi, kaçak, banyo
+heating_hvac|Isıtma|Kombi, kalorifer, yerden ısıtma, ısı pompası
+air_conditioning|Klima|Soğutma, split, havalandırma, montaj
+painting_decorating|Boya ve dekorasyon|Boyacı, boya, duvar kağıdı, alçı
+carpentry|Marangozluk|Marangoz, ahşap, mobilya, kapı, dolap
+flooring|Zemin kaplama|Parke, laminat, fayans, halı
+roofing|Çatı işleri|Çatıcı, kiremit, oluk, yalıtım
+locksmith|Çilingir|Kilit, anahtar, kapı açma, çelik kapı
+cleaning_services|Temizlik|Temizlik şirketi, temizlikçi, ofis temizliği
+gardening_landscaping|Bahçe ve peyzaj|Bahçıvan, çim, çit, ağaçlar, budama
+renovation|Tadilat|Müteahhit, yenileme, inşaat, dekorasyon
+car_repair|Oto tamir|Oto servis, tamirci, bakım, motor, fren, muayene
+mobile_mechanic|Yerinde tamirci|Yol yardım, yerinde, akü, arıza
+tyre_service|Lastikçi|Lastik, jant, patlak, balans
+bodywork_paint|Kaporta ve boya|Kaportacı, göçük, boyama, hasar
+towing_recovery|Çekici|Oto kurtarma, çekme, vinç
+childcare|Çocuk bakımı|Kreş, bakıcı, anaokulu, bebek bakıcısı
+elderly_care|Yaşlı bakımı|Bakıcı, refakat, huzurevi
+home_nursing|Evde hemşirelik|Hemşire, evde bakım, palyatif
+private_tutoring|Özel ders|Etüt, ödev, sınav, öğretmen
+music_lessons|Müzik dersleri|Piyano, gitar, keman, şan, hoca
+sports_coaching|Spor antrenörlüğü|Antrenör, futbol, tenis, hazırlık
+it_training|Bilgisayar kursları|Bilgisayar kursu, Excel, programlama
+vocational_training|Mesleki eğitim|Çıraklık, sertifika, kurs
+holiday_lettings|Tatil kiralama|Daire, yazlık, Airbnb, günlük kiralık
+guesthouse_bnb|Pansiyon|Konukevi, oda, kahvaltı
+property_management|Mülk yönetimi|Site yönetimi, yönetici, kira, apartman
+veterinary|Veterinerlik|Veteriner, klinik, aşı, köpek, kedi
+dog_walking|Köpek gezdirme|Gezdirici, tasma, yürüyüş
+pet_grooming|Pet kuaförü|Tıraş, köpek kuaförü, tüy
+general_practice|Aile hekimliği|Doktor, aile hekimi, muayene, reçete
+dentistry|Diş hekimliği|Diş hekimi, klinik, ortodonti, implant, protez
+physiotherapy|Fizyoterapi|Fizyoterapist, rehabilitasyon, iyileşme
+psychology|Psikoloji|Psikolog, psikoterapi, terapi, danışmanlık
+pharmacy|Eczane|Eczacı, ilaç, reçete
+optometry|Optik|Gözlükçü, gözlük, lens, göz
+medical_laboratory|Tıbbi laboratuvar|Tahlil, kan, analiz, teşhis
+software_development|Yazılım geliştirme|Programcı, geliştirici, kod, yazılım evi
+web_development|Web geliştirme|Web sitesi, web tasarım, e-ticaret sitesi, WordPress
+it_support|BT desteği|Yardım masası, sistem yöneticisi, bilgisayar, yazıcı, ağ, sunucu
+cybersecurity|Siber güvenlik|Bilgi güvenliği, güvenlik duvarı, sızma testi, yedek
+data_ai|Veri ve yapay zeka|Makine öğrenmesi, veri analizi, veritabanı
+cloud_hosting|Bulut ve barındırma|Sunucu, hosting, alan adı, AWS, Azure
+accounting|Muhasebe|Muhasebeci, mali müşavir, bordro, faturalar
+audit_tax|Denetim ve vergi|Denetçi, vergi danışmanı, beyanname, KDV
+legal_services|Hukuki hizmetler|Avukat, hukuk bürosu, noter, sözleşme, dava
+hr_recruitment|İK ve işe alım|İşe alım, kariyer, insan kaynakları, adaylar
+management_consulting|Yönetim danışmanlığı|Danışman, strateji, iş planı
+insurance_brokerage|Sigorta brokerliği|Sigorta, acente, poliçe, hasar
+real_estate_agency|Emlak ofisi|Emlakçı, daire, ev, arsa
+architecture|Mimarlık|Mimar, proje, ruhsat, çizim
+manufacturing|İmalat|Fabrika, üretim, sanayi, montaj
+cnc_machining|CNC işleme|Frezeleme, tornalama, torna, talaşlı imalat
+metalwork_welding|Metal işleri ve kaynak|Kaynakçı, demirci, çelik, kapı, korkuluk
+restaurant|Restoran|Lokanta, pizzacı, mutfak, menü
+catering|Catering|Yemek servisi, davet, açık büfe
+hotel|Otel|Konaklama, hostel, motel, oda, resepsiyon
+event_management|Etkinlik organizasyonu|Organizasyon, düğün, kongre, sahne
+agriculture|Tarım|Çiftlik, traktör, hasat, hayvancılık, tarla
+forestry|Ormancılık|Kesim, kereste, orman, testere
+waste_recycling|Atık ve geri dönüşüm|Çöp, hurda, konteyner, nakliye
+renewable_energy|Yenilenebilir enerji|Güneş paneli, solar, rüzgar, invertör
+marketing_agency|Pazarlama ajansı|Reklam, SEO, sosyal medya, kampanya
+graphic_design|Grafik tasarım|Tasarımcı, logo, afiş, katalog
+photography|Fotoğrafçılık|Fotoğrafçı, stüdyo, düğün, makine
+video_production|Video prodüksiyon|Çekim, kurgu, drone, kamera
+printing_signage|Matbaa ve tabela|Baskı, afiş, etiket, tabela
+wholesale|Toptan ticaret|Toptancı, tedarikçi, depo, mal
+ecommerce|E-ticaret|Online mağaza, sipariş, kargo
+security_services|Güvenlik hizmetleri|Güvenlik, bekçi, alarm, kamera
+hairdressing|Kuaför|Berber, saç, kesim, boya
+beauty_salon|Güzellik salonu|Güzellik uzmanı, tırnak, kirpik, makyaj
+massage_therapy|Masaj|Masör, spa, rahatlama
+fitness_training|Fitness antrenmanı|Kişisel antrenör, spor salonu, ağırlık, kondisyon bisikleti
+shop_general|Perakende mağaza|Dükkan, mağaza, kasa, satış
+shop_bicycle|Bisiklet mağazası ve tamiri|Bisiklet, scooter, zincir, tekerlek
+shop_auto_parts|Oto yedek parça|Yedek parça, aksesuar, filtre, balata, yağ
+shop_hardware|Nalbur ve yapı market|Hırdavat, vida, çivi, aletler, çimento
+shop_furniture|Mobilya mağazası|Mobilya, koltuk, dolap, yatak, mutfak
+shop_electronics|Elektronik ve beyaz eşya|Televizyon, buzdolabı, çamaşır makinesi, telefon
+shop_clothing|Giyim mağazası|Giyim, moda, ayakkabı, tekstil
+shop_grocery|Market|Bakkal, süpermarket, ekmek, süt, sebze
+shop_sports|Spor mağazası|Spor malzemeleri, spor ayakkabı, kayak, çadır
+shop_books|Kitapçı ve kırtasiye|Kitap, defter, kalem, ofis malzemeleri
+shop_florist|Çiçekçi|Çiçek, buket, gül, çelenk
+shop_pet|Pet shop|Mama, evcil hayvan malzemeleri, akvaryum, kafes
+motorcycle_repair|Motosiklet tamiri|Motosiklet, scooter, mobilet, kask, zincir
