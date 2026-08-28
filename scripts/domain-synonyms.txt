@@ -1,0 +1,100 @@
+taxi|cab, ride, transfer, private hire|taxi, cursa, transfer
+ride_hailing|uber, bolt, vtc, rideshare|uber, bolt, ridesharing
+chauffeur|private driver, personal driver, limousine|sofer personal, limuzina, sofer privat
+driving_school|driving lessons, instructor, licence|scoala de soferi, instructor auto, permis
+translation|translator, documents, certified|traducator, documente, traduceri
+interpreting|interpreter, simultaneous, conference|interpret, traducere simultana, conferinta
+sworn_translation|certified translator, notarised, official|traducator autorizat, legalizat, notarial
+language_school|language courses, english lessons, teacher|cursuri de limbi, lectii engleza, profesor
+removals|moving, movers, house move, van|mutari, transport mobila, camion
+international_removals|overseas move, relocation, abroad|mutare in strainatate, relocare
+courier|delivery, parcel, express, dispatch|curier, colet, livrare, expres
+freight_forwarding|forwarder, logistics, shipping|expeditor, logistica, transport marfa
+refrigerated_transport|cold chain, reefer, frozen, chilled|lant frigorific, frigorific, congelate
+haulage|trucking, lorry, road freight|tir, camion, transport marfa
+storage_warehousing|warehouse, depot, self storage|depozit, magazie, spatiu de depozitare
+customs_brokerage|customs, import, export, declaration|vama, comisionar vamal, import, export
+excavation|digger, groundwork, trenching, earthmoving|excavator, sapaturi, terasamente, buldoexcavator
+crane_hire|crane, lifting, hoist|macara, ridicare, automacara
+scaffolding|scaffold, access platform|schele, esafodaj
+demolition|demolish, dismantling, strip out|demolare, dezafectare
+concrete_works|concrete, screed, foundation, pouring|beton, sapa, fundatie, turnare
+surveying|surveyor, topography, land survey, cadastre|topograf, cadastru, masuratori
+tool_hire|tools, equipment hire, power tools|scule, unelte, inchiriere scule
+machinery_rental|plant hire, equipment, machines|utilaje, inchiriere utilaje
+generator_hire|generator, power, aggregate|generator, grup electrogen, curent
+electrical_installation|electrician, wiring, electrics, switchboard|electrician, tablou electric, cablare, priza
+plumbing|plumber, pipes, bathroom, leak, boiler|instalator, tevi, baie, scurgere, centrala
+heating_hvac|heating engineer, boiler, radiators, underfloor|centrala termica, calorifere, incalzire, termic
+air_conditioning|ac, cooling, split unit, hvac|aer conditionat, clima, racire, split
+painting_decorating|painter, decorator, wallpaper|zugrav, vopsitor, tapet, finisaje
+carpentry|carpenter, joiner, furniture, woodwork|tamplar, mobila, lemn, tamplarie
+flooring|parquet, laminate, tiles, screed|parchet, laminat, gresie, sapa
+roofing|roofer, tiles, gutters, waterproofing|acoperis, tigla, jgheaburi, hidroizolatie
+locksmith|locks, keys, door opening, security door|lacatus, incuietori, chei, deschidere usi
+cleaning_services|cleaner, housekeeping, office cleaning|curatenie, femeie de serviciu, curatenie birouri
+gardening_landscaping|gardener, lawn, hedge, landscaping|gradinar, gazon, gard viu, amenajare gradina
+renovation|builder, refurbishment, general contractor|constructor, amenajari interioare, antreprenor
+car_repair|garage, mechanic, servicing, inspection|service auto, mecanic, revizie, itp
+mobile_mechanic|roadside, on site repair, breakdown|mecanic la domiciliu, depanare, pana
+tyre_service|tyres, wheels, puncture, balancing|anvelope, cauciucuri, pana, echilibrare
+bodywork_paint|panel beater, dent, respray, crash repair|tinichigerie, vopsitorie, caroserie
+towing_recovery|tow truck, breakdown recovery, winch|tractare, platforma auto, remorcare
+childcare|nursery, babysitter, kindergarten, nanny|cresa, bona, gradinita, babysitter
+elderly_care|senior care, care home, companion|ingrijire batrani, azil, insotitor
+home_nursing|nurse, medical care at home, palliative|asistent medical, ingrijire la domiciliu, paliativ
+private_tutoring|tutor, lessons, homework, exam prep|meditatii, profesor particular, pregatire examene
+music_lessons|piano, guitar, singing, music teacher|pian, chitara, canto, profesor de muzica
+sports_coaching|coach, trainer, football, tennis|antrenor, fotbal, tenis, pregatire sportiva
+it_training|computer courses, excel, programming course|cursuri calculatoare, excel, curs programare
+vocational_training|apprenticeship, trade course, certification|calificare, curs de meserie, atestat
+holiday_lettings|holiday home, short let, airbnb|inchiriere vacanta, airbnb, regim hotelier
+guesthouse_bnb|bed and breakfast, pension, inn|pensiune, cazare, han
+property_management|landlord services, building management, rentals|administrare bloc, administrator imobil, chirii
+veterinary|vet, animal doctor, veterinarian|veterinar, cabinet veterinar, medic veterinar
+dog_walking|dog walker, pet walking|plimbat caini, dog sitter
+pet_grooming|groomer, dog grooming, pet salon|toaletaj, frizerie canina, salon animale
+general_practice|doctor, gp, family doctor, clinic, surgery|doctor, medic, cabinet medical, medic generalist
+dentistry|dentist, dental, orthodontist, dental clinic|dentist, cabinet dentar, ortodont, medic dentist
+physiotherapy|physio, physiotherapist, rehabilitation|kinetoterapie, fizioterapeut, recuperare medicala
+psychology|psychologist, therapist, counselling, psychotherapy|psiholog, psihoterapeut, consiliere, terapie
+pharmacy|pharmacist, chemist, drugstore|farmacist, drogherie, medicamente
+optometry|optician, optometrist, glasses, eyewear|optician, ochelari, cabinet optica
+medical_laboratory|lab, blood tests, analysis, diagnostics|analize medicale, laborator, teste
+software_development|programmer, developer, coding, software house|programator, dezvoltator, programare, firma de software
+web_development|website, web design, frontend, backend|site web, web design, programare web
+it_support|helpdesk, system administrator, computer repair, network|suport tehnic, administrator sistem, service calculatoare, retea
+cybersecurity|security audit, penetration testing, infosec|securitate informatica, audit de securitate, pentest
+data_ai|machine learning, data science, analytics|invatare automata, analiza de date, inteligenta artificiala
+cloud_hosting|server, hosting, aws, azure, devops|server, gazduire, cloud, devops
+accounting|bookkeeper, bookkeeping, accountant, payroll|contabil, expert contabil, evidenta contabila, salarizare
+audit_tax|auditor, tax advisor, fiscal, tax return|auditor, consultant fiscal, fiscalitate, declaratii
+legal_services|lawyer, attorney, solicitor, law firm, legal advice|avocat, jurist, cabinet de avocatura, consultanta juridica, notar
+hr_recruitment|recruiter, headhunter, staffing, employment agency|recrutare, headhunting, agentie de plasare, personal
+management_consulting|consultant, business advisory, strategy|consultant, consultanta in afaceri, strategie
+insurance_brokerage|insurance, broker, policy, underwriting|asigurari, broker de asigurari, polita
+real_estate_agency|estate agent, realtor, property, letting agent|agent imobiliar, imobiliare, inchirieri, vanzari
+architecture|architect, architectural design, planning|arhitect, proiectare, birou de arhitectura
+manufacturing|factory, production, industrial, assembly|fabrica, productie industriala, asamblare
+cnc_machining|milling, turning, lathe, machining|frezare, strunjire, prelucrare metale
+metalwork_welding|welder, blacksmith, steel, fabrication|sudor, sudura, confectii metalice, otel
+restaurant|food, dining, bistro, pizzeria|bistro, pizzerie, local, bucatarie
+catering|food service, banquet, buffet|banchet, bufet, mancare evenimente
+hotel|accommodation, hostel, motel, lodging|cazare, motel, hostel
+event_management|events, wedding planner, conference, organiser|evenimente, organizator nunti, conferinte
+agriculture|farm, farming, crops, livestock|ferma, culturi, zootehnie, agricol
+forestry|logging, timber, woodland, forest|exploatare forestiera, lemn, padure
+waste_recycling|rubbish, garbage, scrap, waste disposal|gunoi, deseuri, fier vechi, salubritate
+renewable_energy|solar, wind, photovoltaic, green energy|solar, eolian, fotovoltaic, energie verde
+marketing_agency|advertising, seo, social media, branding|publicitate, seo, social media, branding
+graphic_design|designer, logo, branding, illustration|designer, logo, grafica, ilustratie
+photography|photographer, photo studio, wedding photos|fotograf, studio foto, fotografii nunta
+video_production|videographer, filming, editing, drone|videograf, filmare, montaj, drona
+printing_signage|printer, print shop, banners, labels|tipografie, printuri, bannere, etichete
+wholesale|distributor, supplier, bulk, trade|distribuitor, furnizor, angro, depozit
+ecommerce|online shop, webshop, marketplace, dropshipping|magazin online, comert electronic, dropshipping
+security_services|guard, surveillance, bodyguard, patrol|paza, agent de securitate, supraveghere, bodyguard
+hairdressing|hairdresser, barber, salon, haircut|frizerie, coafor, tuns, par
+beauty_salon|cosmetics, nails, manicure, facial|cosmetica, unghii, manichiura, tratamente faciale
+massage_therapy|masseur, spa, relaxation|maseur, spa, masaj relaxare
+fitness_training|personal trainer, gym, workout|antrenor personal, sala, fitness, antrenamente

@@ -731,6 +731,12 @@
   html[data-mode="business"] .pro-search{display:block;margin-top:34px;}
   html[data-mode="business"] .category-grid{display:none;}
   html[data-mode="business"] .cat-strip{display:none;}
+  /* The h1 two lines above already says it. */
+  html[data-mode="business"] .categories-section > h2{display:none;}
+  /* Five times the 260px the country picker uses. A hundred fields behind a
+     seven-line window is a list nobody scrolls; capped against the viewport
+     so it cannot grow taller than the screen it opens on. */
+  html[data-mode="business"] .cascade{max-height:min(1300px, 78vh);}
   html[data-mode="business"] .category-grid.pro-open{display:grid;}
 
   .pro-search .cascade-wrap{max-width:620px;margin:0 auto;}
@@ -4147,6 +4153,20 @@ if ("serviceWorker" in navigator) {
   var grid  = document.querySelector(".category-grid");
   if (!input || !list || !grid || !window.RotaboDomains) return;
 
+  // The markup is in index.html too, hidden by the palette, so the business
+  // check is explicit rather than implied by an element being missing.
+  if (document.documentElement.getAttribute("data-mode") !== "business") return;
+
+  /* "Rotabo for business", the lead and the bar belong directly under the
+     headline on this side. They were sitting halfway down the page, behind
+     the share bar, the partner band and the idea section -- all of which a
+     firm scrolls past before finding the one thing it came for. */
+  var section = document.querySelector(".categories-section");
+  var tagline = document.querySelector("h1.tagline");
+  if (section && tagline && tagline.parentNode) {
+    tagline.parentNode.insertBefore(section, tagline.nextSibling);
+  }
+
   var cards = {};
   [].slice.call(grid.querySelectorAll(".category-card")).forEach(function(c){
     if (c.id) cards[c.id.replace(/^cat-/, "")] = c;
@@ -4176,6 +4196,14 @@ if ("serviceWorker" in navigator) {
     return T("domains." + slug, slug.replace(/_/g, " "));
   }
 
+  /* Words nobody puts on a card but everybody types. The Romanian for legal
+     services is "Servicii juridice" and a lawyer types "avocat"; the label
+     alone never matches, and a firm that cannot find a word for what it does
+     does not register. Searched, never shown. */
+  function synonyms(slug){
+    return T("domsyn." + slug, "");
+  }
+
   /* Stems, not exact strings. The Romanian for plumbing is "Instalații
      sanitare" and a plumber types "instalator"; they agree for six letters
      and part at the seventh, so a substring test finds nothing. Six letters
@@ -4203,7 +4231,7 @@ if ("serviceWorker" in navigator) {
     if (!f) return all;
     var words = f.split(/\s+/).filter(Boolean);
     return all.filter(function(d){
-      var hay = fold(label(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
+      var hay = fold(label(d.slug) + " " + synonyms(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
       return words.every(function(w){ return stemMatch(w, hay); });
     });
   }
