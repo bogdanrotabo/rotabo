@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Pendaftaran percuma, iklan percuma - syarikat anda, di tempat orang sudah mencari." },
+    "categories": {
+      "section_eyebrow": "ROTABO UNTUK PERNIAGAAN",
+      "section_lead": "Pilih kerja yang syarikat anda lakukan - dan biar orang serta syarikat yang perlukan menemui anda.",
+      "need_btn": "Kami perlukan ini",
+      "offer_btn": "Kami menawarkan ini"
+    },
+    "choose": {
+      "need_title": "Syarikat saya mencari sesuatu",
+      "need_text": "Siarkan apa yang syarikat anda cari dan terima tawaran daripada pembekal berdekatan.",
+      "need_btn": "Siarkan apa yang anda cari",
+      "offer_title": "Syarikat saya menawarkan sesuatu",
+      "offer_text": "Nyatakan kerja syarikat anda dan kawasan yang diliputi, dan biar orang menemui anda.",
+      "offer_btn": "Daftarkan syarikat anda"
+    }
+  },
   "ticker": {
     "sponsors": "Penaja", "company": "Perniagaan anda boleh dilihat di sini — pendaftaran percuma",
     "offers": "menawarkan",

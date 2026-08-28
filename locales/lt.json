@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško." },
+    "categories": {
+      "section_eyebrow": "ROTABO VERSLUI",
+      "section_lead": "Pasirinkite, ką daro jūsų įmonė - ir jus suras tie, kuriems to reikia.",
+      "need_btn": "Mums to reikia",
+      "offer_btn": "Mes tai siūlome"
+    },
+    "choose": {
+      "need_title": "Mano įmonė ko nors ieško",
+      "need_text": "Paskelbkite, ko ieško jūsų įmonė, ir gaukite pasiūlymų iš netoliese esančių tiekėjų.",
+      "need_btn": "Paskelbkite, ko ieškote",
+      "offer_title": "Mano įmonė ką nors siūlo",
+      "offer_text": "Parašykite, ką daro jūsų įmonė ir kokią teritoriją aptarnauja, ir jus suras.",
+      "offer_btn": "Užregistruokite įmonę"
+    }
+  },
   "ticker": {
     "sponsors": "Rėmėjai", "company": "Jūsų verslas gali būti matomas čia — registracija nemokama",
     "offers": "siūlo",

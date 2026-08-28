@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē." },
+    "categories": {
+      "section_eyebrow": "ROTABO UZŅĒMUMIEM",
+      "section_lead": "Izvēlieties, ko dara jūsu uzņēmums - un lai jūs atrod tie, kam tas vajadzīgs.",
+      "need_btn": "Mums tas ir vajadzīgs",
+      "offer_btn": "Mēs to piedāvājam"
+    },
+    "choose": {
+      "need_title": "Mans uzņēmums kaut ko meklē",
+      "need_text": "Publicējiet, ko meklē jūsu uzņēmums, un saņemiet piedāvājumus no tuviem piegādātājiem.",
+      "need_btn": "Publicējiet, ko meklējat",
+      "offer_title": "Mans uzņēmums kaut ko piedāvā",
+      "offer_text": "Uzrakstiet, ko dara jūsu uzņēmums un kādu apgabalu tas aptver, un jūs atradīs.",
+      "offer_btn": "Reģistrējiet savu uzņēmumu"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsori", "company": "Jūsu uzņēmums var būt redzams šeit — reģistrācija bez maksas",
     "offers": "piedāvā",

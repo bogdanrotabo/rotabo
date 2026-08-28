@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Gratis registrering, gratis annons - ditt företag, där folk redan letar." },
+    "categories": {
+      "section_eyebrow": "ROTABO FÖR FÖRETAG",
+      "section_lead": "Välj vad ditt företag gör - och bli hittad av dem som behöver det.",
+      "need_btn": "Det här behöver vi",
+      "offer_btn": "Det här erbjuder vi"
+    },
+    "choose": {
+      "need_title": "Mitt företag söker något",
+      "need_text": "Lägg upp vad ditt företag söker och få erbjudanden från leverantörer i närheten.",
+      "need_btn": "Lägg upp vad du söker",
+      "offer_title": "Mitt företag erbjuder något",
+      "offer_text": "Skriv vad ditt företag gör och vilket område det täcker, så blir du hittad.",
+      "offer_btn": "Registrera ditt företag"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorer", "company": "Ditt företag kan synas här — registrering är gratis",
     "offers": "erbjuder",

@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "免费注册，免费发布 - 让贵公司出现在人们已经在找的地方。" },
+    "categories": {
+      "section_eyebrow": "罗塔博商务版",
+      "section_lead": "选择贵公司提供的服务 - 让需要的人和企业找到你。",
+      "need_btn": "我们需要",
+      "offer_btn": "我们提供"
+    },
+    "choose": {
+      "need_title": "我的公司需要",
+      "need_text": "发布贵公司正在寻找的内容，收到附近供应商的报价。",
+      "need_btn": "发布你的需求",
+      "offer_title": "我的公司提供",
+      "offer_text": "写下贵公司的业务和覆盖区域，让需要的人找到你。",
+      "offer_btn": "登记贵公司"
+    }
+  },
   "ticker": {
     "sponsors": "赞助商", "company": "贵公司可以在这里被看见 — 免费注册",
     "offers": "提供",

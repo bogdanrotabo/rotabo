@@ -11,14 +11,14 @@ My company offers something
 List what your company does and the area you cover, and be found by whoever needs it.
 List your company
 ##it
-Iscrizione gratuita, annuncio gratuito - la tua azienda, dove le persone gia cercano.
+Iscrizione gratuita, annuncio gratuito - la tua azienda, dove le persone già cercano.
 ROTABO PER LE AZIENDE
 Scegli il lavoro che fa la tua azienda - e fatti trovare da chi ne ha bisogno.
 Ci serve questo
 Lo offriamo noi
 La mia azienda cerca qualcosa
-Pubblica cio che cerca la tua azienda e ricevi offerte dai fornitori vicini.
-Pubblica cio che cerchi
+Pubblica ciò che cerca la tua azienda e ricevi offerte dai fornitori vicini.
+Pubblica ciò che cerchi
 La mia azienda offre qualcosa
 Indica cosa fa la tua azienda e la zona che copre, e fatti trovare da chi ne ha bisogno.
 Registra la tua azienda
@@ -44,10 +44,10 @@ Mi empresa necesita algo
 Publica lo que busca tu empresa y recibe ofertas de proveedores cercanos.
 Publica lo que necesitas
 Mi empresa ofrece algo
-Indica que hace tu empresa y la zona que cubre, y que te encuentre quien lo necesite.
+Indica qué hace tu empresa y la zona que cubre, y que te encuentre quien lo necesite.
 Registra tu empresa
 ##fr
-Inscription gratuite, annonce gratuite - votre entreprise, la ou les gens cherchent deja.
+Inscription gratuite, annonce gratuite - votre entreprise, là où les gens cherchent déjà.
 ROTABO POUR LES ENTREPRISES
 Choisissez ce que fait votre entreprise - et faites-vous trouver par ceux qui en ont besoin.
 Nous en avons besoin
@@ -60,27 +60,27 @@ Indiquez ce que fait votre entreprise et la zone couverte, et faites-vous trouve
 Inscrivez votre entreprise
 ##de
 Eintrag kostenlos, Anzeige kostenlos - Ihr Unternehmen, dort wo Menschen schon suchen.
-ROTABO FUER UNTERNEHMEN
-Waehlen Sie, was Ihr Unternehmen macht - und lassen Sie sich finden von denen, die es brauchen.
+ROTABO FÜR UNTERNEHMEN
+Wählen Sie, was Ihr Unternehmen macht - und lassen Sie sich finden von denen, die es brauchen.
 Das brauchen wir
 Das bieten wir
 Mein Unternehmen sucht etwas
-Schreiben Sie, was Ihr Unternehmen sucht, und erhalten Sie Angebote von Anbietern in der Naehe.
+Schreiben Sie, was Ihr Unternehmen sucht, und erhalten Sie Angebote aus der Nähe.
 Schreiben Sie, was Sie suchen
 Mein Unternehmen bietet etwas
 Tragen Sie ein, was Ihr Unternehmen macht und welches Gebiet es abdeckt, und werden Sie gefunden.
 Unternehmen eintragen
 ##pt
-Registo gratuito, anuncio gratuito - a sua empresa, onde as pessoas ja procuram.
+Registo gratuito, anúncio gratuito - a sua empresa, onde as pessoas já procuram.
 ROTABO PARA EMPRESAS
 Escolha o que a sua empresa faz - e seja encontrado por quem precisa.
 Precisamos disto
 Oferecemos isto
 A minha empresa precisa de algo
-Publique o que a sua empresa procura e receba propostas de fornecedores proximos.
+Publique o que a sua empresa procura e receba propostas de fornecedores próximos.
 Publique o que procura
 A minha empresa oferece algo
-Indique o que a sua empresa faz e a area que cobre, e seja encontrado por quem precisa.
+Indique o que a sua empresa faz e a área que cobre, e seja encontrado por quem precisa.
 Registe a sua empresa
 ##zh
 免费注册，免费发布 - 让贵公司出现在人们已经在找的地方。
@@ -215,17 +215,17 @@ Perusahaan saya menawarkan sesuatu
 Tulis apa yang dikerjakan perusahaan Anda dan wilayah yang dilayani, agar ditemukan.
 Daftarkan perusahaan Anda
 ##tr
-Kayit ucretsiz, ilan ucretsiz - sirketiniz, insanlarin zaten aradigi yerde.
-ISLETMELER ICIN ROTABO
-Sirketinizin yaptigi isi secin - ve ihtiyaci olanlar sizi bulsun.
-Buna ihtiyacimiz var
+Kayıt ücretsiz, ilan ücretsiz - şirketiniz, insanların zaten aradığı yerde.
+İŞLETMELER İÇİN ROTABO
+Şirketinizin yaptığı işi seçin - ve ihtiyacı olanlar sizi bulsun.
+Buna ihtiyacımız var
 Bunu sunuyoruz
-Sirketim bir sey ariyor
-Sirketinizin aradigini yayinlayin ve yakindaki tedarikcilerden teklif alin.
-Aradiginizi yayinlayin
-Sirketim bir sey sunuyor
-Sirketinizin ne yaptigini ve hangi bolgeye baktigini yazin, ihtiyaci olan sizi bulsun.
-Sirketinizi kaydedin
+Şirketim bir şey arıyor
+Şirketinizin aradığını yayınlayın ve yakındaki tedarikçilerden teklif alın.
+Aradığınızı yayınlayın
+Şirketim bir şey sunuyor
+Şirketinizin ne yaptığını ve hangi bölgeye baktığını yazın, ihtiyacı olan sizi bulsun.
+Şirketinizi kaydedin
 ##bn
 নিবন্ধন ফ্রি, বিজ্ঞাপন ফ্রি - আপনার কোম্পানি, যেখানে মানুষ ইতিমধ্যে খুঁজছে।
 রোটাবো ব্যবসার জন্য
@@ -263,65 +263,65 @@ Sirketinizi kaydedin
 Опишете какво прави фирмата ви и района, който покрива, и ще ви намерят.
 Регистрирайте фирмата си
 ##cs
-Registrace zdarma, inzerat zdarma - vase firma tam, kde lide uz hledaji.
+Registrace zdarma, inzerát zdarma - vaše firma tam, kde lidé už hledají.
 ROTABO PRO FIRMY
-Vyberte, co vase firma dela - a najdou vas ti, kdo to potrebuji.
-Tohle potrebujeme
-Tohle nabizime
-Moje firma neco hleda
-Zverejnete, co vase firma hleda, a ziskejte nabidky od dodavatelu v okoli.
-Zverejnete, co hledate
-Moje firma neco nabizi
-Napiste, co vase firma dela a jakou oblast pokryva, a najdou vas.
+Vyberte, co vaše firma dělá - a najdou vás ti, kdo to potřebují.
+Tohle potřebujeme
+Tohle nabízíme
+Moje firma něco hledá
+Zveřejněte, co vaše firma hledá, a získejte nabídky od dodavatelů v okolí.
+Zveřejněte, co hledáte
+Moje firma něco nabízí
+Napište, co vaše firma dělá a jakou oblast pokrývá, a najdou vás.
 Zaregistrujte firmu
 ##hr
-Besplatna registracija, besplatan oglas - vasa tvrtka ondje gdje ljudi vec traze.
+Besplatna registracija, besplatan oglas - vaša tvrtka ondje gdje ljudi već traže.
 ROTABO ZA TVRTKE
-Odaberite cime se vasa tvrtka bavi - i neka vas pronadu oni kojima treba.
+Odaberite čime se vaša tvrtka bavi - i neka vas pronađu oni kojima treba.
 Ovo nam treba
 Ovo nudimo
-Moja tvrtka nesto trazi
-Objavite sto vasa tvrtka trazi i primite ponude od dobavljaca u blizini.
-Objavite sto trazite
-Moja tvrtka nesto nudi
-Napisite cime se vasa tvrtka bavi i koje podrucje pokriva, i pronaci ce vas.
+Moja tvrtka nešto traži
+Objavite što vaša tvrtka traži i primite ponude od dobavljača u blizini.
+Objavite što tražite
+Moja tvrtka nešto nudi
+Napišite čime se vaša tvrtka bavi i koje područje pokriva, i pronaći će vas.
 Registrirajte tvrtku
 ##da
-Gratis tilmelding, gratis opslag - din virksomhed, der hvor folk allerede leder.
+Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder.
 ROTABO FOR VIRKSOMHEDER
-Vaelg hvad din virksomhed laver - og bliv fundet af dem, der har brug for det.
+Vælg hvad din virksomhed laver - og bliv fundet af dem, der har brug for det.
 Det har vi brug for
 Det tilbyder vi
-Min virksomhed soger noget
-Skriv hvad din virksomhed soger, og faa tilbud fra leverandorer i naerheden.
-Skriv hvad du soger
+Min virksomhed søger noget
+Skriv hvad din virksomhed søger, og få tilbud fra leverandører i nærheden.
+Skriv hvad du søger
 Min virksomhed tilbyder noget
-Skriv hvad din virksomhed laver og hvilket omraade den daekker, saa bliver du fundet.
+Skriv hvad din virksomhed laver og hvilket område den dækker, så bliver du fundet.
 Tilmeld din virksomhed
 ##et
-Tasuta registreerimine, tasuta kuulutus - teie ettevote seal, kus inimesed juba otsivad.
-ROTABO ETTEVOTETELE
-Valige, millega teie ettevote tegeleb - ja teid leiavad need, kes seda vajavad.
+Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad.
+ROTABO ETTEVÕTETELE
+Valige, millega teie ettevõte tegeleb - ja teid leiavad need, kes seda vajavad.
 Meil on seda vaja
 Meie pakume seda
-Minu ettevote otsib midagi
-Pange ules, mida teie ettevote otsib, ja saage pakkumisi labilahedastelt tarnijatelt.
-Pange ules, mida otsite
-Minu ettevote pakub midagi
-Kirjutage, millega teie ettevote tegeleb ja millist piirkonda katab, ja teid leitakse.
-Registreerige oma ettevote
+Minu ettevõte otsib midagi
+Pange üles, mida teie ettevõte otsib, ja saage pakkumisi lähedalasuvatelt tarnijatelt.
+Pange üles, mida otsite
+Minu ettevõte pakub midagi
+Kirjutage, millega teie ettevõte tegeleb ja millist piirkonda katab, ja teid leitakse.
+Registreerige oma ettevõte
 ##fi
-Ilmainen rekisteroityminen, ilmainen ilmoitus - yrityksesi siella, missa ihmiset jo etsivat.
+Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät.
 ROTABO YRITYKSILLE
-Valitse, mita yrityksesi tekee - ja anna niiden loytaa sinut, jotka tarvitsevat.
-Tata tarvitsemme
-Tata tarjoamme
+Valitse, mitä yrityksesi tekee - ja anna niiden löytää sinut, jotka tarvitsevat.
+Tätä tarvitsemme
+Tätä tarjoamme
 Yritykseni etsii jotain
-Julkaise, mita yrityksesi etsii, ja saa tarjouksia lahialueen toimittajilta.
-Julkaise, mita etsit
+Julkaise, mitä yrityksesi etsii, ja saa tarjouksia lähialueen toimittajilta.
+Julkaise, mitä etsit
 Yritykseni tarjoaa jotain
-Kirjoita, mita yrityksesi tekee ja minka alueen se kattaa, niin sinut loydetaan.
-Rekisteroi yrityksesi
+Kirjoita, mitä yrityksesi tekee ja minkä alueen se kattaa, niin sinut löydetään.
+Rekisteröi yrityksesi
 ##el
 Δωρεάν εγγραφή, δωρεάν αγγελία - η εταιρεία σας εκεί όπου οι άνθρωποι ήδη ψάχνουν.
 ROTABO ΓΙΑ ΕΠΙΧΕΙΡΗΣΕΙΣ
@@ -335,65 +335,65 @@ ROTABO ΓΙΑ ΕΠΙΧΕΙΡΗΣΕΙΣ
 Γράψτε τι κάνει η εταιρεία σας και ποια περιοχή καλύπτει, και θα σας βρουν.
 Καταχωρίστε την εταιρεία σας
 ##ga
-Clarú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana.
+Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana.
 ROTABO DO GHNÓ
 Roghnaigh an obair a dhéanann do chomhlacht - agus gheobhaidh na daoine a bhfuil sí uathu thú.
 Tá sé seo uainn
 Tairgimid é seo
-Tá rud éigin uaim don chomhlacht
+Tá rud éigin ó mo chomhlacht
 Cuir suas an rud atá do chomhlacht a lorg agus faigh tairiscintí ó sholáthraithe in aice láimhe.
 Cuir suas an rud atá uait
 Tairgeann mo chomhlacht rud éigin
 Scríobh cad a dhéanann do chomhlacht agus an ceantar a chlúdaíonn sé, agus gheofar thú.
 Cláraigh do chomhlacht
 ##lv
-Bezmaksas registracija, bezmaksas sludinajums - jusu uznemums tur, kur cilveki jau meklē.
-ROTABO UZNEMUMIEM
-Izveleties, ko dara jusu uznemums - un lai jus atrod tie, kam tas vajadzigs.
-Mums tas ir vajadzigs
-Mes to piedavajam
-Mans uznemums kaut ko mekle
-Publicejiet, ko mekle jusu uznemums, un sanemiet piedavajumus no tuviem piegadatajiem.
-Publicejiet, ko meklejat
-Mans uznemums kaut ko piedava
-Uzrakstiet, ko dara jusu uznemums un kadu apgabalu tas aptver, un jus atradis.
-Registrejiet savu uznemumu
+Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē.
+ROTABO UZŅĒMUMIEM
+Izvēlieties, ko dara jūsu uzņēmums - un lai jūs atrod tie, kam tas vajadzīgs.
+Mums tas ir vajadzīgs
+Mēs to piedāvājam
+Mans uzņēmums kaut ko meklē
+Publicējiet, ko meklē jūsu uzņēmums, un saņemiet piedāvājumus no tuviem piegādātājiem.
+Publicējiet, ko meklējat
+Mans uzņēmums kaut ko piedāvā
+Uzrakstiet, ko dara jūsu uzņēmums un kādu apgabalu tas aptver, un jūs atradīs.
+Reģistrējiet savu uzņēmumu
 ##lt
-Nemokama registracija, nemokamas skelbimas - jusu imone ten, kur zmones jau ieško.
+Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško.
 ROTABO VERSLUI
-Pasirinkite, ka daro jusu imone - ir jus suras tie, kuriems to reikia.
+Pasirinkite, ką daro jūsų įmonė - ir jus suras tie, kuriems to reikia.
 Mums to reikia
-Mes tai siulome
-Mano imone kazko ieško
-Paskelbkite, ko ieško jusu imone, ir gaukite pasiulymu is netoliese esanciu tiekeju.
+Mes tai siūlome
+Mano įmonė ko nors ieško
+Paskelbkite, ko ieško jūsų įmonė, ir gaukite pasiūlymų iš netoliese esančių tiekėjų.
 Paskelbkite, ko ieškote
-Mano imone kazka siulo
-Parašykite, ka daro jusu imone ir kokia teritorija aptarnauja, ir jus suras.
-Uzregistruokite imone
+Mano įmonė ką nors siūlo
+Parašykite, ką daro jūsų įmonė ir kokią teritoriją aptarnauja, ir jus suras.
+Užregistruokite įmonę
 ##hu
-Ingyenes regisztracio, ingyenes hirdetes - az On cege ott, ahol mar keresnek.
-ROTABO CEGEKNEK
-Valassza ki, mit csinal az On cege - es megtalaljak azok, akiknek szuksegük van ra.
-Erre van szuksegunk
-Ezt kinaljuk
-A cegem keres valamit
-Tegye kozze, mit keres a cege, es kapjon ajanlatokat kozeli beszallitoktol.
-Tegye kozze, mit keres
-A cegem kinal valamit
-Irja le, mit csinal a cege es milyen teruletet fed le, es megtalaljak.
-Regisztralja a ceget
+Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek.
+ROTABO CÉGEKNEK
+Válassza ki, mit csinál az Ön cége - és megtalálják azok, akiknek szükségük van rá.
+Erre van szükségünk
+Ezt kínáljuk
+A cégem keres valamit
+Tegye közzé, mit keres a cége, és kapjon ajánlatokat közeli beszállítóktól.
+Tegye közzé, mit keres
+A cégem kínál valamit
+Írja le, mit csinál a cége és milyen területet fed le, és megtalálják.
+Regisztrálja a cégét
 ##mt
-Registrazzjoni b xejn, avviz b xejn - il-kumpanija tieghek fejn in-nies diga qed ifittxu.
-ROTABO GHAN-NEGOZJU
-Aghzel x taghmel il-kumpanija tieghek - u halli lil min ghandu bzonn isibek.
-Ghandna bzonn dan
+Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu.
+ROTABO GĦAN-NEGOZJU
+Agħżel x'tagħmel il-kumpanija tiegħek - u ħalli lil min għandu bżonn isibek.
+Għandna bżonn dan
 Noffru dan
-Il-kumpanija tieghi qed tfittex xi haga
-Ippubblika x qed tfittex il-kumpanija tieghek u irċievi offerti minn fornituri fil-qrib.
-Ippubblika x qed tfittex
-Il-kumpanija tieghi toffri xi haga
-Ikteb x taghmel il-kumpanija tieghek u liema zona tkopri, u jsibuk.
-Irregistra l-kumpanija tieghek
+Il-kumpanija tiegħi qed tfittex xi ħaġa
+Ippubblika x'qed tfittex il-kumpanija tiegħek u irċievi offerti minn fornituri fil-qrib.
+Ippubblika x'qed tfittex
+Il-kumpanija tiegħi toffri xi ħaġa
+Ikteb x'tagħmel il-kumpanija tiegħek u liema żona tkopri, u jsibuk.
+Irreġistra l-kumpanija tiegħek
 ##nl
 Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken.
 ROTABO VOOR BEDRIJVEN
@@ -407,50 +407,50 @@ Mijn bedrijf biedt iets
 Schrijf wat uw bedrijf doet en welk gebied het dekt, en u wordt gevonden.
 Registreer uw bedrijf
 ##pl
-Rejestracja bezplatna, ogloszenie bezplatne - twoja firma tam, gdzie ludzie juz szukaja.
+Rejestracja bezpłatna, ogłoszenie bezpłatne - twoja firma tam, gdzie ludzie już szukają.
 ROTABO DLA FIRM
-Wybierz, czym zajmuje sie twoja firma - i niech znajda cie ci, ktorzy tego potrzebuja.
+Wybierz, czym zajmuje się twoja firma - i niech znajdą cię ci, którzy tego potrzebują.
 Tego potrzebujemy
 To oferujemy
-Moja firma czegos szuka
-Opublikuj, czego szuka twoja firma, i otrzymaj oferty od dostawcow w poblizu.
+Moja firma czegoś szuka
+Opublikuj, czego szuka twoja firma, i otrzymaj oferty od dostawców w pobliżu.
 Opublikuj, czego szukasz
-Moja firma cos oferuje
-Napisz, czym zajmuje sie twoja firma i jaki obszar obsluguje, a znajda cie.
-Zarejestruj firme
+Moja firma coś oferuje
+Napisz, czym zajmuje się twoja firma i jaki obszar obsługuje, a znajdą cię.
+Zarejestruj firmę
 ##sk
-Registracia zadarmo, inzerat zadarmo - vasa firma tam, kde ludia uz hladaju.
+Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú.
 ROTABO PRE FIRMY
-Vyberte, co robi vasa firma - a najdu vas ti, ktori to potrebuju.
+Vyberte, čo robí vaša firma - a nájdu vás tí, ktorí to potrebujú.
 Toto potrebujeme
-Toto ponukame
-Moja firma nieco hlada
-Zverejnite, co vasa firma hlada, a ziskajte ponuky od dodavatelov v okoli.
-Zverejnite, co hladate
-Moja firma nieco ponuka
-Napiste, co vasa firma robi a aku oblast pokryva, a najdu vas.
+Toto ponúkame
+Moja firma niečo hľadá
+Zverejnite, čo vaša firma hľadá, a získajte ponuky od dodávateľov v okolí.
+Zverejnite, čo hľadáte
+Moja firma niečo ponúka
+Napíšte, čo vaša firma robí a akú oblasť pokrýva, a nájdu vás.
 Zaregistrujte firmu
 ##sl
-Brezplacna registracija, brezplacen oglas - vase podjetje tam, kjer ljudje ze iscejo.
+Brezplačna registracija, brezplačen oglas - vaše podjetje tam, kjer ljudje že iščejo.
 ROTABO ZA PODJETJA
-Izberite, s cim se ukvarja vase podjetje - in naj vas najdejo tisti, ki to potrebujejo.
+Izberite, s čim se ukvarja vaše podjetje - in naj vas najdejo tisti, ki to potrebujejo.
 To potrebujemo
 To ponujamo
-Moje podjetje nekaj isce
-Objavite, kaj isce vase podjetje, in prejmite ponudbe dobaviteljev v blizini.
-Objavite, kaj iscete
+Moje podjetje nekaj išče
+Objavite, kaj išče vaše podjetje, in prejmite ponudbe dobaviteljev v bližini.
+Objavite, kaj iščete
 Moje podjetje nekaj ponuja
-Napisite, s cim se ukvarja vase podjetje in katero obmocje pokriva, in vas bodo nasli.
+Napišite, s čim se ukvarja vaše podjetje in katero območje pokriva, in vas bodo našli.
 Registrirajte podjetje
 ##sv
-Gratis registrering, gratis annons - ditt foretag, dar folk redan letar.
-ROTABO FOR FORETAG
-Valj vad ditt foretag gor - och bli hittad av dem som behover det.
-Det har behover vi
-Det har erbjuder vi
-Mitt foretag soker nagot
-Lagg upp vad ditt foretag soker och fa erbjudanden fran leverantorer i narheten.
-Lagg upp vad du soker
-Mitt foretag erbjuder nagot
-Skriv vad ditt foretag gor och vilket omrade det tacker, sa blir du hittad.
-Registrera ditt foretag
+Gratis registrering, gratis annons - ditt företag, där folk redan letar.
+ROTABO FÖR FÖRETAG
+Välj vad ditt företag gör - och bli hittad av dem som behöver det.
+Det här behöver vi
+Det här erbjuder vi
+Mitt företag söker något
+Lägg upp vad ditt företag söker och få erbjudanden från leverantörer i närheten.
+Lägg upp vad du söker
+Mitt företag erbjuder något
+Skriv vad ditt företag gör och vilket område det täcker, så blir du hittad.
+Registrera ditt företag

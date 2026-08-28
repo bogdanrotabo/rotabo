@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Besplatna registracija, besplatan oglas - vaša tvrtka ondje gdje ljudi već traže." },
+    "categories": {
+      "section_eyebrow": "ROTABO ZA TVRTKE",
+      "section_lead": "Odaberite čime se vaša tvrtka bavi - i neka vas pronađu oni kojima treba.",
+      "need_btn": "Ovo nam treba",
+      "offer_btn": "Ovo nudimo"
+    },
+    "choose": {
+      "need_title": "Moja tvrtka nešto traži",
+      "need_text": "Objavite što vaša tvrtka traži i primite ponude od dobavljača u blizini.",
+      "need_btn": "Objavite što tražite",
+      "offer_title": "Moja tvrtka nešto nudi",
+      "offer_text": "Napišite čime se vaša tvrtka bavi i koje područje pokriva, i pronaći će vas.",
+      "offer_btn": "Registrirajte tvrtku"
+    }
+  },
   "ticker": {
     "sponsors": "Sponzori", "company": "Vaša tvrtka može biti vidljiva ovdje — besplatna registracija",
     "offers": "nudi",

@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Đăng ký miễn phí, đăng tin miễn phí - công ty bạn, ở nơi mọi người đang tìm." },
+    "categories": {
+      "section_eyebrow": "ROTABO CHO DOANH NGHIỆP",
+      "section_lead": "Chọn công việc công ty bạn làm - và để những ai cần tìm thấy bạn.",
+      "need_btn": "Chúng tôi cần cái này",
+      "offer_btn": "Chúng tôi cung cấp cái này"
+    },
+    "choose": {
+      "need_title": "Công ty tôi đang tìm",
+      "need_text": "Đăng điều công ty bạn đang tìm và nhận đề nghị từ nhà cung cấp gần đó.",
+      "need_btn": "Đăng điều bạn tìm",
+      "offer_title": "Công ty tôi cung cấp",
+      "offer_text": "Ghi công ty bạn làm gì và khu vực phục vụ, để người cần tìm thấy bạn.",
+      "offer_btn": "Đăng ký công ty"
+    }
+  },
   "ticker": {
     "sponsors": "Nhà tài trợ", "company": "Doanh nghiệp của bạn có thể hiện ở đây — đăng ký miễn phí",
     "offers": "cung cấp",

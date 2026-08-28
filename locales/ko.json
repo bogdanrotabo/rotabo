@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "등록도 게시도 무료 - 사람들이 이미 찾고 있는 곳에 귀사를." },
+    "categories": {
+      "section_eyebrow": "로타보 비즈니스",
+      "section_lead": "귀사가 하는 일을 선택하세요 - 필요한 사람과 기업이 찾아옵니다.",
+      "need_btn": "이것이 필요합니다",
+      "offer_btn": "이것을 제공합니다"
+    },
+    "choose": {
+      "need_title": "회사가 찾고 있습니다",
+      "need_text": "귀사가 찾는 것을 올리고 가까운 공급업체의 제안을 받아보세요.",
+      "need_btn": "찾는 것을 올리기",
+      "offer_title": "회사가 제공합니다",
+      "offer_text": "귀사가 하는 일과 담당 지역을 적으면 필요한 사람이 찾아옵니다.",
+      "offer_btn": "회사 등록하기"
+    }
+  },
   "ticker": {
     "sponsors": "스폰서", "company": "여기에 귀사가 노출될 수 있습니다 — 등록은 무료",
     "offers": "제공",

@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Usajili bure, tangazo bure - kampuni yako, pale ambapo watu tayari wanatafuta." },
+    "categories": {
+      "section_eyebrow": "ROTABO KWA BIASHARA",
+      "section_lead": "Chagua kazi ambayo kampuni yako inafanya - na upatikane na wanaohitaji.",
+      "need_btn": "Tunahitaji hii",
+      "offer_btn": "Tunatoa hii"
+    },
+    "choose": {
+      "need_title": "Kampuni yangu inatafuta kitu",
+      "need_text": "Weka kile kampuni yako inatafuta na upokee ofa kutoka kwa wasambazaji wa karibu.",
+      "need_btn": "Weka unachotafuta",
+      "offer_title": "Kampuni yangu inatoa kitu",
+      "offer_text": "Andika kazi ya kampuni yako na eneo unalofika, na upatikane na anayehitaji.",
+      "offer_btn": "Sajili kampuni yako"
+    }
+  },
   "ticker": {
     "sponsors": "Wadhamini", "company": "Biashara yako inaweza kuonekana hapa — usajili ni bure",
     "offers": "anatoa",

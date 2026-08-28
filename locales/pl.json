@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Rejestracja bezpłatna, ogłoszenie bezpłatne - twoja firma tam, gdzie ludzie już szukają." },
+    "categories": {
+      "section_eyebrow": "ROTABO DLA FIRM",
+      "section_lead": "Wybierz, czym zajmuje się twoja firma - i niech znajdą cię ci, którzy tego potrzebują.",
+      "need_btn": "Tego potrzebujemy",
+      "offer_btn": "To oferujemy"
+    },
+    "choose": {
+      "need_title": "Moja firma czegoś szuka",
+      "need_text": "Opublikuj, czego szuka twoja firma, i otrzymaj oferty od dostawców w pobliżu.",
+      "need_btn": "Opublikuj, czego szukasz",
+      "offer_title": "Moja firma coś oferuje",
+      "offer_text": "Napisz, czym zajmuje się twoja firma i jaki obszar obsługuje, a znajdą cię.",
+      "offer_btn": "Zarejestruj firmę"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorzy", "company": "Twoja firma może być widoczna tutaj — rejestracja jest bezpłatna",
     "offers": "oferuje",

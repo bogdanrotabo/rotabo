@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken." },
+    "categories": {
+      "section_eyebrow": "ROTABO VOOR BEDRIJVEN",
+      "section_lead": "Kies wat uw bedrijf doet - en laat u vinden door wie het nodig heeft.",
+      "need_btn": "Dit hebben wij nodig",
+      "offer_btn": "Dit bieden wij"
+    },
+    "choose": {
+      "need_title": "Mijn bedrijf zoekt iets",
+      "need_text": "Plaats wat uw bedrijf zoekt en ontvang aanbiedingen van leveranciers in de buurt.",
+      "need_btn": "Plaats wat u zoekt",
+      "offer_title": "Mijn bedrijf biedt iets",
+      "offer_text": "Schrijf wat uw bedrijf doet en welk gebied het dekt, en u wordt gevonden.",
+      "offer_btn": "Registreer uw bedrijf"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsors", "company": "Uw bedrijf kan hier zichtbaar zijn — registratie is gratis",
     "offers": "biedt aan",

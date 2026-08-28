@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana." },
+    "categories": {
+      "section_eyebrow": "ROTABO DO GHNÓ",
+      "section_lead": "Roghnaigh an obair a dhéanann do chomhlacht - agus gheobhaidh na daoine a bhfuil sí uathu thú.",
+      "need_btn": "Tá sé seo uainn",
+      "offer_btn": "Tairgimid é seo"
+    },
+    "choose": {
+      "need_title": "Tá rud éigin ó mo chomhlacht",
+      "need_text": "Cuir suas an rud atá do chomhlacht a lorg agus faigh tairiscintí ó sholáthraithe in aice láimhe.",
+      "need_btn": "Cuir suas an rud atá uait",
+      "offer_title": "Tairgeann mo chomhlacht rud éigin",
+      "offer_text": "Scríobh cad a dhéanann do chomhlacht agus an ceantar a chlúdaíonn sé, agus gheofar thú.",
+      "offer_btn": "Cláraigh do chomhlacht"
+    }
+  },
   "ticker": {
     "sponsors": "Urraitheoirí", "company": "Is féidir do ghnó a bheith le feiceáil anseo — clárú saor in aisce",
     "offers": "tairgeann",

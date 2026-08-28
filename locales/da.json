@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder." },
+    "categories": {
+      "section_eyebrow": "ROTABO FOR VIRKSOMHEDER",
+      "section_lead": "Vælg hvad din virksomhed laver - og bliv fundet af dem, der har brug for det.",
+      "need_btn": "Det har vi brug for",
+      "offer_btn": "Det tilbyder vi"
+    },
+    "choose": {
+      "need_title": "Min virksomhed søger noget",
+      "need_text": "Skriv hvad din virksomhed søger, og få tilbud fra leverandører i nærheden.",
+      "need_btn": "Skriv hvad du søger",
+      "offer_title": "Min virksomhed tilbyder noget",
+      "offer_text": "Skriv hvad din virksomhed laver og hvilket område den dækker, så bliver du fundet.",
+      "offer_btn": "Tilmeld din virksomhed"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorer", "company": "Din virksomhed kan ses her — gratis tilmelding",
     "offers": "tilbyder",

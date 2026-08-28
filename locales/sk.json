@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú." },
+    "categories": {
+      "section_eyebrow": "ROTABO PRE FIRMY",
+      "section_lead": "Vyberte, čo robí vaša firma - a nájdu vás tí, ktorí to potrebujú.",
+      "need_btn": "Toto potrebujeme",
+      "offer_btn": "Toto ponúkame"
+    },
+    "choose": {
+      "need_title": "Moja firma niečo hľadá",
+      "need_text": "Zverejnite, čo vaša firma hľadá, a získajte ponuky od dodávateľov v okolí.",
+      "need_btn": "Zverejnite, čo hľadáte",
+      "offer_title": "Moja firma niečo ponúka",
+      "offer_text": "Napíšte, čo vaša firma robí a akú oblasť pokrýva, a nájdu vás.",
+      "offer_btn": "Zaregistrujte firmu"
+    }
+  },
   "ticker": {
     "sponsors": "Sponzori", "company": "Vaša firma tu môže byť vidieť — registrácia zadarmo",
     "offers": "ponúka",

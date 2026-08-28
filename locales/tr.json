@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Kayıt ücretsiz, ilan ücretsiz - şirketiniz, insanların zaten aradığı yerde." },
+    "categories": {
+      "section_eyebrow": "İŞLETMELER İÇİN ROTABO",
+      "section_lead": "Şirketinizin yaptığı işi seçin - ve ihtiyacı olanlar sizi bulsun.",
+      "need_btn": "Buna ihtiyacımız var",
+      "offer_btn": "Bunu sunuyoruz"
+    },
+    "choose": {
+      "need_title": "Şirketim bir şey arıyor",
+      "need_text": "Şirketinizin aradığını yayınlayın ve yakındaki tedarikçilerden teklif alın.",
+      "need_btn": "Aradığınızı yayınlayın",
+      "offer_title": "Şirketim bir şey sunuyor",
+      "offer_text": "Şirketinizin ne yaptığını ve hangi bölgeye baktığını yazın, ihtiyacı olan sizi bulsun.",
+      "offer_btn": "Şirketinizi kaydedin"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorlar", "company": "İşletmeniz burada görünebilir — kayıt ücretsiz",
     "offers": "sunuyor",

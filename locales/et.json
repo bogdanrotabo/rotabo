@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad." },
+    "categories": {
+      "section_eyebrow": "ROTABO ETTEVÕTETELE",
+      "section_lead": "Valige, millega teie ettevõte tegeleb - ja teid leiavad need, kes seda vajavad.",
+      "need_btn": "Meil on seda vaja",
+      "offer_btn": "Meie pakume seda"
+    },
+    "choose": {
+      "need_title": "Minu ettevõte otsib midagi",
+      "need_text": "Pange üles, mida teie ettevõte otsib, ja saage pakkumisi lähedalasuvatelt tarnijatelt.",
+      "need_btn": "Pange üles, mida otsite",
+      "offer_title": "Minu ettevõte pakub midagi",
+      "offer_text": "Kirjutage, millega teie ettevõte tegeleb ja millist piirkonda katab, ja teid leitakse.",
+      "offer_btn": "Registreerige oma ettevõte"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorid", "company": "Teie ettevõte võib siin nähtav olla — registreerimine on tasuta",
     "offers": "pakub",

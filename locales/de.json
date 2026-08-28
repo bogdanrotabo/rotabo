@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Eintrag kostenlos, Anzeige kostenlos - Ihr Unternehmen, dort wo Menschen schon suchen." },
+    "categories": {
+      "section_eyebrow": "ROTABO FÜR UNTERNEHMEN",
+      "section_lead": "Wählen Sie, was Ihr Unternehmen macht - und lassen Sie sich finden von denen, die es brauchen.",
+      "need_btn": "Das brauchen wir",
+      "offer_btn": "Das bieten wir"
+    },
+    "choose": {
+      "need_title": "Mein Unternehmen sucht etwas",
+      "need_text": "Schreiben Sie, was Ihr Unternehmen sucht, und erhalten Sie Angebote aus der Nähe.",
+      "need_btn": "Schreiben Sie, was Sie suchen",
+      "offer_title": "Mein Unternehmen bietet etwas",
+      "offer_text": "Tragen Sie ein, was Ihr Unternehmen macht und welches Gebiet es abdeckt, und werden Sie gefunden.",
+      "offer_btn": "Unternehmen eintragen"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsoren", "company": "Ihr Unternehmen kann hier sichtbar sein — Eintrag kostenlos",
     "offers": "bietet",

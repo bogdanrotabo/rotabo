@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Pendaftaran gratis, iklan gratis - perusahaan Anda, di tempat orang sudah mencari." },
+    "categories": {
+      "section_eyebrow": "ROTABO UNTUK BISNIS",
+      "section_lead": "Pilih pekerjaan yang dilakukan perusahaan Anda - dan biarkan yang membutuhkan menemukan Anda.",
+      "need_btn": "Kami butuh ini",
+      "offer_btn": "Kami menawarkan ini"
+    },
+    "choose": {
+      "need_title": "Perusahaan saya mencari sesuatu",
+      "need_text": "Pasang apa yang dicari perusahaan Anda dan terima penawaran dari pemasok terdekat.",
+      "need_btn": "Pasang apa yang Anda cari",
+      "offer_title": "Perusahaan saya menawarkan sesuatu",
+      "offer_text": "Tulis apa yang dikerjakan perusahaan Anda dan wilayah yang dilayani, agar ditemukan.",
+      "offer_btn": "Daftarkan perusahaan Anda"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsor", "company": "Bisnis Anda bisa terlihat di sini — pendaftaran gratis",
     "offers": "menawarkan",

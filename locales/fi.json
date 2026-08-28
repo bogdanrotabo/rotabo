@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät." },
+    "categories": {
+      "section_eyebrow": "ROTABO YRITYKSILLE",
+      "section_lead": "Valitse, mitä yrityksesi tekee - ja anna niiden löytää sinut, jotka tarvitsevat.",
+      "need_btn": "Tätä tarvitsemme",
+      "offer_btn": "Tätä tarjoamme"
+    },
+    "choose": {
+      "need_title": "Yritykseni etsii jotain",
+      "need_text": "Julkaise, mitä yrityksesi etsii, ja saa tarjouksia lähialueen toimittajilta.",
+      "need_btn": "Julkaise, mitä etsit",
+      "offer_title": "Yritykseni tarjoaa jotain",
+      "offer_text": "Kirjoita, mitä yrityksesi tekee ja minkä alueen se kattaa, niin sinut löydetään.",
+      "offer_btn": "Rekisteröi yrityksesi"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsorit", "company": "Yrityksesi voi näkyä tässä — rekisteröinti on ilmaista",
     "offers": "tarjoaa",

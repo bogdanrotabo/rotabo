@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu." },
+    "categories": {
+      "section_eyebrow": "ROTABO GĦAN-NEGOZJU",
+      "section_lead": "Agħżel x'tagħmel il-kumpanija tiegħek - u ħalli lil min għandu bżonn isibek.",
+      "need_btn": "Għandna bżonn dan",
+      "offer_btn": "Noffru dan"
+    },
+    "choose": {
+      "need_title": "Il-kumpanija tiegħi qed tfittex xi ħaġa",
+      "need_text": "Ippubblika x'qed tfittex il-kumpanija tiegħek u irċievi offerti minn fornituri fil-qrib.",
+      "need_btn": "Ippubblika x'qed tfittex",
+      "offer_title": "Il-kumpanija tiegħi toffri xi ħaġa",
+      "offer_text": "Ikteb x'tagħmel il-kumpanija tiegħek u liema żona tkopri, u jsibuk.",
+      "offer_btn": "Irreġistra l-kumpanija tiegħek"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsors", "company": "In-negozju tiegħek jista' jidher hawn — reġistrazzjoni b'xejn",
     "offers": "joffri",

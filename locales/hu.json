@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek." },
+    "categories": {
+      "section_eyebrow": "ROTABO CÉGEKNEK",
+      "section_lead": "Válassza ki, mit csinál az Ön cége - és megtalálják azok, akiknek szükségük van rá.",
+      "need_btn": "Erre van szükségünk",
+      "offer_btn": "Ezt kínáljuk"
+    },
+    "choose": {
+      "need_title": "A cégem keres valamit",
+      "need_text": "Tegye közzé, mit keres a cége, és kapjon ajánlatokat közeli beszállítóktól.",
+      "need_btn": "Tegye közzé, mit keres",
+      "offer_title": "A cégem kínál valamit",
+      "offer_text": "Írja le, mit csinál a cége és milyen területet fed le, és megtalálják.",
+      "offer_btn": "Regisztrálja a cégét"
+    }
+  },
   "ticker": {
     "sponsors": "Támogatók", "company": "Az Ön vállalkozása itt is látszódhat — a regisztráció ingyenes",
     "offers": "kínál",
