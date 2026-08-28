@@ -75,6 +75,7 @@
 
   "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Untuk perniagaan", "drive": "Menjadi pemandu", "drivers": "Pemandu", "account": "Akaun saya" },
   "hero": {
+    "free_line": "Daftar percuma, siar percuma — apa yang anda perlukan, atau apa yang anda tawarkan.",
     "number_intro": "Setiap orang di Rotabo mempunyai nombor. Satu nombor. Milik anda selamanya. Ia memberitahu siapa anda, di mana anda, dan apa yang anda boleh lakukan — boleh ditemui oleh sesiapa sahaja di Bumi.",
     "search_placeholder": "Cari nombor Rotabo — cth. 2244",
     "search_btn": "Cari",

@@ -75,6 +75,7 @@
 
   "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "För företag", "drive": "Bli förare", "drivers": "Förare", "account": "Mitt konto" },
   "hero": {
+    "free_line": "Gratis att gå med, gratis att lägga upp — vad du behöver, eller vad du erbjuder.",
     "number_intro": "Alla på Rotabo har ett nummer. Ett nummer. Ditt för alltid. Det säger vem du är, var du är och vad du kan — hittbar av vem som helst på jorden.",
     "search_placeholder": "Hitta ett Rotabo-nummer — t.ex. 2244",
     "search_btn": "Sök",

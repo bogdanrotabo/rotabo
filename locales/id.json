@@ -75,6 +75,7 @@
 
   "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Untuk bisnis", "drive": "Jadi pengemudi", "drivers": "Pengemudi", "account": "Akun saya" },
   "hero": {
+    "free_line": "Daftar gratis, pasang gratis — apa yang Anda butuhkan, atau apa yang Anda tawarkan.",
     "number_intro": "Setiap orang di Rotabo punya nomor. Satu nomor. Milikmu selamanya. Ia mengatakan siapa kamu, di mana kamu, dan apa yang bisa kamu lakukan — dapat ditemukan siapa saja di Bumi.",
     "search_placeholder": "Cari nomor Rotabo — mis. 2244",
     "search_btn": "Cari",

@@ -82,6 +82,7 @@
     "account": "Contul meu"
   },
   "hero": {
+    "free_line": "Înscrierea e gratuită, publicarea e gratuită — ce căutați, sau ce oferiți.",
     "number_intro": "Fiecare om de pe Rotabo are un număr. Un singur număr. Al tău pentru totdeauna. Spune cine ești, unde ești și ce poți face — găsibil de oricine de pe Pământ.",
     "search_placeholder": "Caută un număr Rotabo — ex. 2244",
     "search_btn": "Caută",

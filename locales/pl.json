@@ -75,6 +75,7 @@
 
   "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Dla firm", "drive": "Zostań kierowcą", "drivers": "Kierowcy", "account": "Moje konto" },
   "hero": {
+    "free_line": "Rejestracja za darmo, ogłoszenie za darmo — czego potrzebujecie, albo co oferujecie.",
     "number_intro": "Każdy na Rotabo ma numer. Jeden numer. Twój na zawsze. Mówi, kim jesteś, gdzie jesteś i co potrafisz — do znalezienia przez każdego na Ziemi.",
     "search_placeholder": "Znajdź numer Rotabo — np. 2244",
     "search_btn": "Szukaj",

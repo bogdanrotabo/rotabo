@@ -82,6 +82,7 @@
     "account": "Můj účet"
   },
   "hero": {
+    "free_line": "Registrace zdarma, inzerát zdarma — co potřebujete, nebo co nabízíte.",
     "number_intro": "Každý na Rotabu má číslo. Jedno číslo. Navždy tvoje. Říká, kdo jsi, kde jsi a co umíš — najitelný kýmkoli na Zemi.",
     "search_placeholder": "Najdi číslo Rotabo — např. 2244",
     "search_btn": "Hledat",

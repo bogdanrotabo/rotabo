@@ -75,6 +75,7 @@
 
   "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Dành cho doanh nghiệp", "drive": "Trở thành tài xế", "drivers": "Tài xế", "account": "Tài khoản của tôi" },
   "hero": {
+    "free_line": "Đăng ký miễn phí, đăng tin miễn phí — điều bạn cần, hoặc điều bạn cung cấp.",
     "number_intro": "Mọi người trên Rotabo đều có một số. Một con số. Của bạn mãi mãi. Nó cho biết bạn là ai, bạn ở đâu và bạn có thể làm gì — bất kỳ ai trên Trái Đất đều có thể tìm thấy bạn.",
     "search_placeholder": "Tìm một số Rotabo — ví dụ 2244",
     "search_btn": "Tìm",

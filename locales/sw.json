@@ -75,6 +75,7 @@
 
   "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Kwa biashara", "drive": "Kuwa dereva", "drivers": "Madereva", "account": "Akaunti yangu" },
   "hero": {
+    "free_line": "Kujiunga bure, kuchapisha bure — unachohitaji, au unachotoa.",
     "number_intro": "Kila mtu kwenye Rotabo ana nambari. Nambari moja. Yako milele. Inasema wewe ni nani, uko wapi na unaweza kufanya nini — unaweza kupatikana na yeyote Duniani.",
     "search_placeholder": "Tafuta nambari ya Rotabo — mf. 2244",
     "search_btn": "Tafuta",

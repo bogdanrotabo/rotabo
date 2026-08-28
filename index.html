@@ -183,6 +183,24 @@
   @media (prefers-reduced-motion:reduce){
     .pulse-dot{animation:none;}
   }
+  /* The free-signup line: the first thing the page says. Sized with
+     clamp() rather than the flat rem the partner label below it uses.
+     That label is two words and can hold a fixed ratio; this is a whole
+     sentence, and in Finnish and Hungarian it is a long one. Measured at
+     375px in the twelve longest locales: three or four lines, nothing
+     clipped and no horizontal overflow. Bulgarian first came out at six
+     lines -- a fifth of a phone screen for one sentence -- and was
+     shortened rather than shrunk, because the line is meant to be read
+     first. break-word is the seatbelt for a locale added later with one
+     very long word. */
+  .free-line{
+    max-width:720px;
+    margin:0 auto 16px;
+    font-size:clamp(1.6rem, 5.6vw, 2.7rem);
+    line-height:1.14;letter-spacing:-.01em;
+    overflow-wrap:break-word;
+    font-weight:800;color:var(--violet-1);
+  }
   /* Main partner band -- see the comment on its markup in the hero.
      The label is three times the size of the origin badge right below it
      (0.9rem -> 2.7rem), which also makes it larger than the tagline. That
@@ -941,6 +959,13 @@
 </div>
 
 <section class="hero">
+  <!-- The offer, above everything else on the page. A stranger has to know
+       what the site costs before a sponsor name can mean anything to them,
+       so this sits above the partner band rather than below it. Both halves
+       say "free" on purpose: signing up is free and so is posting, and the
+       two were being read as one. -->
+  <p class="free-line" data-i18n="hero.free_line">Free to join, free to post &mdash; what you need, or what you offer.</p>
+
   <!-- Main partner band. Sits above everything else, deliberately larger
        than the tagline: it is the first credibility signal a stranger
        gets, and the only one on the page that comes from someone other

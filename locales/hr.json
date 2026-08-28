@@ -82,6 +82,7 @@
     "account": "Moj račun"
   },
   "hero": {
+    "free_line": "Registracija besplatna, oglas besplatan — što trebate ili što nudite.",
     "number_intro": "Svatko na Rotabu ima broj. Jedan broj. Tvoj zauvijek. Govori tko si, gdje si i što znaš — pronađiv od bilo koga na Zemlji.",
     "search_placeholder": "Pronađi Rotabo broj — npr. 2244",
     "search_btn": "Traži",

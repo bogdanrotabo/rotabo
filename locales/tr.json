@@ -75,6 +75,7 @@
 
   "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler için", "drive": "Sürücü ol", "drivers": "Sürücüler", "account": "Hesabım" },
   "hero": {
+    "free_line": "Kayıt ücretsiz, ilan ücretsiz — neye ihtiyacınız var, ya da ne sunuyorsunuz.",
     "number_intro": "Rotabo'daki herkesin bir numarası var. Tek bir numara. Sonsuza dek senin. Kim olduğunu, nerede olduğunu ve ne yapabildiğini söyler — dünyadaki herkes seni bulabilir.",
     "search_placeholder": "Bir Rotabo numarası bul — örn. 2244",
     "search_btn": "Ara",

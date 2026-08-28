@@ -75,6 +75,7 @@
 
   "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumiem", "drive": "Kļūsti par šoferi", "drivers": "Šoferi", "account": "Mans konts" },
   "hero": {
+    "free_line": "Reģistrācija bez maksas, sludinājums bez maksas — kas jums vajadzīgs vai ko piedāvājat.",
     "number_intro": "Katram Rotabo lietotājam ir numurs. Viens numurs. Tavs mūžīgi. Tas pasaka, kas tu esi, kur tu esi un ko tu proti — atrodams jebkuram uz Zemes.",
     "search_placeholder": "Atrodi Rotabo numuru — piem., 2244",
     "search_btn": "Meklēt",

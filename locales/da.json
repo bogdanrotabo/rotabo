@@ -82,6 +82,7 @@
     "account": "Min konto"
   },
   "hero": {
+    "free_line": "Gratis at blive medlem, gratis at slå op — hvad du søger, eller hvad du tilbyder.",
     "number_intro": "Alle på Rotabo har et nummer. Ét nummer. Dit for altid. Det fortæller, hvem du er, hvor du er, og hvad du kan — findbar for alle på Jorden.",
     "search_placeholder": "Find et Rotabo-nummer — f.eks. 2244",
     "search_btn": "Søg",

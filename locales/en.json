@@ -76,6 +76,7 @@
     "account": "My account"
   },
   "hero": {
+    "free_line": "Free to join, free to post — what you need, or what you offer.",
     "origin_badge": "🇨🇭 Made in Switzerland — for the whole world",
     "number_intro": "Everyone on Rotabo has a number. One number. Yours forever. It says who you are, where you are, and what you can do — findable by anyone on Earth.",
     "search_placeholder": "Find a Rotabo number — e.g. 2244",

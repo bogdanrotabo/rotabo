@@ -75,6 +75,7 @@
 
   "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslui", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai", "account": "Mano paskyra" },
   "hero": {
+    "free_line": "Registracija nemokama, skelbimas nemokamas — ko jums reikia arba ką siūlote.",
     "number_intro": "Kiekvienas Rotabo turi numerį. Vieną numerį. Tavo amžinai. Jis pasako, kas tu esi, kur esi ir ką moki — surandamas bet kam Žemėje.",
     "search_placeholder": "Rask Rotabo numerį — pvz., 2244",
     "search_btn": "Ieškoti",

@@ -82,6 +82,7 @@
     "account": "Il mio account"
   },
   "hero": {
+    "free_line": "Iscriversi è gratis, pubblicare è gratis — quello che cercate, o quello che offrite.",
     "number_intro": "Ognuno su Rotabo ha un numero. Un solo numero. Tuo per sempre. Dice chi sei, dove sei e cosa sai fare — trovabile da chiunque sulla Terra.",
     "search_placeholder": "Trova un numero Rotabo — es. 2244",
     "search_btn": "Cerca",

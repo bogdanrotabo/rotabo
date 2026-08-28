@@ -75,6 +75,7 @@
 
   "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Għan-negozji", "drive": "Sir sewwieq", "drivers": "Sewwiequ", "account": "Il-kont tiegħi" },
   "hero": {
+    "free_line": "Ir-reġistrazzjoni b'xejn, il-pubblikazzjoni b'xejn — dak li għandek bżonn, jew dak li toffri.",
     "number_intro": "Kulħadd fuq Rotabo għandu numru. Numru wieħed. Tiegħek għal dejjem. Jgħid min int, fejn int u x'tista' tagħmel — jinstab minn kulħadd fid-dinja.",
     "search_placeholder": "Sib numru Rotabo — eż. 2244",
     "search_btn": "Fittex",

@@ -82,6 +82,7 @@
     "account": "Minu konto"
   },
   "hero": {
+    "free_line": "Liitumine tasuta, kuulutus tasuta — mida vajate või mida pakute.",
     "number_intro": "Igal Rotabo kasutajal on number. Üks number. Sinu oma igavesti. See ütleb, kes sa oled, kus sa oled ja mida sa oskad — leitav igaühele Maal.",
     "search_placeholder": "Leia Rotabo number — nt 2244",
     "search_btn": "Otsi",
