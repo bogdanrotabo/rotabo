@@ -809,6 +809,8 @@
   .biz-row--sponsor b{color:var(--ink-strong);}
   /* Empty and saying so. Dimmer than a taken place, so the eye reads the
      list as mostly free rather than mostly full. */
+  .biz-row--taken{color:var(--text-dark);}
+  .biz-row--taken:hover b{color:var(--ink-strong);}
   .biz-row--free{color:var(--text-eyebrow);}
   .biz-row--free:hover{color:var(--ink-strong);}
   .categories-section,.bridge-section{padding-top:56px;}
@@ -4470,12 +4472,20 @@ if ("serviceWorker" in navigator) {
     rows.forEach(function(r){
       if (n > PLACES) return;
       var where = whereOf(r);
-      html += '<span class="cascade-row biz-row" style="--i:' + Math.min(n, 24) + '">'
+      /* The row leads to what this listing offers. browse.html takes the
+         visitor's own role and shows the other side of it, so a listing
+         that offers is reached with role=seeking -- and the two-franc
+         unlock is the card waiting there. */
+      var myRole = (r.role === "offering") ? "seeking" : "offering";
+      var href = "/browse.html?category=" + encodeURIComponent(r.category || "other")
+               + "&role=" + encodeURIComponent(myRole);
+      html += '<a class="cascade-row biz-row biz-row--taken" href="' + esc(href) + '"'
+            + ' style="--i:' + Math.min(n, 24) + '">'
             + '<span class="biz-row__n">' + n + '</span>'
             + '<b>' + esc(catName(r.category)) + '</b>'
             + (where ? '<span class="biz-row__where">' + esc(where) + '</span>' : "")
             + (r.number ? '<span class="biz-row__num">#' + esc(r.number) + '</span>' : "")
-            + '</span>';
+            + '</a>';
       n++;
     });
 
