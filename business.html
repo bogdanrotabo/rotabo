@@ -4334,17 +4334,25 @@ if ("serviceWorker" in navigator) {
     if (none) none.hidden = rows.length > 0;
   }
 
-  function pick(slug, cat){
-    input.value = label(slug);
-    close();
-    if (none) none.hidden = true;
-    // One card, the one that carries the actions for this field. The others
-    // stay down: twelve cards is the thing the business side does not do.
+  /* One card, the one that carries the actions. The others stay down:
+     twelve cards is the thing the business side does not do.
+
+     Exposed, because the hundred-places box below has free rows that say
+     "register your company" and they lead to the same place. Two copies of
+     this would drift the first time one of them changed. */
+  window.RotaboShowCategory = function(cat){
     Object.keys(cards).forEach(function(k){ cards[k].hidden = (k !== cat); });
     grid.classList.toggle("pro-open", !!cards[cat]);
     if (cards[cat] && cards[cat].scrollIntoView) {
       cards[cat].scrollIntoView({ behavior: "smooth", block: "center" });
     }
+  };
+
+  function pick(slug, cat){
+    input.value = label(slug);
+    close();
+    if (none) none.hidden = true;
+    window.RotaboShowCategory(cat);
   }
 
   input.addEventListener("focus", function(){ show(input.value); });
@@ -4465,7 +4473,7 @@ if ("serviceWorker" in navigator) {
 
     var free = esc(T("bizlist.free", "Free place - register your company"));
     for (; n <= PLACES; n++) {
-      html += '<a class="cascade-row biz-row biz-row--free" href="#categories"'
+      html += '<a class="cascade-row biz-row biz-row--free" href="#cat-other" data-goto="other"'
             + ' style="--i:' + Math.min(n, 24) + '">'
             + '<span class="biz-row__n">' + n + '</span>'
             + '<span>' + free + '</span></a>';
@@ -4489,6 +4497,20 @@ if ("serviceWorker" in navigator) {
   btn.addEventListener("click", function(e){
     e.preventDefault();
     if (list.hidden) open(); else close();
+  });
+
+  /* A free place says "register your company", so it opens the card that
+     takes the registration -- Rotabo Market, where every field without a
+     card of its own lands. The anchor alone would not do it: on this side
+     the card is hidden until something asks for it. */
+  list.addEventListener("click", function(e){
+    var row = e.target.closest("[data-goto]");
+    if (!row) return;
+    close();
+    if (window.RotaboShowCategory) {
+      e.preventDefault();
+      window.RotaboShowCategory(row.getAttribute("data-goto"));
+    }
   });
 
   document.addEventListener("click", function(e){
