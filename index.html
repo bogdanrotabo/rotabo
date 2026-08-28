@@ -211,6 +211,19 @@
     padding:9px 16px;
   }
   nav.links a:hover{background:#faf4fd;border-color:var(--violet-2);}
+  /* The mark's own yellow as a filled box, not as lettering. #ffd41a is
+     1.5:1 against this header and unreadable at nav size, but as a ground
+     under near-black it is over 10:1 and reads at a glance -- which is how
+     a brand colour this pale earns a place on small text. */
+  nav.links a.biz{
+    background:linear-gradient(100deg,#ffe873 0%,#ffd41a 45%,#e0a005 100%);
+    border-color:#e0a005;
+    color:#2b0f36;
+  }
+  nav.links a.biz:hover{
+    background:linear-gradient(100deg,#ffd41a 0%,#f0bc0d 45%,#c98a00 100%);
+    border-color:#c98a00;
+  }
 
   .hero{
     text-align:center;
@@ -1101,8 +1114,7 @@
       Rotabo
     </div>
     <nav class="links">
-      <a href="#business" data-i18n="nav.business">For businesses</a>
-      <a href="#" data-i18n="nav.drive" onclick="event.preventDefault();openModal('becomeDriverModal')">Become a driver</a>
+      <a class="biz" href="#business" data-i18n="nav.business">Business</a>
       <a href="/account.html" data-i18n="nav.account">My account</a>
     </nav>
     <div class="lang-switcher">
@@ -1248,8 +1260,9 @@
        become-a-driver / translator buttons -- is out of the page while it is
        reworked. Their hero.* keys stay in all 38 locale files so the block can
        come back already translated. Nothing is orphaned: becomeDriverModal is
-       still reachable from the nav link and from every category card's "I offer
-       this", the translator flow from the translator category, and
+       still reachable from every category card's "I offer this" -- the nav
+       link that also opened it is gone -- the translator flow from the
+       translator category, and
        cta_become_driver_click still fires because MODAL_GA_EVENTS keys off the
        modal id, not off the button that opened it.
        What was left of that stack -- Log in, the install button and the

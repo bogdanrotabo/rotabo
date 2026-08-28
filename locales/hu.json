@@ -78,7 +78,7 @@
     "fineprint": "A bankjegyekre írás a saját döntésed. Ellenőrizd a helyi törvényeket."
   },
 
-  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Vállalkozásoknak", "drive": "Legyél sofőr", "drivers": "Sofőrök", "account": "Fiókom" },
+  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Cégek", "drive": "Legyél sofőr", "drivers": "Sofőrök", "account": "Fiókom" },
   "hero": {
     "free_line": "A regisztráció ingyenes, a hirdetés ingyenes — mire van szüksége, vagy mit kínál.",
     "number_intro": "A Rotabón mindenkinek van egy száma. Egyetlen szám. Örökre a tiéd. Elmondja, ki vagy, hol vagy és mit tudsz — a Föld bárkije megtalálhat.",
