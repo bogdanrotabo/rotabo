@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsori",
+    "offers": "oferă",
+    "seeks": "caută"
+  },
   "pulse": {
     "online": "online acum",
     "total": "vizitatori până acum"

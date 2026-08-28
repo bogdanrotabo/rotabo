@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsorlar",
+    "offers": "sunuyor",
+    "seeks": "arıyor"
+  },
   "pulse": {
     "online": "şu anda çevrimiçi",
     "total": "ziyaretçi şu ana kadar"

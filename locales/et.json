@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsorid",
+    "offers": "pakub",
+    "seeks": "otsib"
+  },
   "pulse": {
     "online": "praegu võrgus",
     "total": "külastajat seni"

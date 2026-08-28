@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "الرعاة",
+    "offers": "يقدّم",
+    "seeks": "يبحث عن"
+  },
   "pulse": {
     "online": "متصل الآن",
     "total": "زائر حتى الآن"

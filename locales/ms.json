@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Penaja",
+    "offers": "menawarkan",
+    "seeks": "mencari"
+  },
   "pulse": {
     "online": "dalam talian sekarang",
     "total": "pelawat setakat ini"

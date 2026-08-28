@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "赞助商",
+    "offers": "提供",
+    "seeks": "寻找"
+  },
   "pulse": {
     "online": "当前在线",
     "total": "累计访客"

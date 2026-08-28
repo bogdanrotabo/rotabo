@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "スポンサー",
+    "offers": "提供",
+    "seeks": "募集"
+  },
   "pulse": {
     "online": "現在オンライン",
     "total": "これまでの訪問者"

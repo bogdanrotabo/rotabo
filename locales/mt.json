@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsors",
+    "offers": "joffri",
+    "seeks": "qed ifittex"
+  },
   "pulse": {
     "online": "online issa",
     "total": "viżitaturi s'issa"

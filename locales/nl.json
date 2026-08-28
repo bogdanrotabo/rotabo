@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsors",
+    "offers": "biedt aan",
+    "seeks": "zoekt"
+  },
   "pulse": {
     "online": "nu online",
     "total": "bezoekers tot nu toe"

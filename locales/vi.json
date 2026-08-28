@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Nhà tài trợ",
+    "offers": "cung cấp",
+    "seeks": "đang tìm"
+  },
   "pulse": {
     "online": "đang trực tuyến",
     "total": "lượt khách đến nay"

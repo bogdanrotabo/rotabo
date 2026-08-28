@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsorit",
+    "offers": "tarjoaa",
+    "seeks": "etsii"
+  },
   "pulse": {
     "online": "nyt paikalla",
     "total": "kävijää tähän mennessä"

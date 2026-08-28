@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Urraitheoirí",
+    "offers": "tairgeann",
+    "seeks": "ag lorg"
+  },
   "pulse": {
     "online": "ar líne anois",
     "total": "cuairteoirí go dtí seo"

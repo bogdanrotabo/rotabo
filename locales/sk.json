@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponzori",
+    "offers": "ponúka",
+    "seeks": "hľadá"
+  },
   "pulse": {
     "online": "práve online",
     "total": "návštevníkov doteraz"

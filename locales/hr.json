@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponzori",
+    "offers": "nudi",
+    "seeks": "traži"
+  },
   "pulse": {
     "online": "sada na mreži",
     "total": "posjetitelja dosad"

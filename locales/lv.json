@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsori",
+    "offers": "piedāvā",
+    "seeks": "meklē"
+  },
   "pulse": {
     "online": "tagad tiešsaistē",
     "total": "apmeklētāju līdz šim"

@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Rėmėjai",
+    "offers": "siūlo",
+    "seeks": "ieško"
+  },
   "pulse": {
     "online": "dabar prisijungę",
     "total": "lankytojų iki šiol"

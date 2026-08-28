@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Patrocinadores",
+    "offers": "oferece",
+    "seeks": "procura"
+  },
   "pulse": {
     "online": "online agora",
     "total": "visitantes até agora"

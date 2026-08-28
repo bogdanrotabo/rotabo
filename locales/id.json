@@ -1,4 +1,9 @@
 {
+  "ticker": {
+    "sponsors": "Sponsor",
+    "offers": "menawarkan",
+    "seeks": "mencari"
+  },
   "pulse": {
     "online": "online sekarang",
     "total": "pengunjung sejauh ini"

@@ -112,6 +112,77 @@
   }
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
 
+  /* --------------------------------------------------------- top band --- */
+
+  /* The same idea as the strip on topten.one and deliberately twice its
+     height: 20px of padding on a 15px line where that one runs 7px on 12px.
+     It is the first thing on the page, so it carries the diamond's own three
+     stops rather than a flat violet -- the diamond is what the brand is
+     recognised by, and a band in someone else's purple would not be Rotabo. */
+  .ticker{
+    overflow:hidden;
+    background:linear-gradient(90deg,#7c2596 0%,#a239c9 38%,#c264e0 62%,#a239c9 100%);
+    border-bottom:1px solid #6a1f80;
+    padding:20px 0;
+  }
+
+  /* The duration is set from JS, not here: a fixed one makes a short list
+     crawl and a long one sprint, and the band has to stay readable at both
+     ends as listings arrive. */
+  .ticker__track{display:flex;width:max-content;animation:tick linear infinite;}
+
+  /* Half the track, because the track is the list twice over. */
+  @keyframes tick{ to { transform:translateX(-50%); } }
+
+  .ticker:hover .ticker__track,
+  .ticker:focus-within .ticker__track{animation-play-state:paused;}
+
+  .tick{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:0 20px;font-size:15px;line-height:1.4;
+    white-space:nowrap;color:#f0d7fa;text-decoration:none;
+  }
+  .tick__cat{color:#fff;font-weight:800;}
+  .tick__where{color:#fff;font-weight:600;}
+  .tick__num{color:#e7c2f6;font-weight:700;font-variant-numeric:tabular-nums;}
+
+  /* Two dots rather than two words: which way round a listing faces is worth
+     one glance, and the words are already there in the reader's language. */
+  .tick__dot{
+    width:9px;height:9px;border-radius:50%;flex:0 0 auto;
+    background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.22);
+  }
+  .tick--seek .tick__dot{background:#ffd9a0;box-shadow:0 0 0 3px rgba(255,217,160,.24);}
+
+  /* One separator rule instead of a middot element in every gap. Logical
+     margin, so Arabic and Urdu put it on the correct side. */
+  .tick__where::before,
+  .tick__num::before{content:"\00B7";margin-inline-end:9px;color:#e3b9f4;font-weight:400;}
+
+  .tick--sponsor{gap:10px;}
+  .tick--sponsor .tick__label{
+    text-transform:uppercase;letter-spacing:.12em;font-size:11px;
+    font-weight:800;color:#f6e4fd;opacity:.85;
+  }
+  .tick--sponsor b{
+    color:#7c2596;background:#fff;font-weight:800;
+    padding:4px 12px;border-radius:999px;
+  }
+
+  @media (min-width:560px){
+    .ticker{padding:24px 0;}
+    .tick{font-size:17px;padding:0 26px;}
+    .tick--sponsor .tick__label{font-size:12px;}
+  }
+
+  /* Stopped, not hidden: the sponsor and the listings are the point, the
+     motion is only how they take turns. Left scrollable so the rest of the
+     band stays reachable by hand. */
+  @media (prefers-reduced-motion:reduce){
+    .ticker{overflow-x:auto;}
+    .ticker__track{animation:none;}
+  }
+
   header{
     border-bottom:1px solid var(--border);
     background:linear-gradient(180deg,#f8eefb,#f4e8f8);
@@ -977,6 +1048,13 @@
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>
 </svg>
+
+<!-- Filled by the band script at the bottom of the page. It ships empty and
+     stays hidden until there is something to run, so a database that does not
+     answer leaves no violet stripe with nothing in it. -->
+<div class="ticker" id="ticker" hidden aria-label="Sponsors and latest listings">
+  <div class="ticker__track"></div>
+</div>
 
 <header>
   <div class="nav-inner">
@@ -3610,6 +3688,155 @@ if ("serviceWorker" in navigator) {
   });
 })();
 </script>
+<!-- ------------------------------------------------------- the top band --- -->
+<script>
+/* The band across the top: the sponsor first, then everyone who has listed
+   themselves, with the city and country beside each one.
+
+   Both calls are functions the database already grants to anon --
+   sponsors_public() and list_public_numbers() -- so nothing had to be opened
+   up for this and no token is involved. list_public_numbers() also returns a
+   name; the band deliberately shows the Rotabo number instead, which is the
+   identity this site already publishes and looks people up by. */
+(function(){
+  var strip = document.getElementById("ticker");
+  if (!strip || !window.supabase) return;
+  var track = strip.querySelector(".ticker__track");
+
+  var sb = window.supabase.createClient(
+    "https://auth.rotabo.app",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w"
+  );
+
+  var listings = [];
+  var sponsors = [];
+  var loaded = false;
+
+  function T(key, fallback){
+    try {
+      if (window.rotaboT) {
+        var v = window.rotaboT(key);
+        if (v && v !== key) return v;
+      }
+    } catch (e) {}
+    return fallback;
+  }
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  /* People type their country in whatever language they were reading the site
+     in, so the rows hold "Svizzera" next to "Switzerland" for the same place.
+     countries.js maps either back to an ISO code and then out again in the
+     language on screen, which is the whole reason a reader in Japan does not
+     get "Germany" in the middle of a Japanese page. */
+  function whereOf(row){
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    var country = row.country || "";
+    if (window.RotaboCountries) {
+      var iso = window.RotaboCountries.isoFor(country);
+      if (iso) country = window.RotaboCountries.nameForIsoIn(iso, lang) || country;
+    }
+    return [row.city, country].filter(Boolean).join(", ");
+  }
+
+  function sponsorCell(name, url){
+    var inner = '<span class="tick__label">' + esc(T("ticker.sponsors", "Sponsors")) + '</span>'
+              + '<b>' + esc(name) + '</b>';
+    return url
+      ? '<a class="tick tick--sponsor" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>'
+      : '<span class="tick tick--sponsor">' + inner + '</span>';
+  }
+
+  function listingCell(row){
+    var seeking = row.role === "seeking";
+    var verb = seeking ? T("ticker.seeks", "looking for") : T("ticker.offers", "offers");
+    var cat  = T("categories." + row.category + ".name", row.category || "");
+    var where = whereOf(row);
+    return '<span class="tick' + (seeking ? " tick--seek" : "") + '">'
+         + '<span class="tick__dot"></span>'
+         + '<span>' + esc(verb) + '</span>'
+         + '<span class="tick__cat">' + esc(cat) + '</span>'
+         + (where ? '<span class="tick__where">' + esc(where) + '</span>' : "")
+         + (row.number ? '<span class="tick__num">#' + esc(row.number) + '</span>' : "")
+         + '</span>';
+  }
+
+  function cells(){
+    var out = [];
+    // topten.one is the standing sponsor and is not in the table, so it is
+    // written here. Anything the table does hold joins it rather than
+    // replacing it, and this line needs no edit when the first one lands.
+    out.push(sponsorCell("topten.one", "https://topten.one"));
+    sponsors.forEach(function(s){
+      if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
+    });
+    listings.forEach(function(row){ out.push(listingCell(row)); });
+    return out;
+  }
+
+  function paint(){
+    if (!loaded) return;
+    var base = cells();
+    if (!base.length) { strip.hidden = true; return; }
+    strip.hidden = false;
+
+    /* One pass of the list can be narrower than the screen -- five listings on
+       a desktop is -- and then the track slides off and leaves the band empty
+       while it waits to come round. Repeat the pass until it is wider than the
+       window, and only then print the whole thing twice for the -50% loop.
+       The same string can be reused here: unlike the strip on topten.one,
+       nothing in these cells mints an id as it is built. */
+    track.innerHTML = base.join("");
+    var one = track.scrollWidth || 1;
+    var copies = Math.max(1, Math.ceil((window.innerWidth + 80) / one));
+    var pass = "";
+    for (var i = 0; i < copies; i++) pass += base.join("");
+    track.innerHTML = pass + pass;
+
+    // Constant speed rather than constant duration, so the band reads the
+    // same whether it is carrying six entries or six hundred.
+    var half = track.scrollWidth / 2;
+    track.style.animationDuration = Math.max(14, Math.round(half / 55)) + "s";
+  }
+
+  Promise.all([
+    sb.rpc("list_public_numbers"),
+    sb.rpc("sponsors_public")
+  ]).then(function(res){
+    if (!res[0].error && Array.isArray(res[0].data)) listings = res[0].data;
+    if (!res[1].error && Array.isArray(res[1].data)) sponsors = res[1].data;
+  }).catch(function(){
+    /* Offline or the database is down: the sponsor cell alone still runs,
+       which is a band that looks deliberate instead of one that looks broken. */
+  }).then(function(){
+    loaded = true;
+    paint();
+  });
+
+  // Chained, never assigned: something already owns this hook, and overwriting
+  // it once cost this page its country list.
+  var beforeTicker = window.__afterTranslate;
+  window.__afterTranslate = function(d){
+    if (beforeTicker) { try { beforeTicker(d); } catch (e) {} }
+    paint();
+  };
+
+  // Only when the width actually changes: a phone fires resize on every
+  // address-bar nudge, and repainting there restarts the animation mid-run.
+  var lastWidth = window.innerWidth, resizeTimer = null;
+  window.addEventListener("resize", function(){
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(paint, 250);
+  });
+})();
+</script>
+
 
 </body>
 </html>
