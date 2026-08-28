@@ -443,8 +443,21 @@
     -webkit-background-clip:text;
     background-clip:text;
   }
+  /* The gold half of the line. Nowhere near the tail's own #ffd41a, and it
+     cannot be: yellow on a near-white lavender is the worst pairing there
+     is. #ffd41a lands at 1.5:1 against this background and #c98a00 at 2.46,
+     both under the 3:1 a heading needs. These three stops measure 2.85, 3.5
+     and 4.8, so the word is gold and legible -- which is the whole
+     job of a headline. The mark next to it keeps the bright yellow, where
+     nothing has to be read. */
+  .me-gold{
+    color:#a87000;
+    background:linear-gradient(100deg,#b8800a 0%,#a87000 45%,#8c5c00 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+  }
   @supports ((background-clip:text) or (-webkit-background-clip:text)){
-    .me{color:transparent;}
+    .me,.me-gold{color:transparent;}
   }
   .lede{
     max-width:560px;margin:0 auto;
@@ -1148,7 +1161,7 @@
   </div>
   <!-- Word for word the marketplace heading further down the page, so the
        site says one thing rather than two. -->
-  <h1 class="tagline" dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h1>
+  <h1 class="tagline" dir="ltr"><span class="me">Need</span> <span class="me-gold">Me</span>? <span class="me">Find</span> <span class="me-gold">Me</span>!</h1>
 
   <!-- The 12 marketplace categories, in the same order as the big cards.
        Names reuse the card translation keys, so every language the cards
