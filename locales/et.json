@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Otsige valdkonda, milles teie ettevõte tegutseb",
+    "none": "Vasteid ei leitud. Proovige teist sõna - amet, tööriist või teenus."
+  },
   "business": {
     "hero": { "free_line": "Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad." },
     "categories": {

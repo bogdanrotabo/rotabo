@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Şirketinizin çalıştığı alanı arayın",
+    "none": "Sonuç yok. Başka bir kelime deneyin - bir meslek, bir alet, bir hizmet."
+  },
   "business": {
     "hero": { "free_line": "Kayıt ücretsiz, ilan ücretsiz - şirketiniz, insanların zaten aradığı yerde." },
     "categories": {

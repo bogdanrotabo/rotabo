@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Znajdź branżę, w której działa twoja firma",
+    "none": "Brak wyników. Spróbuj innego słowa - zawód, narzędzie lub usługa."
+  },
   "business": {
     "hero": { "free_line": "Rejestracja bezpłatna, ogłoszenie bezpłatne - twoja firma tam, gdzie ludzie już szukają." },
     "categories": {

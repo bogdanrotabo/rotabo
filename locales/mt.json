@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Fittex il-qasam li fih taħdem il-kumpanija tiegħek",
+    "none": "L-ebda riżultat. Ipprova kelma oħra - sengħa, għodda jew servizz."
+  },
   "business": {
     "hero": { "free_line": "Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu." },
     "categories": {

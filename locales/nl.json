@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Zoek het vakgebied waarin uw bedrijf werkt",
+    "none": "Geen resultaten. Probeer een ander woord - een vak, een gereedschap, een dienst."
+  },
   "business": {
     "hero": { "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken." },
     "categories": {

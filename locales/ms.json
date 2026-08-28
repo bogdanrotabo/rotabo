@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Cari bidang tempat syarikat anda bekerja",
+    "none": "Tiada padanan. Cuba perkataan lain - pekerjaan, alat, perkhidmatan."
+  },
   "business": {
     "hero": { "free_line": "Pendaftaran percuma, iklan percuma - syarikat anda, di tempat orang sudah mencari." },
     "categories": {

@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Tafuta sekta ambayo kampuni yako inafanya kazi",
+    "none": "Hakuna kilichopatikana. Jaribu neno lingine - kazi, kifaa au huduma."
+  },
   "business": {
     "hero": { "free_line": "Usajili bure, tangazo bure - kampuni yako, pale ambapo watu tayari wanatafuta." },
     "categories": {

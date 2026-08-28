@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "귀사가 일하는 분야를 검색하세요",
+    "none": "결과가 없습니다. 다른 단어로 해보세요 - 직종, 장비, 서비스."
+  },
   "business": {
     "hero": { "free_line": "등록도 게시도 무료 - 사람들이 이미 찾고 있는 곳에 귀사를." },
     "categories": {

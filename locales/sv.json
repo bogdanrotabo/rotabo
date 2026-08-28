@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Sök området som ditt företag arbetar inom",
+    "none": "Inga träffar. Prova ett annat ord - ett yrke, ett verktyg, en tjänst."
+  },
   "business": {
     "hero": { "free_line": "Gratis registrering, gratis annons - ditt företag, där folk redan letar." },
     "categories": {

@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Cuardaigh an réimse ina n-oibríonn do chomhlacht",
+    "none": "Faic aimsithe. Bain triail as focal eile - ceird, uirlis nó seirbhís."
+  },
   "business": {
     "hero": { "free_line": "Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana." },
     "categories": {

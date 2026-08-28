@@ -1,0 +1,100 @@
+taxi|Taxi|Taxi
+ride_hailing|Ride-hailing|Ride-hailing
+chauffeur|Chauffeur services|Servicii de șofer personal
+driving_school|Driving school|Școală de șoferi
+translation|Translation|Traduceri
+interpreting|Interpreting|Interpretariat
+sworn_translation|Sworn translation|Traduceri autorizate
+language_school|Language school|Școală de limbi străine
+removals|Removals|Mutări
+international_removals|International removals|Mutări internaționale
+courier|Courier|Curierat
+freight_forwarding|Freight forwarding|Expediții de marfă
+refrigerated_transport|Refrigerated transport|Transport frigorific
+haulage|Haulage|Transport rutier de marfă
+storage_warehousing|Storage and warehousing|Depozitare
+customs_brokerage|Customs brokerage|Brokeraj vamal
+excavation|Excavation and earthworks|Excavații și terasamente
+crane_hire|Crane hire|Închiriere de macarale
+scaffolding|Scaffolding|Schele
+demolition|Demolition|Demolări
+concrete_works|Concrete works|Lucrări de beton
+surveying|Surveying|Topografie
+tool_hire|Tool hire|Închiriere de scule
+machinery_rental|Machinery rental|Închiriere de utilaje
+generator_hire|Generator hire|Închiriere de generatoare
+electrical_installation|Electrical installation|Instalații electrice
+plumbing|Plumbing|Instalații sanitare
+heating_hvac|Heating and HVAC|Instalații termice
+air_conditioning|Air conditioning|Aer condiționat
+painting_decorating|Painting and decorating|Zugrăveli și finisaje
+carpentry|Carpentry|Tâmplărie
+flooring|Flooring|Pardoseli
+roofing|Roofing|Acoperișuri
+locksmith|Locksmith|Lăcătușerie
+cleaning_services|Cleaning services|Servicii de curățenie
+gardening_landscaping|Gardening and landscaping|Grădinărit și amenajări
+renovation|Renovation|Renovări
+car_repair|Car repair|Service auto
+mobile_mechanic|Mobile mechanic|Mecanic mobil
+tyre_service|Tyre service|Vulcanizare
+bodywork_paint|Bodywork and paint|Tinichigerie și vopsitorie
+towing_recovery|Towing and recovery|Tractări auto
+childcare|Childcare|Îngrijire copii
+elderly_care|Elderly care|Îngrijire vârstnici
+home_nursing|Home nursing|Îngrijire medicală la domiciliu
+private_tutoring|Private tutoring|Meditații
+music_lessons|Music lessons|Lecții de muzică
+sports_coaching|Sports coaching|Antrenorat sportiv
+it_training|IT training|Cursuri IT
+vocational_training|Vocational training|Formare profesională
+holiday_lettings|Holiday lettings|Închirieri de vacanță
+guesthouse_bnb|Guesthouse and B and B|Pensiune
+property_management|Property management|Administrare de imobile
+veterinary|Veterinary|Servicii veterinare
+dog_walking|Dog walking|Plimbat câini
+pet_grooming|Pet grooming|Toaletaj animale
+general_practice|General practice|Medicină de familie
+dentistry|Dentistry|Stomatologie
+physiotherapy|Physiotherapy|Fizioterapie
+psychology|Psychology|Psihologie
+pharmacy|Pharmacy|Farmacie
+optometry|Optometry|Optometrie
+medical_laboratory|Medical laboratory|Laborator medical
+software_development|Software development|Dezvoltare software
+web_development|Web development|Dezvoltare web
+it_support|IT support|Suport IT
+cybersecurity|Cybersecurity|Securitate cibernetică
+data_ai|Data and AI|Date și inteligență artificială
+cloud_hosting|Cloud and hosting|Cloud și găzduire
+accounting|Accounting|Contabilitate
+audit_tax|Audit and tax|Audit și fiscalitate
+legal_services|Legal services|Servicii juridice
+hr_recruitment|HR and recruitment|Resurse umane și recrutare
+management_consulting|Management consulting|Consultanță în management
+insurance_brokerage|Insurance brokerage|Brokeraj de asigurări
+real_estate_agency|Real estate agency|Agenție imobiliară
+architecture|Architecture|Arhitectură
+manufacturing|Manufacturing|Producție
+cnc_machining|CNC machining|Prelucrare CNC
+metalwork_welding|Metalwork and welding|Confecții metalice și sudură
+restaurant|Restaurant|Restaurant
+catering|Catering|Catering
+hotel|Hotel|Hotel
+event_management|Event management|Organizare de evenimente
+agriculture|Agriculture|Agricultură
+forestry|Forestry|Silvicultură
+waste_recycling|Waste and recycling|Deșeuri și reciclare
+renewable_energy|Renewable energy|Energie regenerabilă
+marketing_agency|Marketing agency|Agenție de marketing
+graphic_design|Graphic design|Design grafic
+photography|Photography|Fotografie
+video_production|Video production|Producție video
+printing_signage|Printing and signage|Tipar și publicitate
+wholesale|Wholesale|Comerț angro
+ecommerce|E-commerce|Comerț online
+security_services|Security services|Servicii de pază
+hairdressing|Hairdressing|Coafură
+beauty_salon|Beauty salon|Salon de cosmetică
+massage_therapy|Massage therapy|Masaj terapeutic
+fitness_training|Fitness training|Antrenament fitness

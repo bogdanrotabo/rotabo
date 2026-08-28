@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Tìm lĩnh vực công ty bạn hoạt động",
+    "none": "Không có kết quả. Thử từ khác - một nghề, một công cụ, một dịch vụ."
+  },
   "business": {
     "hero": { "free_line": "Đăng ký miễn phí, đăng tin miễn phí - công ty bạn, ở nơi mọi người đang tìm." },
     "categories": {

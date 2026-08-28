@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "御社が働く分野を検索",
+    "none": "該当なし。別の言葉でお試しください - 職種、道具、サービスなど。"
+  },
   "business": {
     "hero": { "free_line": "登録も掲載も無料 - 御社を、人がすでに探している場所へ。" },
     "categories": {

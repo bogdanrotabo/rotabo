@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Nájdite oblasť, v ktorej vaša firma pracuje",
+    "none": "Žiadne výsledky. Skúste iné slovo - remeslo, náradie alebo službu."
+  },
   "business": {
     "hero": { "free_line": "Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú." },
     "categories": {

@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Poiščite področje, na katerem deluje vaše podjetje",
+    "none": "Ni zadetkov. Poskusite z drugo besedo - obrt, orodje ali storitev."
+  },
   "business": {
     "hero": { "free_line": "Brezplačna registracija, brezplačen oglas - vaše podjetje tam, kjer ljudje že iščejo." },
     "categories": {

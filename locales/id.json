@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Cari bidang tempat perusahaan Anda bekerja",
+    "none": "Tidak ada hasil. Coba kata lain - pekerjaan, alat, atau layanan."
+  },
   "business": {
     "hero": { "free_line": "Pendaftaran gratis, iklan gratis - perusahaan Anda, di tempat orang sudah mencari." },
     "categories": {

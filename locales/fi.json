@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Hae ala, jolla yrityksesi toimii",
+    "none": "Ei osumia. Kokeile toista sanaa - ammatti, työkalu tai palvelu."
+  },
   "business": {
     "hero": { "free_line": "Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät." },
     "categories": {

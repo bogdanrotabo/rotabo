@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Meklējiet jomu, kurā strādā jūsu uzņēmums",
+    "none": "Nav rezultātu. Mēģiniet citu vārdu - amats, darbarīks vai pakalpojums."
+  },
   "business": {
     "hero": { "free_line": "Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē." },
     "categories": {

@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Ieškokite srities, kurioje dirba jūsų įmonė",
+    "none": "Rezultatų nėra. Pabandykite kitą žodį - amatas, įrankis ar paslauga."
+  },
   "business": {
     "hero": { "free_line": "Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško." },
     "categories": {

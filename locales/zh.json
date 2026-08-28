@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "搜索贵公司所在的领域",
+    "none": "没有匹配结果。换一个词试试 - 工种、工具或服务。"
+  },
   "business": {
     "hero": { "free_line": "免费注册，免费发布 - 让贵公司出现在人们已经在找的地方。" },
     "categories": {

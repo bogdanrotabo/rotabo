@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Procure a área em que a sua empresa trabalha",
+    "none": "Sem resultados. Tente outra palavra - um ofício, uma ferramenta, um serviço."
+  },
   "business": {
     "hero": { "free_line": "Registo gratuito, anúncio gratuito - a sua empresa, onde as pessoas já procuram." },
     "categories": {

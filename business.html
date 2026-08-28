@@ -722,6 +722,32 @@
   .idea-section .lede{margin-top:0;margin-bottom:16px;}
   .idea-closing{margin-top:36px;font-size:1.15rem;line-height:1.7;color:var(--text-dark);}
 
+
+  /* The professional search. It exists only on the business side, where it
+     stands in place of the twelve cards rather than above them: a company
+     arrives knowing its trade, not knowing which of twelve consumer
+     categories that trade lives in. The cards are what it finds. */
+  .pro-search{display:none;}
+  html[data-mode="business"] .pro-search{display:block;margin-top:34px;}
+  html[data-mode="business"] .category-grid{display:none;}
+  html[data-mode="business"] .cat-strip{display:none;}
+  html[data-mode="business"] .category-grid.pro-open{display:grid;}
+
+  .pro-search .cascade-wrap{max-width:620px;margin:0 auto;}
+  .pro-search__box{
+    display:flex;align-items:center;gap:12px;
+    min-width:0;
+    background:#fff;border:1px solid var(--border);border-radius:14px;
+    padding:14px 18px;
+  }
+  .pro-search__box:focus-within{border-color:var(--diamond-b);}
+  .pro-search__box svg{width:20px;height:20px;flex:0 0 auto;color:var(--ink-strong);}
+  .pro-search__box input{
+    flex:1;min-width:0;
+    border:none;outline:none;background:transparent;
+    font:inherit;font-size:1.02rem;color:var(--text-dark);
+  }
+  .pro-search__none{text-align:center;color:var(--text-eyebrow);margin:20px 0 0;}
   .categories-section,.bridge-section{padding-top:56px;}
   .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
   .category-card{
@@ -1397,8 +1423,26 @@
      account.html's empty-state link both point. -->
 <section class="categories-section" id="categories">
   <p class="eyebrow" data-i18n="categories.section_eyebrow">THE ROTABO MARKETPLACE</p>
-  <h2 dir="ltr">Need <span class="me">Me</span>? Find <span class="me">Me</span>!</h2>
+  <h2 dir="ltr"><span class="me">Need</span> <span class="me-gold">Me</span>? <span class="me">Find</span> <span class="me-gold">Me</span>!</h2>
   <p class="lede" style="text-align:center;max-width:560px;margin:0 auto 8px;" data-i18n="categories.section_lead">Pick what you need — or list yourself as someone who can help.</p>
+  <!-- The business side leads with this instead of the twelve cards. A firm
+       does not think in "Home", it thinks "I am an electrician". The cards
+       are still what it finds -- they carry the actions -- but they stay out
+       of the way until something is typed. -->
+  <div class="pro-search">
+    <div class="cascade-wrap">
+      <label class="pro-search__box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="proSearch" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="proList" aria-autocomplete="list"
+               data-i18n-placeholder="bizsearch.placeholder"
+               placeholder="Search the field your company works in">
+      </label>
+      <div class="cascade" id="proList" hidden role="listbox"></div>
+    </div>
+    <p class="pro-search__none" id="proSearchNone" hidden data-i18n="bizsearch.none">Nothing matched.</p>
+  </div>
+
   <div class="category-grid">
     <div class="category-card" id="cat-drive">
       <div class="cat-icon">🚗</div>
@@ -4078,6 +4122,166 @@ if ("serviceWorker" in navigator) {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(paint, 250);
   });
+})();
+</script>
+
+
+<!-- ------------------------------------------- the professional search --- -->
+<script src="/domains.js"></script>
+<script>
+/* Search by field, on the business side, over the hundred in domains.js.
+   The twelve cards and the twelve chips are out of the way there: a firm
+   arrives knowing it does refrigerated haulage or cardiology, not knowing
+   which of twelve consumer categories Rotabo files that under. It types its
+   own field, the list cascades, and picking one brings back the single card
+   that carries the actions.
+
+   Forty-four of the hundred land in "Something Else", because medicine,
+   software and audit have no card of their own yet. They are still in the
+   list: a doctor who cannot find the word for what they do does not register
+   at all. */
+(function(){
+  var input = document.getElementById("proSearch");
+  var list  = document.getElementById("proList");
+  var none  = document.getElementById("proSearchNone");
+  var grid  = document.querySelector(".category-grid");
+  if (!input || !list || !grid || !window.RotaboDomains) return;
+
+  var cards = {};
+  [].slice.call(grid.querySelectorAll(".category-card")).forEach(function(c){
+    if (c.id) cards[c.id.replace(/^cat-/, "")] = c;
+  });
+
+  // Accents off, so someone typing "instalatii" still finds "Instalații" and
+  // is not punished for the keyboard in front of them. The four letters after
+  // it do not decompose on their own.
+  function fold(s){
+    return String(s == null ? "" : s).toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/ß/g, "ss").replace(/ø/g, "o")
+      .replace(/đ/g, "d").replace(/ł/g, "l");
+  }
+
+  function T(key, fallback){
+    try {
+      if (window.rotaboT) {
+        var v = window.rotaboT(key);
+        if (v && v !== key) return v;
+      }
+    } catch (e) {}
+    return fallback;
+  }
+
+  function label(slug){
+    return T("domains." + slug, slug.replace(/_/g, " "));
+  }
+
+  /* Stems, not exact strings. The Romanian for plumbing is "Instalații
+     sanitare" and a plumber types "instalator"; they agree for six letters
+     and part at the seventh, so a substring test finds nothing. Six letters
+     is enough to be sure and short enough to survive inflection -- and it
+     still keeps "translation" away from "transport", which part at the
+     sixth. Deliberately not called hits(): the first version of this had a
+     counter by that name in the same scope, and the counter won. */
+  function stemMatch(w, words){
+    if (w.length < 4) {
+      return words.some(function(hw){ return hw.indexOf(w) === 0; });
+    }
+    return words.some(function(hw){
+      if (hw.indexOf(w) >= 0) return true;
+      // No reverse containment: it let "imobil" match "mobil" and pulled
+      // Mecanic mobil into a search for property. The prefix rule below
+      // covers what it was there for.
+      var n = Math.min(w.length, hw.length, 6);
+      return n >= 5 && hw.slice(0, n) === w.slice(0, n);
+    });
+  }
+
+  function matches(q){
+    var all = window.RotaboDomains.all();
+    var f = fold(q).trim();
+    if (!f) return all;
+    var words = f.split(/\s+/).filter(Boolean);
+    return all.filter(function(d){
+      var hay = fold(label(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
+      return words.every(function(w){ return stemMatch(w, hay); });
+    });
+  }
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function close(){
+    list.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+  }
+
+  function open(rows){
+    if (!rows.length) { close(); return; }
+    list.innerHTML = rows.map(function(d, i){
+      return '<button type="button" class="cascade-row" role="option"'
+           + ' data-slug="' + esc(d.slug) + '" data-cat="' + esc(d.cat) + '"'
+           + ' style="--i:' + Math.min(i, 24) + '">' + esc(label(d.slug)) + '</button>';
+    }).join("");
+    list.hidden = false;
+    list.scrollTop = 0;
+    input.setAttribute("aria-expanded", "true");
+  }
+
+  function show(q){
+    var rows = matches(q);
+    open(rows);
+    if (none) none.hidden = rows.length > 0;
+  }
+
+  function pick(slug, cat){
+    input.value = label(slug);
+    close();
+    if (none) none.hidden = true;
+    // One card, the one that carries the actions for this field. The others
+    // stay down: twelve cards is the thing the business side does not do.
+    Object.keys(cards).forEach(function(k){ cards[k].hidden = (k !== cat); });
+    grid.classList.toggle("pro-open", !!cards[cat]);
+    if (cards[cat] && cards[cat].scrollIntoView) {
+      cards[cat].scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+
+  input.addEventListener("focus", function(){ show(input.value); });
+  input.addEventListener("click", function(){ show(input.value); });
+  input.addEventListener("input", function(){
+    grid.classList.remove("pro-open");
+    show(input.value);
+  });
+  input.addEventListener("keydown", function(e){
+    if (e.key === "Escape") { close(); return; }
+    if (e.key === "Enter") {
+      var first = list.querySelector(".cascade-row");
+      if (!list.hidden && first) { e.preventDefault(); first.click(); }
+    }
+  });
+
+  list.addEventListener("click", function(e){
+    var row = e.target.closest(".cascade-row");
+    if (!row) return;
+    pick(row.getAttribute("data-slug"), row.getAttribute("data-cat"));
+  });
+
+  document.addEventListener("click", function(e){
+    if (!e.target.closest(".pro-search")) close();
+  });
+
+  // The labels arrive with the dictionary, which lands after this does, and
+  // a language switch replaces every one of them. Chained, never assigned:
+  // several things already own this hook.
+  var beforeProSearch = window.__afterTranslate;
+  window.__afterTranslate = function(d){
+    if (beforeProSearch) { try { beforeProSearch(d); } catch (e) {} }
+    if (!list.hidden) show(input.value);
+  };
 })();
 </script>
 

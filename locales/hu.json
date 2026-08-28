@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Keresse meg a területet, ahol a cége dolgozik",
+    "none": "Nincs találat. Próbáljon másik szót - szakma, szerszám vagy szolgáltatás."
+  },
   "business": {
     "hero": { "free_line": "Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek." },
     "categories": {

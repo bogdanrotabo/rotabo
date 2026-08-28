@@ -1,4 +1,8 @@
 {
+  "bizsearch": {
+    "placeholder": "Søg det område, din virksomhed arbejder i",
+    "none": "Ingen resultater. Prøv et andet ord - et fag, et værktøj, en ydelse."
+  },
   "business": {
     "hero": { "free_line": "Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder." },
     "categories": {
