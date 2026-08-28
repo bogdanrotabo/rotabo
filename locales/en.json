@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Free to list, free to be found - your company, where people are already looking." },
+    "categories": {
+      "section_eyebrow": "ROTABO FOR BUSINESS",
+      "section_lead": "Pick the work your company does - and be found by the people and firms that need it.",
+      "need_btn": "We need this",
+      "offer_btn": "We offer this"
+    },
+    "choose": {
+      "need_title": "My company needs something",
+      "need_text": "Post what your company is looking for and get offers from suppliers nearby.",
+      "need_btn": "Post what you need",
+      "offer_title": "My company offers something",
+      "offer_text": "List what your company does and the area you cover, and be found by whoever needs it.",
+      "offer_btn": "List your company"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsors", "company": "Your business can be visible here — registration is free",
     "offers": "offers",

@@ -1,4 +1,21 @@
 {
+  "business": {
+    "hero": { "free_line": "Înscriere gratuită, anunț gratuit - firma ta, acolo unde oamenii deja caută." },
+    "categories": {
+      "section_eyebrow": "ROTABO PENTRU FIRME",
+      "section_lead": "Alege ce face firma ta - și lasă-te găsit de oamenii și firmele care au nevoie.",
+      "need_btn": "Avem nevoie de asta",
+      "offer_btn": "Noi oferim asta"
+    },
+    "choose": {
+      "need_title": "Firma mea are nevoie de ceva",
+      "need_text": "Publică ce caută firma ta și primește oferte de la furnizori din apropiere.",
+      "need_btn": "Publică ce cauți",
+      "offer_title": "Firma mea oferă ceva",
+      "offer_text": "Scrie ce face firma ta și zona pe care o acoperă, și lasă-te găsit de cine are nevoie.",
+      "offer_btn": "Înscrie-ți firma"
+    }
+  },
   "ticker": {
     "sponsors": "Sponsori", "company": "Aici firma ta poate fi vizibilă — înregistrarea e gratuită",
     "offers": "oferă",

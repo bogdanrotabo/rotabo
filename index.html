@@ -2976,6 +2976,38 @@
       .then(function(dict){ if (dict && !cache.en) cache.en = dict; })
       .catch(function(){ enWarm = null; });
   }
+  /* business.html is this same file with data-mode set, so it loads the same
+     38 locale files. Anything a file puts under "business" is merged over the
+     top of it when that side is being read, which means only the lines that
+     genuinely differ have to be written and translated. Everything else stays
+     one string in one place and cannot drift between the two sides. */
+  var BIZ = document.documentElement.getAttribute("data-mode") === "business";
+
+  function forThisSide(dict){
+    if (!BIZ || !dict || !dict.business) return dict;
+    var out = {};
+    Object.keys(dict).forEach(function(k){ if (k !== "business") out[k] = dict[k]; });
+    // Deep, and copying rather than writing through: the personal dictionary
+    // is the same object, and overwriting a nested group in place would leave
+    // the business wording on the page after switching back.
+    (function deep(src, dst){
+      Object.keys(src).forEach(function(k){
+        var v = src[k];
+        if (v && typeof v === "object" && !Array.isArray(v)) {
+          var base = dst[k];
+          dst[k] = {};
+          if (base && typeof base === "object") {
+            Object.keys(base).forEach(function(b){ dst[k][b] = base[b]; });
+          }
+          deep(v, dst[k]);
+        } else {
+          dst[k] = v;
+        }
+      });
+    })(dict.business, out);
+    return out;
+  }
+
   function loadLang(code){
     var seq = ++loadSeq;
     if (code !== "en") warmEnglish();
@@ -2995,10 +3027,13 @@
         return res.json();
       })
       .then(function(dict){
-        cache[code] = dict;
+        cache[code] = forThisSide(dict);
         if (seq !== loadSeq) return;
         setLangUI(code);
-        applyTranslations(dict);
+        // cache[code], not dict: the business side merges its own wording in
+        // on the way into the cache, and painting from the raw response put
+        // the personal copy on a page whose dictionary already knew better.
+        applyTranslations(cache[code]);
       })
       .catch(function(err){
         console.error("i18n:", err);
