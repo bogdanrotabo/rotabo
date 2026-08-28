@@ -443,16 +443,19 @@
     -webkit-background-clip:text;
     background-clip:text;
   }
-  /* The gold half of the line. Nowhere near the tail's own #ffd41a, and it
-     cannot be: yellow on a near-white lavender is the worst pairing there
-     is. #ffd41a lands at 1.5:1 against this background and #c98a00 at 2.46,
-     both under the 3:1 a heading needs. These three stops measure 2.85, 3.5
-     and 4.8, so the word is gold and legible -- which is the whole
-     job of a headline. The mark next to it keeps the bright yellow, where
-     nothing has to be read. */
+  /* The gold half of the line: the mark's own three stops, not a darker
+     cousin of them. The word and the diamond beside it are one colour or
+     they are two brands.
+
+     Stated plainly because it is a real cost, chosen deliberately: #ffd41a
+     measures 1.5:1 against this lavender, well under the 3:1 a heading is
+     meant to hold, and it will be faint for anyone reading in sunlight or
+     with low vision. Fixing it means either a darker yellow, which was
+     tried and rejected, or giving the glyphs an edge -- not quietly
+     shifting the colour back. */
   .me-gold{
-    color:#a87000;
-    background:linear-gradient(100deg,#b8800a 0%,#a87000 45%,#8c5c00 100%);
+    color:#ffd41a;
+    background:linear-gradient(100deg,#ffe873 0%,#ffd41a 45%,#e0a005 100%);
     -webkit-background-clip:text;
     background-clip:text;
   }

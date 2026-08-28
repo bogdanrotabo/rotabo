@@ -156,11 +156,11 @@ Draw-Pair $g 60 150 460 330
 $dark   = New-Object System.Drawing.SolidBrush((C '#2b0f36'))
 $violet = New-Object System.Drawing.SolidBrush((C '#a239c9'))
 $grey   = New-Object System.Drawing.SolidBrush((C '#6b5470'))
-# Not the tail's own #ffd41a: on a pale lavender ground that colour is
-# barely there, and yellow on near-white is the worst pairing there is.
-# Same value the pages use for .me-gold, so the card and the headline on the
-# site are the same gold -- and both are legible, which #ffd41a is not.
-$gold   = New-Object System.Drawing.SolidBrush((C '#a87000'))
+# The tail colour itself, the same one the pages use for .me-gold and the
+# same one in the diamond above it. Faint on this pale ground -- that is a
+# known cost of using the mark's own yellow for words, and it is the colour
+# that was asked for.
+$gold   = New-Object System.Drawing.SolidBrush((C '#ffd41a'))
 
 $fBig  = New-Object System.Drawing.Font('Segoe UI', 62, [System.Drawing.FontStyle]::Bold)
 $fSub  = New-Object System.Drawing.Font('Segoe UI', 28, [System.Drawing.FontStyle]::Regular)
