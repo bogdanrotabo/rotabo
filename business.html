@@ -4318,13 +4318,31 @@ if ("serviceWorker" in navigator) {
       return words.some(function(hw){ return hw.indexOf(w) === 0; });
     }
     return words.some(function(hw){
-      if (hw.indexOf(w) >= 0) return true;
-      // No reverse containment: it let "imobil" match "mobil" and pulled
-      // Mecanic mobil into a search for property. The prefix rule below
-      // covers what it was there for.
+      // At the start of a word, not anywhere inside it. Anywhere inside let
+      // the French for bicycle, "velo", match "developpement" -- a search for
+      // a bike shop returned two software firms.
+      if (hw.indexOf(w) === 0) return true;
       var n = Math.min(w.length, hw.length, 6);
       return n >= 5 && hw.slice(0, n) === w.slice(0, n);
     });
+  }
+
+  /* Ranked, not just filtered. "electrician" reaches Instalatii electrice
+     through its name and Inchiriere de generatoare through six shared letters
+     of "electrogene" -- both are matches, but only one is the answer, and an
+     unranked list put the wrong one first.
+
+       0  the name itself starts with what was typed
+       1  some word of the name matches
+       2  only a synonym does  */
+  function rank(d, words){
+    var name = fold(label(d.slug));
+    var nameWords = name.split(/[^a-z0-9]+/).filter(Boolean);
+    var syn = fold(synonyms(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
+    if (!words.every(function(w){ return stemMatch(w, nameWords.concat(syn)); })) return -1;
+    if (name.indexOf(words.join(" ")) === 0) return 0;
+    if (words.every(function(w){ return stemMatch(w, nameWords); })) return 1;
+    return 2;
   }
 
   function matches(q){
@@ -4332,10 +4350,15 @@ if ("serviceWorker" in navigator) {
     var f = fold(q).trim();
     if (!f) return all;
     var words = f.split(/\s+/).filter(Boolean);
-    return all.filter(function(d){
-      var hay = fold(label(d.slug) + " " + synonyms(d.slug)).split(/[^a-z0-9]+/).filter(Boolean);
-      return words.every(function(w){ return stemMatch(w, hay); });
+    var scored = [];
+    all.forEach(function(d, i){
+      var r = rank(d, words);
+      if (r >= 0) scored.push({ d: d, r: r, i: i });
     });
+    // Original order inside a rank, so the list does not reshuffle itself
+    // between two keystrokes that happen to score the same.
+    scored.sort(function(a, b){ return a.r - b.r || a.i - b.i; });
+    return scored.map(function(s){ return s.d; });
   }
 
   function esc(s){

@@ -1,0 +1,113 @@
+taxi|Taxi|Taxi, course, aéroport, transfert
+ride_hailing|VTC|Uber, Bolt, chauffeur privé, application
+chauffeur|Service de chauffeur|Chauffeur privé, limousine, mise à disposition
+driving_school|Auto-école|Leçons de conduite, moniteur, permis
+translation|Traduction|Traducteur, documents, actes, contrat
+interpreting|Interprétariat|Interprète, simultané, conférence, tribunal
+sworn_translation|Traduction assermentée|Assermenté, certifié, acte, diplôme
+language_school|École de langues|Cours de langues, leçons, professeur
+removals|Déménagement|Déménageur, meubles, cartons, camionnette
+international_removals|Déménagement international|Étranger, outre-mer, conteneur, douane
+courier|Coursier|Colis, pli, express, livraison
+freight_forwarding|Transit et fret|Transitaire, logistique, palette, marchandise
+refrigerated_transport|Transport frigorifique|Chaîne du froid, surgelé, périssable, frigo
+haulage|Transport routier|Camion, poids lourd, remorque, semi-remorque
+storage_warehousing|Entreposage|Entrepôt, dépôt, palette, garde-meubles
+customs_brokerage|Courtage en douane|Douane, import, export, déclaration
+excavation|Terrassement|Pelle mécanique, excavation, tranchée, terre
+crane_hire|Location de grues|Grue, levage, grue mobile
+scaffolding|Échafaudage|Échafaudages, plateforme, façade
+demolition|Démolition|Démolir, désamiantage, gravats, curage
+concrete_works|Travaux de béton|Béton, chape, fondation, coffrage
+surveying|Géomètre|Topographie, cadastre, relevé, plan
+tool_hire|Location d outils|Outils, perceuse, meuleuse, matériel
+machinery_rental|Location de machines|Engins, chariot élévateur, machines de chantier
+generator_hire|Location de groupes électrogènes|Générateur, groupe électrogène, courant
+electrical_installation|Installation électrique|Électricien, câble, prise, tableau, fusible
+plumbing|Plomberie|Plombier, tuyau, robinet, chauffe-eau, fuite, salle de bain
+heating_hvac|Chauffage|Chauffagiste, chaudière, radiateur, pompe à chaleur
+air_conditioning|Climatisation|Clim, refroidissement, split, ventilation
+painting_decorating|Peinture et décoration|Peintre, peinture, papier peint, enduit
+carpentry|Menuiserie|Menuisier, charpentier, bois, meubles, porte
+flooring|Revêtements de sol|Parquet, stratifié, carrelage, moquette
+roofing|Couverture et toiture|Couvreur, tuiles, gouttière, étanchéité
+locksmith|Serrurerie|Serrure, clés, ouverture de porte, porte blindée
+cleaning_services|Nettoyage|Femme de ménage, ménage, nettoyage de bureaux
+gardening_landscaping|Jardinage et paysagisme|Jardinier, pelouse, haie, arbres, aménagement
+renovation|Rénovation|Entrepreneur, transformation, chantier, gros oeuvre
+car_repair|Garage automobile|Garage, mécanicien, entretien, moteur, freins
+mobile_mechanic|Mécanicien mobile|Dépannage, sur place, batterie, panne
+tyre_service|Pneus|Pneumatiques, jantes, roues, équilibrage
+bodywork_paint|Carrosserie et peinture|Carrossier, tôlier, bosse, sinistre
+towing_recovery|Dépannage et remorquage|Remorquage, plateau, treuil
+childcare|Garde d enfants|Crèche, nounou, baby-sitter, maman de jour
+elderly_care|Aide aux personnes âgées|Accompagnement, EMS, aide à domicile
+home_nursing|Soins à domicile|Infirmière, soins, palliatif, aide-soignant
+private_tutoring|Cours particuliers|Soutien scolaire, devoirs, examens, répétiteur
+music_lessons|Cours de musique|Piano, guitare, violon, chant, professeur
+sports_coaching|Coaching sportif|Entraîneur, football, tennis, préparation
+it_training|Formation informatique|Cours informatique, Excel, bureautique, programmation
+vocational_training|Formation professionnelle|Apprentissage, certification, perfectionnement
+holiday_lettings|Locations de vacances|Chalet, appartement, Airbnb, courte durée
+guesthouse_bnb|Chambres d hôtes|Pension, auberge, petit déjeuner, chambre
+property_management|Gérance immobilière|Régie, administration, loyer, copropriété
+veterinary|Vétérinaire|Cabinet vétérinaire, vaccin, chien, chat
+dog_walking|Promenade de chiens|Promeneur, laisse, sortie
+pet_grooming|Toilettage|Toiletteur, salon pour chiens, poils
+general_practice|Médecine générale|Médecin, généraliste, cabinet, consultation, ordonnance
+dentistry|Dentiste|Cabinet dentaire, dent, orthodontiste, implant, prothèse
+physiotherapy|Physiothérapie|Physiothérapeute, kiné, rééducation
+psychology|Psychologie|Psychologue, psychothérapie, thérapie, consultation
+pharmacy|Pharmacie|Pharmacien, médicaments, ordonnance, droguerie
+optometry|Optique|Opticien, lunettes, lentilles, vue
+medical_laboratory|Laboratoire médical|Laboratoire, analyses, prise de sang, diagnostic
+software_development|Développement logiciel|Programmeur, développeur, code, logiciel
+web_development|Développement web|Site web, webdesign, boutique en ligne, WordPress
+it_support|Support informatique|Assistance, administrateur, PC, ordinateur, imprimante, réseau, serveur
+cybersecurity|Cybersécurité|Sécurité informatique, pare-feu, test d intrusion, sauvegarde
+data_ai|Données et IA|Apprentissage automatique, analyse de données, intelligence artificielle
+cloud_hosting|Cloud et hébergement|Serveur, hébergement, domaine, AWS, Azure
+accounting|Comptabilité|Comptable, fiduciaire, salaires, factures, pièces
+audit_tax|Audit et fiscalité|Réviseur, conseiller fiscal, déclaration, TVA
+legal_services|Services juridiques|Avocat, juriste, étude, notaire, contrat, procès
+hr_recruitment|Recrutement et RH|Recruteur, chasseur de têtes, placement, candidats
+management_consulting|Conseil en gestion|Consultant, stratégie, business plan
+insurance_brokerage|Courtage en assurances|Assurance, courtier, police, sinistre
+real_estate_agency|Agence immobilière|Immobilier, courtier, appartement, maison, terrain
+architecture|Architecture|Architecte, plans, permis de construire, projet
+manufacturing|Production industrielle|Usine, fabrication, industrie, assemblage
+cnc_machining|Usinage CNC|Fraisage, tournage, tour, usinage
+metalwork_welding|Métallerie et soudure|Soudeur, serrurier, acier, portail, garde-corps
+restaurant|Restaurant|Bistrot, pizzeria, cuisine, carte, brasserie
+catering|Traiteur|Banquet, buffet, repas, réception
+hotel|Hôtel|Hébergement, auberge, motel, chambre, réception
+event_management|Organisation d événements|Événementiel, mariage, congrès, scène
+agriculture|Agriculture|Ferme, tracteur, récolte, bétail, champs
+forestry|Sylviculture|Bûcheronnage, bois, forêt, tronçonneuse
+waste_recycling|Déchets et recyclage|Ordures, ferraille, benne, débarras
+renewable_energy|Énergies renouvelables|Photovoltaïque, solaire, éolien, onduleur, pompe à chaleur
+marketing_agency|Agence de marketing|Publicité, SEO, réseaux sociaux, campagne
+graphic_design|Graphisme|Graphiste, logo, affiche, brochure
+photography|Photographie|Photographe, studio photo, mariage, appareil
+video_production|Production vidéo|Vidéaste, tournage, montage, drone
+printing_signage|Impression et enseignes|Imprimerie, bannière, autocollant, enseigne
+wholesale|Commerce de gros|Grossiste, fournisseur, dépôt, marchandise
+ecommerce|Commerce en ligne|Boutique en ligne, e-commerce, commandes, expédition
+security_services|Services de sécurité|Gardiennage, agent, alarme, caméras
+hairdressing|Coiffure|Coiffeur, cheveux, coupe, coloration
+beauty_salon|Institut de beauté|Esthétique, ongles, cils, maquillage
+massage_therapy|Massage|Masseur, bien-être, spa, détente
+fitness_training|Entraînement fitness|Coach personnel, salle de sport, poids, vélo d appartement
+shop_general|Commerce de détail|Magasin, boutique, vente, caisse
+shop_bicycle|Magasin et atelier de vélos|Vélo, bicyclette, VAE, trottinette, chaîne
+shop_auto_parts|Pièces automobiles|Pièces détachées, accessoires, filtre, plaquettes, huile
+shop_hardware|Quincaillerie et bricolage|Bricolage, vis, clous, outillage, ciment
+shop_furniture|Magasin de meubles|Meubles, canapé, armoire, lit, cuisine
+shop_electronics|Électronique et électroménager|Télévision, frigo, lave-linge, téléphone
+shop_clothing|Magasin de vêtements|Vêtements, mode, chaussures, textile
+shop_grocery|Épicerie|Alimentation, supermarché, pain, lait, légumes
+shop_sports|Magasin de sport|Articles de sport, baskets, ski, tente
+shop_books|Librairie et papeterie|Livres, cahiers, stylos, fournitures
+shop_florist|Fleuriste|Fleurs, bouquet, roses, couronne
+shop_pet|Animalerie|Nourriture pour animaux, accessoires, aquarium, cage
+motorcycle_repair|Atelier moto|Moto, scooter, cyclomoteur, casque, chaîne
