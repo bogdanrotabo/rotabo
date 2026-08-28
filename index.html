@@ -3148,9 +3148,11 @@ if ("serviceWorker" in navigator) {
     if (modal.classList.contains("open")) {
       paintTitle();
       paintWhere();
-      // The country names are localised, so the open list is now stale -- and
-      // needs re-sorting, not just relabelling.
+      // Both lists are language-dependent: the country names are localised,
+      // and the city order follows the reader's collation. Either way the
+      // open list is stale and needs re-sorting, not just relabelling.
       if (state.mode === "countries") renderCountries(true);
+      else renderCities(true);
     }
   };
 
@@ -3229,7 +3231,17 @@ if ("serviceWorker" in navigator) {
 
   function renderCities(fresh){
     state.mode = "cities";
-    var list = citiesFor(state.iso);
+    // cities.js stores each country population-first. That is the order that
+    // makes sense to generate and the wrong one to read: nobody scans fifty
+    // towns hoping theirs happens to be large. Sorted alphabetically for
+    // display, on a copy -- the array inside ROTABO_CITIES is shared and has
+    // to keep its own order -- and with the reader's collation, because
+    // alphabetical is not the same list in every language: Swedish sorts
+    // Ä after Z, German sorts it under A.
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    var list = citiesFor(state.iso).slice().sort(function(a,b){
+      return a.localeCompare(b, lang);
+    });
     var q = (search.value || "").trim().toLowerCase();
     // Someone in a country we have no cities for still has to get somewhere:
     // whatever they type is taken as the city name and passed straight on.
