@@ -39,6 +39,11 @@
   .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;max-width:1080px;margin:0 auto;}
   .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.6rem;color:var(--violet-1);text-decoration:none;}
   .brand svg{width:24px;height:31px;filter:drop-shadow(0 4px 10px rgba(124,37,150,.25));}
+  /* The pair is one mark, so the two sit closer to each other than the mark
+     does to the word: a full 12px of flex gap between a logo and its own
+     second half reads as two logos standing side by side. */
+  .brand svg + svg{margin-inline-start:-6px;}
+  .brand svg.mark-gold{filter:drop-shadow(0 4px 10px rgba(196,140,0,.28));}
   .back{color:#5c4d68;text-decoration:none;font-size:.98rem;}
   .back:hover{color:var(--violet-1);}
 
@@ -71,6 +76,14 @@
       <stop offset="55%" stop-color="#a239c9"/>
       <stop offset="100%" stop-color="#7c2596"/>
     </radialGradient>
+    <!-- The same three-stop build as the violet one, in the yellow off the
+         tail of the fish: pale at the centre, the tail colour in the middle,
+         warm amber at the rim where the tail runs into orange. -->
+    <radialGradient id="diamondGold" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#ffe873"/>
+      <stop offset="45%" stop-color="#ffd41a"/>
+      <stop offset="100%" stop-color="#e0a005"/>
+    </radialGradient>
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>
 </svg>
@@ -79,6 +92,7 @@
   <div class="nav-inner">
     <a class="brand" href="/">
       <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      <svg class="mark-gold" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
       Rotabo
     </a>
     <a class="back" href="/">← Back to home</a>
