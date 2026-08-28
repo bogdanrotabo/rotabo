@@ -357,6 +357,14 @@
     "title": "Aqsam Rotabo",
     "copyLink": "Ikkopja l-link"
   },
+  "choose": {
+    "need_title": "Għandi bżonn xi ħaġa",
+    "need_text": "Ippubblika dak li qed tfittex u irċievi offerti minn nies fil-viċin.",
+    "need_btn": "Ippubblika dak li tfittex",
+    "offer_title": "Għandi xi ħaġa x'noffri",
+    "offer_text": "Offri servizz, oġġett jew għajnuna, u ħalli lil min għandu bżonnu jsibek.",
+    "offer_btn": "Ippubblika dak li toffri"
+  },
   "footer": {
     "legal": "Rotabo hija pjattaforma teknoloġika. Is-sewwieqa huma fornituri indipendenti, mhux impjegati ta' Rotabo.",
     "terms": "Termini",

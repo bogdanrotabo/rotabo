@@ -368,6 +368,14 @@
     "title": "Share Rotabo",
     "copyLink": "Copy link"
   },
+  "choose": {
+    "need_title": "I need something",
+    "need_text": "Post what you are looking for and get offers from people nearby.",
+    "need_btn": "Post what you need",
+    "offer_title": "I have something to offer",
+    "offer_text": "Offer a service, an object or a hand, and be found by the people who need it.",
+    "offer_btn": "Post what you offer"
+  },
   "footer": {
     "legal": "Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.",
     "terms": "Terms",

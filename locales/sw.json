@@ -357,6 +357,14 @@
     "title": "Shiriki Rotabo",
     "copyLink": "Nakili kiungo"
   },
+  "choose": {
+    "need_title": "Ninahitaji kitu",
+    "need_text": "Chapisha unachotafuta na upokee ofa kutoka kwa watu wa karibu.",
+    "need_btn": "Chapisha unachotafuta",
+    "offer_title": "Nina kitu cha kutoa",
+    "offer_text": "Toa huduma, kitu au msaada, na wanaohitaji wakupate.",
+    "offer_btn": "Chapisha unachotoa"
+  },
   "footer": {
     "legal": "Rotabo ni jukwaa la teknolojia. Madereva ni watoa huduma huru, si wafanyakazi wa Rotabo.",
     "terms": "Masharti",

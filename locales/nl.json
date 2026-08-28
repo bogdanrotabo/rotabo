@@ -364,6 +364,14 @@
     "title": "Rotabo delen",
     "copyLink": "Link kopiëren"
   },
+  "choose": {
+    "need_title": "Ik heb iets nodig",
+    "need_text": "Plaats wat u zoekt en ontvang aanbiedingen van mensen in de buurt.",
+    "need_btn": "Plaats wat u zoekt",
+    "offer_title": "Ik heb iets aan te bieden",
+    "offer_text": "Bied een dienst, een voorwerp of hulp aan, en word gevonden door wie het nodig heeft.",
+    "offer_btn": "Plaats wat u aanbiedt"
+  },
   "footer": {
     "legal": "Rotabo is een technologieplatform. Chauffeurs zijn zelfstandige aanbieders, geen werknemers van Rotabo.",
     "terms": "Voorwaarden",

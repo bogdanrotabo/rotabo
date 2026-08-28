@@ -357,6 +357,14 @@
     "title": "Roinn Rotabo",
     "copyLink": "Cóipeáil an nasc"
   },
+  "choose": {
+    "need_title": "Tá rud éigin uaim",
+    "need_text": "Cuir suas an rud atá uait agus faigh tairiscintí ó dhaoine in aice láimhe.",
+    "need_btn": "Cuir suas an rud atá uait",
+    "offer_title": "Tá rud éigin agam le tairiscint",
+    "offer_text": "Tairg seirbhís, rud nó lámh chúnta, agus faigheadh na daoine a bhfuil sé uathu thú.",
+    "offer_btn": "Cuir suas an rud a thairgeann tú"
+  },
   "footer": {
     "legal": "Is ardán teicneolaíochta é Rotabo. Is soláthraithe neamhspleácha iad na tiománaithe, ní fostaithe de chuid Rotabo iad.",
     "terms": "Téarmaí",

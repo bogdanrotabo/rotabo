@@ -370,6 +370,14 @@
     "title": "Condividi Rotabo",
     "copyLink": "Copia il link"
   },
+  "choose": {
+    "need_title": "Ho bisogno di qualcosa",
+    "need_text": "Pubblicate quello che cercate e ricevete offerte da persone vicine a voi.",
+    "need_btn": "Pubblica cosa cerchi",
+    "offer_title": "Ho qualcosa da offrire",
+    "offer_text": "Offrite un servizio, un oggetto o una mano, e fatevi trovare da chi ne ha bisogno.",
+    "offer_btn": "Pubblica cosa offri"
+  },
   "footer": {
     "legal": "Rotabo è una piattaforma tecnologica. Gli autisti sono fornitori indipendenti, non dipendenti di Rotabo.",
     "terms": "Termini",

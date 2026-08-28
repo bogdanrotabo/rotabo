@@ -364,6 +364,14 @@
     "title": "Podijeli Rotabo",
     "copyLink": "Kopiraj poveznicu"
   },
+  "choose": {
+    "need_title": "Nešto trebam",
+    "need_text": "Objavite što tražite i primajte ponude od ljudi u blizini.",
+    "need_btn": "Objavi što tražiš",
+    "offer_title": "Imam nešto za ponuditi",
+    "offer_text": "Ponudite uslugu, stvar ili pomoć i neka vas nađu oni kojima treba.",
+    "offer_btn": "Objavi što nudiš"
+  },
   "footer": {
     "legal": "Rotabo je tehnološka platforma. Vozači su neovisni pružatelji usluga, a ne zaposlenici Rotaba.",
     "terms": "Uvjeti",

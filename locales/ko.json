@@ -357,6 +357,14 @@
     "title": "Rotabo 공유",
     "copyLink": "링크 복사"
   },
+  "choose": {
+    "need_title": "무언가가 필요합니다",
+    "need_text": "찾는 것을 올리면 가까운 사람들에게서 제안을 받습니다.",
+    "need_btn": "찾는 것 올리기",
+    "offer_title": "제공할 것이 있습니다",
+    "offer_text": "서비스, 물건 또는 도움을 제공하고 필요한 사람이 당신을 찾게 하세요.",
+    "offer_btn": "제공할 것 올리기"
+  },
   "footer": {
     "legal": "Rotabo는 기술 플랫폼입니다. 드라이버는 독립적인 서비스 제공자이며 Rotabo의 직원이 아닙니다.",
     "terms": "이용약관",

@@ -357,6 +357,14 @@
     "title": "Udostępnij Rotabo",
     "copyLink": "Skopiuj link"
   },
+  "choose": {
+    "need_title": "Czegoś potrzebuję",
+    "need_text": "Napiszcie, czego szukacie, i odbierajcie oferty od ludzi z okolicy.",
+    "need_btn": "Opublikuj, czego szukasz",
+    "offer_title": "Mam coś do zaoferowania",
+    "offer_text": "Zaoferujcie usługę, rzecz albo pomoc, a znajdą was ci, którzy tego potrzebują.",
+    "offer_btn": "Opublikuj, co oferujesz"
+  },
   "footer": {
     "legal": "Rotabo to platforma technologiczna. Kierowcy są niezależnymi usługodawcami, a nie pracownikami Rotabo.",
     "terms": "Regulamin",

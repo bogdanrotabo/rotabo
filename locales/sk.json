@@ -357,6 +357,14 @@
     "title": "Zdieľať Rotabo",
     "copyLink": "Skopírovať odkaz"
   },
+  "choose": {
+    "need_title": "Niečo potrebujem",
+    "need_text": "Napíšte, čo hľadáte, a dostávajte ponuky od ľudí v okolí.",
+    "need_btn": "Zverejniť, čo hľadáte",
+    "offer_title": "Mám čo ponúknuť",
+    "offer_text": "Ponúknite službu, vec alebo pomoc, a nájdu vás tí, ktorí to potrebujú.",
+    "offer_btn": "Zverejniť, čo ponúkate"
+  },
   "footer": {
     "legal": "Rotabo je technologická platforma. Vodiči sú nezávislí poskytovatelia, nie zamestnanci Rotabo.",
     "terms": "Podmienky",

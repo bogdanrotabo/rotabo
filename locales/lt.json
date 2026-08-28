@@ -357,6 +357,14 @@
     "title": "Bendrinti Rotabo",
     "copyLink": "Kopijuoti nuorodą"
   },
+  "choose": {
+    "need_title": "Man kai ko reikia",
+    "need_text": "Paskelbkite, ko ieškote, ir gaukite pasiūlymų iš netoliese esančių žmonių.",
+    "need_btn": "Paskelbk, ko ieškai",
+    "offer_title": "Turiu ką pasiūlyti",
+    "offer_text": "Pasiūlykite paslaugą, daiktą ar pagalbą, ir tegul jus randa tie, kam to reikia.",
+    "offer_btn": "Paskelbk, ką siūlai"
+  },
   "footer": {
     "legal": "Rotabo yra technologijų platforma. Vairuotojai yra nepriklausomi paslaugų teikėjai, o ne Rotabo darbuotojai.",
     "terms": "Sąlygos",

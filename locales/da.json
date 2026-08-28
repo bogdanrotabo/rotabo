@@ -364,6 +364,14 @@
     "title": "Del Rotabo",
     "copyLink": "Kopiér link"
   },
+  "choose": {
+    "need_title": "Jeg har brug for noget",
+    "need_text": "Slå op hvad du søger, og få tilbud fra folk i nærheden.",
+    "need_btn": "Slå op hvad du søger",
+    "offer_title": "Jeg har noget at tilbyde",
+    "offer_text": "Tilbyd en ydelse, en ting eller en hånd, og bliv fundet af dem der har brug for det.",
+    "offer_btn": "Slå op hvad du tilbyder"
+  },
   "footer": {
     "legal": "Rotabo er en teknologiplatform. Chauffører er selvstændige udbydere, ikke ansat af Rotabo.",
     "terms": "Vilkår",

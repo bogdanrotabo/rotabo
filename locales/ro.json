@@ -370,6 +370,14 @@
     "title": "Distribuie Rotabo",
     "copyLink": "Copiază linkul"
   },
+  "choose": {
+    "need_title": "Am nevoie de ceva",
+    "need_text": "Publicați ce căutați și primiți oferte de la oameni din apropiere.",
+    "need_btn": "Publică ce cauți",
+    "offer_title": "Am ceva de oferit",
+    "offer_text": "Oferiți un serviciu, un obiect sau o mână de ajutor, și fiți găsit de cine are nevoie.",
+    "offer_btn": "Publică ce oferi"
+  },
   "footer": {
     "legal": "Rotabo este o platformă tehnologică. Șoferii sunt furnizori independenți, nu angajați ai Rotabo.",
     "terms": "Termeni",

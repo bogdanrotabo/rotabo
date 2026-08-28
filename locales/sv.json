@@ -357,6 +357,14 @@
     "title": "Dela Rotabo",
     "copyLink": "Kopiera länk"
   },
+  "choose": {
+    "need_title": "Jag behöver något",
+    "need_text": "Lägg upp vad du söker och få erbjudanden från folk i närheten.",
+    "need_btn": "Lägg upp vad du söker",
+    "offer_title": "Jag har något att erbjuda",
+    "offer_text": "Erbjud en tjänst, en sak eller en hand, och bli hittad av dem som behöver det.",
+    "offer_btn": "Lägg upp vad du erbjuder"
+  },
   "footer": {
     "legal": "Rotabo är en teknikplattform. Förarna är oberoende leverantörer, inte anställda hos Rotabo.",
     "terms": "Villkor",

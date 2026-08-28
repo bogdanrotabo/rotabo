@@ -357,6 +357,14 @@
     "title": "分享 Rotabo",
     "copyLink": "复制链接"
   },
+  "choose": {
+    "need_title": "我需要一样东西",
+    "need_text": "发布您要找的东西，收到附近人的报价。",
+    "need_btn": "发布您要找的",
+    "offer_title": "我有东西可以提供",
+    "offer_text": "提供一项服务、一件物品或一份帮助，让需要的人找到您。",
+    "offer_btn": "发布您能提供的"
+  },
   "footer": {
     "legal": "Rotabo 是一个技术平台。司机为独立服务提供者，并非 Rotabo 的雇员。",
     "terms": "条款",

@@ -357,6 +357,14 @@
     "title": "Bagikan Rotabo",
     "copyLink": "Salin tautan"
   },
+  "choose": {
+    "need_title": "Saya butuh sesuatu",
+    "need_text": "Pasang apa yang Anda cari dan terima tawaran dari orang di sekitar.",
+    "need_btn": "Pasang apa yang Anda cari",
+    "offer_title": "Saya punya sesuatu untuk ditawarkan",
+    "offer_text": "Tawarkan jasa, barang atau bantuan, dan biar orang yang membutuhkan menemukan Anda.",
+    "offer_btn": "Pasang apa yang Anda tawarkan"
+  },
   "footer": {
     "legal": "Rotabo adalah platform teknologi. Pengemudi adalah penyedia layanan independen, bukan karyawan Rotabo.",
     "terms": "Ketentuan",

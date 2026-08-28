@@ -364,6 +364,14 @@
     "title": "Partager Rotabo",
     "copyLink": "Copier le lien"
   },
+  "choose": {
+    "need_title": "J'ai besoin de quelque chose",
+    "need_text": "Publiez ce que vous cherchez et recevez des offres de personnes proches.",
+    "need_btn": "Publier ce que vous cherchez",
+    "offer_title": "J'ai quelque chose à offrir",
+    "offer_text": "Proposez un service, un objet ou un coup de main, et soyez trouvé par ceux qui en ont besoin.",
+    "offer_btn": "Publier ce que vous offrez"
+  },
   "footer": {
     "legal": "Rotabo est une plateforme technologique. Les chauffeurs sont des prestataires indépendants, non des employés de Rotabo.",
     "terms": "Conditions",

@@ -364,6 +364,14 @@
     "title": "Jaa Rotabo",
     "copyLink": "Kopioi linkki"
   },
+  "choose": {
+    "need_title": "Tarvitsen jotain",
+    "need_text": "Kerro mitä etsit ja saat tarjouksia lähellä olevilta.",
+    "need_btn": "Kerro mitä etsit",
+    "offer_title": "Minulla on jotain tarjottavaa",
+    "offer_text": "Tarjoa palvelua, tavaraa tai kättä, ja anna tarvitsevien löytää sinut.",
+    "offer_btn": "Kerro mitä tarjoat"
+  },
   "footer": {
     "legal": "Rotabo on teknologia-alusta. Kuljettajat ovat itsenäisiä palveluntarjoajia, eivät Rotabon työntekijöitä.",
     "terms": "Käyttöehdot",

@@ -357,6 +357,14 @@
     "title": "Rotabo megosztása",
     "copyLink": "Link másolása"
   },
+  "choose": {
+    "need_title": "Kell nekem valami",
+    "need_text": "Írja meg, mit keres, és kapjon ajánlatokat a közelben lévőktől.",
+    "need_btn": "Tedd közzé, mit keresel",
+    "offer_title": "Van mit ajánlanom",
+    "offer_text": "Ajánljon szolgáltatást, tárgyat vagy segítséget, és találják meg azok, akiknek kell.",
+    "offer_btn": "Tedd közzé, mit kínálsz"
+  },
   "footer": {
     "legal": "A Rotabo egy technológiai platform. A sofőrök független szolgáltatók, nem a Rotabo alkalmazottai.",
     "terms": "Feltételek",

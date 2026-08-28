@@ -357,6 +357,14 @@
     "title": "Kopīgojiet Rotabo",
     "copyLink": "Kopēt saiti"
   },
+  "choose": {
+    "need_title": "Man kaut kas ir vajadzīgs",
+    "need_text": "Publicējiet, ko meklējat, un saņemiet piedāvājumus no cilvēkiem tuvumā.",
+    "need_btn": "Publicē, ko meklē",
+    "offer_title": "Man ir ko piedāvāt",
+    "offer_text": "Piedāvājiet pakalpojumu, lietu vai palīdzību, un lai jūs atrod tie, kam tas vajadzīgs.",
+    "offer_btn": "Publicē, ko piedāvā"
+  },
   "footer": {
     "legal": "Rotabo ir tehnoloģiju platforma. Šoferi ir neatkarīgi pakalpojumu sniedzēji, nevis Rotabo darbinieki.",
     "terms": "Noteikumi",

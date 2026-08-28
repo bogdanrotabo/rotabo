@@ -357,6 +357,14 @@
     "title": "Kongsi Rotabo",
     "copyLink": "Salin pautan"
   },
+  "choose": {
+    "need_title": "Saya perlukan sesuatu",
+    "need_text": "Siarkan apa yang anda cari dan terima tawaran daripada orang berdekatan.",
+    "need_btn": "Siarkan apa yang anda cari",
+    "offer_title": "Saya ada sesuatu untuk ditawarkan",
+    "offer_text": "Tawarkan perkhidmatan, barang atau bantuan, dan biar orang yang perlukannya menemui anda.",
+    "offer_btn": "Siarkan apa yang anda tawarkan"
+  },
   "footer": {
     "legal": "Rotabo ialah platform teknologi. Pemandu adalah penyedia perkhidmatan bebas, bukan pekerja Rotabo.",
     "terms": "Terma",

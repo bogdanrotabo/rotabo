@@ -364,6 +364,14 @@
     "title": "Jagage Rotabot",
     "copyLink": "Kopeeri link"
   },
+  "choose": {
+    "need_title": "Mul on midagi vaja",
+    "need_text": "Pange kirja, mida otsite, ja saage pakkumisi lähedalasuvatelt inimestelt.",
+    "need_btn": "Pane kirja, mida otsid",
+    "offer_title": "Mul on midagi pakkuda",
+    "offer_text": "Pakkuge teenust, eset või abi, ja laske end leida neil, kes seda vajavad.",
+    "offer_btn": "Pane kirja, mida pakud"
+  },
   "footer": {
     "legal": "Rotabo on tehnoloogiaplatvorm. Juhid on sõltumatud teenusepakkujad, mitte Rotabo töötajad.",
     "terms": "Tingimused",

@@ -357,6 +357,14 @@
     "title": "Rotabo'yu paylaş",
     "copyLink": "Bağlantıyı kopyala"
   },
+  "choose": {
+    "need_title": "Bir şeye ihtiyacım var",
+    "need_text": "Aradığınızı yazın, yakınınızdaki insanlardan teklif alın.",
+    "need_btn": "Aradığınızı yayınlayın",
+    "offer_title": "Sunacak bir şeyim var",
+    "offer_text": "Bir hizmet, bir eşya ya da yardım sunun, ihtiyacı olanlar sizi bulsun.",
+    "offer_btn": "Sunduğunuzu yayınlayın"
+  },
   "footer": {
     "legal": "Rotabo bir teknoloji platformudur. Sürücüler bağımsız hizmet sağlayıcılardır, Rotabo çalışanı değildir.",
     "terms": "Koşullar",

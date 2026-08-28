@@ -201,6 +201,39 @@
     overflow-wrap:break-word;
     font-weight:800;color:var(--violet-1);
   }
+  /* The two doors under the free-signup line. Same card language as the
+     twelve below -- bg-card on a border -- so they read as the same family
+     rather than as a banner. Two columns until 560px, where two columns
+     would leave four words per line. */
+  .doors{
+    max-width:720px;margin:0 auto 26px;
+    display:grid;grid-template-columns:1fr 1fr;gap:16px;
+  }
+  .door{
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:20px;padding:24px 20px;
+    text-align:center;text-decoration:none;
+  }
+  .door-icon{
+    width:54px;height:54px;border-radius:50%;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .door-icon svg{width:26px;height:26px;}
+  .door-title{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;line-height:1.2;}
+  .door-text{font-size:.95rem;color:var(--text-body);line-height:1.45;}
+  .door-btn{
+    margin-top:auto;width:100%;box-sizing:border-box;
+    padding:13px 18px;border-radius:12px;
+    color:#fff;font-weight:800;font-size:.98rem;line-height:1.25;
+  }
+  /* The diamond's two ends: dark for the side that is asking, light for the
+     side that is giving. */
+  .door-need  .door-icon, .door-need  .door-btn{background:var(--diamond-b);}
+  .door-offer .door-icon, .door-offer .door-btn{background:var(--diamond-a);}
+  .door-need  .door-title{color:var(--diamond-b);}
+  .door-offer .door-title{color:var(--diamond-a);}
+  @media(max-width:560px){ .doors{grid-template-columns:1fr;} }
   /* Main partner band -- see the comment on its markup in the hero.
      The label was 2.7rem, three times the origin badge, from back when the
      band opened the page and had to carry it alone. It does not any more:
@@ -864,12 +897,34 @@
      gets for free. Background art rather than an element, so it cannot take
      the click off the input -- the whole field stays clickable and the list
      opens exactly as before. The padding keeps long names off it. */
-  input[list]{
+  .has-cascade{
     padding-right:38px;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%237c2d9c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat:no-repeat;
     background-position:right 14px center;
   }
+  /* The list under a country or city field. Absolute inside its own wrapper
+     so it lifts over what follows instead of shoving the form down a line on
+     every keystroke, and so it lines up under its own field rather than under
+     whatever flex row happens to contain it. */
+  .cascade-wrap{position:relative;display:block;}
+  .cascade-wrap > input{width:100%;box-sizing:border-box;}
+  .cascade{
+    position:absolute;left:0;right:0;top:100%;z-index:30;
+    max-height:260px;overflow-y:auto;
+    margin-top:4px;padding:4px;
+    background:#fff;border:1px solid var(--border);border-radius:12px;
+    box-shadow:0 10px 30px rgba(58,22,80,.16);
+  }
+  .cascade[hidden]{display:none;}
+  .cascade-row{
+    display:block;width:100%;text-align:left;
+    padding:9px 12px;border:none;background:none;border-radius:8px;
+    font:inherit;font-size:.95rem;color:var(--text-dark);cursor:pointer;
+    animation:picker-cascade .16s ease-out backwards;
+    animation-delay:calc(var(--i) * 12ms);
+  }
+  .cascade-row:hover, .cascade-row:focus{background:var(--bg-card);}
   .form-check{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
   .form-check input{margin-top:3px;flex-shrink:0;}
   .form-check label{font-size:.92rem;line-height:1.4;color:var(--text-body);}
@@ -923,18 +978,6 @@
   </defs>
 </svg>
 
-<!-- Filled at runtime in the reader's language. It shipped as two hundred
-     English names in the markup, which meant an Italian visitor picking
-     their country had to translate it in their head first. -->
-<datalist id="countryList"></datalist>
-
-<!-- Filled at runtime from ROTABO_CITIES for whichever country the visitor
-     is in or typed. It shipped with three hundred hand-written capitals
-     inline, which was eight kilobytes on every page load and the wrong list
-     for everyone: nobody needs Ulaanbaatar suggested while filling in a
-     form about Frankfurt. -->
-<datalist id="cityList"></datalist>
-
 <header>
   <div class="nav-inner">
     <div class="brand">
@@ -979,6 +1022,29 @@
        say "free" on purpose: signing up is free and so is posting, and the
        two were being read as one. -->
   <p class="free-line" data-i18n="hero.free_line">Free to join, free to post &mdash; what you need, or what you offer.</p>
+
+  <!-- The two doors. A stranger who has just read that posting is free still
+       has to work out which of the twelve cards further down is theirs, and
+       there are only two things they can be here for. Both land on the cards;
+       the split is for the reader, not for the routing.
+       Both violet. The sketch this came from had one purple card and one
+       green one, but green is not a Rotabo colour: the diamond is a single
+       hue running #c264e0 to #7c2596, so the two cards take its two ends and
+       are told apart by depth rather than by hue. -->
+  <div class="doors">
+    <a class="door door-need" href="#categories">
+      <span class="door-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></span>
+      <span class="door-title" data-i18n="choose.need_title">I need something</span>
+      <span class="door-text" data-i18n="choose.need_text">Post what you are looking for and get offers from people nearby.</span>
+      <span class="door-btn" data-i18n="choose.need_btn">Post what you need</span>
+    </a>
+    <a class="door door-offer" href="#categories">
+      <span class="door-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M2 7h20v4H2z"/><path d="M12 7v14"/><path d="M12 7S9.5 3 7.5 3.5 6 7 12 7z"/><path d="M12 7s2.5-4 4.5-3.5S18 7 12 7z"/></svg></span>
+      <span class="door-title" data-i18n="choose.offer_title">I have something to offer</span>
+      <span class="door-text" data-i18n="choose.offer_text">Offer a service, an object or a hand, and be found by the people who need it.</span>
+      <span class="door-btn" data-i18n="choose.offer_btn">Post what you offer</span>
+    </a>
+  </div>
 
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
@@ -1381,8 +1447,8 @@
       <input type="email" id="agEmail" maxlength="160" required data-i18n-placeholder="agent.email_placeholder" placeholder="Email" autocomplete="email">
     </div>
     <div class="board-row">
-      <input type="text" id="agCountry" maxlength="80" data-i18n-placeholder="agent.country_placeholder" placeholder="Country" autocomplete="country-name" list="countryList">
-      <input type="text" id="agCity" maxlength="80" data-i18n-placeholder="agent.city_placeholder" placeholder="City" autocomplete="address-level2" list="cityList">
+      <input type="text" id="agCountry" maxlength="80" data-i18n-placeholder="agent.country_placeholder" placeholder="Country" autocomplete="country-name" class="has-cascade">
+      <input type="text" id="agCity" maxlength="80" data-i18n-placeholder="agent.city_placeholder" placeholder="City" autocomplete="address-level2" class="has-cascade">
     </div>
     <textarea id="agMessage" maxlength="2000" data-i18n-placeholder="agent.message_placeholder" placeholder="What would you start with?"></textarea>
     <div class="board-actions">
@@ -1439,11 +1505,11 @@
       </div>
       <div class="form-field">
         <label for="fd_country" data-i18n="find_form.country_label">Country</label>
-        <input type="text" id="fd_country" name="country" required autocomplete="country-name" list="countryList">
+        <input type="text" id="fd_country" name="country" required autocomplete="country-name" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="fd_city" data-i18n="find_form.city_label">City / location</label>
-        <input type="text" id="fd_city" name="city" required autocomplete="address-level2" list="cityList">
+        <input type="text" id="fd_city" name="city" required autocomplete="address-level2" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="fd_phone" data-i18n="find_form.phone_label">Phone number</label>
@@ -1491,11 +1557,11 @@
       </div>
       <div class="form-field">
         <label for="bd_country" data-i18n="drive_form.country_label">Country</label>
-        <input type="text" id="bd_country" name="country" required autocomplete="country-name" list="countryList">
+        <input type="text" id="bd_country" name="country" required autocomplete="country-name" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="bd_city" data-i18n="drive_form.city_label">City / area of activity</label>
-        <input type="text" id="bd_city" name="city" required autocomplete="address-level2" list="cityList">
+        <input type="text" id="bd_city" name="city" required autocomplete="address-level2" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="bd_phone" data-i18n="drive_form.phone_label">Phone number</label>
@@ -1563,11 +1629,11 @@
       </div>
       <div class="form-field">
         <label for="gl_country" data-i18n="generic_form.country_label">Country</label>
-        <input type="text" id="gl_country" name="country" required autocomplete="country-name" list="countryList">
+        <input type="text" id="gl_country" name="country" required autocomplete="country-name" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="gl_city" data-i18n="generic_form.city_label">City / area</label>
-        <input type="text" id="gl_city" name="city" required autocomplete="address-level2" list="cityList">
+        <input type="text" id="gl_city" name="city" required autocomplete="address-level2" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="gl_phone" data-i18n="generic_form.phone_label">Phone number</label>
@@ -1636,11 +1702,11 @@
       </div>
       <div class="form-field">
         <label for="sp_country" data-i18n="generic_form.country_label">Country</label>
-        <input type="text" id="sp_country" name="country" required autocomplete="country-name" list="countryList">
+        <input type="text" id="sp_country" name="country" required autocomplete="country-name" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="sp_city" data-i18n="generic_form.city_label">City / area</label>
-        <input type="text" id="sp_city" name="city" required autocomplete="address-level2" list="cityList">
+        <input type="text" id="sp_city" name="city" required autocomplete="address-level2" class="has-cascade">
       </div>
       <div class="form-field">
         <label for="sp_phone" data-i18n="generic_form.phone_label">Phone number</label>
@@ -1875,115 +1941,144 @@
   wirePhoneCountry("gl_country", "gl_phone");
   wirePhoneCountry("sp_country", "sp_phone");
 
-  // The city fields in these forms and the "See who is here" picker used to
-  // carry two different city datasets. This file held CITY_BY_COUNTRY -- a
-  // hand-kept map of about forty cities per country, keyed by English
-  // country name -- while cities.js held ninety-nine per country keyed by
-  // ISO code. Seventy-eight kilobytes of index.html, shipped to every
-  // visitor on every load, to say a worse version of something already
-  // written down once. Both that map and the static <datalist> under it are
-  // gone; the list now fills from ROTABO_CITIES like everything else.
-  function citiesForCountryName(name){
-    var C = window.RotaboCountries;
-    if (!C || !window.ROTABO_CITIES) return null;
-    var iso = C.isoFor(name || "");
-    if (!iso) return null;
-    return window.ROTABO_CITIES[iso] || null;
+  // The country and city fields used a <datalist>. It was the wrong tool for
+  // the job: a datalist is an autocomplete hint, not a menu. The browser
+  // decides when to show it, clicking a field that already holds a value
+  // shows the one matching row, and none of that is controllable from here.
+  // The chevron promised a list that frequently never arrived. So the list
+  // is built and owned by the page: it opens on focus, filters as you type,
+  // and fills the field when a row is clicked. The input stays a plain text
+  // box underneath, so a village in no list at all is still just typed in.
+  function uiLang(){
+    return document.documentElement.getAttribute("lang") || "en";
   }
 
-  // Rebuilds the shared #cityList to one country's cities. With no match the
-  // list is emptied rather than refilled with a global fallback: the field
-  // is a plain text input either way, and handing someone in an
-  // unrecognised country a list of foreign capitals is worse than handing
-  // them nothing.
-  function narrowCityListToCountry(countryValue){
-    var cityList = document.getElementById("cityList");
-    if (!cityList) return;
-    var list = citiesForCountryName(countryValue);
-    if (!list) { cityList.innerHTML = ""; return; }
-    cityList.innerHTML = list.map(function(city){
-      return '<option value="' + city.replace(/"/g, "&quot;") + '">';
-    }).join("");
+  function localizedCountries(){
+    var C = window.RotaboCountries;
+    if (!C) return [];
+    var lang = uiLang();
+    return C.allIso()
+      .map(function(iso){ return C.nameForIsoIn(iso, lang); })
+      .filter(Boolean)
+      .sort(function(a, b){ return a.localeCompare(b, lang); });
+  }
+
+  function citiesForCountryName(name){
+    var C = window.RotaboCountries;
+    if (!C || !window.ROTABO_CITIES) return [];
+    var iso = C.isoFor(name || "");
+    if (!iso) return [];
+    var lang = uiLang();
+    return (window.ROTABO_CITIES[iso] || []).slice()
+      .sort(function(a, b){ return a.localeCompare(b, lang); });
+  }
+
+  // Typed text matches as a prefix first and anywhere second: "fra" should
+  // reach Frankfurt before Bad Kreuznach-Frauenberg, but should still reach
+  // it. Accents are folded, so "koln" finds Köln -- the person typing is
+  // often on a keyboard that cannot produce the letter they are looking for.
+  function fold(s){
+    return s.toLowerCase().normalize ? s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") : s.toLowerCase();
+  }
+  function rank(list, q){
+    if (!q) return list;
+    var needle = fold(q), starts = [], holds = [];
+    list.forEach(function(item){
+      var at = fold(item).indexOf(needle);
+      if (at === 0) starts.push(item);
+      else if (at > 0) holds.push(item);
+    });
+    return starts.concat(holds);
+  }
+
+  function attachCascade(input, source){
+    if (!input) return;
+    // Wrapped rather than hung off the existing parent: in .board-row the
+    // parent is a flex row holding three fields, and an absolute panel there
+    // would line up under the row instead of under the field it belongs to.
+    var wrap = document.createElement("span");
+    wrap.className = "cascade-wrap";
+    input.parentNode.insertBefore(wrap, input);
+    wrap.appendChild(input);
+    var panel = document.createElement("div");
+    panel.className = "cascade";
+    panel.hidden = true;
+    wrap.appendChild(panel);
+    input.setAttribute("autocomplete", "off");
+
+    function close(){ panel.hidden = true; }
+    // showAll on focus and on click, filtered on input. Opening a field that
+    // already holds "Germania" and being shown Germania and nothing else is
+    // useless: the only reason to click a filled field is to change it. The
+    // value still answers "what if I type nothing" -- it is in the box.
+    function draw(showAll){
+      var typed = showAll ? "" : input.value.trim();
+      var items = rank(source(), typed).slice(0, 300);
+      if (!items.length) { close(); return; }
+      panel.innerHTML = "";
+      items.forEach(function(name, i){
+        var row = document.createElement("button");
+        row.type = "button";
+        row.className = "cascade-row";
+        row.textContent = name;
+        row.style.setProperty("--i", String(Math.min(i, 18)));
+        // mousedown, not click: blur lands first on a click and would close
+        // the panel out from under the pointer, so the click never arrives.
+        if (name === input.value.trim()) row.setAttribute("aria-current", "true");
+        row.addEventListener("mousedown", function(e){
+          e.preventDefault();
+          input.value = name;
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+          close();
+        });
+        panel.appendChild(row);
+      });
+      panel.hidden = false;
+      // Scrolled to whatever is already chosen rather than to the top, so
+      // opening a filled field lands on the current answer instead of on A.
+      var here = panel.querySelector("[aria-current]");
+      panel.scrollTop = here ? Math.max(0, here.offsetTop - 80) : 0;
+    }
+
+    input.addEventListener("focus", function(){ draw(true); });
+    input.addEventListener("click", function(){ draw(true); });
+    input.addEventListener("input", function(){ draw(false); });
+    input.addEventListener("keydown", function(e){ if (e.key === "Escape") close(); });
+    // Delayed, so a mousedown on a row still gets its turn on browsers where
+    // the ordering is less generous than Chrome's.
+    input.addEventListener("blur", function(){ setTimeout(close, 150); });
   }
 
   // Everyone who opens one of these forms is somewhere, and Cloudflare
-  // already said where on the way in, so the country is filled and the city
-  // list narrowed before the first keystroke -- the same detection the
-  // picker uses, not a second copy of it. Prefilled, never locked: both stay
-  // ordinary text inputs, so anyone abroad, behind a VPN, or listing for
-  // somewhere else simply types over it. cities.js is loaded on demand, so
-  // this is also where the forms pull it in.
+  // already said where on the way in, so the country is filled before the
+  // first keystroke -- the same detection the picker uses, not a second copy.
+  // Prefilled, never locked: it stays an ordinary text input, so anyone
+  // abroad, behind a VPN, or listing for somewhere else types over it.
+  // cities.js is loaded on demand, so this is where the forms pull it in.
   function prefillLocation(id){
     var box = document.getElementById(id);
     var geo = window.RotaboGeo;
     if (!box || !geo) return;
     var countryInput = box.querySelector('input[name="country"]');
-    var cityInput = box.querySelector('input[name="city"]');
-    if (!countryInput && !cityInput) return;
+    if (!countryInput) return;
     geo.loadCities()
       .then(function(){ return geo.detectCountry(); })
       .then(function(cc){
         var C = window.RotaboCountries;
-        var lang = document.documentElement.getAttribute("lang") || "en";
-        var name = (cc && C) ? C.nameForIsoIn(cc, lang) : "";
-        if (countryInput && !countryInput.value.trim() && name) countryInput.value = name;
-        narrowCityListToCountry(countryInput ? countryInput.value : name);
+        if (!cc || !C) return;
+        if (!countryInput.value.trim()) countryInput.value = C.nameForIsoIn(cc, uiLang());
       })
-      .catch(function(){ /* offline or blocked: both fields still work by hand */ });
+      .catch(function(){ /* offline or blocked: the fields still work by hand */ });
   }
-  function wireCountryCity(countryId){
-    var countryInput = document.getElementById(countryId);
-    if (!countryInput) return;
-    countryInput.addEventListener("input", function(){ narrowCityListToCountry(countryInput.value); });
-  }
-  wireCountryCity("fd_country");
-  wireCountryCity("bd_country");
-  wireCountryCity("gl_country");
-  wireCountryCity("sp_country");
 
-  // The country list is shown, not stored, so it is built in the reader's
-  // language. Rebuilt on a language switch as well: a datalist stays in the
-  // DOM, so without this it would keep whichever language it was born in.
-  // The sort is the reader's too -- alphabetical is not one order.
-  function refreshCountryList(){
-    var dl = document.getElementById("countryList");
-    var C = window.RotaboCountries;
-    if (!dl || !C) return;
-    var lang = document.documentElement.getAttribute("lang") || "en";
-    dl.innerHTML = C.allIso()
-      .map(function(iso){ return C.nameForIsoIn(iso, lang); })
-      .filter(Boolean)
-      .sort(function(a, b){ return a.localeCompare(b, lang); })
-      .map(function(name){ return '<option value="' + name.replace(/"/g, "&quot;") + '">'; })
-      .join("");
-  }
-  refreshCountryList();
-  var afterTranslateBeforeCountries = window.__afterTranslate;
-  window.__afterTranslate = function(d){
-    if (afterTranslateBeforeCountries) { try { afterTranslateBeforeCountries(d); } catch (e) {} }
-    refreshCountryList();
-  };
-
-  // Browsers only pop open a <datalist>'s full option list when the
-  // field is empty (or partially typed) -- once it already holds a
-  // complete value, clicking back in just shows that one match, so
-  // changing your mind meant deleting everything first. Clearing the
-  // field on focus brings the full list straight back; if the visitor
-  // clicks away without picking anything new, the original value is
-  // restored so nothing is lost.
-  function wireReopenOnFocus(inputId){
-    var input = document.getElementById(inputId);
-    if (!input) return;
-    var previousValue = "";
-    input.addEventListener("focus", function(){
-      previousValue = input.value;
-      input.value = "";
-    });
-    input.addEventListener("blur", function(){
-      if (!input.value.trim() && previousValue) input.value = previousValue;
-    });
-  }
-  ["fd_country", "fd_city", "bd_country", "bd_city", "gl_country", "gl_city", "sp_country", "sp_city"].forEach(wireReopenOnFocus);
+  [["fd_country", "fd_city"], ["bd_country", "bd_city"],
+   ["gl_country", "gl_city"], ["sp_country", "sp_city"],
+   ["agCountry", "agCity"]].forEach(function(pair){
+    var country = document.getElementById(pair[0]);
+    var city = document.getElementById(pair[1]);
+    attachCascade(country, localizedCountries);
+    attachCascade(city, function(){ return citiesForCountryName(country ? country.value : ""); });
+  });
 
   var MODAL_GA_EVENTS = { findDriverModal: "cta_find_driver_click", becomeDriverModal: "cta_become_driver_click", sponsorModal: "cta_sponsor_click" };
   // The four sponsorship Payment Links and their list prices. The tier

@@ -357,6 +357,14 @@
     "title": "Chia sẻ Rotabo",
     "copyLink": "Sao chép liên kết"
   },
+  "choose": {
+    "need_title": "Tôi cần một thứ gì đó",
+    "need_text": "Đăng điều bạn đang tìm và nhận đề nghị từ những người ở gần.",
+    "need_btn": "Đăng điều bạn cần",
+    "offer_title": "Tôi có thứ để cho",
+    "offer_text": "Cung cấp một dịch vụ, một món đồ hay một sự giúp đỡ, và để người cần tìm thấy bạn.",
+    "offer_btn": "Đăng điều bạn cung cấp"
+  },
   "footer": {
     "legal": "Rotabo là một nền tảng công nghệ. Tài xế là nhà cung cấp dịch vụ độc lập, không phải nhân viên của Rotabo.",
     "terms": "Điều khoản",

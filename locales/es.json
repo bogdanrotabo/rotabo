@@ -364,6 +364,14 @@
     "title": "Compartir Rotabo",
     "copyLink": "Copiar enlace"
   },
+  "choose": {
+    "need_title": "Necesito algo",
+    "need_text": "Publiquen lo que buscan y reciban ofertas de gente cercana.",
+    "need_btn": "Publica lo que buscas",
+    "offer_title": "Tengo algo que ofrecer",
+    "offer_text": "Ofrezcan un servicio, un objeto o una mano, y que los encuentre quien lo necesita.",
+    "offer_btn": "Publica lo que ofreces"
+  },
   "footer": {
     "legal": "Rotabo es una plataforma tecnológica. Los conductores son proveedores independientes, no empleados de Rotabo.",
     "terms": "Términos",

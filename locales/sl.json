@@ -357,6 +357,14 @@
     "title": "Deli Rotabo",
     "copyLink": "Kopiraj povezavo"
   },
+  "choose": {
+    "need_title": "Nekaj potrebujem",
+    "need_text": "Objavite, kaj iščete, in prejmite ponudbe ljudi v bližini.",
+    "need_btn": "Objavi, kaj iščeš",
+    "offer_title": "Nekaj lahko ponudim",
+    "offer_text": "Ponudite storitev, stvar ali pomoč in naj vas najdejo tisti, ki to potrebujejo.",
+    "offer_btn": "Objavi, kaj ponujaš"
+  },
   "footer": {
     "legal": "Rotabo je tehnološka platforma. Vozniki so neodvisni ponudniki storitev, ne zaposleni pri Rotabo.",
     "terms": "Pogoji",
