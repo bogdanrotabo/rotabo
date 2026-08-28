@@ -4012,8 +4012,24 @@ if ("serviceWorker" in navigator) {
   var bar = document.querySelector(".sharebar");
   if (!bar || !bar.querySelector) return;
 
-  var SITE = "https://rotabo.app/";
-  var PITCH = "People need things. People have things. Rotabo connects them.";
+  var BIZ = document.documentElement.getAttribute("data-mode") === "business";
+  var SITE = BIZ ? "https://rotabo.app/business.html" : "https://rotabo.app/";
+  var PITCH = BIZ
+    ? "People need companies. People have companies. Rotabo connects them."
+    : "People need things. People have things. Rotabo connects them.";
+
+  /* The nine share links in the markup carry the personal URL and pitch,
+     written for the page they were written on. On the business side each
+     one is rewritten to carry this page: a company sharing the business
+     site should not be inviting people to the consumer one. */
+  if (BIZ) {
+    [].slice.call(bar.querySelectorAll("a.sb-btn[href]")).forEach(function(a){
+      var h = a.getAttribute("href");
+      h = h.split("https%3A%2F%2Frotabo.app%2F").join("https%3A%2F%2Frotabo.app%2Fbusiness.html");
+      h = h.split(encodeURIComponent("People need things. People have things. Rotabo connects them.")).join(encodeURIComponent(PITCH));
+      a.setAttribute("href", h);
+    });
+  }
 
   /* Hidden in the markup and revealed only where it exists: a sheet button on
      a browser without one is a button that does nothing. */
