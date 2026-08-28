@@ -88,22 +88,30 @@
     background:#fff;border:1px solid var(--border);border-radius:16px;
     padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
   }
+  .request-info{min-width:0;overflow-wrap:anywhere;}
   .request-info .name{font-weight:800;color:var(--text-dark);font-size:1.05rem;}
   .request-info .city{color:var(--text-eyebrow);font-size:.9rem;margin-top:3px;}
   .request-info .address{color:var(--text-body);font-size:.9rem;margin-top:3px;}
   .request-info .note{color:var(--text-body);font-size:.92rem;margin-top:4px;}
-  .contact-actions{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;}
+  /* flex-shrink:0 used to sit here and on both buttons, so nothing in this
+     row could give. On a 375px screen the Russian label -- "Электронная
+     почта" -- made the row wider than the card and it hung twenty-one pixels
+     outside it, taking the whole page into sideways scrolling. flex-wrap was
+     already here and never got its chance: a row that cannot shrink is never
+     too narrow to wrap. min-width:0 is what lets a flex child actually go
+     below its content width. */
+  .contact-actions{display:flex;gap:8px;flex-wrap:wrap;min-width:0;}
   .call-btn{
     display:inline-flex;align-items:center;gap:8px;
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
     border:none;border-radius:12px;padding:11px 20px;
-    font-weight:800;font-size:.95rem;text-decoration:none;flex-shrink:0;
+    font-weight:800;font-size:.95rem;text-decoration:none;max-width:100%;overflow-wrap:anywhere;
   }
   .email-btn{
     display:inline-flex;align-items:center;gap:8px;
     background:#fff;border:1px solid var(--border);color:var(--text-dark);
     border-radius:12px;padding:11px 20px;
-    font-weight:800;font-size:.95rem;text-decoration:none;flex-shrink:0;
+    font-weight:800;font-size:.95rem;text-decoration:none;max-width:100%;overflow-wrap:anywhere;
   }
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:24px 0;}
 
