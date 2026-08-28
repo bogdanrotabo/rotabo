@@ -195,33 +195,31 @@
      very long word. */
   .free-line{
     max-width:720px;
-    /* 34px, not the 16px it shipped with: the partner card underneath used
-       to be a white box with a border, and that border was what separated
-       two blocks of violet 800-weight text. With the card gone they ran
-       together into one paragraph the eye could not split. */
-    margin:0 auto 34px;
+    margin:0 auto 26px;
     font-size:clamp(1.6rem, 5.6vw, 2.7rem);
     line-height:1.14;letter-spacing:-.01em;
     overflow-wrap:break-word;
     font-weight:800;color:var(--violet-1);
   }
   /* Main partner band -- see the comment on its markup in the hero.
-     The label is three times the size of the origin badge right below it
-     (0.9rem -> 2.7rem), which also makes it larger than the tagline. That
-     is deliberate and was asked for: it is the first thing the page says.
-     It is a flat 2.7rem rather than a clamp() so the ratio holds on a
-     phone too -- a clamp that fits everything on one line dropped it to
-     1.7x there, which is not what "three times bigger" means. Measured at
-     375px in the eleven longest locales: every one either fits on one
-     line or wraps to two, and none overflows. break-word is the seatbelt
-     for a locale added later with one very long word. */
+     The label was 2.7rem, three times the origin badge, from back when the
+     band opened the page and had to carry it alone. It does not any more:
+     it sits under the share bar, and the free-signup line above says the
+     thing that actually matters. Halved to 1.35rem, which is also what
+     fixes a phone -- the free line shrinks with the viewport and this
+     label, a flat rem, did not, so the sponsor slot shouted louder than
+     the offer on exactly the screens where space is scarce. Still flat
+     rather than clamp(): "Main Partner" is two words, and the longest
+     translation of it, the Bengali one, holds one line at this size.
+     break-word is the seatbelt for a locale added later with one very
+     long word. */
   .main-partner{
     max-width:720px;
-    margin:0 auto 26px;
+    margin:30px auto 0;
   }
   .mp-label{
     margin:0;
-    font-size:2.7rem;
+    font-size:1.35rem;
     line-height:1.15;letter-spacing:-.01em;
     overflow-wrap:break-word;
     font-weight:800;color:var(--violet-1);
@@ -966,32 +964,6 @@
        two were being read as one. -->
   <p class="free-line" data-i18n="hero.free_line">Free to join, free to post &mdash; what you need, or what you offer.</p>
 
-  <!-- Main partner band. Second on the page, under the free-signup line and
-       deliberately larger than the tagline: it is the first credibility
-       signal a stranger gets, and the only one that comes from someone
-       other than us. It carried a white card with a border until the white
-       was the loudest thing in a violet page; the label and the TopTen
-       block each carry their own weight, so the card was doing nothing but
-       shouting. Rendered from sponsors_public where tier = 'principal',
-       and those rows are filtered out of the supporters list further
-       down so a main partner is never shown twice. Until one exists the
-       invitation line stands in its place -- an empty heading would read
-       as broken, and a heading with nothing under it would imply a
-       partner we do not have. -->
-  <div class="main-partner">
-    <p class="mp-label" data-i18n="main_partner.label">Main Partner</p>
-    <div class="mp-list" id="mainPartnerList" hidden></div>
-    <!-- TopTen.one holds the band until a paying partner takes it. Its own
-         wordmark on its own ground, linking straight out to the site; the
-         invitation below is hidden while the place is occupied, and
-         renderMainPartner() hides this the moment a real principal sponsor
-         exists, so the band never shows two. -->
-    <a class="mp-topten" id="mainPartnerTopten" href="https://topten.one" target="_blank" rel="noopener">
-      <span class="mp-tt-mark">TopTen<b>.one</b></span>
-      <span class="mp-tt-tag">Be the one.</span>
-    </a>
-    <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
-  </div>
   <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
   <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
   <!-- Word for word the marketplace heading further down the page, so the
@@ -1031,6 +1003,33 @@
     <a class="sb-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Frotabo.app%2F&title=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them." target="_blank" rel="noopener">Reddit</a>
     <a class="sb-btn" href="mailto:?subject=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.&body=People%20need%20things.%20People%20have%20things.%20Rotabo%20connects%20them.%0A%0Ahttps%3A%2F%2Frotabo.app%2F">Email</a>
     <button class="sb-btn" type="button" data-share-sheet hidden>More</button>
+  </div>
+
+  <!-- Main partner band, under the share bar. It opened the page until it
+       was pointed out that this puts a sponsor slot above the offer itself:
+       a stranger has to know what the site is and what it costs before the
+       name of someone backing it can mean anything. It also carried a white
+       bordered card until that white was the loudest thing on a violet
+       page -- the label and the TopTen block each bring their own ground,
+       so the card was only shouting. Rendered from sponsors_public where tier = 'principal',
+       and those rows are filtered out of the supporters list further
+       down so a main partner is never shown twice. Until one exists the
+       invitation line stands in its place -- an empty heading would read
+       as broken, and a heading with nothing under it would imply a
+       partner we do not have. -->
+  <div class="main-partner">
+    <p class="mp-label" data-i18n="main_partner.label">Main Partner</p>
+    <div class="mp-list" id="mainPartnerList" hidden></div>
+    <!-- TopTen.one holds the band until a paying partner takes it. Its own
+         wordmark on its own ground, linking straight out to the site; the
+         invitation below is hidden while the place is occupied, and
+         renderMainPartner() hides this the moment a real principal sponsor
+         exists, so the band never shows two. -->
+    <a class="mp-topten" id="mainPartnerTopten" href="https://topten.one" target="_blank" rel="noopener">
+      <span class="mp-tt-mark">TopTen<b>.one</b></span>
+      <span class="mp-tt-tag">Be the one.</span>
+    </a>
+    <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
   </div>
 
   <!-- The Rotabo idea used to sit halfway down the page; it now opens it,
