@@ -751,6 +751,9 @@
     line-height:0;margin-bottom:14px;
   }
   .cat-icon--mark svg{width:25px;height:33px;}
+  /* This card has no paragraph any more, and the 8px under the heading was
+     measured for one that did. */
+  #cat-other h3{margin-bottom:26px;}
   .chip-emoji--mark{display:inline-flex;align-items:center;gap:3px;line-height:0;}
   .chip-emoji--mark svg{width:11px;height:14px;}
   html[data-mode="business"] .category-grid.pro-open{display:grid;}
@@ -1474,7 +1477,6 @@
         <svg viewBox="0 0 200 260" aria-hidden="true"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
       </div>
       <h3 data-i18n="categories.other.name">Something Else</h3>
-      <p data-i18n="categories.other.desc">Doesn't fit anywhere else? Tell Rotabo what happened — someone nearby might be able to help.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('other','seeking')">I need this</button>
         <button type="button" class="cat-btn offer" data-i18n="categories.offer_btn" onclick="openGenericModal('other','offering')">I offer this</button>
