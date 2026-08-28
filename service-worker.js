@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v167";
+const CACHE_VERSION = "v168";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 // Where Google tag gateway serves gtag.js and receives its measurement

@@ -99,7 +99,20 @@
     "hairdressing": "frizerie, coafor, tuns, par, par, foarfeca, uscator, vopsea de par",
     "beauty_salon": "cosmetica, unghii, manichiura, tratamente faciale, unghii, gene, machiaj, ten",
     "massage_therapy": "maseur, spa, masaj relaxare, masa de masaj, uleiuri, spa",
-    "fitness_training": "antrenor personal, sala, fitness, antrenamente, aparate, greutati, sala, bicicleta"
+    "fitness_training": "antrenor personal, sala, fitness, antrenamente, aparate, greutati, sala, bicicleta fitness",
+    "shop_general": "magazin, comert cu amanuntul, boutique, raion, magazin, casa de marcat, rafturi, marfa",
+    "shop_bicycle": "magazin biciclete, service biciclete, ciclism, bicicleta, trotineta, roata, lant, cauciuc",
+    "shop_auto_parts": "piese auto, accesorii auto, consumabile, filtru, ulei, placute frana, baterie, stergatoare",
+    "shop_hardware": "bricolaj, magazin de scule, materiale de constructii, suruburi, cuie, bormasina, vopsea, ciment",
+    "shop_furniture": "magazin mobila, bucatarii, canapele, canapea, masa, dulap, pat, bucatarie",
+    "shop_electronics": "electrocasnice, electronice, magazin tv, televizor, frigider, masina de spalat, telefon, laptop",
+    "shop_clothing": "haine, moda, incaltaminte, textile, haine, pantofi, geaca, uniforma",
+    "shop_grocery": "alimentara, supermarket, minimarket, alimente, paine, lapte, legume",
+    "shop_sports": "articole sportive, echipament sportiv, outdoor, minge, adidasi, greutati, cort, schiuri",
+    "shop_books": "librarie, papetarie, rechizite, carti, caiete, pixuri, hartie",
+    "shop_florist": "flori, buchete, coroane, aranjamente florale, flori, trandafiri, buchet, ghiveci",
+    "shop_pet": "hrana animale, accesorii animale, acvaristica, hrana caini, litiera, cusca, acvariu",
+    "motorcycle_repair": "motocicleta, scuter, moped, service moto, motocicleta, scuter, lant, casca"
   },
   "domains": {
     "taxi": "Taxi",
@@ -201,7 +214,20 @@
     "hairdressing": "Coafură",
     "beauty_salon": "Salon de cosmetică",
     "massage_therapy": "Masaj terapeutic",
-    "fitness_training": "Antrenament fitness"
+    "fitness_training": "Antrenament fitness",
+    "shop_general": "Magazin",
+    "shop_bicycle": "Magazin și service biciclete",
+    "shop_auto_parts": "Magazin de piese auto",
+    "shop_hardware": "Magazin de scule și bricolaj",
+    "shop_furniture": "Magazin de mobilă",
+    "shop_electronics": "Magazin de electronice și electrocasnice",
+    "shop_clothing": "Magazin de haine",
+    "shop_grocery": "Magazin alimentar",
+    "shop_sports": "Magazin de sport",
+    "shop_books": "Librărie și papetărie",
+    "shop_florist": "Florărie",
+    "shop_pet": "Magazin pentru animale",
+    "motorcycle_repair": "Service moto"
   },
   "bizsearch": {
     "placeholder": "Caută domeniul în care profesează firma ta",

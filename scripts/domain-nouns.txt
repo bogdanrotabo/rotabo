@@ -98,3 +98,16 @@ hairdressing|hair, scissors, dryer, hair dye|par, foarfeca, uscator, vopsea de p
 beauty_salon|nails, lashes, makeup, skin|unghii, gene, machiaj, ten
 massage_therapy|massage table, oils, spa|masa de masaj, uleiuri, spa
 fitness_training|machines, weights, gym, bike|aparate, greutati, sala, bicicleta
+shop_general|shop, till, shelves, stock|magazin, casa de marcat, rafturi, marfa
+shop_bicycle|bicycle, bike, e-bike, wheel, chain|bicicleta, trotineta, roata, lant, cauciuc
+shop_auto_parts|filter, oil, brake pads, battery, wiper|filtru, ulei, placute frana, baterie, stergatoare
+shop_hardware|screws, nails, drill, paint, cement|suruburi, cuie, bormasina, vopsea, ciment
+shop_furniture|sofa, table, wardrobe, bed, kitchen|canapea, masa, dulap, pat, bucatarie
+shop_electronics|tv, fridge, washing machine, phone, laptop|televizor, frigider, masina de spalat, telefon, laptop
+shop_clothing|clothes, shoes, jacket, uniform|haine, pantofi, geaca, uniforma
+shop_grocery|food, bread, milk, vegetables|alimente, paine, lapte, legume
+shop_sports|ball, trainers, weights, tent, ski|minge, adidasi, greutati, cort, schiuri
+shop_books|books, notebooks, pens, paper|carti, caiete, pixuri, hartie
+shop_florist|flowers, roses, bouquet, pot|flori, trandafiri, buchet, ghiveci
+shop_pet|dog food, cat litter, cage, aquarium|hrana caini, litiera, cusca, acvariu
+motorcycle_repair|motorbike, scooter, chain, helmet|motocicleta, scuter, lant, casca

@@ -1,4 +1,4 @@
-/* The hundred fields a company can say it works in, and which of Rotabo's
+/* The fields a company can say it works in, and which of Rotabo's
    twelve categories each one lands in.
  *
  * The business side does not show the twelve cards. A firm arrives knowing it
@@ -8,8 +8,8 @@
  * comes along behind it.
  *
  * The list is deliberately wider than the twelve. Medicine, software, audit,
- * winemaking and metalwork are not services Rotabo has a card for, and forty-four
- * of the hundred land in "other" for exactly that reason. That is honest
+ * winemaking, metalwork and the shops are not services Rotabo has a card for,
+ * and most of them land in "other" for exactly that reason. That is honest
  * about where the site is today rather than pretending the twelve cover the
  * economy, and it means a doctor or a developer can still find themselves,
  * register, and be found.
@@ -158,6 +158,25 @@
     ["wholesale", "other"],
     ["ecommerce", "other"],
     ["security_services", "other"],
+
+    // ----------------------------------------------------- shops (13)
+    //
+    // A bicycle is not a gym machine and a fridge is not a plumber. Objects
+    // people type belong to whoever sells them, so the shops are here and
+    // the nouns point at them.
+    ["shop_general", "other"],
+    ["shop_bicycle", "other"],
+    ["shop_auto_parts", "auto"],
+    ["shop_hardware", "tools"],
+    ["shop_furniture", "home"],
+    ["shop_electronics", "other"],
+    ["shop_clothing", "other"],
+    ["shop_grocery", "other"],
+    ["shop_sports", "other"],
+    ["shop_books", "other"],
+    ["shop_florist", "other"],
+    ["shop_pet", "pets"],
+    ["motorcycle_repair", "auto"],
 
     // ---------------------------------------------- beauty and wellness (4)
     ["hairdressing", "other"],

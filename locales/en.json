@@ -99,7 +99,20 @@
     "hairdressing": "hairdresser, barber, salon, haircut, hair, scissors, dryer, hair dye",
     "beauty_salon": "cosmetics, nails, manicure, facial, nails, lashes, makeup, skin",
     "massage_therapy": "masseur, spa, relaxation, massage table, oils, spa",
-    "fitness_training": "personal trainer, gym, workout, machines, weights, gym, bike"
+    "fitness_training": "personal trainer, gym, workout, machines, weights, gym, exercise bike",
+    "shop_general": "store, retail, boutique, outlet, shop, till, shelves, stock",
+    "shop_bicycle": "bike shop, cycle repair, bicycles, bicycle, bike, e-bike, wheel, chain",
+    "shop_auto_parts": "spare parts, car accessories, motor factor, filter, oil, brake pads, battery, wiper",
+    "shop_hardware": "diy, builders merchant, tools shop, screws, nails, drill, paint, cement",
+    "shop_furniture": "furniture store, kitchens, sofas, sofa, table, wardrobe, bed, kitchen",
+    "shop_electronics": "white goods, appliances, tv shop, tv, fridge, washing machine, phone, laptop",
+    "shop_clothing": "fashion, boutique, shoes, textiles, clothes, shoes, jacket, uniform",
+    "shop_grocery": "supermarket, minimarket, food shop, food, bread, milk, vegetables",
+    "shop_sports": "sportswear, sports equipment, outdoor, ball, trainers, weights, tent, ski",
+    "shop_books": "stationery, bookstore, office supplies, books, notebooks, pens, paper",
+    "shop_florist": "flowers, bouquets, wreaths, flowers, roses, bouquet, pot",
+    "shop_pet": "pet food, pet supplies, aquarium, dog food, cat litter, cage, aquarium",
+    "motorcycle_repair": "motorbike, scooter, moped, service, motorbike, scooter, chain, helmet"
   },
   "domains": {
     "taxi": "Taxi",
@@ -201,7 +214,20 @@
     "hairdressing": "Hairdressing",
     "beauty_salon": "Beauty salon",
     "massage_therapy": "Massage therapy",
-    "fitness_training": "Fitness training"
+    "fitness_training": "Fitness training",
+    "shop_general": "Shop or retail",
+    "shop_bicycle": "Bicycle shop and repair",
+    "shop_auto_parts": "Car parts shop",
+    "shop_hardware": "Hardware and DIY shop",
+    "shop_furniture": "Furniture shop",
+    "shop_electronics": "Electronics and appliances",
+    "shop_clothing": "Clothing shop",
+    "shop_grocery": "Grocery shop",
+    "shop_sports": "Sports shop",
+    "shop_books": "Bookshop and stationery",
+    "shop_florist": "Florist",
+    "shop_pet": "Pet shop",
+    "motorcycle_repair": "Motorcycle repair"
   },
   "bizsearch": {
     "placeholder": "Search the field your company works in",

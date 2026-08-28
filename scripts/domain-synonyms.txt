@@ -98,3 +98,16 @@ hairdressing|hairdresser, barber, salon, haircut|frizerie, coafor, tuns, par
 beauty_salon|cosmetics, nails, manicure, facial|cosmetica, unghii, manichiura, tratamente faciale
 massage_therapy|masseur, spa, relaxation|maseur, spa, masaj relaxare
 fitness_training|personal trainer, gym, workout|antrenor personal, sala, fitness, antrenamente
+shop_general|store, retail, boutique, outlet|magazin, comert cu amanuntul, boutique, raion
+shop_bicycle|bike shop, cycle repair, bicycles|magazin biciclete, service biciclete, ciclism
+shop_auto_parts|spare parts, car accessories, motor factor|piese auto, accesorii auto, consumabile
+shop_hardware|diy, builders merchant, tools shop|bricolaj, magazin de scule, materiale de constructii
+shop_furniture|furniture store, kitchens, sofas|magazin mobila, bucatarii, canapele
+shop_electronics|white goods, appliances, tv shop|electrocasnice, electronice, magazin tv
+shop_clothing|fashion, boutique, shoes, textiles|haine, moda, incaltaminte, textile
+shop_grocery|supermarket, minimarket, food shop|alimentara, supermarket, minimarket
+shop_sports|sportswear, sports equipment, outdoor|articole sportive, echipament sportiv, outdoor
+shop_books|stationery, bookstore, office supplies|librarie, papetarie, rechizite
+shop_florist|flowers, bouquets, wreaths|flori, buchete, coroane, aranjamente florale
+shop_pet|pet food, pet supplies, aquarium|hrana animale, accesorii animale, acvaristica
+motorcycle_repair|motorbike, scooter, moped, service|motocicleta, scuter, moped, service moto

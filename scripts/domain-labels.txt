@@ -98,3 +98,16 @@ hairdressing|Hairdressing|Coafură
 beauty_salon|Beauty salon|Salon de cosmetică
 massage_therapy|Massage therapy|Masaj terapeutic
 fitness_training|Fitness training|Antrenament fitness
+shop_general|Shop or retail|Magazin
+shop_bicycle|Bicycle shop and repair|Magazin și service biciclete
+shop_auto_parts|Car parts shop|Magazin de piese auto
+shop_hardware|Hardware and DIY shop|Magazin de scule și bricolaj
+shop_furniture|Furniture shop|Magazin de mobilă
+shop_electronics|Electronics and appliances|Magazin de electronice și electrocasnice
+shop_clothing|Clothing shop|Magazin de haine
+shop_grocery|Grocery shop|Magazin alimentar
+shop_sports|Sports shop|Magazin de sport
+shop_books|Bookshop and stationery|Librărie și papetărie
+shop_florist|Florist|Florărie
+shop_pet|Pet shop|Magazin pentru animale
+motorcycle_repair|Motorcycle repair|Service moto
