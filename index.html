@@ -1055,15 +1055,9 @@
        still reachable from the nav link and from every category card's "I offer
        this", the translator flow from the translator category, and
        cta_become_driver_click still fires because MODAL_GA_EVENTS keys off the
-       modal id, not off the button that opened it. -->
-  <div class="cta-stack">
-    <a class="btn btn-outline" href="/account.html" data-i18n="hero.cta_login">Log in</a>
-    <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
-  </div>
-  <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
-  <div class="badges">
-    <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
-  </div>
+       modal id, not off the button that opened it.
+       What was left of that stack -- Log in, the install button and the
+       payment line -- now sits under the twelve category cards. -->
 </section>
 
 <!-- The marketplace sits directly under the hero: it is what the page is
@@ -1201,6 +1195,21 @@
         <a class="cat-browse" href="/browse.html?category=other&amp;role=seeking" data-i18n="categories.see_who_btn">See who is here</a>
       </div>
     </div>
+  </div>
+
+  <!-- Log in, the install prompt and the payment line. They used to close the
+       hero, which put them above the cards they are about: a stranger was
+       offered a login before being shown what there was to log in for. The
+       hero.* key names are deliberately left alone -- the markup moved, the
+       strings did not, and renaming them would touch thirty-eight files to
+       say nothing new. -->
+  <div class="cta-stack">
+    <a class="btn btn-outline" href="/account.html" data-i18n="hero.cta_login">Log in</a>
+    <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
+  </div>
+  <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
+  <div class="badges">
+    <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
   </div>
 </section>
 
