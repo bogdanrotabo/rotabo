@@ -828,6 +828,13 @@
   .biz-row--taken:hover b{color:var(--ink-strong);}
   .biz-row--free{color:var(--text-eyebrow);}
   .biz-row--free:hover{color:var(--ink-strong);}
+  /* The sponsors box lives on both sides -- .pro-search is gated to the
+     business page, so it cannot borrow that wrapper. The inner box styles
+     are shared. */
+  .spon-box{margin:8px 0 22px;}
+  .spon-box .cascade-wrap{max-width:620px;}
+  .spon-box .biz-list__box{background:#fff;}
+  .spon-box .cascade{text-align:left;}
   /* The row a search falls through to. It is an offer, not an apology, so
      it reads like the taken rows rather than like the empty ones. */
   .biz-row--market{
@@ -940,15 +947,15 @@
      before the supporters had loaded (and stayed if there were none). */
   .sponsor-list[hidden]{display:none;}
   .sponsor-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
-  .sponsor-row .s-tier{
+  .sponsor-row .s-tier, .biz-row .s-tier{
     font-size:.76rem;font-weight:800;letter-spacing:.04em;
     border:1px solid var(--border);border-radius:20px;padding:2px 10px;
     background:#fff;color:var(--text-eyebrow);
   }
-  .sponsor-row .s-tier.bronze{color:#a26a34;border-color:#e0c3a4;}
-  .sponsor-row .s-tier.silver{color:#6d7480;border-color:#cdd3da;}
-  .sponsor-row .s-tier.gold{color:#a87f1d;border-color:#e6cf8d;}
-  .sponsor-row .s-tier.platinum{color:var(--violet-1);border-color:var(--tier-border);}
+  .sponsor-row .s-tier.bronze, .biz-row .s-tier.bronze{color:#a26a34;border-color:#e0c3a4;}
+  .sponsor-row .s-tier.silver, .biz-row .s-tier.silver{color:#6d7480;border-color:#cdd3da;}
+  .sponsor-row .s-tier.gold, .biz-row .s-tier.gold{color:#a87f1d;border-color:#e6cf8d;}
+  .sponsor-row .s-tier.platinum, .biz-row .s-tier.platinum{color:var(--violet-1);border-color:var(--tier-border);}
   .sponsor-row .s-name{color:var(--text-dark);font-weight:800;font-size:1.05rem;}
   .sponsor-row a.s-name{color:var(--violet-2);}
   .sponsor-row .s-loc{color:var(--text-eyebrow);font-size:.9rem;font-weight:600;}
@@ -1773,7 +1780,21 @@
     <h3 data-i18n="supporters.h3">People and places behind this</h3>
     <p data-i18n="supporters.p">Rotabo is kept going by anyone willing to stand behind the idea that nobody should drive when they shouldn't.</p>
     <p data-i18n="supporters.invite">We especially welcome banks, insurers, sports brands, energy-drink and soft-drink makers — and any business that stands behind sober driving.</p>
-    <p class="names" data-i18n="supporters.first">No supporters yet — be the first name on this list.</p>
+    <!-- The hundred sponsor places, in the same box the business side uses
+         for registered companies. The first is taken and says by whom; the
+         rest are free and say so. Clicking a free place lands on the tier
+         buttons directly below. -->
+    <div class="spon-box">
+      <div class="cascade-wrap">
+        <button type="button" class="pro-search__box biz-list__box" id="sponBoxBtn"
+                aria-expanded="false" aria-controls="sponBox">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 5.9-5.3-3-5.3 3 1.2-5.9L3.4 9.3l6-.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span data-i18n="ticker.sponsors">Sponsors</span>
+          <span class="biz-list__chev" aria-hidden="true">&#9662;</span>
+        </button>
+        <div class="cascade" id="sponBox" hidden role="listbox"></div>
+      </div>
+    </div>
     <!-- Filled from sponsors_public: display name, tier, city, website --
          never contact details. A new sponsor appears here the moment the
          Stripe webhook flips their row visible, no deploy involved. The
@@ -4678,6 +4699,135 @@ if ("serviceWorker" in navigator) {
   var beforeBizList = window.__afterTranslate;
   window.__afterTranslate = function(d){
     if (beforeBizList) { try { beforeBizList(d); } catch (e) {} }
+    if (!list.hidden) render();
+  };
+})();
+</script>
+
+<!-- --------------------------------------------- the sponsor places, both --- -->
+<script>
+/* The hundred sponsor places, on both sides of the site.
+
+   topten.one holds the first as the standing Platinum sponsor. Whatever
+   sponsors_public() returns joins it -- name, tier, link -- and everything
+   after that is a free place that says so and leads to the tier buttons
+   sitting directly under this box. Same shape as the registered-companies
+   box, for the same reason: an honest list of mostly free places is also
+   the offer. */
+(function(){
+  var btn  = document.getElementById("sponBoxBtn");
+  var list = document.getElementById("sponBox");
+  if (!btn || !list) return;
+
+  var PLACES = 100;
+  var ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+
+  var rows = [];
+
+  function T(key, fallback){
+    try {
+      if (window.rotaboT) {
+        var v = window.rotaboT(key);
+        if (v && v !== key) return v;
+      }
+    } catch (e) {}
+    return fallback;
+  }
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function tierChip(tier){
+    var t = String(tier || "").toLowerCase();
+    if (!t) return "";
+    var word = t.charAt(0).toUpperCase() + t.slice(1);
+    // "principal" is the database's word for the main-partner slot; on a
+    // list of tiers it reads as Platinum, which is what it costs.
+    if (t === "principal") { t = "platinum"; word = "Platinum"; }
+    return '<span class="s-tier ' + esc(t) + '">' + esc(word) + '</span>';
+  }
+
+  function render(){
+    var html = "";
+    var n = 1;
+
+    html += '<a class="cascade-row biz-row biz-row--taken" href="https://topten.one"'
+          + ' target="_blank" rel="noopener" style="--i:0">'
+          + '<span class="biz-row__n">' + n + '</span>'
+          + '<b>topten.one</b>' + tierChip("platinum") + '</a>';
+    n++;
+
+    rows.forEach(function(r){
+      if (n > PLACES) return;
+      var inner = '<span class="biz-row__n">' + n + '</span>'
+                + '<b>' + esc(r.display_name || "") + '</b>'
+                + tierChip(r.tier)
+                + (r.city ? '<span class="biz-row__where">' + esc(r.city) + '</span>' : "");
+      html += r.website_url
+        ? '<a class="cascade-row biz-row biz-row--taken" href="' + esc(r.website_url) + '" target="_blank" rel="noopener" style="--i:' + Math.min(n, 24) + '">' + inner + '</a>'
+        : '<span class="cascade-row biz-row biz-row--taken" style="--i:' + Math.min(n, 24) + '">' + inner + '</span>';
+      n++;
+    });
+
+    var free = esc(T("sponsorbox.free", "Free place - become a sponsor"));
+    for (; n <= PLACES; n++) {
+      html += '<button type="button" class="cascade-row biz-row biz-row--free" data-tiers="1"'
+            + ' style="--i:' + Math.min(n, 24) + '">'
+            + '<span class="biz-row__n">' + n + '</span>'
+            + '<span>' + free + '</span></button>';
+    }
+
+    list.innerHTML = html;
+  }
+
+  function close(){
+    list.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  btn.addEventListener("click", function(){
+    if (!list.hidden) { close(); return; }
+    render();
+    list.hidden = false;
+    list.scrollTop = 0;
+    btn.setAttribute("aria-expanded", "true");
+  });
+
+  list.addEventListener("click", function(e){
+    var row = e.target.closest("[data-tiers]");
+    if (!row) return;
+    close();
+    var tiers = document.querySelector(".sponsor-tiers");
+    if (tiers && tiers.scrollIntoView) tiers.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+
+  document.addEventListener("click", function(e){
+    if (!e.target.closest(".spon-box")) close();
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") close();
+  });
+
+  fetch("https://auth.rotabo.app/rest/v1/rpc/sponsors_public", {
+    method: "POST",
+    headers: {
+      "apikey": ANON,
+      "Authorization": "Bearer " + ANON,
+      "Content-Type": "application/json"
+    },
+    body: "{}"
+  })
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(data){ if (Array.isArray(data)) rows = data; })
+    .catch(function(){ /* topten.one and the free places still stand */ })
+    .then(function(){ if (!list.hidden) render(); });
+
+  var beforeSponBox = window.__afterTranslate;
+  window.__afterTranslate = function(d){
+    if (beforeSponBox) { try { beforeSponBox(d); } catch (e) {} }
     if (!list.hidden) render();
   };
 })();
