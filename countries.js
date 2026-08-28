@@ -246,14 +246,63 @@
     if (!ISO_TO_NAME[iso]) ISO_TO_NAME[iso] = k.trim();
   });
 
+  // isoFor has to work on whatever the visitor typed, and people type in
+  // their own language. RAW_ISO carries a handful of translations added by
+  // hand -- Vereinigte Arabische Emirate, Nieuw-Zeeland, Noua Zeelanda --
+  // which was never going to keep up with 196 countries across 38 languages,
+  // and the gap is not cosmetic: a listing saved under a name isoFor did not
+  // recognise got an empty country_code, and browse.html quietly stopped
+  // finding it. The rest is built from Intl.DisplayNames, which is already in
+  // the browser and knows all of them, and only on the first miss -- someone
+  // who never types a country name never pays for it. Hand-written spellings
+  // win, because each was added for a reason.
+  var UI_LANGS = ["en","it","ro","es","fr","de","pt","zh","ar","ja","ko","ru","ms","hi",
+                  "sw","vi","th","id","tr","bn","ur","bg","cs","hr","da","et","fi","el",
+                  "ga","lv","lt","hu","mt","nl","pl","sk","sl","sv"];
+  var TRANSLATED = null;
+  function buildTranslated(){
+    TRANSLATED = {};
+    if (typeof Intl === "undefined" || !Intl.DisplayNames) return;
+    var codes = Object.keys(ISO_TO_NAME);
+    UI_LANGS.forEach(function (lang) {
+      var dn;
+      try { dn = new Intl.DisplayNames([lang], { type: "region" }); }
+      catch (e) { return; }
+      codes.forEach(function (iso) {
+        var name;
+        try { name = dn.of(iso); } catch (e) { return; }
+        if (!name) return;
+        var key = norm(name);
+        if (!NAME_TO_ISO[key] && !TRANSLATED[key]) TRANSLATED[key] = iso;
+      });
+    });
+  }
+
+  // The name to show, as opposed to the name to store. Intl.DisplayNames
+  // again, so nothing here is a dictionary anyone has to keep up to date;
+  // the English name stands in where the browser has no answer.
+  function nameForIsoIn(iso, lang){
+    var code = String(iso || "").toUpperCase();
+    var fallback = ISO_TO_NAME[code] || "";
+    if (typeof Intl === "undefined" || !Intl.DisplayNames) return fallback;
+    try { return new Intl.DisplayNames([lang || "en"], { type: "region" }).of(code) || fallback; }
+    catch (e) { return fallback; }
+  }
+
   global.RotaboCountries = {
     norm: norm,
     // "" when the name is not recognised, so callers can fall back to
     // raw-text matching rather than silently dropping the row.
-    isoFor: function (name) { return NAME_TO_ISO[norm(name)] || ""; },
+    isoFor: function (name) {
+      var key = norm(name);
+      if (NAME_TO_ISO[key]) return NAME_TO_ISO[key];
+      if (TRANSLATED === null) buildTranslated();
+      return TRANSLATED[key] || "";
+    },
     flagFor: flagFor,
     flagForIso: function (iso) { return iso2ToFlag(String(iso || "").toUpperCase()); },
     nameForIso: function (iso) { return ISO_TO_NAME[String(iso || "").toUpperCase()] || ""; },
+    nameForIsoIn: nameForIsoIn,
     // Every code we have a name for, so the picker can offer the whole list
     // when someone says they are somewhere else.
     allIso: function () { return Object.keys(ISO_TO_NAME).sort(); }
