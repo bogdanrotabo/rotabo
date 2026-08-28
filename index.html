@@ -1162,7 +1162,22 @@
     font-size:.9rem;font-weight:700;color:var(--text-eyebrow);
     margin-bottom:10px;
   }
-  .picker-where .flag{font-size:1.15rem;line-height:1;}
+  .picker-where .flag{font-size:1.15rem;line-height:1;display:inline-flex;align-items:center;}
+
+  /* A flag is a picture now, not a character -- Windows draws no glyph for a
+     regional-indicator pair, so every one of these was blank on a desktop.
+     Sized in em so it grows with whatever text it sits beside, and ringed:
+     Japan, Switzerland and half a dozen others have white at the edge and
+     would otherwise dissolve into a pale page. */
+  .flagimg{
+    display:inline-block;width:1.45em;height:1.06em;
+    object-fit:contain;
+    vertical-align:-.2em;border-radius:2px;
+    box-shadow:0 0 0 1px rgba(0,0,0,.14);
+  }
+  .cascade-row .flagimg,.lang-option .flagimg{margin-right:.15em;}
+  #langBtnFlag{display:inline-flex;align-items:center;}
+
   .picker-where button{
     background:none;border:none;padding:0;cursor:pointer;
     font:inherit;color:var(--violet-1);text-decoration:underline;
@@ -2413,7 +2428,7 @@
     return starts.concat(holds);
   }
 
-  function attachCascade(input, source){
+  function attachCascade(input, source, flagged){
     if (!input) return;
     // Wrapped rather than hung off the existing parent: in .board-row the
     // parent is a flex row holding three fields, and an absolute panel there
@@ -2442,7 +2457,14 @@
         var row = document.createElement("button");
         row.type = "button";
         row.className = "cascade-row";
-        row.textContent = name;
+        var C = window.RotaboCountries;
+        var pic = (flagged && C) ? C.flagImgFor(C.isoFor(name), "") : "";
+        if (pic) {
+          row.innerHTML = pic;
+          row.appendChild(document.createTextNode(" " + name));
+        } else {
+          row.textContent = name;
+        }
         row.style.setProperty("--i", String(Math.min(i, 18)));
         // mousedown, not click: blur lands first on a click and would close
         // the panel out from under the pointer, so the click never arrives.
@@ -2498,7 +2520,7 @@
    ["agCountry", "agCity"]].forEach(function(pair){
     var country = document.getElementById(pair[0]);
     var city = document.getElementById(pair[1]);
-    attachCascade(country, localizedCountries);
+    attachCascade(country, localizedCountries, true);
     attachCascade(city, function(){ return citiesForCountryName(country ? country.value : ""); });
   });
 
@@ -3121,7 +3143,9 @@
 
   function setLangUI(code){
     var lang = LANGS.find(function(l){ return l.code === code; }) || LANGS[0];
-    document.getElementById("langBtnFlag").textContent = lang.flag;
+    var CF = window.RotaboCountries;
+    var lf = document.getElementById("langBtnFlag");
+    lf.innerHTML = (CF && CF.flagImgFor(CF.isoFromFlag(lang.flag), lang.name)) || "";
     document.getElementById("langBtnLabel").textContent = lang.name;
     document.getElementById("langBtnCode").textContent = lang.code.toUpperCase();
     document.querySelectorAll(".lang-option").forEach(function(btn){
@@ -3268,7 +3292,9 @@
       btn.className = "lang-option";
       btn.setAttribute("data-code", lang.code);
       btn.setAttribute("data-search", (lang.name + " " + lang.code).toLowerCase());
-      btn.innerHTML = '<span>' + lang.flag + ' ' + lang.name + '</span><span class="lo-code">' + lang.code.toUpperCase() + '</span>';
+      var CF = window.RotaboCountries;
+      var pic = (CF && CF.flagImgFor(CF.isoFromFlag(lang.flag), "")) || lang.flag;
+      btn.innerHTML = '<span>' + pic + ' ' + lang.name + '</span><span class="lo-code">' + lang.code.toUpperCase() + '</span>';
       btn.addEventListener("click", function(){ selectLang(lang.code); });
       list.appendChild(btn);
     });
@@ -3774,10 +3800,23 @@ if ("serviceWorker" in navigator) {
     if (!items.length) { empty.hidden = false; return; }
     empty.hidden = true;
     var frag = document.createDocumentFragment();
-    items.forEach(function(label, i){
+    items.forEach(function(item, i){
+      var label = (item && typeof item === "object") ? item.label : item;
+      var iso = (item && typeof item === "object") ? item.iso : "";
       var b = document.createElement("button");
       b.type = "button";
-      b.textContent = label;
+      /* A country row carries its flag, a city row is a name and nothing
+         else. Both arrive here, so the row is built from what it was given
+         rather than from a second flag telling this function which is
+         which. */
+      var C = window.RotaboCountries;
+      var pic = iso && C ? C.flagImgFor(iso, "") : "";
+      if (pic) {
+        b.innerHTML = pic;
+        b.appendChild(document.createTextNode(" " + label));
+      } else {
+        b.textContent = label;
+      }
       // Capped: past the first couple of dozen the stagger stops adding
       // anything and only delays the rest of the list into view.
       b.style.setProperty("--i", String(Math.min(i, 24)));
@@ -3842,8 +3881,8 @@ if ("serviceWorker" in navigator) {
     // Alphabetical order is not the same in every language.
     var lang = document.documentElement.getAttribute("lang") || "en";
     named.sort(function(a,b){ return a.name.localeCompare(b.name, lang); });
-    draw(named.map(function(x){ return x.flag + "  " + x.name; }), function(label){
-      var picked = named.filter(function(x){ return (x.flag + "  " + x.name) === label; })[0];
+    draw(named.map(function(x){ return { label: x.name, iso: x.iso }; }), function(label){
+      var picked = named.filter(function(x){ return x.name === label; })[0];
       if (!picked) return;
       state.iso = picked.iso;
       try { sessionStorage.setItem("rotabo_cc", picked.iso); } catch(e){}
@@ -3870,7 +3909,7 @@ if ("serviceWorker" in navigator) {
     var name = C ? countryName(state.iso) : "";
     if (!name) { where.hidden = true; return; }
     where.hidden = false;
-    flagEl.textContent = C.flagForIso(state.iso);
+    flagEl.innerHTML = C.flagImgFor(state.iso, name);
     lineEl.textContent = say("picker.you_are_in", "It looks like you are in {country} — ")
                            .replace("{country}", name);
   }

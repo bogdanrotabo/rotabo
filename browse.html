@@ -686,6 +686,58 @@
         ? tr("locked_count_one")
         : tr("locked_count_other", { n: res.data });
     });
+
+    // A headcount asks for two francs on trust. browse_preview returns the
+    // same columns browse_public already exposes -- number, name, country,
+    // city, when -- with no contact field among them, so the list itself can
+    // be shown and the payment can sit where the value is: the phone number.
+    //
+    // Guarded, because the function may not exist yet on this database. If
+    // it is missing the call errors, nothing is drawn, and the locked card
+    // above stays exactly as it was. Nothing to roll back, and this page
+    // starts showing the list the moment the function lands.
+    sb.rpc("browse_preview", { p_category: category, p_role: browseRole })
+      .then(function(res){
+        if (res.error || !Array.isArray(res.data) || !res.data.length) return;
+        if (!document.body.contains(card)) return;
+        renderPreviewList(res.data);
+      })
+      .catch(function(){ /* function not deployed: keep the locked card */ });
+  }
+
+  // The locked list: everything browse.html shows when unlocked, minus the
+  // contact row, plus one button per listing that opens the same checkout
+  // the locked card's button does.
+  function renderPreviewList(rows){
+    var host = document.createElement("div");
+    host.className = "request-list";
+    rows.forEach(function(row){
+      var card = document.createElement("div");
+      card.className = "request-card";
+      card.innerHTML =
+        '<div class="request-info">' +
+        '<div class="name"></div>' +
+        '<div class="city"></div>' +
+        '</div>' +
+        '<div class="contact-actions">' +
+        '<button type="button" class="call-btn unlock-btn"></button>' +
+        '</div>';
+      card.querySelector(".name").textContent = "#" + row.number + "  " + row.name;
+      // Not named "location": that shadows window.location, and the reload
+      // in the button below would then be a call on a string.
+      var place = [row.city, row.country].filter(Boolean).join(", ");
+      card.querySelector(".city").textContent = place + " · " + timeAgo(row.created_at);
+      var btn = card.querySelector(".unlock-btn");
+      btn.textContent = tr("unlock_btn");
+      btn.addEventListener("click", function(){
+        if (!window.RotaboViewer) { location.reload(); return; }
+        window.RotaboViewer.open(function(){ renderDashboard(); }, category);
+      });
+      host.appendChild(card);
+    });
+    var locked = content.querySelector(".locked-card");
+    if (locked) locked.insertAdjacentElement("afterend", host);
+    else content.appendChild(host);
   }
 
   var lastBrowseSig = null;

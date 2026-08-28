@@ -232,6 +232,55 @@
   };
   var NAME_TO_ISO = {};
   Object.keys(RAW_ISO).forEach(function(k){ NAME_TO_ISO[norm(k)] = RAW_ISO[k]; });
+  /* Windows ships no glyph for a flag.
+
+     A flag emoji is two regional-indicator letters and the font is expected
+     to draw a flag over the pair. Apple and Google do; Windows never has, on
+     any version, and shows the two letters instead -- or, at 34 characters
+     of Segoe UI Emoji, near enough to nothing. Every flag on this site was
+     therefore invisible on the desktop, which is exactly where the line "It
+     looks like you are in Germany" needed one.
+
+     So the flags are pictures now, served from our own /flags. 196 of them,
+     about 300KB the lot, and the browser fetches only the ones a visitor
+     actually sees. No third-party request, which also means no third party
+     being told which country each visitor is in.
+
+     Not lazy-loaded. At a kilobyte each that saves nothing worth having, and
+     a lazy image inside a menu that is closed at load never loads at all --
+     which is how the flag on the language button stayed blank. */
+  function attr(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function flagImgFor(iso, alt){
+    var cc = String(iso || "").toLowerCase();
+    if (!/^[a-z]{2}$/.test(cc)) return "";
+    return '<img class="flagimg" src="/flags/' + cc + '.png" alt="'
+         + attr(alt || "") + '" decoding="async">';
+  }
+
+  /* The language menu keeps its flags as emoji in the source, which is the
+     readable way to write them. The two letters are still in there -- a
+     regional indicator is just 'A' plus an offset -- so the picture can be
+     worked out from the emoji rather than by hand-editing thirty-eight rows
+     and getting one of them wrong. */
+  function isoFromFlag(f){
+    var cps = [];
+    var str = String(f || "");
+    for (var i = 0; i < str.length; ) {
+      var cp = str.codePointAt(i);
+      cps.push(cp);
+      i += cp > 0xFFFF ? 2 : 1;
+    }
+    if (cps.length !== 2) return "";
+    var A = 0x1F1E6;
+    if (cps[0] < A || cps[0] > A + 25 || cps[1] < A || cps[1] > A + 25) return "";
+    return String.fromCharCode(65 + cps[0] - A, 65 + cps[1] - A);
+  }
+
   function flagFor(country){
     var iso = NAME_TO_ISO[norm(country)];
     return iso ? iso2ToFlag(iso) : "";
@@ -301,6 +350,8 @@
     },
     flagFor: flagFor,
     flagForIso: function (iso) { return iso2ToFlag(String(iso || "").toUpperCase()); },
+    flagImgFor: flagImgFor,
+    isoFromFlag: isoFromFlag,
     nameForIso: function (iso) { return ISO_TO_NAME[String(iso || "").toUpperCase()] || ""; },
     nameForIsoIn: nameForIsoIn,
     // Every code we have a name for, so the picker can offer the whole list
