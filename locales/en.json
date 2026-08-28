@@ -1,4 +1,9 @@
 {
+  "bizlist": {
+    "label": "Here the registered companies appear",
+    "free": "Free place - register your company",
+    "spot": "place"
+  },
   "domsyn": {
     "taxi": "cab, ride, transfer, private hire, car, ride, airport",
     "ride_hailing": "uber, bolt, vtc, rideshare, car, app, ride",

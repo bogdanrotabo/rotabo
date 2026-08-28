@@ -1,4 +1,9 @@
 {
+  "bizlist": {
+    "label": "Aici apar firmele înregistrate",
+    "free": "Loc liber - înscrie-ți firma",
+    "spot": "locul"
+  },
   "domsyn": {
     "taxi": "taxi, cursa, transfer, masina, cursa, aeroport",
     "ride_hailing": "uber, bolt, ridesharing, masina, aplicatie, cursa",

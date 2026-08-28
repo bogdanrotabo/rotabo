@@ -773,6 +773,36 @@
     font:inherit;font-size:1.02rem;color:var(--text-dark);
   }
   .pro-search__none{text-align:center;color:var(--text-eyebrow);margin:20px 0 0;}
+
+  /* The hundred places, under the search. Same box as the search so the two
+     read as a pair, but a button rather than a field: there is nothing to
+     type into a list. */
+  .biz-list{margin-top:14px;}
+  .biz-list__box{
+    width:100%;cursor:pointer;text-align:left;
+    font:inherit;color:var(--text-dark);
+  }
+  .biz-list__box > span[data-i18n]{flex:1;min-width:0;font-weight:700;}
+  .biz-list__chev{flex:0 0 auto;color:var(--ink-strong);font-size:.8rem;}
+  .biz-list__box[aria-expanded="true"] .biz-list__chev{transform:rotate(180deg);}
+
+  .biz-row{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .biz-row__n{
+    flex:0 0 auto;min-width:28px;
+    font-variant-numeric:tabular-nums;font-weight:700;
+    color:var(--text-eyebrow);
+  }
+  .biz-row__where{color:var(--text-body);}
+  .biz-row__num{color:var(--text-eyebrow);font-variant-numeric:tabular-nums;}
+  .biz-row--sponsor .biz-row__label{
+    text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;
+    font-weight:800;color:var(--text-eyebrow);
+  }
+  .biz-row--sponsor b{color:var(--ink-strong);}
+  /* Empty and saying so. Dimmer than a taken place, so the eye reads the
+     list as mostly free rather than mostly full. */
+  .biz-row--free{color:var(--text-eyebrow);}
+  .biz-row--free:hover{color:var(--ink-strong);}
   .categories-section,.bridge-section{padding-top:56px;}
   .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
   .category-card{
@@ -1466,6 +1496,22 @@
       <div class="cascade" id="proList" hidden role="listbox"></div>
     </div>
     <p class="pro-search__none" id="proSearchNone" hidden data-i18n="bizsearch.none">Nothing matched.</p>
+  </div>
+
+  <!-- The second box, under the search. A hundred places: the sponsor holds
+       the first, whoever has registered holds the next, and the rest are
+       empty and say so. An empty place that admits it is empty is worth more
+       than a list padded to look full. -->
+  <div class="pro-search biz-list">
+    <div class="cascade-wrap">
+      <button type="button" class="pro-search__box biz-list__box" id="bizListBtn"
+              aria-expanded="false" aria-controls="bizList">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V7l7-3 7 3v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 20v-5h5v5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span data-i18n="bizlist.label">Here the registered companies appear</span>
+        <span class="biz-list__chev" aria-hidden="true">&#9662;</span>
+      </button>
+      <div class="cascade" id="bizList" hidden role="listbox"></div>
+    </div>
   </div>
 
   <div class="category-grid">
@@ -4336,6 +4382,154 @@ if ("serviceWorker" in navigator) {
 })();
 </script>
 
+
+<!-- --------------------------------------- the hundred places, business --- -->
+<script>
+/* The box under the search: a hundred places on the business side.
+
+   The sponsor holds the first. Whoever has registered holds the next, drawn
+   from list_public_numbers() -- the same public function the band uses, no
+   token, nothing opened up for it. Everything after that is empty and says
+   so, with a link to the registration.
+
+   The empty places are deliberate. There are three listings today and
+   ninety-six blank lines under them, which is the true picture; a list
+   padded to look full would be a lie a visitor can check in one scroll. */
+(function(){
+  if (document.documentElement.getAttribute("data-mode") !== "business") return;
+  var btn  = document.getElementById("bizListBtn");
+  var list = document.getElementById("bizList");
+  if (!btn || !list) return;
+
+  var PLACES = 100;
+  var ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+
+  var rows = [];
+  var loaded = false;
+
+  function T(key, fallback){
+    try {
+      if (window.rotaboT) {
+        var v = window.rotaboT(key);
+        if (v && v !== key) return v;
+      }
+    } catch (e) {}
+    return fallback;
+  }
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  // Same trick the band uses: the country is stored in whatever language the
+  // person was reading, so it goes through countries.js and comes back out
+  // in the one on screen.
+  function whereOf(row){
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    var country = row.country || "";
+    if (window.RotaboCountries) {
+      var iso = window.RotaboCountries.isoFor(country);
+      if (iso) country = window.RotaboCountries.nameForIsoIn(iso, lang) || country;
+    }
+    return [row.city, country].filter(Boolean).join(", ");
+  }
+
+  function catName(slug){
+    return T("categories." + slug + ".name", slug || "");
+  }
+
+  function render(){
+    var html = "";
+    var n = 1;
+
+    html += '<a class="cascade-row biz-row biz-row--sponsor" href="https://topten.one"'
+          + ' target="_blank" rel="noopener" style="--i:0">'
+          + '<span class="biz-row__n">' + n + '</span>'
+          + '<span class="biz-row__label">' + esc(T("ticker.sponsors", "Sponsors")) + '</span>'
+          + '<b>topten.one</b></a>';
+    n++;
+
+    rows.forEach(function(r){
+      if (n > PLACES) return;
+      var where = whereOf(r);
+      html += '<span class="cascade-row biz-row" style="--i:' + Math.min(n, 24) + '">'
+            + '<span class="biz-row__n">' + n + '</span>'
+            + '<b>' + esc(catName(r.category)) + '</b>'
+            + (where ? '<span class="biz-row__where">' + esc(where) + '</span>' : "")
+            + (r.number ? '<span class="biz-row__num">#' + esc(r.number) + '</span>' : "")
+            + '</span>';
+      n++;
+    });
+
+    var free = esc(T("bizlist.free", "Free place - register your company"));
+    for (; n <= PLACES; n++) {
+      html += '<a class="cascade-row biz-row biz-row--free" href="#categories"'
+            + ' style="--i:' + Math.min(n, 24) + '">'
+            + '<span class="biz-row__n">' + n + '</span>'
+            + '<span>' + free + '</span></a>';
+    }
+
+    list.innerHTML = html;
+  }
+
+  function open(){
+    render();
+    list.hidden = false;
+    list.scrollTop = 0;
+    btn.setAttribute("aria-expanded", "true");
+  }
+
+  function close(){
+    list.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  btn.addEventListener("click", function(e){
+    e.preventDefault();
+    if (list.hidden) open(); else close();
+  });
+
+  document.addEventListener("click", function(e){
+    if (!e.target.closest(".biz-list")) close();
+  });
+
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") close();
+  });
+
+  /* The list draws from what it has and redraws when the answer arrives, so
+     the box opens instantly on a slow connection and fills a moment later
+     rather than doing nothing until the round trip finishes. */
+  fetch("https://auth.rotabo.app/rest/v1/rpc/list_public_numbers", {
+    method: "POST",
+    headers: {
+      "apikey": ANON,
+      "Authorization": "Bearer " + ANON,
+      "Content-Type": "application/json"
+    },
+    body: "{}"
+  })
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(data){
+      if (Array.isArray(data)) rows = data;
+    })
+    .catch(function(){ /* the sponsor and the empty places still stand */ })
+    .then(function(){
+      loaded = true;
+      if (!list.hidden) render();
+    });
+
+  // The category names and the free line arrive with the dictionary, and a
+  // language switch replaces both. Chained, never assigned.
+  var beforeBizList = window.__afterTranslate;
+  window.__afterTranslate = function(d){
+    if (beforeBizList) { try { beforeBizList(d); } catch (e) {} }
+    if (!list.hidden) render();
+  };
+})();
+</script>
 
 </body>
 </html>
