@@ -219,11 +219,10 @@
   /* Live visitor counter. A thin band under the header rather than a chip
      inside it: the header already carries the brand, three links and the
      language switcher, and on a 375px screen a fourth item pushed the
-     switcher off. The numbers come from site_pulse() -- the total is
-     distinct sessions ever, the "now" is anyone whose heartbeat landed in
-     the last 90 seconds. Both are real; nothing here is padded. The band
-     stays hidden until the first answer arrives, so a visitor never sees
-     a zero that only means "not loaded yet". */
+     switcher off. The number comes from site_pulse() and is distinct
+     sessions ever -- real, and not padded. The band stays hidden until the
+     first answer arrives, so a visitor never sees a zero that only means
+     "not loaded yet". */
   .pulse-bar{
     display:none;
     gap:18px;
@@ -240,8 +239,10 @@
     font-weight:800;color:var(--violet-1);
     font-variant-numeric:tabular-nums;
   }
-  /* The dot is the only thing on the page that moves on its own. It is
-     what makes the number read as live rather than printed. */
+  /* Kept, though nothing wears it right now: the dot belongs to the
+     "online now" item, which is out of the markup until the figure is
+     worth showing. Deleting these rules would only mean writing them
+     again. */
   .pulse-dot{
     width:8px;height:8px;border-radius:50%;
     background:#22a45d;
@@ -1082,11 +1083,6 @@
 
 <!-- Live counter. Hidden until site_pulse() answers: see the CSS note. -->
 <div class="pulse-bar" id="pulseBar" role="status" aria-live="polite">
-  <span class="pulse-item">
-    <span class="pulse-dot" aria-hidden="true"></span>
-    <span class="pulse-num" id="pulseOnline">–</span>
-    <span data-i18n="pulse.online">online now</span>
-  </span>
   <span class="pulse-item">
     <span class="pulse-num" id="pulseTotal">–</span>
     <span data-i18n="pulse.total">visitors so far</span>
@@ -3598,15 +3594,16 @@ if ("serviceWorker" in navigator) {
       }).catch(function(){});
     });
 
-    // Live counter. Same sid as the visit row above, so one person is one
-    // visitor in both numbers. site_pulse() writes the heartbeat and reads
-    // both figures in a single round trip.
+    // Visitor counter. Same sid as the visit row above, so one person is
+    // one visitor in both numbers.
     //
-    // The heartbeat stops while the tab is hidden: a browser with forty
-    // background tabs would otherwise report forty people online, and the
-    // number has to mean what it says. It resumes on the next look.
+    // "Online now" is not shown at the moment -- a true "1" on the front
+    // page argues against the site harder than no number at all -- but the
+    // heartbeat still goes out, so the figure is accurate rather than
+    // starting from nothing on the day it comes back. It stops while the
+    // tab is hidden: a browser with forty background tabs would otherwise
+    // report forty people online, and the number has to mean what it says.
     var pulseBar    = document.getElementById("pulseBar");
-    var pulseOnline = document.getElementById("pulseOnline");
     var pulseTotal  = document.getElementById("pulseTotal");
     var pulseTimer  = null;
 
@@ -3626,7 +3623,6 @@ if ("serviceWorker" in navigator) {
           var row = rows && rows[0];
           if (!row || !pulseBar) return;
           pulseTotal.textContent  = Number(row.total).toLocaleString();
-          pulseOnline.textContent = Number(row.online).toLocaleString();
           pulseBar.setAttribute("data-ready", "1");
         })
         .catch(function(){});
