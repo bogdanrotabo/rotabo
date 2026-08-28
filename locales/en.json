@@ -235,6 +235,8 @@
     "motorcycle_repair": "Motorcycle repair"
   },
   "bizsearch": {
+    "go": "Search",
+    "market": "Continue in Rotabo Market",
     "placeholder": "Search the field your company works in",
     "none": "Nothing matched. Try another word - a trade, a tool, a service."
   },

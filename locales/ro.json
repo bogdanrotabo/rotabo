@@ -235,6 +235,8 @@
     "motorcycle_repair": "Service moto"
   },
   "bizsearch": {
+    "go": "Caută",
+    "market": "Continuă în Rotabo Market",
     "placeholder": "Caută domeniul în care profesează firma ta",
     "none": "Niciun rezultat. Încearcă alt cuvânt - o meserie, o unealtă, un serviciu."
   },

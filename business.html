@@ -757,6 +757,10 @@
   .chip-emoji--mark{display:inline-flex;align-items:center;gap:3px;line-height:0;}
   .chip-emoji--mark svg{width:11px;height:14px;}
   html[data-mode="business"] .category-grid.pro-open{display:grid;}
+  /* Only one card exists on this side. Every field lands in Rotabo Market,
+     so the other eleven are not hidden-until-asked, they are not there. */
+  html[data-mode="business"] .category-card:not(#cat-other){display:none;}
+  html[data-mode="business"] .category-grid.pro-open{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;}
 
   .pro-search .cascade-wrap{max-width:620px;margin:0 auto;}
   .pro-search__box{
@@ -772,6 +776,17 @@
     border:none;outline:none;background:transparent;
     font:inherit;font-size:1.02rem;color:var(--text-dark);
   }
+  /* Always there, always works. Whatever is typed, and whether or not the
+     list found anything, this ends in Rotabo Market -- which is where a
+     company registers regardless of its field. A search that can come back
+     with nothing needs a way forward on the bar itself. */
+  .pro-search__go{
+    flex:0 0 auto;
+    padding:9px 18px;border:none;border-radius:10px;cursor:pointer;
+    background:linear-gradient(135deg,var(--brand-grad),var(--diamond-b));
+    color:var(--on-brand);font:inherit;font-weight:800;font-size:.95rem;
+  }
+  .pro-search__go:hover{filter:brightness(1.06);}
   .pro-search__none{text-align:center;color:var(--text-eyebrow);margin:20px 0 0;}
 
   /* The hundred places, under the search. Same box as the search so the two
@@ -813,6 +828,13 @@
   .biz-row--taken:hover b{color:var(--ink-strong);}
   .biz-row--free{color:var(--text-eyebrow);}
   .biz-row--free:hover{color:var(--ink-strong);}
+  /* The row a search falls through to. It is an offer, not an apology, so
+     it reads like the taken rows rather than like the empty ones. */
+  .biz-row--market{
+    display:block;width:100%;text-align:left;
+    border:none;background:none;font:inherit;cursor:pointer;
+    color:var(--ink-strong);font-weight:700;
+  }
   .categories-section,.bridge-section{padding-top:56px;}
   .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
   .category-card{
@@ -1496,13 +1518,14 @@
        of the way until something is typed. -->
   <div class="pro-search">
     <div class="cascade-wrap">
-      <label class="pro-search__box">
+      <div class="pro-search__box">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input type="search" id="proSearch" autocomplete="off"
                role="combobox" aria-expanded="false" aria-controls="proList" aria-autocomplete="list"
                data-i18n-placeholder="bizsearch.placeholder"
                placeholder="Search the field your company works in">
-      </label>
+        <button type="button" class="pro-search__go" id="proGo" data-i18n="bizsearch.go">Search</button>
+      </div>
       <div class="cascade" id="proList" hidden role="listbox"></div>
     </div>
     <p class="pro-search__none" id="proSearchNone" hidden data-i18n="bizsearch.none">Nothing matched.</p>
@@ -4340,8 +4363,20 @@ if ("serviceWorker" in navigator) {
 
   function show(q){
     var rows = matches(q);
-    open(rows);
-    if (none) none.hidden = rows.length > 0;
+    if (rows.length) {
+      open(rows);
+      if (none) none.hidden = true;
+      return;
+    }
+    /* No dead end. A field nobody thought of is still a company that wants
+       to register, and telling it "nothing matched" is telling it to leave. */
+    list.innerHTML = '<button type="button" class="cascade-row biz-row--market"'
+                   + ' data-market="1" style="--i:0">'
+                   + esc(T("bizsearch.market", "Continue in Rotabo Market"))
+                   + '</button>';
+    list.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+    if (none) none.hidden = true;
   }
 
   /* One card, the one that carries the actions. The others stay down:
@@ -4358,11 +4393,33 @@ if ("serviceWorker" in navigator) {
     }
   };
 
-  function pick(slug, cat){
+  /* Every field ends in the same place on this side. A company registers in
+     Rotabo Market whatever it does -- the hundred and thirteen are how it
+     finds itself, not twelve doors it has to pick the right one of. The
+     category the domain maps to still matters elsewhere; here it does not. */
+  function pick(slug){
     input.value = label(slug);
     close();
     if (none) none.hidden = true;
-    window.RotaboShowCategory(cat);
+    window.RotaboShowCategory("other");
+  }
+
+  var go = document.getElementById("proGo");
+  if (go) {
+    go.addEventListener("click", function(){
+      close();
+      window.RotaboShowCategory("other");
+    });
+  }
+
+  // The box is a div now rather than a label, because a label cannot hold a
+  // button without the click reaching the input. Clicking the empty part of
+  // it still has to focus the field.
+  var box = input.closest(".pro-search__box");
+  if (box) {
+    box.addEventListener("click", function(e){
+      if (e.target === box) input.focus();
+    });
   }
 
   input.addEventListener("focus", function(){ show(input.value); });
@@ -4382,7 +4439,12 @@ if ("serviceWorker" in navigator) {
   list.addEventListener("click", function(e){
     var row = e.target.closest(".cascade-row");
     if (!row) return;
-    pick(row.getAttribute("data-slug"), row.getAttribute("data-cat"));
+    if (row.getAttribute("data-market")) {
+      close();
+      window.RotaboShowCategory("other");
+      return;
+    }
+    pick(row.getAttribute("data-slug"));
   });
 
   document.addEventListener("click", function(e){
