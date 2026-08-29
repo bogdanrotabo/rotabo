@@ -1191,6 +1191,16 @@
     font-size:.9rem;font-weight:700;color:var(--text-eyebrow);
     margin-bottom:10px;
   }
+  .picker-search{display:flex;gap:8px;align-items:stretch;}
+  .picker-search input{flex:1 1 auto;min-width:0;}
+  .picker-go{
+    flex:none;padding:0 18px;border:none;border-radius:10px;cursor:pointer;
+    background:var(--brand-grad);color:var(--on-brand);font:inherit;font-weight:700;
+  }
+  .picker-go:hover{filter:brightness(1.08);}
+  .picker-go--empty{display:block;margin:12px auto 0;padding:10px 18px;}
+  .picker-empty{text-align:center;}
+
   .picker-where .flag{font-size:1.15rem;line-height:1;display:inline-flex;align-items:center;}
 
   /* A flag is a picture now, not a character -- Windows draws no glyph for a
@@ -1954,9 +1964,18 @@
       <input type="search" id="pickerSearch" autocomplete="off"
              data-i18n-placeholder="picker.search_placeholder"
              placeholder="Type a city, or the one nearest to you">
+      <!-- The list holds the largest towns of each country, not all of them.
+           Somebody from a village that is not among them had a box that
+           answered "no city by that name" and no way forward -- which is
+           being told to leave. The button takes whatever is typed. -->
+      <button type="button" class="picker-go" id="pickerGo"
+              data-i18n="picker.go">Search</button>
     </div>
     <div class="picker-grid" id="pickerGrid"></div>
-    <p class="picker-empty" id="pickerEmpty" hidden data-i18n="picker.no_match">No city by that name. Type fewer letters, or pick the nearest big one.</p>
+    <p class="picker-empty" id="pickerEmpty" hidden>
+      <span data-i18n="picker.no_match">No city by that name. Type fewer letters, or pick the nearest big one.</span>
+      <button type="button" class="picker-go picker-go--empty" id="pickerGoEmpty"></button>
+    </p>
   </div>
 </div>
 
@@ -3991,12 +4010,37 @@ if ("serviceWorker" in navigator) {
 
   window.RotaboGeo = { detectCountry: detectCountry, loadCities: loadCities };
 
+  /* Accents off before comparing. "Zur" did not find Zürich, "Geneve"
+     did not find Genève, and "Malmo" did not find Malmö -- the list was
+     there, the letters on the keyboard were not. This is the same folding
+     the field search uses; the city box simply never had it. */
+  function foldCity(x){
+    return String(x == null ? "" : x).toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/['’-]/g, " ")
+      .replace(/\s+/g, " ").trim();
+  }
+
   function go(city){
     var u = "/browse.html?category=" + encodeURIComponent(state.category) +
             "&role=" + encodeURIComponent(state.role);
     if (city) u += "&city=" + encodeURIComponent(city);
     if (state.iso) u += "&cc=" + encodeURIComponent(state.iso);
     window.location.href = u;
+  }
+
+  /* Both buttons do the same thing: take the box at its word.
+
+     go() already accepts any string -- it only puts it in the query for
+     browse.html -- so a town that is not in cities.js travels exactly as one
+     that is. What was missing was a way to say it. The empty state carries
+     its own copy because that is where the dead end was, and someone who has
+     just been told "no city by that name" should not have to look back up at
+     the box to find the way out. */
+  function goTyped(){
+    var typed = (search.value || "").trim();
+    if (!typed) return;
+    go(typed);
   }
 
   // cascade=true only when the list is genuinely new (opened, or the country
@@ -4044,6 +4088,8 @@ if ("serviceWorker" in navigator) {
 
   function renderCities(fresh){
     state.mode = "cities";
+    var gb = document.getElementById("pickerGo");
+    if (gb) gb.hidden = false;
     // cities.js stores each country population-first. That is the order that
     // makes sense to generate and the wrong one to read: nobody scans fifty
     // towns hoping theirs happens to be large. Sorted alphabetically for
@@ -4061,16 +4107,39 @@ if ("serviceWorker" in navigator) {
     if (!list.length) {
       draw([], function(){});
       empty.hidden = false;
+      paintGoButtons();
       return;
     }
     if (q) {
-      list = list.filter(function(c){ return c.toLowerCase().indexOf(q) !== -1; });
+      var want = foldCity(q);
+      list = list.filter(function(c){ return foldCity(c).indexOf(want) !== -1; });
     }
     draw(list.slice(0, 400), go, fresh);
+    paintGoButtons();
+  }
+
+  /* Named, so the label can say what pressing it will do -- "Search
+     Bussigny" rather than "Search" -- and so it is redrawn as the typing
+     changes. An unnamed button next to an empty list is a guess. */
+  function paintGoButtons(){
+    var typed = (search.value || "").trim();
+    var goEmpty = document.getElementById("pickerGoEmpty");
+    if (!goEmpty) return;
+    /* Cities only. On the country list there is nothing to search freely for
+       -- the countries are a closed set -- and offering "Search Zur" there
+       would send somebody to browse.html with a city and no country. */
+    if (state.mode !== "cities") { goEmpty.hidden = true; return; }
+    var tpl = (window.rotaboT && window.rotaboT("picker.go_named")) || "";
+    if (!tpl || tpl === "picker.go_named") tpl = "Search {city}";
+    goEmpty.textContent = typed ? tpl.replace("{city}", typed) : "";
+    goEmpty.hidden = !typed;
   }
 
   function renderCountries(fresh){
     state.mode = "countries";
+    // Nothing to search freely for here: the countries are a closed list.
+    var gb = document.getElementById("pickerGo");
+    if (gb) gb.hidden = true;
     var C = window.RotaboCountries;
     var q = (search.value || "").trim().toLowerCase();
     var all = (C && C.allIso) ? C.allIso() : [];
@@ -4082,8 +4151,11 @@ if ("serviceWorker" in navigator) {
     }).filter(function(x){ return x.name && citiesFor(x.iso).length; });
     if (q) {
       named = named.filter(function(x){
-        return x.name.toLowerCase().indexOf(q) !== -1 ||
-               (x.en || "").toLowerCase().indexOf(q) !== -1;
+        // Same folding as the cities: someone typing "Elvetia" for
+        // "Elveția" or "Osterreich" for "Österreich" is not guessing.
+        var want = foldCity(q);
+        return foldCity(x.name).indexOf(want) !== -1 ||
+               foldCity(x.en || "").indexOf(want) !== -1;
       });
     }
     // Alphabetical order is not the same in every language.
@@ -4143,14 +4215,37 @@ if ("serviceWorker" in navigator) {
 
   search.addEventListener("input", function(){
     if (state.mode === "countries") renderCountries(); else renderCities();
+    paintGoButtons();
   });
-  // Enter on a country we have no list for still gets the visitor through.
+
+  /* Enter takes the first name on the list when there is one -- somebody who
+     typed "Zur" and can see Zurich means Zurich, not a search for "Zur" --
+     and otherwise takes what was typed.
+
+     It used to do the second half only for countries with no city list at
+     all, so a Swiss village that is simply not among the largest towns was a
+     dead end while a village in a country we hold nothing for was not. */
   search.addEventListener("keydown", function(e){
     if (e.key !== "Enter") return;
+    if (state.mode !== "cities") return;
     e.preventDefault();
-    var v = (search.value || "").trim();
-    if (state.mode === "cities" && v && !citiesFor(state.iso).length) go(v);
+    var first = grid.querySelector("button");
+    if (first) { first.click(); return; }
+    goTyped();
   });
+
+  var goBtn = document.getElementById("pickerGo");
+  if (goBtn) goBtn.addEventListener("click", function(){
+    // The button in the box means the same as Enter, and means it in cities
+    // mode only: on the country list there is nothing to search for freely.
+    if (state.mode !== "cities") return;
+    var first = grid.querySelector("button");
+    if (first && (search.value || "").trim()) { first.click(); return; }
+    goTyped();
+  });
+
+  var goEmptyBtn = document.getElementById("pickerGoEmpty");
+  if (goEmptyBtn) goEmptyBtn.addEventListener("click", goTyped);
   changeBtn.addEventListener("click", function(){
     search.value = "";
     renderCountries(true);       // swapping cities for countries is a new list

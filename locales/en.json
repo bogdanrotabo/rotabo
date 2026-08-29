@@ -880,6 +880,8 @@
     "you_are_in": "It looks like you are in {country} — ",
     "change_country": "somewhere else",
     "search_placeholder": "Type a city, or the one nearest to you",
+    "go": "Search",
+    "go_named": "Search {city}",
     "no_match": "No city by that name. Type fewer letters, or pick the nearest big one.",
     "what": {
       "drive": "the best drivers and taxi companies",

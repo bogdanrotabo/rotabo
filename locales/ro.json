@@ -882,6 +882,8 @@
     "you_are_in": "Se pare că sunteți în {country} — ",
     "change_country": "altundeva",
     "search_placeholder": "Scrieți un oraș, sau cel mai apropiat de dumneavoastră",
+    "go": "Caută",
+    "go_named": "Caută {city}",
     "no_match": "Niciun oraș cu numele ăsta. Scrieți mai puține litere, sau alegeți orașul mare cel mai apropiat.",
     "what": {
       "drive": "cei mai buni șoferi și companii de taxi",
