@@ -928,6 +928,10 @@
     "domain_hint": "După asta sunt căutate firmele. Alege-l pe cel mai apropiat.",
     "domain_error": "Alege domeniul din listă.",
     "website_label": "Site web (opțional)",
+    "logo_label": "Logoul tău (opțional)",
+    "logo_hint": "PNG, JPEG sau WebP, până în 512 KB. E văzut de un om înainte să apară pe sit.",
+    "logo_too_big": "Poza are peste 512 KB. Folosește una mai mică.",
+    "logo_bad_type": "Fișierul ăsta nu e o poză PNG, JPEG sau WebP.",
     "regno_label": "Număr de registru sau TVA (opțional)",
     "regno_hint": "Se păstrează așa cum îl scrii. Rotabo nu îl verifică la niciun registru și nici nu pretinde asta."
   },

@@ -926,6 +926,10 @@
     "domain_hint": "This is what companies are searched by. Pick the closest one.",
     "domain_error": "Pick your field from the list.",
     "website_label": "Website (optional)",
+    "logo_label": "Your logo (optional)",
+    "logo_hint": "PNG, JPEG or WebP, up to 512 KB. It is looked at before it appears on the site.",
+    "logo_too_big": "That picture is over 512 KB. Use a smaller one.",
+    "logo_bad_type": "That file is not a PNG, JPEG or WebP picture.",
     "regno_label": "Company or VAT number (optional)",
     "regno_hint": "Stored as you write it. Rotabo does not check it against any register, and does not claim to."
   },

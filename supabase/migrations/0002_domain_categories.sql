@@ -240,3 +240,65 @@ insert into public.domain_categories (slug, category) values
   ('dance_school','learn'),
   ('art_gallery','other')
 on conflict (slug) do update set category = excluded.category;
+
+-- Applied 2026-08-29: company logos.
+--
+-- A company uploads a picture to our own storage rather than linking one from
+-- its site. Linking would have been a line of code and a request to somebody
+-- else's server on every page view -- slow when their host is, broken when
+-- they move the file, and a way for them to see who is looking.
+--
+-- logo_path is where the file sits; logo_approved decides whether anyone but
+-- the admin ever sees it, and is false on arrival. A stranger can put a
+-- picture on this site and nothing they put there appears until it has been
+-- looked at, in the Companies tab of the dashboard.
+
+alter table public.companies
+  add column if not exists logo_path text,
+  add column if not exists logo_approved boolean not null default false;
+
+-- Public for reading, because an approved logo is meant to be seen and a
+-- signed URL that expires is the wrong shape for a static page. Nobody writes
+-- to it over the API: uploads go through create-company on the service role.
+-- The path is the company's uuid plus a random name, so an unapproved file is
+-- not reachable by guessing -- which is not the same as private and is not
+-- pretended to be. Rejecting a logo deletes the object.
+insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+values ('company-logos', 'company-logos', true, 524288,
+        array['image/png','image/jpeg','image/webp'])
+on conflict (id) do update
+  set public = excluded.public,
+      file_size_limit = excluded.file_size_limit,
+      allowed_mime_types = excluded.allowed_mime_types;
+
+drop policy if exists "company logos are readable" on storage.objects;
+create policy "company logos are readable" on storage.objects
+  for select to anon, authenticated
+  using (bucket_id = 'company-logos');
+
+-- The public list carries the logo only once approved: an unapproved one
+-- comes back null rather than with a flag, so there is nothing for a page to
+-- render by mistake.
+drop function if exists public.companies_public();
+
+create function public.companies_public()
+returns table (
+  id uuid, name text, domain text, category text, role text,
+  country text, city text, website_url text, logo_path text,
+  created_at timestamptz
+)
+language sql
+stable
+security definer
+set search_path to 'public'
+as $$
+  select c.id, c.name, c.domain, c.category, c.role,
+         c.country, c.city, c.website_url,
+         case when c.logo_approved then c.logo_path else null end,
+         c.created_at
+  from public.companies c
+  where c.visible_until is not null and c.visible_until > now()
+  order by c.created_at;
+$$;
+
+grant execute on function public.companies_public() to anon, authenticated;

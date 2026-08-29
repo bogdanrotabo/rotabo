@@ -96,6 +96,20 @@
   .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;}
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:40px 0;}
 
+  /* The decision buttons. Small, because a table row is not a form, and
+     two colours because approving and deleting should not look alike at
+     a glance -- one of them cannot be undone. */
+  .mini{
+    font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+    padding:6px 11px;border-radius:8px;border:1px solid var(--border);
+    background:#fff;color:var(--text-dark);
+  }
+  .mini.ok{background:#116a3a;border-color:#116a3a;color:#fff;}
+  .mini.no{background:#fff;border-color:#c0392b;color:#c0392b;}
+  .mini:disabled{opacity:.5;cursor:default;}
+  .muted{color:var(--text-eyebrow);font-size:.85rem;}
+  .chk{display:inline-flex;align-items:center;gap:7px;font-size:.9rem;color:var(--text-eyebrow);}
+
   .tabs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--border);}
   .tab-btn{
     padding:10px 18px;border:none;background:none;cursor:pointer;
@@ -173,6 +187,7 @@
       <button type="button" class="tab-btn" id="tabBtnVisits">Visits</button>
       <button type="button" class="tab-btn" id="tabBtnAccess">Paid access</button>
       <button type="button" class="tab-btn" id="tabBtnPayments">Payments</button>
+      <button type="button" class="tab-btn" id="tabBtnCompanies">Companies</button>
       <div class="tabs-actions">
         <button type="button" class="ghost-btn" id="refreshBtn">Refresh</button>
         <button type="button" class="ghost-btn" id="logoutBtn">Log out</button>
@@ -300,6 +315,36 @@
         </table>
       </div>
       <p class="empty-note" id="accessEmptyNote" style="display:none;">No paid access matches this filter.</p>
+    </div>
+
+    <div class="tab-panel" id="panelCompanies">
+      <h1>Companies</h1>
+      <p class="sub">Registrations from the business side. A logo a company uploaded is stored but shown to nobody until you approve it here &mdash; removing one deletes the file, not just the permission.</p>
+
+      <div class="stats" id="companiesStats"></div>
+
+      <div class="filter-row">
+        <input type="search" id="companiesSearchInput" autocomplete="off" placeholder="Search name, field, town…">
+        <label class="chk"><input type="checkbox" id="companiesPendingOnly"> Waiting for a decision</label>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Name</th>
+              <th>Field</th>
+              <th>Where</th>
+              <th>Contact</th>
+              <th>Registered</th>
+              <th>Decision</th>
+            </tr>
+          </thead>
+          <tbody id="companiesTableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty-note" id="companiesEmptyNote" style="display:none;">No companies match this filter.</p>
     </div>
 
     <div class="tab-panel" id="panelPayments">
@@ -468,6 +513,7 @@
     }
     else if (resource === "access") qs = "?resource=access";
     else if (resource === "payments") qs = "?resource=payments";
+    else if (resource === "companies") qs = "?resource=companies";
     return fetch(FUNCTION_URL + qs, {
       headers: { "Authorization": "Bearer " + token },
       cache: "no-store"
@@ -954,7 +1000,123 @@
       note: "paymentsEmptyNote", empty: "No payments match this filter.", draw: renderPayments,
       apply: function(res){ allPayments = res.data; paymentStats = res.stats; renderPayments(); }
     }
+    ,{
+      btn: "tabBtnCompanies", panel: "panelCompanies", resource: "companies",
+      note: "companiesEmptyNote", empty: "No companies match this filter.", draw: renderCompanies,
+      apply: function(res){ allCompanies = res.data; companyStats = res.stats; renderCompanies(); }
+    }
   ];
+  /* Companies, and the one thing on this dashboard that writes.
+
+     Everything else here reads. Approving a logo is a decision somebody has
+     to make before a picture a stranger uploaded appears on the site, and
+     the only sensible place to make it is where you are already looking at
+     who registered. */
+  var allCompanies = [];
+  var companyStats = null;
+
+  var LOGO_BASE = "https://auth.rotabo.app/storage/v1/object/public/company-logos/";
+
+  function apiPost(action, id, token){
+    return fetch(FUNCTION_URL, {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + token, "Content-Type": "application/json" },
+      body: JSON.stringify({ action: action, id: id })
+    }).then(function(res){ return res.ok; }).catch(function(){ return false; });
+  }
+
+  function decide(action, id, btn){
+    var row = btn.closest("tr");
+    [].slice.call(row.querySelectorAll("button")).forEach(function(b){ b.disabled = true; });
+    credential().then(function(token){
+      if (!token) return false;
+      return apiPost(action, id, token);
+    }).then(function(okay){
+      if (!okay) {
+        [].slice.call(row.querySelectorAll("button")).forEach(function(b){ b.disabled = false; });
+        return;
+      }
+      // Change what we already hold rather than fetching the lot again: the
+      // answer is known, and a reload would lose the scroll position halfway
+      // down a list somebody is working through.
+      allCompanies.forEach(function(c){
+        if (c.id !== id) return;
+        if (action === "approve_logo") c.logo_approved = true;
+        else { c.logo_path = null; c.logo_approved = false; }
+      });
+      if (companyStats) {
+        companyStats.pending_logos = allCompanies.filter(function(c){
+          return c.logo_path && !c.logo_approved;
+        }).length;
+        companyStats.with_logo = allCompanies.filter(function(c){ return c.logo_path; }).length;
+      }
+      renderCompanies();
+    });
+  }
+
+  function renderCompanies(){
+    var body = document.getElementById("companiesTableBody");
+    var note = document.getElementById("companiesEmptyNote");
+    var q = (document.getElementById("companiesSearchInput").value || "").trim().toLowerCase();
+    var pendingOnly = document.getElementById("companiesPendingOnly").checked;
+
+    var rows = allCompanies.filter(function(c){
+      if (pendingOnly && !(c.logo_path && !c.logo_approved)) return false;
+      if (!q) return true;
+      return [c.name, c.domain, c.city, c.country, c.email]
+        .filter(Boolean).join(" ").toLowerCase().indexOf(q) !== -1;
+    });
+
+    if (companyStats) {
+      document.getElementById("companiesStats").innerHTML =
+        tile(companyStats.pending_logos, "WAITING FOR YOU") +
+        tile(companyStats.live, "LIVE NOW") +
+        tile(companyStats.with_logo, "WITH A LOGO") +
+        tile(companyStats.total, "REGISTERED");
+    }
+
+    body.innerHTML = "";
+    rows.forEach(function(c){
+      var tr = document.createElement("tr");
+
+      var waiting = !!(c.logo_path && !c.logo_approved);
+      var pic = c.logo_path
+        ? '<img src="' + esc(LOGO_BASE + String(c.logo_path).split("/").map(encodeURIComponent).join("/")) +
+          '" alt="" style="width:44px;height:44px;object-fit:contain;background:#fff;border-radius:6px;">'
+        : '<span class="muted">&mdash;</span>';
+
+      var decision = !c.logo_path
+        ? '<span class="muted">no logo</span>'
+        : (waiting
+            ? '<button type="button" class="mini ok" data-approve="' + esc(c.id) + '">Approve</button> ' +
+              '<button type="button" class="mini no" data-reject="' + esc(c.id) + '">Remove</button>'
+            : '<span class="muted">shown</span> ' +
+              '<button type="button" class="mini no" data-reject="' + esc(c.id) + '">Remove</button>');
+
+      tr.innerHTML =
+        "<td>" + pic + "</td>" +
+        "<td>" + esc(c.name || "") + (waiting ? ' <span class="muted">waiting</span>' : "") + "</td>" +
+        "<td>" + esc(c.domain || "") + "</td>" +
+        "<td>" + esc([c.city, c.country].filter(Boolean).join(", ")) + "</td>" +
+        "<td>" + esc(c.email || "") + "<br>" + esc(c.phone || "") + "</td>" +
+        "<td>" + esc(String(c.created_at || "").slice(0, 10)) + "</td>" +
+        "<td>" + decision + "</td>";
+
+      body.appendChild(tr);
+    });
+
+    note.style.display = rows.length ? "none" : "block";
+  }
+
+  document.getElementById("companiesTableBody").addEventListener("click", function(e){
+    var a = e.target.closest("[data-approve]");
+    if (a) { decide("approve_logo", a.getAttribute("data-approve"), a); return; }
+    var r = e.target.closest("[data-reject]");
+    if (r) { decide("reject_logo", r.getAttribute("data-reject"), r); }
+  });
+  document.getElementById("companiesSearchInput").addEventListener("input", renderCompanies);
+  document.getElementById("companiesPendingOnly").addEventListener("change", renderCompanies);
+
   var activeTab = TABS[0];
 
   function selectTab(tab){

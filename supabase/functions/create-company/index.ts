@@ -43,6 +43,72 @@ function nonEmptyString(v: unknown): string {
   return typeof v === "string" ? v.trim() : "";
 }
 
+/* The logo, if one came with the form.
+
+   Uploaded after the row exists, because the file is stored under the
+   company's own id and there is no id until the insert returns. A failure
+   here must not undo a registration that has already succeeded: the company
+   is registered either way and simply has no logo, which is the state every
+   company was in until this existed.
+
+   Three checks, and the third is the one that matters. The declared type is
+   not trusted -- anyone can label anything image/png -- so the first bytes
+   are read and have to be what that format actually starts with. Without
+   that, "logo.png" could be a script, an HTML page, or anything else, sitting
+   on our own origin under a name the page will happily put in an <img>. */
+const MAGIC: Record<string, { ext: string; test: (b: Uint8Array) => boolean }> = {
+  "image/png": {
+    ext: "png",
+    test: (b) => b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47,
+  },
+  "image/jpeg": {
+    ext: "jpg",
+    test: (b) => b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff,
+  },
+  "image/webp": {
+    ext: "webp",
+    test: (b) =>
+      b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 &&
+      b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50,
+  },
+};
+
+const LOGO_MAX_BYTES = 512 * 1024;
+
+async function storeLogo(companyId: string, raw: unknown): Promise<string | null> {
+  if (typeof raw !== "string" || !raw) return null;
+
+  // A data URL from the browser's FileReader: "data:image/png;base64,AAAA".
+  const m = /^data:(image\/(?:png|jpeg|webp));base64,([A-Za-z0-9+/=]+)$/.exec(raw.trim());
+  if (!m) return null;
+
+  const kind = MAGIC[m[1]];
+  if (!kind) return null;
+
+  let bytes: Uint8Array;
+  try {
+    const bin = atob(m[2]);
+    if (bin.length > LOGO_MAX_BYTES) return null;
+    bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  } catch {
+    return null;
+  }
+
+  if (bytes.length < 16 || !kind.test(bytes)) return null;
+
+  const path = `${companyId}/${crypto.randomUUID()}.${kind.ext}`;
+  const { error } = await supabase.storage
+    .from("company-logos")
+    .upload(path, bytes, { contentType: m[1], upsert: false });
+
+  if (error) {
+    console.error("logo upload failed for", companyId, error.message);
+    return null;
+  }
+  return path;
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { status: 204, headers: CORS_HEADERS });
@@ -164,5 +230,25 @@ Deno.serve(async (req: Request) => {
     return json({ error: error.message }, 500);
   }
 
-  return json({ ok: true, id: inserted.id, visible_until: inserted.visible_until, free: true });
+  /* The logo comes second, and its failure is not the registration's. If the
+     file is rejected or the upload falls over, the company still exists and
+     the answer is still ok -- with logo: false, so the browser can say the
+     picture did not go through without implying the registration did not. */
+  const logoPath = await storeLogo(inserted.id, body.logo);
+  if (logoPath) {
+    const { error: logoErr } = await supabase
+      .from("companies")
+      .update({ logo_path: logoPath })
+      .eq("id", inserted.id);
+    if (logoErr) console.error("logo path not stored for", inserted.id, logoErr.message);
+  }
+
+  return json({
+    ok: true,
+    id: inserted.id,
+    visible_until: inserted.visible_until,
+    free: true,
+    // Uploaded, but not shown to anyone until it has been looked at.
+    logo: !!logoPath,
+  });
 });
