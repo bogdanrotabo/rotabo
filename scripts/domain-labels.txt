@@ -161,3 +161,53 @@ car_wash|Car wash|Spălătorie auto
 car_rental|Car rental|Închirieri auto
 bike_scooter_rental|Bicycle and scooter rental|Închirieri biciclete și trotinete
 funeral_services|Funeral services|Servicii funerare
+notary|Notary|Notariat
+bailiff|Bailiff and enforcement|Executor judecătoresc
+patent_trademark|Patents and trademarks|Brevete și mărci
+debt_collection|Debt collection|Recuperare creanțe
+company_formation|Company formation|Înființări de firme
+financial_advisory|Financial advice|Consultanță financiară
+payroll_services|Payroll services|Servicii de salarizare
+currency_exchange|Currency exchange|Casă de schimb valutar
+pawnshop|Pawnshop|Amanet
+leasing|Leasing and finance|Leasing și finanțare
+hearing_aids|Hearing aids|Aparate auditive
+medical_transport|Medical transport|Transport medical
+rehabilitation|Rehabilitation centre|Centru de recuperare
+occupational_therapy|Occupational therapy|Terapie ocupațională
+midwifery|Midwifery|Moașe
+acupuncture|Acupuncture|Acupunctură
+chiropractic|Chiropractic and osteopathy|Chiropractică și osteopatie
+insulation|Insulation|Izolații termice
+waterproofing|Waterproofing|Hidroizolații
+plastering|Plastering and rendering|Tencuieli și glet
+tiling|Tiling|Faianță și gresie
+drywall|Drywall and partitions|Rigips și compartimentări
+fencing|Fencing and gates|Garduri și porți
+paving|Paving and driveways|Pavaje și alei
+well_drilling|Well drilling|Foraje puțuri
+septic_systems|Septic tanks and drainage|Fose septice și canalizare
+solar_panels|Solar panel installation|Montaj panouri solare
+alarm_cctv|Alarms and CCTV|Alarme și supraveghere video
+smart_home|Smart home installation|Case inteligente
+lift_maintenance|Lift maintenance|Întreținere ascensoare
+fire_safety|Fire safety and extinguishers|Protecție la incendiu
+car_dealer|Car dealership|Dealer auto
+vehicle_inspection|Vehicle inspection|Inspecție tehnică
+auto_electrics|Auto electrics|Electrică auto
+car_glass|Car glass and windscreens|Geamuri și parbrize auto
+boat_repair|Boat and marine repair|Reparații bărci și ambarcațiuni
+bus_charter|Bus and coach hire|Închirieri autocare
+call_centre|Call centre|Call center
+virtual_assistant|Virtual assistant|Asistent virtual
+market_research|Market research|Cercetare de piață
+copywriting|Copywriting|Redactare de conținut
+seo_services|SEO and online advertising|SEO și publicitate online
+social_media|Social media management|Administrare rețele sociale
+app_development|Mobile app development|Dezvoltare aplicații mobile
+game_development|Game development|Dezvoltare de jocuri
+drone_services|Drone services|Servicii cu drone
+printing_3d|3D printing|Printare 3D
+interior_design|Interior design|Design interior
+dance_school|Dance school|Școală de dans
+art_gallery|Art gallery and framing|Galerie de artă și înrămări

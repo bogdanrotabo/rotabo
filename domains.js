@@ -244,7 +244,68 @@
     ["car_wash",               "auto"],
     ["car_rental",             "drive"],
     ["bike_scooter_rental",    "drive"],
-    ["funeral_services",       "other"]
+    ["funeral_services",       "other"],
+
+    /* ------------------------------------------- the third fifty (50)
+       Notary first, because it was asked for by name and because it is
+       the kind of firm a company looks for on the day it needs one and
+       not before. Around it: the professions that sit beside a notary --
+       bailiff, patents, debt collection, company formation -- then the
+       trades that were missing from the building side (insulation,
+       waterproofing, plastering, tiling, drywall, fencing, paving, wells,
+       septic systems, lifts, fire safety), the vehicle trades, and the
+       digital ones a firm actually buys: SEO, social media, apps, drones,
+       3D printing. */
+    ["notary",               "other"],
+    ["bailiff",              "other"],
+    ["patent_trademark",     "other"],
+    ["debt_collection",      "other"],
+    ["company_formation",    "other"],
+    ["financial_advisory",   "other"],
+    ["payroll_services",     "other"],
+    ["currency_exchange",    "other"],
+    ["pawnshop",             "other"],
+    ["leasing",              "other"],
+    ["hearing_aids",         "other"],
+    ["medical_transport",    "care"],
+    ["rehabilitation",       "care"],
+    ["occupational_therapy", "care"],
+    ["midwifery",            "care"],
+    ["acupuncture",          "other"],
+    ["chiropractic",         "other"],
+    ["insulation",           "build"],
+    ["waterproofing",        "build"],
+    ["plastering",           "build"],
+    ["tiling",               "build"],
+    ["drywall",              "build"],
+    ["fencing",              "build"],
+    ["paving",               "build"],
+    ["well_drilling",        "build"],
+    ["septic_systems",       "build"],
+    ["solar_panels",         "home"],
+    ["alarm_cctv",           "home"],
+    ["smart_home",           "home"],
+    ["lift_maintenance",     "build"],
+    ["fire_safety",          "build"],
+    ["car_dealer",           "auto"],
+    ["vehicle_inspection",   "auto"],
+    ["auto_electrics",       "auto"],
+    ["car_glass",            "auto"],
+    ["boat_repair",          "auto"],
+    ["bus_charter",          "drive"],
+    ["call_centre",          "other"],
+    ["virtual_assistant",    "other"],
+    ["market_research",      "other"],
+    ["copywriting",          "other"],
+    ["seo_services",         "other"],
+    ["social_media",         "other"],
+    ["app_development",      "other"],
+    ["game_development",     "other"],
+    ["drone_services",       "other"],
+    ["printing_3d",          "other"],
+    ["interior_design",      "home"],
+    ["dance_school",         "learn"],
+    ["art_gallery",          "other"]
   ];
 
   global.RotaboDomains = {

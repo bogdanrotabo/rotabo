@@ -161,3 +161,53 @@ car_wash|valeting, car cleaning, detailing|spalatorie auto, curatat masina, deta
 car_rental|hire car, rent a car, vehicle hire|inchiriere masini, rent a car, masina de inchiriat
 bike_scooter_rental|bike hire, e-scooter, rent a bike|inchiriere biciclete, trotinete, bicicleta de inchiriat
 funeral_services|funeral director, undertaker, burial, cremation|pompe funebre, inmormantare, incinerare, sicrie
+notary|notary public, deeds, conveyancing, attestation|notar, acte notariale, autentificare, succesiune
+bailiff|enforcement officer, seizure, court order|executor, poprire, executare silita, somatie
+patent_trademark|intellectual property, patent attorney, brand registration|proprietate intelectuala, marca inregistrata, brevet, OSIM
+debt_collection|debt recovery, arrears, collections agency|recuperare debite, restante, colectare creante
+company_formation|company registration, incorporation, business setup|infiintare firma, SRL, registrul comertului, PFA
+financial_advisory|financial planning, investment advice, wealth|planificare financiara, investitii, consultant financiar
+payroll_services|payroll, wages, salary administration|salarizare, state de plata, revisal
+currency_exchange|bureau de change, foreign exchange, money exchange|schimb valutar, valuta, curs valutar
+pawnshop|pawnbroker, collateral loan, gold buying|amanet, imprumut cu gaj, aur
+leasing|equipment leasing, vehicle finance, hire purchase|leasing auto, finantare, rate
+hearing_aids|audiology, hearing test, hearing centre|audiolog, protezare auditiva, test auz
+medical_transport|ambulance, patient transport, non-emergency transfer|ambulanta privata, transport pacienti, targa
+rehabilitation|recovery centre, physical rehabilitation, convalescence|recuperare medicala, kinetoterapie, convalescenta
+occupational_therapy|occupational therapist, daily living skills|terapeut ocupational, ergoterapie
+midwifery|midwife, birth care, prenatal support|moasa, nastere, ingrijire prenatala
+acupuncture|acupuncturist, needles, traditional medicine|acupunctor, medicina traditionala, ace
+chiropractic|osteopath, spine, manual therapy, back pain|osteopat, chiropractor, coloana, terapie manuala
+insulation|thermal insulation, loft insulation, cavity wall|termoizolatie, polistiren, vata minerala, anvelopare
+waterproofing|damp proofing, roof sealing, membrane|hidroizolatie, membrana, infiltratii, terasa
+plastering|render, skim, stucco, wall finishing|tencuiala, glet, ipsos, finisaje pereti
+tiling|tiler, floor tiles, wall tiles, ceramics|faiantar, gresie, faianta, montaj placi
+drywall|plasterboard, partitions, suspended ceiling|rigips, gips carton, tavan fals, compartimentare
+fencing|fence, gates, railings, palisade|gard, poarta, imprejmuire, balustrada
+paving|driveway, block paving, pathways, kerbs|pavaj, alee, borduri, pavele
+well_drilling|borehole, water well, drilling rig|foraj, put, apa, hidrofor
+septic_systems|septic tank, drainage, cesspit, soakaway|fosa septica, canalizare, decantor
+solar_panels|photovoltaic, solar installer, panels, inverter|panouri fotovoltaice, invertor, montaj panouri
+alarm_cctv|security alarm, cameras, surveillance, monitoring|alarma, camere video, supraveghere, monitorizare
+smart_home|home automation, smart lighting, connected home|automatizari casa, iluminat inteligent, domotica
+lift_maintenance|elevator service, lift repair, escalator|ascensor, lift, mentenanta ascensoare
+fire_safety|fire extinguishers, sprinklers, fire alarm, PSI|stingatoare, sprinklere, PSI, alarma incendiu
+car_dealer|car sales, showroom, used cars, dealership|vanzari auto, showroom, masini rulate, reprezentanta
+vehicle_inspection|MOT, roadworthiness test, technical inspection|ITP, inspectie tehnica, verificare auto
+auto_electrics|car electrician, wiring, alternator, starter|electrician auto, instalatie electrica, alternator
+car_glass|windscreen, windshield replacement, car windows|parbriz, geam auto, inlocuire parbriz
+boat_repair|marine engineer, boat yard, outboard, yacht|reparatii barci, motor barca, santier naval
+bus_charter|coach hire, minibus, group transport|inchiriere autocar, microbuz, transport grup
+call_centre|contact centre, telemarketing, helpdesk|call center, telemarketing, suport telefonic
+virtual_assistant|remote assistant, admin support, freelance PA|asistent virtual, suport administrativ, secretariat
+market_research|surveys, consumer research, focus groups|studii de piata, sondaje, focus grup
+copywriting|content writing, editing, proofreading|redactare, continut, corectura, texte
+seo_services|search optimisation, google ads, ppc, sem|optimizare seo, google ads, publicitate online
+social_media|community management, instagram, facebook, tiktok|social media, community manager, instagram, facebook
+app_development|ios, android, mobile apps, flutter|aplicatii mobile, android, ios, dezvoltare app
+game_development|games, unity, unreal, game studio|dezvoltare jocuri, unity, game studio
+drone_services|aerial photography, uav, drone survey, mapping|filmare cu drona, drona, cartografiere aeriana
+printing_3d|additive manufacturing, prototyping, 3d printer|printare 3d, prototipare, imprimanta 3d
+interior_design|home styling, decorator, space planning|amenajari interioare, designer, decorator
+dance_school|dance classes, ballet, salsa, ballroom|scoala de dans, balet, salsa, dans sportiv
+art_gallery|framing, art dealer, exhibitions, picture framing|inramari, galerie, expozitii, tablouri

@@ -9,9 +9,9 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 // Why a second function rather than a flag on create-listing: the two things
 // are not the same shape. A private listing is a person, one of twelve
 // categories, and which side of the deal they are on. A company is a name,
-// one of a hundred and thirteen professional domains, and a website. They
-// were sharing a table until now, which is how private individuals ended up
-// listed under "here the registered companies appear" on the business side.
+// one of the professional domains, and a website. They were sharing a table
+// until now, which is how private individuals ended up listed under "here
+// the registered companies appear" on the business side.
 //
 // FREE, like listings have been since 2026-08-22: the row is born visible for
 // FREE_MONTHS months and no checkout follows. The yellow band says as much --
@@ -37,73 +37,6 @@ function json(body: unknown, status = 200) {
   });
 }
 
-// The 163 fields from domains.js, each with the Rotabo category it lands in.
-// domains.js is where the list is edited and where the business-side search
-// reads it; this is the same pairs. Regenerate with:
-//
-//   grep -oP '^\s*\["\K[a-z0-9_]+", "[a-z]+' domains.js
-//
-// The category is taken from here rather than from the form, so a company
-// filed under "plumbing" is in "build" because domains.js says so -- the two
-// cannot drift apart, whatever a request claims.
-const DOMAIN_CATEGORY: Record<string, string> = {
-  taxi:"drive",ride_hailing:"drive",chauffeur:"drive",
-  driving_school:"drive",translation:"translator",interpreting:"translator",
-  sworn_translation:"translator",language_school:"translator",
-  removals:"move",international_removals:"move",courier:"move",
-  freight_forwarding:"move",refrigerated_transport:"move",haulage:"move",
-  storage_warehousing:"move",customs_brokerage:"move",excavation:"build",
-  crane_hire:"build",scaffolding:"build",demolition:"build",
-  concrete_works:"build",surveying:"build",tool_hire:"tools",
-  machinery_rental:"tools",generator_hire:"tools",
-  electrical_installation:"home",plumbing:"home",heating_hvac:"home",
-  air_conditioning:"home",painting_decorating:"home",carpentry:"home",
-  flooring:"home",roofing:"home",locksmith:"home",cleaning_services:"home",
-  gardening_landscaping:"home",renovation:"home",car_repair:"auto",
-  mobile_mechanic:"auto",tyre_service:"auto",bodywork_paint:"auto",
-  towing_recovery:"auto",childcare:"care",elderly_care:"care",
-  home_nursing:"care",private_tutoring:"learn",music_lessons:"learn",
-  sports_coaching:"learn",it_training:"learn",vocational_training:"learn",
-  holiday_lettings:"stay",guesthouse_bnb:"stay",property_management:"stay",
-  veterinary:"pets",dog_walking:"pets",pet_grooming:"pets",
-  general_practice:"other",dentistry:"other",physiotherapy:"other",
-  psychology:"other",pharmacy:"other",optometry:"other",
-  medical_laboratory:"other",software_development:"other",
-  web_development:"other",it_support:"other",cybersecurity:"other",
-  data_ai:"other",cloud_hosting:"other",accounting:"other",
-  audit_tax:"other",legal_services:"other",hr_recruitment:"other",
-  management_consulting:"other",insurance_brokerage:"other",
-  real_estate_agency:"other",architecture:"other",manufacturing:"other",
-  cnc_machining:"other",metalwork_welding:"other",restaurant:"other",
-  catering:"other",hotel:"other",event_management:"other",
-  agriculture:"other",forestry:"other",waste_recycling:"other",
-  renewable_energy:"other",marketing_agency:"other",graphic_design:"other",
-  photography:"other",video_production:"other",printing_signage:"other",
-  wholesale:"other",ecommerce:"other",security_services:"other",
-  shop_general:"other",shop_bicycle:"other",shop_auto_parts:"auto",
-  shop_hardware:"tools",shop_furniture:"home",shop_electronics:"other",
-  shop_clothing:"other",shop_grocery:"other",shop_sports:"other",
-  shop_books:"other",shop_florist:"other",shop_pet:"pets",
-  motorcycle_repair:"auto",hairdressing:"other",beauty_salon:"other",
-  massage_therapy:"other",fitness_training:"other",bar:"other",
-  kebab_shawarma:"other",pizzeria:"other",fast_food:"other",bakery:"other",
-  pastry_shop:"other",coffee_shop:"other",food_truck:"other",
-  butcher:"other",ice_cream:"other",winery:"other",brewery:"other",
-  nightclub:"other",beach_club:"stay",bowling_billiards:"other",
-  travel_agency:"stay",nail_salon:"other",barber:"other",
-  tattoo_piercing:"other",spa_sauna:"other",cosmetics_shop:"other",
-  dry_cleaning:"other",podiatry:"other",dental_laboratory:"other",
-  orthodontics:"other",dermatology:"other",paediatrics:"other",
-  gynaecology:"other",cardiology:"other",medical_imaging:"other",
-  speech_therapy:"care",nutrition_dietetics:"other",bicycle_repair:"other",
-  scooter_repair:"auto",appliance_repair:"home",phone_repair:"other",
-  computer_repair:"other",watch_jewellery_repair:"other",
-  shoe_repair:"other",tailoring_alterations:"other",upholstery:"home",
-  glazing:"build",chimney_sweep:"home",pest_control:"home",
-  pool_maintenance:"home",window_cleaning:"home",car_wash:"auto",
-  car_rental:"drive",bike_scooter_rental:"drive",funeral_services:"other"
-};
-
 const VALID_ROLES = ["seeking", "offering"];
 
 function nonEmptyString(v: unknown): string {
@@ -127,7 +60,7 @@ Deno.serve(async (req: Request) => {
 
   const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
   const token = typeof body.token === "string" ? body.token.trim() : "";
-  const domain = body.domain;
+  const domain = nonEmptyString(body.domain);
   const role = body.role;
   const name = nonEmptyString(body.name);
   const phone = nonEmptyString(body.phone);
@@ -137,13 +70,23 @@ Deno.serve(async (req: Request) => {
   const countryCode = /^[A-Z]{2}$/.test(countryCodeRaw) ? countryCodeRaw : null;
 
   if (!email || !token) return json({ error: "missing verification" }, 400);
-  /* hasOwnProperty, not a plain lookup: DOMAIN_CATEGORY["constructor"]
-     answers with a function off Object's prototype, which is truthy, and a
-     request naming one of those would sail past this check and fail later
-     against the category constraint as a 500 instead of an honest 400. */
-  const known = typeof domain === "string"
-    && Object.prototype.hasOwnProperty.call(DOMAIN_CATEGORY, domain);
-  const category = known ? DOMAIN_CATEGORY[domain] : "";
+
+  /* The field decides the category, and the pairs live in
+     public.domain_categories rather than in a map here.
+
+     They used to be hard-coded. The list went from 113 fields to 163 to 213
+     in two days, and each time the whole function had to be redeployed to
+     carry a lookup table -- a great deal of ceremony for a row of data, and
+     one more place for it to fall out of step with domains.js. A table also
+     ends the prototype-lookup problem the map had: asking Postgres for
+     "constructor" returns nothing, the same as any other unknown word. */
+  const { data: dom } = await supabase
+    .from("domain_categories")
+    .select("category")
+    .eq("slug", domain)
+    .maybeSingle();
+
+  const category = dom ? dom.category : "";
   if (!category) return json({ error: "invalid domain" }, 400);
   if (VALID_ROLES.indexOf(role) === -1) return json({ error: "invalid role" }, 400);
   if (!name || !phone || !city || !country) {
