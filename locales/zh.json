@@ -262,12 +262,12 @@
       "offering_lead": "登记你的住处，让想交换或来做客的人找到你。"
     },
     "pets": {
-      "browse_offering_title": "捡到宠物的人",
-      "browse_seeking_title": "丢失宠物的人",
-      "name": "宠物",
-      "desc": "走失或捡到猫、狗或其他宠物？发布在这里——附近的人可能见过它。",
-      "lost_btn": "我的宠物走失了",
-      "found_btn": "我捡到了宠物",
+      "browse_offering_title": "谁找到了动物，谁提供兽医服务",
+      "browse_seeking_title": "谁丢了动物，谁在找兽医",
+      "name": "宠物 — 兽医与诊所",
+      "desc": "猫、狗或其他宠物走失或被你找到了？写在这里 — 附近的人也许见过。兽医和诊所同样属于这里，无论是提供服务还是寻找。",
+      "lost_btn": "我丢了动物，或需要兽医",
+      "found_btn": "我找到了动物，或我提供兽医服务",
       "seeking_title": "宠物走失了？",
       "seeking_lead": "告诉我们发生了什么、在哪里，附近的人就能帮忙留意。",
       "offering_title": "捡到宠物了？",

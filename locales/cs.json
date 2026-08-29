@@ -269,12 +269,12 @@
       "offering_lead": "Přidej své bydlení, ať tě najdou ti, kdo chtějí měnit nebo přijet na návštěvu."
     },
     "pets": {
-      "browse_offering_title": "Kdo našel mazlíčka",
-      "browse_seeking_title": "Kdo ztratil mazlíčka",
-      "name": "Domácí mazlíčci",
-      "desc": "Ztratili nebo našli jste kočku, psa nebo jiného mazlíčka? Napište to sem — někdo poblíž ho mohl vidět.",
-      "lost_btn": "Ztratil jsem mazlíčka",
-      "found_btn": "Našel jsem mazlíčka",
+      "browse_offering_title": "Kdo našel zvíře a kdo nabízí veterinární péči",
+      "browse_seeking_title": "Kdo ztratil zvíře a kdo hledá veterináře",
+      "name": "Domácí zvířata — veterináři a kliniky",
+      "desc": "Ztratili nebo našli jste kočku, psa nebo jiné zvíře? Napište to sem — někdo poblíž ho mohl vidět. Veterináři a kliniky sem patří také, ať nabízejí, nebo hledají.",
+      "lost_btn": "Ztratil jsem zvíře nebo hledám veterináře",
+      "found_btn": "Našel jsem zvíře nebo nabízím veterinární péči",
       "seeking_title": "Ztratil se vám mazlíček?",
       "seeking_lead": "Napište, co se stalo a kde, ať jsou lidé v okolí pozorní.",
       "offering_title": "Našli jste mazlíčka?",

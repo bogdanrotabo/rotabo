@@ -262,12 +262,12 @@
       "offering_lead": "Pievieno savu mājvietu, lai tie, kas vēlas mainīties vai atbraukt ciemos, tevi atrastu."
     },
     "pets": {
-      "browse_offering_title": "Kas atradis mājdzīvnieku",
-      "browse_seeking_title": "Kas pazaudējis mājdzīvnieku",
-      "name": "Mājdzīvnieki",
-      "desc": "Pazaudēji vai atradi kaķi, suni vai citu mājdzīvnieku? Ieraksti šeit — kāds tuvumā, iespējams, to redzēja.",
-      "lost_btn": "Pazaudēju mājdzīvnieku",
-      "found_btn": "Atradu mājdzīvnieku",
+      "browse_offering_title": "Kurš atradis dzīvnieku un kurš piedāvā veterināro aprūpi",
+      "browse_seeking_title": "Kurš pazaudējis dzīvnieku un kurš meklē veterinārārstu",
+      "name": "Mājdzīvnieki — veterinārārsti un klīnikas",
+      "desc": "Pazaudējāt vai atradāt kaķi, suni vai citu mājdzīvnieku? Ierakstiet šeit — kāds tuvumā to varbūt redzēja. Veterinārārsti un klīnikas arī pieder šeit, vai nu tie piedāvā, vai meklē.",
+      "lost_btn": "Pazaudēju dzīvnieku vai meklēju veterinārārstu",
+      "found_btn": "Atradu dzīvnieku vai piedāvāju veterināro aprūpi",
       "seeking_title": "Pazaudēji mājdzīvnieku?",
       "seeking_lead": "Pastāsti, kas notika un kur, lai tuvumā esošie pievērš uzmanību.",
       "offering_title": "Atradi mājdzīvnieku?",

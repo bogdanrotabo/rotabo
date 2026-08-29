@@ -499,12 +499,12 @@
       "offering_lead": "Publica tu casa para que te encuentren quienes quieren intercambiar o visitarte."
     },
     "pets": {
-      "browse_offering_title": "Quienes encontraron una mascota",
-      "browse_seeking_title": "Quienes perdieron una mascota",
-      "name": "Mascotas",
-      "desc": "¿Perdiste o encontraste un gato, un perro u otra mascota? Publícalo aquí — alguien cerca puede haberlo visto.",
-      "lost_btn": "Perdí una mascota",
-      "found_btn": "Encontré una mascota",
+      "browse_offering_title": "Quién ha encontrado un animal y quién ofrece atención veterinaria",
+      "browse_seeking_title": "Quién ha perdido un animal y quién busca un veterinario",
+      "name": "Mascotas — veterinarios y clínicas",
+      "desc": "¿Has perdido o encontrado un gato, un perro o cualquier mascota? Publícalo aquí — alguien cerca puede haberlo visto. Los veterinarios y las clínicas también están aquí, tanto si ofrecen como si buscan.",
+      "lost_btn": "He perdido un animal o busco un veterinario",
+      "found_btn": "He encontrado un animal u ofrezco atención veterinaria",
       "seeking_title": "¿Perdiste una mascota?",
       "seeking_lead": "Cuéntanos qué pasó y dónde, para que la gente de la zona esté atenta.",
       "offering_title": "¿Encontraste una mascota?",

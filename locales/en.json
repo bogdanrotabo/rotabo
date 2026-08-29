@@ -507,12 +507,12 @@
       "offering_lead": "List your home so others looking to swap or visit can find you."
     },
     "pets": {
-      "browse_offering_title": "People who found a pet",
-      "browse_seeking_title": "People who lost a pet",
-      "name": "Pets",
-      "desc": "Lost or found a cat, a dog, or any pet? Post it here — someone nearby may have seen it.",
-      "lost_btn": "I lost a pet",
-      "found_btn": "I found a pet",
+      "browse_offering_title": "Found a pet, or offering vet care",
+      "browse_seeking_title": "Lost a pet, or looking for a vet",
+      "name": "Pets — vets and clinics",
+      "desc": "Lost or found a cat, a dog, or any pet? Post it here — someone nearby may have seen it. Vets and clinics belong here too, whether they are offering or looking.",
+      "lost_btn": "I lost a pet, or need a vet",
+      "found_btn": "I found a pet, or I offer vet care",
       "seeking_title": "Lost a pet?",
       "seeking_lead": "Tell us what happened and where, so people nearby can watch out.",
       "offering_title": "Found a pet?",

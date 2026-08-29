@@ -492,12 +492,12 @@
       "offering_lead": "Dodaj swój dom, żeby znaleźli cię chętni do zamiany lub odwiedzin."
     },
     "pets": {
-      "browse_offering_title": "Kto znalazł zwierzaka",
-      "browse_seeking_title": "Kto zgubił zwierzaka",
-      "name": "Zwierzęta domowe",
-      "desc": "Zgubiłeś albo znalazłeś kota, psa lub inne zwierzę? Napisz tutaj — ktoś w okolicy mógł je widzieć.",
-      "lost_btn": "Zgubiłem zwierzaka",
-      "found_btn": "Znalazłem zwierzaka",
+      "browse_offering_title": "Kto znalazł zwierzę i kto oferuje opiekę weterynaryjną",
+      "browse_seeking_title": "Kto zgubił zwierzę i kto szuka weterynarza",
+      "name": "Zwierzęta domowe — weterynarze i kliniki",
+      "desc": "Zgubiłeś lub znalazłeś kota, psa albo inne zwierzę? Napisz tutaj — ktoś w pobliżu mógł je widzieć. Weterynarze i kliniki też są tutaj, czy oferują, czy szukają.",
+      "lost_btn": "Zgubiłem zwierzę lub szukam weterynarza",
+      "found_btn": "Znalazłem zwierzę lub oferuję opiekę weterynaryjną",
       "seeking_title": "Zgubił się zwierzak?",
       "seeking_lead": "Napisz, co się stało i gdzie, żeby ludzie w okolicy uważali.",
       "offering_title": "Znalazłeś zwierzaka?",

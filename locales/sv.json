@@ -262,12 +262,12 @@
       "offering_lead": "Lägg upp ditt hem så att andra som vill byta eller hälsa på hittar dig."
     },
     "pets": {
-      "browse_offering_title": "De som hittat ett husdjur",
-      "browse_seeking_title": "De som tappat bort ett husdjur",
-      "name": "Husdjur",
-      "desc": "Har du tappat bort eller hittat en katt, en hund eller ett annat husdjur? Skriv här — någon i närheten kanske har sett det.",
-      "lost_btn": "Jag har tappat bort ett husdjur",
-      "found_btn": "Jag har hittat ett husdjur",
+      "browse_offering_title": "Vem har hittat ett djur, och vem erbjuder veterinärvård",
+      "browse_seeking_title": "Vem har tappat bort ett djur, och vem söker en veterinär",
+      "name": "Husdjur — veterinärer och kliniker",
+      "desc": "Har du tappat bort eller hittat en katt, en hund eller ett annat husdjur? Skriv det här — någon i närheten kan ha sett det. Veterinärer och kliniker hör också hemma här, oavsett om de erbjuder eller söker.",
+      "lost_btn": "Jag har tappat bort ett djur eller söker en veterinär",
+      "found_btn": "Jag har hittat ett djur eller erbjuder veterinärvård",
       "seeking_title": "Tappat bort ett husdjur?",
       "seeking_lead": "Berätta vad som hände och var, så att folk i närheten kan hålla utkik.",
       "offering_title": "Hittat ett husdjur?",

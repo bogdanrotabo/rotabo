@@ -262,12 +262,12 @@
       "offering_lead": "Hirdesd meg az otthonod, hogy megtaláljanak, akik cserélnének vagy meglátogatnának."
     },
     "pets": {
-      "browse_offering_title": "Akik találtak egy állatot",
-      "browse_seeking_title": "Akik elvesztették a kedvencüket",
-      "name": "Házi kedvencek",
-      "desc": "Elveszett vagy megtaláltál egy macskát, kutyát vagy más kedvencet? Írd meg itt — valaki a közelben talán látta.",
-      "lost_btn": "Elveszett a kedvencem",
-      "found_btn": "Találtam egy állatot",
+      "browse_offering_title": "Ki talált állatot, és ki kínál állatorvosi ellátást",
+      "browse_seeking_title": "Ki vesztett el állatot, és ki keres állatorvost",
+      "name": "Házi kedvencek — állatorvosok és klinikák",
+      "desc": "Elveszett vagy megtalált egy macskát, kutyát vagy más házi kedvencet? Írja meg itt — valaki a közelben talán látta. Az állatorvosok és a klinikák is ide tartoznak, akár kínálnak, akár keresnek.",
+      "lost_btn": "Elvesztettem egy állatot, vagy állatorvost keresek",
+      "found_btn": "Találtam egy állatot, vagy állatorvosi ellátást kínálok",
       "seeking_title": "Elveszett a kedvenced?",
       "seeking_lead": "Írd le, mi történt és hol, hogy a környékbeliek figyeljenek.",
       "offering_title": "Találtál egy állatot?",

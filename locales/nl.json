@@ -499,12 +499,12 @@
       "offering_lead": "Zet je huis erbij, zodat anderen die willen ruilen of langskomen je vinden."
     },
     "pets": {
-      "browse_offering_title": "Wie een huisdier gevonden heeft",
-      "browse_seeking_title": "Wie een huisdier kwijt is",
-      "name": "Huisdieren",
-      "desc": "Kat, hond of ander huisdier kwijt of gevonden? Zet het hier — iemand in de buurt heeft het misschien gezien.",
-      "lost_btn": "Ik ben een huisdier kwijt",
-      "found_btn": "Ik heb een huisdier gevonden",
+      "browse_offering_title": "Wie een dier heeft gevonden, en wie diergeneeskundige zorg aanbiedt",
+      "browse_seeking_title": "Wie een dier kwijt is, en wie een dierenarts zoekt",
+      "name": "Huisdieren — dierenartsen en klinieken",
+      "desc": "Kat, hond of ander huisdier kwijt of gevonden? Meld het hier — iemand in de buurt heeft het misschien gezien. Dierenartsen en klinieken horen hier ook thuis, of ze nu aanbieden of zoeken.",
+      "lost_btn": "Ik ben een dier kwijt of zoek een dierenarts",
+      "found_btn": "Ik heb een dier gevonden of bied diergeneeskundige zorg",
       "seeking_title": "Huisdier kwijt?",
       "seeking_lead": "Vertel wat er gebeurd is en waar, zodat mensen in de buurt kunnen uitkijken.",
       "offering_title": "Huisdier gevonden?",

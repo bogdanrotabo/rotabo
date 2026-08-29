@@ -269,12 +269,12 @@
       "offering_lead": "Lisa oma kodu, et vahetust või külaskäiku otsijad sind leiaksid."
     },
     "pets": {
-      "browse_offering_title": "Kes on leidnud lemmiklooma",
-      "browse_seeking_title": "Kes on kaotanud lemmiklooma",
-      "name": "Lemmikloomad",
-      "desc": "Kaotasid või leidsid kassi, koera või mõne muu lemmiklooma? Kirjuta siia — keegi lähedal võis teda näha.",
-      "lost_btn": "Kaotasin lemmiklooma",
-      "found_btn": "Leidsin lemmiklooma",
+      "browse_offering_title": "Kes leidis looma ja kes pakub loomaarstiabi",
+      "browse_seeking_title": "Kes kaotas looma ja kes otsib loomaarsti",
+      "name": "Lemmikloomad — loomaarstid ja kliinikud",
+      "desc": "Kaotasid või leidsid kassi, koera või mõne muu lemmiklooma? Kirjuta siia — keegi lähedal võis teda näha. Loomaarstid ja kliinikud kuuluvad samuti siia, kas nad pakuvad või otsivad.",
+      "lost_btn": "Kaotasin looma või otsin loomaarsti",
+      "found_btn": "Leidsin looma või pakun loomaarstiabi",
       "seeking_title": "Kaotasid lemmiklooma?",
       "seeking_lead": "Kirjuta, mis juhtus ja kus, et lähedalolijad silmad lahti hoiaksid.",
       "offering_title": "Leidsid lemmiklooma?",

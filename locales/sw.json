@@ -262,12 +262,12 @@
       "offering_lead": "Orodhesha nyumba yako ili wanaotaka kubadilishana au kutembelea wakupate."
     },
     "pets": {
-      "browse_offering_title": "Waliopata mnyama",
-      "browse_seeking_title": "Waliopoteza mnyama",
-      "name": "Wanyama wa nyumbani",
-      "desc": "Umepoteza au umepata paka, mbwa au mnyama mwingine wa nyumbani? Andika hapa — mtu wa karibu anaweza kuwa amemwona.",
-      "lost_btn": "Nimepoteza mnyama",
-      "found_btn": "Nimepata mnyama",
+      "browse_offering_title": "Nani amepata mnyama, na nani anatoa huduma ya daktari wa wanyama",
+      "browse_seeking_title": "Nani amepoteza mnyama, na nani anatafuta daktari wa wanyama",
+      "name": "Wanyama wa nyumbani — madaktari wa wanyama na kliniki",
+      "desc": "Umepoteza au umepata paka, mbwa au mnyama mwingine wa nyumbani? Andika hapa — mtu wa karibu anaweza kuwa amemwona. Madaktari wa wanyama na kliniki wako hapa pia, wakitoa au wakitafuta.",
+      "lost_btn": "Nimepoteza mnyama au natafuta daktari wa wanyama",
+      "found_btn": "Nimepata mnyama au natoa huduma ya daktari wa wanyama",
       "seeking_title": "Umepoteza mnyama?",
       "seeking_lead": "Tuambie kilichotokea na wapi, ili watu wa karibu waangalie.",
       "offering_title": "Umepata mnyama?",

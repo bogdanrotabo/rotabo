@@ -492,12 +492,12 @@
       "offering_lead": "Evini ekle ki takas etmek ya da ziyarete gelmek isteyenler seni bulsun."
     },
     "pets": {
-      "browse_offering_title": "Hayvan bulanlar",
-      "browse_seeking_title": "Hayvanını kaybedenler",
-      "name": "Evcil hayvanlar",
-      "desc": "Kedi, köpek ya da başka bir evcil hayvan mı kaybettiniz veya buldunuz? Buraya yazın — yakınlardaki biri görmüş olabilir.",
-      "lost_btn": "Hayvanımı kaybettim",
-      "found_btn": "Bir hayvan buldum",
+      "browse_offering_title": "Kim hayvan buldu ve kim veteriner hizmeti sunuyor",
+      "browse_seeking_title": "Kim hayvanını kaybetti ve kim veteriner arıyor",
+      "name": "Evcil hayvanlar — veterinerler ve klinikler",
+      "desc": "Kedi, köpek ya da başka bir evcil hayvan mı kaybettiniz veya buldunuz? Buraya yazın — yakınlardaki biri görmüş olabilir. Veterinerler ve klinikler de buraya aittir, ister sunsunlar ister arasınlar.",
+      "lost_btn": "Hayvanımı kaybettim ya da veteriner arıyorum",
+      "found_btn": "Hayvan buldum ya da veteriner hizmeti sunuyorum",
       "seeking_title": "Evcil hayvanınızı mı kaybettiniz?",
       "seeking_lead": "Ne olduğunu ve nerede olduğunu yazın, yakındakiler gözünü açık tutsun.",
       "offering_title": "Evcil hayvan mı buldunuz?",

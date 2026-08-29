@@ -262,12 +262,12 @@
       "offering_lead": "Senaraikan rumah anda supaya mereka yang ingin bertukar atau melawat dapat menemui anda."
     },
     "pets": {
-      "browse_offering_title": "Sesiapa yang menjumpai haiwan",
-      "browse_seeking_title": "Sesiapa yang kehilangan haiwan",
-      "name": "Haiwan peliharaan",
-      "desc": "Kehilangan atau menjumpai kucing, anjing atau haiwan peliharaan lain? Siarkan di sini — mungkin ada orang berdekatan yang ternampak.",
-      "lost_btn": "Saya kehilangan haiwan",
-      "found_btn": "Saya menjumpai haiwan",
+      "browse_offering_title": "Siapa yang menjumpai haiwan, dan siapa yang menawarkan rawatan haiwan",
+      "browse_seeking_title": "Siapa yang kehilangan haiwan, dan siapa yang mencari doktor haiwan",
+      "name": "Haiwan peliharaan — doktor haiwan dan klinik",
+      "desc": "Kehilangan atau menjumpai kucing, anjing atau haiwan peliharaan lain? Tulis di sini — seseorang berdekatan mungkin telah melihatnya. Doktor haiwan dan klinik juga di sini, sama ada menawarkan atau mencari.",
+      "lost_btn": "Saya kehilangan haiwan atau perlukan doktor haiwan",
+      "found_btn": "Saya menjumpai haiwan atau menawarkan rawatan haiwan",
       "seeking_title": "Kehilangan haiwan peliharaan?",
       "seeking_lead": "Beritahu kami apa yang berlaku dan di mana, supaya orang berdekatan boleh membantu.",
       "offering_title": "Menjumpai haiwan peliharaan?",

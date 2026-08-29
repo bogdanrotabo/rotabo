@@ -509,12 +509,12 @@
       "offering_lead": "Listează-ți casa ca alții care vor schimb sau vizită să te găsească."
     },
     "pets": {
-      "browse_offering_title": "Cine a găsit un animal",
-      "browse_seeking_title": "Cine a pierdut un animal",
-      "name": "Animale de companie",
-      "desc": "Ai pierdut sau ai găsit o pisică, un câine sau alt animal? Scrie aici — cineva din apropiere poate l-a văzut.",
-      "lost_btn": "Am pierdut un animal",
-      "found_btn": "Am găsit un animal",
+      "browse_offering_title": "Cine a găsit un animal și cine oferă îngrijire veterinară",
+      "browse_seeking_title": "Cine a pierdut un animal și cine caută un veterinar",
+      "name": "Animale de companie — veterinari și clinici",
+      "desc": "Ai pierdut sau ai găsit o pisică, un câine sau alt animal? Scrie aici — cineva din apropiere poate l-a văzut. Veterinarii și clinicile sunt tot aici, fie că oferă, fie că sunt în căutare.",
+      "lost_btn": "Am pierdut un animal, sau caut un veterinar",
+      "found_btn": "Am găsit un animal, sau ofer servicii veterinare",
       "seeking_title": "Ai pierdut un animal?",
       "seeking_lead": "Spune-ne ce s-a întâmplat și unde, ca oamenii din zonă să fie atenți.",
       "offering_title": "Ai găsit un animal?",

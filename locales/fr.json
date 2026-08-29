@@ -499,12 +499,12 @@
       "offering_lead": "Inscris ton logement pour que ceux qui veulent échanger ou venir te trouvent."
     },
     "pets": {
-      "browse_offering_title": "Ceux qui ont trouvé un animal",
-      "browse_seeking_title": "Ceux qui ont perdu un animal",
-      "name": "Animaux de compagnie",
-      "desc": "Vous avez perdu ou trouvé un chat, un chien ou un autre animal ? Publiez-le ici — quelqu'un à proximité l'a peut-être vu.",
-      "lost_btn": "J'ai perdu un animal",
-      "found_btn": "J'ai trouvé un animal",
+      "browse_offering_title": "Qui a trouvé un animal, et qui propose des soins vétérinaires",
+      "browse_seeking_title": "Qui a perdu un animal, et qui cherche un vétérinaire",
+      "name": "Animaux — vétérinaires et cliniques",
+      "desc": "Chat, chien ou autre animal perdu ou trouvé ? Signalez-le ici — quelqu'un à côté l'a peut-être vu. Les vétérinaires et les cliniques ont aussi leur place ici, qu'ils proposent ou qu'ils cherchent.",
+      "lost_btn": "J'ai perdu un animal ou je cherche un vétérinaire",
+      "found_btn": "J'ai trouvé un animal ou je propose des soins vétérinaires",
       "seeking_title": "Vous avez perdu un animal ?",
       "seeking_lead": "Dites-nous ce qui s'est passé et où, pour que les gens du quartier ouvrent l'œil.",
       "offering_title": "Vous avez trouvé un animal ?",

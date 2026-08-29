@@ -269,12 +269,12 @@
       "offering_lead": "Dodaj svoj dom da te pronađu oni koji žele zamijeniti ili doći u posjet."
     },
     "pets": {
-      "browse_offering_title": "Tko je pronašao ljubimca",
-      "browse_seeking_title": "Tko je izgubio ljubimca",
-      "name": "Kućni ljubimci",
-      "desc": "Izgubili ste ili pronašli mačku, psa ili drugog ljubimca? Objavite ovdje — netko u blizini možda ga je vidio.",
-      "lost_btn": "Izgubio sam ljubimca",
-      "found_btn": "Pronašao sam ljubimca",
+      "browse_offering_title": "Tko je našao životinju i tko nudi veterinarsku skrb",
+      "browse_seeking_title": "Tko je izgubio životinju i tko traži veterinara",
+      "name": "Kućni ljubimci — veterinari i klinike",
+      "desc": "Izgubili ste ili našli mačku, psa ili drugog ljubimca? Napišite ovdje — netko u blizini ga je možda vidio. Veterinari i klinike također pripadaju ovamo, bilo da nude ili traže.",
+      "lost_btn": "Izgubio sam životinju ili tražim veterinara",
+      "found_btn": "Našao sam životinju ili nudim veterinarsku skrb",
       "seeking_title": "Izgubili ste ljubimca?",
       "seeking_lead": "Napišite što se dogodilo i gdje, da ljudi u blizini pripaze.",
       "offering_title": "Pronašli ste ljubimca?",

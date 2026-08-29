@@ -262,12 +262,12 @@
       "offering_lead": "Pridaj svoje bývanie, nech ťa nájdu tí, čo chcú meniť alebo prísť na návštevu."
     },
     "pets": {
-      "browse_offering_title": "Kto našiel zviera",
-      "browse_seeking_title": "Kto stratil zviera",
-      "name": "Domáce zvieratá",
-      "desc": "Stratili alebo našli ste mačku, psa či iné zviera? Napíšte to sem — niekto nablízku ho mohol vidieť.",
-      "lost_btn": "Stratil som zviera",
-      "found_btn": "Našiel som zviera",
+      "browse_offering_title": "Kto našiel zviera a kto ponúka veterinárnu starostlivosť",
+      "browse_seeking_title": "Kto stratil zviera a kto hľadá veterinára",
+      "name": "Domáce zvieratá — veterinári a kliniky",
+      "desc": "Stratili alebo našli ste mačku, psa alebo iné zviera? Napíšte to sem — niekto nablízku ho mohol vidieť. Veterinári a kliniky sem patria tiež, či už ponúkajú, alebo hľadajú.",
+      "lost_btn": "Stratil som zviera alebo hľadám veterinára",
+      "found_btn": "Našiel som zviera alebo ponúkam veterinárnu starostlivosť",
       "seeking_title": "Stratilo sa vám zviera?",
       "seeking_lead": "Napíšte, čo sa stalo a kde, nech sú ľudia v okolí pozorní.",
       "offering_title": "Našli ste zviera?",

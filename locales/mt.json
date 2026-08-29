@@ -262,12 +262,12 @@
       "offering_lead": "Niżżel id-dar tiegħek biex isibuk dawk li jridu jibdlu jew jiġu jżuruk."
     },
     "pets": {
-      "browse_offering_title": "Min sab annimal",
-      "browse_seeking_title": "Min tilef annimal",
-      "name": "Annimali domestiċi",
-      "desc": "Tlift jew sibt qattus, kelb jew annimal domestiku ieħor? Iktbu hawn — xi ħadd fil-viċin forsi rah.",
-      "lost_btn": "Tlift annimal",
-      "found_btn": "Sibt annimal",
+      "browse_offering_title": "Min sab annimal, u min qed joffri kura veterinarja",
+      "browse_seeking_title": "Min tilef annimal, u min qed ifittex vetrinarju",
+      "name": "Annimali domestiċi — vetrinarji u kliniki",
+      "desc": "Tlift jew sibt qattus, kelb jew xi annimal domestiku ieħor? Ikteb hawn — xi ħadd fil-qrib forsi rah. Il-vetrinarji u l-kliniki jappartjenu hawn ukoll, sew jekk qed joffru u sew jekk qed ifittxu.",
+      "lost_btn": "Tlift annimal jew għandi bżonn vetrinarju",
+      "found_btn": "Sibt annimal jew noffri kura veterinarja",
       "seeking_title": "Tlift l-annimal tiegħek?",
       "seeking_lead": "Għidilna x'ġara u fejn, biex in-nies fil-viċin joqogħdu attenti.",
       "offering_title": "Sibt annimal?",

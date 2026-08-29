@@ -262,12 +262,12 @@
       "offering_lead": "Cantumkan rumahmu supaya yang ingin bertukar atau berkunjung bisa menemukanmu."
     },
     "pets": {
-      "browse_offering_title": "Orang yang menemukan hewan",
-      "browse_seeking_title": "Orang yang kehilangan hewan",
-      "name": "Hewan peliharaan",
-      "desc": "Kehilangan atau menemukan kucing, anjing, atau hewan peliharaan lain? Tulis di sini — mungkin ada orang di dekat sana yang melihatnya.",
-      "lost_btn": "Saya kehilangan hewan",
-      "found_btn": "Saya menemukan hewan",
+      "browse_offering_title": "Siapa yang menemukan hewan, dan siapa yang menawarkan layanan dokter hewan",
+      "browse_seeking_title": "Siapa yang kehilangan hewan, dan siapa yang mencari dokter hewan",
+      "name": "Hewan peliharaan — dokter hewan dan klinik",
+      "desc": "Kehilangan atau menemukan kucing, anjing, atau hewan peliharaan lain? Tulis di sini — seseorang di dekat sini mungkin melihatnya. Dokter hewan dan klinik juga ada di sini, baik menawarkan maupun mencari.",
+      "lost_btn": "Saya kehilangan hewan atau butuh dokter hewan",
+      "found_btn": "Saya menemukan hewan atau menawarkan layanan dokter hewan",
       "seeking_title": "Kehilangan hewan peliharaan?",
       "seeking_lead": "Ceritakan apa yang terjadi dan di mana, agar orang di sekitar bisa ikut mencari.",
       "offering_title": "Menemukan hewan peliharaan?",

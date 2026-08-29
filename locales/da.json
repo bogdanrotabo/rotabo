@@ -269,12 +269,12 @@
       "offering_lead": "Skriv dit hjem op, så andre, der vil bytte eller besøge, kan finde dig."
     },
     "pets": {
-      "browse_offering_title": "Dem der har fundet et kæledyr",
-      "browse_seeking_title": "Dem der har mistet et kæledyr",
-      "name": "Kæledyr",
-      "desc": "Har du mistet eller fundet en kat, en hund eller et andet kæledyr? Skriv det her — nogen i nærheden har måske set det.",
-      "lost_btn": "Jeg har mistet et kæledyr",
-      "found_btn": "Jeg har fundet et kæledyr",
+      "browse_offering_title": "Hvem har fundet et dyr, og hvem tilbyder dyrlægehjælp",
+      "browse_seeking_title": "Hvem har mistet et dyr, og hvem søger en dyrlæge",
+      "name": "Kæledyr — dyrlæger og klinikker",
+      "desc": "Har du mistet eller fundet en kat, en hund eller et andet kæledyr? Skriv det her — nogen i nærheden har måske set det. Dyrlæger og klinikker hører også til her, uanset om de tilbyder eller søger.",
+      "lost_btn": "Jeg har mistet et dyr eller søger en dyrlæge",
+      "found_btn": "Jeg har fundet et dyr eller tilbyder dyrlægehjælp",
       "seeking_title": "Mistet et kæledyr?",
       "seeking_lead": "Fortæl hvad der skete og hvor, så folk i nærheden kan holde øje.",
       "offering_title": "Fundet et kæledyr?",

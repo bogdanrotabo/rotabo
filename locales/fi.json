@@ -269,12 +269,12 @@
       "offering_lead": "Ilmoita kotisi, jotta vaihtoa tai vierailua etsivät löytävät sinut."
     },
     "pets": {
-      "browse_offering_title": "Ketkä ovat löytäneet lemmikin",
-      "browse_seeking_title": "Ketkä ovat kadottaneet lemmikin",
-      "name": "Lemmikit",
-      "desc": "Katosiko tai löytyikö kissa, koira tai muu lemmikki? Kirjoita tähän — joku lähistöllä on ehkä nähnyt sen.",
-      "lost_btn": "Lemmikkini katosi",
-      "found_btn": "Löysin lemmikin",
+      "browse_offering_title": "Kuka on löytänyt eläimen ja kuka tarjoaa eläinlääkäripalveluja",
+      "browse_seeking_title": "Kuka on kadottanut eläimen ja kuka etsii eläinlääkäriä",
+      "name": "Lemmikit — eläinlääkärit ja klinikat",
+      "desc": "Kadonnut tai löytynyt kissa, koira tai muu lemmikki? Ilmoita siitä tässä — joku lähellä on ehkä nähnyt sen. Myös eläinlääkärit ja klinikat kuuluvat tänne, tarjoavatpa tai etsivätpä.",
+      "lost_btn": "Kadotin eläimen tai etsin eläinlääkäriä",
+      "found_btn": "Löysin eläimen tai tarjoan eläinlääkäripalveluja",
       "seeking_title": "Katosiko lemmikki?",
       "seeking_lead": "Kerro mitä tapahtui ja missä, niin lähistön ihmiset osaavat pitää silmällä.",
       "offering_title": "Löysitkö lemmikin?",

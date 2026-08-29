@@ -262,12 +262,12 @@
       "offering_lead": "Cláraigh do theach le go bhfaighidh daoine atá ag lorg malartaithe nó cuairte thú."
     },
     "pets": {
-      "browse_offering_title": "Daoine a fuair peata",
-      "browse_seeking_title": "Daoine a chaill peata",
-      "name": "Peataí",
-      "desc": "Ar chaill nó ar aimsigh tú cat, madra nó peata eile? Cuir suas anseo é — b'fhéidir go bhfaca duine éigin in aice láimhe é.",
-      "lost_btn": "Chaill mé peata",
-      "found_btn": "Fuair mé peata",
+      "browse_offering_title": "Cé a fuair ainmhí, agus cé atá ag tairiscint cúram tréidliachta",
+      "browse_seeking_title": "Cé a chaill ainmhí, agus cé atá ag lorg tréidlia",
+      "name": "Peataí — tréidlianna agus clinicí",
+      "desc": "Ar chaill nó ar aimsigh tú cat, madra nó peata ar bith? Cuir anseo é — b'fhéidir go bhfaca duine in aice láimhe é. Baineann tréidlianna agus clinicí leis an áit seo freisin, cibé an bhfuil siad ag tairiscint nó ag lorg.",
+      "lost_btn": "Chaill mé ainmhí nó tá tréidlia uaim",
+      "found_btn": "Fuair mé ainmhí nó tairgim cúram tréidliachta",
       "seeking_title": "Ar chaill tú peata?",
       "seeking_lead": "Inis dúinn cad a tharla agus cá háit, ionas go gcoinneoidh daoine in aice láimhe súil amach.",
       "offering_title": "Ar aimsigh tú peata?",

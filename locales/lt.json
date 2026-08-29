@@ -262,12 +262,12 @@
       "offering_lead": "Įkelk savo namus, kad tave rastų norintys mainytis ar atvykti."
     },
     "pets": {
-      "browse_offering_title": "Kas rado augintinį",
-      "browse_seeking_title": "Kas pametė augintinį",
-      "name": "Augintiniai",
-      "desc": "Pametėte ar radote katę, šunį arba kitą augintinį? Parašykite čia — kas nors netoliese galbūt jį matė.",
-      "lost_btn": "Pamečiau augintinį",
-      "found_btn": "Radau augintinį",
+      "browse_offering_title": "Kas rado gyvūną ir kas siūlo veterinarinę priežiūrą",
+      "browse_seeking_title": "Kas pametė gyvūną ir kas ieško veterinaro",
+      "name": "Augintiniai — veterinarai ir klinikos",
+      "desc": "Pametėte ar radote katę, šunį ar kitą augintinį? Parašykite čia — kas nors netoliese galėjo jį matyti. Veterinarai ir klinikos taip pat priklauso čia, ar jie siūlo, ar ieško.",
+      "lost_btn": "Pamečiau gyvūną arba ieškau veterinaro",
+      "found_btn": "Radau gyvūną arba siūlau veterinarinę priežiūrą",
       "seeking_title": "Pametėte augintinį?",
       "seeking_lead": "Parašykite, kas nutiko ir kur, kad aplinkiniai atkreiptų dėmesį.",
       "offering_title": "Radote augintinį?",

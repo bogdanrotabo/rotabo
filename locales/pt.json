@@ -499,12 +499,12 @@
       "offering_lead": "Publica a tua casa para que te encontrem quem quer trocar ou visitar."
     },
     "pets": {
-      "browse_offering_title": "Quem encontrou um animal",
-      "browse_seeking_title": "Quem perdeu um animal",
-      "name": "Animais de estimação",
-      "desc": "Perdeu ou encontrou um gato, um cão ou outro animal? Publique aqui — alguém por perto pode tê-lo visto.",
-      "lost_btn": "Perdi um animal",
-      "found_btn": "Encontrei um animal",
+      "browse_offering_title": "Quem encontrou um animal e quem oferece cuidados veterinários",
+      "browse_seeking_title": "Quem perdeu um animal e quem procura um veterinário",
+      "name": "Animais de estimação — veterinários e clínicas",
+      "desc": "Perdeu ou encontrou um gato, um cão ou outro animal? Escreva aqui — alguém por perto pode tê-lo visto. Os veterinários e as clínicas também pertencem aqui, quer ofereçam, quer procurem.",
+      "lost_btn": "Perdi um animal ou procuro um veterinário",
+      "found_btn": "Encontrei um animal ou ofereço cuidados veterinários",
       "seeking_title": "Perdeu um animal?",
       "seeking_lead": "Conte-nos o que aconteceu e onde, para que quem estiver por perto fique atento.",
       "offering_title": "Encontrou um animal?",

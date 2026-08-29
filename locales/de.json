@@ -499,12 +499,12 @@
       "offering_lead": "Trag dein Zuhause ein, damit andere, die tauschen oder zu Besuch kommen möchten, dich finden."
     },
     "pets": {
-      "browse_offering_title": "Wer ein Tier gefunden hat",
-      "browse_seeking_title": "Wer ein Tier verloren hat",
-      "name": "Haustiere",
-      "desc": "Katze, Hund oder ein anderes Haustier verloren oder gefunden? Melde es hier — jemand in der Nähe hat es vielleicht gesehen.",
-      "lost_btn": "Ich habe ein Tier verloren",
-      "found_btn": "Ich habe ein Tier gefunden",
+      "browse_offering_title": "Wer ein Tier gefunden hat, und wer Tierarztleistungen anbietet",
+      "browse_seeking_title": "Wer ein Tier verloren hat, und wer einen Tierarzt sucht",
+      "name": "Haustiere — Tierärzte und Kliniken",
+      "desc": "Katze, Hund oder ein anderes Haustier verloren oder gefunden? Melde es hier — jemand in der Nähe hat es vielleicht gesehen. Tierärzte und Kliniken gehören ebenfalls hierher, ob sie anbieten oder suchen.",
+      "lost_btn": "Ich habe ein Tier verloren oder suche einen Tierarzt",
+      "found_btn": "Ich habe ein Tier gefunden oder biete Tierarztleistungen an",
       "seeking_title": "Haustier verloren?",
       "seeking_lead": "Erzähl uns, was passiert ist und wo, damit Leute in der Nähe die Augen offen halten.",
       "offering_title": "Haustier gefunden?",

@@ -262,12 +262,12 @@
       "offering_lead": "Đăng nhà của bạn để những người muốn đổi hoặc ghé thăm tìm thấy bạn."
     },
     "pets": {
-      "browse_offering_title": "Những người nhặt được thú cưng",
-      "browse_seeking_title": "Những người làm mất thú cưng",
-      "name": "Thú cưng",
-      "desc": "Bạn làm mất hay nhặt được mèo, chó hoặc thú cưng khác? Đăng ở đây — ai đó gần bạn có thể đã nhìn thấy.",
-      "lost_btn": "Tôi làm mất thú cưng",
-      "found_btn": "Tôi nhặt được thú cưng",
+      "browse_offering_title": "Ai đã tìm thấy thú cưng, và ai cung cấp dịch vụ thú y",
+      "browse_seeking_title": "Ai đã mất thú cưng, và ai đang tìm bác sĩ thú y",
+      "name": "Thú cưng — bác sĩ thú y và phòng khám",
+      "desc": "Bạn làm mất hay tìm thấy một con mèo, con chó hoặc thú cưng khác? Đăng ở đây — ai đó gần bên có thể đã thấy. Bác sĩ thú y và phòng khám cũng thuộc về đây, dù đang cung cấp hay đang tìm.",
+      "lost_btn": "Tôi mất thú cưng, hoặc cần bác sĩ thú y",
+      "found_btn": "Tôi tìm thấy thú cưng, hoặc tôi cung cấp dịch vụ thú y",
       "seeking_title": "Bạn làm mất thú cưng?",
       "seeking_lead": "Hãy kể chuyện gì đã xảy ra và ở đâu, để mọi người quanh đó để ý giúp.",
       "offering_title": "Bạn nhặt được thú cưng?",
