@@ -1554,9 +1554,15 @@
   </div>
 
   <!-- The second box, under the search. A hundred places: the sponsor holds
-       the first, whoever has registered holds the next, and the rest are
-       empty and say so. An empty place that admits it is empty is worth more
-       than a list padded to look full. -->
+       the first and the rest are empty and say so. An empty place that admits
+       it is empty is worth more than a list padded to look full.
+
+       It used to fill places two onward from list_public_numbers, which is
+       every Rotabo number ever taken -- and those are overwhelmingly private
+       people from the old site, who belong on the private side and nowhere
+       near a box headed "here the registered companies appear". There is no
+       column saying which a number is, so there is no filter to write: the
+       places stay open until a company registration exists to put in them. -->
   <div class="pro-search biz-list">
     <div class="cascade-wrap">
       <button type="button" class="pro-search__box biz-list__box" id="bizListBtn"
@@ -4577,14 +4583,20 @@ if ("serviceWorker" in navigator) {
 <script>
 /* The box under the search: a hundred places on the business side.
 
-   The sponsor holds the first. Whoever has registered holds the next, drawn
-   from list_public_numbers() -- the same public function the band uses, no
-   token, nothing opened up for it. Everything after that is empty and says
-   so, with a link to the registration.
+   The sponsor holds the first. Ninety-nine are free and say so, with a link
+   to the registration.
 
-   The empty places are deliberate. There are three listings today and
-   ninety-six blank lines under them, which is the true picture; a list
-   padded to look full would be a lie a visitor can check in one scroll. */
+   Places two onward used to be filled from list_public_numbers(), which
+   returns every Rotabo number taken -- and on a site that ran for months as
+   a marketplace for people, those are private individuals. They were showing
+   under a heading that reads "here the registered companies appear", which
+   is both wrong about them and wrong to whoever reads it. There is no column
+   marking a number as a company, so there is no filter to write and none is
+   faked here: the places stay open until a company registration exists.
+
+   The empty places are deliberate anyway. Ninety-nine blank lines is the
+   true picture; a list padded to look full is a lie a visitor can check in
+   one scroll. */
 (function(){
   if (document.documentElement.getAttribute("data-mode") !== "business") return;
   var btn  = document.getElementById("bizListBtn");
@@ -4592,10 +4604,6 @@ if ("serviceWorker" in navigator) {
   if (!btn || !list) return;
 
   var PLACES = 100;
-  var ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
-
-  var rows = [];
-  var loaded = false;
 
   function T(key, fallback){
     try {
@@ -4613,23 +4621,6 @@ if ("serviceWorker" in navigator) {
       .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  // Same trick the band uses: the country is stored in whatever language the
-  // person was reading, so it goes through countries.js and comes back out
-  // in the one on screen.
-  function whereOf(row){
-    var lang = document.documentElement.getAttribute("lang") || "en";
-    var country = row.country || "";
-    if (window.RotaboCountries) {
-      var iso = window.RotaboCountries.isoFor(country);
-      if (iso) country = window.RotaboCountries.nameForIsoIn(iso, lang) || country;
-    }
-    return [row.city, country].filter(Boolean).join(", ");
-  }
-
-  function catName(slug){
-    return T("categories." + slug + ".name", slug || "");
-  }
-
   function render(){
     var html = "";
     var n = 1;
@@ -4641,26 +4632,9 @@ if ("serviceWorker" in navigator) {
           + '<b>topten.one</b></a>';
     n++;
 
-    rows.forEach(function(r){
-      if (n > PLACES) return;
-      var where = whereOf(r);
-      /* The row leads to what this listing offers. browse.html takes the
-         visitor's own role and shows the other side of it, so a listing
-         that offers is reached with role=seeking -- and the two-franc
-         unlock is the card waiting there. */
-      var myRole = (r.role === "offering") ? "seeking" : "offering";
-      var href = "/browse.html?category=" + encodeURIComponent(r.category || "other")
-               + "&role=" + encodeURIComponent(myRole);
-      html += '<a class="cascade-row biz-row biz-row--taken" href="' + esc(href) + '"'
-            + ' style="--i:' + Math.min(n, 24) + '">'
-            + '<span class="biz-row__n">' + n + '</span>'
-            + '<b>' + esc(catName(r.category)) + '</b>'
-            + (where ? '<span class="biz-row__where">' + esc(where) + '</span>' : "")
-            + (r.number ? '<span class="biz-row__num">#' + esc(r.number) + '</span>' : "")
-            + '</a>';
-      n++;
-    });
-
+    // Place two onward is free until a company takes it. Nothing is
+    // pulled in to fill them: the private numbers that used to land here
+    // are on the private side, where they belong.
     var free = esc(T("bizlist.free", "Free place - register your company"));
     for (; n <= PLACES; n++) {
       html += '<a class="cascade-row biz-row biz-row--free" href="#cat-other" data-goto="other"'
@@ -4711,30 +4685,8 @@ if ("serviceWorker" in navigator) {
     if (e.key === "Escape") close();
   });
 
-  /* The list draws from what it has and redraws when the answer arrives, so
-     the box opens instantly on a slow connection and fills a moment later
-     rather than doing nothing until the round trip finishes. */
-  fetch("https://auth.rotabo.app/rest/v1/rpc/list_public_numbers", {
-    method: "POST",
-    headers: {
-      "apikey": ANON,
-      "Authorization": "Bearer " + ANON,
-      "Content-Type": "application/json"
-    },
-    body: "{}"
-  })
-    .then(function(r){ return r.ok ? r.json() : []; })
-    .then(function(data){
-      if (Array.isArray(data)) rows = data;
-    })
-    .catch(function(){ /* the sponsor and the empty places still stand */ })
-    .then(function(){
-      loaded = true;
-      if (!list.hidden) render();
-    });
-
-  // The category names and the free line arrive with the dictionary, and a
-  // language switch replaces both. Chained, never assigned.
+  // The free line arrives with the dictionary, and a language switch
+  // replaces it. Chained, never assigned.
   var beforeBizList = window.__afterTranslate;
   window.__afterTranslate = function(d){
     if (beforeBizList) { try { beforeBizList(d); } catch (e) {} }
