@@ -161,3 +161,53 @@ car_wash|कार वॉश|
 car_rental|कार किराया|
 bike_scooter_rental|साइकिल और स्कूटर किराया|
 funeral_services|अंतिम संस्कार सेवाएँ|
+notary|नोटरी|
+bailiff|वसूली और निष्पादन अधिकारी|
+patent_trademark|पेटेंट और ट्रेडमार्क|
+debt_collection|ऋण वसूली|
+company_formation|कंपनी पंजीकरण|
+financial_advisory|वित्तीय सलाह|
+payroll_services|वेतन प्रबंधन|
+currency_exchange|मुद्रा विनिमय|
+pawnshop|गिरवी की दुकान|
+leasing|लीजिंग और वित्त|
+hearing_aids|श्रवण यंत्र|
+medical_transport|चिकित्सा परिवहन|
+rehabilitation|पुनर्वास केंद्र|
+occupational_therapy|व्यावसायिक चिकित्सा|
+midwifery|दाई सेवा|
+acupuncture|एक्यूपंक्चर|
+chiropractic|कायरोप्रैक्टिक और ऑस्टियोपैथी|
+insulation|ऊष्मारोधन|
+waterproofing|वॉटरप्रूफिंग|
+plastering|पलस्तर और पुट्टी|
+tiling|टाइल लगाना|
+drywall|ड्राईवॉल और विभाजन|
+fencing|बाड़ और गेट|
+paving|पेविंग और ड्राइववे|
+well_drilling|बोरवेल खुदाई|
+septic_systems|सेप्टिक टैंक और नाली|
+solar_panels|सोलर पैनल इंस्टॉलेशन|
+alarm_cctv|अलार्म और सीसीटीवी|
+smart_home|स्मार्ट होम इंस्टॉलेशन|
+lift_maintenance|लिफ्ट रखरखाव|
+fire_safety|अग्नि सुरक्षा और अग्निशामक|
+car_dealer|कार डीलरशिप|
+vehicle_inspection|वाहन जांच|
+auto_electrics|ऑटो इलेक्ट्रिकल|
+car_glass|कार के शीशे और विंडशील्ड|
+boat_repair|नाव मरम्मत|
+bus_charter|बस और कोच किराया|
+call_centre|कॉल सेंटर|
+virtual_assistant|वर्चुअल असिस्टेंट|
+market_research|बाजार अनुसंधान|
+copywriting|कॉपीराइटिंग|
+seo_services|एसईओ और ऑनलाइन विज्ञापन|
+social_media|सोशल मीडिया प्रबंधन|
+app_development|मोबाइल ऐप विकास|
+game_development|गेम विकास|
+drone_services|ड्रोन सेवाएँ|
+printing_3d|3डी प्रिंटिंग|
+interior_design|इंटीरियर डिज़ाइन|
+dance_school|नृत्य विद्यालय|
+art_gallery|कला दीर्घा और फ्रेमिंग|

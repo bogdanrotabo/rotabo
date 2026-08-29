@@ -161,3 +161,53 @@ car_wash|Nigh carranna|
 car_rental|Carranna ar cíos|
 bike_scooter_rental|Rothair agus scútair ar cíos|
 funeral_services|Seirbhísí sochraide|
+notary|Nótaire|
+bailiff|Forghníomhú cúirte|
+patent_trademark|Paitinní agus trádmharcanna|
+debt_collection|Bailiú fiacha|
+company_formation|Bunú cuideachtaí|
+financial_advisory|Comhairle airgeadais|
+payroll_services|Seirbhísí párolla|
+currency_exchange|Malartú airgeadra|
+pawnshop|Siopa geallearbtha|
+leasing|Léasú agus maoiniú|
+hearing_aids|Áiseanna éisteachta|
+medical_transport|Iompar leighis|
+rehabilitation|Ionad athshlánúcháin|
+occupational_therapy|Teiripe shaothair|
+midwifery|Cnáimhseachas|
+acupuncture|Snáthaidchóireacht|
+chiropractic|Sciropraictic agus oistéapaite|
+insulation|Insliú|
+waterproofing|Uiscedhíonadh|
+plastering|Plástráil agus líonadh|
+tiling|Leacú tíleanna|
+drywall|Plástarchlár agus deighilteoirí|
+fencing|Fálta agus geataí|
+paving|Pábháil agus cabhsaí|
+well_drilling|Druileáil toibreacha|
+septic_systems|Umair seipteacha agus draenáil|
+solar_panels|Suiteáil painéal gréine|
+alarm_cctv|Aláraim agus ceamaraí slándála|
+smart_home|Suiteáil tí chliste|
+lift_maintenance|Cothabháil ardaitheoirí|
+fire_safety|Sábháilteacht dóiteáin agus múchtóirí|
+car_dealer|Déileálaí gluaisteán|
+vehicle_inspection|Scrúdú feithiclí|
+auto_electrics|Leictreachas gluaisteán|
+car_glass|Gloine gluaisteán agus gaothscátha|
+boat_repair|Deisiú bád|
+bus_charter|Fruiliú bus agus cóiste|
+call_centre|Lárionad glaonna|
+virtual_assistant|Cúntóir fíorúil|
+market_research|Taighde margaidh|
+copywriting|Scríobh ábhair|
+seo_services|SEO agus fógraíocht ar líne|
+social_media|Bainistiú meán sóisialta|
+app_development|Forbairt aipeanna móibíleacha|
+game_development|Forbairt cluichí|
+drone_services|Seirbhísí dróin|
+printing_3d|Priontáil 3T|
+interior_design|Dearadh intí|
+dance_school|Scoil damhsa|
+art_gallery|Dánlann agus frámáil|

@@ -161,3 +161,53 @@ car_wash|Kuosha magari|
 car_rental|Kukodisha magari|
 bike_scooter_rental|Kukodisha baiskeli na skuta|
 funeral_services|Huduma za mazishi|
+notary|Mthibitishaji wa hati|
+bailiff|Utekelezaji wa hukumu|
+patent_trademark|Hataza na alama za biashara|
+debt_collection|Ukusanyaji wa madeni|
+company_formation|Usajili wa kampuni|
+financial_advisory|Ushauri wa kifedha|
+payroll_services|Huduma za mishahara|
+currency_exchange|Kubadilisha fedha za kigeni|
+pawnshop|Duka la rehani|
+leasing|Ukodishaji na ufadhili|
+hearing_aids|Vifaa vya kusaidia kusikia|
+medical_transport|Usafiri wa matibabu|
+rehabilitation|Kituo cha urekebishaji|
+occupational_therapy|Tiba ya kazi|
+midwifery|Ukunga|
+acupuncture|Tiba ya sindano|
+chiropractic|Tiba ya uti wa mgongo na osteopathy|
+insulation|Uzuiaji wa joto|
+waterproofing|Kuzuia maji|
+plastering|Upakaji wa lipu na putty|
+tiling|Uwekaji wa vigae|
+drywall|Ukuta wa jasi na vizuizi|
+fencing|Uzio na malango|
+paving|Kuweka matofali na njia za magari|
+well_drilling|Uchimbaji wa visima|
+septic_systems|Matangi ya maji taka na mifereji|
+solar_panels|Ufungaji wa paneli za jua|
+alarm_cctv|Kengele na kamera za usalama|
+smart_home|Ufungaji wa nyumba mahiri|
+lift_maintenance|Matengenezo ya lifti|
+fire_safety|Usalama wa moto na vizima moto|
+car_dealer|Wakala wa magari|
+vehicle_inspection|Ukaguzi wa magari|
+auto_electrics|Umeme wa magari|
+car_glass|Vioo vya magari na kioo cha mbele|
+boat_repair|Ukarabati wa boti|
+bus_charter|Kukodisha mabasi|
+call_centre|Kituo cha simu|
+virtual_assistant|Msaidizi wa mtandaoni|
+market_research|Utafiti wa soko|
+copywriting|Uandishi wa maudhui|
+seo_services|SEO na matangazo mtandaoni|
+social_media|Usimamizi wa mitandao ya kijamii|
+app_development|Utengenezaji wa programu za simu|
+game_development|Utengenezaji wa michezo|
+drone_services|Huduma za droni|
+printing_3d|Uchapishaji wa 3D|
+interior_design|Ubunifu wa ndani|
+dance_school|Shule ya densi|
+art_gallery|Jumba la sanaa na utengenezaji fremu|

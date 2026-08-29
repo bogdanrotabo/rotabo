@@ -161,3 +161,53 @@ car_wash|Lavage auto|Station de lavage, nettoyage voiture, detailing
 car_rental|Location de voitures|Louer une voiture, véhicule de location
 bike_scooter_rental|Location de vélos et trottinettes|Louer un vélo, trottinette électrique
 funeral_services|Pompes funèbres|Obsèques, enterrement, crémation, cercueils
+notary|Notariat|
+bailiff|Huissier de justice|
+patent_trademark|Brevets et marques|
+debt_collection|Recouvrement de créances|
+company_formation|Création d'entreprise|
+financial_advisory|Conseil financier|
+payroll_services|Gestion de la paie|
+currency_exchange|Bureau de change|
+pawnshop|Prêt sur gage|
+leasing|Leasing et financement|
+hearing_aids|Appareils auditifs|
+medical_transport|Transport médical|
+rehabilitation|Centre de rééducation|
+occupational_therapy|Ergothérapie|
+midwifery|Sages-femmes|
+acupuncture|Acupuncture|
+chiropractic|Chiropratique et ostéopathie|
+insulation|Isolation thermique|
+waterproofing|Étanchéité|
+plastering|Plâtrerie et enduits|
+tiling|Carrelage|
+drywall|Cloisons et plaques de plâtre|
+fencing|Clôtures et portails|
+paving|Pavage et allées|
+well_drilling|Forage de puits|
+septic_systems|Fosses septiques et assainissement|
+solar_panels|Pose de panneaux solaires|
+alarm_cctv|Alarmes et vidéosurveillance|
+smart_home|Domotique|
+lift_maintenance|Entretien d'ascenseurs|
+fire_safety|Sécurité incendie et extincteurs|
+car_dealer|Concession automobile|
+vehicle_inspection|Contrôle technique|
+auto_electrics|Électricité automobile|
+car_glass|Vitrage automobile et pare-brise|
+boat_repair|Réparation de bateaux|
+bus_charter|Location d'autocars|
+call_centre|Centre d'appels|
+virtual_assistant|Assistant virtuel|
+market_research|Études de marché|
+copywriting|Rédaction de contenu|
+seo_services|Référencement et publicité en ligne|
+social_media|Gestion des réseaux sociaux|
+app_development|Développement d'applications mobiles|
+game_development|Développement de jeux|
+drone_services|Services par drone|
+printing_3d|Impression 3D|
+interior_design|Décoration d'intérieur|
+dance_school|École de danse|
+art_gallery|Galerie d'art et encadrement|

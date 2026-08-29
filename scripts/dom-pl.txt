@@ -161,3 +161,53 @@ car_wash|Myjnia samochodowa|Mycie auta, czyszczenie samochodu, detailing
 car_rental|Wynajem samochodów|Rent a car, auto na wynajem
 bike_scooter_rental|Wypożyczalnia rowerów i hulajnóg|Wypożycz rower, hulajnoga elektryczna
 funeral_services|Usługi pogrzebowe|Zakład pogrzebowy, pogrzeb, kremacja, trumny
+notary|Notariusz|
+bailiff|Komornik|
+patent_trademark|Patenty i znaki towarowe|
+debt_collection|Windykacja|
+company_formation|Zakładanie firm|
+financial_advisory|Doradztwo finansowe|
+payroll_services|Obsługa kadrowo-płacowa|
+currency_exchange|Kantor wymiany walut|
+pawnshop|Lombard|
+leasing|Leasing i finansowanie|
+hearing_aids|Aparaty słuchowe|
+medical_transport|Transport medyczny|
+rehabilitation|Ośrodek rehabilitacji|
+occupational_therapy|Terapia zajęciowa|
+midwifery|Położnictwo|
+acupuncture|Akupunktura|
+chiropractic|Chiropraktyka i osteopatia|
+insulation|Izolacja termiczna|
+waterproofing|Hydroizolacja|
+plastering|Tynki i gładzie|
+tiling|Układanie płytek|
+drywall|Płyty gipsowe i ścianki działowe|
+fencing|Ogrodzenia i bramy|
+paving|Kostka brukowa i podjazdy|
+well_drilling|Wiercenie studni|
+septic_systems|Szamba i kanalizacja|
+solar_panels|Montaż paneli słonecznych|
+alarm_cctv|Alarmy i monitoring|
+smart_home|Inteligentny dom|
+lift_maintenance|Konserwacja wind|
+fire_safety|Ochrona przeciwpożarowa|
+car_dealer|Salon samochodowy|
+vehicle_inspection|Przegląd techniczny|
+auto_electrics|Elektryka samochodowa|
+car_glass|Szyby samochodowe|
+boat_repair|Naprawa łodzi|
+bus_charter|Wynajem autokarów|
+call_centre|Call center|
+virtual_assistant|Wirtualna asystentka|
+market_research|Badania rynku|
+copywriting|Copywriting|
+seo_services|SEO i reklama online|
+social_media|Prowadzenie mediów społecznościowych|
+app_development|Tworzenie aplikacji mobilnych|
+game_development|Tworzenie gier|
+drone_services|Usługi dronem|
+printing_3d|Druk 3D|
+interior_design|Projektowanie wnętrz|
+dance_school|Szkoła tańca|
+art_gallery|Galeria sztuki i oprawa obrazów|

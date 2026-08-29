@@ -161,3 +161,53 @@ car_wash|세차|
 car_rental|렌터카|
 bike_scooter_rental|자전거와 스쿠터 대여|
 funeral_services|장례 서비스|
+notary|공증 사무소|
+bailiff|강제집행|
+patent_trademark|특허와 상표|
+debt_collection|채권 추심|
+company_formation|법인 설립|
+financial_advisory|재무 컨설팅|
+payroll_services|급여 대행|
+currency_exchange|환전소|
+pawnshop|전당포|
+leasing|리스와 금융|
+hearing_aids|보청기|
+medical_transport|환자 이송|
+rehabilitation|재활 센터|
+occupational_therapy|작업치료|
+midwifery|조산|
+acupuncture|침술|
+chiropractic|카이로프랙틱과 정골|
+insulation|단열 공사|
+waterproofing|방수 공사|
+plastering|미장과 퍼티|
+tiling|타일 시공|
+drywall|석고보드와 칸막이|
+fencing|울타리와 대문|
+paving|포장과 진입로|
+well_drilling|우물 굴착|
+septic_systems|정화조와 배수|
+solar_panels|태양광 패널 설치|
+alarm_cctv|경보와 CCTV|
+smart_home|스마트홈 설치|
+lift_maintenance|승강기 유지보수|
+fire_safety|소방과 소화기|
+car_dealer|자동차 대리점|
+vehicle_inspection|자동차 검사|
+auto_electrics|자동차 전기|
+car_glass|자동차 유리와 앞유리|
+boat_repair|선박 수리|
+bus_charter|버스 대절|
+call_centre|콜센터|
+virtual_assistant|가상 비서|
+market_research|시장 조사|
+copywriting|카피라이팅|
+seo_services|SEO와 온라인 광고|
+social_media|소셜미디어 운영|
+app_development|모바일 앱 개발|
+game_development|게임 개발|
+drone_services|드론 서비스|
+printing_3d|3D 프린팅|
+interior_design|인테리어 디자인|
+dance_school|무용 학원|
+art_gallery|화랑과 액자|

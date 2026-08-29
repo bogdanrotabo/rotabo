@@ -161,3 +161,53 @@ car_wash|Rửa xe|
 car_rental|Cho thuê ô tô|
 bike_scooter_rental|Cho thuê xe đạp và xe scooter|
 funeral_services|Dịch vụ tang lễ|
+notary|Văn phòng công chứng|
+bailiff|Thi hành án|
+patent_trademark|Bằng sáng chế và nhãn hiệu|
+debt_collection|Thu hồi nợ|
+company_formation|Thành lập doanh nghiệp|
+financial_advisory|Tư vấn tài chính|
+payroll_services|Dịch vụ tính lương|
+currency_exchange|Đổi ngoại tệ|
+pawnshop|Tiệm cầm đồ|
+leasing|Cho thuê tài chính|
+hearing_aids|Máy trợ thính|
+medical_transport|Vận chuyển y tế|
+rehabilitation|Trung tâm phục hồi chức năng|
+occupational_therapy|Hoạt động trị liệu|
+midwifery|Hộ sinh|
+acupuncture|Châm cứu|
+chiropractic|Nắn chỉnh cột sống và nắn xương|
+insulation|Cách nhiệt|
+waterproofing|Chống thấm|
+plastering|Trát và bả matit|
+tiling|Ốp lát gạch|
+drywall|Thạch cao và vách ngăn|
+fencing|Hàng rào và cổng|
+paving|Lát sân và lối đi|
+well_drilling|Khoan giếng|
+septic_systems|Bể phốt và thoát nước|
+solar_panels|Lắp đặt tấm pin mặt trời|
+alarm_cctv|Báo động và camera giám sát|
+smart_home|Lắp đặt nhà thông minh|
+lift_maintenance|Bảo trì thang máy|
+fire_safety|Phòng cháy và bình chữa cháy|
+car_dealer|Đại lý ô tô|
+vehicle_inspection|Đăng kiểm xe|
+auto_electrics|Điện ô tô|
+car_glass|Kính ô tô và kính chắn gió|
+boat_repair|Sửa chữa tàu thuyền|
+bus_charter|Cho thuê xe khách|
+call_centre|Tổng đài chăm sóc khách hàng|
+virtual_assistant|Trợ lý ảo|
+market_research|Nghiên cứu thị trường|
+copywriting|Viết nội dung|
+seo_services|SEO và quảng cáo trực tuyến|
+social_media|Quản lý mạng xã hội|
+app_development|Phát triển ứng dụng di động|
+game_development|Phát triển game|
+drone_services|Dịch vụ flycam|
+printing_3d|In 3D|
+interior_design|Thiết kế nội thất|
+dance_school|Trường dạy nhảy|
+art_gallery|Phòng tranh và đóng khung|

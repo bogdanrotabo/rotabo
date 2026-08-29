@@ -161,3 +161,53 @@ car_wash|Автомивка|
 car_rental|Коли под наем|
 bike_scooter_rental|Наем на велосипеди и тротинетки|
 funeral_services|Погребални услуги|
+notary|Нотариус|
+bailiff|Съдебен изпълнител|
+patent_trademark|Патенти и търговски марки|
+debt_collection|Събиране на вземания|
+company_formation|Регистрация на фирми|
+financial_advisory|Финансови консултации|
+payroll_services|Обработка на заплати|
+currency_exchange|Обменно бюро|
+pawnshop|Заложна къща|
+leasing|Лизинг и финансиране|
+hearing_aids|Слухови апарати|
+medical_transport|Медицински транспорт|
+rehabilitation|Рехабилитационен център|
+occupational_therapy|Ерготерапия|
+midwifery|Акушерство|
+acupuncture|Акупунктура|
+chiropractic|Хиропрактика и остеопатия|
+insulation|Топлоизолация|
+waterproofing|Хидроизолация|
+plastering|Мазилки и шпакловки|
+tiling|Полагане на плочки|
+drywall|Гипсокартон и преградни стени|
+fencing|Огради и порти|
+paving|Настилки и алеи|
+well_drilling|Сондаж на кладенци|
+septic_systems|Септични ями и канализация|
+solar_panels|Монтаж на соларни панели|
+alarm_cctv|Алармени системи и видеонаблюдение|
+smart_home|Умен дом|
+lift_maintenance|Поддръжка на асансьори|
+fire_safety|Пожарна безопасност и пожарогасители|
+car_dealer|Автосалон|
+vehicle_inspection|Технически преглед|
+auto_electrics|Автоелектротехника|
+car_glass|Автостъкла и предни стъкла|
+boat_repair|Ремонт на лодки|
+bus_charter|Наем на автобуси|
+call_centre|Кол център|
+virtual_assistant|Виртуален асистент|
+market_research|Пазарни проучвания|
+copywriting|Писане на съдържание|
+seo_services|SEO и онлайн реклама|
+social_media|Управление на социални мрежи|
+app_development|Разработка на мобилни приложения|
+game_development|Разработка на игри|
+drone_services|Услуги с дрон|
+printing_3d|3D печат|
+interior_design|Интериорен дизайн|
+dance_school|Школа по танци|
+art_gallery|Художествена галерия и рамкиране|

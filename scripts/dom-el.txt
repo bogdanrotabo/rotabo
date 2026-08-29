@@ -161,3 +161,53 @@ car_wash|Πλυντήριο αυτοκινήτων|
 car_rental|Ενοικίαση αυτοκινήτων|
 bike_scooter_rental|Ενοικίαση ποδηλάτων και πατινιών|
 funeral_services|Γραφείο τελετών|
+notary|Συμβολαιογραφείο|
+bailiff|Δικαστικός επιμελητής|
+patent_trademark|Ευρεσιτεχνίες και σήματα|
+debt_collection|Είσπραξη οφειλών|
+company_formation|Σύσταση εταιρειών|
+financial_advisory|Οικονομικές συμβουλές|
+payroll_services|Μισθοδοσία|
+currency_exchange|Ανταλλακτήριο συναλλάγματος|
+pawnshop|Ενεχυροδανειστήριο|
+leasing|Χρηματοδοτική μίσθωση|
+hearing_aids|Ακουστικά βαρηκοΐας|
+medical_transport|Μεταφορά ασθενών|
+rehabilitation|Κέντρο αποκατάστασης|
+occupational_therapy|Εργοθεραπεία|
+midwifery|Μαιευτική|
+acupuncture|Βελονισμός|
+chiropractic|Χειροπρακτική και οστεοπαθητική|
+insulation|Θερμομόνωση|
+waterproofing|Στεγανοποίηση|
+plastering|Σοβατίσματα και στοκαρίσματα|
+tiling|Τοποθέτηση πλακιδίων|
+drywall|Γυψοσανίδες και χωρίσματα|
+fencing|Περιφράξεις και πύλες|
+paving|Πλακοστρώσεις και είσοδοι|
+well_drilling|Γεωτρήσεις|
+septic_systems|Βόθροι και αποχέτευση|
+solar_panels|Τοποθέτηση φωτοβολταϊκών|
+alarm_cctv|Συναγερμοί και κάμερες|
+smart_home|Έξυπνο σπίτι|
+lift_maintenance|Συντήρηση ανελκυστήρων|
+fire_safety|Πυρασφάλεια και πυροσβεστήρες|
+car_dealer|Αντιπροσωπεία αυτοκινήτων|
+vehicle_inspection|Τεχνικός έλεγχος οχημάτων|
+auto_electrics|Ηλεκτρολογείο αυτοκινήτων|
+car_glass|Κρύσταλλα και παρμπρίζ|
+boat_repair|Επισκευή σκαφών|
+bus_charter|Ενοικίαση πούλμαν|
+call_centre|Τηλεφωνικό κέντρο|
+virtual_assistant|Εικονικός βοηθός|
+market_research|Έρευνα αγοράς|
+copywriting|Συγγραφή κειμένων|
+seo_services|SEO και διαφήμιση στο διαδίκτυο|
+social_media|Διαχείριση κοινωνικών δικτύων|
+app_development|Ανάπτυξη εφαρμογών κινητού|
+game_development|Ανάπτυξη παιχνιδιών|
+drone_services|Υπηρεσίες με drone|
+printing_3d|Τρισδιάστατη εκτύπωση|
+interior_design|Διακόσμηση εσωτερικών χώρων|
+dance_school|Σχολή χορού|
+art_gallery|Γκαλερί και κορνιζοποιείο|

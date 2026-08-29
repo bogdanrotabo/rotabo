@@ -161,3 +161,53 @@ car_wash|گاڑی کی دھلائی|
 car_rental|گاڑی کرائے پر|
 bike_scooter_rental|سائیکل اور سکوٹر کرائے پر|
 funeral_services|تدفین کی خدمات|
+notary|نوٹری|
+bailiff|عدالتی نفاذ|
+patent_trademark|پیٹنٹ اور ٹریڈ مارک|
+debt_collection|قرض کی وصولی|
+company_formation|کمپنی رجسٹریشن|
+financial_advisory|مالیاتی مشاورت|
+payroll_services|تنخواہ کا انتظام|
+currency_exchange|منی ایکسچینج|
+pawnshop|گروی کی دکان|
+leasing|لیزنگ اور مالی معاونت|
+hearing_aids|سماعت کے آلات|
+medical_transport|طبی نقل و حمل|
+rehabilitation|بحالی مرکز|
+occupational_therapy|پیشہ ورانہ تھراپی|
+midwifery|دائی کا کام|
+acupuncture|ایکیوپنکچر|
+chiropractic|کائروپریکٹک اور آسٹیوپیتھی|
+insulation|حرارتی موصلیت|
+waterproofing|واٹر پروفنگ|
+plastering|پلستر اور پٹی|
+tiling|ٹائل لگانا|
+drywall|ڈرائی وال اور پارٹیشن|
+fencing|باڑ اور گیٹ|
+paving|فرش بندی اور راستے|
+well_drilling|کنویں کی کھدائی|
+septic_systems|سیپٹک ٹینک اور نکاسی|
+solar_panels|سولر پینل کی تنصیب|
+alarm_cctv|الارم اور سی سی ٹی وی|
+smart_home|سمارٹ ہوم کی تنصیب|
+lift_maintenance|لفٹ کی دیکھ بھال|
+fire_safety|آگ سے حفاظت اور آلات|
+car_dealer|کار ڈیلرشپ|
+vehicle_inspection|گاڑی کا معائنہ|
+auto_electrics|آٹو الیکٹریشن|
+car_glass|گاڑی کے شیشے اور ونڈ اسکرین|
+boat_repair|کشتی کی مرمت|
+bus_charter|بس اور کوچ کرائے پر|
+call_centre|کال سینٹر|
+virtual_assistant|ورچوئل اسسٹنٹ|
+market_research|مارکیٹ ریسرچ|
+copywriting|مواد نویسی|
+seo_services|ایس ای او اور آن لائن اشتہار|
+social_media|سوشل میڈیا مینجمنٹ|
+app_development|موبائل ایپ ڈویلپمنٹ|
+game_development|گیم ڈویلپمنٹ|
+drone_services|ڈرون خدمات|
+printing_3d|تھری ڈی پرنٹنگ|
+interior_design|انٹیریئر ڈیزائن|
+dance_school|رقص کا اسکول|
+art_gallery|آرٹ گیلری اور فریمنگ|
