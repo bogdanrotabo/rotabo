@@ -1,0 +1,163 @@
+taxi|ট্যাক্সি|
+ride_hailing|অ্যাপে গাড়ি ডাকা|
+chauffeur|চালক সেবা|
+driving_school|ড্রাইভিং স্কুল|
+translation|অনুবাদ|
+interpreting|দোভাষী|
+sworn_translation|সত্যায়িত অনুবাদ|
+language_school|ভাষা শিক্ষা কেন্দ্র|
+removals|বাসা বদলের সেবা|
+international_removals|আন্তর্জাতিক স্থানান্তর|
+courier|কুরিয়ার সেবা|
+freight_forwarding|মালামাল ফরওয়ার্ডিং|
+refrigerated_transport|শীতাতপ পরিবহন|
+haulage|পণ্য পরিবহন|
+storage_warehousing|গুদাম ও সংরক্ষণ|
+customs_brokerage|শুল্ক এজেন্ট|
+excavation|খনন ও মাটির কাজ|
+crane_hire|ক্রেন ভাড়া|
+scaffolding|ভারা নির্মাণ|
+demolition|ভাঙার কাজ|
+concrete_works|ঢালাইয়ের কাজ|
+surveying|জরিপ|
+tool_hire|যন্ত্রপাতি ভাড়া|
+machinery_rental|মেশিন ভাড়া|
+generator_hire|জেনারেটর ভাড়া|
+electrical_installation|বৈদ্যুতিক কাজ|
+plumbing|পানির লাইন ও প্লাম্বিং|
+heating_hvac|হিটিং ও বায়ু চলাচল|
+air_conditioning|এয়ার কন্ডিশনিং|
+painting_decorating|রং ও সাজসজ্জা|
+carpentry|কাঠের কাজ|
+flooring|মেঝের কাজ|
+roofing|ছাদের কাজ|
+locksmith|তালা মেরামত|
+cleaning_services|পরিচ্ছন্নতা সেবা|
+gardening_landscaping|বাগান ও ল্যান্ডস্কেপিং|
+renovation|সংস্কার|
+car_repair|গাড়ি মেরামত|
+mobile_mechanic|ভ্রাম্যমাণ মেকানিক|
+tyre_service|টায়ার সেবা|
+bodywork_paint|বডি ও রঙের কাজ|
+towing_recovery|টোয়িং ও উদ্ধার|
+childcare|শিশু যত্ন|
+elderly_care|প্রবীণদের যত্ন|
+home_nursing|বাড়িতে নার্সিং|
+private_tutoring|প্রাইভেট টিউশন|
+music_lessons|সংগীত শিক্ষা|
+sports_coaching|খেলাধুলার কোচিং|
+it_training|আইটি প্রশিক্ষণ|
+vocational_training|কারিগরি প্রশিক্ষণ|
+holiday_lettings|ছুটির বাসা ভাড়া|
+guesthouse_bnb|গেস্ট হাউস ও নাশতাসহ থাকা|
+property_management|সম্পত্তি ব্যবস্থাপনা|
+veterinary|পশু চিকিৎসক|
+dog_walking|কুকুর হাঁটানো|
+pet_grooming|পোষা প্রাণীর সাজসজ্জা|
+general_practice|সাধারণ চিকিৎসক|
+dentistry|দন্তচিকিৎসা|
+physiotherapy|ফিজিওথেরাপি|
+psychology|মনোবিজ্ঞান|
+pharmacy|ওষুধের দোকান|
+optometry|চক্ষু পরীক্ষা ও চশমা|
+medical_laboratory|চিকিৎসা পরীক্ষাগার|
+software_development|সফটওয়্যার উন্নয়ন|
+web_development|ওয়েব ডেভেলপমেন্ট|
+it_support|আইটি সহায়তা|
+cybersecurity|সাইবার নিরাপত্তা|
+data_ai|ডেটা ও কৃত্রিম বুদ্ধিমত্তা|
+cloud_hosting|ক্লাউড ও হোস্টিং|
+accounting|হিসাবরক্ষণ|
+audit_tax|নিরীক্ষা ও কর|
+legal_services|আইনি সেবা|
+hr_recruitment|জনবল ও নিয়োগ|
+management_consulting|ব্যবস্থাপনা পরামর্শ|
+insurance_brokerage|বিমা দালালি|
+real_estate_agency|আবাসন এজেন্সি|
+architecture|স্থাপত্য|
+manufacturing|উৎপাদন|
+cnc_machining|সিএনসি মেশিনিং|
+metalwork_welding|ধাতুর কাজ ও ঝালাই|
+restaurant|রেস্তোরাঁ|
+catering|ক্যাটারিং|
+hotel|হোটেল|
+event_management|অনুষ্ঠান আয়োজন|
+agriculture|কৃষি|
+forestry|বনায়ন|
+waste_recycling|বর্জ্য ও পুনর্ব্যবহার|
+renewable_energy|নবায়নযোগ্য জ্বালানি|
+marketing_agency|বিপণন এজেন্সি|
+graphic_design|গ্রাফিক ডিজাইন|
+photography|ফটোগ্রাফি|
+video_production|ভিডিও নির্মাণ|
+printing_signage|ছাপা ও সাইনবোর্ড|
+wholesale|পাইকারি ব্যবসা|
+ecommerce|অনলাইন দোকান|
+security_services|নিরাপত্তা সেবা|
+hairdressing|চুল কাটার সেলুন|
+beauty_salon|বিউটি পার্লার|
+massage_therapy|ম্যাসাজ|
+fitness_training|ফিটনেস প্রশিক্ষণ|
+shop_general|দোকান|
+shop_bicycle|সাইকেলের দোকান ও মেরামত|
+shop_auto_parts|গাড়ির যন্ত্রাংশের দোকান|
+shop_hardware|হার্ডওয়্যার ও যন্ত্রপাতির দোকান|
+shop_furniture|আসবাবের দোকান|
+shop_electronics|ইলেকট্রনিক্স ও গৃহসামগ্রী|
+shop_clothing|পোশাকের দোকান|
+shop_grocery|মুদি দোকান|
+shop_sports|খেলার সামগ্রীর দোকান|
+shop_books|বইয়ের ও স্টেশনারি দোকান|
+shop_florist|ফুলের দোকান|
+shop_pet|পোষা প্রাণীর দোকান|
+motorcycle_repair|মোটরসাইকেল মেরামত|
+bar|বার|
+kebab_shawarma|কাবাব ও শাওয়ারমা|
+pizzeria|পিৎজার দোকান|
+fast_food|ফাস্ট ফুড|
+bakery|বেকারি|
+pastry_shop|কেক ও পেস্ট্রির দোকান|
+coffee_shop|কফি শপ|
+food_truck|ফুড ট্রাক|
+butcher|মাংসের দোকান|
+ice_cream|আইসক্রিমের দোকান|
+winery|ওয়াইনারি|
+brewery|বিয়ার কারখানা|
+nightclub|নাইট ক্লাব ও ডিস্কো|
+beach_club|সৈকত বার ও বিচ ক্লাব|
+bowling_billiards|বোলিং ও বিলিয়ার্ড|
+travel_agency|ট্রাভেল এজেন্সি|
+nail_salon|নেইল সেলুন, ম্যানিকিউর ও পেডিকিউর|
+barber|নাপিত|
+tattoo_piercing|ট্যাটু ও পিয়ার্সিং|
+spa_sauna|স্পা ও সনা|
+cosmetics_shop|প্রসাধনীর দোকান|
+dry_cleaning|ড্রাই ক্লিনিং ও লন্ড্রি|
+podiatry|পায়ের যত্ন|
+dental_laboratory|ডেন্টাল ল্যাব|
+orthodontics|দাঁত সোজা করা|
+dermatology|চর্মরোগ|
+paediatrics|শিশুরোগ|
+gynaecology|স্ত্রীরোগ|
+cardiology|হৃদরোগ|
+medical_imaging|মেডিকেল ইমেজিং|
+speech_therapy|বাক থেরাপি|
+nutrition_dietetics|পুষ্টি ও খাদ্য পরিকল্পনা|
+bicycle_repair|সাইকেল মেরামত|
+scooter_repair|স্কুটার ও মোপেড মেরামত|
+appliance_repair|গৃহস্থালি যন্ত্র মেরামত|
+phone_repair|ফোন ও ট্যাবলেট মেরামত|
+computer_repair|কম্পিউটার মেরামত|
+watch_jewellery_repair|ঘড়ি ও গয়না মেরামত|
+shoe_repair|জুতা মেরামত|
+tailoring_alterations|দর্জি ও পোশাক ঠিক করা|
+upholstery|আসবাব মোড়ানো|
+glazing|কাচ ও জানালা|
+chimney_sweep|চিমনি পরিষ্কার|
+pest_control|পোকামাকড় দমন|
+pool_maintenance|সুইমিং পুল রক্ষণাবেক্ষণ|
+window_cleaning|জানালা পরিষ্কার|
+car_wash|গাড়ি ধোয়া|
+car_rental|গাড়ি ভাড়া|
+bike_scooter_rental|সাইকেল ও স্কুটার ভাড়া|
+funeral_services|অন্ত্যেষ্টি সেবা|

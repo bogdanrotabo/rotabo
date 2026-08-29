@@ -1,0 +1,163 @@
+taxi|Teksi|
+ride_hailing|Huduma ya usafiri kwa programu|
+chauffeur|Huduma ya dereva|
+driving_school|Shule ya udereva|
+translation|Tafsiri ya maandishi|
+interpreting|Ukalimani|
+sworn_translation|Tafsiri iliyoidhinishwa|
+language_school|Shule ya lugha|
+removals|Huduma ya kuhamisha mizigo|
+international_removals|Uhamishaji wa kimataifa|
+courier|Huduma ya kutuma vifurushi|
+freight_forwarding|Usafirishaji wa mizigo|
+refrigerated_transport|Usafiri wa baridi|
+haulage|Usafirishaji wa bidhaa|
+storage_warehousing|Ghala na uhifadhi|
+customs_brokerage|Wakala wa forodha|
+excavation|Uchimbaji na kazi za ardhi|
+crane_hire|Kukodisha kreni|
+scaffolding|Chandarua cha ujenzi|
+demolition|Ubomoaji|
+concrete_works|Kazi za zege|
+surveying|Upimaji ardhi|
+tool_hire|Kukodisha zana|
+machinery_rental|Kukodisha mitambo|
+generator_hire|Kukodisha jenereta|
+electrical_installation|Uwekaji umeme|
+plumbing|Mabomba na maji|
+heating_hvac|Joto na uingizaji hewa|
+air_conditioning|Viyoyozi|
+painting_decorating|Upakaji rangi na mapambo|
+carpentry|Useremala|
+flooring|Kuweka sakafu|
+roofing|Kazi za paa|
+locksmith|Fundi wa kufuli|
+cleaning_services|Huduma za usafi|
+gardening_landscaping|Bustani na mandhari|
+renovation|Ukarabati|
+car_repair|Karakana ya magari|
+mobile_mechanic|Fundi wa magari anayefika|
+tyre_service|Huduma ya matairi|
+bodywork_paint|Kunyoosha na kupaka rangi gari|
+towing_recovery|Kuvuta na kuokoa magari|
+childcare|Kulea watoto|
+elderly_care|Kuwahudumia wazee|
+home_nursing|Uuguzi wa nyumbani|
+private_tutoring|Masomo ya ziada|
+music_lessons|Masomo ya muziki|
+sports_coaching|Ukocha wa michezo|
+it_training|Mafunzo ya TEHAMA|
+vocational_training|Mafunzo ya ufundi|
+holiday_lettings|Nyumba za likizo za kukodi|
+guesthouse_bnb|Nyumba ya wageni na kifungua kinywa|
+property_management|Usimamizi wa majengo|
+veterinary|Daktari wa wanyama|
+dog_walking|Kutembeza mbwa|
+pet_grooming|Kunyoa na kupamba wanyama|
+general_practice|Daktari wa kawaida|
+dentistry|Meno|
+physiotherapy|Tiba ya viungo|
+psychology|Saikolojia|
+pharmacy|Duka la dawa|
+optometry|Kupima macho na miwani|
+medical_laboratory|Maabara ya afya|
+software_development|Uandishi wa programu|
+web_development|Utengenezaji wa tovuti|
+it_support|Msaada wa TEHAMA|
+cybersecurity|Usalama mtandaoni|
+data_ai|Data na akili bandia|
+cloud_hosting|Wingu na uhifadhi wa tovuti|
+accounting|Uhasibu|
+audit_tax|Ukaguzi na kodi|
+legal_services|Huduma za kisheria|
+hr_recruitment|Rasilimali watu na ajira|
+management_consulting|Ushauri wa uongozi|
+insurance_brokerage|Udalali wa bima|
+real_estate_agency|Wakala wa majengo|
+architecture|Usanifu majengo|
+manufacturing|Utengenezaji viwandani|
+cnc_machining|Uchongaji wa CNC|
+metalwork_welding|Kazi za chuma na kulehemu|
+restaurant|Mkahawa|
+catering|Huduma ya chakula kwa hafla|
+hotel|Hoteli|
+event_management|Uandaaji wa hafla|
+agriculture|Kilimo|
+forestry|Misitu|
+waste_recycling|Taka na urejelezaji|
+renewable_energy|Nishati mbadala|
+marketing_agency|Kampuni ya masoko|
+graphic_design|Ubunifu wa picha|
+photography|Upigaji picha|
+video_production|Utengenezaji wa video|
+printing_signage|Uchapishaji na mabango|
+wholesale|Jumla|
+ecommerce|Duka la mtandaoni|
+security_services|Huduma za ulinzi|
+hairdressing|Saluni ya nywele|
+beauty_salon|Saluni ya urembo|
+massage_therapy|Masaji|
+fitness_training|Mazoezi ya mwili|
+shop_general|Duka|
+shop_bicycle|Duka na ukarabati wa baiskeli|
+shop_auto_parts|Duka la vipuri vya magari|
+shop_hardware|Duka la vifaa vya ujenzi na zana|
+shop_furniture|Duka la samani|
+shop_electronics|Duka la elektroniki na vifaa vya nyumbani|
+shop_clothing|Duka la nguo|
+shop_grocery|Duka la vyakula|
+shop_sports|Duka la vifaa vya michezo|
+shop_books|Duka la vitabu na vifaa vya ofisi|
+shop_florist|Duka la maua|
+shop_pet|Duka la wanyama wa nyumbani|
+motorcycle_repair|Ukarabati wa pikipiki|
+bar|Baa|
+kebab_shawarma|Kebab na shawarma|
+pizzeria|Duka la pizza|
+fast_food|Chakula cha haraka|
+bakery|Mkate na keki|
+pastry_shop|Duka la keki|
+coffee_shop|Duka la kahawa|
+food_truck|Gari la chakula|
+butcher|Duka la nyama|
+ice_cream|Duka la aiskrimu|
+winery|Kiwanda cha divai|
+brewery|Kiwanda cha bia|
+nightclub|Klabu ya usiku na disko|
+beach_club|Baa ya ufukweni|
+bowling_billiards|Bowling na biliadi|
+travel_agency|Wakala wa safari|
+nail_salon|Saluni ya kucha, manikua na pedikua|
+barber|Kinyozi|
+tattoo_piercing|Tatoo na kutoboa|
+spa_sauna|Spa na sauna|
+cosmetics_shop|Duka la vipodozi|
+dry_cleaning|Dobi na kufua nguo|
+podiatry|Huduma ya miguu|
+dental_laboratory|Maabara ya meno|
+orthodontics|Kunyoosha meno|
+dermatology|Magonjwa ya ngozi|
+paediatrics|Afya ya watoto|
+gynaecology|Afya ya uzazi kwa wanawake|
+cardiology|Magonjwa ya moyo|
+medical_imaging|Upigaji picha za kitabibu|
+speech_therapy|Tiba ya usemi|
+nutrition_dietetics|Lishe na mlo|
+bicycle_repair|Ukarabati wa baiskeli|
+scooter_repair|Ukarabati wa skuta na mopedi|
+appliance_repair|Ukarabati wa vifaa vya nyumbani|
+phone_repair|Ukarabati wa simu na tableti|
+computer_repair|Ukarabati wa kompyuta|
+watch_jewellery_repair|Ukarabati wa saa na vito|
+shoe_repair|Ukarabati wa viatu|
+tailoring_alterations|Ushonaji na marekebisho|
+upholstery|Kufunika samani|
+glazing|Vioo na madirisha|
+chimney_sweep|Kusafisha bomba la moshi|
+pest_control|Kuangamiza wadudu|
+pool_maintenance|Utunzaji wa bwawa la kuogelea|
+window_cleaning|Kusafisha madirisha|
+car_wash|Kuosha magari|
+car_rental|Kukodisha magari|
+bike_scooter_rental|Kukodisha baiskeli na skuta|
+funeral_services|Huduma za mazishi|

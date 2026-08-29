@@ -1,0 +1,163 @@
+taxi|Tacsaí|
+ride_hailing|Seirbhís turais tríd an aip|
+chauffeur|Seirbhísí tiománaí|
+driving_school|Scoil tiomána|
+translation|Aistriúchán|
+interpreting|Ateangaireacht|
+sworn_translation|Aistriúchán faoi mhionn|
+language_school|Scoil teangacha|
+removals|Seirbhísí aistrithe tí|
+international_removals|Aistrithe idirnáisiúnta|
+courier|Seirbhís cúiréara|
+freight_forwarding|Seoladh lastais|
+refrigerated_transport|Iompar cuisnithe|
+haulage|Tarlú earraí|
+storage_warehousing|Stóráil agus trádstóras|
+customs_brokerage|Bróicéireacht chustaim|
+excavation|Tochailt agus obair chré|
+crane_hire|Craenacha ar cíos|
+scaffolding|Scafall|
+demolition|Leagan foirgneamh|
+concrete_works|Obair choincréite|
+surveying|Suirbhéireacht|
+tool_hire|Uirlisí ar cíos|
+machinery_rental|Innealra ar cíos|
+generator_hire|Gineadóirí ar cíos|
+electrical_installation|Suiteáil leictreach|
+plumbing|Pluiméireacht|
+heating_hvac|Téamh agus aeráil|
+air_conditioning|Aerchóiriú|
+painting_decorating|Péintéireacht agus maisiú|
+carpentry|Siúinéireacht|
+flooring|Urláracha|
+roofing|Díonadóireacht|
+locksmith|Glasadóir|
+cleaning_services|Seirbhísí glantacháin|
+gardening_landscaping|Garraíodóireacht agus tírdhreachú|
+renovation|Athchóiriú|
+car_repair|Deisiú gluaisteán|
+mobile_mechanic|Meicneoir soghluaiste|
+tyre_service|Seirbhís bonn|
+bodywork_paint|Obair chabhail agus péint|
+towing_recovery|Tarraingt agus tarrtháil|
+childcare|Cúram leanaí|
+elderly_care|Cúram do dhaoine scothaosta|
+home_nursing|Altranas baile|
+private_tutoring|Teagasc príobháideach|
+music_lessons|Ceachtanna ceoil|
+sports_coaching|Traenáil spóirt|
+it_training|Oiliúint TF|
+vocational_training|Oiliúint ghairme|
+holiday_lettings|Ligean saoire|
+guesthouse_bnb|Teach aíochta agus leaba is bricfeasta|
+property_management|Bainistíocht maoine|
+veterinary|Tréidlia|
+dog_walking|Siúl madraí|
+pet_grooming|Bearradh peataí|
+general_practice|Dochtúir teaghlaigh|
+dentistry|Fiaclóireacht|
+physiotherapy|Fisiteiripe|
+psychology|Síceolaíocht|
+pharmacy|Cógaslann|
+optometry|Optaiméadracht|
+medical_laboratory|Saotharlann leighis|
+software_development|Forbairt bogearraí|
+web_development|Forbairt gréasáin|
+it_support|Tacaíocht TF|
+cybersecurity|Cibearshlándáil|
+data_ai|Sonraí agus intleacht shaorga|
+cloud_hosting|Néal agus óstáil|
+accounting|Cuntasaíocht|
+audit_tax|Iniúchadh agus cáin|
+legal_services|Seirbhísí dlí|
+hr_recruitment|Acmhainní daonna agus earcaíocht|
+management_consulting|Comhairleoireacht bhainistíochta|
+insurance_brokerage|Bróicéireacht árachais|
+real_estate_agency|Gníomhaireacht eastáit|
+architecture|Ailtireacht|
+manufacturing|Déantúsaíocht|
+cnc_machining|Meaisíniú CNC|
+metalwork_welding|Obair mhiotail agus táthú|
+restaurant|Bialann|
+catering|Lónadóireacht|
+hotel|Óstán|
+event_management|Bainistiú imeachtaí|
+agriculture|Talmhaíocht|
+forestry|Foraoiseacht|
+waste_recycling|Dramhaíl agus athchúrsáil|
+renewable_energy|Fuinneamh in-athnuaite|
+marketing_agency|Gníomhaireacht mhargaíochta|
+graphic_design|Dearadh grafach|
+photography|Grianghrafadóireacht|
+video_production|Léiriú físe|
+printing_signage|Priontáil agus comharthaíocht|
+wholesale|Mórdhíol|
+ecommerce|Siopa ar líne|
+security_services|Seirbhísí slándála|
+hairdressing|Gruagaireacht|
+beauty_salon|Salón áilleachta|
+massage_therapy|Suathaireacht|
+fitness_training|Traenáil aclaíochta|
+shop_general|Siopa|
+shop_bicycle|Siopa agus deisiú rothar|
+shop_auto_parts|Páirteanna gluaisteán|
+shop_hardware|Siopa crua-earraí agus uirlisí|
+shop_furniture|Troscán|
+shop_electronics|Leictreonaic agus fearais|
+shop_clothing|Éadaí|
+shop_grocery|Siopa grósaera|
+shop_sports|Trealamh spóirt|
+shop_books|Siopa leabhar agus stáiseanóireachta|
+shop_florist|Bláthadóir|
+shop_pet|Siopa peataí|
+motorcycle_repair|Deisiú gluaisrothar|
+bar|Beár|
+kebab_shawarma|Kebab agus shawarma|
+pizzeria|Siopa píotsa|
+fast_food|Mearbhia|
+bakery|Bácús|
+pastry_shop|Siopa cácaí agus taosráin|
+coffee_shop|Caife|
+food_truck|Trucail bia|
+butcher|Búistéir|
+ice_cream|Siopa uachtar reoite|
+winery|Fíonlann|
+brewery|Grúdlann|
+nightclub|Club oíche agus dioscó|
+beach_club|Beár trá agus club trá|
+bowling_billiards|Babhláil agus billéardaí|
+travel_agency|Gníomhaireacht taistil|
+nail_salon|Salón ingne, lámhmhaisiú agus cosmhaisiú|
+barber|Bearbóir|
+tattoo_piercing|Tatú agus polladh|
+spa_sauna|Spá agus sauna|
+cosmetics_shop|Siopa cosmaidí|
+dry_cleaning|Tirimghlanadh agus neachtlann|
+podiatry|Podiatracht agus cúram coise|
+dental_laboratory|Saotharlann fiaclóireachta|
+orthodontics|Ortadóntaic|
+dermatology|Deirmeolaíocht|
+paediatrics|Péidiatraic|
+gynaecology|Gínéiceolaíocht|
+cardiology|Cardeolaíocht|
+medical_imaging|Íomháú leighis|
+speech_therapy|Teiripe urlabhra|
+nutrition_dietetics|Cothú agus diaitéitic|
+bicycle_repair|Deisiú rothar|
+scooter_repair|Deisiú scútar agus móipéidí|
+appliance_repair|Deisiú fearas tí|
+phone_repair|Deisiú fón agus táibléad|
+computer_repair|Deisiú ríomhairí|
+watch_jewellery_repair|Deisiú uaireadóirí agus seodra|
+shoe_repair|Deisiú bróg|
+tailoring_alterations|Táilliúireacht agus athruithe|
+upholstery|Cumhdachóireacht|
+glazing|Gloiniú agus fuinneoga|
+chimney_sweep|Glanadh simléar|
+pest_control|Rialú lotnaidí|
+pool_maintenance|Cothabháil linne snámha|
+window_cleaning|Glanadh fuinneog|
+car_wash|Nigh carranna|
+car_rental|Carranna ar cíos|
+bike_scooter_rental|Rothair agus scútair ar cíos|
+funeral_services|Seirbhísí sochraide|
