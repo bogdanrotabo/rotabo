@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "空き枠 - スポンサーになる" },
+  "bizlist": {
+    "label": "登録された会社はここに表示されます",
+    "free": "空き枠 - 会社を登録する"
+  },
   "domains": {
     "taxi": "タクシー",
     "ride_hailing": "配車サービス",

@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Boş yer - sponsor olun" },
+  "bizlist": {
+    "label": "Kayıtlı şirketler burada görünür",
+    "free": "Boş yer - şirketinizi kaydedin"
+  },
   "domsyn": {
     "taxi": "Taksi, sefer, havalimanı, transfer",
     "ride_hailing": "Uber, Bolt, uygulama, sürücü",

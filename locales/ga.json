@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Áit shaor - bí i do urraitheoir" },
+  "bizlist": {
+    "label": "Seo iad na comhlachtaí cláraithe",
+    "free": "Áit shaor - cláraigh do chomhlacht"
+  },
   "domains": {
     "taxi": "Tacsaí",
     "ride_hailing": "Seirbhís turais tríd an aip",

@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Ledig plats - bli sponsor" },
+  "bizlist": {
+    "label": "Här visas de registrerade företagen",
+    "free": "Ledig plats - registrera ditt företag"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Samåkning via app",

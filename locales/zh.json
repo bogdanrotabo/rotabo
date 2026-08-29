@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "空位 - 成为赞助商" },
+  "bizlist": {
+    "label": "已注册的公司显示在这里",
+    "free": "空位 - 注册您的公司"
+  },
   "domains": {
     "taxi": "出租车",
     "ride_hailing": "网约车",

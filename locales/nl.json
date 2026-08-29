@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Vrije plek - word sponsor" },
+  "bizlist": {
+    "label": "Hier verschijnen de geregistreerde bedrijven",
+    "free": "Vrije plek - registreer je bedrijf"
+  },
   "domsyn": {
     "taxi": "Taxi, rit, luchthaven, transfer",
     "ride_hailing": "Uber, Bolt, app, chauffeur",

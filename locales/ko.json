@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "빈자리 - 스폰서 되기" },
+  "bizlist": {
+    "label": "등록된 회사가 여기에 표시됩니다",
+    "free": "빈자리 - 회사를 등록하세요"
+  },
   "domains": {
     "taxi": "택시",
     "ride_hailing": "차량 호출 서비스",

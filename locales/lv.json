@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Brīva vieta - kļūstiet par sponsoru" },
+  "bizlist": {
+    "label": "Šeit tiek rādīti reģistrētie uzņēmumi",
+    "free": "Brīva vieta - reģistrējiet savu uzņēmumu"
+  },
   "domains": {
     "taxi": "Taksometrs",
     "ride_hailing": "Braucienu pakalpojums lietotnē",

@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Slobodno mjesto - postanite sponzor" },
+  "bizlist": {
+    "label": "Ovdje se prikazuju registrirane tvrtke",
+    "free": "Slobodno mjesto - registrirajte svoju tvrtku"
+  },
   "domains": {
     "taxi": "Taksi",
     "ride_hailing": "Prijevoz preko aplikacije",

@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Nafasi wazi - kuwa mdhamini" },
+  "bizlist": {
+    "label": "Hapa huonekana kampuni zilizosajiliwa",
+    "free": "Nafasi wazi - sajili kampuni yako"
+  },
   "domains": {
     "taxi": "Teksi",
     "ride_hailing": "Huduma ya usafiri kwa programu",

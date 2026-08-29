@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Szabad hely - legyen szponzor" },
+  "bizlist": {
+    "label": "Itt jelennek meg a regisztrált cégek",
+    "free": "Szabad hely - regisztrálja a cégét"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Applikációs fuvarszolgáltatás",

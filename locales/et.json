@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Vaba koht - hakka sponsoriks" },
+  "bizlist": {
+    "label": "Siin kuvatakse registreeritud ettevõtted",
+    "free": "Vaba koht - registreeri oma ettevõte"
+  },
   "domains": {
     "taxi": "Takso",
     "ride_hailing": "Sõidujagamine rakendusega",

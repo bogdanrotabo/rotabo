@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Ledig plads - bliv sponsor" },
+  "bizlist": {
+    "label": "Her vises de registrerede virksomheder",
+    "free": "Ledig plads - registrer din virksomhed"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Kørsel via app",

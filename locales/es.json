@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Lugar libre - hazte patrocinador" },
+  "bizlist": {
+    "label": "Aquí aparecen las empresas registradas",
+    "free": "Lugar libre - registra tu empresa"
+  },
   "domsyn": {
     "taxi": "Taxi, carrera, aeropuerto, traslado",
     "ride_hailing": "Uber, Bolt, Cabify, aplicación",

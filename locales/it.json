@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Posto libero - diventa sponsor" },
+  "bizlist": {
+    "label": "Qui compaiono le aziende registrate",
+    "free": "Posto libero - registra la tua azienda"
+  },
   "domsyn": {
     "taxi": "Taxi, corsa, aeroporto, transfer",
     "ride_hailing": "Uber, Bolt, NCC, app",

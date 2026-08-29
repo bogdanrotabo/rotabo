@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Tempat kosong - jadilah sponsor" },
+  "bizlist": {
+    "label": "Di sini muncul perusahaan yang terdaftar",
+    "free": "Tempat kosong - daftarkan perusahaan Anda"
+  },
   "domains": {
     "taxi": "Taksi",
     "ride_hailing": "Ojek dan taksi online",

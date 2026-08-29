@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Vapaa paikka - ryhdy sponsoriksi" },
+  "bizlist": {
+    "label": "Tässä näkyvät rekisteröidyt yritykset",
+    "free": "Vapaa paikka - rekisteröi yrityksesi"
+  },
   "domains": {
     "taxi": "Taksi",
     "ride_hailing": "Kyytipalvelu sovelluksella",

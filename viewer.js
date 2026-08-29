@@ -381,13 +381,21 @@
   }
   function stepAccessCheck(tok) {
     box.innerHTML = '<h3>' + esc(t("title")) + '</h3><p>…</p>';
-    // Access is per category now. With a category in hand, ask about that
-    // one -- asking the global question would tell someone who bought
-    // Drive that Care is already unlocked, and then show them an empty list.
-    // Accesul e global din 23 august: o singura plata de 2 franci deschide
-    // toate categoriile, un an. Intrebarea pe categorie nu mai distinge
-    // nimic, asa ca nu se mai pune.
-    var accessRpc = sb.rpc("viewer_has_access", { p_token: tok.token });
+    // Ask the same question the list itself asks. browse_public gates on
+    // viewer_has_access_for, so that is what decides whether this modal's
+    // "unlocked" turns into rows on the page behind it -- and checkAccess()
+    // and the confirmation poll below already ask it that way.
+    //
+    // Since 23 August one payment opens every category for a year, so every
+    // access row carries '*' and the two questions answer alike. That is
+    // the reason to prefer the narrower one rather than to drop it: if a
+    // category-specific row is ever written again, the global question
+    // would announce "unlocked" and mint a session over a list that stays
+    // empty, which is the exact failure the rest of this file is built to
+    // avoid. With no category in hand there is nothing narrower to ask.
+    var accessRpc = activeCategory
+      ? sb.rpc("viewer_has_access_for", { p_token: tok.token, p_category: activeCategory })
+      : sb.rpc("viewer_has_access", { p_token: tok.token });
     accessRpc.then(function (r) {
       if (r && r.data === true) {
         // The webhook usually lands before the buyer gets back, and this

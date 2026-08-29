@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Laisva vieta - tapkite rėmėju" },
+  "bizlist": {
+    "label": "Čia rodomos registruotos įmonės",
+    "free": "Laisva vieta - užregistruokite savo įmonę"
+  },
   "domains": {
     "taxi": "Taksi",
     "ride_hailing": "Pavėžėjimas per programėlę",

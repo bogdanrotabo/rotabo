@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Chỗ trống - trở thành nhà tài trợ" },
+  "bizlist": {
+    "label": "Các công ty đã đăng ký xuất hiện ở đây",
+    "free": "Chỗ trống - đăng ký công ty của bạn"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Gọi xe qua ứng dụng",

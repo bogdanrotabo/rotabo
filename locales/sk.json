@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Voľné miesto - staňte sa sponzorom" },
+  "bizlist": {
+    "label": "Tu sa zobrazujú registrované firmy",
+    "free": "Voľné miesto - zaregistrujte svoju firmu"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Preprava cez aplikáciu",

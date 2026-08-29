@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Post vojt - sir sponsor" },
+  "bizlist": {
+    "label": "Hawn jidhru l-kumpaniji rreġistrati",
+    "free": "Post vojt - irreġistra l-kumpanija tiegħek"
+  },
   "domains": {
     "taxi": "Taxi",
     "ride_hailing": "Servizz ta' vjaġġi bl-app",

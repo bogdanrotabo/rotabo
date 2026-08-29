@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Freier Platz - werden Sie Sponsor" },
+  "bizlist": {
+    "label": "Hier erscheinen die registrierten Unternehmen",
+    "free": "Freier Platz - registrieren Sie Ihr Unternehmen"
+  },
   "domsyn": {
     "taxi": "Taxi, Fahrt, Flughafen, Transfer",
     "ride_hailing": "Uber, Bolt, Mitfahrdienst, App",

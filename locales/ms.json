@@ -1,4 +1,9 @@
 {
+  "sponsorbox": { "free": "Tempat kosong - jadilah penaja" },
+  "bizlist": {
+    "label": "Di sini syarikat berdaftar dipaparkan",
+    "free": "Tempat kosong - daftarkan syarikat anda"
+  },
   "domains": {
     "taxi": "Teksi",
     "ride_hailing": "Perkhidmatan e-hailing",
