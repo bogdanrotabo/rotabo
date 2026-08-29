@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Procure a área em que a sua empresa trabalha",
+    "go": "Procurar",
+    "market": "Continuar no Rotabo Market",
+    "registered": "Empresas inscritas",
     "none": "Sem resultados. Tente outra palavra - um ofício, uma ferramenta, um serviço."
   },
   "business": {
@@ -696,6 +699,26 @@
     "note_label": "Conta-nos mais (opcional)",
     "note_placeholder": "Alguns detalhes ajudam — o quê, quando, quanto…"
   },
+  "company_form": {
+    "name_label": "Nome da empresa",
+    "domain_label": "A sua área",
+    "domain_placeholder": "Comece a escrever o que faz",
+    "domain_hint": "É assim que as empresas são procuradas. Escolha a mais próxima.",
+    "domain_error": "Escolha a sua área da lista.",
+    "website_label": "Site (opcional)",
+    "regno_label": "NIF ou número de registo (opcional)",
+    "regno_hint": "Guardado tal como o escrever. A Rotabo não o verifica em nenhum registo, nem alega fazê-lo."
+  },
+  "company_view": {
+    "seeking": "Procura",
+    "offering": "Oferece",
+    "locked": "Para ver o que procura ou oferece, e como a contactar, também tem de estar inscrito. A inscrição é grátis. Depois, 2 CHF abrem esta área durante um ano.",
+    "unlock_btn": "Ver do que precisa"
+  },
+  "sides": {
+    "is_company": "Este endereço está registado como empresa. As empresas ficam no Rotabo para empresas, não aqui.",
+    "is_private": "Este endereço está registado como particular. Use outro endereço para a empresa."
+  },
   "generic_form": {
     "name_label": "O teu nome",
     "phone_label": "Número de telefone",
@@ -854,6 +877,8 @@
     "you_are_in": "Parece estar aqui: {country} — ",
     "change_country": "noutro sítio",
     "search_placeholder": "Escreva uma cidade, ou a mais próxima de si",
+    "go": "Procurar",
+    "go_named": "Procurar {city}",
     "no_match": "Nenhuma cidade com esse nome. Escreva menos letras, ou escolha a cidade grande mais próxima.",
     "what": {
       "drive": "os melhores motoristas e empresas de táxi",

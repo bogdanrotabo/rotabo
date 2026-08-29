@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Cari bidang tempat syarikat anda bekerja",
+    "go": "Cari",
+    "market": "Teruskan di Rotabo Market",
+    "registered": "Syarikat berdaftar",
     "none": "Tiada padanan. Cuba perkataan lain - pekerjaan, alat, perkhidmatan."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Beritahu kami lagi (pilihan)",
     "note_placeholder": "Beberapa butiran membantu — apa, bila, berapa…"
   },
+  "company_form": {
+    "name_label": "Nama syarikat",
+    "domain_label": "Bidang anda",
+    "domain_placeholder": "Mula menaip apa yang anda lakukan",
+    "domain_hint": "Syarikat dicari berdasarkan ini. Pilih yang paling hampir.",
+    "domain_error": "Pilih bidang anda daripada senarai.",
+    "website_label": "Laman web (pilihan)",
+    "regno_label": "Nombor syarikat atau cukai (pilihan)",
+    "regno_hint": "Disimpan seperti anda menulisnya. Rotabo tidak menyemaknya dalam mana-mana daftar, dan tidak mendakwa berbuat demikian."
+  },
+  "company_view": {
+    "seeking": "Mencari",
+    "offering": "Menawarkan",
+    "locked": "Untuk melihat apa yang dicari atau ditawarkan, dan cara menghubunginya, anda juga perlu berdaftar. Pendaftaran adalah percuma. Selepas itu, 2 CHF membuka bidang ini selama setahun.",
+    "unlock_btn": "Lihat apa yang diperlukan"
+  },
+  "sides": {
+    "is_company": "Alamat ini didaftarkan sebagai syarikat. Syarikat disenaraikan di Rotabo untuk perniagaan, bukan di sini.",
+    "is_private": "Alamat ini didaftarkan sebagai individu. Gunakan alamat lain untuk syarikat."
+  },
   "generic_form": {
     "name_label": "Nama kamu",
     "phone_label": "Nombor telefon",
@@ -613,6 +636,8 @@
     "you_are_in": "Nampaknya anda di {country} — ",
     "change_country": "di tempat lain",
     "search_placeholder": "Taip nama bandar, atau yang paling dekat dengan anda",
+    "go": "Cari",
+    "go_named": "Cari {city}",
     "no_match": "Tiada bandar dengan nama itu. Taip kurang huruf, atau pilih bandar besar yang paling dekat.",
     "what": {
       "drive": "pemandu dan syarikat teksi terbaik",

@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Tafuta sekta ambayo kampuni yako inafanya kazi",
+    "go": "Tafuta",
+    "market": "Endelea katika Rotabo Market",
+    "registered": "Kampuni zilizosajiliwa",
     "none": "Hakuna kilichopatikana. Jaribu neno lingine - kazi, kifaa au huduma."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Tuambie zaidi (si lazima)",
     "note_placeholder": "Maelezo machache husaidia — nini, lini, kiasi gani…"
   },
+  "company_form": {
+    "name_label": "Jina la kampuni",
+    "domain_label": "Uwanja wako",
+    "domain_placeholder": "Anza kuandika unachofanya",
+    "domain_hint": "Kampuni hutafutwa kwa hili. Chagua lililo karibu zaidi.",
+    "domain_error": "Chagua uwanja wako kutoka kwenye orodha.",
+    "website_label": "Tovuti (si lazima)",
+    "regno_label": "Namba ya usajili au ya kodi (si lazima)",
+    "regno_hint": "Huhifadhiwa jinsi unavyoiandika. Rotabo haiithibitishi katika daftari lolote, wala haidai kufanya hivyo."
+  },
+  "company_view": {
+    "seeking": "Inatafuta",
+    "offering": "Inatoa",
+    "locked": "Ili kuona inachotafuta au inachotoa, na jinsi ya kuwasiliana nayo, na wewe unatakiwa kuwa umesajiliwa. Kusajili ni bure. Baada ya hapo, faranga 2 hufungua uwanja huu kwa mwaka mmoja.",
+    "unlock_btn": "Ona kinachohitajika"
+  },
+  "sides": {
+    "is_company": "Anwani hii imesajiliwa kama kampuni. Kampuni huorodheshwa kwenye Rotabo ya biashara, si hapa.",
+    "is_private": "Anwani hii imesajiliwa kama mtu binafsi. Tumia anwani nyingine kwa kampuni."
+  },
   "generic_form": {
     "name_label": "Jina lako",
     "phone_label": "Nambari ya simu",
@@ -613,6 +636,8 @@
     "you_are_in": "Inaonekana uko {country} — ",
     "change_country": "mahali pengine",
     "search_placeholder": "Andika mji, au ulio karibu nawe zaidi",
+    "go": "Tafuta",
+    "go_named": "Tafuta {city}",
     "no_match": "Hakuna mji wenye jina hilo. Andika herufi chache, au chagua mji mkubwa ulio karibu zaidi.",
     "what": {
       "drive": "madereva na kampuni bora za teksi",

@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Cerca il settore in cui opera la tua azienda",
+    "go": "Cerca",
+    "market": "Continua in Rotabo Market",
+    "registered": "Aziende iscritte",
     "none": "Nessun risultato. Prova un altra parola - un mestiere, un attrezzo, un servizio."
   },
   "business": {
@@ -711,6 +714,26 @@
     "submit": "Continua al pagamento",
     "error": "Qualcosa è andato storto. Riprova."
   },
+  "company_form": {
+    "name_label": "Nome dell'azienda",
+    "domain_label": "Il tuo settore",
+    "domain_placeholder": "Inizia a scrivere di cosa ti occupi",
+    "domain_hint": "È così che si cercano le aziende. Scegli quello più vicino.",
+    "domain_error": "Scegli il tuo settore dall'elenco.",
+    "website_label": "Sito web (facoltativo)",
+    "regno_label": "Partita IVA o numero REA (facoltativo)",
+    "regno_hint": "Viene salvato come lo scrivi. Rotabo non lo verifica in nessun registro e non pretende di farlo."
+  },
+  "company_view": {
+    "seeking": "Cerca",
+    "offering": "Offre",
+    "locked": "Per vedere cosa cerca o cosa offre, e come contattarla, devi essere iscritto anche tu. L'iscrizione è gratuita. Poi 2 CHF aprono questo settore per un anno.",
+    "unlock_btn": "Guarda cosa cerca"
+  },
+  "sides": {
+    "is_company": "Questo indirizzo è registrato come azienda. Le aziende si iscrivono su Rotabo per le imprese, non qui.",
+    "is_private": "Questo indirizzo è registrato come privato. Usa un altro indirizzo per l'azienda."
+  },
   "generic_form": {
     "name_label": "Il tuo nome",
     "phone_label": "Numero di telefono",
@@ -852,6 +875,8 @@
     "you_are_in": "Sembra che siate qui: {country} — ",
     "change_country": "altrove",
     "search_placeholder": "Scrivete una città, o quella più vicina a voi",
+    "go": "Cerca",
+    "go_named": "Cerca {city}",
     "no_match": "Nessuna città con questo nome. Scrivete meno lettere, o scegliete la grande città più vicina.",
     "what": {
       "drive": "i migliori autisti e le migliori compagnie di taxi",

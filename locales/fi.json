@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Hae ala, jolla yrityksesi toimii",
+    "go": "Hae",
+    "market": "Jatka Rotabo Marketissa",
+    "registered": "Rekisteröidyt yritykset",
     "none": "Ei osumia. Kokeile toista sanaa - ammatti, työkalu tai palvelu."
   },
   "business": {
@@ -466,6 +469,26 @@
     "note_label": "Kerro lisää (valinnainen)",
     "note_placeholder": "Muutama yksityiskohta auttaa — mitä, milloin, kuinka paljon…"
   },
+  "company_form": {
+    "name_label": "Yrityksen nimi",
+    "domain_label": "Toimialasi",
+    "domain_placeholder": "Ala kirjoittaa, mitä teette",
+    "domain_hint": "Tällä yrityksiä haetaan. Valitse lähin.",
+    "domain_error": "Valitse toimialasi listasta.",
+    "website_label": "Verkkosivu (vapaaehtoinen)",
+    "regno_label": "Y-tunnus tai alv-numero (vapaaehtoinen)",
+    "regno_hint": "Tallennetaan sellaisena kuin sen kirjoitat. Rotabo ei tarkista sitä mistään rekisteristä eikä väitä tarkistavansa."
+  },
+  "company_view": {
+    "seeking": "Etsii",
+    "offering": "Tarjoaa",
+    "locked": "Nähdäksesi mitä yritys etsii tai tarjoaa ja miten siihen saa yhteyden, sinunkin on oltava rekisteröitynyt. Rekisteröityminen on ilmaista. Sen jälkeen 2 CHF avaa tämän toimialan vuodeksi.",
+    "unlock_btn": "Katso mitä tarvitaan"
+  },
+  "sides": {
+    "is_company": "Tämä osoite on rekisteröity yrityksenä. Yritykset listataan Rotabo yrityksille -puolella, ei täällä.",
+    "is_private": "Tämä osoite on rekisteröity yksityishenkilönä. Käytä yritykselle toista osoitetta."
+  },
   "generic_form": {
     "name_label": "Nimesi",
     "phone_label": "Puhelinnumero",
@@ -624,6 +647,8 @@
     "you_are_in": "Näytät olevan täällä: {country} — ",
     "change_country": "muualla",
     "search_placeholder": "Kirjoita kaupunki, tai lähin sinua",
+    "go": "Hae",
+    "go_named": "Hae {city}",
     "no_match": "Ei kaupunkia tällä nimellä. Kirjoita vähemmän kirjaimia, tai valitse lähin iso kaupunki.",
     "what": {
       "drive": "parhaat kuljettajat ja taksiyritykset",

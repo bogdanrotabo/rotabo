@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Znajdź branżę, w której działa twoja firma",
+    "go": "Szukaj",
+    "market": "Kontynuuj w Rotabo Market",
+    "registered": "Zarejestrowane firmy",
     "none": "Brak wyników. Spróbuj innego słowa - zawód, narzędzie lub usługa."
   },
   "business": {
@@ -685,6 +688,26 @@
     "note_label": "Powiedz nam więcej (opcjonalnie)",
     "note_placeholder": "Kilka szczegółów pomaga — co, kiedy, ile…"
   },
+  "company_form": {
+    "name_label": "Nazwa firmy",
+    "domain_label": "Twoja branża",
+    "domain_placeholder": "Zacznij pisać, czym się zajmujesz",
+    "domain_hint": "Po tym szuka się firm. Wybierz najbliższe.",
+    "domain_error": "Wybierz swoją branżę z listy.",
+    "website_label": "Strona internetowa (opcjonalnie)",
+    "regno_label": "NIP lub numer KRS (opcjonalnie)",
+    "regno_hint": "Zapisywane tak, jak to napiszesz. Rotabo nie sprawdza tego w żadnym rejestrze i nie twierdzi, że to robi."
+  },
+  "company_view": {
+    "seeking": "Szuka",
+    "offering": "Oferuje",
+    "locked": "Aby zobaczyć, czego szuka lub co oferuje i jak się z nią skontaktować, ty też musisz być zarejestrowany. Rejestracja jest bezpłatna. Potem 2 CHF otwierają tę branżę na rok.",
+    "unlock_btn": "Zobacz, czego potrzebuje"
+  },
+  "sides": {
+    "is_company": "Ten adres jest zarejestrowany jako firma. Firmy są wpisywane w Rotabo dla firm, nie tutaj.",
+    "is_private": "Ten adres jest zarejestrowany jako osoba prywatna. Do firmy użyj innego adresu."
+  },
   "generic_form": {
     "name_label": "Twoje imię",
     "phone_label": "Numer telefonu",
@@ -843,6 +866,8 @@
     "you_are_in": "Wygląda na to, że jesteście tutaj: {country} — ",
     "change_country": "gdzie indziej",
     "search_placeholder": "Wpiszcie miasto, albo najbliższe wam",
+    "go": "Szukaj",
+    "go_named": "Szukaj {city}",
     "no_match": "Nie ma miasta o tej nazwie. Wpiszcie mniej liter, albo wybierzcie najbliższe duże miasto.",
     "what": {
       "drive": "najlepszych kierowców i firmy taksówkowe",

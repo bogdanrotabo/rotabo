@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Şirketinizin çalıştığı alanı arayın",
+    "go": "Ara",
+    "market": "Rotabo Market'te devam et",
+    "registered": "Kayıtlı şirketler",
     "none": "Sonuç yok. Başka bir kelime deneyin - bir meslek, bir alet, bir hizmet."
   },
   "business": {
@@ -685,6 +688,26 @@
     "note_label": "Biraz daha anlat (isteğe bağlı)",
     "note_placeholder": "Birkaç ayrıntı işe yarar — ne, ne zaman, ne kadar…"
   },
+  "company_form": {
+    "name_label": "Şirket adı",
+    "domain_label": "Alanınız",
+    "domain_placeholder": "Ne yaptığınızı yazmaya başlayın",
+    "domain_hint": "Şirketler buna göre aranır. En yakın olanı seçin.",
+    "domain_error": "Alanınızı listeden seçin.",
+    "website_label": "Web sitesi (isteğe bağlı)",
+    "regno_label": "Ticaret sicil veya vergi numarası (isteğe bağlı)",
+    "regno_hint": "Yazdığınız gibi saklanır. Rotabo bunu hiçbir sicilde doğrulamaz ve doğruladığını da iddia etmez."
+  },
+  "company_view": {
+    "seeking": "Arıyor",
+    "offering": "Sunuyor",
+    "locked": "Ne aradığını ya da ne sunduğunu ve ona nasıl ulaşacağınızı görmek için sizin de kayıtlı olmanız gerekir. Kayıt ücretsizdir. Ardından 2 CHF bu alanı bir yıllığına açar.",
+    "unlock_btn": "Neye ihtiyacı olduğunu gör"
+  },
+  "sides": {
+    "is_company": "Bu adres şirket olarak kayıtlı. Şirketler burada değil, Rotabo işletmeler tarafında yer alır.",
+    "is_private": "Bu adres özel kişi olarak kayıtlı. Şirket için başka bir adres kullanın."
+  },
   "generic_form": {
     "name_label": "Adın",
     "phone_label": "Telefon numarası",
@@ -843,6 +866,8 @@
     "you_are_in": "Görünüşe göre buradasınız: {country} — ",
     "change_country": "başka bir yer",
     "search_placeholder": "Bir şehir yazın, ya da size en yakın olanı",
+    "go": "Ara",
+    "go_named": "{city} ara",
     "no_match": "Bu adda bir şehir yok. Daha az harf yazın, ya da en yakın büyük şehri seçin.",
     "what": {
       "drive": "en iyi şoförleri ve taksi şirketlerini",

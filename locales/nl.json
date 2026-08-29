@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Zoek het vakgebied waarin uw bedrijf werkt",
+    "go": "Zoeken",
+    "market": "Verder in Rotabo Market",
+    "registered": "Ingeschreven bedrijven",
     "none": "Geen resultaten. Probeer een ander woord - een vak, een gereedschap, een dienst."
   },
   "business": {
@@ -696,6 +699,26 @@
     "note_label": "Vertel ons meer (optioneel)",
     "note_placeholder": "Een paar details helpen — wat, wanneer, hoeveel…"
   },
+  "company_form": {
+    "name_label": "Bedrijfsnaam",
+    "domain_label": "Uw vakgebied",
+    "domain_placeholder": "Begin te typen wat u doet",
+    "domain_hint": "Hierop worden bedrijven gezocht. Kies het dichtstbijzijnde.",
+    "domain_error": "Kies uw vakgebied uit de lijst.",
+    "website_label": "Website (optioneel)",
+    "regno_label": "KvK- of btw-nummer (optioneel)",
+    "regno_hint": "Wordt bewaard zoals u het schrijft. Rotabo controleert het in geen enkel register en beweert dat ook niet."
+  },
+  "company_view": {
+    "seeking": "Zoekt",
+    "offering": "Biedt",
+    "locked": "Om te zien wat het bedrijf zoekt of biedt, en hoe u het bereikt, moet u zelf ook ingeschreven staan. Inschrijven is gratis. Daarna opent 2 CHF dit vakgebied voor een jaar.",
+    "unlock_btn": "Bekijk wat nodig is"
+  },
+  "sides": {
+    "is_company": "Dit adres staat ingeschreven als bedrijf. Bedrijven staan op Rotabo voor bedrijven, niet hier.",
+    "is_private": "Dit adres staat ingeschreven als particulier. Gebruik een ander adres voor het bedrijf."
+  },
   "generic_form": {
     "name_label": "Je naam",
     "phone_label": "Telefoonnummer",
@@ -854,6 +877,8 @@
     "you_are_in": "U bent blijkbaar hier: {country} — ",
     "change_country": "ergens anders",
     "search_placeholder": "Typ een stad, of de dichtstbijzijnde bij u",
+    "go": "Zoeken",
+    "go_named": "{city} zoeken",
     "no_match": "Geen stad met die naam. Typ minder letters, of kies de dichtstbijzijnde grote stad.",
     "what": {
       "drive": "de beste chauffeurs en taxibedrijven",

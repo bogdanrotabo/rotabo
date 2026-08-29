@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Otsige valdkonda, milles teie ettevõte tegutseb",
+    "go": "Otsi",
+    "market": "Jätka Rotabo Marketis",
+    "registered": "Registreeritud ettevõtted",
     "none": "Vasteid ei leitud. Proovige teist sõna - amet, tööriist või teenus."
   },
   "business": {
@@ -466,6 +469,26 @@
     "note_label": "Räägi lähemalt (valikuline)",
     "note_placeholder": "Mõni detail aitab — mida, millal, kui palju…"
   },
+  "company_form": {
+    "name_label": "Ettevõtte nimi",
+    "domain_label": "Sinu valdkond",
+    "domain_placeholder": "Hakka kirjutama, millega tegeled",
+    "domain_hint": "Selle järgi ettevõtteid otsitakse. Vali kõige lähedasem.",
+    "domain_error": "Vali oma valdkond nimekirjast.",
+    "website_label": "Veebileht (valikuline)",
+    "regno_label": "Registri- või KMKR-number (valikuline)",
+    "regno_hint": "Salvestatakse nii, nagu kirjutad. Rotabo ei kontrolli seda üheski registris ega väida, et kontrollib."
+  },
+  "company_view": {
+    "seeking": "Otsib",
+    "offering": "Pakub",
+    "locked": "Et näha, mida ettevõte otsib või pakub ja kuidas temaga ühendust saada, pead ka ise registreeritud olema. Registreerimine on tasuta. Seejärel avab 2 CHF selle valdkonna aastaks.",
+    "unlock_btn": "Vaata, mida vajatakse"
+  },
+  "sides": {
+    "is_company": "See aadress on registreeritud ettevõttena. Ettevõtted on Rotabo ärilehel, mitte siin.",
+    "is_private": "See aadress on registreeritud eraisikuna. Kasuta ettevõtte jaoks teist aadressi."
+  },
   "generic_form": {
     "name_label": "Sinu nimi",
     "phone_label": "Telefoninumber",
@@ -624,6 +647,8 @@
     "you_are_in": "Tundub, et olete siin: {country} — ",
     "change_country": "mujal",
     "search_placeholder": "Kirjutage linn või teile lähim",
+    "go": "Otsi",
+    "go_named": "Otsi {city}",
     "no_match": "Sellise nimega linna ei ole. Kirjutage vähem tähti või valige lähim suur linn.",
     "what": {
       "drive": "parimaid juhte ja taksofirmasid",

@@ -141,25 +141,25 @@
      is the other half of the mark rather than a third colour.
 
      What cannot come along is white. Violet is dark enough to carry white
-     text; #ffd41a is not, and the honest fix is not a browner yellow that
+     text; #f0b90b is not, and the honest fix is not a browner yellow that
      nobody chose but the violet on top of it. */
   html[data-mode="business"]{
-    --bg-top:#fdf6e0;
-    --bg-mid:#fbf1d2;
-    --bg-card:#fdf8e6;
-    --border:#edd89b;
-    --hdr-top:#fdf3d2;
-    --hdr-bot:#fbecbe;
-    --hover-soft:#fdf9ea;
-    --panel-soft:#fdf8e4;
+    --bg-top:#fdf5e2;
+    --bg-mid:#fcf1d3;
+    --bg-card:#fefaf0;
+    --border:#f2dc9a;
+    --hdr-top:#fdf6e5;
+    --hdr-bot:#fbeecb;
+    --hover-soft:#fefbf3;
+    --panel-soft:#fdf8ea;
 
-    --diamond-a:#ffd41a;
-    --diamond-b:#e0a005;
-    --brand-light:#ffe873;
-    --brand-grad:#ffdc4a;
-    --pill-a:#ffd41a;
-    --pill-b:#ffe36b;
-    --tier-border:#e6cf8d;
+    --diamond-a:#f0b90b;
+    --diamond-b:#c99400;
+    --brand-light:#fcd535;
+    --brand-grad:#f0b90b;
+    --pill-a:#f0b90b;
+    --pill-b:#fcd535;
+    --tier-border:#e8c96b;
 
     /* The muted greys were mixed with violet and sat on lavender. On a cream
        ground the same value drops to 3.67, so it is warmed and darkened to
@@ -170,12 +170,12 @@
     --text-dark:#3a2c10;
 
     /* Deeper than the mark's violet on purpose. The fills run down to
-       #e0a005 at one end, where #7c2596 measured 3.59 against the 4.5 a
+       #c99400 at one end, where #7c2596 measured 3.59 against the 4.5 a
        button label needs; this reads 4.7 there and 7.7 on the bright end. */
     --on-brand:#5f2270;
     --on-brand-soft:rgba(95,34,112,.92);
 
-    /* Darker than the violet used elsewhere: the band runs down to #e0a005 at
+    /* Darker than the violet used elsewhere: the band runs down to #c99400 at
        one end, and #7c2596 on that measured 3.59 where 4.5 was needed. */
     --tick-strong:#5f2270;
     --tick-text:#5f2270;
@@ -266,10 +266,10 @@
 
   /* The second band. Gold whatever the palette says, because it is the
      business side seen from the personal one -- swapped with the page it
-     would stop meaning anything. Violet lettering, since #ffd41a cannot
+     would stop meaning anything. Violet lettering, since #f0b90b cannot
      carry white, and the deeper violet clears 4.7 against the dark end. */
   .ticker--biz{
-    background:linear-gradient(90deg,#e0a005 0%,#ffd41a 38%,#ffe873 62%,#ffd41a 100%);
+    background:linear-gradient(90deg,#c99400 0%,#f0b90b 38%,#fcd535 62%,#f0b90b 100%);
     border-bottom:1px solid #c98a00;
   }
   .ticker--biz .tick{color:#5f2270;}
@@ -321,17 +321,17 @@
     padding:9px 16px;
   }
   nav.links a:hover{background:var(--hover-soft);border-color:var(--violet-2);}
-  /* The mark's own yellow as a filled box, not as lettering. #ffd41a is
+  /* The mark's own yellow as a filled box, not as lettering. #f0b90b is
      1.5:1 against this header and unreadable at nav size, but as a ground
      under near-black it is over 10:1 and reads at a glance -- which is how
      a brand colour this pale earns a place on small text. */
   nav.links a.biz{
-    background:linear-gradient(100deg,#ffe873 0%,#ffd41a 45%,#e0a005 100%);
-    border-color:#e0a005;
+    background:linear-gradient(100deg,#fcd535 0%,#f0b90b 45%,#c99400 100%);
+    border-color:#c99400;
     color:#2b0f36;
   }
   nav.links a.biz:hover{
-    background:linear-gradient(100deg,#ffd41a 0%,#f0bc0d 45%,#c98a00 100%);
+    background:linear-gradient(100deg,#f0b90b 0%,#f0bc0d 45%,#c98a00 100%);
     border-color:#c98a00;
   }
 
@@ -575,15 +575,15 @@
      cousin of them. The word and the diamond beside it are one colour or
      they are two brands.
 
-     Stated plainly because it is a real cost, chosen deliberately: #ffd41a
+     Stated plainly because it is a real cost, chosen deliberately: #f0b90b
      measures 1.5:1 against this lavender, well under the 3:1 a heading is
      meant to hold, and it will be faint for anyone reading in sunlight or
      with low vision. Fixing it means either a darker yellow, which was
      tried and rejected, or giving the glyphs an edge -- not quietly
      shifting the colour back. */
   .me-gold{
-    color:#ffd41a;
-    background:linear-gradient(100deg,#ffe873 0%,#ffd41a 45%,#e0a005 100%);
+    color:#f0b90b;
+    background:linear-gradient(100deg,#fcd535 0%,#f0b90b 45%,#c99400 100%);
     -webkit-background-clip:text;
     background-clip:text;
   }
@@ -791,7 +791,10 @@
     background:linear-gradient(135deg,var(--diamond-a),var(--diamond-b));
     border-color:transparent;
   }
-  #cat-other h3,#cat-other p,#cat-other .cat-browse{color:var(--on-brand);}
+  #cat-other h3,#cat-other p{color:var(--on-brand);}
+  /* Not the browse link with them. It is a white button, so --on-brand
+     painted it white on white and it vanished. It keeps the violet it
+     has everywhere else, which reads on white on both sides. */
 
   /* The mark sits on white. Fill the card with violet and the violet diamond
      disappears into it; fill it with gold and the gold one does. A plate
@@ -1014,7 +1017,7 @@
   }
   .sponsor-row .s-tier.bronze, .biz-row .s-tier.bronze{color:#a26a34;border-color:#e0c3a4;}
   .sponsor-row .s-tier.silver, .biz-row .s-tier.silver{color:#6d7480;border-color:#cdd3da;}
-  .sponsor-row .s-tier.gold, .biz-row .s-tier.gold{color:#a87f1d;border-color:#e6cf8d;}
+  .sponsor-row .s-tier.gold, .biz-row .s-tier.gold{color:#a87f1d;border-color:#e8c96b;}
   .sponsor-row .s-tier.platinum, .biz-row .s-tier.platinum{color:var(--violet-1);border-color:var(--tier-border);}
   .sponsor-row .s-name{color:var(--text-dark);font-weight:800;font-size:1.05rem;}
   .sponsor-row a.s-name{color:var(--violet-2);}
@@ -1411,9 +1414,9 @@
          tail of the fish: pale at the centre, the tail colour in the middle,
          warm amber at the rim where the tail runs into orange. -->
     <radialGradient id="diamondGold" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#ffe873"/>
-      <stop offset="45%" stop-color="#ffd41a"/>
-      <stop offset="100%" stop-color="#e0a005"/>
+      <stop offset="0%" stop-color="#fcd535"/>
+      <stop offset="45%" stop-color="#f0b90b"/>
+      <stop offset="100%" stop-color="#c99400"/>
     </radialGradient>
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>

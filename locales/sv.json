@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Sök området som ditt företag arbetar inom",
+    "go": "Sök",
+    "market": "Fortsätt i Rotabo Market",
+    "registered": "Registrerade företag",
     "none": "Inga träffar. Prova ett annat ord - ett yrke, ett verktyg, en tjänst."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Berätta mer (valfritt)",
     "note_placeholder": "Några detaljer hjälper — vad, när, hur mycket…"
   },
+  "company_form": {
+    "name_label": "Företagets namn",
+    "domain_label": "Ditt område",
+    "domain_placeholder": "Börja skriva vad ni gör",
+    "domain_hint": "Det är så företag söks fram. Välj det närmaste.",
+    "domain_error": "Välj ditt område från listan.",
+    "website_label": "Webbplats (frivilligt)",
+    "regno_label": "Organisations- eller momsnummer (frivilligt)",
+    "regno_hint": "Sparas precis som du skriver det. Rotabo kontrollerar det inte i något register och påstår inte att det gör det."
+  },
+  "company_view": {
+    "seeking": "Söker",
+    "offering": "Erbjuder",
+    "locked": "För att se vad företaget söker eller erbjuder, och hur du når det, måste du också vara registrerad. Registrering är gratis. Sedan öppnar 2 CHF det här området i ett år.",
+    "unlock_btn": "Se vad som behövs"
+  },
+  "sides": {
+    "is_company": "Den här adressen är registrerad som företag. Företag står på Rotabo för företag, inte här.",
+    "is_private": "Den här adressen är registrerad som privatperson. Använd en annan adress för företaget."
+  },
   "generic_form": {
     "name_label": "Ditt namn",
     "phone_label": "Telefonnummer",
@@ -613,6 +636,8 @@
     "you_are_in": "Du verkar vara i {country} — ",
     "change_country": "någon annanstans",
     "search_placeholder": "Skriv en stad, eller den närmaste dig",
+    "go": "Sök",
+    "go_named": "Sök {city}",
     "no_match": "Ingen stad med det namnet. Skriv färre bokstäver, eller välj den närmaste stora staden.",
     "what": {
       "drive": "de bästa förarna och taxibolagen",

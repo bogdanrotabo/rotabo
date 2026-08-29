@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Meklējiet jomu, kurā strādā jūsu uzņēmums",
+    "go": "Meklēt",
+    "market": "Turpināt Rotabo Market",
+    "registered": "Reģistrētie uzņēmumi",
     "none": "Nav rezultātu. Mēģiniet citu vārdu - amats, darbarīks vai pakalpojums."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Pastāsti vairāk (nav obligāti)",
     "note_placeholder": "Dažas detaļas palīdz — kas, kad, cik…"
   },
+  "company_form": {
+    "name_label": "Uzņēmuma nosaukums",
+    "domain_label": "Jūsu joma",
+    "domain_placeholder": "Sāciet rakstīt, ar ko nodarbojaties",
+    "domain_hint": "Pēc tā uzņēmumus meklē. Izvēlieties tuvāko.",
+    "domain_error": "Izvēlieties savu jomu no saraksta.",
+    "website_label": "Mājaslapa (nav obligāti)",
+    "regno_label": "Reģistrācijas vai PVN numurs (nav obligāti)",
+    "regno_hint": "Tiek saglabāts tā, kā jūs to rakstāt. Rotabo to nepārbauda nevienā reģistrā un neapgalvo, ka pārbauda."
+  },
+  "company_view": {
+    "seeking": "Meklē",
+    "offering": "Piedāvā",
+    "locked": "Lai redzētu, ko tas meklē vai piedāvā un kā ar to sazināties, arī jums jābūt reģistrētam. Reģistrācija ir bez maksas. Pēc tam 2 CHF atver šo jomu uz gadu.",
+    "unlock_btn": "Apskatiet, kas ir vajadzīgs"
+  },
+  "sides": {
+    "is_company": "Šī adrese ir reģistrēta kā uzņēmums. Uzņēmumi tiek uzskaitīti Rotabo biznesa pusē, nevis šeit.",
+    "is_private": "Šī adrese ir reģistrēta kā privātpersona. Uzņēmumam izmantojiet citu adresi."
+  },
   "generic_form": {
     "name_label": "Tavs vārds",
     "phone_label": "Tālruņa numurs",
@@ -613,6 +636,8 @@
     "you_are_in": "Šķiet, ka esat šeit: {country} — ",
     "change_country": "citur",
     "search_placeholder": "Ierakstiet pilsētu vai tuvāko jums",
+    "go": "Meklēt",
+    "go_named": "Meklēt {city}",
     "no_match": "Nav pilsētas ar tādu nosaukumu. Ierakstiet mazāk burtu vai izvēlieties tuvāko lielo pilsētu.",
     "what": {
       "drive": "labākos šoferus un taksometru uzņēmumus",

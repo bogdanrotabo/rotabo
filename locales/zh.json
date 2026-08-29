@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "搜索贵公司所在的领域",
+    "go": "搜索",
+    "market": "前往 Rotabo Market",
+    "registered": "已注册的公司",
     "none": "没有匹配结果。换一个词试试 - 工种、工具或服务。"
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "多说一点（可选）",
     "note_placeholder": "一些细节会有帮助 — 什么、何时、多少…"
   },
+  "company_form": {
+    "name_label": "公司名称",
+    "domain_label": "你的领域",
+    "domain_placeholder": "开始输入你从事什么",
+    "domain_hint": "公司就是按这个被搜索的。选择最接近的一个。",
+    "domain_error": "请从列表中选择你的领域。",
+    "website_label": "网站（可选）",
+    "regno_label": "公司或税务登记号（可选）",
+    "regno_hint": "按你写的原样保存。Rotabo 不会在任何登记机构核对，也不声称核对。"
+  },
+  "company_view": {
+    "seeking": "正在寻找",
+    "offering": "提供",
+    "locked": "要看到它在找什么或提供什么，以及如何联系，你自己也需要已注册。注册是免费的。之后，2 瑞郎开启这个领域一年。",
+    "unlock_btn": "看看需要什么"
+  },
+  "sides": {
+    "is_company": "这个邮箱已注册为公司。公司列在 Rotabo 企业版，不在这里。",
+    "is_private": "这个邮箱已注册为个人。请为公司使用另一个邮箱。"
+  },
   "generic_form": {
     "name_label": "你的姓名",
     "phone_label": "电话号码",
@@ -613,6 +636,8 @@
     "you_are_in": "看起来您在{country} — ",
     "change_country": "换个地方",
     "search_placeholder": "输入城市名，或离您最近的城市",
+    "go": "搜索",
+    "go_named": "搜索 {city}",
     "no_match": "没有这个名字的城市。少输入几个字，或选择最近的大城市。",
     "what": {
       "drive": "最好的司机和出租车公司",

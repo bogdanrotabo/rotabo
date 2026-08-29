@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Fittex il-qasam li fih taħdem il-kumpanija tiegħek",
+    "go": "Fittex",
+    "market": "Kompli f'Rotabo Market",
+    "registered": "Kumpaniji rreġistrati",
     "none": "L-ebda riżultat. Ipprova kelma oħra - sengħa, għodda jew servizz."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Għidilna aktar (mhux obbligatorju)",
     "note_placeholder": "Ftit dettalji jgħinu — xiex, meta, kemm…"
   },
+  "company_form": {
+    "name_label": "Isem tal-kumpanija",
+    "domain_label": "Il-qasam tiegħek",
+    "domain_placeholder": "Ibda ikteb x'tagħmel",
+    "domain_hint": "Il-kumpaniji jinstabu b'dan. Agħżel l-eqreb wieħed.",
+    "domain_error": "Agħżel il-qasam tiegħek mil-lista.",
+    "website_label": "Websajt (mhux obbligatorju)",
+    "regno_label": "Numru tal-kumpanija jew tal-VAT (mhux obbligatorju)",
+    "regno_hint": "Jinżamm kif tiktbu. Rotabo ma jiċċekkjahx f'ebda reġistru, u ma jgħidx li jagħmel dan."
+  },
+  "company_view": {
+    "seeking": "Qed ifittex",
+    "offering": "Joffri",
+    "locked": "Biex tara x'qed ifittex jew joffri, u kif tikkuntattjah, trid tkun irreġistrat int ukoll. Ir-reġistrazzjoni hija b'xejn. Wara, 2 CHF jiftħu dan il-qasam għal sena.",
+    "unlock_btn": "Ara x'għandu bżonn"
+  },
+  "sides": {
+    "is_company": "Din l-indirizz hija rreġistrata bħala kumpanija. Il-kumpaniji jidhru fuq Rotabo għan-negozju, mhux hawn.",
+    "is_private": "Din l-indirizz hija rreġistrata bħala persuna privata. Uża indirizz ieħor għall-kumpanija."
+  },
   "generic_form": {
     "name_label": "Isimek",
     "phone_label": "Numru tat-telefon",
@@ -613,6 +636,8 @@
     "you_are_in": "Jidher li int hawn: {country} — ",
     "change_country": "band'oħra",
     "search_placeholder": "Ikteb belt, jew l-eqreb waħda għalik",
+    "go": "Fittex",
+    "go_named": "Fittex {city}",
     "no_match": "M'hemm l-ebda belt b'dak l-isem. Ikteb inqas ittri, jew agħżel l-eqreb belt kbira.",
     "what": {
       "drive": "l-aħjar sewwieqa u kumpaniji tat-taxi",

@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Najděte obor, ve kterém vaše firma pracuje",
+    "go": "Hledat",
+    "market": "Pokračovat v Rotabo Market",
+    "registered": "Registrované firmy",
     "none": "Nic nenalezeno. Zkuste jiné slovo - řemeslo, nářadí, službu."
   },
   "business": {
@@ -466,6 +469,26 @@
     "note_label": "Řekni nám víc (nepovinné)",
     "note_placeholder": "Pár detailů pomůže — co, kdy, kolik…"
   },
+  "company_form": {
+    "name_label": "Název firmy",
+    "domain_label": "Váš obor",
+    "domain_placeholder": "Začněte psát, čím se zabýváte",
+    "domain_hint": "Podle toho se firmy hledají. Vyberte nejbližší.",
+    "domain_error": "Vyberte svůj obor ze seznamu.",
+    "website_label": "Web (nepovinné)",
+    "regno_label": "IČO nebo DIČ (nepovinné)",
+    "regno_hint": "Uloží se, jak to napíšete. Rotabo to v žádném rejstříku neověřuje a netvrdí, že ano."
+  },
+  "company_view": {
+    "seeking": "Hledá",
+    "offering": "Nabízí",
+    "locked": "Abyste viděli, co hledá nebo nabízí a jak ji kontaktovat, musíte být zaregistrovaní i vy. Registrace je zdarma. Poté 2 CHF otevřou tento obor na rok.",
+    "unlock_btn": "Podívejte se, co potřebuje"
+  },
+  "sides": {
+    "is_company": "Tato adresa je registrovaná jako firma. Firmy se zapisují na Rotabo pro firmy, ne zde.",
+    "is_private": "Tato adresa je registrovaná jako soukromá osoba. Použijte pro firmu jinou adresu."
+  },
   "generic_form": {
     "name_label": "Tvoje jméno",
     "phone_label": "Telefonní číslo",
@@ -625,6 +648,8 @@
     "you_are_in": "Vypadá to, že jste tady: {country} — ",
     "change_country": "jinde",
     "search_placeholder": "Napište město, nebo to nejbližší k vám",
+    "go": "Hledat",
+    "go_named": "Hledat {city}",
     "no_match": "Město s tímto názvem neexistuje. Napište méně písmen, nebo vyberte nejbližší velké město.",
     "what": {
       "drive": "nejlepší řidiče a taxislužby",

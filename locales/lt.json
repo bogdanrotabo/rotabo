@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Ieškokite srities, kurioje dirba jūsų įmonė",
+    "go": "Ieškoti",
+    "market": "Tęsti Rotabo Market",
+    "registered": "Registruotos įmonės",
     "none": "Rezultatų nėra. Pabandykite kitą žodį - amatas, įrankis ar paslauga."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Papasakok daugiau (nebūtina)",
     "note_placeholder": "Kelios detalės padeda — kas, kada, kiek…"
   },
+  "company_form": {
+    "name_label": "Įmonės pavadinimas",
+    "domain_label": "Jūsų sritis",
+    "domain_placeholder": "Pradėkite rašyti, ką dirbate",
+    "domain_hint": "Pagal tai įmonės ir ieškomos. Pasirinkite artimiausią.",
+    "domain_error": "Pasirinkite savo sritį iš sąrašo.",
+    "website_label": "Svetainė (nebūtina)",
+    "regno_label": "Įmonės arba PVM kodas (nebūtina)",
+    "regno_hint": "Išsaugoma taip, kaip parašote. Rotabo netikrina jo jokiame registre ir netvirtina, kad tikrina."
+  },
+  "company_view": {
+    "seeking": "Ieško",
+    "offering": "Siūlo",
+    "locked": "Kad pamatytumėte, ko ji ieško ar ką siūlo ir kaip su ja susisiekti, turite būti užsiregistravęs ir jūs. Registracija nemokama. Po to 2 CHF atveria šią sritį metams.",
+    "unlock_btn": "Pažiūrėkite, ko reikia"
+  },
+  "sides": {
+    "is_company": "Šis adresas registruotas kaip įmonė. Įmonės skelbiamos Rotabo verslo pusėje, ne čia.",
+    "is_private": "Šis adresas registruotas kaip privatus asmuo. Įmonei naudokite kitą adresą."
+  },
   "generic_form": {
     "name_label": "Tavo vardas",
     "phone_label": "Telefono numeris",
@@ -613,6 +636,8 @@
     "you_are_in": "Panašu, kad esate čia: {country} — ",
     "change_country": "kitur",
     "search_placeholder": "Įveskite miestą arba artimiausią jums",
+    "go": "Ieškoti",
+    "go_named": "Ieškoti {city}",
     "no_match": "Tokio pavadinimo miesto nėra. Įveskite mažiau raidžių arba pasirinkite artimiausią didelį miestą.",
     "what": {
       "drive": "geriausius vairuotojus ir taksi įmones",

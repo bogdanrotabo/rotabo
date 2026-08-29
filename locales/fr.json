@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Cherchez le domaine dans lequel votre entreprise travaille",
+    "go": "Rechercher",
+    "market": "Continuer dans Rotabo Market",
+    "registered": "Entreprises inscrites",
     "none": "Aucun résultat. Essayez un autre mot - un métier, un outil, un service."
   },
   "business": {
@@ -696,6 +699,26 @@
     "note_label": "Dis-nous en plus (facultatif)",
     "note_placeholder": "Quelques détails aident — quoi, quand, combien…"
   },
+  "company_form": {
+    "name_label": "Nom de l'entreprise",
+    "domain_label": "Votre domaine",
+    "domain_placeholder": "Commencez à écrire ce que vous faites",
+    "domain_hint": "C'est ainsi que les entreprises sont recherchées. Choisissez le plus proche.",
+    "domain_error": "Choisissez votre domaine dans la liste.",
+    "website_label": "Site web (facultatif)",
+    "regno_label": "Numéro SIRET ou TVA (facultatif)",
+    "regno_hint": "Enregistré tel que vous l'écrivez. Rotabo ne le vérifie dans aucun registre et ne prétend pas le faire."
+  },
+  "company_view": {
+    "seeking": "Cherche",
+    "offering": "Propose",
+    "locked": "Pour voir ce qu'elle cherche ou propose, et comment la joindre, vous devez être inscrit vous aussi. L'inscription est gratuite. Ensuite, 2 CHF ouvrent ce domaine pendant un an.",
+    "unlock_btn": "Voir ce qu'elle cherche"
+  },
+  "sides": {
+    "is_company": "Cette adresse est inscrite comme entreprise. Les entreprises figurent sur Rotabo pour les entreprises, pas ici.",
+    "is_private": "Cette adresse est inscrite comme particulier. Utilisez une autre adresse pour l'entreprise."
+  },
   "generic_form": {
     "name_label": "Ton nom",
     "phone_label": "Numéro de téléphone",
@@ -854,6 +877,8 @@
     "you_are_in": "Vous semblez être ici : {country} — ",
     "change_country": "ailleurs",
     "search_placeholder": "Tapez une ville, ou la plus proche de chez vous",
+    "go": "Rechercher",
+    "go_named": "Rechercher {city}",
     "no_match": "Aucune ville de ce nom. Tapez moins de lettres, ou choisissez la grande ville la plus proche.",
     "what": {
       "drive": "les meilleurs chauffeurs et compagnies de taxi",

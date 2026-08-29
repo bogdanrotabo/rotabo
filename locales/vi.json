@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Tìm lĩnh vực công ty bạn hoạt động",
+    "go": "Tìm",
+    "market": "Tiếp tục trong Rotabo Market",
+    "registered": "Công ty đã đăng ký",
     "none": "Không có kết quả. Thử từ khác - một nghề, một công cụ, một dịch vụ."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Kể thêm (không bắt buộc)",
     "note_placeholder": "Vài chi tiết sẽ giúp ích — việc gì, khi nào, bao nhiêu…"
   },
+  "company_form": {
+    "name_label": "Tên công ty",
+    "domain_label": "Lĩnh vực của bạn",
+    "domain_placeholder": "Bắt đầu gõ bạn làm gì",
+    "domain_hint": "Công ty được tìm theo mục này. Hãy chọn mục gần nhất.",
+    "domain_error": "Chọn lĩnh vực của bạn từ danh sách.",
+    "website_label": "Trang web (không bắt buộc)",
+    "regno_label": "Mã số doanh nghiệp hoặc thuế (không bắt buộc)",
+    "regno_hint": "Được lưu đúng như bạn viết. Rotabo không đối chiếu với bất kỳ sổ đăng ký nào, và cũng không tuyên bố như vậy."
+  },
+  "company_view": {
+    "seeking": "Đang tìm",
+    "offering": "Cung cấp",
+    "locked": "Để xem họ đang tìm gì hoặc cung cấp gì, và liên hệ thế nào, bạn cũng cần đã đăng ký. Đăng ký miễn phí. Sau đó, 2 CHF mở lĩnh vực này trong một năm.",
+    "unlock_btn": "Xem họ cần gì"
+  },
+  "sides": {
+    "is_company": "Địa chỉ này đã đăng ký là công ty. Công ty được liệt kê ở Rotabo dành cho doanh nghiệp, không phải ở đây.",
+    "is_private": "Địa chỉ này đã đăng ký là cá nhân. Hãy dùng địa chỉ khác cho công ty."
+  },
   "generic_form": {
     "name_label": "Tên của bạn",
     "phone_label": "Số điện thoại",
@@ -613,6 +636,8 @@
     "you_are_in": "Có vẻ bạn đang ở {country} — ",
     "change_country": "nơi khác",
     "search_placeholder": "Nhập một thành phố, hoặc nơi gần bạn nhất",
+    "go": "Tìm",
+    "go_named": "Tìm {city}",
     "no_match": "Không có thành phố nào tên như vậy. Nhập ít chữ hơn, hoặc chọn thành phố lớn gần nhất.",
     "what": {
       "drive": "những tài xế và hãng taxi tốt nhất",

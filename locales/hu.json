@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Keresse meg a területet, ahol a cége dolgozik",
+    "go": "Keresés",
+    "market": "Tovább a Rotabo Marketbe",
+    "registered": "Regisztrált cégek",
     "none": "Nincs találat. Próbáljon másik szót - szakma, szerszám vagy szolgáltatás."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Mesélj még (nem kötelező)",
     "note_placeholder": "Pár részlet segít — mit, mikor, mennyit…"
   },
+  "company_form": {
+    "name_label": "Cégnév",
+    "domain_label": "Az Ön szakterülete",
+    "domain_placeholder": "Kezdje el írni, mivel foglalkoznak",
+    "domain_hint": "A cégeket ez alapján keresik. Válassza a legközelebbit.",
+    "domain_error": "Válassza ki a szakterületét a listából.",
+    "website_label": "Weboldal (nem kötelező)",
+    "regno_label": "Cégjegyzék- vagy adószám (nem kötelező)",
+    "regno_hint": "Úgy tároljuk, ahogy leírja. A Rotabo semmilyen nyilvántartásban nem ellenőrzi, és nem is állítja, hogy megtenné."
+  },
+  "company_view": {
+    "seeking": "Keres",
+    "offering": "Kínál",
+    "locked": "Ahhoz, hogy lássa, mit keres vagy kínál, és hogyan érhető el, Önnek is regisztrálnia kell. A regisztráció ingyenes. Utána 2 CHF egy évre megnyitja ezt a szakterületet.",
+    "unlock_btn": "Nézze meg, mire van szüksége"
+  },
+  "sides": {
+    "is_company": "Ez a cím cégként van regisztrálva. A cégek a Rotabo céges oldalán szerepelnek, nem itt.",
+    "is_private": "Ez a cím magánszemélyként van regisztrálva. A céghez használjon másik címet."
+  },
   "generic_form": {
     "name_label": "A neved",
     "phone_label": "Telefonszám",
@@ -613,6 +636,8 @@
     "you_are_in": "Úgy tűnik, itt van: {country} — ",
     "change_country": "máshol",
     "search_placeholder": "Írjon be egy várost, vagy a legközelebbit",
+    "go": "Keresés",
+    "go_named": "{city} keresése",
     "no_match": "Nincs ilyen nevű város. Írjon be kevesebb betűt, vagy válassza a legközelebbi nagyvárost.",
     "what": {
       "drive": "a legjobb sofőröket és taxitársaságokat",

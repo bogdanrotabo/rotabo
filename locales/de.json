@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Suchen Sie den Bereich, in dem Ihr Unternehmen arbeitet",
+    "go": "Suchen",
+    "market": "Weiter in Rotabo Market",
+    "registered": "Registrierte Firmen",
     "none": "Nichts gefunden. Versuchen Sie ein anderes Wort - ein Handwerk, ein Gerät, eine Leistung."
   },
   "business": {
@@ -696,6 +699,26 @@
     "note_label": "Erzähl uns mehr (optional)",
     "note_placeholder": "Ein paar Details helfen — was, wann, wie viel…"
   },
+  "company_form": {
+    "name_label": "Firmenname",
+    "domain_label": "Ihr Fachgebiet",
+    "domain_placeholder": "Tippen Sie, was Sie tun",
+    "domain_hint": "Danach wird nach Firmen gesucht. Wählen Sie das Nächstliegende.",
+    "domain_error": "Wählen Sie Ihr Fachgebiet aus der Liste.",
+    "website_label": "Website (optional)",
+    "regno_label": "Handelsregister- oder MwSt-Nummer (optional)",
+    "regno_hint": "Wird so gespeichert, wie Sie es schreiben. Rotabo prüft es in keinem Register und behauptet das auch nicht."
+  },
+  "company_view": {
+    "seeking": "Sucht",
+    "offering": "Bietet",
+    "locked": "Um zu sehen, was die Firma sucht oder bietet und wie Sie sie erreichen, müssen Sie selbst registriert sein. Die Registrierung ist kostenlos. Danach öffnen 2 CHF dieses Fachgebiet für ein Jahr.",
+    "unlock_btn": "Sehen, was gebraucht wird"
+  },
+  "sides": {
+    "is_company": "Diese Adresse ist als Firma registriert. Firmen stehen auf Rotabo für Unternehmen, nicht hier.",
+    "is_private": "Diese Adresse ist als Privatperson registriert. Nehmen Sie für die Firma eine andere Adresse."
+  },
   "generic_form": {
     "name_label": "Dein Name",
     "phone_label": "Telefonnummer",
@@ -854,6 +877,8 @@
     "you_are_in": "Sie sind wohl hier: {country} — ",
     "change_country": "woanders",
     "search_placeholder": "Tippen Sie eine Stadt, oder die nächste bei Ihnen",
+    "go": "Suchen",
+    "go_named": "{city} suchen",
     "no_match": "Keine Stadt mit diesem Namen. Tippen Sie weniger Buchstaben, oder nehmen Sie die nächste große Stadt.",
     "what": {
       "drive": "die besten Fahrer und Taxiunternehmen",

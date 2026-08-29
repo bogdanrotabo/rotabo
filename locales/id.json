@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Cari bidang tempat perusahaan Anda bekerja",
+    "go": "Cari",
+    "market": "Lanjutkan di Rotabo Market",
+    "registered": "Perusahaan terdaftar",
     "none": "Tidak ada hasil. Coba kata lain - pekerjaan, alat, atau layanan."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Ceritakan lebih banyak (opsional)",
     "note_placeholder": "Beberapa detail membantu — apa, kapan, berapa…"
   },
+  "company_form": {
+    "name_label": "Nama perusahaan",
+    "domain_label": "Bidang Anda",
+    "domain_placeholder": "Mulai ketik apa yang Anda kerjakan",
+    "domain_hint": "Perusahaan dicari berdasarkan ini. Pilih yang paling dekat.",
+    "domain_error": "Pilih bidang Anda dari daftar.",
+    "website_label": "Situs web (opsional)",
+    "regno_label": "Nomor perusahaan atau NPWP (opsional)",
+    "regno_hint": "Disimpan persis seperti Anda menulisnya. Rotabo tidak memeriksanya di registri mana pun, dan tidak mengklaim demikian."
+  },
+  "company_view": {
+    "seeking": "Mencari",
+    "offering": "Menawarkan",
+    "locked": "Untuk melihat apa yang mereka cari atau tawarkan, dan cara menghubungi mereka, Anda juga harus terdaftar. Pendaftaran gratis. Setelah itu, 2 CHF membuka bidang ini selama setahun.",
+    "unlock_btn": "Lihat apa yang dibutuhkan"
+  },
+  "sides": {
+    "is_company": "Alamat ini terdaftar sebagai perusahaan. Perusahaan terdaftar di Rotabo untuk bisnis, bukan di sini.",
+    "is_private": "Alamat ini terdaftar sebagai perorangan. Gunakan alamat lain untuk perusahaan."
+  },
   "generic_form": {
     "name_label": "Namamu",
     "phone_label": "Nomor telepon",
@@ -613,6 +636,8 @@
     "you_are_in": "Sepertinya Anda di {country} — ",
     "change_country": "di tempat lain",
     "search_placeholder": "Ketik nama kota, atau yang paling dekat dengan Anda",
+    "go": "Cari",
+    "go_named": "Cari {city}",
     "no_match": "Tidak ada kota dengan nama itu. Ketik lebih sedikit huruf, atau pilih kota besar terdekat.",
     "what": {
       "drive": "sopir dan perusahaan taksi terbaik",

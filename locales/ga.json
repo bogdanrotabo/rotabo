@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Cuardaigh an réimse ina n-oibríonn do chomhlacht",
+    "go": "Cuardaigh",
+    "market": "Lean ar aghaidh i Rotabo Market",
+    "registered": "Comhlachtaí cláraithe",
     "none": "Faic aimsithe. Bain triail as focal eile - ceird, uirlis nó seirbhís."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Inis dúinn tuilleadh (roghnach)",
     "note_placeholder": "Cabhraíonn cúpla sonra — cad, cathain, cé mhéad…"
   },
+  "company_form": {
+    "name_label": "Ainm an chomhlachta",
+    "domain_label": "Do réimse",
+    "domain_placeholder": "Tosaigh ag scríobh cad a dhéanann tú",
+    "domain_hint": "Is mar sin a chuardaítear comhlachtaí. Roghnaigh an ceann is gaire.",
+    "domain_error": "Roghnaigh do réimse ón liosta.",
+    "website_label": "Suíomh gréasáin (roghnach)",
+    "regno_label": "Uimhir chláraithe nó CBL (roghnach)",
+    "regno_hint": "Sábháiltear é mar a scríobhann tú é. Ní dhearbhaíonn Rotabo é in aon chlár, agus ní mhaíonn sé go ndéanann."
+  },
+  "company_view": {
+    "seeking": "Ag lorg",
+    "offering": "Ag tairiscint",
+    "locked": "Chun a fheiceáil cad atá á lorg nó á thairiscint aige, agus conas teagmháil a dhéanamh leis, ní mór duitse a bheith cláraithe freisin. Tá clárú saor in aisce. Ina dhiaidh sin, osclaíonn 2 CHF an réimse seo ar feadh bliana.",
+    "unlock_btn": "Féach cad atá uaidh"
+  },
+  "sides": {
+    "is_company": "Tá an seoladh seo cláraithe mar chomhlacht. Liostaítear comhlachtaí ar Rotabo do ghnó, ní anseo.",
+    "is_private": "Tá an seoladh seo cláraithe mar dhuine príobháideach. Bain úsáid as seoladh eile don chomhlacht."
+  },
   "generic_form": {
     "name_label": "D'ainm",
     "phone_label": "Uimhir ghutháin",
@@ -613,6 +636,8 @@
     "you_are_in": "Is cosúil go bhfuil tú anseo: {country} — ",
     "change_country": "áit éigin eile",
     "search_placeholder": "Clóscríobh cathair, nó an ceann is gaire duit",
+    "go": "Cuardaigh",
+    "go_named": "Cuardaigh {city}",
     "no_match": "Níl cathair ann leis an ainm sin. Clóscríobh níos lú litreacha, nó roghnaigh an chathair mhór is gaire.",
     "what": {
       "drive": "na tiománaithe agus na comhlachtaí tacsaí is fearr",

@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Søg det område, din virksomhed arbejder i",
+    "go": "Søg",
+    "market": "Fortsæt i Rotabo Market",
+    "registered": "Registrerede virksomheder",
     "none": "Ingen resultater. Prøv et andet ord - et fag, et værktøj, en ydelse."
   },
   "business": {
@@ -466,6 +469,26 @@
     "note_label": "Fortæl os mere (valgfrit)",
     "note_placeholder": "Et par detaljer hjælper — hvad, hvornår, hvor meget…"
   },
+  "company_form": {
+    "name_label": "Virksomhedens navn",
+    "domain_label": "Dit område",
+    "domain_placeholder": "Begynd at skrive, hvad I laver",
+    "domain_hint": "Det er sådan, virksomheder findes. Vælg det nærmeste.",
+    "domain_error": "Vælg dit område fra listen.",
+    "website_label": "Hjemmeside (valgfrit)",
+    "regno_label": "CVR- eller momsnummer (valgfrit)",
+    "regno_hint": "Gemmes, som du skriver det. Rotabo tjekker det ikke i noget register og påstår ikke at gøre det."
+  },
+  "company_view": {
+    "seeking": "Søger",
+    "offering": "Tilbyder",
+    "locked": "For at se, hvad de søger eller tilbyder, og hvordan du får fat i dem, skal du også være registreret. Registrering er gratis. Derefter åbner 2 CHF dette område i et år.",
+    "unlock_btn": "Se hvad de har brug for"
+  },
+  "sides": {
+    "is_company": "Denne adresse er registreret som virksomhed. Virksomheder står på Rotabo for erhverv, ikke her.",
+    "is_private": "Denne adresse er registreret som privatperson. Brug en anden adresse til virksomheden."
+  },
   "generic_form": {
     "name_label": "Dit navn",
     "phone_label": "Telefonnummer",
@@ -625,6 +648,8 @@
     "you_are_in": "Du ser ud til at være i {country} — ",
     "change_country": "et andet sted",
     "search_placeholder": "Skriv en by, eller den nærmeste ved dig",
+    "go": "Søg",
+    "go_named": "Søg efter {city}",
     "no_match": "Ingen by med det navn. Skriv færre bogstaver, eller vælg den nærmeste store by.",
     "what": {
       "drive": "de bedste chauffører og taxiselskaber",

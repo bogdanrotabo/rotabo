@@ -231,6 +231,9 @@
   },
   "bizsearch": {
     "placeholder": "Busca el sector en el que trabaja tu empresa",
+    "go": "Buscar",
+    "market": "Continuar en Rotabo Market",
+    "registered": "Empresas registradas",
     "none": "Sin resultados. Prueba otra palabra - un oficio, una herramienta, un servicio."
   },
   "business": {
@@ -696,6 +699,26 @@
     "note_label": "Cuéntanos más (opcional)",
     "note_placeholder": "Unos detalles ayudan — qué, cuándo, cuánto…"
   },
+  "company_form": {
+    "name_label": "Nombre de la empresa",
+    "domain_label": "Tu sector",
+    "domain_placeholder": "Empieza a escribir a qué te dedicas",
+    "domain_hint": "Es por esto por lo que se busca a las empresas. Elige el más cercano.",
+    "domain_error": "Elige tu sector de la lista.",
+    "website_label": "Sitio web (opcional)",
+    "regno_label": "CIF o número de IVA (opcional)",
+    "regno_hint": "Se guarda tal como lo escribas. Rotabo no lo comprueba en ningún registro, ni pretende hacerlo."
+  },
+  "company_view": {
+    "seeking": "Busca",
+    "offering": "Ofrece",
+    "locked": "Para ver qué busca o qué ofrece, y cómo contactar, tienes que estar registrado tú también. Registrarse es gratis. Después, 2 CHF abren este sector durante un año.",
+    "unlock_btn": "Ver qué necesita"
+  },
+  "sides": {
+    "is_company": "Esta dirección está registrada como empresa. Las empresas se inscriben en Rotabo para empresas, no aquí.",
+    "is_private": "Esta dirección está registrada como particular. Usa otra dirección para la empresa."
+  },
   "generic_form": {
     "name_label": "Tu nombre",
     "phone_label": "Número de teléfono",
@@ -854,6 +877,8 @@
     "you_are_in": "Parece que están en {country} — ",
     "change_country": "en otro sitio",
     "search_placeholder": "Escriban una ciudad, o la más cercana a ustedes",
+    "go": "Buscar",
+    "go_named": "Buscar {city}",
     "no_match": "Ninguna ciudad con ese nombre. Escriban menos letras, o elijan la ciudad grande más cercana.",
     "what": {
       "drive": "los mejores conductores y compañías de taxi",

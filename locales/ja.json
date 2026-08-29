@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "御社が働く分野を検索",
+    "go": "検索",
+    "market": "Rotabo Marketへ進む",
+    "registered": "登録済みの会社",
     "none": "該当なし。別の言葉でお試しください - 職種、道具、サービスなど。"
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "詳しく教えてください（任意）",
     "note_placeholder": "少しの情報が助けになります — 何を、いつ、どのくらい…"
   },
+  "company_form": {
+    "name_label": "会社名",
+    "domain_label": "あなたの分野",
+    "domain_placeholder": "何をしているか入力してください",
+    "domain_hint": "会社はこれで検索されます。いちばん近いものを選んでください。",
+    "domain_error": "一覧から分野を選んでください。",
+    "website_label": "ウェブサイト（任意）",
+    "regno_label": "法人番号または登録番号（任意）",
+    "regno_hint": "書かれたとおりに保存されます。Rotaboはどの登記簿でも確認しませんし、確認すると称してもいません。"
+  },
+  "company_view": {
+    "seeking": "探しています",
+    "offering": "提供しています",
+    "locked": "何を探しているか、何を提供しているか、どう連絡するかを見るには、あなた自身も登録している必要があります。登録は無料です。そのあと2CHFでこの分野が1年間開きます。",
+    "unlock_btn": "何が必要か見る"
+  },
+  "sides": {
+    "is_company": "このアドレスは会社として登録されています。会社はRotaboの法人側に掲載されます。ここではありません。",
+    "is_private": "このアドレスは個人として登録されています。会社には別のアドレスをお使いください。"
+  },
   "generic_form": {
     "name_label": "お名前",
     "phone_label": "電話番号",
@@ -613,6 +636,8 @@
     "you_are_in": "{country} にいらっしゃるようです — ",
     "change_country": "別の場所",
     "search_placeholder": "都市名、または一番近い都市を入力してください",
+    "go": "検索",
+    "go_named": "{city}を検索",
     "no_match": "その名前の都市はありません。文字を減らすか、一番近い大きな都市を選んでください。",
     "what": {
       "drive": "最高のドライバーとタクシー会社",

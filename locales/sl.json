@@ -1,6 +1,9 @@
 {
   "bizsearch": {
     "placeholder": "Poiščite področje, na katerem deluje vaše podjetje",
+    "go": "Išči",
+    "market": "Nadaljujte v Rotabo Marketu",
+    "registered": "Registrirana podjetja",
     "none": "Ni zadetkov. Poskusite z drugo besedo - obrt, orodje ali storitev."
   },
   "business": {
@@ -455,6 +458,26 @@
     "note_label": "Povej nam več (neobvezno)",
     "note_placeholder": "Nekaj podrobnosti pomaga — kaj, kdaj, koliko…"
   },
+  "company_form": {
+    "name_label": "Ime podjetja",
+    "domain_label": "Vaše področje",
+    "domain_placeholder": "Začnite pisati, s čim se ukvarjate",
+    "domain_hint": "Po tem se podjetja iščejo. Izberite najbližje.",
+    "domain_error": "Izberite svoje področje s seznama.",
+    "website_label": "Spletna stran (neobvezno)",
+    "regno_label": "Matična ali davčna številka (neobvezno)",
+    "regno_hint": "Shrani se tako, kot to napišete. Rotabo tega ne preverja v nobenem registru in tega tudi ne trdi."
+  },
+  "company_view": {
+    "seeking": "Išče",
+    "offering": "Ponuja",
+    "locked": "Da vidite, kaj išče ali ponuja in kako do njega, morate biti registrirani tudi vi. Registracija je brezplačna. Nato 2 CHF odpreta to področje za eno leto.",
+    "unlock_btn": "Poglejte, kaj potrebuje"
+  },
+  "sides": {
+    "is_company": "Ta naslov je registriran kot podjetje. Podjetja so na Rotabo za podjetja, ne tukaj.",
+    "is_private": "Ta naslov je registriran kot fizična oseba. Za podjetje uporabite drug naslov."
+  },
   "generic_form": {
     "name_label": "Tvoje ime",
     "phone_label": "Telefonska številka",
@@ -613,6 +636,8 @@
     "you_are_in": "Videti je, da ste tu: {country} — ",
     "change_country": "drugje",
     "search_placeholder": "Vpišite mesto ali najbližje vam",
+    "go": "Išči",
+    "go_named": "Išči {city}",
     "no_match": "Mesta s tem imenom ni. Vpišite manj črk ali izberite najbližje veliko mesto.",
     "what": {
       "drive": "najboljše voznike in taksi službe",
