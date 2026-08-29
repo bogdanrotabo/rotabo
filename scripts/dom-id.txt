@@ -1,0 +1,163 @@
+taxi|Taksi|
+ride_hailing|Ojek dan taksi online|
+chauffeur|Jasa sopir|
+driving_school|Sekolah mengemudi|
+translation|Penerjemahan|
+interpreting|Juru bahasa|
+sworn_translation|Penerjemah tersumpah|
+language_school|Kursus bahasa|
+removals|Jasa pindahan|
+international_removals|Pindahan internasional|
+courier|Jasa kurir|
+freight_forwarding|Ekspedisi|
+refrigerated_transport|Angkutan berpendingin|
+haulage|Angkutan barang|
+storage_warehousing|Penyimpanan dan pergudangan|
+customs_brokerage|Jasa kepabeanan|
+excavation|Penggalian dan pekerjaan tanah|
+crane_hire|Sewa derek|
+scaffolding|Perancah|
+demolition|Pembongkaran|
+concrete_works|Pekerjaan beton|
+surveying|Survei dan pengukuran tanah|
+tool_hire|Sewa peralatan|
+machinery_rental|Sewa alat berat|
+generator_hire|Sewa genset|
+electrical_installation|Instalasi listrik|
+plumbing|Ledeng dan pipa|
+heating_hvac|Pemanas dan tata udara|
+air_conditioning|Servis AC|
+painting_decorating|Pengecatan|
+carpentry|Pertukangan kayu|
+flooring|Pemasangan lantai|
+roofing|Pekerjaan atap|
+locksmith|Tukang kunci|
+cleaning_services|Jasa kebersihan|
+gardening_landscaping|Taman dan lansekap|
+renovation|Renovasi|
+car_repair|Bengkel mobil|
+mobile_mechanic|Montir panggilan|
+tyre_service|Servis ban|
+bodywork_paint|Ketok magic dan cat|
+towing_recovery|Derek dan evakuasi|
+childcare|Pengasuhan anak|
+elderly_care|Perawatan lansia|
+home_nursing|Perawat di rumah|
+private_tutoring|Les privat|
+music_lessons|Les musik|
+sports_coaching|Pelatihan olahraga|
+it_training|Pelatihan IT|
+vocational_training|Pelatihan kejuruan|
+holiday_lettings|Sewa penginapan liburan|
+guesthouse_bnb|Wisma dan penginapan sarapan|
+property_management|Pengelolaan properti|
+veterinary|Dokter hewan|
+dog_walking|Jasa jalan-jalan anjing|
+pet_grooming|Grooming hewan peliharaan|
+general_practice|Dokter umum|
+dentistry|Dokter gigi|
+physiotherapy|Fisioterapi|
+psychology|Psikologi|
+pharmacy|Apotek|
+optometry|Optometri|
+medical_laboratory|Laboratorium medis|
+software_development|Pengembangan perangkat lunak|
+web_development|Pembuatan situs web|
+it_support|Dukungan IT|
+cybersecurity|Keamanan siber|
+data_ai|Data dan AI|
+cloud_hosting|Cloud dan hosting|
+accounting|Akuntansi|
+audit_tax|Audit dan pajak|
+legal_services|Jasa hukum|
+hr_recruitment|SDM dan rekrutmen|
+management_consulting|Konsultan manajemen|
+insurance_brokerage|Broker asuransi|
+real_estate_agency|Agen properti|
+architecture|Arsitektur|
+manufacturing|Manufaktur|
+cnc_machining|Permesinan CNC|
+metalwork_welding|Kerja logam dan las|
+restaurant|Restoran|
+catering|Katering|
+hotel|Hotel|
+event_management|Penyelenggara acara|
+agriculture|Pertanian|
+forestry|Kehutanan|
+waste_recycling|Limbah dan daur ulang|
+renewable_energy|Energi terbarukan|
+marketing_agency|Agensi pemasaran|
+graphic_design|Desain grafis|
+photography|Fotografi|
+video_production|Produksi video|
+printing_signage|Percetakan dan papan nama|
+wholesale|Grosir|
+ecommerce|Toko online|
+security_services|Jasa keamanan|
+hairdressing|Salon rambut|
+beauty_salon|Salon kecantikan|
+massage_therapy|Pijat|
+fitness_training|Latihan kebugaran|
+shop_general|Toko|
+shop_bicycle|Toko dan bengkel sepeda|
+shop_auto_parts|Suku cadang mobil|
+shop_hardware|Toko bangunan dan perkakas|
+shop_furniture|Furnitur|
+shop_electronics|Elektronik dan peralatan rumah|
+shop_clothing|Pakaian|
+shop_grocery|Toko kelontong|
+shop_sports|Perlengkapan olahraga|
+shop_books|Toko buku dan alat tulis|
+shop_florist|Toko bunga|
+shop_pet|Toko hewan peliharaan|
+motorcycle_repair|Bengkel motor|
+bar|Bar|
+kebab_shawarma|Kebab dan syawarma|
+pizzeria|Kedai pizza|
+fast_food|Makanan cepat saji|
+bakery|Toko roti|
+pastry_shop|Toko kue|
+coffee_shop|Kedai kopi|
+food_truck|Food truck|
+butcher|Toko daging|
+ice_cream|Kedai es krim|
+winery|Kilang anggur|
+brewery|Pabrik bir|
+nightclub|Kelab malam dan diskotek|
+beach_club|Bar pantai dan beach club|
+bowling_billiards|Boling dan biliar|
+travel_agency|Agen perjalanan|
+nail_salon|Salon kuku, manikur dan pedikur|
+barber|Pangkas rambut|
+tattoo_piercing|Tato dan tindik|
+spa_sauna|Spa dan sauna|
+cosmetics_shop|Toko kosmetik|
+dry_cleaning|Cuci kering dan laundry|
+podiatry|Podiatri dan perawatan kaki|
+dental_laboratory|Laboratorium gigi|
+orthodontics|Ortodonti|
+dermatology|Dermatologi|
+paediatrics|Dokter anak|
+gynaecology|Ginekologi|
+cardiology|Kardiologi|
+medical_imaging|Radiologi dan pencitraan|
+speech_therapy|Terapi wicara|
+nutrition_dietetics|Gizi dan dietetik|
+bicycle_repair|Servis sepeda|
+scooter_repair|Servis skuter dan moped|
+appliance_repair|Servis alat rumah tangga|
+phone_repair|Servis ponsel dan tablet|
+computer_repair|Servis komputer|
+watch_jewellery_repair|Servis jam dan perhiasan|
+shoe_repair|Reparasi sepatu|
+tailoring_alterations|Penjahit dan permak|
+upholstery|Jok dan pelapis furnitur|
+glazing|Kaca dan jendela|
+chimney_sweep|Pembersihan cerobong|
+pest_control|Pembasmian hama|
+pool_maintenance|Perawatan kolam renang|
+window_cleaning|Pembersihan kaca jendela|
+car_wash|Cuci mobil|
+car_rental|Rental mobil|
+bike_scooter_rental|Sewa sepeda dan skuter|
+funeral_services|Jasa pemakaman|

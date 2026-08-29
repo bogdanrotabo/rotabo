@@ -1,0 +1,163 @@
+taxi|Taxi|
+ride_hailing|Samåkning via app|
+chauffeur|Chaufförstjänster|
+driving_school|Trafikskola|
+translation|Översättning|
+interpreting|Tolkning|
+sworn_translation|Auktoriserad översättning|
+language_school|Språkskola|
+removals|Flyttjänster|
+international_removals|Internationella flyttar|
+courier|Budtjänster|
+freight_forwarding|Speditionsfirma|
+refrigerated_transport|Kyltransport|
+haulage|Godstransport|
+storage_warehousing|Lagring och magasinering|
+customs_brokerage|Tullombud|
+excavation|Schakt och markarbeten|
+crane_hire|Kranuthyrning|
+scaffolding|Ställningar|
+demolition|Rivning|
+concrete_works|Betongarbeten|
+surveying|Lantmäteri|
+tool_hire|Verktygsuthyrning|
+machinery_rental|Maskinuthyrning|
+generator_hire|Uthyrning av elverk|
+electrical_installation|Elinstallation|
+plumbing|Rörmokeri|
+heating_hvac|Värme och ventilation|
+air_conditioning|Luftkonditionering|
+painting_decorating|Måleri|
+carpentry|Snickeri|
+flooring|Golvläggning|
+roofing|Takläggning|
+locksmith|Låssmed|
+cleaning_services|Städtjänster|
+gardening_landscaping|Trädgård och anläggning|
+renovation|Renovering|
+car_repair|Bilverkstad|
+mobile_mechanic|Mobil mekaniker|
+tyre_service|Däckservice|
+bodywork_paint|Plåt och lack|
+towing_recovery|Bärgning|
+childcare|Barnpassning|
+elderly_care|Äldreomsorg|
+home_nursing|Hemsjukvård|
+private_tutoring|Privatundervisning|
+music_lessons|Musiklektioner|
+sports_coaching|Idrottsträning|
+it_training|IT-utbildning|
+vocational_training|Yrkesutbildning|
+holiday_lettings|Semesteruthyrning|
+guesthouse_bnb|Pensionat och bed and breakfast|
+property_management|Fastighetsförvaltning|
+veterinary|Veterinär|
+dog_walking|Hundpromenad|
+pet_grooming|Djurtrim|
+general_practice|Allmänmedicin|
+dentistry|Tandvård|
+physiotherapy|Fysioterapi|
+psychology|Psykologi|
+pharmacy|Apotek|
+optometry|Optiker|
+medical_laboratory|Medicinskt laboratorium|
+software_development|Mjukvaruutveckling|
+web_development|Webbutveckling|
+it_support|IT-support|
+cybersecurity|Cybersäkerhet|
+data_ai|Data och AI|
+cloud_hosting|Moln och hosting|
+accounting|Redovisning|
+audit_tax|Revision och skatt|
+legal_services|Juridiska tjänster|
+hr_recruitment|HR och rekrytering|
+management_consulting|Managementkonsult|
+insurance_brokerage|Försäkringsförmedling|
+real_estate_agency|Fastighetsmäklare|
+architecture|Arkitektur|
+manufacturing|Tillverkning|
+cnc_machining|CNC-bearbetning|
+metalwork_welding|Metallarbete och svetsning|
+restaurant|Restaurang|
+catering|Catering|
+hotel|Hotell|
+event_management|Eventarrangemang|
+agriculture|Jordbruk|
+forestry|Skogsbruk|
+waste_recycling|Avfall och återvinning|
+renewable_energy|Förnybar energi|
+marketing_agency|Marknadsföringsbyrå|
+graphic_design|Grafisk design|
+photography|Fotografi|
+video_production|Videoproduktion|
+printing_signage|Tryck och skyltar|
+wholesale|Partihandel|
+ecommerce|E-handel|
+security_services|Säkerhetstjänster|
+hairdressing|Frisör|
+beauty_salon|Skönhetssalong|
+massage_therapy|Massage|
+fitness_training|Träning och fitness|
+shop_general|Butik|
+shop_bicycle|Cykelbutik och verkstad|
+shop_auto_parts|Bildelar|
+shop_hardware|Järnhandel och gör-det-själv|
+shop_furniture|Möbler|
+shop_electronics|Elektronik och vitvaror|
+shop_clothing|Kläder|
+shop_grocery|Livsmedel|
+shop_sports|Sportbutik|
+shop_books|Bokhandel och pappershandel|
+shop_florist|Blomsteraffär|
+shop_pet|Djuraffär|
+motorcycle_repair|Motorcykelverkstad|
+bar|Bar|
+kebab_shawarma|Kebab och shawarma|
+pizzeria|Pizzeria|
+fast_food|Snabbmat|
+bakery|Bageri|
+pastry_shop|Konditori|
+coffee_shop|Kaffebar|
+food_truck|Foodtruck|
+butcher|Slakteri och chark|
+ice_cream|Glassbar|
+winery|Vingård|
+brewery|Bryggeri|
+nightclub|Nattklubb och disco|
+beach_club|Strandbar och beachklubb|
+bowling_billiards|Bowling och biljard|
+travel_agency|Resebyrå|
+nail_salon|Nagelsalong, manikyr och pedikyr|
+barber|Barberare|
+tattoo_piercing|Tatuering och piercing|
+spa_sauna|Spa och bastu|
+cosmetics_shop|Kosmetikbutik|
+dry_cleaning|Kemtvätt och tvätteri|
+podiatry|Fotvård och podiatri|
+dental_laboratory|Dentallaboratorium|
+orthodontics|Ortodonti|
+dermatology|Hudläkare|
+paediatrics|Barnmedicin|
+gynaecology|Gynekologi|
+cardiology|Kardiologi|
+medical_imaging|Bilddiagnostik|
+speech_therapy|Logopedi|
+nutrition_dietetics|Kost och dietistik|
+bicycle_repair|Cykelreparation|
+scooter_repair|Reparation av scooter och moped|
+appliance_repair|Reparation av vitvaror|
+phone_repair|Reparation av telefon och surfplatta|
+computer_repair|Datorreparation|
+watch_jewellery_repair|Ur- och smyckesreparation|
+shoe_repair|Skomakeri|
+tailoring_alterations|Skrädderi och ändringar|
+upholstery|Möbeltapetsering|
+glazing|Glasmästeri och fönster|
+chimney_sweep|Sotning|
+pest_control|Skadedjursbekämpning|
+pool_maintenance|Poolskötsel|
+window_cleaning|Fönsterputs|
+car_wash|Biltvätt|
+car_rental|Biluthyrning|
+bike_scooter_rental|Uthyrning av cyklar och elsparkcyklar|
+funeral_services|Begravningsbyrå|

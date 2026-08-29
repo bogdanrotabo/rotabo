@@ -1,0 +1,163 @@
+taxi|Taxi|
+ride_hailing|Přeprava přes aplikaci|
+chauffeur|Služby řidiče|
+driving_school|Autoškola|
+translation|Překlady|
+interpreting|Tlumočení|
+sworn_translation|Soudní překlady|
+language_school|Jazyková škola|
+removals|Stěhování|
+international_removals|Mezinárodní stěhování|
+courier|Kurýrní služby|
+freight_forwarding|Zasilatelství|
+refrigerated_transport|Chlazená přeprava|
+haulage|Nákladní doprava|
+storage_warehousing|Skladování|
+customs_brokerage|Celní deklarace|
+excavation|Výkopové a zemní práce|
+crane_hire|Pronájem jeřábů|
+scaffolding|Lešení|
+demolition|Demolice|
+concrete_works|Betonářské práce|
+surveying|Geodézie|
+tool_hire|Půjčovna nářadí|
+machinery_rental|Pronájem strojů|
+generator_hire|Pronájem generátorů|
+electrical_installation|Elektroinstalace|
+plumbing|Instalatérství|
+heating_hvac|Topení a vzduchotechnika|
+air_conditioning|Klimatizace|
+painting_decorating|Malířské práce|
+carpentry|Truhlářství|
+flooring|Podlahářství|
+roofing|Pokrývačství|
+locksmith|Zámečnictví|
+cleaning_services|Úklidové služby|
+gardening_landscaping|Zahradnictví a sadové úpravy|
+renovation|Rekonstrukce|
+car_repair|Autoservis|
+mobile_mechanic|Mobilní mechanik|
+tyre_service|Pneuservis|
+bodywork_paint|Karosářství a lakování|
+towing_recovery|Odtahová služba|
+childcare|Péče o děti|
+elderly_care|Péče o seniory|
+home_nursing|Domácí ošetřovatelství|
+private_tutoring|Doučování|
+music_lessons|Hodiny hudby|
+sports_coaching|Sportovní trénink|
+it_training|IT školení|
+vocational_training|Odborné kurzy|
+holiday_lettings|Prázdninové pronájmy|
+guesthouse_bnb|Penzion a nocleh se snídaní|
+property_management|Správa nemovitostí|
+veterinary|Veterinář|
+dog_walking|Venčení psů|
+pet_grooming|Péče o srst zvířat|
+general_practice|Praktický lékař|
+dentistry|Zubní lékařství|
+physiotherapy|Fyzioterapie|
+psychology|Psychologie|
+pharmacy|Lékárna|
+optometry|Optometrie|
+medical_laboratory|Zdravotnická laboratoř|
+software_development|Vývoj softwaru|
+web_development|Tvorba webu|
+it_support|IT podpora|
+cybersecurity|Kybernetická bezpečnost|
+data_ai|Data a AI|
+cloud_hosting|Cloud a hosting|
+accounting|Účetnictví|
+audit_tax|Audit a daně|
+legal_services|Právní služby|
+hr_recruitment|HR a nábor|
+management_consulting|Manažerské poradenství|
+insurance_brokerage|Pojišťovací makléřství|
+real_estate_agency|Realitní kancelář|
+architecture|Architektura|
+manufacturing|Výroba|
+cnc_machining|CNC obrábění|
+metalwork_welding|Kovovýroba a svařování|
+restaurant|Restaurace|
+catering|Catering|
+hotel|Hotel|
+event_management|Pořádání akcí|
+agriculture|Zemědělství|
+forestry|Lesnictví|
+waste_recycling|Odpady a recyklace|
+renewable_energy|Obnovitelná energie|
+marketing_agency|Marketingová agentura|
+graphic_design|Grafický design|
+photography|Fotografie|
+video_production|Video produkce|
+printing_signage|Tisk a reklamní polepy|
+wholesale|Velkoobchod|
+ecommerce|E-shop|
+security_services|Bezpečnostní služby|
+hairdressing|Kadeřnictví|
+beauty_salon|Kosmetický salon|
+massage_therapy|Masáže|
+fitness_training|Fitness trénink|
+shop_general|Obchod|
+shop_bicycle|Cykloprodejna a servis|
+shop_auto_parts|Autodíly|
+shop_hardware|Železářství a hobby|
+shop_furniture|Nábytek|
+shop_electronics|Elektro a spotřebiče|
+shop_clothing|Oděvy|
+shop_grocery|Potraviny|
+shop_sports|Sportovní potřeby|
+shop_books|Knihkupectví a papírnictví|
+shop_florist|Květinářství|
+shop_pet|Chovatelské potřeby|
+motorcycle_repair|Motoservis|
+bar|Bar|
+kebab_shawarma|Kebab a šawarma|
+pizzeria|Pizzerie|
+fast_food|Rychlé občerstvení|
+bakery|Pekárna|
+pastry_shop|Cukrárna|
+coffee_shop|Kavárna|
+food_truck|Pojízdné občerstvení|
+butcher|Řeznictví|
+ice_cream|Zmrzlinárna|
+winery|Vinařství|
+brewery|Pivovar|
+nightclub|Noční klub a diskotéka|
+beach_club|Plážový bar a beach club|
+bowling_billiards|Bowling a kulečník|
+travel_agency|Cestovní kancelář|
+nail_salon|Nehtové studio, manikúra a pedikúra|
+barber|Holičství|
+tattoo_piercing|Tetování a piercing|
+spa_sauna|Wellness a sauna|
+cosmetics_shop|Drogerie a kosmetika|
+dry_cleaning|Čistírna a prádelna|
+podiatry|Podologie a péče o nohy|
+dental_laboratory|Zubní laboratoř|
+orthodontics|Ortodoncie|
+dermatology|Dermatologie|
+paediatrics|Pediatrie|
+gynaecology|Gynekologie|
+cardiology|Kardiologie|
+medical_imaging|Zobrazovací metody|
+speech_therapy|Logopedie|
+nutrition_dietetics|Výživa a dietologie|
+bicycle_repair|Opravy jízdních kol|
+scooter_repair|Opravy skútrů a mopedů|
+appliance_repair|Opravy spotřebičů|
+phone_repair|Opravy telefonů a tabletů|
+computer_repair|Opravy počítačů|
+watch_jewellery_repair|Opravy hodinek a šperků|
+shoe_repair|Opravna obuvi|
+tailoring_alterations|Krejčovství a úpravy|
+upholstery|Čalounictví|
+glazing|Sklenářství a okna|
+chimney_sweep|Kominictví|
+pest_control|Deratizace a dezinsekce|
+pool_maintenance|Údržba bazénů|
+window_cleaning|Mytí oken|
+car_wash|Mytí aut|
+car_rental|Půjčovna aut|
+bike_scooter_rental|Půjčovna kol a koloběžek|
+funeral_services|Pohřební služby|

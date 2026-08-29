@@ -1,0 +1,163 @@
+taxi|Taksi|
+ride_hailing|Pavėžėjimas per programėlę|
+chauffeur|Vairuotojo paslaugos|
+driving_school|Vairavimo mokykla|
+translation|Vertimai raštu|
+interpreting|Vertimas žodžiu|
+sworn_translation|Prisiekusiojo vertėjo vertimai|
+language_school|Kalbų mokykla|
+removals|Perkraustymas|
+international_removals|Tarptautinis perkraustymas|
+courier|Kurjerių paslaugos|
+freight_forwarding|Ekspedijavimas|
+refrigerated_transport|Šaldytas transportas|
+haulage|Krovinių vežimas|
+storage_warehousing|Sandėliavimas|
+customs_brokerage|Muitinės tarpininkavimas|
+excavation|Kasimo ir žemės darbai|
+crane_hire|Kranų nuoma|
+scaffolding|Pastoliai|
+demolition|Griovimas|
+concrete_works|Betonavimo darbai|
+surveying|Geodezija|
+tool_hire|Įrankių nuoma|
+machinery_rental|Technikos nuoma|
+generator_hire|Generatorių nuoma|
+electrical_installation|Elektros instaliacija|
+plumbing|Santechnika|
+heating_hvac|Šildymas ir vėdinimas|
+air_conditioning|Kondicionavimas|
+painting_decorating|Dažymo darbai|
+carpentry|Stalystė|
+flooring|Grindų dangos|
+roofing|Stogo darbai|
+locksmith|Šaltkalvis|
+cleaning_services|Valymo paslaugos|
+gardening_landscaping|Sodininkystė ir kraštovaizdis|
+renovation|Renovacija|
+car_repair|Autoservisas|
+mobile_mechanic|Mobilus mechanikas|
+tyre_service|Padangų servisas|
+bodywork_paint|Kėbulo remontas ir dažymas|
+towing_recovery|Vilkimo paslaugos|
+childcare|Vaikų priežiūra|
+elderly_care|Senelių priežiūra|
+home_nursing|Slauga namuose|
+private_tutoring|Korepetitoriai|
+music_lessons|Muzikos pamokos|
+sports_coaching|Sporto treniruotės|
+it_training|IT mokymai|
+vocational_training|Profesiniai kursai|
+holiday_lettings|Atostogų būstų nuoma|
+guesthouse_bnb|Svečių namai ir nakvynė su pusryčiais|
+property_management|Nekilnojamojo turto valdymas|
+veterinary|Veterinaras|
+dog_walking|Šunų vedžiojimas|
+pet_grooming|Gyvūnų kirpimas|
+general_practice|Šeimos gydytojas|
+dentistry|Odontologija|
+physiotherapy|Kineziterapija|
+psychology|Psichologija|
+pharmacy|Vaistinė|
+optometry|Optometrija|
+medical_laboratory|Medicinos laboratorija|
+software_development|Programinės įrangos kūrimas|
+web_development|Svetainių kūrimas|
+it_support|IT pagalba|
+cybersecurity|Kibernetinis saugumas|
+data_ai|Duomenys ir dirbtinis intelektas|
+cloud_hosting|Debesys ir prieglobsta|
+accounting|Buhalterija|
+audit_tax|Auditas ir mokesčiai|
+legal_services|Teisinės paslaugos|
+hr_recruitment|Personalas ir atranka|
+management_consulting|Vadybos konsultacijos|
+insurance_brokerage|Draudimo brokeriai|
+real_estate_agency|Nekilnojamojo turto agentūra|
+architecture|Architektūra|
+manufacturing|Gamyba|
+cnc_machining|CNC apdirbimas|
+metalwork_welding|Metalo darbai ir suvirinimas|
+restaurant|Restoranas|
+catering|Maitinimo paslaugos|
+hotel|Viešbutis|
+event_management|Renginių organizavimas|
+agriculture|Žemės ūkis|
+forestry|Miškininkystė|
+waste_recycling|Atliekos ir perdirbimas|
+renewable_energy|Atsinaujinanti energija|
+marketing_agency|Rinkodaros agentūra|
+graphic_design|Grafinis dizainas|
+photography|Fotografija|
+video_production|Vaizdo produkcija|
+printing_signage|Spauda ir iškabos|
+wholesale|Didmeninė prekyba|
+ecommerce|Elektroninė parduotuvė|
+security_services|Apsaugos paslaugos|
+hairdressing|Kirpykla|
+beauty_salon|Grožio salonas|
+massage_therapy|Masažas|
+fitness_training|Fitneso treniruotės|
+shop_general|Parduotuvė|
+shop_bicycle|Dviračių parduotuvė ir servisas|
+shop_auto_parts|Autodalys|
+shop_hardware|Statybinės prekės ir įrankiai|
+shop_furniture|Baldai|
+shop_electronics|Elektronika ir buitinė technika|
+shop_clothing|Drabužiai|
+shop_grocery|Maisto prekės|
+shop_sports|Sporto prekės|
+shop_books|Knygynas ir kanceliarija|
+shop_florist|Gėlių parduotuvė|
+shop_pet|Gyvūnų prekės|
+motorcycle_repair|Motociklų servisas|
+bar|Baras|
+kebab_shawarma|Kebabas ir šaurma|
+pizzeria|Picerija|
+fast_food|Greitas maistas|
+bakery|Kepykla|
+pastry_shop|Konditerija|
+coffee_shop|Kavinė|
+food_truck|Maisto furgonas|
+butcher|Mėsinė|
+ice_cream|Ledainė|
+winery|Vyno ūkis|
+brewery|Alaus darykla|
+nightclub|Naktinis klubas ir diskoteka|
+beach_club|Paplūdimio baras ir klubas|
+bowling_billiards|Boulingas ir biliardas|
+travel_agency|Kelionių agentūra|
+nail_salon|Nagų salonas, manikiūras ir pedikiūras|
+barber|Vyrų kirpėjas|
+tattoo_piercing|Tatuiruotės ir auskarų vėrimas|
+spa_sauna|SPA ir pirtis|
+cosmetics_shop|Kosmetikos parduotuvė|
+dry_cleaning|Cheminis valymas ir skalbykla|
+podiatry|Podologija ir pėdų priežiūra|
+dental_laboratory|Dantų technikos laboratorija|
+orthodontics|Ortodontija|
+dermatology|Dermatologija|
+paediatrics|Pediatrija|
+gynaecology|Ginekologija|
+cardiology|Kardiologija|
+medical_imaging|Vaizdinė diagnostika|
+speech_therapy|Logopedija|
+nutrition_dietetics|Mityba ir dietologija|
+bicycle_repair|Dviračių remontas|
+scooter_repair|Motorolerių ir mopedų remontas|
+appliance_repair|Buitinės technikos remontas|
+phone_repair|Telefonų ir planšečių remontas|
+computer_repair|Kompiuterių remontas|
+watch_jewellery_repair|Laikrodžių ir papuošalų remontas|
+shoe_repair|Batų taisykla|
+tailoring_alterations|Siuvykla ir pataisos|
+upholstery|Baldų apmušimas|
+glazing|Stiklo darbai ir langai|
+chimney_sweep|Kaminų valymas|
+pest_control|Kenkėjų naikinimas|
+pool_maintenance|Baseinų priežiūra|
+window_cleaning|Langų valymas|
+car_wash|Automobilių plovykla|
+car_rental|Automobilių nuoma|
+bike_scooter_rental|Dviračių ir paspirtukų nuoma|
+funeral_services|Laidojimo paslaugos|

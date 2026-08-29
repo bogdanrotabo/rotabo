@@ -1,0 +1,163 @@
+taxi|Taxi|
+ride_hailing|Applikációs fuvarszolgáltatás|
+chauffeur|Sofőrszolgálat|
+driving_school|Autósiskola|
+translation|Fordítás|
+interpreting|Tolmácsolás|
+sworn_translation|Hiteles fordítás|
+language_school|Nyelviskola|
+removals|Költöztetés|
+international_removals|Nemzetközi költöztetés|
+courier|Futárszolgálat|
+freight_forwarding|Szállítmányozás|
+refrigerated_transport|Hűtött szállítás|
+haulage|Teherfuvarozás|
+storage_warehousing|Raktározás|
+customs_brokerage|Vámügyintézés|
+excavation|Földmunka és kotrás|
+crane_hire|Darubérlés|
+scaffolding|Állványozás|
+demolition|Bontás|
+concrete_works|Betonozás|
+surveying|Földmérés|
+tool_hire|Szerszámkölcsönzés|
+machinery_rental|Gépkölcsönzés|
+generator_hire|Aggregátorbérlés|
+electrical_installation|Villanyszerelés|
+plumbing|Vízvezeték-szerelés|
+heating_hvac|Fűtés és légtechnika|
+air_conditioning|Klímaszerelés|
+painting_decorating|Festés és tapétázás|
+carpentry|Asztalosmunka|
+flooring|Burkolás és padló|
+roofing|Tetőfedés|
+locksmith|Zárszerviz|
+cleaning_services|Takarítás|
+gardening_landscaping|Kertészet és kertépítés|
+renovation|Felújítás|
+car_repair|Autószerviz|
+mobile_mechanic|Mobil szerelő|
+tyre_service|Gumiszerviz|
+bodywork_paint|Karosszéria és fényezés|
+towing_recovery|Autómentés|
+childcare|Gyermekfelügyelet|
+elderly_care|Idősgondozás|
+home_nursing|Otthoni ápolás|
+private_tutoring|Magánoktatás|
+music_lessons|Zeneoktatás|
+sports_coaching|Sportedzés|
+it_training|IT-képzés|
+vocational_training|Szakképzés|
+holiday_lettings|Nyaralókiadás|
+guesthouse_bnb|Panzió és reggelis szállás|
+property_management|Ingatlankezelés|
+veterinary|Állatorvos|
+dog_walking|Kutyasétáltatás|
+pet_grooming|Kisállat-kozmetika|
+general_practice|Háziorvos|
+dentistry|Fogászat|
+physiotherapy|Gyógytorna|
+psychology|Pszichológia|
+pharmacy|Gyógyszertár|
+optometry|Optometria|
+medical_laboratory|Orvosi labor|
+software_development|Szoftverfejlesztés|
+web_development|Webfejlesztés|
+it_support|IT-támogatás|
+cybersecurity|Kiberbiztonság|
+data_ai|Adat és mesterséges intelligencia|
+cloud_hosting|Felhő és tárhely|
+accounting|Könyvelés|
+audit_tax|Könyvvizsgálat és adó|
+legal_services|Jogi szolgáltatások|
+hr_recruitment|HR és toborzás|
+management_consulting|Vezetési tanácsadás|
+insurance_brokerage|Biztosításközvetítés|
+real_estate_agency|Ingatlaniroda|
+architecture|Építészet|
+manufacturing|Gyártás|
+cnc_machining|CNC-megmunkálás|
+metalwork_welding|Fémmegmunkálás és hegesztés|
+restaurant|Étterem|
+catering|Catering|
+hotel|Szálloda|
+event_management|Rendezvényszervezés|
+agriculture|Mezőgazdaság|
+forestry|Erdészet|
+waste_recycling|Hulladék és újrahasznosítás|
+renewable_energy|Megújuló energia|
+marketing_agency|Marketingügynökség|
+graphic_design|Grafikai tervezés|
+photography|Fotózás|
+video_production|Videógyártás|
+printing_signage|Nyomda és táblák|
+wholesale|Nagykereskedelem|
+ecommerce|Webáruház|
+security_services|Biztonsági szolgálat|
+hairdressing|Fodrászat|
+beauty_salon|Kozmetika|
+massage_therapy|Masszázs|
+fitness_training|Edzés és fitnesz|
+shop_general|Üzlet|
+shop_bicycle|Kerékpárbolt és szerviz|
+shop_auto_parts|Autóalkatrész|
+shop_hardware|Vasáru és barkács|
+shop_furniture|Bútor|
+shop_electronics|Elektronika és háztartási gép|
+shop_clothing|Ruházat|
+shop_grocery|Élelmiszerbolt|
+shop_sports|Sportbolt|
+shop_books|Könyvesbolt és papír-írószer|
+shop_florist|Virágbolt|
+shop_pet|Állateledel-bolt|
+motorcycle_repair|Motorszerviz|
+bar|Bár|
+kebab_shawarma|Kebab és sawarma|
+pizzeria|Pizzéria|
+fast_food|Gyorsétterem|
+bakery|Pékség|
+pastry_shop|Cukrászda|
+coffee_shop|Kávézó|
+food_truck|Ételkocsi|
+butcher|Hentes|
+ice_cream|Fagyizó|
+winery|Borászat|
+brewery|Sörfőzde|
+nightclub|Éjszakai klub és diszkó|
+beach_club|Strandbár és beach club|
+bowling_billiards|Bowling és biliárd|
+travel_agency|Utazási iroda|
+nail_salon|Körömszalon, manikűr és pedikűr|
+barber|Borbély|
+tattoo_piercing|Tetoválás és piercing|
+spa_sauna|Wellness és szauna|
+cosmetics_shop|Kozmetikai bolt|
+dry_cleaning|Vegytisztító és mosoda|
+podiatry|Podológia és lábápolás|
+dental_laboratory|Fogtechnikai labor|
+orthodontics|Fogszabályozás|
+dermatology|Bőrgyógyászat|
+paediatrics|Gyermekgyógyászat|
+gynaecology|Nőgyógyászat|
+cardiology|Kardiológia|
+medical_imaging|Képalkotó diagnosztika|
+speech_therapy|Logopédia|
+nutrition_dietetics|Táplálkozás és dietetika|
+bicycle_repair|Kerékpárjavítás|
+scooter_repair|Robogó- és mopedjavítás|
+appliance_repair|Háztartási gép javítása|
+phone_repair|Telefon- és tabletjavítás|
+computer_repair|Számítógép-javítás|
+watch_jewellery_repair|Óra- és ékszerjavítás|
+shoe_repair|Cipészet|
+tailoring_alterations|Szabóság és igazítás|
+upholstery|Kárpitozás|
+glazing|Üvegezés és ablakok|
+chimney_sweep|Kéményseprés|
+pest_control|Kártevőirtás|
+pool_maintenance|Medencekarbantartás|
+window_cleaning|Ablaktisztítás|
+car_wash|Autómosó|
+car_rental|Autókölcsönzés|
+bike_scooter_rental|Kerékpár- és rollerkölcsönzés|
+funeral_services|Temetkezés|
