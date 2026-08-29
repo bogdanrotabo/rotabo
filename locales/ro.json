@@ -720,6 +720,16 @@
     "submit": "Continuă spre plată",
     "error": "Ceva nu a mers bine. Te rugăm să încerci din nou."
   },
+  "company_form": {
+    "name_label": "Numele firmei",
+    "domain_label": "Domeniul tău",
+    "domain_placeholder": "Scrie ce faceți",
+    "domain_hint": "După asta sunt căutate firmele. Alege-l pe cel mai apropiat.",
+    "domain_error": "Alege domeniul din listă.",
+    "website_label": "Site web (opțional)",
+    "regno_label": "Număr de registru sau TVA (opțional)",
+    "regno_hint": "Se păstrează așa cum îl scrii. Rotabo nu îl verifică la niciun registru și nici nu pretinde asta."
+  },
   "generic_form": {
     "name_label": "Numele tău",
     "phone_label": "Număr de telefon",

@@ -37,43 +37,58 @@ function json(body: unknown, status = 200) {
   });
 }
 
-// The 113 fields from domains.js, which is where the list is edited and
-// where the search on the business side reads it from. Regenerate with:
+// The 113 fields from domains.js, each with the Rotabo category it lands in.
+// domains.js is where the list is edited and where the business-side search
+// reads it; this is the same pairs. Regenerate with:
 //
-//   grep -oP '^\s*\["\K[a-z0-9_]+' domains.js
+//   grep -oP '^\s*\["\K[a-z0-9_]+", "[a-z]+' domains.js
 //
-// Kept as a real list rather than a shape check so a typo cannot quietly
-// create a company filed under a domain nothing searches for.
-const VALID_DOMAINS = [
-  "taxi","ride_hailing","chauffeur","driving_school","translation",
-  "interpreting","sworn_translation","language_school","removals",
-  "international_removals","courier","freight_forwarding",
-  "refrigerated_transport","haulage","storage_warehousing",
-  "customs_brokerage","excavation","crane_hire","scaffolding","demolition",
-  "concrete_works","surveying","tool_hire","machinery_rental",
-  "generator_hire","electrical_installation","plumbing","heating_hvac",
-  "air_conditioning","painting_decorating","carpentry","flooring","roofing",
-  "locksmith","cleaning_services","gardening_landscaping","renovation",
-  "car_repair","mobile_mechanic","tyre_service","bodywork_paint",
-  "towing_recovery","childcare","elderly_care","home_nursing",
-  "private_tutoring","music_lessons","sports_coaching","it_training",
-  "vocational_training","holiday_lettings","guesthouse_bnb",
-  "property_management","veterinary","dog_walking","pet_grooming",
-  "general_practice","dentistry","physiotherapy","psychology","pharmacy",
-  "optometry","medical_laboratory","software_development","web_development",
-  "it_support","cybersecurity","data_ai","cloud_hosting","accounting",
-  "audit_tax","legal_services","hr_recruitment","management_consulting",
-  "insurance_brokerage","real_estate_agency","architecture","manufacturing",
-  "cnc_machining","metalwork_welding","restaurant","catering","hotel",
-  "event_management","agriculture","forestry","waste_recycling",
-  "renewable_energy","marketing_agency","graphic_design","photography",
-  "video_production","printing_signage","wholesale","ecommerce",
-  "security_services","shop_general","shop_bicycle","shop_auto_parts",
-  "shop_hardware","shop_furniture","shop_electronics","shop_clothing",
-  "shop_grocery","shop_sports","shop_books","shop_florist","shop_pet",
-  "motorcycle_repair","hairdressing","beauty_salon","massage_therapy",
-  "fitness_training"
-];
+// The category is taken from here rather than from the form, so a company
+// filed under "plumbing" is in "build" because domains.js says so -- the two
+// cannot drift apart, whatever a request claims.
+const DOMAIN_CATEGORY: Record<string, string> = {
+  taxi:"drive",ride_hailing:"drive",chauffeur:"drive",
+  driving_school:"drive",translation:"translator",interpreting:"translator",
+  sworn_translation:"translator",language_school:"translator",
+  removals:"move",international_removals:"move",courier:"move",
+  freight_forwarding:"move",refrigerated_transport:"move",haulage:"move",
+  storage_warehousing:"move",customs_brokerage:"move",excavation:"build",
+  crane_hire:"build",scaffolding:"build",demolition:"build",
+  concrete_works:"build",surveying:"build",tool_hire:"tools",
+  machinery_rental:"tools",generator_hire:"tools",
+  electrical_installation:"home",plumbing:"home",heating_hvac:"home",
+  air_conditioning:"home",painting_decorating:"home",carpentry:"home",
+  flooring:"home",roofing:"home",locksmith:"home",cleaning_services:"home",
+  gardening_landscaping:"home",renovation:"home",car_repair:"auto",
+  mobile_mechanic:"auto",tyre_service:"auto",bodywork_paint:"auto",
+  towing_recovery:"auto",childcare:"care",elderly_care:"care",
+  home_nursing:"care",private_tutoring:"learn",music_lessons:"learn",
+  sports_coaching:"learn",it_training:"learn",vocational_training:"learn",
+  holiday_lettings:"stay",guesthouse_bnb:"stay",property_management:"stay",
+  veterinary:"pets",dog_walking:"pets",pet_grooming:"pets",
+  general_practice:"other",dentistry:"other",physiotherapy:"other",
+  psychology:"other",pharmacy:"other",optometry:"other",
+  medical_laboratory:"other",software_development:"other",
+  web_development:"other",it_support:"other",cybersecurity:"other",
+  data_ai:"other",cloud_hosting:"other",accounting:"other",
+  audit_tax:"other",legal_services:"other",hr_recruitment:"other",
+  management_consulting:"other",insurance_brokerage:"other",
+  real_estate_agency:"other",architecture:"other",manufacturing:"other",
+  cnc_machining:"other",metalwork_welding:"other",restaurant:"other",
+  catering:"other",hotel:"other",event_management:"other",
+  agriculture:"other",forestry:"other",waste_recycling:"other",
+  renewable_energy:"other",marketing_agency:"other",graphic_design:"other",
+  photography:"other",video_production:"other",printing_signage:"other",
+  wholesale:"other",ecommerce:"other",security_services:"other",
+  shop_general:"other",shop_bicycle:"other",shop_auto_parts:"auto",
+  shop_hardware:"tools",shop_furniture:"home",shop_electronics:"other",
+  shop_clothing:"other",shop_grocery:"other",shop_sports:"other",
+  shop_books:"other",shop_florist:"other",shop_pet:"pets",
+  motorcycle_repair:"auto",hairdressing:"other",beauty_salon:"other",
+  massage_therapy:"other",fitness_training:"other"
+};
+
+const VALID_ROLES = ["seeking", "offering"];
 
 function nonEmptyString(v: unknown): string {
   return typeof v === "string" ? v.trim() : "";
@@ -97,6 +112,7 @@ Deno.serve(async (req: Request) => {
   const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
   const token = typeof body.token === "string" ? body.token.trim() : "";
   const domain = body.domain;
+  const role = body.role;
   const name = nonEmptyString(body.name);
   const phone = nonEmptyString(body.phone);
   const city = nonEmptyString(body.city);
@@ -105,7 +121,15 @@ Deno.serve(async (req: Request) => {
   const countryCode = /^[A-Z]{2}$/.test(countryCodeRaw) ? countryCodeRaw : null;
 
   if (!email || !token) return json({ error: "missing verification" }, 400);
-  if (VALID_DOMAINS.indexOf(domain) === -1) return json({ error: "invalid domain" }, 400);
+  /* hasOwnProperty, not a plain lookup: DOMAIN_CATEGORY["constructor"]
+     answers with a function off Object's prototype, which is truthy, and a
+     request naming one of those would sail past this check and fail later
+     against the category constraint as a 500 instead of an honest 400. */
+  const known = typeof domain === "string"
+    && Object.prototype.hasOwnProperty.call(DOMAIN_CATEGORY, domain);
+  const category = known ? DOMAIN_CATEGORY[domain] : "";
+  if (!category) return json({ error: "invalid domain" }, 400);
+  if (VALID_ROLES.indexOf(role) === -1) return json({ error: "invalid role" }, 400);
   if (!name || !phone || !city || !country) {
     return json({ error: "name, phone, city, and country are required" }, 400);
   }
@@ -141,6 +165,8 @@ Deno.serve(async (req: Request) => {
   const row: Record<string, unknown> = {
     name: name.slice(0, 200),
     domain,
+    category,
+    role,
     email,
     phone: phone.slice(0, 60),
     city: city.slice(0, 120),

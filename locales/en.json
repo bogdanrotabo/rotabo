@@ -718,6 +718,16 @@
     "submit": "Continue to payment",
     "error": "Something went wrong. Please try again."
   },
+  "company_form": {
+    "name_label": "Company name",
+    "domain_label": "Your field",
+    "domain_placeholder": "Start typing what you do",
+    "domain_hint": "This is what companies are searched by. Pick the closest one.",
+    "domain_error": "Pick your field from the list.",
+    "website_label": "Website (optional)",
+    "regno_label": "Company or VAT number (optional)",
+    "regno_hint": "Stored as you write it. Rotabo does not check it against any register, and does not claim to."
+  },
   "generic_form": {
     "name_label": "Your name",
     "phone_label": "Phone number",

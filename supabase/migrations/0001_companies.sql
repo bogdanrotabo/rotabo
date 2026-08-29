@@ -78,3 +78,60 @@ as $$
 $$;
 
 grant execute on function public.companies_public() to anon, authenticated;
+
+-- Applied 2026-08-29, second pass: the twelve cards came back on the
+-- business side, so a company registers the same way a person does -- "I
+-- need this" or "I offer this" -- and needs the two columns a listing has.
+-- Without the role, a firm looking for a haulier and a haulier looking for
+-- work are the same row.
+--
+-- category is not sent by the browser. create-company derives it from the
+-- domain using the same slug-to-category pairs domains.js holds, so a
+-- company filed under "plumbing" is in "home" because domains.js says so.
+
+alter table public.companies
+  add column if not exists category text,
+  add column if not exists role text;
+
+update public.companies set category = 'other' where category is null;
+update public.companies set role = 'offering' where role is null;
+
+alter table public.companies
+  alter column category set not null,
+  alter column role set not null,
+  alter column role set default 'offering';
+
+alter table public.companies drop constraint if exists companies_category_check;
+alter table public.companies add constraint companies_category_check
+  check (category in ('drive','translator','move','build','tools','home',
+                      'auto','care','learn','stay','pets','other'));
+
+alter table public.companies drop constraint if exists companies_role_check;
+alter table public.companies add constraint companies_role_check
+  check (role in ('seeking','offering'));
+
+create index if not exists companies_category_role_idx
+  on public.companies (category, role);
+
+-- The signature grows, so the old one goes first: Postgres will not swap
+-- the return type of a function under it.
+drop function if exists public.companies_public();
+
+create function public.companies_public()
+returns table (
+  name text, domain text, category text, role text,
+  country text, city text, website_url text, created_at timestamptz
+)
+language sql
+stable
+security definer
+set search_path to 'public'
+as $$
+  select c.name, c.domain, c.category, c.role,
+         c.country, c.city, c.website_url, c.created_at
+  from public.companies c
+  where c.visible_until is not null and c.visible_until > now()
+  order by c.created_at;
+$$;
+
+grant execute on function public.companies_public() to anon, authenticated;

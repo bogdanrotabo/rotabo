@@ -724,12 +724,17 @@
 
 
   /* The professional search. It exists only on the business side, where it
-     stands in place of the twelve cards rather than above them: a company
+     stands above the twelve cards rather than in place of them: a company
      arrives knowing its trade, not knowing which of twelve consumer
-     categories that trade lives in. The cards are what it finds. */
+     categories that trade lives in. The search is how it finds the card;
+     the card is where it registers.
+
+     The cards were hidden here for a while and the search sent every field
+     to Rotabo Market. That left the business side with one door and no way
+     to browse, and it put company registrations into the private table --
+     which is the whole reason companies have their own now. */
   .pro-search{display:none;}
   html[data-mode="business"] .pro-search{display:block;margin-top:34px;}
-  html[data-mode="business"] .category-grid{display:none;}
   html[data-mode="business"] .cat-strip{display:none;}
   /* Written for a person, not a company: "how it works" for someone who
      needs a hand, "need something else", the Bridge, and the invitation to
@@ -746,6 +751,9 @@
      seven-line window is a list nobody scrolls; capped against the viewport
      so it cannot grow taller than the screen it opens on. */
   html[data-mode="business"] .cascade{max-height:min(1300px, 78vh);}
+  .biz-only{display:none;}
+  html[data-mode="business"] .biz-only{display:block;}
+
   .cat-icon--mark{
     display:flex;align-items:center;justify-content:center;gap:5px;
     line-height:0;margin-bottom:14px;
@@ -756,11 +764,15 @@
   #cat-other h3{margin-bottom:26px;}
   .chip-emoji--mark{display:inline-flex;align-items:center;gap:3px;line-height:0;}
   .chip-emoji--mark svg{width:11px;height:14px;}
-  html[data-mode="business"] .category-grid.pro-open{display:grid;}
-  /* Only one card exists on this side. Every field lands in Rotabo Market,
-     so the other eleven are not hidden-until-asked, they are not there. */
-  html[data-mode="business"] .category-card:not(#cat-other){display:none;}
-  html[data-mode="business"] .category-grid.pro-open{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;}
+  /* Picked out of the search, a card is lit for a moment rather than left
+     for the visitor to find again in a grid of twelve. The ring fades on
+     its own: a permanent highlight would still be there next time and mean
+     nothing. */
+  @keyframes catFound{from{box-shadow:0 0 0 3px var(--diamond-a);}to{box-shadow:0 0 0 3px transparent;}}
+  .category-card.is-found{animation:catFound 2.4s ease-out 1;}
+  @media (prefers-reduced-motion: reduce){
+    .category-card.is-found{animation:none;box-shadow:0 0 0 3px var(--diamond-a);}
+  }
 
   .pro-search .cascade-wrap{max-width:620px;margin:0 auto;}
   .pro-search__box{
@@ -2062,8 +2074,17 @@
     <p class="modal-sub" id="genericModalSub">Tell us who you are and where you are.</p>
     <form id="genericListingForm" novalidate>
       <div class="form-field">
-        <label for="gl_name" data-i18n="generic_form.name_label">Your name</label>
+        <label for="gl_name" id="gl_name_label" data-i18n="generic_form.name_label">Your name</label>
         <input type="text" id="gl_name" name="name" required autocomplete="name">
+      </div>
+      <!-- The three a company has and a person does not. One form serves
+           both sides: a second one would be a second set of thirty-eight
+           translations to keep in step, and they would not stay in step. -->
+      <div class="form-field biz-only">
+        <label for="gl_domain" data-i18n="company_form.domain_label">Your field</label>
+        <input type="text" id="gl_domain" name="domain" autocomplete="off" class="has-cascade"
+               data-i18n-placeholder="company_form.domain_placeholder" placeholder="Start typing what you do">
+        <span class="field-hint" data-i18n="company_form.domain_hint">This is what companies are searched by. Pick the closest one.</span>
       </div>
       <div class="form-field">
         <label for="gl_email" data-i18n="generic_form.email_label">Email</label>
@@ -2087,6 +2108,15 @@
         <label for="gl_address" data-i18n="generic_form.address_label">Address</label>
         <input type="text" id="gl_address" name="address" required autocomplete="street-address">
         <span class="field-hint" data-i18n="visibility.address_hint">Your address is shown only to viewers who paid for full access, same as your phone number.</span>
+      </div>
+      <div class="form-field biz-only">
+        <label for="gl_website" data-i18n="company_form.website_label">Website (optional)</label>
+        <input type="text" id="gl_website" name="website_url" autocomplete="url" placeholder="rotabo.app">
+      </div>
+      <div class="form-field biz-only">
+        <label for="gl_regno" data-i18n="company_form.regno_label">Company or VAT number (optional)</label>
+        <input type="text" id="gl_regno" name="reg_no" autocomplete="off">
+        <span class="field-hint" data-i18n="company_form.regno_hint">Stored as you write it. Rotabo does not check it against any register, and does not claim to.</span>
       </div>
       <div class="form-field">
         <label for="gl_note" data-i18n="generic_form.note_label">Tell us more (optional)</label>
@@ -2527,6 +2557,10 @@
     var country = document.getElementById(pair[0]);
     var city = document.getElementById(pair[1]);
     attachCascade(country, localizedCountries, true);
+    /* Exposed: the field-of-work box on the company form needs the same
+       cascade, and it is built in the business script far below this one.
+       One implementation, not two that drift. */
+    window.RotaboAttachCascade = attachCascade;
     attachCascade(city, function(){ return citiesForCountryName(country ? country.value : ""); });
   });
 
@@ -2699,6 +2733,42 @@
   // pending sponsors row instead of a pending listing, and a checkout
   // whose client_reference_id ("sponsor-<id>") tells the webhook which
   // name to make visible on the supporters list once the payment lands.
+  /* The company half of createListing. Same shape -- post, read the answer,
+     tell the form -- against create-company, which writes public.companies.
+     A company registration is free for twelve months and there is no
+     checkout after it, so unlike createSponsor this one ends here. */
+  function createCompany(payload, token, form, errorEl){
+    return fetch(FUNCTIONS_URL + "/create-company", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.assign({}, payload, {
+        token: token,
+        country_code: countryIsoFor(payload.country)
+      }))
+    }).then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+      .then(function(result){
+        if (!result.ok) {
+          setSubmitting(form, false);
+          showError(errorEl);
+          return;
+        }
+        try {
+          localStorage.setItem("rotabo_company", result.json.id);
+          /* Where to come back to. after-payment.html works out its own
+             destination from rotabo_last_listing, which only a listing ever
+             writes -- so without this note a company that had just
+             registered was handed the private side of the site, which is
+             the one place its registration does not appear. */
+          localStorage.setItem("rotabo_return_to", "/business.html");
+        } catch (e) { /* storage can be denied; the row is written either way */ }
+        window.location.href = "/after-payment.html?free=1&company=1";
+      })
+      .catch(function(){
+        setSubmitting(form, false);
+        showError(errorEl);
+      });
+  }
+
   function createSponsor(payload, token, form, errorEl){
     return fetch(FUNCTIONS_URL + "/create-sponsor", {
       method: "POST",
@@ -2740,7 +2810,9 @@
   // with an email promising it "goes live together with your listing",
   // for a listing they were never making.
   function purposeFor(createFn){
-    return createFn === createSponsor ? "sponsor" : "listing";
+    if (createFn === createSponsor) return "sponsor";
+    if (createFn === createCompany) return "company";
+    return "listing";
   }
 
   function submitWithVerification(form, payload, errorEl, sourceModalId, createFn){
@@ -3055,6 +3127,25 @@
     var title = window.rotaboT(titleKey), lead = window.rotaboT(leadKey);
     if (title !== titleKey) document.getElementById("genericModalTitle").textContent = title;
     if (lead !== leadKey) document.getElementById("genericModalSub").textContent = lead;
+
+    /* On the business side the same form is asking a company for its name,
+       not a person for theirs, and the field it works in is required there
+       and absent here. If the visitor reached this card through the search
+       above, the field they typed is already known -- asking again, one
+       second later, is how a registration gets abandoned. */
+    if (document.documentElement.getAttribute("data-mode") === "business") {
+      var lbl = document.getElementById("gl_name_label");
+      var t = window.rotaboT("company_form.name_label");
+      if (lbl && t !== "company_form.name_label") lbl.textContent = t;
+      var dom = document.getElementById("gl_domain");
+      if (dom) {
+        dom.required = true;
+        if (!dom.value && window.RotaboPickedDomain && window.RotaboDomainLabel) {
+          dom.value = window.RotaboDomainLabel(window.RotaboPickedDomain);
+        }
+      }
+    }
+
     openModal("genericListingModal");
   };
 
@@ -3081,6 +3172,45 @@
       address: form.address.value.trim(),
       note: form.note.value.trim() || null
     };
+
+    /* The fork. Same form, same emailed code, two tables: a company
+       registering on the business side is written to public.companies by
+       create-company, a person to public.listings by create-listing. This
+       is the line that keeps the two apart, and it is the reason private
+       individuals will not turn up under "registered companies" again.
+
+       The domain goes as a slug, not as the label that was typed: the label
+       is translated and "Instalatii sanitare" is not a key anything can be
+       filed under. */
+    if (document.documentElement.getAttribute("data-mode") === "business") {
+      var domInput = form.domain;
+      var slug = window.RotaboDomainSlug
+        ? window.RotaboDomainSlug(domInput ? domInput.value : "")
+        : "";
+      if (!slug) {
+        /* Said at the field rather than in the form's one error line, which
+           reads "something went wrong" -- true of a dead server, not of a
+           field typed as "plumbng". setCustomValidity puts it where the
+           mistake is; the input listener clears it on the next keystroke,
+           or the field stays invalid forever. */
+        setSubmitting(form, false);
+        if (domInput) {
+          var msg = window.rotaboT("company_form.domain_error");
+          domInput.setCustomValidity(msg === "company_form.domain_error"
+            ? "Pick your field from the list." : msg);
+          domInput.reportValidity();
+        }
+        return;
+      }
+      // category is not sent: create-company derives it from the domain, so
+      // the two cannot disagree.
+      delete payload.category;
+      payload.domain = slug;
+      payload.website_url = form.website_url ? form.website_url.value.trim() : "";
+      payload.reg_no = form.reg_no ? form.reg_no.value.trim() : "";
+      submitWithVerification(form, payload, errorEl, "genericListingModal", createCompany);
+      return;
+    }
 
     submitWithVerification(form, payload, errorEl, "genericListingModal");
   });
@@ -4484,29 +4614,72 @@ if ("serviceWorker" in navigator) {
     if (none) none.hidden = true;
   }
 
-  /* One card, the one that carries the actions. The others stay down:
-     twelve cards is the thing the business side does not do.
+  /* Scrolls to a card and lights it. It used to hide the other eleven,
+     which is what made the business side a single door; all twelve stand
+     now, the same as the private side, so this only has to say which one.
 
      Exposed, because the hundred-places box below has free rows that say
      "register your company" and they lead to the same place. Two copies of
      this would drift the first time one of them changed. */
   window.RotaboShowCategory = function(cat){
-    Object.keys(cards).forEach(function(k){ cards[k].hidden = (k !== cat); });
-    grid.classList.toggle("pro-open", !!cards[cat]);
-    if (cards[cat] && cards[cat].scrollIntoView) {
-      cards[cat].scrollIntoView({ behavior: "smooth", block: "center" });
-    }
+    var card = cards[cat];
+    if (!card) return;
+    Object.keys(cards).forEach(function(k){ cards[k].classList.remove("is-found"); });
+    if (card.scrollIntoView) card.scrollIntoView({ behavior: "smooth", block: "center" });
+    // Read forces the class change to land as a new animation rather than a
+    // no-op when the same card is picked twice running.
+    void card.offsetWidth;
+    card.classList.add("is-found");
   };
 
-  /* Every field ends in the same place on this side. A company registers in
-     Rotabo Market whatever it does -- the hundred and thirteen are how it
-     finds itself, not twelve doors it has to pick the right one of. The
-     category the domain maps to still matters elsewhere; here it does not. */
+  /* domains.js already says which of the twelve each field lands in --
+     plumbing is home, haulage is move -- so a company that searches its own
+     trade is taken to the card that trade belongs to, not to Rotabo Market
+     for everything. The slug is remembered because the registration form
+     asks for the field too, and having just named it, being asked again is
+     the kind of thing that ends a registration. */
+  /* The label a slug reads as, and the slug a label came from. The form
+     stores the slug -- "plumbing" -- while the box shows whatever the
+     dictionary calls it, so both directions are needed and both must agree
+     with the search bar above, which is why they live here rather than
+     being written a second time next to the form.
+
+     Matched with accents off and case folded, so a company that types
+     "instalatii sanitare" for "Instalații sanitare" is not turned away over
+     the keyboard in front of it. */
+  window.RotaboDomainLabel = function(slug){ return label(slug); };
+
+  window.RotaboDomainSlug = function(text){
+    var want = fold(String(text || ""));
+    if (!want) return "";
+    var hit = "";
+    window.RotaboDomains.all().forEach(function(d){
+      if (!hit && fold(label(d.slug)) === want) hit = d.slug;
+    });
+    return hit;
+  };
+
+  /* The same hundred and thirteen, dropping under the field on the form.
+     Deferred to the next tick because the cascade helper is defined in an
+     earlier script but the form field must exist first. */
+  var domField = document.getElementById("gl_domain");
+  if (domField && window.RotaboAttachCascade) {
+    window.RotaboAttachCascade(domField, function(){
+      return window.RotaboDomains.all().map(function(d){ return label(d.slug); });
+    });
+    // A custom message set by the submit handler must not outlive the fix.
+    domField.addEventListener("input", function(){ domField.setCustomValidity(""); });
+  }
+
+  var CAT_OF = {};
+  window.RotaboDomains.all().forEach(function(d){ CAT_OF[d.slug] = d.cat; });
+
   function pick(slug){
     input.value = label(slug);
     close();
     if (none) none.hidden = true;
-    window.RotaboShowCategory("other");
+    window.RotaboPickedDomain = slug;
+    window.RotaboShowCategory(CAT_OF[slug] || "other");
   }
 
   /* The two doors under the free line. On the personal side they jump to
@@ -4541,7 +4714,11 @@ if ("serviceWorker" in navigator) {
   input.addEventListener("focus", function(){ show(input.value); });
   input.addEventListener("click", function(){ show(input.value); });
   input.addEventListener("input", function(){
-    grid.classList.remove("pro-open");
+    // Typing again means the last pick is being reconsidered, so the card it
+    // lit stops being the answer.
+    Array.prototype.forEach.call(grid.querySelectorAll(".category-card"), function(c){
+      c.classList.remove("is-found");
+    });
     show(input.value);
   });
   input.addEventListener("keydown", function(e){

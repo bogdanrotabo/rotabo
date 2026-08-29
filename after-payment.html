@@ -164,7 +164,13 @@
     // reads it, believes a checkout is landing, and opens the modal on
     // "Confirming your payment…" for three minutes.
     try { localStorage.removeItem('rotabo_viewer_paid_at'); } catch (e) {}
-    gtag('event', 'listing_published', { event_callback: go, event_timeout: 1200 });
+    /* A company registering is not a listing being published. Both are
+       free and neither is a purchase, but they are different things and
+       Ads imports them separately -- counting company registrations as
+       listings would hide whether the business side works at all. */
+    var isCompany = /(?:^|[?&])company=1(?:&|$)/.test(location.search);
+    gtag('event', isCompany ? 'company_registered' : 'listing_published',
+         { event_callback: go, event_timeout: 1200 });
   } else {
     gtag('event', 'purchase', ev);
   }
