@@ -4724,19 +4724,50 @@ if ("serviceWorker" in navigator) {
     return 2;
   }
 
+  /* Alphabetical, in the language on screen.
+
+     domains.js is written grouped by the Rotabo category each field belongs
+     to -- the four driving trades together, the eight moving ones together.
+     That is the order that keeps it maintainable and the wrong one to read:
+     a company opening the box saw a hundred and thirteen trades in what
+     looks, to anyone scanning for their own, like no order at all.
+
+     Sorted by the label rather than by the slug, because the label is what
+     is on screen: "Instalatii sanitare" files under I in Romanian and
+     "Plumbing" under P in English. And with the reader's collation, since
+     alphabetical is not the same list everywhere -- Swedish sorts A-diaeresis
+     after Z, German under A. The country list has done this since it was
+     written; the field list simply never did.
+
+     Decorated before sorting: label() goes through the dictionary, and a
+     sort of a hundred and thirteen items would otherwise call it some
+     fifteen hundred times on every keystroke. */
+  function sortByLabel(list){
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    return list.map(function(d){ return { d: d, k: label(d.slug) }; })
+      .sort(function(a, b){ return a.k.localeCompare(b.k, lang); })
+      .map(function(x){ return x.d; });
+  }
+
   function matches(q){
     var all = window.RotaboDomains.all();
     var f = fold(q).trim();
-    if (!f) return all;
+    if (!f) return sortByLabel(all);
     var words = f.split(/\s+/).filter(Boolean);
+    var lang = document.documentElement.getAttribute("lang") || "en";
     var scored = [];
-    all.forEach(function(d, i){
+    all.forEach(function(d){
       var r = rank(d, words);
-      if (r >= 0) scored.push({ d: d, r: r, i: i });
+      if (r >= 0) scored.push({ d: d, r: r, k: label(d.slug) });
     });
-    // Original order inside a rank, so the list does not reshuffle itself
-    // between two keystrokes that happen to score the same.
-    scored.sort(function(a, b){ return a.r - b.r || a.i - b.i; });
+    /* Rank first, alphabet inside it. The rank is what puts "Electrical
+       installation" above "Generator hire" for somebody typing "instal", and
+       a strictly alphabetical list would bury the word they actually typed.
+       Inside a rank it is now the reader's alphabet instead of the order
+       domains.js happens to be written in -- and it still cannot reshuffle
+       between keystrokes, because the order is a property of the name rather
+       than of the position. */
+    scored.sort(function(a, b){ return a.r - b.r || a.k.localeCompare(b.k, lang); });
     return scored.map(function(s){ return s.d; });
   }
 
@@ -4766,9 +4797,12 @@ if ("serviceWorker" in navigator) {
     var want = fold(q);
     var inSlugs = {};
     slugs.forEach(function(d){ inSlugs[d.slug] = 1; });
+    var lang = document.documentElement.getAttribute("lang") || "en";
     return all.filter(function(c){
       if (want && fold(c.name).indexOf(want) !== -1) return true;
       return !!inSlugs[c.domain];
+    }).sort(function(a, b){
+      return String(a.name || "").localeCompare(String(b.name || ""), lang);
     }).slice(0, 40);
   }
 
