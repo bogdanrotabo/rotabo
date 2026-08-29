@@ -111,3 +111,53 @@ shop_books|Bookshop and stationery|Librărie și papetărie
 shop_florist|Florist|Florărie
 shop_pet|Pet shop|Magazin pentru animale
 motorcycle_repair|Motorcycle repair|Service moto
+bar|Bar|Bar
+kebab_shawarma|Kebab and shawarma|Kebab și șaorma
+pizzeria|Pizzeria|Pizzerie
+fast_food|Fast food|Fast-food
+bakery|Bakery|Brutărie
+pastry_shop|Pastry and cake shop|Cofetărie și patiserie
+coffee_shop|Coffee shop|Cafenea
+food_truck|Food truck|Rulotă cu mâncare
+butcher|Butcher|Măcelărie
+ice_cream|Ice cream shop|Gelaterie
+winery|Winery|Cramă
+brewery|Brewery|Fabrică de bere
+nightclub|Nightclub and disco|Club de noapte și discotecă
+beach_club|Beach bar and beach club|Bar de plajă și beach club
+bowling_billiards|Bowling and billiards|Bowling și biliard
+travel_agency|Travel agency|Agenție de turism
+nail_salon|Nail salon, manicure and pedicure|Salon de unghii, manichiură și pedichiură
+barber|Barber|Frizerie
+tattoo_piercing|Tattoo and piercing|Tatuaje și piercing
+spa_sauna|Spa and sauna|Spa și saună
+cosmetics_shop|Cosmetics shop|Magazin de cosmetice
+dry_cleaning|Dry cleaning and laundry|Curățătorie chimică și spălătorie
+podiatry|Podiatry and foot care|Podologie și îngrijirea piciorului
+dental_laboratory|Dental laboratory|Laborator dentar
+orthodontics|Orthodontics|Ortodonție
+dermatology|Dermatology|Dermatologie
+paediatrics|Paediatrics|Pediatrie
+gynaecology|Gynaecology|Ginecologie
+cardiology|Cardiology|Cardiologie
+medical_imaging|Medical imaging|Imagistică medicală
+speech_therapy|Speech therapy|Logopedie
+nutrition_dietetics|Nutrition and dietetics|Nutriție și dietetică
+bicycle_repair|Bicycle repair|Reparații biciclete
+scooter_repair|Scooter and moped repair|Reparații scutere și mopede
+appliance_repair|Appliance repair|Reparații electrocasnice
+phone_repair|Phone and tablet repair|Reparații telefoane și tablete
+computer_repair|Computer repair|Reparații calculatoare
+watch_jewellery_repair|Watch and jewellery repair|Reparații ceasuri și bijuterii
+shoe_repair|Shoe repair|Cizmărie
+tailoring_alterations|Tailoring and alterations|Croitorie și retușuri
+upholstery|Upholstery|Tapițerie
+glazing|Glazing and windows|Geamuri și tâmplărie PVC
+chimney_sweep|Chimney sweeping|Coșerit
+pest_control|Pest control|Deratizare și dezinsecție
+pool_maintenance|Swimming pool maintenance|Întreținere piscine
+window_cleaning|Window cleaning|Spălat geamuri
+car_wash|Car wash|Spălătorie auto
+car_rental|Car rental|Închirieri auto
+bike_scooter_rental|Bicycle and scooter rental|Închirieri biciclete și trotinete
+funeral_services|Funeral services|Servicii funerare

@@ -37,7 +37,7 @@ function json(body: unknown, status = 200) {
   });
 }
 
-// The 113 fields from domains.js, each with the Rotabo category it lands in.
+// The 163 fields from domains.js, each with the Rotabo category it lands in.
 // domains.js is where the list is edited and where the business-side search
 // reads it; this is the same pairs. Regenerate with:
 //
@@ -85,7 +85,23 @@ const DOMAIN_CATEGORY: Record<string, string> = {
   shop_clothing:"other",shop_grocery:"other",shop_sports:"other",
   shop_books:"other",shop_florist:"other",shop_pet:"pets",
   motorcycle_repair:"auto",hairdressing:"other",beauty_salon:"other",
-  massage_therapy:"other",fitness_training:"other"
+  massage_therapy:"other",fitness_training:"other",bar:"other",
+  kebab_shawarma:"other",pizzeria:"other",fast_food:"other",bakery:"other",
+  pastry_shop:"other",coffee_shop:"other",food_truck:"other",
+  butcher:"other",ice_cream:"other",winery:"other",brewery:"other",
+  nightclub:"other",beach_club:"stay",bowling_billiards:"other",
+  travel_agency:"stay",nail_salon:"other",barber:"other",
+  tattoo_piercing:"other",spa_sauna:"other",cosmetics_shop:"other",
+  dry_cleaning:"other",podiatry:"other",dental_laboratory:"other",
+  orthodontics:"other",dermatology:"other",paediatrics:"other",
+  gynaecology:"other",cardiology:"other",medical_imaging:"other",
+  speech_therapy:"care",nutrition_dietetics:"other",bicycle_repair:"other",
+  scooter_repair:"auto",appliance_repair:"home",phone_repair:"other",
+  computer_repair:"other",watch_jewellery_repair:"other",
+  shoe_repair:"other",tailoring_alterations:"other",upholstery:"home",
+  glazing:"build",chimney_sweep:"home",pest_control:"home",
+  pool_maintenance:"home",window_cleaning:"home",car_wash:"auto",
+  car_rental:"drive",bike_scooter_rental:"drive",funeral_services:"other"
 };
 
 const VALID_ROLES = ["seeking", "offering"];
