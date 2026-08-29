@@ -62,6 +62,14 @@
   /* Not every answer from this box is a refusal. "Check your inbox" is the
      normal end of setting a password for the first time, and saying it in
      the red used for a wrong password reads as a failure. */
+  /* White, not the violet the main button wears: two filled buttons of equal
+     weight would make the card ask which one is the way in. */
+  .alt-btn{
+    width:100%;padding:12px 20px;margin-top:12px;border-radius:12px;
+    border:1px solid var(--border);background:#fff;color:var(--text-dark);
+    font:inherit;font-weight:700;cursor:pointer;
+  }
+  .alt-btn:disabled{opacity:.5;cursor:default;}
   .login-said{color:var(--text-dark);font-size:.9rem;margin-top:12px;display:none;}
   .login-said.show{display:block;}
   .linkish{
@@ -193,9 +201,15 @@
     </form>
     <p class="login-error" id="loginError">Wrong email or password. Try again.</p>
     <p class="login-said" id="loginSaid"></p>
+    <!-- Three ways in, in the order they are actually needed.
+         Google first because it asks for nothing to remember and lands with
+         exactly the address Google already knows; the password reset second,
+         for whoever wants a password; making an account last, because by now
+         there is usually one. -->
+    <button type="button" class="alt-btn" id="googleBtn">Continue with Google</button>
     <p class="login-note">
-      The same account as <a href="/account.html">rotabo.app/account</a>.<br>
-      <button type="button" class="linkish" id="firstTimeBtn">First time here &mdash; set my password</button>
+      Forgot it? <button type="button" class="linkish" id="resetBtn">Set a new password by email</button><br>
+      No account on this address yet? <button type="button" class="linkish" id="firstTimeBtn">Make one</button>
     </p>
   </div>
 
@@ -612,6 +626,69 @@
     el.textContent = message;
     el.classList.add("show");
   }
+
+  /* Signing in with Google, and why it lands on the account page.
+
+     signInWithOAuth navigates the whole browser away and comes back to a URL
+     that Supabase has to have been told about in advance. /account.html is
+     that URL and has been since account.html was written; /admin.html is not,
+     and sending people to an address that is not allow-listed drops them on
+     the site root with a session they cannot see. So this goes there, and
+     from there this page opens on its own -- the session is already in the
+     browser by then, and the check at the bottom of this file finds it. */
+  document.getElementById("googleBtn").addEventListener("click", function(){
+    var gb = this;
+    if (!sb) {
+      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
+      return;
+    }
+    gb.disabled = true;
+    loginError.classList.remove("show");
+    sb.auth.signInWithOAuth({
+      provider: "google",
+      options: { redirectTo: location.origin + "/account.html" }
+    }).then(function(r){
+      if (r && r.error) { gb.disabled = false; loginFailed("Google sign-in did not start. Try again."); }
+    }).catch(function(){
+      gb.disabled = false;
+      loginFailed("Google sign-in did not start. Try again.");
+    });
+  });
+
+  /* Setting a new password when the old one is gone.
+
+     The recovery link has to come back to /account.html, which owns the
+     "type your new password" form. Pointed at this page instead it would
+     arrive with a valid recovery session and nowhere to spend it: the
+     password would never change and nothing would say why.
+
+     What comes back from Supabase is deliberately the same whether the
+     address has an account or not, so this box cannot be used to find out
+     who the admins are. */
+  document.getElementById("resetBtn").addEventListener("click", function(){
+    var email = emailInput.value.trim();
+    if (!email) { emailInput.focus(); return; }
+    if (!sb) {
+      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
+      return;
+    }
+    var btn = this;
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    loginError.classList.remove("show");
+
+    sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + "/account.html" })
+      .then(function(res){
+        btn.disabled = false;
+        btn.textContent = "Set a new password by email";
+        if (res && res.error) { loginFailed("Could not send the mail. Try again in a minute."); return; }
+        said("Mail sent to " + email + ". The link opens rotabo.app/account, where you type the new password — then come back here and press Enter.");
+      }, function(){
+        btn.disabled = false;
+        btn.textContent = "Set a new password by email";
+        loginFailed("Could not send the mail. Try again in a minute.");
+      });
+  });
 
   /* The first time, when there is no password yet.
 
