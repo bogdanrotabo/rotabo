@@ -405,7 +405,7 @@
     "see_who_btn": "看看这里有谁",
     "drive": {
       "name": "代驾",
-      "desc": "司机上门，为你驾驶你自己的车。"
+      "desc": "司机上门，为你驾驶你自己的车。我 + 我的车，都得平安到家。"
     },
     "translator": {
       "name": "翻译",
@@ -680,6 +680,10 @@
     "domain_hint": "公司就是按这个被搜索的。选择最接近的一个。",
     "domain_error": "请从列表中选择你的领域。",
     "website_label": "网站（可选）",
+    "logo_label": "您的标志（可选）",
+    "logo_hint": "PNG、JPEG 或 WebP，不超过 512 KB。出现在网站上之前会有人先看过。",
+    "logo_too_big": "这张图片超过 512 KB。请换一张小一些的。",
+    "logo_bad_type": "这个文件不是 PNG、JPEG 或 WebP 图片。",
     "regno_label": "公司或税务登记号（可选）",
     "regno_hint": "按你写的原样保存。Rotabo 不会在任何登记机构核对，也不声称核对。"
   },

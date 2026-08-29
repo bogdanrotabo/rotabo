@@ -405,7 +405,7 @@
     "see_who_btn": "Nézd meg, ki van itt",
     "drive": {
       "name": "Sofőr",
-      "desc": "Egy sofőr, aki hozzád jön, és a saját autódat vezeti."
+      "desc": "Egy sofőr, aki hozzád jön, és a saját autódat vezeti. Én + az autóm, mindkettőnknek haza kell jutnunk."
     },
     "translator": {
       "name": "Fordító",
@@ -680,6 +680,10 @@
     "domain_hint": "A cégeket ez alapján keresik. Válassza a legközelebbit.",
     "domain_error": "Válassza ki a szakterületét a listából.",
     "website_label": "Weboldal (nem kötelező)",
+    "logo_label": "Az Ön logója (nem kötelező)",
+    "logo_hint": "PNG, JPEG vagy WebP, legfeljebb 512 KB. Mielőtt megjelenne az oldalon, egy ember megnézi.",
+    "logo_too_big": "Ez a kép több mint 512 KB. Válasszon kisebbet.",
+    "logo_bad_type": "Ez a fájl nem PNG-, JPEG- vagy WebP-kép.",
     "regno_label": "Cégjegyzék- vagy adószám (nem kötelező)",
     "regno_hint": "Úgy tároljuk, ahogy leírja. A Rotabo semmilyen nyilvántartásban nem ellenőrzi, és nem is állítja, hogy megtenné."
   },

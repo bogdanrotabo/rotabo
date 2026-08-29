@@ -577,7 +577,7 @@
     "see_who_btn": "Guarda chi c'è",
     "drive": {
       "name": "Autista",
-      "desc": "Un autista che viene da te e guida la tua auto."
+      "desc": "Un autista che viene da te e guida la tua auto. Io + la mia auto dobbiamo tornare a casa."
     },
     "translator": {
       "name": "Traduttore",
@@ -871,6 +871,10 @@
     "domain_hint": "È così che si cercano le aziende. Scegli quello più vicino.",
     "domain_error": "Scegli il tuo settore dall'elenco.",
     "website_label": "Sito web (facoltativo)",
+    "logo_label": "Il tuo logo (facoltativo)",
+    "logo_hint": "PNG, JPEG o WebP, fino a 512 KB. Una persona lo guarda prima che compaia sul sito.",
+    "logo_too_big": "Questa immagine supera i 512 KB. Usane una più piccola.",
+    "logo_bad_type": "Questo file non è un'immagine PNG, JPEG o WebP.",
     "regno_label": "Partita IVA o numero REA (facoltativo)",
     "regno_hint": "Viene salvato come lo scrivi. Rotabo non lo verifica in nessun registro e non pretende di farlo."
   },

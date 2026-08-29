@@ -405,7 +405,7 @@
     "see_who_btn": "Skaties, kas ir šeit",
     "drive": {
       "name": "Šoferis",
-      "desc": "Šoferis, kurš atbrauc pie tevis un vada tavu pašu automašīnu."
+      "desc": "Šoferis, kurš atbrauc pie tevis un vada tavu pašu automašīnu. Es + mana mašīna, mums abiem jātiek mājās."
     },
     "translator": {
       "name": "Tulks",
@@ -680,6 +680,10 @@
     "domain_hint": "Pēc tā uzņēmumus meklē. Izvēlieties tuvāko.",
     "domain_error": "Izvēlieties savu jomu no saraksta.",
     "website_label": "Mājaslapa (nav obligāti)",
+    "logo_label": "Jūsu logotips (nav obligāti)",
+    "logo_hint": "PNG, JPEG vai WebP, līdz 512 KB. Pirms tas parādās vietnē, to apskata cilvēks.",
+    "logo_too_big": "Šis attēls pārsniedz 512 KB. Izvēlieties mazāku.",
+    "logo_bad_type": "Šis fails nav PNG, JPEG vai WebP attēls.",
     "regno_label": "Reģistrācijas vai PVN numurs (nav obligāti)",
     "regno_hint": "Tiek saglabāts tā, kā jūs to rakstāt. Rotabo to nepārbauda nevienā reģistrā un neapgalvo, ka pārbauda."
   },

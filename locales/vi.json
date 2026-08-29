@@ -405,7 +405,7 @@
     "see_who_btn": "Xem ai đang ở đây",
     "drive": {
       "name": "Tài xế",
-      "desc": "Một tài xế đến chỗ bạn và lái chính xe của bạn."
+      "desc": "Một tài xế đến chỗ bạn và lái chính xe của bạn. Tôi + xe của tôi, cả hai đều phải về đến nhà."
     },
     "translator": {
       "name": "Phiên dịch",
@@ -680,6 +680,10 @@
     "domain_hint": "Công ty được tìm theo mục này. Hãy chọn mục gần nhất.",
     "domain_error": "Chọn lĩnh vực của bạn từ danh sách.",
     "website_label": "Trang web (không bắt buộc)",
+    "logo_label": "Logo của bạn (không bắt buộc)",
+    "logo_hint": "PNG, JPEG hoặc WebP, tối đa 512 KB. Có người xem trước khi nó hiện trên trang.",
+    "logo_too_big": "Ảnh này lớn hơn 512 KB. Hãy dùng ảnh nhỏ hơn.",
+    "logo_bad_type": "Tệp này không phải ảnh PNG, JPEG hay WebP.",
     "regno_label": "Mã số doanh nghiệp hoặc thuế (không bắt buộc)",
     "regno_hint": "Được lưu đúng như bạn viết. Rotabo không đối chiếu với bất kỳ sổ đăng ký nào, và cũng không tuyên bố như vậy."
   },

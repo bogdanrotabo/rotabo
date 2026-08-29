@@ -405,7 +405,7 @@
     "see_who_btn": "Féach cé atá anseo",
     "drive": {
       "name": "Tiománaí",
-      "desc": "Tiománaí a thagann chugat agus a thiomáineann do charr féin."
+      "desc": "Tiománaí a thagann chugat agus a thiomáineann do charr féin. Mise + mo charr, caithfimid beirt dul abhaile."
     },
     "translator": {
       "name": "Aistritheoir",
@@ -680,6 +680,10 @@
     "domain_hint": "Is mar sin a chuardaítear comhlachtaí. Roghnaigh an ceann is gaire.",
     "domain_error": "Roghnaigh do réimse ón liosta.",
     "website_label": "Suíomh gréasáin (roghnach)",
+    "logo_label": "Do lógó (roghnach)",
+    "logo_hint": "PNG, JPEG nó WebP, suas le 512 KB. Féachann duine air sula dtagann sé ar an suíomh.",
+    "logo_too_big": "Tá an pictiúr sin os cionn 512 KB. Roghnaigh ceann níos lú.",
+    "logo_bad_type": "Ní pictiúr PNG, JPEG ná WebP é an comhad sin.",
     "regno_label": "Uimhir chláraithe nó CBL (roghnach)",
     "regno_hint": "Sábháiltear é mar a scríobhann tú é. Ní dhearbhaíonn Rotabo é in aon chlár, agus ní mhaíonn sé go ndéanann."
   },

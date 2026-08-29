@@ -405,7 +405,7 @@
     "see_who_btn": "Pažiūrėk, kas čia yra",
     "drive": {
       "name": "Vairuotojas",
-      "desc": "Vairuotojas, kuris atvyksta pas tave ir vairuoja tavo paties automobilį."
+      "desc": "Vairuotojas, kuris atvyksta pas tave ir vairuoja tavo paties automobilį. Aš + mano automobilis turime parvykti namo."
     },
     "translator": {
       "name": "Vertėjas",
@@ -680,6 +680,10 @@
     "domain_hint": "Pagal tai įmonės ir ieškomos. Pasirinkite artimiausią.",
     "domain_error": "Pasirinkite savo sritį iš sąrašo.",
     "website_label": "Svetainė (nebūtina)",
+    "logo_label": "Jūsų logotipas (nebūtina)",
+    "logo_hint": "PNG, JPEG arba WebP, iki 512 KB. Prieš pasirodant svetainėje jį peržiūri žmogus.",
+    "logo_too_big": "Šis paveikslėlis viršija 512 KB. Pasirinkite mažesnį.",
+    "logo_bad_type": "Šis failas nėra PNG, JPEG ar WebP paveikslėlis.",
     "regno_label": "Įmonės arba PVM kodas (nebūtina)",
     "regno_hint": "Išsaugoma taip, kaip parašote. Rotabo netikrina jo jokiame registre ir netvirtina, kad tikrina."
   },

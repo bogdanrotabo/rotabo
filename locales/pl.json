@@ -570,7 +570,7 @@
     "see_who_btn": "Zobacz, kto tu jest",
     "drive": {
       "name": "Kierowca",
-      "desc": "Kierowca, który przyjeżdża do ciebie i prowadzi twój własny samochód."
+      "desc": "Kierowca, który przyjeżdża do ciebie i prowadzi twój własny samochód. Ja + mój samochód musimy dostać się do domu."
     },
     "translator": {
       "name": "Tłumacz",
@@ -845,6 +845,10 @@
     "domain_hint": "Po tym szuka się firm. Wybierz najbliższe.",
     "domain_error": "Wybierz swoją branżę z listy.",
     "website_label": "Strona internetowa (opcjonalnie)",
+    "logo_label": "Twoje logo (opcjonalnie)",
+    "logo_hint": "PNG, JPEG lub WebP, do 512 KB. Zanim pojawi się na stronie, ogląda je człowiek.",
+    "logo_too_big": "Ten obrazek ma ponad 512 KB. Wybierz mniejszy.",
+    "logo_bad_type": "Ten plik nie jest obrazkiem PNG, JPEG ani WebP.",
     "regno_label": "NIP lub numer KRS (opcjonalnie)",
     "regno_hint": "Zapisywane tak, jak to napiszesz. Rotabo nie sprawdza tego w żadnym rejestrze i nie twierdzi, że to robi."
   },

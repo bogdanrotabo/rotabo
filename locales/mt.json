@@ -405,7 +405,7 @@
     "see_who_btn": "Ara min hawn",
     "drive": {
       "name": "Sewwieq",
-      "desc": "Sewwieq li jiġi għandek u jsuq il-karozza tiegħek stess."
+      "desc": "Sewwieq li jiġi għandek u jsuq il-karozza tiegħek stess. Jien + il-karozza tiegħi rridu naslu d-dar it-tnejn."
     },
     "translator": {
       "name": "Traduttur",
@@ -680,6 +680,10 @@
     "domain_hint": "Il-kumpaniji jinstabu b'dan. Agħżel l-eqreb wieħed.",
     "domain_error": "Agħżel il-qasam tiegħek mil-lista.",
     "website_label": "Websajt (mhux obbligatorju)",
+    "logo_label": "Il-logo tiegħek (mhux obbligatorju)",
+    "logo_hint": "PNG, JPEG jew WebP, sa 512 KB. Persuna tarah qabel ma jidher fuq is-sit.",
+    "logo_too_big": "Din l-istampa taqbeż il-512 KB. Uża waħda iżgħar.",
+    "logo_bad_type": "Dan il-fajl mhuwiex stampa PNG, JPEG jew WebP.",
     "regno_label": "Numru tal-kumpanija jew tal-VAT (mhux obbligatorju)",
     "regno_hint": "Jinżamm kif tiktbu. Rotabo ma jiċċekkjahx f'ebda reġistru, u ma jgħidx li jagħmel dan."
   },

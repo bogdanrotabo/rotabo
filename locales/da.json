@@ -412,7 +412,7 @@
     "see_who_btn": "Se hvem der er her",
     "drive": {
       "name": "Chauffør",
-      "desc": "En chauffør, der kommer til dig og kører din egen bil."
+      "desc": "En chauffør, der kommer til dig og kører din egen bil. Mig + min bil skal begge hjem."
     },
     "translator": {
       "name": "Oversætter",
@@ -691,6 +691,10 @@
     "domain_hint": "Det er sådan, virksomheder findes. Vælg det nærmeste.",
     "domain_error": "Vælg dit område fra listen.",
     "website_label": "Hjemmeside (valgfrit)",
+    "logo_label": "Dit logo (valgfrit)",
+    "logo_hint": "PNG, JPEG eller WebP, op til 512 KB. Et menneske ser på det, før det kommer på siden.",
+    "logo_too_big": "Billedet er over 512 KB. Vælg et mindre.",
+    "logo_bad_type": "Filen er ikke et PNG-, JPEG- eller WebP-billede.",
     "regno_label": "CVR- eller momsnummer (valgfrit)",
     "regno_hint": "Gemmes, som du skriver det. Rotabo tjekker det ikke i noget register og påstår ikke at gøre det."
   },

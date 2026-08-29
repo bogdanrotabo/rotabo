@@ -405,7 +405,7 @@
     "see_who_btn": "Pozri, kto je tu",
     "drive": {
       "name": "Vodič",
-      "desc": "Vodič, ktorý za tebou príde a odvezie ťa tvojím vlastným autom."
+      "desc": "Vodič, ktorý za tebou príde a odvezie ťa tvojím vlastným autom. Ja + moje auto sa musíme dostať domov."
     },
     "translator": {
       "name": "Prekladateľ",
@@ -680,6 +680,10 @@
     "domain_hint": "Podľa toho sa firmy hľadajú. Vyberte najbližšie.",
     "domain_error": "Vyberte svoj odbor zo zoznamu.",
     "website_label": "Web (nepovinné)",
+    "logo_label": "Vaše logo (nepovinné)",
+    "logo_hint": "PNG, JPEG alebo WebP, do 512 KB. Skôr než sa objaví na webe, pozrie si ho človek.",
+    "logo_too_big": "Tento obrázok má vyše 512 KB. Vyberte menší.",
+    "logo_bad_type": "Tento súbor nie je obrázok PNG, JPEG ani WebP.",
     "regno_label": "IČO alebo IČ DPH (nepovinné)",
     "regno_hint": "Uloží sa tak, ako to napíšete. Rotabo to v žiadnom registri neoveruje a netvrdí, že áno."
   },

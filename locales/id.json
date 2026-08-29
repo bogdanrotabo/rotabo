@@ -405,7 +405,7 @@
     "see_who_btn": "Lihat siapa di sini",
     "drive": {
       "name": "Sopir",
-      "desc": "Sopir yang datang ke kamu dan mengemudikan mobilmu sendiri."
+      "desc": "Sopir yang datang ke kamu dan mengemudikan mobilmu sendiri. Saya + mobil saya sama-sama harus sampai rumah."
     },
     "translator": {
       "name": "Penerjemah",
@@ -680,6 +680,10 @@
     "domain_hint": "Perusahaan dicari berdasarkan ini. Pilih yang paling dekat.",
     "domain_error": "Pilih bidang Anda dari daftar.",
     "website_label": "Situs web (opsional)",
+    "logo_label": "Logo Anda (opsional)",
+    "logo_hint": "PNG, JPEG atau WebP, maksimal 512 KB. Seorang manusia melihatnya sebelum muncul di situs.",
+    "logo_too_big": "Gambar itu lebih dari 512 KB. Pakai yang lebih kecil.",
+    "logo_bad_type": "Berkas itu bukan gambar PNG, JPEG, atau WebP.",
     "regno_label": "Nomor perusahaan atau NPWP (opsional)",
     "regno_hint": "Disimpan persis seperti Anda menulisnya. Rotabo tidak memeriksanya di registri mana pun, dan tidak mengklaim demikian."
   },

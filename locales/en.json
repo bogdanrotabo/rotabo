@@ -632,7 +632,7 @@
     "see_who_btn": "See who is here",
     "drive": {
       "name": "Drive",
-      "desc": "A driver who comes to you and drives your own car."
+      "desc": "A driver who comes to you and drives your own car. Me + my car both need to get home."
     },
     "translator": {
       "name": "Translator",

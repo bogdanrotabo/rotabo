@@ -412,7 +412,7 @@
     "see_who_btn": "Katso, ketä täällä on",
     "drive": {
       "name": "Kuljettaja",
-      "desc": "Kuljettaja, joka tulee luoksesi ja ajaa omalla autollasi."
+      "desc": "Kuljettaja, joka tulee luoksesi ja ajaa omalla autollasi. Minä + autoni pitää molemmat saada kotiin."
     },
     "translator": {
       "name": "Kääntäjä",
@@ -691,6 +691,10 @@
     "domain_hint": "Tällä yrityksiä haetaan. Valitse lähin.",
     "domain_error": "Valitse toimialasi listasta.",
     "website_label": "Verkkosivu (vapaaehtoinen)",
+    "logo_label": "Logosi (vapaaehtoinen)",
+    "logo_hint": "PNG, JPEG tai WebP, enintään 512 KB. Ihminen katsoo sen ennen kuin se näkyy sivustolla.",
+    "logo_too_big": "Kuva on yli 512 KB. Valitse pienempi.",
+    "logo_bad_type": "Tiedosto ei ole PNG-, JPEG- tai WebP-kuva.",
     "regno_label": "Y-tunnus tai alv-numero (vapaaehtoinen)",
     "regno_hint": "Tallennetaan sellaisena kuin sen kirjoitat. Rotabo ei tarkista sitä mistään rekisteristä eikä väitä tarkistavansa."
   },

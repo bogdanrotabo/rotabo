@@ -405,7 +405,7 @@
     "see_who_btn": "Poglej, kdo je tu",
     "drive": {
       "name": "Voznik",
-      "desc": "Voznik, ki pride k tebi in vozi tvoj lasten avto."
+      "desc": "Voznik, ki pride k tebi in vozi tvoj lasten avto. Jaz + moj avto morava oba domov."
     },
     "translator": {
       "name": "Prevajalec",
@@ -680,6 +680,10 @@
     "domain_hint": "Po tem se podjetja iščejo. Izberite najbližje.",
     "domain_error": "Izberite svoje področje s seznama.",
     "website_label": "Spletna stran (neobvezno)",
+    "logo_label": "Vaš logotip (neobvezno)",
+    "logo_hint": "PNG, JPEG ali WebP, do 512 KB. Preden se pojavi na strani, si ga ogleda človek.",
+    "logo_too_big": "Ta slika presega 512 KB. Izberite manjšo.",
+    "logo_bad_type": "Ta datoteka ni slika PNG, JPEG ali WebP.",
     "regno_label": "Matična ali davčna številka (neobvezno)",
     "regno_hint": "Shrani se tako, kot to napišete. Rotabo tega ne preverja v nobenem registru in tega tudi ne trdi."
   },

@@ -405,7 +405,7 @@
     "see_who_btn": "Ona nani yupo hapa",
     "drive": {
       "name": "Dereva",
-      "desc": "Dereva anayekuja kwako na kuendesha gari lako mwenyewe."
+      "desc": "Dereva anayekuja kwako na kuendesha gari lako mwenyewe. Mimi + gari langu, wote wawili tunahitaji kufika nyumbani."
     },
     "translator": {
       "name": "Mkalimani",
@@ -680,6 +680,10 @@
     "domain_hint": "Kampuni hutafutwa kwa hili. Chagua lililo karibu zaidi.",
     "domain_error": "Chagua uwanja wako kutoka kwenye orodha.",
     "website_label": "Tovuti (si lazima)",
+    "logo_label": "Nembo yako (si lazima)",
+    "logo_hint": "PNG, JPEG au WebP, hadi 512 KB. Binadamu huiangalia kabla haijaonekana kwenye tovuti.",
+    "logo_too_big": "Picha hii inazidi 512 KB. Tumia ndogo zaidi.",
+    "logo_bad_type": "Faili hili si picha ya PNG, JPEG au WebP.",
     "regno_label": "Namba ya usajili au ya kodi (si lazima)",
     "regno_hint": "Huhifadhiwa jinsi unavyoiandika. Rotabo haiithibitishi katika daftari lolote, wala haidai kufanya hivyo."
   },

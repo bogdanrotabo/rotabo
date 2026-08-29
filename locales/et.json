@@ -412,7 +412,7 @@
     "see_who_btn": "Vaata, kes siin on",
     "drive": {
       "name": "Sõidujuht",
-      "desc": "Juht, kes tuleb sinu juurde ja sõidutab sind sinu enda autoga."
+      "desc": "Juht, kes tuleb sinu juurde ja sõidutab sind sinu enda autoga. Mina + minu auto peame mõlemad koju saama."
     },
     "translator": {
       "name": "Tõlk",
@@ -691,6 +691,10 @@
     "domain_hint": "Selle järgi ettevõtteid otsitakse. Vali kõige lähedasem.",
     "domain_error": "Vali oma valdkond nimekirjast.",
     "website_label": "Veebileht (valikuline)",
+    "logo_label": "Sinu logo (valikuline)",
+    "logo_hint": "PNG, JPEG või WebP, kuni 512 KB. Enne saidile ilmumist vaatab selle üle inimene.",
+    "logo_too_big": "See pilt on üle 512 KB. Vali väiksem.",
+    "logo_bad_type": "See fail ei ole PNG-, JPEG- ega WebP-pilt.",
     "regno_label": "Registri- või KMKR-number (valikuline)",
     "regno_hint": "Salvestatakse nii, nagu kirjutad. Rotabo ei kontrolli seda üheski registris ega väida, et kontrollib."
   },

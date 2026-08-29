@@ -577,7 +577,7 @@
     "see_who_btn": "Kijk wie er is",
     "drive": {
       "name": "Chauffeur",
-      "desc": "Een chauffeur die naar je toe komt en je eigen auto rijdt."
+      "desc": "Een chauffeur die naar je toe komt en je eigen auto rijdt. Ik + mijn auto moeten allebei thuis zien te komen."
     },
     "translator": {
       "name": "Vertaler",
@@ -856,6 +856,10 @@
     "domain_hint": "Hierop worden bedrijven gezocht. Kies het dichtstbijzijnde.",
     "domain_error": "Kies uw vakgebied uit de lijst.",
     "website_label": "Website (optioneel)",
+    "logo_label": "Uw logo (optioneel)",
+    "logo_hint": "PNG, JPEG of WebP, tot 512 KB. Een mens bekijkt het voordat het op de site verschijnt.",
+    "logo_too_big": "Deze afbeelding is groter dan 512 KB. Kies een kleinere.",
+    "logo_bad_type": "Dit bestand is geen PNG-, JPEG- of WebP-afbeelding.",
     "regno_label": "KvK- of btw-nummer (optioneel)",
     "regno_hint": "Wordt bewaard zoals u het schrijft. Rotabo controleert het in geen enkel register en beweert dat ook niet."
   },

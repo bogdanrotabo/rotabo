@@ -405,7 +405,7 @@
     "see_who_btn": "Se vilka som finns här",
     "drive": {
       "name": "Förare",
-      "desc": "En förare som kommer till dig och kör din egen bil."
+      "desc": "En förare som kommer till dig och kör din egen bil. Jag + min bil måste båda hem."
     },
     "translator": {
       "name": "Översättare",
@@ -680,6 +680,10 @@
     "domain_hint": "Det är så företag söks fram. Välj det närmaste.",
     "domain_error": "Välj ditt område från listan.",
     "website_label": "Webbplats (frivilligt)",
+    "logo_label": "Din logotyp (frivilligt)",
+    "logo_hint": "PNG, JPEG eller WebP, upp till 512 KB. En människa tittar på den innan den syns på sajten.",
+    "logo_too_big": "Bilden är över 512 KB. Välj en mindre.",
+    "logo_bad_type": "Filen är ingen PNG-, JPEG- eller WebP-bild.",
     "regno_label": "Organisations- eller momsnummer (frivilligt)",
     "regno_hint": "Sparas precis som du skriver det. Rotabo kontrollerar det inte i något register och påstår inte att det gör det."
   },

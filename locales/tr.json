@@ -570,7 +570,7 @@
     "see_who_btn": "Kimler var gör",
     "drive": {
       "name": "Şoför",
-      "desc": "Sana gelip kendi arabanı kullanacak bir şoför."
+      "desc": "Sana gelip kendi arabanı kullanacak bir şoför. Ben + arabam, ikimiz de eve varmalıyız."
     },
     "translator": {
       "name": "Tercüman",
@@ -845,6 +845,10 @@
     "domain_hint": "Şirketler buna göre aranır. En yakın olanı seçin.",
     "domain_error": "Alanınızı listeden seçin.",
     "website_label": "Web sitesi (isteğe bağlı)",
+    "logo_label": "Logonuz (isteğe bağlı)",
+    "logo_hint": "PNG, JPEG veya WebP, en fazla 512 KB. Sitede görünmeden önce bir insan bakar.",
+    "logo_too_big": "Bu görsel 512 KB'ı aşıyor. Daha küçüğünü kullanın.",
+    "logo_bad_type": "Bu dosya PNG, JPEG veya WebP görseli değil.",
     "regno_label": "Ticaret sicil veya vergi numarası (isteğe bağlı)",
     "regno_hint": "Yazdığınız gibi saklanır. Rotabo bunu hiçbir sicilde doğrulamaz ve doğruladığını da iddia etmez."
   },

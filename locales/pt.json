@@ -577,7 +577,7 @@
     "see_who_btn": "Vê quem está aqui",
     "drive": {
       "name": "Condutor",
-      "desc": "Um condutor que vem até ti e conduz o teu próprio carro."
+      "desc": "Um condutor que vem até ti e conduz o teu próprio carro. Eu + o meu carro temos os dois de chegar a casa."
     },
     "translator": {
       "name": "Tradutor",
@@ -856,6 +856,10 @@
     "domain_hint": "É assim que as empresas são procuradas. Escolha a mais próxima.",
     "domain_error": "Escolha a sua área da lista.",
     "website_label": "Site (opcional)",
+    "logo_label": "O seu logótipo (opcional)",
+    "logo_hint": "PNG, JPEG ou WebP, até 512 KB. Uma pessoa vê-o antes de aparecer no site.",
+    "logo_too_big": "Esta imagem tem mais de 512 KB. Escolha uma mais pequena.",
+    "logo_bad_type": "Este ficheiro não é uma imagem PNG, JPEG ou WebP.",
     "regno_label": "NIF ou número de registo (opcional)",
     "regno_hint": "Guardado tal como o escrever. A Rotabo não o verifica em nenhum registo, nem alega fazê-lo."
   },
