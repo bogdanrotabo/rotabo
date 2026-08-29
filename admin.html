@@ -135,13 +135,19 @@
       <stop offset="55%" stop-color="#a239c9"/>
       <stop offset="100%" stop-color="#7c2596"/>
     </radialGradient>
-    <!-- The same three-stop build as the violet one, in the yellow off the
-         tail of the fish: pale at the centre, the tail colour in the middle,
-         warm amber at the rim where the tail runs into orange. -->
+    <!-- One yellow, not three. The violet beside it is a real gradient; this
+         one is a gradient element holding the same colour at every stop, which
+         is a flat fill written in the shape the violet uses. Kept that way so
+         the two marks stay obviously siblings in the file, and so putting a
+         gradient back is a matter of changing values rather than markup.
+
+         Every page draws the mark from this block, so a page that keeps its
+         own stops does not have a slightly different logo -- it has a
+         different logo, on the same site, one click away from the first. -->
     <radialGradient id="diamondGold" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#ffe873"/>
+      <stop offset="0%" stop-color="#ffd41a"/>
       <stop offset="45%" stop-color="#ffd41a"/>
-      <stop offset="100%" stop-color="#e0a005"/>
+      <stop offset="100%" stop-color="#ffd41a"/>
     </radialGradient>
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>

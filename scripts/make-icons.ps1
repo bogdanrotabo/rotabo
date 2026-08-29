@@ -20,9 +20,17 @@ if (-not (Test-Path $icons)) { New-Item -ItemType Directory -Path $icons | Out-N
 $VW = 200.0
 $VH = 260.0
 
-# The two gradients, centre first. Same values as #diamondGrad and #diamondGold.
+# The two fills, centre first. Same values as #diamondGrad and #diamondGold.
+#
+# The gold's three stops are deliberately the same colour. #diamondGold on the
+# pages was flattened to one yellow and this file was not, so every run of this
+# script put the old three-tone gradient back into the icons and the Open Graph
+# card while the page beside them drew a flat diamond -- which is how the mark
+# Google shows in a search result came to differ from the mark on the site.
+# Kept as a three-stop list rather than a solid brush so the two arrays stay
+# the same shape, and so putting a gradient back is editing values, not code.
 $VIOLET = @('#c264e0', '#a239c9', '#7c2596')
-$GOLD   = @('#ffe873', '#ffd41a', '#e0a005')
+$GOLD   = @('#ffd41a', '#ffd41a', '#ffd41a')
 
 function C([string]$hex) { [System.Drawing.ColorTranslator]::FromHtml($hex) }
 
