@@ -55,11 +55,19 @@
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
     font-weight:800;font-size:1rem;cursor:pointer;
   }
-  /* Reachable by the password manager, invisible to everyone else --
-     display:none would make it skip the field and resume hunting. */
-  .login-card input.offscreen{
-    position:absolute;left:-9999px;top:0;width:1px;height:1px;
-    opacity:0;margin:0;padding:0;border:none;
+  .login-note{
+    color:var(--text-eyebrow);font-size:.85rem;margin:14px 0 0;line-height:1.5;
+  }
+  .login-note a{color:var(--violet-1);}
+  /* Not every answer from this box is a refusal. "Check your inbox" is the
+     normal end of setting a password for the first time, and saying it in
+     the red used for a wrong password reads as a failure. */
+  .login-said{color:var(--text-dark);font-size:.9rem;margin-top:12px;display:none;}
+  .login-said.show{display:block;}
+  .linkish{
+    width:auto;padding:0;margin-top:6px;background:none;border:none;
+    color:var(--violet-1);font:inherit;font-size:.85rem;font-weight:600;
+    text-decoration:underline;cursor:pointer;
   }
   .login-error{color:var(--red);font-size:.9rem;margin-top:12px;display:none;}
   .login-error.show{display:block;}
@@ -166,19 +174,29 @@
 <div class="wrap">
   <div id="loginView" class="login-card">
     <h1 style="margin-bottom:18px;">Admin</h1>
+    <!-- The way in is an account, not a shared word.
+         A shared password has no name on it: it cannot be given to one
+         person and taken back from them, it cannot say who opened this
+         page, and it has to live somewhere to be checked against. This
+         asks for the email instead, and the server decides by looking that
+         address up in admin_emails.
+         The email field is also what the password manager was hunting for.
+         There used to be an invisible one here purely to stop it settling
+         on the listings search box and filtering the table down to nothing;
+         now there is a real one, so the decoy is gone. -->
     <form id="loginForm">
-      <!-- A password field with no username field next to it sends the
-           browser's password manager hunting through the document for one,
-           and it settles on the first text input it finds -- the listings
-           search box, which then filtered the whole table down to nothing.
-           This gives it the field it was looking for. -->
-      <input type="text" id="adminUser" name="username" autocomplete="username"
-             tabindex="-1" aria-hidden="true" class="offscreen">
+      <input type="email" id="emailInput" name="username" autocomplete="username"
+             placeholder="Email" spellcheck="false" autocapitalize="off">
       <input type="password" id="passwordInput" name="password"
              placeholder="Password" autocomplete="current-password">
       <button type="submit" id="loginBtn">Enter</button>
     </form>
-    <p class="login-error" id="loginError">Wrong password. Try again.</p>
+    <p class="login-error" id="loginError">Wrong email or password. Try again.</p>
+    <p class="login-said" id="loginSaid"></p>
+    <p class="login-note">
+      The same account as <a href="/account.html">rotabo.app/account</a>.<br>
+      <button type="button" class="linkish" id="firstTimeBtn">First time here &mdash; set my password</button>
+    </p>
   </div>
 
   <div id="dashboardView" style="display:none;">
@@ -447,6 +465,7 @@
 
   var loginView = document.getElementById("loginView");
   var dashboardView = document.getElementById("dashboardView");
+  var emailInput = document.getElementById("emailInput");
   var passwordInput = document.getElementById("passwordInput");
   var loginBtn = document.getElementById("loginBtn");
   var loginError = document.getElementById("loginError");
@@ -532,27 +551,159 @@
     }).catch(function(){ return null; });
   }
 
-  function tryLogin(password){
+  function loginFailed(message){
+    loginBtn.disabled = false;
+    loginBtn.textContent = "Enter";
+    // Reset the text too: after one network failure it used to stick at
+    // "Something went wrong" for every later wrong password.
+    loginError.textContent = message;
+    loginError.classList.add("show");
+  }
+
+  /* Signing in as a person.
+
+     The email and password go to Supabase Auth, which hands back a session
+     token; that token is what the function is asked with, and the function
+     decides by looking the address up in admin_emails. So the dashboard
+     never learns whether an address is an admin one -- it asks and is told
+     no, the same as any wrong password.
+
+     A wrong password and an address that is not an admin are deliberately
+     the same message. Telling them apart would turn this box into a way to
+     find out who the admins are. */
+  function tryLogin(email, password){
+    loginError.classList.remove("show");
+    loginBtn.disabled = true;
+    loginBtn.textContent = "Checking…";
+
+    if (!sb) {
+      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
+      return;
+    }
+
+    sb.auth.signInWithPassword({ email: email, password: password }).then(function(res){
+      var session = res && res.data && res.data.session;
+      if (!session || !session.access_token) {
+        loginFailed("Wrong email or password. Try again.");
+        return;
+      }
+      return apiGet("listings", session.access_token).then(function(r){
+        if (!r.ok) {
+          // Signed in, but not an admin. The account is real and stays
+          // signed in for account.html; it simply does not open this page.
+          loginFailed(r.status === 401
+            ? "That account cannot open the dashboard."
+            : "Something went wrong. Try again.");
+          return;
+        }
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Enter";
+        setStored(session.access_token, "session");
+        enter(r.data);
+      });
+    }).catch(function(){
+      loginFailed("Something went wrong. Try again.");
+    });
+  }
+
+  function said(message){
+    loginError.classList.remove("show");
+    var el = document.getElementById("loginSaid");
+    el.textContent = message;
+    el.classList.add("show");
+  }
+
+  /* The first time, when there is no password yet.
+
+     The address is already on the admin list; what it has never had is an
+     account behind it. This makes one, with a password typed here and
+     nowhere else -- not generated for you, not sent to you, not written in
+     any file. Nobody but the browser it is typed into ever sees it.
+
+     Two things can happen, and they are told apart because they need
+     different next steps. If the project does not require confirming an
+     address, a session comes straight back and the dashboard opens. If it
+     does, there is no session yet and the mail has to be opened first --
+     which is not a failure, so it is not said in red. */
+  function firstTime(email, password){
+    loginError.classList.remove("show");
+    document.getElementById("loginSaid").classList.remove("show");
+
+    if (!sb) {
+      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
+      return;
+    }
+    if (password.length < 8) {
+      loginFailed("Choose a password of at least 8 characters.");
+      return;
+    }
+
+    loginBtn.disabled = true;
+    loginBtn.textContent = "Checking…";
+
+    sb.auth.signUp({ email: email, password: password }).then(function(res){
+      if (res && res.error) {
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Enter";
+        // An address that already has a password does not need a new one; it
+        // needs the password, or a reset, and both live on the account page.
+        loginFailed(/already|exists|registered/i.test(res.error.message || "")
+          ? "That address already has a password. Press Enter with it, or reset it at rotabo.app/account."
+          : "Could not set a password. Try again.");
+        return;
+      }
+
+      var session = res && res.data && res.data.session;
+      if (!session || !session.access_token) {
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Enter";
+        said("Password set. Open the confirmation mail sent to " + email + ", then come back and press Enter.");
+        return;
+      }
+
+      return apiGet("listings", session.access_token).then(function(r){
+        loginBtn.disabled = false;
+        loginBtn.textContent = "Enter";
+        if (!r.ok) {
+          loginFailed(r.status === 401
+            ? "That account cannot open the dashboard."
+            : "Something went wrong. Try again.");
+          return;
+        }
+        setStored(session.access_token, "session");
+        enter(r.data);
+      });
+    }).catch(function(){
+      loginFailed("Something went wrong. Try again.");
+    });
+  }
+
+  /* The way back in when the front door is stuck.
+
+     A password typed with the email box left empty is sent to the function
+     as-is, which is the old shared-secret path. It is kept for one case:
+     the library above fails to load, or Auth itself is having a bad day,
+     and the dashboard would otherwise be unreachable.
+
+     It only works if ADMIN_SECRET is set in the function environment, and
+     it is not set by default -- there is no such password until somebody
+     puts one there, and nothing in this repository or in the deployed
+     source contains one. */
+  function tryFallback(password){
     loginError.classList.remove("show");
     loginBtn.disabled = true;
     loginBtn.textContent = "Checking…";
     apiGet("listings", password).then(function(res){
-      loginBtn.disabled = false;
-      loginBtn.textContent = "Enter";
       if (!res.ok) {
-        // Reset the text too: after one network failure it used to stick
-        // at "Something went wrong" for every later wrong password.
-        loginError.textContent = res.status === 401 ? "Wrong password. Try again." : "Something went wrong. Try again.";
-        loginError.classList.add("show");
+        loginFailed(res.status === 401 ? "Wrong email or password. Try again." : "Something went wrong. Try again.");
         return;
       }
+      loginBtn.disabled = false;
+      loginBtn.textContent = "Enter";
       setStored(password, "password");
       enter(res.data);
     }).catch(function(){
-      loginBtn.disabled = false;
-      loginBtn.textContent = "Enter";
-      loginError.textContent = "Something went wrong. Try again.";
-      loginError.classList.add("show");
+      loginFailed("Something went wrong. Try again.");
     });
   }
 
@@ -560,7 +711,20 @@
   // and the browser treats this as the login form it is.
   document.getElementById("loginForm").addEventListener("submit", function(e){
     e.preventDefault();
-    if (passwordInput.value && !loginBtn.disabled) tryLogin(passwordInput.value);
+    if (!passwordInput.value || loginBtn.disabled) return;
+    var email = emailInput.value.trim();
+    if (email) tryLogin(email, passwordInput.value);
+    else tryFallback(passwordInput.value);
+  });
+
+  document.getElementById("firstTimeBtn").addEventListener("click", function(){
+    if (loginBtn.disabled) return;
+    var email = emailInput.value.trim();
+    if (!email || !passwordInput.value) {
+      loginFailed("Fill in the address and the password you want, then press this.");
+      return;
+    }
+    firstTime(email, passwordInput.value);
   });
 
   function enter(rows){
@@ -1246,10 +1410,9 @@
     passwordInput.focus();
   });
 
-  // If the visitor is already logged into account.html with an email listed
-  // as an admin, skip the password prompt entirely and use their session
-  // token instead -- one login for everything. Falls back to the shared
-  // password if there's no session or it isn't an admin one.
+  // Already signed in at account.html with an admin address: no need to ask
+  // anything, the session token is the credential. This is the normal way
+  // in -- the form below is for when the browser has no session yet.
   getSession().then(function(session){
     // A session-mode admin who pressed "Log out" must not be walked back
     // in by the next page load; the Supabase session itself is left alone
