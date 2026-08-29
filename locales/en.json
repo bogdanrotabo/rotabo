@@ -659,7 +659,7 @@
       "offering_lead": "List your machine or your skills so people who need them can find you."
     },
     "tools": {
-      "name": "Tools",
+      "name": "Tools — hire and use",
       "desc": "Power tools and machinery, ready when you need them.",
       "seeking_title": "Need a tool or machine?",
       "seeking_lead": "Tell us what you need and where.",
@@ -667,7 +667,7 @@
       "offering_lead": "List what you have so people who need it can find you."
     },
     "home": {
-      "name": "Home",
+      "name": "Home — utilities and repairs",
       "desc": "Electricians, plumbers, cleaners, and other home help.",
       "seeking_title": "Need help at home?",
       "seeking_lead": "Tell us what you need and where.",
@@ -675,7 +675,7 @@
       "offering_lead": "List your skills so people who need them can find you."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — hire and servicing",
       "desc": "Roadside help — battery, tyre, tow, mobile mechanic.",
       "seeking_title": "Need roadside help?",
       "seeking_lead": "Tell us what you need and where.",
@@ -683,7 +683,7 @@
       "offering_lead": "List your skills so people who need them can find you."
     },
     "care": {
-      "name": "Borrowed Grandparents",
+      "name": "Borrowed Grandparents — care and supervision",
       "desc": "Retirees 60+ who give young families a few hours of childcare, company, and stories.",
       "seeking_title": "Need a hand with the kids?",
       "seeking_lead": "Tell us what you need and where — a few hours a week of care and company.",
@@ -699,7 +699,7 @@
       "offering_lead": "List your skills so students and learners nearby can find you."
     },
     "stay": {
-      "name": "Vacation Stays",
+      "name": "Vacation Stays — travel agencies",
       "desc": "Swap vacation homes — you stay at theirs, they stay at yours — or host each other for a visit.",
       "seeking_title": "Looking for a place to stay?",
       "seeking_lead": "Tell us where you'd like to go and when.",

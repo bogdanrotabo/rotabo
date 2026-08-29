@@ -432,7 +432,7 @@
       "offering_lead": "Registrera din maskin eller dina kunskaper så att de som behöver dem kan hitta dig."
     },
     "tools": {
-      "name": "Verktyg",
+      "name": "Verktyg — uthyrning och användning",
       "desc": "Elverktyg och maskiner, redo när du behöver dem.",
       "seeking_title": "Behöver du ett verktyg eller en maskin?",
       "seeking_lead": "Berätta vad du behöver och var.",
@@ -440,7 +440,7 @@
       "offering_lead": "Registrera det du har så att de som behöver det kan hitta dig."
     },
     "home": {
-      "name": "Hem",
+      "name": "Hem — el, vatten och reparationer",
       "desc": "Elektriker, rörmokare, städning och annan hjälp hemma.",
       "seeking_title": "Behöver du hjälp hemma?",
       "seeking_lead": "Berätta vad du behöver och var.",
@@ -448,7 +448,7 @@
       "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
     },
     "auto": {
-      "name": "Bil",
+      "name": "Bil — uthyrning och service",
       "desc": "Hjälp på vägen — batteri, däck, bärgning, mobil mekaniker.",
       "seeking_title": "Behöver du hjälp på vägen?",
       "seeking_lead": "Berätta vad du behöver och var.",
@@ -456,7 +456,7 @@
       "offering_lead": "Registrera dina kunskaper så att de som behöver dem kan hitta dig."
     },
     "care": {
-      "name": "Lånade mor- och farföräldrar",
+      "name": "Lånade mor- och farföräldrar — omsorg och tillsyn",
       "desc": "Pensionärer 60+ som ger unga familjer några timmars barnpassning, sällskap och berättelser.",
       "seeking_title": "Behöver du hjälp med barnen?",
       "seeking_lead": "Berätta vad du behöver och var — några timmars omsorg och sällskap i veckan.",
@@ -472,7 +472,7 @@
       "offering_lead": "Lägg upp dina kunskaper så att de som vill lära sig i närheten hittar dig."
     },
     "stay": {
-      "name": "Semesterboenden",
+      "name": "Semesterboenden — resebyråer",
       "desc": "Byt semesterbostad — du bor hos dem, de bor hos dig — eller ta emot varandra på besök.",
       "seeking_title": "Letar du efter någonstans att bo?",
       "seeking_lead": "Berätta vart du vill åka och när.",

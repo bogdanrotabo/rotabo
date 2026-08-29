@@ -432,7 +432,7 @@
       "offering_lead": "Zapíš svoj stroj alebo zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
     },
     "tools": {
-      "name": "Náradie",
+      "name": "Náradie — požičovňa a používanie",
       "desc": "Elektrické náradie a stroje, pripravené, keď ich potrebuješ.",
       "seeking_title": "Potrebuješ náradie alebo stroj?",
       "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
@@ -440,7 +440,7 @@
       "offering_lead": "Zapíš, čo máš, aby ťa našli ľudia, ktorí to potrebujú."
     },
     "home": {
-      "name": "Domácnosť",
+      "name": "Domácnosť — energie a opravy",
       "desc": "Elektrikári, inštalatéri, upratovanie a ďalšia pomoc doma.",
       "seeking_title": "Potrebuješ pomoc doma?",
       "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
@@ -448,7 +448,7 @@
       "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — požičovňa a servis",
       "desc": "Pomoc na ceste — batéria, pneumatika, odťah, mobilný mechanik.",
       "seeking_title": "Potrebuješ pomoc na ceste?",
       "seeking_lead": "Napíš nám, čo potrebuješ a kde.",
@@ -456,7 +456,7 @@
       "offering_lead": "Zapíš svoje zručnosti, aby ťa našli ľudia, ktorí ich potrebujú."
     },
     "care": {
-      "name": "Požičaní starí rodičia",
+      "name": "Požičaní starí rodičia — starostlivosť a dohľad",
       "desc": "Dôchodcovia nad 60 rokov, ktorí mladým rodinám dajú pár hodín stráženia, spoločnosti a rozprávania.",
       "seeking_title": "Potrebuješ pomoc s deťmi?",
       "seeking_lead": "Povedz nám, čo potrebuješ a kde — pár hodín stráženia a spoločnosti týždenne.",
@@ -472,7 +472,7 @@
       "offering_lead": "Uveď svoje zručnosti, nech ťa nájdu tí, čo sa v okolí chcú učiť."
     },
     "stay": {
-      "name": "Prázdninové pobyty",
+      "name": "Prázdninové pobyty — cestovné kancelárie",
       "desc": "Vymeňte si prázdninové domy — ty bývaš u nich, oni u teba — alebo sa navzájom pohostite.",
       "seeking_title": "Hľadáš, kde sa ubytovať?",
       "seeking_lead": "Povedz nám, kam by si chcel ísť a kedy.",

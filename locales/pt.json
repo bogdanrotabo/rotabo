@@ -604,7 +604,7 @@
       "offering_lead": "Inscreve a tua máquina ou as tuas competências para que quem precisa te encontre."
     },
     "tools": {
-      "name": "Ferramentas",
+      "name": "Ferramentas — aluguer e utilização",
       "desc": "Ferramentas elétricas e máquinas, prontas quando precisares.",
       "seeking_title": "Precisas de uma ferramenta ou máquina?",
       "seeking_lead": "Diz-nos o que precisas e onde.",
@@ -612,7 +612,7 @@
       "offering_lead": "Inscreve o que tens para que quem precisa te encontre."
     },
     "home": {
-      "name": "Casa",
+      "name": "Casa — utilidades e reparações",
       "desc": "Eletricistas, canalizadores, limpeza e outra ajuda em casa.",
       "seeking_title": "Precisas de ajuda em casa?",
       "seeking_lead": "Diz-nos o que precisas e onde.",
@@ -620,7 +620,7 @@
       "offering_lead": "Inscreve as tuas competências para que quem precisa te encontre."
     },
     "auto": {
-      "name": "Carro",
+      "name": "Carro — aluguer e oficina",
       "desc": "Ajuda na estrada — bateria, pneu, reboque, mecânico ao domicílio.",
       "seeking_title": "Precisas de ajuda na estrada?",
       "seeking_lead": "Diz-nos o que precisas e onde.",
@@ -628,7 +628,7 @@
       "offering_lead": "Inscreve as tuas competências para que quem precisa te encontre."
     },
     "care": {
-      "name": "Avós emprestados",
+      "name": "Avós emprestados — cuidado e acompanhamento",
       "desc": "Reformados com 60 anos ou mais que dão às famílias jovens algumas horas de cuidado, companhia e histórias.",
       "seeking_title": "Precisas de ajuda com as crianças?",
       "seeking_lead": "Diz-nos do que precisas e onde — algumas horas de cuidado e companhia por semana.",
@@ -644,7 +644,7 @@
       "offering_lead": "Indica as tuas competências para que quem quer aprender perto de ti te encontre."
     },
     "stay": {
-      "name": "Estadias de férias",
+      "name": "Estadias de férias — agências de viagens",
       "desc": "Troquem casas de férias — ficas na deles, eles ficam na tua — ou recebam-se mutuamente.",
       "seeking_title": "Procuras um sítio para ficar?",
       "seeking_lead": "Diz-nos para onde gostarias de ir e quando.",

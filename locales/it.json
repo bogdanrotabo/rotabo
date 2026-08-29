@@ -604,7 +604,7 @@
       "offering_lead": "Iscrivi il tuo mezzo o le tue competenze così chi ne ha bisogno può trovarti."
     },
     "tools": {
-      "name": "Attrezzi",
+      "name": "Attrezzi — noleggio e utilizzo",
       "desc": "Utensili elettrici e macchinari, pronti quando ti servono.",
       "seeking_title": "Hai bisogno di un attrezzo o un macchinario?",
       "seeking_lead": "Dicci di cosa hai bisogno e dove.",
@@ -612,7 +612,7 @@
       "offering_lead": "Iscrivi ciò che hai così chi ne ha bisogno può trovarti."
     },
     "home": {
-      "name": "Casa",
+      "name": "Casa — utenze e riparazioni",
       "desc": "Elettricisti, idraulici, pulizie e altri aiuti domestici.",
       "seeking_title": "Hai bisogno di aiuto in casa?",
       "seeking_lead": "Dicci di cosa hai bisogno e dove.",
@@ -620,7 +620,7 @@
       "offering_lead": "Iscrivi le tue competenze così chi ne ha bisogno può trovarti."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — noleggio e officina",
       "desc": "Assistenza stradale — batteria, gomme, traino, meccanico mobile.",
       "seeking_title": "Hai bisogno di assistenza stradale?",
       "seeking_lead": "Dicci di cosa hai bisogno e dove.",
@@ -628,7 +628,7 @@
       "offering_lead": "Iscrivi le tue competenze così chi ne ha bisogno può trovarti."
     },
     "care": {
-      "name": "Nonni in prestito",
+      "name": "Nonni in prestito — assistenza e sorveglianza",
       "desc": "Pensionati 60+ che offrono alle giovani famiglie alcune ore di aiuto con i bambini, compagnia e storie.",
       "seeking_title": "Hai bisogno di aiuto con i bambini?",
       "seeking_lead": "Dicci di cosa hai bisogno e dove — alcune ore a settimana di cura e compagnia.",
@@ -644,7 +644,7 @@
       "offering_lead": "Iscrivi le tue competenze così studenti e chi vuole imparare possano trovarti."
     },
     "stay": {
-      "name": "Vacanze reciproche",
+      "name": "Vacanze reciproche — agenzie di viaggio",
       "desc": "Scambiatevi le case vacanza — tu stai da loro, loro stanno da te — oppure ospitatevi a vicenda.",
       "seeking_title": "Cerchi un posto dove stare in vacanza?",
       "seeking_lead": "Dicci dove vorresti andare e quando.",

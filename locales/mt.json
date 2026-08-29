@@ -432,7 +432,7 @@
       "offering_lead": "Iddaħħal il-magna jew il-ħiliet tiegħek biex min jeħtieġhom isibek."
     },
     "tools": {
-      "name": "Għodda",
+      "name": "Għodda — kiri u użu",
       "desc": "Għodda bl-elettriku u makkinarju, lesti meta teħtieġhom.",
       "seeking_title": "Teħtieġ għodda jew magna?",
       "seeking_lead": "Għidilna x'teħtieġ u fejn.",
@@ -440,7 +440,7 @@
       "offering_lead": "Iddaħħal x'għandek biex min jeħtieġu jsibek."
     },
     "home": {
-      "name": "Dar",
+      "name": "Dar — servizzi u tiswijiet",
       "desc": "Elettriċisti, plumbers, tindif, u għajnuna oħra fid-dar.",
       "seeking_title": "Teħtieġ għajnuna d-dar?",
       "seeking_lead": "Għidilna x'teħtieġ u fejn.",
@@ -448,7 +448,7 @@
       "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
     },
     "auto": {
-      "name": "Karozza",
+      "name": "Karozza — kiri u servisjar",
       "desc": "Għajnuna fit-triq — batterija, tajer, irmunkar, mekkanik li jiġi għandek.",
       "seeking_title": "Teħtieġ għajnuna fit-triq?",
       "seeking_lead": "Għidilna x'teħtieġ u fejn.",
@@ -456,7 +456,7 @@
       "offering_lead": "Iddaħħal il-ħiliet tiegħek biex min jeħtieġhom isibek."
     },
     "care": {
-      "name": "Nanniet mislufa",
+      "name": "Nanniet mislufa — kura u superviżjoni",
       "desc": "Pensjonanti ta' 60 sena jew aktar li jagħtu lill-familji żgħażagħ ftit sigħat ta' kura, kumpanija u stejjer.",
       "seeking_title": "Għandek bżonn għajnuna bit-tfal?",
       "seeking_lead": "Għidilna x'għandek bżonn u fejn — ftit sigħat ta' kura u kumpanija fil-ġimgħa.",
@@ -472,7 +472,7 @@
       "offering_lead": "Niżżel il-ħiliet tiegħek biex isibuk dawk li jridu jitgħallmu fil-viċin."
     },
     "stay": {
-      "name": "Soġġorni tal-vaganzi",
+      "name": "Soġġorni tal-vaganzi — aġenziji tal-ivvjaġġar",
       "desc": "Ibdlu d-djar tal-vaganzi — int toqgħod għandhom, huma joqogħdu għandek — jew ilqgħu lil xulxin għal żjara.",
       "seeking_title": "Qed tfittex fejn toqgħod?",
       "seeking_lead": "Għidilna fejn tixtieq tmur u meta.",

@@ -432,7 +432,7 @@
       "offering_lead": "Orodhesha mashine yako au ujuzi wako ili wanaohitaji wakupate."
     },
     "tools": {
-      "name": "Zana",
+      "name": "Zana — kukodisha na kutumia",
       "desc": "Zana za umeme na mitambo, tayari unapozihitaji.",
       "seeking_title": "Unahitaji zana au mtambo?",
       "seeking_lead": "Tuambie unachohitaji na wapi.",
@@ -440,7 +440,7 @@
       "offering_lead": "Orodhesha ulicho nacho ili wanaohitaji wakupate."
     },
     "home": {
-      "name": "Nyumbani",
+      "name": "Nyumbani — huduma za nyumbani na ukarabati",
       "desc": "Fundi umeme, fundi mabomba, usafi, na msaada mwingine wa nyumbani.",
       "seeking_title": "Unahitaji msaada nyumbani?",
       "seeking_lead": "Tuambie unachohitaji na wapi.",
@@ -448,7 +448,7 @@
       "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
     },
     "auto": {
-      "name": "Gari",
+      "name": "Gari — kukodisha na huduma",
       "desc": "Msaada barabarani — betri, tairi, kuvuta gari, fundi wa kutembelea.",
       "seeking_title": "Unahitaji msaada barabarani?",
       "seeking_lead": "Tuambie unachohitaji na wapi.",
@@ -456,7 +456,7 @@
       "offering_lead": "Orodhesha ujuzi wako ili wanaohitaji wakupate."
     },
     "care": {
-      "name": "Babu na bibi wa kuazima",
+      "name": "Babu na bibi wa kuazima — utunzaji na usimamizi",
       "desc": "Wastaafu wenye miaka 60+ wanaowapa familia changa saa chache za kulea watoto, kuwa nao na kusimulia hadithi.",
       "seeking_title": "Unahitaji msaada na watoto?",
       "seeking_lead": "Tuambie unahitaji nini na wapi — saa chache za malezi na uandamani kwa wiki.",
@@ -472,7 +472,7 @@
       "offering_lead": "Orodhesha ujuzi wako ili wanaotaka kujifunza karibu nawe wakupate."
     },
     "stay": {
-      "name": "Malazi ya likizo",
+      "name": "Malazi ya likizo — mawakala wa safari",
       "desc": "Badilishaneni nyumba za likizo — wewe unakaa kwao, wao wanakaa kwako — au karibishaneni kwa ziara.",
       "seeking_title": "Unatafuta mahali pa kukaa?",
       "seeking_lead": "Tuambie ungependa kwenda wapi na lini.",

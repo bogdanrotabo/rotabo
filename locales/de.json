@@ -604,7 +604,7 @@
       "offering_lead": "Trag deine Maschine oder deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
     },
     "tools": {
-      "name": "Werkzeug",
+      "name": "Werkzeug — Vermietung und Nutzung",
       "desc": "Elektrowerkzeuge und Maschinen, bereit, wenn du sie brauchst.",
       "seeking_title": "Brauchst du ein Werkzeug oder eine Maschine?",
       "seeking_lead": "Sag uns, was du brauchst und wo.",
@@ -612,7 +612,7 @@
       "offering_lead": "Trag ein, was du hast, damit dich Leute finden, die es brauchen."
     },
     "home": {
-      "name": "Zuhause",
+      "name": "Zuhause — Versorgung und Reparaturen",
       "desc": "Elektriker, Klempner, Reinigungskräfte und andere Hilfe im Haushalt.",
       "seeking_title": "Brauchst du Hilfe im Haushalt?",
       "seeking_lead": "Sag uns, was du brauchst und wo.",
@@ -620,7 +620,7 @@
       "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — Vermietung und Service",
       "desc": "Pannenhilfe — Batterie, Reifen, Abschleppen, mobiler Mechaniker.",
       "seeking_title": "Brauchst du Pannenhilfe?",
       "seeking_lead": "Sag uns, was du brauchst und wo.",
@@ -628,7 +628,7 @@
       "offering_lead": "Trag deine Fähigkeiten ein, damit dich Leute finden, die sie brauchen."
     },
     "care": {
-      "name": "Leihgroßeltern",
+      "name": "Leihgroßeltern — Betreuung und Aufsicht",
       "desc": "Rentner ab 60, die jungen Familien ein paar Stunden Kinderbetreuung, Gesellschaft und Geschichten schenken.",
       "seeking_title": "Brauchst du Hilfe mit den Kindern?",
       "seeking_lead": "Sag uns, was du brauchst und wo — ein paar Stunden Betreuung und Gesellschaft pro Woche.",
@@ -644,7 +644,7 @@
       "offering_lead": "Liste deine Fähigkeiten auf, damit Lernende in deiner Nähe dich finden."
     },
     "stay": {
-      "name": "Ferienunterkünfte",
+      "name": "Ferienunterkünfte — Reisebüros",
       "desc": "Ferienhäuser tauschen — du wohnst bei ihnen, sie bei dir — oder euch gegenseitig zu Besuch haben.",
       "seeking_title": "Suchst du eine Unterkunft?",
       "seeking_lead": "Sag uns, wohin du möchtest und wann.",

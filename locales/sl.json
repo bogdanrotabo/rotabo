@@ -432,7 +432,7 @@
       "offering_lead": "Prijavi svoj stroj ali znanje, da te najdejo tisti, ki ju potrebujejo."
     },
     "tools": {
-      "name": "Orodje",
+      "name": "Orodje — najem in uporaba",
       "desc": "Električno orodje in stroji, pripravljeni, ko jih potrebuješ.",
       "seeking_title": "Potrebuješ orodje ali stroj?",
       "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
@@ -440,7 +440,7 @@
       "offering_lead": "Prijavi, kaj imaš, da te najdejo tisti, ki to potrebujejo."
     },
     "home": {
-      "name": "Dom",
+      "name": "Dom — komunalne storitve in popravila",
       "desc": "Električarji, vodovodarji, čiščenje in druga pomoč doma.",
       "seeking_title": "Potrebuješ pomoč doma?",
       "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
@@ -448,7 +448,7 @@
       "offering_lead": "Prijavi svoje znanje, da te najdejo tisti, ki ga potrebujejo."
     },
     "auto": {
-      "name": "Avto",
+      "name": "Avto — najem in servis",
       "desc": "Pomoč na cesti — akumulator, guma, vleka, mobilni mehanik.",
       "seeking_title": "Potrebuješ pomoč na cesti?",
       "seeking_lead": "Povej nam, kaj potrebuješ in kje.",
@@ -456,7 +456,7 @@
       "offering_lead": "Prijavi svoje znanje, da te najdejo tisti, ki ga potrebujejo."
     },
     "care": {
-      "name": "Izposojeni stari starši",
+      "name": "Izposojeni stari starši — nega in nadzor",
       "desc": "Upokojenci nad 60 let, ki mladim družinam podarijo nekaj ur varstva, družbe in zgodb.",
       "seeking_title": "Potrebuješ pomoč z otroki?",
       "seeking_lead": "Povej nam, kaj potrebuješ in kje — nekaj ur varstva in družbe na teden.",
@@ -472,7 +472,7 @@
       "offering_lead": "Navedi svoje znanje, da te najdejo tisti, ki se v bližini želijo učiti."
     },
     "stay": {
-      "name": "Počitniška bivanja",
+      "name": "Počitniška bivanja — turistične agencije",
       "desc": "Zamenjajte počitniške domove — ti bivaš pri njih, oni pri tebi — ali pa gostite drug drugega.",
       "seeking_title": "Iščeš prenočišče?",
       "seeking_lead": "Povej nam, kam bi rad šel in kdaj.",

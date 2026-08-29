@@ -432,7 +432,7 @@
       "offering_lead": "Reģistrē savu mašīnu vai prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
     },
     "tools": {
-      "name": "Instrumenti",
+      "name": "Instrumenti — noma un lietošana",
       "desc": "Elektroinstrumenti un mašīnas, gatavas, kad tās vajadzīgas.",
       "seeking_title": "Vajag instrumentu vai mašīnu?",
       "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
@@ -440,7 +440,7 @@
       "offering_lead": "Reģistrē to, kas tev ir, lai tevi atrastu tie, kam tas vajadzīgs."
     },
     "home": {
-      "name": "Mājas",
+      "name": "Mājas — komunālie pakalpojumi un remonts",
       "desc": "Elektriķi, santehniķi, uzkopšana un cita palīdzība mājās.",
       "seeking_title": "Vajag palīdzību mājās?",
       "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
@@ -448,7 +448,7 @@
       "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — noma un serviss",
       "desc": "Palīdzība uz ceļa — akumulators, riepa, evakuācija, mobilais mehāniķis.",
       "seeking_title": "Vajag palīdzību uz ceļa?",
       "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur.",
@@ -456,7 +456,7 @@
       "offering_lead": "Reģistrē savas prasmes, lai tevi atrastu tie, kam tās vajadzīgas."
     },
     "care": {
-      "name": "Aizņemtie vecvecāki",
+      "name": "Aizņemtie vecvecāki — aprūpe un uzraudzība",
       "desc": "Pensionāri no 60 gadiem, kas jaunām ģimenēm dāvina dažas stundas bērnu pieskatīšanas, sabiedrības un stāstu.",
       "seeking_title": "Vajadzīga palīdzība ar bērniem?",
       "seeking_lead": "Pastāsti, kas tev vajadzīgs un kur — dažas stundas pieskatīšanas un sabiedrības nedēļā.",
@@ -472,7 +472,7 @@
       "offering_lead": "Norādi savas prasmes, lai tuvumā esošie mācīties gribētāji tevi atrastu."
     },
     "stay": {
-      "name": "Brīvdienu mājvietas",
+      "name": "Brīvdienu mājvietas — ceļojumu aģentūras",
       "desc": "Mainieties ar brīvdienu mājām — tu dzīvo pie viņiem, viņi pie tevis — vai uzņemiet viens otru ciemos.",
       "seeking_title": "Meklē, kur apmesties?",
       "seeking_lead": "Pastāsti, kurp vēlies doties un kad.",

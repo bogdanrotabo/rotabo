@@ -604,7 +604,7 @@
       "offering_lead": "Meld je machine of vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
     },
     "tools": {
-      "name": "Gereedschap",
+      "name": "Gereedschap — verhuur en gebruik",
       "desc": "Elektrisch gereedschap en machines, klaar wanneer je ze nodig hebt.",
       "seeking_title": "Gereedschap of een machine nodig?",
       "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
@@ -612,7 +612,7 @@
       "offering_lead": "Meld aan wat je hebt zodat mensen die het nodig hebben je kunnen vinden."
     },
     "home": {
-      "name": "Huis",
+      "name": "Huis — nutsvoorzieningen en reparaties",
       "desc": "Elektriciens, loodgieters, schoonmaak en andere hulp in huis.",
       "seeking_title": "Hulp nodig in huis?",
       "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
@@ -620,7 +620,7 @@
       "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — verhuur en onderhoud",
       "desc": "Hulp onderweg — accu, band, sleepdienst, mobiele monteur.",
       "seeking_title": "Hulp nodig onderweg?",
       "seeking_lead": "Vertel ons wat je nodig hebt en waar.",
@@ -628,7 +628,7 @@
       "offering_lead": "Meld je vaardigheden aan zodat mensen die ze nodig hebben je kunnen vinden."
     },
     "care": {
-      "name": "Leengrootouders",
+      "name": "Leengrootouders — zorg en toezicht",
       "desc": "Gepensioneerden van 60+ die jonge gezinnen een paar uur opvang, gezelschap en verhalen geven.",
       "seeking_title": "Hulp nodig met de kinderen?",
       "seeking_lead": "Vertel ons wat je nodig hebt en waar — een paar uur opvang en gezelschap per week.",
@@ -644,7 +644,7 @@
       "offering_lead": "Zet je vaardigheden erbij, zodat lerenden in de buurt je vinden."
     },
     "stay": {
-      "name": "Vakantieverblijven",
+      "name": "Vakantieverblijven — reisbureaus",
       "desc": "Ruil vakantiehuizen — jij logeert bij hen, zij bij jou — of ontvang elkaar op bezoek.",
       "seeking_title": "Op zoek naar een plek om te verblijven?",
       "seeking_lead": "Vertel ons waar je heen wilt en wanneer.",

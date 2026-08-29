@@ -439,7 +439,7 @@
       "offering_lead": "Tilmeld din maskine eller dine evner, så folk der har brug for dem kan finde dig."
     },
     "tools": {
-      "name": "Værktøj",
+      "name": "Værktøj — udlejning og brug",
       "desc": "Elværktøj og maskiner, klar når du har brug for dem.",
       "seeking_title": "Mangler du et værktøj eller en maskine?",
       "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
@@ -447,7 +447,7 @@
       "offering_lead": "Tilmeld det, du har, så folk der har brug for det kan finde dig."
     },
     "home": {
-      "name": "Hjem",
+      "name": "Hjem — forsyning og reparationer",
       "desc": "Elektrikere, blikkenslagere, rengøring og anden hjælp i hjemmet.",
       "seeking_title": "Mangler du hjælp derhjemme?",
       "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
@@ -455,7 +455,7 @@
       "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
     },
     "auto": {
-      "name": "Bil",
+      "name": "Bil — udlejning og service",
       "desc": "Hjælp på vejen — batteri, dæk, bugsering, mobil mekaniker.",
       "seeking_title": "Mangler du hjælp på vejen?",
       "seeking_lead": "Fortæl os, hvad du har brug for, og hvor.",
@@ -463,7 +463,7 @@
       "offering_lead": "Tilmeld dine evner, så folk der har brug for dem kan finde dig."
     },
     "care": {
-      "name": "Lånebedsteforældre",
+      "name": "Lånebedsteforældre — pleje og tilsyn",
       "desc": "Pensionister på 60+ der giver unge familier et par timers pasning, selskab og historier.",
       "seeking_title": "Brug for en hånd med børnene?",
       "seeking_lead": "Fortæl os, hvad du har brug for og hvor — et par timers pasning og selskab om ugen.",
@@ -479,7 +479,7 @@
       "offering_lead": "Skriv dine færdigheder op, så de, der vil lære i nærheden, kan finde dig."
     },
     "stay": {
-      "name": "Ferieophold",
+      "name": "Ferieophold — rejsebureauer",
       "desc": "Byt feriebolig — du bor hos dem, de bor hos dig — eller tag imod hinanden på besøg.",
       "seeking_title": "Leder du efter et sted at bo?",
       "seeking_lead": "Fortæl os, hvor du gerne vil hen og hvornår.",

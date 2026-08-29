@@ -432,7 +432,7 @@
       "offering_lead": "Liostáil d'inneall nó do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
     },
     "tools": {
-      "name": "Uirlisí",
+      "name": "Uirlisí — fruiliú agus úsáid",
       "desc": "Uirlisí cumhachta agus innealra, réidh nuair atá siad uait.",
       "seeking_title": "Uirlis nó inneall ag teastáil?",
       "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
@@ -440,7 +440,7 @@
       "offering_lead": "Liostáil a bhfuil agat ionas gur féidir le daoine a bhfuil sé uathu tú a aimsiú."
     },
     "home": {
-      "name": "Baile",
+      "name": "Baile — fóntais agus deisiúcháin",
       "desc": "Leictreoirí, pluiméirí, glantóirí, agus cabhair bhaile eile.",
       "seeking_title": "Cabhair sa bhaile ag teastáil?",
       "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
@@ -448,7 +448,7 @@
       "offering_lead": "Liostáil do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
     },
     "auto": {
-      "name": "Gluaisteán",
+      "name": "Gluaisteán — fruiliú agus seirbhísiú",
       "desc": "Cabhair ar an mbóthar — ceallraí, bonn, tarraingt, meicneoir soghluaiste.",
       "seeking_title": "Cabhair ar an mbóthar ag teastáil?",
       "seeking_lead": "Inis dúinn cad atá uait agus cén áit.",
@@ -456,7 +456,7 @@
       "offering_lead": "Liostáil do scileanna ionas gur féidir le daoine a bhfuil siad uathu tú a aimsiú."
     },
     "care": {
-      "name": "Seantuismitheoirí ar iasacht",
+      "name": "Seantuismitheoirí ar iasacht — cúram agus maoirseacht",
       "desc": "Daoine scortha os cionn 60 a thugann cúpla uair an chloig cúraim, comhluadair agus scéalta do theaghlaigh óga.",
       "seeking_title": "An bhfuil cúnamh uait leis na páistí?",
       "seeking_lead": "Inis dúinn cad atá uait agus cá háit — cúpla uair an chloig cúraim agus comhluadair sa tseachtain.",
@@ -472,7 +472,7 @@
       "offering_lead": "Luaigh do chuid scileanna le go bhfaighidh foghlaimeoirí in aice láimhe thú."
     },
     "stay": {
-      "name": "Fanacht saoire",
+      "name": "Fanacht saoire — gníomhaireachtaí taistil",
       "desc": "Malartaigh tithe saoire — fanann tusa ina dteachsan, fanann siadsan i do theachsa — nó tugaigí cuairt ar a chéile.",
       "seeking_title": "Ag lorg áit le fanacht?",
       "seeking_lead": "Inis dúinn cá dtaitneodh leat dul agus cathain.",

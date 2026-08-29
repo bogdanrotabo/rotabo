@@ -439,7 +439,7 @@
       "offering_lead": "Lisa oma masin või oskused nimekirja, et abivajajad sind leiaksid."
     },
     "tools": {
-      "name": "Tööriistad",
+      "name": "Tööriistad — rent ja kasutamine",
       "desc": "Elektritööriistad ja masinad, valmis siis, kui neid vajad.",
       "seeking_title": "Vajad tööriista või masinat?",
       "seeking_lead": "Räägi meile, mida ja kus vajad.",
@@ -447,7 +447,7 @@
       "offering_lead": "Lisa oma varustus nimekirja, et abivajajad sind leiaksid."
     },
     "home": {
-      "name": "Kodu",
+      "name": "Kodu — kommunaalteenused ja remont",
       "desc": "Elektrikud, torulukksepad, koristajad ja muu abi kodus.",
       "seeking_title": "Vajad abi kodus?",
       "seeking_lead": "Räägi meile, mida ja kus vajad.",
@@ -455,7 +455,7 @@
       "offering_lead": "Lisa oma oskused nimekirja, et abivajajad sind leiaksid."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — rent ja hooldus",
       "desc": "Abi teel — aku, rehv, pukseerimine, mobiilne mehaanik.",
       "seeking_title": "Vajad abi teel?",
       "seeking_lead": "Räägi meile, mida ja kus vajad.",
@@ -463,7 +463,7 @@
       "offering_lead": "Lisa oma oskused nimekirja, et abivajajad sind leiaksid."
     },
     "care": {
-      "name": "Laenatud vanavanemad",
+      "name": "Laenatud vanavanemad — hooldus ja järelevalve",
       "desc": "Üle 60-aastased pensionärid, kes annavad noortele peredele mõne tunni lastehoidu, seltsi ja lugusid.",
       "seeking_title": "Vajad lastega abikätt?",
       "seeking_lead": "Ütle, mida vajad ja kus — paar tundi hoidu ja seltsi nädalas.",
@@ -479,7 +479,7 @@
       "offering_lead": "Lisa oma oskused, et lähedal olevad õppijad sind leiaksid."
     },
     "stay": {
-      "name": "Puhkusemajutus",
+      "name": "Puhkusemajutus — reisibürood",
       "desc": "Vahetage puhkusekodusid — sina elad nende juures, nemad sinu juures — või võõrustage teineteist.",
       "seeking_title": "Otsid kohta, kus peatuda?",
       "seeking_lead": "Ütle, kuhu tahaksid minna ja millal.",

@@ -506,26 +506,25 @@
   /* This was one horizontally scrolling row with a fade at each end. With
      twelve categories that row is ~1580px wide, so on a normal screen it
      showed four chips and hid eight behind a gesture with no scrollbar --
-     the last category read as simply missing. A grid shows all twelve at
-     once: six and six. The columns are `auto`, not `1fr`, because the
-     labels run from "Home" to "Borrowed Grandparents" and equal columns
-     would strand the short ones in empty space. */
+     the last category read as simply missing. Every chip is visible now.
+
+     It wraps rather than counting columns. A grid of six-then-six was
+     measured for the labels as they were, and the moment the cards grew
+     their second half -- "Home" becoming "Home, utilities and repairs" --
+     six across wanted 1540px on a 1265px screen and pushed the whole page
+     sideways. Column counts can only ever be right for one set of labels,
+     and there are thirty-eight sets: Greek and German are half again as
+     long as English, Chinese half as short. Wrapping asks the labels how
+     much room they need instead of telling them. */
   .cat-strip-scroll{
-    display:grid;
-    grid-template-columns:repeat(6,auto);
+    display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     gap:10px;
     padding:2px 24px;
   }
-  /* Six across needs roughly 900px: the wider of the two rows is about
-     835px on its own. Below that the count steps down rather than letting
-     the grid push the page into a horizontal scroll. */
-  @media (max-width:900px){
-    .cat-strip-scroll{grid-template-columns:repeat(3,auto);}
-  }
   @media (max-width:520px){
-    .cat-strip-scroll{grid-template-columns:repeat(2,minmax(0,1fr));}
-    /* At two columns the longest label no longer fits on one line, and
+    /* On a narrow screen the longest label no longer fits on one line, and
        nowrap here would be what finally overflows the page. */
     .cat-strip-scroll .cat-chip{white-space:normal;text-align:center;}
   }
@@ -1710,7 +1709,7 @@
     </div>
     <div class="category-card" id="cat-tools">
       <div class="cat-icon">🛠️</div>
-      <h3 data-i18n="categories.tools.name">Tools</h3>
+      <h3 data-i18n="categories.tools.name">Tools &mdash; hire and use</h3>
       <p data-i18n="categories.tools.desc">Power tools and machinery, ready when you need them.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('tools','seeking')">I need this</button>
@@ -1720,7 +1719,7 @@
     </div>
     <div class="category-card" id="cat-home">
       <div class="cat-icon">🏠</div>
-      <h3 data-i18n="categories.home.name">Home</h3>
+      <h3 data-i18n="categories.home.name">Home &mdash; utilities and repairs</h3>
       <p data-i18n="categories.home.desc">Electricians, plumbers, cleaners, and other home help.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('home','seeking')">I need this</button>
@@ -1730,7 +1729,7 @@
     </div>
     <div class="category-card" id="cat-auto">
       <div class="cat-icon">🔧</div>
-      <h3 data-i18n="categories.auto.name">Auto</h3>
+      <h3 data-i18n="categories.auto.name">Auto &mdash; hire and servicing</h3>
       <p data-i18n="categories.auto.desc">Roadside help — battery, tyre, tow, mobile mechanic.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('auto','seeking')">I need this</button>
@@ -1740,7 +1739,7 @@
     </div>
     <div class="category-card" id="cat-care">
       <div class="cat-icon">👵</div>
-      <h3 data-i18n="categories.care.name">Borrowed Grandparents</h3>
+      <h3 data-i18n="categories.care.name">Borrowed Grandparents &mdash; care and supervision</h3>
       <p data-i18n="categories.care.desc">Retirees 60+ who give young families a few hours of childcare, company, and stories.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('care','seeking')">I need this</button>
@@ -1760,7 +1759,7 @@
     </div>
     <div class="category-card" id="cat-stay">
       <div class="cat-icon">🏖️</div>
-      <h3 data-i18n="categories.stay.name">Vacation Stays</h3>
+      <h3 data-i18n="categories.stay.name">Vacation Stays &mdash; travel agencies</h3>
       <p data-i18n="categories.stay.desc">Swap vacation homes — you stay at theirs, they stay at yours — or host each other for a visit.</p>
       <div class="cat-actions">
         <button type="button" class="cat-btn need" data-i18n="categories.need_btn" onclick="openGenericModal('stay','seeking')">I need this</button>

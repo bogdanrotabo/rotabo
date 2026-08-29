@@ -432,7 +432,7 @@
       "offering_lead": "Daftarkan mesin atau kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
     },
     "tools": {
-      "name": "Alatan",
+      "name": "Alatan — sewa dan penggunaan",
       "desc": "Alat kuasa dan mesin, sedia apabila kamu memerlukannya.",
       "seeking_title": "Perlukan alat atau mesin?",
       "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
@@ -440,7 +440,7 @@
       "offering_lead": "Daftarkan apa yang kamu ada supaya mereka yang memerlukannya dapat menemui kamu."
     },
     "home": {
-      "name": "Rumah",
+      "name": "Rumah — utiliti dan pembaikan",
       "desc": "Tukang elektrik, tukang paip, pembersihan, dan bantuan rumah lain.",
       "seeking_title": "Perlukan bantuan di rumah?",
       "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
@@ -448,7 +448,7 @@
       "offering_lead": "Daftarkan kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
     },
     "auto": {
-      "name": "Kereta",
+      "name": "Kereta — sewa dan servis",
       "desc": "Bantuan di jalan raya — bateri, tayar, tunda, mekanik bergerak.",
       "seeking_title": "Perlukan bantuan di jalan raya?",
       "seeking_lead": "Beritahu kami apa yang kamu perlukan dan di mana.",
@@ -456,7 +456,7 @@
       "offering_lead": "Daftarkan kemahiran kamu supaya mereka yang memerlukannya dapat menemui kamu."
     },
     "care": {
-      "name": "Datuk nenek pinjaman",
+      "name": "Datuk nenek pinjaman — penjagaan dan pengawasan",
       "desc": "Pesara 60+ yang memberi keluarga muda beberapa jam penjagaan anak, teman dan cerita.",
       "seeking_title": "Perlukan bantuan dengan anak-anak?",
       "seeking_lead": "Beritahu kami apa yang anda perlukan dan di mana — beberapa jam penjagaan dan teman setiap minggu.",
@@ -472,7 +472,7 @@
       "offering_lead": "Senaraikan kemahiran anda supaya pelajar berdekatan dapat menemui anda."
     },
     "stay": {
-      "name": "Penginapan percutian",
+      "name": "Penginapan percutian — agensi pelancongan",
       "desc": "Tukar rumah percutian — anda tinggal di rumah mereka, mereka di rumah anda — atau menerima satu sama lain sebagai tetamu.",
       "seeking_title": "Mencari tempat menginap?",
       "seeking_lead": "Beritahu kami ke mana anda ingin pergi dan bila.",

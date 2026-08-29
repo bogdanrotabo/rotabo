@@ -439,7 +439,7 @@
       "offering_lead": "Zapiš svůj stroj nebo dovednosti, aby tě našli lidi, kteří je potřebují."
     },
     "tools": {
-      "name": "Nářadí",
+      "name": "Nářadí — půjčovna a užívání",
       "desc": "Elektrické nářadí a stroje, připravené, když je potřebuješ.",
       "seeking_title": "Potřebuješ nářadí nebo stroj?",
       "seeking_lead": "Napiš nám, co potřebuješ a kde.",
@@ -447,7 +447,7 @@
       "offering_lead": "Zapiš, co máš, aby tě našli lidi, kteří to potřebují."
     },
     "home": {
-      "name": "Domácnost",
+      "name": "Domácnost — energie a opravy",
       "desc": "Elektrikáři, instalatéři, úklid a další pomoc doma.",
       "seeking_title": "Potřebuješ pomoct doma?",
       "seeking_lead": "Napiš nám, co potřebuješ a kde.",
@@ -455,7 +455,7 @@
       "offering_lead": "Zapiš své dovednosti, aby tě našli lidi, kteří je potřebují."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — půjčovna a servis",
       "desc": "Pomoc na silnici — baterka, pneumatika, odtah, mobilní mechanik.",
       "seeking_title": "Potřebuješ pomoct na silnici?",
       "seeking_lead": "Napiš nám, co potřebuješ a kde.",
@@ -463,7 +463,7 @@
       "offering_lead": "Zapiš své dovednosti, aby tě našli lidi, kteří je potřebují."
     },
     "care": {
-      "name": "Půjčení prarodiče",
+      "name": "Půjčení prarodiče — péče a dohled",
       "desc": "Důchodci nad 60 let, kteří mladým rodinám dají pár hodin hlídání, společnosti a vyprávění.",
       "seeking_title": "Potřebuješ pomoc s dětmi?",
       "seeking_lead": "Řekni nám, co potřebuješ a kde — pár hodin hlídání a společnosti týdně.",
@@ -479,7 +479,7 @@
       "offering_lead": "Uveď své dovednosti, ať tě najdou ti, kdo se v okolí chtějí učit."
     },
     "stay": {
-      "name": "Prázdninové pobyty",
+      "name": "Prázdninové pobyty — cestovní kanceláře",
       "desc": "Vyměňte si prázdninové domy — ty bydlíš u nich, oni u tebe — nebo se navzájem pohostěte.",
       "seeking_title": "Hledáš, kde se ubytovat?",
       "seeking_lead": "Řekni nám, kam bys chtěl jet a kdy.",

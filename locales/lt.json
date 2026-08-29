@@ -432,7 +432,7 @@
       "offering_lead": "Užregistruok savo mašiną ar įgūdžius, kad tave rastų juos reikalaujantys."
     },
     "tools": {
-      "name": "Įrankiai",
+      "name": "Įrankiai — nuoma ir naudojimas",
       "desc": "Elektriniai įrankiai ir mašinos, paruošti, kai jų prireikia.",
       "seeking_title": "Reikia įrankio ar mašinos?",
       "seeking_lead": "Papasakok, ko reikia ir kur.",
@@ -440,7 +440,7 @@
       "offering_lead": "Užregistruok, ką turi, kad tave rastų juos reikalaujantys."
     },
     "home": {
-      "name": "Namai",
+      "name": "Namai — komunalinės paslaugos ir remontas",
       "desc": "Elektrikai, santechnikai, valymas ir kita pagalba namuose.",
       "seeking_title": "Reikia pagalbos namuose?",
       "seeking_lead": "Papasakok, ko reikia ir kur.",
@@ -448,7 +448,7 @@
       "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
     },
     "auto": {
-      "name": "Automobilis",
+      "name": "Automobilis — nuoma ir servisas",
       "desc": "Pagalba kelyje — akumuliatorius, padanga, vilkimas, mobilus mechanikas.",
       "seeking_title": "Reikia pagalbos kelyje?",
       "seeking_lead": "Papasakok, ko reikia ir kur.",
@@ -456,7 +456,7 @@
       "offering_lead": "Užregistruok savo įgūdžius, kad tave rastų juos reikalaujantys."
     },
     "care": {
-      "name": "Pasiskolinti seneliai",
+      "name": "Pasiskolinti seneliai — priežiūra ir globa",
       "desc": "60+ pensininkai, kurie jaunoms šeimoms dovanoja kelias valandas vaikų priežiūros, draugijos ir istorijų.",
       "seeking_title": "Reikia pagalbos su vaikais?",
       "seeking_lead": "Papasakok, ko reikia ir kur — kelios valandos priežiūros ir draugijos per savaitę.",
@@ -472,7 +472,7 @@
       "offering_lead": "Nurodyk savo įgūdžius, kad tave rastų netoliese norintys mokytis."
     },
     "stay": {
-      "name": "Atostogų apgyvendinimas",
+      "name": "Atostogų apgyvendinimas — kelionių agentūros",
       "desc": "Keiskitės atostogų namais — tu gyveni pas juos, jie pas tave — arba priimkite vieni kitus svečiuose.",
       "seeking_title": "Ieškai, kur apsistoti?",
       "seeking_lead": "Papasakok, kur norėtum vykti ir kada.",

@@ -432,7 +432,7 @@
       "offering_lead": "Đăng ký máy móc hoặc kỹ năng của bạn để người cần tìm thấy bạn."
     },
     "tools": {
-      "name": "Dụng cụ",
+      "name": "Dụng cụ — cho thuê và sử dụng",
       "desc": "Dụng cụ điện và máy móc, sẵn sàng khi bạn cần.",
       "seeking_title": "Cần một dụng cụ hay máy móc?",
       "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
@@ -440,7 +440,7 @@
       "offering_lead": "Đăng ký những gì bạn có để người cần tìm thấy bạn."
     },
     "home": {
-      "name": "Nhà cửa",
+      "name": "Nhà cửa — tiện ích và sửa chữa",
       "desc": "Thợ điện, thợ ống nước, dọn dẹp và các trợ giúp khác tại nhà.",
       "seeking_title": "Cần giúp việc nhà?",
       "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
@@ -448,7 +448,7 @@
       "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
     },
     "auto": {
-      "name": "Ô tô",
+      "name": "Ô tô — cho thuê và bảo dưỡng",
       "desc": "Cứu hộ trên đường — bình ắc quy, lốp xe, kéo xe, thợ máy lưu động.",
       "seeking_title": "Cần cứu hộ trên đường?",
       "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu.",
@@ -456,7 +456,7 @@
       "offering_lead": "Đăng ký kỹ năng của bạn để người cần tìm thấy bạn."
     },
     "care": {
-      "name": "Ông bà cho mượn",
+      "name": "Ông bà cho mượn — chăm sóc và trông nom",
       "desc": "Người nghỉ hưu từ 60 tuổi trở lên dành cho các gia đình trẻ vài giờ trông trẻ, bầu bạn và kể chuyện.",
       "seeking_title": "Cần người phụ trông con?",
       "seeking_lead": "Cho chúng tôi biết bạn cần gì và ở đâu — vài giờ trông nom và bầu bạn mỗi tuần.",
@@ -472,7 +472,7 @@
       "offering_lead": "Ghi rõ kỹ năng của bạn để người học ở gần tìm thấy bạn."
     },
     "stay": {
-      "name": "Chỗ ở kỳ nghỉ",
+      "name": "Chỗ ở kỳ nghỉ — công ty du lịch",
       "desc": "Đổi nhà nghỉ dưỡng — bạn ở nhà họ, họ ở nhà bạn — hoặc đón nhau đến chơi.",
       "seeking_title": "Đang tìm chỗ ở?",
       "seeking_lead": "Cho chúng tôi biết bạn muốn đi đâu và khi nào.",

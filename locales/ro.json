@@ -661,7 +661,7 @@
       "offering_lead": "Listează-ți utilajul sau abilitățile ca oamenii care au nevoie de ele să te găsească."
     },
     "tools": {
-      "name": "Unelte",
+      "name": "Unelte — închirieri și folosire",
       "desc": "Unelte electrice și utilaje mici, gata când ai nevoie de ele.",
       "seeking_title": "Ai nevoie de o unealtă sau un utilaj?",
       "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
@@ -669,7 +669,7 @@
       "offering_lead": "Listează ce ai ca oamenii care au nevoie să te găsească."
     },
     "home": {
-      "name": "Acasă",
+      "name": "Acasă — utilități și reparații",
       "desc": "Electricieni, instalatori, curățenie și alt ajutor la domiciliu.",
       "seeking_title": "Ai nevoie de ajutor acasă?",
       "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
@@ -677,7 +677,7 @@
       "offering_lead": "Listează-ți abilitățile ca oamenii care au nevoie de ele să te găsească."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — închirieri și service",
       "desc": "Ajutor rutier — baterie, cauciuc, tractare, mecanic mobil.",
       "seeking_title": "Ai nevoie de ajutor rutier?",
       "seeking_lead": "Spune-ne de ce ai nevoie și unde.",
@@ -685,7 +685,7 @@
       "offering_lead": "Listează-ți abilitățile ca oamenii care au nevoie de ele să te găsească."
     },
     "care": {
-      "name": "Bunici de împrumut",
+      "name": "Bunici de împrumut — îngrijire și supraveghere",
       "desc": "Pensionari 60+ care oferă familiilor tinere câteva ore de ajutor cu copiii, companie și povești.",
       "seeking_title": "Ai nevoie de ajutor cu copiii?",
       "seeking_lead": "Spune-ne de ce ai nevoie și unde — câteva ore pe săptămână de grijă și companie.",
@@ -701,7 +701,7 @@
       "offering_lead": "Listează-ți cunoștințele ca elevii și cei care vor să învețe să te găsească."
     },
     "stay": {
-      "name": "Vacanțe reciproce",
+      "name": "Vacanțe reciproce — agenții de turism",
       "desc": "Faceți schimb de case de vacanță — tu stai la ei, ei stau la tine — sau vă găzduiți reciproc.",
       "seeking_title": "Cauți un loc de stat în vacanță?",
       "seeking_lead": "Spune-ne unde ai vrea să mergi și când.",

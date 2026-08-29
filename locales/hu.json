@@ -432,7 +432,7 @@
       "offering_lead": "Regisztráld a gépedet vagy a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
     },
     "tools": {
-      "name": "Szerszámok",
+      "name": "Szerszámok — bérlés és használat",
       "desc": "Elektromos szerszámok és gépek, készen állva, ha szükséged van rájuk.",
       "seeking_title": "Szerszámra vagy gépre van szükséged?",
       "seeking_lead": "Mondd el, mire van szükséged és hol.",
@@ -440,7 +440,7 @@
       "offering_lead": "Regisztráld, amid van, hogy megtaláljanak, akiknek szükségük van rá."
     },
     "home": {
-      "name": "Otthon",
+      "name": "Otthon — közművek és javítások",
       "desc": "Villanyszerelők, vízvezeték-szerelők, takarítás és más otthoni segítség.",
       "seeking_title": "Segítségre van szükséged otthon?",
       "seeking_lead": "Mondd el, mire van szükséged és hol.",
@@ -448,7 +448,7 @@
       "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
     },
     "auto": {
-      "name": "Autó",
+      "name": "Autó — bérlés és szerviz",
       "desc": "Útközbeni segítség — akkumulátor, gumi, vontatás, mobil szerelő.",
       "seeking_title": "Segítségre van szükséged az úton?",
       "seeking_lead": "Mondd el, mire van szükséged és hol.",
@@ -456,7 +456,7 @@
       "offering_lead": "Regisztráld a tudásodat, hogy megtaláljanak, akiknek szükségük van rá."
     },
     "care": {
-      "name": "Kölcsönnagyszülők",
+      "name": "Kölcsönnagyszülők — gondozás és felügyelet",
       "desc": "60 év feletti nyugdíjasok, akik fiatal családoknak adnak pár óra gyerekfelügyeletet, társaságot és mesét.",
       "seeking_title": "Segítség kellene a gyerekekkel?",
       "seeking_lead": "Mondd el, mire van szükséged és hol — heti pár óra felügyelet és társaság.",
@@ -472,7 +472,7 @@
       "offering_lead": "Sorold fel a tudásod, hogy megtaláljanak a közelben tanulni vágyók."
     },
     "stay": {
-      "name": "Nyaralások",
+      "name": "Nyaralások — utazási irodák",
       "desc": "Cseréljetek nyaralót — te náluk laksz, ők nálad — vagy lássátok vendégül egymást.",
       "seeking_title": "Szállást keresel?",
       "seeking_lead": "Mondd el, hová szeretnél menni és mikor.",

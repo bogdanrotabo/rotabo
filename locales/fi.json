@@ -439,7 +439,7 @@
       "offering_lead": "Ilmoita koneesi tai taitosi, jotta niitä tarvitsevat löytävät sinut."
     },
     "tools": {
-      "name": "Työkalut",
+      "name": "Työkalut — vuokraus ja käyttö",
       "desc": "Sähkötyökalut ja koneet, valmiina kun niitä tarvitset.",
       "seeking_title": "Tarvitsetko työkalun tai koneen?",
       "seeking_lead": "Kerro, mitä tarvitset ja missä.",
@@ -447,7 +447,7 @@
       "offering_lead": "Ilmoita mitä sinulla on, jotta sitä tarvitsevat löytävät sinut."
     },
     "home": {
-      "name": "Koti",
+      "name": "Koti — kotitalouspalvelut ja korjaukset",
       "desc": "Sähköasentajat, putkimiehet, siivoojat ja muu kotiapu.",
       "seeking_title": "Tarvitsetko apua kotiin?",
       "seeking_lead": "Kerro, mitä tarvitset ja missä.",
@@ -455,7 +455,7 @@
       "offering_lead": "Ilmoita taitosi, jotta niitä tarvitsevat löytävät sinut."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — vuokraus ja huolto",
       "desc": "Apua tien päällä — akku, rengas, hinaus, liikkuva mekaanikko.",
       "seeking_title": "Tarvitsetko apua tien päällä?",
       "seeking_lead": "Kerro, mitä tarvitset ja missä.",
@@ -463,7 +463,7 @@
       "offering_lead": "Ilmoita taitosi, jotta niitä tarvitsevat löytävät sinut."
     },
     "care": {
-      "name": "Lainaisovanhemmat",
+      "name": "Lainaisovanhemmat — hoiva ja valvonta",
       "desc": "Yli 60-vuotiaat eläkeläiset, jotka antavat lapsiperheille muutaman tunnin hoitoapua, seuraa ja tarinoita.",
       "seeking_title": "Tarvitsetko apua lasten kanssa?",
       "seeking_lead": "Kerro, mitä tarvitset ja missä — muutama tunti hoitoa ja seuraa viikossa.",
@@ -479,7 +479,7 @@
       "offering_lead": "Kerro taidoistasi, jotta lähistön oppijat löytävät sinut."
     },
     "stay": {
-      "name": "Lomamajoitukset",
+      "name": "Lomamajoitukset — matkatoimistot",
       "desc": "Vaihtakaa lomakoteja — sinä asut heillä, he sinulla — tai majoittakaa toisianne vierailulle.",
       "seeking_title": "Etsitkö majoitusta?",
       "seeking_lead": "Kerro, minne haluaisit mennä ja milloin.",

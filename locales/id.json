@@ -432,7 +432,7 @@
       "offering_lead": "Daftarkan mesin atau keahlianmu agar ditemukan orang yang membutuhkannya."
     },
     "tools": {
-      "name": "Alat",
+      "name": "Alat — sewa dan penggunaan",
       "desc": "Alat listrik dan mesin, siap saat kamu membutuhkannya.",
       "seeking_title": "Butuh alat atau mesin?",
       "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
@@ -440,7 +440,7 @@
       "offering_lead": "Daftarkan yang kamu punya agar ditemukan orang yang membutuhkannya."
     },
     "home": {
-      "name": "Rumah",
+      "name": "Rumah — utilitas dan perbaikan",
       "desc": "Tukang listrik, tukang ledeng, kebersihan, dan bantuan rumah lainnya.",
       "seeking_title": "Butuh bantuan di rumah?",
       "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
@@ -448,7 +448,7 @@
       "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
     },
     "auto": {
-      "name": "Mobil",
+      "name": "Mobil — sewa dan servis",
       "desc": "Bantuan di jalan — aki, ban, derek, mekanik keliling.",
       "seeking_title": "Butuh bantuan di jalan?",
       "seeking_lead": "Beri tahu kami apa yang kamu butuhkan dan di mana.",
@@ -456,7 +456,7 @@
       "offering_lead": "Daftarkan keahlianmu agar ditemukan orang yang membutuhkannya."
     },
     "care": {
-      "name": "Kakek-nenek pinjaman",
+      "name": "Kakek-nenek pinjaman — perawatan dan pengawasan",
       "desc": "Pensiunan 60+ yang memberi keluarga muda beberapa jam pengasuhan, teman mengobrol, dan cerita.",
       "seeking_title": "Butuh bantuan dengan anak-anak?",
       "seeking_lead": "Ceritakan apa yang kamu butuhkan dan di mana — beberapa jam pengasuhan dan teman setiap minggu.",
@@ -472,7 +472,7 @@
       "offering_lead": "Cantumkan keahlianmu supaya orang di dekatmu yang ingin belajar bisa menemukanmu."
     },
     "stay": {
-      "name": "Penginapan liburan",
+      "name": "Penginapan liburan — agen perjalanan",
       "desc": "Tukar rumah liburan — kamu menginap di rumah mereka, mereka di rumahmu — atau saling menerima tamu.",
       "seeking_title": "Sedang mencari tempat menginap?",
       "seeking_lead": "Ceritakan ke mana kamu ingin pergi dan kapan.",

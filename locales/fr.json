@@ -604,7 +604,7 @@
       "offering_lead": "Inscris ta machine ou tes compétences pour que ceux qui en ont besoin te trouvent."
     },
     "tools": {
-      "name": "Outils",
+      "name": "Outils — location et utilisation",
       "desc": "Outils électriques et machines, prêts quand tu en as besoin.",
       "seeking_title": "Besoin d'un outil ou d'une machine ?",
       "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
@@ -612,7 +612,7 @@
       "offering_lead": "Inscris ce que tu as pour que ceux qui en ont besoin te trouvent."
     },
     "home": {
-      "name": "Maison",
+      "name": "Maison — équipements et réparations",
       "desc": "Électriciens, plombiers, ménage et autre aide à domicile.",
       "seeking_title": "Besoin d'aide à la maison ?",
       "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
@@ -620,7 +620,7 @@
       "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — location et entretien",
       "desc": "Dépannage sur route — batterie, pneu, remorquage, mécanicien mobile.",
       "seeking_title": "Besoin d'un dépannage sur route ?",
       "seeking_lead": "Dis-nous ce dont tu as besoin et où.",
@@ -628,7 +628,7 @@
       "offering_lead": "Inscris tes compétences pour que ceux qui en ont besoin te trouvent."
     },
     "care": {
-      "name": "Grands-parents d'emprunt",
+      "name": "Grands-parents d'emprunt — garde et accompagnement",
       "desc": "Des retraités de 60 ans et plus qui offrent aux jeunes familles quelques heures de garde, de compagnie et d'histoires.",
       "seeking_title": "Besoin d'un coup de main avec les enfants ?",
       "seeking_lead": "Dis-nous ce dont tu as besoin et où — quelques heures de garde et de compagnie par semaine.",
@@ -644,7 +644,7 @@
       "offering_lead": "Indique tes compétences pour que les apprenants proches te trouvent."
     },
     "stay": {
-      "name": "Séjours de vacances",
+      "name": "Séjours de vacances — agences de voyage",
       "desc": "Échangez vos maisons de vacances — tu loges chez eux, ils logent chez toi — ou accueillez-vous mutuellement.",
       "seeking_title": "Tu cherches un endroit où loger ?",
       "seeking_lead": "Dis-nous où tu aimerais aller et quand.",

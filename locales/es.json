@@ -604,7 +604,7 @@
       "offering_lead": "Inscribe tu máquina o tus habilidades para que te encuentren quienes las necesitan."
     },
     "tools": {
-      "name": "Herramientas",
+      "name": "Herramientas — alquiler y uso",
       "desc": "Herramientas eléctricas y maquinaria, listas cuando las necesites.",
       "seeking_title": "¿Necesitas una herramienta o máquina?",
       "seeking_lead": "Cuéntanos qué necesitas y dónde.",
@@ -612,7 +612,7 @@
       "offering_lead": "Inscribe lo que tienes para que te encuentren quienes lo necesitan."
     },
     "home": {
-      "name": "Hogar",
+      "name": "Hogar — suministros y reparaciones",
       "desc": "Electricistas, fontaneros, limpieza y otra ayuda en casa.",
       "seeking_title": "¿Necesitas ayuda en casa?",
       "seeking_lead": "Cuéntanos qué necesitas y dónde.",
@@ -620,7 +620,7 @@
       "offering_lead": "Inscribe tus habilidades para que te encuentren quienes las necesitan."
     },
     "auto": {
-      "name": "Coche",
+      "name": "Coche — alquiler y taller",
       "desc": "Ayuda en carretera — batería, rueda, grúa, mecánico a domicilio.",
       "seeking_title": "¿Necesitas ayuda en la carretera?",
       "seeking_lead": "Cuéntanos qué necesitas y dónde.",
@@ -628,7 +628,7 @@
       "offering_lead": "Inscribe tus habilidades para que te encuentren quienes las necesitan."
     },
     "care": {
-      "name": "Abuelos prestados",
+      "name": "Abuelos prestados — cuidado y acompañamiento",
       "desc": "Jubilados de 60 años o más que regalan a las familias jóvenes unas horas de cuidado, compañía e historias.",
       "seeking_title": "¿Necesitas una mano con los niños?",
       "seeking_lead": "Cuéntanos qué necesitas y dónde — unas horas de cuidado y compañía a la semana.",
@@ -644,7 +644,7 @@
       "offering_lead": "Indica tus habilidades para que te encuentren los estudiantes cercanos."
     },
     "stay": {
-      "name": "Estancias de vacaciones",
+      "name": "Estancias de vacaciones — agencias de viajes",
       "desc": "Intercambia casas de vacaciones — tú te quedas en la suya, ellos en la tuya — u os alojáis mutuamente.",
       "seeking_title": "¿Buscas un sitio donde alojarte?",
       "seeking_lead": "Cuéntanos adónde te gustaría ir y cuándo.",

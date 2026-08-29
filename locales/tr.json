@@ -597,7 +597,7 @@
       "offering_lead": "Makineni ya da becerilerini kaydet ki onlara ihtiyacı olanlar seni bulsun."
     },
     "tools": {
-      "name": "Aletler",
+      "name": "Aletler — kiralama ve kullanım",
       "desc": "İhtiyacın olduğunda hazır elektrikli aletler ve makineler.",
       "seeking_title": "Bir alete ya da makineye mi ihtiyacın var?",
       "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
@@ -605,7 +605,7 @@
       "offering_lead": "Sahip olduklarını kaydet ki ihtiyacı olanlar seni bulsun."
     },
     "home": {
-      "name": "Ev",
+      "name": "Ev — altyapı ve tamirat",
       "desc": "Elektrikçiler, tesisatçılar, temizlik ve diğer ev yardımları.",
       "seeking_title": "Evde yardıma mı ihtiyacın var?",
       "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
@@ -613,7 +613,7 @@
       "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
     },
     "auto": {
-      "name": "Araba",
+      "name": "Araba — kiralama ve servis",
       "desc": "Yol yardımı — akü, lastik, çekici, gezici tamirci.",
       "seeking_title": "Yolda yardıma mı ihtiyacın var?",
       "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu anlat.",
@@ -621,7 +621,7 @@
       "offering_lead": "Becerilerini kaydet ki ihtiyacı olanlar seni bulsun."
     },
     "care": {
-      "name": "Ödünç büyükanne ve büyükbabalar",
+      "name": "Ödünç büyükanne ve büyükbabalar — bakım ve gözetim",
       "desc": "Genç ailelere birkaç saatlik çocuk bakımı, arkadaşlık ve hikâye armağan eden 60 yaş üstü emekliler.",
       "seeking_title": "Çocuklar için yardım mı lazım?",
       "seeking_lead": "Neye ihtiyacın olduğunu ve nerede olduğunu söyle — haftada birkaç saat bakım ve arkadaşlık.",
@@ -637,7 +637,7 @@
       "offering_lead": "Becerilerini yaz ki yakındaki öğrenmek isteyenler seni bulsun."
     },
     "stay": {
-      "name": "Tatil konaklamaları",
+      "name": "Tatil konaklamaları — seyahat acenteleri",
       "desc": "Tatil evlerini takas edin — sen onlarda kalırsın, onlar sende — ya da birbirinizi misafir edin.",
       "seeking_title": "Kalacak yer mi arıyorsun?",
       "seeking_lead": "Nereye gitmek istediğini ve ne zaman olduğunu söyle.",

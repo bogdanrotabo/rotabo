@@ -439,7 +439,7 @@
       "offering_lead": "Prijavi svoj stroj ili vještine kako bi te pronašli oni kojima trebaju."
     },
     "tools": {
-      "name": "Alati",
+      "name": "Alati — najam i korištenje",
       "desc": "Električni alati i strojevi, spremni kad ti zatrebaju.",
       "seeking_title": "Treba ti alat ili stroj?",
       "seeking_lead": "Reci nam što ti treba i gdje.",
@@ -447,7 +447,7 @@
       "offering_lead": "Prijavi što imaš kako bi te pronašli oni kojima treba."
     },
     "home": {
-      "name": "Dom",
+      "name": "Dom — komunalije i popravci",
       "desc": "Električari, vodoinstalateri, čišćenje i druga pomoć u kući.",
       "seeking_title": "Treba ti pomoć u kući?",
       "seeking_lead": "Reci nam što ti treba i gdje.",
@@ -455,7 +455,7 @@
       "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — najam i servis",
       "desc": "Pomoć na cesti — akumulator, guma, šlep, mobilni mehaničar.",
       "seeking_title": "Treba ti pomoć na cesti?",
       "seeking_lead": "Reci nam što ti treba i gdje.",
@@ -463,7 +463,7 @@
       "offering_lead": "Prijavi svoje vještine kako bi te pronašli oni kojima trebaju."
     },
     "care": {
-      "name": "Posuđeni bake i djedovi",
+      "name": "Posuđeni bake i djedovi — njega i nadzor",
       "desc": "Umirovljenici od 60 godina naviše koji mladim obiteljima daruju nekoliko sati čuvanja, društva i priča.",
       "seeking_title": "Treba ti pomoć s djecom?",
       "seeking_lead": "Reci nam što trebaš i gdje — nekoliko sati čuvanja i društva tjedno.",
@@ -479,7 +479,7 @@
       "offering_lead": "Navedi svoje vještine da te pronađu oni koji u blizini žele učiti."
     },
     "stay": {
-      "name": "Odmori i smještaj",
+      "name": "Odmori i smještaj — putničke agencije",
       "desc": "Zamijenite kuće za odmor — ti odsjedaš kod njih, oni kod tebe — ili ugostite jedni druge.",
       "seeking_title": "Tražiš gdje odsjesti?",
       "seeking_lead": "Reci nam kamo bi želio ići i kada.",

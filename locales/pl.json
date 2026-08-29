@@ -597,7 +597,7 @@
       "offering_lead": "Zgłoś swoją maszynę lub umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
     },
     "tools": {
-      "name": "Narzędzia",
+      "name": "Narzędzia — wynajem i użytkowanie",
       "desc": "Elektronarzędzia i maszyny, gotowe, gdy ich potrzebujesz.",
       "seeking_title": "Potrzebujesz narzędzia albo maszyny?",
       "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
@@ -605,7 +605,7 @@
       "offering_lead": "Zgłoś to, co masz, żeby znaleźli cię ci, którzy tego potrzebują."
     },
     "home": {
-      "name": "Dom",
+      "name": "Dom — media i naprawy",
       "desc": "Elektrycy, hydraulicy, sprzątanie i inna pomoc domowa.",
       "seeking_title": "Potrzebujesz pomocy w domu?",
       "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
@@ -613,7 +613,7 @@
       "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
     },
     "auto": {
-      "name": "Auto",
+      "name": "Auto — wynajem i serwis",
       "desc": "Pomoc drogowa — akumulator, opona, holowanie, mechanik na telefon.",
       "seeking_title": "Potrzebujesz pomocy drogowej?",
       "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie.",
@@ -621,7 +621,7 @@
       "offering_lead": "Zgłoś swoje umiejętności, żeby znaleźli cię ci, którzy ich potrzebują."
     },
     "care": {
-      "name": "Wypożyczeni dziadkowie",
+      "name": "Wypożyczeni dziadkowie — opieka i nadzór",
       "desc": "Emeryci 60+, którzy dają młodym rodzinom kilka godzin opieki, towarzystwa i opowieści.",
       "seeking_title": "Potrzebujesz pomocy z dziećmi?",
       "seeking_lead": "Powiedz nam, czego potrzebujesz i gdzie — kilka godzin opieki i towarzystwa w tygodniu.",
@@ -637,7 +637,7 @@
       "offering_lead": "Wypisz swoje umiejętności, żeby znaleźli cię uczący się w pobliżu."
     },
     "stay": {
-      "name": "Pobyty wakacyjne",
+      "name": "Pobyty wakacyjne — biura podróży",
       "desc": "Zamieńcie się domami wakacyjnymi — ty mieszkasz u nich, oni u ciebie — albo ugośćcie się nawzajem.",
       "seeking_title": "Szukasz miejsca na pobyt?",
       "seeking_lead": "Powiedz nam, dokąd chcesz pojechać i kiedy.",
