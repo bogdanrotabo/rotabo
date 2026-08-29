@@ -299,7 +299,7 @@
     "google_btn": "Continuă cu Google",
     "google_or": "sau",
     "err_google": "Autentificarea cu Google nu a reușit. Folosește adresa ta de email.",
-    "intro_all": "O singură plată deschide tot site-ul: vezi cine e aici, în toate categoriile, cu numerele lor de telefon și adresele, și contactează pe oricine.",
+    "intro_all": "O singură plată deschide tot situl: toate categoriile, și persoane și firme — cu telefoanele și adresele lor, și poți contacta pe oricine.",
     "pw_new_title": "Alege-ți o parolă",
     "pw_new_body": "Emailul tău e confirmat. Alege o parolă și asta devine contul tău Rotabo: data viitoare intri direct, de pe orice dispozitiv, fără să mai aștepți vreun cod.",
     "pw_have_title": "Scrie-ți parola",
@@ -737,6 +737,10 @@
     "locked": "Ca să vezi ce caută sau ce oferă și cum îi găsești, trebuie să fii și tu înscris. Înscrierea e gratis. După ea, 2 franci deschid domeniul ăsta pentru un an.",
     "unlock_btn": "Vezi ce caută"
   },
+  "sides": {
+    "is_company": "Adresa asta e înregistrată ca firmă. Firmele se înscriu pe Rotabo pentru firme, nu aici.",
+    "is_private": "Adresa asta e înregistrată ca persoană privată. Folosește altă adresă pentru firmă."
+  },
   "generic_form": {
     "name_label": "Numele tău",
     "phone_label": "Număr de telefon",
@@ -822,7 +826,7 @@
     "subtitle": "Deblochează accesul complet ca să vezi cine e aici, cu telefon și adresă.",
     "locked_count_one": "1 persoană e aici chiar acum.",
     "locked_count_other": "{n} persoane sunt aici chiar acum.",
-    "locked_body": "Ca să vezi cine sunt — nume, oraș, telefon și adresă — trebuie să fii și tu aici. Propriul tău anunț e gratuit. După aceea, 2 CHF îți deschid această categorie pentru un an.",
+    "locked_body": "Ca să vezi cine sunt — nume, oraș, telefon și adresă — trebuie să fii și tu aici. Publicarea propriului anunț e gratis. După aceea, 2 franci deschid tot situl pentru un an: toate categoriile, și persoane și firme.",
     "locked_btn": "Deblochează accesul complet",
     "locked_empty": "Încă nu e nimeni aici. Nu e nimic de deblocat — revino mai târziu sau adaugă-te de pe pagina principală.",
     "loading": "Se încarcă…",

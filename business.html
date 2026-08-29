@@ -2659,6 +2659,29 @@
     var btn = form.querySelector(".form-submit");
     btn.disabled = submitting;
   }
+  /* One address belongs to one side. When the edge function says the address
+     is already registered on the other side, the form's single error line --
+     "something went wrong" -- is worse than useless: it invites the person to
+     press the same button again and get the same answer.
+
+     The default text is put back afterwards, so the next real failure is not
+     still wearing this message. */
+  function showSideError(el, side){
+    if (!el) return;
+    if (!el.dataset.defaultText) el.dataset.defaultText = el.textContent;
+    var key = side === "company" ? "sides.is_company" : "sides.is_private";
+    var fallback = side === "company"
+      ? "This address is registered as a company. Companies list on Rotabo for business, not here."
+      : "This address is registered as a private person. Use another address for the company.";
+    var msg = window.rotaboT ? window.rotaboT(key) : key;
+    el.textContent = (msg && msg !== key) ? msg : fallback;
+    el.classList.add("show");
+  }
+
+  function restoreError(el){
+    if (el && el.dataset.defaultText) el.textContent = el.dataset.defaultText;
+  }
+
   function showError(el){
     el.classList.add("show");
   }
@@ -2732,7 +2755,8 @@
       .then(function(result){
         if (!result.ok) {
           setSubmitting(form, false);
-          showError(errorEl);
+          if (result.json && result.json.side) showSideError(errorEl, result.json.side);
+          else { restoreError(errorEl); showError(errorEl); }
           return;
         }
         var newId = result.json.id;
@@ -2796,7 +2820,8 @@
       .then(function(result){
         if (!result.ok) {
           setSubmitting(form, false);
-          showError(errorEl);
+          if (result.json && result.json.side) showSideError(errorEl, result.json.side);
+          else { restoreError(errorEl); showError(errorEl); }
           return;
         }
         try {

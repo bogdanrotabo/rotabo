@@ -144,6 +144,22 @@ Deno.serve(async (req: Request) => {
     return json({ error: "email not verified or verification expired" }, 401);
   }
 
+  // One address belongs to one side of the site. The mirror of the check in
+  // create-listing: an address already carrying a live private listing does
+  // not also become a company here.
+  //
+  // After the token check, not before: this says no to a real person about a
+  // real address, so it should only speak once the address is proven theirs.
+  const { data: asPerson } = await supabase
+    .from("listings")
+    .select("id")
+    .eq("email", email)
+    .gt("visible_until", new Date().toISOString())
+    .limit(1);
+  if (asPerson && asPerson.length) {
+    return json({ error: "registered as a private person", side: "private" }, 409);
+  }
+
   // Computed with setMonth so a registration made on the 31st lands on a real
   // date twelve months out rather than drifting by the day count between.
   const until = new Date();

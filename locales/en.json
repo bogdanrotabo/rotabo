@@ -299,7 +299,7 @@
     "google_btn": "Continue with Google",
     "google_or": "or",
     "err_google": "Google sign-in did not go through. Use your email instead.",
-    "intro_all": "One payment opens the whole site: see who is here in every category, with their phone numbers and addresses, and contact anyone.",
+    "intro_all": "One payment opens the whole site: every category, people and companies alike — their phone numbers and addresses, and you can contact anyone.",
     "pw_new_title": "Choose a password",
     "pw_new_body": "Your email is confirmed. Pick a password and this becomes your Rotabo account: next time you simply sign in, from any device, with no code to wait for.",
     "pw_have_title": "Enter your password",
@@ -735,6 +735,10 @@
     "locked": "To see what they are looking for or offering, and how to reach them, you need to be registered yourself. Registering is free. After that, 2 CHF opens this field for a year.",
     "unlock_btn": "See what they need"
   },
+  "sides": {
+    "is_company": "This address is registered as a company. Companies list on Rotabo for business, not here.",
+    "is_private": "This address is registered as a private person. Use another address for the company."
+  },
   "generic_form": {
     "name_label": "Your name",
     "phone_label": "Phone number",
@@ -820,7 +824,7 @@
     "subtitle": "Unlock full access to see who is here, with phone and address.",
     "locked_count_one": "1 person is here right now.",
     "locked_count_other": "{n} people are here right now.",
-    "locked_body": "To see who they are — name, city, phone and address — you need to be here too. Publishing your own listing is free. After that, 2 CHF opens this category for a year.",
+    "locked_body": "To see who they are — name, city, phone and address — you need to be here too. Publishing your own listing is free. After that, 2 CHF opens the whole site for a year: every category, people and companies alike.",
     "locked_btn": "Unlock full access",
     "locked_empty": "Nobody is here yet. There is nothing to unlock — come back later, or add yourself from the home page.",
     "loading": "Loading…",
