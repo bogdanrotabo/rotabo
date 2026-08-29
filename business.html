@@ -778,6 +778,37 @@
   .cat-icon--mark svg{width:25px;height:33px;}
   /* This card has no paragraph any more, and the 8px under the heading was
      measured for one that did. */
+  /* Rotabo Market wears the diamond's own colour: the violet gradient on the
+     private side, the gold one on the business side. It is the card that
+     carries the mark and it is first in the grid, so it should look like the
+     front door rather than like the eleven behind it.
+
+     --on-brand is already the ink that reads on each fill -- white on the
+     violet, violet on the gold -- so the heading, the paragraph and the
+     browse link simply take it and are right on both sides without a second
+     rule. */
+  #cat-other{
+    background:linear-gradient(135deg,var(--diamond-a),var(--diamond-b));
+    border-color:transparent;
+  }
+  #cat-other h3,#cat-other p,#cat-other .cat-browse{color:var(--on-brand);}
+
+  /* The mark sits on white. Fill the card with violet and the violet diamond
+     disappears into it; fill it with gold and the gold one does. A plate
+     under the pair keeps both readable whichever side you are on, and it is
+     the same shape the mark has everywhere else on the site. */
+  #cat-other .cat-icon--mark{
+    background:#fff;border-radius:14px;padding:10px 13px;
+    width:max-content;margin-left:auto;margin-right:auto;
+  }
+
+  /* The buttons cannot keep the brand gradient here -- it is the background
+     now, and a button the colour of the card it sits on is not a button. The
+     filled one inverts, the other becomes an outline. */
+  #cat-other .cat-btn.need{background:#fff;color:var(--violet-1);border-color:transparent;}
+  #cat-other .cat-btn.offer{background:transparent;border:1px solid var(--on-brand);color:var(--on-brand);}
+  html[data-mode="business"] #cat-other .cat-btn.need{background:var(--violet-1);color:#fff;}
+
   #cat-other h3{margin-bottom:26px;}
   .chip-emoji--mark{display:inline-flex;align-items:center;gap:3px;line-height:0;}
   .chip-emoji--mark svg{width:11px;height:14px;}
