@@ -111,3 +111,53 @@ shop_books|Księgarnia i papierniczy|Książki, zeszyty, długopisy, artykuły b
 shop_florist|Kwiaciarnia|Kwiaty, bukiet, róże, wieniec
 shop_pet|Sklep zoologiczny|Karma, akcesoria, akwarium, klatka
 motorcycle_repair|Serwis motocyklowy|Motocykl, skuter, motorower, kask, łańcuch
+bar|Bar|Pub, knajpa, bar koktajlowy, ogródek
+kebab_shawarma|Kebab i shawarma|Döner, dürüm, gyros, bułka
+pizzeria|Pizzeria|Pizza, włoska, pizza na wynos
+fast_food|Fast food|Burgery, frytki, przekąski
+bakery|Piekarnia|Chleb, piekarz, bułki, wypieki
+pastry_shop|Cukiernia|Ciasta, torty, słodycze, desery
+coffee_shop|Kawiarnia|Kawa, espresso, barista, palarnia kawy
+food_truck|Food truck|Street food, kuchnia mobilna, przyczepa
+butcher|Sklep mięsny|Mięso, rzeźnik, wędliny
+ice_cream|Lodziarnia|Lody, gelato, rożki
+winery|Winnica|Wino, piwnica win, degustacja
+brewery|Browar|Piwo, piwo rzemieślnicze, browar
+nightclub|Klub nocny i dyskoteka|Dyskoteka, klub, dancing, DJ
+beach_club|Bar na plaży i beach club|Plaża, leżaki, nadmorski, molo
+bowling_billiards|Kręgle i bilard|Bowling, snooker, dart
+travel_agency|Biuro podróży|Wycieczki, wakacje, loty, wczasy
+nail_salon|Salon paznokci, manicure i pedicure|Paznokcie, manicure, pedicure, hybryda
+barber|Barber shop|Fryzjer męski, broda, golenie
+tattoo_piercing|Tatuaże i piercing|Tatuażysta, studio tatuażu, kolczyki
+spa_sauna|Spa i sauna|Wellness, łaźnia parowa, hammam, termy
+cosmetics_shop|Sklep kosmetyczny|Perfumeria, makijaż, pielęgnacja, uroda
+dry_cleaning|Pralnia chemiczna i pralnia|Czyszczenie chemiczne, pranie, prasowanie
+podiatry|Podologia i pielęgnacja stóp|Podolog, wrastający paznokieć, stopy
+dental_laboratory|Pracownia protetyczna|Technik dentystyczny, protezy, korony
+orthodontics|Ortodoncja|Aparat, nakładki, ortodonta
+dermatology|Dermatologia|Dermatolog, skóra, znamiona, trądzik
+paediatrics|Pediatria|Pediatra, lekarz dziecięcy
+gynaecology|Ginekologia|Ginekolog, położnictwo, zdrowie kobiet
+cardiology|Kardiologia|Kardiolog, serce, EKG
+medical_imaging|Diagnostyka obrazowa|Radiologia, USG, rezonans, tomografia
+speech_therapy|Logopedia|Logopeda, terapia mowy, jąkanie
+nutrition_dietetics|Żywienie i dietetyka|Dietetyk, dieta, odchudzanie
+bicycle_repair|Naprawa rowerów|Rower, przebita dętka, serwis rowerowy
+scooter_repair|Naprawa skuterów i motorowerów|Skuter, motorower, Vespa, 50cc
+appliance_repair|Naprawa AGD|Pralka, lodówka, piekarnik, sprzęt AGD
+phone_repair|Naprawa telefonów i tabletów|Telefon, wymiana ekranu, iPhone, tablet
+computer_repair|Naprawa komputerów|PC, laptop, odzyskiwanie danych
+watch_jewellery_repair|Naprawa zegarków i biżuterii|Zegarmistrz, jubiler, bateria, pierścionek
+shoe_repair|Szewc|Naprawa butów, obcasy, zelówki
+tailoring_alterations|Krawiectwo i przeróbki|Krawiec, krawcowa, skracanie, przeróbki
+upholstery|Tapicerstwo|Tapicer, kanapa, obicie, meble
+glazing|Szklarstwo i okna|Szklarz, okna, szyby, szyby zespolone
+chimney_sweep|Kominiarstwo|Kominiarz, komin, sadza
+pest_control|Dezynsekcja i deratyzacja|Pluskwy, szczury, karaluchy, szkodniki
+pool_maintenance|Obsługa basenów|Basen, czyszczenie basenu, chlor
+window_cleaning|Mycie okien|Mycie szyb, okna, elewacja
+car_wash|Myjnia samochodowa|Mycie auta, czyszczenie samochodu, detailing
+car_rental|Wynajem samochodów|Rent a car, auto na wynajem
+bike_scooter_rental|Wypożyczalnia rowerów i hulajnóg|Wypożycz rower, hulajnoga elektryczna
+funeral_services|Usługi pogrzebowe|Zakład pogrzebowy, pogrzeb, kremacja, trumny

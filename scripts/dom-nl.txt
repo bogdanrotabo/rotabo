@@ -111,3 +111,53 @@ shop_books|Boekhandel en kantoorartikelen|Boeken, schriften, pennen, kantoorbeno
 shop_florist|Bloemenwinkel|Bloemen, boeket, rozen, krans
 shop_pet|Dierenwinkel|Diervoeding, dierbenodigdheden, aquarium, kooi
 motorcycle_repair|Motorwerkplaats|Motor, scooter, brommer, helm, ketting
+bar|Bar|Café, kroeg, cocktailbar, terras
+kebab_shawarma|Kebab en shoarma|Döner, dürüm, gyros, broodje
+pizzeria|Pizzeria|Pizza, Italiaans, pizza afhalen
+fast_food|Fastfood|Snackbar, burger, friet, snacks
+bakery|Bakkerij|Brood, bakker, broodjes, banket
+pastry_shop|Banketbakkerij|Taart, gebak, patisserie, zoetwaren
+coffee_shop|Koffiezaak|Koffie, espresso, barista, koffiehuis
+food_truck|Foodtruck|Streetfood, mobiele keuken, verkoopwagen
+butcher|Slagerij|Vlees, slager, worst
+ice_cream|IJssalon|IJs, gelato, softijs
+winery|Wijngaard|Wijn, wijnkelder, wijnproeverij
+brewery|Brouwerij|Bier, speciaalbier, craft beer
+nightclub|Nachtclub en disco|Disco, club, dancing, dj
+beach_club|Strandbar en beachclub|Strand, ligstoelen, strandtent, zee
+bowling_billiards|Bowling en biljart|Kegelen, snooker, darts
+travel_agency|Reisbureau|Reizen, vakanties, vluchten, pakketreizen
+nail_salon|Nagelstudio, manicure en pedicure|Nagels, manicure, pedicure, gelnagels
+barber|Herenkapper|Barbier, baard, scheren
+tattoo_piercing|Tattoo en piercing|Tatoeage, tattooshop, piercing
+spa_sauna|Spa en sauna|Wellness, stoombad, hammam, thermen
+cosmetics_shop|Cosmeticawinkel|Parfumerie, make-up, huidverzorging, beauty
+dry_cleaning|Stomerij en wasserij|Chemisch reinigen, wassalon, strijken
+podiatry|Podologie en voetverzorging|Pedicure medisch, podoloog, ingegroeide nagel
+dental_laboratory|Tandtechnisch laboratorium|Tandtechnicus, protheses, kronen
+orthodontics|Orthodontie|Beugel, aligners, orthodontist
+dermatology|Dermatologie|Huidarts, huid, moedervlekken, acne
+paediatrics|Kindergeneeskunde|Kinderarts, kinderdokter
+gynaecology|Gynaecologie|Gynaecoloog, verloskunde, vrouwengezondheid
+cardiology|Cardiologie|Cardioloog, hart, ecg
+medical_imaging|Medische beeldvorming|Radiologie, echo, MRI, CT-scan
+speech_therapy|Logopedie|Logopedist, spraaktherapie, stotteren
+nutrition_dietetics|Voeding en diëtetiek|Diëtist, voedingsdeskundige, dieet, afvallen
+bicycle_repair|Fietsreparatie|Fiets, lekke band, fietsenmaker
+scooter_repair|Scooter- en bromfietsreparatie|Scooter, brommer, Vespa, 50cc
+appliance_repair|Reparatie witgoed|Wasmachine, koelkast, oven, huishoudapparaten
+phone_repair|Telefoon- en tabletreparatie|Telefoon, scherm, iPhone, tablet
+computer_repair|Computerreparatie|Pc, laptop, dataherstel
+watch_jewellery_repair|Horloge- en sieradenreparatie|Horlogemaker, juwelier, batterij, ring
+shoe_repair|Schoenreparatie|Schoenmaker, hakken, zolen
+tailoring_alterations|Kleermakerij en vermaakwerk|Kleermaker, naaister, zoom, vermaken
+upholstery|Stoffering|Stoffeerder, bank, opnieuw bekleden, meubels
+glazing|Glaszetterij en ramen|Glaszetter, ramen, glas, dubbel glas
+chimney_sweep|Schoorsteenvegen|Schoorsteenveger, schoorsteen, roet
+pest_control|Ongediertebestrijding|Bedwantsen, ratten, kakkerlakken, plaagdieren
+pool_maintenance|Zwembadonderhoud|Zwembad, zwembadreiniging, chloor
+window_cleaning|Glazenwassen|Glazenwasser, ramen, gevel
+car_wash|Autowasserette|Wasstraat, auto poetsen, detailing
+car_rental|Autoverhuur|Auto huren, huurauto
+bike_scooter_rental|Fiets- en scooterverhuur|Fiets huren, e-step, fietsverhuur
+funeral_services|Uitvaartverzorging|Begrafenisondernemer, begrafenis, crematie, kisten

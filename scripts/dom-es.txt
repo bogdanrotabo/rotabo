@@ -111,3 +111,53 @@ shop_books|Librería y papelería|Libros, cuadernos, bolígrafos, material de of
 shop_florist|Floristería|Flores, ramo, rosas, corona
 shop_pet|Tienda de mascotas|Pienso, accesorios para mascotas, acuario, jaula
 motorcycle_repair|Taller de motos|Moto, ciclomotor, scooter, casco, cadena
+bar|Bar|Pub, cafetería, coctelería, terraza
+kebab_shawarma|Kebab y shawarma|Döner, dürüm, durum, bocadillo
+pizzeria|Pizzería|Pizza, italiano, pizza para llevar
+fast_food|Comida rápida|Hamburguesas, patatas fritas, bocadillos
+bakery|Panadería|Pan, panadero, bollería, horno
+pastry_shop|Pastelería|Tartas, dulces, repostería, confitería
+coffee_shop|Cafetería|Café, espresso, barista, cafés de especialidad
+food_truck|Food truck|Comida callejera, cocina móvil, furgoneta
+butcher|Carnicería|Carne, carnicero, embutidos
+ice_cream|Heladería|Helado, gelato, cucuruchos
+winery|Bodega|Vino, viñedo, cata, enoteca
+brewery|Cervecería artesanal|Cerveza, cerveza artesanal, fábrica de cerveza
+nightclub|Discoteca y club nocturno|Disco, club, sala de baile, DJ
+beach_club|Chiringuito y beach club|Playa, hamacas, orilla, bar de playa
+bowling_billiards|Bolera y billar|Bolos, snooker, dardos
+travel_agency|Agencia de viajes|Viajes, vacaciones, vuelos, paquetes
+nail_salon|Salón de uñas, manicura y pedicura|Uñas, manicura, pedicura, gel
+barber|Barbería|Corte de caballero, barba, afeitado
+tattoo_piercing|Tatuajes y piercings|Tatuador, estudio de tatuajes, piercing
+spa_sauna|Spa y sauna|Bienestar, baño turco, hammam, termas
+cosmetics_shop|Tienda de cosmética|Perfumería, maquillaje, cuidado de la piel, belleza
+dry_cleaning|Tintorería y lavandería|Limpieza en seco, lavandería, planchado
+podiatry|Podología y cuidado de los pies|Podólogo, uña encarnada, pies
+dental_laboratory|Laboratorio dental|Protésico dental, prótesis, coronas
+orthodontics|Ortodoncia|Brackets, alineadores, ortodoncista
+dermatology|Dermatología|Dermatólogo, piel, lunares, acné
+paediatrics|Pediatría|Pediatra, médico de niños
+gynaecology|Ginecología|Ginecólogo, obstetricia, salud de la mujer
+cardiology|Cardiología|Cardiólogo, corazón, electrocardiograma
+medical_imaging|Diagnóstico por imagen|Radiología, ecografía, resonancia, TAC
+speech_therapy|Logopedia|Logopeda, terapia del habla, tartamudez
+nutrition_dietetics|Nutrición y dietética|Nutricionista, dietista, dieta, adelgazar
+bicycle_repair|Reparación de bicicletas|Bici, pinchazo, taller de bicis, ciclismo
+scooter_repair|Reparación de motos y ciclomotores|Scooter, ciclomotor, Vespa, 50cc
+appliance_repair|Reparación de electrodomésticos|Lavadora, nevera, horno, electrodomésticos
+phone_repair|Reparación de móviles y tablets|Móvil, pantalla, iPhone, tablet
+computer_repair|Reparación de ordenadores|PC, portátil, recuperación de datos
+watch_jewellery_repair|Reparación de relojes y joyas|Relojero, joyero, pila, ajuste de anillo
+shoe_repair|Zapatería de reparación|Zapatero, tacones, suelas
+tailoring_alterations|Sastrería y arreglos|Sastre, costurera, dobladillo, arreglos
+upholstery|Tapicería|Tapicero, sofá, retapizado, muebles
+glazing|Cristalería y ventanas|Cristalero, ventanas, vidrio, doble acristalamiento
+chimney_sweep|Deshollinado|Deshollinador, chimenea, hollín, tiro
+pest_control|Control de plagas|Fumigación, chinches, ratas, cucarachas
+pool_maintenance|Mantenimiento de piscinas|Piscina, limpieza de piscina, cloro
+window_cleaning|Limpieza de cristales|Limpiacristales, ventanas, fachada
+car_wash|Lavado de coches|Lavadero, limpieza de coche, detailing
+car_rental|Alquiler de coches|Rent a car, coche de alquiler
+bike_scooter_rental|Alquiler de bicis y patinetes|Alquilar bici, patinete eléctrico
+funeral_services|Servicios funerarios|Funeraria, entierro, incineración, ataúdes

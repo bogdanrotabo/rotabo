@@ -141,25 +141,25 @@
      is the other half of the mark rather than a third colour.
 
      What cannot come along is white. Violet is dark enough to carry white
-     text; #f0b90b is not, and the honest fix is not a browner yellow that
+     text; #ffd41a is not, and the honest fix is not a browner yellow that
      nobody chose but the violet on top of it. */
   html[data-mode="business"]{
-    --bg-top:#fdf5e2;
-    --bg-mid:#fcf1d3;
-    --bg-card:#fefaf0;
-    --border:#f2dc9a;
-    --hdr-top:#fdf6e5;
-    --hdr-bot:#fbeecb;
-    --hover-soft:#fefbf3;
-    --panel-soft:#fdf8ea;
+    --bg-top:#fdf6e0;
+    --bg-mid:#fbf1d2;
+    --bg-card:#fdf8e6;
+    --border:#ffd41a;
+    --hdr-top:#fdf3d2;
+    --hdr-bot:#fbecbe;
+    --hover-soft:#fdf9ea;
+    --panel-soft:#fdf8e4;
 
-    --diamond-a:#f0b90b;
-    --diamond-b:#c99400;
-    --brand-light:#fcd535;
-    --brand-grad:#f0b90b;
-    --pill-a:#f0b90b;
-    --pill-b:#fcd535;
-    --tier-border:#e8c96b;
+    --diamond-a:#ffd41a;
+    --diamond-b:#ffd41a;
+    --brand-light:#ffd41a;
+    --brand-grad:#ffd41a;
+    --pill-a:#ffd41a;
+    --pill-b:#ffd41a;
+    --tier-border:#ffd41a;
 
     /* The muted greys were mixed with violet and sat on lavender. On a cream
        ground the same value drops to 3.67, so it is warmed and darkened to
@@ -170,12 +170,12 @@
     --text-dark:#3a2c10;
 
     /* Deeper than the mark's violet on purpose. The fills run down to
-       #c99400 at one end, where #7c2596 measured 3.59 against the 4.5 a
+       #ffd41a at one end, where #7c2596 measured 3.59 against the 4.5 a
        button label needs; this reads 4.7 there and 7.7 on the bright end. */
     --on-brand:#5f2270;
     --on-brand-soft:rgba(95,34,112,.92);
 
-    /* Darker than the violet used elsewhere: the band runs down to #c99400 at
+    /* Darker than the violet used elsewhere: the band runs down to #ffd41a at
        one end, and #7c2596 on that measured 3.59 where 4.5 was needed. */
     --tick-strong:#5f2270;
     --tick-text:#5f2270;
@@ -233,7 +233,7 @@
     width:9px;height:9px;border-radius:50%;flex:0 0 auto;
     background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.22);
   }
-  .tick--seek .tick__dot{background:#ffd9a0;box-shadow:0 0 0 3px rgba(255,217,160,.24);}
+  .tick--seek .tick__dot{background:#ffd41a;box-shadow:0 0 0 3px rgba(255,212,26,.24);}
 
   /* One separator rule instead of a middot element in every gap. Logical
      margin, so Arabic and Urdu put it on the correct side. */
@@ -241,6 +241,10 @@
   .tick__num::before{content:"\00B7";margin-inline-end:9px;color:var(--tick-sep);font-weight:400;}
 
   .tick--sponsor{gap:10px;}
+  .tick__logo{
+    width:20px;height:20px;flex:0 0 auto;display:block;border-radius:5px;
+  }
+  @media (min-width:560px){ .tick__logo{width:23px;height:23px;} }
   .tick--sponsor .tick__label{
     text-transform:uppercase;letter-spacing:.12em;font-size:11px;
     font-weight:800;color:var(--tick-label);opacity:.85;
@@ -266,11 +270,11 @@
 
   /* The second band. Gold whatever the palette says, because it is the
      business side seen from the personal one -- swapped with the page it
-     would stop meaning anything. Violet lettering, since #f0b90b cannot
+     would stop meaning anything. Violet lettering, since #ffd41a cannot
      carry white, and the deeper violet clears 4.7 against the dark end. */
   .ticker--biz{
-    background:linear-gradient(90deg,#c99400 0%,#f0b90b 38%,#fcd535 62%,#f0b90b 100%);
-    border-bottom:1px solid #c98a00;
+    background:#ffd41a;
+    border-bottom:1px solid #ffd41a;
   }
   .ticker--biz .tick{color:#5f2270;}
   .ticker--biz .tick__cat,
@@ -321,18 +325,18 @@
     padding:9px 16px;
   }
   nav.links a:hover{background:var(--hover-soft);border-color:var(--violet-2);}
-  /* The mark's own yellow as a filled box, not as lettering. #f0b90b is
+  /* The mark's own yellow as a filled box, not as lettering. #ffd41a is
      1.5:1 against this header and unreadable at nav size, but as a ground
      under near-black it is over 10:1 and reads at a glance -- which is how
      a brand colour this pale earns a place on small text. */
   nav.links a.biz{
-    background:linear-gradient(100deg,#fcd535 0%,#f0b90b 45%,#c99400 100%);
-    border-color:#c99400;
+    background:linear-gradient(100deg,#ffd41a 0%,#ffd41a 45%,#ffd41a 100%);
+    border-color:#ffd41a;
     color:#2b0f36;
   }
   nav.links a.biz:hover{
-    background:linear-gradient(100deg,#f0b90b 0%,#f0bc0d 45%,#c98a00 100%);
-    border-color:#c98a00;
+    background:linear-gradient(100deg,#ffd41a 0%,#ffd41a 45%,#ffd41a 100%);
+    border-color:#ffd41a;
   }
 
   .hero{
@@ -343,6 +347,7 @@
     color:var(--text-eyebrow);
     font-size:.9rem;font-weight:600;
     margin:0 0 18px;
+    display:inline-flex;align-items:center;gap:7px;
   }
   /* Live visitor counter. A thin band under the header rather than a chip
      inside it: the header already carries the brand, three links and the
@@ -575,15 +580,15 @@
      cousin of them. The word and the diamond beside it are one colour or
      they are two brands.
 
-     Stated plainly because it is a real cost, chosen deliberately: #f0b90b
+     Stated plainly because it is a real cost, chosen deliberately: #ffd41a
      measures 1.5:1 against this lavender, well under the 3:1 a heading is
      meant to hold, and it will be faint for anyone reading in sunlight or
      with low vision. Fixing it means either a darker yellow, which was
      tried and rejected, or giving the glyphs an edge -- not quietly
      shifting the colour back. */
   .me-gold{
-    color:#f0b90b;
-    background:linear-gradient(100deg,#fcd535 0%,#f0b90b 45%,#c99400 100%);
+    color:#ffd41a;
+    background:linear-gradient(100deg,#ffd41a 0%,#ffd41a 45%,#ffd41a 100%);
     -webkit-background-clip:text;
     background-clip:text;
   }
@@ -1017,7 +1022,7 @@
   }
   .sponsor-row .s-tier.bronze, .biz-row .s-tier.bronze{color:#a26a34;border-color:#e0c3a4;}
   .sponsor-row .s-tier.silver, .biz-row .s-tier.silver{color:#6d7480;border-color:#cdd3da;}
-  .sponsor-row .s-tier.gold, .biz-row .s-tier.gold{color:#a87f1d;border-color:#e8c96b;}
+  .sponsor-row .s-tier.gold, .biz-row .s-tier.gold{color:#a87f1d;border-color:#ffd41a;}
   .sponsor-row .s-tier.platinum, .biz-row .s-tier.platinum{color:var(--violet-1);border-color:var(--tier-border);}
   .sponsor-row .s-name{color:var(--text-dark);font-weight:800;font-size:1.05rem;}
   .sponsor-row a.s-name{color:var(--violet-2);}
@@ -1414,9 +1419,9 @@
          tail of the fish: pale at the centre, the tail colour in the middle,
          warm amber at the rim where the tail runs into orange. -->
     <radialGradient id="diamondGold" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#fcd535"/>
-      <stop offset="45%" stop-color="#f0b90b"/>
-      <stop offset="100%" stop-color="#c99400"/>
+      <stop offset="0%" stop-color="#ffd41a"/>
+      <stop offset="45%" stop-color="#ffd41a"/>
+      <stop offset="100%" stop-color="#ffd41a"/>
     </radialGradient>
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>
@@ -1499,7 +1504,7 @@
     </a>
   </div>
 
-  <p class="origin-badge" data-i18n="hero.origin_badge">🇨🇭 Made in Switzerland — for the whole world</p>
+  <p class="origin-badge"><img class="flagimg" src="/flags/ch.png" alt="Switzerland" decoding="async"><span data-i18n="hero.origin_badge">Made in Switzerland — for the whole world</span></p>
   <div class="diamond-hero-pair">
     <svg class="diamond-hero" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
     <svg class="diamond-hero mark-gold" viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
@@ -4519,8 +4524,38 @@ if ("serviceWorker" in navigator) {
     return [row.city, country].filter(Boolean).join(", ");
   }
 
+  /* A sponsor's own mark, drawn as the sponsor draws it.
+     topten.one's is a black rounded square with a yellow one on it, and it is
+     inline rather than a file: it is four shapes, so it costs less than the
+     request it would take to fetch it, and it stays sharp at any size. The
+     colours are topten's own, not Rotabo's -- a sponsor's mark that has been
+     recoloured to match the page it sits on is not the sponsor's mark.
+
+     Keyed by host, so it is the sponsor that carries a logo, not the row. A
+     sponsor with no mark here shows its name, which is what it did before. */
+  var SPONSOR_MARKS = {
+    "topten.one":
+      '<svg class="tick__logo" viewBox="0 0 64 64" aria-hidden="true">'
+      + '<rect width="64" height="64" rx="14" fill="#08090c"/>'
+      + '<rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#ffc233" stroke-opacity=".28" stroke-width="2"/>'
+      + '<path d="M24 20h10v30" fill="none" stroke="#ffc233" stroke-width="7" stroke-linecap="square"/>'
+      + '<rect x="20" y="46" width="24" height="6" rx="2" fill="#ffc233"/>'
+      + '</svg>'
+  };
+
+  function markFor(name, url){
+    var key = String(name || "").toLowerCase().replace(/^www\./, "");
+    if (SPONSOR_MARKS[key]) return SPONSOR_MARKS[key];
+    try {
+      var h = new URL(url).hostname.toLowerCase().replace(/^www\./, "");
+      if (SPONSOR_MARKS[h]) return SPONSOR_MARKS[h];
+    } catch (e) { /* no url, or not one: the name was the only chance */ }
+    return "";
+  }
+
   function sponsorCell(name, url){
     var inner = '<span class="tick__label">' + esc(T("ticker.sponsors", "Sponsors")) + '</span>'
+              + markFor(name, url)
               + '<b>' + esc(name) + '</b>';
     return url
       ? '<a class="tick tick--sponsor" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>'

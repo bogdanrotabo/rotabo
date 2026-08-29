@@ -111,3 +111,53 @@ shop_books|Buchhandlung und Papeterie|Bücher, Hefte, Stifte, Bürobedarf
 shop_florist|Blumenladen|Blumen, Strauss, Rosen, Kranz
 shop_pet|Zoofachhandel|Tierfutter, Tierbedarf, Aquarium, Käfig
 motorcycle_repair|Motorradwerkstatt|Motorrad, Roller, Töff, Helm, Kette
+bar|Bar|Kneipe, Pub, Cocktailbar, Terrasse
+kebab_shawarma|Kebab und Schawarma|Döner, Dürüm, Gyros, Imbiss
+pizzeria|Pizzeria|Pizza, Italiener, Pizzataxi
+fast_food|Schnellimbiss|Fastfood, Burger, Pommes, Snack
+bakery|Bäckerei|Brot, Bäcker, Brötchen, Backwaren
+pastry_shop|Konditorei|Torten, Kuchen, Patisserie, Süsses
+coffee_shop|Café|Kaffee, Espresso, Barista, Kaffeehaus
+food_truck|Foodtruck|Streetfood, Imbisswagen, mobile Küche
+butcher|Metzgerei|Fleisch, Metzger, Wurst, Fleischerei
+ice_cream|Eisdiele|Eis, Gelato, Speiseeis
+winery|Weingut|Wein, Weinkeller, Weinprobe, Rebberg
+brewery|Brauerei|Bier, Craft Beer, Braukunst
+nightclub|Nachtclub und Disco|Disco, Club, Tanzlokal, DJ
+beach_club|Strandbar und Beachclub|Strand, Beachbar, Liegestühle, Lido
+bowling_billiards|Bowling und Billard|Kegeln, Pool, Snooker, Darts
+travel_agency|Reisebüro|Reisen, Ferien, Flüge, Pauschalreisen
+nail_salon|Nagelstudio, Maniküre und Pediküre|Nägel, Maniküre, Pediküre, Gelnägel
+barber|Herrenfriseur|Barbier, Bart, Rasur, Herrenschnitt
+tattoo_piercing|Tattoo und Piercing|Tätowierung, Tattoostudio, Piercing
+spa_sauna|Spa und Sauna|Wellness, Dampfbad, Hammam, Therme
+cosmetics_shop|Kosmetikgeschäft|Parfümerie, Make-up, Hautpflege, Beauty
+dry_cleaning|Reinigung und Wäscherei|Chemische Reinigung, Waschsalon, Bügeln
+podiatry|Podologie und Fusspflege|Fusspflege, Podologe, eingewachsener Nagel
+dental_laboratory|Dentallabor|Zahntechniker, Prothesen, Kronen
+orthodontics|Kieferorthopädie|Zahnspange, Aligner, Zahnkorrektur
+dermatology|Dermatologie|Hautarzt, Muttermale, Akne, Haut
+paediatrics|Kindermedizin|Kinderarzt, Pädiater, Kindergesundheit
+gynaecology|Gynäkologie|Frauenarzt, Geburtshilfe, Frauengesundheit
+cardiology|Kardiologie|Herzarzt, Kardiologe, EKG, Herz
+medical_imaging|Bildgebende Diagnostik|Röntgen, Ultraschall, MRT, CT, Radiologie
+speech_therapy|Logopädie|Sprachtherapie, Logopäde, Stottern
+nutrition_dietetics|Ernährungsberatung|Diätologe, Ernährungsberater, Diät, Abnehmen
+bicycle_repair|Fahrradreparatur|Velo, Fahrrad, Platten, Radwerkstatt
+scooter_repair|Roller- und Mofareparatur|Roller, Mofa, Vespa, Motorroller
+appliance_repair|Haushaltsgerätereparatur|Waschmaschine, Kühlschrank, Backofen, Weissware
+phone_repair|Handy- und Tabletreparatur|Handy, Display, iPhone, Tablet
+computer_repair|Computerreparatur|PC, Laptop, Datenrettung, Notebook
+watch_jewellery_repair|Uhren- und Schmuckreparatur|Uhrmacher, Juwelier, Batterie, Ring
+shoe_repair|Schuhreparatur|Schuster, Absätze, Sohlen, Schuhmacher
+tailoring_alterations|Schneiderei und Änderungen|Schneider, Näherin, Kürzen, Änderungsschneiderei
+upholstery|Polsterei|Polsterer, Sofa, Neubezug, Möbelbezug
+glazing|Glaserei und Fenster|Glaser, Fenster, Glas, Verglasung
+chimney_sweep|Kaminfeger|Schornsteinfeger, Kamin, Russ, Rauchfang
+pest_control|Schädlingsbekämpfung|Kammerjäger, Bettwanzen, Ratten, Schaben
+pool_maintenance|Schwimmbadpflege|Pool, Poolreinigung, Chlor, Schwimmbad
+window_cleaning|Fensterreinigung|Fensterputzer, Glasreinigung, Fassade
+car_wash|Autowäsche|Waschanlage, Autopflege, Aufbereitung
+car_rental|Autovermietung|Mietwagen, Auto mieten, Leihwagen
+bike_scooter_rental|Fahrrad- und Rollervermietung|Velo mieten, E-Scooter, Fahrradverleih
+funeral_services|Bestattungen|Bestatter, Beerdigung, Kremation, Särge

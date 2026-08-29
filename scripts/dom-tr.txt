@@ -111,3 +111,53 @@ shop_books|Kitapçı ve kırtasiye|Kitap, defter, kalem, ofis malzemeleri
 shop_florist|Çiçekçi|Çiçek, buket, gül, çelenk
 shop_pet|Pet shop|Mama, evcil hayvan malzemeleri, akvaryum, kafes
 motorcycle_repair|Motosiklet tamiri|Motosiklet, scooter, mobilet, kask, zincir
+bar|Bar|Pub, meyhane, kokteyl bar, teras
+kebab_shawarma|Kebap ve şavarma|Döner, dürüm, tantuni, sandviç
+pizzeria|Pizzacı|Pizza, İtalyan, paket pizza
+fast_food|Fast food|Hamburger, patates kızartması, atıştırmalık
+bakery|Fırın|Ekmek, fırıncı, poğaça, unlu mamuller
+pastry_shop|Pastane|Pasta, tatlı, kurabiye, tatlıcı
+coffee_shop|Kahveci|Kahve, espresso, barista, kahve dükkanı
+food_truck|Yemek aracı|Sokak yemeği, mobil mutfak, karavan
+butcher|Kasap|Et, kasap, şarküteri
+ice_cream|Dondurmacı|Dondurma, gelato, külah
+winery|Şaraphane|Şarap, bağ, şarap tadımı, mahzen
+brewery|Bira üretimi|Bira, zanaat birası, bira fabrikası
+nightclub|Gece kulübü ve disko|Disko, kulüp, dans, DJ
+beach_club|Plaj barı ve beach club|Plaj, şezlong, sahil, kumsal
+bowling_billiards|Bowling ve bilardo|Bowling, snooker, dart
+travel_agency|Seyahat acentesi|Turlar, tatil, uçak bileti, paket tur
+nail_salon|Tırnak salonu, manikür ve pedikür|Tırnak, manikür, pedikür, jel
+barber|Berber|Erkek kuaförü, sakal, tıraş
+tattoo_piercing|Dövme ve piercing|Dövmeci, dövme stüdyosu, piercing
+spa_sauna|Spa ve sauna|Wellness, buhar banyosu, hamam, kaplıca
+cosmetics_shop|Kozmetik mağazası|Parfümeri, makyaj, cilt bakımı, güzellik
+dry_cleaning|Kuru temizleme ve çamaşırhane|Kuru temizleme, çamaşırhane, ütü
+podiatry|Podoloji ve ayak bakımı|Podolog, batık tırnak, ayak
+dental_laboratory|Diş laboratuvarı|Diş teknisyeni, protez, kaplama
+orthodontics|Ortodonti|Diş teli, şeffaf plak, ortodontist
+dermatology|Dermatoloji|Cildiye, cilt, ben, akne
+paediatrics|Çocuk hekimliği|Çocuk doktoru, pediatri
+gynaecology|Kadın hastalıkları|Jinekolog, doğum, kadın sağlığı
+cardiology|Kardiyoloji|Kalp doktoru, kardiyolog, EKG
+medical_imaging|Tıbbi görüntüleme|Röntgen, ultrason, MR, tomografi, radyoloji
+speech_therapy|Dil ve konuşma terapisi|Konuşma terapisti, kekemelik, logopedi
+nutrition_dietetics|Beslenme ve diyetetik|Diyetisyen, beslenme uzmanı, diyet, zayıflama
+bicycle_repair|Bisiklet tamiri|Bisiklet, patlak lastik, bisikletçi
+scooter_repair|Scooter ve moped tamiri|Scooter, moped, Vespa, 50cc
+appliance_repair|Beyaz eşya tamiri|Çamaşır makinesi, buzdolabı, fırın
+phone_repair|Telefon ve tablet tamiri|Telefon, ekran değişimi, iPhone, tablet
+computer_repair|Bilgisayar tamiri|PC, dizüstü, veri kurtarma
+watch_jewellery_repair|Saat ve mücevher tamiri|Saatçi, kuyumcu, pil, yüzük
+shoe_repair|Ayakkabı tamiri|Ayakkabı tamircisi, topuk, taban
+tailoring_alterations|Terzilik ve tadilat|Terzi, dikiş, paça kısaltma, tadilat
+upholstery|Döşemecilik|Döşemeci, koltuk, kaplama, mobilya
+glazing|Camcılık ve pencere|Camcı, pencere, cam, ısıcam
+chimney_sweep|Baca temizliği|Bacacı, baca, kurum
+pest_control|Haşere kontrolü|İlaçlama, tahtakurusu, fare, hamamböceği
+pool_maintenance|Havuz bakımı|Havuz, havuz temizliği, klor
+window_cleaning|Cam temizliği|Cam silme, pencere, cephe
+car_wash|Oto yıkama|Araç yıkama, oto temizlik, detailing
+car_rental|Araç kiralama|Rent a car, kiralık araba
+bike_scooter_rental|Bisiklet ve scooter kiralama|Bisiklet kirala, elektrikli scooter
+funeral_services|Cenaze hizmetleri|Cenaze işleri, defin, yakma, tabut
