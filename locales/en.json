@@ -237,6 +237,7 @@
   },
   "bizsearch": {
     "go": "Search",
+    "registered": "Registered companies",
     "market": "Continue in Rotabo Market",
     "placeholder": "Search the field your company works in",
     "none": "Nothing matched. Try another word - a trade, a tool, a service."
@@ -727,6 +728,12 @@
     "website_label": "Website (optional)",
     "regno_label": "Company or VAT number (optional)",
     "regno_hint": "Stored as you write it. Rotabo does not check it against any register, and does not claim to."
+  },
+  "company_view": {
+    "seeking": "Looking for",
+    "offering": "Offers",
+    "locked": "To see what they are looking for or offering, and how to reach them, you need to be registered yourself. Registering is free. After that, 2 CHF opens this field for a year.",
+    "unlock_btn": "See what they need"
   },
   "generic_form": {
     "name_label": "Your name",

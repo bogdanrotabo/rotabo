@@ -135,3 +135,94 @@ as $$
 $$;
 
 grant execute on function public.companies_public() to anon, authenticated;
+
+-- Applied 2026-08-29, third pass: companies become findable, on the same two
+-- terms the private side has used since 2026-08-22 -- the list is only sold
+-- to people who are on it, and opening a category costs 2 CHF for a year.
+--
+-- viewer_is_registered is viewer_has_listing widened to count a company
+-- registration as registration. That is not only for this feature: it is a
+-- bug the company table introduced the moment it existed. A firm that had
+-- just registered on the business side had no row in listings, so
+-- viewer_has_listing answered false and the unlock modal told it to publish
+-- the listing it had already published. viewer_has_listing itself is left
+-- exactly as it was -- nothing that means "has a listing" changes meaning.
+
+create or replace function public.viewer_is_registered(p_token text)
+returns boolean
+language sql
+stable
+security definer
+set search_path to 'public'
+as $$
+  select exists (
+    select 1 from public.listings l
+    where lower(trim(l.email)) = public.viewer_email_for_token(p_token)
+      and l.visible_until is not null
+      and l.visible_until > now()
+  ) or exists (
+    select 1 from public.companies c
+    where lower(trim(c.email)) = public.viewer_email_for_token(p_token)
+      and c.visible_until is not null
+      and c.visible_until > now()
+  );
+$$;
+
+grant execute on function public.viewer_is_registered(text) to anon, authenticated;
+
+-- What a company is looking for or offering, and how to reach it. The public
+-- half -- name, field, town -- is companies_public() and is free, because a
+-- list of names nobody can read is not a list. This is the half worth paying
+-- for, and it answers with nothing at all rather than with a redacted row: a
+-- caller without access cannot tell an unpaid company from one that does not
+-- exist, which is the point.
+--
+-- Gated on payment only, not on registration, exactly like
+-- get_listing_details_by_id. The registration gate stands in front of the
+-- payment, in viewer.js, so someone whose own listing lapsed after paying
+-- keeps the year they bought instead of losing it mid-term.
+create or replace function public.company_details_by_id(p_id uuid, p_token text)
+returns table (
+  id uuid, name text, domain text, category text, role text,
+  country text, city text, address text, phone text, email text,
+  website_url text, reg_no text, note text
+)
+language sql
+stable
+security definer
+set search_path to 'public'
+as $$
+  select c.id, c.name, c.domain, c.category, c.role,
+         c.country, c.city, c.address, c.phone, c.email,
+         c.website_url, c.reg_no, c.note
+  from public.companies c
+  where c.id = p_id
+    and c.visible_until is not null and c.visible_until > now()
+    and public.viewer_has_access_for(p_token, c.category);
+$$;
+
+grant execute on function public.company_details_by_id(uuid, text) to anon, authenticated;
+
+-- The public list carries the id, because clicking a company is a request
+-- for company_details_by_id and that takes one. The id is a random uuid and
+-- opens nothing on its own.
+drop function if exists public.companies_public();
+
+create function public.companies_public()
+returns table (
+  id uuid, name text, domain text, category text, role text,
+  country text, city text, website_url text, created_at timestamptz
+)
+language sql
+stable
+security definer
+set search_path to 'public'
+as $$
+  select c.id, c.name, c.domain, c.category, c.role,
+         c.country, c.city, c.website_url, c.created_at
+  from public.companies c
+  where c.visible_until is not null and c.visible_until > now()
+  order by c.created_at;
+$$;
+
+grant execute on function public.companies_public() to anon, authenticated;

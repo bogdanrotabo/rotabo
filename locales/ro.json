@@ -237,6 +237,7 @@
   },
   "bizsearch": {
     "go": "Caută",
+    "registered": "Firme înregistrate",
     "market": "Continuă în Rotabo Market",
     "placeholder": "Caută domeniul în care profesează firma ta",
     "none": "Niciun rezultat. Încearcă alt cuvânt - o meserie, o unealtă, un serviciu."
@@ -729,6 +730,12 @@
     "website_label": "Site web (opțional)",
     "regno_label": "Număr de registru sau TVA (opțional)",
     "regno_hint": "Se păstrează așa cum îl scrii. Rotabo nu îl verifică la niciun registru și nici nu pretinde asta."
+  },
+  "company_view": {
+    "seeking": "Caută",
+    "offering": "Oferă",
+    "locked": "Ca să vezi ce caută sau ce oferă și cum îi găsești, trebuie să fii și tu înscris. Înscrierea e gratis. După ea, 2 franci deschid domeniul ăsta pentru un an.",
+    "unlock_btn": "Vezi ce caută"
   },
   "generic_form": {
     "name_label": "Numele tău",

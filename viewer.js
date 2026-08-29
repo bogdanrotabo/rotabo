@@ -436,12 +436,20 @@
       var verified = getToken() || tok;
       if (!verified) { stepEmail(tok.email || ""); return; }
       // Since 2026-08-22 the list is only sold to people who are on it.
-      // viewer_has_listing resolves the token to an email the same way
-      // viewer_email_for_token does and answers whether that address has
-      // a listing that is visible right now. A network failure must not
-      // block a sale, so anything other than a clear false falls through
-      // to the price -- the gate is there to steer, not to punish.
-      sb.rpc("viewer_has_listing", { p_token: verified.token }).then(function (r) {
+      // viewer_is_registered resolves the token to an email the same way
+      // viewer_email_for_token does and answers whether that address is on
+      // the site at all -- a live listing on the private side, or a live
+      // company registration on the business side.
+      //
+      // It used to ask viewer_has_listing, which only knows about listings.
+      // The moment companies got their own table that became wrong: a firm
+      // that had just registered was told to go and publish the listing it
+      // had already published, and could not reach the price at all.
+      //
+      // A network failure must not block a sale, so anything other than a
+      // clear false falls through to the price -- the gate is there to
+      // steer, not to punish.
+      sb.rpc("viewer_is_registered", { p_token: verified.token }).then(function (r) {
         if (r && !r.error && r.data === false) stepNeedListing(verified);
         else stepPay(verified);
       }).catch(function () { stepPay(verified); });
@@ -636,11 +644,19 @@
       return !!v;
     },
     open: open,
-    // Reveal a listing's details. opts: {id} or {number}, onDetails(rows), onLocked()
+    // Reveal what is behind the gate. opts: {id} or {number} for a listing,
+    // {company: id} for a company; onDetails(rows), onLocked().
+    //
+    // One path for both, because it is one gate: registered, then paid for
+    // the category, then the details. A second copy of this would be a
+    // second place for the two to drift apart, and the thing that must not
+    // drift is which side of a paywall somebody is on.
     reveal: function (opts) {
       var tok = getCredential();
       if (!tok) { open(function () { window.RotaboViewer.reveal(opts); }); return; }
-      var call = opts.id
+      var call = opts.company
+        ? sb.rpc("company_details_by_id", { p_id: opts.company, p_token: tok.token })
+        : opts.id
         ? sb.rpc("get_listing_details_by_id", { p_id: opts.id, p_token: tok.token })
         : sb.rpc("get_listing_details", { p_number: opts.number, p_token: tok.token });
       call.then(function (r) {

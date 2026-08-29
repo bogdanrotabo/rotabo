@@ -751,6 +751,23 @@
      seven-line window is a list nobody scrolls; capped against the viewport
      so it cannot grow taller than the screen it opens on. */
   html[data-mode="business"] .cascade{max-height:min(1300px, 78vh);}
+  /* A company row in the search: the name leads, the field and the town
+     follow it quietly. Same row height as a field row so the two lists read
+     as one. */
+  .cascade-row--firm{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .cascade-row--firm b{color:var(--ink-strong);}
+  .cascade-row--firm .firm-field{font-size:.85em;color:var(--text-eyebrow);}
+  .cascade-row--firm .firm-where{font-size:.85em;color:var(--text-eyebrow);margin-left:auto;}
+  .cascade-head{
+    margin:10px 0 4px;padding:0 14px;font-size:.75rem;font-weight:800;
+    text-transform:uppercase;letter-spacing:.08em;color:var(--text-eyebrow);
+  }
+  .company-role{font-weight:700;color:var(--ink-strong);margin:0 0 10px;}
+  .company-site{display:inline-block;margin-bottom:12px;color:var(--violet-1);}
+  .company-locked-body{color:var(--text-eyebrow);line-height:1.5;}
+  .company-note{font-size:1.05rem;line-height:1.5;margin:0 0 12px;}
+  .company-line{margin:0 0 6px;color:var(--text-eyebrow);}
+
   .biz-only{display:none;}
   html[data-mode="business"] .biz-only{display:block;}
 
@@ -2064,6 +2081,36 @@
       <button type="submit" class="form-submit" data-i18n="visibility.publish_btn">Publish my listing</button>
       <p class="form-error" id="becomeDriverError" data-i18n="drive_form.error">Something went wrong. Please try again.</p>
     </form>
+  </div>
+</div>
+
+<!-- What a registered company is looking for, or offering. The free half --
+     name, field, town, website -- is drawn straight from the row the search
+     already has. The half worth paying for arrives from company_details_by_id
+     and only after the same gate the private side uses: be on the list
+     yourself, then 2 CHF opens the category for a year. -->
+<div class="modal-overlay" id="companyModal">
+  <div class="modal-box">
+    <button type="button" class="modal-close" onclick="closeModal('companyModal')" aria-label="Close">&#10005;</button>
+    <h3 id="companyName">Company</h3>
+    <p class="modal-sub" id="companyWhere"></p>
+    <p class="company-role" id="companyRole"></p>
+    <a class="company-site" id="companySite" target="_blank" rel="noopener" hidden></a>
+
+    <div id="companyLocked">
+      <p class="company-locked-body" id="companyLockedBody" data-i18n="company_view.locked">To see what they are looking for or offering, and how to reach them, you need to be registered yourself. Registering is free. After that, 2 CHF opens this field for a year.</p>
+      <button type="button" class="form-submit" id="companyUnlock" data-i18n="company_view.unlock_btn">See what they need</button>
+    </div>
+
+    <div id="companyOpen" hidden>
+      <p class="company-note" id="companyNote"></p>
+      <p class="company-line" id="companyAddress" hidden></p>
+      <p class="company-line" id="companyReg" hidden></p>
+      <div class="cat-actions">
+        <a class="call-btn" id="companyTel" hidden></a>
+        <a class="call-btn" id="companyMail" hidden></a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -4584,13 +4631,53 @@ if ("serviceWorker" in navigator) {
     input.setAttribute("aria-expanded", "false");
   }
 
-  function open(rows){
-    if (!rows.length) { close(); return; }
-    list.innerHTML = rows.map(function(d, i){
+  /* The companies actually registered in whatever was typed, under the
+     fields themselves. A field is a door; a company is somebody standing
+     behind it, and the second is what a visitor came for.
+
+     Matched on the company's own name as well as on its field, so a firm
+     can be found by either. Only the free half is drawn here -- name, field,
+     town. What it is looking for or offering, and how to reach it, is behind
+     the same gate the private side has: be on the list, then 2 CHF opens the
+     category for a year. */
+  function firmsFor(q, slugs){
+    var all = window.RotaboCompanies || [];
+    if (!all.length) return [];
+    var want = fold(q);
+    var inSlugs = {};
+    slugs.forEach(function(d){ inSlugs[d.slug] = 1; });
+    return all.filter(function(c){
+      if (want && fold(c.name).indexOf(want) !== -1) return true;
+      return !!inSlugs[c.domain];
+    }).slice(0, 40);
+  }
+
+  function firmRow(c, i){
+    var where = [c.city, c.country].filter(Boolean).join(", ");
+    return '<button type="button" class="cascade-row cascade-row--firm" role="option"'
+         + ' data-firm="' + esc(c.id) + '" data-firmcat="' + esc(c.category) + '"'
+         + ' style="--i:' + Math.min(i, 24) + '">'
+         + '<b>' + esc(c.name) + '</b>'
+         + '<span class="firm-field">' + esc(label(c.domain)) + '</span>'
+         + (where ? '<span class="firm-where">' + esc(where) + '</span>' : '')
+         + '</button>';
+  }
+
+  function open(rows, q){
+    var firms = firmsFor(q || "", rows);
+    if (!rows.length && !firms.length) { close(); return; }
+    var html = rows.map(function(d, i){
       return '<button type="button" class="cascade-row" role="option"'
            + ' data-slug="' + esc(d.slug) + '" data-cat="' + esc(d.cat) + '"'
            + ' style="--i:' + Math.min(i, 24) + '">' + esc(label(d.slug)) + '</button>';
     }).join("");
+    if (firms.length) {
+      html += '<p class="cascade-head">'
+            + esc(T("bizsearch.registered", "Registered companies"))
+            + '</p>';
+      html += firms.map(function(c, i){ return firmRow(c, rows.length + i); }).join("");
+    }
+    list.innerHTML = html;
     list.hidden = false;
     list.scrollTop = 0;
     input.setAttribute("aria-expanded", "true");
@@ -4598,8 +4685,12 @@ if ("serviceWorker" in navigator) {
 
   function show(q){
     var rows = matches(q);
-    if (rows.length) {
-      open(rows);
+    /* A name that matches no field can still match a company. "Rotabo" is
+       not one of the hundred and thirteen, but a firm called Rotabo AG is
+       something a visitor may well be looking for -- so the market line is
+       only the answer when neither has anything. */
+    if (rows.length || firmsFor(q || "", rows).length) {
+      open(rows, q);
       if (none) none.hidden = true;
       return;
     }
@@ -4728,6 +4819,75 @@ if ("serviceWorker" in navigator) {
       if (!list.hidden && first) { e.preventDefault(); first.click(); }
     }
   });
+
+  /* The public half, then the gate. RotaboViewer.reveal is the same call
+     browse.html makes for a listing: it walks the visitor through being
+     registered and through the 2 CHF, and comes back with the details only
+     when both are true. Nothing about the paywall is decided here -- this
+     draws what it is handed. */
+  window.RotaboOpenCompany = function(row){
+    var byId = function(id){ return document.getElementById(id); };
+    byId("companyName").textContent = row.name || "";
+    byId("companyWhere").textContent =
+      [label(row.domain), [row.city, row.country].filter(Boolean).join(", ")]
+        .filter(Boolean).join(" · ");
+    byId("companyRole").textContent = row.role === "seeking"
+      ? T("company_view.seeking", "Looking for")
+      : T("company_view.offering", "Offers");
+
+    var site = byId("companySite");
+    if (row.website_url) {
+      site.href = row.website_url;
+      // The address without the scheme: nobody reads "https://" and it
+      // pushes the part that identifies the company off a narrow screen.
+      site.textContent = String(row.website_url).replace(/^https?:\/\//i, "").replace(/\/$/, "");
+      site.hidden = false;
+    } else {
+      site.hidden = true;
+    }
+
+    byId("companyOpen").hidden = true;
+    byId("companyLocked").hidden = false;
+    openModal("companyModal");
+
+    var btn = byId("companyUnlock");
+    // Replaced, not added to: opening a second company would otherwise
+    // stack a listener and unlock the first one as well.
+    var fresh = btn.cloneNode(true);
+    btn.parentNode.replaceChild(fresh, btn);
+    fresh.addEventListener("click", function(){
+      if (!window.RotaboViewer) return;
+      window.RotaboViewer.reveal({ company: row.id, onDetails: function(rows){
+        var d = (rows && rows[0]) || {};
+        byId("companyLocked").hidden = true;
+        byId("companyOpen").hidden = false;
+        byId("companyNote").textContent = d.note || "";
+        var addr = byId("companyAddress");
+        if (d.address) { addr.textContent = d.address; addr.hidden = false; }
+        var reg = byId("companyReg");
+        if (d.reg_no) { reg.textContent = d.reg_no; reg.hidden = false; }
+        var tel = byId("companyTel");
+        if (d.phone) { tel.href = "tel:" + d.phone; tel.textContent = d.phone; tel.hidden = false; }
+        var mail = byId("companyMail");
+        if (d.email) { mail.href = "mailto:" + d.email; mail.textContent = d.email; mail.hidden = false; }
+      }});
+    });
+  };
+
+  /* A company row is not a field row: it opens what that company is looking
+     for or offering, behind the gate, rather than scrolling to a card. */
+  list.addEventListener("click", function(e){
+    var firm = e.target.closest("[data-firm]");
+    if (!firm) return;
+    e.preventDefault();
+    e.stopPropagation();
+    close();
+    var id = firm.getAttribute("data-firm");
+    var all = window.RotaboCompanies || [];
+    var row = null;
+    all.forEach(function(c){ if (c.id === id) row = c; });
+    if (row) window.RotaboOpenCompany(row);
+  }, true);
 
   list.addEventListener("click", function(e){
     var row = e.target.closest(".cascade-row");
@@ -4918,6 +5078,9 @@ if ("serviceWorker" in navigator) {
     .then(function(r){ return r.ok ? r.json() : []; })
     .then(function(data){
       if (Array.isArray(data)) firms = data;
+      // The search above this box wants the same list. One request, read
+      // twice, rather than two requests for the same rows.
+      window.RotaboCompanies = firms;
     })
     .catch(function(){ /* the sponsor and the empty places still stand */ })
     .then(function(){
