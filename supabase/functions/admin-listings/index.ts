@@ -1,24 +1,38 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-// Two ways in: the shared admin password (legacy, sent as a Bearer
-// token from the /admin.html password prompt), or a real Supabase Auth
-// session belonging to an email listed in admin_emails (from account.html
-// login). Either way this function uses the service role to read every
-// listing/visit regardless of RLS.
+// One way in: a Supabase session made by signing in with Google, on an address
+// listed in admin_emails. This function reads with the service role, past every
+// RLS policy, so the check below is the whole lock.
 //
-// The password lives in the environment, not in this file. It used to be a
-// string literal here, which meant it was in the repository, in every clone,
-// in the deploy history and in any window where the source was read -- and
-// rotating it required a code change and a redeploy. Read from the
-// environment it can be changed in the dashboard in seconds, without this
-// function being touched at all.
+// There is no password door any more. There were two. A shared secret read
+// from ADMIN_SECRET, and any Auth session on an admin address -- which meant
+// a session made by typing a password counted. Both are gone, and gone is
+// stronger than unset: a password can be guessed, reused from a site that
+// leaked it, filled in by a browser that saved it years ago, or read over a
+// shoulder, and any password ever saved for this page stopped opening it the
+// moment this was deployed. Nothing this function accepts can be typed.
 //
-// Unset, there is no password door: the comparison is skipped rather than
-// falling back to some built-in value, because a fallback is the same
-// secret-in-the-source problem wearing a different hat. The admin_emails
-// login still works. If the dashboard asks for a password and then refuses
-// every one, this variable is what is missing.
-const ADMIN_SECRET = Deno.env.get("ADMIN_SECRET") ?? "";
+// Three conditions, all required:
+//
+//   1. The session was made by a provider, not by a typed password. This is
+//      asked of the database rather than read from the token. GoTrue records
+//      the method in auth.mfa_amr_claims, one row per session, and the row
+//      outlives every hourly refresh -- sessions here have been refreshed nine
+//      times over thirteen days and still carry the method they started with.
+//      The token does carry an amr claim saying the same thing, and reading it
+//      would have been one line, but a claim is only as good as the assumption
+//      that it is present: if it ever moved, this check would either fail open
+//      or lock the only admin out of their own dashboard, and neither is a
+//      thing to find out in production. The table can be queried and was.
+//   2. The account carries a Google identity. The recorded method says
+//      "oauth" without naming the provider, and Google is the only one
+//      configured on this project; this pins it even if a second is turned on.
+//   3. The address is in admin_emails -- one row, and no insert policy on the
+//      table, so nobody can add themselves to it.
+//
+// All three failures answer with the same 401, for the same reason a wrong
+// password and a non-admin address always answered alike: telling them apart
+// would make this endpoint a way to find out who the admins are.
 
 const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
 const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
@@ -34,26 +48,50 @@ const CORS_HEADERS = {
 // single marker is what separates paid traffic from organic everywhere.
 const GCLID_PATTERN = "%gclid=%";
 
-function timingSafeEqual(a: string, b: string): boolean {
-  if (a.length !== b.length) return false;
-  let mismatch = 0;
-  for (let i = 0; i < a.length; i++) {
-    mismatch |= a.charCodeAt(i) ^ b.charCodeAt(i);
+// The session the token was minted for.
+//
+// This reads the payload without checking the signature, which is safe only
+// because nothing is decided on it alone. getUser() below hands the same token
+// to Auth, which does check it, so a forged or edited token is rejected there;
+// and the id read here is spent on a question the database answers, not on a
+// claim about who the holder is. A token cannot carry a session id other than
+// its own without breaking its signature.
+function sessionIdOf(token: string): string | null {
+  const parts = token.split(".");
+  if (parts.length !== 3) return null;
+  try {
+    let b64 = parts[1].replace(/-/g, "+").replace(/_/g, "/");
+    b64 += "=".repeat((4 - (b64.length % 4)) % 4);
+    const bytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+    const payload = JSON.parse(new TextDecoder().decode(bytes));
+    const sid = payload?.session_id;
+    return typeof sid === "string" && /^[0-9a-f-]{36}$/i.test(sid) ? sid : null;
+  } catch {
+    return null;
   }
-  return mismatch === 0;
 }
 
 async function isAuthorized(token: string): Promise<boolean> {
   if (!token) return false;
-  if (ADMIN_SECRET && timingSafeEqual(token, ADMIN_SECRET)) return true;
+
+  const sessionId = sessionIdOf(token);
+  if (!sessionId) return false;
 
   const { data: userData, error: userError } = await supabase.auth.getUser(token);
   if (userError || !userData?.user?.email) return false;
+  const user = userData.user;
+
+  const { data: byProvider, error: rpcError } = await supabase
+    .rpc("session_made_by_oauth", { p_session: sessionId });
+  if (rpcError || byProvider !== true) return false;
+
+  const providers = (user.app_metadata?.providers ?? []) as string[];
+  if (!providers.includes("google")) return false;
 
   const { data: adminRow } = await supabase
     .from("admin_emails")
     .select("email")
-    .ilike("email", userData.user.email)
+    .ilike("email", user.email)
     .maybeSingle();
 
   return !!adminRow;
@@ -87,9 +125,6 @@ Deno.serve(async (req: Request) => {
   const auth = req.headers.get("authorization") || "";
   const token = auth.replace(/^Bearer\s+/i, "");
   if (!(await isAuthorized(token))) {
-    if (!ADMIN_SECRET) {
-      console.error("ADMIN_SECRET is not set: the password door is closed, only admin_emails logins work");
-    }
     return fail("unauthorized", 401);
   }
 

@@ -45,38 +45,16 @@
     max-width:360px;margin:60px auto;background:var(--bg-card);
     border:1px solid var(--border);border-radius:20px;padding:32px;text-align:center;
   }
-  .login-card input{
-    width:100%;padding:12px 14px;border-radius:10px;
-    border:1px solid var(--border);background:#fff;
-    color:var(--text-dark);font-size:1rem;font-family:inherit;box-sizing:border-box;margin-bottom:14px;
-  }
   .login-card button{
     width:100%;padding:13px 20px;border-radius:12px;border:none;
     background:linear-gradient(135deg,#9b2fbf,#7c2596);color:#fff;
-    font-weight:800;font-size:1rem;cursor:pointer;
+    font-weight:800;font-size:1rem;font-family:inherit;cursor:pointer;
   }
+  .login-card button:disabled{opacity:.5;cursor:default;}
   .login-note{
     color:var(--text-eyebrow);font-size:.85rem;margin:14px 0 0;line-height:1.5;
   }
   .login-note a{color:var(--violet-1);}
-  /* Not every answer from this box is a refusal. "Check your inbox" is the
-     normal end of setting a password for the first time, and saying it in
-     the red used for a wrong password reads as a failure. */
-  /* White, not the violet the main button wears: two filled buttons of equal
-     weight would make the card ask which one is the way in. */
-  .alt-btn{
-    width:100%;padding:12px 20px;margin-top:12px;border-radius:12px;
-    border:1px solid var(--border);background:#fff;color:var(--text-dark);
-    font:inherit;font-weight:700;cursor:pointer;
-  }
-  .alt-btn:disabled{opacity:.5;cursor:default;}
-  .login-said{color:var(--text-dark);font-size:.9rem;margin-top:12px;display:none;}
-  .login-said.show{display:block;}
-  .linkish{
-    width:auto;padding:0;margin-top:6px;background:none;border:none;
-    color:var(--violet-1);font:inherit;font-size:.85rem;font-weight:600;
-    text-decoration:underline;cursor:pointer;
-  }
   .login-error{color:var(--red);font-size:.9rem;margin-top:12px;display:none;}
   .login-error.show{display:block;}
 
@@ -182,35 +160,24 @@
 <div class="wrap">
   <div id="loginView" class="login-card">
     <h1 style="margin-bottom:18px;">Admin</h1>
-    <!-- The way in is an account, not a shared word.
-         A shared password has no name on it: it cannot be given to one
-         person and taken back from them, it cannot say who opened this
-         page, and it has to live somewhere to be checked against. This
-         asks for the email instead, and the server decides by looking that
-         address up in admin_emails.
-         The email field is also what the password manager was hunting for.
-         There used to be an invisible one here purely to stop it settling
-         on the listings search box and filtering the table down to nothing;
-         now there is a real one, so the decoy is gone. -->
-    <form id="loginForm">
-      <input type="email" id="emailInput" name="username" autocomplete="username"
-             placeholder="Email" spellcheck="false" autocapitalize="off">
-      <input type="password" id="passwordInput" name="password"
-             placeholder="Password" autocomplete="current-password">
-      <button type="submit" id="loginBtn">Enter</button>
-    </form>
-    <p class="login-error" id="loginError">Wrong email or password. Try again.</p>
-    <p class="login-said" id="loginSaid"></p>
-    <!-- Three ways in, in the order they are actually needed.
-         Google first because it asks for nothing to remember and lands with
-         exactly the address Google already knows; the password reset second,
-         for whoever wants a password; making an account last, because by now
-         there is usually one. -->
-    <button type="button" class="alt-btn" id="googleBtn">Continue with Google</button>
-    <p class="login-note">
-      Forgot it? <button type="button" class="linkish" id="resetBtn">Set a new password by email</button><br>
-      No account on this address yet? <button type="button" class="linkish" id="firstTimeBtn">Make one</button>
-    </p>
+    <!-- One way in, and it cannot be typed.
+
+         This card held an email and a password, and before that a single
+         shared word. Both are gone. A password can be guessed, reused from a
+         site that leaked it, filled in by a browser that saved it years ago,
+         or read over a shoulder -- and every one of those is somebody else
+         holding it. Google is asked instead, and the function checks that the
+         session actually came from Google before it answers with anything, so
+         a password saved for this page no longer opens it even if it is still
+         in the browser.
+
+         There is no field here now, which also settles an old bug for good:
+         the password manager has nothing to hunt for, so it can no longer
+         settle on the listings search box and filter the table down to
+         nothing. -->
+    <button type="button" id="googleBtn">Continue with Google</button>
+    <p class="login-error" id="loginError"></p>
+    <p class="login-note">Only the admin account opens this page.</p>
   </div>
 
   <div id="dashboardView" style="display:none;">
@@ -425,35 +392,25 @@
   // password prompt, which needs no SDK at all.
   var sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
   var FUNCTION_URL = SUPABASE_URL + "/functions/v1/admin-listings";
-  var SESSION_KEY = "rotabo_admin_pw";
-  // What is in SESSION_KEY: "password" (the shared secret typed into the
-  // prompt) or "session" (an admin account's Supabase token). Without it,
-  // credential() preferred *any* signed-in session over a working password,
-  // so an admin who was also signed into account.html with a second,
-  // non-admin account had every tab 401 -- and the stored password was
-  // overwritten with that account's token, so a reload dropped them back
-  // to the login card.
-  var MODE_KEY = "rotabo_admin_mode";
-  // Guarded: with site data blocked, sessionStorage throws -- inside a
-  // .then that used to swallow a *correct* login (dashboard never shown).
-  function getStored(){ try { return sessionStorage.getItem(SESSION_KEY); } catch (e) { return null; } }
-  function getStoredMode(){ try { return sessionStorage.getItem(MODE_KEY); } catch (e) { return null; } }
-  function setStored(v, mode){
-    // Any deliberate login is the end of a logged-out state.
-    clearLoggedOut();
-    try { sessionStorage.setItem(SESSION_KEY, v); sessionStorage.setItem(MODE_KEY, mode); } catch (e) {}
-  }
+  // A password typed into the old card was kept in sessionStorage so a reload
+  // would not ask for it again. Nothing writes or reads those two keys any
+  // more, but a copy of a secret left lying in a browser is still a copy of a
+  // secret -- and it would outlive the card it was typed into. Cleared once,
+  // here, on the way past.
+  try {
+    sessionStorage.removeItem("rotabo_admin_pw");
+    sessionStorage.removeItem("rotabo_admin_mode");
+  } catch (e) {}
+
   // "Log out" exists because this page lists every customer's phone and
-  // email and there had to be a way to put that away. For a session-mode
-  // admin it was only half true: the Supabase session lives in
-  // localStorage and survived, so F5 walked straight back into the
-  // dashboard with no password. This flag is what the auto-login below
-  // checks; it is session-scoped, so closing the tab forgets it, and it
-  // does not sign the person out of account.html site-wide.
+  // email and there had to be a way to put that away. On its own it was only
+  // half true: the Supabase session lives in localStorage and survives, so F5
+  // walked straight back into the dashboard. This flag is what the check at
+  // the bottom of this file reads; it is session-scoped, so closing the tab
+  // forgets it, and it does not sign the person out of account.html
+  // site-wide -- logging out of the admin should not log them out of their
+  // own account in the same breath.
   var LOGGED_OUT_KEY = "rotabo_admin_logged_out";
-  function clearStored(){
-    try { sessionStorage.removeItem(SESSION_KEY); sessionStorage.removeItem(MODE_KEY); } catch (e) {}
-  }
   function markLoggedOut(){
     try { sessionStorage.setItem(LOGGED_OUT_KEY, "1"); } catch (e) {}
   }
@@ -479,9 +436,6 @@
 
   var loginView = document.getElementById("loginView");
   var dashboardView = document.getElementById("dashboardView");
-  var emailInput = document.getElementById("emailInput");
-  var passwordInput = document.getElementById("passwordInput");
-  var loginBtn = document.getElementById("loginBtn");
   var loginError = document.getElementById("loginError");
   var refreshBtn = document.getElementById("refreshBtn");
   var logoutBtn = document.getElementById("logoutBtn");
@@ -566,82 +520,31 @@
   }
 
   function loginFailed(message){
-    loginBtn.disabled = false;
-    loginBtn.textContent = "Enter";
-    // Reset the text too: after one network failure it used to stick at
-    // "Something went wrong" for every later wrong password.
     loginError.textContent = message;
     loginError.classList.add("show");
   }
 
-  /* Signing in as a person.
-
-     The email and password go to Supabase Auth, which hands back a session
-     token; that token is what the function is asked with, and the function
-     decides by looking the address up in admin_emails. So the dashboard
-     never learns whether an address is an admin one -- it asks and is told
-     no, the same as any wrong password.
-
-     A wrong password and an address that is not an admin are deliberately
-     the same message. Telling them apart would turn this box into a way to
-     find out who the admins are. */
-  function tryLogin(email, password){
-    loginError.classList.remove("show");
-    loginBtn.disabled = true;
-    loginBtn.textContent = "Checking…";
-
-    if (!sb) {
-      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
-      return;
-    }
-
-    sb.auth.signInWithPassword({ email: email, password: password }).then(function(res){
-      var session = res && res.data && res.data.session;
-      if (!session || !session.access_token) {
-        loginFailed("Wrong email or password. Try again.");
-        return;
-      }
-      return apiGet("listings", session.access_token).then(function(r){
-        if (!r.ok) {
-          // Signed in, but not an admin. The account is real and stays
-          // signed in for account.html; it simply does not open this page.
-          loginFailed(r.status === 401
-            ? "That account cannot open the dashboard."
-            : "Something went wrong. Try again.");
-          return;
-        }
-        loginBtn.disabled = false;
-        loginBtn.textContent = "Enter";
-        setStored(session.access_token, "session");
-        enter(r.data);
-      });
-    }).catch(function(){
-      loginFailed("Something went wrong. Try again.");
-    });
-  }
-
-  function said(message){
-    loginError.classList.remove("show");
-    var el = document.getElementById("loginSaid");
-    el.textContent = message;
-    el.classList.add("show");
-  }
-
-  /* Signing in with Google, and why it lands on the account page.
+  /* The only way in, and why it lands on the account page.
 
      signInWithOAuth navigates the whole browser away and comes back to a URL
-     that Supabase has to have been told about in advance. /account.html is
-     that URL and has been since account.html was written; /admin.html is not,
-     and sending people to an address that is not allow-listed drops them on
-     the site root with a session they cannot see. So this goes there, and
-     from there this page opens on its own -- the session is already in the
-     browser by then, and the check at the bottom of this file finds it. */
+     Supabase has to have been told about in advance. /account.html is that
+     URL and has been since account.html was written; /admin.html is not, and
+     returning to an address that is not allow-listed drops the person on the
+     site root holding a session they cannot see. So this goes there, and from
+     there this page opens on its own -- the session is in the browser by
+     then, and the check at the bottom of this file finds it.
+
+     Pressing this is a deliberate login, so it clears the logged-out flag.
+     Without that, "Log out" followed by "Continue with Google" came back to a
+     page that refused to open: the session was fine, the flag was still set,
+     and nothing on screen said which. */
   document.getElementById("googleBtn").addEventListener("click", function(){
     var gb = this;
     if (!sb) {
       loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
       return;
     }
+    clearLoggedOut();
     gb.disabled = true;
     loginError.classList.remove("show");
     sb.auth.signInWithOAuth({
@@ -653,155 +556,6 @@
       gb.disabled = false;
       loginFailed("Google sign-in did not start. Try again.");
     });
-  });
-
-  /* Setting a new password when the old one is gone.
-
-     The recovery link has to come back to /account.html, which owns the
-     "type your new password" form. Pointed at this page instead it would
-     arrive with a valid recovery session and nowhere to spend it: the
-     password would never change and nothing would say why.
-
-     What comes back from Supabase is deliberately the same whether the
-     address has an account or not, so this box cannot be used to find out
-     who the admins are. */
-  document.getElementById("resetBtn").addEventListener("click", function(){
-    var email = emailInput.value.trim();
-    if (!email) { emailInput.focus(); return; }
-    if (!sb) {
-      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
-      return;
-    }
-    var btn = this;
-    btn.disabled = true;
-    btn.textContent = "Sending…";
-    loginError.classList.remove("show");
-
-    sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + "/account.html" })
-      .then(function(res){
-        btn.disabled = false;
-        btn.textContent = "Set a new password by email";
-        if (res && res.error) { loginFailed("Could not send the mail. Try again in a minute."); return; }
-        said("Mail sent to " + email + ". The link opens rotabo.app/account, where you type the new password — then come back here and press Enter.");
-      }, function(){
-        btn.disabled = false;
-        btn.textContent = "Set a new password by email";
-        loginFailed("Could not send the mail. Try again in a minute.");
-      });
-  });
-
-  /* The first time, when there is no password yet.
-
-     The address is already on the admin list; what it has never had is an
-     account behind it. This makes one, with a password typed here and
-     nowhere else -- not generated for you, not sent to you, not written in
-     any file. Nobody but the browser it is typed into ever sees it.
-
-     Two things can happen, and they are told apart because they need
-     different next steps. If the project does not require confirming an
-     address, a session comes straight back and the dashboard opens. If it
-     does, there is no session yet and the mail has to be opened first --
-     which is not a failure, so it is not said in red. */
-  function firstTime(email, password){
-    loginError.classList.remove("show");
-    document.getElementById("loginSaid").classList.remove("show");
-
-    if (!sb) {
-      loginFailed("Sign-in needs the Supabase library, which did not load. Check the connection and reload.");
-      return;
-    }
-    if (password.length < 8) {
-      loginFailed("Choose a password of at least 8 characters.");
-      return;
-    }
-
-    loginBtn.disabled = true;
-    loginBtn.textContent = "Checking…";
-
-    sb.auth.signUp({ email: email, password: password }).then(function(res){
-      if (res && res.error) {
-        loginBtn.disabled = false;
-        loginBtn.textContent = "Enter";
-        // An address that already has a password does not need a new one; it
-        // needs the password, or a reset, and both live on the account page.
-        loginFailed(/already|exists|registered/i.test(res.error.message || "")
-          ? "That address already has a password. Press Enter with it, or reset it at rotabo.app/account."
-          : "Could not set a password. Try again.");
-        return;
-      }
-
-      var session = res && res.data && res.data.session;
-      if (!session || !session.access_token) {
-        loginBtn.disabled = false;
-        loginBtn.textContent = "Enter";
-        said("Password set. Open the confirmation mail sent to " + email + ", then come back and press Enter.");
-        return;
-      }
-
-      return apiGet("listings", session.access_token).then(function(r){
-        loginBtn.disabled = false;
-        loginBtn.textContent = "Enter";
-        if (!r.ok) {
-          loginFailed(r.status === 401
-            ? "That account cannot open the dashboard."
-            : "Something went wrong. Try again.");
-          return;
-        }
-        setStored(session.access_token, "session");
-        enter(r.data);
-      });
-    }).catch(function(){
-      loginFailed("Something went wrong. Try again.");
-    });
-  }
-
-  /* The way back in when the front door is stuck.
-
-     A password typed with the email box left empty is sent to the function
-     as-is, which is the old shared-secret path. It is kept for one case:
-     the library above fails to load, or Auth itself is having a bad day,
-     and the dashboard would otherwise be unreachable.
-
-     It only works if ADMIN_SECRET is set in the function environment, and
-     it is not set by default -- there is no such password until somebody
-     puts one there, and nothing in this repository or in the deployed
-     source contains one. */
-  function tryFallback(password){
-    loginError.classList.remove("show");
-    loginBtn.disabled = true;
-    loginBtn.textContent = "Checking…";
-    apiGet("listings", password).then(function(res){
-      if (!res.ok) {
-        loginFailed(res.status === 401 ? "Wrong email or password. Try again." : "Something went wrong. Try again.");
-        return;
-      }
-      loginBtn.disabled = false;
-      loginBtn.textContent = "Enter";
-      setStored(password, "password");
-      enter(res.data);
-    }).catch(function(){
-      loginFailed("Something went wrong. Try again.");
-    });
-  }
-
-  // A real form submit, so the button and the Enter key take the same path
-  // and the browser treats this as the login form it is.
-  document.getElementById("loginForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    if (!passwordInput.value || loginBtn.disabled) return;
-    var email = emailInput.value.trim();
-    if (email) tryLogin(email, passwordInput.value);
-    else tryFallback(passwordInput.value);
-  });
-
-  document.getElementById("firstTimeBtn").addEventListener("click", function(){
-    if (loginBtn.disabled) return;
-    var email = emailInput.value.trim();
-    if (!email || !passwordInput.value) {
-      loginFailed("Fill in the address and the password you want, then press this.");
-      return;
-    }
-    firstTime(email, passwordInput.value);
   });
 
   function enter(rows){
@@ -1376,16 +1130,14 @@
     });
   });
 
-  // The credential for a request: for an account login, ask the client for a
-  // *fresh* token (it auto-refreshes the ~1h JWT) instead of the one stored
-  // at login -- otherwise the first Visits/Access click an hour later
-  // silently 401'd into a blank tab. A password login keeps the password:
-  // an unrelated account session in this browser is not what let us in.
+  // The credential for a request: always a *fresh* token from the client,
+  // which refreshes the ~1h JWT on its own. Holding the one from page load
+  // meant the first Visits or Access click an hour later silently 401'd into
+  // a blank tab. There is nothing else to fall back to and nothing else to
+  // keep in step -- the session is the only credential this page has.
   function credential(){
-    if (getStoredMode() !== "session") return Promise.resolve(getStored());
     return getSession().then(function(s){
-      if (s && s.access_token) { setStored(s.access_token, "session"); return s.access_token; }
-      return getStored();
+      return (s && s.access_token) || null;
     });
   }
 
@@ -1460,11 +1212,10 @@
     loadTab(activeTab);
   });
 
-  // Clears the stored credential and takes every row off the screen. This
-  // page lists each customer's phone and email and there was no way to put
-  // it away short of closing the tab.
+  // Takes every row off the screen and stops the next page load walking back
+  // in. This page lists each customer's phone and email and there was no way
+  // to put that away short of closing the tab.
   logoutBtn.addEventListener("click", function(){
-    clearStored();
     markLoggedOut();
     allRows = []; allVisits = []; allAccess = [];
     visitStats = null; accessStats = null;
@@ -1482,40 +1233,35 @@
     selectTab(TABS[0]);
     dashboardView.style.display = "none";
     loginView.style.display = "block";
-    passwordInput.value = "";
     loginError.classList.remove("show");
-    passwordInput.focus();
   });
 
-  // Already signed in at account.html with an admin address: no need to ask
-  // anything, the session token is the credential. This is the normal way
-  // in -- the form below is for when the browser has no session yet.
+  // The Google session already in this browser is the credential, so the
+  // normal way in asks for nothing: coming back from Google lands on
+  // account.html, and opening this page finds the session and enters. The
+  // button is for the browser that has no session yet.
   getSession().then(function(session){
-    // A session-mode admin who pressed "Log out" must not be walked back
-    // in by the next page load; the Supabase session itself is left alone
-    // so they stay logged in to account.html.
+    // Somebody who pressed "Log out" must not be walked back in by the next
+    // page load. The Supabase session itself is left alone, so they stay
+    // logged in to account.html.
     if (isLoggedOut()) return false;
     if (!session || !session.access_token) return false;
     return apiGet("listings", session.access_token).then(function(res){
-      if (!res.ok) return false;
-      setStored(session.access_token, "session");
-      enter(res.data);
-      return true;
-    });
-  }).then(function(done){
-    if (done) return;
-    var stored = getStored();
-    // A stored *session* token with no session behind it is a stale JWT:
-    // nothing worth retrying, so just ask for the password.
-    if (!stored || getStoredMode() === "session") { clearStored(); return; }
-    return apiGet("listings", stored).then(function(res){
-      if (res.ok) enter(res.data);
-      else clearStored();
+      if (res.ok) { enter(res.data); return true; }
+      // Signed in, but not as the admin: a session made by typing a password
+      // rather than through Google, or somebody else's account entirely. The
+      // function will not say which, and neither does this -- but the button
+      // above is the answer to both, so it is worth pointing at.
+      if (res.status === 401) {
+        loginError.textContent = "This browser is signed in, but not as the admin. Continue with Google.";
+        loginError.classList.add("show");
+      }
+      return false;
     });
   }).catch(function(){
     // Offline, or the function is down. Say so: this path used to reject
-    // unhandled, leaving a password prompt that looked like it simply
-    // wanted the password typed again.
+    // unhandled, leaving a login card that looked like it was simply waiting
+    // to be pressed again.
     loginError.textContent = "Couldn't reach the server. Check your connection and try again.";
     loginError.classList.add("show");
   });
