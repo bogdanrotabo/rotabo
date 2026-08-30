@@ -484,21 +484,21 @@
   /* The band is Rotabo's page, but the mark standing in it is TopTen's, so it
      keeps TopTen's ground: near-black, with the gold that only reads against
      it. Redrawn in this page's lavender it would be a different wordmark. */
-  .mp-topten{
+  .mp-gift{
     display:inline-flex;flex-direction:column;align-items:center;gap:5px;
     margin-top:16px;padding:16px 30px;
-    background:#08090c;border:1px solid #23252c;border-radius:16px;
+    background:#1c1b19;border:1px solid #2b2926;border-radius:16px;
     text-decoration:none;
   }
-  .mp-topten:hover{border-color:#ffc233;}
-  .mp-topten[hidden]{display:none;}
-  .mp-topten .mp-tt-mark{
+  .mp-gift:hover{border-color:#d9a63c;}
+  .mp-gift[hidden]{display:none;}
+  .mp-gift .mp-gc-mark{
     font-size:1.7rem;font-weight:800;letter-spacing:-.02em;
-    color:#f2f3f5;line-height:1.1;
+    color:#f2f0ec;line-height:1.1;
   }
-  .mp-topten .mp-tt-mark b{color:#ffc233;font-weight:800;}
-  .mp-topten .mp-tt-tag{
-    font-size:.82rem;font-weight:700;color:#8b8f98;
+  .mp-gift .mp-gc-mark b{color:#d9a63c;font-weight:800;}
+  .mp-gift .mp-gc-tag{
+    font-size:.82rem;font-weight:700;color:#a09b93;
   }
   .mp-name{font-size:1.35rem;font-weight:800;color:var(--text-dark);text-decoration:none;}
   a.mp-name{color:var(--violet-2);}
@@ -901,7 +901,7 @@
 
   /* Under .cascade, not on its own: .cascade-row sets display:block further
      down the sheet at the same specificity, so a bare .biz-row lost and the
-     row rendered as one run of text -- "1Sponsoritopten.one". */
+     row rendered as one run of text -- "1Sponsorigift.ceo". */
   .cascade .biz-row{display:flex;align-items:center;gap:10px;text-decoration:none;}
   .biz-row__n{
     flex:0 0 auto;min-width:28px;
@@ -1609,9 +1609,9 @@
          invitation below is hidden while the place is occupied, and
          renderMainPartner() hides this the moment a real principal sponsor
          exists, so the band never shows two. -->
-    <a class="mp-topten" id="mainPartnerTopten" href="https://topten.one" target="_blank" rel="noopener">
-      <span class="mp-tt-mark">TopTen<b>.one</b></span>
-      <span class="mp-tt-tag">Be the one.</span>
+    <a class="mp-gift" id="mainPartnerGift" href="https://gift.ceo" target="_blank" rel="noopener">
+      <span class="mp-gc-mark">gift<b>.ceo</b></span>
+      <span class="mp-gc-tag">Only CEOs give here.</span>
     </a>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
   </div>
@@ -3202,7 +3202,7 @@
     if (invite) invite.hidden = true;
     // A paying partner takes the band; the stand-in steps out rather than
     // sharing it.
-    var tt = document.getElementById("mainPartnerTopten");
+    var tt = document.getElementById("mainPartnerGift");
     if (tt) tt.hidden = true;
   }
 
@@ -4625,7 +4625,7 @@ if ("serviceWorker" in navigator) {
   }
 
   /* A sponsor's own mark, drawn as the sponsor draws it.
-     topten.one's is a black rounded square with a yellow one on it, and it is
+     gift.ceo's is a near-black rounded square with a pale g and a gold dot, and it is
      inline rather than a file: it is four shapes, so it costs less than the
      request it would take to fetch it, and it stays sharp at any size. The
      colours are topten's own, not Rotabo's -- a sponsor's mark that has been
@@ -4634,12 +4634,12 @@ if ("serviceWorker" in navigator) {
      Keyed by host, so it is the sponsor that carries a logo, not the row. A
      sponsor with no mark here shows its name, which is what it did before. */
   var SPONSOR_MARKS = {
-    "topten.one":
+    "gift.ceo":
       '<svg class="tick__logo" viewBox="0 0 64 64" aria-hidden="true">'
-      + '<rect width="64" height="64" rx="14" fill="#08090c"/>'
-      + '<rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#ffc233" stroke-opacity=".28" stroke-width="2"/>'
-      + '<path d="M24 20h10v30" fill="none" stroke="#ffc233" stroke-width="7" stroke-linecap="square"/>'
-      + '<rect x="20" y="46" width="24" height="6" rx="2" fill="#ffc233"/>'
+      + '<rect width="64" height="64" rx="14" fill="#1c1b19"/>'
+      + '<rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#d9a63c" stroke-opacity=".28" stroke-width="2"/>'
+      + '<text x="30" y="45" font-family="Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#f2f0ec" text-anchor="middle">g</text>'
+      + '<circle cx="48" cy="42" r="5" fill="#d9a63c"/>'
       + '</svg>'
   };
 
@@ -4688,10 +4688,10 @@ if ("serviceWorker" in navigator) {
 
   function sponsorCells(){
     var out = [];
-    // topten.one is the standing sponsor and is not in the table, so it is
+    // gift.ceo is the standing sponsor and is not in the table, so it is
     // written here. Anything the table does hold joins it rather than
     // replacing it, and this line needs no edit when the first one lands.
-    out.push(sponsorCell("topten.one", "https://topten.one"));
+    out.push(sponsorCell("gift.ceo", "https://gift.ceo"));
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });
@@ -5373,11 +5373,11 @@ if ("serviceWorker" in navigator) {
     var html = "";
     var n = 1;
 
-    html += '<a class="cascade-row biz-row biz-row--sponsor" href="https://topten.one"'
+    html += '<a class="cascade-row biz-row biz-row--sponsor" href="https://gift.ceo"'
           + ' target="_blank" rel="noopener" style="--i:0">'
           + '<span class="biz-row__n">' + n + '</span>'
           + '<span class="biz-row__label">' + esc(T("ticker.sponsors", "Sponsors")) + '</span>'
-          + '<b>topten.one</b></a>';
+          + '<b>gift.ceo</b></a>';
     n++;
 
     firms.forEach(function(r){
@@ -5486,7 +5486,7 @@ if ("serviceWorker" in navigator) {
 <script>
 /* The hundred sponsor places, on both sides of the site.
 
-   topten.one holds the first as the standing Platinum sponsor. Whatever
+   gift.ceo holds the first as the standing Platinum sponsor. Whatever
    sponsors_public() returns joins it -- name, tier, link -- and everything
    after that is a free place that says so and leads to the tier buttons
    sitting directly under this box. Same shape as the registered-companies
@@ -5532,10 +5532,10 @@ if ("serviceWorker" in navigator) {
     var html = "";
     var n = 1;
 
-    html += '<a class="cascade-row biz-row biz-row--taken" href="https://topten.one"'
+    html += '<a class="cascade-row biz-row biz-row--taken" href="https://gift.ceo"'
           + ' target="_blank" rel="noopener" style="--i:0">'
           + '<span class="biz-row__n">' + n + '</span>'
-          + '<b>topten.one</b>' + tierChip("platinum") + '</a>';
+          + '<b>gift.ceo</b>' + tierChip("platinum") + '</a>';
     n++;
 
     rows.forEach(function(r){
@@ -5600,7 +5600,7 @@ if ("serviceWorker" in navigator) {
   })
     .then(function(r){ return r.ok ? r.json() : []; })
     .then(function(data){ if (Array.isArray(data)) rows = data; })
-    .catch(function(){ /* topten.one and the free places still stand */ })
+    .catch(function(){ /* gift.ceo and the free places still stand */ })
     .then(function(){ if (!list.hidden) render(); });
 
   var beforeSponBox = window.__afterTranslate;
