@@ -1504,6 +1504,11 @@
 <!-- Live counter. Hidden until site_pulse() answers: see the CSS note. -->
 <div class="pulse-bar" id="pulseBar" role="status" aria-live="polite">
   <span class="pulse-item">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    <span class="pulse-num" id="pulseOnline">–</span>
+    <span data-i18n="pulse.online">online now</span>
+  </span>
+  <span class="pulse-item">
     <span class="pulse-num" id="pulseTotal">–</span>
     <span data-i18n="pulse.total">visitors so far</span>
   </span>
@@ -4453,14 +4458,15 @@ if ("serviceWorker" in navigator) {
     // Visitor counter. Same sid as the visit row above, so one person is
     // one visitor in both numbers.
     //
-    // "Online now" is not shown at the moment -- a true "1" on the front
-    // page argues against the site harder than no number at all -- but the
-    // heartbeat still goes out, so the figure is accurate rather than
-    // starting from nothing on the day it comes back. It stops while the
-    // tab is hidden: a browser with forty background tabs would otherwise
-    // report forty people online, and the number has to mean what it says.
+    // "Online now" is shown again, now that paid traffic is arriving and the
+    // figure has a chance to be more than one. The heartbeat had kept running
+    // while it was hidden, so the number is real rather than starting from
+    // nothing today. It stops while the tab is hidden: a browser with forty
+    // background tabs would otherwise report forty people online, and the
+    // number has to mean what it says.
     var pulseBar    = document.getElementById("pulseBar");
     var pulseTotal  = document.getElementById("pulseTotal");
+    var pulseOnline = document.getElementById("pulseOnline");
     var pulseTimer  = null;
 
     function pulse(){
@@ -4479,6 +4485,7 @@ if ("serviceWorker" in navigator) {
           var row = rows && rows[0];
           if (!row || !pulseBar) return;
           pulseTotal.textContent  = Number(row.total).toLocaleString();
+          if (pulseOnline) pulseOnline.textContent = Number(row.online).toLocaleString();
           pulseBar.setAttribute("data-ready", "1");
         })
         .catch(function(){});
