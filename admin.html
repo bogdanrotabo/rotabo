@@ -87,6 +87,7 @@
   }
   .badge.paid{background:#e3f9ec;color:#1d8348;}
   .badge.unpaid{background:#fdecea;color:var(--red);}
+  .dim{color:var(--text-eyebrow);font-size:.82rem;}
   .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;}
   .empty-note{color:var(--text-eyebrow);text-align:center;padding:40px 0;}
 
@@ -190,6 +191,7 @@
     <div class="tabs">
       <button type="button" class="tab-btn active" id="tabBtnListings">Listings</button>
       <button type="button" class="tab-btn" id="tabBtnVisits">Visits</button>
+      <button type="button" class="tab-btn" id="tabBtnAds">Ads</button>
       <button type="button" class="tab-btn" id="tabBtnAccess">Paid access</button>
       <button type="button" class="tab-btn" id="tabBtnPayments">Payments</button>
       <button type="button" class="tab-btn" id="tabBtnCompanies">Companies</button>
@@ -293,6 +295,35 @@
         </table>
       </div>
       <p class="empty-note" id="visitsEmptyNote" style="display:none;">No visits match this filter.</p>
+    </div>
+
+    <div class="tab-panel" id="panelAds">
+      <h1>Ads</h1>
+      <p class="sub">What the paid clicks actually delivered, read from the addresses they landed on &mdash; not from what Google reports having billed for. Every ad click arrives carrying its campaign id, so this is the same traffic seen from this side of it.</p>
+
+      <div class="stats" id="adsStats"></div>
+
+      <div class="filter-row">
+        <input type="search" id="adsSearchInput" autocomplete="off" placeholder="Search campaign or country…">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Campaign</th>
+              <th>Country</th>
+              <th>Clicks</th>
+              <th>Visitors</th>
+              <th>Left after one page</th>
+              <th>First</th>
+              <th>Last</th>
+            </tr>
+          </thead>
+          <tbody id="adsTableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty-note" id="adsEmptyNote">No paid clicks in the last 30 days.</p>
     </div>
 
     <div class="tab-panel" id="panelAccess">
@@ -435,6 +466,8 @@
   // fills every one of those rows and filtering them here would report the
   // organic segment as empty.
   var visitSegment = "all";
+  var allAds = [];
+  var adsStats = null;
   var allAccess = [];
   var accessStats = null;
   var allPayments = [];
@@ -450,7 +483,7 @@
   // had no listener, no autofill sweep and no clearing on logout -- an
   // admin typing a name saw the text appear over a table that had not
   // been filtered at all, and read the whole ledger as the result.
-  var SEARCH_BOXES = ["searchInput", "visitSearchInput", "accessSearchInput", "paymentSearchInput"];
+  var SEARCH_BOXES = ["searchInput", "visitSearchInput", "adsSearchInput", "accessSearchInput", "paymentSearchInput"];
 
   // The tables filter on these, never on the boxes themselves. A value the
   // person did not type -- a password manager refilling a saved login, the
@@ -504,6 +537,7 @@
       qs = "?resource=visits&tz=" + encodeURIComponent(browserTz())
          + "&segment=" + encodeURIComponent(visitSegment);
     }
+    else if (resource === "ads") qs = "?resource=ads&days=30";
     else if (resource === "access") qs = "?resource=access";
     else if (resource === "payments") qs = "?resource=payments";
     else if (resource === "companies") qs = "?resource=companies";
@@ -843,6 +877,61 @@
       + tile(s.expired, "EXPIRED");
   }
 
+  /* One row per campaign per country, worst first.
+
+     "Left after one page" is the column that decides whether a number is
+     worth what it cost: a click that saw the homepage and nothing else did
+     not fail at the form, it failed before reaching one. Read next to the
+     country it came from, it says plainly whether the ads are being shown to
+     people the site can serve at all -- which is a question Google Ads cannot
+     answer, because it reports what it billed for, not who arrived. */
+  function renderAds(){
+    var s = adsStats;
+    if (s) {
+      var away = s.visitors ? Math.round(100 * s.bounced / s.visitors) : 0;
+      document.getElementById("adsStats").innerHTML = ""
+        + tile(s.clicks, "PAID CLICKS")
+        + tile(s.visitors, "VISITORS")
+        + tile(away + "%", "LEFT AFTER ONE PAGE")
+        + tile(s.campaigns, "CAMPAIGNS")
+        + tile(s.countries, "COUNTRIES")
+        + tile(s.days + "d", "WINDOW");
+    }
+
+    var search = searchTerm.adsSearchInput.trim().toLowerCase();
+    var rows = allAds.filter(function(r){
+      if (!search) return true;
+      return ((r.campaign || "") + " " + (r.country || "")).toLowerCase().indexOf(search) !== -1;
+    });
+
+    var tbody = document.getElementById("adsTableBody");
+    var emptyNote = document.getElementById("adsEmptyNote");
+    if (rows.length === 0) {
+      tbody.innerHTML = "";
+      emptyNote.style.display = "block";
+      return;
+    }
+    emptyNote.style.display = "none";
+
+    tbody.innerHTML = rows.map(function(r){
+      var visitors = Number(r.visitors || 0);
+      var bounced = Number(r.bounced || 0);
+      var pct = visitors ? Math.round(100 * bounced / visitors) : 0;
+      // Two thirds walking straight back out is the line where a country
+      // stops being an audience and starts being a bill.
+      var cls = pct >= 66 ? " class=\"badge unpaid\"" : "";
+      return "<tr>"
+        + "<td>" + esc(r.campaign) + "</td>"
+        + "<td>" + esc(r.country) + "</td>"
+        + "<td>" + esc(String(r.clicks)) + "</td>"
+        + "<td>" + esc(String(visitors)) + "</td>"
+        + "<td><span" + cls + ">" + pct + "%</span> <span class=\"dim\">(" + bounced + ")</span></td>"
+        + "<td>" + (r.first_seen ? esc(new Date(r.first_seen).toLocaleDateString()) : "&mdash;") + "</td>"
+        + "<td>" + (r.last_seen ? esc(new Date(r.last_seen).toLocaleDateString()) : "&mdash;") + "</td>"
+        + "</tr>";
+    }).join("");
+  }
+
   function renderAccess(){
     renderAccessStats(allAccess);
 
@@ -990,6 +1079,11 @@
       btn: "tabBtnVisits", panel: "panelVisits", resource: "visits",
       note: "visitsEmptyNote", empty: "No visits match this filter.", draw: renderVisits,
       apply: function(res){ allVisits = res.data; visitStats = res.stats; renderVisits(); }
+    },
+    {
+      btn: "tabBtnAds", panel: "panelAds", resource: "ads",
+      note: "adsEmptyNote", empty: "No paid clicks in the last 30 days.", draw: renderAds,
+      apply: function(res){ allAds = res.data; adsStats = res.stats; renderAds(); }
     },
     {
       btn: "tabBtnAccess", panel: "panelAccess", resource: "access",
@@ -1232,7 +1326,7 @@
       tab.loading = false;
       document.getElementById(tab.note).style.display = "none";
     });
-    ["tableBody", "visitsTableBody", "accessTableBody", "paymentsTableBody"].forEach(function(id){
+    ["tableBody", "visitsTableBody", "adsTableBody", "accessTableBody", "paymentsTableBody"].forEach(function(id){
       document.getElementById(id).innerHTML = "";
     });
     clearSearchBoxes();

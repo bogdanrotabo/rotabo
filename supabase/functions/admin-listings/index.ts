@@ -273,6 +273,42 @@ Deno.serve(async (req: Request) => {
     return ok({ data: rowsRes.data, stats });
   }
 
+  /* What the ads delivered, read from the addresses they landed on.
+
+     Google Ads reports what it billed for; this reports who actually arrived,
+     from where, and whether they stayed past the first page. The two are not
+     the same question, and the second one is the one nobody could answer
+     without opening the Ads account -- which is exactly the wrong dependency
+     for a number that decides where money goes.
+
+     Every paid click carries gad_campaignid in the query string and lands in
+     site_visits like any other visit, so the whole record is already here. */
+  if (resource === "ads") {
+    const daysParam = Number(url.searchParams.get("days") || "30");
+    const days = Number.isFinite(daysParam) ? Math.min(Math.max(daysParam, 1), 365) : 30;
+
+    const { data, error } = await supabase.rpc("ad_traffic_stats", { p_days: days });
+    if (error) return fail(error.message);
+
+    const rows = (data ?? []) as any[];
+    const clicks = rows.reduce((n, r) => n + Number(r.clicks || 0), 0);
+    const visitors = rows.reduce((n, r) => n + Number(r.visitors || 0), 0);
+    const bounced = rows.reduce((n, r) => n + Number(r.bounced || 0), 0);
+    const campaigns = new Set(rows.map((r) => r.campaign)).size;
+
+    return ok({
+      data: rows,
+      stats: {
+        clicks,
+        visitors,
+        bounced,
+        campaigns,
+        countries: new Set(rows.map((r) => r.country)).size,
+        days,
+      },
+    });
+  }
+
   if (resource === "payments") {
     // The money ledger: one row per completed checkout, with what it was
     // for and what the listing behind it says. Rows whose stripe_event_id
