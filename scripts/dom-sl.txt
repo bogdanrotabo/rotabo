@@ -1,213 +1,213 @@
-taxi|Taksi|
-ride_hailing|Prevoz prek aplikacije|
-chauffeur|Storitve voznika|
-driving_school|Avtošola|
-translation|Prevajanje|
-interpreting|Tolmačenje|
-sworn_translation|Sodni prevodi|
-language_school|Jezikovna šola|
-removals|Selitve|
-international_removals|Mednarodne selitve|
-courier|Kurirske storitve|
-freight_forwarding|Špedicija|
-refrigerated_transport|Hlajeni prevoz|
-haulage|Tovorni promet|
-storage_warehousing|Skladiščenje|
-customs_brokerage|Carinsko posredovanje|
-excavation|Izkopi in zemeljska dela|
-crane_hire|Najem dvigal|
-scaffolding|Odri|
-demolition|Rušenje|
-concrete_works|Betonska dela|
-surveying|Geodezija|
-tool_hire|Izposoja orodja|
-machinery_rental|Najem strojev|
-generator_hire|Najem agregatov|
-electrical_installation|Elektroinštalacije|
-plumbing|Vodovodne inštalacije|
-heating_hvac|Ogrevanje in prezračevanje|
-air_conditioning|Klimatizacija|
-painting_decorating|Slikopleskarstvo|
-carpentry|Mizarstvo|
-flooring|Polaganje talnih oblog|
-roofing|Krovstvo|
-locksmith|Ključavničarstvo|
-cleaning_services|Čistilne storitve|
-gardening_landscaping|Vrtnarstvo in urejanje okolice|
-renovation|Prenove|
-car_repair|Avtoservis|
-mobile_mechanic|Mobilni mehanik|
-tyre_service|Vulkanizerstvo|
-bodywork_paint|Kleparstvo in ličarstvo|
-towing_recovery|Vlečna služba|
-childcare|Varstvo otrok|
-elderly_care|Nega starejših|
-home_nursing|Domača nega|
-private_tutoring|Inštrukcije|
-music_lessons|Glasbene urice|
-sports_coaching|Športni trening|
-it_training|IT izobraževanje|
-vocational_training|Poklicno usposabljanje|
-holiday_lettings|Počitniški najem|
-guesthouse_bnb|Penzion in nočitev z zajtrkom|
-property_management|Upravljanje nepremičnin|
-veterinary|Veterinar|
-dog_walking|Sprehajanje psov|
-pet_grooming|Nega hišnih ljubljenčkov|
-general_practice|Splošna medicina|
-dentistry|Zobozdravstvo|
-physiotherapy|Fizioterapija|
-psychology|Psihologija|
-pharmacy|Lekarna|
-optometry|Optometrija|
-medical_laboratory|Medicinski laboratorij|
-software_development|Razvoj programske opreme|
-web_development|Izdelava spletnih strani|
-it_support|IT podpora|
-cybersecurity|Kibernetska varnost|
-data_ai|Podatki in umetna inteligenca|
-cloud_hosting|Oblak in gostovanje|
-accounting|Računovodstvo|
-audit_tax|Revizija in davki|
-legal_services|Pravne storitve|
-hr_recruitment|Kadri in zaposlovanje|
-management_consulting|Poslovno svetovanje|
-insurance_brokerage|Zavarovalno posredništvo|
-real_estate_agency|Nepremičninska agencija|
-architecture|Arhitektura|
-manufacturing|Proizvodnja|
-cnc_machining|CNC obdelava|
-metalwork_welding|Kovinarstvo in varjenje|
-restaurant|Restavracija|
-catering|Catering|
-hotel|Hotel|
-event_management|Organizacija dogodkov|
-agriculture|Kmetijstvo|
-forestry|Gozdarstvo|
-waste_recycling|Odpadki in recikliranje|
-renewable_energy|Obnovljiva energija|
-marketing_agency|Marketinška agencija|
-graphic_design|Grafično oblikovanje|
-photography|Fotografija|
-video_production|Video produkcija|
-printing_signage|Tisk in oglasne table|
-wholesale|Trgovina na debelo|
-ecommerce|Spletna trgovina|
-security_services|Varnostne storitve|
-hairdressing|Frizerstvo|
-beauty_salon|Kozmetični salon|
-massage_therapy|Masaža|
-fitness_training|Fitnes trening|
-shop_general|Trgovina|
-shop_bicycle|Kolesarska trgovina in servis|
-shop_auto_parts|Avtodeli|
-shop_hardware|Železnina in orodje|
-shop_furniture|Pohištvo|
-shop_electronics|Elektronika in aparati|
-shop_clothing|Oblačila|
-shop_grocery|Živila|
-shop_sports|Športna oprema|
-shop_books|Knjigarna in papirnica|
-shop_florist|Cvetličarna|
-shop_pet|Trgovina za male živali|
-motorcycle_repair|Servis motornih koles|
-bar|Bar|
-kebab_shawarma|Kebab in šavarma|
-pizzeria|Picerija|
-fast_food|Hitra hrana|
-bakery|Pekarna|
-pastry_shop|Slaščičarna|
-coffee_shop|Kavarna|
-food_truck|Premična kuhinja|
-butcher|Mesnica|
-ice_cream|Sladoledarna|
-winery|Vinska klet|
-brewery|Pivovarna|
-nightclub|Nočni klub in disko|
-beach_club|Plažni bar in beach club|
-bowling_billiards|Kegljišče in biljard|
-travel_agency|Turistična agencija|
-nail_salon|Salon za nohte, manikura in pedikura|
-barber|Brivnica|
-tattoo_piercing|Tetoviranje in piercing|
-spa_sauna|Spa in savna|
-cosmetics_shop|Drogerija in kozmetika|
-dry_cleaning|Kemična čistilnica in pralnica|
-podiatry|Podologija in nega stopal|
-dental_laboratory|Zobotehnični laboratorij|
-orthodontics|Ortodontija|
-dermatology|Dermatologija|
-paediatrics|Pediatrija|
-gynaecology|Ginekologija|
-cardiology|Kardiologija|
-medical_imaging|Slikovna diagnostika|
-speech_therapy|Logopedija|
-nutrition_dietetics|Prehrana in dietetika|
-bicycle_repair|Popravilo koles|
-scooter_repair|Popravilo skuterjev in mopedov|
-appliance_repair|Popravilo gospodinjskih aparatov|
-phone_repair|Popravilo telefonov in tablic|
-computer_repair|Popravilo računalnikov|
-watch_jewellery_repair|Popravilo ur in nakita|
-shoe_repair|Čevljarstvo|
-tailoring_alterations|Šiviljstvo in popravila|
-upholstery|Tapetništvo|
-glazing|Steklarstvo in okna|
-chimney_sweep|Dimnikarstvo|
-pest_control|Deratizacija in dezinsekcija|
-pool_maintenance|Vzdrževanje bazenov|
-window_cleaning|Čiščenje oken|
-car_wash|Avtopralnica|
-car_rental|Najem avtomobilov|
-bike_scooter_rental|Izposoja koles in skirojev|
-funeral_services|Pogrebne storitve|
-notary|Notariat|
-bailiff|Izvršba in izterjava|
-patent_trademark|Patenti in blagovne znamke|
-debt_collection|Izterjava dolgov|
-company_formation|Ustanavljanje podjetij|
-financial_advisory|Finančno svetovanje|
-payroll_services|Obračun plač|
-currency_exchange|Menjalnica|
-pawnshop|Zastavljalnica|
-leasing|Lizing in financiranje|
-hearing_aids|Slušni aparati|
-medical_transport|Sanitetni prevoz|
-rehabilitation|Rehabilitacijski center|
-occupational_therapy|Delovna terapija|
-midwifery|Babištvo|
-acupuncture|Akupunktura|
-chiropractic|Kiropraktika in osteopatija|
-insulation|Toplotna izolacija|
-waterproofing|Hidroizolacija|
-plastering|Ometi in glajenje|
-tiling|Polaganje ploščic|
-drywall|Mavčne plošče in predelne stene|
-fencing|Ograje in vrata|
-paving|Tlakovanje in dovozi|
-well_drilling|Vrtanje vodnjakov|
-septic_systems|Greznice in kanalizacija|
-solar_panels|Montaža sončnih panelov|
-alarm_cctv|Alarmi in videonadzor|
-smart_home|Pametni dom|
-lift_maintenance|Vzdrževanje dvigal|
-fire_safety|Požarna varnost in gasilniki|
-car_dealer|Avtosalon|
-vehicle_inspection|Tehnični pregled|
-auto_electrics|Avtoelektrika|
-car_glass|Avtostekla in vetrobrani|
-boat_repair|Popravilo plovil|
-bus_charter|Najem avtobusov|
-call_centre|Klicni center|
-virtual_assistant|Virtualni asistent|
-market_research|Raziskave trga|
-copywriting|Pisanje vsebin|
-seo_services|SEO in spletno oglaševanje|
-social_media|Vodenje družbenih omrežij|
-app_development|Razvoj mobilnih aplikacij|
-game_development|Razvoj iger|
-drone_services|Storitve z dronom|
-printing_3d|3D tisk|
-interior_design|Notranje oblikovanje|
-dance_school|Plesna šola|
-art_gallery|Galerija in uokvirjanje|
+taxi|Taksi|taksi, vožnja, prevoz, letališče
+ride_hailing|Prevoz prek aplikacije|uber, bolt, deljenje vožnje, aplikacija
+chauffeur|Storitve voznika|osebni voznik, limuzina, šofer
+driving_school|Avtošola|avtošola, ure vožnje, vozniško dovoljenje, inštruktor
+translation|Prevajanje|prevajalec, dokumenti, prevod, pogodba
+interpreting|Tolmačenje|tolmač, simultano tolmačenje, konferenca, sestanek
+sworn_translation|Sodni prevodi|sodni tolmač, overjen prevod, žig, listina
+language_school|Jezikovna šola|jezikovni tečaji, angleščina, učitelj, jezikovna šola
+removals|Selitve|selitev, selitvene storitve, kombi, škatle
+international_removals|Mednarodne selitve|selitev v tujino, preselitev, kontejner, carina
+courier|Kurirske storitve|kurir, dostava, pošiljka, kurirska služba
+freight_forwarding|Špedicija|špedicija, logistika, prevoz blaga, paleta
+refrigerated_transport|Hlajeni prevoz|hladilni prevoz, zamrznjeno blago, hladilnik, hladna veriga
+haulage|Tovorni promet|tovorni prevoz, tovornjak, prevoz blaga, prikolica
+storage_warehousing|Skladiščenje|skladišče, skladiščenje, hramba, police
+customs_brokerage|Carinsko posredovanje|carinsko posredovanje, carina, uvoz, izvoz
+excavation|Izkopi in zemeljska dela|zemeljska dela, bager, izkop, jarek
+crane_hire|Najem dvigal|žerjav, najem žerjava, dvigovanje, avtodvigalo
+scaffolding|Odri|oder, gradbeni oder, postavitev odra, delovna ploščad
+demolition|Rušenje|rušenje, odstranjevanje, gradbeni odpadki, razbijanje betona
+concrete_works|Betonska dela|beton, betoniranje, temelji, estrih
+surveying|Geodezija|geodet, izmera, katastrska izmera, meje parcele
+tool_hire|Izposoja orodja|najem orodja, orodje, vrtalnik, brusilnik
+machinery_rental|Najem strojev|najem strojev, stroji, viličar, gradbena mehanizacija
+generator_hire|Najem agregatov|agregat, generator, rezervno napajanje, kabel
+electrical_installation|Elektroinštalacije|električar, elektroinštalacije, elektro omarica, vtičnica
+plumbing|Vodovodne inštalacije|vodovodar, cevi, kopalnica, puščanje vode
+heating_hvac|Ogrevanje in prezračevanje|ogrevanje, kotel, radiatorji, talno gretje
+air_conditioning|Klimatizacija|klimatska naprava, hlajenje, klimatizacija, split sistem
+painting_decorating|Slikopleskarstvo|slikopleskar, pleskanje, tapete, glajenje
+carpentry|Mizarstvo|mizar, tesar, pohištvo, les
+flooring|Polaganje talnih oblog|polagalec talnih oblog, parket, laminat, brušenje parketa
+roofing|Krovstvo|krovec, streha, žlebovi, kleparstvo
+locksmith|Ključavničarstvo|ključavničar, ključavnice, ključi, odpiranje vrat
+cleaning_services|Čistilne storitve|čiščenje, čistilka, čiščenje pisarn, generalno čiščenje
+gardening_landscaping|Vrtnarstvo in urejanje okolice|vrtnar, košnja trave, živa meja, urejanje okolice
+renovation|Prenove|prenova, adaptacija, gradbeno podjetje, preureditev
+car_repair|Avtoservis|avtoservis, avtomehanik, servis, popravilo avta
+mobile_mechanic|Mobilni mehanik|mobilni mehanik, pomoč na cesti, zagon, okvara
+tyre_service|Vulkanizerstvo|gume, vulkanizer, menjava gum, centriranje
+bodywork_paint|Kleparstvo in ličarstvo|avtoličar, kleparstvo, vdolbine, karoserija
+towing_recovery|Vlečna služba|avtovleka, vleka vozil, pomoč na cesti, vitel
+childcare|Varstvo otrok|varstvo otrok, vrtec, varuška, jasli
+elderly_care|Nega starejših|oskrba starejših, dom za starejše, pomoč na domu, upokojenci
+home_nursing|Domača nega|nega na domu, medicinska sestra, zdravstvena nega, oskrba ran
+private_tutoring|Inštrukcije|inštrukcije, zasebne ure, priprava na izpite, domača naloga
+music_lessons|Glasbene urice|klavir, kitara, petje, glasbene ure
+sports_coaching|Športni trening|trener, nogomet, tenis, treningi
+it_training|IT izobraževanje|računalniški tečaji, excel, tečaj programiranja, it izobraževanje
+vocational_training|Poklicno usposabljanje|poklicno izobraževanje, strokovni tečaj, certificiranje, vajeništvo
+holiday_lettings|Počitniški najem|apartma, počitniška hiša, oddaja, airbnb
+guesthouse_bnb|Penzion in nočitev z zajtrkom|penzion, nočitev z zajtrkom, gostišče, sobe
+property_management|Upravljanje nepremičnin|upravljanje nepremičnin, upravnik stavbe, oddaja, etažni lastniki
+veterinary|Veterinar|veterinar, veterinarska ambulanta, cepljenje, pes
+dog_walking|Sprehajanje psov|sprehajanje psov, sprehajalec psov, sprehod
+pet_grooming|Nega hišnih ljubljenčkov|frizer za pse, striženje psov, nega dlake, salon za male živali
+general_practice|Splošna medicina|osebni zdravnik, zdravnik, ambulanta, recept
+dentistry|Zobozdravstvo|zobozdravnik, zobozdravstvo, plomba, implantat
+physiotherapy|Fizioterapija|fizioterapija, fizioterapevt, rehabilitacija, terapija
+psychology|Psihologija|psiholog, terapija, svetovanje, psihoterapija
+pharmacy|Lekarna|lekarna, zdravila, recept, prehranska dopolnila
+optometry|Optometrija|optik, očala, pregled vida, kontaktne leče
+medical_laboratory|Medicinski laboratorij|laboratorij, odvzem krvi, preiskave, izvidi
+software_development|Razvoj programske opreme|programer, razvijalec, programska oprema, koda
+web_development|Izdelava spletnih strani|spletna stran, izdelava spletnih strani, wordpress, spletna trgovina
+it_support|IT podpora|it podpora, omrežje, servis računalnikov, sistemski administrator
+cybersecurity|Kibernetska varnost|kibernetska varnost, varnostno testiranje, požarni zid, vdor
+data_ai|Podatki in umetna inteligenca|umetna inteligenca, strojno učenje, analitika podatkov, algoritmi
+cloud_hosting|Oblak in gostovanje|gostovanje, strežnik, oblak, domena
+accounting|Računovodstvo|računovodja, računovodstvo, računi, plače
+audit_tax|Revizija in davki|revizor, davčni svetovalec, letno poročilo, ddv
+legal_services|Pravne storitve|odvetnik, pravnik, pravne storitve, pogodba
+hr_recruitment|Kadri in zaposlovanje|kadrovanje, zaposlovanje, agencija za zaposlovanje, življenjepis
+management_consulting|Poslovno svetovanje|svetovalec, poslovno svetovanje, strategija, poslovni načrt
+insurance_brokerage|Zavarovalno posredništvo|zavarovalni posrednik, zavarovanje, polica, škoda
+real_estate_agency|Nepremičninska agencija|nepremičninska agencija, nepremičninar, stanovanje, hiša
+architecture|Arhitektura|arhitekt, načrti, gradbeno dovoljenje, projektiranje
+manufacturing|Proizvodnja|proizvodnja, tovarna, industrija, montaža
+cnc_machining|CNC obdelava|cnc, struženje, rezkanje, obdelava kovin
+metalwork_welding|Kovinarstvo in varjenje|varilec, kovač, jeklo, ključavničarstvo
+restaurant|Restavracija|restavracija, hrana, gostilna, jedilnik
+catering|Catering|catering, pogostitev, buffet, prigrizki
+hotel|Hotel|hotel, nastanitev, hostel, sobe
+event_management|Organizacija dogodkov|organizacija dogodkov, poročni organizator, konferenca, dogodek
+agriculture|Kmetijstvo|kmetijstvo, kmetija, traktor, žetev
+forestry|Gozdarstvo|gozdarstvo, sečnja, les, motorna žaga
+waste_recycling|Odpadki in recikliranje|odpadki, kontejner, staro železo, recikliranje
+renewable_energy|Obnovljiva energija|sončne elektrarne, vetrna energija, zelena energija, toplotna črpalka
+marketing_agency|Marketinška agencija|marketing, oglaševanje, kampanja, marketinška agencija
+graphic_design|Grafično oblikovanje|grafični oblikovalec, logotip, grafično oblikovanje, priprava za tisk
+photography|Fotografija|fotograf, fotografski studio, poročni fotograf, portreti
+video_production|Video produkcija|video produkcija, snemanje, montaža, dron
+printing_signage|Tisk in oglasne table|tiskarna, tisk, napisi, nalepke
+wholesale|Trgovina na debelo|veleprodaja, distributer, dobavitelj, blago
+ecommerce|Spletna trgovina|spletna trgovina, e-trgovina, marketplace, naročila
+security_services|Varnostne storitve|varnostnik, varovanje, nadzor, videonadzor
+hairdressing|Frizerstvo|frizer, striženje, barvanje las, salon
+beauty_salon|Kozmetični salon|kozmetični salon, kozmetičarka, nohti, nega obraza
+massage_therapy|Masaža|maser, masaža, wellness, sprostitev
+fitness_training|Fitnes trening|osebni trener, fitnes, trening, moč
+shop_general|Trgovina|trgovina, prodajalna, maloprodaja, blago
+shop_bicycle|Kolesarska trgovina in servis|kolesarska trgovina, kolesa, servis koles, električno kolo
+shop_auto_parts|Avtodeli|avtodeli, rezervni deli, avto oprema, filtri
+shop_hardware|Železnina in orodje|železnina, gradbeni material, orodje, vijaki
+shop_furniture|Pohištvo|trgovina s pohištvom, pohištvo, sedežne garniture, kuhinje
+shop_electronics|Elektronika in aparati|elektronika, bela tehnika, televizor, pralni stroj
+shop_clothing|Oblačila|trgovina z oblačili, moda, obutev, oblačila
+shop_grocery|Živila|živilska trgovina, supermarket, živila, mini market
+shop_sports|Športna oprema|športna trgovina, športna oprema, pohodništvo, smuči
+shop_books|Knjigarna in papirnica|knjigarna, pisarniški material, knjige, papirnica
+shop_florist|Cvetličarna|cvetličarna, cvetje, šopki, vence
+shop_pet|Trgovina za male živali|trgovina za male živali, hrana za pse, akvarij, mačji pesek
+motorcycle_repair|Servis motornih koles|servis motornih koles, motor, skuter, moped
+bar|Bar|bar, gostilna, koktajl bar, pijača
+kebab_shawarma|Kebab in šavarma|kebab, šavarma, gyros, kebabnica
+pizzeria|Picerija|pica, picerija, pica za s seboj, italijanska
+fast_food|Hitra hrana|hitra hrana, burger, pomfri, okrepčevalnica
+bakery|Pekarna|pekarna, kruh, pecivo, pek
+pastry_shop|Slaščičarna|slaščičarna, torte, sladice, peciva
+coffee_shop|Kavarna|kavarna, kava, espresso, barista
+food_truck|Premična kuhinja|food truck, ulična hrana, premična kuhinja
+butcher|Mesnica|mesnica, meso, klobase, mesni izdelki
+ice_cream|Sladoledarna|sladoled, sladoledarna, gelato, sladoledni desert
+winery|Vinska klet|vinska klet, vino, vinarstvo, degustacija vin
+brewery|Pivovarna|pivovarna, pivo, craft pivo, točeno pivo
+nightclub|Nočni klub in disko|nočni klub, disko, ples, dj
+beach_club|Plažni bar in beach club|plažni bar, ležalniki, plaža, kopališče
+bowling_billiards|Kegljišče in biljard|kegljišče, biljard, pikado, bowling
+travel_agency|Turistična agencija|turistična agencija, potovanja, letalske karte, aranžmaji
+nail_salon|Salon za nohte, manikura in pedikura|salon za nohte, manikura, pedikura, gel nohti
+barber|Brivnica|brivec, moško striženje, brada, britje
+tattoo_piercing|Tetoviranje in piercing|tetovaža, tattoo studio, piercing, črnilo
+spa_sauna|Spa in savna|spa, savna, wellness, parna kopel
+cosmetics_shop|Drogerija in kozmetika|parfumerija, kozmetika, ličila, nega kože
+dry_cleaning|Kemična čistilnica in pralnica|kemična čistilnica, pralnica, likanje, pranje
+podiatry|Podologija in nega stopal|pedikura, nega stopal, vrasel noht, stopala
+dental_laboratory|Zobotehnični laboratorij|zobotehnik, zobne proteze, prevleke, mostički
+orthodontics|Ortodontija|zobni aparat, ortodont, ravnanje zob, folije
+dermatology|Dermatologija|dermatolog, kožni zdravnik, znamenja, akne
+paediatrics|Pediatrija|pediater, otroški zdravnik, dojenček, otroci
+gynaecology|Ginekologija|ginekolog, ženski zdravnik, nosečnost, porodništvo
+cardiology|Kardiologija|kardiolog, srce, ekg, srčni
+medical_imaging|Slikovna diagnostika|rentgen, ultrazvok, magnetna resonanca, ct
+speech_therapy|Logopedija|logoped, govorna terapija, jecljanje, govor
+nutrition_dietetics|Prehrana in dietetika|nutricionist, dietetik, dieta, hujšanje
+bicycle_repair|Popravilo koles|servis koles, popravilo kolesa, guma, kolesarski servis
+scooter_repair|Popravilo skuterjev in mopedov|servis skuterjev, skuter, vespa, moped
+appliance_repair|Popravilo gospodinjskih aparatov|servis gospodinjskih aparatov, pralni stroj, hladilnik, pečica
+phone_repair|Popravilo telefonov in tablic|servis mobitelov, menjava zaslona, iphone, tablica
+computer_repair|Popravilo računalnikov|servis računalnikov, prenosnik, pc, reševanje podatkov
+watch_jewellery_repair|Popravilo ur in nakita|urar, zlatar, menjava baterije, širjenje prstana
+shoe_repair|Čevljarstvo|čevljar, popravilo obutve, pete, podplati
+tailoring_alterations|Šiviljstvo in popravila|krojač, šivilja, krajšanje, popravila oblačil
+upholstery|Tapetništvo|tapetnik, prevleke, prevlečenje kavča, oblazinjenje
+glazing|Steklarstvo in okna|steklar, okna, izo steklo, steklo
+chimney_sweep|Dimnikarstvo|dimnikar, dimnik, čiščenje dimnika, saje
+pest_control|Deratizacija in dezinsekcija|deratizacija, dezinsekcija, stenice, podgane
+pool_maintenance|Vzdrževanje bazenov|servis bazenov, čiščenje bazena, klor, bazen
+window_cleaning|Čiščenje oken|čiščenje oken, pranje oken, čiščenje fasade, stekla
+car_wash|Avtopralnica|avtopralnica, pranje avta, čiščenje notranjosti, poliranje
+car_rental|Najem avtomobilov|najem vozil, rent a car, izposoja avta, najem avtomobila
+bike_scooter_rental|Izposoja koles in skirojev|izposoja koles, električni skiro, najem kolesa, skiro
+funeral_services|Pogrebne storitve|pogrebne storitve, pogreb, upepelitev, krsta
+notary|Notariat|notar, notarski zapis, pooblastilo, listine
+bailiff|Izvršba in izterjava|izvršitelj, izvršba, rubež, sodna izvršba
+patent_trademark|Patenti in blagovne znamke|patentni zastopnik, registracija znamke, patent, intelektualna lastnina
+debt_collection|Izterjava dolgov|izterjava, dolgovi, opomin, neplačani računi
+company_formation|Ustanavljanje podjetij|ustanovitev podjetja, sodni register, doo, samostojni podjetnik
+financial_advisory|Finančno svetovanje|finančni svetovalec, naložbe, premoženje, pokojninsko varčevanje
+payroll_services|Obračun plač|obračun plač, plačilna lista, plače, kadrovska evidenca
+currency_exchange|Menjalnica|menjalnica, menjava valut, tuja valuta, tečaj
+pawnshop|Zastavljalnica|zastavljalnica, zastava, posojilo proti zastavi, odkup zlata
+leasing|Lizing in financiranje|leasing, financiranje, obročno odplačevanje, avto leasing
+hearing_aids|Slušni aparati|slušni aparat, preverjanje sluha, avdiolog, center za sluh
+medical_transport|Sanitetni prevoz|reševalno vozilo, prevoz pacientov, nosila, sanitetni prevoz
+rehabilitation|Rehabilitacijski center|rehabilitacija, okrevanje, center za okrevanje, rekonvalescenca
+occupational_therapy|Delovna terapija|delovni terapevt, delovna terapija, vsakodnevne spretnosti, samostojnost
+midwifery|Babištvo|babica, porod, nosečnost, priprava na porod
+acupuncture|Akupunktura|akupunktura, igle, kitajska medicina, akupunkturist
+chiropractic|Kiropraktika in osteopatija|kiropraktik, osteopat, hrbtenica, bolečine v hrbtu
+insulation|Toplotna izolacija|izolacija, fasada, toplotna izolacija, izolacija strehe
+waterproofing|Hidroizolacija|hidroizolacija, vlaga, tesnjenje strehe, membrana
+plastering|Ometi in glajenje|ometavanje, omet, glajenje, fasada
+tiling|Polaganje ploščic|keramičar, ploščice, keramika, kopalniške ploščice
+drywall|Mavčne plošče in predelne stene|knauf, mavčne plošče, predelne stene, spuščen strop
+fencing|Ograje in vrata|ograja, vrata, postavitev ograje, žična ograja
+paving|Tlakovanje in dovozi|tlakovanje, dovoz, pločnik, robniki
+well_drilling|Vrtanje vodnjakov|vrtanje vodnjaka, vodnjak, vrtina, podtalnica
+septic_systems|Greznice in kanalizacija|greznica, kanalizacija, odvodnjavanje, ponikovalnica
+solar_panels|Montaža sončnih panelov|sončni paneli, fotovoltaika, razsmernik, sončna elektrarna
+alarm_cctv|Alarmi in videonadzor|alarm, videonadzor, varnostne kamere, protivlomni sistem
+smart_home|Pametni dom|pametna hiša, pametna razsvetljava, hišna avtomatizacija, upravljanje
+lift_maintenance|Vzdrževanje dvigal|dvigalo, servis dvigal, tekoče stopnice, popravilo dvigala
+fire_safety|Požarna varnost in gasilniki|gasilni aparati, javljalniki požara, sprinkler, požarna varnost
+car_dealer|Avtosalon|avtosalon, rabljena vozila, prodaja avtomobilov, avtohiša
+vehicle_inspection|Tehnični pregled|tehnični pregled, pregled vozila, postaja za tehnične preglede, registracija
+auto_electrics|Avtoelektrika|avtoelektričar, alternator, zaganjalnik, avtoelektrika
+car_glass|Avtostekla in vetrobrani|vetrobransko steklo, menjava stekla, avtosteklo, razpoka
+boat_repair|Popravilo plovil|servis plovil, izvenkrmni motor, čoln, jahta
+bus_charter|Najem avtobusov|najem avtobusa, avtobus, minibus, prevoz skupin
+call_centre|Klicni center|klicni center, telemarketing, podpora strankam, telefonska podpora
+virtual_assistant|Virtualni asistent|virtualni asistent, administrativna podpora, tajnica na daljavo, freelancer
+market_research|Raziskave trga|raziskava trga, ankete, fokusne skupine, potrošniške raziskave
+copywriting|Pisanje vsebin|copywriter, lektoriranje, priprava vsebin, besedila
+seo_services|SEO in spletno oglaševanje|optimizacija za iskalnike, google ads, spletno oglaševanje, sem
+social_media|Vodenje družbenih omrežij|vodenje družbenih omrežij, instagram, facebook, tiktok
+app_development|Razvoj mobilnih aplikacij|razvoj aplikacij, android, mobilne aplikacije, flutter
+game_development|Razvoj iger|razvoj iger, unity, unreal, igralni studio
+drone_services|Storitve z dronom|dron, snemanje iz zraka, fotografiranje z dronom, kartiranje
+printing_3d|3D tisk|3d tisk, prototipi, aditivna proizvodnja, 3d tiskalnik
+interior_design|Notranje oblikovanje|oblikovalec interierja, notranja oprema, urejanje prostora, dekoracija
+dance_school|Plesna šola|plesna šola, balet, salsa, plesni tečaji
+art_gallery|Galerija in uokvirjanje|uokvirjanje, okvirji, razstave, galerija
