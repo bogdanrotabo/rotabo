@@ -1,213 +1,213 @@
-taxi|Taxi|
-ride_hailing|Preprava cez aplikáciu|
-chauffeur|Služby vodiča|
-driving_school|Autoškola|
-translation|Preklady|
-interpreting|Tlmočenie|
-sworn_translation|Súdne preklady|
-language_school|Jazyková škola|
-removals|Sťahovanie|
-international_removals|Medzinárodné sťahovanie|
-courier|Kuriérske služby|
-freight_forwarding|Zasielateľstvo|
-refrigerated_transport|Chladiarenská preprava|
-haulage|Nákladná doprava|
-storage_warehousing|Skladovanie|
-customs_brokerage|Colné služby|
-excavation|Výkopové a zemné práce|
-crane_hire|Prenájom žeriavov|
-scaffolding|Lešenie|
-demolition|Búracie práce|
-concrete_works|Betónové práce|
-surveying|Geodézia|
-tool_hire|Požičovňa náradia|
-machinery_rental|Prenájom strojov|
-generator_hire|Prenájom generátorov|
-electrical_installation|Elektroinštalácie|
-plumbing|Vodoinštalatérstvo|
-heating_hvac|Kúrenie a vzduchotechnika|
-air_conditioning|Klimatizácia|
-painting_decorating|Maliarske práce|
-carpentry|Stolárstvo|
-flooring|Podlahárstvo|
-roofing|Pokrývačstvo|
-locksmith|Zámočníctvo|
-cleaning_services|Upratovacie služby|
-gardening_landscaping|Záhradníctvo a sadové úpravy|
-renovation|Rekonštrukcie|
-car_repair|Autoservis|
-mobile_mechanic|Mobilný mechanik|
-tyre_service|Pneuservis|
-bodywork_paint|Karosárstvo a lakovanie|
-towing_recovery|Odťahová služba|
-childcare|Starostlivosť o deti|
-elderly_care|Starostlivosť o seniorov|
-home_nursing|Domáce ošetrovateľstvo|
-private_tutoring|Doučovanie|
-music_lessons|Hodiny hudby|
-sports_coaching|Športový tréning|
-it_training|IT školenia|
-vocational_training|Odborné kurzy|
-holiday_lettings|Prázdninové prenájmy|
-guesthouse_bnb|Penzión a nocľah s raňajkami|
-property_management|Správa nehnuteľností|
-veterinary|Veterinár|
-dog_walking|Venčenie psov|
-pet_grooming|Strihanie a úprava zvierat|
-general_practice|Všeobecný lekár|
-dentistry|Zubné lekárstvo|
-physiotherapy|Fyzioterapia|
-psychology|Psychológia|
-pharmacy|Lekáreň|
-optometry|Optometria|
-medical_laboratory|Zdravotnícke laboratórium|
-software_development|Vývoj softvéru|
-web_development|Tvorba webu|
-it_support|IT podpora|
-cybersecurity|Kybernetická bezpečnosť|
-data_ai|Dáta a AI|
-cloud_hosting|Cloud a hosting|
-accounting|Účtovníctvo|
-audit_tax|Audit a dane|
-legal_services|Právne služby|
-hr_recruitment|HR a nábor|
-management_consulting|Manažérske poradenstvo|
-insurance_brokerage|Poisťovacie maklérstvo|
-real_estate_agency|Realitná kancelária|
-architecture|Architektúra|
-manufacturing|Výroba|
-cnc_machining|CNC obrábanie|
-metalwork_welding|Kovovýroba a zváranie|
-restaurant|Reštaurácia|
-catering|Catering|
-hotel|Hotel|
-event_management|Organizácia podujatí|
-agriculture|Poľnohospodárstvo|
-forestry|Lesníctvo|
-waste_recycling|Odpady a recyklácia|
-renewable_energy|Obnoviteľná energia|
-marketing_agency|Marketingová agentúra|
-graphic_design|Grafický dizajn|
-photography|Fotografia|
-video_production|Video produkcia|
-printing_signage|Tlač a reklamné polepy|
-wholesale|Veľkoobchod|
-ecommerce|E-shop|
-security_services|Bezpečnostné služby|
-hairdressing|Kaderníctvo|
-beauty_salon|Kozmetický salón|
-massage_therapy|Masáže|
-fitness_training|Fitnes tréning|
-shop_general|Obchod|
-shop_bicycle|Cykloshop a servis|
-shop_auto_parts|Autodiely|
-shop_hardware|Železiarstvo a hobby|
-shop_furniture|Nábytok|
-shop_electronics|Elektro a spotrebiče|
-shop_clothing|Odevy|
-shop_grocery|Potraviny|
-shop_sports|Športové potreby|
-shop_books|Kníhkupectvo a papiernictvo|
-shop_florist|Kvetinárstvo|
-shop_pet|Chovateľské potreby|
-motorcycle_repair|Motoservis|
-bar|Bar|
-kebab_shawarma|Kebab a šawarma|
-pizzeria|Pizzeria|
-fast_food|Rýchle občerstvenie|
-bakery|Pekáreň|
-pastry_shop|Cukráreň|
-coffee_shop|Kaviareň|
-food_truck|Pojazdné občerstvenie|
-butcher|Mäsiarstvo|
-ice_cream|Zmrzlináreň|
-winery|Vinárstvo|
-brewery|Pivovar|
-nightclub|Nočný klub a diskotéka|
-beach_club|Plážový bar a beach club|
-bowling_billiards|Bowling a biliard|
-travel_agency|Cestovná kancelária|
-nail_salon|Nechtové štúdio, manikúra a pedikúra|
-barber|Holičstvo|
-tattoo_piercing|Tetovanie a piercing|
-spa_sauna|Wellness a sauna|
-cosmetics_shop|Drogéria a kozmetika|
-dry_cleaning|Čistiareň a práčovňa|
-podiatry|Podológia a starostlivosť o nohy|
-dental_laboratory|Zubné laboratórium|
-orthodontics|Ortodoncia|
-dermatology|Dermatológia|
-paediatrics|Pediatria|
-gynaecology|Gynekológia|
-cardiology|Kardiológia|
-medical_imaging|Zobrazovacie metódy|
-speech_therapy|Logopédia|
-nutrition_dietetics|Výživa a dietológia|
-bicycle_repair|Opravy bicyklov|
-scooter_repair|Opravy skútrov a mopedov|
-appliance_repair|Opravy spotrebičov|
-phone_repair|Opravy telefónov a tabletov|
-computer_repair|Opravy počítačov|
-watch_jewellery_repair|Opravy hodiniek a šperkov|
-shoe_repair|Opravovňa obuvi|
-tailoring_alterations|Krajčírstvo a úpravy|
-upholstery|Čalúnnictvo|
-glazing|Sklenárstvo a okná|
-chimney_sweep|Kominárstvo|
-pest_control|Deratizácia a dezinsekcia|
-pool_maintenance|Údržba bazénov|
-window_cleaning|Umývanie okien|
-car_wash|Umývanie áut|
-car_rental|Požičovňa áut|
-bike_scooter_rental|Požičovňa bicyklov a kolobežiek|
-funeral_services|Pohrebné služby|
-notary|Notárstvo|
-bailiff|Exekútor|
-patent_trademark|Patenty a ochranné známky|
-debt_collection|Vymáhanie pohľadávok|
-company_formation|Zakladanie firiem|
-financial_advisory|Finančné poradenstvo|
-payroll_services|Spracovanie miezd|
-currency_exchange|Zmenáreň|
-pawnshop|Záložňa|
-leasing|Lízing a financovanie|
-hearing_aids|Načúvacie prístroje|
-medical_transport|Sanitná preprava|
-rehabilitation|Rehabilitačné centrum|
-occupational_therapy|Ergoterapia|
-midwifery|Pôrodná asistencia|
-acupuncture|Akupunktúra|
-chiropractic|Chiropraxia a osteopatia|
-insulation|Tepelné izolácie|
-waterproofing|Hydroizolácie|
-plastering|Omietky a štuky|
-tiling|Obklady a dlažby|
-drywall|Sadrokartón a priečky|
-fencing|Ploty a brány|
-paving|Dlažby a príjazdové cesty|
-well_drilling|Vŕtanie studní|
-septic_systems|Žumpy a kanalizácia|
-solar_panels|Montáž solárnych panelov|
-alarm_cctv|Alarmy a kamerové systémy|
-smart_home|Inteligentná domácnosť|
-lift_maintenance|Servis výťahov|
-fire_safety|Požiarna ochrana a hasiace prístroje|
-car_dealer|Autosalón|
-vehicle_inspection|Technická kontrola|
-auto_electrics|Autoelektrika|
-car_glass|Autosklá a čelné sklá|
-boat_repair|Opravy lodí|
-bus_charter|Prenájom autobusov|
-call_centre|Call centrum|
-virtual_assistant|Virtuálna asistentka|
-market_research|Prieskum trhu|
-copywriting|Tvorba textov|
-seo_services|SEO a online reklama|
-social_media|Správa sociálnych sietí|
-app_development|Vývoj mobilných aplikácií|
-game_development|Vývoj hier|
-drone_services|Služby dronom|
-printing_3d|3D tlač|
-interior_design|Interiérový dizajn|
-dance_school|Tanečná škola|
-art_gallery|Galéria a rámovanie|
+taxi|Taxi|taxík, jazda, odvoz, letisko
+ride_hailing|Preprava cez aplikáciu|uber, bolt, spolujazda, aplikácia
+chauffeur|Služby vodiča|osobný šofér, limuzína, vodič na zavolanie
+driving_school|Autoškola|autoškola, jazdy, inštruktor, vodičák
+translation|Preklady|prekladateľ, dokumenty, preklad, zmluva
+interpreting|Tlmočenie|tlmočník, simultánne, konferencia, rokovanie
+sworn_translation|Súdne preklady|úradný preklad, overený preklad, pečiatka, listina
+language_school|Jazyková škola|jazykové kurzy, angličtina, lektor, výučba
+removals|Sťahovanie|sťahovanie, sťahováci, dodávka, krabice
+international_removals|Medzinárodné sťahovanie|sťahovanie do zahraničia, relokácia, kontajner, colnica
+courier|Kuriérske služby|kuriér, doručenie, zásielka, balík
+freight_forwarding|Zasielateľstvo|špedícia, logistika, preprava, paleta
+refrigerated_transport|Chladiarenská preprava|chladiarenská preprava, mrazené, chladiaci voz, chladenie
+haulage|Nákladná doprava|kamiónová doprava, kamión, náves, nákladné auto
+storage_warehousing|Skladovanie|sklad, skladovanie, depo, regály
+customs_brokerage|Colné služby|colná deklarácia, clo, dovoz, vývoz
+excavation|Výkopové a zemné práce|výkopové práce, bager, zemné práce, ryha
+crane_hire|Prenájom žeriavov|žeriav, dvíhanie, autožeriav, bremeno
+scaffolding|Lešenie|lešenie, lešenár, montáž lešenia, plošina
+demolition|Búracie práce|demolácia, búranie, sutina, búracie kladivo
+concrete_works|Betónové práce|betón, betónovanie, základy, poter
+surveying|Geodézia|geodet, zameranie, vytýčenie, kataster
+tool_hire|Požičovňa náradia|požičovňa náradia, náradie, vŕtačka, brúska
+machinery_rental|Prenájom strojov|požičovňa strojov, stroje, vysokozdvižný vozík, technika
+generator_hire|Prenájom generátorov|elektrocentrála, generátor, záložný zdroj, kábel
+electrical_installation|Elektroinštalácie|elektrikár, elektroinštalácia, rozvádzač, zásuvka
+plumbing|Vodoinštalatérstvo|inštalatér, potrubie, kúpeľňa, únik vody
+heating_hvac|Kúrenie a vzduchotechnika|kúrenár, kotol, radiátory, podlahové kúrenie
+air_conditioning|Klimatizácia|klimatizácia, klíma, chladenie, split
+painting_decorating|Maliarske práce|maliar, maľovanie, tapety, štetec
+carpentry|Stolárstvo|stolár, tesár, nábytok, drevo
+flooring|Podlahárstvo|podlahár, parkety, plávajúca podlaha, dlažba
+roofing|Pokrývačstvo|klampiar, pokrývač, strecha, odkvapy
+locksmith|Zámočníctvo|zámočník, zámky, kľúče, otváranie dverí
+cleaning_services|Upratovacie služby|upratovanie, upratovačka, umývanie okien, upratovacia firma
+gardening_landscaping|Záhradníctvo a sadové úpravy|záhradník, kosenie trávy, živý plot, záhrada
+renovation|Rekonštrukcie|rekonštrukcia, stavebná firma, prestavba, sadrokartón
+car_repair|Autoservis|autoservis, automechanik, servis, oprava auta
+mobile_mechanic|Mobilný mechanik|pojazdný mechanik, odťah, štartovanie, porucha
+tyre_service|Pneuservis|pneuservis, pneumatiky, prezutie, vyváženie
+bodywork_paint|Karosárstvo a lakovanie|autolakovňa, karosárstvo, lakovanie, karoséria
+towing_recovery|Odťahová služba|odťahová služba, odťah, navijak, odťahovka
+childcare|Starostlivosť o deti|stráženie detí, škôlka, opatrovateľka, jasle
+elderly_care|Starostlivosť o seniorov|opatrovanie seniorov, domov dôchodcov, opatrovateľka, seniori
+home_nursing|Domáce ošetrovateľstvo|domáca starostlivosť, zdravotná sestra, ošetrovateľka, injekcie
+private_tutoring|Doučovanie|doučovanie, lektor, príprava na skúšky, domáce úlohy
+music_lessons|Hodiny hudby|klavír, gitara, spev, hudobná výučba
+sports_coaching|Športový tréning|tréner, futbal, tenis, kondičný tréning
+it_training|IT školenia|počítačové kurzy, excel, programovanie, školenie
+vocational_training|Odborné kurzy|rekvalifikácia, odborný kurz, certifikácia, učňovský odbor
+holiday_lettings|Prázdninové prenájmy|chata, apartmán, prenájom na dovolenku, airbnb
+guesthouse_bnb|Penzión a nocľah s raňajkami|penzión, ubytovanie s raňajkami, izby, nocľah
+property_management|Správa nehnuteľností|správa nehnuteľností, správa domu, prenájom, spoločenstvo vlastníkov
+veterinary|Veterinár|veterinár, zverolekár, očkovanie, pes
+dog_walking|Venčenie psov|venčenie psov, prechádzka so psom, venčiteľ
+pet_grooming|Strihanie a úprava zvierat|psí salón, strihanie psov, úprava srsti, česanie
+general_practice|Všeobecný lekár|všeobecný lekár, ambulancia, doktor, recept
+dentistry|Zubné lekárstvo|zubár, zubný lekár, plomba, implantát
+physiotherapy|Fyzioterapia|fyzioterapia, rehabilitácia, masáže, cvičenie
+psychology|Psychológia|psychológ, terapia, poradňa, psychoterapia
+pharmacy|Lekáreň|lekáreň, lieky, lekárnik, výživové doplnky
+optometry|Optometria|optika, očný optik, okuliare, dioptrie
+medical_laboratory|Zdravotnícke laboratórium|laboratórium, odber krvi, rozbory, vyšetrenie
+software_development|Vývoj softvéru|programátor, vývojár, softvér, kód
+web_development|Tvorba webu|webové stránky, tvorba webu, wordpress, eshop
+it_support|IT podpora|it podpora, správa siete, servis počítačov, helpdesk
+cybersecurity|Kybernetická bezpečnosť|kybernetická bezpečnosť, penetračné testy, firewall, zabezpečenie
+data_ai|Dáta a AI|umelá inteligencia, strojové učenie, analytika, dáta
+cloud_hosting|Cloud a hosting|hosting, server, cloud, doména
+accounting|Účtovníctvo|účtovník, účtovníctvo, faktúry, mzdy
+audit_tax|Audit a dane|daňový poradca, audit, daňové priznanie, dph
+legal_services|Právne služby|advokát, právnik, právne služby, zmluva
+hr_recruitment|HR a nábor|personalista, nábor, pracovná agentúra, životopis
+management_consulting|Manažérske poradenstvo|konzultant, poradenstvo, stratégia, podnikateľský plán
+insurance_brokerage|Poisťovacie maklérstvo|poisťovací poradca, poistenie, poistka, maklér
+real_estate_agency|Realitná kancelária|realitná kancelária, realitný maklér, byt, dom
+architecture|Architektúra|architekt, projekt, projektová dokumentácia, stavebné povolenie
+manufacturing|Výroba|výroba, továreň, priemysel, montáž
+cnc_machining|CNC obrábanie|cnc obrábanie, sústruženie, frézovanie, sústruh
+metalwork_welding|Kovovýroba a zváranie|zvárač, kovovýroba, zámočníctvo, oceľ
+restaurant|Reštaurácia|reštaurácia, jedlo, obedy, menu
+catering|Catering|catering, rauty, občerstvenie, banket
+hotel|Hotel|ubytovanie, hotel, hostel, izby
+event_management|Organizácia podujatí|organizácia podujatí, svadby, konferencie, eventy
+agriculture|Poľnohospodárstvo|poľnohospodárstvo, farma, traktor, zber úrody
+forestry|Lesníctvo|lesníctvo, ťažba dreva, drevo, motorová píla
+waste_recycling|Odpady a recyklácia|odpad, kontajner, zberné suroviny, recyklácia
+renewable_energy|Obnoviteľná energia|obnoviteľné zdroje, solárne panely, veterná energia, tepelné čerpadlo
+marketing_agency|Marketingová agentúra|marketing, reklama, kampaň, propagácia
+graphic_design|Grafický dizajn|grafik, logo, grafický dizajn, tlačová príprava
+photography|Fotografia|fotograf, fotoateliér, svadobný fotograf, fotenie
+video_production|Video produkcia|kameraman, natáčanie, strih, video
+printing_signage|Tlač a reklamné polepy|tlačiareň, tlač, bannery, polepy
+wholesale|Veľkoobchod|veľkoobchod, distribútor, dodávateľ, tovar
+ecommerce|E-shop|eshop, internetový obchod, marketplace, objednávky
+security_services|Bezpečnostné služby|strážna služba, bezpečnostná agentúra, stráženie, kamerový systém
+hairdressing|Kaderníctvo|kaderník, kaderníctvo, strih, farbenie vlasov
+beauty_salon|Kozmetický salón|kozmetika, kozmetický salón, nechty, pleť
+massage_therapy|Masáže|masér, masáže, wellness, relax
+fitness_training|Fitnes tréning|osobný tréner, fitness, posilňovňa, cvičenie
+shop_general|Obchod|obchod, predajňa, maloobchod, tovar
+shop_bicycle|Cykloshop a servis|cyklo, bicykle, servis bicyklov, cyklistika
+shop_auto_parts|Autodiely|autodiely, náhradné diely, autopríslušenstvo, filtre
+shop_hardware|Železiarstvo a hobby|železiarstvo, hobbymarket, náradie, skrutky
+shop_furniture|Nábytok|nábytok, kuchyne, sedačky, skrine
+shop_electronics|Elektro a spotrebiče|elektro, spotrebiče, televízory, práčka
+shop_clothing|Odevy|oblečenie, móda, obuv, textil
+shop_grocery|Potraviny|potraviny, samoobsluha, supermarket, večierka
+shop_sports|Športové potreby|športové potreby, športové vybavenie, outdoor, lyže
+shop_books|Kníhkupectvo a papiernictvo|kníhkupectvo, papiernictvo, knihy, kancelárske potreby
+shop_florist|Kvetinárstvo|kvetinárstvo, kvety, kytice, vence
+shop_pet|Chovateľské potreby|chovateľské potreby, krmivo pre psy, akvárium, zvieratá
+motorcycle_repair|Motoservis|motoservis, motorka, skúter, moped
+bar|Bar|bar, krčma, koktaily, výčap
+kebab_shawarma|Kebab a šawarma|kebab, gyros, šawarma, döner
+pizzeria|Pizzeria|pizza, pizzeria, rozvoz pizze, talianska
+fast_food|Rýchle občerstvenie|rýchle občerstvenie, burger, hranolky, bufet
+bakery|Pekáreň|pekáreň, chlieb, pečivo, rožky
+pastry_shop|Cukráreň|cukráreň, torty, zákusky, koláče
+coffee_shop|Kaviareň|kaviareň, káva, espresso, barista
+food_truck|Pojazdné občerstvenie|pojazdné občerstvenie, street food, foodtruck
+butcher|Mäsiarstvo|mäsiarstvo, mäso, údeniny, klobásy
+ice_cream|Zmrzlináreň|zmrzlina, zmrzlináreň, kopčeková zmrzlina, gelato
+winery|Vinárstvo|vinárstvo, víno, vínna pivnica, degustácia
+brewery|Pivovar|pivovar, pivo, remeselné pivo, výčap
+nightclub|Nočný klub a diskotéka|nočný klub, diskotéka, tancovanie, dj
+beach_club|Plážový bar a beach club|plážový bar, ležadlá, pláž, kúpalisko
+bowling_billiards|Bowling a biliard|bowling, biliard, šípky, kolky
+travel_agency|Cestovná kancelária|cestovná kancelária, zájazdy, letenky, dovolenka
+nail_salon|Nechtové štúdio, manikúra a pedikúra|manikúra, pedikúra, nechty, gél lak
+barber|Holičstvo|holič, barber shop, pánsky strih, brada
+tattoo_piercing|Tetovanie a piercing|tetovanie, tetovacie štúdio, piercing, tattoo
+spa_sauna|Wellness a sauna|wellness, sauna, kúpele, parný kúpeľ
+cosmetics_shop|Drogéria a kozmetika|parfuméria, kozmetika, líčenie, starostlivosť o pleť
+dry_cleaning|Čistiareň a práčovňa|čistiareň, práčovňa, žehlenie, pranie
+podiatry|Podológia a starostlivosť o nohy|pedikúra, starostlivosť o nohy, zarastený necht, podiater
+dental_laboratory|Zubné laboratórium|zubný technik, zubné protézy, korunky, náhrady
+orthodontics|Ortodoncia|strojček, ortodontista, rovnanie zubov, aligner
+dermatology|Dermatológia|kožný lekár, dermatológ, znamienka, akné
+paediatrics|Pediatria|detský lekár, pediater, deti, dojča
+gynaecology|Gynekológia|gynekológ, ženský lekár, tehotenstvo, pôrodníctvo
+cardiology|Kardiológia|kardiológ, srdce, ekg, srdcový
+medical_imaging|Zobrazovacie metódy|röntgen, ultrazvuk, magnetická rezonancia, ct
+speech_therapy|Logopédia|logopéd, logopédia, reč, zajakávanie
+nutrition_dietetics|Výživa a dietológia|výživový poradca, dietológ, chudnutie, jedálniček
+bicycle_repair|Opravy bicyklov|servis bicyklov, oprava bicykla, defekt, cyklo servis
+scooter_repair|Opravy skútrov a mopedov|oprava skútra, skúter, vespa, moped
+appliance_repair|Opravy spotrebičov|oprava spotrebičov, práčka, chladnička, rúra
+phone_repair|Opravy telefónov a tabletov|servis mobilov, výmena displeja, iphone, tablet
+computer_repair|Opravy počítačov|servis počítačov, notebook, oprava pc, záchrana dát
+watch_jewellery_repair|Opravy hodiniek a šperkov|hodinár, zlatník, klenotník, batéria do hodiniek
+shoe_repair|Opravovňa obuvi|opravovňa obuvi, obuvník, podpätky, podrážky
+tailoring_alterations|Krajčírstvo a úpravy|krajčír, švadlena, úpravy odevov, skracovanie
+upholstery|Čalúnnictvo|čalúnnik, čalúnenie, poťahy, oprava sedačiek
+glazing|Sklenárstvo a okná|sklenárstvo, sklenár, okná, sklo
+chimney_sweep|Kominárstvo|kominár, komín, čistenie komína, sadze
+pest_control|Deratizácia a dezinsekcia|deratizácia, dezinsekcia, ploštice, hubenie hmyzu
+pool_maintenance|Údržba bazénov|servis bazénov, čistenie bazéna, chlór, bazén
+window_cleaning|Umývanie okien|umývanie okien, čistenie skiel, fasáda, okná
+car_wash|Umývanie áut|umyváreň áut, umývanie auta, ručné umývanie, čistenie interiéru
+car_rental|Požičovňa áut|požičovňa áut, prenájom auta, autopožičovňa, vozidlá
+bike_scooter_rental|Požičovňa bicyklov a kolobežiek|požičovňa bicyklov, elektrokolobežka, prenájom bicykla, kolobežka
+funeral_services|Pohrebné služby|pohrebná služba, pohreb, kremácia, rakva
+notary|Notárstvo|notár, notárska zápisnica, overenie podpisu, dedičstvo
+bailiff|Exekútor|exekútor, exekúcia, zabavenie majetku, vymáhanie
+patent_trademark|Patenty a ochranné známky|patentový zástupca, ochranná známka, patent, duševné vlastníctvo
+debt_collection|Vymáhanie pohľadávok|vymáhanie pohľadávok, dlhy, upomienka, neuhradené faktúry
+company_formation|Zakladanie firiem|založenie firmy, obchodný register, sro, živnostenský list
+financial_advisory|Finančné poradenstvo|finančný poradca, investície, majetok, sporenie
+payroll_services|Spracovanie miezd|mzdové účtovníctvo, výplaty, mzdy, personalistika
+currency_exchange|Zmenáreň|zmenáreň, výmena valút, devízy, kurz
+pawnshop|Záložňa|záložňa, záloh, pôžička na záloh, výkup zlata
+leasing|Lízing a financovanie|lízing, financovanie, splátky, operatívny lízing
+hearing_aids|Načúvacie prístroje|načúvací prístroj, vyšetrenie sluchu, sluchadlo, audiológia
+medical_transport|Sanitná preprava|sanitka, prevoz pacientov, nosidlá, zdravotnícka preprava
+rehabilitation|Rehabilitačné centrum|rehabilitačné centrum, doliečovanie, rekonvalescencia, zotavenie
+occupational_therapy|Ergoterapia|ergoterapeut, ergoterapia, sebestačnosť, nácvik
+midwifery|Pôrodná asistencia|pôrodná asistentka, pôrod, tehotenstvo, predpôrodný kurz
+acupuncture|Akupunktúra|akupunkturista, ihly, čínska medicína, moxovanie
+chiropractic|Chiropraxia a osteopatia|osteopat, chiropraktik, chrbtica, bolesti chrbta
+insulation|Tepelné izolácie|zateplenie, izolácia, zateplenie fasády, minerálna vata
+waterproofing|Hydroizolácie|hydroizolácia, vlhkosť, izolácia proti vode, zatekanie
+plastering|Omietky a štuky|omietkar, omietky, štuk, sadrová omietka
+tiling|Obklady a dlažby|obkladač, obklady, dlaždice, keramika
+drywall|Sadrokartón a priečky|sadrokartonár, sadrokartón, priečky, podhľady
+fencing|Ploty a brány|plot, brána, oplotenie, pletivo
+paving|Dlažby a príjazdové cesty|zámková dlažba, chodník, príjazdová cesta, obrubníky
+well_drilling|Vŕtanie studní|studňa, vŕtanie studne, vrt, spodná voda
+septic_systems|Žumpy a kanalizácia|septik, kanalizácia, žumpa, odpady
+solar_panels|Montáž solárnych panelov|fotovoltika, solárne panely, menič, fve
+alarm_cctv|Alarmy a kamerové systémy|alarm, kamerový systém, zabezpečovací systém, monitoring
+smart_home|Inteligentná domácnosť|inteligentná domácnosť, inteligentné osvetlenie, automatizácia, ovládanie
+lift_maintenance|Servis výťahov|výťah, servis výťahov, eskalátor, oprava výťahu
+fire_safety|Požiarna ochrana a hasiace prístroje|hasiace prístroje, požiarna ochrana, sprinklery, požiarna signalizácia
+car_dealer|Autosalón|autobazár, predaj áut, jazdené autá, autosalón
+vehicle_inspection|Technická kontrola|technická kontrola, emisná kontrola, stk, kontrola vozidla
+auto_electrics|Autoelektrika|autoelektrikár, alternátor, štartér, elektroinštalácia auta
+car_glass|Autosklá a čelné sklá|čelné sklo, výmena skla, autosklo, prasklina
+boat_repair|Opravy lodí|servis lodí, lodný motor, loď, jachta
+bus_charter|Prenájom autobusov|prenájom autobusu, autobus, minibus, zájazdová doprava
+call_centre|Call centrum|call centrum, telemarketing, zákaznícka linka, operátori
+virtual_assistant|Virtuálna asistentka|virtuálna asistentka, administratívna podpora, sekretárka na diaľku
+market_research|Prieskum trhu|prieskum trhu, ankety, dotazníky, focus group
+copywriting|Tvorba textov|copywriter, texty, korektúra, obsah
+seo_services|SEO a online reklama|seo, optimalizácia pre vyhľadávače, google ads, ppc
+social_media|Správa sociálnych sietí|správa sociálnych sietí, instagram, facebook, tiktok
+app_development|Vývoj mobilných aplikácií|mobilné aplikácie, android, vývoj aplikácií, flutter
+game_development|Vývoj hier|vývoj hier, unity, unreal, herné štúdio
+drone_services|Služby dronom|dron, letecké snímky, snímkovanie dronom, fotografie z výšky
+printing_3d|3D tlač|3d tlač, prototypy, aditívna výroba, 3d tlačiareň
+interior_design|Interiérový dizajn|interiérový dizajnér, návrh interiéru, bytový architekt, zariaďovanie
+dance_school|Tanečná škola|tanečné kurzy, balet, salsa, tance
+art_gallery|Galéria a rámovanie|rámovanie, rámy, výstavy, galéria

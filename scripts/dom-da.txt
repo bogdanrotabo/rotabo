@@ -1,213 +1,213 @@
-taxi|Taxi|
-ride_hailing|Kørsel via app|
-chauffeur|Chaufførtjenester|
-driving_school|Køreskole|
-translation|Oversættelse|
-interpreting|Tolkning|
-sworn_translation|Autoriseret oversættelse|
-language_school|Sprogskole|
-removals|Flytning|
-international_removals|International flytning|
-courier|Kurertjeneste|
-freight_forwarding|Spedition|
-refrigerated_transport|Køletransport|
-haulage|Godstransport|
-storage_warehousing|Opbevaring og lager|
-customs_brokerage|Toldbehandling|
-excavation|Udgravning og jordarbejde|
-crane_hire|Kranudlejning|
-scaffolding|Stillads|
-demolition|Nedrivning|
-concrete_works|Betonarbejde|
-surveying|Landinspektør|
-tool_hire|Værktøjsudlejning|
-machinery_rental|Maskinudlejning|
-generator_hire|Generatorudlejning|
-electrical_installation|Elinstallation|
-plumbing|VVS|
-heating_hvac|Varme og ventilation|
-air_conditioning|Aircondition|
-painting_decorating|Malerarbejde|
-carpentry|Tømrer og snedker|
-flooring|Gulvlægning|
-roofing|Tagarbejde|
-locksmith|Låsesmed|
-cleaning_services|Rengøring|
-gardening_landscaping|Havearbejde og anlæg|
-renovation|Renovering|
-car_repair|Autoværksted|
-mobile_mechanic|Mobil mekaniker|
-tyre_service|Dækservice|
-bodywork_paint|Pladearbejde og lak|
-towing_recovery|Autohjælp og bugsering|
-childcare|Børnepasning|
-elderly_care|Ældrepleje|
-home_nursing|Hjemmesygepleje|
-private_tutoring|Privatundervisning|
-music_lessons|Musikundervisning|
-sports_coaching|Sportstræning|
-it_training|IT-kurser|
-vocational_training|Erhvervsuddannelse|
-holiday_lettings|Ferieudlejning|
-guesthouse_bnb|Pensionat og bed and breakfast|
-property_management|Ejendomsadministration|
-veterinary|Dyrlæge|
-dog_walking|Hundeluftning|
-pet_grooming|Dyretrimning|
-general_practice|Almen praksis|
-dentistry|Tandpleje|
-physiotherapy|Fysioterapi|
-psychology|Psykologi|
-pharmacy|Apotek|
-optometry|Optiker|
-medical_laboratory|Medicinsk laboratorium|
-software_development|Softwareudvikling|
-web_development|Webudvikling|
-it_support|IT-support|
-cybersecurity|Cybersikkerhed|
-data_ai|Data og AI|
-cloud_hosting|Cloud og hosting|
-accounting|Bogføring og regnskab|
-audit_tax|Revision og skat|
-legal_services|Juridiske ydelser|
-hr_recruitment|HR og rekruttering|
-management_consulting|Ledelsesrådgivning|
-insurance_brokerage|Forsikringsmægling|
-real_estate_agency|Ejendomsmægler|
-architecture|Arkitektur|
-manufacturing|Produktion|
-cnc_machining|CNC-bearbejdning|
-metalwork_welding|Metalarbejde og svejsning|
-restaurant|Restaurant|
-catering|Catering|
-hotel|Hotel|
-event_management|Eventplanlægning|
-agriculture|Landbrug|
-forestry|Skovbrug|
-waste_recycling|Affald og genbrug|
-renewable_energy|Vedvarende energi|
-marketing_agency|Marketingbureau|
-graphic_design|Grafisk design|
-photography|Fotografi|
-video_production|Videoproduktion|
-printing_signage|Tryk og skiltning|
-wholesale|Engroshandel|
-ecommerce|Netbutik|
-security_services|Sikkerhedstjenester|
-hairdressing|Frisør|
-beauty_salon|Skønhedssalon|
-massage_therapy|Massage|
-fitness_training|Fitnesstræning|
-shop_general|Butik|
-shop_bicycle|Cykelbutik og værksted|
-shop_auto_parts|Autoreservedele|
-shop_hardware|Byggemarked og værktøj|
-shop_furniture|Møbler|
-shop_electronics|Elektronik og hvidevarer|
-shop_clothing|Tøj|
-shop_grocery|Dagligvarer|
-shop_sports|Sportsudstyr|
-shop_books|Boghandel og papirvarer|
-shop_florist|Blomsterhandel|
-shop_pet|Dyrehandel|
-motorcycle_repair|Motorcykelværksted|
-bar|Bar|
-kebab_shawarma|Kebab og shawarma|
-pizzeria|Pizzeria|
-fast_food|Fastfood|
-bakery|Bageri|
-pastry_shop|Konditori|
-coffee_shop|Kaffebar|
-food_truck|Madvogn|
-butcher|Slagter|
-ice_cream|Isbar|
-winery|Vingård|
-brewery|Bryggeri|
-nightclub|Natklub og diskotek|
-beach_club|Strandbar og beachklub|
-bowling_billiards|Bowling og billard|
-travel_agency|Rejsebureau|
-nail_salon|Neglesalon, manicure og pedicure|
-barber|Barber|
-tattoo_piercing|Tatovering og piercing|
-spa_sauna|Spa og sauna|
-cosmetics_shop|Kosmetikbutik|
-dry_cleaning|Renseri og vaskeri|
-podiatry|Fodpleje og podiatri|
-dental_laboratory|Tandteknisk laboratorium|
-orthodontics|Tandregulering|
-dermatology|Hudlæge|
-paediatrics|Børnelæge|
-gynaecology|Gynækologi|
-cardiology|Kardiologi|
-medical_imaging|Billeddiagnostik|
-speech_therapy|Talepædagogik|
-nutrition_dietetics|Ernæring og diætetik|
-bicycle_repair|Cykelreparation|
-scooter_repair|Reparation af scooter og knallert|
-appliance_repair|Reparation af hvidevarer|
-phone_repair|Reparation af telefon og tablet|
-computer_repair|Computerreparation|
-watch_jewellery_repair|Ur- og smykkereparation|
-shoe_repair|Skomager|
-tailoring_alterations|Skrædder og ændringer|
-upholstery|Møbelpolstring|
-glazing|Glarmester og vinduer|
-chimney_sweep|Skorstensfejning|
-pest_control|Skadedyrsbekæmpelse|
-pool_maintenance|Poolvedligeholdelse|
-window_cleaning|Vinduespudsning|
-car_wash|Bilvask|
-car_rental|Biludlejning|
-bike_scooter_rental|Udlejning af cykler og løbehjul|
-funeral_services|Bedemand|
-notary|Notar|
-bailiff|Fogedforretning og inddrivelse|
-patent_trademark|Patenter og varemærker|
-debt_collection|Inkasso|
-company_formation|Selskabsstiftelse|
-financial_advisory|Finansiel rådgivning|
-payroll_services|Lønadministration|
-currency_exchange|Vekselkontor|
-pawnshop|Pantelåner|
-leasing|Leasing og finansiering|
-hearing_aids|Høreapparater|
-medical_transport|Sygetransport|
-rehabilitation|Genoptræningscenter|
-occupational_therapy|Ergoterapi|
-midwifery|Jordemoder|
-acupuncture|Akupunktur|
-chiropractic|Kiropraktik og osteopati|
-insulation|Isolering|
-waterproofing|Fugtsikring og membran|
-plastering|Puds og spartling|
-tiling|Flisearbejde|
-drywall|Gipsvægge og skillevægge|
-fencing|Hegn og porte|
-paving|Belægning og indkørsler|
-well_drilling|Brøndboring|
-septic_systems|Septiktanke og afløb|
-solar_panels|Montering af solceller|
-alarm_cctv|Alarm og videoovervågning|
-smart_home|Smart home|
-lift_maintenance|Elevatorservice|
-fire_safety|Brandsikring og slukkere|
-car_dealer|Bilforhandler|
-vehicle_inspection|Bilsyn|
-auto_electrics|Autoelektrik|
-car_glass|Autoruder og forruder|
-boat_repair|Bådreparation|
-bus_charter|Bus- og turistbusudlejning|
-call_centre|Callcenter|
-virtual_assistant|Virtuel assistent|
-market_research|Markedsanalyse|
-copywriting|Tekstforfatning|
-seo_services|SEO og onlineannoncering|
-social_media|Styring af sociale medier|
-app_development|Appudvikling|
-game_development|Spiludvikling|
-drone_services|Dronetjenester|
-printing_3d|3D-print|
-interior_design|Indretningsdesign|
-dance_school|Danseskole|
-art_gallery|Kunstgalleri og indramning|
+taxi|Taxi|taxa, tur, kørsel, lufthavn
+ride_hailing|Kørsel via app|uber, bolt, samkørsel, app
+chauffeur|Chaufførtjenester|privatchauffør, limousine, chauffør
+driving_school|Køreskole|køreskole, køretimer, kørelærer, kørekort
+translation|Oversættelse|oversætter, dokumenter, oversættelse, kontrakt
+interpreting|Tolkning|tolk, simultantolkning, konference, møde
+sworn_translation|Autoriseret oversættelse|autoriseret oversætter, bekræftet oversættelse, stempel, dokument
+language_school|Sprogskole|sprogkurser, engelskundervisning, underviser, sprogskole
+removals|Flytning|flytning, flyttemænd, flyttebil, kasser
+international_removals|International flytning|flytning til udlandet, relokering, container, told
+courier|Kurertjeneste|kurer, levering, pakke, budservice
+freight_forwarding|Spedition|speditør, logistik, fragt, palle
+refrigerated_transport|Køletransport|køletransport, frost, kølebil, kølekæde
+haulage|Godstransport|vognmand, lastbil, godstransport, trailer
+storage_warehousing|Opbevaring og lager|lager, opbevaring, depot, reoler
+customs_brokerage|Toldbehandling|toldbehandling, told, import, eksport
+excavation|Udgravning og jordarbejde|gravearbejde, gravemaskine, jordarbejde, udgravning
+crane_hire|Kranudlejning|kran, kranudlejning, løft, mobilkran
+scaffolding|Stillads|stillads, stilladsopsætning, stilladsudlejning, platform
+demolition|Nedrivning|nedrivning, nedbrydning, byggeaffald, mejselhammer
+concrete_works|Betonarbejde|beton, støbning, fundament, afretning
+surveying|Landinspektør|landinspektør, opmåling, matrikel, terrænmåling
+tool_hire|Værktøjsudlejning|værktøjsudlejning, værktøj, boremaskine, vinkelsliber
+machinery_rental|Maskinudlejning|maskinudlejning, maskiner, gaffeltruck, entreprenørmateriel
+generator_hire|Generatorudlejning|generator, nødstrøm, strømforsyning, aggregat
+electrical_installation|Elinstallation|elektriker, el-installation, tavle, stikkontakt
+plumbing|VVS|vvs, blikkenslager, rør, badeværelse
+heating_hvac|Varme og ventilation|varmeanlæg, fyr, radiatorer, gulvvarme
+air_conditioning|Aircondition|aircondition, køling, klimaanlæg, split
+painting_decorating|Malerarbejde|maler, malerarbejde, tapet, spartling
+carpentry|Tømrer og snedker|tømrer, snedker, møbler, træ
+flooring|Gulvlægning|gulvlægger, parket, laminat, gulvafslibning
+roofing|Tagarbejde|tagdækker, tag, tagrender, tagpap
+locksmith|Låsesmed|låsesmed, låse, nøgler, døroplukning
+cleaning_services|Rengøring|rengøring, rengøringshjælp, kontorrengøring, hovedrengøring
+gardening_landscaping|Havearbejde og anlæg|anlægsgartner, græsslåning, hæk, have
+renovation|Renovering|renovering, ombygning, entreprenør, byggefirma
+car_repair|Autoværksted|autoværksted, mekaniker, bilservice, bilreparation
+mobile_mechanic|Mobil mekaniker|mobil mekaniker, vejhjælp, starthjælp, nødreparation
+tyre_service|Dækservice|dæk, dækskifte, punktering, afbalancering
+bodywork_paint|Pladearbejde og lak|autolakering, pladearbejde, buleudbedring, karrosseri
+towing_recovery|Autohjælp og bugsering|autohjælp, bugsering, vejhjælp, spil
+childcare|Børnepasning|børnepasning, vuggestue, barnepige, dagpleje
+elderly_care|Ældrepleje|ældrepleje, plejehjem, hjemmehjælp, seniorer
+home_nursing|Hjemmesygepleje|hjemmesygepleje, sygeplejerske, pleje i hjemmet, sårpleje
+private_tutoring|Privatundervisning|lektiehjælp, privatundervisning, eksamensforberedelse, underviser
+music_lessons|Musikundervisning|klaver, guitar, sang, musikundervisning
+sports_coaching|Sportstræning|træner, fodbold, tennis, holdtræning
+it_training|IT-kurser|computerkurser, excel, programmeringskursus, it-kursus
+vocational_training|Erhvervsuddannelse|erhvervsuddannelse, faglig kursus, certificering, lærlingeforløb
+holiday_lettings|Ferieudlejning|sommerhus, ferielejlighed, udlejning, airbnb
+guesthouse_bnb|Pensionat og bed and breakfast|bed and breakfast, pensionat, kro, værelser
+property_management|Ejendomsadministration|ejendomsadministration, viceværtservice, udlejning, andelsforening
+veterinary|Dyrlæge|dyrlæge, dyreklinik, vaccination, hund
+dog_walking|Hundeluftning|hundeluftning, hundelufter, gåtur med hund
+pet_grooming|Dyretrimning|hundefrisør, trimning, pelspleje, dyresalon
+general_practice|Almen praksis|læge, praktiserende læge, lægehus, recept
+dentistry|Tandpleje|tandlæge, tandklinik, plombe, implantat
+physiotherapy|Fysioterapi|fysioterapi, fysioterapeut, genoptræning, behandling
+psychology|Psykologi|psykolog, terapi, samtaleterapi, psykoterapi
+pharmacy|Apotek|apotek, medicin, receptpligtig, kosttilskud
+optometry|Optiker|optiker, briller, synsprøve, kontaktlinser
+medical_laboratory|Medicinsk laboratorium|laboratorium, blodprøver, analyser, prøvetagning
+software_development|Softwareudvikling|programmør, udvikler, software, kode
+web_development|Webudvikling|hjemmeside, webdesign, wordpress, webshop
+it_support|IT-support|it-support, netværk, computerhjælp, systemadministrator
+cybersecurity|Cybersikkerhed|it-sikkerhed, sikkerhedstest, firewall, hacking
+data_ai|Data og AI|kunstig intelligens, machine learning, dataanalyse, algoritmer
+cloud_hosting|Cloud og hosting|hosting, server, cloud, domæne
+accounting|Bogføring og regnskab|bogholder, bogføring, regnskab, fakturering
+audit_tax|Revision og skat|revisor, skatterådgiver, årsregnskab, moms
+legal_services|Juridiske ydelser|advokat, jurist, juridisk rådgivning, kontrakt
+hr_recruitment|HR og rekruttering|rekruttering, vikarbureau, headhunter, jobformidling
+management_consulting|Ledelsesrådgivning|konsulent, rådgivning, strategi, forretningsplan
+insurance_brokerage|Forsikringsmægling|forsikringsmægler, forsikring, police, skade
+real_estate_agency|Ejendomsmægler|ejendomsmægler, bolig, lejlighed, hus
+architecture|Arkitektur|arkitekt, tegninger, byggetilladelse, projektering
+manufacturing|Produktion|produktion, fabrik, industri, montage
+cnc_machining|CNC-bearbejdning|cnc, drejning, fræsning, spåntagning
+metalwork_welding|Metalarbejde og svejsning|svejsning, smed, stål, metalbearbejdning
+restaurant|Restaurant|restaurant, mad, spisested, menu
+catering|Catering|catering, selskabsmad, buffet, anretninger
+hotel|Hotel|hotel, overnatning, hostel, værelser
+event_management|Eventplanlægning|eventbureau, bryllupsplanlægger, konference, arrangement
+agriculture|Landbrug|landbrug, gård, traktor, høst
+forestry|Skovbrug|skovbrug, træfældning, tømmer, motorsav
+waste_recycling|Affald og genbrug|affald, containerudlejning, skrot, genbrug
+renewable_energy|Vedvarende energi|solceller, vindmøller, grøn energi, varmepumpe
+marketing_agency|Marketingbureau|marketing, reklame, kampagne, annoncering
+graphic_design|Grafisk design|grafiker, logo, grafisk design, layout
+photography|Fotografi|fotograf, fotostudie, bryllupsfotograf, portrætter
+video_production|Videoproduktion|videoproduktion, filmoptagelse, klipning, drone
+printing_signage|Tryk og skiltning|trykkeri, tryk, skiltning, folier
+wholesale|Engroshandel|engros, grossist, leverandør, varer
+ecommerce|Netbutik|webshop, netbutik, e-handel, ordrer
+security_services|Sikkerhedstjenester|vagt, vagtservice, overvågning, patruljering
+hairdressing|Frisør|frisør, klipning, hårfarve, salon
+beauty_salon|Skønhedssalon|skønhedsklinik, kosmetolog, negle, ansigtsbehandling
+massage_therapy|Massage|massør, massage, wellness, afspænding
+fitness_training|Fitnesstræning|personlig træner, fitness, træningscenter, styrketræning
+shop_general|Butik|butik, forretning, detailhandel, varer
+shop_bicycle|Cykelbutik og værksted|cykelbutik, cykler, cykelreparation, elcykel
+shop_auto_parts|Autoreservedele|reservedele, autodele, bilnødvendigheder, filtre
+shop_hardware|Byggemarked og værktøj|byggemarked, isenkram, værktøj, skruer
+shop_furniture|Møbler|møbelbutik, møbler, sofaer, køkkener
+shop_electronics|Elektronik og hvidevarer|elektronik, hvidevarer, tv, vaskemaskine
+shop_clothing|Tøj|tøjbutik, mode, sko, beklædning
+shop_grocery|Dagligvarer|købmand, supermarked, dagligvarer, minimarked
+shop_sports|Sportsudstyr|sportsbutik, sportsudstyr, outdoor, ski
+shop_books|Boghandel og papirvarer|boghandel, kontorartikler, bøger, papirvarer
+shop_florist|Blomsterhandel|blomsterbutik, blomster, buketter, kranse
+shop_pet|Dyrehandel|dyrehandel, hundefoder, akvarium, kattegrus
+motorcycle_repair|Motorcykelværksted|motorcykelværksted, mc, scooter, knallert
+bar|Bar|bar, værtshus, cocktailbar, drinks
+kebab_shawarma|Kebab og shawarma|kebab, shawarma, durum, grillbar
+pizzeria|Pizzeria|pizza, pizzeria, takeaway pizza, italiensk
+fast_food|Fastfood|fastfood, burger, pommes frites, grillbar
+bakery|Bageri|bageri, brød, rundstykker, bager
+pastry_shop|Konditori|konditori, kager, desserter, lagkage
+coffee_shop|Kaffebar|kaffebar, cafe, espresso, barista
+food_truck|Madvogn|madvogn, street food, gadekøkken
+butcher|Slagter|slagter, kød, pølser, bøffer
+ice_cream|Isbar|is, isbutik, softice, gelato
+winery|Vingård|vingård, vin, vinkælder, vinsmagning
+brewery|Bryggeri|bryggeri, øl, mikrobryg, fadøl
+nightclub|Natklub og diskotek|natklub, diskotek, dans, dj
+beach_club|Strandbar og beachklub|strandbar, solsenge, strand, badested
+bowling_billiards|Bowling og billard|bowling, billard, dart, pool
+travel_agency|Rejsebureau|rejsebureau, rejser, flybilletter, pakkerejser
+nail_salon|Neglesalon, manicure og pedicure|neglesalon, manicure, pedicure, gelenegle
+barber|Barber|barber, herrefrisør, skæg, barbering
+tattoo_piercing|Tatovering og piercing|tatovering, tatovør, piercing, blæk
+spa_sauna|Spa og sauna|spa, sauna, wellness, dampbad
+cosmetics_shop|Kosmetikbutik|parfumeri, makeup, hudpleje, kosmetik
+dry_cleaning|Renseri og vaskeri|renseri, vaskeri, strygning, tøjvask
+podiatry|Fodpleje og podiatri|fodpleje, fodterapeut, nedgroet negl, fødder
+dental_laboratory|Tandteknisk laboratorium|tandtekniker, tandproteser, kroner, tandbro
+orthodontics|Tandregulering|tandregulering, bøjle, tandbøjle, aligner
+dermatology|Hudlæge|hudlæge, dermatolog, modermærker, akne
+paediatrics|Børnelæge|børnelæge, pædiater, spædbarn, børn
+gynaecology|Gynækologi|gynækolog, kvindesygdomme, graviditet, fødselslæge
+cardiology|Kardiologi|hjertelæge, kardiolog, ekg, hjerte
+medical_imaging|Billeddiagnostik|røntgen, ultralyd, mr-scanning, ct-scanning
+speech_therapy|Talepædagogik|talepædagog, logopæd, stammen, tale
+nutrition_dietetics|Ernæring og diætetik|diætist, ernæringsvejleder, kostplan, vægttab
+bicycle_repair|Cykelreparation|cykelsmed, cykelreparation, punktering, cykelservice
+scooter_repair|Reparation af scooter og knallert|knallertværksted, scooter, vespa, knallert
+appliance_repair|Reparation af hvidevarer|hvidevarereparation, vaskemaskine, køleskab, ovn
+phone_repair|Reparation af telefon og tablet|mobilreparation, skærmskift, iphone, tablet
+computer_repair|Computerreparation|computerreparation, pc, laptop, datagendannelse
+watch_jewellery_repair|Ur- og smykkereparation|urmager, guldsmed, batteriskift, ringstørrelse
+shoe_repair|Skomager|skomager, skoreparation, hæle, såler
+tailoring_alterations|Skrædder og ændringer|skrædder, systue, oplægning, tilretning
+upholstery|Møbelpolstring|møbelpolstrer, ompolstring, sofabetræk, polstring
+glazing|Glarmester og vinduer|glarmester, ruder, termoruder, glas
+chimney_sweep|Skorstensfejning|skorstensfejer, skorsten, sod, aftræk
+pest_control|Skadedyrsbekæmpelse|skadedyrsbekæmpelse, væggelus, rotter, kakerlakker
+pool_maintenance|Poolvedligeholdelse|poolservice, poolrensning, klor, swimmingpool
+window_cleaning|Vinduespudsning|vinduespudsning, vinduespudser, facadevask, ruder
+car_wash|Bilvask|bilvask, vaskehal, klargøring, polering
+car_rental|Biludlejning|biludlejning, leje bil, udlejningsbil, autoudlejning
+bike_scooter_rental|Udlejning af cykler og løbehjul|cykeludlejning, elløbehjul, leje cykel, løbehjul
+funeral_services|Bedemand|bedemand, begravelse, bisættelse, kiste
+notary|Notar|notar, notarpåtegning, dokumenter, fuldmagt
+bailiff|Fogedforretning og inddrivelse|fogedretten, udlæg, inddrivelse, foged
+patent_trademark|Patenter og varemærker|patentbureau, varemærkeregistrering, patent, immaterialret
+debt_collection|Inkasso|inkasso, gæld, rykker, ubetalte fakturaer
+company_formation|Selskabsstiftelse|selskabsstiftelse, virksomhedsregistrering, aps, cvr
+financial_advisory|Finansiel rådgivning|finansiel rådgivning, investering, formue, pensionsopsparing
+payroll_services|Lønadministration|lønadministration, lønseddel, løn, lønkørsel
+currency_exchange|Vekselkontor|valutaveksling, veksling, fremmed valuta, vekselkurs
+pawnshop|Pantelåner|pantelåner, pant, lån mod pant, guldopkøb
+leasing|Leasing og finansiering|leasing, finansiering, afbetaling, billeasing
+hearing_aids|Høreapparater|høreapparat, høretest, audiolog, hørecenter
+medical_transport|Sygetransport|ambulance, patienttransport, liggende transport, sygetransport
+rehabilitation|Genoptræningscenter|genoptræning, rehabilitering, rekonvalescens, optræning
+occupational_therapy|Ergoterapi|ergoterapeut, ergoterapi, hverdagsfunktioner, træning
+midwifery|Jordemoder|jordemoder, fødsel, graviditet, fødselsforberedelse
+acupuncture|Akupunktur|akupunktør, nåle, kinesisk medicin, akupunkturbehandling
+chiropractic|Kiropraktik og osteopati|kiropraktor, osteopat, ryg, rygsmerter
+insulation|Isolering|isolering, hulmursisolering, loftisolering, efterisolering
+waterproofing|Fugtsikring og membran|fugtsikring, tagtætning, membran, fugtspærre
+plastering|Puds og spartling|pudsning, puds, filtsning, vandskuring
+tiling|Flisearbejde|flisemontør, fliser, klinker, badeværelsesfliser
+drywall|Gipsvægge og skillevægge|gipsvægge, gipsplader, skillevægge, nedhængt loft
+fencing|Hegn og porte|hegn, låger, stakit, raftehegn
+paving|Belægning og indkørsler|belægning, indkørsel, fliser, kantsten
+well_drilling|Brøndboring|brøndboring, boring, vandboring, grundvand
+septic_systems|Septiktanke og afløb|septiktank, kloakering, nedsivning, afløb
+solar_panels|Montering af solceller|solceller, solcelleanlæg, inverter, solpaneler
+alarm_cctv|Alarm og videoovervågning|alarm, overvågningskamera, videoovervågning, tyverialarm
+smart_home|Smart home|smart home, intelligent belysning, hjemmeautomatisering, styring
+lift_maintenance|Elevatorservice|elevator, elevatorservice, rulletrappe, elevatorreparation
+fire_safety|Brandsikring og slukkere|brandslukkere, brandalarm, sprinkler, brandsikring
+car_dealer|Bilforhandler|bilforhandler, brugte biler, bilsalg, autoforhandler
+vehicle_inspection|Bilsyn|syn, bilsyn, synshal, teknisk kontrol
+auto_electrics|Autoelektrik|autoelektriker, generator, startmotor, bilens elsystem
+car_glass|Autoruder og forruder|forrude, rudeskift, autoruder, stenslag
+boat_repair|Bådreparation|bådværft, påhængsmotor, båd, bådmotor
+bus_charter|Bus- og turistbusudlejning|busudlejning, turistbus, minibus, gruppetransport
+call_centre|Callcenter|kundeservice, telemarketing, telefonsupport, callcenter
+virtual_assistant|Virtuel assistent|virtuel assistent, administrativ hjælp, fjernsekretær, freelance
+market_research|Markedsanalyse|markedsanalyse, spørgeskema, forbrugerundersøgelse, fokusgruppe
+copywriting|Tekstforfatning|tekstforfatter, korrekturlæsning, indhold, redigering
+seo_services|SEO og onlineannoncering|søgemaskineoptimering, google ads, onlineannoncering, sem
+social_media|Styring af sociale medier|social media, instagram, facebook, tiktok
+app_development|Appudvikling|appudvikling, android, mobilapps, flutter
+game_development|Spiludvikling|spiludvikling, unity, unreal, spilstudie
+drone_services|Dronetjenester|drone, luftfoto, dronefotografering, opmåling fra luften
+printing_3d|3D-print|3d print, prototyper, additiv fremstilling, 3d printer
+interior_design|Indretningsdesign|indretningsarkitekt, boligindretning, interiør, styling
+dance_school|Danseskole|danseundervisning, ballet, salsa, danseskole
+art_gallery|Kunstgalleri og indramning|indramning, rammer, udstillinger, kunsthandel
