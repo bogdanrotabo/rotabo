@@ -1,213 +1,213 @@
-taxi|Teksi|
-ride_hailing|Perkhidmatan e-hailing|
-chauffeur|Perkhidmatan pemandu|
-driving_school|Sekolah memandu|
-translation|Terjemahan|
-interpreting|Jurubahasa|
-sworn_translation|Terjemahan bersumpah|
-language_school|Pusat bahasa|
-removals|Perkhidmatan pindah rumah|
-international_removals|Pindah antarabangsa|
-courier|Perkhidmatan kurier|
-freight_forwarding|Perkapalan dan penghantaran|
-refrigerated_transport|Pengangkutan sejuk beku|
-haulage|Pengangkutan barang|
-storage_warehousing|Penyimpanan dan gudang|
-customs_brokerage|Perantara kastam|
-excavation|Kerja korek dan tanah|
-crane_hire|Sewa kren|
-scaffolding|Perancah|
-demolition|Kerja meroboh|
-concrete_works|Kerja konkrit|
-surveying|Ukur tanah|
-tool_hire|Sewa alatan|
-machinery_rental|Sewa jentera|
-generator_hire|Sewa penjana|
-electrical_installation|Pendawaian elektrik|
-plumbing|Kerja paip|
-heating_hvac|Pemanasan dan pengudaraan|
-air_conditioning|Penyaman udara|
-painting_decorating|Kerja mengecat|
-carpentry|Kerja kayu|
-flooring|Pemasangan lantai|
-roofing|Kerja bumbung|
-locksmith|Tukang kunci|
-cleaning_services|Perkhidmatan pembersihan|
-gardening_landscaping|Perkebunan dan landskap|
-renovation|Pengubahsuaian|
-car_repair|Bengkel kereta|
-mobile_mechanic|Mekanik bergerak|
-tyre_service|Servis tayar|
-bodywork_paint|Kerja badan dan cat|
-towing_recovery|Tunda dan bantuan jalan|
-childcare|Jagaan kanak-kanak|
-elderly_care|Jagaan warga emas|
-home_nursing|Jagaan kejururawatan di rumah|
-private_tutoring|Tuisyen persendirian|
-music_lessons|Kelas muzik|
-sports_coaching|Kejurulatihan sukan|
-it_training|Latihan IT|
-vocational_training|Latihan vokasional|
-holiday_lettings|Sewa penginapan percutian|
-guesthouse_bnb|Rumah tumpangan dan sarapan|
-property_management|Pengurusan hartanah|
-veterinary|Doktor haiwan|
-dog_walking|Bawa anjing berjalan|
-pet_grooming|Dandanan haiwan peliharaan|
-general_practice|Doktor am|
-dentistry|Pergigian|
-physiotherapy|Fisioterapi|
-psychology|Psikologi|
-pharmacy|Farmasi|
-optometry|Optometri|
-medical_laboratory|Makmal perubatan|
-software_development|Pembangunan perisian|
-web_development|Pembangunan laman web|
-it_support|Sokongan IT|
-cybersecurity|Keselamatan siber|
-data_ai|Data dan AI|
-cloud_hosting|Awan dan hosting|
-accounting|Perakaunan|
-audit_tax|Audit dan cukai|
-legal_services|Perkhidmatan guaman|
-hr_recruitment|Sumber manusia dan pengambilan|
-management_consulting|Perundingan pengurusan|
-insurance_brokerage|Broker insurans|
-real_estate_agency|Agensi hartanah|
-architecture|Seni bina|
-manufacturing|Pembuatan|
-cnc_machining|Pemesinan CNC|
-metalwork_welding|Kerja logam dan kimpalan|
-restaurant|Restoran|
-catering|Katering|
-hotel|Hotel|
-event_management|Pengurusan acara|
-agriculture|Pertanian|
-forestry|Perhutanan|
-waste_recycling|Sisa dan kitar semula|
-renewable_energy|Tenaga boleh diperbaharui|
-marketing_agency|Agensi pemasaran|
-graphic_design|Reka bentuk grafik|
-photography|Fotografi|
-video_production|Penerbitan video|
-printing_signage|Percetakan dan papan tanda|
-wholesale|Borong|
-ecommerce|Perniagaan dalam talian|
-security_services|Perkhidmatan keselamatan|
-hairdressing|Salun rambut|
-beauty_salon|Salun kecantikan|
-massage_therapy|Urutan|
-fitness_training|Latihan kecergasan|
-shop_general|Kedai|
-shop_bicycle|Kedai dan servis basikal|
-shop_auto_parts|Alat ganti kereta|
-shop_hardware|Kedai perkakasan dan DIY|
-shop_furniture|Perabot|
-shop_electronics|Elektronik dan perkakas rumah|
-shop_clothing|Pakaian|
-shop_grocery|Kedai runcit|
-shop_sports|Kedai sukan|
-shop_books|Kedai buku dan alat tulis|
-shop_florist|Kedai bunga|
-shop_pet|Kedai haiwan peliharaan|
-motorcycle_repair|Bengkel motosikal|
-bar|Bar|
-kebab_shawarma|Kebab dan shawarma|
-pizzeria|Kedai pizza|
-fast_food|Makanan segera|
-bakery|Kedai roti|
-pastry_shop|Kedai kek dan pastri|
-coffee_shop|Kedai kopi|
-food_truck|Trak makanan|
-butcher|Kedai daging|
-ice_cream|Kedai aiskrim|
-winery|Kilang wain|
-brewery|Kilang bir|
-nightclub|Kelab malam dan disko|
-beach_club|Bar pantai dan kelab pantai|
-bowling_billiards|Boling dan biliard|
-travel_agency|Agensi pelancongan|
-nail_salon|Salun kuku, manikur dan pedikur|
-barber|Tukang gunting rambut|
-tattoo_piercing|Tatu dan tindik|
-spa_sauna|Spa dan sauna|
-cosmetics_shop|Kedai kosmetik|
-dry_cleaning|Dobi dan cuci kering|
-podiatry|Podiatri dan jagaan kaki|
-dental_laboratory|Makmal pergigian|
-orthodontics|Ortodontik|
-dermatology|Dermatologi|
-paediatrics|Pediatrik|
-gynaecology|Ginekologi|
-cardiology|Kardiologi|
-medical_imaging|Pengimejan perubatan|
-speech_therapy|Terapi pertuturan|
-nutrition_dietetics|Pemakanan dan dietetik|
-bicycle_repair|Pembaikan basikal|
-scooter_repair|Pembaikan skuter dan moped|
-appliance_repair|Pembaikan perkakas rumah|
-phone_repair|Pembaikan telefon dan tablet|
-computer_repair|Pembaikan komputer|
-watch_jewellery_repair|Pembaikan jam dan barang kemas|
-shoe_repair|Pembaikan kasut|
-tailoring_alterations|Jahitan dan ubah suai|
-upholstery|Kerja upholsteri|
-glazing|Kerja kaca dan tingkap|
-chimney_sweep|Pembersihan serombong|
-pest_control|Kawalan serangga perosak|
-pool_maintenance|Penyelenggaraan kolam renang|
-window_cleaning|Pembersihan tingkap|
-car_wash|Cuci kereta|
-car_rental|Sewa kereta|
-bike_scooter_rental|Sewa basikal dan skuter|
-funeral_services|Perkhidmatan pengebumian|
-notary|Notari|
-bailiff|Bailif dan penguatkuasaan|
-patent_trademark|Paten dan cap dagangan|
-debt_collection|Kutipan hutang|
-company_formation|Penubuhan syarikat|
-financial_advisory|Nasihat kewangan|
-payroll_services|Perkhidmatan penggajian|
-currency_exchange|Pertukaran mata wang|
-pawnshop|Kedai pajak gadai|
-leasing|Pajakan dan pembiayaan|
-hearing_aids|Alat bantu pendengaran|
-medical_transport|Pengangkutan perubatan|
-rehabilitation|Pusat pemulihan|
-occupational_therapy|Terapi carakerja|
-midwifery|Kebidanan|
-acupuncture|Akupunktur|
-chiropractic|Kiropraktik dan osteopati|
-insulation|Penebat haba|
-waterproofing|Kalis air|
-plastering|Kerja plaster dan lepa|
-tiling|Pemasangan jubin|
-drywall|Papan gipsum dan pembahagi|
-fencing|Pagar dan pintu gerbang|
-paving|Turapan dan laluan masuk|
-well_drilling|Penggerudian telaga|
-septic_systems|Tangki septik dan saliran|
-solar_panels|Pemasangan panel solar|
-alarm_cctv|Penggera dan CCTV|
-smart_home|Pemasangan rumah pintar|
-lift_maintenance|Penyelenggaraan lif|
-fire_safety|Keselamatan kebakaran dan pemadam|
-car_dealer|Pengedar kereta|
-vehicle_inspection|Pemeriksaan kenderaan|
-auto_electrics|Elektrik kereta|
-car_glass|Cermin kereta dan cermin depan|
-boat_repair|Pembaikan bot dan kapal|
-bus_charter|Sewa bas dan bas persiaran|
-call_centre|Pusat panggilan|
-virtual_assistant|Pembantu maya|
-market_research|Penyelidikan pasaran|
-copywriting|Penulisan kandungan|
-seo_services|SEO dan iklan dalam talian|
-social_media|Pengurusan media sosial|
-app_development|Pembangunan aplikasi mudah alih|
-game_development|Pembangunan permainan|
-drone_services|Perkhidmatan dron|
-printing_3d|Cetakan 3D|
-interior_design|Reka bentuk dalaman|
-dance_school|Sekolah tarian|
-art_gallery|Galeri seni dan bingkai|
+taxi|Teksi|teksi, tambang, penghantaran, lapangan terbang
+ride_hailing|Perkhidmatan e-hailing|grab, e-hailing, kongsi kereta, aplikasi
+chauffeur|Perkhidmatan pemandu|pemandu peribadi, limosin, perkhidmatan pemandu
+driving_school|Sekolah memandu|sekolah memandu, kelas memandu, lesen memandu, jurulatih
+translation|Terjemahan|penterjemah, dokumen, terjemahan, kontrak
+interpreting|Jurubahasa|jurubahasa, terjemahan lisan, persidangan, mesyuarat
+sworn_translation|Terjemahan bersumpah|terjemahan bersumpah, terjemahan rasmi, cop, surat akuan
+language_school|Pusat bahasa|kursus bahasa, kelas bahasa inggeris, guru, pusat bahasa
+removals|Perkhidmatan pindah rumah|perkhidmatan pindah rumah, pindah rumah, lori pindah, kotak
+international_removals|Pindah antarabangsa|pindah ke luar negara, penempatan semula, kontena, kastam
+courier|Perkhidmatan kurier|kurier, penghantaran, bungkusan, perkhidmatan penghantaran
+freight_forwarding|Perkapalan dan penghantaran|penghantaran kargo, logistik, pengangkutan barang, palet
+refrigerated_transport|Pengangkutan sejuk beku|pengangkutan sejuk beku, barang beku, lori sejuk, rantaian sejuk
+haulage|Pengangkutan barang|pengangkutan lori, lori, angkutan barang, treler
+storage_warehousing|Penyimpanan dan gudang|gudang, penyimpanan, stor, rak
+customs_brokerage|Perantara kastam|ejen kastam, kastam, import, eksport
+excavation|Kerja korek dan tanah|kerja tanah, jengkaut, korek tanah, parit
+crane_hire|Sewa kren|kren, sewa kren, angkat berat, kren mudah alih
+scaffolding|Perancah|perancah, pemasangan perancah, sewa perancah, pelantar kerja
+demolition|Kerja meroboh|kerja roboh, merobohkan, sisa binaan, tukul pemecah
+concrete_works|Kerja konkrit|konkrit, tuang konkrit, asas bangunan, lapisan simen
+surveying|Ukur tanah|juruukur, ukur tanah, topografi, sempadan tanah
+tool_hire|Sewa alatan|sewa alat, perkakas, gerudi, mesin canai
+machinery_rental|Sewa jentera|sewa jentera, mesin, forklift, jentera berat
+generator_hire|Sewa penjana|genset, penjana, bekalan kuasa sandaran, kabel
+electrical_installation|Pendawaian elektrik|juruelektrik, pendawaian, papan suis, soket
+plumbing|Kerja paip|tukang paip, paip, bilik air, kebocoran
+heating_hvac|Pemanasan dan pengudaraan|sistem pemanas, pendidih, radiator, pemanas lantai
+air_conditioning|Penyaman udara|penghawa dingin, aircond, servis aircond, unit split
+painting_decorating|Kerja mengecat|tukang cat, mengecat, kertas dinding, pendempul
+carpentry|Kerja kayu|tukang kayu, perabot, kerja kayu, kayu
+flooring|Pemasangan lantai|pemasangan lantai, parket, laminat, jubin lantai
+roofing|Kerja bumbung|tukang bumbung, bumbung, longkang bumbung, zink
+locksmith|Tukang kunci|tukang kunci, kunci, kunci pendua, buka pintu
+cleaning_services|Perkhidmatan pembersihan|perkhidmatan pembersihan, pembantu rumah, cuci pejabat, pembersihan menyeluruh
+gardening_landscaping|Perkebunan dan landskap|tukang kebun, potong rumput, pagar tanaman, landskap
+renovation|Pengubahsuaian|ubah suai, renovasi, kontraktor binaan, baik pulih
+car_repair|Bengkel kereta|bengkel kereta, mekanik, servis kereta, baiki kereta
+mobile_mechanic|Mekanik bergerak|mekanik bergerak, bantuan tepi jalan, jumper bateri, kereta rosak
+tyre_service|Servis tayar|tayar, tukar tayar, tampal tayar, imbangan tayar
+bodywork_paint|Kerja badan dan cat|cat kereta, ketuk kemek, kemek, badan kereta
+towing_recovery|Tunda dan bantuan jalan|tunda kereta, lori tunda, bantuan jalan raya, winch
+childcare|Jagaan kanak-kanak|jagaan kanak-kanak, tadika, pengasuh, taska
+elderly_care|Jagaan warga emas|jagaan warga emas, rumah orang tua, jagaan di rumah, warga tua
+home_nursing|Jagaan kejururawatan di rumah|jururawat di rumah, jururawat, rawatan di rumah, tukar pembalut
+private_tutoring|Tuisyen persendirian|tuisyen, guru tuisyen, persediaan peperiksaan, kerja rumah
+music_lessons|Kelas muzik|piano, gitar, nyanyian, kelas muzik
+sports_coaching|Kejurulatihan sukan|jurulatih, bola sepak, tenis, latihan
+it_training|Latihan IT|kursus komputer, excel, kursus pengaturcaraan, latihan it
+vocational_training|Latihan vokasional|latihan vokasional, kursus kemahiran, pensijilan, perantis
+holiday_lettings|Sewa penginapan percutian|homestay, sewa harian, rumah percutian, airbnb
+guesthouse_bnb|Rumah tumpangan dan sarapan|rumah tetamu, penginapan sarapan, inap desa, bilik
+property_management|Pengurusan hartanah|pengurusan hartanah, pengurusan bangunan, sewaan, badan pengurusan
+veterinary|Doktor haiwan|doktor haiwan, klinik haiwan, vaksin, anjing
+dog_walking|Bawa anjing berjalan|bawa anjing berjalan, jalan anjing, pengiring anjing
+pet_grooming|Dandanan haiwan peliharaan|dandanan haiwan, gunting bulu anjing, salun haiwan, jagaan bulu
+general_practice|Doktor am|doktor am, klinik, pusat kesihatan, preskripsi
+dentistry|Pergigian|doktor gigi, klinik pergigian, tampal gigi, implan
+physiotherapy|Fisioterapi|fisioterapi, ahli fisioterapi, pemulihan, terapi
+psychology|Psikologi|ahli psikologi, terapi, kaunseling, psikoterapi
+pharmacy|Farmasi|farmasi, ubat, ahli farmasi, suplemen
+optometry|Optometri|optik, cermin mata, periksa mata, kanta lekap
+medical_laboratory|Makmal perubatan|makmal, ujian darah, analisis, pengambilan sampel
+software_development|Pembangunan perisian|pengaturcara, pembangun, perisian, kod
+web_development|Pembangunan laman web|laman web, reka bentuk web, wordpress, kedai dalam talian
+it_support|Sokongan IT|sokongan it, rangkaian, servis komputer, pentadbir sistem
+cybersecurity|Keselamatan siber|keselamatan siber, ujian penembusan, firewall, penggodaman
+data_ai|Data dan AI|kecerdasan buatan, pembelajaran mesin, analitik data, algoritma
+cloud_hosting|Awan dan hosting|hosting, pelayan, awan, domain
+accounting|Perakaunan|akauntan, perakaunan, invois, gaji
+audit_tax|Audit dan cukai|juruaudit, perunding cukai, penyata kewangan, cukai
+legal_services|Perkhidmatan guaman|peguam, guaman, nasihat undang-undang, kontrak
+hr_recruitment|Sumber manusia dan pengambilan|pengambilan pekerja, agensi pekerjaan, pemburu bakat, resume
+management_consulting|Perundingan pengurusan|perunding, perundingan perniagaan, strategi, pelan perniagaan
+insurance_brokerage|Broker insurans|broker insurans, insurans, polisi, tuntutan
+real_estate_agency|Agensi hartanah|ejen hartanah, broker hartanah, apartmen, rumah
+architecture|Seni bina|arkitek, pelan bangunan, kelulusan bangunan, reka bentuk bangunan
+manufacturing|Pembuatan|pembuatan, kilang, industri, pemasangan
+cnc_machining|Pemesinan CNC|cnc, larik, kisar, pemesinan
+metalwork_welding|Kerja logam dan kimpalan|kimpalan, tukang besi, keluli, kerja besi
+restaurant|Restoran|restoran, makanan, kedai makan, menu
+catering|Katering|katering, jamuan, bufet, hidangan
+hotel|Hotel|hotel, penginapan, asrama, bilik
+event_management|Pengurusan acara|pengurusan acara, perancang perkahwinan, persidangan, majlis
+agriculture|Pertanian|pertanian, ladang, traktor, tuaian
+forestry|Perhutanan|perhutanan, pembalakan, kayu balak, gergaji rantai
+waste_recycling|Sisa dan kitar semula|sampah, tong sampah besar, besi buruk, kitar semula
+renewable_energy|Tenaga boleh diperbaharui|solar, tenaga angin, tenaga hijau, pam haba
+marketing_agency|Agensi pemasaran|pemasaran, pengiklanan, kempen, agensi iklan
+graphic_design|Reka bentuk grafik|pereka grafik, logo, reka bentuk grafik, susun atur
+photography|Fotografi|jurugambar, studio foto, jurugambar perkahwinan, potret
+video_production|Penerbitan video|penerbitan video, penggambaran, suntingan, dron
+printing_signage|Percetakan dan papan tanda|percetakan, cetakan, papan tanda, pelekat
+wholesale|Borong|borong, pengedar, pembekal, barangan
+ecommerce|Perniagaan dalam talian|kedai dalam talian, e-dagang, pasaran, pesanan
+security_services|Perkhidmatan keselamatan|pengawal keselamatan, kawalan keselamatan, pemantauan, cctv
+hairdressing|Salun rambut|pendandan rambut, gunting rambut, warna rambut, salun
+beauty_salon|Salun kecantikan|salun kecantikan, kecantikan, kuku, rawatan muka
+massage_therapy|Urutan|urutan, tukang urut, terapi urut, refleksologi
+fitness_training|Latihan kecergasan|jurulatih peribadi, gim, senaman, angkat berat
+shop_general|Kedai|kedai, gerai, runcit, barangan
+shop_bicycle|Kedai dan servis basikal|kedai basikal, basikal, servis basikal, basikal elektrik
+shop_auto_parts|Alat ganti kereta|alat ganti, aksesori kereta, penapis, spare part
+shop_hardware|Kedai perkakasan dan DIY|kedai perkakas, kedai besi, alatan, skru
+shop_furniture|Perabot|kedai perabot, perabot, sofa, dapur
+shop_electronics|Elektronik dan perkakas rumah|elektronik, perkakas rumah, tv, mesin basuh
+shop_clothing|Pakaian|kedai pakaian, fesyen, kasut, baju
+shop_grocery|Kedai runcit|kedai runcit, pasar mini, barang dapur, pasar raya
+shop_sports|Kedai sukan|kedai sukan, peralatan sukan, luar bandar, ski
+shop_books|Kedai buku dan alat tulis|kedai buku, alat tulis, buku, kertas
+shop_florist|Kedai bunga|kedai bunga, bunga, jambangan, kalungan
+shop_pet|Kedai haiwan peliharaan|kedai haiwan, makanan anjing, akuarium, pasir kucing
+motorcycle_repair|Bengkel motosikal|bengkel motosikal, motosikal, skuter, moped
+bar|Bar|bar, pub, bar koktel, minuman
+kebab_shawarma|Kebab dan shawarma|kebab, shawarma, doner, kedai kebab
+pizzeria|Kedai pizza|pizza, pizzeria, pizza bungkus, itali
+fast_food|Makanan segera|makanan segera, burger, kentang goreng, gerai makan
+bakery|Kedai roti|kedai roti, roti, pembuat roti, bakeri
+pastry_shop|Kedai kek dan pastri|kedai kek, kek, pastri, pencuci mulut
+coffee_shop|Kedai kopi|kedai kopi, kopi, espresso, barista
+food_truck|Trak makanan|trak makanan, makanan jalanan, dapur bergerak
+butcher|Kedai daging|kedai daging, daging, sosej, penjual daging
+ice_cream|Kedai aiskrim|aiskrim, kedai aiskrim, gelato, aiskrim lembut
+winery|Kilang wain|kilang wain, wain, bilik wain, merasa wain
+brewery|Kilang bir|kilang bir, bir, bir kraf, bir tong
+nightclub|Kelab malam dan disko|kelab malam, disko, tarian, dj
+beach_club|Bar pantai dan kelab pantai|bar pantai, kerusi pantai, pantai, kelab pantai
+bowling_billiards|Boling dan biliard|boling, biliard, dart, snuker
+travel_agency|Agensi pelancongan|agensi pelancongan, pakej pelancongan, tiket kapal terbang, percutian
+nail_salon|Salun kuku, manikur dan pedikur|salun kuku, manikur, pedikur, kuku gel
+barber|Tukang gunting rambut|tukang gunting, kedai gunting rambut, janggut, cukur
+tattoo_piercing|Tatu dan tindik|tatu, studio tatu, tindik, dakwat
+spa_sauna|Spa dan sauna|spa, sauna, kesihatan, mandi wap
+cosmetics_shop|Kedai kosmetik|kedai kosmetik, minyak wangi, solekan, penjagaan kulit
+dry_cleaning|Dobi dan cuci kering|dobi, cuci kering, menggosok, basuh baju
+podiatry|Podiatri dan jagaan kaki|penjagaan kaki, podiatri, kuku tumbuh ke dalam, kaki
+dental_laboratory|Makmal pergigian|juruteknik pergigian, gigi palsu, mahkota gigi, prostetik
+orthodontics|Ortodontik|pendakap gigi, ortodontik, wayar gigi, aligner
+dermatology|Dermatologi|pakar kulit, dermatologi, tahi lalat, jerawat
+paediatrics|Pediatrik|pakar kanak-kanak, pediatrik, bayi, kanak-kanak
+gynaecology|Ginekologi|pakar sakit puan, ginekologi, kehamilan, obstetrik
+cardiology|Kardiologi|pakar jantung, kardiologi, ekg, jantung
+medical_imaging|Pengimejan perubatan|x-ray, ultrasound, mri, imbasan ct
+speech_therapy|Terapi pertuturan|terapi pertuturan, ahli terapi pertuturan, gagap, pertuturan
+nutrition_dietetics|Pemakanan dan dietetik|pakar pemakanan, dietitian, diet, kurang berat badan
+bicycle_repair|Pembaikan basikal|servis basikal, baiki basikal, tayar pancit, bengkel basikal
+scooter_repair|Pembaikan skuter dan moped|bengkel skuter, skuter, vespa, moped
+appliance_repair|Pembaikan perkakas rumah|baiki perkakas rumah, mesin basuh, peti sejuk, ketuhar
+phone_repair|Pembaikan telefon dan tablet|baiki telefon, tukar skrin, iphone, tablet
+computer_repair|Pembaikan komputer|baiki komputer, laptop, pc, pemulihan data
+watch_jewellery_repair|Pembaikan jam dan barang kemas|tukang jam, tukang emas, tukar bateri jam, saiz cincin
+shoe_repair|Pembaikan kasut|tukang kasut, baiki kasut, tumit, tapak kasut
+tailoring_alterations|Jahitan dan ubah suai|tukang jahit, jahitan, pendekkan seluar, ubah saiz baju
+upholstery|Kerja upholsteri|pelapik perabot, tukar kain sofa, kusyen, salut semula
+glazing|Kerja kaca dan tingkap|tukang kaca, tingkap, kaca berlapis, cermin
+chimney_sweep|Pembersihan serombong|pembersih cerobong, cerobong asap, jelaga, salur asap
+pest_control|Kawalan serangga perosak|kawalan perosak, pepijat, tikus, lipas
+pool_maintenance|Penyelenggaraan kolam renang|penyelenggaraan kolam, cuci kolam renang, klorin, kolam
+window_cleaning|Pembersihan tingkap|cuci tingkap, pembersih cermin, cuci fasad, tingkap
+car_wash|Cuci kereta|cuci kereta, pusat cuci kereta, penggilap, pembersihan dalaman
+car_rental|Sewa kereta|sewa kereta, kereta sewa, penyewaan kenderaan, rent a car
+bike_scooter_rental|Sewa basikal dan skuter|sewa basikal, skuter elektrik, penyewaan basikal, skuter
+funeral_services|Perkhidmatan pengebumian|perkhidmatan pengebumian, pengebumian, pembakaran mayat, keranda
+notary|Notari|notari, pengesahan dokumen, surat kuasa, suratan
+bailiff|Bailif dan penguatkuasaan|bailif, penyitaan, pelaksanaan perintah, perintah mahkamah
+patent_trademark|Paten dan cap dagangan|harta intelek, pendaftaran cap dagangan, paten, ejen paten
+debt_collection|Kutipan hutang|kutipan hutang, hutang tertunggak, notis tuntutan, invois belum bayar
+company_formation|Penubuhan syarikat|penubuhan syarikat, pendaftaran syarikat, sdn bhd, ssm
+financial_advisory|Nasihat kewangan|penasihat kewangan, pelaburan, kekayaan, perancangan kewangan
+payroll_services|Perkhidmatan penggajian|pengurusan gaji, slip gaji, gaji, pentadbiran upah
+currency_exchange|Pertukaran mata wang|pertukaran wang, penukaran mata wang, mata wang asing, kadar tukaran
+pawnshop|Kedai pajak gadai|pajak gadai, gadaian, pinjaman cagaran, beli emas
+leasing|Pajakan dan pembiayaan|pajakan, pembiayaan, ansuran, sewa beli
+hearing_aids|Alat bantu pendengaran|alat bantu dengar, ujian pendengaran, audiologi, pusat pendengaran
+medical_transport|Pengangkutan perubatan|ambulans, pengangkutan pesakit, pengusung, pemindahan pesakit
+rehabilitation|Pusat pemulihan|pemulihan, pusat pemulihan, kesihatan semula, penyembuhan
+occupational_therapy|Terapi carakerja|terapi cara kerja, ahli terapi cara kerja, kemahiran harian, berdikari
+midwifery|Kebidanan|bidan, bersalin, kehamilan, jagaan pranatal
+acupuncture|Akupunktur|akupunktur, jarum, perubatan cina, tusuk jarum
+chiropractic|Kiropraktik dan osteopati|kiropraktik, osteopati, tulang belakang, sakit belakang
+insulation|Penebat haba|penebat haba, penebat, penebat bumbung, kalis haba
+waterproofing|Kalis air|kalis air, kebocoran bumbung, lembapan, membran
+plastering|Kerja plaster dan lepa|melepa, lepaan, plaster dinding, kemasan dinding
+tiling|Pemasangan jubin|tukang jubin, jubin, jubin lantai, pemasangan jubin
+drywall|Papan gipsum dan pembahagi|papan gipsum, dinding pemisah, siling gantung, partition
+fencing|Pagar dan pintu gerbang|pagar, pintu pagar, pemasangan pagar, dawai
+paving|Turapan dan laluan masuk|turapan, laluan masuk, kaki lima, batu turapan
+well_drilling|Penggerudian telaga|penggerudian telaga, telaga, telaga air, air bawah tanah
+septic_systems|Tangki septik dan saliran|tangki septik, saliran, sistem kumbahan, longkang
+solar_panels|Pemasangan panel solar|panel solar, fotovoltaik, penyongsang, tenaga suria
+alarm_cctv|Penggera dan CCTV|penggera, kamera cctv, pengawasan, sistem keselamatan
+smart_home|Pemasangan rumah pintar|rumah pintar, lampu pintar, automasi rumah, kawalan
+lift_maintenance|Penyelenggaraan lif|lif, servis lif, eskalator, baiki lif
+fire_safety|Keselamatan kebakaran dan pemadam|alat pemadam api, penggera kebakaran, pemercik, keselamatan kebakaran
+car_dealer|Pengedar kereta|pengedar kereta, kereta terpakai, jual kereta, bilik pameran
+vehicle_inspection|Pemeriksaan kenderaan|puspakom, pemeriksaan kenderaan, ujian kelayakan, inspeksi
+auto_electrics|Elektrik kereta|juruelektrik kereta, alternator, motor pemula, pendawaian kereta
+car_glass|Cermin kereta dan cermin depan|cermin depan, tukar cermin, cermin kereta, retak cermin
+boat_repair|Pembaikan bot dan kapal|baiki bot, enjin sangkut, bot, limbungan
+bus_charter|Sewa bas dan bas persiaran|sewa bas, bas persiaran, bas mini, pengangkutan kumpulan
+call_centre|Pusat panggilan|pusat panggilan, telepemasaran, khidmat pelanggan, sokongan telefon
+virtual_assistant|Pembantu maya|pembantu maya, sokongan pentadbiran, setiausaha jarak jauh, bebas
+market_research|Penyelidikan pasaran|kajian pasaran, tinjauan, penyelidikan pengguna, kumpulan fokus
+copywriting|Penulisan kandungan|penulis salinan, penyuntingan, pembacaan pruf, kandungan
+seo_services|SEO dan iklan dalam talian|pengoptimuman enjin carian, google ads, iklan dalam talian, sem
+social_media|Pengurusan media sosial|pengurusan media sosial, instagram, facebook, tiktok
+app_development|Pembangunan aplikasi mudah alih|pembangunan aplikasi, android, aplikasi mudah alih, flutter
+game_development|Pembangunan permainan|pembangunan permainan, unity, unreal, studio permainan
+drone_services|Perkhidmatan dron|dron, fotografi udara, rakaman udara, pemetaan
+printing_3d|Cetakan 3D|cetakan 3d, prototaip, pembuatan tambahan, pencetak 3d
+interior_design|Reka bentuk dalaman|reka bentuk dalaman, hiasan dalaman, susun atur ruang, dekorasi
+dance_school|Sekolah tarian|kelas tarian, balet, salsa, sekolah tarian
+art_gallery|Galeri seni dan bingkai|membingkai, bingkai gambar, pameran seni, galeri

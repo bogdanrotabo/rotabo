@@ -1,213 +1,213 @@
-taxi|Taxi|
-ride_hailing|Gọi xe qua ứng dụng|
-chauffeur|Dịch vụ tài xế riêng|
-driving_school|Trường dạy lái xe|
-translation|Biên dịch|
-interpreting|Phiên dịch|
-sworn_translation|Dịch thuật công chứng|
-language_school|Trung tâm ngoại ngữ|
-removals|Dịch vụ chuyển nhà|
-international_removals|Chuyển nhà quốc tế|
-courier|Dịch vụ chuyển phát|
-freight_forwarding|Giao nhận vận tải|
-refrigerated_transport|Vận chuyển lạnh|
-haulage|Vận tải hàng hóa|
-storage_warehousing|Lưu kho và kho bãi|
-customs_brokerage|Dịch vụ hải quan|
-excavation|Đào đất và san lấp|
-crane_hire|Cho thuê cần cẩu|
-scaffolding|Giàn giáo|
-demolition|Phá dỡ|
-concrete_works|Thi công bê tông|
-surveying|Trắc địa|
-tool_hire|Cho thuê dụng cụ|
-machinery_rental|Cho thuê máy móc|
-generator_hire|Cho thuê máy phát điện|
-electrical_installation|Lắp đặt điện|
-plumbing|Sửa ống nước|
-heating_hvac|Sưởi và thông gió|
-air_conditioning|Điều hòa không khí|
-painting_decorating|Sơn và trang trí|
-carpentry|Nghề mộc|
-flooring|Lát sàn|
-roofing|Thi công mái|
-locksmith|Thợ khóa|
-cleaning_services|Dịch vụ vệ sinh|
-gardening_landscaping|Làm vườn và cảnh quan|
-renovation|Cải tạo nhà|
-car_repair|Sửa chữa ô tô|
-mobile_mechanic|Thợ máy lưu động|
-tyre_service|Dịch vụ lốp xe|
-bodywork_paint|Đồng và sơn xe|
-towing_recovery|Cứu hộ và kéo xe|
-childcare|Trông trẻ|
-elderly_care|Chăm sóc người cao tuổi|
-home_nursing|Điều dưỡng tại nhà|
-private_tutoring|Gia sư|
-music_lessons|Dạy nhạc|
-sports_coaching|Huấn luyện thể thao|
-it_training|Đào tạo công nghệ thông tin|
-vocational_training|Đào tạo nghề|
-holiday_lettings|Cho thuê nhà nghỉ dưỡng|
-guesthouse_bnb|Nhà nghỉ và lưu trú kèm bữa sáng|
-property_management|Quản lý bất động sản|
-veterinary|Thú y|
-dog_walking|Dắt chó đi dạo|
-pet_grooming|Chăm sóc lông thú cưng|
-general_practice|Bác sĩ đa khoa|
-dentistry|Nha khoa|
-physiotherapy|Vật lý trị liệu|
-psychology|Tâm lý học|
-pharmacy|Nhà thuốc|
-optometry|Đo thị lực|
-medical_laboratory|Phòng xét nghiệm y khoa|
-software_development|Phát triển phần mềm|
-web_development|Thiết kế website|
-it_support|Hỗ trợ công nghệ thông tin|
-cybersecurity|An ninh mạng|
-data_ai|Dữ liệu và trí tuệ nhân tạo|
-cloud_hosting|Đám mây và lưu trữ|
-accounting|Kế toán|
-audit_tax|Kiểm toán và thuế|
-legal_services|Dịch vụ pháp lý|
-hr_recruitment|Nhân sự và tuyển dụng|
-management_consulting|Tư vấn quản trị|
-insurance_brokerage|Môi giới bảo hiểm|
-real_estate_agency|Môi giới bất động sản|
-architecture|Kiến trúc|
-manufacturing|Sản xuất|
-cnc_machining|Gia công CNC|
-metalwork_welding|Cơ khí và hàn|
-restaurant|Nhà hàng|
-catering|Dịch vụ tiệc|
-hotel|Khách sạn|
-event_management|Tổ chức sự kiện|
-agriculture|Nông nghiệp|
-forestry|Lâm nghiệp|
-waste_recycling|Chất thải và tái chế|
-renewable_energy|Năng lượng tái tạo|
-marketing_agency|Công ty tiếp thị|
-graphic_design|Thiết kế đồ họa|
-photography|Nhiếp ảnh|
-video_production|Sản xuất video|
-printing_signage|In ấn và biển hiệu|
-wholesale|Bán buôn|
-ecommerce|Thương mại điện tử|
-security_services|Dịch vụ bảo vệ|
-hairdressing|Cắt tóc|
-beauty_salon|Thẩm mỹ viện|
-massage_therapy|Massage|
-fitness_training|Huấn luyện thể hình|
-shop_general|Cửa hàng|
-shop_bicycle|Cửa hàng và sửa xe đạp|
-shop_auto_parts|Phụ tùng ô tô|
-shop_hardware|Cửa hàng kim khí và dụng cụ|
-shop_furniture|Nội thất|
-shop_electronics|Điện tử và đồ gia dụng|
-shop_clothing|Quần áo|
-shop_grocery|Cửa hàng thực phẩm|
-shop_sports|Đồ thể thao|
-shop_books|Nhà sách và văn phòng phẩm|
-shop_florist|Cửa hàng hoa|
-shop_pet|Cửa hàng thú cưng|
-motorcycle_repair|Sửa xe máy|
-bar|Quán bar|
-kebab_shawarma|Kebab và shawarma|
-pizzeria|Quán pizza|
-fast_food|Đồ ăn nhanh|
-bakery|Tiệm bánh mì|
-pastry_shop|Tiệm bánh ngọt|
-coffee_shop|Quán cà phê|
-food_truck|Xe bán đồ ăn|
-butcher|Cửa hàng thịt|
-ice_cream|Quán kem|
-winery|Xưởng rượu vang|
-brewery|Xưởng bia|
-nightclub|Hộp đêm và vũ trường|
-beach_club|Quán bar bãi biển|
-bowling_billiards|Bowling và bi-a|
-travel_agency|Công ty du lịch|
-nail_salon|Tiệm nail, làm móng tay và chân|
-barber|Cắt tóc nam|
-tattoo_piercing|Xăm hình và xỏ khuyên|
-spa_sauna|Spa và xông hơi|
-cosmetics_shop|Cửa hàng mỹ phẩm|
-dry_cleaning|Giặt khô và giặt là|
-podiatry|Chăm sóc bàn chân|
-dental_laboratory|Labo răng|
-orthodontics|Chỉnh nha|
-dermatology|Da liễu|
-paediatrics|Nhi khoa|
-gynaecology|Sản phụ khoa|
-cardiology|Tim mạch|
-medical_imaging|Chẩn đoán hình ảnh|
-speech_therapy|Trị liệu ngôn ngữ|
-nutrition_dietetics|Dinh dưỡng và tiết chế|
-bicycle_repair|Sửa xe đạp|
-scooter_repair|Sửa xe tay ga và xe máy nhỏ|
-appliance_repair|Sửa đồ gia dụng|
-phone_repair|Sửa điện thoại và máy tính bảng|
-computer_repair|Sửa máy tính|
-watch_jewellery_repair|Sửa đồng hồ và trang sức|
-shoe_repair|Sửa giày|
-tailoring_alterations|May đo và sửa quần áo|
-upholstery|Bọc nệm và ghế|
-glazing|Kính và cửa sổ|
-chimney_sweep|Vệ sinh ống khói|
-pest_control|Diệt côn trùng|
-pool_maintenance|Bảo trì bể bơi|
-window_cleaning|Lau kính cửa sổ|
-car_wash|Rửa xe|
-car_rental|Cho thuê ô tô|
-bike_scooter_rental|Cho thuê xe đạp và xe scooter|
-funeral_services|Dịch vụ tang lễ|
-notary|Văn phòng công chứng|
-bailiff|Thi hành án|
-patent_trademark|Bằng sáng chế và nhãn hiệu|
-debt_collection|Thu hồi nợ|
-company_formation|Thành lập doanh nghiệp|
-financial_advisory|Tư vấn tài chính|
-payroll_services|Dịch vụ tính lương|
-currency_exchange|Đổi ngoại tệ|
-pawnshop|Tiệm cầm đồ|
-leasing|Cho thuê tài chính|
-hearing_aids|Máy trợ thính|
-medical_transport|Vận chuyển y tế|
-rehabilitation|Trung tâm phục hồi chức năng|
-occupational_therapy|Hoạt động trị liệu|
-midwifery|Hộ sinh|
-acupuncture|Châm cứu|
-chiropractic|Nắn chỉnh cột sống và nắn xương|
-insulation|Cách nhiệt|
-waterproofing|Chống thấm|
-plastering|Trát và bả matit|
-tiling|Ốp lát gạch|
-drywall|Thạch cao và vách ngăn|
-fencing|Hàng rào và cổng|
-paving|Lát sân và lối đi|
-well_drilling|Khoan giếng|
-septic_systems|Bể phốt và thoát nước|
-solar_panels|Lắp đặt tấm pin mặt trời|
-alarm_cctv|Báo động và camera giám sát|
-smart_home|Lắp đặt nhà thông minh|
-lift_maintenance|Bảo trì thang máy|
-fire_safety|Phòng cháy và bình chữa cháy|
-car_dealer|Đại lý ô tô|
-vehicle_inspection|Đăng kiểm xe|
-auto_electrics|Điện ô tô|
-car_glass|Kính ô tô và kính chắn gió|
-boat_repair|Sửa chữa tàu thuyền|
-bus_charter|Cho thuê xe khách|
-call_centre|Tổng đài chăm sóc khách hàng|
-virtual_assistant|Trợ lý ảo|
-market_research|Nghiên cứu thị trường|
-copywriting|Viết nội dung|
-seo_services|SEO và quảng cáo trực tuyến|
-social_media|Quản lý mạng xã hội|
-app_development|Phát triển ứng dụng di động|
-game_development|Phát triển game|
-drone_services|Dịch vụ flycam|
-printing_3d|In 3D|
-interior_design|Thiết kế nội thất|
-dance_school|Trường dạy nhảy|
-art_gallery|Phòng tranh và đóng khung|
+taxi|Taxi|taxi, chuyến xe, đưa đón, sân bay
+ride_hailing|Gọi xe qua ứng dụng|grab, be, xe công nghệ, ứng dụng
+chauffeur|Dịch vụ tài xế riêng|tài xế riêng, xe limousine, dịch vụ lái xe
+driving_school|Trường dạy lái xe|trường dạy lái xe, học lái xe, bằng lái, giáo viên dạy lái
+translation|Biên dịch|phiên dịch viên, tài liệu, dịch thuật, hợp đồng
+interpreting|Phiên dịch|thông dịch, dịch cabin, hội nghị, cuộc họp
+sworn_translation|Dịch thuật công chứng|dịch công chứng, bản dịch có dấu, công chứng, giấy tờ
+language_school|Trung tâm ngoại ngữ|khóa học ngoại ngữ, học tiếng anh, giáo viên, trung tâm ngoại ngữ
+removals|Dịch vụ chuyển nhà|chuyển nhà, dịch vụ chuyển nhà, xe tải nhỏ, thùng carton
+international_removals|Chuyển nhà quốc tế|chuyển nhà quốc tế, di dời, container, hải quan
+courier|Dịch vụ chuyển phát|chuyển phát nhanh, giao hàng, bưu kiện, shipper
+freight_forwarding|Giao nhận vận tải|giao nhận vận tải, logistics, vận chuyển hàng, pallet
+refrigerated_transport|Vận chuyển lạnh|vận chuyển lạnh, hàng đông lạnh, xe đông lạnh, chuỗi lạnh
+haulage|Vận tải hàng hóa|vận tải đường bộ, xe tải, chở hàng, rơ moóc
+storage_warehousing|Lưu kho và kho bãi|kho bãi, lưu kho, kho chứa, kệ hàng
+customs_brokerage|Dịch vụ hải quan|khai báo hải quan, hải quan, nhập khẩu, xuất khẩu
+excavation|Đào đất và san lấp|đào đất, máy xúc, san lấp, mương
+crane_hire|Cho thuê cần cẩu|cần cẩu, thuê cẩu, nâng hạ, xe cẩu
+scaffolding|Giàn giáo|giàn giáo, lắp giàn giáo, thuê giàn giáo, sàn thao tác
+demolition|Phá dỡ|phá dỡ, tháo dỡ, xà bần, máy đục bê tông
+concrete_works|Thi công bê tông|bê tông, đổ bê tông, móng, cán nền
+surveying|Trắc địa|trắc địa, đo đạc, khảo sát địa hình, ranh giới đất
+tool_hire|Cho thuê dụng cụ|thuê dụng cụ, dụng cụ, máy khoan, máy mài
+machinery_rental|Cho thuê máy móc|thuê máy móc, máy móc, xe nâng, máy công trình
+generator_hire|Cho thuê máy phát điện|máy phát điện, máy nổ, điện dự phòng, dây cáp
+electrical_installation|Lắp đặt điện|thợ điện, lắp đặt điện, tủ điện, ổ cắm
+plumbing|Sửa ống nước|thợ nước, ống nước, nhà tắm, rò rỉ nước
+heating_hvac|Sưởi và thông gió|hệ thống sưởi, nồi hơi, lò sưởi, sưởi sàn
+air_conditioning|Điều hòa không khí|máy lạnh, điều hòa, sửa máy lạnh, dàn lạnh
+painting_decorating|Sơn và trang trí|thợ sơn, sơn nhà, giấy dán tường, bả matit
+carpentry|Nghề mộc|thợ mộc, đồ gỗ, nội thất gỗ, gỗ
+flooring|Lát sàn|lát sàn, sàn gỗ, sàn nhựa, gạch lát nền
+roofing|Thi công mái|thợ lợp mái, mái nhà, máng xối, tôn
+locksmith|Thợ khóa|thợ khóa, ổ khóa, chìa khóa, mở khóa cửa
+cleaning_services|Dịch vụ vệ sinh|dịch vụ vệ sinh, giúp việc, vệ sinh văn phòng, tổng vệ sinh
+gardening_landscaping|Làm vườn và cảnh quan|làm vườn, cắt cỏ, hàng rào cây, cảnh quan
+renovation|Cải tạo nhà|cải tạo, sửa nhà, nhà thầu xây dựng, tân trang
+car_repair|Sửa chữa ô tô|gara ô tô, thợ máy, bảo dưỡng xe, sửa ô tô
+mobile_mechanic|Thợ máy lưu động|thợ sửa lưu động, cứu hộ dọc đường, câu bình, xe chết máy
+tyre_service|Dịch vụ lốp xe|lốp xe, thay lốp, vá lốp, cân bằng động
+bodywork_paint|Đồng và sơn xe|sơn xe, gò hàn, móp méo, thân vỏ xe
+towing_recovery|Cứu hộ và kéo xe|cứu hộ xe, xe kéo, kéo xe, tời
+childcare|Trông trẻ|trông trẻ, nhà trẻ, bảo mẫu, mầm non
+elderly_care|Chăm sóc người cao tuổi|chăm sóc người già, viện dưỡng lão, chăm tại nhà, người cao tuổi
+home_nursing|Điều dưỡng tại nhà|điều dưỡng tại nhà, y tá, chăm sóc y tế tại nhà, thay băng
+private_tutoring|Gia sư|gia sư, dạy kèm, ôn thi, bài tập về nhà
+music_lessons|Dạy nhạc|piano, guitar, thanh nhạc, lớp nhạc
+sports_coaching|Huấn luyện thể thao|huấn luyện viên, bóng đá, quần vợt, tập luyện
+it_training|Đào tạo công nghệ thông tin|khóa học máy tính, excel, khóa học lập trình, đào tạo it
+vocational_training|Đào tạo nghề|đào tạo nghề, khóa học nghề, chứng chỉ, học việc
+holiday_lettings|Cho thuê nhà nghỉ dưỡng|nhà nghỉ dưỡng, cho thuê ngắn ngày, homestay, airbnb
+guesthouse_bnb|Nhà nghỉ và lưu trú kèm bữa sáng|nhà nghỉ, nhà khách, phòng có ăn sáng, phòng trọ
+property_management|Quản lý bất động sản|quản lý bất động sản, quản lý tòa nhà, cho thuê, ban quản trị
+veterinary|Thú y|bác sĩ thú y, phòng khám thú y, tiêm phòng, chó
+dog_walking|Dắt chó đi dạo|dắt chó đi dạo, dịch vụ dắt chó, đi dạo với chó
+pet_grooming|Chăm sóc lông thú cưng|spa thú cưng, cắt tỉa lông chó, chăm sóc lông, tiệm thú cưng
+general_practice|Bác sĩ đa khoa|bác sĩ đa khoa, phòng khám, trạm y tế, đơn thuốc
+dentistry|Nha khoa|nha sĩ, nha khoa, trám răng, cấy ghép implant
+physiotherapy|Vật lý trị liệu|vật lý trị liệu, phục hồi chức năng, trị liệu, xoa bóp
+psychology|Tâm lý học|nhà tâm lý, trị liệu tâm lý, tư vấn, tham vấn
+pharmacy|Nhà thuốc|nhà thuốc, thuốc, dược sĩ, thực phẩm chức năng
+optometry|Đo thị lực|cửa hàng kính, kính mắt, đo mắt, kính áp tròng
+medical_laboratory|Phòng xét nghiệm y khoa|xét nghiệm, xét nghiệm máu, phòng lab, lấy mẫu
+software_development|Phát triển phần mềm|lập trình viên, kỹ sư phần mềm, phần mềm, code
+web_development|Thiết kế website|thiết kế website, làm web, wordpress, cửa hàng trực tuyến
+it_support|Hỗ trợ công nghệ thông tin|hỗ trợ it, mạng, sửa máy tính, quản trị hệ thống
+cybersecurity|An ninh mạng|an ninh mạng, kiểm thử xâm nhập, tường lửa, bảo mật
+data_ai|Dữ liệu và trí tuệ nhân tạo|trí tuệ nhân tạo, học máy, phân tích dữ liệu, thuật toán
+cloud_hosting|Đám mây và lưu trữ|hosting, máy chủ, đám mây, tên miền
+accounting|Kế toán|kế toán, sổ sách, hóa đơn, tính lương
+audit_tax|Kiểm toán và thuế|kiểm toán, tư vấn thuế, báo cáo tài chính, thuế giá trị gia tăng
+legal_services|Dịch vụ pháp lý|luật sư, văn phòng luật, tư vấn pháp lý, hợp đồng
+hr_recruitment|Nhân sự và tuyển dụng|tuyển dụng, nhân sự, headhunter, hồ sơ xin việc
+management_consulting|Tư vấn quản trị|tư vấn quản lý, tư vấn doanh nghiệp, chiến lược, kế hoạch kinh doanh
+insurance_brokerage|Môi giới bảo hiểm|môi giới bảo hiểm, bảo hiểm, hợp đồng bảo hiểm, bồi thường
+real_estate_agency|Môi giới bất động sản|môi giới bất động sản, nhà đất, căn hộ, nhà
+architecture|Kiến trúc|kiến trúc sư, bản vẽ, giấy phép xây dựng, thiết kế công trình
+manufacturing|Sản xuất|sản xuất, nhà máy, công nghiệp, lắp ráp
+cnc_machining|Gia công CNC|cnc, tiện, phay, gia công cơ khí
+metalwork_welding|Cơ khí và hàn|thợ hàn, cơ khí, thép, gia công kim loại
+restaurant|Nhà hàng|nhà hàng, quán ăn, đồ ăn, thực đơn
+catering|Dịch vụ tiệc|dịch vụ tiệc, đặt tiệc, tiệc buffet, suất ăn
+hotel|Khách sạn|khách sạn, chỗ ở, nhà nghỉ, phòng
+event_management|Tổ chức sự kiện|tổ chức sự kiện, cưới hỏi, hội nghị, sự kiện
+agriculture|Nông nghiệp|nông nghiệp, trang trại, máy cày, thu hoạch
+forestry|Lâm nghiệp|lâm nghiệp, khai thác gỗ, gỗ, cưa máy
+waste_recycling|Chất thải và tái chế|rác thải, thùng rác lớn, phế liệu, tái chế
+renewable_energy|Năng lượng tái tạo|điện mặt trời, điện gió, năng lượng xanh, bơm nhiệt
+marketing_agency|Công ty tiếp thị|marketing, quảng cáo, chiến dịch, agency quảng cáo
+graphic_design|Thiết kế đồ họa|thiết kế đồ họa, logo, dàn trang, nhận diện thương hiệu
+photography|Nhiếp ảnh|nhiếp ảnh gia, studio chụp ảnh, chụp ảnh cưới, chân dung
+video_production|Sản xuất video|sản xuất video, quay phim, dựng phim, flycam
+printing_signage|In ấn và biển hiệu|nhà in, in ấn, biển hiệu, decal
+wholesale|Bán buôn|bán buôn, nhà phân phối, nhà cung cấp, hàng hóa
+ecommerce|Thương mại điện tử|bán hàng online, thương mại điện tử, sàn thương mại, đơn hàng
+security_services|Dịch vụ bảo vệ|bảo vệ, dịch vụ bảo vệ, giám sát, camera an ninh
+hairdressing|Cắt tóc|tiệm tóc, cắt tóc, nhuộm tóc, salon tóc
+beauty_salon|Thẩm mỹ viện|thẩm mỹ viện, spa làm đẹp, làm móng, chăm sóc da mặt
+massage_therapy|Massage|massage, xoa bóp, thư giãn, bấm huyệt
+fitness_training|Huấn luyện thể hình|huấn luyện viên cá nhân, phòng gym, tập gym, tạ
+shop_general|Cửa hàng|cửa hàng, tiệm, bán lẻ, hàng hóa
+shop_bicycle|Cửa hàng và sửa xe đạp|cửa hàng xe đạp, xe đạp, sửa xe đạp, xe đạp điện
+shop_auto_parts|Phụ tùng ô tô|phụ tùng ô tô, đồ chơi xe hơi, lọc gió, phụ kiện xe
+shop_hardware|Cửa hàng kim khí và dụng cụ|cửa hàng vật liệu, kim khí, dụng cụ, ốc vít
+shop_furniture|Nội thất|cửa hàng nội thất, nội thất, sofa, tủ bếp
+shop_electronics|Điện tử và đồ gia dụng|điện máy, đồ gia dụng, tivi, máy giặt
+shop_clothing|Quần áo|shop quần áo, thời trang, giày dép, quần áo
+shop_grocery|Cửa hàng thực phẩm|tạp hóa, siêu thị, thực phẩm, cửa hàng tiện lợi
+shop_sports|Đồ thể thao|cửa hàng thể thao, dụng cụ thể thao, đồ dã ngoại, ván trượt
+shop_books|Nhà sách và văn phòng phẩm|nhà sách, văn phòng phẩm, sách, giấy vở
+shop_florist|Cửa hàng hoa|cửa hàng hoa, hoa tươi, bó hoa, vòng hoa
+shop_pet|Cửa hàng thú cưng|cửa hàng thú cưng, thức ăn cho chó, bể cá, cát vệ sinh mèo
+motorcycle_repair|Sửa xe máy|sửa xe máy, xe máy, xe tay ga, xe số
+bar|Quán bar|quán bar, pub, quầy cocktail, đồ uống
+kebab_shawarma|Kebab và shawarma|kebab, bánh mì thổ nhĩ kỳ, shawarma, doner
+pizzeria|Quán pizza|pizza, tiệm pizza, pizza mang về, món ý
+fast_food|Đồ ăn nhanh|đồ ăn nhanh, hamburger, khoai tây chiên, quán ăn nhanh
+bakery|Tiệm bánh mì|tiệm bánh mì, bánh mì, lò bánh, thợ làm bánh
+pastry_shop|Tiệm bánh ngọt|tiệm bánh ngọt, bánh kem, bánh ngọt, tráng miệng
+coffee_shop|Quán cà phê|quán cà phê, cà phê, espresso, barista
+food_truck|Xe bán đồ ăn|xe bán đồ ăn, đồ ăn đường phố, bếp di động
+butcher|Cửa hàng thịt|hàng thịt, thịt, xúc xích, lò mổ
+ice_cream|Quán kem|kem, tiệm kem, gelato, kem tươi
+winery|Xưởng rượu vang|xưởng rượu vang, rượu vang, hầm rượu, thử rượu
+brewery|Xưởng bia|nhà máy bia, bia, bia thủ công, bia tươi
+nightclub|Hộp đêm và vũ trường|hộp đêm, vũ trường, khiêu vũ, dj
+beach_club|Quán bar bãi biển|bar bãi biển, ghế tắm nắng, bãi biển, câu lạc bộ biển
+bowling_billiards|Bowling và bi-a|bowling, bi a, phi tiêu, bida
+travel_agency|Công ty du lịch|công ty du lịch, tour, vé máy bay, đặt tour
+nail_salon|Tiệm nail, làm móng tay và chân|tiệm nail, làm móng tay, làm móng chân, móng gel
+barber|Cắt tóc nam|barber, cắt tóc nam, tỉa râu, cạo râu
+tattoo_piercing|Xăm hình và xỏ khuyên|xăm hình, tiệm xăm, xỏ khuyên, tattoo
+spa_sauna|Spa và xông hơi|spa, xông hơi, wellness, tắm hơi
+cosmetics_shop|Cửa hàng mỹ phẩm|cửa hàng mỹ phẩm, nước hoa, trang điểm, chăm sóc da
+dry_cleaning|Giặt khô và giặt là|giặt là, giặt khô, ủi đồ, giặt ủi
+podiatry|Chăm sóc bàn chân|chăm sóc bàn chân, móng quặp, bàn chân, khoa chân
+dental_laboratory|Labo răng|kỹ thuật viên răng, răng giả, mão răng, phục hình răng
+orthodontics|Chỉnh nha|niềng răng, chỉnh nha, mắc cài, khay trong suốt
+dermatology|Da liễu|bác sĩ da liễu, da liễu, nốt ruồi, mụn trứng cá
+paediatrics|Nhi khoa|bác sĩ nhi, nhi khoa, trẻ sơ sinh, trẻ em
+gynaecology|Sản phụ khoa|bác sĩ sản phụ khoa, phụ khoa, thai kỳ, sản khoa
+cardiology|Tim mạch|bác sĩ tim mạch, tim mạch, điện tim, tim
+medical_imaging|Chẩn đoán hình ảnh|chụp x quang, siêu âm, chụp cộng hưởng từ, chụp ct
+speech_therapy|Trị liệu ngôn ngữ|trị liệu ngôn ngữ, âm ngữ trị liệu, nói lắp, tập nói
+nutrition_dietetics|Dinh dưỡng và tiết chế|chuyên gia dinh dưỡng, dinh dưỡng, ăn kiêng, giảm cân
+bicycle_repair|Sửa xe đạp|sửa xe đạp, vá xe đạp, tiệm xe đạp, bảo dưỡng xe đạp
+scooter_repair|Sửa xe tay ga và xe máy nhỏ|sửa xe tay ga, xe tay ga, vespa, xe máy điện
+appliance_repair|Sửa đồ gia dụng|sửa đồ gia dụng, máy giặt, tủ lạnh, lò nướng
+phone_repair|Sửa điện thoại và máy tính bảng|sửa điện thoại, thay màn hình, iphone, máy tính bảng
+computer_repair|Sửa máy tính|sửa máy tính, laptop, pc, cứu dữ liệu
+watch_jewellery_repair|Sửa đồng hồ và trang sức|thợ đồng hồ, thợ kim hoàn, thay pin đồng hồ, nới nhẫn
+shoe_repair|Sửa giày|sửa giày, đóng giày, gót giày, đế giày
+tailoring_alterations|May đo và sửa quần áo|thợ may, may đo, lên lai quần, sửa quần áo
+upholstery|Bọc nệm và ghế|bọc ghế, bọc lại sofa, nệm, vải bọc
+glazing|Kính và cửa sổ|thợ kính, cửa kính, kính hộp, kính
+chimney_sweep|Vệ sinh ống khói|vệ sinh ống khói, ống khói, muội than, thông khói
+pest_control|Diệt côn trùng|diệt côn trùng, rệp giường, chuột, gián
+pool_maintenance|Bảo trì bể bơi|bảo trì hồ bơi, vệ sinh bể bơi, clo, hồ bơi
+window_cleaning|Lau kính cửa sổ|lau kính, vệ sinh kính, lau mặt dựng, cửa kính
+car_wash|Rửa xe|rửa xe, tiệm rửa xe, vệ sinh nội thất xe, đánh bóng
+car_rental|Cho thuê ô tô|thuê xe ô tô, cho thuê xe, thuê xe tự lái, dịch vụ thuê xe
+bike_scooter_rental|Cho thuê xe đạp và xe scooter|thuê xe đạp, xe điện scooter, cho thuê xe đạp, xe trượt điện
+funeral_services|Dịch vụ tang lễ|dịch vụ tang lễ, mai táng, hỏa táng, quan tài
+notary|Văn phòng công chứng|công chứng viên, văn phòng công chứng, giấy ủy quyền, chứng thực
+bailiff|Thi hành án|chấp hành viên, thi hành án, kê biên, cưỡng chế
+patent_trademark|Bằng sáng chế và nhãn hiệu|sở hữu trí tuệ, đăng ký nhãn hiệu, bằng sáng chế, đại diện sở hữu công nghiệp
+debt_collection|Thu hồi nợ|thu hồi nợ, đòi nợ, công nợ, hóa đơn quá hạn
+company_formation|Thành lập doanh nghiệp|thành lập công ty, đăng ký kinh doanh, giấy phép kinh doanh, con dấu
+financial_advisory|Tư vấn tài chính|tư vấn tài chính, đầu tư, quản lý tài sản, kế hoạch tài chính
+payroll_services|Dịch vụ tính lương|tính lương, bảng lương, tiền lương, quản lý nhân sự tiền lương
+currency_exchange|Đổi ngoại tệ|đổi tiền, quầy đổi ngoại tệ, ngoại tệ, tỷ giá
+pawnshop|Tiệm cầm đồ|tiệm cầm đồ, cầm đồ, vay thế chấp, thu mua vàng
+leasing|Cho thuê tài chính|cho thuê tài chính, trả góp, vay mua xe, thuê mua
+hearing_aids|Máy trợ thính|máy trợ thính, đo thính lực, thính học, trung tâm thính giác
+medical_transport|Vận chuyển y tế|xe cứu thương, vận chuyển bệnh nhân, cáng, chuyển viện
+rehabilitation|Trung tâm phục hồi chức năng|phục hồi chức năng, an dưỡng, trung tâm phục hồi, hồi phục
+occupational_therapy|Hoạt động trị liệu|hoạt động trị liệu, chuyên viên hoạt động trị liệu, kỹ năng sinh hoạt, tự lập
+midwifery|Hộ sinh|nữ hộ sinh, đỡ đẻ, thai sản, chăm sóc trước sinh
+acupuncture|Châm cứu|châm cứu, kim châm, y học cổ truyền, bấm huyệt châm cứu
+chiropractic|Nắn chỉnh cột sống và nắn xương|nắn chỉnh cột sống, nắn xương, cột sống, đau lưng
+insulation|Cách nhiệt|cách nhiệt, chống nóng, cách nhiệt mái, bông thủy tinh
+waterproofing|Chống thấm|chống thấm, chống dột, ẩm mốc, màng chống thấm
+plastering|Trát và bả matit|tô tường, trát tường, bả tường, hoàn thiện tường
+tiling|Ốp lát gạch|thợ ốp lát, gạch men, ốp gạch, lát gạch
+drywall|Thạch cao và vách ngăn|thạch cao, vách ngăn, trần thả, tấm thạch cao
+fencing|Hàng rào và cổng|hàng rào, cổng, làm hàng rào, lưới rào
+paving|Lát sân và lối đi|lát sân, lối vào, vỉa hè, bó vỉa
+well_drilling|Khoan giếng|khoan giếng, giếng nước, giếng khoan, nước ngầm
+septic_systems|Bể phốt và thoát nước|bể phốt, hệ thống thoát nước, hầm cầu, thoát nước thải
+solar_panels|Lắp đặt tấm pin mặt trời|tấm pin mặt trời, điện mặt trời áp mái, inverter, năng lượng mặt trời
+alarm_cctv|Báo động và camera giám sát|báo động, camera giám sát, camera an ninh, chống trộm
+smart_home|Lắp đặt nhà thông minh|nhà thông minh, đèn thông minh, tự động hóa nhà, điều khiển
+lift_maintenance|Bảo trì thang máy|thang máy, bảo trì thang máy, thang cuốn, sửa thang máy
+fire_safety|Phòng cháy và bình chữa cháy|bình chữa cháy, báo cháy, phun nước chữa cháy, phòng cháy chữa cháy
+car_dealer|Đại lý ô tô|đại lý ô tô, xe cũ, bán ô tô, showroom xe
+vehicle_inspection|Đăng kiểm xe|đăng kiểm, kiểm định xe, trung tâm đăng kiểm, kiểm tra kỹ thuật
+auto_electrics|Điện ô tô|điện ô tô, máy phát điện xe, đề, hệ thống điện xe
+car_glass|Kính ô tô và kính chắn gió|kính chắn gió, thay kính xe, kính ô tô, nứt kính
+boat_repair|Sửa chữa tàu thuyền|sửa tàu thuyền, máy đuôi tôm, thuyền, du thuyền
+bus_charter|Cho thuê xe khách|thuê xe khách, xe du lịch, xe 16 chỗ, chở đoàn
+call_centre|Tổng đài chăm sóc khách hàng|tổng đài, telesale, chăm sóc khách hàng, hỗ trợ qua điện thoại
+virtual_assistant|Trợ lý ảo|trợ lý ảo, hỗ trợ hành chính, thư ký từ xa, freelancer
+market_research|Nghiên cứu thị trường|nghiên cứu thị trường, khảo sát, nghiên cứu người tiêu dùng, phỏng vấn nhóm
+copywriting|Viết nội dung|viết nội dung, biên tập, hiệu đính, content
+seo_services|SEO và quảng cáo trực tuyến|seo, google ads, quảng cáo trực tuyến, tối ưu công cụ tìm kiếm
+social_media|Quản lý mạng xã hội|quản trị mạng xã hội, instagram, facebook, tiktok
+app_development|Phát triển ứng dụng di động|lập trình ứng dụng, android, ứng dụng di động, flutter
+game_development|Phát triển game|phát triển game, unity, unreal, studio game
+drone_services|Dịch vụ flycam|flycam, chụp ảnh trên cao, quay phim từ trên cao, bản đồ hóa
+printing_3d|In 3D|in 3d, mẫu thử, sản xuất bồi đắp, máy in 3d
+interior_design|Thiết kế nội thất|thiết kế nội thất, trang trí nội thất, bố trí không gian, decor
+dance_school|Trường dạy nhảy|lớp học nhảy, ba lê, salsa, trung tâm khiêu vũ
+art_gallery|Phòng tranh và đóng khung|đóng khung tranh, khung tranh, triển lãm, phòng tranh
