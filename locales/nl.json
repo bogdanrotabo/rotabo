@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Vrije plek - word sponsor" },
+  "sponsorbox": {
+    "free": "Vrije plek - word sponsor"
+  },
   "bizlist": {
     "label": "Hier verschijnen de geregistreerde bedrijven",
     "free": "Vrije plek - registreer je bedrijf"
@@ -167,7 +169,57 @@
     "car_wash": "Wasstraat, auto poetsen, detailing",
     "car_rental": "Auto huren, huurauto",
     "bike_scooter_rental": "Fiets huren, e-step, fietsverhuur",
-    "funeral_services": "Begrafenisondernemer, begrafenis, crematie, kisten"
+    "funeral_services": "Begrafenisondernemer, begrafenis, crematie, kisten",
+    "notary": "notaris, notariële akte, kadaster, legalisatie",
+    "bailiff": "deurwaarder, beslag, executie",
+    "patent_trademark": "intellectueel eigendom, octrooigemachtigde, merkregistratie",
+    "debt_collection": "incasso, achterstand, incassobureau",
+    "company_formation": "bedrijf oprichten, KvK inschrijving, BV oprichten",
+    "financial_advisory": "financieel advies, beleggingsadvies, vermogensbeheer",
+    "payroll_services": "salarisadministratie, loonadministratie, payroll",
+    "currency_exchange": "wisselkantoor, geld wisselen, valuta",
+    "pawnshop": "pandjeshuis, belening, goud inkoop",
+    "leasing": "leasing, autofinanciering, huurkoop",
+    "hearing_aids": "hoortoestellen, audicien, hoortest",
+    "medical_transport": "ambulance, ziekenvervoer, patiëntenvervoer",
+    "rehabilitation": "revalidatie, herstelcentrum, nazorg",
+    "occupational_therapy": "ergotherapie, ergotherapeut, dagelijkse handelingen",
+    "midwifery": "verloskundige, vroedvrouw, kraamzorg",
+    "acupuncture": "acupunctuur, acupuncturist, traditionele geneeskunde, naalden",
+    "chiropractic": "chiropractor, osteopaat, rugklachten, manuele therapie",
+    "insulation": "isolatie, dakisolatie, spouwmuurisolatie",
+    "waterproofing": "waterdicht maken, vochtbestrijding, dakcoating",
+    "plastering": "stukadoor, pleisterwerk, sierpleister",
+    "tiling": "tegelzetter, vloertegels, wandtegels",
+    "drywall": "gipsplaat, wanden, systeemplafond",
+    "fencing": "omheining, hekwerk, poorten, schutting",
+    "paving": "bestrating, oprit, klinkers, trottoirbanden",
+    "well_drilling": "bronboring, waterput, boren",
+    "septic_systems": "septic tank, riolering, afvoer, beerput",
+    "solar_panels": "zonnepanelen, pv-installatie, omvormer, zonnepaneel installateur",
+    "alarm_cctv": "alarmsysteem, camerabewaking, beveiliging",
+    "smart_home": "domotica, slim huis, slimme verlichting",
+    "lift_maintenance": "liftonderhoud, liftreparatie, roltrap",
+    "fire_safety": "brandveiligheid, brandblussers, sprinklers, brandmelders",
+    "car_dealer": "autobedrijf, autodealer, occasions, showroom",
+    "vehicle_inspection": "APK, keuring, technische controle",
+    "auto_electrics": "auto-elektricien, bedrading, dynamo, startmotor",
+    "car_glass": "autoruit, voorruit vervangen, ruitschade",
+    "boat_repair": "jachtwerf, scheepsmonteur, buitenboordmotor, jacht",
+    "bus_charter": "touringcar huren, minibus, groepsvervoer",
+    "call_centre": "callcenter, telemarketing, klantenservice",
+    "virtual_assistant": "virtueel assistent, online secretaresse, administratieve ondersteuning",
+    "market_research": "marktonderzoek, enquêtes, focusgroepen",
+    "copywriting": "tekstschrijver, content, redactie, proeflezen",
+    "seo_services": "SEO, zoekmachine optimalisatie, Google Ads, SEA",
+    "social_media": "social media, community management, Instagram, Facebook",
+    "app_development": "app ontwikkeling, iOS, Android, mobiel",
+    "game_development": "game ontwikkeling, Unity, Unreal, gamestudio",
+    "drone_services": "luchtfotografie, drone, inspectie, kartering",
+    "printing_3d": "3D printen, additieve productie, prototyping",
+    "interior_design": "interieurontwerp, styling, binnenhuisarchitect",
+    "dance_school": "dansschool, danslessen, ballet, salsa",
+    "art_gallery": "kunstgalerie, inlijsten, exposities, kunsthandel"
   },
   "domains": {
     "taxi": "Taxi",
@@ -392,7 +444,9 @@
     "none": "Geen resultaten. Probeer een ander woord - een vak, een gereedschap, een dienst."
   },
   "business": {
-    "hero": { "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken." },
+    "hero": {
+      "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken."
+    },
     "categories": {
       "section_eyebrow": "ROTABO VOOR BEDRIJVEN",
       "section_lead": "Kies wat uw bedrijf doet - en laat u vinden door wie het nodig heeft.",
@@ -406,10 +460,15 @@
       "offer_title": "Mijn bedrijf biedt iets",
       "offer_text": "Schrijf wat uw bedrijf doet en welk gebied het dekt, en u wordt gevonden.",
       "offer_btn": "Registreer uw bedrijf"
+    },
+    "idea": {
+      "tagline1": "Mensen hebben bedrijven nodig.",
+      "tagline2": "Mensen hebben bedrijven."
     }
   },
   "ticker": {
-    "sponsors": "Sponsors", "company": "Uw bedrijf kan hier zichtbaar zijn — registratie is gratis",
+    "sponsors": "Sponsors",
+    "company": "Uw bedrijf kan hier zichtbaar zijn — registratie is gratis",
     "offers": "biedt aan",
     "seeks": "zoekt"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Waarmee zou u beginnen?",
     "submit": "Versturen",
     "sent": "Dank u — ik schrijf terug."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hoofdpartner",
     "invite": "Deze plek is gereserveerd voor een organisatie die achter het idee staat. Het kost niets, en dat zal het nooit doen."
   },
@@ -480,17 +540,16 @@
     "confirming": "Je betaling wordt bevestigd…",
     "retry_btn": "Opnieuw proberen"
   },
-
   "banknote": {
     "title": "Je nummer reist de wereld rond. Jij hoeft dat niet.",
     "body": "<p>Haal een bankbiljet uit je portemonnee. Welke dan ook. Voordat je het uitgeeft, schrijf er zes kleine tekens op: rotabo — plus jouw Rotabo-nummer, dat je na registratie krijgt: rotabo2244. Laat het dan los.</p><p>Morgen betaalt het iemands koffie. Volgende week is het wisselgeld in een taxi drie steden verderop. Volgende maand steekt het een grens over in de zak van een vreemde. Geld stopt nooit met bewegen — en nu je naam ook niet meer.</p><p>Ergens kijkt iemand naar het biljet in zijn hand. Hij ziet het: rotabo2244. Nieuwsgierigheid doet de rest. Hij typt het in op rotabo.app — en daar ben jij. Je naam. Je vlag. Wat je aanbiedt. Een echt mens, vindbaar voor iedereen, overal, die dat stukje papier ooit vasthoudt.</p><p>Geen reclamebord reist zo ver. Geen advertentie leeft zo lang. Een bankbiljet blijft jarenlang in omloop en gaat door honderden handen — en elk daarvan kan jou vinden. Eén pen. Eén nummer. De hele wereld wordt jouw advertentie.</p>",
     "fineprint": "Op bankbiljetten schrijven is je eigen keuze. Controleer de lokale wetten."
   },
-
   "nav": {
     "how": "Hoe het werkt",
     "safety": "Veiligheid",
-    "business": "Bedrijven", "personal": "Voor particulieren",
+    "business": "Bedrijven",
+    "personal": "Voor particulieren",
     "drive": "Word chauffeur",
     "drivers": "Chauffeurs",
     "account": "Mijn account"
@@ -501,7 +560,6 @@
     "search_placeholder": "Zoek een Rotabo-nummer — bijv. 2244",
     "search_btn": "Zoeken",
     "get_number": "Haal je nummer",
-
     "origin_badge": "Gemaakt in Zwitserland — voor de hele wereld",
     "tagline3": "Jouw auto.",
     "lede": "Kies wat je nodig hebt — of meld je aan als iemand die kan helpen.",
@@ -1014,14 +1072,12 @@
     "load_error": "Je vermeldingen konden niet worden geladen. Probeer het opnieuw.",
     "retry_btn": "Opnieuw proberen"
   },
-
   "investors_card": {
     "cat": "INVESTEERDERS",
     "h3": "Word investeerder",
     "p": "Rotabo verbindt mensen in 12 categorieën en 38 talen, wereldwijd — zonder commissie van wie dan ook die tijd, vaardigheden of materieel aanbiedt. We praten met mensen die dat model steunen.",
     "link": "Neem contact op →"
   },
-
   "verify_modal": {
     "title": "Kijk in je e-mail",
     "subtitle": "We hebben een 6-cijferige code naar het adres hieronder gestuurd. Voer die in om verder te gaan.",

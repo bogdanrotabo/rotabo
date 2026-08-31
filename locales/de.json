@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Freier Platz - werden Sie Sponsor" },
+  "sponsorbox": {
+    "free": "Freier Platz - werden Sie Sponsor"
+  },
   "bizlist": {
     "label": "Hier erscheinen die registrierten Unternehmen",
     "free": "Freier Platz - registrieren Sie Ihr Unternehmen"
@@ -167,7 +169,57 @@
     "car_wash": "Waschanlage, Autopflege, Aufbereitung",
     "car_rental": "Mietwagen, Auto mieten, Leihwagen",
     "bike_scooter_rental": "Velo mieten, E-Scooter, Fahrradverleih",
-    "funeral_services": "Bestatter, Beerdigung, Kremation, Särge"
+    "funeral_services": "Bestatter, Beerdigung, Kremation, Särge",
+    "notary": "Notar, Beurkundung, Grundbuch, Beglaubigung",
+    "bailiff": "Gerichtsvollzieher, Pfändung, Vollstreckung, Betreibung",
+    "patent_trademark": "Patentanwalt, Markenanmeldung, geistiges Eigentum",
+    "debt_collection": "Inkasso, Forderungseinzug, Mahnwesen",
+    "company_formation": "Firmengründung, Handelsregister, Gesellschaftsgründung",
+    "financial_advisory": "Finanzberatung, Anlageberatung, Vermögensverwaltung",
+    "payroll_services": "Lohnbuchhaltung, Gehaltsabrechnung, Payroll",
+    "currency_exchange": "Wechselstube, Geldwechsel, Devisen",
+    "pawnshop": "Pfandhaus, Pfandleihe, Goldankauf",
+    "leasing": "Leasing, Fahrzeugfinanzierung, Mietkauf",
+    "hearing_aids": "Hörgeräte, Hörakustiker, Hörtest",
+    "medical_transport": "Krankentransport, Rettungsdienst, Patiententransport",
+    "rehabilitation": "Rehabilitation, Reha-Zentrum, Genesung",
+    "occupational_therapy": "Ergotherapie, Ergotherapeut, Alltagstraining",
+    "midwifery": "Hebamme, Geburtsvorbereitung, Wochenbettbetreuung",
+    "acupuncture": "Akupunktur, Akupunkteur, TCM, Nadeln",
+    "chiropractic": "Chiropraktik, Osteopathie, Rückenschmerzen, Manualtherapie",
+    "insulation": "Dämmung, Wärmedämmung, Dachdämmung, Isolierung",
+    "waterproofing": "Abdichtung, Bauwerksabdichtung, Feuchtigkeitsschutz",
+    "plastering": "Verputz, Gipser, Stuck, Putzarbeiten",
+    "tiling": "Plattenleger, Fliesenleger, Bodenfliesen, Wandfliesen",
+    "drywall": "Trockenbau, Gipskarton, Rigips, abgehängte Decke",
+    "fencing": "Zaun, Zaunbau, Tore, Geländer",
+    "paving": "Pflasterarbeiten, Einfahrt, Gehwege, Randsteine",
+    "well_drilling": "Brunnenbohrung, Bohrbrunnen, Tiefbohrung",
+    "septic_systems": "Klärgrube, Abwassergrube, Sickergrube, Entwässerung",
+    "solar_panels": "Photovoltaik, Solaranlage, Solarteur, Wechselrichter",
+    "alarm_cctv": "Alarmanlage, Videoüberwachung, Kameras, Sicherheitstechnik",
+    "smart_home": "Smart Home, Hausautomation, intelligente Beleuchtung",
+    "lift_maintenance": "Aufzugswartung, Liftservice, Rolltreppe",
+    "fire_safety": "Brandschutz, Feuerlöscher, Sprinkleranlage, Brandmelder",
+    "car_dealer": "Autohaus, Autohändler, Occasionen, Gebrauchtwagen",
+    "vehicle_inspection": "MFK, Fahrzeugprüfung, technische Kontrolle, TÜV",
+    "auto_electrics": "Autoelektrik, Fahrzeugelektrik, Lichtmaschine, Anlasser",
+    "car_glass": "Autoglas, Windschutzscheibe, Scheibenwechsel",
+    "boat_repair": "Bootsservice, Werft, Aussenborder, Yachtservice",
+    "bus_charter": "Carreisen, Busvermietung, Kleinbus, Gruppentransport",
+    "call_centre": "Callcenter, Kundendienst, Telemarketing, Helpdesk",
+    "virtual_assistant": "virtuelle Assistenz, Büroservice, Sekretariatsservice",
+    "market_research": "Marktforschung, Umfragen, Konsumentenforschung",
+    "copywriting": "Texterstellung, Werbetexte, Lektorat, Korrektorat",
+    "seo_services": "SEO, Suchmaschinenoptimierung, Google Ads, SEA",
+    "social_media": "Social Media, Community Management, Instagram, Facebook",
+    "app_development": "App-Entwicklung, iOS, Android, Mobile Apps",
+    "game_development": "Spieleentwicklung, Unity, Unreal, Games",
+    "drone_services": "Drohnenaufnahmen, Luftbilder, UAV, Vermessung",
+    "printing_3d": "3D-Druck, additive Fertigung, Prototyping",
+    "interior_design": "Innenarchitektur, Raumgestaltung, Einrichtung",
+    "dance_school": "Tanzschule, Tanzkurse, Ballett, Salsa",
+    "art_gallery": "Galerie, Kunsthandel, Einrahmung, Ausstellungen"
   },
   "domains": {
     "taxi": "Taxi",
@@ -392,7 +444,9 @@
     "none": "Nichts gefunden. Versuchen Sie ein anderes Wort - ein Handwerk, ein Gerät, eine Leistung."
   },
   "business": {
-    "hero": { "free_line": "Eintrag kostenlos, Anzeige kostenlos - Ihr Unternehmen, dort wo Menschen schon suchen." },
+    "hero": {
+      "free_line": "Eintrag kostenlos, Anzeige kostenlos - Ihr Unternehmen, dort wo Menschen schon suchen."
+    },
     "categories": {
       "section_eyebrow": "ROTABO FÜR UNTERNEHMEN",
       "section_lead": "Wählen Sie, was Ihr Unternehmen macht - und lassen Sie sich finden von denen, die es brauchen.",
@@ -406,10 +460,15 @@
       "offer_title": "Mein Unternehmen bietet etwas",
       "offer_text": "Tragen Sie ein, was Ihr Unternehmen macht und welches Gebiet es abdeckt, und werden Sie gefunden.",
       "offer_btn": "Unternehmen eintragen"
+    },
+    "idea": {
+      "tagline1": "Menschen brauchen Unternehmen.",
+      "tagline2": "Menschen haben Unternehmen."
     }
   },
   "ticker": {
-    "sponsors": "Sponsoren", "company": "Ihr Unternehmen kann hier sichtbar sein — Eintrag kostenlos",
+    "sponsors": "Sponsoren",
+    "company": "Ihr Unternehmen kann hier sichtbar sein — Eintrag kostenlos",
     "offers": "bietet",
     "seeks": "sucht"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Womit würden Sie anfangen?",
     "submit": "Senden",
     "sent": "Danke — ich melde mich."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hauptpartner",
     "invite": "Dieser Platz ist für eine Organisation reserviert, die hinter der Idee steht. Er kostet nichts, und das wird er nie."
   },
@@ -480,17 +540,16 @@
     "confirming": "Deine Zahlung wird bestätigt…",
     "retry_btn": "Erneut versuchen"
   },
-
   "banknote": {
     "title": "Deine Nummer reist um die Welt. Du musst es nicht.",
     "body": "<p>Nimm einen Geldschein aus deiner Brieftasche. Irgendeinen. Bevor du ihn ausgibst, schreib sechs kleine Zeichen darauf: rotabo — plus deine Rotabo-Nummer, die du nach der Anmeldung bekommst: rotabo2244. Dann lass ihn los.</p><p>Morgen bezahlt er jemandes Kaffee. Nächste Woche ist er Wechselgeld in einem Taxi drei Städte weiter. Nächsten Monat überquert er eine Grenze in der Tasche eines Fremden. Geld hört nie auf, sich zu bewegen — und jetzt auch dein Name nicht mehr.</p><p>Irgendwo schaut jemand auf den Schein in seiner Hand. Er sieht es: rotabo2244. Die Neugier erledigt den Rest. Er tippt es auf rotabo.app ein — und da bist du. Dein Name. Deine Flagge. Was du anbietest. Ein echter Mensch, auffindbar für jeden, überall, der dieses Stück Papier je in Händen hält.</p><p>Keine Plakatwand reist so weit. Keine Anzeige lebt so lange. Ein Geldschein bleibt jahrelang im Umlauf und geht durch Hunderte Hände — und jede einzelne kann dich finden. Ein Stift. Eine Nummer. Die ganze Welt wird zu deiner Werbung.</p>",
     "fineprint": "Auf Geldscheine zu schreiben ist deine eigene Entscheidung. Prüfe die örtlichen Gesetze."
   },
-
   "nav": {
     "how": "So funktioniert's",
     "safety": "Sicherheit",
-    "business": "Unternehmen", "personal": "Für Privatpersonen",
+    "business": "Unternehmen",
+    "personal": "Für Privatpersonen",
     "drive": "Fahrer werden",
     "drivers": "Fahrer",
     "account": "Mein Konto"
@@ -501,7 +560,6 @@
     "search_placeholder": "Eine Rotabo-Nummer finden — z. B. 2244",
     "search_btn": "Suchen",
     "get_number": "Hol dir deine Nummer",
-
     "origin_badge": "Gemacht in der Schweiz — für die ganze Welt",
     "tagline3": "Dein Auto.",
     "lede": "Wähle, was du brauchst — oder trag dich ein als jemand, der helfen kann.",
@@ -1014,14 +1072,12 @@
     "load_error": "Deine Einträge konnten nicht geladen werden. Bitte versuche es erneut.",
     "retry_btn": "Erneut versuchen"
   },
-
   "investors_card": {
     "cat": "INVESTOREN",
     "h3": "Investor werden",
     "p": "Rotabo verbindet Menschen in 12 Kategorien und 38 Sprachen weltweit — ohne Provision von irgendjemandem, der Zeit, Können oder Ausrüstung anbietet. Wir sprechen mit Menschen, die dieses Modell unterstützen.",
     "link": "Kontakt aufnehmen →"
   },
-
   "verify_modal": {
     "title": "Sieh in dein Postfach",
     "subtitle": "Wir haben einen 6-stelligen Code an die Adresse unten geschickt. Gib ihn ein, um fortzufahren.",
