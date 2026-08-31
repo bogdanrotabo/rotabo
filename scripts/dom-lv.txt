@@ -1,213 +1,213 @@
-taxi|Taksometrs|
-ride_hailing|Braucienu pakalpojums lietotnē|
-chauffeur|Šofera pakalpojumi|
-driving_school|Autoskola|
-translation|Tulkošana|
-interpreting|Mutiskā tulkošana|
-sworn_translation|Zvērināta tulkošana|
-language_school|Valodu skola|
-removals|Pārcelšanās pakalpojumi|
-international_removals|Starptautiskā pārcelšanās|
-courier|Kurjerpakalpojumi|
-freight_forwarding|Ekspedīcija|
-refrigerated_transport|Refrižeratoru pārvadājumi|
-haulage|Kravu pārvadājumi|
-storage_warehousing|Noliktavu pakalpojumi|
-customs_brokerage|Muitas brokeri|
-excavation|Rakšanas un zemes darbi|
-crane_hire|Celtņu noma|
-scaffolding|Sastatnes|
-demolition|Demontāža|
-concrete_works|Betonēšanas darbi|
-surveying|Ģeodēzija|
-tool_hire|Instrumentu noma|
-machinery_rental|Tehnikas noma|
-generator_hire|Ģeneratoru noma|
-electrical_installation|Elektromontāža|
-plumbing|Santehnika|
-heating_hvac|Apkure un ventilācija|
-air_conditioning|Gaisa kondicionēšana|
-painting_decorating|Krāsošanas darbi|
-carpentry|Galdniecība|
-flooring|Grīdas segumi|
-roofing|Jumta darbi|
-locksmith|Atslēdznieks|
-cleaning_services|Uzkopšanas pakalpojumi|
-gardening_landscaping|Dārzkopība un labiekārtošana|
-renovation|Renovācija|
-car_repair|Autoserviss|
-mobile_mechanic|Mobilais mehāniķis|
-tyre_service|Riepu serviss|
-bodywork_paint|Virsbūves remonts un krāsošana|
-towing_recovery|Evakuācijas pakalpojumi|
-childcare|Bērnu pieskatīšana|
-elderly_care|Senioru aprūpe|
-home_nursing|Aprūpe mājās|
-private_tutoring|Privātstundas|
-music_lessons|Mūzikas nodarbības|
-sports_coaching|Sporta treniņi|
-it_training|IT apmācības|
-vocational_training|Profesionālā apmācība|
-holiday_lettings|Brīvdienu mājokļu īre|
-guesthouse_bnb|Viesu nams un naktsmītne ar brokastīm|
-property_management|Nekustamā īpašuma pārvaldība|
-veterinary|Veterinārārsts|
-dog_walking|Suņu pastaigas|
-pet_grooming|Mājdzīvnieku kopšana|
-general_practice|Ģimenes ārsts|
-dentistry|Zobārstniecība|
-physiotherapy|Fizioterapija|
-psychology|Psiholoģija|
-pharmacy|Aptieka|
-optometry|Optometrija|
-medical_laboratory|Medicīnas laboratorija|
-software_development|Programmatūras izstrāde|
-web_development|Mājaslapu izstrāde|
-it_support|IT atbalsts|
-cybersecurity|Kiberdrošība|
-data_ai|Dati un mākslīgais intelekts|
-cloud_hosting|Mākonis un mitināšana|
-accounting|Grāmatvedība|
-audit_tax|Audits un nodokļi|
-legal_services|Juridiskie pakalpojumi|
-hr_recruitment|Personāls un atlase|
-management_consulting|Vadības konsultācijas|
-insurance_brokerage|Apdrošināšanas brokeri|
-real_estate_agency|Nekustamo īpašumu aģentūra|
-architecture|Arhitektūra|
-manufacturing|Ražošana|
-cnc_machining|CNC apstrāde|
-metalwork_welding|Metālapstrāde un metināšana|
-restaurant|Restorāns|
-catering|Ēdināšanas pakalpojumi|
-hotel|Viesnīca|
-event_management|Pasākumu organizēšana|
-agriculture|Lauksaimniecība|
-forestry|Mežsaimniecība|
-waste_recycling|Atkritumi un pārstrāde|
-renewable_energy|Atjaunīgā enerģija|
-marketing_agency|Mārketinga aģentūra|
-graphic_design|Grafiskais dizains|
-photography|Fotografēšana|
-video_production|Video producēšana|
-printing_signage|Poligrāfija un izkārtnes|
-wholesale|Vairumtirdzniecība|
-ecommerce|Interneta veikals|
-security_services|Apsardzes pakalpojumi|
-hairdressing|Frizētava|
-beauty_salon|Skaistumkopšanas salons|
-massage_therapy|Masāža|
-fitness_training|Fitnesa treniņi|
-shop_general|Veikals|
-shop_bicycle|Veloveikals un serviss|
-shop_auto_parts|Auto rezerves daļas|
-shop_hardware|Būvmateriāli un instrumenti|
-shop_furniture|Mēbeles|
-shop_electronics|Elektronika un sadzīves tehnika|
-shop_clothing|Apģērbi|
-shop_grocery|Pārtikas veikals|
-shop_sports|Sporta preces|
-shop_books|Grāmatnīca un kancelejas preces|
-shop_florist|Ziedu veikals|
-shop_pet|Zooveikals|
-motorcycle_repair|Motociklu serviss|
-bar|Bārs|
-kebab_shawarma|Kebabs un šaurma|
-pizzeria|Picērija|
-fast_food|Ātrā ēdināšana|
-bakery|Maiznīca|
-pastry_shop|Konditoreja|
-coffee_shop|Kafejnīca|
-food_truck|Ēdiena furgons|
-butcher|Gaļas veikals|
-ice_cream|Saldējuma kafejnīca|
-winery|Vīna darītava|
-brewery|Alus darītava|
-nightclub|Naktsklubs un diskotēka|
-beach_club|Pludmales bārs un klubs|
-bowling_billiards|Boulings un biljards|
-travel_agency|Ceļojumu aģentūra|
-nail_salon|Nagu salons, manikīrs un pedikīrs|
-barber|Vīriešu frizieris|
-tattoo_piercing|Tetovēšana un pīrsings|
-spa_sauna|SPA un pirts|
-cosmetics_shop|Kosmētikas veikals|
-dry_cleaning|Ķīmiskā tīrītava un veļas mazgātava|
-podiatry|Podoloģija un pēdu aprūpe|
-dental_laboratory|Zobu tehnikas laboratorija|
-orthodontics|Ortodontija|
-dermatology|Dermatoloģija|
-paediatrics|Pediatrija|
-gynaecology|Ginekoloģija|
-cardiology|Kardioloģija|
-medical_imaging|Attēldiagnostika|
-speech_therapy|Logopēdija|
-nutrition_dietetics|Uzturs un diētas|
-bicycle_repair|Velosipēdu remonts|
-scooter_repair|Motorolleru un mopēdu remonts|
-appliance_repair|Sadzīves tehnikas remonts|
-phone_repair|Telefonu un planšetu remonts|
-computer_repair|Datoru remonts|
-watch_jewellery_repair|Pulksteņu un rotaslietu remonts|
-shoe_repair|Apavu labošana|
-tailoring_alterations|Šūšana un piegriešana|
-upholstery|Mēbeļu apdare|
-glazing|Stiklošana un logi|
-chimney_sweep|Skursteņslauķis|
-pest_control|Dezinsekcija un deratizācija|
-pool_maintenance|Baseinu apkope|
-window_cleaning|Logu mazgāšana|
-car_wash|Auto mazgātava|
-car_rental|Auto noma|
-bike_scooter_rental|Velosipēdu un skrejriteņu noma|
-funeral_services|Apbedīšanas pakalpojumi|
-notary|Notārs|
-bailiff|Tiesu izpildītājs|
-patent_trademark|Patenti un preču zīmes|
-debt_collection|Parādu piedziņa|
-company_formation|Uzņēmumu dibināšana|
-financial_advisory|Finanšu konsultācijas|
-payroll_services|Algu aprēķins|
-currency_exchange|Valūtas maiņa|
-pawnshop|Lombards|
-leasing|Līzings un finansēšana|
-hearing_aids|Dzirdes aparāti|
-medical_transport|Medicīniskais transports|
-rehabilitation|Rehabilitācijas centrs|
-occupational_therapy|Ergoterapija|
-midwifery|Vecmāšu prakse|
-acupuncture|Akupunktūra|
-chiropractic|Kiropraktika un osteopātija|
-insulation|Siltināšana|
-waterproofing|Hidroizolācija|
-plastering|Apmetums un špaktelēšana|
-tiling|Flīzēšana|
-drywall|Ģipškartons un starpsienas|
-fencing|Žogi un vārti|
-paving|Bruģēšana un piebraucamie ceļi|
-well_drilling|Aku urbšana|
-septic_systems|Notekūdeņu krātuves un kanalizācija|
-solar_panels|Saules paneļu uzstādīšana|
-alarm_cctv|Signalizācija un videonovērošana|
-smart_home|Viedās mājas|
-lift_maintenance|Liftu apkope|
-fire_safety|Ugunsdrošība un dzēšamie aparāti|
-car_dealer|Auto salons|
-vehicle_inspection|Tehniskā apskate|
-auto_electrics|Auto elektrika|
-car_glass|Auto stikli un vējstikli|
-boat_repair|Laivu remonts|
-bus_charter|Autobusu noma|
-call_centre|Zvanu centrs|
-virtual_assistant|Virtuālais asistents|
-market_research|Tirgus izpēte|
-copywriting|Satura rakstīšana|
-seo_services|SEO un tiešsaistes reklāma|
-social_media|Sociālo tīklu pārvaldība|
-app_development|Mobilo lietotņu izstrāde|
-game_development|Spēļu izstrāde|
-drone_services|Dronu pakalpojumi|
-printing_3d|3D druka|
-interior_design|Interjera dizains|
-dance_school|Deju skola|
-art_gallery|Mākslas galerija un ierāmēšana|
+taxi|Taksometrs|taksometrs, brauciens, pārvadājums, lidosta
+ride_hailing|Braucienu pakalpojums lietotnē|uber, bolt, koplietošanas brauciens, lietotne
+chauffeur|Šofera pakalpojumi|personīgais šoferis, limuzīns, autovadītājs
+driving_school|Autoskola|autoskola, braukšanas nodarbības, autovadītāja apliecība, instruktors
+translation|Tulkošana|tulkotājs, dokumenti, tulkojums, līgums
+interpreting|Mutiskā tulkošana|mutiskais tulks, sinhronā tulkošana, konference, sanāksme
+sworn_translation|Zvērināta tulkošana|zvērināts tulkotājs, apliecināts tulkojums, zīmogs, dokuments
+language_school|Valodu skola|valodu kursi, angļu valoda, pasniedzējs, valodu skola
+removals|Pārcelšanās pakalpojumi|pārvākšanās, pārcelšanās pakalpojumi, kravas furgons, kastes
+international_removals|Starptautiskā pārcelšanās|pārcelšanās uz ārzemēm, relokācija, konteiners, muita
+courier|Kurjerpakalpojumi|kurjers, piegāde, sūtījums, kurjerpasts
+freight_forwarding|Ekspedīcija|ekspedīcija, loģistika, kravu pārvadājumi, palete
+refrigerated_transport|Refrižeratoru pārvadājumi|refrižeratora pārvadājumi, saldēta krava, refrižerators, aukstuma ķēde
+haulage|Kravu pārvadājumi|kravu pārvadājumi, smagā automašīna, kravas auto, puspiekabe
+storage_warehousing|Noliktavu pakalpojumi|noliktava, uzglabāšana, glabāšana, plaukti
+customs_brokerage|Muitas brokeri|muitas brokeris, muita, imports, eksports
+excavation|Rakšanas un zemes darbi|zemes darbi, ekskavators, rakšana, tranšeja
+crane_hire|Celtņu noma|celtnis, celtņa noma, celšanas darbi, autoceltnis
+scaffolding|Sastatnes|sastatnes, sastatņu montāža, sastatņu noma, platforma
+demolition|Demontāža|nojaukšana, demontāža, būvgruži, betona urbšana
+concrete_works|Betonēšanas darbi|betons, betonēšana, pamati, izlīdzināšana
+surveying|Ģeodēzija|mērnieks, uzmērīšana, kadastrālā uzmērīšana, zemes robežas
+tool_hire|Instrumentu noma|instrumentu noma, instrumenti, urbjmašīna, slīpmašīna
+machinery_rental|Tehnikas noma|tehnikas noma, mašīnas, autoiekrāvējs, būvtehnika
+generator_hire|Ģeneratoru noma|ģenerators, elektroģenerators, rezerves barošana, kabelis
+electrical_installation|Elektromontāža|elektriķis, elektroinstalācija, sadales skapis, kontaktligzda
+plumbing|Santehnika|santehniķis, caurules, vannas istaba, ūdens noplūde
+heating_hvac|Apkure un ventilācija|apkure, katls, radiatori, siltās grīdas
+air_conditioning|Gaisa kondicionēšana|kondicionieris, dzesēšana, gaisa kondicionēšana, split sistēma
+painting_decorating|Krāsošanas darbi|krāsotājs, krāsošana, tapetēšana, špaktelēšana
+carpentry|Galdniecība|galdnieks, namdaris, mēbeles, koks
+flooring|Grīdas segumi|grīdas licējs, parkets, lamināts, grīdas slīpēšana
+roofing|Jumta darbi|jumiķis, jumts, notekcaurules, skārds
+locksmith|Atslēdznieks|atslēdznieks, slēdzenes, atslēgas, durvju atvēršana
+cleaning_services|Uzkopšanas pakalpojumi|uzkopšana, tīrīšanas pakalpojumi, biroju uzkopšana, ģenerāltīrīšana
+gardening_landscaping|Dārzkopība un labiekārtošana|dārznieks, zāles pļaušana, dzīvžogs, labiekārtošana
+renovation|Renovācija|remonts, renovācija, būvfirma, pārbūve
+car_repair|Autoserviss|autoserviss, mehāniķis, apkope, auto remonts
+mobile_mechanic|Mobilais mehāniķis|mobilais mehāniķis, palīdzība uz ceļa, iedarbināšana, bojājums
+tyre_service|Riepu serviss|riepas, riepu maiņa, riepu remonts, balansēšana
+bodywork_paint|Virsbūves remonts un krāsošana|auto krāsošana, virsbūves remonts, iespiedumi, virsbūve
+towing_recovery|Evakuācijas pakalpojumi|evakuators, auto vilkšana, palīdzība uz ceļa, vinča
+childcare|Bērnu pieskatīšana|bērnu pieskatīšana, bērnudārzs, aukle, silītes
+elderly_care|Senioru aprūpe|senioru aprūpe, pansionāts, aprūpe mājās, veci cilvēki
+home_nursing|Aprūpe mājās|aprūpe mājās, māsa, medicīniskā aprūpe, brūču aprūpe
+private_tutoring|Privātstundas|privātstundas, repetitors, gatavošanās eksāmeniem, mājasdarbi
+music_lessons|Mūzikas nodarbības|klavieres, ģitāra, dziedāšana, mūzikas nodarbības
+sports_coaching|Sporta treniņi|treneris, futbols, teniss, treniņi
+it_training|IT apmācības|datorkursi, excel, programmēšanas kursi, it apmācība
+vocational_training|Profesionālā apmācība|profesionālā izglītība, kvalifikācijas kursi, sertifikācija, prakse
+holiday_lettings|Brīvdienu mājokļu īre|brīvdienu māja, atpūtas dzīvoklis, īre, airbnb
+guesthouse_bnb|Viesu nams un naktsmītne ar brokastīm|viesu nams, naktsmītne ar brokastīm, pansija, istabas
+property_management|Nekustamā īpašuma pārvaldība|nekustamā īpašuma apsaimniekošana, ēkas pārvaldīšana, izīrēšana, biedrība
+veterinary|Veterinārārsts|veterinārārsts, dzīvnieku klīnika, vakcinācija, suns
+dog_walking|Suņu pastaigas|suņu pastaigas, suņu pastaigu pakalpojums, pastaiga
+pet_grooming|Mājdzīvnieku kopšana|suņu frizieris, apcirpšana, kažoka kopšana, dzīvnieku salons
+general_practice|Ģimenes ārsts|ģimenes ārsts, ārsts, poliklīnika, recepte
+dentistry|Zobārstniecība|zobārsts, zobārstniecība, plombēšana, implants
+physiotherapy|Fizioterapija|fizioterapija, fizioterapeits, rehabilitācija, ārstēšana
+psychology|Psiholoģija|psihologs, terapija, konsultācijas, psihoterapija
+pharmacy|Aptieka|aptieka, zāles, recepšu medikamenti, uztura bagātinātāji
+optometry|Optometrija|optiķis, brilles, redzes pārbaude, kontaktlēcas
+medical_laboratory|Medicīnas laboratorija|laboratorija, asins analīzes, izmeklējumi, paraugu nodošana
+software_development|Programmatūras izstrāde|programmētājs, izstrādātājs, programmatūra, kods
+web_development|Mājaslapu izstrāde|mājaslapa, tīmekļa dizains, wordpress, interneta veikals
+it_support|IT atbalsts|it atbalsts, tīkls, datoru palīdzība, sistēmadministrators
+cybersecurity|Kiberdrošība|kiberdrošība, drošības testēšana, ugunsmūris, ielaušanās
+data_ai|Dati un mākslīgais intelekts|mākslīgais intelekts, mašīnmācīšanās, datu analītika, algoritmi
+cloud_hosting|Mākonis un mitināšana|hostings, serveris, mākonis, domēns
+accounting|Grāmatvedība|grāmatvedis, grāmatvedība, rēķini, algas
+audit_tax|Audits un nodokļi|revidents, nodokļu konsultants, gada pārskats, pvn
+legal_services|Juridiskie pakalpojumi|advokāts, jurists, juridiskie pakalpojumi, līgums
+hr_recruitment|Personāls un atlase|personāla atlase, rekrutēšana, darba aģentūra, cv
+management_consulting|Vadības konsultācijas|konsultants, biznesa konsultācijas, stratēģija, biznesa plāns
+insurance_brokerage|Apdrošināšanas brokeri|apdrošināšanas brokeris, apdrošināšana, polise, atlīdzība
+real_estate_agency|Nekustamo īpašumu aģentūra|nekustamā īpašuma aģentūra, mākleris, dzīvoklis, māja
+architecture|Arhitektūra|arhitekts, rasējumi, būvatļauja, projektēšana
+manufacturing|Ražošana|ražošana, rūpnīca, rūpniecība, montāža
+cnc_machining|CNC apstrāde|cnc, virpošana, frēzēšana, metālapstrāde
+metalwork_welding|Metālapstrāde un metināšana|metinātājs, kalējs, tērauds, metāla darbi
+restaurant|Restorāns|restorāns, ēdiens, ēstuve, ēdienkarte
+catering|Ēdināšanas pakalpojumi|ēdināšanas pakalpojumi, svētku galds, bufete, uzkodas
+hotel|Viesnīca|viesnīca, naktsmītne, hostelis, istabas
+event_management|Pasākumu organizēšana|pasākumu organizēšana, kāzu plānotājs, konference, pasākums
+agriculture|Lauksaimniecība|lauksaimniecība, saimniecība, traktors, ražas novākšana
+forestry|Mežsaimniecība|mežsaimniecība, mežizstrāde, kokmateriāli, motorzāģis
+waste_recycling|Atkritumi un pārstrāde|atkritumi, konteiners, metāllūžņi, pārstrāde
+renewable_energy|Atjaunīgā enerģija|saules paneļi, vēja enerģija, zaļā enerģija, siltumsūknis
+marketing_agency|Mārketinga aģentūra|mārketings, reklāma, kampaņa, reklāmas aģentūra
+graphic_design|Grafiskais dizains|grafiskais dizainers, logo, grafiskais dizains, maketēšana
+photography|Fotografēšana|fotogrāfs, fotostudija, kāzu fotogrāfs, portreti
+video_production|Video producēšana|video producēšana, filmēšana, montāža, drons
+printing_signage|Poligrāfija un izkārtnes|tipogrāfija, druka, izkārtnes, uzlīmes
+wholesale|Vairumtirdzniecība|vairumtirdzniecība, izplatītājs, piegādātājs, preces
+ecommerce|Interneta veikals|interneta veikals, e-komercija, tirdzniecības vietne, pasūtījumi
+security_services|Apsardzes pakalpojumi|apsardze, apsardzes firma, novērošana, videonovērošana
+hairdressing|Frizētava|frizieris, matu griešana, matu krāsošana, salons
+beauty_salon|Skaistumkopšanas salons|skaistumkopšanas salons, kosmetologs, nagi, sejas kopšana
+massage_therapy|Masāža|masieris, masāža, labsajūta, atslābināšanās
+fitness_training|Fitnesa treniņi|personīgais treneris, sporta klubs, treniņi, spēka treniņi
+shop_general|Veikals|veikals, tirdzniecība, mazumtirdzniecība, preces
+shop_bicycle|Veloveikals un serviss|velosipēdu veikals, velosipēdi, velo remonts, elektrovelosipēds
+shop_auto_parts|Auto rezerves daļas|rezerves daļas, auto detaļas, auto piederumi, filtri
+shop_hardware|Būvmateriāli un instrumenti|būvmateriālu veikals, dzelzs preces, instrumenti, skrūves
+shop_furniture|Mēbeles|mēbeļu veikals, mēbeles, dīvāni, virtuves
+shop_electronics|Elektronika un sadzīves tehnika|elektronika, sadzīves tehnika, televizors, veļas mašīna
+shop_clothing|Apģērbi|apģērbu veikals, mode, apavi, drēbes
+shop_grocery|Pārtikas veikals|pārtikas veikals, pārtikas preces, lielveikals, mazais veikals
+shop_sports|Sporta preces|sporta veikals, sporta inventārs, tūrisma preces, slēpes
+shop_books|Grāmatnīca un kancelejas preces|grāmatnīca, kancelejas preces, grāmatas, papīra preces
+shop_florist|Ziedu veikals|ziedu veikals, ziedi, pušķi, vainagi
+shop_pet|Zooveikals|zoo veikals, suņu barība, akvārijs, kaķu smiltis
+motorcycle_repair|Motociklu serviss|motociklu serviss, motocikls, motorolleris, mopēds
+bar|Bārs|bārs, krogs, kokteiļu bārs, dzērieni
+kebab_shawarma|Kebabs un šaurma|kebabs, šaurma, gyros, kebabnīca
+pizzeria|Picērija|pica, picērija, pica līdzņemšanai, itāļu
+fast_food|Ātrā ēdināšana|ātrā ēdināšana, burgers, frī kartupeļi, uzkodu bārs
+bakery|Maiznīca|maiznīca, maize, maizītes, maiznieks
+pastry_shop|Konditoreja|konditoreja, tortes, kūkas, deserti
+coffee_shop|Kafejnīca|kafejnīca, kafija, espresso, barista
+food_truck|Ēdiena furgons|ēdiena furgons, ielas ēdiens, mobilā virtuve
+butcher|Gaļas veikals|gaļas veikals, gaļa, desas, gaļas produkti
+ice_cream|Saldējuma kafejnīca|saldējums, saldējuma kiosks, mīkstais saldējums, gelato
+winery|Vīna darītava|vīna darītava, vīns, vīna pagrabs, vīna degustācija
+brewery|Alus darītava|alus darītava, alus, amatnieku alus, alus bārs
+nightclub|Naktsklubs un diskotēka|naktsklubs, diskotēka, dejas, dj
+beach_club|Pludmales bārs un klubs|pludmales bārs, sauļošanās krēsli, pludmale, peldvieta
+bowling_billiards|Boulings un biljards|boulings, biljards, šautriņas, pūls
+travel_agency|Ceļojumu aģentūra|ceļojumu aģentūra, ceļojumi, aviobiļetes, kompleksie ceļojumi
+nail_salon|Nagu salons, manikīrs un pedikīrs|nagu salons, manikīrs, pedikīrs, gēla nagi
+barber|Vīriešu frizieris|bārddzinis, vīriešu frizieris, bārda, skūšana
+tattoo_piercing|Tetovēšana un pīrsings|tetovējums, tetovēšanas salons, pīrsings, tattoo
+spa_sauna|SPA un pirts|spa, pirts, labsajūta, tvaika pirts
+cosmetics_shop|Kosmētikas veikals|parfimērija, kosmētika, dekoratīvā kosmētika, ādas kopšana
+dry_cleaning|Ķīmiskā tīrītava un veļas mazgātava|ķīmiskā tīrīšana, veļas mazgātava, gludināšana, veļas mazgāšana
+podiatry|Podoloģija un pēdu aprūpe|pēdu aprūpe, podologs, ieaudzis nags, pēdas
+dental_laboratory|Zobu tehnikas laboratorija|zobu tehniķis, zobu protēzes, kroņi, tiltiņi
+orthodontics|Ortodontija|breketes, ortodonts, zobu iztaisnošana, kapas
+dermatology|Dermatoloģija|dermatologs, ādas ārsts, dzimumzīmes, pinnes
+paediatrics|Pediatrija|bērnu ārsts, pediatrs, zīdainis, bērni
+gynaecology|Ginekoloģija|ginekologs, sieviešu ārsts, grūtniecība, dzemdniecība
+cardiology|Kardioloģija|kardiologs, sirds ārsts, ekg, sirds
+medical_imaging|Attēldiagnostika|rentgens, ultrasonogrāfija, magnētiskā rezonanse, datortomogrāfija
+speech_therapy|Logopēdija|logopēds, runas terapija, stostīšanās, runa
+nutrition_dietetics|Uzturs un diētas|uztura speciālists, diētas ārsts, diēta, svara zaudēšana
+bicycle_repair|Velosipēdu remonts|velo remonts, velosipēda labošana, riepas remonts, velo serviss
+scooter_repair|Motorolleru un mopēdu remonts|motorolleru remonts, motorollers, vespa, mopēds
+appliance_repair|Sadzīves tehnikas remonts|sadzīves tehnikas remonts, veļas mašīna, ledusskapis, cepeškrāsns
+phone_repair|Telefonu un planšetu remonts|telefonu remonts, ekrāna maiņa, iphone, planšetdators
+computer_repair|Datoru remonts|datoru remonts, klēpjdators, pc, datu atjaunošana
+watch_jewellery_repair|Pulksteņu un rotaslietu remonts|pulksteņmeistars, juvelieris, baterijas maiņa, gredzena izmērs
+shoe_repair|Apavu labošana|apavu labošana, kurpnieks, papēži, zoles
+tailoring_alterations|Šūšana un piegriešana|drēbnieks, šuvēja, apģērba labošana, saīsināšana
+upholstery|Mēbeļu apdare|polsterētājs, apdare, dīvāna pārvilkšana, mīksto mēbeļu remonts
+glazing|Stiklošana un logi|stiklinieks, logi, stikla paketes, stikls
+chimney_sweep|Skursteņslauķis|skursteņslauķis, skurstenis, skursteņa tīrīšana, sodrēji
+pest_control|Dezinsekcija un deratizācija|kaitēkļu apkarošana, blaktis, žurkas, prusaki
+pool_maintenance|Baseinu apkope|baseinu apkope, baseina tīrīšana, hlors, baseins
+window_cleaning|Logu mazgāšana|logu mazgāšana, logu tīrīšana, fasādes mazgāšana, stikli
+car_wash|Auto mazgātava|auto mazgātava, auto mazgāšana, salona tīrīšana, pulēšana
+car_rental|Auto noma|auto noma, nomas auto, mašīnas noma, transporta noma
+bike_scooter_rental|Velosipēdu un skrejriteņu noma|velosipēdu noma, elektriskais skrejritenis, velo noma, skrejritenis
+funeral_services|Apbedīšanas pakalpojumi|apbedīšanas birojs, bēres, kremācija, zārks
+notary|Notārs|notārs, notariāls apliecinājums, pilnvara, dokumenti
+bailiff|Tiesu izpildītājs|tiesu izpildītājs, mantas arests, piedziņa, izpilde
+patent_trademark|Patenti un preču zīmes|patentpilnvarotais, preču zīmes reģistrācija, patents, intelektuālais īpašums
+debt_collection|Parādu piedziņa|parādu piedziņa, parādi, atgādinājums, neapmaksāti rēķini
+company_formation|Uzņēmumu dibināšana|uzņēmuma dibināšana, uzņēmumu reģistrs, sia, reģistrācija
+financial_advisory|Finanšu konsultācijas|finanšu konsultants, ieguldījumi, kapitāls, pensiju uzkrājumi
+payroll_services|Algu aprēķins|algu aprēķins, algas lapa, atalgojums, personāla uzskaite
+currency_exchange|Valūtas maiņa|valūtas maiņa, valūta, ārvalstu valūta, maiņas kurss
+pawnshop|Lombards|lombards, ķīla, aizdevums pret ķīlu, zelta iepirkšana
+leasing|Līzings un finansēšana|līzings, finansēšana, nomaksa, auto līzings
+hearing_aids|Dzirdes aparāti|dzirdes aparāts, dzirdes pārbaude, audiologs, dzirdes centrs
+medical_transport|Medicīniskais transports|neatliekamā palīdzība, pacientu pārvadāšana, nestuves, medicīniskais transports
+rehabilitation|Rehabilitācijas centrs|rehabilitācija, atveseļošanās, rehabilitācijas centrs, atlabšana
+occupational_therapy|Ergoterapija|ergoterapeits, ergoterapija, ikdienas prasmes, patstāvība
+midwifery|Vecmāšu prakse|vecmāte, dzemdības, grūtniecība, gatavošanās dzemdībām
+acupuncture|Akupunktūra|akupunktūra, adatas, ķīniešu medicīna, akupunktūras ārstēšana
+chiropractic|Kiropraktika un osteopātija|hiropraktiķis, osteopāts, mugurkauls, muguras sāpes
+insulation|Siltināšana|siltināšana, siltumizolācija, jumta siltināšana, izolācijas materiāls
+waterproofing|Hidroizolācija|hidroizolācija, mitrums, jumta blīvēšana, membrāna
+plastering|Apmetums un špaktelēšana|apmetējs, apmetums, špaktelēšana, apdare
+tiling|Flīzēšana|flīzētājs, flīzes, keramikas flīzes, vannas istabas flīzes
+drywall|Ģipškartons un starpsienas|ģipškartons, starpsienas, piekaramie griesti, ģipsis
+fencing|Žogi un vārti|žogs, vārti, žoga uzstādīšana, sieta žogs
+paving|Bruģēšana un piebraucamie ceļi|bruģis, piebraucamais ceļš, ietve, apmales
+well_drilling|Aku urbšana|urbums, aka, ūdens urbums, gruntsūdens
+septic_systems|Notekūdeņu krātuves un kanalizācija|septiķis, kanalizācija, notekūdeņi, drenāža
+solar_panels|Saules paneļu uzstādīšana|saules paneļi, saules enerģija, invertors, saules elektrostacija
+alarm_cctv|Signalizācija un videonovērošana|signalizācija, videokameras, videonovērošana, apsardzes sistēma
+smart_home|Viedās mājas|viedā māja, viedais apgaismojums, mājas automatizācija, vadība
+lift_maintenance|Liftu apkope|lifts, liftu apkope, eskalators, lifta remonts
+fire_safety|Ugunsdrošība un dzēšamie aparāti|ugunsdzēšamie aparāti, ugunsgrēka signalizācija, sprinkleri, ugunsdrošība
+car_dealer|Auto salons|auto salons, lietoti auto, auto pārdošana, autotirgotājs
+vehicle_inspection|Tehniskā apskate|tehniskā apskate, transportlīdzekļu pārbaude, apskates punkts, tehniskā pārbaude
+auto_electrics|Auto elektrika|autoelektriķis, ģenerators, starteris, auto elektroinstalācija
+car_glass|Auto stikli un vējstikli|vējstikls, stikla maiņa, auto stikli, plaisa
+boat_repair|Laivu remonts|laivu remonts, piekaramais motors, laiva, laivas motors
+bus_charter|Autobusu noma|autobusu noma, tūristu autobuss, mikroautobuss, grupu pārvadājumi
+call_centre|Zvanu centrs|zvanu centrs, telemārketings, klientu apkalpošana, telefoniskais atbalsts
+virtual_assistant|Virtuālais asistents|virtuālais asistents, administratīvais atbalsts, attālinātā sekretāre, ārštata
+market_research|Tirgus izpēte|tirgus pētījumi, aptaujas, patērētāju pētījumi, fokusgrupa
+copywriting|Satura rakstīšana|tekstu autors, korektūra, satura veidošana, rediģēšana
+seo_services|SEO un tiešsaistes reklāma|meklētājprogrammu optimizācija, google ads, interneta reklāma, sem
+social_media|Sociālo tīklu pārvaldība|sociālie tīkli, instagram, facebook, tiktok
+app_development|Mobilo lietotņu izstrāde|lietotņu izstrāde, android, mobilās lietotnes, flutter
+game_development|Spēļu izstrāde|spēļu izstrāde, unity, unreal, spēļu studija
+drone_services|Dronu pakalpojumi|drons, aerofotogrāfija, filmēšana ar dronu, kartēšana
+printing_3d|3D druka|3d druka, prototipi, aditīvā ražošana, 3d printeris
+interior_design|Interjera dizains|interjera dizainers, interjers, telpu plānošana, dekorēšana
+dance_school|Deju skola|deju skola, balets, salsa, deju nodarbības
+art_gallery|Mākslas galerija un ierāmēšana|ierāmēšana, rāmji, izstādes, mākslas tirdzniecība

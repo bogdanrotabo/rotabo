@@ -1,213 +1,213 @@
-taxi|Takso|
-ride_hailing|Sõidujagamine rakendusega|
-chauffeur|Autojuhi teenus|
-driving_school|Autokool|
-translation|Tõlkimine|
-interpreting|Suuline tõlge|
-sworn_translation|Vandetõlge|
-language_school|Keeltekool|
-removals|Kolimisteenus|
-international_removals|Rahvusvaheline kolimine|
-courier|Kullerteenus|
-freight_forwarding|Ekspedeerimine|
-refrigerated_transport|Külmveod|
-haulage|Kaubavedu|
-storage_warehousing|Ladustamine|
-customs_brokerage|Tollivahendus|
-excavation|Kaeve- ja pinnasetööd|
-crane_hire|Kraanade rent|
-scaffolding|Tellingud|
-demolition|Lammutustööd|
-concrete_works|Betoonitööd|
-surveying|Geodeesia|
-tool_hire|Tööriistade rent|
-machinery_rental|Masinate rent|
-generator_hire|Generaatorite rent|
-electrical_installation|Elektritööd|
-plumbing|Torutööd|
-heating_hvac|Küte ja ventilatsioon|
-air_conditioning|Konditsioneerid|
-painting_decorating|Maalritööd|
-carpentry|Puusepatööd|
-flooring|Põrandatööd|
-roofing|Katusetööd|
-locksmith|Lukksepp|
-cleaning_services|Koristusteenused|
-gardening_landscaping|Aiandus ja haljastus|
-renovation|Renoveerimine|
-car_repair|Autoremont|
-mobile_mechanic|Mobiilne autoremont|
-tyre_service|Rehvitööd|
-bodywork_paint|Plekitööd ja värvimine|
-towing_recovery|Puksiirteenus|
-childcare|Lastehoid|
-elderly_care|Eakate hooldus|
-home_nursing|Koduõendus|
-private_tutoring|Eraõpetus|
-music_lessons|Muusikatunnid|
-sports_coaching|Sporditreening|
-it_training|IT-koolitus|
-vocational_training|Kutseõpe|
-holiday_lettings|Puhkusemajutus|
-guesthouse_bnb|Külalistemaja ja hommikusöögiga majutus|
-property_management|Kinnisvarahaldus|
-veterinary|Loomaarst|
-dog_walking|Koerte jalutamine|
-pet_grooming|Lemmikloomade trimmimine|
-general_practice|Perearst|
-dentistry|Hambaravi|
-physiotherapy|Füsioteraapia|
-psychology|Psühholoogia|
-pharmacy|Apteek|
-optometry|Optometria|
-medical_laboratory|Meditsiinilabor|
-software_development|Tarkvaraarendus|
-web_development|Veebiarendus|
-it_support|IT-tugi|
-cybersecurity|Küberturvalisus|
-data_ai|Andmed ja tehisintellekt|
-cloud_hosting|Pilv ja majutus|
-accounting|Raamatupidamine|
-audit_tax|Audit ja maksud|
-legal_services|Õigusteenused|
-hr_recruitment|Personal ja värbamine|
-management_consulting|Juhtimiskonsultatsioon|
-insurance_brokerage|Kindlustusmaakler|
-real_estate_agency|Kinnisvarabüroo|
-architecture|Arhitektuur|
-manufacturing|Tootmine|
-cnc_machining|CNC-töötlus|
-metalwork_welding|Metallitööd ja keevitus|
-restaurant|Restoran|
-catering|Toitlustus|
-hotel|Hotell|
-event_management|Ürituste korraldus|
-agriculture|Põllumajandus|
-forestry|Metsandus|
-waste_recycling|Jäätmed ja taaskasutus|
-renewable_energy|Taastuvenergia|
-marketing_agency|Turundusagentuur|
-graphic_design|Graafiline disain|
-photography|Fotograafia|
-video_production|Videotootmine|
-printing_signage|Trükk ja sildid|
-wholesale|Hulgimüük|
-ecommerce|E-pood|
-security_services|Turvateenused|
-hairdressing|Juuksur|
-beauty_salon|Ilusalong|
-massage_therapy|Massaaž|
-fitness_training|Treening ja fitness|
-shop_general|Kauplus|
-shop_bicycle|Jalgrattapood ja hooldus|
-shop_auto_parts|Autovaruosad|
-shop_hardware|Ehituspood ja tööriistad|
-shop_furniture|Mööbel|
-shop_electronics|Elektroonika ja kodutehnika|
-shop_clothing|Rõivad|
-shop_grocery|Toidupood|
-shop_sports|Spordikaubad|
-shop_books|Raamatupood ja kirjatarbed|
-shop_florist|Lillepood|
-shop_pet|Lemmikloomapood|
-motorcycle_repair|Mootorrataste remont|
-bar|Baar|
-kebab_shawarma|Kebab ja šawarma|
-pizzeria|Pitsarestoran|
-fast_food|Kiirtoit|
-bakery|Pagariäri|
-pastry_shop|Kondiitriäri|
-coffee_shop|Kohvik|
-food_truck|Toiduauto|
-butcher|Lihapood|
-ice_cream|Jäätisebaar|
-winery|Veinimõis|
-brewery|Õlletehas|
-nightclub|Ööklubi ja disko|
-beach_club|Rannabaar ja rannaklubi|
-bowling_billiards|Bowling ja piljard|
-travel_agency|Reisibüroo|
-nail_salon|Küünesalong, maniküür ja pediküür|
-barber|Habemeajaja|
-tattoo_piercing|Tätoveering ja augustamine|
-spa_sauna|Spaa ja saun|
-cosmetics_shop|Kosmeetikapood|
-dry_cleaning|Keemiline puhastus ja pesumaja|
-podiatry|Podoloogia ja jalahooldus|
-dental_laboratory|Hambalabor|
-orthodontics|Ortodontia|
-dermatology|Dermatoloogia|
-paediatrics|Lastearst|
-gynaecology|Günekoloogia|
-cardiology|Kardioloogia|
-medical_imaging|Radioloogia|
-speech_therapy|Logopeedia|
-nutrition_dietetics|Toitumine ja dieteetika|
-bicycle_repair|Jalgrataste remont|
-scooter_repair|Rollerite ja mopeedide remont|
-appliance_repair|Kodumasinate remont|
-phone_repair|Telefonide ja tahvlite remont|
-computer_repair|Arvutiremont|
-watch_jewellery_repair|Kellade ja ehete remont|
-shoe_repair|Kingsepp|
-tailoring_alterations|Rätsep ja parandustööd|
-upholstery|Polsterdus|
-glazing|Klaasitööd ja aknad|
-chimney_sweep|Korstnapühkimine|
-pest_control|Kahjuritõrje|
-pool_maintenance|Basseinihooldus|
-window_cleaning|Aknapesu|
-car_wash|Autopesula|
-car_rental|Autorent|
-bike_scooter_rental|Jalgrataste ja tõukerataste rent|
-funeral_services|Matusebüroo|
-notary|Notar|
-bailiff|Kohtutäitur|
-patent_trademark|Patendid ja kaubamärgid|
-debt_collection|Võlgade sissenõudmine|
-company_formation|Ettevõtte asutamine|
-financial_advisory|Finantsnõustamine|
-payroll_services|Palgaarvestus|
-currency_exchange|Valuutavahetus|
-pawnshop|Pandimaja|
-leasing|Liising ja finantseerimine|
-hearing_aids|Kuuldeaparaadid|
-medical_transport|Meditsiiniline transport|
-rehabilitation|Taastusravikeskus|
-occupational_therapy|Tegevusteraapia|
-midwifery|Ämmaemandus|
-acupuncture|Nõelravi|
-chiropractic|Kiropraktika ja osteopaatia|
-insulation|Soojustus|
-waterproofing|Hüdroisolatsioon|
-plastering|Krohvimine ja pahteldamine|
-tiling|Plaatimine|
-drywall|Kipsplaadid ja vaheseinad|
-fencing|Aiad ja väravad|
-paving|Sillutis ja sissesõiduteed|
-well_drilling|Puurkaevude rajamine|
-septic_systems|Kogumismahutid ja kanalisatsioon|
-solar_panels|Päikesepaneelide paigaldus|
-alarm_cctv|Valve- ja videosüsteemid|
-smart_home|Tark kodu|
-lift_maintenance|Liftide hooldus|
-fire_safety|Tuleohutus ja kustutid|
-car_dealer|Autosalong|
-vehicle_inspection|Tehnoülevaatus|
-auto_electrics|Autoelektroonika|
-car_glass|Autoklaasid ja tuuleklaasid|
-boat_repair|Paatide remont|
-bus_charter|Busside rent|
-call_centre|Kõnekeskus|
-virtual_assistant|Virtuaalassistent|
-market_research|Turu-uuringud|
-copywriting|Sisuloome|
-seo_services|SEO ja veebireklaam|
-social_media|Sotsiaalmeedia haldus|
-app_development|Mobiilirakenduste arendus|
-game_development|Mängude arendus|
-drone_services|Drooniteenused|
-printing_3d|3D-printimine|
-interior_design|Sisekujundus|
-dance_school|Tantsukool|
-art_gallery|Kunstigalerii ja raamimine|
+taxi|Takso|takso, sõit, transfeer, lennujaam
+ride_hailing|Sõidujagamine rakendusega|uber, bolt, sõidujagamine, rakendus
+chauffeur|Autojuhi teenus|isiklik autojuht, limusiin, juht
+driving_school|Autokool|autokool, sõidutunnid, juhiluba, sõiduõpetaja
+translation|Tõlkimine|tõlkija, dokumendid, tõlge, leping
+interpreting|Suuline tõlge|tõlk, sünkroontõlge, konverents, kohtumine
+sworn_translation|Vandetõlge|vandetõlk, kinnitatud tõlge, pitsat, dokument
+language_school|Keeltekool|keelekursused, inglise keel, õpetaja, keeltekool
+removals|Kolimisteenus|kolimine, kolimisteenus, kaubik, kastid
+international_removals|Rahvusvaheline kolimine|väliskolimine, ümberasumine, konteiner, toll
+courier|Kullerteenus|kuller, kohaletoimetamine, pakk, kullerteenus
+freight_forwarding|Ekspedeerimine|ekspedeerimine, logistika, vedu, alus
+refrigerated_transport|Külmveod|külmvedu, külmutatud, külmik-auto, külmahel
+haulage|Kaubavedu|veofirma, veok, kaubavedu, haagis
+storage_warehousing|Ladustamine|ladu, ladustamine, hoiustamine, riiulid
+customs_brokerage|Tollivahendus|tollivormistus, toll, import, eksport
+excavation|Kaeve- ja pinnasetööd|kaevetööd, ekskavaator, pinnasetööd, kraav
+crane_hire|Kraanade rent|kraana, kraanarent, tõstetööd, autokraana
+scaffolding|Tellingud|tellingud, tellingute paigaldus, tellingurent, tööplatvorm
+demolition|Lammutustööd|lammutus, lammutustööd, ehitusprügi, purustamine
+concrete_works|Betoonitööd|betoon, betoneerimine, vundament, tasandus
+surveying|Geodeesia|geodeet, mõõdistamine, maamõõtja, katastriüksus
+tool_hire|Tööriistade rent|tööriistarent, tööriistad, trell, lihvija
+machinery_rental|Masinate rent|masinarent, masinad, tõstuk, ehitustehnika
+generator_hire|Generaatorite rent|generaator, elektrigeneraator, varutoide, kaabel
+electrical_installation|Elektritööd|elektrik, elektritööd, kilp, pistikupesa
+plumbing|Torutööd|torulukksepp, santehnik, torud, vannituba
+heating_hvac|Küte ja ventilatsioon|küte, katel, radiaatorid, põrandaküte
+air_conditioning|Konditsioneerid|konditsioneer, jahutus, õhksoojuspump, split
+painting_decorating|Maalritööd|maaler, värvimine, tapeetimine, pahteldamine
+carpentry|Puusepatööd|puusepp, tisler, mööbel, puit
+flooring|Põrandatööd|põrandapaigaldaja, parkett, laminaat, põranda lihvimine
+roofing|Katusetööd|katusemeister, katus, vihmaveerennid, katusekate
+locksmith|Lukksepp|lukksepp, lukud, võtmed, ukse avamine
+cleaning_services|Koristusteenused|koristus, koristusteenus, kontoripuhastus, suurpuhastus
+gardening_landscaping|Aiandus ja haljastus|aednik, muruniitmine, hekk, haljastus
+renovation|Renoveerimine|remont, renoveerimine, ehitusfirma, ümberehitus
+car_repair|Autoremont|autoremont, mehaanik, hooldus, autotöökoda
+mobile_mechanic|Mobiilne autoremont|mobiilne mehaanik, teeabi, käivitusabi, rike
+tyre_service|Rehvitööd|rehvid, rehvivahetus, rehviparandus, tasakaalustamine
+bodywork_paint|Plekitööd ja värvimine|autovärvimine, plekitööd, mõlgid, kere
+towing_recovery|Puksiirteenus|puksiir, pukseerimine, autoabi, vints
+childcare|Lastehoid|lapsehoid, lasteaed, lapsehoidja, sõim
+elderly_care|Eakate hooldus|eakate hooldus, hooldekodu, koduhooldus, eakad
+home_nursing|Koduõendus|koduõendus, õde, kodune hooldus, haavahooldus
+private_tutoring|Eraõpetus|järeleaitamine, eraõpetaja, eksamiks valmistumine, koduülesanded
+music_lessons|Muusikatunnid|klaver, kitarr, laulmine, muusikatunnid
+sports_coaching|Sporditreening|treener, jalgpall, tennis, treening
+it_training|IT-koolitus|arvutikursused, excel, programmeerimiskursus, it-koolitus
+vocational_training|Kutseõpe|kutseõpe, kutsekursus, sertifitseerimine, praktika
+holiday_lettings|Puhkusemajutus|suvila, puhkusekorter, üürimine, airbnb
+guesthouse_bnb|Külalistemaja ja hommikusöögiga majutus|külalistemaja, hommikusöögiga majutus, võõrastemaja, toad
+property_management|Kinnisvarahaldus|kinnisvarahaldus, majahaldus, üürimine, korteriühistu
+veterinary|Loomaarst|loomaarst, loomakliinik, vaktsineerimine, koer
+dog_walking|Koerte jalutamine|koera jalutamine, koerajalutaja, jalutuskäik
+pet_grooming|Lemmikloomade trimmimine|koerte trimmimine, trimmimine, karvahooldus, loomasalong
+general_practice|Perearst|perearst, arst, vastuvõtt, retsept
+dentistry|Hambaravi|hambaarst, hambaravi, plomm, implantaat
+physiotherapy|Füsioteraapia|füsioteraapia, füsioterapeut, taastusravi, ravi
+psychology|Psühholoogia|psühholoog, teraapia, nõustamine, psühhoteraapia
+pharmacy|Apteek|apteek, ravimid, retseptiravim, toidulisandid
+optometry|Optometria|optik, prillid, nägemiskontroll, kontaktläätsed
+medical_laboratory|Meditsiinilabor|labor, vereanalüüs, analüüsid, proovide võtmine
+software_development|Tarkvaraarendus|programmeerija, arendaja, tarkvara, kood
+web_development|Veebiarendus|koduleht, veebidisain, wordpress, e-pood
+it_support|IT-tugi|it-tugi, võrk, arvutiabi, süsteemiadministraator
+cybersecurity|Küberturvalisus|küberturvalisus, turvatestimine, tulemüür, häkkimine
+data_ai|Andmed ja tehisintellekt|tehisintellekt, masinõpe, andmeanalüüs, algoritmid
+cloud_hosting|Pilv ja majutus|veebimajutus, server, pilv, domeen
+accounting|Raamatupidamine|raamatupidaja, raamatupidamine, arved, palgaarvestus
+audit_tax|Audit ja maksud|audiitor, maksunõustaja, aastaaruanne, käibemaks
+legal_services|Õigusteenused|advokaat, jurist, õigusabi, leping
+hr_recruitment|Personal ja värbamine|värbamine, personaliotsing, tööjõurent, cv
+management_consulting|Juhtimiskonsultatsioon|konsultant, ärinõustamine, strateegia, äriplaan
+insurance_brokerage|Kindlustusmaakler|kindlustusmaakler, kindlustus, poliis, kahjukäsitlus
+real_estate_agency|Kinnisvarabüroo|kinnisvaramaakler, maakler, korter, maja
+architecture|Arhitektuur|arhitekt, joonised, ehitusluba, projekteerimine
+manufacturing|Tootmine|tootmine, tehas, tööstus, koostamine
+cnc_machining|CNC-töötlus|cnc, treimine, freesimine, metallitöötlus
+metalwork_welding|Metallitööd ja keevitus|keevitaja, sepp, teras, metallitööd
+restaurant|Restoran|restoran, toit, söögikoht, menüü
+catering|Toitlustus|toitlustus, peotoit, buffet, suupisted
+hotel|Hotell|hotell, majutus, hostel, toad
+event_management|Ürituste korraldus|sündmuskorraldus, pulmakorraldaja, konverents, üritus
+agriculture|Põllumajandus|põllumajandus, talu, traktor, saagikoristus
+forestry|Metsandus|metsandus, metsaraie, puit, mootorsaag
+waste_recycling|Jäätmed ja taaskasutus|jäätmed, prügikonteiner, vanametall, taaskasutus
+renewable_energy|Taastuvenergia|päikesepaneelid, tuuleenergia, roheenergia, soojuspump
+marketing_agency|Turundusagentuur|turundus, reklaam, kampaania, reklaamiagentuur
+graphic_design|Graafiline disain|graafiline disainer, logo, graafiline disain, küljendus
+photography|Fotograafia|fotograaf, fotostuudio, pulmafotograaf, portreed
+video_production|Videotootmine|videotootmine, filmimine, monteerimine, droon
+printing_signage|Trükk ja sildid|trükikoda, trükk, sildid, kleebised
+wholesale|Hulgimüük|hulgimüük, edasimüüja, tarnija, kaubad
+ecommerce|E-pood|e-pood, veebipood, marketplace, tellimused
+security_services|Turvateenused|turvamees, valve, turvateenus, valvekaamerad
+hairdressing|Juuksur|juuksur, lõikus, juuksevärv, salong
+beauty_salon|Ilusalong|ilusalong, kosmeetik, küüned, näohooldus
+massage_therapy|Massaaž|massöör, massaaž, heaolu, lõõgastus
+fitness_training|Treening ja fitness|treener, jõusaal, treening, jõutreening
+shop_general|Kauplus|pood, kauplus, jaekaubandus, kaubad
+shop_bicycle|Jalgrattapood ja hooldus|jalgrattapood, jalgrattad, rattaremont, elektriratas
+shop_auto_parts|Autovaruosad|varuosad, autoosad, autotarvikud, filtrid
+shop_hardware|Ehituspood ja tööriistad|ehituspood, rauakauplus, tööriistad, kruvid
+shop_furniture|Mööbel|mööblipood, mööbel, diivanid, köögid
+shop_electronics|Elektroonika ja kodutehnika|elektroonika, kodumasinad, teler, pesumasin
+shop_clothing|Rõivad|rõivapood, mood, jalatsid, riided
+shop_grocery|Toidupood|toidupood, toidukaubad, selver, väikepood
+shop_sports|Spordikaubad|spordipood, spordivarustus, matkatarbed, suusad
+shop_books|Raamatupood ja kirjatarbed|raamatupood, kontoritarbed, raamatud, paberikaubad
+shop_florist|Lillepood|lillepood, lilled, kimbud, pärjad
+shop_pet|Lemmikloomapood|lemmikloomapood, koeratoit, akvaarium, kassiliiv
+motorcycle_repair|Mootorrataste remont|mootorrattatöökoda, mootorratas, roller, mopeed
+bar|Baar|baar, pubi, kokteilibaar, joogid
+kebab_shawarma|Kebab ja šawarma|kebab, shawarma, gyros, kebabikoht
+pizzeria|Pitsarestoran|pitsa, pitsarestoran, pitsa kaasa, itaalia
+fast_food|Kiirtoit|kiirtoit, burger, friikartulid, snäkibaar
+bakery|Pagariäri|pagariäri, leib, saiakesed, pagar
+pastry_shop|Kondiitriäri|kondiitriäri, koogid, saiakesed, magustoidud
+coffee_shop|Kohvik|kohvik, kohv, espresso, barista
+food_truck|Toiduauto|toiduauto, tänavatoit, foodtruck
+butcher|Lihapood|lihapood, liha, vorstid, lihalett
+ice_cream|Jäätisebaar|jäätis, jäätisekiosk, pehme jäätis, gelato
+winery|Veinimõis|veinitalu, vein, veinikelder, veinidegusteerimine
+brewery|Õlletehas|õlletehas, õlu, väikepruulikoda, vaadiõlu
+nightclub|Ööklubi ja disko|ööklubi, disko, tantsimine, dj
+beach_club|Rannabaar ja rannaklubi|rannabaar, päevitustoolid, rand, supelrand
+bowling_billiards|Bowling ja piljard|bowling, piljard, nooleviske, pool
+travel_agency|Reisibüroo|reisibüroo, reisid, lennupiletid, pakettreisid
+nail_salon|Küünesalong, maniküür ja pediküür|küünesalong, maniküür, pediküür, geelküüned
+barber|Habemeajaja|habemeajaja, meeste juuksur, habe, raseerimine
+tattoo_piercing|Tätoveering ja augustamine|tätoveering, tätoveerija, augustamine, tattoo
+spa_sauna|Spaa ja saun|spaa, saun, heaolu, aurusaun
+cosmetics_shop|Kosmeetikapood|parfümeeria, meigitooted, nahahooldus, kosmeetika
+dry_cleaning|Keemiline puhastus ja pesumaja|keemiline puhastus, pesumaja, triikimine, pesupesemine
+podiatry|Podoloogia ja jalahooldus|jalahooldus, pediküür, sissekasvanud küüs, jalad
+dental_laboratory|Hambalabor|hambatehnik, hambaproteesid, kroonid, sillad
+orthodontics|Ortodontia|hambaklambrid, ortodont, hammaste sirgendamine, aligner
+dermatology|Dermatoloogia|nahaarst, dermatoloog, sünnimärgid, akne
+paediatrics|Lastearst|lastearst, pediaater, imik, lapsed
+gynaecology|Günekoloogia|günekoloog, naistearst, rasedus, sünnitusabi
+cardiology|Kardioloogia|kardioloog, südamearst, ekg, süda
+medical_imaging|Radioloogia|röntgen, ultraheli, magnetresonants, kompuutertomograafia
+speech_therapy|Logopeedia|logopeed, kõneravi, kokutamine, kõne
+nutrition_dietetics|Toitumine ja dieteetika|toitumisnõustaja, dietoloog, dieet, kaalulangetus
+bicycle_repair|Jalgrataste remont|rattaremont, jalgratta parandus, rehviparandus, rattahooldus
+scooter_repair|Rollerite ja mopeedide remont|rolleri remont, roller, vespa, mopeed
+appliance_repair|Kodumasinate remont|kodumasinate remont, pesumasin, külmkapp, ahi
+phone_repair|Telefonide ja tahvlite remont|telefoni remont, ekraani vahetus, iphone, tahvelarvuti
+computer_repair|Arvutiremont|arvutiremont, sülearvuti, pc, andmete taastamine
+watch_jewellery_repair|Kellade ja ehete remont|kellassepp, kullassepp, patarei vahetus, sõrmuse suurendamine
+shoe_repair|Kingsepp|kingsepp, jalatsiparandus, kontsad, tallad
+tailoring_alterations|Rätsep ja parandustööd|rätsep, õmbleja, lühendamine, riiete parandus
+upholstery|Polsterdus|polsterdaja, polsterdus, diivani katmine, pehmendus
+glazing|Klaasitööd ja aknad|klaasija, aknad, klaaspaketid, klaas
+chimney_sweep|Korstnapühkimine|korstnapühkija, korsten, korstnapühkimine, tahm
+pest_control|Kahjuritõrje|kahjuritõrje, lutikad, rotid, prussakad
+pool_maintenance|Basseinihooldus|basseinihooldus, basseini puhastus, kloor, bassein
+window_cleaning|Aknapesu|akende pesu, aknapesija, fassaadipesu, aknad
+car_wash|Autopesula|autopesula, auto pesemine, salongipuhastus, poleerimine
+car_rental|Autorent|autorent, rendiauto, auto üürimine, sõidukirent
+bike_scooter_rental|Jalgrataste ja tõukerataste rent|rattarent, elektritõukeratas, ratta üürimine, tõukeratas
+funeral_services|Matusebüroo|matusebüroo, matused, tuhastamine, kirst
+notary|Notar|notar, notariaalne kinnitamine, volikiri, dokumendid
+bailiff|Kohtutäitur|kohtutäitur, arestimine, sissenõudmine, täitemenetlus
+patent_trademark|Patendid ja kaubamärgid|patendibüroo, kaubamärgi registreerimine, patent, intellektuaalomand
+debt_collection|Võlgade sissenõudmine|võlgade sissenõudmine, võlad, meeldetuletus, tasumata arved
+company_formation|Ettevõtte asutamine|ettevõtte asutamine, äriregister, osaühing, registrikood
+financial_advisory|Finantsnõustamine|finantsnõustaja, investeeringud, varad, pensionisääst
+payroll_services|Palgaarvestus|palgaarvestus, palgateatis, palgad, personaliarvestus
+currency_exchange|Valuutavahetus|valuutavahetus, valuuta, välisvaluuta, vahetuskurss
+pawnshop|Pandimaja|pandimaja, pant, laen pandi vastu, kulla ost
+leasing|Liising ja finantseerimine|liising, finantseerimine, järelmaks, autoliising
+hearing_aids|Kuuldeaparaadid|kuuldeaparaat, kuulmise test, audioloog, kuulmiskeskus
+medical_transport|Meditsiiniline transport|kiirabi, patsiendivedu, kanderaam, haigetransport
+rehabilitation|Taastusravikeskus|taastusravi, rehabilitatsioon, taastumine, järelravi
+occupational_therapy|Tegevusteraapia|tegevusterapeut, tegevusteraapia, igapäevaoskused, harjutamine
+midwifery|Ämmaemandus|ämmaemand, sünnitus, rasedus, sünnituseelne hooldus
+acupuncture|Nõelravi|nõelravi, nõelad, hiina meditsiin, akupunktuur
+chiropractic|Kiropraktika ja osteopaatia|kiropraktik, osteopaat, selgroog, seljavalu
+insulation|Soojustus|soojustus, lisasoojustus, katuse soojustus, isolatsioonimaterjal
+waterproofing|Hüdroisolatsioon|hüdroisolatsioon, niiskus, katuse tihendamine, membraan
+plastering|Krohvimine ja pahteldamine|krohvija, krohv, pahteldamine, viimistlus
+tiling|Plaatimine|plaatija, plaadid, keraamilised plaadid, vannitoa plaatimine
+drywall|Kipsplaadid ja vaheseinad|kipsplaat, vaheseinad, ripplagi, plaadistamine
+fencing|Aiad ja väravad|aed, värav, piirdeaed, võrkaed
+paving|Sillutis ja sissesõiduteed|sillutis, sissesõidutee, kõnnitee, äärekivid
+well_drilling|Puurkaevude rajamine|puurkaev, puurimine, veekaev, põhjavesi
+septic_systems|Kogumismahutid ja kanalisatsioon|septik, kanalisatsioon, imbväljak, reovesi
+solar_panels|Päikesepaneelide paigaldus|päikesepaneelid, päikeseenergia, inverter, päikesejaam
+alarm_cctv|Valve- ja videosüsteemid|valvesüsteem, valvekaamera, videovalve, murdvargusalarm
+smart_home|Tark kodu|nutikodu, nutivalgustus, koduautomaatika, juhtimine
+lift_maintenance|Liftide hooldus|lift, lifti hooldus, eskalaator, lifti remont
+fire_safety|Tuleohutus ja kustutid|tulekustutid, tulekahjuandur, sprinkler, tuleohutus
+car_dealer|Autosalong|autosalong, kasutatud autod, autode müük, automüüja
+vehicle_inspection|Tehnoülevaatus|tehniline ülevaatus, ülevaatus, ülevaatuspunkt, autoülevaatus
+auto_electrics|Autoelektroonika|autoelektrik, generaator, starter, auto elektrisüsteem
+car_glass|Autoklaasid ja tuuleklaasid|esiklaas, klaasivahetus, autoklaas, kivipõrge
+boat_repair|Paatide remont|paadiremont, päramootor, paat, paadimootor
+bus_charter|Busside rent|bussirent, turismibuss, väikebuss, grupivedu
+call_centre|Kõnekeskus|klienditugi, telemarketing, telefonitugi, kõnekeskus
+virtual_assistant|Virtuaalassistent|virtuaalassistent, haldustugi, kaugsekretär, vabakutseline
+market_research|Turu-uuringud|turu-uuring, küsitlused, tarbijauuring, fookusgrupp
+copywriting|Sisuloome|tekstikirjutaja, korrektuur, sisuloome, toimetamine
+seo_services|SEO ja veebireklaam|otsingumootori optimeerimine, google ads, veebireklaam, sem
+social_media|Sotsiaalmeedia haldus|sotsiaalmeedia, instagram, facebook, tiktok
+app_development|Mobiilirakenduste arendus|rakenduste arendus, android, mobiilirakendused, flutter
+game_development|Mängude arendus|mänguarendus, unity, unreal, mängustuudio
+drone_services|Drooniteenused|droon, õhufoto, droonivõtted, kaardistamine
+printing_3d|3D-printimine|3d-printimine, prototüübid, kihtlisandustehnoloogia, 3d-printer
+interior_design|Sisekujundus|sisearhitekt, sisekujundus, ruumiplaneerimine, stiliseerimine
+dance_school|Tantsukool|tantsukool, ballett, salsa, tantsutunnid
+art_gallery|Kunstigalerii ja raamimine|raamimine, raamid, näitused, kunstikauplus

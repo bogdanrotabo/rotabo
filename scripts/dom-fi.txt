@@ -1,213 +1,213 @@
-taxi|Taksi|
-ride_hailing|Kyytipalvelu sovelluksella|
-chauffeur|Kuljettajapalvelut|
-driving_school|Autokoulu|
-translation|Käännökset|
-interpreting|Tulkkaus|
-sworn_translation|Auktorisoidut käännökset|
-language_school|Kielikoulu|
-removals|Muutot|
-international_removals|Kansainväliset muutot|
-courier|Kuriiripalvelut|
-freight_forwarding|Huolinta|
-refrigerated_transport|Kylmäkuljetus|
-haulage|Rahtiliikenne|
-storage_warehousing|Varastointi|
-customs_brokerage|Tullaus|
-excavation|Kaivuu ja maanrakennus|
-crane_hire|Nosturivuokraus|
-scaffolding|Telineet|
-demolition|Purkutyöt|
-concrete_works|Betonityöt|
-surveying|Maanmittaus|
-tool_hire|Työkaluvuokraus|
-machinery_rental|Konevuokraus|
-generator_hire|Aggregaattivuokraus|
-electrical_installation|Sähköasennukset|
-plumbing|Putkityöt|
-heating_hvac|Lämmitys ja ilmanvaihto|
-air_conditioning|Ilmastointi|
-painting_decorating|Maalaus ja tapetointi|
-carpentry|Puusepäntyöt|
-flooring|Lattiatyöt|
-roofing|Kattotyöt|
-locksmith|Lukkoseppä|
-cleaning_services|Siivouspalvelut|
-gardening_landscaping|Puutarha ja viherrakentaminen|
-renovation|Remontointi|
-car_repair|Autokorjaamo|
-mobile_mechanic|Liikkuva mekaanikko|
-tyre_service|Rengaspalvelu|
-bodywork_paint|Kolarikorjaus ja maalaus|
-towing_recovery|Hinaus|
-childcare|Lastenhoito|
-elderly_care|Vanhustenhoito|
-home_nursing|Kotisairaanhoito|
-private_tutoring|Yksityisopetus|
-music_lessons|Musiikkitunnit|
-sports_coaching|Urheiluvalmennus|
-it_training|IT-koulutus|
-vocational_training|Ammattikoulutus|
-holiday_lettings|Lomavuokraus|
-guesthouse_bnb|Majatalo ja aamiaismajoitus|
-property_management|Kiinteistönhoito|
-veterinary|Eläinlääkäri|
-dog_walking|Koiran ulkoilutus|
-pet_grooming|Lemmikkien trimmaus|
-general_practice|Yleislääkäri|
-dentistry|Hammashoito|
-physiotherapy|Fysioterapia|
-psychology|Psykologia|
-pharmacy|Apteekki|
-optometry|Optikko|
-medical_laboratory|Lääketieteellinen laboratorio|
-software_development|Ohjelmistokehitys|
-web_development|Verkkosivujen teko|
-it_support|IT-tuki|
-cybersecurity|Kyberturvallisuus|
-data_ai|Data ja tekoäly|
-cloud_hosting|Pilvi ja webhotelli|
-accounting|Kirjanpito|
-audit_tax|Tilintarkastus ja verotus|
-legal_services|Lakipalvelut|
-hr_recruitment|HR ja rekrytointi|
-management_consulting|Liikkeenjohdon konsultointi|
-insurance_brokerage|Vakuutusmeklari|
-real_estate_agency|Kiinteistönvälitys|
-architecture|Arkkitehtuuri|
-manufacturing|Valmistus|
-cnc_machining|CNC-koneistus|
-metalwork_welding|Metallityöt ja hitsaus|
-restaurant|Ravintola|
-catering|Pitopalvelu|
-hotel|Hotelli|
-event_management|Tapahtumajärjestäminen|
-agriculture|Maatalous|
-forestry|Metsätalous|
-waste_recycling|Jäte ja kierrätys|
-renewable_energy|Uusiutuva energia|
-marketing_agency|Markkinointitoimisto|
-graphic_design|Graafinen suunnittelu|
-photography|Valokuvaus|
-video_production|Videotuotanto|
-printing_signage|Painatus ja kyltit|
-wholesale|Tukkukauppa|
-ecommerce|Verkkokauppa|
-security_services|Turvallisuuspalvelut|
-hairdressing|Kampaamo|
-beauty_salon|Kauneushoitola|
-massage_therapy|Hieronta|
-fitness_training|Kuntovalmennus|
-shop_general|Kauppa|
-shop_bicycle|Polkupyöräkauppa ja huolto|
-shop_auto_parts|Autonosat|
-shop_hardware|Rautakauppa ja työkalut|
-shop_furniture|Huonekalut|
-shop_electronics|Elektroniikka ja kodinkoneet|
-shop_clothing|Vaatteet|
-shop_grocery|Ruokakauppa|
-shop_sports|Urheiluvälineet|
-shop_books|Kirjakauppa ja paperitarvikkeet|
-shop_florist|Kukkakauppa|
-shop_pet|Lemmikkitarvikkeet|
-motorcycle_repair|Moottoripyöräkorjaamo|
-bar|Baari|
-kebab_shawarma|Kebab ja shawarma|
-pizzeria|Pizzeria|
-fast_food|Pikaruoka|
-bakery|Leipomo|
-pastry_shop|Konditoria|
-coffee_shop|Kahvila|
-food_truck|Ruokarekka|
-butcher|Lihakauppa|
-ice_cream|Jäätelöbaari|
-winery|Viinitila|
-brewery|Panimo|
-nightclub|Yökerho ja disko|
-beach_club|Rantabaari ja rantaklubi|
-bowling_billiards|Keilailu ja biljardi|
-travel_agency|Matkatoimisto|
-nail_salon|Kynsistudio, manikyyri ja pedikyyri|
-barber|Parturi|
-tattoo_piercing|Tatuointi ja lävistykset|
-spa_sauna|Kylpylä ja sauna|
-cosmetics_shop|Kosmetiikkakauppa|
-dry_cleaning|Kuivapesula ja pesula|
-podiatry|Jalkaterapia ja jalkahoito|
-dental_laboratory|Hammaslaboratorio|
-orthodontics|Oikomishoito|
-dermatology|Ihotautilääkäri|
-paediatrics|Lastenlääkäri|
-gynaecology|Gynekologia|
-cardiology|Kardiologia|
-medical_imaging|Kuvantaminen|
-speech_therapy|Puheterapia|
-nutrition_dietetics|Ravitsemus ja dietetiikka|
-bicycle_repair|Polkupyörän korjaus|
-scooter_repair|Skootterin ja mopon korjaus|
-appliance_repair|Kodinkoneiden korjaus|
-phone_repair|Puhelimen ja tabletin korjaus|
-computer_repair|Tietokoneen korjaus|
-watch_jewellery_repair|Kellojen ja korujen korjaus|
-shoe_repair|Suutari|
-tailoring_alterations|Ompelu ja korjaukset|
-upholstery|Verhoilu|
-glazing|Lasitus ja ikkunat|
-chimney_sweep|Nuohous|
-pest_control|Tuholaistorjunta|
-pool_maintenance|Uima-altaan huolto|
-window_cleaning|Ikkunanpesu|
-car_wash|Autopesu|
-car_rental|Autovuokraamo|
-bike_scooter_rental|Polkupyörien ja sähköpotkulautojen vuokraus|
-funeral_services|Hautaustoimisto|
-notary|Julkinen notaari|
-bailiff|Ulosotto ja perintä|
-patent_trademark|Patentit ja tavaramerkit|
-debt_collection|Perintäpalvelut|
-company_formation|Yrityksen perustaminen|
-financial_advisory|Talousneuvonta|
-payroll_services|Palkanlaskenta|
-currency_exchange|Valuutanvaihto|
-pawnshop|Panttilainaamo|
-leasing|Leasing ja rahoitus|
-hearing_aids|Kuulokojeet|
-medical_transport|Sairaankuljetus|
-rehabilitation|Kuntoutuskeskus|
-occupational_therapy|Toimintaterapia|
-midwifery|Kätilötyö|
-acupuncture|Akupunktio|
-chiropractic|Kiropraktiikka ja osteopatia|
-insulation|Lämmöneristys|
-waterproofing|Vedeneristys|
-plastering|Rappaus ja tasoitus|
-tiling|Laatoitus|
-drywall|Kipsilevyt ja väliseinät|
-fencing|Aidat ja portit|
-paving|Kiveys ja pihatiet|
-well_drilling|Kaivonporaus|
-septic_systems|Sakokaivot ja viemäröinti|
-solar_panels|Aurinkopaneelien asennus|
-alarm_cctv|Hälytys- ja kameravalvonta|
-smart_home|Älykoti|
-lift_maintenance|Hissien huolto|
-fire_safety|Paloturvallisuus ja sammuttimet|
-car_dealer|Autoliike|
-vehicle_inspection|Katsastus|
-auto_electrics|Autosähkötyöt|
-car_glass|Autolasit ja tuulilasit|
-boat_repair|Veneiden korjaus|
-bus_charter|Linja-autojen vuokraus|
-call_centre|Puhelinpalvelukeskus|
-virtual_assistant|Virtuaaliassistentti|
-market_research|Markkinatutkimus|
-copywriting|Sisällöntuotanto|
-seo_services|Hakukoneoptimointi ja verkkomainonta|
-social_media|Sosiaalisen median hallinta|
-app_development|Mobiilisovelluskehitys|
-game_development|Pelinkehitys|
-drone_services|Dronepalvelut|
-printing_3d|3D-tulostus|
-interior_design|Sisustussuunnittelu|
-dance_school|Tanssikoulu|
-art_gallery|Taidegalleria ja kehystys|
+taxi|Taksi|taksi, kyyti, kuljetus, lentokenttä
+ride_hailing|Kyytipalvelu sovelluksella|uber, bolt, kimppakyyti, sovellus
+chauffeur|Kuljettajapalvelut|yksityiskuljettaja, limusiini, autonkuljettaja
+driving_school|Autokoulu|autokoulu, ajotunnit, ajokortti, ajo-opettaja
+translation|Käännökset|kääntäjä, asiakirjat, käännös, sopimus
+interpreting|Tulkkaus|tulkki, simultaanitulkkaus, konferenssi, kokous
+sworn_translation|Auktorisoidut käännökset|auktorisoitu kääntäjä, virallinen käännös, leima, asiakirja
+language_school|Kielikoulu|kielikurssit, englannin opetus, opettaja, kielikoulu
+removals|Muutot|muutto, muuttofirma, muuttoauto, laatikot
+international_removals|Kansainväliset muutot|ulkomaanmuutto, relokaatio, kontti, tulli
+courier|Kuriiripalvelut|lähetti, toimitus, paketti, kuriiripalvelu
+freight_forwarding|Huolinta|huolinta, logistiikka, rahti, lava
+refrigerated_transport|Kylmäkuljetus|kylmäkuljetus, pakaste, kylmäauto, kylmäketju
+haulage|Rahtiliikenne|kuljetusliike, rekka, tavarakuljetus, perävaunu
+storage_warehousing|Varastointi|varasto, varastointi, säilytys, hyllyt
+customs_brokerage|Tullaus|tullaus, tulli, tuonti, vienti
+excavation|Kaivuu ja maanrakennus|maanrakennus, kaivinkone, maansiirto, kaivuu
+crane_hire|Nosturivuokraus|nosturi, nosturivuokraus, nosto, autonosturi
+scaffolding|Telineet|telineet, rakennustelineet, telinetyö, työtaso
+demolition|Purkutyöt|purku, purkutyö, purkujäte, piikkaus
+concrete_works|Betonityöt|betoni, valu, perustukset, tasoite
+surveying|Maanmittaus|maanmittaus, mittaus, kartoitus, tontin rajat
+tool_hire|Työkaluvuokraus|työkaluvuokraus, työkalut, porakone, kulmahiomakone
+machinery_rental|Konevuokraus|konevuokraus, koneet, trukki, työkoneet
+generator_hire|Aggregaattivuokraus|aggregaatti, generaattori, varavoima, sähkökaapeli
+electrical_installation|Sähköasennukset|sähköasentaja, sähköasennus, sähkökeskus, pistorasia
+plumbing|Putkityöt|putkimies, lvi, putket, kylpyhuone
+heating_hvac|Lämmitys ja ilmanvaihto|lämmitys, kattila, patterit, lattialämmitys
+air_conditioning|Ilmastointi|ilmastointi, jäähdytys, ilmalämpöpumppu, split
+painting_decorating|Maalaus ja tapetointi|maalari, maalaus, tapetointi, tasoitus
+carpentry|Puusepäntyöt|puuseppä, kirvesmies, huonekalut, puu
+flooring|Lattiatyöt|lattia-asentaja, parketti, laminaatti, lattian hionta
+roofing|Kattotyöt|kattoasentaja, katto, sadevesikourut, huopakatto
+locksmith|Lukkoseppä|lukkoseppä, lukot, avaimet, oven avaus
+cleaning_services|Siivouspalvelut|siivous, siivousfirma, toimistosiivous, suursiivous
+gardening_landscaping|Puutarha ja viherrakentaminen|puutarhuri, nurmikon leikkuu, pensasaita, piha
+renovation|Remontointi|remontti, saneeraus, rakennusfirma, remonttimies
+car_repair|Autokorjaamo|autokorjaamo, mekaanikko, huolto, auton korjaus
+mobile_mechanic|Liikkuva mekaanikko|liikkuva mekaanikko, tiepalvelu, apukäynnistys, hinaus
+tyre_service|Rengaspalvelu|renkaat, rengasvaihto, rengasrikko, tasapainotus
+bodywork_paint|Kolarikorjaus ja maalaus|automaalaus, peltityö, kolarikorjaus, kori
+towing_recovery|Hinaus|hinaus, hinausauto, tiepalvelu, vinssi
+childcare|Lastenhoito|lastenhoito, päiväkoti, lastenhoitaja, hoitopaikka
+elderly_care|Vanhustenhoito|vanhustenhoito, hoivakoti, kotihoito, ikäihmiset
+home_nursing|Kotisairaanhoito|kotisairaanhoito, sairaanhoitaja, hoito kotona, haavanhoito
+private_tutoring|Yksityisopetus|tukiopetus, yksityisopettaja, kokeisiin valmistautuminen, läksyapu
+music_lessons|Musiikkitunnit|piano, kitara, laulu, musiikkitunnit
+sports_coaching|Urheiluvalmennus|valmentaja, jalkapallo, tennis, harjoittelu
+it_training|IT-koulutus|tietokonekurssit, excel, ohjelmointikurssi, it-koulutus
+vocational_training|Ammattikoulutus|ammattikoulutus, ammattikurssi, sertifiointi, oppisopimus
+holiday_lettings|Lomavuokraus|mökki, lomahuoneisto, vuokraus, airbnb
+guesthouse_bnb|Majatalo ja aamiaismajoitus|aamiaismajoitus, majatalo, täysihoitola, huoneet
+property_management|Kiinteistönhoito|isännöinti, kiinteistönhoito, vuokraus, taloyhtiö
+veterinary|Eläinlääkäri|eläinlääkäri, eläinklinikka, rokotus, koira
+dog_walking|Koiran ulkoilutus|koiran ulkoilutus, koiranulkoiluttaja, lenkitys
+pet_grooming|Lemmikkien trimmaus|koiratrimmaus, trimmaus, turkinhoito, eläinsalonki
+general_practice|Yleislääkäri|lääkäri, terveyskeskus, yleislääkäri, resepti
+dentistry|Hammashoito|hammaslääkäri, hammashoito, paikkaus, implantti
+physiotherapy|Fysioterapia|fysioterapia, fysioterapeutti, kuntoutus, hoito
+psychology|Psykologia|psykologi, terapia, keskusteluterapia, psykoterapia
+pharmacy|Apteekki|apteekki, lääkkeet, reseptilääke, ravintolisät
+optometry|Optikko|optikko, silmälasit, näöntarkastus, piilolinssit
+medical_laboratory|Lääketieteellinen laboratorio|laboratorio, verikokeet, analyysit, näytteenotto
+software_development|Ohjelmistokehitys|ohjelmoija, kehittäjä, ohjelmisto, koodi
+web_development|Verkkosivujen teko|verkkosivut, web-suunnittelu, wordpress, verkkokauppa
+it_support|IT-tuki|it-tuki, verkko, tietokoneapu, järjestelmänvalvoja
+cybersecurity|Kyberturvallisuus|tietoturva, tietoturvatestaus, palomuuri, penetraatiotesti
+data_ai|Data ja tekoäly|tekoäly, koneoppiminen, data-analytiikka, algoritmit
+cloud_hosting|Pilvi ja webhotelli|webhotelli, palvelin, pilvi, verkkotunnus
+accounting|Kirjanpito|kirjanpitäjä, kirjanpito, tilitoimisto, laskutus
+audit_tax|Tilintarkastus ja verotus|tilintarkastaja, veroneuvonta, tilinpäätös, arvonlisävero
+legal_services|Lakipalvelut|asianajaja, lakimies, oikeudellinen neuvonta, sopimus
+hr_recruitment|HR ja rekrytointi|rekrytointi, henkilöstövuokraus, headhunter, työnvälitys
+management_consulting|Liikkeenjohdon konsultointi|konsultti, liikkeenjohdon konsultointi, strategia, liiketoimintasuunnitelma
+insurance_brokerage|Vakuutusmeklari|vakuutusmeklari, vakuutus, vakuutuskirja, korvaus
+real_estate_agency|Kiinteistönvälitys|kiinteistönvälittäjä, välittäjä, asunto, talo
+architecture|Arkkitehtuuri|arkkitehti, piirustukset, rakennuslupa, suunnittelu
+manufacturing|Valmistus|valmistus, tehdas, teollisuus, kokoonpano
+cnc_machining|CNC-koneistus|cnc, sorvaus, jyrsintä, koneistus
+metalwork_welding|Metallityöt ja hitsaus|hitsaus, seppä, teräs, metallityö
+restaurant|Ravintola|ravintola, ruoka, ruokapaikka, ruokalista
+catering|Pitopalvelu|pitopalvelu, juhlaruoka, buffet, tarjoilu
+hotel|Hotelli|hotelli, majoitus, hostelli, huoneet
+event_management|Tapahtumajärjestäminen|tapahtumatoimisto, hääsuunnittelija, konferenssi, tapahtuma
+agriculture|Maatalous|maatalous, maatila, traktori, sadonkorjuu
+forestry|Metsätalous|metsätalous, puunkorjuu, puutavara, moottorisaha
+waste_recycling|Jäte ja kierrätys|jäte, jätelava, romu, kierrätys
+renewable_energy|Uusiutuva energia|aurinkopaneelit, tuulivoima, vihreä energia, lämpöpumppu
+marketing_agency|Markkinointitoimisto|markkinointi, mainonta, kampanja, mainostoimisto
+graphic_design|Graafinen suunnittelu|graafinen suunnittelija, logo, graafinen suunnittelu, taitto
+photography|Valokuvaus|valokuvaaja, valokuvausstudio, häävalokuvaaja, muotokuvat
+video_production|Videotuotanto|videotuotanto, kuvaus, editointi, drone
+printing_signage|Painatus ja kyltit|painotalo, painatus, kyltit, teippaukset
+wholesale|Tukkukauppa|tukkukauppa, tukkuliike, toimittaja, tavarat
+ecommerce|Verkkokauppa|verkkokauppa, nettikauppa, marketplace, tilaukset
+security_services|Turvallisuuspalvelut|vartija, vartiointi, valvonta, järjestyksenvalvonta
+hairdressing|Kampaamo|kampaaja, hiustenleikkuu, hiusväri, parturi-kampaamo
+beauty_salon|Kauneushoitola|kauneushoitola, kosmetologi, kynnet, kasvohoito
+massage_therapy|Hieronta|hieroja, hieronta, hyvinvointi, rentoutus
+fitness_training|Kuntovalmennus|personal trainer, kuntosali, treeni, voimaharjoittelu
+shop_general|Kauppa|kauppa, myymälä, vähittäiskauppa, tavarat
+shop_bicycle|Polkupyöräkauppa ja huolto|pyöräliike, polkupyörät, pyörähuolto, sähköpyörä
+shop_auto_parts|Autonosat|varaosat, autonosat, autotarvikkeet, suodattimet
+shop_hardware|Rautakauppa ja työkalut|rautakauppa, rakennustarvikkeet, työkalut, ruuvit
+shop_furniture|Huonekalut|huonekaluliike, huonekalut, sohvat, keittiöt
+shop_electronics|Elektroniikka ja kodinkoneet|elektroniikka, kodinkoneet, televisio, pesukone
+shop_clothing|Vaatteet|vaatekauppa, muoti, kengät, vaatteet
+shop_grocery|Ruokakauppa|ruokakauppa, päivittäistavarat, market, lähikauppa
+shop_sports|Urheiluvälineet|urheiluliike, urheiluvälineet, retkeily, sukset
+shop_books|Kirjakauppa ja paperitarvikkeet|kirjakauppa, toimistotarvikkeet, kirjat, paperitavarat
+shop_florist|Kukkakauppa|kukkakauppa, kukat, kimput, seppeleet
+shop_pet|Lemmikkitarvikkeet|eläinkauppa, koiranruoka, akvaario, kissanhiekka
+motorcycle_repair|Moottoripyöräkorjaamo|moottoripyöräkorjaamo, moottoripyörä, skootteri, mopo
+bar|Baari|baari, pubi, cocktailbaari, juomat
+kebab_shawarma|Kebab ja shawarma|kebab, shawarma, gyros, kebab-ravintola
+pizzeria|Pizzeria|pizza, pizzeria, pizzan nouto, italialainen
+fast_food|Pikaruoka|pikaruoka, hampurilainen, ranskalaiset, grilli
+bakery|Leipomo|leipomo, leipä, sämpylät, leipuri
+pastry_shop|Konditoria|konditoria, kakut, leivokset, jälkiruoat
+coffee_shop|Kahvila|kahvila, kahvi, espresso, barista
+food_truck|Ruokarekka|ruoka-auto, katuruoka, foodtruck
+butcher|Lihakauppa|lihakauppa, liha, makkarat, lihatiski
+ice_cream|Jäätelöbaari|jäätelö, jäätelökioski, pehmis, gelato
+winery|Viinitila|viinitila, viini, viinikellari, viininmaistelu
+brewery|Panimo|panimo, olut, pienpanimo, hanaolut
+nightclub|Yökerho ja disko|yökerho, disko, tanssi, dj
+beach_club|Rantabaari ja rantaklubi|rantabaari, aurinkotuolit, ranta, uimaranta
+bowling_billiards|Keilailu ja biljardi|keilailu, biljardi, tikka, pool
+travel_agency|Matkatoimisto|matkatoimisto, matkat, lentoliput, pakettimatkat
+nail_salon|Kynsistudio, manikyyri ja pedikyyri|kynsistudio, manikyyri, pedikyyri, geelikynnet
+barber|Parturi|parturi, miesten hiustenleikkuu, parta, parranajo
+tattoo_piercing|Tatuointi ja lävistykset|tatuointi, tatuoija, lävistys, tatuointistudio
+spa_sauna|Kylpylä ja sauna|kylpylä, sauna, hyvinvointi, höyrysauna
+cosmetics_shop|Kosmetiikkakauppa|kosmetiikka, meikit, ihonhoito, hajuvedet
+dry_cleaning|Kuivapesula ja pesula|pesula, kuivapesu, silitys, pyykki
+podiatry|Jalkaterapia ja jalkahoito|jalkahoito, jalkaterapeutti, sisäänkasvanut kynsi, jalat
+dental_laboratory|Hammaslaboratorio|hammasteknikko, hammasproteesit, kruunut, sillat
+orthodontics|Oikomishoito|oikomishoito, hammasraudat, hammasrautahoito, aligner
+dermatology|Ihotautilääkäri|ihotautilääkäri, dermatologi, luomet, akne
+paediatrics|Lastenlääkäri|lastenlääkäri, pediatri, vauva, lapset
+gynaecology|Gynekologia|gynekologi, naistentaudit, raskaus, synnytyslääkäri
+cardiology|Kardiologia|sydänlääkäri, kardiologi, ekg, sydän
+medical_imaging|Kuvantaminen|röntgen, ultraääni, magneettikuvaus, tietokonetomografia
+speech_therapy|Puheterapia|puheterapeutti, logopedia, änkytys, puhe
+nutrition_dietetics|Ravitsemus ja dietetiikka|ravitsemusterapeutti, ravintoneuvoja, ruokavalio, painonpudotus
+bicycle_repair|Polkupyörän korjaus|pyörähuolto, pyörän korjaus, rengasrikko, polkupyöräkorjaamo
+scooter_repair|Skootterin ja mopon korjaus|mopokorjaamo, skootteri, vespa, mopo
+appliance_repair|Kodinkoneiden korjaus|kodinkonekorjaus, pesukone, jääkaappi, uuni
+phone_repair|Puhelimen ja tabletin korjaus|puhelinkorjaus, näytön vaihto, iphone, tabletti
+computer_repair|Tietokoneen korjaus|tietokonekorjaus, kannettava, pc, tietojen palautus
+watch_jewellery_repair|Kellojen ja korujen korjaus|kelloseppä, kultaseppä, pariston vaihto, sormuksen koon muutos
+shoe_repair|Suutari|suutari, kengänkorjaus, korot, pohjat
+tailoring_alterations|Ompelu ja korjaukset|ompelija, räätäli, lyhennys, vaatteiden korjaus
+upholstery|Verhoilu|verhoilija, verhoilu, sohvan päällystys, pehmustus
+glazing|Lasitus ja ikkunat|lasittaja, ikkunat, eristyslasi, lasi
+chimney_sweep|Nuohous|nuohooja, savupiippu, nuohous, hormi
+pest_control|Tuholaistorjunta|tuholaistorjunta, luteet, rotat, torakat
+pool_maintenance|Uima-altaan huolto|allashuolto, altaan puhdistus, kloori, uima-allas
+window_cleaning|Ikkunanpesu|ikkunanpesu, ikkunanpesijä, julkisivun pesu, ikkunat
+car_wash|Autopesu|autopesu, pesuhalli, sisäpuhdistus, vahaus
+car_rental|Autovuokraamo|autovuokraamo, vuokra-auto, auton vuokraus, ajoneuvovuokraus
+bike_scooter_rental|Polkupyörien ja sähköpotkulautojen vuokraus|pyörävuokraus, sähköpotkulauta, pyörän vuokraus, potkulauta
+funeral_services|Hautaustoimisto|hautaustoimisto, hautajaiset, tuhkaus, arkku
+notary|Julkinen notaari|notaari, julkinen notaari, vahvistus, valtakirja
+bailiff|Ulosotto ja perintä|ulosottomies, ulosotto, perintä, täytäntöönpano
+patent_trademark|Patentit ja tavaramerkit|patenttitoimisto, tavaramerkin rekisteröinti, patentti, immateriaalioikeus
+debt_collection|Perintäpalvelut|perintä, velat, maksumuistutus, maksamattomat laskut
+company_formation|Yrityksen perustaminen|yrityksen perustaminen, kaupparekisteri, osakeyhtiö, y-tunnus
+financial_advisory|Talousneuvonta|talousneuvonta, sijoitukset, varallisuus, eläkesäästäminen
+payroll_services|Palkanlaskenta|palkanlaskenta, palkkalaskelma, palkat, palkkahallinto
+currency_exchange|Valuutanvaihto|valuutanvaihto, valuutta, ulkomaan valuutta, vaihtokurssi
+pawnshop|Panttilainaamo|panttilainaamo, pantti, laina panttia vastaan, kullan osto
+leasing|Leasing ja rahoitus|leasing, rahoitus, osamaksu, autoleasing
+hearing_aids|Kuulokojeet|kuulokoje, kuulotesti, kuuloasiantuntija, kuulokeskus
+medical_transport|Sairaankuljetus|ambulanssi, potilaskuljetus, paarit, sairaankuljetus
+rehabilitation|Kuntoutuskeskus|kuntoutus, toipuminen, kuntoutuskeskus, jälkihoito
+occupational_therapy|Toimintaterapia|toimintaterapeutti, toimintaterapia, arjen taidot, harjoittelu
+midwifery|Kätilötyö|kätilö, synnytys, raskaus, äitiysneuvola
+acupuncture|Akupunktio|akupunktio, neulat, kiinalainen lääketiede, akupunktiohoito
+chiropractic|Kiropraktiikka ja osteopatia|kiropraktikko, osteopaatti, selkäranka, selkäkipu
+insulation|Lämmöneristys|eristys, lisäeristys, yläpohjan eristys, eristysmateriaali
+waterproofing|Vedeneristys|vedeneristys, kosteus, katon tiivistys, kosteussulku
+plastering|Rappaus ja tasoitus|rappaus, laasti, tasoitus, pinnoitus
+tiling|Laatoitus|laatoittaja, laatat, kaakelit, kylpyhuoneen laatoitus
+drywall|Kipsilevyt ja väliseinät|kipsilevyt, väliseinät, alaskatto, levytys
+fencing|Aidat ja portit|aita, portti, aidan rakennus, verkkoaita
+paving|Kiveys ja pihatiet|pihakivet, ajotie, laatoitus, reunakivet
+well_drilling|Kaivonporaus|kaivon poraus, porakaivo, vesikaivo, pohjavesi
+septic_systems|Sakokaivot ja viemäröinti|saostuskaivo, viemäröinti, imeytyskenttä, jätevesi
+solar_panels|Aurinkopaneelien asennus|aurinkopaneelit, aurinkosähkö, invertteri, aurinkovoimala
+alarm_cctv|Hälytys- ja kameravalvonta|hälytin, valvontakamera, kameravalvonta, murtohälytin
+smart_home|Älykoti|älykoti, älyvalaistus, kodin automaatio, ohjaus
+lift_maintenance|Hissien huolto|hissi, hissihuolto, liukuportaat, hissin korjaus
+fire_safety|Paloturvallisuus ja sammuttimet|sammuttimet, paloilmoitin, sprinkleri, paloturvallisuus
+car_dealer|Autoliike|autoliike, käytetyt autot, auton myynti, autokauppa
+vehicle_inspection|Katsastus|katsastus, määräaikaiskatsastus, katsastusasema, tekninen tarkastus
+auto_electrics|Autosähkötyöt|autosähköasentaja, laturi, käynnistinmoottori, auton sähköt
+car_glass|Autolasit ja tuulilasit|tuulilasi, lasin vaihto, autolasi, kiveniskemä
+boat_repair|Veneiden korjaus|venekorjaamo, perämoottori, vene, venemoottori
+bus_charter|Linja-autojen vuokraus|bussivuokraus, tilausbussi, pikkubussi, ryhmäkuljetus
+call_centre|Puhelinpalvelukeskus|asiakaspalvelu, telemarkkinointi, puhelintuki, yhteyskeskus
+virtual_assistant|Virtuaaliassistentti|virtuaaliassistentti, hallinnollinen tuki, etäsihteeri, freelancer
+market_research|Markkinatutkimus|markkinatutkimus, kyselyt, kuluttajatutkimus, fokusryhmä
+copywriting|Sisällöntuotanto|copywriter, oikoluku, sisällöntuotanto, tekstin muokkaus
+seo_services|Hakukoneoptimointi ja verkkomainonta|hakukoneoptimointi, google ads, verkkomainonta, sem
+social_media|Sosiaalisen median hallinta|sosiaalinen media, instagram, facebook, tiktok
+app_development|Mobiilisovelluskehitys|sovelluskehitys, android, mobiilisovellukset, flutter
+game_development|Pelinkehitys|pelinkehitys, unity, unreal, pelistudio
+drone_services|Dronepalvelut|drone, ilmakuvaus, dronekuvaus, kartoitus ilmasta
+printing_3d|3D-tulostus|3d-tulostus, prototyypit, ainetta lisäävä valmistus, 3d-tulostin
+interior_design|Sisustussuunnittelu|sisustussuunnittelija, sisustus, tilasuunnittelu, stailaus
+dance_school|Tanssikoulu|tanssikoulu, baletti, salsa, tanssitunnit
+art_gallery|Taidegalleria ja kehystys|kehystys, kehykset, näyttelyt, taidekauppa
