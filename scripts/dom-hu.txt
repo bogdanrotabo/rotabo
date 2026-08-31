@@ -1,213 +1,213 @@
-taxi|Taxi|
-ride_hailing|Applikációs fuvarszolgáltatás|
-chauffeur|Sofőrszolgálat|
-driving_school|Autósiskola|
-translation|Fordítás|
-interpreting|Tolmácsolás|
-sworn_translation|Hiteles fordítás|
-language_school|Nyelviskola|
-removals|Költöztetés|
-international_removals|Nemzetközi költöztetés|
-courier|Futárszolgálat|
-freight_forwarding|Szállítmányozás|
-refrigerated_transport|Hűtött szállítás|
-haulage|Teherfuvarozás|
-storage_warehousing|Raktározás|
-customs_brokerage|Vámügyintézés|
-excavation|Földmunka és kotrás|
-crane_hire|Darubérlés|
-scaffolding|Állványozás|
-demolition|Bontás|
-concrete_works|Betonozás|
-surveying|Földmérés|
-tool_hire|Szerszámkölcsönzés|
-machinery_rental|Gépkölcsönzés|
-generator_hire|Aggregátorbérlés|
-electrical_installation|Villanyszerelés|
-plumbing|Vízvezeték-szerelés|
-heating_hvac|Fűtés és légtechnika|
-air_conditioning|Klímaszerelés|
-painting_decorating|Festés és tapétázás|
-carpentry|Asztalosmunka|
-flooring|Burkolás és padló|
-roofing|Tetőfedés|
-locksmith|Zárszerviz|
-cleaning_services|Takarítás|
-gardening_landscaping|Kertészet és kertépítés|
-renovation|Felújítás|
-car_repair|Autószerviz|
-mobile_mechanic|Mobil szerelő|
-tyre_service|Gumiszerviz|
-bodywork_paint|Karosszéria és fényezés|
-towing_recovery|Autómentés|
-childcare|Gyermekfelügyelet|
-elderly_care|Idősgondozás|
-home_nursing|Otthoni ápolás|
-private_tutoring|Magánoktatás|
-music_lessons|Zeneoktatás|
-sports_coaching|Sportedzés|
-it_training|IT-képzés|
-vocational_training|Szakképzés|
-holiday_lettings|Nyaralókiadás|
-guesthouse_bnb|Panzió és reggelis szállás|
-property_management|Ingatlankezelés|
-veterinary|Állatorvos|
-dog_walking|Kutyasétáltatás|
-pet_grooming|Kisállat-kozmetika|
-general_practice|Háziorvos|
-dentistry|Fogászat|
-physiotherapy|Gyógytorna|
-psychology|Pszichológia|
-pharmacy|Gyógyszertár|
-optometry|Optometria|
-medical_laboratory|Orvosi labor|
-software_development|Szoftverfejlesztés|
-web_development|Webfejlesztés|
-it_support|IT-támogatás|
-cybersecurity|Kiberbiztonság|
-data_ai|Adat és mesterséges intelligencia|
-cloud_hosting|Felhő és tárhely|
-accounting|Könyvelés|
-audit_tax|Könyvvizsgálat és adó|
-legal_services|Jogi szolgáltatások|
-hr_recruitment|HR és toborzás|
-management_consulting|Vezetési tanácsadás|
-insurance_brokerage|Biztosításközvetítés|
-real_estate_agency|Ingatlaniroda|
-architecture|Építészet|
-manufacturing|Gyártás|
-cnc_machining|CNC-megmunkálás|
-metalwork_welding|Fémmegmunkálás és hegesztés|
-restaurant|Étterem|
-catering|Catering|
-hotel|Szálloda|
-event_management|Rendezvényszervezés|
-agriculture|Mezőgazdaság|
-forestry|Erdészet|
-waste_recycling|Hulladék és újrahasznosítás|
-renewable_energy|Megújuló energia|
-marketing_agency|Marketingügynökség|
-graphic_design|Grafikai tervezés|
-photography|Fotózás|
-video_production|Videógyártás|
-printing_signage|Nyomda és táblák|
-wholesale|Nagykereskedelem|
-ecommerce|Webáruház|
-security_services|Biztonsági szolgálat|
-hairdressing|Fodrászat|
-beauty_salon|Kozmetika|
-massage_therapy|Masszázs|
-fitness_training|Edzés és fitnesz|
-shop_general|Üzlet|
-shop_bicycle|Kerékpárbolt és szerviz|
-shop_auto_parts|Autóalkatrész|
-shop_hardware|Vasáru és barkács|
-shop_furniture|Bútor|
-shop_electronics|Elektronika és háztartási gép|
-shop_clothing|Ruházat|
-shop_grocery|Élelmiszerbolt|
-shop_sports|Sportbolt|
-shop_books|Könyvesbolt és papír-írószer|
-shop_florist|Virágbolt|
-shop_pet|Állateledel-bolt|
-motorcycle_repair|Motorszerviz|
-bar|Bár|
-kebab_shawarma|Kebab és sawarma|
-pizzeria|Pizzéria|
-fast_food|Gyorsétterem|
-bakery|Pékség|
-pastry_shop|Cukrászda|
-coffee_shop|Kávézó|
-food_truck|Ételkocsi|
-butcher|Hentes|
-ice_cream|Fagyizó|
-winery|Borászat|
-brewery|Sörfőzde|
-nightclub|Éjszakai klub és diszkó|
-beach_club|Strandbár és beach club|
-bowling_billiards|Bowling és biliárd|
-travel_agency|Utazási iroda|
-nail_salon|Körömszalon, manikűr és pedikűr|
-barber|Borbély|
-tattoo_piercing|Tetoválás és piercing|
-spa_sauna|Wellness és szauna|
-cosmetics_shop|Kozmetikai bolt|
-dry_cleaning|Vegytisztító és mosoda|
-podiatry|Podológia és lábápolás|
-dental_laboratory|Fogtechnikai labor|
-orthodontics|Fogszabályozás|
-dermatology|Bőrgyógyászat|
-paediatrics|Gyermekgyógyászat|
-gynaecology|Nőgyógyászat|
-cardiology|Kardiológia|
-medical_imaging|Képalkotó diagnosztika|
-speech_therapy|Logopédia|
-nutrition_dietetics|Táplálkozás és dietetika|
-bicycle_repair|Kerékpárjavítás|
-scooter_repair|Robogó- és mopedjavítás|
-appliance_repair|Háztartási gép javítása|
-phone_repair|Telefon- és tabletjavítás|
-computer_repair|Számítógép-javítás|
-watch_jewellery_repair|Óra- és ékszerjavítás|
-shoe_repair|Cipészet|
-tailoring_alterations|Szabóság és igazítás|
-upholstery|Kárpitozás|
-glazing|Üvegezés és ablakok|
-chimney_sweep|Kéményseprés|
-pest_control|Kártevőirtás|
-pool_maintenance|Medencekarbantartás|
-window_cleaning|Ablaktisztítás|
-car_wash|Autómosó|
-car_rental|Autókölcsönzés|
-bike_scooter_rental|Kerékpár- és rollerkölcsönzés|
-funeral_services|Temetkezés|
-notary|Közjegyzőség|
-bailiff|Végrehajtás|
-patent_trademark|Szabadalmak és védjegyek|
-debt_collection|Követeléskezelés|
-company_formation|Cégalapítás|
-financial_advisory|Pénzügyi tanácsadás|
-payroll_services|Bérszámfejtés|
-currency_exchange|Pénzváltó|
-pawnshop|Zálogház|
-leasing|Lízing és finanszírozás|
-hearing_aids|Hallókészülékek|
-medical_transport|Betegszállítás|
-rehabilitation|Rehabilitációs központ|
-occupational_therapy|Ergoterápia|
-midwifery|Szülésznői ellátás|
-acupuncture|Akupunktúra|
-chiropractic|Kiropraktika és oszteopátia|
-insulation|Hőszigetelés|
-waterproofing|Vízszigetelés|
-plastering|Vakolás és glettelés|
-tiling|Burkolás|
-drywall|Gipszkarton és válaszfalak|
-fencing|Kerítések és kapuk|
-paving|Térkövezés és behajtók|
-well_drilling|Kútfúrás|
-septic_systems|Szennyvíztárolók és csatornázás|
-solar_panels|Napelem-telepítés|
-alarm_cctv|Riasztó és kamerarendszer|
-smart_home|Okosotthon|
-lift_maintenance|Liftkarbantartás|
-fire_safety|Tűzvédelem és tűzoltó készülékek|
-car_dealer|Autókereskedés|
-vehicle_inspection|Műszaki vizsga|
-auto_electrics|Autóvillamosság|
-car_glass|Autóüveg és szélvédő|
-boat_repair|Hajójavítás|
-bus_charter|Autóbuszbérlés|
-call_centre|Ügyfélszolgálati központ|
-virtual_assistant|Virtuális asszisztens|
-market_research|Piackutatás|
-copywriting|Szövegírás|
-seo_services|SEO és online hirdetés|
-social_media|Közösségimédia-kezelés|
-app_development|Mobilalkalmazás-fejlesztés|
-game_development|Játékfejlesztés|
-drone_services|Drónszolgáltatások|
-printing_3d|3D nyomtatás|
-interior_design|Belsőépítészet|
-dance_school|Táncstúdió|
-art_gallery|Galéria és képkeretezés|
+taxi|Taxi|taxi, fuvar, transzfer, reptér
+ride_hailing|Applikációs fuvarszolgáltatás|uber, bolt, telekocsi, applikáció
+chauffeur|Sofőrszolgálat|személyi sofőr, limuzin, sofőrszolgálat
+driving_school|Autósiskola|autósiskola, vezetési órák, jogosítvány, oktató
+translation|Fordítás|fordító, dokumentumok, fordítás, szerződés
+interpreting|Tolmácsolás|tolmács, szinkrontolmácsolás, konferencia, tárgyalás
+sworn_translation|Hiteles fordítás|hiteles fordítás, szakfordító, pecsét, okirat
+language_school|Nyelviskola|nyelvtanfolyam, angol óra, nyelvtanár, nyelviskola
+removals|Költöztetés|költöztetés, költöztetők, furgon, dobozok
+international_removals|Nemzetközi költöztetés|külföldi költöztetés, kiköltözés, konténer, vám
+courier|Futárszolgálat|futár, kézbesítés, csomag, futárszolgálat
+freight_forwarding|Szállítmányozás|szállítmányozás, logisztika, fuvarozás, raklap
+refrigerated_transport|Hűtött szállítás|hűtött szállítás, fagyasztott áru, hűtőkocsi, hűtőlánc
+haulage|Teherfuvarozás|kamionos fuvarozás, kamion, teherszállítás, pótkocsi
+storage_warehousing|Raktározás|raktár, raktározás, tárolás, polcok
+customs_brokerage|Vámügyintézés|vámügyintézés, vám, import, export
+excavation|Földmunka és kotrás|földmunka, markoló, kotrás, árok
+crane_hire|Darubérlés|daru, darubérlés, emelés, autódaru
+scaffolding|Állványozás|állványozás, állvány, állványbérlés, munkaplatform
+demolition|Bontás|bontás, bontási munkák, építési törmelék, betontörés
+concrete_works|Betonozás|beton, betonozás, alapozás, esztrich
+surveying|Földmérés|földmérő, felmérés, geodézia, telekhatár
+tool_hire|Szerszámkölcsönzés|szerszámkölcsönző, szerszámok, fúrógép, sarokcsiszoló
+machinery_rental|Gépkölcsönzés|gépkölcsönző, gépek, targonca, építőipari gépek
+generator_hire|Aggregátorbérlés|aggregátor, generátor, szükségáramforrás, kábel
+electrical_installation|Villanyszerelés|villanyszerelő, villanyszerelés, kapcsolószekrény, konnektor
+plumbing|Vízvezeték-szerelés|vízvezeték szerelő, csövek, fürdőszoba, csőtörés
+heating_hvac|Fűtés és légtechnika|fűtésszerelő, kazán, radiátorok, padlófűtés
+air_conditioning|Klímaszerelés|klíma, légkondi, hűtés, split klíma
+painting_decorating|Festés és tapétázás|festő, szobafestés, tapétázás, glettelés
+carpentry|Asztalosmunka|asztalos, ács, bútor, fa
+flooring|Burkolás és padló|padlóburkoló, parketta, laminált padló, parkettacsiszolás
+roofing|Tetőfedés|tetőfedő, tető, ereszcsatorna, bádogos
+locksmith|Zárszerviz|lakatos, zárak, kulcs, ajtónyitás
+cleaning_services|Takarítás|takarítás, takarítónő, irodatakarítás, nagytakarítás
+gardening_landscaping|Kertészet és kertépítés|kertész, fűnyírás, sövény, kertépítés
+renovation|Felújítás|felújítás, lakásfelújítás, építőipari cég, átalakítás
+car_repair|Autószerviz|autószerelő, autószerviz, szerviz, autójavítás
+mobile_mechanic|Mobil szerelő|mobil szerelő, útmenti segítség, bikázás, meghibásodás
+tyre_service|Gumiszerviz|gumiszerviz, gumiabroncs, defektjavítás, centrírozás
+bodywork_paint|Karosszéria és fényezés|autófényezés, karosszéria, horpadás, autólakkozás
+towing_recovery|Autómentés|autómentő, vontatás, szervizszállítás, csörlő
+childcare|Gyermekfelügyelet|gyermekfelügyelet, óvoda, bébiszitter, bölcsőde
+elderly_care|Idősgondozás|idősgondozás, idősek otthona, házi gondozás, nyugdíjasok
+home_nursing|Otthoni ápolás|otthoni ápolás, nővér, otthoni betegellátás, sebkezelés
+private_tutoring|Magánoktatás|korrepetálás, magántanár, vizsgafelkészítés, házi feladat
+music_lessons|Zeneoktatás|zongora, gitár, ének, zeneóra
+sports_coaching|Sportedzés|edző, foci, tenisz, edzés
+it_training|IT-képzés|számítógépes tanfolyam, excel, programozás tanfolyam, informatikai képzés
+vocational_training|Szakképzés|szakképzés, szaktanfolyam, tanúsítvány, tanoncképzés
+holiday_lettings|Nyaralókiadás|nyaraló, apartman, kiadó szállás, airbnb
+guesthouse_bnb|Panzió és reggelis szállás|panzió, vendégház, reggelis szállás, szobák
+property_management|Ingatlankezelés|ingatlankezelés, társasházkezelés, bérbeadás, közös képviselet
+veterinary|Állatorvos|állatorvos, állatkórház, oltás, kutya
+dog_walking|Kutyasétáltatás|kutyasétáltatás, kutyasétáltató, séta
+pet_grooming|Kisállat-kozmetika|kutyakozmetika, nyírás, szőrápolás, állatszalon
+general_practice|Háziorvos|háziorvos, orvos, rendelő, recept
+dentistry|Fogászat|fogorvos, fogászat, tömés, implantátum
+physiotherapy|Gyógytorna|gyógytorna, fizioterápia, rehabilitáció, kezelés
+psychology|Pszichológia|pszichológus, terápia, tanácsadás, pszichoterápia
+pharmacy|Gyógyszertár|gyógyszertár, gyógyszer, patika, étrendkiegészítő
+optometry|Optometria|optikus, szemüveg, látásvizsgálat, kontaktlencse
+medical_laboratory|Orvosi labor|labor, vérvétel, vizsgálatok, laborlelet
+software_development|Szoftverfejlesztés|programozó, fejlesztő, szoftver, kód
+web_development|Webfejlesztés|weboldal, webfejlesztés, wordpress, webshop
+it_support|IT-támogatás|it támogatás, hálózat, számítógép szerviz, rendszergazda
+cybersecurity|Kiberbiztonság|kiberbiztonság, biztonsági teszt, tűzfal, behatolásvizsgálat
+data_ai|Adat és mesterséges intelligencia|mesterséges intelligencia, gépi tanulás, adatelemzés, algoritmus
+cloud_hosting|Felhő és tárhely|tárhely, szerver, felhő, domain
+accounting|Könyvelés|könyvelő, könyvelés, számlázás, bérszámfejtés
+audit_tax|Könyvvizsgálat és adó|könyvvizsgáló, adótanácsadó, beszámoló, áfa
+legal_services|Jogi szolgáltatások|ügyvéd, jogász, jogi tanácsadás, szerződés
+hr_recruitment|HR és toborzás|toborzás, munkaerő közvetítés, fejvadász, önéletrajz
+management_consulting|Vezetési tanácsadás|tanácsadó, üzleti tanácsadás, stratégia, üzleti terv
+insurance_brokerage|Biztosításközvetítés|biztosítási alkusz, biztosítás, kötvény, kárrendezés
+real_estate_agency|Ingatlaniroda|ingatlaniroda, ingatlanos, lakás, ház
+architecture|Építészet|építész, tervrajz, építési engedély, tervezés
+manufacturing|Gyártás|gyártás, gyár, ipar, összeszerelés
+cnc_machining|CNC-megmunkálás|cnc, esztergálás, marás, fémmegmunkálás
+metalwork_welding|Fémmegmunkálás és hegesztés|hegesztő, kovács, acél, lakatosmunka
+restaurant|Étterem|étterem, étel, vendéglő, étlap
+catering|Catering|catering, rendezvényétkeztetés, büféasztal, hidegtál
+hotel|Szálloda|szálloda, szállás, hostel, szobák
+event_management|Rendezvényszervezés|rendezvényszervezés, esküvőszervező, konferencia, esemény
+agriculture|Mezőgazdaság|mezőgazdaság, gazdaság, traktor, betakarítás
+forestry|Erdészet|erdőgazdálkodás, fakitermelés, faanyag, láncfűrész
+waste_recycling|Hulladék és újrahasznosítás|hulladék, konténer, vashulladék, újrahasznosítás
+renewable_energy|Megújuló energia|napelem, szélenergia, zöld energia, hőszivattyú
+marketing_agency|Marketingügynökség|marketing, reklám, kampány, reklámügynökség
+graphic_design|Grafikai tervezés|grafikus, logó, grafikai tervezés, nyomdai előkészítés
+photography|Fotózás|fotós, fotóstúdió, esküvői fotós, portré
+video_production|Videógyártás|videógyártás, forgatás, vágás, drón
+printing_signage|Nyomda és táblák|nyomda, nyomtatás, táblák, matricák
+wholesale|Nagykereskedelem|nagykereskedés, forgalmazó, beszállító, áru
+ecommerce|Webáruház|webáruház, online bolt, marketplace, rendelések
+security_services|Biztonsági szolgálat|biztonsági őr, vagyonvédelem, felügyelet, kamerarendszer
+hairdressing|Fodrászat|fodrász, hajvágás, hajfestés, szalon
+beauty_salon|Kozmetika|kozmetika, kozmetikus, köröm, arckezelés
+massage_therapy|Masszázs|masszőr, masszázs, wellness, lazítás
+fitness_training|Edzés és fitnesz|személyi edző, konditerem, edzés, erősítés
+shop_general|Üzlet|bolt, üzlet, kiskereskedés, áru
+shop_bicycle|Kerékpárbolt és szerviz|kerékpárbolt, bicikli, kerékpárszerviz, elektromos kerékpár
+shop_auto_parts|Autóalkatrész|autóalkatrész, alkatrészek, autófelszerelés, szűrők
+shop_hardware|Vasáru és barkács|barkácsbolt, vasáru, szerszámok, csavarok
+shop_furniture|Bútor|bútorbolt, bútor, kanapé, konyhabútor
+shop_electronics|Elektronika és háztartási gép|elektronika, háztartási gépek, tévé, mosógép
+shop_clothing|Ruházat|ruhabolt, divat, cipő, ruházat
+shop_grocery|Élelmiszerbolt|élelmiszerbolt, közért, szupermarket, kisbolt
+shop_sports|Sportbolt|sportbolt, sportfelszerelés, túrafelszerelés, síléc
+shop_books|Könyvesbolt és papír-írószer|könyvesbolt, papírbolt, könyvek, irodaszer
+shop_florist|Virágbolt|virágbolt, virág, csokor, koszorú
+shop_pet|Állateledel-bolt|állateledel bolt, kutyatáp, akvárium, macskaalom
+motorcycle_repair|Motorszerviz|motorszerviz, motorkerékpár, robogó, moped
+bar|Bár|bár, kocsma, koktélbár, italok
+kebab_shawarma|Kebab és sawarma|kebab, gyros, saláta wrap, török étel
+pizzeria|Pizzéria|pizza, pizzéria, pizza rendelés, olasz
+fast_food|Gyorsétterem|gyorsétterem, hamburger, sültkrumpli, büfé
+bakery|Pékség|pékség, kenyér, péksütemény, pék
+pastry_shop|Cukrászda|cukrászda, torta, sütemény, desszert
+coffee_shop|Kávézó|kávézó, kávé, presszó, barista
+food_truck|Ételkocsi|food truck, utcai étel, mozgó konyha
+butcher|Hentes|hentes, hús, kolbász, húsbolt
+ice_cream|Fagyizó|fagylalt, fagyizó, gelato, jégkrém
+winery|Borászat|borászat, bor, pince, borkóstoló
+brewery|Sörfőzde|sörfőzde, sör, kézműves sör, csapolt sör
+nightclub|Éjszakai klub és diszkó|éjszakai klub, diszkó, tánc, dj
+beach_club|Strandbár és beach club|strandbár, napágyak, strand, fürdő
+bowling_billiards|Bowling és biliárd|bowling, biliárd, darts, teke
+travel_agency|Utazási iroda|utazási iroda, utazás, repjegy, üdülés
+nail_salon|Körömszalon, manikűr és pedikűr|körmös, manikűr, pedikűr, műköröm
+barber|Borbély|borbély, férfi fodrász, szakáll, borotválás
+tattoo_piercing|Tetoválás és piercing|tetoválás, tetováló szalon, piercing, tattoo
+spa_sauna|Wellness és szauna|wellness, szauna, gyógyfürdő, gőzfürdő
+cosmetics_shop|Kozmetikai bolt|parfüméria, smink, bőrápolás, kozmetikum
+dry_cleaning|Vegytisztító és mosoda|tisztító, mosoda, vasalás, ruhatisztítás
+podiatry|Podológia és lábápolás|lábápolás, pedikűr, benőtt köröm, láb
+dental_laboratory|Fogtechnikai labor|fogtechnikus, fogpótlás, korona, híd
+orthodontics|Fogszabályozás|fogszabályozás, fogszabályzó, fogorvos ortodontia, sín
+dermatology|Bőrgyógyászat|bőrgyógyász, dermatológus, anyajegy, akne
+paediatrics|Gyermekgyógyászat|gyermekorvos, házi gyermekorvos, csecsemő, gyerek
+gynaecology|Nőgyógyászat|nőgyógyász, nővédelem, terhesség, szülészet
+cardiology|Kardiológia|kardiológus, szívgyógyász, ekg, szív
+medical_imaging|Képalkotó diagnosztika|röntgen, ultrahang, mri, ct vizsgálat
+speech_therapy|Logopédia|logopédus, beszédterápia, dadogás, beszéd
+nutrition_dietetics|Táplálkozás és dietetika|dietetikus, táplálkozási tanácsadó, diéta, fogyás
+bicycle_repair|Kerékpárjavítás|kerékpárszerviz, bicikli javítás, defekt, kerékpár javítás
+scooter_repair|Robogó- és mopedjavítás|robogószerviz, robogó, vespa, moped
+appliance_repair|Háztartási gép javítása|háztartási gép javítás, mosógép, hűtő, sütő
+phone_repair|Telefon- és tabletjavítás|mobil szerviz, kijelző csere, iphone, tablet
+computer_repair|Számítógép-javítás|számítógép szerviz, laptop, pc, adatmentés
+watch_jewellery_repair|Óra- és ékszerjavítás|órás, ékszerész, elemcsere, gyűrű méretezés
+shoe_repair|Cipészet|cipész, cipőjavítás, sarok, talp
+tailoring_alterations|Szabóság és igazítás|szabó, varrónő, felhajtás, ruhaigazítás
+upholstery|Kárpitozás|kárpitos, kárpitozás, kanapé áthúzás, bútorhuzat
+glazing|Üvegezés és ablakok|üveges, ablakok, hőszigetelt üveg, üveg
+chimney_sweep|Kéményseprés|kéményseprő, kémény, kéménytisztítás, korom
+pest_control|Kártevőirtás|kártevőirtás, poloska, patkány, csótány
+pool_maintenance|Medencekarbantartás|medence karbantartás, medencetisztítás, klór, medence
+window_cleaning|Ablaktisztítás|ablaktisztítás, ablakmosás, homlokzatmosás, ablakok
+car_wash|Autómosó|autómosó, kocsimosás, belső tisztítás, polírozás
+car_rental|Autókölcsönzés|autókölcsönző, bérautó, autóbérlés, gépjárműbérlés
+bike_scooter_rental|Kerékpár- és rollerkölcsönzés|kerékpárkölcsönző, elektromos roller, bicikli bérlés, roller
+funeral_services|Temetkezés|temetkezés, temetés, hamvasztás, koporsó
+notary|Közjegyzőség|közjegyző, közokirat, meghatalmazás, hagyaték
+bailiff|Végrehajtás|végrehajtó, végrehajtás, foglalás, behajtás
+patent_trademark|Szabadalmak és védjegyek|szabadalmi ügyvivő, védjegy bejegyzés, szabadalom, szellemi tulajdon
+debt_collection|Követeléskezelés|követeléskezelés, tartozás, fizetési felszólítás, kintlévőség
+company_formation|Cégalapítás|cégalapítás, cégbíróság, kft alapítás, egyéni vállalkozás
+financial_advisory|Pénzügyi tanácsadás|pénzügyi tanácsadó, befektetés, vagyonkezelés, nyugdíj megtakarítás
+payroll_services|Bérszámfejtés|bérszámfejtés, bérlap, munkabér, munkaügy
+currency_exchange|Pénzváltó|pénzváltó, valutaváltás, deviza, árfolyam
+pawnshop|Zálogház|zálogház, zálog, zálogkölcsön, aranyfelvásárlás
+leasing|Lízing és finanszírozás|lízing, finanszírozás, részletfizetés, autólízing
+hearing_aids|Hallókészülékek|hallókészülék, hallásvizsgálat, audiológus, hallásközpont
+medical_transport|Betegszállítás|mentő, betegszállítás, hordágy, betegszállító
+rehabilitation|Rehabilitációs központ|rehabilitáció, lábadozás, rehabilitációs központ, felépülés
+occupational_therapy|Ergoterápia|ergoterapeuta, foglalkozásterápia, mindennapi készségek, önállóság
+midwifery|Szülésznői ellátás|szülésznő, szülés, terhesség, szülésfelkészítő
+acupuncture|Akupunktúra|akupunktúra, tűk, kínai orvoslás, akupunktőr
+chiropractic|Kiropraktika és oszteopátia|csontkovács, oszteopata, gerinc, hátfájás
+insulation|Hőszigetelés|hőszigetelés, szigetelés, tetőszigetelés, homlokzatszigetelés
+waterproofing|Vízszigetelés|vízszigetelés, nedvesség, tetőszigetelés bitumen, membrán
+plastering|Vakolás és glettelés|vakolás, vakolat, glettelés, stukkó
+tiling|Burkolás|burkoló, csempe, járólap, fürdőszoba burkolás
+drywall|Gipszkarton és válaszfalak|gipszkarton, válaszfal, álmennyezet, szerelt fal
+fencing|Kerítések és kapuk|kerítés, kapu, kerítésépítés, drótháló
+paving|Térkövezés és behajtók|térkövezés, kocsibeálló, járda, szegély
+well_drilling|Kútfúrás|kútfúrás, kút, fúrt kút, talajvíz
+septic_systems|Szennyvíztárolók és csatornázás|szennyvíztározó, csatornázás, emésztő, szikkasztó
+solar_panels|Napelem-telepítés|napelem, napelem telepítés, inverter, napenergia
+alarm_cctv|Riasztó és kamerarendszer|riasztó, kamerarendszer, videómegfigyelés, betörésvédelem
+smart_home|Okosotthon|okosotthon, okosvilágítás, otthonautomatizálás, vezérlés
+lift_maintenance|Liftkarbantartás|lift, felvonó, liftszerviz, mozgólépcső
+fire_safety|Tűzvédelem és tűzoltó készülékek|tűzoltó készülék, tűzjelző, sprinkler, tűzvédelem
+car_dealer|Autókereskedés|autókereskedés, használt autó, autóértékesítés, márkakereskedés
+vehicle_inspection|Műszaki vizsga|műszaki vizsga, járművizsgálat, vizsgaállomás, műszaki
+auto_electrics|Autóvillamosság|autóvillamosság, generátor, önindító, autó elektromos
+car_glass|Autóüveg és szélvédő|szélvédő, üvegcsere, autóüveg, kőfelverődés
+boat_repair|Hajójavítás|hajójavítás, csónakmotor, hajó, jacht
+bus_charter|Autóbuszbérlés|buszbérlés, autóbusz, kisbusz, csoportos szállítás
+call_centre|Ügyfélszolgálati központ|ügyfélszolgálat, telemarketing, telefonos support, kontaktcenter
+virtual_assistant|Virtuális asszisztens|virtuális asszisztens, adminisztratív támogatás, távoli titkárnő, szabadúszó
+market_research|Piackutatás|piackutatás, kérdőív, fogyasztói kutatás, fókuszcsoport
+copywriting|Szövegírás|szövegíró, korrektúra, tartalomkészítés, szerkesztés
+seo_services|SEO és online hirdetés|keresőoptimalizálás, google ads, online hirdetés, sem
+social_media|Közösségimédia-kezelés|közösségi média kezelés, instagram, facebook, tiktok
+app_development|Mobilalkalmazás-fejlesztés|alkalmazásfejlesztés, android, mobilalkalmazás, flutter
+game_development|Játékfejlesztés|játékfejlesztés, unity, unreal, játékstúdió
+drone_services|Drónszolgáltatások|drón, légifotó, drónfelvétel, térképezés
+printing_3d|3D nyomtatás|3d nyomtatás, prototípus, additív gyártás, 3d nyomtató
+interior_design|Belsőépítészet|lakberendező, belsőépítész, enteriőr, dekoráció
+dance_school|Táncstúdió|tánciskola, balett, salsa, táncóra
+art_gallery|Galéria és képkeretezés|képkeretezés, keretek, kiállítás, galéria
