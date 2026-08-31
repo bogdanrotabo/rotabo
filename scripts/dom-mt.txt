@@ -1,213 +1,213 @@
-taxi|Taxi|
-ride_hailing|Servizz ta' vjaġġi bl-app|
-chauffeur|Servizzi ta' xufier|
-driving_school|Skola tas-sewqan|
-translation|Traduzzjoni|
-interpreting|Interpretazzjoni|
-sworn_translation|Traduzzjoni ġuramentata|
-language_school|Skola tal-lingwi|
-removals|Servizzi ta' ġarr|
-international_removals|Ġarr internazzjonali|
-courier|Servizz ta' kurrier|
-freight_forwarding|Tranżitu tal-merkanzija|
-refrigerated_transport|Trasport imkessaħ|
-haulage|Ġarr ta' merkanzija|
-storage_warehousing|Ħażna u mħażen|
-customs_brokerage|Sensarija doganali|
-excavation|Tħaffir u xogħol fl-art|
-crane_hire|Kiri ta' krejnijiet|
-scaffolding|Armar|
-demolition|Twaqqigħ|
-concrete_works|Xogħol tal-konkrit|
-surveying|Stħarriġ tal-art|
-tool_hire|Kiri ta' għodda|
-machinery_rental|Kiri ta' makkinarju|
-generator_hire|Kiri ta' ġeneraturi|
-electrical_installation|Installazzjoni elettrika|
-plumbing|Plumbing|
-heating_hvac|Tisħin u ventilazzjoni|
-air_conditioning|Arja kkundizzjonata|
-painting_decorating|Żebgħa u dekorazzjoni|
-carpentry|Mastrudaxxa|
-flooring|Xogħol tal-art|
-roofing|Xogħol tal-bejt|
-locksmith|Serrature|
-cleaning_services|Servizzi ta' tindif|
-gardening_landscaping|Ġnien u pajsaġġ|
-renovation|Rinnovazzjoni|
-car_repair|Tiswija tal-karozzi|
-mobile_mechanic|Mekkanik li jiġi għandek|
-tyre_service|Servizz tat-tajers|
-bodywork_paint|Xogħol tal-body u żebgħa|
-towing_recovery|Irmonk u rkupru|
-childcare|Kura tat-tfal|
-elderly_care|Kura tal-anzjani|
-home_nursing|Kura infermerija fid-dar|
-private_tutoring|Lezzjonijiet privati|
-music_lessons|Lezzjonijiet tal-mużika|
-sports_coaching|Kowċing sportiv|
-it_training|Taħriġ fl-IT|
-vocational_training|Taħriġ vokazzjonali|
-holiday_lettings|Kiri għall-vaganzi|
-guesthouse_bnb|Guest house u bed and breakfast|
-property_management|Ġestjoni tal-proprjetà|
-veterinary|Veterinarju|
-dog_walking|Mixi tal-klieb|
-pet_grooming|Grooming tal-annimali|
-general_practice|Tabib tal-familja|
-dentistry|Dentistrija|
-physiotherapy|Fiżjoterapija|
-psychology|Psikoloġija|
-pharmacy|Spiżerija|
-optometry|Optometrija|
-medical_laboratory|Laboratorju mediku|
-software_development|Żvilupp tas-software|
-web_development|Żvilupp tal-websajts|
-it_support|Appoġġ fl-IT|
-cybersecurity|Ċibersigurtà|
-data_ai|Data u intelliġenza artifiċjali|
-cloud_hosting|Cloud u hosting|
-accounting|Kontabilità|
-audit_tax|Verifika u taxxa|
-legal_services|Servizzi legali|
-hr_recruitment|Riżorsi umani u reklutaġġ|
-management_consulting|Konsulenza maniġerjali|
-insurance_brokerage|Sensarija tal-assigurazzjoni|
-real_estate_agency|Aġenzija tal-proprjetà|
-architecture|Arkitettura|
-manufacturing|Manifattura|
-cnc_machining|Magni CNC|
-metalwork_welding|Xogħol tal-metall u wweldjar|
-restaurant|Restorant|
-catering|Katering|
-hotel|Lukanda|
-event_management|Organizzazzjoni ta' avvenimenti|
-agriculture|Agrikoltura|
-forestry|Forestrija|
-waste_recycling|Skart u riċiklaġġ|
-renewable_energy|Enerġija rinnovabbli|
-marketing_agency|Aġenzija tal-marketing|
-graphic_design|Disinn grafiku|
-photography|Fotografija|
-video_production|Produzzjoni ta' vidjo|
-printing_signage|Stampar u sinjali|
-wholesale|Bejgħ bl-ingrossa|
-ecommerce|Ħanut onlajn|
-security_services|Servizzi ta' sigurtà|
-hairdressing|Ħanut tax-xagħar|
-beauty_salon|Salon tas-sbuħija|
-massage_therapy|Massaġġ|
-fitness_training|Taħriġ tal-fitness|
-shop_general|Ħanut|
-shop_bicycle|Ħanut u tiswija tar-roti|
-shop_auto_parts|Parts tal-karozzi|
-shop_hardware|Ħanut tal-hardware u għodda|
-shop_furniture|Għamara|
-shop_electronics|Elettronika u apparat tad-dar|
-shop_clothing|Ħwejjeġ|
-shop_grocery|Ħanut tal-ikel|
-shop_sports|Oġġetti sportivi|
-shop_books|Ħanut tal-kotba u kartolerija|
-shop_florist|Ħanut tal-fjuri|
-shop_pet|Ħanut tal-annimali|
-motorcycle_repair|Tiswija tal-muturi|
-bar|Bar|
-kebab_shawarma|Kebab u shawarma|
-pizzeria|Pizzerija|
-fast_food|Ikel mgħaġġel|
-bakery|Furnara|
-pastry_shop|Ħanut tal-kejkijiet u pastizzerija|
-coffee_shop|Kafetterija|
-food_truck|Vann tal-ikel|
-butcher|Biċċerija|
-ice_cream|Ħanut tal-ġelat|
-winery|Kantina tal-inbid|
-brewery|Birrerija|
-nightclub|Nightclub u diskoteka|
-beach_club|Bar tal-bajja u beach club|
-bowling_billiards|Bowling u billiard|
-travel_agency|Aġenzija tal-ivvjaġġar|
-nail_salon|Salon tad-dwiefer, manikura u pedikura|
-barber|Barbier|
-tattoo_piercing|Tattoo u piercing|
-spa_sauna|Spa u sawna|
-cosmetics_shop|Ħanut tal-kosmetiċi|
-dry_cleaning|Tindif niexef u ħasil|
-podiatry|Podjatrija u kura tas-saqajn|
-dental_laboratory|Laboratorju dentali|
-orthodontics|Ortodonzja|
-dermatology|Dermatoloġija|
-paediatrics|Pedjatrija|
-gynaecology|Ġinekoloġija|
-cardiology|Kardjoloġija|
-medical_imaging|Imaging mediku|
-speech_therapy|Terapija tad-diskors|
-nutrition_dietetics|Nutrizzjoni u dijetetika|
-bicycle_repair|Tiswija tar-roti|
-scooter_repair|Tiswija ta' skuters u mopeds|
-appliance_repair|Tiswija ta' apparat tad-dar|
-phone_repair|Tiswija ta' telefowns u tablets|
-computer_repair|Tiswija ta' kompjuters|
-watch_jewellery_repair|Tiswija ta' arloġġi u ġojjelli|
-shoe_repair|Tiswija taż-żraben|
-tailoring_alterations|Ħjata u tibdil|
-upholstery|Tapizzerija|
-glazing|Ħġieġ u twieqi|
-chimney_sweep|Tindif taċ-ċmieni|
-pest_control|Kontroll tal-pesti|
-pool_maintenance|Manutenzjoni tal-pixxina|
-window_cleaning|Tindif tat-twieqi|
-car_wash|Ħasil tal-karozzi|
-car_rental|Kiri ta' karozzi|
-bike_scooter_rental|Kiri ta' roti u skuters|
-funeral_services|Servizzi funerarji|
-notary|Nutar|
-bailiff|Eżekuzzjoni tal-qorti|
-patent_trademark|Privattivi u trademarks|
-debt_collection|Ġbir ta' djun|
-company_formation|Twaqqif ta' kumpaniji|
-financial_advisory|Konsulenza finanzjarja|
-payroll_services|Servizzi tal-pagi|
-currency_exchange|Kambju tal-munita|
-pawnshop|Ħanut tar-rahan|
-leasing|Leasing u finanzjament|
-hearing_aids|Apparat tas-smigħ|
-medical_transport|Trasport mediku|
-rehabilitation|Ċentru ta' riabilitazzjoni|
-occupational_therapy|Terapija okkupazzjonali|
-midwifery|Qwiebel|
-acupuncture|Akupuntura|
-chiropractic|Kiropratika u osteopatija|
-insulation|Insulazzjoni termika|
-waterproofing|Waterproofing|
-plastering|Tikħil u tlestija tal-ħitan|
-tiling|Tqegħid ta' madum|
-drywall|Drywall u diviżorji|
-fencing|Ċnut u bibien tal-ħadid|
-paving|Paviment u passaġġi|
-well_drilling|Tħaffir ta' bjar|
-septic_systems|Tankijiet settiċi u drenaġġ|
-solar_panels|Installazzjoni ta' pannelli solari|
-alarm_cctv|Allarmi u kameras tas-sigurtà|
-smart_home|Installazzjoni ta' smart home|
-lift_maintenance|Manutenzjoni ta' liftijiet|
-fire_safety|Sigurtà min-nar u extinguishers|
-car_dealer|Bejjiegħ tal-karozzi|
-vehicle_inspection|Spezzjoni tal-vetturi|
-auto_electrics|Elettriku tal-karozzi|
-car_glass|Ħġieġ tal-karozzi u windscreens|
-boat_repair|Tiswija ta' dgħajjes|
-bus_charter|Kiri ta' karozzi tal-linja|
-call_centre|Call centre|
-virtual_assistant|Assistent virtwali|
-market_research|Riċerka tas-suq|
-copywriting|Kitba ta' kontenut|
-seo_services|SEO u reklamar onlajn|
-social_media|Ġestjoni tal-midja soċjali|
-app_development|Żvilupp ta' apps mobbli|
-game_development|Żvilupp ta' logħob|
-drone_services|Servizzi bid-drone|
-printing_3d|Printjar 3D|
-interior_design|Disinn ta' interni|
-dance_school|Skola taż-żfin|
-art_gallery|Gallerija tal-arti u framing|
+taxi|Taxi|karozza tal-linja privata, vjaġġ, trasport, ajruport
+ride_hailing|Servizz ta' vjaġġi bl-app|uber, bolt, qsim ta' vjaġġ, applikazzjoni
+chauffeur|Servizzi ta' xufier|xufier privat, limousine, servizz ta' sewqan
+driving_school|Skola tas-sewqan|lezzjonijiet tas-sewqan, istruttur, liċenzja tas-sewqan, test tas-sewqan
+translation|Traduzzjoni|traduttur, dokumenti, kuntratt, ċertifikat
+interpreting|Interpretazzjoni|interpretu, simultanja, konferenza, laqgħa
+sworn_translation|Traduzzjoni ġuramentata|traduttur ġuramentat, traduzzjoni uffiċjali, timbru, att
+language_school|Skola tal-lingwi|korsijiet tal-lingwi, lezzjonijiet tal-ingliż, għalliem, tagħlim tal-lingwa
+removals|Servizzi ta' ġarr|tqil ta' għamara, ċaqliq ta' dar, vann, kaxxi
+international_removals|Ġarr internazzjonali|ċaqliq barra l-pajjiż, rilokazzjoni, kontejner, dwana
+courier|Servizz ta' kurrier|kurrier, konsenja, pakkett, servizz ta' konsenja
+freight_forwarding|Tranżitu tal-merkanzija|spedizzjoni, loġistika, ġarr ta' merkanzija, palett
+refrigerated_transport|Trasport imkessaħ|trasport imkessaħ, iffriżat, vann tal-friġġ, katina tal-kesħa
+haulage|Ġarr ta' merkanzija|ġarr bit-trakkijiet, trakk, trasport ta' merkanzija, trejler
+storage_warehousing|Ħażna u mħażen|maħżen, ħażna, depot, xkaffi
+customs_brokerage|Sensarija doganali|sensar tad-dwana, dwana, importazzjoni, esportazzjoni
+excavation|Tħaffir u xogħol fl-art|tħaffir, gaffa, xogħol tal-art, kanal
+crane_hire|Kiri ta' krejnijiet|krejn, kiri ta' krejn, irfigħ, tagħbija
+scaffolding|Armar|armar, twaqqif ta' armar, kiri ta' armar, pjattaforma
+demolition|Twaqqigħ|twaqqigħ, żarmar, tifrik, martell tal-arja
+concrete_works|Xogħol tal-konkrit|konkrit, tferrigħ ta' konkrit, pedamenti, livellar
+surveying|Stħarriġ tal-art|perit tal-kejl, kejl tal-art, topografija, konfini tal-art
+tool_hire|Kiri ta' għodda|kiri ta' għodda, għodod, trapan, mola
+machinery_rental|Kiri ta' makkinarju|kiri ta' makkinarju, magni, forklift, makkinarju tal-bini
+generator_hire|Kiri ta' ġeneraturi|ġeneratur, elettriku ta' riżerva, ġeneratur għall-kiri, kejbil
+electrical_installation|Installazzjoni elettrika|elettrixin, wajering, switchboard, sokit
+plumbing|Plumbing|plamer, pajpijiet, kamra tal-banju, tnixxija ta' ilma
+heating_hvac|Tisħin u ventilazzjoni|tisħin, bojler, radjaturi, tisħin tal-art
+air_conditioning|Arja kkundizzjonata|arja kkundizzjonata, kesħa, unit tal-arja, split
+painting_decorating|Żebgħa u dekorazzjoni|pittur, żebgħa, karta tal-ħajt, stukk
+carpentry|Mastrudaxxa|mastrudaxxa, xogħol tal-injam, għamara, injam
+flooring|Xogħol tal-art|art, parkè, laminat, madum tal-art
+roofing|Xogħol tal-bejt|bejjet, bejt, luq, membrana tal-bejt
+locksmith|Serrature|serratur, serraturi, ċwievet, ftuħ ta' bibien
+cleaning_services|Servizzi ta' tindif|tindif, taddara, tindif ta' uffiċċji, tindif kbir
+gardening_landscaping|Ġnien u pajsaġġ|ġardinar, qtugħ tal-ħaxix, sisien, ġnien
+renovation|Rinnovazzjoni|rinnovazzjoni, bini mill-ġdid, kuntrattur, tibdil
+car_repair|Tiswija tal-karozzi|garaxx, mekkanik, servizz tal-karozza, tiswija tal-karozzi
+mobile_mechanic|Mekkanik li jiġi għandek|mekkanik mobbli, għajnuna fit-triq, qbid tal-batterija, ħsara
+tyre_service|Servizz tat-tajers|tajers, bdil ta' tajers, tqib fit-tajer, ibbilanċjar
+bodywork_paint|Xogħol tal-body u żebgħa|żebgħa tal-karozzi, panel beater, dents, karrozzerija
+towing_recovery|Irmonk u rkupru|irmonk, trakk tal-irmonk, għajnuna fit-triq, winċ
+childcare|Kura tat-tfal|indukrar tat-tfal, childcare centre, babysitter, kindergarten
+elderly_care|Kura tal-anzjani|kura tal-anzjani, dar tal-anzjani, kura fid-dar, anzjani
+home_nursing|Kura infermerija fid-dar|infermier fid-dar, ners, kura medika fid-dar, faxxa
+private_tutoring|Lezzjonijiet privati|lezzjonijiet privati, tutur, preparazzjoni għall-eżamijiet, homework
+music_lessons|Lezzjonijiet tal-mużika|pjanu, kitarra, kant, lezzjonijiet tal-mużika
+sports_coaching|Kowċing sportiv|kowċ, futbol, tennis, taħriġ
+it_training|Taħriġ fl-IT|korsijiet tal-kompjuter, excel, kors ta' programmar, taħriġ fl-it
+vocational_training|Taħriġ vokazzjonali|apprendistat, kors tas-sengħa, ċertifikazzjoni, taħriġ vokazzjonali
+holiday_lettings|Kiri għall-vaganzi|dar tal-vaganzi, appartament għall-kiri, kiri qasir, airbnb
+guesthouse_bnb|Guest house u bed and breakfast|guest house, bed and breakfast, pensjoni, kmamar
+property_management|Ġestjoni tal-proprjetà|amministrazzjoni ta' proprjetà, tmexxija ta' bini, kiri, kondominju
+veterinary|Veterinarju|veterinarju, klinika tal-annimali, tilqim, kelb
+dog_walking|Mixi tal-klieb|mixi tal-klieb, min jimxi l-klieb, mixja mal-kelb
+pet_grooming|Grooming tal-annimali|grooming tal-klieb, qtugħ tal-pil, kura tal-pil, salon tal-annimali
+general_practice|Tabib tal-familja|tabib tal-familja, tabib, klinika, riċetta
+dentistry|Dentistrija|dentist, klinika dentali, filling, impjant
+physiotherapy|Fiżjoterapija|fisjoterapija, fisjoterapista, riabilitazzjoni, kura
+psychology|Psikoloġija|psikologu, terapija, konsulenza, psikoterapija
+pharmacy|Spiżerija|spiżerija, mediċini, spiżjar, supplimenti
+optometry|Optometrija|ottiku, nuċċalijiet, eżami tal-għajnejn, lentijiet
+medical_laboratory|Laboratorju mediku|laboratorju, testijiet tad-demm, analiżi, kampjuni
+software_development|Żvilupp tas-software|programmatur, żviluppatur, softwer, kodiċi
+web_development|Żvilupp tal-websajts|websajt, disinn tal-web, wordpress, ħanut onlajn
+it_support|Appoġġ fl-IT|sapport tal-it, netwerk, tiswija ta' kompjuters, amministratur tas-sistema
+cybersecurity|Ċibersigurtà|ċibersigurtà, testijiet tas-sigurtà, firewall, hacking
+data_ai|Data u intelliġenza artifiċjali|intelliġenza artifiċjali, machine learning, analitika tad-data, algoritmi
+cloud_hosting|Cloud u hosting|hosting, server, cloud, dominju
+accounting|Kontabilità|accountant, kontabilità, fatturi, pagi
+audit_tax|Verifika u taxxa|awditur, konsulent tat-taxxa, rapport finanzjarju, vat
+legal_services|Servizzi legali|avukat, legali, parir legali, kuntratt
+hr_recruitment|Riżorsi umani u reklutaġġ|reklutaġġ, aġenzija tax-xogħol, headhunter, cv
+management_consulting|Konsulenza maniġerjali|konsulent, konsulenza tan-negozju, strateġija, pjan tan-negozju
+insurance_brokerage|Sensarija tal-assigurazzjoni|sensar tal-assigurazzjoni, assigurazzjoni, polza, klejm
+real_estate_agency|Aġenzija tal-proprjetà|aġent tal-proprjetà, sensar, appartament, dar
+architecture|Arkitettura|perit, pjanti, permess tal-bini, disinn ta' bini
+manufacturing|Manifattura|manifattura, fabbrika, industrija, assemblaġġ
+cnc_machining|Magni CNC|cnc, turnjatura, milling, xogħol tal-metall
+metalwork_welding|Xogħol tal-metall u wweldjar|welder, ħaddied, azzar, xogħol tal-ħadid
+restaurant|Restorant|ristorant, ikel, tarf tal-ikel, menu
+catering|Katering|catering, ikel għall-avvenimenti, buffet, platti
+hotel|Lukanda|lukanda, akkomodazzjoni, hostel, kmamar
+event_management|Organizzazzjoni ta' avvenimenti|organizzazzjoni ta' avvenimenti, wedding planner, konferenza, avveniment
+agriculture|Agrikoltura|agrikoltura, razzett, tractor, ħsad
+forestry|Forestrija|forestrija, qtugħ tas-siġar, injam, chainsaw
+waste_recycling|Skart u riċiklaġġ|skart, skip, ħadid antik, riċiklaġġ
+renewable_energy|Enerġija rinnovabbli|pannelli solari, enerġija mir-riħ, enerġija nadifa, heat pump
+marketing_agency|Aġenzija tal-marketing|marketing, reklamar, kampanja, aġenzija tar-reklamar
+graphic_design|Disinn grafiku|graphic designer, logo, disinn grafiku, layout
+photography|Fotografija|fotografu, studio tar-ritratti, ritratti tat-tieġ, portreti
+video_production|Produzzjoni ta' vidjo|produzzjoni ta' vidjows, filming, editing, drone
+printing_signage|Stampar u sinjali|stamperija, printing, sinjali, stickers
+wholesale|Bejgħ bl-ingrossa|bl-ingrossa, distributur, fornitur, oġġetti
+ecommerce|Ħanut onlajn|ħanut onlajn, e-commerce, marketplace, ordnijiet
+security_services|Servizzi ta' sigurtà|gwardjan, sigurtà, sorveljanza, kameras tas-sigurtà
+hairdressing|Ħanut tax-xagħar|parrukkiera, qtugħ ta' xagħar, żebgħa tax-xagħar, salon
+beauty_salon|Salon tas-sbuħija|salon tal-ġmiel, kożmetika, dwiefer, trattament tal-wiċċ
+massage_therapy|Massaġġ|massaġġ, massaġġatur, wellness, rilassament
+fitness_training|Taħriġ tal-fitness|personal trainer, gym, taħriġ, piżijiet
+shop_general|Ħanut|ħanut, bejgħ bl-imnut, boutique, oġġetti
+shop_bicycle|Ħanut u tiswija tar-roti|ħanut tar-roti, roti, tiswija ta' roti, rota elettrika
+shop_auto_parts|Parts tal-karozzi|spare parts, partijiet tal-karozzi, aċċessorji, filtri
+shop_hardware|Ħanut tal-hardware u għodda|ħanut tal-ħadid, materjal tal-bini, għodod, viti
+shop_furniture|Għamara|ħanut tal-għamara, għamara, sufan, kċejjen
+shop_electronics|Elettronika u apparat tad-dar|elettronika, apparat tad-dar, televiżjoni, magna tal-ħasil
+shop_clothing|Ħwejjeġ|ħanut tal-ħwejjeġ, moda, żraben, ilbies
+shop_grocery|Ħanut tal-ikel|grocer, supermarket, ikel, minimarket
+shop_sports|Oġġetti sportivi|ħanut tal-isport, tagħmir tal-isport, outdoor, skiing
+shop_books|Ħanut tal-kotba u kartolerija|ħanut tal-kotba, stationery, kotba, karti
+shop_florist|Ħanut tal-fjuri|ħanut tal-fjuri, fjuri, bukketti, kuruni
+shop_pet|Ħanut tal-annimali|pet shop, ikel tal-klieb, akkwarju, ramel tal-qtates
+motorcycle_repair|Tiswija tal-muturi|tiswija ta' muturi, mutur, scooter, moped
+bar|Bar|bar, ħanut tax-xorb, cocktail bar, xorb
+kebab_shawarma|Kebab u shawarma|kebab, shawarma, gyros, doner
+pizzeria|Pizzerija|pizza, pizzerija, pizza takeaway, taljan
+fast_food|Ikel mgħaġġel|fast food, burger, chips, snack bar
+bakery|Furnara|forn, ħobż, ftajjar, furnar
+pastry_shop|Ħanut tal-kejkijiet u pastizzerija|pastizzerija, kejkijiet, ħelu, deżerti
+coffee_shop|Kafetterija|kafetterija, kafè, espresso, barista
+food_truck|Vann tal-ikel|food truck, ikel tat-triq, kċina mobbli
+butcher|Biċċerija|biċċier, laħam, zalzett, ħanut tal-laħam
+ice_cream|Ħanut tal-ġelat|ġelat, ħanut tal-ġelat, gelato, soft ice
+winery|Kantina tal-inbid|kantina tal-inbid, inbid, kantina, degustazzjoni tal-inbid
+brewery|Birrerija|birrerija, birra, craft beer, birra tal-vit
+nightclub|Nightclub u diskoteka|nightclub, diskoteka, żfin, dj
+beach_club|Bar tal-bajja u beach club|beach bar, sunbeds, bajja, lido
+bowling_billiards|Bowling u billiard|bowling, biljard, dards, pool
+travel_agency|Aġenzija tal-ivvjaġġar|aġenzija tal-ivvjaġġar, vjaġġi, biljetti tal-ajru, pakketti
+nail_salon|Salon tad-dwiefer, manikura u pedikura|salon tad-dwiefer, manicure, pedicure, dwiefer tal-ġel
+barber|Barbier|barbier, qtugħ ta' xagħar tal-irġiel, leħja, tqaxxir
+tattoo_piercing|Tattoo u piercing|tattoo, studio tat-tattoos, piercing, linka
+spa_sauna|Spa u sawna|spa, sauna, wellness, banju tal-fwar
+cosmetics_shop|Ħanut tal-kosmetiċi|fwejjaħ, kożmetiċi, make-up, kura tal-ġilda
+dry_cleaning|Tindif niexef u ħasil|dry cleaning, laundry, mogħdija, ħasil ta' ħwejjeġ
+podiatry|Podjatrija u kura tas-saqajn|kura tas-saqajn, podologu, difer imdaħħal, saqajn
+dental_laboratory|Laboratorju dentali|tekniku dentali, snien foloz, kuruni, protesi
+orthodontics|Ortodonzja|braces, ortodontista, dritt tas-snien, aligners
+dermatology|Dermatoloġija|dermatologu, ġilda, xamm, akne
+paediatrics|Pedjatrija|tabib tat-tfal, pedjatra, tarbija, tfal
+gynaecology|Ġinekoloġija|ġinekologu, saħħa tan-nisa, tqala, ostetrika
+cardiology|Kardjoloġija|kardjologu, qalb, ecg, tabib tal-qalb
+medical_imaging|Imaging mediku|x-ray, ultrasound, mri, ct scan
+speech_therapy|Terapija tad-diskors|terapija tad-diskors, logopedista, tlaqliq, taħdit
+nutrition_dietetics|Nutrizzjoni u dijetetika|dietista, nutrizzjonista, dieta, telf ta' piż
+bicycle_repair|Tiswija tar-roti|tiswija ta' roti, tqib fir-rota, servizz tar-roti, rota
+scooter_repair|Tiswija ta' skuters u mopeds|tiswija ta' scooters, scooter, vespa, moped
+appliance_repair|Tiswija ta' apparat tad-dar|tiswija ta' apparat, magna tal-ħasil, friġġ, forn
+phone_repair|Tiswija ta' telefowns u tablets|tiswija ta' mowbajls, bdil ta' screen, iphone, tablet
+computer_repair|Tiswija ta' kompjuters|tiswija ta' kompjuters, laptop, pc, rkupru ta' data
+watch_jewellery_repair|Tiswija ta' arloġġi u ġojjelli|arluġġar, ġojjellier, batterija tal-arloġġ, kobor taċ-ċurkett
+shoe_repair|Tiswija taż-żraben|skarpan, tiswija ta' żraben, għarqub, pett
+tailoring_alterations|Ħjata u tibdil|ħajjat, ħajjata, tqassir, tibdil ta' ħwejjeġ
+upholstery|Tapizzerija|tapizzerija, kisi ta' sufan, kuxxinetti, imbottitura
+glazing|Ħġieġ u twieqi|ħġieġi, twieqi, ħġieġ doppju, ħġieġ
+chimney_sweep|Tindif taċ-ċmieni|tindif taċ-ċmieni, ċumnija, nugrufun, kanal tad-duħħan
+pest_control|Kontroll tal-pesti|qerda ta' insetti, bed bugs, ġrieden, wirdien
+pool_maintenance|Manutenzjoni tal-pixxina|manutenzjoni tal-pixxina, tindif tal-pixxina, klorin, pixxina
+window_cleaning|Tindif tat-twieqi|tindif tat-twieqi, ħasil tal-ħġieġ, faċċata, twieqi
+car_wash|Ħasil tal-karozzi|ħasil tal-karozzi, tindif tal-karozza, valeting, illustrar
+car_rental|Kiri ta' karozzi|kiri ta' karozzi, karozza għall-kiri, rent a car, kiri ta' vetturi
+bike_scooter_rental|Kiri ta' roti u skuters|kiri ta' roti, scooter elettriku, kiri ta' rota, scooter
+funeral_services|Servizzi funerarji|impriża tal-funerali, funeral, kremazzjoni, tebut
+notary|Nutar|nutar pubbliku, atti, prokura, konvenju
+bailiff|Eżekuzzjoni tal-qorti|marixxall, sekwestru, ordni tal-qorti, eżekuzzjoni
+patent_trademark|Privattivi u trademarks|proprjetà intellettwali, reġistrazzjoni ta' trademark, privattiva, aġent tal-privattivi
+debt_collection|Ġbir ta' djun|ġbir ta' djun, dejn, ittra ta' talba, fatturi mhux imħallsa
+company_formation|Twaqqif ta' kumpaniji|reġistrazzjoni ta' kumpanija, inkorporazzjoni, ltd, twaqqif ta' negozju
+financial_advisory|Konsulenza finanzjarja|konsulent finanzjarju, investiment, ġid, ippjanar finanzjarju
+payroll_services|Servizzi tal-pagi|pagi, payslip, salarji, amministrazzjoni tal-pagi
+currency_exchange|Kambju tal-munita|kambju ta' munita, bureau de change, munita barranija, rata tal-kambju
+pawnshop|Ħanut tar-rahan|monti, rahan, self bil-garanzija, xiri ta' deheb
+leasing|Leasing u finanzjament|leasing, finanzjament, hire purchase, kiri fit-tul
+hearing_aids|Apparat tas-smigħ|apparat tas-smigħ, test tas-smigħ, awdjoloġija, ċentru tas-smigħ
+medical_transport|Trasport mediku|ambulanza, trasport ta' pazjenti, stretcher, trasport mediku
+rehabilitation|Ċentru ta' riabilitazzjoni|riabilitazzjoni, rkupru, ċentru ta' rkupru, konvalexxenza
+occupational_therapy|Terapija okkupazzjonali|terapista okkupazzjonali, terapija okkupazzjonali, ħiliet ta' kuljum, indipendenza
+midwifery|Qwiebel|qabla, twelid, tqala, kura qabel it-twelid
+acupuncture|Akupuntura|akupuntura, labar, mediċina ċiniża, agopuntura
+chiropractic|Kiropratika u osteopatija|kiroprattiku, osteopata, sinsla, uġigħ ta' dahar
+insulation|Insulazzjoni termika|iżolament, iżolament termali, iżolament tal-bejt, materjal iżolanti
+waterproofing|Waterproofing|impermeabilizzazzjoni, tnixxija tal-bejt, umdità, membrana
+plastering|Tikħil u tlestija tal-ħitan|kisi, ġibs, stukk, tlestija tal-ħajt
+tiling|Tqegħid ta' madum|madum, tqegħid tal-madum, ċeramika, madum tal-ħajt
+drywall|Drywall u diviżorji|drywall, ħitan diviżorji, saqaf mdendel, plasterboard
+fencing|Ċnut u bibien tal-ħadid|ċint, bibien tal-ħadid, ringiela, xibka
+paving|Paviment u passaġġi|paving, driveway, bankina, ġebel tat-triq
+well_drilling|Tħaffir ta' bjar|tħaffir ta' bir, bir, bir tal-ilma, ilma ta' taħt l-art
+septic_systems|Tankijiet settiċi u drenaġġ|septic tank, drenaġġ, bir tad-drenaġġ, sistema tad-drenaġġ
+solar_panels|Installazzjoni ta' pannelli solari|pannelli fotovoltajċi, pannelli solari, inverter, enerġija solari
+alarm_cctv|Allarmi u kameras tas-sigurtà|allarm, kameras tas-sigurtà, cctv, sorveljanza
+smart_home|Installazzjoni ta' smart home|smart home, dawl intelliġenti, awtomazzjoni tad-dar, kontroll
+lift_maintenance|Manutenzjoni ta' liftijiet|lift, servizz tal-lifts, escalator, tiswija tal-lift
+fire_safety|Sigurtà min-nar u extinguishers|estintur, allarm tan-nar, sprinklers, sigurtà min-nar
+car_dealer|Bejjiegħ tal-karozzi|bejjiegħ tal-karozzi, karozzi użati, bejgħ ta' karozzi, showroom
+vehicle_inspection|Spezzjoni tal-vetturi|vrt, spezzjoni ta' vetturi, test tekniku, ċentru tat-testijiet
+auto_electrics|Elettriku tal-karozzi|elettrixin tal-karozzi, alternatur, starter, wajering tal-karozza
+car_glass|Ħġieġ tal-karozzi u windscreens|windscreen, bdil ta' ħġieġ, ħġieġ tal-karozza, xquq fil-ħġieġ
+boat_repair|Tiswija ta' dgħajjes|tiswija ta' dgħajjes, outboard, dgħajsa, jott
+bus_charter|Kiri ta' karozzi tal-linja|kiri ta' karozzi tal-linja, coach, minibus, trasport ta' gruppi
+call_centre|Call centre|call centre, telemarketing, servizz tal-klijenti, sapport bit-telefon
+virtual_assistant|Assistent virtwali|assistent virtwali, sapport amministrattiv, segretarja remota, freelance
+market_research|Riċerka tas-suq|riċerka tas-suq, stħarriġ, riċerka tal-konsumatur, focus group
+copywriting|Kitba ta' kontenut|kittieb ta' kontenut, editjar, proofreading, kontenut
+seo_services|SEO u reklamar onlajn|seo, google ads, reklamar onlajn, sem
+social_media|Ġestjoni tal-midja soċjali|social media, instagram, facebook, tiktok
+app_development|Żvilupp ta' apps mobbli|żvilupp ta' apps, android, apps tal-mowbajl, flutter
+game_development|Żvilupp ta' logħob|żvilupp ta' logħob, unity, unreal, studio tal-logħob
+drone_services|Servizzi bid-drone|drone, ritratti mill-ajru, filming mill-ajru, mappar
+printing_3d|Printjar 3D|printing 3d, prototipi, manifattura additiva, printer 3d
+interior_design|Disinn ta' interni|disinjatur ta' interni, dekorazzjoni, ippjanar ta' spazju, styling
+dance_school|Skola taż-żfin|lezzjonijiet taż-żfin, ballet, salsa, skola taż-żfin
+art_gallery|Gallerija tal-arti u framing|inkwadrar, kwadri, wirjiet, gallerija tal-arti
