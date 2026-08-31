@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Voľné miesto - staňte sa sponzorom" },
+  "sponsorbox": {
+    "free": "Voľné miesto - staňte sa sponzorom"
+  },
   "bizlist": {
     "label": "Tu sa zobrazujú registrované firmy",
     "free": "Voľné miesto - zaregistrujte svoju firmu"
@@ -227,7 +229,13 @@
     "none": "Žiadne výsledky. Skúste iné slovo - remeslo, náradie alebo službu."
   },
   "business": {
-    "hero": { "free_line": "Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú." },
+    "idea": {
+      "tagline1": "Ľudia potrebujú firmy.",
+      "tagline2": "Ľudia majú firmy."
+    },
+    "hero": {
+      "free_line": "Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú."
+    },
     "categories": {
       "section_eyebrow": "ROTABO PRE FIRMY",
       "section_lead": "Vyberte, čo robí vaša firma - a nájdu vás tí, ktorí to potrebujú.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponzori", "company": "Vaša firma tu môže byť vidieť — registrácia zadarmo",
+    "sponsors": "Sponzori",
+    "company": "Vaša firma tu môže byť vidieť — registrácia zadarmo",
     "offers": "ponúka",
     "seeks": "hľadá"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Čím by ste začali?",
     "submit": "Odoslať",
     "sent": "Ďakujem — ozvem sa."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hlavný partner",
     "invite": "Toto miesto je vyhradené pre organizáciu, ktorá stojí za touto myšlienkou. Nič nestojí a nikdy stáť nebude."
   },
@@ -315,21 +325,26 @@
     "confirming": "Potvrdzujeme tvoju platbu…",
     "retry_btn": "Skúsiť znova"
   },
-
   "banknote": {
     "title": "Tvoje číslo cestuje po svete. Ty nemusíš.",
     "body": "<p>Vytiahni z peňaženky bankovku. Akúkoľvek. Skôr než ju minieš, napíš na ňu šesť malých znakov: rotabo — plus tvoje číslo Rotabo, ktoré dostaneš po registrácii: rotabo2244. Potom ju nechaj ísť.</p><p>Zajtra zaplatí niekomu kávu. Budúci týždeň bude drobnými v taxíku o tri mestá ďalej. Budúci mesiac prekročí hranicu vo vrecku cudzinca. Peniaze sa nikdy neprestanú pohybovať — a teraz ani tvoje meno.</p><p>Niekde sa niekto pozrie na bankovku vo svojej ruke. Vidí to: rotabo2244. Zvedavosť urobí zvyšok. Napíše to na rotabo.app — a si tam. Tvoje meno. Tvoja vlajka. Čo ponúkaš. Skutočný človek, nájditeľný kýmkoľvek, kdekoľvek, kto kedy drží ten kus papiera.</p><p>Žiadny billboard necestuje tak ďaleko. Žiadna reklama nežije tak dlho. Bankovka zostáva v obehu roky a prejde stovkami rúk — a každá z nich ťa môže nájsť. Jedno pero. Jedno číslo. Celý svet sa stane tvojou reklamou.</p>",
     "fineprint": "Písanie na bankovky je tvoja vlastná voľba. Skontroluj miestne zákony."
   },
-
-  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Firmy", "personal": "Pre ľudí", "drive": "Staň sa vodičom", "drivers": "Vodiči", "account": "Môj účet" },
+  "nav": {
+    "how": "Ako to funguje",
+    "safety": "Bezpečnosť",
+    "business": "Firmy",
+    "personal": "Pre ľudí",
+    "drive": "Staň sa vodičom",
+    "drivers": "Vodiči",
+    "account": "Môj účet"
+  },
   "hero": {
     "free_line": "Registrácia zadarmo, inzerát zadarmo — čo potrebujete, alebo čo ponúkate.",
     "number_intro": "Každý na Rotabe má číslo. Jedno číslo. Navždy tvoje. Hovorí, kto si, kde si a čo dokážeš — nájditeľný kýmkoľvek na Zemi.",
     "search_placeholder": "Nájdi číslo Rotabo — napr. 2244",
     "search_btn": "Hľadať",
     "get_number": "Získaj svoje číslo",
-
     "origin_badge": "Vyrobené vo Švajčiarsku — pre celý svet",
     "tagline3": "Tvoje auto.",
     "lede": "Vyber si, čo potrebuješ — alebo sa zapíš ako niekto, kto vie pomôcť.",
@@ -623,7 +638,11 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…", "no_matches": "Žiadne výsledky" },
+  "lang_selector": {
+    "label": "Jazyk",
+    "search_placeholder": "Hľadať jazyk…",
+    "no_matches": "Žiadne výsledky"
+  },
   "install_modal": {
     "title": "Pridať Rotabo na plochu",
     "generic": "Otvorte menu prehliadača a vyhľadajte \"Inštalovať aplikáciu\" alebo \"Pridať na plochu\".",
@@ -838,14 +857,12 @@
     "load_error": "Tvoje inzeráty sa nepodarilo načítať. Skús to znova.",
     "retry_btn": "Skúsiť znova"
   },
-
   "investors_card": {
     "cat": "INVESTORI",
     "h3": "Staň sa investorom",
     "p": "Rotabo spája ľudí v 12 kategóriách a 38 jazykoch po celom svete — bez provízie od kohokoľvek, kto ponúka svoj čas, zručnosti alebo vybavenie. Rozprávame sa s tými, ktorí tento model podporujú.",
     "link": "Ozvi sa nám →"
   },
-
   "verify_modal": {
     "title": "Skontroluj e-mail",
     "subtitle": "Poslali sme šesťmiestny kód na adresu nižšie. Zadaj ho a pokračuj.",

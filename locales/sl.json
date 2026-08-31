@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Prosto mesto - postanite sponzor" },
+  "sponsorbox": {
+    "free": "Prosto mesto - postanite sponzor"
+  },
   "bizlist": {
     "label": "Tu se prikazujejo registrirana podjetja",
     "free": "Prosto mesto - registrirajte svoje podjetje"
@@ -227,7 +229,13 @@
     "none": "Ni zadetkov. Poskusite z drugo besedo - obrt, orodje ali storitev."
   },
   "business": {
-    "hero": { "free_line": "Brezplačna registracija, brezplačen oglas - vaše podjetje tam, kjer ljudje že iščejo." },
+    "idea": {
+      "tagline1": "Ljudje potrebujejo podjetja.",
+      "tagline2": "Ljudje imajo podjetja."
+    },
+    "hero": {
+      "free_line": "Brezplačna registracija, brezplačen oglas - vaše podjetje tam, kjer ljudje že iščejo."
+    },
     "categories": {
       "section_eyebrow": "ROTABO ZA PODJETJA",
       "section_lead": "Izberite, s čim se ukvarja vaše podjetje - in naj vas najdejo tisti, ki to potrebujejo.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponzorji", "company": "Vaše podjetje je lahko vidno tu — registracija je brezplačna",
+    "sponsors": "Sponzorji",
+    "company": "Vaše podjetje je lahko vidno tu — registracija je brezplačna",
     "offers": "ponuja",
     "seeks": "išče"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "S čim bi začeli?",
     "submit": "Pošlji",
     "sent": "Hvala — odpisal vam bom."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Glavni partner",
     "invite": "To mesto je namenjeno organizaciji, ki stoji za to zamislijo. Ne stane nič in nikoli ne bo."
   },
@@ -315,21 +325,26 @@
     "confirming": "Potrjujemo tvoje plačilo…",
     "retry_btn": "Poskusi znova"
   },
-
   "banknote": {
     "title": "Tvoja številka potuje po svetu. Tebi ni treba.",
     "body": "<p>Vzemi bankovec iz denarnice. Katerega koli. Preden ga porabiš, nanj napiši šest majhnih znakov: rotabo — plus tvoja številka Rotabo, ki jo dobiš po registraciji: rotabo2244. Nato ga izpusti.</p><p>Jutri plača nekomu kavo. Naslednji teden je drobiž v taksiju tri mesta stran. Naslednji mesec prečka mejo v žepu neznanca. Denar se nikoli ne neha premikati — in zdaj tudi tvoje ime ne.</p><p>Nekje nekdo pogleda bankovec v svoji roki. Zagleda: rotabo2244. Radovednost naredi ostalo. Vtipka ga na rotabo.app — in tam si. Tvoje ime. Tvoja zastava. Kar ponujaš. Resničen človek, najdljiv za kogar koli, kjer koli, ki kdaj drži ta kos papirja.</p><p>Noben pano ne potuje tako daleč. Noben oglas ne živi tako dolgo. Bankovec ostane v obtoku leta in gre skozi stotine rok — in vsaka od njih te lahko najde. Eno pero. Ena številka. Ves svet postane tvoj oglas.</p>",
     "fineprint": "Pisanje po bankovcih je tvoja lastna izbira. Preveri lokalne zakone."
   },
-
-  "nav": { "how": "Kako deluje", "safety": "Varnost", "business": "Podjetja", "personal": "Za posameznike", "drive": "Postani voznik", "drivers": "Vozniki", "account": "Moj račun" },
+  "nav": {
+    "how": "Kako deluje",
+    "safety": "Varnost",
+    "business": "Podjetja",
+    "personal": "Za posameznike",
+    "drive": "Postani voznik",
+    "drivers": "Vozniki",
+    "account": "Moj račun"
+  },
   "hero": {
     "free_line": "Registracija brezplačna, objava brezplačna — kaj potrebujete ali kaj ponujate.",
     "number_intro": "Vsak na Rotabu ima številko. Eno številko. Za vedno tvojo. Pove, kdo si, kje si in kaj znaš — najdljiv za kogar koli na Zemlji.",
     "search_placeholder": "Poišči številko Rotabo — npr. 2244",
     "search_btn": "Išči",
     "get_number": "Pridobi svojo številko",
-
     "origin_badge": "Izdelano v Švici — za ves svet",
     "tagline3": "Tvoj avto.",
     "lede": "Izberi, kaj potrebuješ — ali se prijavi kot nekdo, ki lahko pomaga.",
@@ -623,7 +638,11 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…", "no_matches": "Ni zadetkov" },
+  "lang_selector": {
+    "label": "Jezik",
+    "search_placeholder": "Išči jezik…",
+    "no_matches": "Ni zadetkov"
+  },
   "install_modal": {
     "title": "Dodaj Rotabo na začetni zaslon",
     "generic": "Odprite meni brskalnika in poiščite \"Namesti aplikacijo\" ali \"Dodaj na začetni zaslon\".",
@@ -838,14 +857,12 @@
     "load_error": "Tvojih oglasov ni bilo mogoče naložiti. Poskusi znova.",
     "retry_btn": "Poskusi znova"
   },
-
   "investors_card": {
     "cat": "VLAGATELJI",
     "h3": "Postani vlagatelj",
     "p": "Rotabo povezuje ljudi v 12 kategorijah in 38 jezikih po vsem svetu — brez provizije od kogar koli, ki ponuja svoj čas, znanje ali opremo. Pogovarjamo se s tistimi, ki ta model podpirajo.",
     "link": "Stopi v stik →"
   },
-
   "verify_modal": {
     "title": "Preveri svojo e-pošto",
     "subtitle": "Poslali smo 6-mestno kodo na spodnji naslov. Vnesi jo za nadaljevanje.",

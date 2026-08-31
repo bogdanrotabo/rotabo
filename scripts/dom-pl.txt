@@ -161,53 +161,53 @@ car_wash|Myjnia samochodowa|Mycie auta, czyszczenie samochodu, detailing
 car_rental|Wynajem samochodów|Rent a car, auto na wynajem
 bike_scooter_rental|Wypożyczalnia rowerów i hulajnóg|Wypożycz rower, hulajnoga elektryczna
 funeral_services|Usługi pogrzebowe|Zakład pogrzebowy, pogrzeb, kremacja, trumny
-notary|Notariusz|
-bailiff|Komornik|
-patent_trademark|Patenty i znaki towarowe|
-debt_collection|Windykacja|
-company_formation|Zakładanie firm|
-financial_advisory|Doradztwo finansowe|
-payroll_services|Obsługa kadrowo-płacowa|
-currency_exchange|Kantor wymiany walut|
-pawnshop|Lombard|
-leasing|Leasing i finansowanie|
-hearing_aids|Aparaty słuchowe|
-medical_transport|Transport medyczny|
-rehabilitation|Ośrodek rehabilitacji|
-occupational_therapy|Terapia zajęciowa|
-midwifery|Położnictwo|
-acupuncture|Akupunktura|
-chiropractic|Chiropraktyka i osteopatia|
-insulation|Izolacja termiczna|
-waterproofing|Hydroizolacja|
-plastering|Tynki i gładzie|
-tiling|Układanie płytek|
-drywall|Płyty gipsowe i ścianki działowe|
-fencing|Ogrodzenia i bramy|
-paving|Kostka brukowa i podjazdy|
-well_drilling|Wiercenie studni|
-septic_systems|Szamba i kanalizacja|
-solar_panels|Montaż paneli słonecznych|
-alarm_cctv|Alarmy i monitoring|
-smart_home|Inteligentny dom|
-lift_maintenance|Konserwacja wind|
-fire_safety|Ochrona przeciwpożarowa|
-car_dealer|Salon samochodowy|
-vehicle_inspection|Przegląd techniczny|
-auto_electrics|Elektryka samochodowa|
-car_glass|Szyby samochodowe|
-boat_repair|Naprawa łodzi|
-bus_charter|Wynajem autokarów|
-call_centre|Call center|
-virtual_assistant|Wirtualna asystentka|
-market_research|Badania rynku|
-copywriting|Copywriting|
-seo_services|SEO i reklama online|
-social_media|Prowadzenie mediów społecznościowych|
-app_development|Tworzenie aplikacji mobilnych|
-game_development|Tworzenie gier|
-drone_services|Usługi dronem|
-printing_3d|Druk 3D|
-interior_design|Projektowanie wnętrz|
-dance_school|Szkoła tańca|
-art_gallery|Galeria sztuki i oprawa obrazów|
+notary|Notariusz|notariusz, akt notarialny, poświadczenie, spadek
+bailiff|Komornik|komornik, egzekucja, zajęcie, tytuł wykonawczy
+patent_trademark|Patenty i znaki towarowe|własność intelektualna, zastrzeżenie znaku, patent, rzecznik patentowy
+debt_collection|Windykacja|windykacja należności, długi, wezwanie do zapłaty, niezapłacone faktury
+company_formation|Zakładanie firm|rejestracja firmy, krs, zakładanie spółki, ceidg
+financial_advisory|Doradztwo finansowe|doradca finansowy, inwestycje, majątek, planowanie finansowe
+payroll_services|Obsługa kadrowo-płacowa|kadry i płace, listy płac, wynagrodzenia, zus
+currency_exchange|Kantor wymiany walut|wymiana walut, kantor, waluty obce, kurs walut
+pawnshop|Lombard|zastaw, pożyczka pod zastaw, skup złota, lombardy
+leasing|Leasing i finansowanie|leasing samochodu, finansowanie, rata, wynajem długoterminowy
+hearing_aids|Aparaty słuchowe|protetyk słuchu, badanie słuchu, aparat słuchowy, niedosłuch
+medical_transport|Transport medyczny|karetka, transport pacjentów, nosze, przewóz chorych
+rehabilitation|Ośrodek rehabilitacji|rehabilitacja, rekonwalescencja, powrót do sprawności, fizjoterapia
+occupational_therapy|Terapia zajęciowa|terapeuta zajęciowy, samodzielność, czynności codzienne, terapia
+midwifery|Położnictwo|położna, poród, ciąża, szkoła rodzenia
+acupuncture|Akupunktura|akupunkturzysta, igły, medycyna chińska, moksa
+chiropractic|Chiropraktyka i osteopatia|osteopata, kręgarz, kręgosłup, ból pleców
+insulation|Izolacja termiczna|ocieplenie, docieplenie budynku, izolacja poddasza, styropian
+waterproofing|Hydroizolacja|izolacja przeciwwilgociowa, przecieki, wilgoć, papa
+plastering|Tynki i gładzie|tynkarz, tynk, gładzie gipsowe, szpachlowanie
+tiling|Układanie płytek|glazurnik, płytki, terakota, kafelki
+drywall|Płyty gipsowe i ścianki działowe|karton gips, regipsy, sufit podwieszany, ścianki
+fencing|Ogrodzenia i bramy|ogrodzenie, brama, płot, siatka
+paving|Kostka brukowa i podjazdy|brukarz, podjazd, chodnik, kostka
+well_drilling|Wiercenie studni|studnia, odwiert, wiercenie, woda gruntowa
+septic_systems|Szamba i kanalizacja|szambo, kanalizacja, odwodnienie, oczyszczalnia
+solar_panels|Montaż paneli słonecznych|fotowoltaika, panele fotowoltaiczne, inwerter, instalacja pv
+alarm_cctv|Alarmy i monitoring|alarm, kamery, monitoring wizyjny, systemy zabezpieczeń
+smart_home|Inteligentny dom|automatyka domowa, inteligentne oświetlenie, sterowanie, dom połączony
+lift_maintenance|Konserwacja wind|winda, dźwig osobowy, schody ruchome, naprawa wind
+fire_safety|Ochrona przeciwpożarowa|gaśnice, czujki dymu, tryskacze, ppoż
+car_dealer|Salon samochodowy|dealer samochodowy, samochody używane, sprzedaż aut, komis
+vehicle_inspection|Przegląd techniczny|przegląd rejestracyjny, stacja kontroli pojazdów, badanie techniczne, diagnostyka
+auto_electrics|Elektryka samochodowa|elektryk samochodowy, alternator, rozrusznik, instalacja elektryczna
+car_glass|Szyby samochodowe|szyba czołowa, wymiana szyby, szyby auta, pęknięcie szyby
+boat_repair|Naprawa łodzi|stocznia, silnik zaburtowy, łódź, jacht
+bus_charter|Wynajem autokarów|autokar, wynajem autobusu, bus, przewóz grup
+call_centre|Call center|obsługa klienta, telemarketing, infolinia, contact center
+virtual_assistant|Wirtualna asystentka|asystent zdalny, wsparcie administracyjne, sekretariat zdalny, freelancer
+market_research|Badania rynku|ankiety, badanie rynku, grupy fokusowe, badania konsumenckie
+copywriting|Copywriting|copywriter, redakcja tekstów, korekta, treści
+seo_services|SEO i reklama online|pozycjonowanie, google ads, reklama internetowa, sem
+social_media|Prowadzenie mediów społecznościowych|prowadzenie social media, instagram, facebook, tiktok
+app_development|Tworzenie aplikacji mobilnych|aplikacje mobilne, android, programowanie aplikacji, flutter
+game_development|Tworzenie gier|gry komputerowe, unity, unreal, studio gier
+drone_services|Usługi dronem|dron, zdjęcia z powietrza, nalot dronem, fotografia lotnicza
+printing_3d|Druk 3D|drukarka 3d, prototypy, wydruki 3d, prototypowanie
+interior_design|Projektowanie wnętrz|architekt wnętrz, aranżacja, dekorator, urządzanie wnętrz
+dance_school|Szkoła tańca|kursy tańca, balet, salsa, nauka tańca
+art_gallery|Galeria sztuki i oprawa obrazów|oprawa obrazów, ramy, wystawy, sztuka

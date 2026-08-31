@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Szabad hely - legyen szponzor" },
+  "sponsorbox": {
+    "free": "Szabad hely - legyen szponzor"
+  },
   "bizlist": {
     "label": "Itt jelennek meg a regisztrált cégek",
     "free": "Szabad hely - regisztrálja a cégét"
@@ -227,7 +229,13 @@
     "none": "Nincs találat. Próbáljon másik szót - szakma, szerszám vagy szolgáltatás."
   },
   "business": {
-    "hero": { "free_line": "Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek." },
+    "idea": {
+      "tagline1": "Az embereknek szükségük van cégekre.",
+      "tagline2": "Az embereknek vannak cégeik."
+    },
+    "hero": {
+      "free_line": "Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek."
+    },
     "categories": {
       "section_eyebrow": "ROTABO CÉGEKNEK",
       "section_lead": "Válassza ki, mit csinál az Ön cége - és megtalálják azok, akiknek szükségük van rá.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Támogatók", "company": "Az Ön vállalkozása itt is látszódhat — a regisztráció ingyenes",
+    "sponsors": "Támogatók",
+    "company": "Az Ön vállalkozása itt is látszódhat — a regisztráció ingyenes",
     "offers": "kínál",
     "seeks": "keres"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Mivel kezdené?",
     "submit": "Küldés",
     "sent": "Köszönöm — válaszolni fogok."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Fő partner",
     "invite": "Ez a hely egy olyan szervezetnek van fenntartva, amely kiáll az ötlet mellett. Semmibe sem kerül, és soha nem is fog."
   },
@@ -315,21 +325,26 @@
     "confirming": "Fizetésed megerősítése folyamatban…",
     "retry_btn": "Próbáld újra"
   },
-
   "banknote": {
     "title": "A számod bejárja a világot. Neked nem kell.",
     "body": "<p>Végy ki egy bankjegyet a pénztárcádból. Bármelyiket. Mielőtt elköltenéd, írj rá hat kis karaktert: rotabo — plusz a Rotabo-számod, amit a regisztráció után kapsz: rotabo2244. Aztán engedd útjára.</p><p>Holnap valakinek a kávéját fizeti. Jövő héten aprópénz egy taxiban három várossal odébb. Jövő hónapban határt lép át egy idegen zsebében. A pénz sosem áll meg — és mostantól a neved sem.</p><p>Valahol valaki ránéz a kezében lévő bankjegyre. Meglátja: rotabo2244. A kíváncsiság elvégzi a többit. Beírja a rotabo.app-ba — és ott vagy. A neved. A zászlód. Amit kínálsz. Egy valódi ember, akit bárki, bárhol megtalálhat, aki valaha kézbe veszi azt a papírdarabot.</p><p>Egyetlen óriásplakát sem utazik ilyen messzire. Egyetlen hirdetés sem él ilyen sokáig. Egy bankjegy évekig forgalomban marad, több száz kézen megy át — és mindegyik megtalálhat téged. Egy toll. Egy szám. Az egész világ a hirdetéseddé válik.</p>",
     "fineprint": "A bankjegyekre írás a saját döntésed. Ellenőrizd a helyi törvényeket."
   },
-
-  "nav": { "how": "Hogyan működik", "safety": "Biztonság", "business": "Cégek", "personal": "Magánszemélyeknek", "drive": "Legyél sofőr", "drivers": "Sofőrök", "account": "Fiókom" },
+  "nav": {
+    "how": "Hogyan működik",
+    "safety": "Biztonság",
+    "business": "Cégek",
+    "personal": "Magánszemélyeknek",
+    "drive": "Legyél sofőr",
+    "drivers": "Sofőrök",
+    "account": "Fiókom"
+  },
   "hero": {
     "free_line": "A regisztráció ingyenes, a hirdetés ingyenes — mire van szüksége, vagy mit kínál.",
     "number_intro": "A Rotabón mindenkinek van egy száma. Egyetlen szám. Örökre a tiéd. Elmondja, ki vagy, hol vagy és mit tudsz — a Föld bárkije megtalálhat.",
     "search_placeholder": "Keress egy Rotabo-számot — pl. 2244",
     "search_btn": "Keresés",
     "get_number": "Szerezd meg a számod",
-
     "origin_badge": "Svájcban készült — az egész világnak",
     "tagline3": "A te autód.",
     "lede": "Válaszd ki, mire van szükséged — vagy jelentkezz be olyanként, aki tud segíteni.",
@@ -623,7 +638,11 @@
     "contact": "Kapcsolat",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…", "no_matches": "Nincs találat" },
+  "lang_selector": {
+    "label": "Nyelv",
+    "search_placeholder": "Nyelv keresése…",
+    "no_matches": "Nincs találat"
+  },
   "install_modal": {
     "title": "Rotabo hozzáadása a kezdőképernyőhöz",
     "generic": "Nyisd meg a böngésző menüjét, és keresd az \"Alkalmazás telepítése\" vagy \"Hozzáadás a kezdőképernyőhöz\" lehetőséget.",
@@ -838,14 +857,12 @@
     "load_error": "A hirdetéseidet nem sikerült betölteni. Kérlek, próbáld újra.",
     "retry_btn": "Próbáld újra"
   },
-
   "investors_card": {
     "cat": "BEFEKTETŐK",
     "h3": "Legyél befektető",
     "p": "A Rotabo 12 kategóriában és 38 nyelven köt össze embereket világszerte — jutalék nélkül mindenkitől, aki az idejét, tudását vagy eszközeit kínálja. Azokkal beszélgetünk, akik támogatják ezt a modellt.",
     "link": "Vedd fel a kapcsolatot →"
   },
-
   "verify_modal": {
     "title": "Nézd meg az e-mailjeidet",
     "subtitle": "Küldtünk egy 6 jegyű kódot az alábbi címre. Írd be a folytatáshoz.",

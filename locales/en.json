@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Free place - become a sponsor" },
+  "sponsorbox": {
+    "free": "Free place - become a sponsor"
+  },
   "bizlist": {
     "label": "Here the registered companies appear",
     "free": "Free place - register your company"
@@ -442,8 +444,13 @@
     "none": "Nothing matched. Try another word - a trade, a tool, a service."
   },
   "business": {
-    "idea": { "tagline1": "People need companies.", "tagline2": "People have companies." },
-    "hero": { "free_line": "Free to list, free to be found - your company, where people are already looking." },
+    "idea": {
+      "tagline1": "People need companies.",
+      "tagline2": "People have companies."
+    },
+    "hero": {
+      "free_line": "Free to list, free to be found - your company, where people are already looking."
+    },
     "categories": {
       "section_eyebrow": "ROTABO FOR BUSINESS",
       "section_lead": "Pick the work your company does - and be found by the people and firms that need it.",
@@ -460,7 +467,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsors", "company": "Your business can be visible here — registration is free",
+    "sponsors": "Sponsors",
+    "company": "Your business can be visible here — registration is free",
     "offers": "offers",
     "seeks": "looking for"
   },
@@ -490,7 +498,8 @@
     "message_placeholder": "What would you start with?",
     "submit": "Send",
     "sent": "Thank you — I will write back."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Main Partner",
     "invite": "This place is held for an organisation that stands behind the idea. It costs nothing, and it never will."
   },
@@ -531,11 +540,11 @@
     "confirming": "Confirming your payment…",
     "retry_btn": "Try again"
   },
-
   "nav": {
     "how": "How it works",
     "safety": "Safety",
-    "business": "Business", "personal": "For people",
+    "business": "Business",
+    "personal": "For people",
     "drive": "Become a driver",
     "drivers": "Drivers",
     "account": "My account"

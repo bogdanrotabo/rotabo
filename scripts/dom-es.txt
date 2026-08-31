@@ -161,53 +161,53 @@ car_wash|Lavado de coches|Lavadero, limpieza de coche, detailing
 car_rental|Alquiler de coches|Rent a car, coche de alquiler
 bike_scooter_rental|Alquiler de bicis y patinetes|Alquilar bici, patinete eléctrico
 funeral_services|Servicios funerarios|Funeraria, entierro, incineración, ataúdes
-notary|Notaría|
-bailiff|Procurador y ejecución judicial|
-patent_trademark|Patentes y marcas|
-debt_collection|Recobro de deudas|
-company_formation|Constitución de empresas|
-financial_advisory|Asesoría financiera|
-payroll_services|Gestión de nóminas|
-currency_exchange|Casa de cambio|
-pawnshop|Casa de empeños|
-leasing|Leasing y financiación|
-hearing_aids|Audífonos|
-medical_transport|Transporte sanitario|
-rehabilitation|Centro de rehabilitación|
-occupational_therapy|Terapia ocupacional|
-midwifery|Matronas|
-acupuncture|Acupuntura|
-chiropractic|Quiropráctica y osteopatía|
-insulation|Aislamiento térmico|
-waterproofing|Impermeabilización|
-plastering|Enlucido y yeso|
-tiling|Alicatado y solado|
-drywall|Pladur y tabiquería|
-fencing|Vallas y portones|
-paving|Pavimentos y accesos|
-well_drilling|Perforación de pozos|
-septic_systems|Fosas sépticas y saneamiento|
-solar_panels|Instalación de placas solares|
-alarm_cctv|Alarmas y videovigilancia|
-smart_home|Domótica|
-lift_maintenance|Mantenimiento de ascensores|
-fire_safety|Protección contra incendios|
-car_dealer|Concesionario de coches|
-vehicle_inspection|Inspección técnica de vehículos|
-auto_electrics|Electricidad del automóvil|
-car_glass|Lunas y parabrisas|
-boat_repair|Reparación de embarcaciones|
-bus_charter|Alquiler de autocares|
-call_centre|Centro de llamadas|
-virtual_assistant|Asistente virtual|
-market_research|Estudios de mercado|
-copywriting|Redacción de contenidos|
-seo_services|SEO y publicidad online|
-social_media|Gestión de redes sociales|
-app_development|Desarrollo de apps móviles|
-game_development|Desarrollo de videojuegos|
-drone_services|Servicios con dron|
-printing_3d|Impresión 3D|
-interior_design|Interiorismo|
-dance_school|Escuela de baile|
-art_gallery|Galería de arte y enmarcado|
+notary|Notaría|notario, escrituras, notaría, poder notarial
+bailiff|Procurador y ejecución judicial|procurador, embargo, ejecución judicial, juzgado
+patent_trademark|Patentes y marcas|propiedad industrial, registro de marca, patente, agente de patentes
+debt_collection|Recobro de deudas|cobro de morosos, impagados, recobro, deuda
+company_formation|Constitución de empresas|constituir sociedad, alta de autónomo, registro mercantil, escritura
+financial_advisory|Asesoría financiera|asesor financiero, inversiones, planificación, patrimonio
+payroll_services|Gestión de nóminas|nóminas, seguros sociales, salarios, laboral
+currency_exchange|Casa de cambio|cambio de divisas, divisa, moneda extranjera, cambio de moneda
+pawnshop|Casa de empeños|empeño, préstamo con garantía, compro oro, casa de empeño
+leasing|Leasing y financiación|renting, financiación, arrendamiento financiero, cuota
+hearing_aids|Audífonos|audiología, audiometría, centro auditivo, sordera
+medical_transport|Transporte sanitario|ambulancia, traslado de pacientes, camilla, transporte de enfermos
+rehabilitation|Centro de rehabilitación|recuperación, convalecencia, rehabilitación física, fisioterapia
+occupational_therapy|Terapia ocupacional|terapeuta ocupacional, autonomía, actividades diarias, terapia
+midwifery|Matronas|matrona, comadrona, parto, preparación al parto
+acupuncture|Acupuntura|acupuntor, agujas, medicina china, moxibustión
+chiropractic|Quiropráctica y osteopatía|osteópata, quiropráctico, columna, dolor de espalda
+insulation|Aislamiento térmico|aislante, aislamiento acústico, lana de roca, fachada
+waterproofing|Impermeabilización|impermeabilizar, humedades, tela asfáltica, goteras
+plastering|Enlucido y yeso|yesero, enfoscado, guarnecido, revoco
+tiling|Alicatado y solado|alicatador, azulejos, baldosas, gres
+drywall|Pladur y tabiquería|pladur, tabique, falso techo, cartón yeso
+fencing|Vallas y portones|valla, cercado, portón, verja
+paving|Pavimentos y accesos|adoquín, acera, camino, asfaltado
+well_drilling|Perforación de pozos|pozo, sondeo, perforación, agua subterránea
+septic_systems|Fosas sépticas y saneamiento|fosa séptica, saneamiento, desagüe, pozo negro
+solar_panels|Instalación de placas solares|fotovoltaica, placas solares, inversor, autoconsumo
+alarm_cctv|Alarmas y videovigilancia|alarma, cámaras de seguridad, videovigilancia, seguridad
+smart_home|Domótica|domótica, casa inteligente, iluminación inteligente, automatización
+lift_maintenance|Mantenimiento de ascensores|ascensor, elevador, escalera mecánica, montacargas
+fire_safety|Protección contra incendios|extintores, detectores de humo, rociadores, incendios
+car_dealer|Concesionario de coches|concesionario, coches de ocasión, venta de coches, vehículos usados
+vehicle_inspection|Inspección técnica de vehículos|inspección técnica, revisión, ficha técnica, estación
+auto_electrics|Electricidad del automóvil|electricista de coches, alternador, motor de arranque, instalación eléctrica
+car_glass|Lunas y parabrisas|parabrisas, luna delantera, cristales del coche, lunas
+boat_repair|Reparación de embarcaciones|astillero, motor fueraborda, náutica, embarcación
+bus_charter|Alquiler de autocares|autocar, autobús, minibús, transporte de grupos
+call_centre|Centro de llamadas|telemarketing, atención telefónica, teleoperadores, contact center
+virtual_assistant|Asistente virtual|asistente remoto, apoyo administrativo, secretaria virtual, freelance
+market_research|Estudios de mercado|encuestas, estudio de mercado, grupos focales, investigación
+copywriting|Redacción de contenidos|redactor, corrección de textos, contenidos, redacción
+seo_services|SEO y publicidad online|posicionamiento web, google ads, publicidad online, sem
+social_media|Gestión de redes sociales|community manager, instagram, facebook, tiktok
+app_development|Desarrollo de apps móviles|desarrollo móvil, android, aplicaciones, flutter
+game_development|Desarrollo de videojuegos|videojuegos, unity, unreal, estudio de juegos
+drone_services|Servicios con dron|dron, fotografía aérea, vuelo con dron, topografía aérea
+printing_3d|Impresión 3D|impresora 3d, prototipos, fabricación aditiva, prototipado
+interior_design|Interiorismo|decorador, decoración, reforma estética, ambientación
+dance_school|Escuela de baile|clases de baile, ballet, salsa, academia de baile
+art_gallery|Galería de arte y enmarcado|enmarcado, marcos, exposiciones, arte

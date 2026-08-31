@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Volné místo - staňte se sponzorem" },
+  "sponsorbox": {
+    "free": "Volné místo - staňte se sponzorem"
+  },
   "bizlist": {
     "label": "Zde se zobrazují registrované firmy",
     "free": "Volné místo - zaregistrujte svou firmu"
@@ -227,7 +229,13 @@
     "none": "Nic nenalezeno. Zkuste jiné slovo - řemeslo, nářadí, službu."
   },
   "business": {
-    "hero": { "free_line": "Registrace zdarma, inzerát zdarma - vaše firma tam, kde lidé už hledají." },
+    "idea": {
+      "tagline1": "Lidé potřebují firmy.",
+      "tagline2": "Lidé mají firmy."
+    },
+    "hero": {
+      "free_line": "Registrace zdarma, inzerát zdarma - vaše firma tam, kde lidé už hledají."
+    },
     "categories": {
       "section_eyebrow": "ROTABO PRO FIRMY",
       "section_lead": "Vyberte, co vaše firma dělá - a najdou vás ti, kdo to potřebují.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponzoři", "company": "Vaše firma tu může být vidět — registrace zdarma",
+    "sponsors": "Sponzoři",
+    "company": "Vaše firma tu může být vidět — registrace zdarma",
     "offers": "nabízí",
     "seeks": "hledá"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Čím byste začali?",
     "submit": "Odeslat",
     "sent": "Děkuji — ozvu se."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hlavní partner",
     "invite": "Toto místo je vyhrazeno organizaci, která se za tuto myšlenku postaví. Nic nestojí a nikdy stát nebude."
   },
@@ -315,17 +325,16 @@
     "confirming": "Potvrzujeme tvou platbu…",
     "retry_btn": "Zkusit znovu"
   },
-
   "banknote": {
     "title": "Tvé číslo cestuje po světě. Ty nemusíš.",
     "body": "<p>Vytáhni z peněženky bankovku. Jakoukoli. Než ji utratíš, napiš na ni šest malých znaků: rotabo — plus tvé číslo Rotabo, které dostaneš po registraci: rotabo2244. Pak ji nech jít.</p><p>Zítra zaplatí něčí kávu. Příští týden je drobnými v taxíku o tři města dál. Příští měsíc překročí hranici v kapse cizince. Peníze se nikdy nepřestanou pohybovat — a teď ani tvé jméno.</p><p>Někde se někdo podívá na bankovku ve své ruce. Vidí to: rotabo2244. Zvědavost udělá zbytek. Napíše to na rotabo.app — a jsi tam. Tvé jméno. Tvá vlajka. Co nabízíš. Skutečný člověk, najitelný kýmkoli, kdekoli, kdo kdy drží ten kus papíru.</p><p>Žádný billboard necestuje tak daleko. Žádná reklama nežije tak dlouho. Bankovka zůstává v oběhu roky a projde stovkami rukou — a každá z nich tě může najít. Jedno pero. Jedno číslo. Celý svět se stane tvou reklamou.</p>",
     "fineprint": "Psaní na bankovky je tvá vlastní volba. Zkontroluj místní zákony."
   },
-
   "nav": {
     "how": "Jak to funguje",
     "safety": "Bezpečnost",
-    "business": "Firmy", "personal": "Pro lidi",
+    "business": "Firmy",
+    "personal": "Pro lidi",
     "drive": "Staň se řidičem",
     "drivers": "Řidiči",
     "account": "Můj účet"
@@ -336,7 +345,6 @@
     "search_placeholder": "Najdi číslo Rotabo — např. 2244",
     "search_btn": "Hledat",
     "get_number": "Získej své číslo",
-
     "origin_badge": "Vyrobeno ve Švýcarsku — pro celý svět",
     "tagline3": "Vaše auto.",
     "lede": "Vyber si, co potřebuješ — nebo se zapiš jako někdo, kdo může pomoct.",
@@ -819,14 +827,12 @@
     "time_hour_ago_one": "před 1 hodinou",
     "time_hour_ago_other": "před {n} hodinami"
   },
-
   "investors_card": {
     "cat": "INVESTOŘI",
     "h3": "Staň se investorem",
     "p": "Rotabo spojuje lidi v 12 kategoriích a 38 jazycích po celém světě — bez provize od kohokoli, kdo nabízí svůj čas, dovednosti nebo vybavení. Mluvíme s těmi, kdo tenhle model podporují.",
     "link": "Ozvi se nám →"
   },
-
   "verify_modal": {
     "title": "Zkontroluj e-mail",
     "subtitle": "Poslali jsme šestimístný kód na adresu níže. Zadej ho a pokračuj.",
@@ -836,7 +842,6 @@
     "spam_hint": "Nevidíš ho? Zkontroluj složku spam — první e-maily od nového odesílatele tam občas spadnou.",
     "error": "Neplatný nebo vypršený kód. Zkus to prosím znovu."
   },
-
   "account_page": {
     "google_btn": "Pokračovat přes Google",
     "google_or": "nebo",

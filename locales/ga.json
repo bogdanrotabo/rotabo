@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Áit shaor - bí i do urraitheoir" },
+  "sponsorbox": {
+    "free": "Áit shaor - bí i do urraitheoir"
+  },
   "bizlist": {
     "label": "Seo iad na comhlachtaí cláraithe",
     "free": "Áit shaor - cláraigh do chomhlacht"
@@ -227,7 +229,13 @@
     "none": "Faic aimsithe. Bain triail as focal eile - ceird, uirlis nó seirbhís."
   },
   "business": {
-    "hero": { "free_line": "Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana." },
+    "idea": {
+      "tagline1": "Tá comhlachtaí ag teastáil ó dhaoine.",
+      "tagline2": "Tá comhlachtaí ag daoine."
+    },
+    "hero": {
+      "free_line": "Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana."
+    },
     "categories": {
       "section_eyebrow": "ROTABO DO GHNÓ",
       "section_lead": "Roghnaigh an obair a dhéanann do chomhlacht - agus gheobhaidh na daoine a bhfuil sí uathu thú.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Urraitheoirí", "company": "Is féidir do ghnó a bheith le feiceáil anseo — clárú saor in aisce",
+    "sponsors": "Urraitheoirí",
+    "company": "Is féidir do ghnó a bheith le feiceáil anseo — clárú saor in aisce",
     "offers": "tairgeann",
     "seeks": "ag lorg"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Cad leis a dtosófá?",
     "submit": "Seol",
     "sent": "Go raibh maith agat — scríobhfaidh mé ar ais."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Príomhpháirtí",
     "invite": "Tá an áit seo curtha in áirithe d'eagraíocht a sheasann leis an smaoineamh. Níl aon chostas air, agus ní bheidh choíche."
   },
@@ -315,21 +325,26 @@
     "confirming": "Do chuid íocaíochta á dearbhú…",
     "retry_btn": "Bain triail eile as"
   },
-
   "banknote": {
     "title": "Taistealaíonn d'uimhir an domhan. Ní gá duitse.",
     "body": "<p>Tóg nóta bainc as do sparán. Aon cheann. Sula gcaitheann tú é, scríobh sé charachtar bheaga air: rotabo — móide d'uimhir Rotabo, an ceann a fhaigheann tú tar éis duit clárú: rotabo2244. Ansin lig dó imeacht.</p><p>Amárach íocann sé caife duine éigin. An tseachtain seo chugainn is sóinseáil é i dtacsaí trí chathair ar shiúl. An mhí seo chugainn trasnaíonn sé teorainn i bpóca strainséir. Ní stopann airgead riamh ag bogadh — agus anois ní stopann d'ainm ach oiread.</p><p>Áit éigin, féachann duine ar an nóta ina lámh. Feiceann sé é: rotabo2244. Déanann an fhiosracht an chuid eile. Clóscríobhann sé isteach ar rotabo.app é — agus sin tú. D'ainm. Do bhratach. Cad a chuireann tú ar fáil. Fíordhuine, inaimsithe ag aon duine, áit ar bith, a choinníonn an píosa páipéir sin riamh.</p><p>Ní thaistealaíonn aon chlár fógraíochta chomh fada sin. Ní mhaireann aon fhógra chomh fada sin. Fanann nóta bainc i gcúrsaíocht ar feadh blianta, ag dul trí na céadta lámh — agus is féidir le gach ceann acu tú a aimsiú. Peann amháin. Uimhir amháin. Éiríonn an domhan iomlán mar d'fhógra.</p>",
     "fineprint": "Is é do rogha féin scríobh ar nótaí bainc. Seiceáil na dlíthe áitiúla."
   },
-
-  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Gnó", "personal": "Do dhaoine", "drive": "Bí i do thiománaí", "drivers": "Tiománaithe", "account": "Mo chuntas" },
+  "nav": {
+    "how": "Conas a oibríonn sé",
+    "safety": "Sábháilteacht",
+    "business": "Gnó",
+    "personal": "Do dhaoine",
+    "drive": "Bí i do thiománaí",
+    "drivers": "Tiománaithe",
+    "account": "Mo chuntas"
+  },
   "hero": {
     "free_line": "Saor in aisce le clárú, saor in aisce le postáil — an rud atá uait, nó an rud a thairgeann tú.",
     "number_intro": "Tá uimhir ag gach duine ar Rotabo. Uimhir amháin. Leatsa go deo. Insíonn sé cé tú féin, cá bhfuil tú agus cad is féidir leat a dhéanamh — inaimsithe ag aon duine ar domhan.",
     "search_placeholder": "Aimsigh uimhir Rotabo — m.sh. 2244",
     "search_btn": "Cuardaigh",
     "get_number": "Faigh d'uimhir",
-
     "origin_badge": "Déanta san Eilvéis — don domhan ar fad",
     "tagline3": "Do charr.",
     "lede": "Roghnaigh a bhfuil uait — nó liostáil tú féin mar dhuine atá in ann cabhrú.",
@@ -623,7 +638,11 @@
     "contact": "Teagmháil",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…", "no_matches": "Gan torthai" },
+  "lang_selector": {
+    "label": "Teanga",
+    "search_placeholder": "Cuardaigh teanga…",
+    "no_matches": "Gan torthai"
+  },
   "install_modal": {
     "title": "Cuir Rotabo le do scáileán baile",
     "generic": "Oscail roghchlár do bhrabhsálaí agus cuardaigh \"Suiteáil aip\" nó \"Cuir leis an Scáileán Baile\".",
@@ -838,14 +857,12 @@
     "load_error": "Níorbh fhéidir do chuid liostuithe a lódáil. Bain triail eile as, le do thoil.",
     "retry_btn": "Bain triail eile as"
   },
-
   "investors_card": {
     "cat": "INFHEISTEOIRÍ",
     "h3": "Bí i d'infheisteoir",
     "p": "Nascann Rotabo daoine i 12 chatagóir agus i 38 teanga ar fud an domhain — gan choimisiún ó dhuine ar bith a thairgeann a chuid ama, scileanna nó trealaimh. Táimid ag caint le daoine a thacaíonn leis an tsamhail sin.",
     "link": "Déan teagmháil →"
   },
-
   "verify_modal": {
     "title": "Féach ar do ríomhphost",
     "subtitle": "Sheolamar cód 6 dhigit chuig an seoladh thíos. Cuir isteach é chun leanúint ar aghaidh.",

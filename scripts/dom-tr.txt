@@ -161,53 +161,53 @@ car_wash|Oto yıkama|Araç yıkama, oto temizlik, detailing
 car_rental|Araç kiralama|Rent a car, kiralık araba
 bike_scooter_rental|Bisiklet ve scooter kiralama|Bisiklet kirala, elektrikli scooter
 funeral_services|Cenaze hizmetleri|Cenaze işleri, defin, yakma, tabut
-notary|Noterlik|
-bailiff|İcra dairesi işlemleri|
-patent_trademark|Patent ve marka|
-debt_collection|Alacak tahsilatı|
-company_formation|Şirket kuruluşu|
-financial_advisory|Finansal danışmanlık|
-payroll_services|Bordro hizmetleri|
-currency_exchange|Döviz bürosu|
-pawnshop|Rehin ve emanet|
-leasing|Leasing ve finansman|
-hearing_aids|İşitme cihazları|
-medical_transport|Hasta nakli|
-rehabilitation|Rehabilitasyon merkezi|
-occupational_therapy|Ergoterapi|
-midwifery|Ebelik|
-acupuncture|Akupunktur|
-chiropractic|Kiropraktik ve osteopati|
-insulation|Isı yalıtımı|
-waterproofing|Su yalıtımı|
-plastering|Sıva ve alçı işleri|
-tiling|Fayans ve seramik döşeme|
-drywall|Alçıpan ve bölme duvar|
-fencing|Çit ve kapı sistemleri|
-paving|Kilit taşı ve yol döşeme|
-well_drilling|Kuyu sondajı|
-septic_systems|Fosseptik ve kanalizasyon|
-solar_panels|Güneş paneli montajı|
-alarm_cctv|Alarm ve güvenlik kamerası|
-smart_home|Akıllı ev sistemleri|
-lift_maintenance|Asansör bakımı|
-fire_safety|Yangın güvenliği ve söndürücü|
-car_dealer|Oto galeri|
-vehicle_inspection|Araç muayenesi|
-auto_electrics|Oto elektrik|
-car_glass|Oto cam ve ön cam|
-boat_repair|Tekne ve deniz aracı tamiri|
-bus_charter|Otobüs ve tur aracı kiralama|
-call_centre|Çağrı merkezi|
-virtual_assistant|Sanal asistan|
-market_research|Pazar araştırması|
-copywriting|Metin yazarlığı|
-seo_services|SEO ve online reklam|
-social_media|Sosyal medya yönetimi|
-app_development|Mobil uygulama geliştirme|
-game_development|Oyun geliştirme|
-drone_services|Drone hizmetleri|
-printing_3d|3D baskı|
-interior_design|İç mimarlık|
-dance_school|Dans okulu|
-art_gallery|Sanat galerisi ve çerçeveleme|
+notary|Noterlik|noter, tapu işlemleri, vekaletname, onay
+bailiff|İcra dairesi işlemleri|icra memuru, haciz, icra takibi, tahsilat memuru
+patent_trademark|Patent ve marka|fikri mülkiyet, marka tescili, patent, marka vekili
+debt_collection|Alacak tahsilatı|alacak tahsilatı, borç tahsili, icra, ödenmemiş faturalar
+company_formation|Şirket kuruluşu|şirket kuruluşu, ticaret sicili, limited şirket, vergi levhası
+financial_advisory|Finansal danışmanlık|finansal danışman, yatırım, varlık yönetimi, mali planlama
+payroll_services|Bordro hizmetleri|bordro, maaş hesaplama, ücret ödemeleri, personel özlük
+currency_exchange|Döviz bürosu|döviz bürosu, döviz, yabancı para, kur
+pawnshop|Rehin ve emanet|rehin, teminatlı kredi, altın alım, rehinci
+leasing|Leasing ve finansman|finansal kiralama, araç finansmanı, taksit, uzun dönem kiralama
+hearing_aids|İşitme cihazları|odyoloji, işitme testi, işitme cihazı, işitme kaybı
+medical_transport|Hasta nakli|ambulans, hasta nakli, sedye, hasta taşıma
+rehabilitation|Rehabilitasyon merkezi|rehabilitasyon, nekahet, iyileşme merkezi, fizik tedavi
+occupational_therapy|Ergoterapi|ergoterapist, günlük yaşam becerileri, bağımsızlık, terapi
+midwifery|Ebelik|ebe, doğum, gebelik, doğum öncesi bakım
+acupuncture|Akupunktur|akupunkturcu, iğne tedavisi, çin tıbbı, moksa
+chiropractic|Kiropraktik ve osteopati|osteopat, kayropraktik, omurga, bel ağrısı
+insulation|Isı yalıtımı|yalıtım, mantolama, çatı yalıtımı, izolasyon
+waterproofing|Su yalıtımı|su yalıtımı, sızıntı, rutubet, membran
+plastering|Sıva ve alçı işleri|sıvacı, sıva, alçı sıva, saten
+tiling|Fayans ve seramik döşeme|fayansçı, fayans, seramik, yer karosu
+drywall|Alçıpan ve bölme duvar|alçıpan, bölme duvar, asma tavan, kartonpiyer
+fencing|Çit ve kapı sistemleri|çit, bahçe kapısı, korkuluk, tel örgü
+paving|Kilit taşı ve yol döşeme|parke taşı, kaldırım, yol döşeme, beton yol
+well_drilling|Kuyu sondajı|kuyu açma, sondaj, su kuyusu, yeraltı suyu
+septic_systems|Fosseptik ve kanalizasyon|foseptik, kanalizasyon, drenaj, atık su
+solar_panels|Güneş paneli montajı|güneş paneli, fotovoltaik, invertör, güneş enerjisi
+alarm_cctv|Alarm ve güvenlik kamerası|alarm sistemi, güvenlik kamerası, kamera sistemi, hırsız alarmı
+smart_home|Akıllı ev sistemleri|akıllı ev, ev otomasyonu, akıllı aydınlatma, uzaktan kontrol
+lift_maintenance|Asansör bakımı|asansör, asansör bakımı, yürüyen merdiven, asansör tamiri
+fire_safety|Yangın güvenliği ve söndürücü|yangın tüpü, yangın alarmı, sprinkler, yangın güvenliği
+car_dealer|Oto galeri|oto galeri, ikinci el araba, araba satışı, yetkili satıcı
+vehicle_inspection|Araç muayenesi|araç muayene, fenni muayene, muayene istasyonu, tüvtürk
+auto_electrics|Oto elektrik|oto elektrikçi, alternatör, marş motoru, araç tesisatı
+car_glass|Oto cam ve ön cam|ön cam, cam değişimi, oto cam, cam çatlağı
+boat_repair|Tekne ve deniz aracı tamiri|tersane, deniz motoru, tekne, yat bakımı
+bus_charter|Otobüs ve tur aracı kiralama|otobüs kiralama, tur otobüsü, minibüs, grup taşıma
+call_centre|Çağrı merkezi|çağrı merkezi, telepazarlama, müşteri hizmetleri, telefon desteği
+virtual_assistant|Sanal asistan|uzaktan asistan, idari destek, sanal sekreter, serbest çalışan
+market_research|Pazar araştırması|anket, pazar araştırması, odak grubu, tüketici araştırması
+copywriting|Metin yazarlığı|metin yazarı, editörlük, düzelti, içerik yazımı
+seo_services|SEO ve online reklam|arama motoru optimizasyonu, google reklam, dijital reklam, sem
+social_media|Sosyal medya yönetimi|sosyal medya yönetimi, instagram, facebook, tiktok
+app_development|Mobil uygulama geliştirme|mobil uygulama, android, uygulama geliştirme, flutter
+game_development|Oyun geliştirme|oyun geliştirme, unity, unreal, oyun stüdyosu
+drone_services|Drone hizmetleri|drone, havadan çekim, hava fotoğrafçılığı, insansız hava aracı
+printing_3d|3D baskı|3d yazıcı, prototip, eklemeli imalat, prototipleme
+interior_design|İç mimarlık|iç mimar, dekorasyon, mekan tasarımı, dekoratör
+dance_school|Dans okulu|dans kursu, bale, salsa, dans dersi
+art_gallery|Sanat galerisi ve çerçeveleme|çerçeveleme, çerçeve, sergi, sanat galerisi

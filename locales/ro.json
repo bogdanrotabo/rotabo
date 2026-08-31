@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Loc liber - devino sponsor" },
+  "sponsorbox": {
+    "free": "Loc liber - devino sponsor"
+  },
   "bizlist": {
     "label": "Aici apar firmele înregistrate",
     "free": "Loc liber - înscrie-ți firma"
@@ -442,8 +444,13 @@
     "none": "Niciun rezultat. Încearcă alt cuvânt - o meserie, o unealtă, un serviciu."
   },
   "business": {
-    "idea": { "tagline1": "Oamenii au nevoie de firme.", "tagline2": "Oamenii au firme." },
-    "hero": { "free_line": "Înscriere gratuită, anunț gratuit - firma ta, acolo unde oamenii deja caută." },
+    "idea": {
+      "tagline1": "Oamenii au nevoie de firme.",
+      "tagline2": "Oamenii au firme."
+    },
+    "hero": {
+      "free_line": "Înscriere gratuită, anunț gratuit - firma ta, acolo unde oamenii deja caută."
+    },
     "categories": {
       "section_eyebrow": "ROTABO PENTRU FIRME",
       "section_lead": "Alege ce face firma ta - și lasă-te găsit de oamenii și firmele care au nevoie.",
@@ -460,7 +467,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsori", "company": "Aici firma ta poate fi vizibilă — înregistrarea e gratuită",
+    "sponsors": "Sponsori",
+    "company": "Aici firma ta poate fi vizibilă — înregistrarea e gratuită",
     "offers": "oferă",
     "seeks": "caută"
   },
@@ -490,7 +498,8 @@
     "message_placeholder": "Cu ce ați începe?",
     "submit": "Trimite",
     "sent": "Mulțumesc — vă voi răspunde."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Partener Principal",
     "invite": "Locul acesta e păstrat pentru o organizație care crede în ideea asta. Nu costă nimic și nu va costa niciodată."
   },
@@ -531,17 +540,16 @@
     "confirming": "Se confirmă plata ta…",
     "retry_btn": "Încearcă din nou"
   },
-
   "banknote": {
     "title": "Numărul tău călătorește prin lume. Tu nu trebuie.",
     "body": "<p>Scoate o bancnotă din portofel. Oricare. Înainte s-o cheltui, scrie pe ea șase caractere mici: rotabo — plus numărul tău Rotabo, pe care îl primești după înregistrare: rotabo2244. Apoi las-o să plece.</p><p>Mâine plătește cafeaua cuiva. Săptămâna viitoare e rest într-un taxi la trei orașe distanță. Luna viitoare trece o graniță în buzunarul unui străin. Banii nu se opresc niciodată din mișcare — și acum, nici numele tău.</p><p>Undeva, cineva privește bancnota din mâna sa. O vede: rotabo2244. Curiozitatea face restul. O tastează pe rotabo.app — și acolo ești. Numele tău. Steagul tău. Ce oferi. O persoană reală, găsibilă de oricine, oriunde, care ține vreodată acea bucată de hârtie.</p><p>Niciun panou publicitar nu ajunge atât de departe. Nicio reclamă nu trăiește atât de mult. O bancnotă rămâne în circulație ani de zile, trecând prin sute de mâini — și fiecare dintre ele te poate găsi. Un pix. Un număr. Lumea întreagă devine reclama ta.</p>",
     "fineprint": "Scrisul pe bancnote este alegerea ta. Verifică legile locale."
   },
-
   "nav": {
     "how": "Cum funcționează",
     "safety": "Siguranță",
-    "business": "Firme", "personal": "Persoane",
+    "business": "Firme",
+    "personal": "Persoane",
     "drive": "Devino șofer",
     "drivers": "Șoferi",
     "account": "Contul meu"
@@ -552,7 +560,6 @@
     "search_placeholder": "Caută un număr Rotabo — ex. 2244",
     "search_btn": "Caută",
     "get_number": "Ia-ți numărul",
-
     "origin_badge": "Făcut în Elveția — pentru toată lumea",
     "tagline3": "Mașina ta.",
     "lede": "Alege ce ai nevoie — sau listează-te ca cineva care poate ajuta.",

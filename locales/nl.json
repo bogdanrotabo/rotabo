@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Vrije plek - word sponsor" },
+  "sponsorbox": {
+    "free": "Vrije plek - word sponsor"
+  },
   "bizlist": {
     "label": "Hier verschijnen de geregistreerde bedrijven",
     "free": "Vrije plek - registreer je bedrijf"
@@ -167,7 +169,57 @@
     "car_wash": "Wasstraat, auto poetsen, detailing",
     "car_rental": "Auto huren, huurauto",
     "bike_scooter_rental": "Fiets huren, e-step, fietsverhuur",
-    "funeral_services": "Begrafenisondernemer, begrafenis, crematie, kisten"
+    "funeral_services": "Begrafenisondernemer, begrafenis, crematie, kisten",
+    "notary": "notaris, akte, testament, erfenis",
+    "bailiff": "deurwaarder, beslag, dwangbevel, executie",
+    "patent_trademark": "intellectueel eigendom, merkregistratie, octrooi, octrooigemachtigde",
+    "debt_collection": "incassobureau, openstaande facturen, aanmaning, vorderingen",
+    "company_formation": "bedrijf oprichten, kvk inschrijving, bv oprichten, statuten",
+    "financial_advisory": "financieel adviseur, beleggen, vermogen, pensioenadvies",
+    "payroll_services": "loonadministratie, loonstrook, salarissen, loonheffing",
+    "currency_exchange": "geld wisselen, valuta, vreemde valuta, wisselkoers",
+    "pawnshop": "pandhuis, belening, onderpand, goud inkoop",
+    "leasing": "lease, financiering, private lease, termijnbetaling",
+    "hearing_aids": "audicien, hoortest, gehoor, hoorapparaat",
+    "medical_transport": "ambulance, patiëntenvervoer, brancard, zittend ziekenvervoer",
+    "rehabilitation": "revalidatie, herstel, nazorg, herstelcentrum",
+    "occupational_therapy": "ergotherapeut, dagelijkse handelingen, zelfredzaamheid, therapie",
+    "midwifery": "verloskundige, bevalling, zwangerschap, kraamzorg",
+    "acupuncture": "acupuncturist, naalden, chinese geneeskunde, moxa",
+    "chiropractic": "osteopaat, chiropractor, wervelkolom, rugpijn",
+    "insulation": "isoleren, spouwmuurisolatie, dakisolatie, isolatiemateriaal",
+    "waterproofing": "vochtbestrijding, lekkage, dakbedekking, waterdicht maken",
+    "plastering": "stukadoor, pleisterwerk, stucwerk, sauswerk",
+    "tiling": "tegelzetter, tegels, vloertegels, wandtegels",
+    "drywall": "gipsplaten, wanden plaatsen, systeemplafond, voorzetwand",
+    "fencing": "hek, poort, omheining, schutting",
+    "paving": "straatwerk, oprit, klinkers, bestraten",
+    "well_drilling": "bron slaan, boren, waterput, grondwater",
+    "septic_systems": "septic tank, riolering, afvoer, beerput",
+    "solar_panels": "zonnepanelen, pv installatie, omvormer, zonne-energie",
+    "alarm_cctv": "alarmsysteem, beveiligingscamera, camerabewaking, inbraakbeveiliging",
+    "smart_home": "domotica, slimme verlichting, huisautomatisering, smart lighting",
+    "lift_maintenance": "lift, liftreparatie, roltrap, goederenlift",
+    "fire_safety": "brandblussers, rookmelders, sprinkler, brandmeldinstallatie",
+    "car_dealer": "autodealer, occasions, auto kopen, tweedehands auto",
+    "vehicle_inspection": "apk, keuring, technische keuring, keuringsstation",
+    "auto_electrics": "auto-elektricien, dynamo, startmotor, bedrading",
+    "car_glass": "voorruit, ruitschade, autoruit, sterretje",
+    "boat_repair": "jachtwerf, buitenboordmotor, boot, scheepsmotor",
+    "bus_charter": "touringcar, bus huren, minibus, groepsvervoer",
+    "call_centre": "klantenservice, telemarketing, telefonische support, contactcenter",
+    "virtual_assistant": "virtueel assistent, administratieve ondersteuning, secretariaat, freelance",
+    "market_research": "enquêtes, marktonderzoek, focusgroepen, consumentenonderzoek",
+    "copywriting": "tekstschrijver, redactie, proeflezen, content",
+    "seo_services": "zoekmachineoptimalisatie, google ads, online adverteren, sea",
+    "social_media": "socialmediabeheer, instagram, facebook, tiktok",
+    "app_development": "app bouwen, android, mobiele apps, flutter",
+    "game_development": "gamestudio, unity, unreal, spellen maken",
+    "drone_services": "drone, luchtfotografie, dronevlucht, luchtopnames",
+    "printing_3d": "3d printer, prototypes, additieve productie, prototyping",
+    "interior_design": "interieurontwerper, inrichting, styling, binnenhuisarchitect",
+    "dance_school": "danslessen, ballet, salsa, stijldansen",
+    "art_gallery": "inlijsten, lijsten, tentoonstelling, kunsthandel"
   },
   "domains": {
     "taxi": "Taxi",
@@ -392,7 +444,13 @@
     "none": "Geen resultaten. Probeer een ander woord - een vak, een gereedschap, een dienst."
   },
   "business": {
-    "hero": { "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken." },
+    "idea": {
+      "tagline1": "Mensen hebben bedrijven nodig.",
+      "tagline2": "Mensen hebben bedrijven."
+    },
+    "hero": {
+      "free_line": "Gratis registratie, gratis advertentie - uw bedrijf, daar waar mensen al zoeken."
+    },
     "categories": {
       "section_eyebrow": "ROTABO VOOR BEDRIJVEN",
       "section_lead": "Kies wat uw bedrijf doet - en laat u vinden door wie het nodig heeft.",
@@ -409,7 +467,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsors", "company": "Uw bedrijf kan hier zichtbaar zijn — registratie is gratis",
+    "sponsors": "Sponsors",
+    "company": "Uw bedrijf kan hier zichtbaar zijn — registratie is gratis",
     "offers": "biedt aan",
     "seeks": "zoekt"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Waarmee zou u beginnen?",
     "submit": "Versturen",
     "sent": "Dank u — ik schrijf terug."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hoofdpartner",
     "invite": "Deze plek is gereserveerd voor een organisatie die achter het idee staat. Het kost niets, en dat zal het nooit doen."
   },
@@ -480,17 +540,16 @@
     "confirming": "Je betaling wordt bevestigd…",
     "retry_btn": "Opnieuw proberen"
   },
-
   "banknote": {
     "title": "Je nummer reist de wereld rond. Jij hoeft dat niet.",
     "body": "<p>Haal een bankbiljet uit je portemonnee. Welke dan ook. Voordat je het uitgeeft, schrijf er zes kleine tekens op: rotabo — plus jouw Rotabo-nummer, dat je na registratie krijgt: rotabo2244. Laat het dan los.</p><p>Morgen betaalt het iemands koffie. Volgende week is het wisselgeld in een taxi drie steden verderop. Volgende maand steekt het een grens over in de zak van een vreemde. Geld stopt nooit met bewegen — en nu je naam ook niet meer.</p><p>Ergens kijkt iemand naar het biljet in zijn hand. Hij ziet het: rotabo2244. Nieuwsgierigheid doet de rest. Hij typt het in op rotabo.app — en daar ben jij. Je naam. Je vlag. Wat je aanbiedt. Een echt mens, vindbaar voor iedereen, overal, die dat stukje papier ooit vasthoudt.</p><p>Geen reclamebord reist zo ver. Geen advertentie leeft zo lang. Een bankbiljet blijft jarenlang in omloop en gaat door honderden handen — en elk daarvan kan jou vinden. Eén pen. Eén nummer. De hele wereld wordt jouw advertentie.</p>",
     "fineprint": "Op bankbiljetten schrijven is je eigen keuze. Controleer de lokale wetten."
   },
-
   "nav": {
     "how": "Hoe het werkt",
     "safety": "Veiligheid",
-    "business": "Bedrijven", "personal": "Voor particulieren",
+    "business": "Bedrijven",
+    "personal": "Voor particulieren",
     "drive": "Word chauffeur",
     "drivers": "Chauffeurs",
     "account": "Mijn account"
@@ -501,7 +560,6 @@
     "search_placeholder": "Zoek een Rotabo-nummer — bijv. 2244",
     "search_btn": "Zoeken",
     "get_number": "Haal je nummer",
-
     "origin_badge": "Gemaakt in Zwitserland — voor de hele wereld",
     "tagline3": "Jouw auto.",
     "lede": "Kies wat je nodig hebt — of meld je aan als iemand die kan helpen.",
@@ -1014,14 +1072,12 @@
     "load_error": "Je vermeldingen konden niet worden geladen. Probeer het opnieuw.",
     "retry_btn": "Opnieuw proberen"
   },
-
   "investors_card": {
     "cat": "INVESTEERDERS",
     "h3": "Word investeerder",
     "p": "Rotabo verbindt mensen in 12 categorieën en 38 talen, wereldwijd — zonder commissie van wie dan ook die tijd, vaardigheden of materieel aanbiedt. We praten met mensen die dat model steunen.",
     "link": "Neem contact op →"
   },
-
   "verify_modal": {
     "title": "Kijk in je e-mail",
     "subtitle": "We hebben een 6-cijferige code naar het adres hieronder gestuurd. Voer die in om verder te gaan.",

@@ -161,53 +161,53 @@ car_wash|Autowasserette|Wasstraat, auto poetsen, detailing
 car_rental|Autoverhuur|Auto huren, huurauto
 bike_scooter_rental|Fiets- en scooterverhuur|Fiets huren, e-step, fietsverhuur
 funeral_services|Uitvaartverzorging|Begrafenisondernemer, begrafenis, crematie, kisten
-notary|Notaris|
-bailiff|Deurwaarder|
-patent_trademark|Octrooien en merken|
-debt_collection|Incasso|
-company_formation|Bedrijfsoprichting|
-financial_advisory|Financieel advies|
-payroll_services|Salarisadministratie|
-currency_exchange|Wisselkantoor|
-pawnshop|Pandjeshuis|
-leasing|Leasing en financiering|
-hearing_aids|Hoortoestellen|
-medical_transport|Ziekenvervoer|
-rehabilitation|Revalidatiecentrum|
-occupational_therapy|Ergotherapie|
-midwifery|Verloskunde|
-acupuncture|Acupunctuur|
-chiropractic|Chiropractie en osteopathie|
-insulation|Isolatie|
-waterproofing|Waterdichting|
-plastering|Stukadoorswerk|
-tiling|Tegelzetten|
-drywall|Gipswanden en scheidingswanden|
-fencing|Hekwerk en poorten|
-paving|Bestrating en opritten|
-well_drilling|Bronboringen|
-septic_systems|Septic tanks en afvoer|
-solar_panels|Zonnepanelen plaatsen|
-alarm_cctv|Alarm en camerabewaking|
-smart_home|Domotica|
-lift_maintenance|Liftonderhoud|
-fire_safety|Brandveiligheid en blusmiddelen|
-car_dealer|Autobedrijf|
-vehicle_inspection|APK-keuring|
-auto_electrics|Auto-elektra|
-car_glass|Autoruiten en voorruiten|
-boat_repair|Botenreparatie|
-bus_charter|Bus- en touringcarverhuur|
-call_centre|Callcenter|
-virtual_assistant|Virtuele assistent|
-market_research|Marktonderzoek|
-copywriting|Tekstschrijven|
-seo_services|SEO en online advertenties|
-social_media|Socialmediabeheer|
-app_development|App-ontwikkeling|
-game_development|Gameontwikkeling|
-drone_services|Dronediensten|
-printing_3d|3D-printen|
-interior_design|Interieurontwerp|
-dance_school|Dansschool|
-art_gallery|Kunstgalerie en inlijsten|
+notary|Notaris|notaris, akte, testament, erfenis
+bailiff|Deurwaarder|deurwaarder, beslag, dwangbevel, executie
+patent_trademark|Octrooien en merken|intellectueel eigendom, merkregistratie, octrooi, octrooigemachtigde
+debt_collection|Incasso|incassobureau, openstaande facturen, aanmaning, vorderingen
+company_formation|Bedrijfsoprichting|bedrijf oprichten, kvk inschrijving, bv oprichten, statuten
+financial_advisory|Financieel advies|financieel adviseur, beleggen, vermogen, pensioenadvies
+payroll_services|Salarisadministratie|loonadministratie, loonstrook, salarissen, loonheffing
+currency_exchange|Wisselkantoor|geld wisselen, valuta, vreemde valuta, wisselkoers
+pawnshop|Pandjeshuis|pandhuis, belening, onderpand, goud inkoop
+leasing|Leasing en financiering|lease, financiering, private lease, termijnbetaling
+hearing_aids|Hoortoestellen|audicien, hoortest, gehoor, hoorapparaat
+medical_transport|Ziekenvervoer|ambulance, patiëntenvervoer, brancard, zittend ziekenvervoer
+rehabilitation|Revalidatiecentrum|revalidatie, herstel, nazorg, herstelcentrum
+occupational_therapy|Ergotherapie|ergotherapeut, dagelijkse handelingen, zelfredzaamheid, therapie
+midwifery|Verloskunde|verloskundige, bevalling, zwangerschap, kraamzorg
+acupuncture|Acupunctuur|acupuncturist, naalden, chinese geneeskunde, moxa
+chiropractic|Chiropractie en osteopathie|osteopaat, chiropractor, wervelkolom, rugpijn
+insulation|Isolatie|isoleren, spouwmuurisolatie, dakisolatie, isolatiemateriaal
+waterproofing|Waterdichting|vochtbestrijding, lekkage, dakbedekking, waterdicht maken
+plastering|Stukadoorswerk|stukadoor, pleisterwerk, stucwerk, sauswerk
+tiling|Tegelzetten|tegelzetter, tegels, vloertegels, wandtegels
+drywall|Gipswanden en scheidingswanden|gipsplaten, wanden plaatsen, systeemplafond, voorzetwand
+fencing|Hekwerk en poorten|hek, poort, omheining, schutting
+paving|Bestrating en opritten|straatwerk, oprit, klinkers, bestraten
+well_drilling|Bronboringen|bron slaan, boren, waterput, grondwater
+septic_systems|Septic tanks en afvoer|septic tank, riolering, afvoer, beerput
+solar_panels|Zonnepanelen plaatsen|zonnepanelen, pv installatie, omvormer, zonne-energie
+alarm_cctv|Alarm en camerabewaking|alarmsysteem, beveiligingscamera, camerabewaking, inbraakbeveiliging
+smart_home|Domotica|domotica, slimme verlichting, huisautomatisering, smart lighting
+lift_maintenance|Liftonderhoud|lift, liftreparatie, roltrap, goederenlift
+fire_safety|Brandveiligheid en blusmiddelen|brandblussers, rookmelders, sprinkler, brandmeldinstallatie
+car_dealer|Autobedrijf|autodealer, occasions, auto kopen, tweedehands auto
+vehicle_inspection|APK-keuring|apk, keuring, technische keuring, keuringsstation
+auto_electrics|Auto-elektra|auto-elektricien, dynamo, startmotor, bedrading
+car_glass|Autoruiten en voorruiten|voorruit, ruitschade, autoruit, sterretje
+boat_repair|Botenreparatie|jachtwerf, buitenboordmotor, boot, scheepsmotor
+bus_charter|Bus- en touringcarverhuur|touringcar, bus huren, minibus, groepsvervoer
+call_centre|Callcenter|klantenservice, telemarketing, telefonische support, contactcenter
+virtual_assistant|Virtuele assistent|virtueel assistent, administratieve ondersteuning, secretariaat, freelance
+market_research|Marktonderzoek|enquêtes, marktonderzoek, focusgroepen, consumentenonderzoek
+copywriting|Tekstschrijven|tekstschrijver, redactie, proeflezen, content
+seo_services|SEO en online advertenties|zoekmachineoptimalisatie, google ads, online adverteren, sea
+social_media|Socialmediabeheer|socialmediabeheer, instagram, facebook, tiktok
+app_development|App-ontwikkeling|app bouwen, android, mobiele apps, flutter
+game_development|Gameontwikkeling|gamestudio, unity, unreal, spellen maken
+drone_services|Dronediensten|drone, luchtfotografie, dronevlucht, luchtopnames
+printing_3d|3D-printen|3d printer, prototypes, additieve productie, prototyping
+interior_design|Interieurontwerp|interieurontwerper, inrichting, styling, binnenhuisarchitect
+dance_school|Dansschool|danslessen, ballet, salsa, stijldansen
+art_gallery|Kunstgalerie en inlijsten|inlijsten, lijsten, tentoonstelling, kunsthandel

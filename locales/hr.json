@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Slobodno mjesto - postanite sponzor" },
+  "sponsorbox": {
+    "free": "Slobodno mjesto - postanite sponzor"
+  },
   "bizlist": {
     "label": "Ovdje se prikazuju registrirane tvrtke",
     "free": "Slobodno mjesto - registrirajte svoju tvrtku"
@@ -227,7 +229,13 @@
     "none": "Nema rezultata. Pokušajte s drugom riječi - zanat, alat, usluga."
   },
   "business": {
-    "hero": { "free_line": "Besplatna registracija, besplatan oglas - vaša tvrtka ondje gdje ljudi već traže." },
+    "idea": {
+      "tagline1": "Ljudima trebaju tvrtke.",
+      "tagline2": "Ljudi imaju tvrtke."
+    },
+    "hero": {
+      "free_line": "Besplatna registracija, besplatan oglas - vaša tvrtka ondje gdje ljudi već traže."
+    },
     "categories": {
       "section_eyebrow": "ROTABO ZA TVRTKE",
       "section_lead": "Odaberite čime se vaša tvrtka bavi - i neka vas pronađu oni kojima treba.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponzori", "company": "Vaša tvrtka može biti vidljiva ovdje — besplatna registracija",
+    "sponsors": "Sponzori",
+    "company": "Vaša tvrtka može biti vidljiva ovdje — besplatna registracija",
     "offers": "nudi",
     "seeks": "traži"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Čime biste počeli?",
     "submit": "Pošalji",
     "sent": "Hvala — javit ću se."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Glavni partner",
     "invite": "Ovo je mjesto sačuvano za organizaciju koja stoji iza ove ideje. Ne košta ništa i nikada neće."
   },
@@ -315,17 +325,16 @@
     "confirming": "Potvrđujemo tvoju uplatu…",
     "retry_btn": "Pokušaj ponovno"
   },
-
   "banknote": {
     "title": "Tvoj broj putuje svijetom. Ti ne moraš.",
     "body": "<p>Izvadi novčanicu iz novčanika. Bilo koju. Prije nego je potrošiš, napiši na nju šest malih znakova: rotabo — plus tvoj Rotabo broj, koji dobiješ nakon registracije: rotabo2244. Zatim je pusti.</p><p>Sutra plaća nečiju kavu. Sljedeći tjedan je sitniš u taksiju tri grada dalje. Sljedeći mjesec prelazi granicu u džepu stranca. Novac se nikad ne prestaje kretati — a sada ni tvoje ime.</p><p>Negdje netko pogleda novčanicu u svojoj ruci. Vidi je: rotabo2244. Znatiželja učini ostalo. Utipka je na rotabo.app — i eto tebe. Tvoje ime. Tvoja zastava. Ono što nudiš. Stvarna osoba, pronađiva od bilo koga, bilo gdje, tko ikad drži taj komad papira.</p><p>Nijedan pano ne putuje tako daleko. Nijedan oglas ne živi tako dugo. Novčanica ostaje u optjecaju godinama, prolazeći kroz stotine ruku — i svaka od njih te može pronaći. Jedna olovka. Jedan broj. Cijeli svijet postaje tvoj oglas.</p>",
     "fineprint": "Pisanje po novčanicama je tvoj vlastiti izbor. Provjeri lokalne zakone."
   },
-
   "nav": {
     "how": "Kako funkcionira",
     "safety": "Sigurnost",
-    "business": "Tvrtke", "personal": "Za osobe",
+    "business": "Tvrtke",
+    "personal": "Za osobe",
     "drive": "Postani vozač",
     "drivers": "Vozači",
     "account": "Moj račun"
@@ -336,7 +345,6 @@
     "search_placeholder": "Pronađi Rotabo broj — npr. 2244",
     "search_btn": "Traži",
     "get_number": "Nabavi svoj broj",
-
     "origin_badge": "Izrađeno u Švicarskoj — za cijeli svijet",
     "tagline3": "Vaš automobil.",
     "lede": "Odaberi što ti treba — ili se prijavi kao netko tko može pomoći.",
@@ -849,14 +857,12 @@
     "load_error": "Tvoje oglase nije bilo moguće učitati. Pokušaj ponovno.",
     "retry_btn": "Pokušaj ponovno"
   },
-
   "investors_card": {
     "cat": "ULAGAČI",
     "h3": "Postani ulagač",
     "p": "Rotabo povezuje ljude u 12 kategorija i 38 jezika diljem svijeta — bez provizije od bilo koga tko nudi svoje vrijeme, vještine ili opremu. Razgovaramo s onima koji podržavaju taj model.",
     "link": "Javi nam se →"
   },
-
   "verify_modal": {
     "title": "Provjeri svoju e-poštu",
     "subtitle": "Poslali smo šesteroznamenkasti kod na adresu ispod. Unesi ga za nastavak.",

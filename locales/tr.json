@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Boş yer - sponsor olun" },
+  "sponsorbox": {
+    "free": "Boş yer - sponsor olun"
+  },
   "bizlist": {
     "label": "Kayıtlı şirketler burada görünür",
     "free": "Boş yer - şirketinizi kaydedin"
@@ -167,7 +169,57 @@
     "car_wash": "Araç yıkama, oto temizlik, detailing",
     "car_rental": "Rent a car, kiralık araba",
     "bike_scooter_rental": "Bisiklet kirala, elektrikli scooter",
-    "funeral_services": "Cenaze işleri, defin, yakma, tabut"
+    "funeral_services": "Cenaze işleri, defin, yakma, tabut",
+    "notary": "noter, tapu işlemleri, vekaletname, onay",
+    "bailiff": "icra memuru, haciz, icra takibi, tahsilat memuru",
+    "patent_trademark": "fikri mülkiyet, marka tescili, patent, marka vekili",
+    "debt_collection": "alacak tahsilatı, borç tahsili, icra, ödenmemiş faturalar",
+    "company_formation": "şirket kuruluşu, ticaret sicili, limited şirket, vergi levhası",
+    "financial_advisory": "finansal danışman, yatırım, varlık yönetimi, mali planlama",
+    "payroll_services": "bordro, maaş hesaplama, ücret ödemeleri, personel özlük",
+    "currency_exchange": "döviz bürosu, döviz, yabancı para, kur",
+    "pawnshop": "rehin, teminatlı kredi, altın alım, rehinci",
+    "leasing": "finansal kiralama, araç finansmanı, taksit, uzun dönem kiralama",
+    "hearing_aids": "odyoloji, işitme testi, işitme cihazı, işitme kaybı",
+    "medical_transport": "ambulans, hasta nakli, sedye, hasta taşıma",
+    "rehabilitation": "rehabilitasyon, nekahet, iyileşme merkezi, fizik tedavi",
+    "occupational_therapy": "ergoterapist, günlük yaşam becerileri, bağımsızlık, terapi",
+    "midwifery": "ebe, doğum, gebelik, doğum öncesi bakım",
+    "acupuncture": "akupunkturcu, iğne tedavisi, çin tıbbı, moksa",
+    "chiropractic": "osteopat, kayropraktik, omurga, bel ağrısı",
+    "insulation": "yalıtım, mantolama, çatı yalıtımı, izolasyon",
+    "waterproofing": "su yalıtımı, sızıntı, rutubet, membran",
+    "plastering": "sıvacı, sıva, alçı sıva, saten",
+    "tiling": "fayansçı, fayans, seramik, yer karosu",
+    "drywall": "alçıpan, bölme duvar, asma tavan, kartonpiyer",
+    "fencing": "çit, bahçe kapısı, korkuluk, tel örgü",
+    "paving": "parke taşı, kaldırım, yol döşeme, beton yol",
+    "well_drilling": "kuyu açma, sondaj, su kuyusu, yeraltı suyu",
+    "septic_systems": "foseptik, kanalizasyon, drenaj, atık su",
+    "solar_panels": "güneş paneli, fotovoltaik, invertör, güneş enerjisi",
+    "alarm_cctv": "alarm sistemi, güvenlik kamerası, kamera sistemi, hırsız alarmı",
+    "smart_home": "akıllı ev, ev otomasyonu, akıllı aydınlatma, uzaktan kontrol",
+    "lift_maintenance": "asansör, asansör bakımı, yürüyen merdiven, asansör tamiri",
+    "fire_safety": "yangın tüpü, yangın alarmı, sprinkler, yangın güvenliği",
+    "car_dealer": "oto galeri, ikinci el araba, araba satışı, yetkili satıcı",
+    "vehicle_inspection": "araç muayene, fenni muayene, muayene istasyonu, tüvtürk",
+    "auto_electrics": "oto elektrikçi, alternatör, marş motoru, araç tesisatı",
+    "car_glass": "ön cam, cam değişimi, oto cam, cam çatlağı",
+    "boat_repair": "tersane, deniz motoru, tekne, yat bakımı",
+    "bus_charter": "otobüs kiralama, tur otobüsü, minibüs, grup taşıma",
+    "call_centre": "çağrı merkezi, telepazarlama, müşteri hizmetleri, telefon desteği",
+    "virtual_assistant": "uzaktan asistan, idari destek, sanal sekreter, serbest çalışan",
+    "market_research": "anket, pazar araştırması, odak grubu, tüketici araştırması",
+    "copywriting": "metin yazarı, editörlük, düzelti, içerik yazımı",
+    "seo_services": "arama motoru optimizasyonu, google reklam, dijital reklam, sem",
+    "social_media": "sosyal medya yönetimi, instagram, facebook, tiktok",
+    "app_development": "mobil uygulama, android, uygulama geliştirme, flutter",
+    "game_development": "oyun geliştirme, unity, unreal, oyun stüdyosu",
+    "drone_services": "drone, havadan çekim, hava fotoğrafçılığı, insansız hava aracı",
+    "printing_3d": "3d yazıcı, prototip, eklemeli imalat, prototipleme",
+    "interior_design": "iç mimar, dekorasyon, mekan tasarımı, dekoratör",
+    "dance_school": "dans kursu, bale, salsa, dans dersi",
+    "art_gallery": "çerçeveleme, çerçeve, sergi, sanat galerisi"
   },
   "domains": {
     "taxi": "Taksi",
@@ -392,7 +444,13 @@
     "none": "Sonuç yok. Başka bir kelime deneyin - bir meslek, bir alet, bir hizmet."
   },
   "business": {
-    "hero": { "free_line": "Kayıt ücretsiz, ilan ücretsiz - şirketiniz, insanların zaten aradığı yerde." },
+    "idea": {
+      "tagline1": "İnsanların şirketlere ihtiyacı var.",
+      "tagline2": "İnsanların şirketleri var."
+    },
+    "hero": {
+      "free_line": "Kayıt ücretsiz, ilan ücretsiz - şirketiniz, insanların zaten aradığı yerde."
+    },
     "categories": {
       "section_eyebrow": "İŞLETMELER İÇİN ROTABO",
       "section_lead": "Şirketinizin yaptığı işi seçin - ve ihtiyacı olanlar sizi bulsun.",
@@ -409,7 +467,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsorlar", "company": "İşletmeniz burada görünebilir — kayıt ücretsiz",
+    "sponsors": "Sponsorlar",
+    "company": "İşletmeniz burada görünebilir — kayıt ücretsiz",
     "offers": "sunuyor",
     "seeks": "arıyor"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Neyle başlardınız?",
     "submit": "Gönder",
     "sent": "Teşekkürler — size geri yazacağım."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Ana Ortak",
     "invite": "Bu yer, bu fikrin arkasında duran bir kuruluş için ayrıldı. Hiçbir ücreti yok ve hiçbir zaman olmayacak."
   },
@@ -480,21 +540,26 @@
     "confirming": "Ödemen onaylanıyor…",
     "retry_btn": "Tekrar dene"
   },
-
   "banknote": {
     "title": "Numaran dünyayı dolaşır. Senin dolaşmana gerek yok.",
     "body": "<p>Cüzdanından bir banknot çıkar. Herhangi biri. Harcamadan önce üzerine altı küçük karakter yaz: rotabo — artı kayıt olduktan sonra aldığın Rotabo numaran: rotabo2244. Sonra bırak gitsin.</p><p>Yarın birinin kahvesini öder. Gelecek hafta üç şehir ötede bir takside para üstüdür. Gelecek ay bir yabancının cebinde sınırı geçer. Para asla hareket etmeyi bırakmaz — ve artık adın da bırakmıyor.</p><p>Bir yerlerde biri elindeki banknota bakar. Onu görür: rotabo2244. Gerisini merak halleder. Bunu rotabo.app adresine yazar — ve işte oradasın. Adın. Bayrağın. Ne sunduğun. O kağıt parçasını tutan herkesin, her yerde bulabileceği gerçek bir insan.</p><p>Hiçbir reklam panosu bu kadar uzağa gitmez. Hiçbir ilan bu kadar uzun yaşamaz. Bir banknot yıllarca dolaşımda kalır, yüzlerce elden geçer — ve her biri seni bulabilir. Bir kalem. Bir numara. Tüm dünya senin reklamın olur.</p>",
     "fineprint": "Banknotlara yazmak senin kendi tercihindir. Yerel yasaları kontrol et."
   },
-
-  "nav": { "how": "Nasıl çalışır", "safety": "Güvenlik", "business": "İşletmeler", "personal": "Bireyler için", "drive": "Sürücü ol", "drivers": "Sürücüler", "account": "Hesabım" },
+  "nav": {
+    "how": "Nasıl çalışır",
+    "safety": "Güvenlik",
+    "business": "İşletmeler",
+    "personal": "Bireyler için",
+    "drive": "Sürücü ol",
+    "drivers": "Sürücüler",
+    "account": "Hesabım"
+  },
   "hero": {
     "free_line": "Kayıt ücretsiz, ilan ücretsiz — neye ihtiyacınız var, ya da ne sunuyorsunuz.",
     "number_intro": "Rotabo'daki herkesin bir numarası var. Tek bir numara. Sonsuza dek senin. Kim olduğunu, nerede olduğunu ve ne yapabildiğini söyler — dünyadaki herkes seni bulabilir.",
     "search_placeholder": "Bir Rotabo numarası bul — örn. 2244",
     "search_btn": "Ara",
     "get_number": "Numaranı al",
-
     "origin_badge": "İsviçre'de üretildi — tüm dünya için",
     "tagline3": "Kendi araban.",
     "lede": "İhtiyacın olanı seç — ya da yardım edebilecek biri olarak kaydol.",
@@ -788,7 +853,11 @@
     "contact": "İletişim",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Dil", "search_placeholder": "Dil ara…", "no_matches": "Sonuç yok" },
+  "lang_selector": {
+    "label": "Dil",
+    "search_placeholder": "Dil ara…",
+    "no_matches": "Sonuç yok"
+  },
   "install_modal": {
     "title": "Rotabo'yu ana ekrana ekle",
     "generic": "Tarayıcı menünüzü açın ve \"Uygulamayı yükle\" veya \"Ana ekrana ekle\" seçeneğini arayın.",
@@ -1003,14 +1072,12 @@
     "load_error": "İlanların yüklenemedi. Lütfen tekrar dene.",
     "retry_btn": "Tekrar dene"
   },
-
   "investors_card": {
     "cat": "YATIRIMCILAR",
     "h3": "Yatırımcı ol",
     "p": "Rotabo, dünya genelinde 12 kategoride ve 38 dilde insanları buluşturuyor — zamanını, becerisini ya da ekipmanını sunan hiç kimseden komisyon almadan. Bu modeli destekleyen insanlarla görüşüyoruz.",
     "link": "Bize ulaş →"
   },
-
   "verify_modal": {
     "title": "E-postana bak",
     "subtitle": "Aşağıdaki adrese 6 haneli bir kod gönderdik. Devam etmek için kodu gir.",

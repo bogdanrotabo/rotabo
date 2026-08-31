@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Brīva vieta - kļūstiet par sponsoru" },
+  "sponsorbox": {
+    "free": "Brīva vieta - kļūstiet par sponsoru"
+  },
   "bizlist": {
     "label": "Šeit tiek rādīti reģistrētie uzņēmumi",
     "free": "Brīva vieta - reģistrējiet savu uzņēmumu"
@@ -227,7 +229,13 @@
     "none": "Nav rezultātu. Mēģiniet citu vārdu - amats, darbarīks vai pakalpojums."
   },
   "business": {
-    "hero": { "free_line": "Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē." },
+    "idea": {
+      "tagline1": "Cilvēkiem ir vajadzīgi uzņēmumi.",
+      "tagline2": "Cilvēkiem ir uzņēmumi."
+    },
+    "hero": {
+      "free_line": "Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē."
+    },
     "categories": {
       "section_eyebrow": "ROTABO UZŅĒMUMIEM",
       "section_lead": "Izvēlieties, ko dara jūsu uzņēmums - un lai jūs atrod tie, kam tas vajadzīgs.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsori", "company": "Jūsu uzņēmums var būt redzams šeit — reģistrācija bez maksas",
+    "sponsors": "Sponsori",
+    "company": "Jūsu uzņēmums var būt redzams šeit — reģistrācija bez maksas",
     "offers": "piedāvā",
     "seeks": "meklē"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Ar ko sāktu?",
     "submit": "Nosūtīt",
     "sent": "Paldies — es atbildēšu."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Galvenais partneris",
     "invite": "Šī vieta ir paredzēta organizācijai, kas atbalsta šo ideju. Tas neko nemaksā un nekad nemaksās."
   },
@@ -315,21 +325,26 @@
     "confirming": "Apstiprinām tavu maksājumu…",
     "retry_btn": "Mēģināt vēlreiz"
   },
-
   "banknote": {
     "title": "Tavs numurs ceļo pa pasauli. Tev nav jāceļo.",
     "body": "<p>Izņem no maka banknoti. Jebkuru. Pirms to iztērē, uzraksti uz tās sešas mazas zīmes: rotabo — plus tavs Rotabo numurs, ko saņem pēc reģistrācijas: rotabo2244. Tad ļauj tai aiziet.</p><p>Rīt tā samaksās kāda kafiju. Nākamnedēļ tā būs sīknauda taksometrā trīs pilsētas tālāk. Nākammēnes tā šķērsos robežu sveša cilvēka kabatā. Nauda nekad nepārstāj kustēties — un tagad arī tavs vārds ne.</p><p>Kaut kur kāds paskatās uz banknoti savā rokā. Viņš to redz: rotabo2244. Ziņkāre izdara pārējo. Viņš to ieraksta vietnē rotabo.app — un tur nu tu esi. Tavs vārds. Tavs karogs. Ko tu piedāvā. Īsts cilvēks, atrodams jebkuram, jebkur, kas jebkad tur rokā to papīra gabaliņu.</p><p>Neviens reklāmas stends neceļo tik tālu. Neviena reklāma nedzīvo tik ilgi. Banknote paliek apgrozībā gadiem un iziet cauri simtiem roku — un katra no tām var tevi atrast. Viena pildspalva. Viens numurs. Visa pasaule kļūst par tavu reklāmu.</p>",
     "fineprint": "Rakstīšana uz banknotēm ir tava paša izvēle. Pārbaudi vietējos likumus."
   },
-
-  "nav": { "how": "Kā tas darbojas", "safety": "Drošība", "business": "Uzņēmumi", "personal": "Privātpersonām", "drive": "Kļūsti par šoferi", "drivers": "Šoferi", "account": "Mans konts" },
+  "nav": {
+    "how": "Kā tas darbojas",
+    "safety": "Drošība",
+    "business": "Uzņēmumi",
+    "personal": "Privātpersonām",
+    "drive": "Kļūsti par šoferi",
+    "drivers": "Šoferi",
+    "account": "Mans konts"
+  },
   "hero": {
     "free_line": "Reģistrācija bez maksas, sludinājums bez maksas — kas jums vajadzīgs vai ko piedāvājat.",
     "number_intro": "Katram Rotabo lietotājam ir numurs. Viens numurs. Tavs mūžīgi. Tas pasaka, kas tu esi, kur tu esi un ko tu proti — atrodams jebkuram uz Zemes.",
     "search_placeholder": "Atrodi Rotabo numuru — piem., 2244",
     "search_btn": "Meklēt",
     "get_number": "Iegūsti savu numuru",
-
     "origin_badge": "Ražots Šveicē — visai pasaulei",
     "tagline3": "Tava mašīna.",
     "lede": "Izvēlies, kas tev vajadzīgs — vai reģistrējies kā cilvēks, kurš var palīdzēt.",
@@ -623,7 +638,11 @@
     "contact": "Kontakti",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…", "no_matches": "Nav rezultātu" },
+  "lang_selector": {
+    "label": "Valoda",
+    "search_placeholder": "Meklēt valodu…",
+    "no_matches": "Nav rezultātu"
+  },
   "install_modal": {
     "title": "Pievieno Rotabo sākuma ekrānam",
     "generic": "Atveriet pārlūkprogrammas izvēlni un meklējiet \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",
@@ -838,14 +857,12 @@
     "load_error": "Neizdevās ielādēt tavus sludinājumus. Lūdzu, mēģini vēlreiz.",
     "retry_btn": "Mēģināt vēlreiz"
   },
-
   "investors_card": {
     "cat": "INVESTORI",
     "h3": "Kļūsti par investoru",
     "p": "Rotabo savieno cilvēkus 12 kategorijās un 38 valodās visā pasaulē — bez komisijas no neviena, kas piedāvā savu laiku, prasmes vai tehniku. Mēs runājam ar tiem, kas atbalsta šo modeli.",
     "link": "Sazinies ar mums →"
   },
-
   "verify_modal": {
     "title": "Pārbaudi savu e-pastu",
     "subtitle": "Nosūtījām 6 ciparu kodu uz zemāk norādīto adresi. Ievadi to, lai turpinātu.",

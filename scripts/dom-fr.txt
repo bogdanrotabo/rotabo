@@ -161,53 +161,53 @@ car_wash|Lavage auto|Station de lavage, nettoyage voiture, detailing
 car_rental|Location de voitures|Louer une voiture, véhicule de location
 bike_scooter_rental|Location de vélos et trottinettes|Louer un vélo, trottinette électrique
 funeral_services|Pompes funèbres|Obsèques, enterrement, crémation, cercueils
-notary|Notariat|
-bailiff|Huissier de justice|
-patent_trademark|Brevets et marques|
-debt_collection|Recouvrement de créances|
-company_formation|Création d'entreprise|
-financial_advisory|Conseil financier|
-payroll_services|Gestion de la paie|
-currency_exchange|Bureau de change|
-pawnshop|Prêt sur gage|
-leasing|Leasing et financement|
-hearing_aids|Appareils auditifs|
-medical_transport|Transport médical|
-rehabilitation|Centre de rééducation|
-occupational_therapy|Ergothérapie|
-midwifery|Sages-femmes|
-acupuncture|Acupuncture|
-chiropractic|Chiropratique et ostéopathie|
-insulation|Isolation thermique|
-waterproofing|Étanchéité|
-plastering|Plâtrerie et enduits|
-tiling|Carrelage|
-drywall|Cloisons et plaques de plâtre|
-fencing|Clôtures et portails|
-paving|Pavage et allées|
-well_drilling|Forage de puits|
-septic_systems|Fosses septiques et assainissement|
-solar_panels|Pose de panneaux solaires|
-alarm_cctv|Alarmes et vidéosurveillance|
-smart_home|Domotique|
-lift_maintenance|Entretien d'ascenseurs|
-fire_safety|Sécurité incendie et extincteurs|
-car_dealer|Concession automobile|
-vehicle_inspection|Contrôle technique|
-auto_electrics|Électricité automobile|
-car_glass|Vitrage automobile et pare-brise|
-boat_repair|Réparation de bateaux|
-bus_charter|Location d'autocars|
-call_centre|Centre d'appels|
-virtual_assistant|Assistant virtuel|
-market_research|Études de marché|
-copywriting|Rédaction de contenu|
-seo_services|Référencement et publicité en ligne|
-social_media|Gestion des réseaux sociaux|
-app_development|Développement d'applications mobiles|
-game_development|Développement de jeux|
-drone_services|Services par drone|
-printing_3d|Impression 3D|
-interior_design|Décoration d'intérieur|
-dance_school|École de danse|
-art_gallery|Galerie d'art et encadrement|
+notary|Notariat|notaire, actes, succession, acte authentique
+bailiff|Huissier de justice|huissier, saisie, commandement, exécution forcée
+patent_trademark|Brevets et marques|propriété intellectuelle, dépôt de marque, brevet, conseil en propriété
+debt_collection|Recouvrement de créances|recouvrement, impayés, créances, relance
+company_formation|Création d'entreprise|création de société, statuts, immatriculation, greffe
+financial_advisory|Conseil financier|conseiller financier, placement, patrimoine, investissement
+payroll_services|Gestion de la paie|fiche de paie, bulletin de salaire, paie, social
+currency_exchange|Bureau de change|change, devises, monnaie étrangère, taux de change
+pawnshop|Prêt sur gage|mont de piété, gage, prêt sur gage, rachat or
+leasing|Leasing et financement|crédit-bail, financement, location longue durée, mensualité
+hearing_aids|Appareils auditifs|audioprothésiste, audition, test auditif, prothèse auditive
+medical_transport|Transport médical|ambulance, transport de patients, brancard, transport sanitaire
+rehabilitation|Centre de rééducation|rééducation, convalescence, soins de suite, reprise
+occupational_therapy|Ergothérapie|ergothérapeute, autonomie, gestes du quotidien, thérapie
+midwifery|Sages-femmes|sage-femme, accouchement, grossesse, préparation naissance
+acupuncture|Acupuncture|acupuncteur, aiguilles, médecine chinoise, moxibustion
+chiropractic|Chiropratique et ostéopathie|ostéopathe, chiropracteur, colonne vertébrale, mal de dos
+insulation|Isolation thermique|isolant, isolation des combles, laine de verre, calorifuge
+waterproofing|Étanchéité|étanchéité toiture, infiltration, humidité, membrane
+plastering|Plâtrerie et enduits|plâtrier, enduit, ragréage, staff
+tiling|Carrelage|carreleur, carrelage, faïence, dalles
+drywall|Cloisons et plaques de plâtre|placo, plaque de plâtre, cloison, faux plafond
+fencing|Clôtures et portails|clôture, portail, grillage, barrière
+paving|Pavage et allées|pavage, allée, bordure, enrobé
+well_drilling|Forage de puits|puits, forage, sondage, nappe phréatique
+septic_systems|Fosses septiques et assainissement|fosse septique, assainissement, épandage, vidange
+solar_panels|Pose de panneaux solaires|photovoltaïque, panneaux solaires, onduleur, autoconsommation
+alarm_cctv|Alarmes et vidéosurveillance|alarme, caméras de surveillance, vidéosurveillance, télésurveillance
+smart_home|Domotique|domotique, maison connectée, éclairage connecté, automatisation
+lift_maintenance|Entretien d'ascenseurs|ascenseur, monte-charge, escalator, entretien ascenseur
+fire_safety|Sécurité incendie et extincteurs|extincteurs, détecteur de fumée, incendie, sprinkleur
+car_dealer|Concession automobile|concessionnaire, voitures occasion, vente de voitures, mandataire
+vehicle_inspection|Contrôle technique|contrôle technique, visite technique, centre de contrôle, contre-visite
+auto_electrics|Électricité automobile|électricien auto, alternateur, démarreur, faisceau
+car_glass|Vitrage automobile et pare-brise|pare-brise, vitrage auto, remplacement de vitre, impact
+boat_repair|Réparation de bateaux|chantier naval, hors-bord, bateau, moteur de bateau
+bus_charter|Location d'autocars|autocar, bus, minibus, transport de groupe
+call_centre|Centre d'appels|centre appel, télémarketing, télévente, hotline
+virtual_assistant|Assistant virtuel|assistante virtuelle, secrétariat externalisé, support administratif, télésecrétariat
+market_research|Études de marché|sondages, étude de marché, panel, enquête
+copywriting|Rédaction de contenu|rédacteur, relecture, correction, contenu
+seo_services|Référencement et publicité en ligne|référencement naturel, google ads, publicité en ligne, sea
+social_media|Gestion des réseaux sociaux|community manager, instagram, facebook, tiktok
+app_development|Développement d'applications mobiles|développeur mobile, android, applications mobiles, flutter
+game_development|Développement de jeux|jeux vidéo, unity, unreal, studio de jeux
+drone_services|Services par drone|drone, prise de vue aérienne, télépilote, cartographie
+printing_3d|Impression 3D|imprimante 3d, prototypage, fabrication additive, maquette
+interior_design|Décoration d'intérieur|décorateur, aménagement, agencement, architecte intérieur
+dance_school|École de danse|cours de danse, ballet, salsa, danse de salon
+art_gallery|Galerie d'art et encadrement|encadrement, encadreur, cadres, exposition

@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Chỗ trống - trở thành nhà tài trợ" },
+  "sponsorbox": {
+    "free": "Chỗ trống - trở thành nhà tài trợ"
+  },
   "bizlist": {
     "label": "Các công ty đã đăng ký xuất hiện ở đây",
     "free": "Chỗ trống - đăng ký công ty của bạn"
@@ -227,7 +229,13 @@
     "none": "Không có kết quả. Thử từ khác - một nghề, một công cụ, một dịch vụ."
   },
   "business": {
-    "hero": { "free_line": "Đăng ký miễn phí, đăng tin miễn phí - công ty bạn, ở nơi mọi người đang tìm." },
+    "idea": {
+      "tagline1": "Mọi người cần công ty.",
+      "tagline2": "Mọi người có công ty."
+    },
+    "hero": {
+      "free_line": "Đăng ký miễn phí, đăng tin miễn phí - công ty bạn, ở nơi mọi người đang tìm."
+    },
     "categories": {
       "section_eyebrow": "ROTABO CHO DOANH NGHIỆP",
       "section_lead": "Chọn công việc công ty bạn làm - và để những ai cần tìm thấy bạn.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Nhà tài trợ", "company": "Doanh nghiệp của bạn có thể hiện ở đây — đăng ký miễn phí",
+    "sponsors": "Nhà tài trợ",
+    "company": "Doanh nghiệp của bạn có thể hiện ở đây — đăng ký miễn phí",
     "offers": "cung cấp",
     "seeks": "đang tìm"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Bạn sẽ bắt đầu từ đâu?",
     "submit": "Gửi",
     "sent": "Cảm ơn — tôi sẽ trả lời."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Đối tác chính",
     "invite": "Vị trí này dành cho một tổ chức đồng hành cùng ý tưởng này. Hoàn toàn miễn phí, và sẽ luôn như vậy."
   },
@@ -315,21 +325,26 @@
     "confirming": "Đang xác nhận thanh toán của bạn…",
     "retry_btn": "Thử lại"
   },
-
   "banknote": {
     "title": "Con số của bạn đi khắp thế giới. Bạn thì không cần.",
     "body": "<p>Lấy một tờ tiền ra khỏi ví. Bất kỳ tờ nào. Trước khi tiêu nó, hãy viết lên đó sáu ký tự nhỏ: rotabo — cộng với số Rotabo của bạn, số bạn nhận được sau khi đăng ký: rotabo2244. Rồi để nó ra đi.</p><p>Ngày mai nó trả tiền cà phê cho ai đó. Tuần sau nó là tiền thối trong một chiếc taxi cách ba thành phố. Tháng sau nó vượt biên giới trong túi một người lạ. Tiền không bao giờ ngừng di chuyển — và bây giờ, tên bạn cũng vậy.</p><p>Ở đâu đó, ai đó nhìn tờ tiền trên tay mình. Họ thấy nó: rotabo2244. Sự tò mò làm phần còn lại. Họ gõ nó vào rotabo.app — và bạn ở đó. Tên bạn. Lá cờ của bạn. Những gì bạn cung cấp. Một con người thật, có thể được tìm thấy bởi bất kỳ ai, ở bất kỳ đâu, từng cầm mảnh giấy đó.</p><p>Không tấm biển quảng cáo nào đi xa đến thế. Không quảng cáo nào sống lâu đến thế. Một tờ tiền lưu hành trong nhiều năm, đi qua hàng trăm bàn tay — và mỗi bàn tay đều có thể tìm thấy bạn. Một cây bút. Một con số. Cả thế giới trở thành quảng cáo của bạn.</p>",
     "fineprint": "Viết lên tiền giấy là lựa chọn của riêng bạn. Hãy kiểm tra luật pháp địa phương."
   },
-
-  "nav": { "how": "Cách hoạt động", "safety": "An toàn", "business": "Doanh nghiệp", "personal": "Cho cá nhân", "drive": "Trở thành tài xế", "drivers": "Tài xế", "account": "Tài khoản của tôi" },
+  "nav": {
+    "how": "Cách hoạt động",
+    "safety": "An toàn",
+    "business": "Doanh nghiệp",
+    "personal": "Cho cá nhân",
+    "drive": "Trở thành tài xế",
+    "drivers": "Tài xế",
+    "account": "Tài khoản của tôi"
+  },
   "hero": {
     "free_line": "Đăng ký miễn phí, đăng tin miễn phí — điều bạn cần, hoặc điều bạn cung cấp.",
     "number_intro": "Mọi người trên Rotabo đều có một số. Một con số. Của bạn mãi mãi. Nó cho biết bạn là ai, bạn ở đâu và bạn có thể làm gì — bất kỳ ai trên Trái Đất đều có thể tìm thấy bạn.",
     "search_placeholder": "Tìm một số Rotabo — ví dụ 2244",
     "search_btn": "Tìm",
     "get_number": "Nhận số của bạn",
-
     "origin_badge": "Sản xuất tại Thụy Sĩ — cho cả thế giới",
     "tagline3": "Xe của bạn.",
     "lede": "Chọn điều bạn cần — hoặc đăng ký như một người có thể giúp đỡ.",
@@ -623,7 +638,11 @@
     "contact": "Liên hệ",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…", "no_matches": "Không có kết quả" },
+  "lang_selector": {
+    "label": "Ngôn ngữ",
+    "search_placeholder": "Tìm ngôn ngữ…",
+    "no_matches": "Không có kết quả"
+  },
   "install_modal": {
     "title": "Thêm Rotabo vào màn hình chính",
     "generic": "Mở menu trình duyệt của bạn và tìm \"Cài đặt ứng dụng\" hoặc \"Thêm vào màn hình chính\".",
@@ -838,14 +857,12 @@
     "load_error": "Không thể tải tin đăng của bạn. Vui lòng thử lại.",
     "retry_btn": "Thử lại"
   },
-
   "investors_card": {
     "cat": "NHÀ ĐẦU TƯ",
     "h3": "Trở thành nhà đầu tư",
     "p": "Rotabo kết nối mọi người trong 12 hạng mục và 38 ngôn ngữ, trên toàn thế giới — không thu hoa hồng của bất kỳ ai cống hiến thời gian, kỹ năng hay thiết bị của mình. Chúng tôi đang trò chuyện với những người ủng hộ mô hình đó.",
     "link": "Liên hệ →"
   },
-
   "verify_modal": {
     "title": "Kiểm tra email của bạn",
     "subtitle": "Chúng tôi đã gửi mã 6 chữ số tới địa chỉ bên dưới. Nhập mã để tiếp tục.",

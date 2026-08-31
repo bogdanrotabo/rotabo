@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Laisva vieta - tapkite rėmėju" },
+  "sponsorbox": {
+    "free": "Laisva vieta - tapkite rėmėju"
+  },
   "bizlist": {
     "label": "Čia rodomos registruotos įmonės",
     "free": "Laisva vieta - užregistruokite savo įmonę"
@@ -227,7 +229,13 @@
     "none": "Rezultatų nėra. Pabandykite kitą žodį - amatas, įrankis ar paslauga."
   },
   "business": {
-    "hero": { "free_line": "Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško." },
+    "idea": {
+      "tagline1": "Žmonėms reikia įmonių.",
+      "tagline2": "Žmonės turi įmonių."
+    },
+    "hero": {
+      "free_line": "Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško."
+    },
     "categories": {
       "section_eyebrow": "ROTABO VERSLUI",
       "section_lead": "Pasirinkite, ką daro jūsų įmonė - ir jus suras tie, kuriems to reikia.",
@@ -244,7 +252,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Rėmėjai", "company": "Jūsų verslas gali būti matomas čia — registracija nemokama",
+    "sponsors": "Rėmėjai",
+    "company": "Jūsų verslas gali būti matomas čia — registracija nemokama",
     "offers": "siūlo",
     "seeks": "ieško"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Nuo ko pradėtumėte?",
     "submit": "Siųsti",
     "sent": "Ačiū — atsakysiu."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Pagrindinis partneris",
     "invite": "Ši vieta skirta organizacijai, kuri palaiko šią idėją. Tai nieko nekainuoja ir niekada nekainuos."
   },
@@ -315,21 +325,26 @@
     "confirming": "Patvirtinamas jūsų mokėjimas…",
     "retry_btn": "Bandyti dar kartą"
   },
-
   "banknote": {
     "title": "Tavo numeris keliauja po pasaulį. Tau nereikia.",
     "body": "<p>Išsiimk iš piniginės banknotą. Bet kokį. Prieš išleisdamas, užrašyk ant jo šešis mažus ženklus: rotabo — plius tavo Rotabo numeris, kurį gauni po registracijos: rotabo2244. Tada paleisk jį.</p><p>Rytoj jis sumokės už kažkieno kavą. Kitą savaitę bus grąža taksi už trijų miestų. Kitą mėnesį kirs sieną nepažįstamojo kišenėje. Pinigai niekada nenustoja judėti — o dabar ir tavo vardas.</p><p>Kažkur kažkas pažvelgia į banknotą savo rankoje. Pamato: rotabo2244. Smalsumas padaro likusią dalį. Jis įveda tai svetainėje rotabo.app — ir štai tu. Tavo vardas. Tavo vėliava. Ką siūlai. Tikras žmogus, surandamas bet kam, bet kur, kas kada nors laiko tą popieriaus gabalėlį.</p><p>Joks reklaminis stendas nekeliauja taip toli. Jokia reklama negyvena taip ilgai. Banknotas lieka apyvartoje metų metus ir pereina per šimtus rankų — ir kiekviena iš jų gali tave rasti. Vienas rašiklis. Vienas numeris. Visas pasaulis tampa tavo reklama.</p>",
     "fineprint": "Rašyti ant banknotų yra tavo paties pasirinkimas. Pasitikrink vietinius įstatymus."
   },
-
-  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslas", "personal": "Privatiems", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai", "account": "Mano paskyra" },
+  "nav": {
+    "how": "Kaip tai veikia",
+    "safety": "Sauga",
+    "business": "Verslas",
+    "personal": "Privatiems",
+    "drive": "Tapk vairuotoju",
+    "drivers": "Vairuotojai",
+    "account": "Mano paskyra"
+  },
   "hero": {
     "free_line": "Registracija nemokama, skelbimas nemokamas — ko jums reikia arba ką siūlote.",
     "number_intro": "Kiekvienas Rotabo turi numerį. Vieną numerį. Tavo amžinai. Jis pasako, kas tu esi, kur esi ir ką moki — surandamas bet kam Žemėje.",
     "search_placeholder": "Rask Rotabo numerį — pvz., 2244",
     "search_btn": "Ieškoti",
     "get_number": "Gauk savo numerį",
-
     "origin_badge": "Pagaminta Šveicarijoje — visam pasauliui",
     "tagline3": "Tavo automobilis.",
     "lede": "Pasirink, ko reikia — arba užsiregistruok kaip žmogus, galintis padėti.",
@@ -623,7 +638,11 @@
     "contact": "Kontaktai",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…", "no_matches": "Nėra rezultatų" },
+  "lang_selector": {
+    "label": "Kalba",
+    "search_placeholder": "Ieškoti kalbos…",
+    "no_matches": "Nėra rezultatų"
+  },
   "install_modal": {
     "title": "Pridėti Rotabo prie pagrindinio ekrano",
     "generic": "Atidarykite naršyklės meniu ir raskite \"Įdiegti programą\" arba \"Pridėti prie pagrindinio ekrano\".",
@@ -838,14 +857,12 @@
     "load_error": "Nepavyko įkelti jūsų skelbimų. Bandykite dar kartą.",
     "retry_btn": "Bandyti dar kartą"
   },
-
   "investors_card": {
     "cat": "INVESTUOTOJAI",
     "h3": "Tapk investuotoju",
     "p": "Rotabo jungia žmones 12 kategorijų ir 38 kalbomis visame pasaulyje — neimdama komisinių iš nieko, kas siūlo savo laiką, įgūdžius ar įrangą. Kalbamės su tais, kurie palaiko šį modelį.",
     "link": "Susisiek →"
   },
-
   "verify_modal": {
     "title": "Patikrink el. paštą",
     "subtitle": "Išsiuntėme 6 skaitmenų kodą žemiau nurodytu adresu. Įvesk jį, kad tęstum.",

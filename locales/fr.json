@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Place libre - devenez sponsor" },
+  "sponsorbox": {
+    "free": "Place libre - devenez sponsor"
+  },
   "bizlist": {
     "label": "Ici apparaissent les entreprises enregistrées",
     "free": "Place libre - enregistrez votre entreprise"
@@ -167,7 +169,57 @@
     "car_wash": "Station de lavage, nettoyage voiture, detailing",
     "car_rental": "Louer une voiture, véhicule de location",
     "bike_scooter_rental": "Louer un vélo, trottinette électrique",
-    "funeral_services": "Obsèques, enterrement, crémation, cercueils"
+    "funeral_services": "Obsèques, enterrement, crémation, cercueils",
+    "notary": "notaire, actes, succession, acte authentique",
+    "bailiff": "huissier, saisie, commandement, exécution forcée",
+    "patent_trademark": "propriété intellectuelle, dépôt de marque, brevet, conseil en propriété",
+    "debt_collection": "recouvrement, impayés, créances, relance",
+    "company_formation": "création de société, statuts, immatriculation, greffe",
+    "financial_advisory": "conseiller financier, placement, patrimoine, investissement",
+    "payroll_services": "fiche de paie, bulletin de salaire, paie, social",
+    "currency_exchange": "change, devises, monnaie étrangère, taux de change",
+    "pawnshop": "mont de piété, gage, prêt sur gage, rachat or",
+    "leasing": "crédit-bail, financement, location longue durée, mensualité",
+    "hearing_aids": "audioprothésiste, audition, test auditif, prothèse auditive",
+    "medical_transport": "ambulance, transport de patients, brancard, transport sanitaire",
+    "rehabilitation": "rééducation, convalescence, soins de suite, reprise",
+    "occupational_therapy": "ergothérapeute, autonomie, gestes du quotidien, thérapie",
+    "midwifery": "sage-femme, accouchement, grossesse, préparation naissance",
+    "acupuncture": "acupuncteur, aiguilles, médecine chinoise, moxibustion",
+    "chiropractic": "ostéopathe, chiropracteur, colonne vertébrale, mal de dos",
+    "insulation": "isolant, isolation des combles, laine de verre, calorifuge",
+    "waterproofing": "étanchéité toiture, infiltration, humidité, membrane",
+    "plastering": "plâtrier, enduit, ragréage, staff",
+    "tiling": "carreleur, carrelage, faïence, dalles",
+    "drywall": "placo, plaque de plâtre, cloison, faux plafond",
+    "fencing": "clôture, portail, grillage, barrière",
+    "paving": "pavage, allée, bordure, enrobé",
+    "well_drilling": "puits, forage, sondage, nappe phréatique",
+    "septic_systems": "fosse septique, assainissement, épandage, vidange",
+    "solar_panels": "photovoltaïque, panneaux solaires, onduleur, autoconsommation",
+    "alarm_cctv": "alarme, caméras de surveillance, vidéosurveillance, télésurveillance",
+    "smart_home": "domotique, maison connectée, éclairage connecté, automatisation",
+    "lift_maintenance": "ascenseur, monte-charge, escalator, entretien ascenseur",
+    "fire_safety": "extincteurs, détecteur de fumée, incendie, sprinkleur",
+    "car_dealer": "concessionnaire, voitures occasion, vente de voitures, mandataire",
+    "vehicle_inspection": "contrôle technique, visite technique, centre de contrôle, contre-visite",
+    "auto_electrics": "électricien auto, alternateur, démarreur, faisceau",
+    "car_glass": "pare-brise, vitrage auto, remplacement de vitre, impact",
+    "boat_repair": "chantier naval, hors-bord, bateau, moteur de bateau",
+    "bus_charter": "autocar, bus, minibus, transport de groupe",
+    "call_centre": "centre appel, télémarketing, télévente, hotline",
+    "virtual_assistant": "assistante virtuelle, secrétariat externalisé, support administratif, télésecrétariat",
+    "market_research": "sondages, étude de marché, panel, enquête",
+    "copywriting": "rédacteur, relecture, correction, contenu",
+    "seo_services": "référencement naturel, google ads, publicité en ligne, sea",
+    "social_media": "community manager, instagram, facebook, tiktok",
+    "app_development": "développeur mobile, android, applications mobiles, flutter",
+    "game_development": "jeux vidéo, unity, unreal, studio de jeux",
+    "drone_services": "drone, prise de vue aérienne, télépilote, cartographie",
+    "printing_3d": "imprimante 3d, prototypage, fabrication additive, maquette",
+    "interior_design": "décorateur, aménagement, agencement, architecte intérieur",
+    "dance_school": "cours de danse, ballet, salsa, danse de salon",
+    "art_gallery": "encadrement, encadreur, cadres, exposition"
   },
   "domains": {
     "taxi": "Taxi",
@@ -392,7 +444,13 @@
     "none": "Aucun résultat. Essayez un autre mot - un métier, un outil, un service."
   },
   "business": {
-    "hero": { "free_line": "Inscription gratuite, annonce gratuite - votre entreprise, là où les gens cherchent déjà." },
+    "idea": {
+      "tagline1": "Les gens ont besoin d'entreprises.",
+      "tagline2": "Les gens ont des entreprises."
+    },
+    "hero": {
+      "free_line": "Inscription gratuite, annonce gratuite - votre entreprise, là où les gens cherchent déjà."
+    },
     "categories": {
       "section_eyebrow": "ROTABO POUR LES ENTREPRISES",
       "section_lead": "Choisissez ce que fait votre entreprise - et faites-vous trouver par ceux qui en ont besoin.",
@@ -409,7 +467,8 @@
     }
   },
   "ticker": {
-    "sponsors": "Sponsors", "company": "Votre entreprise peut être visible ici — inscription gratuite",
+    "sponsors": "Sponsors",
+    "company": "Votre entreprise peut être visible ici — inscription gratuite",
     "offers": "propose",
     "seeks": "cherche"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Par quoi commenceriez-vous ?",
     "submit": "Envoyer",
     "sent": "Merci — je vous répondrai."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Partenaire principal",
     "invite": "Cette place est réservée à une organisation qui soutient cette idée. Elle ne coûte rien, et ne coûtera jamais rien."
   },
@@ -480,17 +540,16 @@
     "confirming": "Confirmation de votre paiement…",
     "retry_btn": "Réessayer"
   },
-
   "banknote": {
     "title": "Votre numéro voyage dans le monde. Pas vous.",
     "body": "<p>Sortez un billet de votre portefeuille. N'importe lequel. Avant de le dépenser, écrivez dessus six petits caractères : rotabo — plus votre numéro Rotabo, celui que vous recevez après votre inscription : rotabo2244. Puis laissez-le partir.</p><p>Demain il paie le café de quelqu'un. La semaine prochaine, c'est de la monnaie dans un taxi à trois villes de là. Le mois prochain, il franchit une frontière dans la poche d'un inconnu. L'argent ne cesse jamais de circuler — et désormais, votre nom non plus.</p><p>Quelque part, quelqu'un regarde le billet dans sa main. Il le voit : rotabo2244. La curiosité fait le reste. Il le tape sur rotabo.app — et vous voilà. Votre nom. Votre drapeau. Ce que vous offrez. Une personne réelle, trouvable par n'importe qui, n'importe où, qui tient un jour ce morceau de papier.</p><p>Aucun panneau publicitaire ne voyage aussi loin. Aucune annonce ne vit aussi longtemps. Un billet reste en circulation pendant des années, passant entre des centaines de mains — et chacune d'elles peut vous trouver. Un stylo. Un numéro. Le monde entier devient votre publicité.</p>",
     "fineprint": "Écrire sur les billets est votre propre choix. Vérifiez les lois locales."
   },
-
   "nav": {
     "how": "Comment ça marche",
     "safety": "Sécurité",
-    "business": "Entreprises", "personal": "Pour les particuliers",
+    "business": "Entreprises",
+    "personal": "Pour les particuliers",
     "drive": "Devenir chauffeur",
     "drivers": "Chauffeurs",
     "account": "Mon compte"
@@ -501,7 +560,6 @@
     "search_placeholder": "Trouver un numéro Rotabo — ex. 2244",
     "search_btn": "Rechercher",
     "get_number": "Obtenez votre numéro",
-
     "origin_badge": "Conçu en Suisse — pour le monde entier",
     "tagline3": "Votre voiture.",
     "lede": "Choisis ce dont tu as besoin — ou inscris-toi comme quelqu'un qui peut aider.",
@@ -1014,14 +1072,12 @@
     "load_error": "Vos annonces n'ont pas pu être chargées. Veuillez réessayer.",
     "retry_btn": "Réessayer"
   },
-
   "investors_card": {
     "cat": "INVESTISSEURS",
     "h3": "Devenir investisseur",
     "p": "Rotabo relie les gens dans 12 catégories et 38 langues, partout dans le monde — sans aucune commission prélevée sur ceux qui offrent leur temps, leurs compétences ou leur matériel. Nous parlons avec ceux qui soutiennent ce modèle.",
     "link": "Nous contacter →"
   },
-
   "verify_modal": {
     "title": "Regarde tes e-mails",
     "subtitle": "Nous avons envoyé un code à 6 chiffres à l'adresse ci-dessous. Saisis-le pour continuer.",

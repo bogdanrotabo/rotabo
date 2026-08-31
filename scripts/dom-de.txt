@@ -161,53 +161,53 @@ car_wash|Autowäsche|Waschanlage, Autopflege, Aufbereitung
 car_rental|Autovermietung|Mietwagen, Auto mieten, Leihwagen
 bike_scooter_rental|Fahrrad- und Rollervermietung|Velo mieten, E-Scooter, Fahrradverleih
 funeral_services|Bestattungen|Bestatter, Beerdigung, Kremation, Särge
-notary|Notariat|
-bailiff|Gerichtsvollzieher|
-patent_trademark|Patente und Marken|
-debt_collection|Inkasso|
-company_formation|Firmengründung|
-financial_advisory|Finanzberatung|
-payroll_services|Lohnbuchhaltung|
-currency_exchange|Wechselstube|
-pawnshop|Pfandleihhaus|
-leasing|Leasing und Finanzierung|
-hearing_aids|Hörgeräte|
-medical_transport|Krankentransport|
-rehabilitation|Rehabilitationszentrum|
-occupational_therapy|Ergotherapie|
-midwifery|Hebammen|
-acupuncture|Akupunktur|
-chiropractic|Chiropraktik und Osteopathie|
-insulation|Wärmedämmung|
-waterproofing|Abdichtung|
-plastering|Verputz und Spachtelarbeiten|
-tiling|Plattenlegerarbeiten|
-drywall|Trockenbau|
-fencing|Zäune und Tore|
-paving|Pflasterarbeiten und Einfahrten|
-well_drilling|Brunnenbohrung|
-septic_systems|Klärgruben und Entwässerung|
-solar_panels|Solaranlagen-Montage|
-alarm_cctv|Alarmanlagen und Videoüberwachung|
-smart_home|Smart-Home-Installation|
-lift_maintenance|Aufzugswartung|
-fire_safety|Brandschutz und Feuerlöscher|
-car_dealer|Autohaus|
-vehicle_inspection|Fahrzeugprüfung|
-auto_electrics|Autoelektrik|
-car_glass|Autoglas und Windschutzscheiben|
-boat_repair|Boots- und Schiffsreparatur|
-bus_charter|Bus- und Reisecarvermietung|
-call_centre|Callcenter|
-virtual_assistant|Virtuelle Assistenz|
-market_research|Marktforschung|
-copywriting|Texterstellung|
-seo_services|SEO und Online-Werbung|
-social_media|Social-Media-Betreuung|
-app_development|App-Entwicklung|
-game_development|Spieleentwicklung|
-drone_services|Drohnendienste|
-printing_3d|3D-Druck|
-interior_design|Innenarchitektur|
-dance_school|Tanzschule|
-art_gallery|Kunstgalerie und Einrahmung|
+notary|Notariat|Notar, Beurkundung, Urkunde, Erbschein
+bailiff|Gerichtsvollzieher|Gerichtsvollzieher, Zwangsvollstreckung, Pfändung, Mahnbescheid
+patent_trademark|Patente und Marken|Patentanwalt, Markenanmeldung, Schutzrecht, geistiges Eigentum
+debt_collection|Inkasso|Inkassobüro, Forderungen, Mahnung, Schulden
+company_formation|Firmengründung|Firmengründung, Handelsregister, Gewerbeanmeldung, GmbH
+financial_advisory|Finanzberatung|Finanzberater, Anlageberatung, Vermögen, Altersvorsorge
+payroll_services|Lohnbuchhaltung|Lohnabrechnung, Gehaltsabrechnung, Löhne, Personalabrechnung
+currency_exchange|Wechselstube|Geldwechsel, Devisen, Sorten, Wechselkurs
+pawnshop|Pfandleihhaus|Pfandhaus, Pfandkredit, Beleihung, Goldankauf
+leasing|Leasing und Finanzierung|Leasingvertrag, Finanzierung, Ratenkauf, Fuhrpark
+hearing_aids|Hörgeräte|Hörakustiker, Hörtest, Hörgerät, Akustiker
+medical_transport|Krankentransport|Krankenwagen, Patiententransport, Rettungsdienst, Liegendtransport
+rehabilitation|Rehabilitationszentrum|Reha, Rehaklinik, Genesung, Nachsorge
+occupational_therapy|Ergotherapie|Ergotherapeut, Handtherapie, Alltagstraining, Therapie
+midwifery|Hebammen|Hebamme, Geburtsvorbereitung, Wochenbett, Schwangerschaft
+acupuncture|Akupunktur|Akupunkteur, Nadeln, chinesische Medizin, Moxibustion
+chiropractic|Chiropraktik und Osteopathie|Osteopath, Chiropraktiker, Wirbelsäule, Rückenschmerzen
+insulation|Wärmedämmung|Dämmung, Fassadendämmung, Dachdämmung, Isolierung
+waterproofing|Abdichtung|Bauwerksabdichtung, Feuchtigkeit, Kellerabdichtung, Bitumen
+plastering|Verputz und Spachtelarbeiten|Verputzer, Putz, Stuck, Spachteln
+tiling|Plattenlegerarbeiten|Fliesenleger, Fliesen, Bodenfliesen, Wandfliesen
+drywall|Trockenbau|Rigips, Gipskarton, Trennwand, Zwischendecke
+fencing|Zäune und Tore|Zaunbau, Zaun, Tor, Gitter
+paving|Pflasterarbeiten und Einfahrten|Pflasterer, Einfahrt, Gehweg, Pflastersteine
+well_drilling|Brunnenbohrung|Brunnenbau, Bohrung, Tiefbrunnen, Grundwasser
+septic_systems|Klärgruben und Entwässerung|Klärgrube, Sickergrube, Abwasser, Kanalanschluss
+solar_panels|Solaranlagen-Montage|Photovoltaik, Solarteur, Solarmodule, Wechselrichter
+alarm_cctv|Alarmanlagen und Videoüberwachung|Alarmanlage, Überwachungskamera, Videoüberwachung, Einbruchschutz
+smart_home|Smart-Home-Installation|Hausautomation, intelligente Beleuchtung, vernetztes Haus, Steuerung
+lift_maintenance|Aufzugswartung|Aufzug, Fahrstuhl, Liftwartung, Rolltreppe
+fire_safety|Brandschutz und Feuerlöscher|Feuerlöscher, Brandmeldeanlage, Sprinkler, Brandschutz
+car_dealer|Autohaus|Autohändler, Gebrauchtwagen, Neuwagen, Autoverkauf
+vehicle_inspection|Fahrzeugprüfung|Hauptuntersuchung, Abgasuntersuchung, Prüfstelle, Fahrzeugprüfung
+auto_electrics|Autoelektrik|Autoelektriker, Lichtmaschine, Anlasser, Fahrzeugelektrik
+car_glass|Autoglas und Windschutzscheiben|Windschutzscheibe, Scheibenwechsel, Steinschlag, Autoscheibe
+boat_repair|Boots- und Schiffsreparatur|Bootswerft, Außenborder, Yacht, Bootsmotor
+bus_charter|Bus- und Reisecarvermietung|Busvermietung, Reisebus, Kleinbus, Gruppenfahrt
+call_centre|Callcenter|Callcenter, Telefonservice, Kundenservice, Telemarketing
+virtual_assistant|Virtuelle Assistenz|virtuelle Assistenz, Büroservice, Sekretariatsservice, Fernassistenz
+market_research|Marktforschung|Marktforscher, Umfragen, Befragung, Marktanalyse
+copywriting|Texterstellung|Texter, Lektorat, Korrektorat, Content
+seo_services|SEO und Online-Werbung|Suchmaschinenoptimierung, Google Ads, Onlinewerbung, SEA
+social_media|Social-Media-Betreuung|Community Management, Instagram, Facebook, TikTok
+app_development|App-Entwicklung|App Entwickler, Android, mobile Apps, Flutter
+game_development|Spieleentwicklung|Spieleentwickler, Unity, Unreal, Gamestudio
+drone_services|Drohnendienste|Drohnenpilot, Luftaufnahmen, Luftbild, Befliegung
+printing_3d|3D-Druck|3D Drucker, Prototyping, additive Fertigung, Modellbau
+interior_design|Innenarchitektur|Innenarchitekt, Raumgestaltung, Einrichtung, Wohnberatung
+dance_school|Tanzschule|Tanzkurs, Tanzunterricht, Ballett, Salsa
+art_gallery|Kunstgalerie und Einrahmung|Bilderrahmen, Einrahmung, Kunsthandel, Ausstellung
