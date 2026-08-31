@@ -1,213 +1,213 @@
-taxi|Tacsaí|
-ride_hailing|Seirbhís turais tríd an aip|
-chauffeur|Seirbhísí tiománaí|
-driving_school|Scoil tiomána|
-translation|Aistriúchán|
-interpreting|Ateangaireacht|
-sworn_translation|Aistriúchán faoi mhionn|
-language_school|Scoil teangacha|
-removals|Seirbhísí aistrithe tí|
-international_removals|Aistrithe idirnáisiúnta|
-courier|Seirbhís cúiréara|
-freight_forwarding|Seoladh lastais|
-refrigerated_transport|Iompar cuisnithe|
-haulage|Tarlú earraí|
-storage_warehousing|Stóráil agus trádstóras|
-customs_brokerage|Bróicéireacht chustaim|
-excavation|Tochailt agus obair chré|
-crane_hire|Craenacha ar cíos|
-scaffolding|Scafall|
-demolition|Leagan foirgneamh|
-concrete_works|Obair choincréite|
-surveying|Suirbhéireacht|
-tool_hire|Uirlisí ar cíos|
-machinery_rental|Innealra ar cíos|
-generator_hire|Gineadóirí ar cíos|
-electrical_installation|Suiteáil leictreach|
-plumbing|Pluiméireacht|
-heating_hvac|Téamh agus aeráil|
-air_conditioning|Aerchóiriú|
-painting_decorating|Péintéireacht agus maisiú|
-carpentry|Siúinéireacht|
-flooring|Urláracha|
-roofing|Díonadóireacht|
-locksmith|Glasadóir|
-cleaning_services|Seirbhísí glantacháin|
-gardening_landscaping|Garraíodóireacht agus tírdhreachú|
-renovation|Athchóiriú|
-car_repair|Deisiú gluaisteán|
-mobile_mechanic|Meicneoir soghluaiste|
-tyre_service|Seirbhís bonn|
-bodywork_paint|Obair chabhail agus péint|
-towing_recovery|Tarraingt agus tarrtháil|
-childcare|Cúram leanaí|
-elderly_care|Cúram do dhaoine scothaosta|
-home_nursing|Altranas baile|
-private_tutoring|Teagasc príobháideach|
-music_lessons|Ceachtanna ceoil|
-sports_coaching|Traenáil spóirt|
-it_training|Oiliúint TF|
-vocational_training|Oiliúint ghairme|
-holiday_lettings|Ligean saoire|
-guesthouse_bnb|Teach aíochta agus leaba is bricfeasta|
-property_management|Bainistíocht maoine|
-veterinary|Tréidlia|
-dog_walking|Siúl madraí|
-pet_grooming|Bearradh peataí|
-general_practice|Dochtúir teaghlaigh|
-dentistry|Fiaclóireacht|
-physiotherapy|Fisiteiripe|
-psychology|Síceolaíocht|
-pharmacy|Cógaslann|
-optometry|Optaiméadracht|
-medical_laboratory|Saotharlann leighis|
-software_development|Forbairt bogearraí|
-web_development|Forbairt gréasáin|
-it_support|Tacaíocht TF|
-cybersecurity|Cibearshlándáil|
-data_ai|Sonraí agus intleacht shaorga|
-cloud_hosting|Néal agus óstáil|
-accounting|Cuntasaíocht|
-audit_tax|Iniúchadh agus cáin|
-legal_services|Seirbhísí dlí|
-hr_recruitment|Acmhainní daonna agus earcaíocht|
-management_consulting|Comhairleoireacht bhainistíochta|
-insurance_brokerage|Bróicéireacht árachais|
-real_estate_agency|Gníomhaireacht eastáit|
-architecture|Ailtireacht|
-manufacturing|Déantúsaíocht|
-cnc_machining|Meaisíniú CNC|
-metalwork_welding|Obair mhiotail agus táthú|
-restaurant|Bialann|
-catering|Lónadóireacht|
-hotel|Óstán|
-event_management|Bainistiú imeachtaí|
-agriculture|Talmhaíocht|
-forestry|Foraoiseacht|
-waste_recycling|Dramhaíl agus athchúrsáil|
-renewable_energy|Fuinneamh in-athnuaite|
-marketing_agency|Gníomhaireacht mhargaíochta|
-graphic_design|Dearadh grafach|
-photography|Grianghrafadóireacht|
-video_production|Léiriú físe|
-printing_signage|Priontáil agus comharthaíocht|
-wholesale|Mórdhíol|
-ecommerce|Siopa ar líne|
-security_services|Seirbhísí slándála|
-hairdressing|Gruagaireacht|
-beauty_salon|Salón áilleachta|
-massage_therapy|Suathaireacht|
-fitness_training|Traenáil aclaíochta|
-shop_general|Siopa|
-shop_bicycle|Siopa agus deisiú rothar|
-shop_auto_parts|Páirteanna gluaisteán|
-shop_hardware|Siopa crua-earraí agus uirlisí|
-shop_furniture|Troscán|
-shop_electronics|Leictreonaic agus fearais|
-shop_clothing|Éadaí|
-shop_grocery|Siopa grósaera|
-shop_sports|Trealamh spóirt|
-shop_books|Siopa leabhar agus stáiseanóireachta|
-shop_florist|Bláthadóir|
-shop_pet|Siopa peataí|
-motorcycle_repair|Deisiú gluaisrothar|
-bar|Beár|
-kebab_shawarma|Kebab agus shawarma|
-pizzeria|Siopa píotsa|
-fast_food|Mearbhia|
-bakery|Bácús|
-pastry_shop|Siopa cácaí agus taosráin|
-coffee_shop|Caife|
-food_truck|Trucail bia|
-butcher|Búistéir|
-ice_cream|Siopa uachtar reoite|
-winery|Fíonlann|
-brewery|Grúdlann|
-nightclub|Club oíche agus dioscó|
-beach_club|Beár trá agus club trá|
-bowling_billiards|Babhláil agus billéardaí|
-travel_agency|Gníomhaireacht taistil|
-nail_salon|Salón ingne, lámhmhaisiú agus cosmhaisiú|
-barber|Bearbóir|
-tattoo_piercing|Tatú agus polladh|
-spa_sauna|Spá agus sauna|
-cosmetics_shop|Siopa cosmaidí|
-dry_cleaning|Tirimghlanadh agus neachtlann|
-podiatry|Podiatracht agus cúram coise|
-dental_laboratory|Saotharlann fiaclóireachta|
-orthodontics|Ortadóntaic|
-dermatology|Deirmeolaíocht|
-paediatrics|Péidiatraic|
-gynaecology|Gínéiceolaíocht|
-cardiology|Cardeolaíocht|
-medical_imaging|Íomháú leighis|
-speech_therapy|Teiripe urlabhra|
-nutrition_dietetics|Cothú agus diaitéitic|
-bicycle_repair|Deisiú rothar|
-scooter_repair|Deisiú scútar agus móipéidí|
-appliance_repair|Deisiú fearas tí|
-phone_repair|Deisiú fón agus táibléad|
-computer_repair|Deisiú ríomhairí|
-watch_jewellery_repair|Deisiú uaireadóirí agus seodra|
-shoe_repair|Deisiú bróg|
-tailoring_alterations|Táilliúireacht agus athruithe|
-upholstery|Cumhdachóireacht|
-glazing|Gloiniú agus fuinneoga|
-chimney_sweep|Glanadh simléar|
-pest_control|Rialú lotnaidí|
-pool_maintenance|Cothabháil linne snámha|
-window_cleaning|Glanadh fuinneog|
-car_wash|Nigh carranna|
-car_rental|Carranna ar cíos|
-bike_scooter_rental|Rothair agus scútair ar cíos|
-funeral_services|Seirbhísí sochraide|
-notary|Nótaire|
-bailiff|Forghníomhú cúirte|
-patent_trademark|Paitinní agus trádmharcanna|
-debt_collection|Bailiú fiacha|
-company_formation|Bunú cuideachtaí|
-financial_advisory|Comhairle airgeadais|
-payroll_services|Seirbhísí párolla|
-currency_exchange|Malartú airgeadra|
-pawnshop|Siopa geallearbtha|
-leasing|Léasú agus maoiniú|
-hearing_aids|Áiseanna éisteachta|
-medical_transport|Iompar leighis|
-rehabilitation|Ionad athshlánúcháin|
-occupational_therapy|Teiripe shaothair|
-midwifery|Cnáimhseachas|
-acupuncture|Snáthaidchóireacht|
-chiropractic|Sciropraictic agus oistéapaite|
-insulation|Insliú|
-waterproofing|Uiscedhíonadh|
-plastering|Plástráil agus líonadh|
-tiling|Leacú tíleanna|
-drywall|Plástarchlár agus deighilteoirí|
-fencing|Fálta agus geataí|
-paving|Pábháil agus cabhsaí|
-well_drilling|Druileáil toibreacha|
-septic_systems|Umair seipteacha agus draenáil|
-solar_panels|Suiteáil painéal gréine|
-alarm_cctv|Aláraim agus ceamaraí slándála|
-smart_home|Suiteáil tí chliste|
-lift_maintenance|Cothabháil ardaitheoirí|
-fire_safety|Sábháilteacht dóiteáin agus múchtóirí|
-car_dealer|Déileálaí gluaisteán|
-vehicle_inspection|Scrúdú feithiclí|
-auto_electrics|Leictreachas gluaisteán|
-car_glass|Gloine gluaisteán agus gaothscátha|
-boat_repair|Deisiú bád|
-bus_charter|Fruiliú bus agus cóiste|
-call_centre|Lárionad glaonna|
-virtual_assistant|Cúntóir fíorúil|
-market_research|Taighde margaidh|
-copywriting|Scríobh ábhair|
-seo_services|SEO agus fógraíocht ar líne|
-social_media|Bainistiú meán sóisialta|
-app_development|Forbairt aipeanna móibíleacha|
-game_development|Forbairt cluichí|
-drone_services|Seirbhísí dróin|
-printing_3d|Priontáil 3T|
-interior_design|Dearadh intí|
-dance_school|Scoil damhsa|
-art_gallery|Dánlann agus frámáil|
+taxi|Tacsaí|cab, turas, aerfort, tiománaí
+ride_hailing|Seirbhís turais tríd an aip|uber, bolt, comhthiomáint, aip
+chauffeur|Seirbhísí tiománaí|tiománaí príobháideach, limisín, tiománaí pearsanta
+driving_school|Scoil tiomána|ceachtanna tiomána, teagascóir, ceadúnas tiomána, tástáil tiomána
+translation|Aistriúchán|aistritheoir, cáipéisí, conradh, teistiméireacht
+interpreting|Ateangaireacht|ateangaire, comhuaineach, comhdháil, cruinniú
+sworn_translation|Aistriúchán faoi mhionn|aistritheoir deimhnithe, aistriúchán oifigiúil, stampa, gníomhas
+language_school|Scoil teangacha|cúrsaí teanga, ranganna béarla, múinteoir, teagasc teanga
+removals|Seirbhísí aistrithe tí|aistriú tí, lucht aistrithe, veain, boscaí
+international_removals|Aistrithe idirnáisiúnta|aistriú thar lear, athlonnú, coimeádán, custaim
+courier|Seirbhís cúiréara|seachadadh, beartán, teachtaire, seirbhís seachadta
+freight_forwarding|Seoladh lastais|lastas, lóistíocht, seoladh earraí, pailléad
+refrigerated_transport|Iompar cuisnithe|iompar fuaraithe, reoite, veain fhuar, slabhra fuar
+haulage|Tarlú earraí|tarlú, leoraí, iompar earraí, leantóir
+storage_warehousing|Stóráil agus trádstóras|stóras, stóráil, trádstóras, seilfeanna
+customs_brokerage|Bróicéireacht chustaim|custaim, allmhairiú, onnmhairiú, dearbhú
+excavation|Tochailt agus obair chré|tochailt, tochaltóir, obair talún, díog
+crane_hire|Craenacha ar cíos|craein, ardú, craein soghluaiste, ualach
+scaffolding|Scafall|scafall, tógáil scafaill, ardán oibre, scafaill ar cíos
+demolition|Leagan foirgneamh|leagan, scartáil, brablach, casúr aeir
+concrete_works|Obair choincréite|coincréit, bunsraith, doirteadh coincréite, screed
+surveying|Suirbhéireacht|suirbhéir, suirbhéireacht, teorainneacha, léarscáil
+tool_hire|Uirlisí ar cíos|uirlisí ar cíos, uirlisí, druil, meaisín meilte
+machinery_rental|Innealra ar cíos|innealra ar cíos, meaisíní, forc ardaitheoir, trealamh tógála
+generator_hire|Gineadóirí ar cíos|gineadóir, cumhacht chúltaca, gineadóir ar cíos, cábla
+electrical_installation|Suiteáil leictreach|leictreoir, sreangú, clár lasctha, soicéad
+plumbing|Pluiméireacht|pluiméir, píopaí, seomra folctha, sceitheadh uisce
+heating_hvac|Téamh agus aeráil|téamh, coire, radaitheoirí, téamh urláir
+air_conditioning|Aerchóiriú|aerchóiriú, fuarú, aonad scoilte, gaoth fhuar
+painting_decorating|Péintéireacht agus maisiú|péintéir, péinteáil, páipéar balla, líonadh
+carpentry|Siúinéireacht|siúinéir, adhmadóireacht, troscán, adhmad
+flooring|Urláracha|urláir, parquet, lannaithe, líomhadh urláir
+roofing|Díonadóireacht|díonadóir, díon, gáitéir, sclátaí
+locksmith|Glasadóir|glais, eochracha, oscailt dorais, doras slándála
+cleaning_services|Seirbhísí glantacháin|glantóir, glanadh, glanadh oifige, glanadh mór
+gardening_landscaping|Garraíodóireacht agus tírdhreachú|garraíodóir, faiche a bhearradh, fál, tírdhreachú
+renovation|Athchóiriú|athchóiriú, tógálaí, conraitheoir, athnuachan
+car_repair|Deisiú gluaisteán|garáiste, meicneoir, seirbhísiú, deisiú cairr
+mobile_mechanic|Meicneoir soghluaiste|meicneoir soghluaiste, cabhair ar an mbóthar, tosú cairr, cliseadh
+tyre_service|Seirbhís bonn|boinn, athrú boinn, poll i mbonn, cothromú
+bodywork_paint|Obair chabhail agus péint|péinteáil cairr, cabhail, ding, deisiú tuairte
+towing_recovery|Tarraingt agus tarrtháil|tarraingt, trucail tarraingthe, cabhair bhóthair, uinse
+childcare|Cúram leanaí|naíolann, feighlí leanaí, réamhscoil, cúram leanaí
+elderly_care|Cúram do dhaoine scothaosta|cúram seanóirí, teach altranais, cúram baile, daoine scothaosta
+home_nursing|Altranas baile|altra baile, altranas sa bhaile, cúram leighis, cóiriú créachta
+private_tutoring|Teagasc príobháideach|teagascóir, ranganna príobháideacha, ullmhú scrúduithe, obair bhaile
+music_lessons|Ceachtanna ceoil|pianó, giotár, canadh, ceachtanna ceoil
+sports_coaching|Traenáil spóirt|traenálaí, peil, leadóg, traenáil
+it_training|Oiliúint TF|cúrsaí ríomhaireachta, excel, cúrsa ríomhchláraithe, oiliúint ríomhaireachta
+vocational_training|Oiliúint ghairme|printíseacht, cúrsa ceirde, teastas, oiliúint cheirde
+holiday_lettings|Ligean saoire|teach saoire, árasán ar cíos, cóiríocht saoire, airbnb
+guesthouse_bnb|Teach aíochta agus leaba is bricfeasta|teach aíochta, lóistín agus bricfeasta, seomraí, teach ósta
+property_management|Bainistíocht maoine|bainistíocht maoine, bainistíocht foirgnimh, ligean ar cíos, cothabháil
+veterinary|Tréidlia|tréidlia, clinic ainmhithe, vacsaíniú, madra
+dog_walking|Siúl madraí|siúl madraí, siúlóir madraí, siúlóid le madra
+pet_grooming|Bearradh peataí|bearradh madraí, cóiriú peataí, cúram fionnaidh, salon peataí
+general_practice|Dochtúir teaghlaigh|dochtúir teaghlaigh, lia, clinic, oideas
+dentistry|Fiaclóireacht|fiaclóir, cúram fiacla, líonadh, ionchlannán
+physiotherapy|Fisiteiripe|fisiteiripe, fisiteiripeoir, athshlánú, cóireáil
+psychology|Síceolaíocht|síceolaí, teiripe, comhairleoireacht, síciteiripe
+pharmacy|Cógaslann|cógaslann, cógais, poitigéir, forlíontaí
+optometry|Optaiméadracht|radharceolaí, spéaclaí, tástáil radhairc, lionsaí tadhaill
+medical_laboratory|Saotharlann leighis|saotharlann, tástálacha fola, anailís, samplaí
+software_development|Forbairt bogearraí|ríomhchláraitheoir, forbróir, bogearraí, cód
+web_development|Forbairt gréasáin|suíomh gréasáin, dearadh gréasáin, wordpress, siopa ar líne
+it_support|Tacaíocht TF|tacaíocht ríomhaireachta, líonra, deisiú ríomhairí, riarthóir córais
+cybersecurity|Cibearshlándáil|cibearshlándáil, tástáil slándála, balla dóiteáin, haiceáil
+data_ai|Sonraí agus intleacht shaorga|intleacht shaorga, foghlaim meaisín, anailísíocht sonraí, algartaim
+cloud_hosting|Néal agus óstáil|óstáil, freastalaí, néal, fearann
+accounting|Cuntasaíocht|cuntasóir, cuntasaíocht, sonraisc, párolla
+audit_tax|Iniúchadh agus cáin|iniúchóir, comhairleoir cánach, tuairisceán cánach, cbl
+legal_services|Seirbhísí dlí|aturnae, dlíodóir, comhairle dlí, conradh
+hr_recruitment|Acmhainní daonna agus earcaíocht|earcaíocht, gníomhaireacht fostaíochta, cuardach foirne, cv
+management_consulting|Comhairleoireacht bhainistíochta|comhairleoir, comhairleoireacht ghnó, straitéis, plean gnó
+insurance_brokerage|Bróicéireacht árachais|bróicéir árachais, árachas, polasaí, éileamh
+real_estate_agency|Gníomhaireacht eastáit|gníomhaire eastáit, ceantálaí, árasán, teach
+architecture|Ailtireacht|ailtire, líníochtaí, cead pleanála, dearadh foirgnimh
+manufacturing|Déantúsaíocht|monaraíocht, monarcha, tionscal, cóimeáil
+cnc_machining|Meaisíniú CNC|cnc, deileadh, muilleoireacht, obair mhiotail
+metalwork_welding|Obair mhiotail agus táthú|táthú, gabha, cruach, obair mhiotail
+restaurant|Bialann|bialann, bia, béile, biachlár
+catering|Lónadóireacht|lónadóireacht, bia imeachta, buffet, plátaí
+hotel|Óstán|óstán, lóistín, brú, seomraí
+event_management|Bainistiú imeachtaí|eagrú imeachtaí, pleanálaí bainise, comhdháil, imeacht
+agriculture|Talmhaíocht|feirmeoireacht, feirm, tarracóir, fómhar
+forestry|Foraoiseacht|foraoiseacht, leagan crann, adhmad, sábh slabhrach
+waste_recycling|Dramhaíl agus athchúrsáil|dramhaíl, scipeanna, dramh-mhiotal, athchúrsáil
+renewable_energy|Fuinneamh in-athnuaite|painéil ghréine, fuinneamh gaoithe, fuinneamh glas, teaschaidéal
+marketing_agency|Gníomhaireacht mhargaíochta|margaíocht, fógraíocht, feachtas, gníomhaireacht fógraíochta
+graphic_design|Dearadh grafach|dearthóir grafach, lógó, dearadh grafach, leagan amach
+photography|Grianghrafadóireacht|grianghrafadóir, stiúideo, grianghraif bainise, portráidí
+video_production|Léiriú físe|léiriúchán físe, scannánaíocht, eagarthóireacht, drón
+printing_signage|Priontáil agus comharthaíocht|clódóir, priontáil, comharthaí, greamáin
+wholesale|Mórdhíol|mórdhíol, dáileoir, soláthraí, earraí
+ecommerce|Siopa ar líne|siopa ar líne, ríomhthráchtáil, margadh ar líne, orduithe
+security_services|Seirbhísí slándála|garda slándála, faireachas, patról, ceamaraí slándála
+hairdressing|Gruagaireacht|gruagaire, bearradh gruaige, dath gruaige, salon
+beauty_salon|Salón áilleachta|salon áilleachta, cosmeoltóir, ingne, cóireáil aghaidhe
+massage_therapy|Suathaireacht|suathaireacht, suathaire, folláine, scíth
+fitness_training|Traenáil aclaíochta|traenálaí pearsanta, giomnáisiam, aclaíocht, meáchain
+shop_general|Siopa|siopa, miondíol, stór, earraí
+shop_bicycle|Siopa agus deisiú rothar|siopa rothar, rothair, deisiú rothar, rothar leictreach
+shop_auto_parts|Páirteanna gluaisteán|páirteanna cairr, breischodanna, gabhálais, scagairí
+shop_hardware|Siopa crua-earraí agus uirlisí|siopa crua-earraí, ábhair tógála, uirlisí, scriúnna
+shop_furniture|Troscán|siopa troscáin, troscán, tolg, cistin
+shop_electronics|Leictreonaic agus fearais|leictreonaic, fearais tí, teilifís, meaisín níocháin
+shop_clothing|Éadaí|siopa éadaí, faisean, bróga, éadaí
+shop_grocery|Siopa grósaera|siopa grósaeireachta, ollmhargadh, bia, siopa áitiúil
+shop_sports|Trealamh spóirt|siopa spóirt, trealamh spóirt, lasmuigh, sciáil
+shop_books|Siopa leabhar agus stáiseanóireachta|siopa leabhar, páipéarachas, leabhair, soláthairtí oifige
+shop_florist|Bláthadóir|siopa bláthanna, bláthanna, crobhaingí, fleasca
+shop_pet|Siopa peataí|siopa peataí, bia madraí, uisceadán, gaineamh cait
+motorcycle_repair|Deisiú gluaisrothar|deisiú gluaisrothar, gluaisrothar, scútar, moped
+bar|Beár|beár, teach tábhairne, manglaim, deochanna
+kebab_shawarma|Kebab agus shawarma|kebab, shawarma, gyros, doner
+pizzeria|Siopa píotsa|pizza, pizzeria, pizza le tabhairt leat, iodálach
+fast_food|Mearbhia|bia tapa, burgar, sceallóga, ceapaire
+bakery|Bácús|bácús, arán, rollaí, báicéir
+pastry_shop|Siopa cácaí agus taosráin|siopa cácaí, cácaí, taosráin, milseoga
+coffee_shop|Caife|caife, caife espresso, barista, teach caife
+food_truck|Trucail bia|trucail bia, bia sráide, cistin shoghluaiste
+butcher|Búistéir|búistéir, feoil, ispíní, stéigeanna
+ice_cream|Siopa uachtar reoite|uachtar reoite, siopa uachtair reoite, gelato, reoiteog
+winery|Fíonlann|fíonlann, fíon, siléar fíona, blaiseadh fíona
+brewery|Grúdlann|grúdlann, beoir, beoir cheardaíochta, beoir bhairille
+nightclub|Club oíche agus dioscó|club oíche, dioscó, damhsa, dj
+beach_club|Beár trá agus club trá|beár trá, luíocháin ghréine, trá, club trá
+bowling_billiards|Babhláil agus billéardaí|bollaí, billéardaí, dairteanna, púl
+travel_agency|Gníomhaireacht taistil|gníomhaireacht taistil, turais, ticéid eitilte, laethanta saoire
+nail_salon|Salón ingne, lámhmhaisiú agus cosmhaisiú|salon ingne, mainicíniú, peidicíniú, ingne glóthaí
+barber|Bearbóir|bearbóir, bearradh fear, féasóg, bearradh
+tattoo_piercing|Tatú agus polladh|tatú, stiúideo tatú, polladh, dúch
+spa_sauna|Spá agus sauna|spá, sauna, folláine, folcadh gaile
+cosmetics_shop|Siopa cosmaidí|cumhráin, cosmaidí, smideadh, cúram craicinn
+dry_cleaning|Tirimghlanadh agus neachtlann|tirimghlanadh, neachtlann, iarnáil, níochán
+podiatry|Podiatracht agus cúram coise|cosliaracht, cúram na gcos, ionga isteach, cosa
+dental_laboratory|Saotharlann fiaclóireachta|teicneoir fiaclóireachta, déadchíor, coróin, prostatéis
+orthodontics|Ortadóntaic|teanntáin, ortadóntas, dírú fiacla, aligner
+dermatology|Deirmeolaíocht|dermateolaí, craiceann, ball broinne, aicne
+paediatrics|Péidiatraic|dochtúir leanaí, péidiatraic, naíonán, leanaí
+gynaecology|Gínéiceolaíocht|gínéiceolaí, sláinte na mban, toircheas, cnáimhseachas
+cardiology|Cardeolaíocht|cairdeolaí, croí, ecg, dochtúir croí
+medical_imaging|Íomháú leighis|x-gha, ultrafhuaim, mri, scanadh ct
+speech_therapy|Teiripe urlabhra|teiripe urlabhra, teiripeoir urlabhra, stad cainte, caint
+nutrition_dietetics|Cothú agus diaitéitic|diaitéiteach, cothaitheoir, aiste bia, caillteanas meáchain
+bicycle_repair|Deisiú rothar|deisiú rothar, poll i mbonn rothair, seirbhís rothar, rothar
+scooter_repair|Deisiú scútar agus móipéidí|deisiú scútar, scútar, vespa, moped
+appliance_repair|Deisiú fearas tí|deisiú fearas, meaisín níocháin, cuisneoir, oigheann
+phone_repair|Deisiú fón agus táibléad|deisiú fón, athrú scáileáin, iphone, táibléad
+computer_repair|Deisiú ríomhairí|deisiú ríomhairí, ríomhaire glúine, pc, athshlánú sonraí
+watch_jewellery_repair|Deisiú uaireadóirí agus seodra|uaireadóirí, seodóir, ceallra uaireadóra, méid fáinne
+shoe_repair|Deisiú bróg|gréasaí, deisiú bróg, sála, boinn
+tailoring_alterations|Táilliúireacht agus athruithe|táilliúir, seamstress, fáithimí, athrú éadaí
+upholstery|Cumhdachóireacht|cumhdach troscáin, athchlúdach tolg, cúisíní, clúdach
+glazing|Gloiniú agus fuinneoga|gloineadóir, fuinneoga, gloiniú dúbailte, gloine
+chimney_sweep|Glanadh simléar|glantóir simléar, simléar, súiche, glanadh simléir
+pest_control|Rialú lotnaidí|rialú lotnaidí, fríde leapa, francaigh, cockroaches
+pool_maintenance|Cothabháil linne snámha|cothabháil linne, glanadh linne, clóirín, linn snámha
+window_cleaning|Glanadh fuinneog|glanadh fuinneog, níochán fuinneog, aghaidh foirgnimh, gloine
+car_wash|Nigh carranna|nigh carr, glanadh cairr, snasú, glanadh istigh
+car_rental|Carranna ar cíos|carr ar cíos, fruiliú cairr, gluaisteán ar cíos, cíos feithicle
+bike_scooter_rental|Rothair agus scútair ar cíos|rothar ar cíos, scútar leictreach, fruiliú rothar, scútar
+funeral_services|Seirbhísí sochraide|adhlacóir, sochraid, créamadh, cónra
+notary|Nótaire|nótaire poiblí, gníomhais, deimhniú, cumhacht aturnae
+bailiff|Forghníomhú cúirte|forghníomhaitheoir, urghabháil, ordú cúirte, báille
+patent_trademark|Paitinní agus trádmharcanna|maoin intleachtúil, clárú trádmhairc, paitinn, aturnae paitinne
+debt_collection|Bailiú fiacha|bailiú fiach, riaráistí, fiacha, sonraisc gan íoc
+company_formation|Bunú cuideachtaí|clárú cuideachta, corprú, bunú gnó, cro
+financial_advisory|Comhairle airgeadais|comhairleoir airgeadais, infheistíocht, saibhreas, pleanáil airgeadais
+payroll_services|Seirbhísí párolla|párolla, pá, tuarastail, riarachán pá
+currency_exchange|Malartú airgeadra|malartú airgeadra, airgeadra eachtrach, oifig mhalairte, ráta malairte
+pawnshop|Siopa geallearbtha|geallbhróicéir, gealltán, iasacht comhthaobhachta, ceannach óir
+leasing|Léasú agus maoiniú|léasú, maoiniú, ceannach fruilithe, léasú feithiclí
+hearing_aids|Áiseanna éisteachta|áis éisteachta, tástáil éisteachta, éisteolaíocht, ionad éisteachta
+medical_transport|Iompar leighis|otharcharr, iompar othar, sínteán, iompar leighis
+rehabilitation|Ionad athshlánúcháin|athshlánú, téarnamh, ionad athshlánaithe, cóir leighis
+occupational_therapy|Teiripe shaothair|teiripeoir saothair, teiripe shaothair, scileanna laethúla, neamhspleáchas
+midwifery|Cnáimhseachas|cnáimhseach, breith, toircheas, cúram réamhbhreithe
+acupuncture|Snáthaidchóireacht|snáthaidchóireáil, snáthaidí, leigheas síneach, aicipiunctúr
+chiropractic|Sciropraictic agus oistéapaite|cnámhaire, oistéapatach, dromlach, pian droma
+insulation|Insliú|insliú, insliú áiléir, insliú balla, ábhar inslithe
+waterproofing|Uiscedhíonadh|díonadh uisce, taise, séalú dín, seicin
+plastering|Plástráil agus líonadh|plástráil, plástar, stucó, críochnú balla
+tiling|Leacú tíleanna|tíleáil, tíleanna, tíleanna urláir, criadóireacht
+drywall|Plástarchlár agus deighilteoirí|plaisterchlár, deighilteoirí, síleáil crochta, balla tirim
+fencing|Fálta agus geataí|fál, geataí, ráillí, sconsa
+paving|Pábháil agus cabhsaí|pábháil, cabhsa, cosáin, colbhaí
+well_drilling|Druileáil toibreacha|tobar, druileáil, poll tóraíochta, uisce faoi thalamh
+septic_systems|Umair seipteacha agus draenáil|dabhach shéarachais, draenáil, séarachas, sistéal
+solar_panels|Suiteáil painéal gréine|painéil ghréine, fótavoltach, inbhéartóir, fuinneamh gréine
+alarm_cctv|Aláraim agus ceamaraí slándála|aláram, ceamaraí slándála, cctv, faireachas
+smart_home|Suiteáil tí chliste|teach cliste, soilsiú cliste, uathoibriú tí, rialú
+lift_maintenance|Cothabháil ardaitheoirí|ardaitheoir, seirbhís ardaitheora, staighre beo, deisiú ardaitheora
+fire_safety|Sábháilteacht dóiteáin agus múchtóirí|múchtóirí, aláram dóiteáin, sprinklers, sábháilteacht dóiteáin
+car_dealer|Déileálaí gluaisteán|díoltóir carranna, carranna athláimhe, díolachán carranna, seomra taispeántais
+vehicle_inspection|Scrúdú feithiclí|tástáil nct, scrúdú feithicle, tástáil teicniúil, ionad tástála
+auto_electrics|Leictreachas gluaisteán|leictreoir cairr, ailtéarnóir, tosaitheoir, sreangú cairr
+car_glass|Gloine gluaisteán agus gaothscátha|gaothscáth, athrú gloine, fuinneoga cairr, scoilt sa ghloine
+boat_repair|Deisiú bád|deisiú bád, inneall crochta, bád, luamh
+bus_charter|Fruiliú bus agus cóiste|bus ar cíos, cóiste, minibhus, iompar grúpa
+call_centre|Lárionad glaonna|ionad glaonna, teileamhargaíocht, seirbhís custaiméirí, tacaíocht ghutháin
+virtual_assistant|Cúntóir fíorúil|cúntóir fíorúil, tacaíocht riaracháin, rúnaí cianda, saorearnáil
+market_research|Taighde margaidh|taighde margaidh, suirbhéanna, taighde tomhaltóirí, grúpa fócais
+copywriting|Scríobh ábhair|scríbhneoir cóipe, eagarthóireacht, profléamh, ábhar
+seo_services|SEO agus fógraíocht ar líne|optamú inneall cuardaigh, google ads, fógraíocht ar líne, sem
+social_media|Bainistiú meán sóisialta|bainistíocht meáin shóisialta, instagram, facebook, tiktok
+app_development|Forbairt aipeanna móibíleacha|forbairt aipeanna, android, aipeanna soghluaiste, flutter
+game_development|Forbairt cluichí|forbairt cluichí, unity, unreal, stiúideo cluichí
+drone_services|Seirbhísí dróin|drón, grianghrafadóireacht ón aer, scannánaíocht ón aer, léarscáiliú
+printing_3d|Priontáil 3T|priontáil 3d, fréamhshamhlacha, monarú breiseáin, printéir 3d
+interior_design|Dearadh intí|dearthóir istigh, maisiú, pleanáil spáis, stíliú
+dance_school|Scoil damhsa|ranganna damhsa, bailé, salsa, damhsa seomra
+art_gallery|Dánlann agus frámáil|frámáil, frámaí, taispeántais, díoltóir ealaíne

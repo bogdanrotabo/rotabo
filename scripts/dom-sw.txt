@@ -1,213 +1,213 @@
-taxi|Teksi|
-ride_hailing|Huduma ya usafiri kwa programu|
-chauffeur|Huduma ya dereva|
-driving_school|Shule ya udereva|
-translation|Tafsiri ya maandishi|
-interpreting|Ukalimani|
-sworn_translation|Tafsiri iliyoidhinishwa|
-language_school|Shule ya lugha|
-removals|Huduma ya kuhamisha mizigo|
-international_removals|Uhamishaji wa kimataifa|
-courier|Huduma ya kutuma vifurushi|
-freight_forwarding|Usafirishaji wa mizigo|
-refrigerated_transport|Usafiri wa baridi|
-haulage|Usafirishaji wa bidhaa|
-storage_warehousing|Ghala na uhifadhi|
-customs_brokerage|Wakala wa forodha|
-excavation|Uchimbaji na kazi za ardhi|
-crane_hire|Kukodisha kreni|
-scaffolding|Chandarua cha ujenzi|
-demolition|Ubomoaji|
-concrete_works|Kazi za zege|
-surveying|Upimaji ardhi|
-tool_hire|Kukodisha zana|
-machinery_rental|Kukodisha mitambo|
-generator_hire|Kukodisha jenereta|
-electrical_installation|Uwekaji umeme|
-plumbing|Mabomba na maji|
-heating_hvac|Joto na uingizaji hewa|
-air_conditioning|Viyoyozi|
-painting_decorating|Upakaji rangi na mapambo|
-carpentry|Useremala|
-flooring|Kuweka sakafu|
-roofing|Kazi za paa|
-locksmith|Fundi wa kufuli|
-cleaning_services|Huduma za usafi|
-gardening_landscaping|Bustani na mandhari|
-renovation|Ukarabati|
-car_repair|Karakana ya magari|
-mobile_mechanic|Fundi wa magari anayefika|
-tyre_service|Huduma ya matairi|
-bodywork_paint|Kunyoosha na kupaka rangi gari|
-towing_recovery|Kuvuta na kuokoa magari|
-childcare|Kulea watoto|
-elderly_care|Kuwahudumia wazee|
-home_nursing|Uuguzi wa nyumbani|
-private_tutoring|Masomo ya ziada|
-music_lessons|Masomo ya muziki|
-sports_coaching|Ukocha wa michezo|
-it_training|Mafunzo ya TEHAMA|
-vocational_training|Mafunzo ya ufundi|
-holiday_lettings|Nyumba za likizo za kukodi|
-guesthouse_bnb|Nyumba ya wageni na kifungua kinywa|
-property_management|Usimamizi wa majengo|
-veterinary|Daktari wa wanyama|
-dog_walking|Kutembeza mbwa|
-pet_grooming|Kunyoa na kupamba wanyama|
-general_practice|Daktari wa kawaida|
-dentistry|Meno|
-physiotherapy|Tiba ya viungo|
-psychology|Saikolojia|
-pharmacy|Duka la dawa|
-optometry|Kupima macho na miwani|
-medical_laboratory|Maabara ya afya|
-software_development|Uandishi wa programu|
-web_development|Utengenezaji wa tovuti|
-it_support|Msaada wa TEHAMA|
-cybersecurity|Usalama mtandaoni|
-data_ai|Data na akili bandia|
-cloud_hosting|Wingu na uhifadhi wa tovuti|
-accounting|Uhasibu|
-audit_tax|Ukaguzi na kodi|
-legal_services|Huduma za kisheria|
-hr_recruitment|Rasilimali watu na ajira|
-management_consulting|Ushauri wa uongozi|
-insurance_brokerage|Udalali wa bima|
-real_estate_agency|Wakala wa majengo|
-architecture|Usanifu majengo|
-manufacturing|Utengenezaji viwandani|
-cnc_machining|Uchongaji wa CNC|
-metalwork_welding|Kazi za chuma na kulehemu|
-restaurant|Mkahawa|
-catering|Huduma ya chakula kwa hafla|
-hotel|Hoteli|
-event_management|Uandaaji wa hafla|
-agriculture|Kilimo|
-forestry|Misitu|
-waste_recycling|Taka na urejelezaji|
-renewable_energy|Nishati mbadala|
-marketing_agency|Kampuni ya masoko|
-graphic_design|Ubunifu wa picha|
-photography|Upigaji picha|
-video_production|Utengenezaji wa video|
-printing_signage|Uchapishaji na mabango|
-wholesale|Jumla|
-ecommerce|Duka la mtandaoni|
-security_services|Huduma za ulinzi|
-hairdressing|Saluni ya nywele|
-beauty_salon|Saluni ya urembo|
-massage_therapy|Masaji|
-fitness_training|Mazoezi ya mwili|
-shop_general|Duka|
-shop_bicycle|Duka na ukarabati wa baiskeli|
-shop_auto_parts|Duka la vipuri vya magari|
-shop_hardware|Duka la vifaa vya ujenzi na zana|
-shop_furniture|Duka la samani|
-shop_electronics|Duka la elektroniki na vifaa vya nyumbani|
-shop_clothing|Duka la nguo|
-shop_grocery|Duka la vyakula|
-shop_sports|Duka la vifaa vya michezo|
-shop_books|Duka la vitabu na vifaa vya ofisi|
-shop_florist|Duka la maua|
-shop_pet|Duka la wanyama wa nyumbani|
-motorcycle_repair|Ukarabati wa pikipiki|
-bar|Baa|
-kebab_shawarma|Kebab na shawarma|
-pizzeria|Duka la pizza|
-fast_food|Chakula cha haraka|
-bakery|Mkate na keki|
-pastry_shop|Duka la keki|
-coffee_shop|Duka la kahawa|
-food_truck|Gari la chakula|
-butcher|Duka la nyama|
-ice_cream|Duka la aiskrimu|
-winery|Kiwanda cha divai|
-brewery|Kiwanda cha bia|
-nightclub|Klabu ya usiku na disko|
-beach_club|Baa ya ufukweni|
-bowling_billiards|Bowling na biliadi|
-travel_agency|Wakala wa safari|
-nail_salon|Saluni ya kucha, manikua na pedikua|
-barber|Kinyozi|
-tattoo_piercing|Tatoo na kutoboa|
-spa_sauna|Spa na sauna|
-cosmetics_shop|Duka la vipodozi|
-dry_cleaning|Dobi na kufua nguo|
-podiatry|Huduma ya miguu|
-dental_laboratory|Maabara ya meno|
-orthodontics|Kunyoosha meno|
-dermatology|Magonjwa ya ngozi|
-paediatrics|Afya ya watoto|
-gynaecology|Afya ya uzazi kwa wanawake|
-cardiology|Magonjwa ya moyo|
-medical_imaging|Upigaji picha za kitabibu|
-speech_therapy|Tiba ya usemi|
-nutrition_dietetics|Lishe na mlo|
-bicycle_repair|Ukarabati wa baiskeli|
-scooter_repair|Ukarabati wa skuta na mopedi|
-appliance_repair|Ukarabati wa vifaa vya nyumbani|
-phone_repair|Ukarabati wa simu na tableti|
-computer_repair|Ukarabati wa kompyuta|
-watch_jewellery_repair|Ukarabati wa saa na vito|
-shoe_repair|Ukarabati wa viatu|
-tailoring_alterations|Ushonaji na marekebisho|
-upholstery|Kufunika samani|
-glazing|Vioo na madirisha|
-chimney_sweep|Kusafisha bomba la moshi|
-pest_control|Kuangamiza wadudu|
-pool_maintenance|Utunzaji wa bwawa la kuogelea|
-window_cleaning|Kusafisha madirisha|
-car_wash|Kuosha magari|
-car_rental|Kukodisha magari|
-bike_scooter_rental|Kukodisha baiskeli na skuta|
-funeral_services|Huduma za mazishi|
-notary|Mthibitishaji wa hati|
-bailiff|Utekelezaji wa hukumu|
-patent_trademark|Hataza na alama za biashara|
-debt_collection|Ukusanyaji wa madeni|
-company_formation|Usajili wa kampuni|
-financial_advisory|Ushauri wa kifedha|
-payroll_services|Huduma za mishahara|
-currency_exchange|Kubadilisha fedha za kigeni|
-pawnshop|Duka la rehani|
-leasing|Ukodishaji na ufadhili|
-hearing_aids|Vifaa vya kusaidia kusikia|
-medical_transport|Usafiri wa matibabu|
-rehabilitation|Kituo cha urekebishaji|
-occupational_therapy|Tiba ya kazi|
-midwifery|Ukunga|
-acupuncture|Tiba ya sindano|
-chiropractic|Tiba ya uti wa mgongo na osteopathy|
-insulation|Uzuiaji wa joto|
-waterproofing|Kuzuia maji|
-plastering|Upakaji wa lipu na putty|
-tiling|Uwekaji wa vigae|
-drywall|Ukuta wa jasi na vizuizi|
-fencing|Uzio na malango|
-paving|Kuweka matofali na njia za magari|
-well_drilling|Uchimbaji wa visima|
-septic_systems|Matangi ya maji taka na mifereji|
-solar_panels|Ufungaji wa paneli za jua|
-alarm_cctv|Kengele na kamera za usalama|
-smart_home|Ufungaji wa nyumba mahiri|
-lift_maintenance|Matengenezo ya lifti|
-fire_safety|Usalama wa moto na vizima moto|
-car_dealer|Wakala wa magari|
-vehicle_inspection|Ukaguzi wa magari|
-auto_electrics|Umeme wa magari|
-car_glass|Vioo vya magari na kioo cha mbele|
-boat_repair|Ukarabati wa boti|
-bus_charter|Kukodisha mabasi|
-call_centre|Kituo cha simu|
-virtual_assistant|Msaidizi wa mtandaoni|
-market_research|Utafiti wa soko|
-copywriting|Uandishi wa maudhui|
-seo_services|SEO na matangazo mtandaoni|
-social_media|Usimamizi wa mitandao ya kijamii|
-app_development|Utengenezaji wa programu za simu|
-game_development|Utengenezaji wa michezo|
-drone_services|Huduma za droni|
-printing_3d|Uchapishaji wa 3D|
-interior_design|Ubunifu wa ndani|
-dance_school|Shule ya densi|
-art_gallery|Jumba la sanaa na utengenezaji fremu|
+taxi|Teksi|teksi, safari, usafiri, uwanja wa ndege
+ride_hailing|Huduma ya usafiri kwa programu|uber, bolt, kushiriki gari, programu
+chauffeur|Huduma ya dereva|dereva binafsi, limousine, huduma ya dereva
+driving_school|Shule ya udereva|shule ya udereva, masomo ya kuendesha, leseni, mwalimu wa udereva
+translation|Tafsiri ya maandishi|mtafsiri, nyaraka, tafsiri, mkataba
+interpreting|Ukalimani|mkalimani, ukalimani, mkutano, kikao
+sworn_translation|Tafsiri iliyoidhinishwa|tafsiri rasmi, tafsiri iliyothibitishwa, muhuri, hati
+language_school|Shule ya lugha|kozi za lugha, masomo ya kiingereza, mwalimu, shule ya lugha
+removals|Huduma ya kuhamisha mizigo|kuhamisha mizigo, kuhama, gari la mizigo, makasha
+international_removals|Uhamishaji wa kimataifa|kuhamia nje ya nchi, uhamisho, kontena, forodha
+courier|Huduma ya kutuma vifurushi|mtumaji, uwasilishaji, kifurushi, huduma ya usafirishaji
+freight_forwarding|Usafirishaji wa mizigo|usafirishaji wa mizigo, ugavi, usafirishaji bidhaa, paleti
+refrigerated_transport|Usafiri wa baridi|usafiri wa baridi, bidhaa zilizogandishwa, gari la friji, mnyororo wa baridi
+haulage|Usafirishaji wa bidhaa|usafirishaji wa malori, lori, usafirishaji mizigo, trela
+storage_warehousing|Ghala na uhifadhi|ghala, kuhifadhi, hifadhi ya bidhaa, rafu
+customs_brokerage|Wakala wa forodha|wakala wa forodha, forodha, kuagiza, kuuza nje
+excavation|Uchimbaji na kazi za ardhi|kuchimba, mtambo wa kuchimba, kazi ya ardhi, mtaro
+crane_hire|Kukodisha kreni|krane, kukodi krane, kunyanyua, mtambo wa kunyanyua
+scaffolding|Chandarua cha ujenzi|jukwaa la ujenzi, kusimika jukwaa, kukodi jukwaa, jukwaa la kazi
+demolition|Ubomoaji|kubomoa, ubomoaji, taka za ujenzi, nyundo ya kuvunja
+concrete_works|Kazi za zege|zege, kumwaga zege, msingi, sakafu ya zege
+surveying|Upimaji ardhi|mpima ardhi, upimaji, ramani ya ardhi, mipaka ya kiwanja
+tool_hire|Kukodisha zana|kukodi vifaa, zana, drili, mashine ya kusaga
+machinery_rental|Kukodisha mitambo|kukodi mitambo, mitambo, forklifti, mashine za ujenzi
+generator_hire|Kukodisha jenereta|jenereta, umeme wa akiba, mtambo wa umeme, kebo
+electrical_installation|Uwekaji umeme|fundi umeme, ufungaji umeme, sanduku la umeme, soketi
+plumbing|Mabomba na maji|fundi bomba, mabomba, bafu, uvujaji wa maji
+heating_hvac|Joto na uingizaji hewa|mfumo wa joto, boila, redieta, joto la sakafu
+air_conditioning|Viyoyozi|kiyoyozi, kupoza, ac, mfumo wa hewa
+painting_decorating|Upakaji rangi na mapambo|mpaka rangi, kupaka rangi, wallpaper, kuweka putty
+carpentry|Useremala|seremala, fundi wa mbao, samani, mbao
+flooring|Kuweka sakafu|kuweka sakafu, parkiti, laminati, vigae vya sakafu
+roofing|Kazi za paa|fundi paa, paa, mifereji ya maji, mabati
+locksmith|Fundi wa kufuli|fundi kufuli, kufuli, funguo, kufungua mlango
+cleaning_services|Huduma za usafi|usafi, mfanyakazi wa usafi, usafi wa ofisi, usafi mkubwa
+gardening_landscaping|Bustani na mandhari|mtunza bustani, kukata nyasi, ua wa miti, bustani
+renovation|Ukarabati|ukarabati, kurekebisha nyumba, mkandarasi, kubadilisha
+car_repair|Karakana ya magari|gereji, fundi magari, huduma ya gari, kutengeneza gari
+mobile_mechanic|Fundi wa magari anayefika|fundi wa kutembea, msaada barabarani, kuwasha betri, gari limeharibika
+tyre_service|Huduma ya matairi|matairi, kubadilisha tairi, kuziba pancha, kusawazisha
+bodywork_paint|Kunyoosha na kupaka rangi gari|kupaka rangi gari, fundi bodi, mabonde, mwili wa gari
+towing_recovery|Kuvuta na kuokoa magari|kuvuta gari, gari la kuvuta, msaada barabarani, winchi
+childcare|Kulea watoto|kulea watoto, chekechea, yaya, kituo cha watoto
+elderly_care|Kuwahudumia wazee|kuwahudumia wazee, nyumba ya wazee, huduma nyumbani, wazee
+home_nursing|Uuguzi wa nyumbani|uuguzi wa nyumbani, muuguzi, huduma ya afya nyumbani, kubadilisha bandeji
+private_tutoring|Masomo ya ziada|mwalimu binafsi, masomo ya ziada, maandalizi ya mtihani, kazi za nyumbani
+music_lessons|Masomo ya muziki|piano, gitaa, kuimba, masomo ya muziki
+sports_coaching|Ukocha wa michezo|kocha, mpira wa miguu, tenisi, mazoezi
+it_training|Mafunzo ya TEHAMA|kozi za kompyuta, excel, kozi ya programu, mafunzo ya tehama
+vocational_training|Mafunzo ya ufundi|mafunzo ya ufundi, kozi ya ujuzi, cheti, uanagenzi
+holiday_lettings|Nyumba za likizo za kukodi|nyumba ya likizo, kukodisha kwa muda, nyumba ya wageni, airbnb
+guesthouse_bnb|Nyumba ya wageni na kifungua kinywa|nyumba ya wageni, malazi na kifungua kinywa, gesti, vyumba
+property_management|Usimamizi wa majengo|usimamizi wa majengo, usimamizi wa nyumba, kukodisha, wamiliki wa jengo
+veterinary|Daktari wa wanyama|daktari wa wanyama, kliniki ya wanyama, chanjo, mbwa
+dog_walking|Kutembeza mbwa|kutembeza mbwa, mtembezaji wa mbwa, matembezi ya mbwa
+pet_grooming|Kunyoa na kupamba wanyama|kunyoa mbwa, kupamba wanyama, kutunza manyoya, saluni ya wanyama
+general_practice|Daktari wa kawaida|daktari wa jumla, kliniki, zahanati, dawa
+dentistry|Meno|daktari wa meno, kliniki ya meno, kuziba jino, kipandikizi
+physiotherapy|Tiba ya viungo|tiba ya mwili, mtaalamu wa viungo, urekebishaji, masaji ya tiba
+psychology|Saikolojia|mwanasaikolojia, tiba, ushauri nasaha, matibabu ya akili
+pharmacy|Duka la dawa|duka la dawa, dawa, mfamasia, virutubisho
+optometry|Kupima macho na miwani|daktari wa macho, miwani, kupima macho, lensi
+medical_laboratory|Maabara ya afya|maabara, vipimo vya damu, uchunguzi, kuchukua sampuli
+software_development|Uandishi wa programu|mtayarishaji programu, mhandisi wa programu, programu, kodi
+web_development|Utengenezaji wa tovuti|tovuti, kutengeneza tovuti, wordpress, duka la mtandaoni
+it_support|Msaada wa TEHAMA|msaada wa tehama, mtandao, kutengeneza kompyuta, msimamizi wa mfumo
+cybersecurity|Usalama mtandaoni|usalama wa mtandao, upimaji wa usalama, firewall, udukuzi
+data_ai|Data na akili bandia|akili bandia, kujifunza kwa mashine, uchambuzi wa data, algoriti
+cloud_hosting|Wingu na uhifadhi wa tovuti|hosting, seva, wingu, kikoa
+accounting|Uhasibu|mhasibu, uhasibu, ankara, mishahara
+audit_tax|Ukaguzi na kodi|mkaguzi wa hesabu, mshauri wa kodi, taarifa za fedha, vat
+legal_services|Huduma za kisheria|wakili, mwanasheria, ushauri wa kisheria, mkataba
+hr_recruitment|Rasilimali watu na ajira|kuajiri, wakala wa ajira, utafutaji wa wafanyakazi, wasifu
+management_consulting|Ushauri wa uongozi|mshauri, ushauri wa biashara, mkakati, mpango wa biashara
+insurance_brokerage|Udalali wa bima|dalali wa bima, bima, hati ya bima, madai
+real_estate_agency|Wakala wa majengo|wakala wa nyumba, dalali wa majengo, ghorofa, nyumba
+architecture|Usanifu majengo|mbunifu majengo, michoro, kibali cha ujenzi, muundo wa jengo
+manufacturing|Utengenezaji viwandani|utengenezaji, kiwanda, viwanda, kuunganisha
+cnc_machining|Uchongaji wa CNC|cnc, kugeuza chuma, kusaga chuma, uhandisi wa chuma
+metalwork_welding|Kazi za chuma na kulehemu|kulehemu, mhunzi, chuma, kazi za chuma
+restaurant|Mkahawa|mgahawa, chakula, hoteli ya chakula, menyu
+catering|Huduma ya chakula kwa hafla|huduma ya chakula, chakula cha sherehe, bufe, vitafunwa
+hotel|Hoteli|hoteli, malazi, nyumba ya kulala, vyumba
+event_management|Uandaaji wa hafla|kuandaa matukio, mpangaji wa harusi, mkutano, tukio
+agriculture|Kilimo|kilimo, shamba, trekta, mavuno
+forestry|Misitu|misitu, ukataji miti, mbao, msumeno wa moto
+waste_recycling|Taka na urejelezaji|taka, kontena la taka, chuma chakavu, kuchakata
+renewable_energy|Nishati mbadala|nishati ya jua, nishati ya upepo, nishati safi, pampu ya joto
+marketing_agency|Kampuni ya masoko|masoko, matangazo, kampeni, wakala wa matangazo
+graphic_design|Ubunifu wa picha|mbunifu wa michoro, nembo, ubunifu wa picha, mpangilio
+photography|Upigaji picha|mpiga picha, studio ya picha, picha za harusi, picha za watu
+video_production|Utengenezaji wa video|utengenezaji video, kurekodi video, kuhariri, drone
+printing_signage|Uchapishaji na mabango|uchapishaji, kuchapa, mabango, vibandiko
+wholesale|Jumla|jumla, msambazaji, muuzaji, bidhaa
+ecommerce|Duka la mtandaoni|duka la mtandaoni, biashara mtandaoni, soko la mtandaoni, oda
+security_services|Huduma za ulinzi|walinzi, huduma za ulinzi, ufuatiliaji, kamera za usalama
+hairdressing|Saluni ya nywele|kinyozi cha wanawake, kukata nywele, kupaka rangi nywele, saluni
+beauty_salon|Saluni ya urembo|saluni ya urembo, urembo, kucha, matibabu ya uso
+massage_therapy|Masaji|masaji, mtoa masaji, tiba ya masaji, kupumzika
+fitness_training|Mazoezi ya mwili|mkufunzi binafsi, jimu, mazoezi, kunyanyua uzito
+shop_general|Duka|duka, biashara, rejareja, bidhaa
+shop_bicycle|Duka na ukarabati wa baiskeli|duka la baiskeli, baiskeli, kutengeneza baiskeli, baiskeli ya umeme
+shop_auto_parts|Duka la vipuri vya magari|vipuri vya gari, vifaa vya gari, vichujio, spea
+shop_hardware|Duka la vifaa vya ujenzi na zana|duka la vifaa vya ujenzi, hardware, zana, skrubu
+shop_furniture|Duka la samani|duka la samani, samani, sofa, jiko
+shop_electronics|Duka la elektroniki na vifaa vya nyumbani|elektroniki, vifaa vya nyumbani, televisheni, mashine ya kufua
+shop_clothing|Duka la nguo|duka la nguo, mitindo, viatu, mavazi
+shop_grocery|Duka la vyakula|duka la vyakula, supermaketi, vyakula, duka la kawaida
+shop_sports|Duka la vifaa vya michezo|duka la michezo, vifaa vya michezo, vifaa vya nje, skii
+shop_books|Duka la vitabu na vifaa vya ofisi|duka la vitabu, vifaa vya ofisi, vitabu, karatasi
+shop_florist|Duka la maua|duka la maua, maua, shada la maua, mashada
+shop_pet|Duka la wanyama wa nyumbani|duka la wanyama, chakula cha mbwa, aquarium, mchanga wa paka
+motorcycle_repair|Ukarabati wa pikipiki|kutengeneza pikipiki, pikipiki, skuta, boda boda
+bar|Baa|baa, klabu ya vinywaji, baa ya kokteli, vinywaji
+kebab_shawarma|Kebab na shawarma|kebab, shawarma, mishikaki, doner
+pizzeria|Duka la pizza|pizza, mgahawa wa pizza, pizza ya kuchukua, kiitaliano
+fast_food|Chakula cha haraka|chakula cha haraka, burger, chipsi, kibanda cha chakula
+bakery|Mkate na keki|mkate, duka la mkate, mikate, mwokaji
+pastry_shop|Duka la keki|duka la keki, keki, vitamu, dessert
+coffee_shop|Duka la kahawa|mkahawa, kahawa, espresso, barista
+food_truck|Gari la chakula|gari la chakula, chakula cha barabarani, jiko la kutembea
+butcher|Duka la nyama|bucha, nyama, soseji, duka la nyama
+ice_cream|Duka la aiskrimu|aiskrimu, duka la aiskrimu, gelato, barafu tamu
+winery|Kiwanda cha divai|kiwanda cha divai, divai, ghala la divai, kuonja divai
+brewery|Kiwanda cha bia|kiwanda cha bia, bia, bia ya kienyeji, bia ya bomba
+nightclub|Klabu ya usiku na disko|klabu ya usiku, disko, kucheza, dj
+beach_club|Baa ya ufukweni|baa ya ufukweni, viti vya ufukweni, ufukwe, klabu ya bahari
+bowling_billiards|Bowling na biliadi|bowling, bilianzi, dart, pool
+travel_agency|Wakala wa safari|wakala wa safari, safari, tiketi za ndege, likizo
+nail_salon|Saluni ya kucha, manikua na pedikua|saluni ya kucha, manicure, pedicure, kucha za jeli
+barber|Kinyozi|kinyozi, kunyoa nywele za kiume, ndevu, kunyoa
+tattoo_piercing|Tatoo na kutoboa|tatoo, studio ya tatoo, kutoboa, wino
+spa_sauna|Spa na sauna|spa, sauna, ustawi, bafu la mvuke
+cosmetics_shop|Duka la vipodozi|duka la vipodozi, manukato, vipodozi, kutunza ngozi
+dry_cleaning|Dobi na kufua nguo|kufua nguo, dobi, kupiga pasi, kusafisha nguo
+podiatry|Huduma ya miguu|kutunza miguu, daktari wa miguu, ukucha ulioingia, nyayo
+dental_laboratory|Maabara ya meno|fundi wa meno, meno bandia, taji ya jino, meno ya bandia
+orthodontics|Kunyoosha meno|breki za meno, daktari wa kunyoosha meno, kunyoosha meno, waya wa meno
+dermatology|Magonjwa ya ngozi|daktari wa ngozi, ngozi, alama za ngozi, chunusi
+paediatrics|Afya ya watoto|daktari wa watoto, watoto, mtoto mchanga, afya ya mtoto
+gynaecology|Afya ya uzazi kwa wanawake|daktari wa wanawake, afya ya wanawake, ujauzito, uzazi
+cardiology|Magonjwa ya moyo|daktari wa moyo, moyo, ecg, magonjwa ya moyo
+medical_imaging|Upigaji picha za kitabibu|x-ray, ultrasound, mri, ct scan
+speech_therapy|Tiba ya usemi|tiba ya usemi, mtaalamu wa usemi, kigugumizi, kuzungumza
+nutrition_dietetics|Lishe na mlo|mtaalamu wa lishe, lishe, mlo, kupunguza uzito
+bicycle_repair|Ukarabati wa baiskeli|kutengeneza baiskeli, kuziba pancha ya baiskeli, huduma ya baiskeli, fundi baiskeli
+scooter_repair|Ukarabati wa skuta na mopedi|kutengeneza skuta, skuta, vespa, pikipiki ndogo
+appliance_repair|Ukarabati wa vifaa vya nyumbani|kutengeneza vifaa vya nyumbani, mashine ya kufua, friji, oveni
+phone_repair|Ukarabati wa simu na tableti|kutengeneza simu, kubadilisha skrini, iphone, tableti
+computer_repair|Ukarabati wa kompyuta|kutengeneza kompyuta, laptop, pc, kurejesha data
+watch_jewellery_repair|Ukarabati wa saa na vito|fundi saa, sonara, kubadilisha betri ya saa, kupanua pete
+shoe_repair|Ukarabati wa viatu|fundi viatu, kutengeneza viatu, visigino, soli
+tailoring_alterations|Ushonaji na marekebisho|mshonaji, fundi cherehani, kufupisha nguo, kurekebisha nguo
+upholstery|Kufunika samani|kufunika samani, kubadilisha kitambaa cha sofa, matakia, kufunika viti
+glazing|Vioo na madirisha|fundi vioo, madirisha, kioo cha dirisha, vioo
+chimney_sweep|Kusafisha bomba la moshi|kusafisha bomba la moshi, bomba la moshi, masizi, njia ya moshi
+pest_control|Kuangamiza wadudu|kuua wadudu, kunguni, panya, mende
+pool_maintenance|Utunzaji wa bwawa la kuogelea|kutunza bwawa, kusafisha bwawa la kuogelea, klorini, bwawa
+window_cleaning|Kusafisha madirisha|kusafisha madirisha, kuosha vioo, kuosha jengo, madirisha
+car_wash|Kuosha magari|kuosha gari, sehemu ya kuosha magari, kusafisha ndani ya gari, kung'arisha
+car_rental|Kukodisha magari|kukodi gari, gari la kukodi, huduma ya kukodi magari, magari ya kukodi
+bike_scooter_rental|Kukodisha baiskeli na skuta|kukodi baiskeli, skuta ya umeme, kukodisha baiskeli, skuta
+funeral_services|Huduma za mazishi|huduma za mazishi, mazishi, kuchoma maiti, jeneza
+notary|Mthibitishaji wa hati|mthibitishaji, kuthibitisha hati, hati ya uwakilishi, nyaraka rasmi
+bailiff|Utekelezaji wa hukumu|mtekelezaji wa mahakama, kutwaa mali, amri ya mahakama, utekelezaji
+patent_trademark|Hataza na alama za biashara|miliki bunifu, kusajili alama ya biashara, hataza, wakala wa hataza
+debt_collection|Ukusanyaji wa madeni|kukusanya madeni, madeni, notisi ya malipo, ankara ambazo hazijalipwa
+company_formation|Usajili wa kampuni|kusajili kampuni, usajili wa biashara, kuanzisha kampuni, leseni ya biashara
+financial_advisory|Ushauri wa kifedha|mshauri wa fedha, uwekezaji, mali, mpango wa fedha
+payroll_services|Huduma za mishahara|utayarishaji mishahara, hati ya mshahara, mishahara, usimamizi wa malipo
+currency_exchange|Kubadilisha fedha za kigeni|kubadilisha fedha, forex, fedha za kigeni, kiwango cha ubadilishaji
+pawnshop|Duka la rehani|duka la rehani, rehani, mkopo wa dhamana, kununua dhahabu
+leasing|Ukodishaji na ufadhili|kukodisha kwa mkataba, ufadhili, malipo ya awamu, kukodi kwa muda mrefu
+hearing_aids|Vifaa vya kusaidia kusikia|vifaa vya kusikia, kupima usikivu, mtaalamu wa usikivu, kituo cha usikivu
+medical_transport|Usafiri wa matibabu|ambulensi, kusafirisha wagonjwa, machela, usafiri wa wagonjwa
+rehabilitation|Kituo cha urekebishaji|kituo cha urekebishaji, kupona, urejeshaji wa afya, ahueni
+occupational_therapy|Tiba ya kazi|tiba ya kazi, mtaalamu wa tiba ya kazi, ujuzi wa kila siku, kujitegemea
+midwifery|Ukunga|mkunga, kuzaa, ujauzito, huduma kabla ya kujifungua
+acupuncture|Tiba ya sindano|acupuncture, sindano, dawa ya kichina, tiba ya sindano
+chiropractic|Tiba ya uti wa mgongo na osteopathy|chiropractic, osteopathy, uti wa mgongo, maumivu ya mgongo
+insulation|Uzuiaji wa joto|kuzuia joto, insulation, kuzuia joto la paa, pamba ya kioo
+waterproofing|Kuzuia maji|kuzuia maji, uvujaji wa paa, unyevu, utando wa kuzuia maji
+plastering|Upakaji wa lipu na putty|kupiga lipu, lipu, kumalizia ukuta, plasta
+tiling|Uwekaji wa vigae|kuweka vigae, vigae, vigae vya ukuta, seramiki
+drywall|Ukuta wa jasi na vizuizi|ubao wa jasi, kuta za kugawanya, dari ya kuning'inia, gypsum
+fencing|Uzio na malango|uzio, geti, kujenga uzio, waya wa uzio
+paving|Kuweka matofali na njia za magari|kuweka mawe ya njia, njia ya gari, njia ya watembeaji, kingo
+well_drilling|Uchimbaji wa visima|kuchimba kisima, kisima, kisima cha maji, maji ya chini ya ardhi
+septic_systems|Matangi ya maji taka na mifereji|tangi la maji taka, mfumo wa maji taka, shimo la maji machafu, mifereji
+solar_panels|Ufungaji wa paneli za jua|paneli za jua, umeme wa jua, inverter, mfumo wa jua
+alarm_cctv|Kengele na kamera za usalama|kengele, kamera za ulinzi, ufuatiliaji, mfumo wa usalama
+smart_home|Ufungaji wa nyumba mahiri|nyumba mahiri, taa mahiri, kudhibiti nyumba, otomatiki
+lift_maintenance|Matengenezo ya lifti|lifti, huduma ya lifti, escalator, kutengeneza lifti
+fire_safety|Usalama wa moto na vizima moto|vizima moto, kengele ya moto, sprinkler, usalama wa moto
+car_dealer|Wakala wa magari|muuzaji wa magari, magari ya mtumba, kuuza magari, sheli ya magari
+vehicle_inspection|Ukaguzi wa magari|ukaguzi wa gari, ukaguzi wa kiufundi, kituo cha ukaguzi, mtihani wa gari
+auto_electrics|Umeme wa magari|fundi umeme wa gari, alternator, staata, umeme wa gari
+car_glass|Vioo vya magari na kioo cha mbele|kioo cha mbele, kubadilisha kioo cha gari, vioo vya gari, ufa wa kioo
+boat_repair|Ukarabati wa boti|kutengeneza boti, injini ya boti, boti, meli ndogo
+bus_charter|Kukodisha mabasi|kukodi basi, basi la watalii, basi dogo, usafiri wa kikundi
+call_centre|Kituo cha simu|kituo cha simu, uuzaji kwa simu, huduma kwa wateja, msaada wa simu
+virtual_assistant|Msaidizi wa mtandaoni|msaidizi mtandaoni, msaada wa utawala, katibu wa mbali, mfanyakazi huru
+market_research|Utafiti wa soko|utafiti wa soko, tafiti, utafiti wa watumiaji, kikundi cha majadiliano
+copywriting|Uandishi wa maudhui|mwandishi wa maandishi, kuhariri, kusahihisha, maudhui
+seo_services|SEO na matangazo mtandaoni|seo, google ads, matangazo mtandaoni, kuboresha tovuti
+social_media|Usimamizi wa mitandao ya kijamii|usimamizi wa mitandao ya kijamii, instagram, facebook, tiktok
+app_development|Utengenezaji wa programu za simu|kutengeneza programu za simu, android, programu za simu, flutter
+game_development|Utengenezaji wa michezo|kutengeneza michezo, unity, unreal, studio ya michezo
+drone_services|Huduma za droni|drone, picha za angani, kurekodi kutoka angani, ramani za angani
+printing_3d|Uchapishaji wa 3D|uchapishaji wa 3d, mifano ya awali, utengenezaji wa nyongeza, printa ya 3d
+interior_design|Ubunifu wa ndani|ubunifu wa ndani, mapambo ya ndani, mpangilio wa nafasi, urembeshaji
+dance_school|Shule ya densi|shule ya dansi, ballet, salsa, masomo ya kucheza
+art_gallery|Jumba la sanaa na utengenezaji fremu|kutengeneza fremu, fremu za picha, maonyesho ya sanaa, jumba la sanaa
