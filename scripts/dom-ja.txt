@@ -1,213 +1,213 @@
-taxi|タクシー|
-ride_hailing|配車サービス|
-chauffeur|運転代行・専属ドライバー|
-driving_school|自動車教習所|
-translation|翻訳|
-interpreting|通訳|
-sworn_translation|公認翻訳|
-language_school|語学学校|
-removals|引っ越し|
-international_removals|海外引っ越し|
-courier|宅配・配送|
-freight_forwarding|フォワーディング|
-refrigerated_transport|冷蔵輸送|
-haulage|貨物運送|
-storage_warehousing|保管・倉庫|
-customs_brokerage|通関業務|
-excavation|掘削・土工事|
-crane_hire|クレーン貸出|
-scaffolding|足場工事|
-demolition|解体工事|
-concrete_works|コンクリート工事|
-surveying|測量|
-tool_hire|工具レンタル|
-machinery_rental|建設機械レンタル|
-generator_hire|発電機レンタル|
-electrical_installation|電気工事|
-plumbing|配管・水道工事|
-heating_hvac|暖房・空調設備|
-air_conditioning|エアコン工事|
-painting_decorating|塗装・内装|
-carpentry|大工・木工|
-flooring|床工事|
-roofing|屋根工事|
-locksmith|鍵屋|
-cleaning_services|清掃サービス|
-gardening_landscaping|造園・庭づくり|
-renovation|リフォーム|
-car_repair|自動車整備|
-mobile_mechanic|出張整備|
-tyre_service|タイヤ交換|
-bodywork_paint|板金塗装|
-towing_recovery|レッカー・ロードサービス|
-childcare|託児・ベビーシッター|
-elderly_care|高齢者介護|
-home_nursing|訪問看護|
-private_tutoring|家庭教師|
-music_lessons|音楽レッスン|
-sports_coaching|スポーツ指導|
-it_training|IT研修|
-vocational_training|職業訓練|
-holiday_lettings|バケーションレンタル|
-guesthouse_bnb|ゲストハウス・民宿|
-property_management|不動産管理|
-veterinary|動物病院|
-dog_walking|犬の散歩代行|
-pet_grooming|ペットトリミング|
-general_practice|一般内科|
-dentistry|歯科|
-physiotherapy|理学療法|
-psychology|心理カウンセリング|
-pharmacy|薬局|
-optometry|眼鏡・視力検査|
-medical_laboratory|臨床検査|
-software_development|ソフトウェア開発|
-web_development|ウェブ制作|
-it_support|ITサポート|
-cybersecurity|サイバーセキュリティ|
-data_ai|データとAI|
-cloud_hosting|クラウド・ホスティング|
-accounting|会計・記帳|
-audit_tax|監査と税務|
-legal_services|法律事務|
-hr_recruitment|人事・採用|
-management_consulting|経営コンサルティング|
-insurance_brokerage|保険仲介|
-real_estate_agency|不動産仲介|
-architecture|建築設計|
-manufacturing|製造|
-cnc_machining|CNC切削加工|
-metalwork_welding|金属加工・溶接|
-restaurant|レストラン|
-catering|ケータリング|
-hotel|ホテル|
-event_management|イベント運営|
-agriculture|農業|
-forestry|林業|
-waste_recycling|廃棄物・リサイクル|
-renewable_energy|再生可能エネルギー|
-marketing_agency|マーケティング会社|
-graphic_design|グラフィックデザイン|
-photography|写真撮影|
-video_production|映像制作|
-printing_signage|印刷・看板|
-wholesale|卸売|
-ecommerce|ネットショップ|
-security_services|警備サービス|
-hairdressing|美容室|
-beauty_salon|エステサロン|
-massage_therapy|マッサージ|
-fitness_training|フィットネス指導|
-shop_general|一般商店|
-shop_bicycle|自転車店・修理|
-shop_auto_parts|自動車部品店|
-shop_hardware|金物・DIY用品店|
-shop_furniture|家具店|
-shop_electronics|家電・電子機器店|
-shop_clothing|衣料品店|
-shop_grocery|食料品店|
-shop_sports|スポーツ用品店|
-shop_books|書店・文房具店|
-shop_florist|花屋|
-shop_pet|ペットショップ|
-motorcycle_repair|バイク整備|
-bar|バー|
-kebab_shawarma|ケバブ・シャワルマ|
-pizzeria|ピザ店|
-fast_food|ファストフード|
-bakery|パン屋|
-pastry_shop|洋菓子店|
-coffee_shop|カフェ|
-food_truck|キッチンカー|
-butcher|精肉店|
-ice_cream|アイスクリーム店|
-winery|ワイナリー|
-brewery|ビール醸造所|
-nightclub|ナイトクラブ・ディスコ|
-beach_club|ビーチバー・ビーチクラブ|
-bowling_billiards|ボウリング・ビリヤード|
-travel_agency|旅行代理店|
-nail_salon|ネイルサロン・マニキュア・ペディキュア|
-barber|理髪店|
-tattoo_piercing|タトゥー・ピアス|
-spa_sauna|スパ・サウナ|
-cosmetics_shop|化粧品店|
-dry_cleaning|クリーニング・洗濯|
-podiatry|足病ケア|
-dental_laboratory|歯科技工所|
-orthodontics|歯科矯正|
-dermatology|皮膚科|
-paediatrics|小児科|
-gynaecology|産婦人科|
-cardiology|循環器科|
-medical_imaging|画像診断|
-speech_therapy|言語聴覚療法|
-nutrition_dietetics|栄養・食事指導|
-bicycle_repair|自転車修理|
-scooter_repair|スクーター・原付修理|
-appliance_repair|家電修理|
-phone_repair|スマホ・タブレット修理|
-computer_repair|パソコン修理|
-watch_jewellery_repair|時計・宝飾修理|
-shoe_repair|靴修理|
-tailoring_alterations|仕立て・お直し|
-upholstery|家具の張り替え|
-glazing|ガラス・窓工事|
-chimney_sweep|煙突掃除|
-pest_control|害虫駆除|
-pool_maintenance|プール管理|
-window_cleaning|窓清掃|
-car_wash|洗車|
-car_rental|レンタカー|
-bike_scooter_rental|自転車・スクーターレンタル|
-funeral_services|葬儀社|
-notary|公証役場|
-bailiff|執行官・強制執行|
-patent_trademark|特許と商標|
-debt_collection|債権回収|
-company_formation|会社設立|
-financial_advisory|財務コンサルティング|
-payroll_services|給与計算|
-currency_exchange|両替所|
-pawnshop|質屋|
-leasing|リースと融資|
-hearing_aids|補聴器|
-medical_transport|患者搬送|
-rehabilitation|リハビリテーション施設|
-occupational_therapy|作業療法|
-midwifery|助産|
-acupuncture|鍼灸|
-chiropractic|カイロプラクティック・整骨|
-insulation|断熱工事|
-waterproofing|防水工事|
-plastering|左官・パテ仕上げ|
-tiling|タイル工事|
-drywall|石膏ボード・間仕切り|
-fencing|フェンス・門扉|
-paving|舗装・アプローチ|
-well_drilling|井戸掘削|
-septic_systems|浄化槽・排水設備|
-solar_panels|太陽光パネル設置|
-alarm_cctv|防犯アラーム・監視カメラ|
-smart_home|スマートホーム設置|
-lift_maintenance|エレベーター保守|
-fire_safety|防火設備・消火器|
-car_dealer|自動車販売店|
-vehicle_inspection|車検|
-auto_electrics|自動車電装|
-car_glass|自動車ガラス・フロントガラス|
-boat_repair|ボート・船舶修理|
-bus_charter|バス・観光バス貸切|
-call_centre|コールセンター|
-virtual_assistant|オンライン秘書|
-market_research|市場調査|
-copywriting|コピーライティング|
-seo_services|SEOとネット広告|
-social_media|SNS運用代行|
-app_development|モバイルアプリ開発|
-game_development|ゲーム開発|
-drone_services|ドローンサービス|
-printing_3d|3Dプリント|
-interior_design|インテリアデザイン|
-dance_school|ダンススクール|
-art_gallery|画廊・額装|
+taxi|タクシー|タクシー, 送迎, 空港送迎, ハイヤー
+ride_hailing|配車サービス|配車アプリ, ウーバー, ライドシェア, 相乗り
+chauffeur|運転代行・専属ドライバー|運転代行, 専属運転手, リムジン, お抱え運転手
+driving_school|自動車教習所|自動車教習所, 運転免許, 教習, 指導員
+translation|翻訳|翻訳, 翻訳者, 文書翻訳, 契約書翻訳
+interpreting|通訳|通訳, 同時通訳, 会議通訳, アテンド通訳
+sworn_translation|公認翻訳|公証翻訳, 認証翻訳, 証明書翻訳, 公文書翻訳
+language_school|語学学校|語学教室, 英会話, 語学講師, 外国語スクール
+removals|引っ越し|引越し, 引越し業者, トラック, 段ボール
+international_removals|海外引っ越し|海外引越し, 国際引越, コンテナ, 通関
+courier|宅配・配送|宅配, 配達, 荷物, バイク便
+freight_forwarding|フォワーディング|フォワーダー, 物流, 貨物輸送, パレット
+refrigerated_transport|冷蔵輸送|冷蔵輸送, 冷凍輸送, 保冷車, コールドチェーン
+haulage|貨物運送|トラック運送, 大型トラック, 貨物運送, トレーラー
+storage_warehousing|保管・倉庫|倉庫, 保管, トランクルーム, 棚
+customs_brokerage|通関業務|通関業者, 税関, 輸入, 輸出
+excavation|掘削・土工事|掘削, ユンボ, 土木工事, 溝掘り
+crane_hire|クレーン貸出|クレーン, ユニック, 吊り上げ, クレーン車
+scaffolding|足場工事|足場, 足場組立, 仮設足場, 作業台
+demolition|解体工事|解体, 取り壊し, 産業廃棄物, はつり
+concrete_works|コンクリート工事|コンクリート, 生コン, 基礎工事, 土間打ち
+surveying|測量|測量, 土地家屋調査士, 地形測量, 境界確定
+tool_hire|工具レンタル|工具レンタル, 工具, ドリル, グラインダー
+machinery_rental|建設機械レンタル|重機レンタル, 建設機械, フォークリフト, 機械貸出
+generator_hire|発電機レンタル|発電機, 非常用電源, 発電機レンタル, ケーブル
+electrical_installation|電気工事|電気工事, 電気工事士, 分電盤, コンセント
+plumbing|配管・水道工事|水道工事, 配管, 水漏れ, 給湯器
+heating_hvac|暖房・空調設備|暖房, ボイラー, 床暖房, 給湯設備
+air_conditioning|エアコン工事|エアコン, 空調, エアコン取付, 冷房
+painting_decorating|塗装・内装|塗装, 塗装工, 壁紙, クロス張替え
+carpentry|大工・木工|大工, 木工, 造作家具, 木材
+flooring|床工事|床工事, フローリング, 床張替え, 畳
+roofing|屋根工事|屋根工事, 屋根, 雨樋, 板金
+locksmith|鍵屋|鍵屋, 鍵開け, 鍵交換, 合鍵
+cleaning_services|清掃サービス|清掃, ハウスクリーニング, オフィス清掃, 大掃除
+gardening_landscaping|造園・庭づくり|造園, 庭木剪定, 芝刈り, 植木屋
+renovation|リフォーム|リフォーム, リノベーション, 内装工事, 改装
+car_repair|自動車整備|自動車整備, 整備工場, 車検整備, 修理工場
+mobile_mechanic|出張整備|出張修理, ロードサービス, バッテリー上がり, 故障対応
+tyre_service|タイヤ交換|タイヤ交換, タイヤ, パンク修理, ホイールバランス
+bodywork_paint|板金塗装|板金塗装, 傷修理, へこみ直し, ボディ補修
+towing_recovery|レッカー・ロードサービス|レッカー, レッカー移動, 車両搬送, ウインチ
+childcare|託児・ベビーシッター|保育, 保育園, ベビーシッター, 託児
+elderly_care|高齢者介護|介護, 老人ホーム, 訪問介護, デイサービス
+home_nursing|訪問看護|訪問看護, 看護師, 在宅医療, 処置
+private_tutoring|家庭教師|家庭教師, 個別指導, 受験対策, 補習
+music_lessons|音楽レッスン|ピアノ教室, ギター, ボーカル, 音楽レッスン
+sports_coaching|スポーツ指導|コーチ, サッカー, テニス, トレーニング指導
+it_training|IT研修|パソコン教室, エクセル, プログラミング講座, IT研修
+vocational_training|職業訓練|職業訓練, 技能講習, 資格取得, 実務研修
+holiday_lettings|バケーションレンタル|貸別荘, 民泊, 短期賃貸, ヴィラ
+guesthouse_bnb|ゲストハウス・民宿|ゲストハウス, 民宿, ペンション, 客室
+property_management|不動産管理|不動産管理, ビル管理, 賃貸管理, 管理組合
+veterinary|動物病院|動物病院, 獣医, ワクチン, ペット診療
+dog_walking|犬の散歩代行|犬の散歩, ドッグウォーカー, 散歩代行
+pet_grooming|ペットトリミング|トリミング, ペットサロン, 犬カット, シャンプー
+general_practice|一般内科|内科, かかりつけ医, クリニック, 処方
+dentistry|歯科|歯科, 歯医者, 虫歯治療, インプラント
+physiotherapy|理学療法|理学療法, リハビリ, 整体, 機能訓練
+psychology|心理カウンセリング|カウンセリング, 臨床心理士, 心理療法, メンタル相談
+pharmacy|薬局|薬局, 薬, 処方箋, サプリメント
+optometry|眼鏡・視力検査|眼鏡店, メガネ, 視力検査, コンタクトレンズ
+medical_laboratory|臨床検査|検査機関, 血液検査, 臨床検査, 検体
+software_development|ソフトウェア開発|ソフトウェア開発, プログラマー, システム開発, コーディング
+web_development|ウェブ制作|ホームページ制作, ウェブ制作, ワードプレス, ECサイト
+it_support|ITサポート|パソコン修理, ネットワーク保守, システム管理, ヘルプデスク
+cybersecurity|サイバーセキュリティ|セキュリティ対策, 脆弱性診断, ファイアウォール, 情報セキュリティ
+data_ai|データとAI|人工知能, 機械学習, データ分析, アルゴリズム
+cloud_hosting|クラウド・ホスティング|サーバー, レンタルサーバー, クラウド, ドメイン
+accounting|会計・記帳|経理, 記帳代行, 会計事務所, 請求書
+audit_tax|監査と税務|税理士, 監査, 確定申告, 消費税
+legal_services|法律事務|弁護士, 法律相談, 法務, 契約書
+hr_recruitment|人事・採用|人材紹介, 採用, 人材派遣, 求人
+management_consulting|経営コンサルティング|経営コンサル, コンサルタント, 事業計画, 経営戦略
+insurance_brokerage|保険仲介|保険代理店, 保険, 保険見直し, 損害保険
+real_estate_agency|不動産仲介|不動産, 不動産仲介, 賃貸, 売買
+architecture|建築設計|建築設計, 建築士, 設計図, 建築確認
+manufacturing|製造|製造, 工場, 生産, 組立
+cnc_machining|CNC切削加工|切削加工, 旋盤, フライス, 機械加工
+metalwork_welding|金属加工・溶接|溶接, 鉄工所, 鋼材, 金属加工
+restaurant|レストラン|飲食店, レストラン, 食堂, メニュー
+catering|ケータリング|ケータリング, 仕出し, パーティー料理, オードブル
+hotel|ホテル|ホテル, 宿泊, 旅館, 客室
+event_management|イベント運営|イベント企画, ウェディングプランナー, 会議運営, 催事
+agriculture|農業|農業, 農家, トラクター, 収穫
+forestry|林業|林業, 伐採, 木材, チェーンソー
+waste_recycling|廃棄物・リサイクル|廃棄物処理, 不用品回収, スクラップ, リサイクル
+renewable_energy|再生可能エネルギー|太陽光発電, 風力発電, 再生可能エネルギー, ヒートポンプ
+marketing_agency|マーケティング会社|マーケティング, 広告代理店, 販促, キャンペーン
+graphic_design|グラフィックデザイン|グラフィックデザイン, ロゴ制作, デザイン, レイアウト
+photography|写真撮影|写真撮影, カメラマン, 写真スタジオ, ウェディングフォト
+video_production|映像制作|動画制作, 撮影, 編集, ドローン撮影
+printing_signage|印刷・看板|印刷, 看板制作, のぼり, ステッカー
+wholesale|卸売|卸売, 問屋, 仕入れ, 販売代理
+ecommerce|ネットショップ|ネットショップ, EC, 通販, 受注
+security_services|警備サービス|警備, 警備会社, 巡回, 監視カメラ
+hairdressing|美容室|美容室, ヘアサロン, カット, カラーリング
+beauty_salon|エステサロン|エステ, ネイル, フェイシャル, 美容サロン
+massage_therapy|マッサージ|マッサージ, もみほぐし, リラクゼーション, 指圧
+fitness_training|フィットネス指導|パーソナルトレーナー, ジム, 筋トレ, フィットネス
+shop_general|一般商店|店舗, 小売, ショップ, 物販
+shop_bicycle|自転車店・修理|自転車店, 自転車, 自転車修理, 電動アシスト
+shop_auto_parts|自動車部品店|カー用品, 自動車部品, 純正部品, フィルター
+shop_hardware|金物・DIY用品店|ホームセンター, 金物店, 工具, ネジ
+shop_furniture|家具店|家具店, 家具, ソファ, システムキッチン
+shop_electronics|家電・電子機器店|家電, 電化製品, テレビ, 洗濯機
+shop_clothing|衣料品店|洋服店, アパレル, 靴, ファッション
+shop_grocery|食料品店|食料品店, スーパー, 食品, コンビニ
+shop_sports|スポーツ用品店|スポーツ用品, スポーツ店, アウトドア, スキー
+shop_books|書店・文房具店|書店, 文房具店, 本, 事務用品
+shop_florist|花屋|花屋, 生花, 花束, 供花
+shop_pet|ペットショップ|ペットショップ, ドッグフード, 水槽, 猫砂
+motorcycle_repair|バイク整備|バイク修理, バイク, スクーター, 原付
+bar|バー|バー, 居酒屋, カクテル, 立ち飲み
+kebab_shawarma|ケバブ・シャワルマ|ケバブ, シャワルマ, ドネル, トルコ料理
+pizzeria|ピザ店|ピザ, ピッツェリア, 宅配ピザ, イタリアン
+fast_food|ファストフード|ファストフード, ハンバーガー, フライドポテト, 軽食
+bakery|パン屋|パン屋, ベーカリー, 食パン, 焼きたてパン
+pastry_shop|洋菓子店|ケーキ屋, 洋菓子, スイーツ, デザート
+coffee_shop|カフェ|カフェ, 喫茶店, エスプレッソ, バリスタ
+food_truck|キッチンカー|キッチンカー, 移動販売, 屋台
+butcher|精肉店|精肉店, 肉屋, ソーセージ, 食肉
+ice_cream|アイスクリーム店|アイスクリーム, ジェラート, ソフトクリーム, アイス屋
+winery|ワイナリー|ワイナリー, ワイン, ワインセラー, テイスティング
+brewery|ビール醸造所|ビール醸造所, ビール, クラフトビール, 生ビール
+nightclub|ナイトクラブ・ディスコ|ナイトクラブ, ディスコ, クラブ, DJ
+beach_club|ビーチバー・ビーチクラブ|ビーチバー, 海の家, ビーチ, 海辺
+bowling_billiards|ボウリング・ビリヤード|ボウリング, ビリヤード, ダーツ, プール
+travel_agency|旅行代理店|旅行代理店, ツアー, 航空券, パッケージ旅行
+nail_salon|ネイルサロン・マニキュア・ペディキュア|ネイルサロン, ネイル, ペディキュア, ジェルネイル
+barber|理髪店|理容室, 床屋, メンズカット, ひげそり
+tattoo_piercing|タトゥー・ピアス|タトゥー, 刺青, ピアス穴あけ, タトゥースタジオ
+spa_sauna|スパ・サウナ|スパ, サウナ, 岩盤浴, 温浴施設
+cosmetics_shop|化粧品店|化粧品店, 香水, コスメ, スキンケア
+dry_cleaning|クリーニング・洗濯|クリーニング, ドライクリーニング, コインランドリー, アイロン
+podiatry|足病ケア|フットケア, 巻き爪, 足の治療, 足専門
+dental_laboratory|歯科技工所|歯科技工, 入れ歯, 差し歯, 補綴
+orthodontics|歯科矯正|矯正歯科, 歯列矯正, ワイヤー矯正, マウスピース矯正
+dermatology|皮膚科|皮膚科, 皮膚科医, ほくろ, ニキビ
+paediatrics|小児科|小児科, 小児科医, 乳児, 子供の診察
+gynaecology|産婦人科|婦人科, 産婦人科, 妊娠, 出産
+cardiology|循環器科|循環器科, 心臓, 心電図, 心疾患
+medical_imaging|画像診断|レントゲン, エコー, MRI, CT検査
+speech_therapy|言語聴覚療法|言語聴覚士, 言語療法, 吃音, 発語訓練
+nutrition_dietetics|栄養・食事指導|管理栄養士, 栄養指導, ダイエット, 食事指導
+bicycle_repair|自転車修理|自転車修理, パンク修理, 自転車メンテ, 整備
+scooter_repair|スクーター・原付修理|スクーター修理, スクーター, ベスパ, 原付修理
+appliance_repair|家電修理|家電修理, 洗濯機, 冷蔵庫, オーブン
+phone_repair|スマホ・タブレット修理|スマホ修理, 画面交換, アイフォン, タブレット
+computer_repair|パソコン修理|パソコン修理, ノートパソコン, データ復旧, PC修理
+watch_jewellery_repair|時計・宝飾修理|時計修理, 宝石修理, 電池交換, 指輪サイズ直し
+shoe_repair|靴修理|靴修理, 靴屋の修理, ヒール交換, 靴底張替え
+tailoring_alterations|仕立て・お直し|洋服直し, お直し, 仕立て, 裾上げ
+upholstery|家具の張り替え|張替え, ソファ張替え, 椅子張替え, クッション
+glazing|ガラス・窓工事|ガラス工事, 窓, ペアガラス, ガラス交換
+chimney_sweep|煙突掃除|煙突掃除, 煙突, すす払い, 煙道
+pest_control|害虫駆除|害虫駆除, トコジラミ, ネズミ駆除, ゴキブリ
+pool_maintenance|プール管理|プール管理, プール清掃, 塩素, プール
+window_cleaning|窓清掃|窓拭き, ガラス清掃, 外壁清掃, 窓清掃
+car_wash|洗車|洗車, 洗車場, 車内清掃, コーティング
+car_rental|レンタカー|レンタカー, 車貸出, カーシェア, 車のレンタル
+bike_scooter_rental|自転車・スクーターレンタル|レンタサイクル, 電動キックボード, 自転車レンタル, キックボード
+funeral_services|葬儀社|葬儀社, 葬式, 火葬, 棺
+notary|公証役場|公証人, 公証役場, 委任状, 認証
+bailiff|執行官・強制執行|執行官, 差押え, 強制執行, 裁判所執行
+patent_trademark|特許と商標|知的財産, 商標登録, 特許, 弁理士
+debt_collection|債権回収|債権回収, 未収金, 督促, 滞納回収
+company_formation|会社設立|会社設立, 法人登記, 起業支援, 定款
+financial_advisory|財務コンサルティング|ファイナンシャルプランナー, 資産運用, 投資相談, 資産形成
+payroll_services|給与計算|給与計算, 給与明細, 賃金, 労務管理
+currency_exchange|両替所|両替, 外貨両替, 外国通貨, レート
+pawnshop|質屋|質屋, 質入れ, 担保融資, 金買取
+leasing|リースと融資|リース, 割賦, 車のローン, 設備リース
+hearing_aids|補聴器|補聴器, 聴力検査, 難聴, 補聴器販売
+medical_transport|患者搬送|救急車, 患者搬送, ストレッチャー, 民間救急
+rehabilitation|リハビリテーション施設|リハビリ施設, 機能回復, 療養, 回復期
+occupational_therapy|作業療法|作業療法, 作業療法士, 生活動作訓練, 自立支援
+midwifery|助産|助産師, 出産, 妊娠中の相談, 産前ケア
+acupuncture|鍼灸|鍼灸, 針治療, 東洋医学, お灸
+chiropractic|カイロプラクティック・整骨|カイロプラクティック, 整骨院, 背骨, 腰痛
+insulation|断熱工事|断熱, 断熱工事, 屋根断熱, 断熱材
+waterproofing|防水工事|防水工事, 雨漏り, 湿気対策, シート防水
+plastering|左官・パテ仕上げ|左官, 左官工事, 漆喰, 壁仕上げ
+tiling|タイル工事|タイル工事, タイル, 床タイル, 壁タイル
+drywall|石膏ボード・間仕切り|ボード貼り, 石膏ボード, 間仕切り, 天井下地
+fencing|フェンス・門扉|フェンス, 門扉, 柵, 目隠し
+paving|舗装・アプローチ|舗装, 駐車場舗装, 歩道, 縁石
+well_drilling|井戸掘削|井戸掘り, 井戸, ボーリング, 地下水
+septic_systems|浄化槽・排水設備|浄化槽, 排水設備, 下水, 汲み取り
+solar_panels|太陽光パネル設置|太陽光パネル, 太陽光発電設置, パワコン, ソーラー
+alarm_cctv|防犯アラーム・監視カメラ|防犯カメラ, 警報装置, 監視システム, セキュリティ
+smart_home|スマートホーム設置|スマートホーム, スマート照明, ホームオートメーション, 遠隔操作
+lift_maintenance|エレベーター保守|エレベーター保守, エレベーター, エスカレーター, 昇降機
+fire_safety|防火設備・消火器|消火器, 火災報知機, スプリンクラー, 防火設備
+car_dealer|自動車販売店|中古車販売, 新車販売, 自動車販売店, カーディーラー
+vehicle_inspection|車検|車検, 継続検査, 検査場, 法定点検
+auto_electrics|自動車電装|自動車電装, オルタネーター, セルモーター, 配線
+car_glass|自動車ガラス・フロントガラス|フロントガラス, ガラス交換, 自動車ガラス, ヒビ割れ
+boat_repair|ボート・船舶修理|船舶修理, 船外機, ボート, ヨット
+bus_charter|バス・観光バス貸切|貸切バス, バス手配, マイクロバス, 団体輸送
+call_centre|コールセンター|コールセンター, テレアポ, カスタマーサポート, 電話対応
+virtual_assistant|オンライン秘書|オンライン秘書, 事務代行, リモートアシスタント, フリーランス
+market_research|市場調査|市場調査, アンケート, 消費者調査, グループインタビュー
+copywriting|コピーライティング|コピーライティング, 記事作成, 校正, ライター
+seo_services|SEOとネット広告|SEO対策, リスティング広告, ネット広告, 検索対策
+social_media|SNS運用代行|SNS運用, インスタグラム, フェイスブック, ティックトック
+app_development|モバイルアプリ開発|アプリ開発, アンドロイド, スマホアプリ, フラッター
+game_development|ゲーム開発|ゲーム開発, ユニティ, アンリアル, ゲームスタジオ
+drone_services|ドローンサービス|ドローン, 空撮, 空中撮影, ドローン測量
+printing_3d|3Dプリント|3Dプリント, 試作, 積層造形, 3Dプリンター
+interior_design|インテリアデザイン|インテリアデザイン, 内装デザイン, 空間設計, コーディネート
+dance_school|ダンススクール|ダンス教室, バレエ, サルサ, 社交ダンス
+art_gallery|画廊・額装|額装, 額縁, 画廊, 美術展

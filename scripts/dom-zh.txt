@@ -1,213 +1,213 @@
-taxi|出租车|
-ride_hailing|网约车|
-chauffeur|代驾与专属司机|
-driving_school|驾校|
-translation|笔译|
-interpreting|口译|
-sworn_translation|宣誓翻译|
-language_school|语言学校|
-removals|搬家服务|
-international_removals|国际搬家|
-courier|快递配送|
-freight_forwarding|货运代理|
-refrigerated_transport|冷藏运输|
-haulage|货物运输|
-storage_warehousing|仓储服务|
-customs_brokerage|报关服务|
-excavation|挖掘与土方工程|
-crane_hire|吊车租赁|
-scaffolding|脚手架|
-demolition|拆除工程|
-concrete_works|混凝土工程|
-surveying|测绘|
-tool_hire|工具租赁|
-machinery_rental|机械租赁|
-generator_hire|发电机租赁|
-electrical_installation|电气安装|
-plumbing|水管工程|
-heating_hvac|供暖与通风|
-air_conditioning|空调安装|
-painting_decorating|油漆与装饰|
-carpentry|木工|
-flooring|地板铺设|
-roofing|屋顶工程|
-locksmith|开锁修锁|
-cleaning_services|保洁服务|
-gardening_landscaping|园艺与景观|
-renovation|翻新装修|
-car_repair|汽车维修|
-mobile_mechanic|上门修车|
-tyre_service|轮胎服务|
-bodywork_paint|钣金喷漆|
-towing_recovery|拖车救援|
-childcare|托儿服务|
-elderly_care|养老照护|
-home_nursing|居家护理|
-private_tutoring|家教辅导|
-music_lessons|音乐课程|
-sports_coaching|体育教练|
-it_training|信息技术培训|
-vocational_training|职业培训|
-holiday_lettings|度假房出租|
-guesthouse_bnb|旅馆与民宿|
-property_management|物业管理|
-veterinary|兽医|
-dog_walking|遛狗服务|
-pet_grooming|宠物美容|
-general_practice|全科门诊|
-dentistry|牙科|
-physiotherapy|物理治疗|
-psychology|心理咨询|
-pharmacy|药房|
-optometry|验光配镜|
-medical_laboratory|医学检验|
-software_development|软件开发|
-web_development|网站开发|
-it_support|信息技术支持|
-cybersecurity|网络安全|
-data_ai|数据与人工智能|
-cloud_hosting|云服务与托管|
-accounting|会计记账|
-audit_tax|审计与税务|
-legal_services|法律服务|
-hr_recruitment|人力资源与招聘|
-management_consulting|管理咨询|
-insurance_brokerage|保险经纪|
-real_estate_agency|房产中介|
-architecture|建筑设计|
-manufacturing|制造业|
-cnc_machining|数控加工|
-metalwork_welding|金属加工与焊接|
-restaurant|餐厅|
-catering|宴会承办|
-hotel|酒店|
-event_management|活动策划|
-agriculture|农业|
-forestry|林业|
-waste_recycling|废弃物与回收|
-renewable_energy|可再生能源|
-marketing_agency|营销公司|
-graphic_design|平面设计|
-photography|摄影|
-video_production|视频制作|
-printing_signage|印刷与广告牌|
-wholesale|批发|
-ecommerce|电子商务|
-security_services|安保服务|
-hairdressing|理发店|
-beauty_salon|美容院|
-massage_therapy|按摩|
-fitness_training|健身指导|
-shop_general|商店|
-shop_bicycle|自行车店与维修|
-shop_auto_parts|汽车配件店|
-shop_hardware|五金与工具店|
-shop_furniture|家具店|
-shop_electronics|电子与家电店|
-shop_clothing|服装店|
-shop_grocery|食品杂货店|
-shop_sports|体育用品店|
-shop_books|书店与文具店|
-shop_florist|花店|
-shop_pet|宠物用品店|
-motorcycle_repair|摩托车维修|
-bar|酒吧|
-kebab_shawarma|烤肉卷与沙威玛|
-pizzeria|披萨店|
-fast_food|快餐|
-bakery|面包房|
-pastry_shop|蛋糕西点店|
-coffee_shop|咖啡馆|
-food_truck|餐车|
-butcher|肉铺|
-ice_cream|冰淇淋店|
-winery|酒庄|
-brewery|啤酒厂|
-nightclub|夜总会与迪厅|
-beach_club|海滩酒吧与海滩俱乐部|
-bowling_billiards|保龄球与台球|
-travel_agency|旅行社|
-nail_salon|美甲店，修手与修脚|
-barber|男士理发|
-tattoo_piercing|纹身与穿孔|
-spa_sauna|水疗与桑拿|
-cosmetics_shop|化妆品店|
-dry_cleaning|干洗与洗衣|
-podiatry|足病与足部护理|
-dental_laboratory|牙科技工所|
-orthodontics|口腔正畸|
-dermatology|皮肤科|
-paediatrics|儿科|
-gynaecology|妇科|
-cardiology|心脏内科|
-medical_imaging|医学影像|
-speech_therapy|言语治疗|
-nutrition_dietetics|营养与膳食|
-bicycle_repair|自行车维修|
-scooter_repair|踏板车与助力车维修|
-appliance_repair|家电维修|
-phone_repair|手机与平板维修|
-computer_repair|电脑维修|
-watch_jewellery_repair|钟表与珠宝维修|
-shoe_repair|修鞋|
-tailoring_alterations|裁缝与改衣|
-upholstery|家具软包|
-glazing|玻璃与门窗|
-chimney_sweep|烟囱清扫|
-pest_control|害虫防治|
-pool_maintenance|泳池维护|
-window_cleaning|擦窗清洁|
-car_wash|洗车|
-car_rental|租车|
-bike_scooter_rental|自行车与滑板车租赁|
-funeral_services|殡葬服务|
-notary|公证处|
-bailiff|强制执行|
-patent_trademark|专利与商标|
-debt_collection|债务催收|
-company_formation|公司注册|
-financial_advisory|财务咨询|
-payroll_services|薪资代办|
-currency_exchange|外币兑换|
-pawnshop|典当行|
-leasing|租赁与融资|
-hearing_aids|助听器|
-medical_transport|医疗转运|
-rehabilitation|康复中心|
-occupational_therapy|作业治疗|
-midwifery|助产|
-acupuncture|针灸|
-chiropractic|脊骨神经与整骨|
-insulation|保温隔热|
-waterproofing|防水工程|
-plastering|抹灰与刮腻子|
-tiling|瓷砖铺贴|
-drywall|石膏板与隔墙|
-fencing|围栏与大门|
-paving|铺路与车道|
-well_drilling|水井钻探|
-septic_systems|化粪池与排水|
-solar_panels|太阳能板安装|
-alarm_cctv|报警与监控摄像|
-smart_home|智能家居安装|
-lift_maintenance|电梯维保|
-fire_safety|消防与灭火器|
-car_dealer|汽车经销商|
-vehicle_inspection|车辆年检|
-auto_electrics|汽车电路|
-car_glass|汽车玻璃与挡风玻璃|
-boat_repair|船艇维修|
-bus_charter|大巴租赁|
-call_centre|呼叫中心|
-virtual_assistant|虚拟助理|
-market_research|市场调研|
-copywriting|文案写作|
-seo_services|SEO与网络广告|
-social_media|社交媒体运营|
-app_development|手机应用开发|
-game_development|游戏开发|
-drone_services|无人机服务|
-printing_3d|3D打印|
-interior_design|室内设计|
-dance_school|舞蹈学校|
-art_gallery|画廊与裱框|
+taxi|出租车|出租车, 打车, 接送, 机场接送
+ride_hailing|网约车|滴滴, 网约车, 顺风车, 打车软件
+chauffeur|代驾与专属司机|代驾, 专车司机, 豪华轿车, 私人司机
+driving_school|驾校|学车, 驾照, 教练, 驾驶培训
+translation|笔译|翻译, 笔译, 文件翻译, 合同翻译
+interpreting|口译|口译, 同声传译, 会议翻译, 陪同翻译
+sworn_translation|宣誓翻译|公证翻译, 认证翻译, 盖章翻译, 证件翻译
+language_school|语言学校|语言培训, 英语课, 外语班, 语言老师
+removals|搬家服务|搬家, 搬家公司, 货车, 纸箱
+international_removals|国际搬家|国际搬家, 海外搬迁, 集装箱, 海运搬家
+courier|快递配送|快递, 送货, 包裹, 跑腿
+freight_forwarding|货运代理|货运代理, 物流, 货运, 托盘
+refrigerated_transport|冷藏运输|冷链运输, 冷藏车, 冷冻运输, 保鲜运输
+haulage|货物运输|货车运输, 卡车, 大货车, 挂车
+storage_warehousing|仓储服务|仓库, 仓储, 存放, 货架
+customs_brokerage|报关服务|报关, 清关, 进口, 出口
+excavation|挖掘与土方工程|挖土, 挖掘机, 土方工程, 开沟
+crane_hire|吊车租赁|吊车, 起重机, 吊装, 汽车吊
+scaffolding|脚手架|脚手架, 搭架子, 架子工, 作业平台
+demolition|拆除工程|拆除, 拆迁, 建筑垃圾, 破碎锤
+concrete_works|混凝土工程|混凝土, 浇筑, 打地基, 找平
+surveying|测绘|测绘, 土地测量, 地形测量, 界线测量
+tool_hire|工具租赁|工具租赁, 工具, 电钻, 角磨机
+machinery_rental|机械租赁|机械租赁, 设备租赁, 叉车, 工程机械
+generator_hire|发电机租赁|发电机, 柴油发电机, 备用电源, 电缆
+electrical_installation|电气安装|电工, 电路安装, 配电箱, 插座
+plumbing|水管工程|水管工, 管道, 卫生间, 漏水
+heating_hvac|供暖与通风|供暖, 锅炉, 暖气片, 地暖
+air_conditioning|空调安装|空调, 制冷, 空调安装, 分体机
+painting_decorating|油漆与装饰|油漆工, 刷墙, 墙纸, 腻子
+carpentry|木工|木工, 木匠, 家具, 木材
+flooring|地板铺设|地板, 木地板, 强化地板, 地砖
+roofing|屋顶工程|屋顶, 房顶, 排水沟, 铁皮屋顶
+locksmith|开锁修锁|开锁, 锁匠, 换锁, 配钥匙
+cleaning_services|保洁服务|保洁, 清洁, 办公室保洁, 大扫除
+gardening_landscaping|园艺与景观|园艺, 割草, 绿篱, 园林绿化
+renovation|翻新装修|装修, 翻新, 建筑公司, 改造
+car_repair|汽车维修|汽车维修, 修车, 汽修, 保养
+mobile_mechanic|上门修车|上门修车, 道路救援, 搭电, 抛锚
+tyre_service|轮胎服务|轮胎, 换胎, 补胎, 动平衡
+bodywork_paint|钣金喷漆|钣金喷漆, 补漆, 凹陷修复, 车身
+towing_recovery|拖车救援|拖车, 拖车服务, 道路救援, 绞盘
+childcare|托儿服务|托儿, 幼儿园, 保姆, 育儿嫂
+elderly_care|养老照护|养老护理, 养老院, 居家养老, 老人照顾
+home_nursing|居家护理|上门护理, 护士, 居家护理, 换药
+private_tutoring|家教辅导|家教, 补习, 一对一辅导, 考前辅导
+music_lessons|音乐课程|钢琴, 吉他, 声乐, 音乐课
+sports_coaching|体育教练|教练, 足球, 网球, 体能训练
+it_training|信息技术培训|电脑培训, 办公软件, 编程培训, 计算机课
+vocational_training|职业培训|职业培训, 技能培训, 资格证, 学徒
+holiday_lettings|度假房出租|度假屋, 短租, 民宿, 公寓出租
+guesthouse_bnb|旅馆与民宿|民宿, 客栈, 家庭旅馆, 客房
+property_management|物业管理|物业管理, 楼宇管理, 出租管理, 业委会
+veterinary|兽医|兽医, 宠物医院, 疫苗, 看狗
+dog_walking|遛狗服务|遛狗, 遛狗服务, 遛狗员
+pet_grooming|宠物美容|宠物美容, 狗狗剪毛, 洗澡美容, 宠物店美容
+general_practice|全科门诊|全科医生, 诊所, 门诊, 开药
+dentistry|牙科|牙医, 口腔科, 补牙, 种植牙
+physiotherapy|物理治疗|理疗, 康复训练, 物理治疗, 推拿
+psychology|心理咨询|心理咨询, 心理医生, 心理治疗, 咨询师
+pharmacy|药房|药店, 药房, 药品, 保健品
+optometry|验光配镜|眼镜店, 验光, 配镜, 隐形眼镜
+medical_laboratory|医学检验|化验, 抽血, 检验科, 体检
+software_development|软件开发|软件开发, 程序员, 编程, 代码
+web_development|网站开发|网站建设, 网页设计, 做网站, 网店
+it_support|信息技术支持|电脑维修, 网络维护, 系统运维, 技术支持
+cybersecurity|网络安全|网络安全, 渗透测试, 防火墙, 信息安全
+data_ai|数据与人工智能|人工智能, 机器学习, 数据分析, 算法
+cloud_hosting|云服务与托管|服务器, 云服务, 主机, 域名
+accounting|会计记账|会计, 记账, 代理记账, 报税
+audit_tax|审计与税务|审计, 税务咨询, 财务报表, 增值税
+legal_services|法律服务|律师, 法律咨询, 律所, 合同审查
+hr_recruitment|人力资源与招聘|招聘, 猎头, 人力资源, 劳务派遣
+management_consulting|管理咨询|管理咨询, 企业顾问, 战略咨询, 商业计划
+insurance_brokerage|保险经纪|保险经纪, 保险, 保单, 理赔
+real_estate_agency|房产中介|房产中介, 中介, 二手房, 租房
+architecture|建筑设计|建筑设计, 建筑师, 图纸, 报建
+manufacturing|制造业|制造, 工厂, 生产, 组装
+cnc_machining|数控加工|数控加工, 车床, 铣床, 机械加工
+metalwork_welding|金属加工与焊接|焊接, 电焊, 钢结构, 金属加工
+restaurant|餐厅|餐厅, 饭店, 餐馆, 菜单
+catering|宴会承办|餐饮服务, 宴会, 自助餐, 配餐
+hotel|酒店|酒店, 住宿, 宾馆, 客房
+event_management|活动策划|活动策划, 婚礼策划, 会议策划, 会展
+agriculture|农业|农业, 农场, 拖拉机, 收割
+forestry|林业|林业, 伐木, 木材, 电锯
+waste_recycling|废弃物与回收|垃圾清运, 废品回收, 废铁, 回收
+renewable_energy|可再生能源|太阳能, 风能, 新能源, 热泵
+marketing_agency|营销公司|营销, 广告, 推广, 广告公司
+graphic_design|平面设计|平面设计, 标志设计, 排版, 视觉设计
+photography|摄影|摄影, 摄影师, 婚纱摄影, 照相馆
+video_production|视频制作|视频制作, 拍摄, 剪辑, 航拍
+printing_signage|印刷与广告牌|印刷, 广告牌, 喷绘, 标识制作
+wholesale|批发|批发, 经销商, 供应商, 货源
+ecommerce|电子商务|电商, 网店, 网上商城, 跨境电商
+security_services|安保服务|保安, 安保服务, 巡逻, 监控
+hairdressing|理发店|理发, 发型, 染发, 美发店
+beauty_salon|美容院|美容院, 美甲, 皮肤护理, 面部护理
+massage_therapy|按摩|按摩, 推拿, 足疗, spa按摩
+fitness_training|健身指导|健身教练, 健身房, 私教, 力量训练
+shop_general|商店|商店, 零售, 店铺, 便利店
+shop_bicycle|自行车店与维修|自行车店, 自行车, 修车, 电动自行车
+shop_auto_parts|汽车配件店|汽车配件, 汽配, 汽车用品, 滤芯
+shop_hardware|五金与工具店|五金店, 建材, 工具, 螺丝
+shop_furniture|家具店|家具店, 家具, 沙发, 橱柜
+shop_electronics|电子与家电店|电器, 家电, 电视, 洗衣机
+shop_clothing|服装店|服装店, 服饰, 鞋子, 时装
+shop_grocery|食品杂货店|超市, 便利店, 食品店, 生鲜
+shop_sports|体育用品店|体育用品, 运动装备, 户外用品, 滑雪
+shop_books|书店与文具店|书店, 文具店, 图书, 办公用品
+shop_florist|花店|花店, 鲜花, 花束, 花圈
+shop_pet|宠物用品店|宠物店, 狗粮, 水族箱, 猫砂
+motorcycle_repair|摩托车维修|摩托车维修, 摩托车, 电动车, 踏板车
+bar|酒吧|酒吧, 清吧, 鸡尾酒, 小酒馆
+kebab_shawarma|烤肉卷与沙威玛|烤肉卷, 沙威玛, 土耳其烤肉, 肉夹卷
+pizzeria|披萨店|披萨, 比萨店, 外带披萨, 意式
+fast_food|快餐|快餐, 汉堡, 炸鸡, 薯条
+bakery|面包房|面包店, 面包, 烘焙, 糕点房
+pastry_shop|蛋糕西点店|蛋糕店, 甜品, 生日蛋糕, 西点
+coffee_shop|咖啡馆|咖啡厅, 咖啡, 意式浓缩, 咖啡师
+food_truck|餐车|餐车, 街头小吃, 流动餐车
+butcher|肉铺|肉铺, 猪肉, 香肠, 生鲜肉
+ice_cream|冰淇淋店|冰淇淋, 雪糕, 甜筒, 意式冰淇淋
+winery|酒庄|酒庄, 葡萄酒, 酒窖, 品酒
+brewery|啤酒厂|啤酒厂, 啤酒, 精酿, 扎啤
+nightclub|夜总会与迪厅|夜店, 夜总会, 蹦迪, 酒吧夜场
+beach_club|海滩酒吧与海滩俱乐部|海滩酒吧, 沙滩椅, 海边, 海滨会所
+bowling_billiards|保龄球与台球|保龄球, 台球, 桌球, 飞镖
+travel_agency|旅行社|旅行社, 旅游, 机票, 跟团游
+nail_salon|美甲店，修手与修脚|美甲店, 指甲, 修脚, 光疗甲
+barber|男士理发|理发店, 男士理发, 剃须, 修胡子
+tattoo_piercing|纹身与穿孔|纹身, 纹身店, 穿孔, 打耳洞
+spa_sauna|水疗与桑拿|水疗, 桑拿, 汗蒸, 养生馆
+cosmetics_shop|化妆品店|化妆品店, 香水, 彩妆, 护肤品
+dry_cleaning|干洗与洗衣|干洗, 洗衣店, 熨烫, 洗衣
+podiatry|足病与足部护理|足部护理, 修脚, 嵌甲, 足疗保健
+dental_laboratory|牙科技工所|齿科技工, 假牙, 牙冠, 义齿
+orthodontics|口腔正畸|正畸, 牙套, 矫正牙齿, 隐形矫正
+dermatology|皮肤科|皮肤科, 皮肤病, 痣, 痤疮
+paediatrics|儿科|儿科, 儿科医生, 婴儿, 小儿
+gynaecology|妇科|妇科, 妇产科, 怀孕, 产科
+cardiology|心脏内科|心内科, 心脏科, 心电图, 心脏病
+medical_imaging|医学影像|拍片, 超声, 核磁共振, ct
+speech_therapy|言语治疗|言语治疗, 语言康复, 口吃, 发音矫正
+nutrition_dietetics|营养与膳食|营养师, 膳食指导, 减肥, 饮食调理
+bicycle_repair|自行车维修|修自行车, 自行车维修, 补胎, 单车保养
+scooter_repair|踏板车与助力车维修|修踏板车, 踏板车, 电动车维修, 助力车
+appliance_repair|家电维修|家电维修, 洗衣机, 冰箱, 烤箱
+phone_repair|手机与平板维修|手机维修, 换屏, 苹果手机, 平板
+computer_repair|电脑维修|电脑维修, 笔记本, 台式机, 数据恢复
+watch_jewellery_repair|钟表与珠宝维修|修表, 珠宝维修, 换电池, 戒指改圈
+shoe_repair|修鞋|修鞋, 补鞋, 换鞋跟, 换鞋底
+tailoring_alterations|裁缝与改衣|裁缝, 改衣服, 修改裤长, 定制
+upholstery|家具软包|沙发换皮, 软包, 座椅翻新, 布艺翻新
+glazing|玻璃与门窗|玻璃安装, 门窗, 中空玻璃, 玻璃
+chimney_sweep|烟囱清扫|烟囱清扫, 烟囱, 清灰, 烟道
+pest_control|害虫防治|杀虫, 灭鼠, 除臭虫, 灭蟑螂
+pool_maintenance|泳池维护|泳池维护, 泳池清洁, 氯, 游泳池
+window_cleaning|擦窗清洁|擦玻璃, 洗窗, 外墙清洗, 窗户清洁
+car_wash|洗车|洗车, 洗车店, 内饰清洁, 打蜡
+car_rental|租车|租车, 汽车租赁, 自驾租车, 包车
+bike_scooter_rental|自行车与滑板车租赁|自行车租赁, 电动滑板车, 租自行车, 滑板车
+funeral_services|殡葬服务|殡葬服务, 葬礼, 火化, 棺材
+notary|公证处|公证处, 公证, 委托书, 公证员
+bailiff|强制执行|法院执行, 强制执行, 查封, 执行员
+patent_trademark|专利与商标|知识产权, 商标注册, 专利, 专利代理
+debt_collection|债务催收|催收, 讨债, 应收账款, 欠款追讨
+company_formation|公司注册|注册公司, 工商注册, 营业执照, 公司注册
+financial_advisory|财务咨询|理财顾问, 投资咨询, 财富管理, 财务规划
+payroll_services|薪资代办|工资代发, 薪酬管理, 工资单, 社保代缴
+currency_exchange|外币兑换|外币兑换, 换汇, 外汇, 汇率
+pawnshop|典当行|典当, 当铺, 抵押贷款, 黄金回收
+leasing|租赁与融资|融资租赁, 分期, 汽车金融, 租赁
+hearing_aids|助听器|助听器, 听力检测, 听力中心, 验配
+medical_transport|医疗转运|救护车, 病人转运, 担架, 医疗转运
+rehabilitation|康复中心|康复中心, 康复治疗, 疗养, 恢复期
+occupational_therapy|作业治疗|作业治疗, 职业治疗, 生活能力训练, 康复师
+midwifery|助产|助产士, 接生, 孕期护理, 产前
+acupuncture|针灸|针灸, 中医针灸, 扎针, 中医
+chiropractic|脊骨神经与整骨|整脊, 正骨, 脊椎, 腰背痛
+insulation|保温隔热|保温, 隔热, 屋顶保温, 外墙保温
+waterproofing|防水工程|防水, 补漏, 屋面防水, 防潮
+plastering|抹灰与刮腻子|抹灰, 墙面找平, 批灰, 粉刷
+tiling|瓷砖铺贴|贴瓷砖, 瓷砖, 地砖铺贴, 瓦工
+drywall|石膏板与隔墙|石膏板, 隔断, 吊顶, 轻钢龙骨
+fencing|围栏与大门|围栏, 大门, 栅栏, 铁艺围墙
+paving|铺路与车道|铺路, 车道, 人行道, 路缘石
+well_drilling|水井钻探|打井, 水井, 钻井, 地下水
+septic_systems|化粪池与排水|化粪池, 排污, 下水道, 污水处理
+solar_panels|太阳能板安装|光伏, 太阳能板, 逆变器, 光伏安装
+alarm_cctv|报警与监控摄像|监控安装, 摄像头, 报警器, 安防系统
+smart_home|智能家居安装|智能家居, 智能灯光, 家庭自动化, 全屋智能
+lift_maintenance|电梯维保|电梯维保, 电梯, 扶梯, 电梯维修
+fire_safety|消防与灭火器|灭火器, 消防报警, 喷淋, 消防
+car_dealer|汽车经销商|汽车销售, 二手车, 4s店, 车行
+vehicle_inspection|车辆年检|年检, 车辆检测, 验车, 检测站
+auto_electrics|汽车电路|汽车电工, 发电机, 起动机, 汽车电路
+car_glass|汽车玻璃与挡风玻璃|挡风玻璃, 换玻璃, 汽车玻璃, 玻璃裂纹
+boat_repair|船艇维修|船舶维修, 舷外机, 游艇, 船机
+bus_charter|大巴租赁|包车, 大巴, 中巴, 团体接送
+call_centre|呼叫中心|呼叫中心, 电话营销, 客服, 电话支持
+virtual_assistant|虚拟助理|远程助理, 行政支持, 线上秘书, 自由职业
+market_research|市场调研|市场调研, 问卷, 消费者调研, 焦点小组
+copywriting|文案写作|文案, 文案撰写, 校对, 内容创作
+seo_services|SEO与网络广告|搜索优化, 谷歌广告, 竞价推广, 网络推广
+social_media|社交媒体运营|社交媒体运营, 微信运营, 抖音, 小红书
+app_development|手机应用开发|应用开发, 安卓, 手机应用, 小程序
+game_development|游戏开发|游戏开发, unity, 虚幻引擎, 游戏工作室
+drone_services|无人机服务|无人机, 航拍, 无人机测绘, 航空摄影
+printing_3d|3D打印|3d打印, 手板模型, 快速成型, 增材制造
+interior_design|室内设计|室内设计, 装修设计, 软装, 空间规划
+dance_school|舞蹈学校|舞蹈班, 芭蕾, 拉丁舞, 舞蹈培训
+art_gallery|画廊与裱框|裱画, 画框, 画廊, 艺术展
