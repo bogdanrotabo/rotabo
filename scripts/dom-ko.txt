@@ -1,213 +1,213 @@
-taxi|택시|
-ride_hailing|차량 호출 서비스|
-chauffeur|기사 서비스|
-driving_school|운전학원|
-translation|번역|
-interpreting|통역|
-sworn_translation|공증 번역|
-language_school|어학원|
-removals|이사 서비스|
-international_removals|해외 이사|
-courier|택배 및 퀵서비스|
-freight_forwarding|포워딩|
-refrigerated_transport|냉장 운송|
-haulage|화물 운송|
-storage_warehousing|보관 및 창고|
-customs_brokerage|관세사 업무|
-excavation|굴착 및 토목|
-crane_hire|크레인 임대|
-scaffolding|비계 공사|
-demolition|철거|
-concrete_works|콘크리트 공사|
-surveying|측량|
-tool_hire|공구 대여|
-machinery_rental|중장비 임대|
-generator_hire|발전기 임대|
-electrical_installation|전기 공사|
-plumbing|배관 및 설비|
-heating_hvac|난방 및 공조|
-air_conditioning|에어컨 설치|
-painting_decorating|도장 및 도배|
-carpentry|목공|
-flooring|바닥 시공|
-roofing|지붕 공사|
-locksmith|열쇠 수리|
-cleaning_services|청소 서비스|
-gardening_landscaping|정원 및 조경|
-renovation|리모델링|
-car_repair|자동차 정비|
-mobile_mechanic|출장 정비|
-tyre_service|타이어 교체|
-bodywork_paint|판금 및 도색|
-towing_recovery|견인 서비스|
-childcare|아이 돌봄|
-elderly_care|노인 돌봄|
-home_nursing|방문 간호|
-private_tutoring|과외|
-music_lessons|음악 레슨|
-sports_coaching|스포츠 코칭|
-it_training|IT 교육|
-vocational_training|직업 훈련|
-holiday_lettings|휴가용 숙소 임대|
-guesthouse_bnb|게스트하우스와 민박|
-property_management|부동산 관리|
-veterinary|동물병원|
-dog_walking|반려견 산책|
-pet_grooming|반려동물 미용|
-general_practice|일반의|
-dentistry|치과|
-physiotherapy|물리치료|
-psychology|심리 상담|
-pharmacy|약국|
-optometry|안경 및 시력검사|
-medical_laboratory|의학 검사실|
-software_development|소프트웨어 개발|
-web_development|웹 개발|
-it_support|IT 지원|
-cybersecurity|사이버 보안|
-data_ai|데이터와 인공지능|
-cloud_hosting|클라우드와 호스팅|
-accounting|회계|
-audit_tax|감사와 세무|
-legal_services|법률 서비스|
-hr_recruitment|인사와 채용|
-management_consulting|경영 컨설팅|
-insurance_brokerage|보험 중개|
-real_estate_agency|부동산 중개|
-architecture|건축 설계|
-manufacturing|제조|
-cnc_machining|CNC 가공|
-metalwork_welding|금속 가공과 용접|
-restaurant|음식점|
-catering|출장 요리|
-hotel|호텔|
-event_management|행사 기획|
-agriculture|농업|
-forestry|임업|
-waste_recycling|폐기물과 재활용|
-renewable_energy|재생 에너지|
-marketing_agency|마케팅 회사|
-graphic_design|그래픽 디자인|
-photography|사진 촬영|
-video_production|영상 제작|
-printing_signage|인쇄와 간판|
-wholesale|도매|
-ecommerce|온라인 쇼핑몰|
-security_services|경비 서비스|
-hairdressing|미용실|
-beauty_salon|피부관리실|
-massage_therapy|마사지|
-fitness_training|피트니스 트레이닝|
-shop_general|일반 상점|
-shop_bicycle|자전거 판매와 수리|
-shop_auto_parts|자동차 부품점|
-shop_hardware|철물점과 공구|
-shop_furniture|가구점|
-shop_electronics|전자제품과 가전|
-shop_clothing|의류점|
-shop_grocery|식료품점|
-shop_sports|스포츠용품점|
-shop_books|서점과 문구점|
-shop_florist|꽃집|
-shop_pet|반려동물용품점|
-motorcycle_repair|오토바이 수리|
-bar|바|
-kebab_shawarma|케밥과 샤와르마|
-pizzeria|피자 가게|
-fast_food|패스트푸드|
-bakery|빵집|
-pastry_shop|제과점|
-coffee_shop|카페|
-food_truck|푸드트럭|
-butcher|정육점|
-ice_cream|아이스크림 가게|
-winery|와이너리|
-brewery|양조장|
-nightclub|나이트클럽과 디스코|
-beach_club|비치 바와 비치 클럽|
-bowling_billiards|볼링과 당구|
-travel_agency|여행사|
-nail_salon|네일숍, 매니큐어와 페디큐어|
-barber|이발소|
-tattoo_piercing|타투와 피어싱|
-spa_sauna|스파와 사우나|
-cosmetics_shop|화장품 가게|
-dry_cleaning|드라이클리닝과 세탁|
-podiatry|발 관리|
-dental_laboratory|치과 기공소|
-orthodontics|교정치과|
-dermatology|피부과|
-paediatrics|소아과|
-gynaecology|산부인과|
-cardiology|심장내과|
-medical_imaging|영상의학|
-speech_therapy|언어치료|
-nutrition_dietetics|영양과 식단 관리|
-bicycle_repair|자전거 수리|
-scooter_repair|스쿠터와 모페드 수리|
-appliance_repair|가전 수리|
-phone_repair|휴대폰과 태블릿 수리|
-computer_repair|컴퓨터 수리|
-watch_jewellery_repair|시계와 귀금속 수리|
-shoe_repair|구두 수선|
-tailoring_alterations|맞춤과 수선|
-upholstery|가구 커버 작업|
-glazing|유리와 창호|
-chimney_sweep|굴뚝 청소|
-pest_control|해충 방제|
-pool_maintenance|수영장 관리|
-window_cleaning|창문 청소|
-car_wash|세차|
-car_rental|렌터카|
-bike_scooter_rental|자전거와 스쿠터 대여|
-funeral_services|장례 서비스|
-notary|공증 사무소|
-bailiff|강제집행|
-patent_trademark|특허와 상표|
-debt_collection|채권 추심|
-company_formation|법인 설립|
-financial_advisory|재무 컨설팅|
-payroll_services|급여 대행|
-currency_exchange|환전소|
-pawnshop|전당포|
-leasing|리스와 금융|
-hearing_aids|보청기|
-medical_transport|환자 이송|
-rehabilitation|재활 센터|
-occupational_therapy|작업치료|
-midwifery|조산|
-acupuncture|침술|
-chiropractic|카이로프랙틱과 정골|
-insulation|단열 공사|
-waterproofing|방수 공사|
-plastering|미장과 퍼티|
-tiling|타일 시공|
-drywall|석고보드와 칸막이|
-fencing|울타리와 대문|
-paving|포장과 진입로|
-well_drilling|우물 굴착|
-septic_systems|정화조와 배수|
-solar_panels|태양광 패널 설치|
-alarm_cctv|경보와 CCTV|
-smart_home|스마트홈 설치|
-lift_maintenance|승강기 유지보수|
-fire_safety|소방과 소화기|
-car_dealer|자동차 대리점|
-vehicle_inspection|자동차 검사|
-auto_electrics|자동차 전기|
-car_glass|자동차 유리와 앞유리|
-boat_repair|선박 수리|
-bus_charter|버스 대절|
-call_centre|콜센터|
-virtual_assistant|가상 비서|
-market_research|시장 조사|
-copywriting|카피라이팅|
-seo_services|SEO와 온라인 광고|
-social_media|소셜미디어 운영|
-app_development|모바일 앱 개발|
-game_development|게임 개발|
-drone_services|드론 서비스|
-printing_3d|3D 프린팅|
-interior_design|인테리어 디자인|
-dance_school|무용 학원|
-art_gallery|화랑과 액자|
+taxi|택시|택시, 콜택시, 공항 픽업, 이동
+ride_hailing|차량 호출 서비스|카카오택시, 우버, 승차공유, 차량호출
+chauffeur|기사 서비스|대리운전, 기사 딸린 차량, 리무진, 개인기사
+driving_school|운전학원|운전학원, 운전면허, 운전연수, 강사
+translation|번역|번역, 번역가, 문서번역, 계약서 번역
+interpreting|통역|통역, 동시통역, 회의통역, 수행통역
+sworn_translation|공증 번역|공증번역, 인증번역, 공문서 번역, 번역공증
+language_school|어학원|어학원, 영어회화, 외국어 수업, 어학강사
+removals|이사 서비스|이사, 이삿짐센터, 포장이사, 용달
+international_removals|해외 이사|해외이사, 국제이사, 컨테이너, 통관
+courier|택배 및 퀵서비스|택배, 배송, 퀵서비스, 소포
+freight_forwarding|포워딩|포워딩, 물류, 화물운송, 파렛트
+refrigerated_transport|냉장 운송|냉장운송, 냉동운송, 냉장차, 콜드체인
+haulage|화물 운송|화물차 운송, 트럭, 대형화물, 트레일러
+storage_warehousing|보관 및 창고|창고, 보관, 물류창고, 선반
+customs_brokerage|관세사 업무|관세사, 통관, 수입, 수출
+excavation|굴착 및 토목|굴착, 포클레인, 토목공사, 터파기
+crane_hire|크레인 임대|크레인, 카고크레인, 중장비 인양, 양중
+scaffolding|비계 공사|비계, 비계설치, 아시바, 작업발판
+demolition|철거|철거, 해체, 건축폐기물, 파쇄
+concrete_works|콘크리트 공사|콘크리트, 레미콘, 기초공사, 미장 바닥
+surveying|측량|측량, 지적측량, 지형측량, 경계측량
+tool_hire|공구 대여|공구대여, 공구, 드릴, 그라인더
+machinery_rental|중장비 임대|중장비 임대, 기계 렌탈, 지게차, 건설장비
+generator_hire|발전기 임대|발전기, 비상발전기, 발전기 렌탈, 케이블
+electrical_installation|전기 공사|전기공사, 전기기사, 분전반, 콘센트
+plumbing|배관 및 설비|배관, 설비, 화장실 공사, 누수
+heating_hvac|난방 및 공조|난방, 보일러, 라디에이터, 바닥난방
+air_conditioning|에어컨 설치|에어컨, 냉방, 에어컨 설치, 시스템에어컨
+painting_decorating|도장 및 도배|페인트, 도장, 벽지, 퍼티
+carpentry|목공|목공, 목수, 가구제작, 목재
+flooring|바닥 시공|바닥시공, 마루, 강마루, 장판
+roofing|지붕 공사|지붕공사, 지붕, 홈통, 판금
+locksmith|열쇠 수리|열쇠, 도어락, 잠금장치, 문열림
+cleaning_services|청소 서비스|청소, 청소업체, 사무실 청소, 입주청소
+gardening_landscaping|정원 및 조경|조경, 잔디깎기, 정원관리, 나무전지
+renovation|리모델링|리모델링, 인테리어 공사, 개보수, 시공업체
+car_repair|자동차 정비|자동차 정비, 카센터, 정비소, 차량수리
+mobile_mechanic|출장 정비|출장정비, 긴급출동, 배터리 점프, 고장수리
+tyre_service|타이어 교체|타이어, 타이어 교체, 펑크수리, 휠 밸런스
+bodywork_paint|판금 및 도색|판금도색, 자동차 도색, 덴트, 외판수리
+towing_recovery|견인 서비스|견인, 견인차, 렉카, 윈치
+childcare|아이 돌봄|보육, 어린이집, 베이비시터, 아이돌봄
+elderly_care|노인 돌봄|노인요양, 요양원, 방문요양, 실버케어
+home_nursing|방문 간호|방문간호, 간호사, 재택간병, 드레싱
+private_tutoring|과외|과외, 개인지도, 시험대비, 학습지도
+music_lessons|음악 레슨|피아노, 기타, 보컬, 음악레슨
+sports_coaching|스포츠 코칭|코치, 축구, 테니스, 개인훈련
+it_training|IT 교육|컴퓨터 교육, 엑셀, 프로그래밍 강의, IT 교육
+vocational_training|직업 훈련|직업훈련, 기술교육, 자격증, 실무교육
+holiday_lettings|휴가용 숙소 임대|펜션, 단기임대, 별장, 에어비앤비
+guesthouse_bnb|게스트하우스와 민박|게스트하우스, 민박, 조식포함 숙소, 객실
+property_management|부동산 관리|부동산 관리, 건물관리, 임대관리, 관리사무소
+veterinary|동물병원|동물병원, 수의사, 예방접종, 반려동물 진료
+dog_walking|반려견 산책|반려견 산책, 강아지 산책, 산책대행
+pet_grooming|반려동물 미용|애견미용, 반려동물 미용, 목욕, 털깎기
+general_practice|일반의|가정의학과, 내과, 의원, 처방
+dentistry|치과|치과, 치과의사, 충치치료, 임플란트
+physiotherapy|물리치료|물리치료, 재활치료, 도수치료, 운동치료
+psychology|심리 상담|심리상담, 상담센터, 심리치료, 정신건강
+pharmacy|약국|약국, 약사, 처방약, 건강보조식품
+optometry|안경 및 시력검사|안경점, 안경, 시력검사, 콘택트렌즈
+medical_laboratory|의학 검사실|검사실, 혈액검사, 진단검사, 검체
+software_development|소프트웨어 개발|소프트웨어 개발, 프로그래머, 시스템 개발, 코딩
+web_development|웹 개발|홈페이지 제작, 웹개발, 워드프레스, 쇼핑몰
+it_support|IT 지원|전산유지보수, 네트워크, 컴퓨터 수리, 시스템 관리
+cybersecurity|사이버 보안|보안, 모의해킹, 방화벽, 정보보안
+data_ai|데이터와 인공지능|인공지능, 머신러닝, 데이터 분석, 알고리즘
+cloud_hosting|클라우드와 호스팅|호스팅, 서버, 클라우드, 도메인
+accounting|회계|기장, 회계, 세금계산서, 경리
+audit_tax|감사와 세무|세무사, 감사, 세무신고, 부가세
+legal_services|법률 서비스|변호사, 법무법인, 법률상담, 계약서
+hr_recruitment|인사와 채용|채용, 헤드헌팅, 인력파견, 이력서
+management_consulting|경영 컨설팅|경영컨설팅, 컨설턴트, 전략, 사업계획서
+insurance_brokerage|보험 중개|보험설계사, 보험, 보험증권, 보험금 청구
+real_estate_agency|부동산 중개|부동산 중개, 공인중개사, 아파트, 상가
+architecture|건축 설계|건축설계, 건축사, 도면, 건축허가
+manufacturing|제조|제조, 공장, 생산, 조립
+cnc_machining|CNC 가공|CNC 가공, 선반, 밀링, 기계가공
+metalwork_welding|금속 가공과 용접|용접, 철공소, 강재, 금속가공
+restaurant|음식점|음식점, 식당, 레스토랑, 메뉴
+catering|출장 요리|출장뷔페, 케이터링, 도시락, 연회
+hotel|호텔|호텔, 숙박, 모텔, 객실
+event_management|행사 기획|행사대행, 웨딩플래너, 컨퍼런스, 이벤트
+agriculture|농업|농업, 농장, 트랙터, 수확
+forestry|임업|임업, 벌목, 목재, 체인톱
+waste_recycling|폐기물과 재활용|폐기물처리, 고물상, 재활용, 대형폐기물
+renewable_energy|재생 에너지|태양광, 풍력, 신재생에너지, 히트펌프
+marketing_agency|마케팅 회사|마케팅, 광고대행사, 홍보, 캠페인
+graphic_design|그래픽 디자인|그래픽디자인, 로고 제작, 편집디자인, 시안
+photography|사진 촬영|사진촬영, 사진작가, 스튜디오, 웨딩촬영
+video_production|영상 제작|영상제작, 촬영, 편집, 드론촬영
+printing_signage|인쇄와 간판|인쇄, 간판제작, 현수막, 스티커
+wholesale|도매|도매, 총판, 납품업체, 물품공급
+ecommerce|온라인 쇼핑몰|온라인 쇼핑몰, 이커머스, 오픈마켓, 주문관리
+security_services|경비 서비스|경비, 보안업체, 순찰, CCTV 관제
+hairdressing|미용실|미용실, 헤어샵, 커트, 염색
+beauty_salon|피부관리실|피부관리, 네일, 에스테틱, 얼굴관리
+massage_therapy|마사지|마사지, 안마, 스포츠마사지, 이완
+fitness_training|피트니스 트레이닝|퍼스널트레이닝, 헬스장, PT, 근력운동
+shop_general|일반 상점|매장, 소매점, 상점, 판매점
+shop_bicycle|자전거 판매와 수리|자전거 가게, 자전거, 자전거 수리, 전기자전거
+shop_auto_parts|자동차 부품점|자동차 부품, 자동차 용품, 부속, 필터
+shop_hardware|철물점과 공구|철물점, 건축자재, 공구, 나사
+shop_furniture|가구점|가구점, 가구, 소파, 주방가구
+shop_electronics|전자제품과 가전|가전, 전자제품, 텔레비전, 세탁기
+shop_clothing|의류점|옷가게, 의류, 신발, 패션
+shop_grocery|식료품점|식료품점, 슈퍼마켓, 마트, 편의점
+shop_sports|스포츠용품점|스포츠용품, 운동용품, 아웃도어, 스키
+shop_books|서점과 문구점|서점, 문구점, 책, 사무용품
+shop_florist|꽃집|꽃집, 꽃, 꽃다발, 화환
+shop_pet|반려동물용품점|애견용품, 사료, 수족관, 고양이 모래
+motorcycle_repair|오토바이 수리|오토바이 수리, 오토바이, 스쿠터, 원동기
+bar|바|바, 술집, 칵테일바, 포차
+kebab_shawarma|케밥과 샤와르마|케밥, 샤와르마, 기로스, 되네르
+pizzeria|피자 가게|피자, 피자집, 배달피자, 이탈리안
+fast_food|패스트푸드|패스트푸드, 햄버거, 감자튀김, 분식
+bakery|빵집|빵집, 베이커리, 식빵, 제빵
+pastry_shop|제과점|케이크, 제과점, 디저트, 케이크 주문
+coffee_shop|카페|카페, 커피, 에스프레소, 바리스타
+food_truck|푸드트럭|푸드트럭, 길거리 음식, 이동식 주방
+butcher|정육점|정육점, 고기, 소시지, 축산물
+ice_cream|아이스크림 가게|아이스크림, 젤라또, 소프트아이스크림, 빙과
+winery|와이너리|와이너리, 와인, 와인셀러, 시음
+brewery|양조장|양조장, 맥주, 수제맥주, 생맥주
+nightclub|나이트클럽과 디스코|나이트클럽, 클럽, 디스코, 디제이
+beach_club|비치 바와 비치 클럽|해변 바, 선베드, 해변, 비치클럽
+bowling_billiards|볼링과 당구|볼링, 당구, 다트, 포켓볼
+travel_agency|여행사|여행사, 여행, 항공권, 패키지 여행
+nail_salon|네일숍, 매니큐어와 페디큐어|네일샵, 매니큐어, 페디큐어, 젤네일
+barber|이발소|이발소, 바버샵, 남성 커트, 면도
+tattoo_piercing|타투와 피어싱|타투, 문신, 피어싱, 타투샵
+spa_sauna|스파와 사우나|스파, 사우나, 찜질방, 한증막
+cosmetics_shop|화장품 가게|화장품 가게, 향수, 메이크업, 스킨케어
+dry_cleaning|드라이클리닝과 세탁|세탁소, 드라이클리닝, 다림질, 빨래방
+podiatry|발 관리|발관리, 내향성 발톱, 발 치료, 족부
+dental_laboratory|치과 기공소|치기공, 틀니, 크라운, 보철
+orthodontics|교정치과|치아교정, 교정치과, 브라켓, 투명교정
+dermatology|피부과|피부과, 피부과 의사, 점, 여드름
+paediatrics|소아과|소아과, 소아청소년과, 영유아, 어린이 진료
+gynaecology|산부인과|산부인과, 여성의학과, 임신, 분만
+cardiology|심장내과|순환기내과, 심장, 심전도, 심장질환
+medical_imaging|영상의학|엑스레이, 초음파, 자기공명영상, CT 촬영
+speech_therapy|언어치료|언어치료, 언어재활, 말더듬, 발음교정
+nutrition_dietetics|영양과 식단 관리|영양사, 영양상담, 식단, 체중감량
+bicycle_repair|자전거 수리|자전거 수리, 펑크 수리, 자전거 정비, 자전거포
+scooter_repair|스쿠터와 모페드 수리|스쿠터 수리, 스쿠터, 베스파, 전동스쿠터
+appliance_repair|가전 수리|가전 수리, 세탁기, 냉장고, 오븐
+phone_repair|휴대폰과 태블릿 수리|휴대폰 수리, 액정 교체, 아이폰, 태블릿
+computer_repair|컴퓨터 수리|컴퓨터 수리, 노트북, 데스크탑, 데이터 복구
+watch_jewellery_repair|시계와 귀금속 수리|시계수리, 귀금속 수리, 배터리 교체, 반지 사이즈
+shoe_repair|구두 수선|구두수선, 신발 수리, 굽갈이, 밑창
+tailoring_alterations|맞춤과 수선|수선집, 옷수선, 재단, 기장수선
+upholstery|가구 커버 작업|소파 수리, 커버 교체, 쿠션, 가죽 재생
+glazing|유리와 창호|유리시공, 창호, 복층유리, 유리교체
+chimney_sweep|굴뚝 청소|굴뚝청소, 굴뚝, 그을음, 연도
+pest_control|해충 방제|방역, 해충구제, 빈대, 바퀴벌레
+pool_maintenance|수영장 관리|수영장 관리, 수영장 청소, 염소, 풀장
+window_cleaning|창문 청소|유리창 청소, 창문 청소, 외벽 청소, 고소청소
+car_wash|세차|세차, 세차장, 실내세차, 광택
+car_rental|렌터카|렌터카, 차량 대여, 장기렌트, 승용차 대여
+bike_scooter_rental|자전거와 스쿠터 대여|자전거 대여, 전동킥보드, 자전거 렌탈, 킥보드
+funeral_services|장례 서비스|장례식장, 상조, 화장, 관
+notary|공증 사무소|공증, 공증인, 위임장, 인증
+bailiff|강제집행|집행관, 강제집행, 압류, 법원집행
+patent_trademark|특허와 상표|지식재산권, 상표등록, 특허, 변리사
+debt_collection|채권 추심|채권추심, 미수금, 독촉, 미납금
+company_formation|법인 설립|법인설립, 사업자등록, 회사설립, 정관
+financial_advisory|재무 컨설팅|재무설계, 자산관리, 투자상담, 재테크
+payroll_services|급여 대행|급여계산, 급여명세서, 임금, 인사노무
+currency_exchange|환전소|환전, 환전소, 외화, 환율
+pawnshop|전당포|전당포, 담보대출, 금매입, 질권
+leasing|리스와 금융|리스, 할부, 차량금융, 장기렌트 금융
+hearing_aids|보청기|보청기, 청력검사, 난청, 청각센터
+medical_transport|환자 이송|구급차, 환자이송, 들것, 사설구급차
+rehabilitation|재활 센터|재활센터, 요양, 회복치료, 재활병원
+occupational_therapy|작업치료|작업치료, 작업치료사, 일상생활 훈련, 자립지원
+midwifery|조산|조산사, 출산, 임신관리, 산전관리
+acupuncture|침술|침술, 한방침, 한의학, 뜸
+chiropractic|카이로프랙틱과 정골|카이로프랙틱, 도수교정, 척추, 허리통증
+insulation|단열 공사|단열, 단열공사, 지붕단열, 단열재
+waterproofing|방수 공사|방수공사, 누수, 습기, 옥상방수
+plastering|미장과 퍼티|미장, 미장공사, 회벽, 벽면 마감
+tiling|타일 시공|타일시공, 타일, 바닥타일, 욕실타일
+drywall|석고보드와 칸막이|석고보드, 경량칸막이, 천장공사, 건식벽체
+fencing|울타리와 대문|울타리, 대문, 펜스, 철망
+paving|포장과 진입로|포장공사, 진입로, 보도블록, 경계석
+well_drilling|우물 굴착|관정, 우물, 지하수 개발, 시추
+septic_systems|정화조와 배수|정화조, 하수도, 배수, 오수처리
+solar_panels|태양광 패널 설치|태양광 패널, 태양광 설치, 인버터, 태양광 발전
+alarm_cctv|경보와 CCTV|경보기, CCTV 설치, 감시카메라, 보안시스템
+smart_home|스마트홈 설치|스마트홈, 스마트 조명, 홈오토메이션, 원격제어
+lift_maintenance|승강기 유지보수|승강기 유지보수, 엘리베이터, 에스컬레이터, 승강기
+fire_safety|소방과 소화기|소화기, 화재경보기, 스프링클러, 소방설비
+car_dealer|자동차 대리점|중고차 매매, 자동차 판매, 신차, 전시장
+vehicle_inspection|자동차 검사|자동차 검사, 정기검사, 종합검사, 검사소
+auto_electrics|자동차 전기|자동차 전기, 발전기, 스타터모터, 배선
+car_glass|자동차 유리와 앞유리|앞유리, 유리교체, 자동차 유리, 유리 크랙
+boat_repair|선박 수리|선박수리, 선외기, 보트, 요트
+bus_charter|버스 대절|전세버스, 버스대절, 미니버스, 단체수송
+call_centre|콜센터|콜센터, 텔레마케팅, 고객센터, 전화상담
+virtual_assistant|가상 비서|온라인 비서, 사무대행, 원격비서, 프리랜서
+market_research|시장 조사|시장조사, 설문조사, 소비자조사, 포커스그룹
+copywriting|카피라이팅|카피라이팅, 원고작성, 교정, 콘텐츠 제작
+seo_services|SEO와 온라인 광고|검색엔진최적화, 구글 광고, 온라인 광고, 키워드 광고
+social_media|소셜미디어 운영|SNS 운영, 인스타그램, 페이스북, 틱톡
+app_development|모바일 앱 개발|앱 개발, 안드로이드, 모바일 앱, 플러터
+game_development|게임 개발|게임 개발, 유니티, 언리얼, 게임 스튜디오
+drone_services|드론 서비스|드론, 항공촬영, 드론 촬영, 드론 측량
+printing_3d|3D 프린팅|3D 프린팅, 시제품, 적층가공, 3D 프린터
+interior_design|인테리어 디자인|인테리어 디자인, 실내장식, 공간설계, 홈스타일링
+dance_school|무용 학원|댄스학원, 발레, 살사, 무용
+art_gallery|화랑과 액자|액자, 표구, 갤러리, 전시
