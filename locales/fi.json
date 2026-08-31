@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Vapaa paikka - ryhdy sponsoriksi" },
+  "sponsorbox": {
+    "free": "Vapaa paikka - ryhdy sponsoriksi"
+  },
   "bizlist": {
     "label": "Tässä näkyvät rekisteröidyt yritykset",
     "free": "Vapaa paikka - rekisteröi yrityksesi"
@@ -227,7 +229,9 @@
     "none": "Ei osumia. Kokeile toista sanaa - ammatti, työkalu tai palvelu."
   },
   "business": {
-    "hero": { "free_line": "Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät." },
+    "hero": {
+      "free_line": "Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät."
+    },
     "categories": {
       "section_eyebrow": "ROTABO YRITYKSILLE",
       "section_lead": "Valitse, mitä yrityksesi tekee - ja anna niiden löytää sinut, jotka tarvitsevat.",
@@ -241,10 +245,15 @@
       "offer_title": "Yritykseni tarjoaa jotain",
       "offer_text": "Kirjoita, mitä yrityksesi tekee ja minkä alueen se kattaa, niin sinut löydetään.",
       "offer_btn": "Rekisteröi yrityksesi"
+    },
+    "idea": {
+      "tagline1": "Ihmiset tarvitsevat yrityksiä.",
+      "tagline2": "Ihmisillä on yrityksiä."
     }
   },
   "ticker": {
-    "sponsors": "Sponsorit", "company": "Yrityksesi voi näkyä tässä — rekisteröinti on ilmaista",
+    "sponsors": "Sponsorit",
+    "company": "Yrityksesi voi näkyä tässä — rekisteröinti on ilmaista",
     "offers": "tarjoaa",
     "seeks": "etsii"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Mistä aloittaisit?",
     "submit": "Lähetä",
     "sent": "Kiitos — vastaan sinulle."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Pääkumppani",
     "invite": "Tämä paikka on varattu järjestölle, joka seisoo ajatuksen takana. Se ei maksa mitään, eikä koskaan tule maksamaan."
   },
@@ -315,17 +325,16 @@
     "confirming": "Vahvistetaan maksuasi…",
     "retry_btn": "Yritä uudelleen"
   },
-
   "banknote": {
     "title": "Numerosi matkaa maailmalla. Sinun ei tarvitse.",
     "body": "<p>Ota seteli lompakostasi. Mikä tahansa. Ennen kuin käytät sen, kirjoita siihen kuusi pientä merkkiä: rotabo — ja perään Rotabo-numerosi, jonka saat rekisteröitymisen jälkeen: rotabo2244. Päästä se sitten menemään.</p><p>Huomenna se maksaa jonkun kahvin. Ensi viikolla se on vaihtorahaa taksissa kolmen kaupungin päässä. Ensi kuussa se ylittää rajan tuntemattoman taskussa. Raha ei koskaan lakkaa liikkumasta — eikä nyt myöskään nimesi.</p><p>Jossain joku katsoo kädessään olevaa seteliä. Hän näkee sen: rotabo2244. Uteliaisuus tekee lopun. Hän kirjoittaa sen osoitteeseen rotabo.app — ja siinä olet. Nimesi. Lippusi. Mitä tarjoat. Todellinen ihminen, jonka kuka tahansa, missä tahansa, joka koskaan pitää sitä paperinpalaa, voi löytää.</p><p>Mikään mainostaulu ei matkaa niin kauas. Mikään mainos ei elä niin kauan. Seteli pysyy liikkeessä vuosia ja kulkee satojen käsien läpi — ja jokainen niistä voi löytää sinut. Yksi kynä. Yksi numero. Koko maailmasta tulee mainoksesi.</p>",
     "fineprint": "Seteleihin kirjoittaminen on oma valintasi. Tarkista paikalliset lait."
   },
-
   "nav": {
     "how": "Näin se toimii",
     "safety": "Turvallisuus",
-    "business": "Yritykset", "personal": "Yksityisille",
+    "business": "Yritykset",
+    "personal": "Yksityisille",
     "drive": "Ryhdy kuljettajaksi",
     "drivers": "Kuljettajat",
     "account": "Oma tili"
@@ -336,7 +345,6 @@
     "search_placeholder": "Etsi Rotabo-numero — esim. 2244",
     "search_btn": "Hae",
     "get_number": "Hanki numerosi",
-
     "origin_badge": "Valmistettu Sveitsissä — koko maailmalle",
     "tagline3": "Sinun autosi.",
     "lede": "Valitse, mitä tarvitset — tai ilmoittaudu jonkuna, joka voi auttaa.",
@@ -849,14 +857,12 @@
     "load_error": "Ilmoituksiasi ei voitu ladata. Yritä uudelleen.",
     "retry_btn": "Yritä uudelleen"
   },
-
   "investors_card": {
     "cat": "SIJOITTAJAT",
     "h3": "Ryhdy sijoittajaksi",
     "p": "Rotabo yhdistää ihmisiä 12 kategoriassa ja 38 kielellä ympäri maailmaa — ilman komissiota keneltäkään, joka tarjoaa aikaansa, taitojaan tai kalustoaan. Keskustelemme niiden kanssa, jotka tukevat tätä mallia.",
     "link": "Ota yhteyttä →"
   },
-
   "verify_modal": {
     "title": "Tarkista sähköpostisi",
     "subtitle": "Lähetimme 6-numeroisen koodin alla olevaan osoitteeseen. Syötä se jatkaaksesi.",

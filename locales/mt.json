@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Post vojt - sir sponsor" },
+  "sponsorbox": {
+    "free": "Post vojt - sir sponsor"
+  },
   "bizlist": {
     "label": "Hawn jidhru l-kumpaniji rreġistrati",
     "free": "Post vojt - irreġistra l-kumpanija tiegħek"
@@ -227,7 +229,9 @@
     "none": "L-ebda riżultat. Ipprova kelma oħra - sengħa, għodda jew servizz."
   },
   "business": {
-    "hero": { "free_line": "Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu." },
+    "hero": {
+      "free_line": "Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu."
+    },
     "categories": {
       "section_eyebrow": "ROTABO GĦAN-NEGOZJU",
       "section_lead": "Agħżel x'tagħmel il-kumpanija tiegħek - u ħalli lil min għandu bżonn isibek.",
@@ -241,10 +245,15 @@
       "offer_title": "Il-kumpanija tiegħi toffri xi ħaġa",
       "offer_text": "Ikteb x'tagħmel il-kumpanija tiegħek u liema żona tkopri, u jsibuk.",
       "offer_btn": "Irreġistra l-kumpanija tiegħek"
+    },
+    "idea": {
+      "tagline1": "In-nies għandhom bżonn kumpaniji.",
+      "tagline2": "In-nies għandhom kumpaniji."
     }
   },
   "ticker": {
-    "sponsors": "Sponsors", "company": "In-negozju tiegħek jista' jidher hawn — reġistrazzjoni b'xejn",
+    "sponsors": "Sponsors",
+    "company": "In-negozju tiegħek jista' jidher hawn — reġistrazzjoni b'xejn",
     "offers": "joffri",
     "seeks": "qed ifittex"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "B'xiex tibda?",
     "submit": "Ibgħat",
     "sent": "Grazzi — inwieġbek."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Sieħeb Ewlieni",
     "invite": "Dan il-post huwa merfugħ għal organizzazzjoni li temmen f'din l-idea. Ma jiswa xejn, u qatt mhu se jiswa."
   },
@@ -315,21 +325,26 @@
     "confirming": "Qed nikkonfermaw il-ħlas tiegħek…",
     "retry_btn": "Erġa' pprova"
   },
-
   "banknote": {
     "title": "In-numru tiegħek jivvjaġġa mad-dinja. Int le.",
     "body": "<p>Oħroġ karta tal-flus mill-kartiera tiegħek. Kwalunkwe waħda. Qabel ma tonfoqha, ikteb fuqha sitt karattri żgħar: rotabo — flimkien man-numru Rotabo tiegħek, li tirċievi wara r-reġistrazzjoni: rotabo2244. Imbagħad ħalliha tmur.</p><p>Għada tħallas il-kafè ta' xi ħadd. Il-ġimgħa d-dieħla tkun bqija f'taksi tliet bliet 'il bogħod. Ix-xahar id-dieħel taqsam fruntiera fil-but ta' barrani. Il-flus qatt ma jieqfu jiċċaqilqu — u issa, lanqas ismek.</p><p>X'imkien, xi ħadd iħares lejn il-karta f'idu. Jaraha: rotabo2244. Il-kurżità tagħmel il-bqija. Jittajpjaha fuq rotabo.app — u hemm int. Ismek. Il-bandiera tiegħek. X'toffri. Persuna vera, li tinstab minn kulħadd, kullimkien, li qatt iżomm dik il-biċċa karta.</p><p>L-ebda billboard ma jivvjaġġa daqshekk 'il bogħod. L-ebda reklam ma jgħix daqshekk twil. Il-karta tal-flus tibqa' fiċ-ċirkolazzjoni għal snin, tgħaddi minn mijiet ta' idejn — u kull waħda minnhom tista' ssibek. Pinna waħda. Numru wieħed. Id-dinja kollha ssir ir-reklam tiegħek.</p>",
     "fineprint": "Il-kitba fuq il-karti tal-flus hija l-għażla tiegħek. Iċċekkja l-liġijiet lokali."
   },
-
-  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Negozji", "personal": "Għall-individwi", "drive": "Sir sewwieq", "drivers": "Sewwiequ", "account": "Il-kont tiegħi" },
+  "nav": {
+    "how": "Kif taħdem",
+    "safety": "Sikurezza",
+    "business": "Negozji",
+    "personal": "Għall-individwi",
+    "drive": "Sir sewwieq",
+    "drivers": "Sewwiequ",
+    "account": "Il-kont tiegħi"
+  },
   "hero": {
     "free_line": "Ir-reġistrazzjoni b'xejn, il-pubblikazzjoni b'xejn — dak li għandek bżonn, jew dak li toffri.",
     "number_intro": "Kulħadd fuq Rotabo għandu numru. Numru wieħed. Tiegħek għal dejjem. Jgħid min int, fejn int u x'tista' tagħmel — jinstab minn kulħadd fid-dinja.",
     "search_placeholder": "Sib numru Rotabo — eż. 2244",
     "search_btn": "Fittex",
     "get_number": "Ikseb in-numru tiegħek",
-
     "origin_badge": "Magħmul fl-Isvizzera — għad-dinja kollha",
     "tagline3": "Il-karrozza tiegħek.",
     "lede": "Agħżel dak li teħtieġ — jew iddaħħal ismek bħala xi ħadd li jista' jgħin.",
@@ -623,7 +638,11 @@
     "contact": "Kuntatt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…", "no_matches": "L-ebda riżultat" },
+  "lang_selector": {
+    "label": "Lingwa",
+    "search_placeholder": "Fittex lingwa…",
+    "no_matches": "L-ebda riżultat"
+  },
   "install_modal": {
     "title": "Żid Rotabo mal-iskrin ta' dar",
     "generic": "Iftaħ il-menu tal-browser tiegħek u fittex \"Installa l-app\" jew \"Żid mal-Iskrin ta' Dar\".",
@@ -838,14 +857,12 @@
     "load_error": "Il-listi tiegħek ma setgħux jitgħabbew. Jekk jogħġbok erġa' pprova.",
     "retry_btn": "Erġa' pprova"
   },
-
   "investors_card": {
     "cat": "INVESTITURI",
     "h3": "Sir investitur",
     "p": "Rotabo tgħaqqad nies f'12-il kategorija u 38 lingwa, madwar id-dinja — mingħajr kummissjoni minn ħadd li joffri l-ħin, il-ħiliet jew it-tagħmir tiegħu. Qed nitkellmu ma' nies li jappoġġjaw dan il-mudell.",
     "link": "Ikkuntattjana →"
   },
-
   "verify_modal": {
     "title": "Iċċekkja l-email tiegħek",
     "subtitle": "Bgħatna kodiċi ta' 6 ċifri fl-indirizz hawn taħt. Daħħlu biex tkompli.",

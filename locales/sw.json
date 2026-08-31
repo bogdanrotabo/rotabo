@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Nafasi wazi - kuwa mdhamini" },
+  "sponsorbox": {
+    "free": "Nafasi wazi - kuwa mdhamini"
+  },
   "bizlist": {
     "label": "Hapa huonekana kampuni zilizosajiliwa",
     "free": "Nafasi wazi - sajili kampuni yako"
@@ -227,7 +229,9 @@
     "none": "Hakuna kilichopatikana. Jaribu neno lingine - kazi, kifaa au huduma."
   },
   "business": {
-    "hero": { "free_line": "Usajili bure, tangazo bure - kampuni yako, pale ambapo watu tayari wanatafuta." },
+    "hero": {
+      "free_line": "Usajili bure, tangazo bure - kampuni yako, pale ambapo watu tayari wanatafuta."
+    },
     "categories": {
       "section_eyebrow": "ROTABO KWA BIASHARA",
       "section_lead": "Chagua kazi ambayo kampuni yako inafanya - na upatikane na wanaohitaji.",
@@ -241,10 +245,15 @@
       "offer_title": "Kampuni yangu inatoa kitu",
       "offer_text": "Andika kazi ya kampuni yako na eneo unalofika, na upatikane na anayehitaji.",
       "offer_btn": "Sajili kampuni yako"
+    },
+    "idea": {
+      "tagline1": "Watu wanahitaji makampuni.",
+      "tagline2": "Watu wana makampuni."
     }
   },
   "ticker": {
-    "sponsors": "Wadhamini", "company": "Biashara yako inaweza kuonekana hapa — usajili ni bure",
+    "sponsors": "Wadhamini",
+    "company": "Biashara yako inaweza kuonekana hapa — usajili ni bure",
     "offers": "anatoa",
     "seeks": "anatafuta"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Ungeanza na nini?",
     "submit": "Tuma",
     "sent": "Asante — nitakujibu."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Mshirika Mkuu",
     "invite": "Nafasi hii imehifadhiwa kwa shirika linaloliunga mkono wazo hili. Haigharimu chochote, wala haitawahi."
   },
@@ -315,21 +325,26 @@
     "confirming": "Tunathibitisha malipo yako…",
     "retry_btn": "Jaribu tena"
   },
-
   "banknote": {
     "title": "Nambari yako inasafiri dunia. Wewe huhitaji.",
     "body": "<p>Toa noti kwenye pochi yako. Yoyote ile. Kabla ya kuitumia, andika herufi sita ndogo juu yake: rotabo — pamoja na nambari yako ya Rotabo, unayoipata baada ya kujisajili: rotabo2244. Kisha iachilie iende.</p><p>Kesho italipa kahawa ya mtu. Wiki ijayo ni chenji katika teksi miji mitatu mbali. Mwezi ujao inavuka mpaka kwenye mfuko wa mgeni. Pesa haziachi kamwe kutembea — na sasa, wala jina lako.</p><p>Mahali fulani, mtu anatazama noti mkononi mwake. Anaiona: rotabo2244. Udadisi hufanya mengine. Anaiandika kwenye rotabo.app — na hapo ndipo ulipo. Jina lako. Bendera yako. Unachotoa. Mtu halisi, anayeweza kupatikana na yeyote, popote, anayeishika karatasi hiyo wakati wowote.</p><p>Hakuna bango la matangazo linalosafiri mbali kiasi hicho. Hakuna tangazo linaloishi muda mrefu kiasi hicho. Noti hubaki kwenye mzunguko kwa miaka, ikipita mikononi mwa mamia — na kila mmoja wao anaweza kukupata. Kalamu moja. Nambari moja. Dunia nzima inakuwa tangazo lako.</p>",
     "fineprint": "Kuandika kwenye noti ni chaguo lako mwenyewe. Angalia sheria za eneo lako."
   },
-
-  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Biashara", "personal": "Kwa watu binafsi", "drive": "Kuwa dereva", "drivers": "Madereva", "account": "Akaunti yangu" },
+  "nav": {
+    "how": "Jinsi inavyofanya kazi",
+    "safety": "Usalama",
+    "business": "Biashara",
+    "personal": "Kwa watu binafsi",
+    "drive": "Kuwa dereva",
+    "drivers": "Madereva",
+    "account": "Akaunti yangu"
+  },
   "hero": {
     "free_line": "Kujiunga bure, kuchapisha bure — unachohitaji, au unachotoa.",
     "number_intro": "Kila mtu kwenye Rotabo ana nambari. Nambari moja. Yako milele. Inasema wewe ni nani, uko wapi na unaweza kufanya nini — unaweza kupatikana na yeyote Duniani.",
     "search_placeholder": "Tafuta nambari ya Rotabo — mf. 2244",
     "search_btn": "Tafuta",
     "get_number": "Pata nambari yako",
-
     "origin_badge": "Imetengenezwa Uswisi — kwa ulimwengu wote",
     "tagline3": "Gari lako.",
     "lede": "Chagua unachohitaji — au jiorodheshe kama mtu anayeweza kusaidia.",
@@ -623,7 +638,11 @@
     "contact": "Wasiliana nasi",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…", "no_matches": "Hakuna matokeo" },
+  "lang_selector": {
+    "label": "Lugha",
+    "search_placeholder": "Tafuta lugha…",
+    "no_matches": "Hakuna matokeo"
+  },
   "install_modal": {
     "title": "Ongeza Rotabo kwenye skrini yako ya nyumbani",
     "generic": "Fungua menyu ya kivinjari chako na utafute \"Sakinisha programu\" au \"Ongeza kwenye Skrini ya Nyumbani\".",
@@ -838,14 +857,12 @@
     "load_error": "Matangazo yako hayakuweza kupakiwa. Tafadhali jaribu tena.",
     "retry_btn": "Jaribu tena"
   },
-
   "investors_card": {
     "cat": "WAWEKEZAJI",
     "h3": "Kuwa mwekezaji",
     "p": "Rotabo huunganisha watu katika kategoria 12 na lugha 38 duniani kote — bila kamisheni kutoka kwa yeyote anayetoa muda, ujuzi au vifaa vyake. Tunazungumza na wale wanaounga mkono mtindo huu.",
     "link": "Wasiliana nasi →"
   },
-
   "verify_modal": {
     "title": "Angalia barua pepe yako",
     "subtitle": "Tumetuma msimbo wa tarakimu 6 kwenye anwani iliyo hapa chini. Uweke ili kuendelea.",

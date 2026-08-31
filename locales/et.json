@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Vaba koht - hakka sponsoriks" },
+  "sponsorbox": {
+    "free": "Vaba koht - hakka sponsoriks"
+  },
   "bizlist": {
     "label": "Siin kuvatakse registreeritud ettevõtted",
     "free": "Vaba koht - registreeri oma ettevõte"
@@ -227,7 +229,9 @@
     "none": "Vasteid ei leitud. Proovige teist sõna - amet, tööriist või teenus."
   },
   "business": {
-    "hero": { "free_line": "Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad." },
+    "hero": {
+      "free_line": "Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad."
+    },
     "categories": {
       "section_eyebrow": "ROTABO ETTEVÕTETELE",
       "section_lead": "Valige, millega teie ettevõte tegeleb - ja teid leiavad need, kes seda vajavad.",
@@ -241,10 +245,15 @@
       "offer_title": "Minu ettevõte pakub midagi",
       "offer_text": "Kirjutage, millega teie ettevõte tegeleb ja millist piirkonda katab, ja teid leitakse.",
       "offer_btn": "Registreerige oma ettevõte"
+    },
+    "idea": {
+      "tagline1": "Inimesed vajavad ettevõtteid.",
+      "tagline2": "Inimestel on ettevõtted."
     }
   },
   "ticker": {
-    "sponsors": "Sponsorid", "company": "Teie ettevõte võib siin nähtav olla — registreerimine on tasuta",
+    "sponsors": "Sponsorid",
+    "company": "Teie ettevõte võib siin nähtav olla — registreerimine on tasuta",
     "offers": "pakub",
     "seeks": "otsib"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Millest alustaksite?",
     "submit": "Saada",
     "sent": "Aitäh — ma vastan."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Peapartner",
     "invite": "See koht on hoitud organisatsioonile, kes seisab selle mõtte taga. See ei maksa midagi ega hakka kunagi maksma."
   },
@@ -315,17 +325,16 @@
     "confirming": "Kinnitame sinu makset…",
     "retry_btn": "Proovi uuesti"
   },
-
   "banknote": {
     "title": "Sinu number rändab mööda maailma. Sinul pole vaja.",
     "body": "<p>Võta rahakotist rahatäht. Ükskõik milline. Enne kui selle kulutad, kirjuta sellele kuus väikest märki: rotabo — pluss sinu Rotabo number, mille saad pärast registreerumist: rotabo2244. Siis lase sel minna.</p><p>Homme maksab see kellegi kohvi. Järgmisel nädalal on see vahetusraha taksos kolme linna kaugusel. Järgmisel kuul ületab see piiri võõra taskus. Raha ei lakka kunagi liikumast — ja nüüd ka sinu nimi mitte.</p><p>Kuskil vaatab keegi oma käes olevat rahatähte. Ta näeb seda: rotabo2244. Uudishimu teeb ülejäänu. Ta trükib selle aadressile rotabo.app — ja seal sa oledki. Sinu nimi. Sinu lipp. Mida sa pakud. Tõeline inimene, keda saab leida igaüks, kõikjal, kes seda paberitükki kunagi käes hoiab.</p><p>Ükski reklaamtahvel ei rända nii kaugele. Ükski reklaam ei ela nii kaua. Rahatäht püsib käibel aastaid ja läbib sadu käsi — ja igaüks neist võib sind leida. Üks pastakas. Üks number. Kogu maailmast saab sinu reklaam.</p>",
     "fineprint": "Rahatähtedele kirjutamine on sinu enda valik. Kontrolli kohalikke seadusi."
   },
-
   "nav": {
     "how": "Kuidas see töötab",
     "safety": "Ohutus",
-    "business": "Ettevõtted", "personal": "Eraisikutele",
+    "business": "Ettevõtted",
+    "personal": "Eraisikutele",
     "drive": "Hakka juhiks",
     "drivers": "Juhid",
     "account": "Minu konto"
@@ -336,7 +345,6 @@
     "search_placeholder": "Leia Rotabo number — nt 2244",
     "search_btn": "Otsi",
     "get_number": "Hangi oma number",
-
     "origin_badge": "Toodetud Šveitsis — kogu maailmale",
     "tagline3": "Sinu auto.",
     "lede": "Vali, mida vajad — või lisa end nimekirja kui keegi, kes saab aidata.",
@@ -849,14 +857,12 @@
     "load_error": "Sinu kuulutusi ei õnnestunud laadida. Palun proovi uuesti.",
     "retry_btn": "Proovi uuesti"
   },
-
   "investors_card": {
     "cat": "INVESTORID",
     "h3": "Hakka investoriks",
     "p": "Rotabo ühendab inimesi 12 kategoorias ja 38 keeles üle maailma — ilma komisjonitasuta kelleltki, kes pakub oma aega, oskusi või tehnikat. Räägime nendega, kes seda mudelit toetavad.",
     "link": "Võta ühendust →"
   },
-
   "verify_modal": {
     "title": "Vaata oma e-posti",
     "subtitle": "Saatsime allolevale aadressile 6-kohalise koodi. Sisesta see, et jätkata.",

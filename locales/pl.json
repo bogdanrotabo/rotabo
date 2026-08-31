@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Wolne miejsce - zostań sponsorem" },
+  "sponsorbox": {
+    "free": "Wolne miejsce - zostań sponsorem"
+  },
   "bizlist": {
     "label": "Tutaj pojawiają się zarejestrowane firmy",
     "free": "Wolne miejsce - zarejestruj swoją firmę"
@@ -167,7 +169,57 @@
     "car_wash": "Mycie auta, czyszczenie samochodu, detailing",
     "car_rental": "Rent a car, auto na wynajem",
     "bike_scooter_rental": "Wypożycz rower, hulajnoga elektryczna",
-    "funeral_services": "Zakład pogrzebowy, pogrzeb, kremacja, trumny"
+    "funeral_services": "Zakład pogrzebowy, pogrzeb, kremacja, trumny",
+    "notary": "notariusz, akt notarialny, kancelaria notarialna, poświadczenie",
+    "bailiff": "komornik, egzekucja, zajęcie",
+    "patent_trademark": "własność intelektualna, rzecznik patentowy, rejestracja znaku towarowego",
+    "debt_collection": "windykacja, należności, firma windykacyjna",
+    "company_formation": "zakładanie firmy, rejestracja spółki, KRS",
+    "financial_advisory": "doradztwo finansowe, inwestycje, zarządzanie majątkiem",
+    "payroll_services": "kadry i płace, listy płac, obsługa płacowa",
+    "currency_exchange": "kantor, wymiana walut, waluty",
+    "pawnshop": "lombard, pożyczka pod zastaw, skup złota",
+    "leasing": "leasing, finansowanie pojazdów, wynajem długoterminowy",
+    "hearing_aids": "aparaty słuchowe, protetyk słuchu, badanie słuchu",
+    "medical_transport": "transport medyczny, karetka, przewóz pacjentów",
+    "rehabilitation": "rehabilitacja, ośrodek rehabilitacyjny, rekonwalescencja",
+    "occupational_therapy": "terapia zajęciowa, terapeuta zajęciowy",
+    "midwifery": "położna, poród, opieka prenatalna",
+    "acupuncture": "akupunktura, akupunkturzysta, medycyna tradycyjna, igły",
+    "chiropractic": "chiropraktyk, osteopata, ból pleców, terapia manualna",
+    "insulation": "ocieplenie, izolacja termiczna, docieplenie poddasza",
+    "waterproofing": "hydroizolacja, osuszanie, izolacja przeciwwilgociowa",
+    "plastering": "tynkowanie, gładzie, sztukateria, tynkarz",
+    "tiling": "glazurnik, płytki, terakota, kafelki",
+    "drywall": "płyty gipsowo-kartonowe, ścianki działowe, sufit podwieszany",
+    "fencing": "ogrodzenia, bramy, balustrady, płot",
+    "paving": "brukarstwo, kostka brukowa, podjazd, krawężniki",
+    "well_drilling": "wiercenie studni, studnia głębinowa, odwiert",
+    "septic_systems": "szambo, oczyszczalnia przydomowa, drenaż",
+    "solar_panels": "fotowoltaika, panele słoneczne, inwerter, instalator PV",
+    "alarm_cctv": "alarm, monitoring, kamery, ochrona",
+    "smart_home": "inteligentny dom, automatyka domowa, sterowanie oświetleniem",
+    "lift_maintenance": "konserwacja wind, naprawa dźwigów, schody ruchome",
+    "fire_safety": "ochrona przeciwpożarowa, gaśnice, tryskacze, czujki dymu",
+    "car_dealer": "salon samochodowy, dealer, samochody używane, komis",
+    "vehicle_inspection": "przegląd techniczny, stacja kontroli pojazdów, badanie techniczne",
+    "auto_electrics": "elektryk samochodowy, instalacja elektryczna, alternator, rozrusznik",
+    "car_glass": "szyby samochodowe, wymiana szyby, przednia szyba",
+    "boat_repair": "stocznia jachtowa, mechanik łodzi, silnik zaburtowy, jacht",
+    "bus_charter": "wynajem autokarów, bus, przewóz grup",
+    "call_centre": "call center, telemarketing, obsługa klienta",
+    "virtual_assistant": "wirtualna asystentka, zdalne biuro, wsparcie administracyjne",
+    "market_research": "badania rynku, ankiety, grupy fokusowe",
+    "copywriting": "copywriting, redakcja tekstów, korekta",
+    "seo_services": "SEO, pozycjonowanie, Google Ads, SEM",
+    "social_media": "social media, prowadzenie mediów społecznościowych, Instagram, Facebook",
+    "app_development": "tworzenie aplikacji, iOS, Android, mobile",
+    "game_development": "produkcja gier, Unity, Unreal, studio gier",
+    "drone_services": "zdjęcia z drona, dron, inspekcje, mapowanie",
+    "printing_3d": "druk 3D, wytwarzanie przyrostowe, prototypowanie",
+    "interior_design": "projektowanie wnętrz, architekt wnętrz, aranżacja",
+    "dance_school": "szkoła tańca, kursy tańca, balet, salsa",
+    "art_gallery": "galeria sztuki, oprawa obrazów, wystawy, marchand"
   },
   "domains": {
     "taxi": "Taksówka",
@@ -392,7 +444,9 @@
     "none": "Brak wyników. Spróbuj innego słowa - zawód, narzędzie lub usługa."
   },
   "business": {
-    "hero": { "free_line": "Rejestracja bezpłatna, ogłoszenie bezpłatne - twoja firma tam, gdzie ludzie już szukają." },
+    "hero": {
+      "free_line": "Rejestracja bezpłatna, ogłoszenie bezpłatne - twoja firma tam, gdzie ludzie już szukają."
+    },
     "categories": {
       "section_eyebrow": "ROTABO DLA FIRM",
       "section_lead": "Wybierz, czym zajmuje się twoja firma - i niech znajdą cię ci, którzy tego potrzebują.",
@@ -406,10 +460,15 @@
       "offer_title": "Moja firma coś oferuje",
       "offer_text": "Napisz, czym zajmuje się twoja firma i jaki obszar obsługuje, a znajdą cię.",
       "offer_btn": "Zarejestruj firmę"
+    },
+    "idea": {
+      "tagline1": "Ludzie potrzebują firm.",
+      "tagline2": "Ludzie mają firmy."
     }
   },
   "ticker": {
-    "sponsors": "Sponsorzy", "company": "Twoja firma może być widoczna tutaj — rejestracja jest bezpłatna",
+    "sponsors": "Sponsorzy",
+    "company": "Twoja firma może być widoczna tutaj — rejestracja jest bezpłatna",
     "offers": "oferuje",
     "seeks": "szuka"
   },
@@ -439,7 +498,8 @@
     "message_placeholder": "Od czego byś zaczął?",
     "submit": "Wyślij",
     "sent": "Dziękuję — odpiszę."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Partner główny",
     "invite": "To miejsce jest zarezerwowane dla organizacji, która stoi za tą ideą. Nic nie kosztuje i nigdy nie będzie kosztować."
   },
@@ -480,21 +540,26 @@
     "confirming": "Potwierdzamy Twoją płatność…",
     "retry_btn": "Spróbuj ponownie"
   },
-
   "banknote": {
     "title": "Twój numer podróżuje po świecie. Ty nie musisz.",
     "body": "<p>Wyjmij banknot z portfela. Dowolny. Zanim go wydasz, napisz na nim sześć małych znaków: rotabo — plus twój numer Rotabo, który dostajesz po rejestracji: rotabo2244. Potem pozwól mu odejść.</p><p>Jutro zapłaci za czyjąś kawę. Za tydzień będzie resztą w taksówce trzy miasta dalej. Za miesiąc przekroczy granicę w kieszeni nieznajomego. Pieniądze nigdy nie przestają się poruszać — a teraz twoje imię też nie.</p><p>Gdzieś ktoś patrzy na banknot w swojej dłoni. Widzi to: rotabo2244. Ciekawość robi resztę. Wpisuje to na rotabo.app — i oto jesteś. Twoje imię. Twoja flaga. To, co oferujesz. Prawdziwy człowiek, do znalezienia przez każdego, wszędzie, kto kiedykolwiek trzyma ten kawałek papieru.</p><p>Żaden billboard nie podróżuje tak daleko. Żadna reklama nie żyje tak długo. Banknot pozostaje w obiegu latami, przechodząc przez setki rąk — i każda z nich może cię znaleźć. Jeden długopis. Jeden numer. Cały świat staje się twoją reklamą.</p>",
     "fineprint": "Pisanie na banknotach to twój własny wybór. Sprawdź lokalne przepisy."
   },
-
-  "nav": { "how": "Jak to działa", "safety": "Bezpieczeństwo", "business": "Firmy", "personal": "Dla osób", "drive": "Zostań kierowcą", "drivers": "Kierowcy", "account": "Moje konto" },
+  "nav": {
+    "how": "Jak to działa",
+    "safety": "Bezpieczeństwo",
+    "business": "Firmy",
+    "personal": "Dla osób",
+    "drive": "Zostań kierowcą",
+    "drivers": "Kierowcy",
+    "account": "Moje konto"
+  },
   "hero": {
     "free_line": "Rejestracja za darmo, ogłoszenie za darmo — czego potrzebujecie, albo co oferujecie.",
     "number_intro": "Każdy na Rotabo ma numer. Jeden numer. Twój na zawsze. Mówi, kim jesteś, gdzie jesteś i co potrafisz — do znalezienia przez każdego na Ziemi.",
     "search_placeholder": "Znajdź numer Rotabo — np. 2244",
     "search_btn": "Szukaj",
     "get_number": "Zdobądź swój numer",
-
     "origin_badge": "Zrobione w Szwajcarii — dla całego świata",
     "tagline3": "Twój samochód.",
     "lede": "Wybierz, czego potrzebujesz — albo zgłoś się jako ktoś, kto może pomóc.",
@@ -788,7 +853,11 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Język", "search_placeholder": "Szukaj języka…", "no_matches": "Brak wyników" },
+  "lang_selector": {
+    "label": "Język",
+    "search_placeholder": "Szukaj języka…",
+    "no_matches": "Brak wyników"
+  },
   "install_modal": {
     "title": "Dodaj Rotabo do ekranu głównego",
     "generic": "Otwórz menu przeglądarki i poszukaj opcji \"Zainstaluj aplikację\" lub \"Dodaj do ekranu głównego\".",
@@ -1003,14 +1072,12 @@
     "load_error": "Nie udało się wczytać Twoich ogłoszeń. Spróbuj ponownie.",
     "retry_btn": "Spróbuj ponownie"
   },
-
   "investors_card": {
     "cat": "INWESTORZY",
     "h3": "Zostań inwestorem",
     "p": "Rotabo łączy ludzi w 12 kategoriach i 38 językach na całym świecie — bez prowizji od nikogo, kto oferuje swój czas, umiejętności lub sprzęt. Rozmawiamy z tymi, którzy wspierają ten model.",
     "link": "Skontaktuj się →"
   },
-
   "verify_modal": {
     "title": "Sprawdź swoją pocztę",
     "subtitle": "Wysłaliśmy 6-cyfrowy kod na adres poniżej. Wpisz go, żeby kontynuować.",

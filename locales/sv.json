@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Ledig plats - bli sponsor" },
+  "sponsorbox": {
+    "free": "Ledig plats - bli sponsor"
+  },
   "bizlist": {
     "label": "Här visas de registrerade företagen",
     "free": "Ledig plats - registrera ditt företag"
@@ -227,7 +229,9 @@
     "none": "Inga träffar. Prova ett annat ord - ett yrke, ett verktyg, en tjänst."
   },
   "business": {
-    "hero": { "free_line": "Gratis registrering, gratis annons - ditt företag, där folk redan letar." },
+    "hero": {
+      "free_line": "Gratis registrering, gratis annons - ditt företag, där folk redan letar."
+    },
     "categories": {
       "section_eyebrow": "ROTABO FÖR FÖRETAG",
       "section_lead": "Välj vad ditt företag gör - och bli hittad av dem som behöver det.",
@@ -241,10 +245,15 @@
       "offer_title": "Mitt företag erbjuder något",
       "offer_text": "Skriv vad ditt företag gör och vilket område det täcker, så blir du hittad.",
       "offer_btn": "Registrera ditt företag"
+    },
+    "idea": {
+      "tagline1": "Människor behöver företag.",
+      "tagline2": "Människor har företag."
     }
   },
   "ticker": {
-    "sponsors": "Sponsorer", "company": "Ditt företag kan synas här — registrering är gratis",
+    "sponsors": "Sponsorer",
+    "company": "Ditt företag kan synas här — registrering är gratis",
     "offers": "erbjuder",
     "seeks": "söker"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Vad skulle du börja med?",
     "submit": "Skicka",
     "sent": "Tack — jag svarar."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Huvudpartner",
     "invite": "Den här platsen är reserverad för en organisation som står bakom idén. Den kostar ingenting, och kommer aldrig att göra det."
   },
@@ -315,21 +325,26 @@
     "confirming": "Bekräftar din betalning…",
     "retry_btn": "Försök igen"
   },
-
   "banknote": {
     "title": "Ditt nummer reser jorden runt. Det behöver inte du.",
     "body": "<p>Ta en sedel ur plånboken. Vilken som helst. Innan du spenderar den, skriv sex små tecken på den: rotabo — plus ditt Rotabo-nummer, som du får efter registreringen: rotabo2244. Släpp den sedan.</p><p>Imorgon betalar den någons kaffe. Nästa vecka är den växel i en taxi tre städer bort. Nästa månad korsar den en gräns i en främlings ficka. Pengar slutar aldrig röra sig — och nu gör inte ditt namn det heller.</p><p>Någonstans tittar någon på sedeln i sin hand. De ser det: rotabo2244. Nyfikenheten gör resten. De skriver in det på rotabo.app — och där är du. Ditt namn. Din flagga. Vad du erbjuder. En verklig människa, hittbar av vem som helst, var som helst, som någonsin håller den papperslappen.</p><p>Ingen reklamtavla reser så långt. Ingen annons lever så länge. En sedel är i omlopp i åratal och passerar genom hundratals händer — och var och en av dem kan hitta dig. En penna. Ett nummer. Hela världen blir din reklam.</p>",
     "fineprint": "Att skriva på sedlar är ditt eget val. Kontrollera de lokala lagarna."
   },
-
-  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "Företag", "personal": "För privatpersoner", "drive": "Bli förare", "drivers": "Förare", "account": "Mitt konto" },
+  "nav": {
+    "how": "Så fungerar det",
+    "safety": "Säkerhet",
+    "business": "Företag",
+    "personal": "För privatpersoner",
+    "drive": "Bli förare",
+    "drivers": "Förare",
+    "account": "Mitt konto"
+  },
   "hero": {
     "free_line": "Gratis att gå med, gratis att lägga upp — vad du behöver, eller vad du erbjuder.",
     "number_intro": "Alla på Rotabo har ett nummer. Ett nummer. Ditt för alltid. Det säger vem du är, var du är och vad du kan — hittbar av vem som helst på jorden.",
     "search_placeholder": "Hitta ett Rotabo-nummer — t.ex. 2244",
     "search_btn": "Sök",
     "get_number": "Skaffa ditt nummer",
-
     "origin_badge": "Tillverkad i Schweiz — för hela världen",
     "tagline3": "Din bil.",
     "lede": "Välj vad du behöver — eller registrera dig som någon som kan hjälpa till.",
@@ -623,7 +638,11 @@
     "contact": "Kontakt",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…", "no_matches": "Inga träffar" },
+  "lang_selector": {
+    "label": "Språk",
+    "search_placeholder": "Sök språk…",
+    "no_matches": "Inga träffar"
+  },
   "install_modal": {
     "title": "Lägg till Rotabo på hemskärmen",
     "generic": "Öppna webbläsarens meny och leta efter \"Installera app\" eller \"Lägg till på hemskärmen\".",
@@ -838,14 +857,12 @@
     "load_error": "Dina annonser kunde inte laddas. Försök igen.",
     "retry_btn": "Försök igen"
   },
-
   "investors_card": {
     "cat": "INVESTERARE",
     "h3": "Bli investerare",
     "p": "Rotabo kopplar ihop människor i 12 kategorier och 38 språk, över hela världen — utan provision från någon som erbjuder sin tid, sina kunskaper eller sin utrustning. Vi pratar med dem som tror på den modellen.",
     "link": "Hör av dig →"
   },
-
   "verify_modal": {
     "title": "Kolla din e-post",
     "subtitle": "Vi har skickat en sexsiffrig kod till adressen nedan. Ange den för att fortsätta.",

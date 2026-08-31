@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Tempat kosong - jadilah sponsor" },
+  "sponsorbox": {
+    "free": "Tempat kosong - jadilah sponsor"
+  },
   "bizlist": {
     "label": "Di sini muncul perusahaan yang terdaftar",
     "free": "Tempat kosong - daftarkan perusahaan Anda"
@@ -227,7 +229,9 @@
     "none": "Tidak ada hasil. Coba kata lain - pekerjaan, alat, atau layanan."
   },
   "business": {
-    "hero": { "free_line": "Pendaftaran gratis, iklan gratis - perusahaan Anda, di tempat orang sudah mencari." },
+    "hero": {
+      "free_line": "Pendaftaran gratis, iklan gratis - perusahaan Anda, di tempat orang sudah mencari."
+    },
     "categories": {
       "section_eyebrow": "ROTABO UNTUK BISNIS",
       "section_lead": "Pilih pekerjaan yang dilakukan perusahaan Anda - dan biarkan yang membutuhkan menemukan Anda.",
@@ -241,10 +245,15 @@
       "offer_title": "Perusahaan saya menawarkan sesuatu",
       "offer_text": "Tulis apa yang dikerjakan perusahaan Anda dan wilayah yang dilayani, agar ditemukan.",
       "offer_btn": "Daftarkan perusahaan Anda"
+    },
+    "idea": {
+      "tagline1": "Orang membutuhkan perusahaan.",
+      "tagline2": "Orang memiliki perusahaan."
     }
   },
   "ticker": {
-    "sponsors": "Sponsor", "company": "Bisnis Anda bisa terlihat di sini — pendaftaran gratis",
+    "sponsors": "Sponsor",
+    "company": "Bisnis Anda bisa terlihat di sini — pendaftaran gratis",
     "offers": "menawarkan",
     "seeks": "mencari"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Akan mulai dari apa?",
     "submit": "Kirim",
     "sent": "Terima kasih — saya akan membalas."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Mitra Utama",
     "invite": "Tempat ini disediakan untuk organisasi yang mendukung gagasan ini. Tidak dipungut biaya, dan tidak akan pernah."
   },
@@ -315,21 +325,26 @@
     "confirming": "Mengonfirmasi pembayaran Anda…",
     "retry_btn": "Coba lagi"
   },
-
   "banknote": {
     "title": "Nomormu berkeliling dunia. Kamu tidak perlu.",
     "body": "<p>Ambil selembar uang kertas dari dompetmu. Yang mana saja. Sebelum kamu membelanjakannya, tulis enam karakter kecil di atasnya: rotabo — ditambah nomor Rotabo-mu, yang kamu dapat setelah mendaftar: rotabo2244. Lalu lepaskan.</p><p>Besok ia membayar kopi seseorang. Minggu depan ia jadi kembalian di taksi tiga kota jauhnya. Bulan depan ia melintasi perbatasan di saku orang asing. Uang tak pernah berhenti bergerak — dan kini, namamu pun tidak.</p><p>Di suatu tempat, seseorang menatap uang di tangannya. Ia melihatnya: rotabo2244. Rasa penasaran melakukan sisanya. Ia mengetiknya di rotabo.app — dan itulah kamu. Namamu. Benderamu. Apa yang kamu tawarkan. Orang sungguhan, yang bisa ditemukan siapa saja, di mana saja, yang pernah memegang secarik kertas itu.</p><p>Tak ada papan iklan yang menempuh jarak sejauh itu. Tak ada iklan yang hidup selama itu. Selembar uang kertas beredar bertahun-tahun, berpindah melalui ratusan tangan — dan setiap tangan bisa menemukanmu. Satu pena. Satu nomor. Seluruh dunia menjadi iklanmu.</p>",
     "fineprint": "Menulis di uang kertas adalah pilihanmu sendiri. Periksa hukum setempat."
   },
-
-  "nav": { "how": "Cara kerja", "safety": "Keamanan", "business": "Bisnis", "personal": "Untuk perorangan", "drive": "Jadi pengemudi", "drivers": "Pengemudi", "account": "Akun saya" },
+  "nav": {
+    "how": "Cara kerja",
+    "safety": "Keamanan",
+    "business": "Bisnis",
+    "personal": "Untuk perorangan",
+    "drive": "Jadi pengemudi",
+    "drivers": "Pengemudi",
+    "account": "Akun saya"
+  },
   "hero": {
     "free_line": "Daftar gratis, pasang gratis — apa yang Anda butuhkan, atau apa yang Anda tawarkan.",
     "number_intro": "Setiap orang di Rotabo punya nomor. Satu nomor. Milikmu selamanya. Ia mengatakan siapa kamu, di mana kamu, dan apa yang bisa kamu lakukan — dapat ditemukan siapa saja di Bumi.",
     "search_placeholder": "Cari nomor Rotabo — mis. 2244",
     "search_btn": "Cari",
     "get_number": "Dapatkan nomormu",
-
     "origin_badge": "Dibuat di Swiss — untuk seluruh dunia",
     "tagline3": "Mobil Anda.",
     "lede": "Pilih apa yang kamu butuhkan — atau daftar sebagai orang yang bisa membantu.",
@@ -623,7 +638,11 @@
     "contact": "Kontak",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…", "no_matches": "Tidak ada hasil" },
+  "lang_selector": {
+    "label": "Bahasa",
+    "search_placeholder": "Cari bahasa…",
+    "no_matches": "Tidak ada hasil"
+  },
   "install_modal": {
     "title": "Tambahkan Rotabo ke layar utama",
     "generic": "Buka menu browser Anda dan cari \"Instal aplikasi\" atau \"Tambahkan ke Layar Utama\".",
@@ -838,14 +857,12 @@
     "load_error": "Iklan Anda tidak dapat dimuat. Silakan coba lagi.",
     "retry_btn": "Coba lagi"
   },
-
   "investors_card": {
     "cat": "INVESTOR",
     "h3": "Jadi investor",
     "p": "Rotabo menghubungkan orang dalam 12 kategori dan 38 bahasa, di seluruh dunia — tanpa komisi dari siapa pun yang menawarkan waktu, keterampilan, atau peralatannya. Kami sedang berbicara dengan orang-orang yang mendukung model ini.",
     "link": "Hubungi kami →"
   },
-
   "verify_modal": {
     "title": "Cek emailmu",
     "subtitle": "Kami mengirim kode 6 digit ke alamat di bawah. Masukkan kodenya untuk lanjut.",

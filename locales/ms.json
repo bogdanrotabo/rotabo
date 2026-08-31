@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Tempat kosong - jadilah penaja" },
+  "sponsorbox": {
+    "free": "Tempat kosong - jadilah penaja"
+  },
   "bizlist": {
     "label": "Di sini syarikat berdaftar dipaparkan",
     "free": "Tempat kosong - daftarkan syarikat anda"
@@ -227,7 +229,9 @@
     "none": "Tiada padanan. Cuba perkataan lain - pekerjaan, alat, perkhidmatan."
   },
   "business": {
-    "hero": { "free_line": "Pendaftaran percuma, iklan percuma - syarikat anda, di tempat orang sudah mencari." },
+    "hero": {
+      "free_line": "Pendaftaran percuma, iklan percuma - syarikat anda, di tempat orang sudah mencari."
+    },
     "categories": {
       "section_eyebrow": "ROTABO UNTUK PERNIAGAAN",
       "section_lead": "Pilih kerja yang syarikat anda lakukan - dan biar orang serta syarikat yang perlukan menemui anda.",
@@ -241,10 +245,15 @@
       "offer_title": "Syarikat saya menawarkan sesuatu",
       "offer_text": "Nyatakan kerja syarikat anda dan kawasan yang diliputi, dan biar orang menemui anda.",
       "offer_btn": "Daftarkan syarikat anda"
+    },
+    "idea": {
+      "tagline1": "Orang memerlukan syarikat.",
+      "tagline2": "Orang mempunyai syarikat."
     }
   },
   "ticker": {
-    "sponsors": "Penaja", "company": "Perniagaan anda boleh dilihat di sini — pendaftaran percuma",
+    "sponsors": "Penaja",
+    "company": "Perniagaan anda boleh dilihat di sini — pendaftaran percuma",
     "offers": "menawarkan",
     "seeks": "mencari"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Apa yang akan anda mulakan?",
     "submit": "Hantar",
     "sent": "Terima kasih — saya akan membalas."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Rakan Utama",
     "invite": "Tempat ini disediakan untuk organisasi yang menyokong idea ini. Ia tidak dikenakan bayaran, dan tidak akan sesekali."
   },
@@ -315,21 +325,26 @@
     "confirming": "Mengesahkan pembayaran anda…",
     "retry_btn": "Cuba lagi"
   },
-
   "banknote": {
     "title": "Nombor anda mengembara ke seluruh dunia. Anda tidak perlu.",
     "body": "<p>Keluarkan sekeping wang kertas dari dompet anda. Mana-mana sahaja. Sebelum anda membelanjakannya, tulis enam aksara kecil padanya: rotabo — serta nombor Rotabo anda, yang anda terima selepas mendaftar: rotabo2244. Kemudian lepaskannya.</p><p>Esok ia membayar kopi seseorang. Minggu depan ia menjadi baki di dalam teksi tiga bandar jauhnya. Bulan depan ia melintasi sempadan dalam poket orang asing. Wang tidak pernah berhenti bergerak — dan kini, nama anda pun tidak.</p><p>Di suatu tempat, seseorang memandang wang kertas di tangannya. Dia melihatnya: rotabo2244. Rasa ingin tahu melakukan selebihnya. Dia menaipnya di rotabo.app — dan di situ anda. Nama anda. Bendera anda. Apa yang anda tawarkan. Seorang manusia sebenar, yang boleh ditemui oleh sesiapa sahaja, di mana sahaja, yang pernah memegang sekeping kertas itu.</p><p>Tiada papan iklan mengembara sejauh itu. Tiada iklan hidup selama itu. Sekeping wang kertas kekal dalam edaran selama bertahun-tahun, melalui ratusan tangan — dan setiap satu daripadanya boleh menemui anda. Satu pen. Satu nombor. Seluruh dunia menjadi iklan anda.</p>",
     "fineprint": "Menulis pada wang kertas adalah pilihan anda sendiri. Semak undang-undang tempatan."
   },
-
-  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Perniagaan", "personal": "Untuk individu", "drive": "Menjadi pemandu", "drivers": "Pemandu", "account": "Akaun saya" },
+  "nav": {
+    "how": "Cara ia berfungsi",
+    "safety": "Keselamatan",
+    "business": "Perniagaan",
+    "personal": "Untuk individu",
+    "drive": "Menjadi pemandu",
+    "drivers": "Pemandu",
+    "account": "Akaun saya"
+  },
   "hero": {
     "free_line": "Daftar percuma, siar percuma — apa yang anda perlukan, atau apa yang anda tawarkan.",
     "number_intro": "Setiap orang di Rotabo mempunyai nombor. Satu nombor. Milik anda selamanya. Ia memberitahu siapa anda, di mana anda, dan apa yang anda boleh lakukan — boleh ditemui oleh sesiapa sahaja di Bumi.",
     "search_placeholder": "Cari nombor Rotabo — cth. 2244",
     "search_btn": "Cari",
     "get_number": "Dapatkan nombor anda",
-
     "origin_badge": "Dibuat di Switzerland — untuk seluruh dunia",
     "tagline3": "Kereta anda.",
     "lede": "Pilih apa yang kamu perlukan — atau daftar sebagai seseorang yang boleh membantu.",
@@ -623,7 +638,11 @@
     "contact": "Hubungi",
     "copyright": "© 2026 Rotabo"
   },
-  "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…", "no_matches": "Tiada padanan" },
+  "lang_selector": {
+    "label": "Bahasa",
+    "search_placeholder": "Cari bahasa…",
+    "no_matches": "Tiada padanan"
+  },
   "install_modal": {
     "title": "Tambah Rotabo ke skrin utama",
     "generic": "Buka menu pelayar anda dan cari \"Pasang apl\" atau \"Tambah ke Skrin Utama\".",
@@ -838,14 +857,12 @@
     "load_error": "Penyenaraian anda tidak dapat dimuatkan. Sila cuba lagi.",
     "retry_btn": "Cuba lagi"
   },
-
   "investors_card": {
     "cat": "PELABUR",
     "h3": "Jadi pelabur",
     "p": "Rotabo menghubungkan orang dalam 12 kategori dan 38 bahasa di seluruh dunia — tanpa komisen daripada sesiapa yang menawarkan masa, kemahiran atau peralatan mereka. Kami sedang berbual dengan mereka yang menyokong model ini.",
     "link": "Hubungi kami →"
   },
-
   "verify_modal": {
     "title": "Semak e-mel anda",
     "subtitle": "Kami menghantar kod 6 digit ke alamat di bawah. Masukkan kod itu untuk teruskan.",

@@ -1,5 +1,7 @@
 {
-  "sponsorbox": { "free": "Ledig plads - bliv sponsor" },
+  "sponsorbox": {
+    "free": "Ledig plads - bliv sponsor"
+  },
   "bizlist": {
     "label": "Her vises de registrerede virksomheder",
     "free": "Ledig plads - registrer din virksomhed"
@@ -227,7 +229,9 @@
     "none": "Ingen resultater. Prøv et andet ord - et fag, et værktøj, en ydelse."
   },
   "business": {
-    "hero": { "free_line": "Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder." },
+    "hero": {
+      "free_line": "Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder."
+    },
     "categories": {
       "section_eyebrow": "ROTABO FOR VIRKSOMHEDER",
       "section_lead": "Vælg hvad din virksomhed laver - og bliv fundet af dem, der har brug for det.",
@@ -241,10 +245,15 @@
       "offer_title": "Min virksomhed tilbyder noget",
       "offer_text": "Skriv hvad din virksomhed laver og hvilket område den dækker, så bliver du fundet.",
       "offer_btn": "Tilmeld din virksomhed"
+    },
+    "idea": {
+      "tagline1": "Folk har brug for virksomheder.",
+      "tagline2": "Folk har virksomheder."
     }
   },
   "ticker": {
-    "sponsors": "Sponsorer", "company": "Din virksomhed kan ses her — gratis tilmelding",
+    "sponsors": "Sponsorer",
+    "company": "Din virksomhed kan ses her — gratis tilmelding",
     "offers": "tilbyder",
     "seeks": "søger"
   },
@@ -274,7 +283,8 @@
     "message_placeholder": "Hvad ville du begynde med?",
     "submit": "Send",
     "sent": "Tak — jeg skriver tilbage."
-  },  "main_partner": {
+  },
+  "main_partner": {
     "label": "Hovedpartner",
     "invite": "Denne plads er reserveret til en organisation, der står bag idéen. Det koster intet, og det kommer det aldrig til."
   },
@@ -315,17 +325,16 @@
     "confirming": "Bekræfter din betaling…",
     "retry_btn": "Prøv igen"
   },
-
   "banknote": {
     "title": "Dit nummer rejser verden rundt. Det behøver du ikke.",
     "body": "<p>Tag en pengeseddel op af din pung. En hvilken som helst. Før du bruger den, skriv seks små tegn på den: rotabo — plus dit Rotabo-nummer, som du får efter tilmeldingen: rotabo2244. Slip den så.</p><p>I morgen betaler den nogens kaffe. Næste uge er den byttepenge i en taxa tre byer væk. Næste måned krydser den en grænse i en fremmeds lomme. Penge holder aldrig op med at bevæge sig — og nu gør dit navn det heller ikke.</p><p>Et sted kigger nogen på sedlen i hånden. De ser det: rotabo2244. Nysgerrigheden gør resten. De taster det ind på rotabo.app — og der er du. Dit navn. Dit flag. Hvad du tilbyder. Et rigtigt menneske, findbar for alle, overalt, som nogensinde holder det stykke papir.</p><p>Ingen reklametavle rejser så langt. Ingen annonce lever så længe. En pengeseddel er i omløb i årevis og går gennem hundredvis af hænder — og hver eneste kan finde dig. En kuglepen. Et nummer. Hele verden bliver din reklame.</p>",
     "fineprint": "At skrive på pengesedler er dit eget valg. Tjek de lokale love."
   },
-
   "nav": {
     "how": "Sådan fungerer det",
     "safety": "Sikkerhed",
-    "business": "Virksomheder", "personal": "For private",
+    "business": "Virksomheder",
+    "personal": "For private",
     "drive": "Bliv chauffør",
     "drivers": "Chauffører",
     "account": "Min konto"
@@ -336,7 +345,6 @@
     "search_placeholder": "Find et Rotabo-nummer — f.eks. 2244",
     "search_btn": "Søg",
     "get_number": "Få dit nummer",
-
     "origin_badge": "Lavet i Schweiz — til hele verden",
     "tagline3": "Din bil.",
     "lede": "Vælg, hvad du har brug for — eller tilmeld dig som en, der kan hjælpe.",
@@ -819,14 +827,12 @@
     "time_hour_ago_one": "for 1 time siden",
     "time_hour_ago_other": "for {n} timer siden"
   },
-
   "investors_card": {
     "cat": "INVESTORER",
     "h3": "Bliv investor",
     "p": "Rotabo forbinder mennesker i 12 kategorier og 38 sprog verden over — uden kommission fra nogen, der tilbyder deres tid, evner eller udstyr. Vi taler med dem, der bakker op om den model.",
     "link": "Tag kontakt →"
   },
-
   "verify_modal": {
     "title": "Tjek din mail",
     "subtitle": "Vi har sendt en 6-cifret kode til adressen nedenfor. Indtast den for at fortsætte.",
@@ -836,7 +842,6 @@
     "spam_hint": "Kan du ikke se den? Tjek spam- eller uønsket-mappen — de første mails fra en ny afsender lander nogle gange der.",
     "error": "Ugyldig eller udløbet kode. Prøv igen."
   },
-
   "account_page": {
     "google_btn": "Fortsæt med Google",
     "google_or": "eller",
