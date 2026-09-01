@@ -98,9 +98,8 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 > For Peter Lachenmeir.
 >
 > Adelholzener is owned by an order of nuns, and every franc it earns goes to
-> the hospitals and care homes the Sisters of Mercy run. The company is not
-> profitable *and* charitable. The profit is the charity, and has been since
-> 1907.
+> the hospitals and care homes the Sisters of Mercy run. It is not a profitable
+> company that also gives. The profit is the gift, and has been since 1907.
 
 ---
 
