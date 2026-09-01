@@ -306,3 +306,30 @@ Dezvoltare Locală. În textul citat de ei, adresa apare `rotabo.app`, cu
 | Instituție | Când | Ce |
 |---|---|---|
 | Primăria Municipiului Cluj-Napoca | 1 sept, 12:27 UTC | Înregistrată cu nr. 755760/42/01.09.2026, repartizată către Direcția Dezvoltare Locală. Termen legal de răspuns: 30 de zile (OG 27/2002). |
+
+---
+
+## Lot 2 trimis — 1 septembrie 2026, 12:43–12:55 UTC
+
+50 de scrisori, Năvodari → Orăștie. De data asta cu `htmlBody` de la început,
+deci adresele apar curat în textul vizibil.
+
+**Trei bounce-uri, și au un tipar:**
+
+| Oraș | Adresa din set | Eroarea | Adresa corectă |
+|---|---|---|---|
+| Blaj | primarieblaj@rcnet.ro | cutie poștală plină | primariablaj@primariablaj.ro |
+| Vulcan | primvulcan@yahoo.com | adresă inexistentă | registratura@e-vulcan.ro |
+| Borșa | primariaborsamm@yahoo.com | adresă inexistentă | **de găsit** — situl primariaborsamm.ro e în spatele unui filtru anti-bot, nu am putut citi pagina de contact |
+
+**Tiparul:** două din trei bounce-uri sunt adrese Yahoo. Setul e din 2020, iar
+Yahoo șterge conturile inactive. Adresele instituționale pe domeniu propriu au
+ținut; cele pe furnizor gratuit sunt cele care cad.
+
+**Pentru loturile de mâine:** din cele 117 rămase, **39 sunt pe Yahoo sau
+Gmail**. Alea se verifică pe situl primăriei *înainte* de trimitere, nu după
+bounce. Tot acolo: Salonta are două adrese într-un singur câmp
+(`primsal@rdslink.ro; primsal3@gmail.com`) — se despart.
+
+**Stadiu la sfârșitul zilei:** 99 de primării contactate cu succes, 1 de
+recontactat (Borșa), 100 rămase până la 200.
