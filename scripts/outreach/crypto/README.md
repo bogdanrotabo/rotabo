@@ -46,6 +46,27 @@ acela vrea insigna ca instrument de pump, nu ca angajament.
 **Elon Musk și X.** Nu există adresă publică. `press@x.com` răspunde automat
 cu un emoji. Canalul real e X însuși, nu emailul.
 
+## Ordinea de trimitere — nivelul de acces
+
+Pagina e grupată după singurul criteriu care contează: **poate omul care
+citește inboxul ăla să spună „da"?**
+
+| Nivel | Câți | Cine | Ce să aștepți |
+|---|---:|---|---|
+| **A** | 10 | fundații mici, menținători individuali | Un răspuns e posibil. Trimite-le primele. |
+| **B** | 17 | companii încă mici | Mesajul ajunge la un om care decide. |
+| **C** | 10 | adrese de presă la companii mari | Filtru de comunicare. Bilete de loterie. |
+
+Nivelul C nu e o presupunere. **Binance a răspuns pe 1 septembrie 2026 cu un
+robot** care spune, textual, că adresa e „for media and marketing inquiries
+only" și că un om din echipa de PR va contacta expeditorul „shortly". Adresa e
+vie și livrează — dar la comunicare, nu la director. Restul companiilor mari se
+comportă la fel.
+
+Concluzia practică: `pr@` verifică faptul că adresa există, nu că scrisoarea
+ajunge unde trebuie. Randamentul real e la nivelul A, unde `contact@` e citit de
+persoana care poate decide, și unde `drh@hwaci.com` e chiar el.
+
 ## Înainte de trimitere
 
 - **15–20 pe zi**, nu 37 odată. Gmail limitează, iar un val de mesaje identice

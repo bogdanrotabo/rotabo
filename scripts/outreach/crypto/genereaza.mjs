@@ -17,17 +17,27 @@ const url = (r) =>
   `&body=${encodeURIComponent(corp(r))}`;
 
 const esc = (t) => t.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const NUME = { crypto:"Crypto", ai:"Inteligență artificială", os:"Open source", tech:"Hardware și software" };
+const SECT = { crypto:"crypto", ai:"AI", os:"open source", tech:"tech" };
+const NUME = {
+  A:"Nivelul A — decidentul citește chiar el",
+  B:"Nivelul B — companie mică, ajunge la el",
+  C:"Nivelul C — filtru de presă, răspuns automat"
+};
+const SUB = {
+  A:"Fundații mici și menținători individuali. Aici un răspuns e posibil. Trimite-le primele.",
+  B:"Companii încă destul de mici cât mesajul să fie înaintat unui om care poate decide.",
+  C:"Adrese de presă la companii mari. Binance a răspuns cu robot pe 1 septembrie. Bilete de loterie — trimite-le ultimele."
+};
 
 let n = 0;
-const sectiuni = ["crypto","ai","os","tech"].map(s => {
-  const randuri = L.filter(r => r.s === s).map(r => {
+const sectiuni = ["A","B","C"].map(s => {
+  const randuri = L.filter(r => r.niv === s).map(r => {
     n++;
-    return `<tr><td class="n">${n}</td><td><b>${esc(r.co)}</b><div class="to">${esc(r.to)}</div></td>` +
+    return `<tr><td class="n">${n}</td><td><b>${esc(r.co)}</b><div class="to">${esc(r.to)} · ${SECT[r.s]}</div></td>` +
            `<td class="em">${esc(r.em)}<div class="src">${esc(r.src)}</div></td>` +
            `<td><a class="go" href="${esc(url(r))}" target="_blank" rel="noopener">Deschide în Gmail</a></td></tr>`;
   }).join("\n");
-  return `<h2>${NUME[s]} <span>${L.filter(r=>r.s===s).length}</span></h2>\n<table>${randuri}</table>`;
+  return `<h2>${NUME[s]} <span>${L.filter(r=>r.niv===s).length}</span></h2>\n<p class="sub">${SUB[s]}</p>\n<table>${randuri}</table>`;
 }).join("\n");
 
 const html = `<!DOCTYPE html><html lang="ro"><head><meta charset="utf-8">
@@ -48,6 +58,7 @@ tr:last-child td{border-bottom:0}
 .to{color:#8a7a94;font-size:.85rem}
 .em{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86rem;color:var(--v1)}
 .src{font-family:'Segoe UI',sans-serif;color:#a992b8;font-size:.78rem;margin-top:.15rem}
+.sub{margin:.1rem 0 .7rem;color:#8a7a94;font-size:.86rem;max-width:70ch}
 .go{display:inline-block;background:#9333a8;color:#fff;text-decoration:none;font-weight:600;
  font-size:.85rem;padding:.45rem .8rem;border-radius:8px;white-space:nowrap}
 .go:hover{background:var(--v1)}

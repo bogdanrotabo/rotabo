@@ -49,154 +49,154 @@ tech:
 
 export const L = [
 /* ---------- CRYPTO ---------- */
-{s:"crypto", co:"Binance", to:"Richard Teng, CEO", em:"pr@binance.com",
+{s:"crypto", co:"Binance", niv:"C", to:"Richard Teng, CEO", em:"pr@binance.com",
  src:"binance.com/en/press — PR & Communications",
  p:"For Richard Teng.\n\nYour founder signed the Giving Pledge in 2022, promising to give away the overwhelming majority of his wealth. That is a commitment about an estate — it takes effect when he is gone. gift.ceo is about the other kind: what the company gives this quarter, under its own name, while the people who decided it are still running it."},
 
-{s:"crypto", co:"the Ethereum Foundation", to:"Ethereum Foundation", em:"press@ethereum.org",
+{s:"crypto", co:"the Ethereum Foundation", niv:"C", to:"Ethereum Foundation", em:"press@ethereum.org",
  src:"ethereum.org/foundation — Media Relations",
  p:"For the Ethereum Foundation.\n\nYou have funded public goods for a decade — clients, research, tooling that nobody owns and everybody uses. It is the largest sustained act of giving in your industry, and almost nobody outside it can name a single item on the list. That is not modesty working, it is a filing problem."},
 
-{s:"crypto", co:"the Solana Foundation", to:"Solana Foundation", em:"press@solana.org",
+{s:"crypto", co:"the Solana Foundation", niv:"B", to:"Solana Foundation", em:"press@solana.org",
  src:"solana.com/branding — press contact",
  p:"For the Solana Foundation.\n\nYou fund the work nobody captures: validators, tooling, documentation, the unglamorous half that makes a chain usable. It is written up as programme pages and grant announcements, which is precisely where gifts go to be forgotten."},
 
-{s:"crypto", co:"Kraken", to:"Kraken", em:"press@kraken.com",
+{s:"crypto", co:"Kraken", niv:"C", to:"Kraken", em:"press@kraken.com",
  src:"comunicat Businesswire — press contact",
  p:"For Kraken.\n\nYou published your Proof of Reserves methodology instead of keeping it as a competitive moat, which handed every customer of every other exchange an argument to use against their own exchange. Giving away your verification standard is a gift to your competitors' users, and it is the kind that never gets counted as one."},
 
-{s:"crypto", co:"Polygon", to:"Polygon Labs", em:"pr@polygon.technology",
+{s:"crypto", co:"Polygon", niv:"B", to:"Polygon Labs", em:"pr@polygon.technology",
  src:"polygon.technology/contact",
  p:"For Polygon Labs.\n\nYou have funded builders through grants for years — money out, no equity back, most of it to teams that will never make headlines. In your sector that is unusual enough to be worth saying out loud, once, with a name attached."},
 
-{s:"crypto", co:"Arbitrum", to:"Offchain Labs", em:"pr@offchain.io",
+{s:"crypto", co:"Arbitrum", niv:"B", to:"Offchain Labs", em:"pr@offchain.io",
  src:"offchainlabs.com/contact",
  p:"For Offchain Labs.\n\nRetroactive public goods funding — paying for work after it has already been given away — is one of the few genuinely new ideas about generosity to come out of your industry. You helped make it normal. It deserves a line somewhere other than a governance forum."},
 
-{s:"crypto", co:"the Tezos Foundation", to:"Tezos Foundation", em:"contact@tezos.foundation",
+{s:"crypto", co:"the Tezos Foundation", niv:"A", to:"Tezos Foundation", em:"contact@tezos.foundation",
  src:"tezos.foundation/contact",
  p:"For the Tezos Foundation.\n\nYou have given grants since 2018, through two full market cycles, including the years when nobody was watching and there was no attention to be bought with it. Giving in a bear market is the only version that proves anything."},
 
-{s:"crypto", co:"Paxos", to:"Paxos", em:"press@paxos.com",
+{s:"crypto", co:"Paxos", niv:"B", to:"Paxos", em:"press@paxos.com",
  src:"paxos.com/contact",
  p:"For Paxos.\n\nYou publish attestations that most of your competitors would rather not have to match. Transparency that raises the floor for an entire category is a gift to everyone in it, including the people who resent you for it."},
 
 /* ---------- AI ---------- */
-{s:"ai", co:"the Allen Institute for AI", to:"Ali Farhadi, CEO", em:"press@allenai.org",
+{s:"ai", co:"the Allen Institute for AI", niv:"B", to:"Ali Farhadi, CEO", em:"press@allenai.org",
  src:"allenai.org/press/resources",
  p:"For Ali Farhadi.\n\nOLMo is not an open model in the sense the phrase has come to mean. You released the weights, the code, the data and the training recipe — the entire thing, so that someone with no relationship to you can reproduce it and check your work. Almost nobody else in this field has done that, and the ones who have not are the ones using the word 'open' most often."},
 
-{s:"ai", co:"EleutherAI", to:"EleutherAI", em:"contact@eleuther.ai",
+{s:"ai", co:"EleutherAI", niv:"A", to:"EleutherAI", em:"contact@eleuther.ai",
  src:"eleuther.ai",
  p:"For EleutherAI.\n\nYou built GPT-Neo and the Pile as volunteers, in public, and gave them away at a moment when the alternative was that nobody outside three companies could study large models at all. An entire generation of open research exists because of a Discord server and people who were not being paid."},
 
-{s:"ai", co:"Hugging Face", to:"Clément Delangue, CEO", em:"press@huggingface.co",
+{s:"ai", co:"Hugging Face", niv:"B", to:"Clément Delangue, CEO", em:"press@huggingface.co",
  src:"huggingface.co",
  p:"For Clément Delangue.\n\nYou host, free, the work of people who will never pay you — hundreds of thousands of models and datasets, served to anyone. Most companies call that a growth strategy. It is also, measured in bandwidth alone, one of the largest ongoing donations in the industry, and it is the reason a student in any country can do this work at all."},
 
-{s:"ai", co:"Mistral AI", to:"Arthur Mensch, CEO", em:"press@mistral.ai",
+{s:"ai", co:"Mistral AI", niv:"B", to:"Arthur Mensch, CEO", em:"press@mistral.ai",
  src:"mistral.ai/contact",
  p:"For Arthur Mensch.\n\nYou released open-weight models at a point when the argument for keeping everything closed had effectively won. Whatever the commercial logic, the result is that capabilities which were the property of a handful of American companies became available to anyone, permanently, and cannot be recalled."},
 
-{s:"ai", co:"Stability AI", to:"Stability AI", em:"press@stability.ai",
+{s:"ai", co:"Stability AI", niv:"B", to:"Stability AI", em:"press@stability.ai",
  src:"stability.ai/contact",
  p:"For Stability AI.\n\nStable Diffusion was released openly, and the consequence was that image generation stopped being something you rented and became something you could run. Whatever has happened to the company since, that release is irreversible and millions of people used it."},
 
-{s:"ai", co:"LAION", to:"LAION", em:"contact@laion.ai",
+{s:"ai", co:"LAION", niv:"A", to:"LAION", em:"contact@laion.ai",
  src:"laion.ai",
  p:"For LAION.\n\nYou are a non-profit that assembled and gave away the datasets a commercial industry was built on, and took none of the value that followed. That is the purest version of the thing gift.ceo exists to record, and you have never once been paid for it."},
 
-{s:"ai", co:"DeepSeek", to:"DeepSeek", em:"service@deepseek.com",
+{s:"ai", co:"DeepSeek", niv:"B", to:"DeepSeek", em:"service@deepseek.com",
  src:"deepseek.com",
  p:"For DeepSeek.\n\nYou published weights and methods that others in your position would have treated as the entire asset. The effect on what the rest of the field believed was possible, and on what it costs, was immediate and global."},
 
-{s:"ai", co:"Cohere", to:"Aidan Gomez, CEO", em:"support@cohere.com",
+{s:"ai", co:"Cohere", niv:"B", to:"Aidan Gomez, CEO", em:"support@cohere.com",
  src:"cohere.com/contact-sales",
  p:"For Aidan Gomez.\n\nCohere For AI put open multilingual models into the hands of researchers working in languages the rest of the industry treats as rounding errors. Giving capability to the languages nobody monetises is a gift by definition — there was never a business case."},
 
-{s:"ai", co:"Anthropic", to:"Anthropic", em:"press@anthropic.com",
+{s:"ai", co:"Anthropic", niv:"C", to:"Anthropic", em:"press@anthropic.com",
  src:"contact publicat pentru presa",
  p:"For Anthropic.\n\nYou open-sourced the Model Context Protocol rather than keeping it as a proprietary integration layer, and competitors adopted it. Handing a standard to the people you are competing with is a specific, datable act of giving, and it is more concrete than most of what gets written in an AI company's values page."},
 
 /* ---------- OPEN SOURCE ---------- */
-{s:"os", co:"SQLite", to:"D. Richard Hipp", em:"drh@hwaci.com",
+{s:"os", co:"SQLite", niv:"A", to:"D. Richard Hipp", em:"drh@hwaci.com",
  src:"sqlite.org/support.html — adresa personala publicata",
  p:"For D. Richard Hipp.\n\nSQLite is in the public domain. Not permissively licensed — public domain, no attribution, no conditions, nothing owed to you by anyone. It runs in every phone, every browser, most aircraft, and you kept the option of charging for it and did not take it. It is the largest gift in the history of software measured by installs, and there is no page anywhere that says so."},
 
-{s:"os", co:"the Apache Software Foundation", to:"Apache Software Foundation", em:"press@apache.org",
+{s:"os", co:"the Apache Software Foundation", niv:"B", to:"Apache Software Foundation", em:"press@apache.org",
  src:"apache.org/foundation/contact.html",
  p:"For the Apache Software Foundation.\n\nThe licence that carries your name is on a substantial share of the world's running code, and the foundation behind it has never charged for any of it. Corporations built trillion-dollar businesses on top and the foundation is still funded by donations."},
 
-{s:"os", co:"the Wikimedia Foundation", to:"Wikimedia Foundation", em:"info@wikimedia.org",
+{s:"os", co:"the Wikimedia Foundation", niv:"B", to:"Wikimedia Foundation", em:"info@wikimedia.org",
  src:"wikimediafoundation.org/about/contact",
  p:"For the Wikimedia Foundation.\n\nWikipedia is the single most-used gift on the internet, and it is currently being consumed at industrial scale to train commercial models whose owners do not mention where the text came from. You gave it anyway, and would again."},
 
-{s:"os", co:"the Rust Foundation", to:"Rust Foundation", em:"contact@rustfoundation.org",
+{s:"os", co:"the Rust Foundation", niv:"A", to:"Rust Foundation", em:"contact@rustfoundation.org",
  src:"foundation.rust-lang.org/contact",
  p:"For the Rust Foundation.\n\nA language given away, governed in the open, now underneath operating systems and browsers used by billions. The companies that depend on it most are not the ones paying for it."},
 
-{s:"os", co:"the Free Software Foundation", to:"Free Software Foundation", em:"info@fsf.org",
+{s:"os", co:"the Free Software Foundation", niv:"A", to:"Free Software Foundation", em:"info@fsf.org",
  src:"fsf.org/about/contact",
  p:"For the Free Software Foundation.\n\nThe GPL is a legal instrument invented for one purpose: to make a gift impossible to take back. Whatever anyone thinks of the politics, that mechanism is why a large part of the world's software could not be enclosed, and it was given away too."},
 
-{s:"os", co:"Creative Commons", to:"Creative Commons", em:"info@creativecommons.org",
+{s:"os", co:"Creative Commons", niv:"A", to:"Creative Commons", em:"info@creativecommons.org",
  src:"creativecommons.org/about/contact",
  p:"For Creative Commons.\n\nYou built the licences that let everyone else give things away properly, and you gave those away as well. Billions of works are shareable because of infrastructure that charges nothing and is credited almost nowhere."},
 
-{s:"os", co:"Debian", to:"the Debian Project", em:"press@debian.org",
+{s:"os", co:"Debian", niv:"A", to:"the Debian Project", em:"press@debian.org",
  src:"debian.org/contact",
  p:"For the Debian Project.\n\nThe Social Contract is a promise, made in 1997 and kept since, that the system will remain free and that its users' interests come first. Thirty years of volunteers honouring a document nobody could have enforced."},
 
-{s:"os", co:"KDE", to:"KDE e.V.", em:"press@kde.org",
+{s:"os", co:"KDE", niv:"A", to:"KDE e.V.", em:"press@kde.org",
  src:"kde.org/contact",
  p:"For KDE.\n\nA complete desktop, given away, maintained for decades by people who are not paid for it, on which a great deal of public-sector and educational computing quietly depends."},
 
-{s:"os", co:"GitLab", to:"GitLab", em:"press@gitlab.com",
+{s:"os", co:"GitLab", niv:"B", to:"GitLab", em:"press@gitlab.com",
  src:"about.gitlab.com/press",
  p:"For GitLab.\n\nThe Community Edition is genuinely free and genuinely complete enough to run a company on, and your handbook — the entire operating manual of a public company — is published for anyone to copy. Very few companies give away how they work."},
 
-{s:"os", co:"the OpenSSF", to:"Open Source Security Foundation", em:"pr@openssf.org",
+{s:"os", co:"the OpenSSF", niv:"A", to:"Open Source Security Foundation", em:"pr@openssf.org",
  src:"openssf.org/about/contact",
  p:"For the OpenSSF.\n\nYou fund security work on software that everyone uses and nobody owns — the maintainers who hold up the supply chain and get noticed only when something breaks. Paying for other people's unglamorous work is giving in its least rewarded form."},
 
-{s:"os", co:"Bluesky", to:"Bluesky", em:"press@blueskyweb.xyz",
+{s:"os", co:"Bluesky", niv:"B", to:"Bluesky", em:"press@blueskyweb.xyz",
  src:"bsky.social/about/support",
  p:"For Bluesky.\n\nThe AT Protocol is open, and it is designed so that people can leave you and take their identity and their followers with them. Building your own exit door is a gift to users at the direct expense of your own leverage."}
 ,
 /* ---------- TECH / HARDWARE / SOFTWARE ---------- */
-{s:"tech", co:"Bosch", to:"Stefan Hartung, CEO", em:"Christof.Ehrhart@de.bosch.com",
+{s:"tech", co:"Bosch", niv:"C", to:"Stefan Hartung, CEO", em:"Christof.Ehrhart@de.bosch.com",
  src:"bosch-presse.de — Head of Communications",
  p:"For Stefan Hartung.\n\nNinety-four per cent of Bosch is owned by a charitable foundation. The dividends of one of the largest engineering companies on earth do not go to shareholders, because there effectively are none — they go to public health, education and research, and have since 1964. Almost nobody outside Germany knows this. It is the single largest structural act of giving by any company I have written to, and it is invisible."},
 
-{s:"tech", co:"Siemens", to:"Roland Busch, CEO", em:"contact@siemens.com",
+{s:"tech", co:"Siemens", niv:"C", to:"Roland Busch, CEO", em:"contact@siemens.com",
  src:"press.siemens.com",
  p:"For Roland Busch.\n\nSiemens Stiftung has funded education and basic services for decades, and the company has published engineering standards it could have kept closed. At your scale, giving is usually institutional and anonymous. gift.ceo asks for the opposite: one thing, your name on it."},
 
-{s:"tech", co:"Adobe", to:"Shantanu Narayen, CEO", em:"adobepr@adobe.com",
+{s:"tech", co:"Adobe", niv:"C", to:"Shantanu Narayen, CEO", em:"adobepr@adobe.com",
  src:"news.adobe.com/contact-us",
  p:"For Shantanu Narayen.\n\nAdobe gave away PDF. The specification was released and became an ISO standard in 2008, which meant surrendering control of the most widely used document format in the world at the moment it was most valuable to own. Every government form, every contract, every invoice on earth runs on something your company handed to the public."},
 
-{s:"tech", co:"Cloudflare", to:"Matthew Prince, CEO", em:"press@cloudflare.com",
+{s:"tech", co:"Cloudflare", niv:"C", to:"Matthew Prince, CEO", em:"press@cloudflare.com",
  src:"cloudflare.com/press",
  p:"For Matthew Prince.\n\nProject Galileo protects human rights groups, journalists and election infrastructure for nothing, and has since 2014 — the customers least able to pay and most likely to be attacked. Add 1.1.1.1 and a free tier that a real business can actually run on, and you are giving away infrastructure at a scale most companies would call a business line."},
 
-{s:"tech", co:"Canonical", to:"Mark Shuttleworth, CEO", em:"pr@canonical.com",
+{s:"tech", co:"Canonical", niv:"B", to:"Mark Shuttleworth, CEO", em:"pr@canonical.com",
  src:"canonical.com/contact-us",
  p:"For Mark Shuttleworth.\n\nUbuntu was free, and for years you posted pressed CDs anywhere in the world, free, including postage, to people who had no way to download it. That was not a growth channel — it was the deliberate removal of the last barrier for people with no bandwidth and no money. A generation of engineers in places your competitors ignored started there."},
 
-{s:"tech", co:"Atlassian", to:"Mike Cannon-Brookes & Scott Farquhar", em:"press@atlassian.com",
+{s:"tech", co:"Atlassian", niv:"C", to:"Mike Cannon-Brookes & Scott Farquhar", em:"press@atlassian.com",
  src:"atlassian.com/company/contact",
  p:"For Mike Cannon-Brookes and Scott Farquhar.\n\nYou co-founded Pledge 1% — one per cent of equity, product and time, committed before the company was worth anything, and then you convinced thousands of other founders to do the same. Giving away your own idea about giving, so competitors could copy it, is the version that almost nobody does."},
 
-{s:"tech", co:"Grafana Labs", to:"Raj Dutt, CEO", em:"press@grafana.com",
+{s:"tech", co:"Grafana Labs", niv:"B", to:"Raj Dutt, CEO", em:"press@grafana.com",
  src:"grafana.com/about/press",
  p:"For Raj Dutt.\n\nGrafana is free and it is on the wall of nearly every operations team in the world. You could have made the useful half proprietary at any point in the last decade and did not."},
 
-{s:"tech", co:"Elastic", to:"Ash Kulkarni, CEO", em:"pr-team@elastic.co",
+{s:"tech", co:"Elastic", niv:"B", to:"Ash Kulkarni, CEO", em:"pr-team@elastic.co",
  src:"elastic.co/about/press",
  p:"For Ash Kulkarni.\n\nIn 2024 you moved Elasticsearch back to an open source licence. Companies almost never walk back a licence change in that direction — the pressure runs entirely the other way. Returning something to the commons after taking it out is rarer than giving it in the first place."},
 
-{s:"tech", co:"Arm", to:"Rene Haas, CEO", em:"Global-PRteam@arm.com",
+{s:"tech", co:"Arm", niv:"C", to:"Rene Haas, CEO", em:"Global-PRteam@arm.com",
  src:"arm.com/company/contact-us",
  p:"For Rene Haas.\n\nYour architecture is in essentially every phone on the planet, which puts you in an unusual position: a decision you make about access changes what is possible for people who will never be your customers. That is leverage most CEOs do not have, and gift.ceo is a page for people who have it and use it."}
 
