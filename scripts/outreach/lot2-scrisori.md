@@ -43,7 +43,29 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 33. EWS Schönau · DE
+## 34. Gläserne Molkerei · DE
+
+| | |
+|---|---|
+| Către | Rüdiger Fricke, Geschäftsführer |
+| Adresa | info@glaeserne-molkerei.de |
+| Unde | glaeserne-molkerei.de/kontakt — citită de pe pagină, 1 sept 2026 |
+
+**Subiect:** Ten founding seats on gift.ceo — yours costs nothing
+
+> For Rüdiger Fricke.
+>
+> You named the company after the glass. Anyone can walk in and watch milk
+> become cheese through a window, without an appointment and without a press
+> officer standing next to them, and the pasture campaign names the farms it
+> came from.
+>
+> Most food companies describe their process. Yours can be checked by looking
+> at it, which is a harder promise to make and a much easier one to keep.
+
+---
+
+## 35. EWS Schönau · DE
 
 | | |
 |---|---|
@@ -63,7 +85,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 34. Adelholzener · DE
+## 36. Adelholzener · DE
 
 | | |
 |---|---|
@@ -82,7 +104,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 35. WALA / Dr. Hauschka · DE
+## 37. WALA / Dr. Hauschka · DE
 
 | | |
 |---|---|
@@ -101,7 +123,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 36. fairafric · DE / GH
+## 38. fairafric · DE / GH
 
 | | |
 |---|---|
@@ -120,7 +142,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 37. BESH Schwäbisch Hall · DE
+## 39. BESH Schwäbisch Hall · DE
 
 | | |
 |---|---|
@@ -139,7 +161,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 38. Herrmannsdorfer · DE
+## 40. Herrmannsdorfer · DE
 
 | | |
 |---|---|
@@ -158,7 +180,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 39. VAUDE · DE
+## 41. VAUDE · DE
 
 | | |
 |---|---|
@@ -176,7 +198,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 40. gebana · CH
+## 42. gebana · CH
 
 | | |
 |---|---|
@@ -194,7 +216,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 41. Werner & Mertz (Frosch) · DE
+## 43. Werner & Mertz (Frosch) · DE
 
 | | |
 |---|---|
@@ -213,7 +235,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 42. gugler · AT
+## 44. gugler · AT
 
 | | |
 |---|---|
@@ -231,7 +253,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 43. Neumarkter Lammsbräu · DE
+## 45. Neumarkter Lammsbräu · DE
 
 | | |
 |---|---|
@@ -250,7 +272,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 44. Green Planet Energy · DE
+## 46. Green Planet Energy · DE
 
 | | |
 |---|---|
@@ -268,7 +290,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 45. Bürgerwerke · DE
+## 47. Bürgerwerke · DE
 
 | | |
 |---|---|
@@ -286,7 +308,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 46. Naturstrom · DE
+## 48. Naturstrom · DE
 
 | | |
 |---|---|
@@ -304,7 +326,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 47. GEPA · DE
+## 49. GEPA · DE
 
 | | |
 |---|---|
@@ -324,7 +346,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 48. El Puente · DE
+## 50. El Puente · DE
 
 | | |
 |---|---|
@@ -343,7 +365,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 49. Molkerei Berchtesgadener Land · DE
+## 51. Molkerei Berchtesgadener Land · DE
 
 | | |
 |---|---|
@@ -361,7 +383,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 50. Upländer Bauernmolkerei · DE
+## 52. Upländer Bauernmolkerei · DE
 
 | | |
 |---|---|
@@ -378,7 +400,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 51. Taifun Tofu · DE
+## 53. Taifun Tofu · DE
 
 | | |
 |---|---|
@@ -397,7 +419,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 52. Original Beans · NL
+## 54. Original Beans · NL
 
 | | |
 |---|---|
@@ -416,7 +438,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 53. Elvis & Kresse · UK
+## 55. Elvis & Kresse · UK
 
 | | |
 |---|---|
@@ -435,7 +457,7 @@ Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
 
 ---
 
-## 54. Andechser Molkerei · DE
+## 56. Andechser Molkerei · DE
 
 | | |
 |---|---|
@@ -458,7 +480,7 @@ trimis devreme.
 
 ---
 
-## 55. Manufactum · DE
+## 57. Manufactum · DE
 
 | | |
 |---|---|
@@ -476,7 +498,7 @@ trimis devreme.
 
 ---
 
-## 56. Hessnatur · DE
+## 58. Hessnatur · DE
 
 | | |
 |---|---|
@@ -494,7 +516,7 @@ trimis devreme.
 
 ---
 
-## 57. Armedangels · DE
+## 59. Armedangels · DE
 
 | | |
 |---|---|
@@ -512,7 +534,7 @@ trimis devreme.
 
 ---
 
-## 58. Salus · DE
+## 60. Salus · DE
 
 | | |
 |---|---|
@@ -530,7 +552,7 @@ trimis devreme.
 
 ---
 
-## 59. Primavera · DE
+## 61. Primavera · DE
 
 | | |
 |---|---|
@@ -549,7 +571,7 @@ trimis devreme.
 
 ---
 
-## 60. Staud's · AT
+## 62. Staud's · AT
 
 | | |
 |---|---|
@@ -567,7 +589,7 @@ trimis devreme.
 
 ---
 
-## 61. Waldland · AT
+## 63. Waldland · AT
 
 | | |
 |---|---|
@@ -585,7 +607,7 @@ trimis devreme.
 
 ---
 
-## 62. Grüne Erde · AT
+## 64. Grüne Erde · AT
 
 | | |
 |---|---|
@@ -604,7 +626,7 @@ trimis devreme.
 
 ---
 
-## 63. Bauckhof · DE
+## 65. Bauckhof · DE
 
 | | |
 |---|---|
@@ -622,7 +644,7 @@ trimis devreme.
 
 ---
 
-## 64. Sodasan · DE
+## 66. Sodasan · DE
 
 | | |
 |---|---|
@@ -639,7 +661,7 @@ trimis devreme.
 
 ---
 
-## 65. AlmaWin · DE
+## 67. AlmaWin · DE
 
 | | |
 |---|---|
@@ -656,7 +678,7 @@ trimis devreme.
 
 ---
 
-## 66. mymuesli · DE
+## 68. mymuesli · DE
 
 | | |
 |---|---|
@@ -674,7 +696,7 @@ trimis devreme.
 
 ---
 
-## 67. Bionade · DE
+## 69. Bionade · DE
 
 | | |
 |---|---|
@@ -692,7 +714,7 @@ trimis devreme.
 
 ---
 
-## 68. Hofpfisterei · DE
+## 70. Hofpfisterei · DE
 
 | | |
 |---|---|
@@ -709,7 +731,7 @@ trimis devreme.
 
 ---
 
-## 69. Bio Hotels · AT
+## 71. Bio Hotels · AT
 
 | | |
 |---|---|
@@ -766,7 +788,7 @@ trimis devreme.
 | 97 | Kastner | office@kastner.at | **VERIFY** | rețeaua „Gutes vom Bauernhof" |
 | 98 | Beutelsbacher | info@beutelsbacher.de | Thomas Maier, Matthias Maier | sucuri, presare proprie |
 | 99 | Manufactum | — | — | *deja la #55* |
-| 101 | Gläserne Molkerei | **de citit manual** | Rüdiger Fricke | lăptărie transparentă, vizitabilă |
 
-**Veja e rezolvată** — adresa citită de pe pagină de Bogdan, scrisoarea scrisă,
-vezi #33. Rămâne doar Gläserne Molkerei de deschis manual.
+**Veja și Gläserne Molkerei sunt rezolvate** — ambele adrese citite de pe
+paginile lor de Bogdan, ambele scrisori scrise (#33 și #34). Nu mai rămâne
+nimic de deschis manual.
