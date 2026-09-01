@@ -2,7 +2,7 @@
 
 Cercetare 1 septembrie 2026. Expeditor: gift.ceo.support@gmail.com
 Contor verificat live pe gift.ceo: **"Founding seats: 10 of 10 still open."**
-→ linia din email rămâne "All ten are still open."
+→ linia din email rămâne "Nine of the ten are still open."
 
 ## Constatarea principală
 

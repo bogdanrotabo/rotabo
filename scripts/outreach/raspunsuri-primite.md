@@ -19,11 +19,15 @@ tot rostul ei.
 
 ### Ce trebuie urmărit
 
-**Contorul.** `founding_seats_remaining()` = 10 în continuare: numără firmele cu
-`is_founding`, nu rezervările. Rămâne 10 până când Olivier se autentifică.
-**În clipa în care o face, devine 9 — și linia "All ten are still open." din
-toate scrisorile netrimise devine falsă.** E regula 3 din propriile reguli:
-verifică contorul pe sit înainte de fiecare trimitere.
+**Contorul — S-A ÎNTÂMPLAT.** Locul a fost acordat administrativ, la cererea lui
+Bogdan, pe baza acordului scris al lui Olivier. `founding_seats_remaining()` a
+trecut de la 10 la **9**. Linia „All ten are still open." din toate scrisorile a
+devenit **„Nine of the ten are still open."** în launcher.html,
+emailuri-gata-de-trimis.md și USA-cercetare.md. Linkurile o poartă automat,
+fiindcă se generează din launcher.
+
+Următoarea acordare o face 8. Regula 3 nu e o formalitate: fraza e verificabilă
+de destinatar pe pagină, în secunda în care o citește.
 
 **Riscul de potrivire.** Spec-ul face verificarea pe claim-ul `hd` de la Google
 Workspace. Dacă Olivier se autentifică cu un Gmail personal în loc de
@@ -37,3 +41,33 @@ se pierde dacă nu publică un dar până atunci.
 ### Un fapt de folosit
 
 `companies` = 0, `gifts` = 0. Nimeni n-a publicat încă. Darul lui ar fi **#1**.
+
+### Ce a fost făcut administrativ, 1 sept 08:05 UTC
+
+Locul nu a fost lăsat să aștepte autentificarea. La cererea explicită a lui
+Bogdan, repetată de trei ori, Cyberbotics a fost pus direct:
+
+- rând în `companies`: domain `cyberbotics.com`, slug `cyberbotics`, country CH
+- `is_founding` = true, `founding_number` = **1**, `seat_status` = active
+- `seat_number` = 1, atribuit automat de `companies_after_update`
+- `founding_deadline` = 2026-10-01
+- `founding_domains.claimed_by_company_id` legat
+- eveniment `granted` în `founding_events`, cu mențiunea că a venit de la admin
+
+Trigger-ul `companies_before_insert` a fost oprit doar cât a ținut inserarea și
+pus la loc în aceeași tranzacție — verificat după: `tgenabled = 'O'`. Fără el,
+orice înscriere ulterioară din aplicație ar fi scăpat de verificarea de domeniu.
+
+### Două lucruri pe care asta NU le rezolvă
+
+**Nu poate încă publica darul.** `gifts` cere `ceo_id` → `ceos` → `auth.uid()`,
+adică autentificarea lui. Locul e al lui; darul tot el trebuie să-l publice, iar
+cele 30 de zile curg de acum.
+
+**Coliziunea pe domeniu.** `companies.domain` e unique. Dacă fluxul de înscriere
+face INSERT necondiționat la autentificare, lovește constrângerea și dă eroare.
+Dacă în schimb caută firma după `hd` și se atașează, merge curat —
+`ceos_before_insert` permite explicit atașarea la o firmă existentă. Nu am putut
+verifica din care fel e frontend-ul: gift-ceo e alt repo, neatașat la sesiune.
+**Dacă Olivier scrie că nu poate intra, ăsta e motivul, iar reparația e un
+singur DELETE pe rândul din `companies`.**
