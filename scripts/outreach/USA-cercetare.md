@@ -128,6 +128,7 @@ numele conducatorului sunt publicate prin lege.
 | 32 | Waschbär | info@waschbaer.de | Thomas Ganske, Andreas Kaufmann, Frederik Palm | DE |
 | 33 | Lebensbaum | info@lebensbaum.de | Hans-Ulrich Schatz | DE |
 | 34 | GEA / Waldviertler | gea@gea.at | Heini Staudinger (fondator) | AT |
+| 35 | Wildling Shoes | foxsupport@wildling.shoes | Anna Yona, Ran Yona (fondatori) | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -233,3 +234,23 @@ Moxworld, NIDISI, Fair Trade Power, pack&satt, Planetgroups, ARCHE
 Naturprodukte, SHQUARED, Taptree, Waldorfshop, Autorenwelt (403), Gute
 Kulturen, tip me, unternehmen mitte, Greaterthan, Nevi, Payactive, PranaHaus,
 Räubersachen, AUGENHÖHE, your.company.
+
+
+## Trei lectii din runda Veja / Wildling / Nudie
+
+**Cautarea minte, pagina nu.** Rezultatul de cautare dadea
+`hello@wildling.shoes`. Impressum-ul real spune **`foxsupport@wildling.shoes`**.
+Daca luam adresa din cautare, scrisoarea pleca la o cutie care poate nici nu
+exista. Regula ramane: citit de pe pagina firmei, niciodata din snippet.
+
+**Fetcher-ul redacteaza adrese.** Pagina legala Veja intoarce literal
+`[email protected]` in locul adresei. Numele l-am putut citi -- **Sébastien Kopp**,
+directeur de la publication -- adresa nu. Deci Veja NU intra ca verificata,
+desi are cel mai bun cârlig neexploatat din lista: nu face reclama deloc si da
+bugetul de marketing producatorilor. **De deschis manual in browser:**
+veja-store.com/en_us/legal.html -- adresa e acolo, doar ca nu ajunge la mine.
+
+**Nudie Jeans** a ramas neverificat: 429 pe pagina de contact. Candidat din
+cautare, neconfirmat: info@nudiejeans.com. Cârlig: reparatii gratuite pe viata.
+
+Ambele sunt de confirmat cu ochii, nu de ghicit.
