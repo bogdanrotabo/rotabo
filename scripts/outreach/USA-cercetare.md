@@ -1,0 +1,75 @@
+# gift.ceo — lista USA: ce s-a găsit și de ce nu sunt 50
+
+Cercetare 1 septembrie 2026. Expeditor: gift.ceo.support@gmail.com
+Contor verificat live pe gift.ceo: **"Founding seats: 10 of 10 still open."**
+→ linia din email rămâne "All ten are still open."
+
+## Constatarea principală
+
+Metoda elvețiană/DACH nu se transferă în SUA, și motivul e legal, nu de execuție.
+
+Germania și Austria **obligă** prin lege (§5 DDG) fiecare sit comercial să publice
+o adresă de email în Impressum. De aceea rata a fost 6 din 8 în DACH. Statele
+Unite nu au niciun echivalent: firma americană pune un formular de contact și
+atât.
+
+Am verificat aproximativ 30 de firme americane alese pe exact același criteriu
+care a funcționat în Europa — proprietate neobișnuită sau act documentat de
+dăruire. Rezultat: **6 adrese publicate, utilizabile.** Cam 20%.
+
+Asta confirmă ce măsurase deja sesiunea de ieri: 6/8 în DACH, 0/5 în rest.
+
+Ca să ajung la 50 de adrese *publicate și verificate* ar trebui măturate ~250 de
+firme americane. Iar rezervorul de firme americane care au **și** un act de
+dăruire documentat despre care merită scris un prim paragraf personal, **și** o
+adresă publicată, foarte probabil nu are 50 de intrări.
+
+Singurul mod de a scoate 50 de adrese americane acum ar fi ghicirea după tipar
+(`prenume@firma.com`). Regula ta din `33emailuri.md` o interzice explicit — și pe
+bună dreptate: adresele ghicite dau bounce, iar bounce-urile ard domeniul.
+
+## Cele 6 verificate
+
+Toate extrase de pe pagina proprie a firmei, inclusiv din linkuri `mailto:`.
+
+| # | Firmă | Adresa | Unde e publicată | Conducător |
+|---|---|---|---|---|
+| 1 | Cloudflare | press@cloudflare.com | cloudflare.com/press | Matthew Prince, co-founder & CEO |
+| 2 | Automattic | press@automattic.com | automattic.com/press | Matt Mullenweg, founder & CEO |
+| 3 | Salesforce | pr@salesforce.com | salesforce.com/news | Marc Benioff, co-founder & CEO |
+| 4 | DuckDuckGo | press@duckduckgo.com | duckduckgo.com/press | Gabriel Weinberg, founder & CEO |
+| 5 | Wikimedia Foundation | business@wikimedia.org | wikimediafoundation.org/about/contact | Maryana Iskander, CEO |
+| 6 | Mozilla | press@mozilla.com | blog.mozilla.org/press | **VERIFY** — conducerea Mozilla Corp s-a schimbat recent; confirmă pe LinkedIn înainte de trimitere |
+
+Cârligul documentat pentru fiecare, de scris în primul paragraf:
+
+- **Cloudflare** — Project Galileo: protecție gratuită, din 2014, pentru grupuri
+  civice și de presă care altfel ar fi scoase offline. Nu e CSR, e infrastructură dată.
+- **Automattic** — WordPress sub GPL, gratuit pentru oricine, plus programul prin
+  care angajații pleacă cu codul lor deschis. A dat platforma, nu a vândut-o.
+- **Salesforce** — modelul 1-1-1 (1% capital, 1% produs, 1% timp), copiat de sute
+  de firme prin Pledge 1%. A dat modelul, nu doar banii.
+- **DuckDuckGo** — a construit un motor de căutare care refuză deliberat sursa de
+  venit a concurenței. Renunțarea e produsul.
+- **Wikimedia** — a cincea destinație web din lume, non-profit, fără reclame.
+- **Mozilla** — Corporation deținută integral de Foundation; Firefox nu poate fi vândut.
+
+## Firme verificate care NU publică nicio adresă
+
+Newman's Own, King Arthur Baking, Dr. Bronner's, Ben & Jerry's, REI, Recology,
+Eileen Fisher, Greyston Bakery, Homeboy Industries, Internet Archive,
+Organically Grown Company, Bombas, Warby Parker (doar investor relations),
+Fastly, GitLab, Signal.
+
+Toate au formular de contact. Un formular nu se poate trimite prin email — se
+completează manual, în browser.
+
+## Ce recomand
+
+1. **DACH-ul e deja scris și netrimis.** `emailuri-DACH-gata-de-trimis.md` are 11
+   emailuri gata, pe metoda care are 75% rată de reușită. Alea sunt valoare care
+   stă pe loc.
+2. **Pentru SUA, așteptarea corectă e 15–25, nu 50** — și numai după o măturare
+   mult mai largă. Îți pot construi lista aceea; durează, dar iese curată.
+3. **Formularele americane** sunt o campanie separată, manuală, în browser. Nu
+   intră prin niciun launcher.
