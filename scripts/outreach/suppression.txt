@@ -1,0 +1,3 @@
+# One address per line. Anyone who asks to be left alone goes here, first,
+# before anything else in the day. The launcher reads this on every run and
+# will not write to an address it finds here, ever again.
