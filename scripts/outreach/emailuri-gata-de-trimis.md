@@ -2,7 +2,7 @@
 
 Întocmit 1 septembrie 2026. Expeditor: **gift.ceo.support@gmail.com**
 Contor verificat live pe gift.ceo înainte de scriere: „Founding seats: 10 of 10 still open."
-→ linia din fiecare email este **„Nine of the ten are still open."**
+→ linia din fiecare email este **„Eight of the ten are still open."**
 
 ## Înainte de a trimite — cinci reguli
 
@@ -57,7 +57,7 @@ numele firmei în propoziția cu „permanently".
 > If you want one, reply with your company domain and I will mark it before you
 > sign in, so nothing ever asks you for payment.
 >
-> Nine of the ten are still open.
+> Eight of the ten are still open.
 >
 > gift.ceo
 >
