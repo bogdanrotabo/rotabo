@@ -173,6 +173,28 @@ numele conducatorului sunt publicate prin lege.
 | 77 | tegut | info@tegut.com | Sven Kispalko, Robert Schweininger | DE |
 | 78 | Bionade | info@bionade.de | Dirk Hinkel | DE |
 | 79 | VAUDE | impressum@vaude.com | Dr. Antje von Dewitz | DE |
+| 80 | Adelholzener | info.marketing@adelholzener.de | Peter Lachenmeir | DE |
+| 81 | Primavera | info@primaveralife.com | Martin Frevert, Kurt Ludwig Nübling | DE |
+| 82 | Salus | info@salus.de | Peter Greither, Dr. Florian Block | DE |
+| 83 | Allos | kundenservice@allos.de | Eike Mehlhop | DE |
+| 84 | Taoasis | shop@taoasis.de | **VERIFY** numele | DE |
+| 85 | Grüne Erde | beratung@grueneerde.com | **VERIFY** numele | AT |
+| 86 | Soglio | mail@soglio-produkte.ch | **VERIFY** numele | CH |
+| 87 | Staud's | office@stauds.com | Stefan Schauer, Jürgen Hagenauer | AT |
+| 88 | Waldland | info@waldland.at | Franz Tiefenbacher | AT |
+| 89 | Bodan | info@bodan.de | Sascha Damaschun, Volker Schwarz | DE |
+| 90 | Seitenbacher | mail@seitenbacher.de | Willi Pfannenschwarz | DE |
+| 91 | Ökoland | info@oekoland.de | Patrik Müller | DE |
+| 92 | Ulrich natürlich | info@ulrichgmbh.de | Frank Bieletzki, Fabian Schneider | DE |
+| 93 | fairafric | info@fairafric.com | Hendrik Reimers (CEO) | DE/GH |
+| 94 | Kastner | office@kastner.at | **VERIFY** numele | AT |
+| 95 | mymuesli | support@mymuesli.com | Max Wittrock | DE |
+| 96 | denn's / Biomarkt (dennree) | info@biomarkt.de | Joseph Nossol, Mareike Nossol | DE |
+| 97 | BIO HOTELS | office@be-oh.at | Christian Pfanner | AT |
+| 98 | Speick | info@speick.de | **VERIFY** numele | DE |
+| 99 | Original Beans | service@originalbeans.com | **VERIFY** — Philipp Kauffmann, fondator | NL |
+| 100 | Naturkost Nord | kontakt@naturkost-nord.de | Katarina Schritt | DE |
+| 101 | Barnhouse | info@barnhouse.de | **VERIFY** numele | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -341,3 +363,32 @@ launcher-ul.
 Numele l-am citit: **Rüdiger Fricke**. Adresa a venit redactata de unealta,
 la fel ca la Veja. glaeserne-molkerei.de/impressum -- e acolo, doar ca nu
 ajunge la mine.
+
+
+## 101. Cifra ceruta, si ce a costat
+
+Randamentul final, masurat pe toata cercetarea:
+
+| Zona | Verificate / incercate | Rata |
+|---|---|---|
+| DACH (DE/AT/CH) | ~85 din ~110 | ~77% |
+| SUA | 6 din ~30 | 20% |
+| Marea Britanie | 1 din 6 | ~17% |
+| Restul (NL, FR, SE) | 3 din ~8 | ~38% |
+
+Cauza e aceeasi peste tot: §5 DDG obliga fiecare sit comercial german si
+austriac sa publice o adresa. Nicaieri altundeva nu exista obligatia, si
+nicaieri altundeva nu exista adresele.
+
+## EXCLUS ca duplicat — de retinut
+
+**Alnavit** are acelasi Geschäftsführer ca **Alnatura**: Prof. Dr. Götz E. Rehn.
+E acelasi grup. Ar fi primit doua scrisori de la aceeasi campanie, ceea ce
+incalca regula 1 si arata exact ca ce este: o lista cumparata, nu una scrisa.
+Verifica numele conducatorului inainte de a adauga orice firma care pare a fi
+dintr-un grup mai mare.
+
+## De deschis manual (adresa exista, dar fetcher-ul o redacteaza)
+
+- **Veja** — veja-store.com/en_us/legal.html — Sébastien Kopp confirmat pe pagina
+- **Gläserne Molkerei** — glaeserne-molkerei.de/impressum — Rüdiger Fricke confirmat
