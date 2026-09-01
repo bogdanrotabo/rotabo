@@ -126,6 +126,8 @@ numele conducatorului sunt publicate prin lege.
 | 30 | UmweltBank | hallo@umweltbank.de | Goran Bašić | DE |
 | 31 | Followfood | presse@followfood.de | Jürg Knoll, Harri Butsch | DE |
 | 32 | Waschbär | info@waschbaer.de | Thomas Ganske, Andreas Kaufmann, Frederik Palm | DE |
+| 33 | Lebensbaum | info@lebensbaum.de | Hans-Ulrich Schatz | DE |
+| 34 | GEA / Waldviertler | gea@gea.at | Heini Staudinger (fondator) | AT |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -195,3 +197,39 @@ care citeste textul din launcher.html. O singura sursa de adevar.
 Atentie la index: daca Gmail reordoneaza conturile, `u/1` devine alta cutie
 si trimiterea pleaca de pe cea gresita, in tacere. Verifica adresa din
 dreapta-sus inainte de prima scrisoare a zilei.
+
+
+## Randamentul se subtiaza — masurat, nu presimtit
+
+Primele 32 au venit repede: lista Purpose Economy dadea si numele, si domeniul,
+si Impressum-ul era obligatoriu. Dupa ea, fiecare intrare noua costa de trei
+ori mai mult.
+
+Ultima runda: ~12 pagini cerute, 2 adrese noi. Fata de 5-6 la 8 pagini in
+primele runde. Motivele, toate verificate in runda asta:
+
+- Firmele mari nu publica: **Bosch** are legal notice fara nicio adresa;
+  **Zeiss** da 404 pe impressum; **Triodos** si **John Lewis** trimit la
+  formulare si la pagini de contact fara adrese.
+- Firmele mici din lista Purpose nu au domeniu evident. vyld, Taptree, dyve,
+  somigo, Moxworld, about:source, your.company -- fiecare cere intai o cautare
+  ca sa afli unde stau, apoi inca o cerere pentru Impressum.
+- WebFetch da 429 la peste ~3 pagini deodata si nu se reseteaza repede.
+
+## Ce ramane, in ordinea in care merita atacat
+
+**Cârlig puternic, domeniu cunoscut, neverificate inca:** Veja (nu face
+reclama deloc si da bugetul de marketing producatorilor -- cel mai bun cârlig
+neexploatat din toata lista), Nudie Jeans (reparatii gratuite pe viata),
+Fairphone, Wildling Shoes (proprietate-responsabila), Freitag, Ritter Sport,
+Hipp, Grüne Erde, dm.
+
+**Danezii detinuti de fundatii:** Novo Nordisk, Carlsberg, Lundbeck, Maersk.
+Povestea e identica si documentata; adresele sunt de presa, ca la americani.
+
+**Coada Purpose ramasa** -- de facut cu o cautare de domeniu inainte de fetch,
+nu ghicind: vyld, Oktopulli, dyve, WoodenValley, ChargeHorizons, somigo,
+Moxworld, NIDISI, Fair Trade Power, pack&satt, Planetgroups, ARCHE
+Naturprodukte, SHQUARED, Taptree, Waldorfshop, Autorenwelt (403), Gute
+Kulturen, tip me, unternehmen mitte, Greaterthan, Nevi, Payactive, PranaHaus,
+Räubersachen, AUGENHÖHE, your.company.
