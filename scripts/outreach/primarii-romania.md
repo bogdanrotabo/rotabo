@@ -260,3 +260,49 @@ filtrul se copiază, nu se ghicește.
 Pagina n-a apărut la prima publicare: `afise.html` a intrat în build-ul
 GitHub Pages, directorul `afise/` nu. Rezolvat cu `.nojekyll` — situl e HTML
 static, Jekyll n-avea ce procesa acolo.
+
+---
+
+## Eroarea de linkuri și retrimiterea — 1 septembrie 2026
+
+**Ce s-a întâmplat.** Primele 50 de scrisori au plecat doar cu text simplu.
+Gmail a fabricat singur partea HTML și, făcând asta, a înlocuit adresa **în
+textul vizibil**, nu doar în link. Primăria citea, în prima frază:
+
+> Mă numesc Bogdan Tănase. Sunt din Roman, locuiesc în Elveția și am construit
+> `https://www.google.com/url?q=http://rotabo.app&source=gmail&ust...`
+
+Linkul funcționa — redirectul Google duce la rotabo.app — dar numele platformei
+era înlocuit cu un șir care arată a phishing, în deschiderea unei scrisori
+adresate unei instituții publice.
+
+**Remediul.** Se trimite și partea HTML, scrisă de noi, cu adresa în ancoră:
+
+```
+<a href="https://rotabo.app/afise.html">rotabo.app/afise.html</a>
+```
+
+Atunci textul vizibil rămâne curat și doar `href`-ul e împachetat de Google —
+comportament normal, identic cu al oricărui email trimis din Gmail.
+
+Verificat înainte de a repeta greșeala: un mesaj de test trimis către propria
+adresă, cu trei variante. Fără `htmlBody`, toate trei au ieșit cu adresa
+stricată în text. Cu `htmlBody`, toate trei au rămas curate.
+
+**Ce s-a făcut.** Toate cele 50 au fost retrimise integral, între 12:21 și
+12:38 UTC, cu subiectul „(varianta corectată)" și cu o notă de deschidere care
+explică de ce primesc mesajul a doua oară. Fără bounce-uri noi.
+
+**Dovada că merge.** Primăria Cluj-Napoca a răspuns la 4 minute după primire,
+înregistrând solicitarea cu nr. 755760/42/01.09.2026, cu CC la Direcția
+Dezvoltare Locală. În textul citat de ei, adresa apare `rotabo.app`, cu
+împachetarea doar în link — exact cum trebuie.
+
+**Regula pentru loturile 2–4:** niciodată doar `body`. Întotdeauna și
+`htmlBody`, cu adresele în ancore.
+
+## Primul răspuns
+
+| Instituție | Când | Ce |
+|---|---|---|
+| Primăria Municipiului Cluj-Napoca | 1 sept, 12:27 UTC | Înregistrată cu nr. 755760/42/01.09.2026, repartizată către Direcția Dezvoltare Locală. Termen legal de răspuns: 30 de zile (OG 27/2002). |
