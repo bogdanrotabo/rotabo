@@ -94,25 +94,34 @@ numele conducatorului sunt publicate prin lege.
 
 | # | Firma | Adresa | Conducator | Tara |
 |---|---|---|---|---|
-| 1 | einhorn | contact@einhorn.my | Philip Siefer, Luise Tremel | DE |
-| 2 | WEtell | info@wetell.de | Andreas Schmucker, Alma Spribille, Nico Tucher | DE |
-| 3 | Neue Narrative | hallo@neuenarrative.de | Alexandra Bürger, Sebastian Klein | DE |
-| 4 | Goldeimer | shop@goldeimer.de | Rolf Schwander, Malte Schremmer | DE |
-| 5 | Märkisches Landbrot | deinert@landbrot.de | Christoph Deinert, Felix Wasmuth | DE |
+| 1 | Märkisches Landbrot | deinert@landbrot.de | Christoph Deinert, Felix Wasmuth | DE |
+| 2 | einhorn | contact@einhorn.my | Philip Siefer, Luise Tremel | DE |
+| 3 | WEtell | info@wetell.de | Andreas Schmucker, Alma Spribille, Nico Tucher | DE |
+| 4 | Neue Narrative | hallo@neuenarrative.de | Alexandra Bürger, Sebastian Klein | DE |
+| 5 | Goldeimer | shop@goldeimer.de | Rolf Schwander, Malte Schremmer | DE |
 | 6 | Alnatura | info@alnatura.de | Prof. Dr. Götz E. Rehn (fondator) | DE |
-| 7 | Cloudflare | press@cloudflare.com | Matthew Prince | US |
-| 8 | Automattic | press@automattic.com | Matt Mullenweg | US |
-| 9 | Salesforce | pr@salesforce.com | Marc Benioff | US |
-| 10 | DuckDuckGo | press@duckduckgo.com | Gabriel Weinberg | US |
-| 11 | Wikimedia | business@wikimedia.org | Maryana Iskander | US |
-| 12 | Mozilla | press@mozilla.com | VERIFY | US |
+| 7 | Voelkel | info@voelkel.bio | Jacob, Boris si Jurek Voelkel | DE |
+| 8 | openPetition | info@openpetition.net | — | DE |
+| 9 | soulbottles | hello@soulbottles.com | Christian Seewald | DE |
+| 10 | manomama | service@manomama.de | Sina Trinkwalder | DE |
+| 11 | Wildplastic | hello@wildplastic.com | Tim Lampe | DE |
+| 12 | Stapelstein | hi@stapelstein.de | Stephan Schenk, Hannah König | DE |
+| 13 | Rapunzel | info@rapunzel.de | Leonhard Wilhelm, Seraphine Wilhelm, Werner Berlage, Stefan Schmaus | DE |
+| 14 | GLS Bank | kundendialog@gls.de | Aysel Osmanoglu, Dirk Kannacher, Michael Ahlers | DE |
+| 15 | Sonett | info@sonett.eu | — | DE |
+| 16 | Cloudflare | press@cloudflare.com | Matthew Prince | US |
+| 17 | Automattic | press@automattic.com | Matt Mullenweg | US |
+| 18 | Salesforce | pr@salesforce.com | Marc Benioff | US |
+| 19 | DuckDuckGo | press@duckduckgo.com | Gabriel Weinberg | US |
+| 20 | Wikimedia | business@wikimedia.org | Maryana Iskander | US |
+| 21 | Mozilla | press@mozilla.com | VERIFY | US |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
 
 ## Coada de verificat (din lista Purpose Economy, toate germane)
 
-vyld, Stapelstein, Wildplastic, Oktopulli, openPetition, dyve, WoodenValley,
+vyld, Oktopulli, dyve, WoodenValley,
 ChargeHorizons, somigo, Moxworld, NIDISI, Fair Trade Power, pack&satt,
 Planetgroups, ARCHE Naturprodukte, SHQUARED, Taptree, Waldorfshop Universnatur,
 Autorenwelt, Gute Kulturen, tip me, unternehmen mitte (CH), Greaterthan, Nevi,
@@ -123,9 +132,8 @@ Payactive, PranaHaus, Räubersachen, about:source, AUGENHÖHE, your.company
 Bosch si Zeiss (ambele detinute de fundatie), Trigema (Wolfgang Grupp - loc de
 munca garantat pe viata), manomama (Sina Trinkwalder - angajeaza oameni
 considerati neangajabili), GEA/Waldviertler (Heini Staudinger), Sonnentor si
-Zotter (AT), Voelkel si Sonett (ambele in proprietate-responsabila), Rapunzel,
-Lebensbaum, Weleda, share (Sebastian Stricker - un produs vandut, o donatie
-echivalenta), soulbottles, GLS Bank, Triodos (NL), Buurtzorg (NL), John Lewis
+Zotter (AT), Lebensbaum, Weleda, share (Sebastian Stricker - un produs vandut, o donatie
+echivalenta), Triodos (NL), Buurtzorg (NL), John Lewis
 (UK), Novo Nordisk / Carlsberg / Lundbeck / Maersk (DK, toate detinute de
 fundatii).
 
