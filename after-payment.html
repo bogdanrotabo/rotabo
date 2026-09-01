@@ -11,6 +11,30 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ZSR8ZKJ4RL', { transport_type: 'beacon' });
+
+  // Google Ads conversion tracking, separate from GA4 on purpose. Until
+  // 2026-09-01 this site had no AW- tag at all: the only measurement was
+  // GA4, and whatever Ads counted as a conversion came from importing
+  // GA4 events -- which is how a Performance Max campaign came to report
+  // 5,758 conversions and ROAS 210 against a database holding eleven
+  // listings. Importing an analytics event is not conversion tracking.
+  // A conversion action owned by the Ads account, fired by this page,
+  // is.
+  //
+  // Empty on purpose. The two strings come from Google Ads > Goals >
+  // Conversions > the action itself > "Install the tag yourself", which
+  // prints a Conversion ID (AW-...) and a Conversion label per action.
+  // Everything below no-ops while id is blank, so this ships safely
+  // before the account side exists.
+  window.ROTABO_ADS = {
+    id: '',        // AW-XXXXXXXXXX  -- the account's one conversion ID
+    listing: '',   // label for "Anunt publicat"    (a person listed)
+    company: '',   // label for "Firma inregistrata" (the business side)
+    purchase: ''   // label for a paid viewer unlock, if ever tracked
+  };
+  if (window.ROTABO_ADS.id) {
+    gtag('config', window.ROTABO_ADS.id, { transport_type: 'beacon' });
+  }
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotabo</title>
@@ -126,6 +150,24 @@
     window.location.replace(dest);
   }
 
+  // Reports the same moment to Google Ads that the gtag calls below
+  // report to GA4. No event_callback here: the redirect is already held
+  // open by the GA4 event's callback and by the 1500ms floor under it,
+  // and transport_type 'beacon' hands this to navigator.sendBeacon,
+  // which outlives the unload. Adding a second callback would let
+  // whichever event answered first navigate away from the other.
+  function adsConversion(label, value, txn){
+    var A = window.ROTABO_ADS || {};
+    if (!A.id || !label || !window.gtag) return;
+    var c = { send_to: A.id + '/' + label };
+    // Only a real amount, never a placeholder: a free listing reported
+    // with an invented value rebuilds exactly the fake ROAS this tag
+    // was installed to replace.
+    if (isFinite(value) && value > 0) { c.value = value; c.currency = 'CHF'; }
+    if (txn) c.transaction_id = txn;
+    gtag('event', 'conversion', c);
+  }
+
   // GA4's standard purchase event (a key event by default, and the one
   // Google Ads imports as a conversion). Stripe's fixed return URL
   // carries no amount, so the page that sent the browser to Stripe
@@ -169,9 +211,11 @@
        Ads imports them separately -- counting company registrations as
        listings would hide whether the business side works at all. */
     var isCompany = /(?:^|[?&])company=1(?:&|$)/.test(location.search);
+    adsConversion(isCompany ? window.ROTABO_ADS.company : window.ROTABO_ADS.listing);
     gtag('event', isCompany ? 'company_registered' : 'listing_published',
          { event_callback: go, event_timeout: 1200 });
   } else {
+    adsConversion(window.ROTABO_ADS.purchase, ev.value, ev.transaction_id);
     gtag('event', 'purchase', ev);
   }
 
