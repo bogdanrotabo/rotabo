@@ -1,8 +1,7 @@
 {
-  "from": "gift.ceo <hello@gift.ceo>",
+  "from": "gift.ceo <gift.ceo.support@gmail.com>",
   "subject": "Only CEOs give here — an invitation for {{company}}",
   "greetingFallback": "there",
-
   "postalAddress": "TODO — the real street address gift.ceo trades from. US law requires it in the body of every commercial message; the launcher refuses to run until it is filled in.",
   "unsubscribe": "TODO — a working opt-out. Either a link (https://gift.ceo/unsubscribe?e={{email}}) or a monitored instruction such as: Reply STOP and I will not write again.",
   "listUnsubscribeHeader": "<mailto:stop@gift.ceo>"
