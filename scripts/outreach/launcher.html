@@ -1,0 +1,436 @@
+<title>gift.ceo Send Console</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  /* gift.ceo's own ground, from the sponsor mark in the Rotabo repo.
+     Single-theme on purpose: a sponsor's mark is never recoloured to match
+     the page it sits on, and that applies to its console too. */
+  :root{
+    --ink:#1c1b19; --ink-lift:#242320; --ink-sink:#151412;
+    --gold:#d9a63c; --gold-dim:rgba(217,166,60,.28);
+    --pale:#f2f0ec; --muted:#8f8a80; --muted-deep:#5f5b54;
+    --ok:#7ba46f; --warn:#c2894a; --block:#c2694a;
+    --paper:#f4f1ea; --paper-ink:#211f1c;
+    --rule:rgba(242,240,236,.10);
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--ink); color:var(--pale);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:.9375rem; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:2.25rem 1.25rem 5rem;}
+
+  /* ---- masthead ---- */
+  .head{display:flex;align-items:flex-start;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;
+    padding-bottom:1.1rem;border-bottom:1px solid var(--gold-dim);}
+  .mark{display:flex;align-items:center;gap:.7rem;}
+  .mark svg{width:36px;height:36px;flex:none;border-radius:9px;}
+  .mark-name{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;line-height:1.1;}
+  .mark-name b{color:var(--gold);}
+  .mark-tag{font-size:.72rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;}
+
+  .acct{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);
+    font-family:"IBM Plex Mono",ui-monospace,monospace;}
+  .acct input{
+    width:2.6rem;background:var(--ink-sink);color:var(--gold);border:1px solid var(--rule);
+    border-radius:3px;padding:.3rem .4rem;text-align:center;
+    font-family:inherit;font-size:.85rem;font-variant-numeric:tabular-nums;
+  }
+  .acct input:focus-visible{outline:2px solid var(--gold);outline-offset:1px;}
+
+  /* ---- progress ---- */
+  .bar{margin:1.5rem 0 .6rem;display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+  .bar-n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;
+    font-size:.82rem;color:var(--muted);}
+  .bar-n b{color:var(--pale);font-weight:500;}
+  .meter{height:4px;background:var(--ink-lift);border-radius:2px;overflow:hidden;}
+  .meter i{display:block;height:100%;background:var(--gold);width:0;transition:width .25s ease;}
+  .cap{margin-top:.55rem;font-size:.8rem;color:var(--muted-deep);}
+  .cap.hot{color:var(--warn);}
+
+  /* ---- rules strip ---- */
+  .rules{margin:1.6rem 0 2rem;padding:1rem 1.15rem;border:1px solid var(--rule);background:var(--ink-lift);
+    font-size:.83rem;color:var(--muted);}
+  .rules b{color:var(--pale);font-weight:600;}
+  .rules ol{margin:.5rem 0 0;padding-left:1.1rem;}
+  .rules li{margin:.25rem 0;}
+
+  /* ---- section ---- */
+  h2.sect{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+    font-weight:600;margin:2.5rem 0 .9rem;padding-bottom:.5rem;border-bottom:1px solid var(--rule);}
+
+  /* ---- letter card ---- */
+  .card{border:1px solid var(--rule);margin-bottom:1rem;background:var(--ink-lift);}
+  .card.done{opacity:.5;}
+  .card-top{display:flex;align-items:flex-start;gap:.9rem;padding:1rem 1.15rem;}
+  .num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;color:var(--muted-deep);
+    font-variant-numeric:tabular-nums;flex:none;padding-top:.15rem;min-width:1.6rem;}
+  .who{flex:1;min-width:0;}
+  .co{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;}
+  .co span{color:var(--muted);font-weight:400;font-size:.8rem;margin-inline-start:.45rem;}
+  .to{font-size:.83rem;color:var(--muted);margin-top:.15rem;}
+  .addr{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;color:var(--gold);
+    word-break:break-all;margin-top:.2rem;}
+  .src{font-size:.74rem;color:var(--muted-deep);margin-top:.15rem;}
+  .flag{display:inline-block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+    font-weight:700;padding:.16rem .45rem;border-radius:2px;margin-top:.4rem;}
+  .flag.verify{background:rgba(194,137,74,.18);color:var(--warn);}
+  .flag.weak{background:rgba(143,138,128,.15);color:var(--muted);}
+
+  .acts{display:flex;flex-direction:column;gap:.5rem;flex:none;align-items:stretch;}
+  a.send,button.mark,button.copy{
+    font-family:"Archivo",sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;
+    text-transform:uppercase;padding:.6rem 1rem;border-radius:2px;cursor:pointer;text-align:center;
+    text-decoration:none;display:block;border:1px solid var(--gold);
+    background:var(--gold);color:var(--ink);transition:background .14s ease;white-space:nowrap;
+  }
+  a.send:hover{background:#e8b856;}
+  button.mark,button.copy{background:transparent;color:var(--muted);border-color:var(--rule);}
+  button.mark:hover,button.copy:hover{color:var(--pale);border-color:var(--muted-deep);}
+  .card.done button.mark{color:var(--ok);border-color:rgba(123,164,111,.4);}
+  a.send:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--pale);outline-offset:2px;}
+
+  details{border-top:1px solid var(--rule);}
+  summary{padding:.6rem 1.15rem;font-size:.78rem;color:var(--muted);cursor:pointer;
+    letter-spacing:.04em;list-style:none;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"▸ ";color:var(--gold);}
+  details[open] summary::before{content:"▾ ";}
+  .paper{
+    background:var(--paper);color:var(--paper-ink);margin:0 1.15rem 1.15rem;padding:1.35rem 1.5rem;
+    font-family:"Source Serif 4",Georgia,serif;font-size:.94rem;line-height:1.65;
+    white-space:pre-wrap;border-radius:2px;overflow-x:auto;
+  }
+  .subj{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.78rem;color:#55504a;
+    padding-bottom:.7rem;margin-bottom:1rem;border-bottom:1px solid rgba(33,31,28,.16);white-space:normal;}
+  .subj b{color:var(--paper-ink);font-weight:500;}
+
+  .note{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);
+    font-size:.83rem;color:var(--muted);}
+  .note code{font-family:"IBM Plex Mono",ui-monospace,monospace;color:var(--gold);font-size:.9em;}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+  @media (max-width:620px){
+    .card-top{flex-wrap:wrap;}
+    .acts{flex-direction:row;width:100%;}
+    a.send,button.mark{flex:1;}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="head">
+    <div class="mark">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1c1b19"/>
+        <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#d9a63c" stroke-opacity=".28" stroke-width="2"/>
+        <text x="30" y="45" font-family="Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#f2f0ec" text-anchor="middle">g</text>
+        <circle cx="48" cy="42" r="5" fill="#d9a63c"/>
+      </svg>
+      <div>
+        <div class="mark-name">gift<b>.ceo</b></div>
+        <div class="mark-tag">Only CEOs give here</div>
+      </div>
+    </div>
+    <label class="acct">
+      GMAIL ACCOUNT <input id="acct" type="number" min="0" max="9" value="1" aria-label="Gmail account index">
+      <span id="acctHint">= gift.ceo.support</span>
+    </label>
+  </header>
+
+  <div class="bar">
+    <div class="bar-n">SENT <b id="nSent">0</b> / 32 &nbsp;·&nbsp; TODAY <b id="nToday">0</b></div>
+    <button class="copy" id="reset" style="padding:.35rem .7rem;font-size:.7rem;">Reset progress</button>
+  </div>
+  <div class="meter"><i id="meterFill"></i></div>
+  <p class="cap" id="cap">Eight to ten a day, spread across a week. A new mailbox that sends thirty in an hour is flagged as spam.</p>
+
+  <div class="rules">
+    <b>Before each one</b>
+    <ol>
+      <li>One at a time. Never CC, never BCC.</li>
+      <li>Check the counter on gift.ceo — every letter says <b>All ten are still open.</b> If the site says something else, fix the letter first.</li>
+      <li>Names flagged VERIFY: thirty seconds on LinkedIn. A wrong name kills the letter instantly.</li>
+      <li>One message only. No follow-up if there is no reply.</li>
+    </ol>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="note">
+    <p><b>How the button works.</b> It opens Gmail's compose window in your own Chrome, on account
+    <code>/u/<span id="noteIdx">1</span>/</code>, with the recipient, subject and body already filled in.
+    Nothing is sent until you press Send yourself — so the envelope carries whichever account that
+    index is, not the connector's.</p>
+    <p>If the index is wrong, the compose window opens on the wrong mailbox. Check the address in
+    Gmail's top-right before sending the first one, and change the number above if it is not
+    gift.ceo.support.</p>
+    <p><b>Progress is stored in this browser only.</b> Marking one sent does not send it, and clearing
+    site data resets the list. The real record is the Sent folder.</p>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var TAIL = "\n\nThat is why I am writing to you, and not to a marketing department.\n\n"
+    + "gift.ceo is one page. A CEO writes, under their own name and their company's name, a single "
+    + "thing: here is what we are giving. A tool, free for anyone who needs it. A bonus that goes to "
+    + "the team. Equity for the people who built the company. A day of your time. No foundation, no "
+    + "CSR report, no agency turning it into a campaign. Gifts, numbered in the order they were "
+    + "given, starting at #1.\n\n"
+    + "A seat normally costs 10,000 CHF, once. That is not a price, it is a filter: only a CEO who "
+    + "truly intends to give will pay to do it publicly, under their own name.\n\n"
+    + "The site opens with ten founding seats that cost nothing. They pass a different filter - you "
+    + "don't pay, you give first, while the page is still empty and there is nothing beside you to "
+    + "be seen next to. One condition: publish your gift within 30 days and the seat belongs to "
+    + "@CO@ permanently, whoever runs it later.\n\n"
+    + "If you want one, reply with your company domain and I will mark it before you sign in, so "
+    + "nothing ever asks you for payment.\n\n"
+    + "All ten are still open.\n\n"
+    + "gift.ceo\n\n"
+    + "gift.ceo.support@gmail.com\n\n"
+    + "Swiss made - Available worldwide";
+
+  var S1 = "Ten founding seats on gift.ceo - yours costs nothing";
+
+  var L = [
+   {g:"A", co:"Märkisches Landbrot", cc:"DE", to:"Christoph Deinert, Geschäftsführer",
+    em:"deinert@landbrot.de", src:"landbrot.de/impressum — adresă personală",
+    su:"For Christoph Deinert - ten founding seats, yours costs nothing",
+    p:"For Christoph Deinert.\n\nYou publish your own email address in your own Impressum, which almost no managing director of a bakery this size still does, and the company you run belongs to itself rather than to anyone who could sell it. The two facts are the same fact: a company that cannot be sold has no reason to hide who answers for it."},
+
+   {g:"A", co:"einhorn", cc:"DE", to:"Philip Siefer & Luise Tremel", em:"contact@einhorn.my",
+    src:"einhorn.my/impressum", su:S1,
+    p:"For Philip Siefer and Luise Tremel.\n\nYou gave your own company away. einhorn is in Verantwortungseigentum - the voting rights sit with people inside it, the profits serve the purpose, and neither of you can ever sell your shares or take the value out. Most founders write a manifesto about ownership. You changed the articles."},
+
+   {g:"A", co:"manomama", cc:"DE", to:"Sina Trinkwalder, fondatoare", em:"service@manomama.de",
+    src:"manomama.de/pages/impressum",
+    su:"For Sina Trinkwalder - ten founding seats, yours costs nothing",
+    p:"For Sina Trinkwalder.\n\nYou staffed a textile factory in Augsburg with the people every other employer had already turned down - long-term unemployed, older, foreign, or simply written off - and you pay them a standard wage to make things in Germany, which everyone agrees is impossible. It has been running for over a decade."},
+
+   {g:"A", co:"Buurtzorg", cc:"NL", to:"Jos de Blok, fondator", em:"info@buurtzorg.org",
+    src:"buurtzorg.com/contact",
+    su:"For Jos de Blok - ten founding seats, yours costs nothing",
+    p:"For Jos de Blok.\n\nYou built home care out of small nurse-led teams with no managers above them, and then you published the whole model and let anyone copy it - including the competitors it would cost you. Giving away the thing that makes you distinctive is the rarest form of this there is."},
+
+   {g:"A", co:"Voelkel", cc:"DE", to:"Jacob, Boris & Jurek Voelkel", em:"info@voelkel.bio",
+    src:"voelkel.bio/impressum", su:S1,
+    p:"For the Voelkel brothers.\n\nFour generations in, you put the company into steward-ownership rather than into your own inheritance. The family that could have sold it decided instead that nobody ever can - including you."},
+
+   {g:"A", co:"WEtell", cc:"DE", to:"Andreas Schmucker, Alma Spribille, Nico Tucher",
+    em:"info@wetell.de", src:"wetell.de/impressum", su:S1,
+    p:"For the three of you.\n\nYou built a mobile provider that sells less data on purpose, runs on renewable power, and is held in steward-ownership so that no carrier can buy it and quietly undo any of it. In an industry that competes on how much it can get you to use, you compete on how little."},
+
+   {g:"A", co:"Neue Narrative", cc:"DE", to:"Alexandra Bürger & Sebastian Klein",
+    em:"hallo@neuenarrative.de", src:"neuenarrative.de/impressum", su:S1,
+    p:"For Alexandra Bürger and Sebastian Klein.\n\nYou publish what everyone at Neue Narrative earns, including yourselves, and you put the magazine into steward-ownership so it cannot be bought by anyone who would rather it stopped. You write about giving power away by having already done it."},
+
+   {g:"A", co:"GLS Bank", cc:"DE", to:"Aysel Osmanoglu, Vorstandssprecherin",
+    em:"kundendialog@gls.de", src:"gls.de/impressum",
+    su:"For Aysel Osmanoglu - ten founding seats, yours costs nothing",
+    p:"For Aysel Osmanoglu.\n\nGLS publishes every loan it makes. Any customer can open the list and see exactly which farm, school or wind cooperative their money is standing behind. No other bank in Germany does this, because no other bank in Germany would survive the reading."},
+
+   {g:"A", co:"Sonnentor", cc:"AT", to:"Johannes Gutmann, fondator", em:"office@sonnentor.at",
+    src:"sonnentor.com/de-at/impressum",
+    su:"For Johannes Gutmann - ten founding seats, yours costs nothing",
+    p:"For Johannes Gutmann.\n\nYou started by paying Waldviertel farmers a fixed fair price for herbs nobody was buying, in a region people were leaving. Forty years later they are still there, and so are the prices."},
+
+   {g:"A", co:"Alnatura", cc:"DE", to:"Prof. Dr. Götz E. Rehn, fondator", em:"info@alnatura.de",
+    src:"alnatura.de/impressum", su:S1,
+    p:"For Götz Rehn.\n\nYou built Alnatura on a sentence - sinnvoll für Mensch und Erde - and then spent forty years being asked to drop it and not dropping it. The company is larger than the sentence should have allowed, which is the part most people get wrong about purpose."},
+
+   {g:"A", co:"Rapunzel", cc:"DE", to:"Leonhard Wilhelm, Geschäftsführung", em:"info@rapunzel.de",
+    src:"rapunzel.de/impressum", su:S1,
+    p:"For Leonhard Wilhelm and the Rapunzel management.\n\nHand in Hand started before there was a certification to point at, which means for years you paid the higher price with nothing on the packet to show for it. Paying more when nobody is checking is the only version of this that counts."},
+
+   {g:"A", co:"soulbottles", cc:"DE", to:"Christian Seewald", em:"hello@soulbottles.com",
+    src:"soulbottles.com/policies/legal-notice", su:S1,
+    p:"For Christian Seewald.\n\nsoulbottles is steward-owned, and every bottle funds drinking-water projects - which means the company sells a thing whose purpose is that people stop buying a different thing. That is a gift built into the product rather than bolted onto the quarter."},
+
+   {g:"A", co:"Stapelstein", cc:"DE", to:"Stephan Schenk & Hannah König", em:"hi@stapelstein.de",
+    src:"stapelstein.de/policies/legal-notice", su:S1,
+    p:"For Stephan Schenk and Hannah König.\n\nYou make one object, you make it to be handed down rather than replaced, and you hold the company in steward-ownership so nobody can later decide it should be made cheaper. A toy company that designs against its own repeat business is an unusual thing to have built."},
+
+   {g:"A", co:"Wildplastic", cc:"DE", to:"Tim Lampe", em:"hello@wildplastic.com",
+    src:"wildplastic.com/policies/legal-notice", su:S1,
+    p:"For Tim Lampe.\n\nYou built a company whose raw material is plastic nobody else would collect, from places with no waste system to collect it, and put it in steward-ownership so the model stays the point rather than the margin."},
+
+   {g:"A", co:"Goldeimer", cc:"DE", to:"Rolf Schwander & Malte Schremmer", em:"shop@goldeimer.de",
+    src:"goldeimer.de/impressum", su:S1,
+    p:"For Rolf Schwander and Malte Schremmer.\n\nYou sell compost toilets at festivals to fund sanitation for people who have none. It is the least glamorous route to a serious cause anyone has picked on purpose, and it works."},
+
+   {g:"A", co:"Sonett", cc:"DE", to:"Geschäftsführung", em:"info@sonett.eu",
+    src:"sonett.eu/rechtliches/impressum", flag:"verify", flagT:"verify numele",  su:S1,
+    p:"For the people who run Sonett.\n\nYour detergents are made to be poured down the drain and leave nothing behind, and the company that makes them is owned by a foundation rather than by shareholders. You built a business whose entire point is to disappear cleanly."},
+
+   {g:"A", co:"openPetition", cc:"DE", to:"conducerea openPetition", em:"info@openpetition.net",
+    src:"openpetition.de/content/legal_details", flag:"verify", flagT:"verify numele", su:S1,
+    p:"For the people who run openPetition.\n\nYou gave a country a way to put a question to its own institutions, free, and you kept it free while every comparable platform learned to charge for reach."},
+
+   {g:"B", co:"Trigema", cc:"DE", to:"Bonita Grupp, Geschäftsführerin", em:"bestellservice@trigema.de",
+    src:"trigema.de/impressum", flag:"verify", flagT:"generația a doua", su:S1,
+    p:"For Bonita Grupp.\n\nYour father ran Trigema for over fifty years on a promise no other German manufacturer would make: a job for every employee, and a job for their children, and not one production line moved abroad to make the numbers easier. You inherited a company whose defining asset is a promise, which is a harder thing to be handed than a balance sheet."},
+
+   {g:"B", co:"Zotter", cc:"AT", to:"Julia Zotter, Geschäftsführerin", em:"schokolade@zotter.at",
+    src:"zotter.at/impressum", flag:"verify", flagT:"generația a doua", su:S1,
+    p:"For Julia Zotter.\n\nZotter went fully organic and fully fair-trade when that meant remaking every supply line at once, and then opened the factory so anyone could walk through and check. A company that invites strangers to inspect it has already decided what it is."},
+
+   {g:"B", co:"UmweltBank", cc:"DE", to:"Goran Bašić, Vorstand", em:"hallo@umweltbank.de",
+    src:"umweltbank.de/impressum", su:S1,
+    p:"For Goran Bašić.\n\nUmweltBank does not have an ethical investment product. It has only ethical investments - every loan on the book has to pass the environmental test before the financial one, which means you turned down an entire ordinary banking business to be a bank at all."},
+
+   {g:"B", co:"Tomorrow", cc:"DE", to:"Inas Nureldin, Michael Schweikart, Jakob Berndt",
+    em:"hello@tomorrow.one", src:"tomorrow.one/de-DE/impressum", su:S1,
+    p:"For the three of you.\n\nYou raised the money for a bank from the people who bank with it, which means your customers own a piece of the thing they are also the product of everywhere else."},
+
+   {g:"B", co:"Followfood", cc:"DE", to:"Jürg Knoll & Harri Butsch", em:"presse@followfood.de",
+    src:"followfood.de/impressum", su:S1,
+    p:"For Jürg Knoll and Harri Butsch.\n\nEvery pack you sell carries a code that shows the buyer exactly where the fish was caught or the vegetable grown. You gave away the one thing the food industry guards hardest, which is the answer to \"where is this actually from\"."},
+
+   {g:"B", co:"memo AG", cc:"DE", to:"Frank Schmähling, Vorstandsvorsitzender", em:"info@memo.de",
+    src:"memo.de/impressum", flag:"weak", flagT:"cârlig slab", su:S1,
+    p:"For Frank Schmähling.\n\nmemo has published a full sustainability report every year since long before any law required one, in an industry - office supplies - where nobody was asking and nobody was watching."},
+
+   {g:"B", co:"Werkhaus", cc:"DE", to:"Eva Danneberg, Geschäftsführerin", em:"info@werkhaus.de",
+    src:"werkhaus.de/impressum", flag:"verify", flagT:"verify cârligul", su:S1,
+    p:"For Eva Danneberg.\n\nWerkhaus builds everything in Lüneburg, out of one material, in a plant run on its own solar power - a manufacturer that decided the cheapest way was not the way."},
+
+   {g:"B", co:"Waschbär", cc:"DE", to:"Thomas Ganske, Andreas Kaufmann, Frederik Palm",
+    em:"info@waschbaer.de", src:"waschbaer.de/impressum", flag:"weak", flagT:"cârlig slab", su:S1,
+    p:"For the Waschbär management.\n\nYou have sold ecological household goods by post since 1987, which means you were doing it for two decades before it became a category anyone wanted to be in."},
+
+   {g:"C", co:"Cloudflare", cc:"US", to:"Matthew Prince, co-founder & CEO", em:"press@cloudflare.com",
+    src:"cloudflare.com/press — birou de presă", su:S1,
+    p:"For Matthew Prince.\n\nProject Galileo has kept human-rights groups, independent newsrooms and election monitors online since 2014, for nothing, against attacks that would have ended them. You did not write a report about press freedom. You gave away the infrastructure."},
+
+   {g:"C", co:"Automattic", cc:"US", to:"Matt Mullenweg, founder & CEO", em:"press@automattic.com",
+    src:"automattic.com/press — birou de presă", su:S1,
+    p:"For Matt Mullenweg.\n\nTwo in five websites run on software you keep under the GPL, which means the single most valuable thing your company touches is one nobody has to pay you for. You built the business beside the gift instead of on top of it."},
+
+   {g:"C", co:"DuckDuckGo", cc:"US", to:"Gabriel Weinberg, founder & CEO", em:"press@duckduckgo.com",
+    src:"duckduckgo.com/press — birou de presă", su:S1,
+    p:"For Gabriel Weinberg.\n\nYou built a search engine that refuses, by construction, the revenue stream its competitors are built on. The renunciation is not a policy you could reverse next quarter - it is the product."},
+
+   {g:"C", co:"Salesforce", cc:"US", to:"Marc Benioff, co-founder & CEO", em:"pr@salesforce.com",
+    src:"salesforce.com/news — birou de presă", su:S1,
+    p:"For Marc Benioff.\n\nThe 1-1-1 model was yours before it was Pledge 1%, and the reason it matters is that you gave away the template rather than the credit. Thousands of companies now do it without ever mentioning where it came from, which was the point."},
+
+   {g:"C", co:"Wikimedia Foundation", cc:"US", to:"Maryana Iskander, CEO", em:"business@wikimedia.org",
+    src:"wikimediafoundation.org/about/contact", su:S1,
+    p:"For Maryana Iskander.\n\nThe fifth most visited place on the internet carries no advertising and sells nothing. Every year it could change that and every year it does not."},
+
+   {g:"C", co:"Mozilla", cc:"US", to:"conducerea Mozilla", em:"press@mozilla.com",
+    src:"blog.mozilla.org/press", flag:"verify", flagT:"conducerea s-a schimbat", su:S1,
+    p:"For the people who run Mozilla.\n\nThe Corporation is owned outright by the Foundation, which means Firefox cannot be sold - not reluctantly, not at a good price, not at all. The structure was chosen so that no future leadership could be tempted."},
+
+   {g:"C", co:"Viva con Agua", cc:"DE", to:"Carolin Stüdemann, Vorstand", em:"kontakt@vivaconagua.org",
+    src:"vivaconagua.org/impressum", flag:"weak", flagT:"ONG — potrivire îndoielnică", su:S1,
+    p:"For Carolin Stüdemann.\n\nViva con Agua turned festival crowds into drinking-water projects by asking for the deposit on an empty cup, which is the smallest possible ask repeated until it became a serious sum."}
+  ];
+
+  var SECT = {
+    A:"Prioritate A — faptă documentată, fondator la conducere",
+    B:"Prioritate B — generația a doua, sau cârlig mai slab",
+    C:"Prioritate C — birouri de presă, SUA"
+  };
+
+  function body(r){ return r.p + TAIL.replace("@CO@", r.co); }
+
+  function gmailUrl(r, idx){
+    return "https://mail.google.com/mail/u/" + idx + "/?view=cm&fs=1&tf=1"
+         + "&to=" + encodeURIComponent(r.em)
+         + "&su=" + encodeURIComponent(r.su)
+         + "&body=" + encodeURIComponent(body(r));
+  }
+
+  /* localStorage is a convenience: which letters have gone, so the list
+     survives a reload across the week it takes to work through it. Every
+     access is guarded -- a private window throws on the accessor itself. */
+  function load(){ try{ return JSON.parse(localStorage.getItem("giftceo.sent")||"{}"); }catch(e){ return {}; } }
+  function save(v){ try{ localStorage.setItem("giftceo.sent", JSON.stringify(v)); }catch(e){} }
+  function acctGet(){ try{ return localStorage.getItem("giftceo.acct") || "1"; }catch(e){ return "1"; } }
+  function acctSet(v){ try{ localStorage.setItem("giftceo.acct", v); }catch(e){} }
+
+  var sent = load();
+  var acctEl = document.getElementById("acct");
+  acctEl.value = acctGet();
+
+  var today = new Date().toISOString().slice(0,10);
+
+  function esc(s){
+    return String(s).replace(/[&<>"]/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];
+    });
+  }
+
+  function draw(){
+    var idx = acctEl.value || "1";
+    document.getElementById("noteIdx").textContent = idx;
+    document.getElementById("acctHint").textContent = idx === "1" ? "= gift.ceo.support" : "verifică în Gmail";
+
+    var host = document.getElementById("list");
+    host.textContent = "";
+    var n = 0, nToday = 0, group = null;
+
+    L.forEach(function(r, i){
+      if (sent[r.em]) { n++; if (sent[r.em] === today) nToday++; }
+
+      if (r.g !== group){
+        group = r.g;
+        var h = document.createElement("h2");
+        h.className = "sect"; h.textContent = SECT[group];
+        host.appendChild(h);
+      }
+
+      var done = !!sent[r.em];
+      var card = document.createElement("div");
+      card.className = "card" + (done ? " done" : "");
+      card.innerHTML =
+        '<div class="card-top">'
+        + '<div class="num">' + String(i+1).padStart(2,"0") + '</div>'
+        + '<div class="who">'
+        +   '<div class="co">' + esc(r.co) + '<span>' + esc(r.cc) + '</span></div>'
+        +   '<div class="to">' + esc(r.to) + '</div>'
+        +   '<div class="addr">' + esc(r.em) + '</div>'
+        +   '<div class="src">' + esc(r.src) + '</div>'
+        +   (r.flag ? '<div class="flag ' + r.flag + '">' + esc(r.flagT) + '</div>' : "")
+        + '</div>'
+        + '<div class="acts">'
+        +   '<a class="send" target="_blank" rel="noopener">Open in Gmail</a>'
+        +   '<button class="mark">' + (done ? "Sent ✓" : "Mark sent") + '</button>'
+        + '</div>'
+        + '</div>'
+        + '<details><summary>Read the letter</summary>'
+        +   '<div class="paper"><div class="subj">To: <b>' + esc(r.em) + '</b><br>Subject: <b>'
+        +   esc(r.su) + '</b></div>' + esc(body(r)) + '</div>'
+        + '</details>';
+
+      card.querySelector("a.send").href = gmailUrl(r, idx);
+      card.querySelector("button.mark").addEventListener("click", function(){
+        if (sent[r.em]) delete sent[r.em]; else sent[r.em] = today;
+        save(sent); draw();
+      });
+      host.appendChild(card);
+    });
+
+    document.getElementById("nSent").textContent = n;
+    document.getElementById("nToday").textContent = nToday;
+    document.getElementById("meterFill").style.width = Math.round(n / L.length * 100) + "%";
+    var cap = document.getElementById("cap");
+    if (nToday >= 10){
+      cap.className = "cap hot";
+      cap.textContent = "Ten today. Stop here and pick it up tomorrow — that is what keeps the mailbox alive.";
+    } else {
+      cap.className = "cap";
+      cap.textContent = "Eight to ten a day, spread across a week. A new mailbox that sends thirty in an hour is flagged as spam.";
+    }
+  }
+
+  acctEl.addEventListener("input", function(){ acctSet(acctEl.value); draw(); });
+  document.getElementById("reset").addEventListener("click", function(){
+    sent = {}; save(sent); draw();
+  });
+
+  draw();
+})();
+</script>
