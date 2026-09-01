@@ -4698,6 +4698,36 @@ if ("serviceWorker" in navigator) {
          + '</a>';
   }
 
+  /* Partners are not sponsors, and the band says so.
+
+     A sponsor here has made a voluntary donation -- that is what the Terms
+     define one as. Cyberbotics has not: Olivier Michel gave Webots away under
+     Apache 2.0 and published it as the first gift on gift.ceo, and this row is
+     Rotabo returning that. Filing him under "Sponsors" would be a small lie
+     about a real person, told on the front page, to save writing one more
+     label.
+
+     Their own mark, from their own server, so it is theirs and stays current
+     if they change it. If the file ever moves, the image removes itself and
+     the name carries the cell alone -- the same thing a sponsor with no mark
+     has always done. */
+  var PARTNERS = [
+    { name: "Cyberbotics", url: "https://cyberbotics.com",
+      logo: "https://cyberbotics.com/assets/images/webots.png" }
+  ];
+
+  function partnerCell(p){
+    var logo = p.logo
+      ? '<img class="tick__logo" src="' + esc(p.logo) + '" alt="" decoding="async"'
+        + ' onerror="this.remove()">'
+      : '';
+    return '<a class="tick tick--sponsor" href="' + esc(p.url) + '" target="_blank" rel="noopener">'
+         + '<span class="tick__label">' + esc(T("ticker.partner", "Partner")) + '</span>'
+         + logo
+         + '<b>' + esc(p.name) + '</b>'
+         + '</a>';
+  }
+
   function sponsorCells(){
     var out = [];
     // gift.ceo is the standing sponsor and is not in the table, so it is
@@ -4707,6 +4737,7 @@ if ("serviceWorker" in navigator) {
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });
+    PARTNERS.forEach(function(p){ out.push(partnerCell(p)); });
     return out;
   }
 
