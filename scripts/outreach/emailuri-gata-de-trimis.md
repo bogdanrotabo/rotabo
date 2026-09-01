@@ -48,8 +48,8 @@ numele firmei în propoziția cu „permanently".
 > own name.
 >
 > The site opens with ten founding seats that cost nothing. They pass a
-> different filter — you don't pay, you give first, while the page is still
-> empty and there is nothing beside you to be seen next to. One condition:
+> different filter — you don't pay, you give first, while the feed is still
+> empty and yours would be the first gift on it. One condition:
 > publish your gift within 30 days and the seat belongs to **[FIRMA]**
 > permanently, whoever runs it later.
 >
