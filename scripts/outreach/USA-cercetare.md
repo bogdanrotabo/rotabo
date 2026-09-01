@@ -153,6 +153,17 @@ numele conducatorului sunt publicate prin lege.
 | 57 | gebana | info@gebana.com | Christophe Schmidt | CH |
 | 58 | Die Mobiliar | info@mobiliar.ch | **VERIFY** — Impressum nu da numele | CH |
 | 59 | Kuhn Rikon | export.verkauf@kuhnrikon.ch | Tobias Gerfin | CH |
+| 60 | Elvis & Kresse | support@elvisandkresse.com | **VERIFY** numele — Kresse Wesling, James Henrit (nu pe pagina) | UK |
+| 61 | El Puente | info@el-puente.de | Frank Völkner | DE |
+| 62 | Molkerei Berchtesgadener Land | info@molkerei-bgl.de | Andreas Argstatter (Vorstand) | DE |
+| 63 | GEPA | info@gepa.de | **VERIFY** numele | DE |
+| 64 | Hessnatur | kundenservice@hess-natur.de | Andrea Homann, Volker Valk | DE |
+| 65 | Armedangels | shop@armedangels.com | Martin Höfeler | DE |
+| 66 | Manufactum | info@manufactum.de | Maximilian Kleinert, Alexander Peters, Kai Steffan | DE |
+| 67 | Bioland e.V. | info@bioland.de | Jan Plagge (Präsident) — asociatie | DE |
+| 68 | WALA / Dr. Hauschka | info@wala.de | Prof. Dr. Florian Stintzing | DE |
+| 69 | Lavera | service@lavera.shop | Thomas Haase | DE |
+| 70 | Hofpfisterei | info@hofpfisterei.de | Thierry Hittinger, Stephanie Karl, Michael Schultze | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -298,3 +309,19 @@ energie civica, fiecare detinuta de oamenii care o folosesc.
 
 **Demeter e.V.** e asociatie, nu firma. Acelasi caz cu Viva con Agua: nu are ce
 sa anunte, aia e deja tot ce face. De trimis ultima, sau deloc.
+
+
+## Marea Britanie confirma inca o data regula
+
+Scott Bader (404), Suma (403), Interface (redirect catre 404), John Lewis
+(formular), Triodos (formular), Nudie Jeans (429 apoi nimic). Singura care a
+dat ceva a fost Elvis & Kresse, si numai adresa de suport, fara nume.
+
+Cârligele britanice sunt printre cele mai bune din toata cercetarea -- Scott
+Bader e in Commonwealth-ul angajatilor din 1951, Timpson angajeaza fosti
+detinuti, Suma plateste toti angajatii la fel -- si niciunul nu e accesibil
+prin email publicat. Fara Impressum, nu exista obligatia de a avea o cutie pe
+care sa scrie cine esti.
+
+Daca vrei UK, e campanie de formulare completate manual, alta specie decat
+launcher-ul.
