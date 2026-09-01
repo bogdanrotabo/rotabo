@@ -176,3 +176,22 @@ Ia pagina principala si cere linkul de Impressum: costa o cerere si nimereste
 mereu. Magazinele Shopify raspund la /policies/legal-notice.
 
 Randamentul final, masurat: DE/AT/CH ~75%, SUA ~20%. Cauza e §5 DDG.
+
+## Ruta de trimitere — confirmata 1 septembrie 2026
+
+Conectorul Gmail nu poate fi folosit: e legat de contul care l-a autorizat,
+nu are parametru `from`, si e pe cutia personala. Verificat de trei ori in
+sesiunea asta -- draft creat, antet citit inapoi, de fiecare data
+bogdan.tanase.ch@gmail.com.
+
+Ce functioneaza, testat live de Bogdan azi: URL de compose Gmail,
+`mail/u/1/?view=cm&fs=1&tf=1&to=..&su=..&body=..`, deschis in Chrome-ul lui.
+Indexul 1 = gift.ceo.support@gmail.com. Fereastra se deschide precompletata,
+el apasa Send, plicul poarta contul corect.
+
+Linkurile se genereaza cu `node make-links.mjs [cont] [de_la] [pana_la]`,
+care citeste textul din launcher.html. O singura sursa de adevar.
+
+Atentie la index: daca Gmail reordoneaza conturile, `u/1` devine alta cutie
+si trimiterea pleaca de pe cea gresita, in tacere. Verifica adresa din
+dreapta-sus inainte de prima scrisoare a zilei.
