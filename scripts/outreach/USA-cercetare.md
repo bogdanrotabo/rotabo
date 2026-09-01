@@ -115,6 +115,10 @@ numele conducatorului sunt publicate prin lege.
 | 19 | DuckDuckGo | press@duckduckgo.com | Gabriel Weinberg | US |
 | 20 | Wikimedia | business@wikimedia.org | Maryana Iskander | US |
 | 21 | Mozilla | press@mozilla.com | VERIFY | US |
+| 22 | Sonnentor | office@sonnentor.at | Johannes Gutmann (fondator) | AT |
+| 23 | Trigema | bestellservice@trigema.de | Bonita Grupp | DE |
+| 24 | Zotter | schokolade@zotter.at | Julia Zotter | AT |
+| 25 | Buurtzorg | info@buurtzorg.org | Jos de Blok (fondator) | NL |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -142,3 +146,26 @@ fundatii).
 WebFetch are limita de rata; la peste ~4 pagini deodata raspunde 429. Lotul
 corect e 2-3 pagini pe apel. Coada de mai sus e ordonata, se reia de unde a
 ramas.
+
+## Verificate, dar NU publica adresa
+
+share (doar formular de contact), VAUDE, Recology, Newman's Own, King Arthur,
+Dr. Bronner's, Ben & Jerry's, REI, Eileen Fisher, Greyston, Homeboy,
+Internet Archive, Organically Grown, Bombas, Fastly, GitLab, Signal.
+
+## De stiut inainte de a scrie primul paragraf
+
+Trigema si Zotter au trecut la generatia urmatoare: Bonita Grupp a preluat de
+la Wolfgang Grupp in 2024, Julia Zotter de la Josef Zotter. Actul documentat
+apartine fondatorului, nu celui caruia i se scrie -- primul paragraf trebuie
+scris despre ce a construit familia, nu ca si cum destinatarul ar fi facut-o.
+Un paragraf care atribuie gresit fapta omoara scrisoarea mai sigur decat
+tacerea.
+
+## Metoda, dupa 25 de verificari
+
+Ghicitul lui /impressum la capatul domeniului rateaza ~jumatate din cereri.
+Ia pagina principala si cere linkul de Impressum: costa o cerere si nimereste
+mereu. Magazinele Shopify raspund la /policies/legal-notice.
+
+Randamentul final, masurat: DE/AT/CH ~75%, SUA ~20%. Cauza e §5 DDG.
