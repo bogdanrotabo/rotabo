@@ -1,6 +1,6 @@
 # Rotabo — Privacy Policy (Draft)
 
-**Last updated: August 2026**
+**Last updated: September 2026**
 
 Rotabo is operated from Switzerland and available worldwide. This Policy explains what personal data we collect, why, and what rights you have. It applies to clients, drivers, sponsors, and visitors to rotabo.app.
 
@@ -56,6 +56,8 @@ Payments are processed by **Stripe**. Rotabo does **not** collect, see, or store
 ## 4. What We Share — and With Whom
 
 **Between users:** when a client and a driver are connected, their name and phone number are shared with each other so they can arrange the ride. This is the core purpose of the platform. Location data of a request is shared with drivers who can see the request.
+
+**Publicly, in the running band on the home page:** while your listing is visible, the band shows your **first name only** — the first word of the name you entered — the category, whether you are offering it or looking for it, your town and country, and your Rotabo number if you have one. It never shows your surname, phone number, email address, street address or note. If you would rather not appear there, write to support@rotabo.app and we will remove your listing.
 
 **Sponsors:** the display information you choose is published publicly on the supporters page. Anonymous sponsors are never named.
 
