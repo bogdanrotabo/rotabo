@@ -129,6 +129,16 @@ numele conducatorului sunt publicate prin lege.
 | 33 | Lebensbaum | info@lebensbaum.de | Hans-Ulrich Schatz | DE |
 | 34 | GEA / Waldviertler | gea@gea.at | Heini Staudinger (fondator) | AT |
 | 35 | Wildling Shoes | foxsupport@wildling.shoes | Anna Yona, Ran Yona (fondatori) | DE |
+| 36 | Naturstrom | kundenservice@naturstrom.de | Oliver Hummel (Vorstandsvorsitzender) | DE |
+| 37 | Demeter e.V. | info@demeter.de | Elisabeth Huber (GF) — asociatie, nu firma | DE |
+| 38 | Green Planet Energy | info@green-planet-energy.de | Nils Müller, Sönke Tangermann | DE |
+| 39 | EWS Schönau | info@ews-schoenau.de | Sebastian Sladek, Alexander Sladek (Vorstand) | DE |
+| 40 | Bürgerwerke | info@buergerwerke.de | Felix Schäfer, Kai Hock | DE |
+| 41 | Bohlsener Mühle | info@bohlsener-muehle.de | Tillman Schulz, Ralf Koch | DE |
+| 42 | Herrmannsdorfer | info@herrmannsdorfer.de | Karl Schweisfurth | DE |
+| 43 | Zwergenwiese | info@zwergenwiese.de | Joseph Wilhelm, Jochen Walz | DE |
+| 44 | Sodasan | info@sodasan.de | Thorsten Godau, Jürgen Hack, Kerstin Stromberg | DE |
+| 45 | Byodo | info@byodo.de | Bernd Hochstädter | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -254,3 +264,23 @@ veja-store.com/en_us/legal.html -- adresa e acolo, doar ca nu ajunge la mine.
 cautare, neconfirmat: info@nudiejeans.com. Cârlig: reparatii gratuite pe viata.
 
 Ambele sunt de confirmat cu ochii, nu de ghicit.
+
+
+## Carlige de retinut din lotul 36-45
+
+**EWS Schönau** — dupa Cernobil, locuitorii din Schönau si-au cumparat propria
+retea electrica de la concern, prin doua referendumuri si o colecta nationala.
+Cel mai bun carlig din lotul asta.
+
+**Herrmannsdorfer** — Karl Ludwig Schweisfurth a vandut Herta, cea mai mare
+fabrica de mezeluri din Europa, si a folosit banii ca sa construiasca exact
+opusul ei. Fiul, Karl, conduce acum.
+
+**Green Planet Energy** — fondata de activisti Greenpeace ca sa vanda curent,
+nu ca sa protesteze impotriva lui.
+
+**Bürgerwerke** — cooperativa de cooperative: peste o suta de comunitati de
+energie civica, fiecare detinuta de oamenii care o folosesc.
+
+**Demeter e.V.** e asociatie, nu firma. Acelasi caz cu Viva con Agua: nu are ce
+sa anunte, aia e deja tot ce face. De trimis ultima, sau deloc.
