@@ -216,3 +216,47 @@ Rezultat: **200 de adrese cu MX confirmat**, în patru loturi de 50:
 MX confirmat înseamnă că domeniul primește mail. Nu garantează că respectiva
 cutie poștală există. Bounce-urile rămase se văd după primul lot și se repară
 înainte de al doilea.
+
+---
+
+## Lot 1 trimis — 1 septembrie 2026, 12:04–12:16 UTC
+
+50 de scrisori, de pe bogdan.tanase.ch@gmail.com, individual, fără BCC.
+București → Miercurea Ciuc. Roman exclus, avea deja acordul.
+
+**Trei adrese din setul de date erau moarte.** Domeniul primea mail, cutia
+poștală nu exista — genul de eroare pe care verificarea MX nu o prinde:
+
+| Oraș | Adresa din set | Eroarea | Adresa corectă |
+|---|---|---|---|
+| Iași | informatii.iasi@primaria-iasi.ro | permanent fatal error | informatii@primaria-iasi.ro |
+| Brăila | pmb@primariabraila.ro | 550 User unknown | pmb@pmbr.ro |
+| Tulcea | cabinetprimar@primaria-tulcea.ro | adresă inexistentă | contact@primariatulcea.ro |
+
+Brăila își scrie pe propriul sit că vechea adresă nu mai funcționează. Toate
+trei au fost recitite de pe siturile instituțiilor, verificate MX și
+retrimise în aceeași oră. **47 intrate din prima, 50 din 50 după corectare.**
+
+Concluzia pentru loturile 2–4: MX-ul elimină domeniile moarte, dar nu și
+cutiile poștale desființate. Rata reală de adrese greșite în set e în jur de
+6%. Se verifică după fiecare lot și se corectează în aceeași zi — un bounce
+lăsat necorectat înseamnă un oraș pierdut degeaba.
+
+## Materialul, publicat pe sit
+
+Nu se pot atașa PDF-uri la 200 de emailuri prin canalul folosit: fiecare
+fișier ar trebui codificat base64 în interiorul fiecărui mesaj, ~94.000 de
+caractere de fișier, cu risc real de corupere. Soluția e mai bună decât
+atașamentul: **rotabo.app/afise.html**, cu A4, A3 și A2 la un clic, link în
+subsolul sitului. Un link nu poate fi tăiat de filtrul de mail al unei
+instituții, cum e tăiat un atașament de 400 KB de la un expeditor necunoscut.
+
+A3 și A4 au fost construite din A2-ul trimis la Roman: pagina originală
+încapsulată ca Form XObject și scalată cu 1/√2, respectiv 1/2. Textul rămâne
+text, nu imagine. Prima încercare a ieșit goală fiindcă am declarat doar
+`/FlateDecode`, iar fluxul original era `ASCII85Decode` **și** `Flate` —
+filtrul se copiază, nu se ghicește.
+
+Pagina n-a apărut la prima publicare: `afise.html` a intrat în build-ul
+GitHub Pages, directorul `afise/` nu. Rezolvat cu `.nojekyll` — situl e HTML
+static, Jekyll n-avea ce procesa acolo.
