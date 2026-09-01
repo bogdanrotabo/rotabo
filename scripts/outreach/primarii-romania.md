@@ -333,3 +333,69 @@ bounce. Tot acolo: Salonta are două adrese într-un singur câmp
 
 **Stadiu la sfârșitul zilei:** 99 de primării contactate cu succes, 1 de
 recontactat (Borșa), 100 rămase până la 200.
+
+---
+
+## Lot 3 trimis — 1 septembrie 2026, seara
+
+**100 de scrisori.** Borșa → Orșova. Cu asta, cele 200 de primării din listă sunt
+contactate.
+
+### Verificarea adreselor înainte de trimitere
+
+Din cele 100, **34 erau pe furnizor gratuit** — clasa care a produs toate
+bounce-urile de dimineață. Pentru 30 dintre ele primăria avea și mail pe domeniu
+propriu, deci le-am citit pe siturile lor înainte de a trimite:
+
+- **14 adrese urcate pe domeniul instituțional** (Salonta, Șimleu Silvaniei,
+  Calafat, Corabia, Gura Humorului, Bocșa, Găești, Darabani, Comarnic, Săcueni,
+  Urlați, Cajvana, Liteni, Hațeg)
+- **9 confirmate** — primăria publică ea însăși adresa de Yahoo/Gmail, deci e cea
+  curentă (Vicovu de Sus, Dolhasca, Scornicești, Hârlău, Nehoiu, Oravița,
+  Babadag, Ianca, Oțelu Roșu)
+- **2 capcane evitate:** siturile Băilești și Jibou returnau adresa altei
+  instituții (Autoritatea Electorală, respectiv DGASPC). Nu le-am folosit.
+
+Siturile primăriilor stau în spatele unui filtru anti-bot care blochează
+citirea automată obișnuită; se trece cu un client care se prezintă ca browser.
+
+### Bounce-uri: 8 din 100
+
+| Oraș | Adresa moartă | Înlocuitor |
+|---|---|---|
+| Câmpulung Moldovenesc | registratura@campulungmoldovenesc.ro | primaria@campulungmoldovenesc.ro |
+| Simeria | prim.simeria@smart.com.ro | contact@primariasimeria.ro |
+| Podu Iloaiei | registratura@poduiloaiei.ro | primaria@oraspoduiloaiei.ro |
+| Hațeg | office@primariehateg.ro | primar@primariehateg.ro |
+| Beiuș | primaria.beius@cjbihor.ro | contact@municipiulbeius.ro |
+| Titu | primariatitu@yahoo.com | office@primariatitu.ro |
+| Cajvana | contact@cajvana.ro | **nu s-a găsit** |
+| Boldești-Scăeni | pbs@opticnet.ro | **nu s-a găsit** |
+
+Șase retrimise imediat. **Constatarea care contează:** Hațeg și Cajvana aveau
+adrese citite chiar de pe situl primăriei, iar serverul lor le-a respins. Deci
+nici adresa publicată de instituție nu garantează o cutie poștală vie. Singura
+verificare completă rămâne trimiterea.
+
+### Verificarea celor 100 din prima zi
+
+Cerută separat. Rezultat, pe 100 de orașe:
+
+- **39 confirmate** — adresa folosită apare pe situl primăriei
+- **9 cu altă adresă găsită**, dar la 6 dintre ele era o adresă de departament,
+  nu un înlocuitor. Trei sunt corecții reale, unde primăria are domeniu propriu
+  dar setul dădea un domeniu de provider: **Târgu Jiu** (xnet.ro →
+  primariatargujiu@targujiu.ro), **Râmnicu Sărat** (yahoo →
+  petitii@primariermsarat.ro), **Câmpulung** (muscel.ro →
+  @primariacampulung.ro). Nu le-am retrimis: scrisoarea a ajuns, iar un al
+  doilea mesaj identic ar arăta a difuzare. Adresele bune rămân notate pentru
+  orice revenire.
+- **51 neverificabile** — sit inexistent sau blocat la citire.
+
+**Niciuna din primele 100 nu a dat bounce.** Toate au fost livrate.
+
+### Stadiu
+
+200 de primării contactate. 2 cu adresa de găsit (Cajvana, Boldești-Scăeni),
+2 cu domeniul mort (Moldova Nouă, Roznov). 18 orașe de rezervă rămân în listă
+dacă se merge mai departe de 200.

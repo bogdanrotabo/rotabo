@@ -65,7 +65,7 @@ rang,oras,judet,populatie_2021,email,sursa_camp,website,siruta,stare
 64,Reghin,Mureș,29742,office@primariareghin.ro,registratura,http://www.primariareghin.ro/,114809,TRIMIS 1 sept
 65,Mioveni,Argeș,29317,secretariat@emioveni.ro,general,https://emioveni.ro/,13301,TRIMIS 1 sept
 66,Câmpina,Prahova,28993,web@primariacampina.ro,registratura,http://www.primariacampina.ro/,131256,TRIMIS 1 sept
-67,Borșa,Maramureș,27711,primariaborsamm@yahoo.com,general,www.primariaborsamm.ro,106746,BOUNCE - adresa de gasit
+67,Borșa,Maramureș,27711,uat@primariaborsamm.ro,"verificat pe situl primariei, 2 sept",www.primariaborsamm.ro,106746,TRIMIS 1 sept
 68,Câmpulung,Argeș,27574,campulung@muscel.ro,general,http://www.primariacampulung.ro/,13490,TRIMIS 1 sept
 69,Fetești,Ialomița,27462,contact@primariafetesti.ro,general,www.primariafetesti.ro,92701,TRIMIS 1 sept
 70,Caracal,Olt,27403,Office@primariacaracal.ro,general,http://www.primariacaracal.ro/,125472,TRIMIS 1 sept
@@ -100,106 +100,106 @@ rang,oras,judet,populatie_2021,email,sursa_camp,website,siruta,stare
 99,Târgu Neamț,Neamț,18015,tgnt@primariatgneamt.ro,general,https://www.primariatarguneamt.ro/,121055,TRIMIS 1 sept
 100,Blaj,Alba,17816,primariablaj@primariablaj.ro,"corectat dupa bounce, citit pe situl primariei",http://primariablaj.ro/,1348,TRIMIS 1 sept
 101,Orăștie,Hunedoara,16825,primaria@orastie.info.ro,general,http://www.orastie.info.ro/,87638,TRIMIS 1 sept
-102,Băicoi,Prahova,16722,biroulunic@primariabaicoi.ro,general,https://www.primariabaicoi.ro/,130981,de trimis
-103,Târgu Secuiesc,Covasna,16243,cabinet@kezdi.ro,general,https://www.kezdi.ro/ro/,63740,de trimis
-104,Balș,Olt,16114,svsu@primariabals.eu,general,https://primariabals.eu/,125418,de trimis
-105,Motru,Gorj,15950,primaria@primariamotru.ro,general,http://www.primariamotru.ro/,78141,de trimis
-106,Ștefănești,Argeș,15931,stefanesti@ag.e-adm.ro,general,https://www.stefanesti-arges.ro/,13392,de trimis
-107,Băilești,Dolj,15928,primariabailesti@gmail.com,general,http://www.primariabailesti.ro/,70316,de trimis
-108,Râșnov,Brașov,15920,secretariat@primariarasnov.ro,general,http://www.primariarasnov.ro/,40367,de trimis
-109,Gheorgheni,Harghita,15884,primaria@gheorgheni.ro,general,https://www.gheorgheni.ro,83561,de trimis
-110,Salonta,Bihor,15792,primsal@rdslink.ro; primsal3@gmail.com,general,https://salonta.net,26975,de trimis
-111,Câmpulung Moldovenesc,Suceava,15642,registratura@campulungmoldovenesc.ro,registratura,https://www.campulungmoldovenesc.ro,146502,de trimis
-112,Drăgășani,Vâlcea,15617,dragasani@vl.e-adm.ro,general,http://www.primariadragasani.ro/,167981,de trimis
-113,Moreni,Dâmbovița,15472,contact@primariamoreni.ro,general,https://primariamoreni.ro/,65841,de trimis
-114,Vișeu de Sus,Maramureș,15349,primariaviseu@yahoo.com,general,https://www.viseudesus.ro/,106979,de trimis
-115,Adjud,Vrancea,15178,uat@primariaadjud.ro,general,www.adjud.ro,174860,de trimis
-116,Vicovu de Sus,Suceava,15143,primariavicovudesus@yahoo.com,general,https://www.primaria-vicovudesus.ro,151095,de trimis
-117,Cernavodă,Constanța,15088,primaria@cernavoda.ro,general,http://www.primaria-cernavoda.ro,60776,de trimis
-118,Filiași,Dolj,15031,contact@primaria-filiasi.ro,registratura,http://www.primaria-filiasi.ro/,70414,de trimis
-119,Breaza,Prahova,14871,contact@primariabreaza.ro,general,https://primariabreaza.ro/,131103,de trimis
-120,Chitila,Ilfov,14762,primar@primariachitila.ro,general,http://www.primariachitila.ro/,179285,de trimis
-121,Luduș,Mureș,14757,ludus@cjmures.ro,general,http://www.ludus.ro/,114710,de trimis
-122,Negrești-Oaș,Satu Mare,14616,primarie@negresti-oas.ro,general,https://www.negresti-oas.ro/,136599,de trimis
-123,Măgurele,Ilfov,14414,office@primariamagurele.ro,general,https://primariamagurele.ro/,179409,de trimis
-124,Baia Sprie,Maramureș,14329,primaria@baiasprie.ro,general,www.baiasprie.ro,106684,de trimis
-125,Buhuși,Bacău,14152,secretariat@primariabuhusi.ro,general,https://www.primariabuhusi.ro/,20778,de trimis
-126,Ovidiu,Constanța,13968,primariaovidiu@gmail.com,general,http://www.primariaovidiu.ro/,60687,de trimis
-127,Șimleu Silvaniei,Sălaj,13948,primaria_simleu@yahoo.com,general,https://www.simleusilvaniei.ro/,139884,de trimis
-128,Calafat,Dolj,13807,primariacalafat@yahoo.com,general,https://municipiulcalafat.ro/,70352,de trimis
-129,Marghita,Bihor,13573,primaria@marghita.ro,general,https://marghita.ro,26877,de trimis
-130,Corabia,Olt,13527,primariacorabia@yahoo.com,general,https://www.primariacorabia.ro/,125542,de trimis
-131,Urziceni,Ialomița,13380,primaria@primaria-urziceni.ro,general,http://www.primaria-urziceni.ro/,100683,de trimis
-132,Gura Humorului,Suceava,13278,primariagh@gmail.com,general,http://www.primariagh.ro,146584,de trimis
-133,Dărmănești,Bacău,13069,primaria@orasuldarmanesti.ro,general,https://orasuldarmanesti.ro,22166,de trimis
-134,Mizil,Prahova,12962,primaria@primaria-mizil.ro,general,https://www.primaria-mizil.ro/,131407,de trimis
-135,Pucioasa,Dâmbovița,12953,info@primpuc.ro,general,https://www.primpuc.ro/,65921,de trimis
-136,Bocșa,Caraș-Severin,12949,primariabocsa@yahoo.com,general,https://www.orasulbocsa.ro/,50969,de trimis
-137,Bolintin-Vale,Giurgiu,12806,contact@bolintin-vale.ro,general,https://www.bolintin-vale.ro/,101190,de trimis
-138,Țăndărei,Ialomița,12761,primaria_tandarei@yahoo.com,general,http://primaria-tandarei.ro/,92765,de trimis
-139,Brad,Hunedoara,12690,primar@primariabrad.ro,general,http://primariabrad.ro/,87291,de trimis
-140,Toplița,Harghita,12609,secretariat@primariatoplita.ro,general,www.primariatoplita.ro,83632,de trimis
-141,Zimnicea,Teleorman,12589,primaria@orasulzimnicea.ro,general,https://orasulzimnicea.ro/,151978,de trimis
-142,Găești,Dâmbovița,12583,primaria.gaesti@yahoo.com,general,https://www.primaria-gaesti.ro/,65681,de trimis
-143,Vatra Dornei,Suceava,12578,primaria@vatra-dornei.ro,general,http://www.vatra-dornei.ro,146744,de trimis
-144,Avrig,Sibiu,12534,office@primaria-avrig.ro,general,https://primaria-avrig.ro/,144054,de trimis
-145,Ocna Mureș,Alba,12480,contact@primariaocnamures.ro,general,https://www.primariaocnamures.ro/,1794,de trimis
-146,Sântana,Arad,12460,contact@primariasantana.ro,general,https://www.primariasantana.ro/ro/,12091,de trimis
-147,Vălenii de Munte,Prahova,12044,primariavaleniidemunte@yahoo.com,general,www.valeniidemunte.com.ro,131817,de trimis
-148,Pecica,Arad,11950,primaria@pecica.ro,general,https://www.pecica.ro/,11584,de trimis
-149,Darabani,Botoșani,11948,primariadarabani@yahoo.com,general,https://www.primariadarabani.ro/,35946,de trimis
-150,Mărășești,Vrancea,11314,primaria@primariamarasesti.ro,general,https://primariamarasesti.ro/,174922,de trimis
-151,Simeria,Hunedoara,11268,prim.simeria@smart.com.ro,general,http://www.primariasimeria.ro/default.aspx,87665,de trimis
-152,Beclean,Bistrița-Năsăud,11260,secretariat@primariabeclean.ro,general,http://primariabeclean.ro/web/,32483,de trimis
-153,Târgu Lăpuș,Maramureș,11163,primaria_tgl@yahoo.com,general,www.primariatargulapus.ro,106817,de trimis
-154,Comarnic,Prahova,11106,secretar.primariacomarnic@yahoo.com,general,https://primariacomarnic.ro/,131336,de trimis
-155,Dolhasca,Suceava,11007,primariadolhasca@yahoo.com,general,https://primariadolhasca.ro,148006,de trimis
-156,Sângeorz-Băi,Bistrița-Năsăud,10931,info@singeorz-bai.ro,general,http://www.singeorz-bai.ro/,32599,de trimis
-157,Scornicești,Olt,10795,primariascornicesti@yahoo.com,general,https://primariascornicesti.ro/,128711,de trimis
-158,Săcueni,Bihor,10720,orassacueni@gmail.com,general,https://www.sacueni.ro,30915,de trimis
-159,Sânnicolau Mare,Timiș,10627,primar@sannicolau-mare.ro,general,https://www.sannicolau-mare.ro,155528,de trimis
-160,Flămânzi,Botoșani,10561,orasflamanzi@yahoo.com,general,http://www.primariaflamanzi.ro/,37280,de trimis
-161,Târgu Ocna,Bacău,10410,primaria@orasul-targuocna.ro,general,https://orasul-targuocna.ro/,20965,de trimis
-162,Hârlău,Iași,10349,primariahirlau@yahoo.com,general,https://www.primaria-hirlau.ro,95355,de trimis
-163,Dăbuleni,Dolj,10333,primariadabuleni@gmail.com,general,http://www.primariadabuleni.ro/,72007,de trimis
-164,Boldești-Scăeni,Prahova,10298,pbs@opticnet.ro,general,http://pbs.infoprimarie.ro/,131069,de trimis
-165,Rovinari,Gorj,10246,office@primariarovinari.ro,general,https://www.primariarovinari.ro/,82895,de trimis
-166,Năsăud,Bistrița-Năsăud,10215,pon@primarianasaud.ro,general,http://www.primarianasaud.ro/,32544,de trimis
-167,Jimbolia,Timiș,10179,cabinet.primar@jimbolia.ro,general,http://jimbolia.ro,155494,de trimis
-168,Urlați,Prahova,10131,primaria_urlati@yahoo.com,general,http://urlati-ph.ro/,131620,de trimis
-169,Videle,Teleorman,10107,office@primariavidele.ro,general,http://www.primariavidele.ro/,151905,de trimis
-170,Călan,Hunedoara,10055,primariacalan@yahoo.com,general,http://www.primariacalan.ro/,87424,de trimis
-171,Lipova,Arad,10040,contact@primarialipova.ro,general,https://www.primarialipova.ro/,9574,de trimis
-172,Beiuș,Bihor,9745,primaria.beius@cjbihor.ro,general,www.primariabeius.ro,26804,de trimis
-173,Drăgănești-Olt,Olt,9721,primaria@draganesti-olt.ro,general,https://www.draganesti-olt.ro/,125622,de trimis
-174,Sovata,Mureș,9703,secretariat@primariasovata.ro,general,https://primariasovata.ro/,114854,de trimis
-175,Jibou,Sălaj,9677,primaria_jibou@yahoo.com,general,https://primariajibou.ro/site/,139811,de trimis
-176,Aleșd,Bihor,9662,primaria.alesd@cjbihor.ro,general,https://www.alesd-bihor.ro,26699,de trimis
-177,Târgu Frumos,Iași,9597,secretariat@primariatgfrumos.ro,general,http://primariatgfrumos.ro/,95471,de trimis
-178,Salcea,Suceava,9513,registratura@primariasalcea.ro,registratura,http://www.primariasalcea.ro,146370,de trimis
-179,Nehoiu,Buzău,9464,primarianehoiu@yahoo.com,general,http://www.primaria-nehoiu.ro/,47916,de trimis
-180,Costești,Argeș,9460,primaria@primariacostestiag.ro,general,https://primariacostestiag.ro/,13668,de trimis
-181,Odobești,Vrancea,9423,contact@primariaodobesti.ro,general,https://www.primariaodobesti.ro,175019,de trimis
-182,Topoloveni,Argeș,9373,primarie@topoloveni.cjarges.ro,general,http://www.topoloveni.ro/,13757,de trimis
-183,Oravița,Caraș-Severin,9346,primariaorasuluioravita@gmail.com,general,http://www.primariaoravita.ro/,51118,de trimis
-184,Titu,Dâmbovița,9291,primariatitu@yahoo.com,general,https://primariatitu.ro/,66081,de trimis
+102,Băicoi,Prahova,16722,biroulunic@primariabaicoi.ro,general,https://www.primariabaicoi.ro/,130981,TRIMIS 1 sept
+103,Târgu Secuiesc,Covasna,16243,cabinet@kezdi.ro,general,https://www.kezdi.ro/ro/,63740,TRIMIS 1 sept
+104,Balș,Olt,16114,svsu@primariabals.eu,general,https://primariabals.eu/,125418,TRIMIS 1 sept
+105,Motru,Gorj,15950,primaria@primariamotru.ro,general,http://www.primariamotru.ro/,78141,TRIMIS 1 sept
+106,Ștefănești,Argeș,15931,stefanesti@ag.e-adm.ro,general,https://www.stefanesti-arges.ro/,13392,TRIMIS 1 sept
+107,Băilești,Dolj,15928,primariabailesti@gmail.com,general,http://www.primariabailesti.ro/,70316,TRIMIS 1 sept
+108,Râșnov,Brașov,15920,secretariat@primariarasnov.ro,general,http://www.primariarasnov.ro/,40367,TRIMIS 1 sept
+109,Gheorgheni,Harghita,15884,primaria@gheorgheni.ro,general,https://www.gheorgheni.ro,83561,TRIMIS 1 sept
+110,Salonta,Bihor,15792,primsal@rdslink.ro,"verificat pe situl primariei, 2 sept",https://salonta.net,26975,TRIMIS 1 sept
+111,Câmpulung Moldovenesc,Suceava,15642,primaria@campulungmoldovenesc.ro,"corectat dupa bounce, citit pe situl primariei",https://www.campulungmoldovenesc.ro,146502,TRIMIS 1 sept
+112,Drăgășani,Vâlcea,15617,dragasani@vl.e-adm.ro,general,http://www.primariadragasani.ro/,167981,TRIMIS 1 sept
+113,Moreni,Dâmbovița,15472,contact@primariamoreni.ro,general,https://primariamoreni.ro/,65841,TRIMIS 1 sept
+114,Vișeu de Sus,Maramureș,15349,primariaviseu@yahoo.com,general,https://www.viseudesus.ro/,106979,TRIMIS 1 sept
+115,Adjud,Vrancea,15178,uat@primariaadjud.ro,general,www.adjud.ro,174860,TRIMIS 1 sept
+116,Vicovu de Sus,Suceava,15143,primariavicovudesus@yahoo.com,general,https://www.primaria-vicovudesus.ro,151095,TRIMIS 1 sept
+117,Cernavodă,Constanța,15088,primaria@cernavoda.ro,general,http://www.primaria-cernavoda.ro,60776,TRIMIS 1 sept
+118,Filiași,Dolj,15031,contact@primaria-filiasi.ro,registratura,http://www.primaria-filiasi.ro/,70414,TRIMIS 1 sept
+119,Breaza,Prahova,14871,contact@primariabreaza.ro,general,https://primariabreaza.ro/,131103,TRIMIS 1 sept
+120,Chitila,Ilfov,14762,primar@primariachitila.ro,general,http://www.primariachitila.ro/,179285,TRIMIS 1 sept
+121,Luduș,Mureș,14757,ludus@cjmures.ro,general,http://www.ludus.ro/,114710,TRIMIS 1 sept
+122,Negrești-Oaș,Satu Mare,14616,primarie@negresti-oas.ro,general,https://www.negresti-oas.ro/,136599,TRIMIS 1 sept
+123,Măgurele,Ilfov,14414,office@primariamagurele.ro,general,https://primariamagurele.ro/,179409,TRIMIS 1 sept
+124,Baia Sprie,Maramureș,14329,primaria@baiasprie.ro,general,www.baiasprie.ro,106684,TRIMIS 1 sept
+125,Buhuși,Bacău,14152,secretariat@primariabuhusi.ro,general,https://www.primariabuhusi.ro/,20778,TRIMIS 1 sept
+126,Ovidiu,Constanța,13968,primariaovidiu@gmail.com,general,http://www.primariaovidiu.ro/,60687,TRIMIS 1 sept
+127,Șimleu Silvaniei,Sălaj,13948,primaria@simleusilvaniei.ro,"verificat pe situl primariei, 2 sept",https://www.simleusilvaniei.ro/,139884,TRIMIS 1 sept
+128,Calafat,Dolj,13807,registratura@municipiulcalafat.ro,"verificat pe situl primariei, 2 sept",https://municipiulcalafat.ro/,70352,TRIMIS 1 sept
+129,Marghita,Bihor,13573,primaria@marghita.ro,general,https://marghita.ro,26877,TRIMIS 1 sept
+130,Corabia,Olt,13527,primariacorabia@primariacorabia.ro,"verificat pe situl primariei, 2 sept",https://www.primariacorabia.ro/,125542,TRIMIS 1 sept
+131,Urziceni,Ialomița,13380,primaria@primaria-urziceni.ro,general,http://www.primaria-urziceni.ro/,100683,TRIMIS 1 sept
+132,Gura Humorului,Suceava,13278,contact@primariagurahumorului.ro,"verificat pe situl primariei, 2 sept",http://www.primariagh.ro,146584,TRIMIS 1 sept
+133,Dărmănești,Bacău,13069,primaria@orasuldarmanesti.ro,general,https://orasuldarmanesti.ro,22166,TRIMIS 1 sept
+134,Mizil,Prahova,12962,primaria@primaria-mizil.ro,general,https://www.primaria-mizil.ro/,131407,TRIMIS 1 sept
+135,Pucioasa,Dâmbovița,12953,info@primpuc.ro,general,https://www.primpuc.ro/,65921,TRIMIS 1 sept
+136,Bocșa,Caraș-Severin,12949,primariabocsa@orasulbocsa.ro,"verificat pe situl primariei, 2 sept",https://www.orasulbocsa.ro/,50969,TRIMIS 1 sept
+137,Bolintin-Vale,Giurgiu,12806,contact@bolintin-vale.ro,general,https://www.bolintin-vale.ro/,101190,TRIMIS 1 sept
+138,Țăndărei,Ialomița,12761,primaria_tandarei@yahoo.com,general,http://primaria-tandarei.ro/,92765,TRIMIS 1 sept
+139,Brad,Hunedoara,12690,primar@primariabrad.ro,general,http://primariabrad.ro/,87291,TRIMIS 1 sept
+140,Toplița,Harghita,12609,secretariat@primariatoplita.ro,general,www.primariatoplita.ro,83632,TRIMIS 1 sept
+141,Zimnicea,Teleorman,12589,primaria@orasulzimnicea.ro,general,https://orasulzimnicea.ro/,151978,TRIMIS 1 sept
+142,Găești,Dâmbovița,12583,primaria@primaria-gaesti.ro,"verificat pe situl primariei, 2 sept",https://www.primaria-gaesti.ro/,65681,TRIMIS 1 sept
+143,Vatra Dornei,Suceava,12578,primaria@vatra-dornei.ro,general,http://www.vatra-dornei.ro,146744,TRIMIS 1 sept
+144,Avrig,Sibiu,12534,office@primaria-avrig.ro,general,https://primaria-avrig.ro/,144054,TRIMIS 1 sept
+145,Ocna Mureș,Alba,12480,contact@primariaocnamures.ro,general,https://www.primariaocnamures.ro/,1794,TRIMIS 1 sept
+146,Sântana,Arad,12460,contact@primariasantana.ro,general,https://www.primariasantana.ro/ro/,12091,TRIMIS 1 sept
+147,Vălenii de Munte,Prahova,12044,primariavaleniidemunte@yahoo.com,general,www.valeniidemunte.com.ro,131817,TRIMIS 1 sept
+148,Pecica,Arad,11950,primaria@pecica.ro,general,https://www.pecica.ro/,11584,TRIMIS 1 sept
+149,Darabani,Botoșani,11948,contact@primariadarabani.ro,"verificat pe situl primariei, 2 sept",https://www.primariadarabani.ro/,35946,TRIMIS 1 sept
+150,Mărășești,Vrancea,11314,primaria@primariamarasesti.ro,general,https://primariamarasesti.ro/,174922,TRIMIS 1 sept
+151,Simeria,Hunedoara,11268,contact@primariasimeria.ro,"corectat dupa bounce, citit pe situl primariei",http://www.primariasimeria.ro/default.aspx,87665,TRIMIS 1 sept
+152,Beclean,Bistrița-Năsăud,11260,secretariat@primariabeclean.ro,general,http://primariabeclean.ro/web/,32483,TRIMIS 1 sept
+153,Târgu Lăpuș,Maramureș,11163,primaria_tgl@yahoo.com,general,www.primariatargulapus.ro,106817,TRIMIS 1 sept
+154,Comarnic,Prahova,11106,registratura@primariacomarnic.ro,"verificat pe situl primariei, 2 sept",https://primariacomarnic.ro/,131336,TRIMIS 1 sept
+155,Dolhasca,Suceava,11007,primariadolhasca@yahoo.com,general,https://primariadolhasca.ro,148006,TRIMIS 1 sept
+156,Sângeorz-Băi,Bistrița-Năsăud,10931,info@singeorz-bai.ro,general,http://www.singeorz-bai.ro/,32599,TRIMIS 1 sept
+157,Scornicești,Olt,10795,primariascornicesti@yahoo.com,general,https://primariascornicesti.ro/,128711,TRIMIS 1 sept
+158,Săcueni,Bihor,10720,primaria@sacueni.ro,"verificat pe situl primariei, 2 sept",https://www.sacueni.ro,30915,TRIMIS 1 sept
+159,Sânnicolau Mare,Timiș,10627,primar@sannicolau-mare.ro,general,https://www.sannicolau-mare.ro,155528,TRIMIS 1 sept
+160,Flămânzi,Botoșani,10561,orasflamanzi@yahoo.com,general,http://www.primariaflamanzi.ro/,37280,TRIMIS 1 sept
+161,Târgu Ocna,Bacău,10410,primaria@orasul-targuocna.ro,general,https://orasul-targuocna.ro/,20965,TRIMIS 1 sept
+162,Hârlău,Iași,10349,primariahirlau@yahoo.com,general,https://www.primaria-hirlau.ro,95355,TRIMIS 1 sept
+163,Dăbuleni,Dolj,10333,primariadabuleni@gmail.com,general,http://www.primariadabuleni.ro/,72007,TRIMIS 1 sept
+164,Boldești-Scăeni,Prahova,10298,pbs@opticnet.ro,general,http://pbs.infoprimarie.ro/,131069,BOUNCE - adresa de gasit
+165,Rovinari,Gorj,10246,office@primariarovinari.ro,general,https://www.primariarovinari.ro/,82895,TRIMIS 1 sept
+166,Năsăud,Bistrița-Năsăud,10215,pon@primarianasaud.ro,general,http://www.primarianasaud.ro/,32544,TRIMIS 1 sept
+167,Jimbolia,Timiș,10179,cabinet.primar@jimbolia.ro,general,http://jimbolia.ro,155494,TRIMIS 1 sept
+168,Urlați,Prahova,10131,contact@urlati-ph.ro,"verificat pe situl primariei, 2 sept",http://urlati-ph.ro/,131620,TRIMIS 1 sept
+169,Videle,Teleorman,10107,office@primariavidele.ro,general,http://www.primariavidele.ro/,151905,TRIMIS 1 sept
+170,Călan,Hunedoara,10055,primariacalan@yahoo.com,general,http://www.primariacalan.ro/,87424,TRIMIS 1 sept
+171,Lipova,Arad,10040,contact@primarialipova.ro,general,https://www.primarialipova.ro/,9574,TRIMIS 1 sept
+172,Beiuș,Bihor,9745,contact@municipiulbeius.ro,"corectat dupa bounce, citit pe situl primariei",www.primariabeius.ro,26804,TRIMIS 1 sept
+173,Drăgănești-Olt,Olt,9721,primaria@draganesti-olt.ro,general,https://www.draganesti-olt.ro/,125622,TRIMIS 1 sept
+174,Sovata,Mureș,9703,secretariat@primariasovata.ro,general,https://primariasovata.ro/,114854,TRIMIS 1 sept
+175,Jibou,Sălaj,9677,primaria_jibou@yahoo.com,general,https://primariajibou.ro/site/,139811,TRIMIS 1 sept
+176,Aleșd,Bihor,9662,primaria.alesd@cjbihor.ro,general,https://www.alesd-bihor.ro,26699,TRIMIS 1 sept
+177,Târgu Frumos,Iași,9597,secretariat@primariatgfrumos.ro,general,http://primariatgfrumos.ro/,95471,TRIMIS 1 sept
+178,Salcea,Suceava,9513,registratura@primariasalcea.ro,registratura,http://www.primariasalcea.ro,146370,TRIMIS 1 sept
+179,Nehoiu,Buzău,9464,primarianehoiu@yahoo.com,general,http://www.primaria-nehoiu.ro/,47916,TRIMIS 1 sept
+180,Costești,Argeș,9460,primaria@primariacostestiag.ro,general,https://primariacostestiag.ro/,13668,TRIMIS 1 sept
+181,Odobești,Vrancea,9423,contact@primariaodobesti.ro,general,https://www.primariaodobesti.ro,175019,TRIMIS 1 sept
+182,Topoloveni,Argeș,9373,primarie@topoloveni.cjarges.ro,general,http://www.topoloveni.ro/,13757,TRIMIS 1 sept
+183,Oravița,Caraș-Severin,9346,primariaorasuluioravita@gmail.com,general,http://www.primariaoravita.ro/,51118,TRIMIS 1 sept
+184,Titu,Dâmbovița,9291,office@primariatitu.ro,"corectat dupa bounce, citit pe situl primariei",https://primariatitu.ro/,66081,TRIMIS 1 sept
 185,Moldova Nouă,Caraș-Severin,9278,contact@moldovanoua.com,general,http://www.moldovanoua.com/,51056,DOMENIU MORT - de reparat
-186,Babadag,Tulcea,9213,contactprimariababadag@gmail.com,general,https://www.primariababadag.ro/,159650,de trimis
-187,Covasna,Covasna,9208,primar@primariacovasna.ro,general,http://www.primariacovasna.ro/home/,63526,de trimis
-188,Murfatlar,Constanța,9173,secretariat@primaria-murfatlar.ro,general,https://www.primaria-murfatlar.ro/,62360,de trimis
-189,Cajvana,Suceava,9139,primaria_cajvana@yahoo.com,general,https://www.cajvana.ro,147633,de trimis
-190,Sinaia,Prahova,9071,contact@primaria-sinaia.ro,general,www.primaria-sinaia.ro,131540,de trimis
-191,Strehaia,Mehedinți,9059,contact@primariastrehaia.ro,general,http://www.primariastrehaia.ro/,110116,de trimis
-192,Podu Iloaiei,Iași,8992,registratura@poduiloaiei.ro,registratura,https://poduiloaiei.ro/,98373,de trimis
-193,Valea lui Mihai,Bihor,8969,primaria@valealuimihai.ro,general,http://www.valealuimihai.ro/,32027,de trimis
-194,Ianca,Brăila,8969,primaria.ianca@yahoo.com,general,http://primaria-ianca.ro/,43331,de trimis
-195,Liteni,Suceava,8878,litenisv@yahoo.com,general,https://www.primaria-liteni.ro,149227,de trimis
-196,Ineu,Arad,8807,primaria@primariaineu.ro,general,http://primariaineu.ro/,9538,de trimis
-197,Cristuru Secuiesc,Harghita,8797,office@keresztur.ro,general,http://keresztur.ro/index.php/ro,83525,de trimis
-198,Hațeg,Hunedoara,8793,primaria.hateg@yahoo.com,general,https://primariehateg.ro/,87576,de trimis
-199,Hârșova,Constanța,8737,secretariat@primaria-harsova.ro,general,https://primaria-harsova.ro,60801,de trimis
-200,Eforie,Constanța,8630,secretariat@primariaeforie.ro,general,https://www.primariaeforie.ro/,60455,de trimis
-201,Orșova,Mehedinți,8506,primariaorsova@primariaorsova.ro,general,https://www.primariaorsova.ro/,110063,de trimis
+186,Babadag,Tulcea,9213,contactprimariababadag@gmail.com,general,https://www.primariababadag.ro/,159650,TRIMIS 1 sept
+187,Covasna,Covasna,9208,primar@primariacovasna.ro,general,http://www.primariacovasna.ro/home/,63526,TRIMIS 1 sept
+188,Murfatlar,Constanța,9173,secretariat@primaria-murfatlar.ro,general,https://www.primaria-murfatlar.ro/,62360,TRIMIS 1 sept
+189,Cajvana,Suceava,9139,contact@cajvana.ro,"verificat pe situl primariei, 2 sept",https://www.cajvana.ro,147633,BOUNCE - adresa de gasit
+190,Sinaia,Prahova,9071,contact@primaria-sinaia.ro,general,www.primaria-sinaia.ro,131540,TRIMIS 1 sept
+191,Strehaia,Mehedinți,9059,contact@primariastrehaia.ro,general,http://www.primariastrehaia.ro/,110116,TRIMIS 1 sept
+192,Podu Iloaiei,Iași,8992,primaria@oraspoduiloaiei.ro,"corectat dupa bounce, citit pe situl primariei",https://poduiloaiei.ro/,98373,TRIMIS 1 sept
+193,Valea lui Mihai,Bihor,8969,primaria@valealuimihai.ro,general,http://www.valealuimihai.ro/,32027,TRIMIS 1 sept
+194,Ianca,Brăila,8969,primaria.ianca@yahoo.com,general,http://primaria-ianca.ro/,43331,TRIMIS 1 sept
+195,Liteni,Suceava,8878,contact@primaria-liteni.ro,"verificat pe situl primariei, 2 sept",https://www.primaria-liteni.ro,149227,TRIMIS 1 sept
+196,Ineu,Arad,8807,primaria@primariaineu.ro,general,http://primariaineu.ro/,9538,TRIMIS 1 sept
+197,Cristuru Secuiesc,Harghita,8797,office@keresztur.ro,general,http://keresztur.ro/index.php/ro,83525,TRIMIS 1 sept
+198,Hațeg,Hunedoara,8793,primar@primariehateg.ro,"corectat dupa bounce, citit pe situl primariei",https://primariehateg.ro/,87576,TRIMIS 1 sept
+199,Hârșova,Constanța,8737,secretariat@primaria-harsova.ro,general,https://primaria-harsova.ro,60801,TRIMIS 1 sept
+200,Eforie,Constanța,8630,secretariat@primariaeforie.ro,general,https://www.primariaeforie.ro/,60455,TRIMIS 1 sept
+201,Orșova,Mehedinți,8506,primariaorsova@primariaorsova.ro,general,https://www.primariaorsova.ro/,110063,TRIMIS 1 sept
 202,Oțelu Roșu,Caraș-Severin,8497,primaria_otelurosu@yahoo.com,general,https://otelu-rosu.ro/,51207,de trimis
 203,Iernut,Mureș,8473,iernut@cjmures.ro,general,https://primariaiernut.ro/,117827,de trimis
 204,Tăuții-Măgherăuș,Maramureș,8463,primaria@tautiimagheraus.ro,general,www.tautiimagheraus.ro,106461,de trimis
