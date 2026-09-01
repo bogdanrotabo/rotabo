@@ -399,3 +399,42 @@ Cerută separat. Rezultat, pe 100 de orașe:
 200 de primării contactate. 2 cu adresa de găsit (Cajvana, Boldești-Scăeni),
 2 cu domeniul mort (Moldova Nouă, Roznov). 18 orașe de rezervă rămân în listă
 dacă se merge mai departe de 200.
+
+---
+
+## Lot 4 — ultimele 18, 1 septembrie 2026
+
+Cele 18 orașe de rezervă din listă, sub 8.500 de locuitori: Oțelu Roșu, Iernut,
+Tăuții-Măgherăuș, Bușteni, Recaș, Întorsura Buzăului, Seini, Huedin,
+Techirghiol, Tășnad, Mihăilești, Baraolt, Șomcuta Mare, Bumbești-Jiu, Târgu
+Cărbunești, Băbeni, Agnita, Negrești.
+
+Verificare înainte de trimitere, ca la lotul 3: toate cele 14 domenii au MX.
+Din cele 6 adrese pe furnizor gratuit, **4 confirmate** pe siturile primăriilor
+(Oțelu Roșu, Bușteni, Negrești, plus Seini care avea și una instituțională),
+**Seini urcat** pe primaria@seini.ro, iar la Mihăilești și Șomcuta Mare situl
+nu s-a putut citi — trimise pe adresa din set.
+
+**Zero bounce-uri.** Verificarea prealabilă a mers: la lotul 3, fără ea, rata a
+fost 8%; aici, cu ea, 0%.
+
+## Bilanț final al campaniei
+
+| | |
+|---|---|
+| Primării contactate cu succes | **215** |
+| Acord obținut | 1 (Roman) |
+| Solicitări înregistrate oficial | 1 confirmată (Cluj-Napoca, nr. 755760/42/01.09.2026) |
+| Adresă de găsit | 2 (Cajvana, Boldești-Scăeni) |
+| Domeniu mort | 2 (Moldova Nouă, Roznov) |
+
+**Ce am învățat despre setul de date.** Adresele pe domeniu instituțional au
+ținut aproape integral. Cele pe Yahoo sau Gmail au fost sursa majorității
+bounce-urilor — Yahoo șterge conturile inactive, iar setul e din 2020.
+Verificarea pe situl primăriei înainte de trimitere reduce rata de la ~8% la
+zero, dar nu e infailibilă: Hațeg și Cajvana publicau pe propriul sit adrese pe
+care serverul lor le respinge.
+
+**Ce rămâne de făcut.** Patru adrese de găsit. Și răspunsurile: fiecare
+solicitare este o petiție în sensul OG 27/2002, deci instituția are 30 de zile
+să răspundă.
