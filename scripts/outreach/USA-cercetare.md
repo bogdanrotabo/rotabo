@@ -139,6 +139,20 @@ numele conducatorului sunt publicate prin lege.
 | 43 | Zwergenwiese | info@zwergenwiese.de | Joseph Wilhelm, Jochen Walz | DE |
 | 44 | Sodasan | info@sodasan.de | Thorsten Godau, Jürgen Hack, Kerstin Stromberg | DE |
 | 45 | Byodo | info@byodo.de | Bernd Hochstädter | DE |
+| 46 | Andechser Molkerei | scheitz@andechser-molkerei.de | Barbara Scheitz (adresa personala) | DE |
+| 47 | Davert | info@davert.de | Heiko Hintze | DE |
+| 48 | AlmaWin | info@almawin.de | Rudolf Bund, Verena Meier-Bund | DE |
+| 49 | Spielberger Mühle | info@spielberger-muehle.de | Volkmar Spielberger | DE |
+| 50 | Naturata | kontakt@naturata.de | Liane Maxion | DE |
+| 51 | Werner & Mertz (Frosch) | info@werner-mertz.com | Reinhard Schneider | DE |
+| 52 | Taifun Tofu | info@taifun-tofu.de | Jesús Bastante Medina, Sebastian Klose | DE |
+| 53 | Weiling | info@weiling.de | Bernd Weiling, Dr. Peter Meyer | DE |
+| 54 | gugler | office@gugler.at | Daniel Fürstberger | AT |
+| 55 | Bauckhof | empfang@bauckhof.de | Carsten Bauck (+5) | DE |
+| 56 | Ökofrost | info@oekofrost.de | Florian Gerull, Anke Frenzel | DE |
+| 57 | gebana | info@gebana.com | Christophe Schmidt | CH |
+| 58 | Die Mobiliar | info@mobiliar.ch | **VERIFY** — Impressum nu da numele | CH |
+| 59 | Kuhn Rikon | export.verkauf@kuhnrikon.ch | Tobias Gerfin | CH |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
