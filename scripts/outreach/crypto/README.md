@@ -123,21 +123,27 @@ avea atunci autoritatea s-o ia.
 | AstraZeneca | Vaccinul COVID la preț de cost, majoritatea spre țări sărace | 2020–2021 |
 | Ørsted | Și-au demontat propria afacere pe cărbune, ieftinind eolianul pentru concurenți | 2017– |
 
-### Adrese găsite, fără scrisoare scrisă
+### Toate cele treisprezece au scrisoare
 
-Companii unde nu am un fapt specific și verificabil despre ce au dat. Adresele
-sunt reale și publicate; scrisoarea ar trebui scrisă separat, cu un motiv
-adevărat, nu cu laudă generică.
+La prima trecere am scris doar patru, lăsându-le pe restul ca adrese fără
+scrisoare — nu aveam un fapt verificabil despre ce au dat, iar un paragraf de
+deschidere inventat e mai rău decât nicio scrisoare.
 
-    chvcips@chevron.com              Chevron
-    medien@telekom.de                Deutsche Telekom
-    corporate.press@adidas.com       Adidas
-    media.relations@infineon.com     Infineon
-    corporate.communications@henkel.com  Henkel
-    pr-fre@fresenius.com             Fresenius
-    info@symrise.com                 Symrise
-    info@sartorius.com               Sartorius
-    roberto.albini@eni.com           Eni, media relations
+Rezolvarea nu a fost să inventez. Două aveau un fapt pe care îl ratasem:
+
+| Companie | Ce am ratat |
+|---|---|
+| Fresenius | Acționarul de control e Else Kröner-Fresenius-Stiftung, fundație caritabilă. Aceeași structură ca Bosch. |
+| Henkel | Familia păstrează blocul de control printr-un acord pe care îl reînnoiesc. Proprietarii pot dărui; un director angajat, nu. |
+
+Celelalte șapte — Adidas, Infineon, Symrise, Sartorius, Deutsche Telekom, Eni,
+Chevron — au o deschidere care spune adevărul în loc să laude:
+
+> I am writing without knowing what your company has given away, and that is the
+> honest reason for the letter rather than an apology for it.
+
+E o scrisoare mai bună decât una cu un compliment inventat, și e singura formă
+onestă la o companie despre care nu am găsit un fapt.
 
 ### De urmărit
 

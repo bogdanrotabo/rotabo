@@ -222,5 +222,43 @@ export const L = [
 {s:"listed", co:"Ørsted", niv:"C", to:"Ørsted", em:"info@orsted.com",
  src:"orsted.com/en/contact-us",
  p:"For Ørsted.\n\nYou were a coal and oil company and you dismantled that business on purpose to build offshore wind, at a scale that made the technology cheap enough for everyone else to copy. Making your own hard-won engineering cheap for competitors is not usually described as giving. It should be."}
+,
+/* --- cotate: fapt propriu verificabil --- */
+{s:"listed", co:"Fresenius", niv:"C", to:"Fresenius SE", em:"pr-fre@fresenius.com",
+ src:"fresenius.com/imprint",
+ p:"For Fresenius.\n\nYour largest shareholder is a charitable foundation. The Else Kröner-Fresenius-Stiftung holds the controlling stake and spends its dividends on medical research and humanitarian aid — which means the returns of a company that treats dialysis patients across the world are already, structurally, going back out. Bosch is built the same way and almost nobody knows that either. A company can be designed to give, and yours was."},
+
+{s:"listed", co:"Henkel", niv:"C", to:"Henkel AG & Co. KGaA", em:"corporate.communications@henkel.com",
+ src:"henkel.com/imprint",
+ p:"For Henkel.\n\nThe family still holds the controlling block, bound together by an agreement they renew rather than dissolve. That is unusual for a company of your size, and it matters for one specific reason: owners can give away what they own. A chief executive answering only to institutional shareholders cannot. You are in the rare position of being able to decide something like this and simply do it."},
+
+/* --- cotate: fara fapt verificat, deschidere onesta --- */
+{s:"listed", co:"Adidas", niv:"C", to:"Adidas AG", em:"corporate.press@adidas.com",
+ src:"adidas-group.com/imprint",
+ p:"For Adidas.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter rather than an apology for it. A company your size almost certainly has something — a patent opened, a tool released, a programme that costs money and returns nothing measurable. If it exists, it is filed somewhere nobody outside the building can reach."},
+
+{s:"listed", co:"Infineon", niv:"C", to:"Infineon Technologies AG", em:"media.relations@infineon.com",
+ src:"infineon.com/imprint",
+ p:"For Infineon.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter. Semiconductor companies hold patents the way other companies hold cash, which means you are in a position almost nobody else is: opening one costs you a line item and changes what an entire industry can build."},
+
+{s:"listed", co:"Symrise", niv:"C", to:"Symrise AG", em:"info@symrise.com",
+ src:"symrise.com/imprint",
+ p:"For Symrise.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter. Your supply chains start with growers in places where a purchasing decision is the difference between a family farming and a family leaving. If something you do there costs you money and is not a marketing programme, it belongs on a page like this."},
+
+{s:"listed", co:"Sartorius", niv:"C", to:"Sartorius AG", em:"info@sartorius.com",
+ src:"sartorius.com/imprint",
+ p:"For Sartorius.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter. You supply the instruments that laboratories depend on, which puts you upstream of research done by people with no budget at all. What you charge them, or do not, is a decision nobody writes about."},
+
+{s:"listed", co:"Deutsche Telekom", niv:"C", to:"Deutsche Telekom AG", em:"medien@telekom.de",
+ src:"telekom.com/imprint",
+ p:"For Deutsche Telekom.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter. You own infrastructure, which is the one asset where giving is unusually cheap and unusually large: connectivity granted to people who cannot pay for it costs you a fraction of what it is worth to them."},
+
+{s:"listed", co:"Eni", niv:"C", to:"Eni SpA, media relations", em:"roberto.albini@eni.com",
+ src:"eni.com/en-IT/contacts.html",
+ p:"For Eni.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter rather than an apology for it. Energy companies are read against a story they rarely get to answer. A specific thing given, with a name and a date on it, is the only form of answer that is not a communications exercise."},
+
+{s:"listed", co:"Chevron", niv:"C", to:"Chevron Corporation", em:"chvcips@chevron.com",
+ src:"corporate.exxonmobil.com — pagina de contact Chevron",
+ p:"For Chevron.\n\nI am writing without knowing what your company has given away, and that is the honest reason for the letter. You are read against an industry story you cannot argue your way out of. One specific thing, given, with a name and a date on it, is the only kind of answer that does not sound like a communications exercise."}
 
 ];
