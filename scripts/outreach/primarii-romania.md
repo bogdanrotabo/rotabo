@@ -1,0 +1,218 @@
+# Primării din România — campanie afișare gratuită
+
+Pornit 1 septembrie 2026, după acordul Primăriei Municipiului Roman (jud. Neamț),
+comunicat de Dragoș Panait, consilier personal al primarului.
+
+## Ce a acceptat Roman
+
+6 afișe informative, gratuit, pe panourile publice de informare. Fără fonduri
+publice, fără contract, fără obligație financiară. Materialul trimis: PDF A4, A3,
+A2 + previzualizare JPG. Fără cod QR.
+
+## Clauza care ne leagă mâinile la citarea precedentului
+
+Adresa Primăriei Roman conține, textual:
+
+> să nu utilizeze numele, însemnele, sigla sau identitatea vizuală a Primăriei
+> Municipiului Roman în scopuri comerciale ori promoționale, cu excepția cazului
+> în care există un acord expres al autorității publice locale în acest sens
+
+și
+
+> să nu prezinte public sprijinul oferit [...] drept o recomandare, certificare,
+> acreditare, autorizare sau garanție
+
+A scrie altor primării „Roman a acceptat, luați-o ca model" este exact utilizare
+promoțională a numelui. Excepția prevăzută de ei este acordul expres — deci se
+cere, nu se presupune. Emailul 1 de mai jos cere acel acord.
+
+Până vine răspunsul, Emailul 2 se trimite în varianta neutră (paragraful
+precedentului scos). Varianta cu Roman se activează după „da".
+
+---
+
+## EMAIL 1 — cerere de acord, către Dragoș Panait
+
+**Către:** Primăria Municipiului Roman, în atenția dlui Dragoș Panait
+**Subiect:** Solicitare acord expres pentru menționarea sprijinului acordat
+
+Stimate domnule Panait,
+
+Vă mulțumesc încă o dată pentru sprijinul acordat și pentru claritatea cadrului
+stabilit prin adresa dumneavoastră.
+
+Intenționez să adresez o solicitare similară și altor primării din țară. Pentru a
+respecta întocmai prevederea privind neutilizarea numelui instituției în scopuri
+promoționale fără acord expres, vă rog să îmi comunicați dacă sunteți de acord să
+menționez, strict factual, că Primăria Municipiului Roman a aprobat afișarea
+gratuită a unui număr de 6 afișe informative pe panourile publice de informare.
+
+Mențiunea ar fi însoțită, de fiecare dată, de precizarea că sprijinul are caracter
+strict informativ și nu reprezintă o recomandare, certificare, acreditare,
+autorizare sau garanție privind platforma — formulare preluată din adresa
+dumneavoastră.
+
+Dacă preferați ca numele instituției să nu fie menționat, transmit solicitările
+fără nicio referire la Primăria Municipiului Roman. Vă rog să îmi comunicați
+oricare dintre cele două variante; o respect întocmai.
+
+Cu considerație,
+Bogdan Tănase
+Rotabo — rotabo.app
+
+---
+
+## EMAIL 2 — solicitare către primării
+
+Se personalizează în două locuri: `{{INSTITUȚIE}}` (Primăria Municipiului /
+Orașului / Comunei …) și `{{LOCALITATE}}`.
+
+**Subiect:** Solicitare afișare material informativ — platforma rotabo.app (fără costuri pentru instituție)
+
+Către {{INSTITUȚIE}}
+În atenția Compartimentului Comunicare / Relații cu Publicul
+
+Stimată doamnă primar, stimate domnule primar,
+
+Mă numesc Bogdan Tănase și am dezvoltat rotabo.app — o platformă gratuită prin
+care oamenii dintr-o localitate spun de ce au nevoie sau ce pot oferi: o meserie,
+timp, unelte, transport, ajutor la casă — și se găsesc direct între ei, fără
+intermediar și fără comision reținut de platformă.
+
+Vă adresez o solicitare simplă, care nu presupune niciun cost și nicio obligație
+pentru instituție: acordul de a afișa un număr de afișe informative pe panourile
+publice de informare aflate în administrarea dumneavoastră.
+
+Concret:
+
+- transmit materialul grafic final, gata de tipar, în formatele A4, A3 și A2
+  (PDF), plus o previzualizare JPG;
+- nu se alocă fonduri publice, nu se achiziționează servicii, nu se încheie
+  contract și nu se creează nicio obligație financiară pentru instituție;
+- materialul nu conține numele, sigla sau identitatea vizuală a instituției;
+- sprijinul acordat nu este și nu va fi prezentat drept recomandare, certificare,
+  acreditare, autorizare sau garanție privind platforma.
+
+Îmi asum integral, pe proprie răspundere:
+
+- corectitudinea, caracterul actual și lizibilitatea informațiilor din material,
+  precum și funcționarea adresei rotabo.app;
+- respectarea legislației aplicabile privind protecția datelor cu caracter
+  personal, drepturile de autor, mărcile și drepturile terților;
+- relația exclusivă cu utilizatorii platformei, inclusiv eventualele solicitări,
+  sesizări sau reclamații generate de utilizarea acesteia;
+- informarea instituției, într-un termen rezonabil, dacă materialul afișat devine
+  neactual sau impropriu informării publicului.
+
+[PARAGRAF PRECEDENT — se include NUMAI după acordul expres al Primăriei Roman]
+O solicitare identică a fost deja aprobată de Primăria Municipiului Roman,
+județul Neamț, care a acordat afișarea gratuită a 6 afișe informative pe panourile
+publice de informare. Precizez, pentru evitarea oricărui echivoc, că acel sprijin
+are caracter strict informativ și nu reprezintă o recomandare, o certificare sau o
+garanție privind platforma. Vă pot transmite, la cerere, cadrul de responsabilități
+stabilit acolo, dacă vă este util ca punct de plecare.
+[/PARAGRAF PRECEDENT]
+
+Dacă apreciați că inițiativa este utilă cetățenilor din {{LOCALITATE}}, vă rog să
+îmi comunicați numărul de afișe pe care îl considerați potrivit și formatul
+preferat. Transmit materialul în aceeași zi, în format pregătit pentru tipărire.
+
+Vă mulțumesc pentru timpul acordat.
+
+Cu considerație,
+Bogdan Tănase
+Rotabo — rotabo.app
+bogdan.tanase.ch@gmail.com
+
+---
+
+## Cum se trimite
+
+**Nu în BCC la 300 de adrese.** O primărie care primește un mesaj cu 300 de
+destinatari ascunși îl tratează ca reclamă. Individual, adresat pe numele
+instituției, în tranșe de 40–50 pe zi de pe o adresă Gmail obișnuită.
+
+**Ținta realistă:** cele 103 municipii și 216 orașe. Fiecare are adresă oficială
+publicată prin lege. Cele 2.861 de comune au panouri, dar rareori și pe cineva
+care citește mailul zilnic.
+
+**Termenul legal lucrează pentru tine.** Solicitarea este o petiție în sensul
+OG 27/2002: instituția e obligată să răspundă în 30 de zile. Nu e nevoie de
+insistență — se răspunde sau nu, și în ambele cazuri se știe.
+
+**Adresa de expediere:** bogdan.tanase.ch@gmail.com, aceeași de pe corespondența
+cu Roman. Nu gift.ceo.support — sunt două proiecte diferite și amestecul lor
+strică ambele.
+
+## Verificarea afișului A2 trimis la Roman — 1 septembrie 2026
+
+Extras textul din PDF și verificat fiecare afirmație contra codului sitului.
+Toate se susțin:
+
+| Afirmația de pe afiș | Verificare |
+|---|---|
+| ÎNSCRIERE GRATUITĂ | `hero.free_line` — „Înscrierea e gratuită" |
+| PUBLICARE GRATUITĂ | Confirmat în cod: „FREE LISTING PERIOD, from 2026-08-22. There is no checkout any more" — cele trei formulare au butonul `visibility.publish_btn`, nu checkout |
+| 0% COMISION ROTABO | `investors_card.p` — „fără niciun comision luat de la cei care oferă timp, abilități sau echipament" |
+| Vizibil 12 luni | `visibility.free_notice` — identic |
+| Taxa de acces la datele de contact | Reală: 1 CHF/lună sau 2 CHF/an pentru deblocarea telefoanelor și adreselor. Afișul o declară în subsol. |
+| rotabo.app funcțional | HTTP 200, verificat live |
+| Fără App Store / Google Play | Corect, e PWA |
+| „Need Me? Find Me!" | Este chiar sloganul sitului |
+
+Diacriticele sunt corecte în PDF (ă, â, î, ș, ț), fonturi încorporate DejaVu.
+
+**Singura observație:** subsolul cu taxa de acces e la 11,2 pt pe A2. Dacă
+versiunile A3 și A4 sunt reduceri proporționale ale aceluiași fișier, subsolul
+ajunge la ~7,9 pt pe A3 și ~5,6 pt pe A4 — sub pragul la care se citește pe un
+panou. Titlul „GRATUIT" rămâne mare la toate formatele. Dezechilibrul ăsta e
+exact ce se reproșează la o informare: promisiunea vizibilă, condiția ilizibilă.
+Pe A4 subsolul ar trebui să nu coboare sub 8 pt, chiar dacă asta înseamnă
+rescris mai scurt.
+
+---
+
+## Lista celor 200 — cum a fost construită, 1 septembrie 2026
+
+Fișierul: `scripts/outreach/primarii200.csv`
+
+**Populația:** wikitext brut de pe „Lista orașelor din România", recensământul
+2021 (INS, tabelul 1.03). 317 orașe parsate, ordonate descrescător.
+
+**Adresele:** setul `geospatialorg/date-contact-localitati` — 3.378 UAT-uri, cu
+câmp separat pentru registratură, compilat de pe siturile primăriilor. Potrivirea
+s-a făcut pe (județ, nume normalizat), cu rândurile de oraș având prioritate față
+de comunele omonime; fără asta, 102 orașe pierdeau locul în favoarea unei comune
+cu același nume.
+
+**Verificarea:** interogare MX prin DNS-over-HTTPS pentru fiecare domeniu.
+172 domenii unice, 169 primesc mail. Trei nu:
+
+| Domeniu | Oraș | Rezolvare |
+|---|---|---|
+| `primaria.galati.ro` | Galați (#8) | Înlocuit cu `relatiipublice@primariagalati.ro`, citit de pe pagina de contact a primăriei. MX confirmat. |
+| `moldovanoua.com` | Moldova Nouă | Blocat până se găsește adresa reală |
+| `primariarozov.ro` | Roznov | Blocat până se găsește adresa reală |
+
+Asta e verificarea care lipsea la campania locală din august, când
+`competitiisportive@csmroman.ro` a dat bounce fiindcă domeniul nu există.
+
+**Roșiorii de Vede** a fost adăugat manual: setul îl scrie „ROSIORI DE VEDE",
+Wikipedia „Roșiorii de Vede", și potrivirea automată a ratat un i.
+
+**Roman este exclus din campanie** — a răspuns deja, are acordul. Un al doilea
+mesaj identic, adresat instituției care tocmai ți-a spus da, arată a listă de
+difuzare, nu a corespondență.
+
+Rezultat: **200 de adrese cu MX confirmat**, în patru loturi de 50:
+
+| Lot | De la | Până la |
+|---|---|---|
+| 1 | București (1.716.961) | Miercurea Ciuc (34.484) |
+| 2 | Năvodari (34.398) | Orăștie (16.825) |
+| 3 | Băicoi (16.722) | Simeria (11.268) |
+| 4 | Beclean (11.260) | Oțelu Roșu (8.497) |
+
+MX confirmat înseamnă că domeniul primește mail. Nu garantează că respectiva
+cutie poștală există. Bounce-urile rămase se văd după primul lot și se repară
+înainte de al doilea.
