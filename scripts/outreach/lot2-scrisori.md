@@ -15,6 +15,34 @@ numele firmei în propoziția cu „permanently".
 
 # Prioritate A — faptă documentată, verificabilă
 
+## 33. Veja · FR
+
+| | |
+|---|---|
+| Către | Sébastien Kopp, directeur de la publication & co-fondator |
+| Adresa | service-clients@veja-store.com |
+| Unde | veja-store.com/en_us/legal.html — citită de pe pagină, 1 sept 2026 |
+
+**Subiect:** For Sébastien Kopp — ten founding seats, yours costs nothing
+
+> For Sébastien Kopp.
+>
+> Veja buys no advertising. Not less of it — none — and what would have been
+> the campaign budget goes instead into paying cotton growers and Amazonian
+> rubber tappers a price fixed above the market and agreed before the harvest.
+>
+> The rubber is the part that stays with me. A tapper who can live off a
+> standing tree has no reason to sell it for timber, which makes your purchase
+> order a forestry policy. Most companies fund the campaign and hope the supply
+> chain survives it.
+
+**Notă:** cea mai bună scrisoare din tot lotul. De trimis prima.
+
+**Atenție la adresă:** rezultatele de căutare dau `service-clients@veja-store.fr`.
+Pagina legală spune `.com`. Cea din căutare ar fi dat bounce.
+
+---
+
 ## 33. EWS Schönau · DE
 
 | | |
@@ -738,9 +766,7 @@ trimis devreme.
 | 97 | Kastner | office@kastner.at | **VERIFY** | rețeaua „Gutes vom Bauernhof" |
 | 98 | Beutelsbacher | info@beutelsbacher.de | Thomas Maier, Matthias Maier | sucuri, presare proprie |
 | 99 | Manufactum | — | — | *deja la #55* |
-| 100 | Veja | **de citit manual** | Sébastien Kopp | **nu face reclamă deloc; banii merg la producători** |
 | 101 | Gläserne Molkerei | **de citit manual** | Rüdiger Fricke | lăptărie transparentă, vizitabilă |
 
-**Veja merită efortul de un minut.** E cel mai bun cârlig neexploatat din toate
-cele 101, și singurul lucru care lipsește e adresa, pe care fetcher-ul mi-o
-redactează. Deschide `veja-store.com/en_us/legal.html`.
+**Veja e rezolvată** — adresa citită de pe pagină de Bogdan, scrisoarea scrisă,
+vezi #33. Rămâne doar Gläserne Molkerei de deschis manual.
