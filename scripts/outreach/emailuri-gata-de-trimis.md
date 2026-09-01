@@ -561,3 +561,118 @@ generale. Trimite-o prima.
 5. soulbottles, Stapelstein, Wildplastic, Goldeimer, Sonett, openPetition
 6. Trigema, Zotter — generația a doua, cu grija de mai sus
 7. Cele șase americane, la final
+
+---
+
+# Lot 2 — verificate 1 septembrie, seara
+
+> Cârligele de mai jos sunt mai slabe decât cele din lotul 1. Le-am marcat
+> onest: unde scrie **cârlig slab**, firma e curată dar nu are un act de
+> dăruire de mărimea celor de sus. Trimite-le după primele 19.
+
+## 26. UmweltBank · DE
+
+| | |
+|---|---|
+| Către | Goran Bašić, Vorstand |
+| Adresa exactă | hallo@umweltbank.de |
+| Unde e publicată | umweltbank.de/impressum |
+
+> For Goran Bašić.
+>
+> UmweltBank does not have an ethical investment product. It has only ethical
+> investments — every loan on the book has to pass the environmental test
+> before the financial one, which means you turned down an entire ordinary
+> banking business to be a bank at all.
+
+## 27. Tomorrow · DE
+
+| | |
+|---|---|
+| Către | Inas Nureldin, Michael Schweikart, Jakob Berndt |
+| Adresa exactă | hello@tomorrow.one |
+| Unde e publicată | tomorrow.one/de-DE/impressum |
+
+> For the three of you.
+>
+> You raised the money for a bank from the people who bank with it, which
+> means your customers own a piece of the thing they are also the product of
+> everywhere else.
+
+## 28. Followfood · DE
+
+| | |
+|---|---|
+| Către | Jürg Knoll & Harri Butsch |
+| Adresa exactă | presse@followfood.de |
+| Unde e publicată | followfood.de/impressum |
+
+> For Jürg Knoll and Harri Butsch.
+>
+> Every pack you sell carries a code that shows the buyer exactly where the
+> fish was caught or the vegetable grown. You gave away the one thing the food
+> industry guards hardest, which is the answer to "where is this actually
+> from".
+
+## 29. memo AG · DE
+
+| | |
+|---|---|
+| Către | Frank Schmähling, Vorstandsvorsitzender |
+| Adresa exactă | info@memo.de |
+| Unde e publicată | memo.de/impressum |
+| | **cârlig slab** |
+
+> For Frank Schmähling.
+>
+> memo has published a full sustainability report every year since long before
+> any law required one, in an industry — office supplies — where nobody was
+> asking and nobody was watching.
+
+## 30. Werkhaus · DE
+
+| | |
+|---|---|
+| Către | Eva Danneberg, Geschäftsführerin |
+| Adresa exactă | info@werkhaus.de |
+| Unde e publicată | werkhaus.de/impressum |
+| | **VERIFY** cârligul înainte de trimitere |
+
+> For Eva Danneberg.
+>
+> Werkhaus builds everything in Lüneburg, out of one material, in a plant run
+> on its own solar power — a manufacturer that decided the cheapest way was not
+> the way.
+
+**VERIFY:** cred că Werkhaus angajează în producție oameni cu dizabilități, dar
+nu am confirmat-o pe situl lor. Dacă e adevărat, ăla e cârligul, nu solarul —
+verifică înainte.
+
+## 31. Waschbär · DE
+
+| | |
+|---|---|
+| Către | Thomas Ganske, Andreas Kaufmann, Frederik Palm |
+| Adresa exactă | info@waschbaer.de |
+| Unde e publicată | waschbaer.de/impressum |
+| | **cârlig slab** |
+
+> For the Waschbär management.
+>
+> You have sold ecological household goods by post since 1987, which means you
+> were doing it for two decades before it became a category anyone wanted to be
+> in.
+
+## 32. Viva con Agua · DE
+
+| | |
+|---|---|
+| Către | Carolin Stüdemann, Vorstand |
+| Adresa exactă | kontakt@vivaconagua.org |
+| Unde e publicată | vivaconagua.org/impressum |
+| | **potrivire îndoielnică — vezi nota** |
+
+**Notă:** Viva con Agua e ONG, nu firmă. Întregul ei rost e deja dăruirea, deci
+invitația „publică ce dăruiește compania ta" nu are aceeași greutate — n-au ce
+să anunțe, fac doar asta. O las în listă pentru că adresa e verificată, dar aș
+trimite-o ultima, sau deloc.

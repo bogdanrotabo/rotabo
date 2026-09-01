@@ -119,6 +119,13 @@ numele conducatorului sunt publicate prin lege.
 | 23 | Trigema | bestellservice@trigema.de | Bonita Grupp | DE |
 | 24 | Zotter | schokolade@zotter.at | Julia Zotter | AT |
 | 25 | Buurtzorg | info@buurtzorg.org | Jos de Blok (fondator) | NL |
+| 26 | Tomorrow | hello@tomorrow.one | Inas Nureldin, Michael Schweikart, Jakob Berndt | DE |
+| 27 | Werkhaus | info@werkhaus.de | Eva Danneberg | DE |
+| 28 | Viva con Agua | kontakt@vivaconagua.org | Carolin Stüdemann (Vorstand) | DE |
+| 29 | memo AG | info@memo.de | Frank Schmähling | DE |
+| 30 | UmweltBank | hallo@umweltbank.de | Goran Bašić | DE |
+| 31 | Followfood | presse@followfood.de | Jürg Knoll, Harri Butsch | DE |
+| 32 | Waschbär | info@waschbaer.de | Thomas Ganske, Andreas Kaufmann, Frederik Palm | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
