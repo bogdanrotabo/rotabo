@@ -438,3 +438,54 @@ care serverul lor le respinge.
 **Ce rămâne de făcut.** Patru adrese de găsit. Și răspunsurile: fiecare
 solicitare este o petiție în sensul OG 27/2002, deci instituția are 30 de zile
 să răspundă.
+
+---
+
+## Cele patru rămase — rezolvate (1 septembrie 2026, seara)
+
+Ultimele patru primării din listă care nu primiseră scrisoarea. Toate patru sunt
+orașe, deci „Primăria Orașului".
+
+**Metoda care a mers: DNS înainte de orice.** Interogarea MX pe domeniile
+candidate a rezolvat jumătate din cazuri fără să deschid vreun sit.
+
+| Oraș | Ce era | Ce e | Cum s-a găsit |
+|---|---|---|---|
+| Roznov | `secretar@primariarozov.ro` | `roznov@primariaroznov.ro` | `primariarozov.ro` e NXDOMAIN, `primariaroznov.ro` are MX — lipsea un „n" în setul de date. Adresa, de pe pagina lor de contact. |
+| Moldova Nouă | `contact@moldovanoua.com` | `contact@primariamoldovanoua.ro` | `.com`-ul n-are MX deloc; `primariamoldovanoua.ro` are `mail.primariamoldovanoua.ro`. Adresa e publicată pe prima pagină. |
+| Boldești-Scăeni | `pbs@opticnet.ro` | `primaria@boldesti-scaeni.ro` | Situl din listă (`pbs.infoprimarie.ro`) e NXDOMAIN. Domeniul oficial are MX, dar situl nu răspunde prin proxy — adresa, din registrul Consiliului Județean Prahova. |
+| Cajvana | `contact@cajvana.ro` | `primaria_cajvana@yahoo.com` | Domeniul e viu, pe Google Workspace, dar cutia `contact@` nu există. |
+
+**Cajvana confirmă a doua oară constatarea de la Hațeg:** o primărie își publică
+pe propriul sit o adresă pe care propriul server o respinge. Pagina lor de
+contact afișează și azi `contact@cajvana.ro`, adresa care a generat bounce-ul.
+Publicarea nu e dovadă că există cutia poștală. Singura dovadă e livrarea.
+
+**O notă tehnică.** Siturile primăriilor răspund prost prin proxy —
+`www.primariaroznov.ro` și `boldesti-scaeni.ro` închideau tunelul după 39 de
+octeți pe HTTPS. Roznov a mers pe HTTP simplu, cu timeout de 45s. Boldești n-a
+răspuns pe nicio variantă; adresa a venit din registrul județean.
+
+**Trimise**, toate patru, cu `htmlBody` explicit, ancora curată
+`rotabo.app/afise.html`, verificată înainte de trimitere. Textul include acum
+explicit că afișul „poate fi descărcat și tipărit liber".
+
+| Oraș | Mesaj |
+|---|---|
+| Cajvana | `1a05eed072ffa384` |
+| Boldești-Scăeni | `1a05eed6d1a794fa` |
+| Moldova Nouă | `1a05eee14e25f477` |
+| Roznov | `1a05eee730948538` |
+
+### Bilanț final al campaniei
+
+| | |
+|---|---|
+| Primării contactate | **219** |
+| Acord obținut | **1** (Roman, 6 afișe) |
+| Rămase nerezolvate | **0** |
+
+Din 12 bounce-uri pe parcursul campaniei, toate 12 au fost diagnosticate și
+rezolvate. Tiparul dominant: adrese de free-mail dintr-un set de date din 2020,
+plus domenii instituționale abandonate. Verificarea pe situl propriu înainte de
+trimitere a scăzut rata de bounce de la 8% la zero.

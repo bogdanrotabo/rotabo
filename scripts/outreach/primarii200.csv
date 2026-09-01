@@ -162,7 +162,7 @@ rang,oras,judet,populatie_2021,email,sursa_camp,website,siruta,stare
 161,Târgu Ocna,Bacău,10410,primaria@orasul-targuocna.ro,general,https://orasul-targuocna.ro/,20965,TRIMIS 1 sept
 162,Hârlău,Iași,10349,primariahirlau@yahoo.com,general,https://www.primaria-hirlau.ro,95355,TRIMIS 1 sept
 163,Dăbuleni,Dolj,10333,primariadabuleni@gmail.com,general,http://www.primariadabuleni.ro/,72007,TRIMIS 1 sept
-164,Boldești-Scăeni,Prahova,10298,pbs@opticnet.ro,general,http://pbs.infoprimarie.ro/,131069,BOUNCE - adresa de gasit
+164,Boldești-Scăeni,Prahova,10298,primaria@boldesti-scaeni.ro,"domeniu oficial cu MX; infoprimarie.ro e NXDOMAIN",http://boldesti-scaeni.ro/,131069,TRIMIS 1 sept
 165,Rovinari,Gorj,10246,office@primariarovinari.ro,general,https://www.primariarovinari.ro/,82895,TRIMIS 1 sept
 166,Năsăud,Bistrița-Năsăud,10215,pon@primarianasaud.ro,general,http://www.primarianasaud.ro/,32544,TRIMIS 1 sept
 167,Jimbolia,Timiș,10179,cabinet.primar@jimbolia.ro,general,http://jimbolia.ro,155494,TRIMIS 1 sept
@@ -183,11 +183,11 @@ rang,oras,judet,populatie_2021,email,sursa_camp,website,siruta,stare
 182,Topoloveni,Argeș,9373,primarie@topoloveni.cjarges.ro,general,http://www.topoloveni.ro/,13757,TRIMIS 1 sept
 183,Oravița,Caraș-Severin,9346,primariaorasuluioravita@gmail.com,general,http://www.primariaoravita.ro/,51118,TRIMIS 1 sept
 184,Titu,Dâmbovița,9291,office@primariatitu.ro,"corectat dupa bounce, citit pe situl primariei",https://primariatitu.ro/,66081,TRIMIS 1 sept
-185,Moldova Nouă,Caraș-Severin,9278,contact@moldovanoua.com,general,http://www.moldovanoua.com/,51056,DOMENIU MORT - de reparat
+185,Moldova Nouă,Caraș-Severin,9278,contact@primariamoldovanoua.ro,"sit oficial + MX verificat, 1 sept",https://primariamoldovanoua.ro/,51056,TRIMIS 1 sept
 186,Babadag,Tulcea,9213,contactprimariababadag@gmail.com,general,https://www.primariababadag.ro/,159650,TRIMIS 1 sept
 187,Covasna,Covasna,9208,primar@primariacovasna.ro,general,http://www.primariacovasna.ro/home/,63526,TRIMIS 1 sept
 188,Murfatlar,Constanța,9173,secretariat@primaria-murfatlar.ro,general,https://www.primaria-murfatlar.ro/,62360,TRIMIS 1 sept
-189,Cajvana,Suceava,9139,contact@cajvana.ro,"verificat pe situl primariei, 2 sept",https://www.cajvana.ro,147633,BOUNCE - adresa de gasit
+189,Cajvana,Suceava,9139,primaria_cajvana@yahoo.com,"adresa alternativa publicata; cea de pe sit respinge",https://www.cajvana.ro,147633,TRIMIS 1 sept
 190,Sinaia,Prahova,9071,contact@primaria-sinaia.ro,general,www.primaria-sinaia.ro,131540,TRIMIS 1 sept
 191,Strehaia,Mehedinți,9059,contact@primariastrehaia.ro,general,http://www.primariastrehaia.ro/,110116,TRIMIS 1 sept
 192,Podu Iloaiei,Iași,8992,primaria@oraspoduiloaiei.ro,"corectat dupa bounce, citit pe situl primariei",https://poduiloaiei.ro/,98373,TRIMIS 1 sept
@@ -207,7 +207,7 @@ rang,oras,judet,populatie_2021,email,sursa_camp,website,siruta,stare
 206,Recaș,Timiș,8347,contact@primariarecas.ro,general,https://primariarecas.ro,158314,TRIMIS 1 sept
 207,Întorsura Buzăului,Covasna,8332,primaria@intorsura.info,general,http://www.intorsura.info/,63580,TRIMIS 1 sept
 208,Seini,Maramureș,8198,primaria@seini.ro,"verificat pe situl primariei, 2 sept",www.seini.ro,108963,TRIMIS 1 sept
-209,Roznov,Neamț,8133,secretar@primariarozov.ro,registratura,https://www.primariaroznov.ro/,124117,DOMENIU MORT - de reparat
+209,Roznov,Neamț,8133,roznov@primariaroznov.ro,"sit oficial, pagina de contact",https://www.primariaroznov.ro/,124117,TRIMIS 1 sept
 210,Huedin,Cluj,8069,registratura@primariahuedin.ro,registratura,https://primariahuedin.ro/,55446,TRIMIS 1 sept
 211,Techirghiol,Constanța,8061,apl@primariatechirghiol.ro,general,https://www.primariatechirghiol.ro/,60534,TRIMIS 1 sept
 212,Tășnad,Satu Mare,8058,office@primariatasnad.ro,general,http://tasnad.primariatasnad.ro/,136642,TRIMIS 1 sept
