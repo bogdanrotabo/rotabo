@@ -73,3 +73,64 @@ completează manual, în browser.
    mult mai largă. Îți pot construi lista aceea; durează, dar iese curată.
 3. **Formularele americane** sunt o campanie separată, manuală, în browser. Nu
    intră prin niciun launcher.
+
+---
+
+# Extindere: 100 de CEO — filonul DACH
+
+Cercetare continuată 1 septembrie 2026, dupa cererea de a merge la 100.
+
+Constatarea de mai sus se confirma din nou, acum cu cifre de pe ambele parti:
+in SUA rata adreselor publicate a fost 6 din ~30 (20%); in Germania, unde
+Impressum-ul e obligatoriu, primul lot a dat 5 din 7 (~75%). Aceeasi munca,
+de patru ori randamentul.
+
+Sursa cea mai productiva: lista firmelor in proprietate-responsabila publicata
+de Purpose Economy (purpose-economy.org/en/companies) - 41 de firme dintr-o
+singura pagina, majoritatea germane. Fiecare are Impressum, deci adresa si
+numele conducatorului sunt publicate prin lege.
+
+## Verificate pana acum (adresa citita pe situl firmei)
+
+| # | Firma | Adresa | Conducator | Tara |
+|---|---|---|---|---|
+| 1 | einhorn | contact@einhorn.my | Philip Siefer, Luise Tremel | DE |
+| 2 | WEtell | info@wetell.de | Andreas Schmucker, Alma Spribille, Nico Tucher | DE |
+| 3 | Neue Narrative | hallo@neuenarrative.de | Alexandra Bürger, Sebastian Klein | DE |
+| 4 | Goldeimer | shop@goldeimer.de | Rolf Schwander, Malte Schremmer | DE |
+| 5 | Märkisches Landbrot | deinert@landbrot.de | Christoph Deinert, Felix Wasmuth | DE |
+| 6 | Alnatura | info@alnatura.de | Prof. Dr. Götz E. Rehn (fondator) | DE |
+| 7 | Cloudflare | press@cloudflare.com | Matthew Prince | US |
+| 8 | Automattic | press@automattic.com | Matt Mullenweg | US |
+| 9 | Salesforce | pr@salesforce.com | Marc Benioff | US |
+| 10 | DuckDuckGo | press@duckduckgo.com | Gabriel Weinberg | US |
+| 11 | Wikimedia | business@wikimedia.org | Maryana Iskander | US |
+| 12 | Mozilla | press@mozilla.com | VERIFY | US |
+
+Märkisches Landbrot publica direct adresele personale ale celor doi
+conducatori in Impressum - cel mai bun tip de tinta din toata lista.
+
+## Coada de verificat (din lista Purpose Economy, toate germane)
+
+vyld, Stapelstein, Wildplastic, Oktopulli, openPetition, dyve, WoodenValley,
+ChargeHorizons, somigo, Moxworld, NIDISI, Fair Trade Power, pack&satt,
+Planetgroups, ARCHE Naturprodukte, SHQUARED, Taptree, Waldorfshop Universnatur,
+Autorenwelt, Gute Kulturen, tip me, unternehmen mitte (CH), Greaterthan, Nevi,
+Payactive, PranaHaus, Räubersachen, about:source, AUGENHÖHE, your.company
+
+## Candidati mari, cu poveste documentata, de adaugat
+
+Bosch si Zeiss (ambele detinute de fundatie), Trigema (Wolfgang Grupp - loc de
+munca garantat pe viata), manomama (Sina Trinkwalder - angajeaza oameni
+considerati neangajabili), GEA/Waldviertler (Heini Staudinger), Sonnentor si
+Zotter (AT), Voelkel si Sonett (ambele in proprietate-responsabila), Rapunzel,
+Lebensbaum, Weleda, share (Sebastian Stricker - un produs vandut, o donatie
+echivalenta), soulbottles, GLS Bank, Triodos (NL), Buurtzorg (NL), John Lewis
+(UK), Novo Nordisk / Carlsberg / Lundbeck / Maersk (DK, toate detinute de
+fundatii).
+
+## Nota tehnica
+
+WebFetch are limita de rata; la peste ~4 pagini deodata raspunde 429. Lotul
+corect e 2-3 pagini pe apel. Coada de mai sus e ordonata, se reia de unde a
+ramas.
