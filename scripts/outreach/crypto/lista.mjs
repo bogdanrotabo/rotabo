@@ -33,7 +33,11 @@ os:
 tech:
 "Your industry inherited its foundations for free.\n\n" +
 "Nothing your company sells would exist if the generation before you had charged for what they found. The internet protocols were published rather than licensed. Unix, C, the compiler your products are built with, the web itself — handed over, by people who could have owned them and decided not to. The entire industry is standing on a pile of gifts it rarely mentions.\n\n" +
-"That inheritance does not appear in an annual report. The companies that received the most from it are usually the ones least likely to say so out loud."
+"That inheritance does not appear in an annual report. The companies that received the most from it are usually the ones least likely to say so out loud.",
+listed:
+"You cannot give away what is not yours.\n\n" +
+"That is the honest problem with writing to a listed company about generosity, and I am not going to pretend it away. A hired chief executive holds other people\u2019s property in trust. Handing over an asset without a board behind you is not generosity, it is a breach of duty \u2014 and every CEO who has tried to be personally magnanimous with shareholder assets has learned that quickly.\n\n" +
+"Which is exactly why the few companies that have done it are worth naming, and why almost nobody remembers which ones they were."
 };
 
 export const KICKER = {
@@ -44,7 +48,9 @@ ai:
 os:
 "There is one reason gift.ceo is worth a line of your time.\n\nYou have given for years and never once put your name on it in a place built for exactly that.\n\nA release note is not a signature. gift.ceo is one page, numbered, permanent, where the person responsible says: this is what we gave. Not to raise money and not to be thanked — so that the CEOs who have never given anything have to look at a page where the people who did are listed by name.",
 tech:
-"There is one reason this matters at your scale.\n\nA small company is believed when it says it gives. You are not.\n\nAt your size every generous act is read as marketing, tax structure or lock-in — and most of the time that reading is correct. The only version that survives the cynicism is the specific one: a named person, a named thing, a date, and something that cannot be quietly withdrawn next quarter. gift.ceo is built for that shape and nothing else. No campaign, no report, no logo wall."
+"There is one reason this matters at your scale.\n\nA small company is believed when it says it gives. You are not.\n\nAt your size every generous act is read as marketing, tax structure or lock-in — and most of the time that reading is correct. The only version that survives the cynicism is the specific one: a named person, a named thing, a date, and something that cannot be quietly withdrawn next quarter. gift.ceo is built for that shape and nothing else. No campaign, no report, no logo wall.",
+listed:
+"There is one reason I am writing to you anyway.\n\nThe gifts that came out of companies like yours are the largest ones in the list, and they are the least known.\n\nNot a foundation, not a giving programme, not a percentage of profit \u2014 one decision, taken once, that put something permanently beyond the company\u2019s own reach. Those decisions are made by a named person on a named day, and then they vanish into corporate history where nobody can find them. gift.ceo is one page where they would be findable, numbered, next to each other."
 };
 
 export const L = [
@@ -199,5 +205,22 @@ export const L = [
 {s:"tech", co:"Arm", niv:"C", to:"Rene Haas, CEO", em:"Global-PRteam@arm.com",
  src:"arm.com/company/contact-us",
  p:"For Rene Haas.\n\nYour architecture is in essentially every phone on the planet, which puts you in an unusual position: a decision you make about access changes what is possible for people who will never be your customers. That is leverage most CEOs do not have, and gift.ceo is a page for people who have it and use it."}
+,
+/* ---------- COMPANII COTATE LA BURSA ---------- */
+{s:"listed", co:"Volvo", niv:"C", to:"Volvo Group", em:"press@volvo.com",
+ src:"volvogroup.com — media relations",
+ p:"For Volvo.\n\nIn 1959 Nils Bohlin designed the three-point seatbelt, and Volvo opened the patent to every other manufacturer for nothing. You held the most valuable safety patent of the century and gave it to your competitors on the reasoning that it was worth more in every car than in yours alone. The estimates run past a million lives. It is, by a distance, the best answer any company has ever given to the question gift.ceo asks, and it was given sixty-seven years ago by people who are no longer here to say so."},
+
+{s:"listed", co:"Merck", niv:"C", to:"Merck & Co.", em:"mediarelations@merck.com",
+ src:"merck.com/contact-us",
+ p:"For Merck.\n\nIn 1987 you committed to donate Mectizan for river blindness — as much as needed, for as long as needed, to anyone who needed it, with no end date written anywhere. Nearly forty years and billions of treatments later that promise is still running, and a disease that blinded people across West Africa is close to gone. Almost no one under forty has heard of it."},
+
+{s:"listed", co:"AstraZeneca", niv:"C", to:"AstraZeneca", em:"global-mediateam@astrazeneca.com",
+ src:"astrazeneca.com/contact-us",
+ p:"For AstraZeneca.\n\nYou supplied the COVID vaccine at cost through the pandemic while others priced to the market, and the majority of the doses went to lower-income countries. Whatever the arguments about what came after, the decision itself was taken at a moment when it could have gone the other way and would have earned billions."},
+
+{s:"listed", co:"Ørsted", niv:"C", to:"Ørsted", em:"info@orsted.com",
+ src:"orsted.com/en/contact-us",
+ p:"For Ørsted.\n\nYou were a coal and oil company and you dismantled that business on purpose to build offshore wind, at a scale that made the technology cheap enough for everyone else to copy. Making your own hard-won engineering cheap for competitors is not usually described as giving. It should be."}
 
 ];

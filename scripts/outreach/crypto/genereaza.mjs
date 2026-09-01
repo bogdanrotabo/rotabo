@@ -17,7 +17,7 @@ const url = (r) =>
   `&body=${encodeURIComponent(corp(r))}`;
 
 const esc = (t) => t.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const SECT = { crypto:"crypto", ai:"AI", os:"open source", tech:"tech" };
+const SECT = { crypto:"crypto", ai:"AI", os:"open source", tech:"tech", listed:"bursă" };
 const NUME = {
   A:"Nivelul A — decidentul citește chiar el",
   B:"Nivelul B — companie mică, ajunge la el",
