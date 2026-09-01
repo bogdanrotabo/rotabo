@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afișe Rotabo — material pentru afișare publică</title>
+<meta name="description" content="Afișul informativ Rotabo, gata de tipar, în A2, A3 și A4. Se descarcă și se tipărește liber, de oricine, gratuit.">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="canonical" href="https://rotabo.app/afise.html">
+<style>
+  :root{
+    --bg-top:#f6ecf9; --bg-mid:#f3e6f8; --bg-card:#f7edfa;
+    --border:#e2c3ee; --violet-1:#7c2d9c; --violet-2:#9b3fc0;
+    --text-dark:#3a1650; --text-body:#6b5878; --text-eyebrow:#8a7a94;
+    --btn-solid:#9333a8; --hover-soft:#faf4fd;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:linear-gradient(180deg,var(--bg-top),var(--bg-mid));
+    color:var(--text-body); font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+
+  header.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding-bottom:1.25rem;border-bottom:1px solid var(--border);flex-wrap:wrap;}
+  .brand{font-size:1.35rem;font-weight:700;color:var(--violet-1);text-decoration:none;letter-spacing:-.02em;}
+  .brand span{color:var(--text-eyebrow);font-weight:400;font-size:.8rem;margin-inline-start:.5rem;letter-spacing:0;}
+  .back{color:var(--violet-2);text-decoration:none;font-size:.9rem;font-weight:600;}
+  .back:hover{text-decoration:underline;}
+
+  .eyebrow{margin:2.25rem 0 .4rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--text-eyebrow);font-weight:700;}
+  h1{margin:0 0 .6rem;font-size:clamp(1.7rem,4.5vw,2.5rem);line-height:1.15;
+    color:var(--text-dark);letter-spacing:-.02em;}
+  .lead{font-size:1.05rem;max-width:60ch;margin:0 0 .9rem;}
+  .lead strong{color:var(--text-dark);}
+  .en{font-size:.88rem;color:var(--text-eyebrow);max-width:60ch;margin:0 0 2rem;}
+
+  h2{margin:2.75rem 0 1rem;font-size:1.15rem;color:var(--text-dark);letter-spacing:-.01em;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+  .card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;
+    padding:1.25rem 1.25rem 1.35rem;display:flex;flex-direction:column;gap:.35rem;}
+  .card .fmt{font-size:1.5rem;font-weight:700;color:var(--violet-1);line-height:1;}
+  .card .dim{font-size:.9rem;color:var(--text-body);}
+  .card .use{font-size:.85rem;color:var(--text-eyebrow);flex:1;margin-bottom:.7rem;}
+  .card a.dl{display:block;text-align:center;background:var(--btn-solid);color:#fff;
+    text-decoration:none;font-weight:600;font-size:.92rem;padding:.65rem 1rem;border-radius:9px;}
+  .card a.dl:hover{background:var(--violet-1);}
+  .card a.dl:focus-visible{outline:3px solid var(--violet-2);outline-offset:2px;}
+
+  .preview{margin-top:1rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;
+    background:#fff;}
+  .preview object{display:block;width:100%;height:min(78vh,900px);border:0;}
+  .preview .fallback{padding:1.5rem;font-size:.92rem;}
+
+  .note{margin-top:2.75rem;padding:1.35rem 1.4rem;background:var(--hover-soft);
+    border:1px solid var(--border);border-radius:14px;font-size:.92rem;}
+  .note p{margin:.55rem 0;}
+  .note p:first-child{margin-top:0;}
+  .note p:last-child{margin-bottom:0;}
+  .note b{color:var(--text-dark);}
+
+  footer{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--border);
+    font-size:.85rem;color:var(--text-eyebrow);display:flex;gap:1.25rem;flex-wrap:wrap;}
+  footer a{color:var(--violet-2);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="/">Rotabo<span>Need Me? Find Me!</span></a>
+    <a class="back" href="/">&larr; Înapoi la rotabo.app</a>
+  </header>
+
+  <p class="eyebrow">Material pentru afișare publică</p>
+  <h1>Afișul Rotabo, gata de tipar</h1>
+  <p class="lead">Același afiș în trei formate. <strong>Se descarcă și se tipărește liber, de oricine, gratuit</strong> —
+    primării, biblioteci, școli, cabinete, asociații, magazine de cartier, sau un om care vrea
+    să-l pună pe un avizier de bloc.</p>
+  <p class="en">The Rotabo poster, print-ready, in A2, A3 and A4. Free for anyone to download,
+    print and display. Romanian language.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="fmt">A4</div>
+      <div class="dim">210 × 297 mm</div>
+      <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+      <a class="dl" href="/afise/Rotabo-afis-A4.pdf" download>Descarcă PDF</a>
+    </div>
+    <div class="card">
+      <div class="fmt">A3</div>
+      <div class="dim">297 × 420 mm</div>
+      <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+      <a class="dl" href="/afise/Rotabo-afis-A3.pdf" download>Descarcă PDF</a>
+    </div>
+    <div class="card">
+      <div class="fmt">A2</div>
+      <div class="dim">420 × 594 mm</div>
+      <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+      <a class="dl" href="/afise/Rotabo-afis-A2.pdf" download>Descarcă PDF</a>
+    </div>
+  </div>
+
+  <h2>Cum arată</h2>
+  <div class="preview">
+    <object data="/afise/Rotabo-afis-A4.pdf#view=FitH" type="application/pdf">
+      <div class="fallback">Previzualizarea PDF nu se poate afișa în acest browser.
+        <a href="/afise/Rotabo-afis-A4.pdf">Deschide afișul în format A4</a>.</div>
+    </object>
+  </div>
+
+  <div class="note">
+    <p><b>Se poate folosi liber.</b> Afișul se tipărește și se expune fără să ne ceri voie și
+      fără să plătești ceva. Te rugăm doar să nu modifici textul: informațiile de pe el sunt
+      verificate și trebuie să rămână adevărate pentru omul care le citește.</p>
+    <p><b>Nu poartă însemnele nimănui.</b> Materialul nu conține numele, sigla sau identitatea
+      vizuală a vreunei instituții.</p>
+    <p><b>Afișarea nu înseamnă girul nimănui.</b> Dacă o instituție publică alege să expună acest
+      afiș, sprijinul are caracter strict informativ și nu reprezintă o recomandare, o certificare,
+      o acreditare, o autorizare sau o garanție privind platforma.</p>
+    <p>Pentru alt format, alt tiraj sau o versiune în altă limbă, scrie la
+      <a href="mailto:support@rotabo.app">support@rotabo.app</a>.</p>
+  </div>
+
+  <footer>
+    <a href="/">rotabo.app</a>
+    <a href="/terms.html">Termeni</a>
+    <a href="/privacy.html">Confidențialitate</a>
+    <a href="mailto:support@rotabo.app">Contact</a>
+    <span>© 2026 Rotabo</span>
+  </footer>
+
+</div>
+</body>
+</html>
