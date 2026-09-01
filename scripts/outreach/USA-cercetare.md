@@ -164,6 +164,15 @@ numele conducatorului sunt publicate prin lege.
 | 68 | WALA / Dr. Hauschka | info@wala.de | Prof. Dr. Florian Stintzing | DE |
 | 69 | Lavera | service@lavera.shop | Thomas Haase | DE |
 | 70 | Hofpfisterei | info@hofpfisterei.de | Thierry Hittinger, Stephanie Karl, Michael Schultze | DE |
+| 71 | BESH Schwäbisch Hall | info@besh.de | Christian Bühler (CEO), Rudolf Bühler (fondator) | DE |
+| 72 | Beutelsbacher | info@beutelsbacher.de | Thomas Maier, Matthias Maier | DE |
+| 73 | Upländer Bauernmolkerei | info@bauernmolkerei.de | Tobias Kleinsorge, Stefan Weiler | DE |
+| 74 | Neumarkter Lammsbräu | info@lammsbraeu.de | Johannes Ehrnsperger | DE |
+| 75 | VollCorner | info@vollcorner.de | Paul Pfaff, Stefan Berktold | DE |
+| 76 | SuperBioMarkt | info@superbiomarkt.de | Luca Radau | DE |
+| 77 | tegut | info@tegut.com | Sven Kispalko, Robert Schweininger | DE |
+| 78 | Bionade | info@bionade.de | Dirk Hinkel | DE |
+| 79 | VAUDE | impressum@vaude.com | Dr. Antje von Dewitz | DE |
 
 Märkisches Landbrot publica direct adresele personale ale celor doi
 conducatori in Impressum - cel mai bun tip de tinta din toata lista.
@@ -325,3 +334,10 @@ care sa scrie cine esti.
 
 Daca vrei UK, e campanie de formulare completate manual, alta specie decat
 launcher-ul.
+
+
+## Gläserne Molkerei — de deschis manual
+
+Numele l-am citit: **Rüdiger Fricke**. Adresa a venit redactata de unealta,
+la fel ca la Veja. glaeserne-molkerei.de/impressum -- e acolo, doar ca nu
+ajunge la mine.
