@@ -1,7 +1,7 @@
 /* Written by scripts/build-sw.mjs from a hash of everything precached below.
    Do not edit by hand: it was a number someone had to remember to raise, and
    for many deploys nobody did. */
-const CACHE_VERSION = "v79ed1d9792";
+const CACHE_VERSION = "vd9a66279fc";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 // Where Google tag gateway serves gtag.js and receives its measurement
