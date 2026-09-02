@@ -322,7 +322,8 @@
     "fineprint": "Písanie na bankovky je tvoja vlastná voľba. Skontroluj miestne zákony."
   },
 
-  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Firmy", "personal": "Pre ľudí", "drive": "Staň sa vodičom", "drivers": "Vodiči", "account": "Môj účet" },
+  "nav": { "how": "Ako to funguje", "safety": "Bezpečnosť", "business": "Firmy", "personal": "Pre ľudí", "drive": "Staň sa vodičom", "drivers": "Vodiči", "account": "Môj účet",
+    "posters": "Stiahnuť plagáty Rotabo" },
   "hero": {
     "free_line": "Registrácia zadarmo, inzerát zadarmo — čo potrebujete, alebo čo ponúkate.",
     "number_intro": "Každý na Rotabe má číslo. Jedno číslo. Navždy tvoje. Hovorí, kto si, kde si a čo dokážeš — nájditeľný kýmkoľvek na Zemi.",

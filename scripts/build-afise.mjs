@@ -109,10 +109,15 @@ const sections = ready.map(lang => {
         <a class="dl" href="/afise/${found[lang][s.code]}" download>Descarcă PDF</a>
       </div>`).join("\n");
   const rtl = LANGS[lang].rtl ? ' dir="rtl"' : "";
-  return `    <h2 class="lang-head"${rtl}>${LANGS[lang].name} <span>${LANGS[lang].note}</span></h2>
-    <div class="grid">
+  // data-lang is what the reordering script on the page matches against: a
+  // visitor reading the site in German should not have to scroll past six
+  // other languages to find the poster they came for.
+  return `    <section class="lang-set" data-lang="${lang.toLowerCase()}">
+      <h2 class="lang-head"${rtl}>${LANGS[lang].name} <span>${LANGS[lang].note}</span></h2>
+      <div class="grid">
 ${cards}
-    </div>`;
+      </div>
+    </section>`;
 }).join("\n\n");
 
 const src = readFileSync(join(root, "afise.html"), "utf8");

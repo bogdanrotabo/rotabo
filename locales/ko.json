@@ -322,7 +322,8 @@
     "fineprint": "지폐에 글을 쓰는 것은 당신 자신의 선택입니다. 현지 법률을 확인하세요."
   },
 
-  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업", "personal": "개인", "drive": "드라이버 등록", "drivers": "드라이버", "account": "내 계정" },
+  "nav": { "how": "이용 방법", "safety": "안전 정책", "business": "기업", "personal": "개인", "drive": "드라이버 등록", "drivers": "드라이버", "account": "내 계정",
+    "posters": "Rotabo 포스터 다운로드" },
   "hero": {
     "free_line": "가입도 등록도 무료 — 찾는 것, 또는 제공하는 것.",
     "number_intro": "Rotabo의 모든 사람은 번호를 가지고 있습니다. 하나의 번호. 영원히 당신의 것. 당신이 누구인지, 어디에 있는지, 무엇을 할 수 있는지 알려줍니다 — 지구상의 누구나 당신을 찾을 수 있습니다.",

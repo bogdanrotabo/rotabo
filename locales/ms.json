@@ -322,7 +322,8 @@
     "fineprint": "Menulis pada wang kertas adalah pilihan anda sendiri. Semak undang-undang tempatan."
   },
 
-  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Perniagaan", "personal": "Untuk individu", "drive": "Menjadi pemandu", "drivers": "Pemandu", "account": "Akaun saya" },
+  "nav": { "how": "Cara ia berfungsi", "safety": "Keselamatan", "business": "Perniagaan", "personal": "Untuk individu", "drive": "Menjadi pemandu", "drivers": "Pemandu", "account": "Akaun saya",
+    "posters": "Muat turun poster Rotabo" },
   "hero": {
     "free_line": "Daftar percuma, siar percuma — apa yang anda perlukan, atau apa yang anda tawarkan.",
     "number_intro": "Setiap orang di Rotabo mempunyai nombor. Satu nombor. Milik anda selamanya. Ia memberitahu siapa anda, di mana anda, dan apa yang anda boleh lakukan — boleh ditemui oleh sesiapa sahaja di Bumi.",
