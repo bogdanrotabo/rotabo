@@ -92,14 +92,9 @@ const BOX = {
 };
 export const CUTII = BOX;
 
-/* The two full-bleed shapes run past the page on every side. Chromium will
-   not cut a sheet to the point: asked for A4 it returns a page 0.6pt wider,
-   and a background stopping at 595.28 leaves an unpainted hairline down the
-   right edge of every printed poster. Bleed costs nothing and the press
-   trims it, which is what bleed is for. */
 const FORME = [
-  { x: -20,    y: -20, w: 640,    h: 900,    fill: C.fundal },
-  { x: -20,    y: 0,   w: 640,    h: 4,      fill: C.auriu  },
+  { x: 0,      y: 0,   w: 595.28, h: 841.89, fill: C.fundal },
+  { x: 0,      y: 0,   w: 595.28, h: 4,      fill: C.auriu  },
   // Radii fitted off the corners of Rotabo-afis-RO-A4.pdf at 600dpi: the
   // extraction records fills and rectangles and drops the rounding, and a
   // poster with square corners next to one with round ones is a different
@@ -170,8 +165,16 @@ export function paginaHTML(lang, T, logoDataUri) {
 <html lang="${lang}"><head><meta charset="utf-8"><style>
   @page { margin: 0; }
   html, body { margin:0; padding:0; }
-  html { background: ${C.fundal}; }
-  body { width:${A4.w}pt; height:${A4.h}pt; position:relative;
+  /* Chromium will not cut a sheet to the point: asked for A4 it returns a
+     page 0.6pt wider, and a poster whose background stops at 595.28 prints
+     with an unpainted hairline down its right edge. The bleed is painted by
+     the document background, which covers the whole sheet however large it
+     came out -- a shape wide enough to do the same would overflow the body,
+     and Chromium answers overflow by shrinking the whole page to fit: 4%
+     smaller type, 4% smaller boxes, on every poster. */
+  html { background: linear-gradient(${C.auriu} 0 4pt, ${C.fundal} 4pt); }
+  /* Nothing may stick out of the body, for the same reason. */
+  body { width:${A4.w}pt; height:${A4.h}pt; position:relative; overflow:hidden;
          -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   div { box-sizing: border-box; }
 </style></head><body>
