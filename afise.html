@@ -39,6 +39,10 @@
 
   h2{margin:2.75rem 0 1rem;font-size:1.15rem;color:var(--text-dark);letter-spacing:-.01em;}
 
+  .lang-set.is-first .lang-head{color:var(--violet-1);}
+  .lang-set.is-first .lang-head::after{
+    content:"";flex:1;height:1px;background:var(--border);min-width:2rem;
+  }
   .lang-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;
     margin:2.5rem 0 .9rem;font-size:1.15rem;color:var(--text-dark);letter-spacing:-.01em;}
   .lang-head span{font-size:.85rem;font-weight:400;color:var(--text-eyebrow);letter-spacing:0;}
@@ -89,8 +93,9 @@
     print and display. Pick your language below.</p>
 
   <!-- BUILT BY scripts/build-afise.mjs — do not edit between the markers -->
-    <h2 class="lang-head">Română <span>Limba română.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="ro">
+      <h2 class="lang-head">Română <span>Limba română.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -109,10 +114,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-RO-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head">English <span>English.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="en">
+      <h2 class="lang-head">English <span>English.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -131,10 +138,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-EN-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head">Français <span>Langue française.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="fr">
+      <h2 class="lang-head">Français <span>Langue française.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -153,10 +162,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-FR-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head">Español <span>Idioma español.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="es">
+      <h2 class="lang-head">Español <span>Idioma español.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -175,10 +186,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-ES-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head">Italiano <span>Lingua italiana.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="it">
+      <h2 class="lang-head">Italiano <span>Lingua italiana.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -197,10 +210,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-IT-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head">Deutsch <span>Deutsche Sprache.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="de">
+      <h2 class="lang-head">Deutsch <span>Deutsche Sprache.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -219,10 +234,12 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-DE-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="lang-head" dir="rtl">العربية <span>اللغة العربية.</span></h2>
-    <div class="grid">
+    <section class="lang-set" data-lang="ar">
+      <h2 class="lang-head" dir="rtl">العربية <span>اللغة العربية.</span></h2>
+      <div class="grid">
       <div class="card">
         <div class="fmt">A4</div>
         <div class="dim">210 × 297 mm</div>
@@ -241,7 +258,8 @@
         <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
         <a class="dl" href="/afise/Rotabo-afis-AR-A2.pdf" download>Descarcă PDF</a>
       </div>
-    </div>
+      </div>
+    </section>
 
     <h2>Cum arată</h2>
     <div class="preview">
@@ -264,6 +282,24 @@
     <p>Pentru alt format, alt tiraj sau o versiune în altă limbă, scrie la
       <a href="mailto:support@rotabo.app">support@rotabo.app</a>.</p>
   </div>
+
+  <script src="/lang.js"></script>
+  <script>
+  /* The language the visitor was reading the site in comes first.
+     They arrived from a link in their own language and the page they land on
+     opens with seven sets in a fixed order; without this, a German reader
+     scrolls past six of them to reach the one they came for. Everything stays
+     on the page -- only the order changes, so anyone can still take another
+     language, which is the whole reason the page carries all of them. */
+  (function(){
+    var code = window.RotaboLang ? window.RotaboLang.preferred() : "ro";
+    var set = document.querySelector('.lang-set[data-lang="' + code + '"]');
+    if (!set) return;                       // no posters in that language yet
+    var parent = set.parentNode;
+    parent.insertBefore(set, parent.querySelector(".lang-set"));
+    set.classList.add("is-first");
+  })();
+  </script>
 
   <footer>
     <a href="/">rotabo.app</a>
