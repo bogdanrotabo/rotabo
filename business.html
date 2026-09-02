@@ -4686,20 +4686,7 @@ if ("serviceWorker" in navigator) {
       + '<rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#d9a63c" stroke-opacity=".28" stroke-width="2"/>'
       + '<text x="30" y="45" font-family="Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#f2f0ec" text-anchor="middle">g</text>'
       + '<circle cx="48" cy="42" r="5" fill="#d9a63c"/>'
-      + '</svg>',
-
-    /* EduKiwi's own mark, cropped from the wordmark they publish on
-       edukiwi.ro: the navy stack on its cream base, without the lettering,
-       because the name is already written beside it. A file rather than
-       four shapes -- it is a drawing, not a rectangle and a letter, and
-       redrawing it by hand would make it ours instead of theirs.
-
-       It carries a white ground for the same reason gift.ceo's carries a
-       near-black one: the band is a violet gradient, and navy on violet is
-       mud. The tile is the sponsor's ground, not Rotabo's paint on the
-       sponsor's mark. */
-    "edukiwi.ro":
-      '<img class="tick__logo" src="icons/edukiwi-mark.png" alt="" decoding="async" width="20" height="20">'
+      + '</svg>'
   };
 
   function markFor(name, url){
@@ -4767,7 +4754,16 @@ if ("serviceWorker" in navigator) {
      has always done. */
   var PARTNERS = [
     { name: "Cyberbotics", url: "https://cyberbotics.com",
-      logo: "https://cyberbotics.com/assets/images/webots.png" }
+      logo: "https://cyberbotics.com/assets/images/webots.png" },
+    /* EduKiwi's mark is the one exception to serving a partner's logo from
+       their own server. Theirs is a wordmark, 254x79, and this cell is a
+       20px square: hotlinked it would arrive squashed to a smear no one
+       could read. So it is their file, cropped to the stack on its cream
+       base and given the white ground it is drawn for -- their mark, not a
+       redrawing of it. The cost is that it no longer follows edukiwi.ro if
+       they change it, which is a cost worth paying to have it legible. */
+    { name: "EduKiwi", url: "https://edukiwi.ro",
+      logo: "icons/edukiwi-mark.png" }
   ];
 
   function partnerCell(p){
@@ -4788,9 +4784,6 @@ if ("serviceWorker" in navigator) {
     // written here. Anything the table does hold joins it rather than
     // replacing it, and this line needs no edit when the first one lands.
     out.push(sponsorCell("gift.ceo", "https://gift.ceo"));
-    // EduKiwi stands beside it, on the same terms: written here rather than
-    // in the table, so the band carries it whether or not a row exists yet.
-    out.push(sponsorCell("edukiwi.ro", "https://edukiwi.ro"));
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });
