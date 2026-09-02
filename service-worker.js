@@ -1,4 +1,7 @@
-const CACHE_VERSION = "v208";
+/* Written by scripts/build-sw.mjs from a hash of everything precached below.
+   Do not edit by hand: it was a number someone had to remember to raise, and
+   for many deploys nobody did. */
+const CACHE_VERSION = "v8e4c1a3418";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 // Where Google tag gateway serves gtag.js and receives its measurement
@@ -19,8 +22,9 @@ const PRECACHE_URLS = [
   "/privacy.html",
   "/browse.html",
   "/business.html",
-  "/viewer.js",
+  "/afise.html",
   "/lang.js",
+  "/viewer.js",
   "/countries.js",
   "/domains.js",
   "/fx.js",

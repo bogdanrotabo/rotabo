@@ -103,6 +103,23 @@ for (const lang of limbi) {
   const raport = await p.evaluate(`(${ASEAZA.toString()})()`);
   if (raport.length) console.warn(`  ${lang}: ${raport.join("; ")}`);
 
+  /* Anything sticking out of the page makes Chromium shrink the whole poster
+     to fit -- silently, and by whatever the overflow happens to be. It cost
+     one round of 4%-small posters that looked right until measured against
+     the original, so it is checked rather than trusted. */
+  const iesit = await p.evaluate(({ w, h }) => {
+    const d = document.documentElement;
+    return { w: d.scrollWidth - w * 96 / 72, h: d.scrollHeight - h * 96 / 72 };
+  }, A4);
+  if (iesit.w > 1 || iesit.h > 1) {
+    console.error(`randeaza: ${lang} overflows the page by ` +
+      `${(iesit.w * 72 / 96).toFixed(1)}x${(iesit.h * 72 / 96).toFixed(1)}pt — ` +
+      `Chromium would shrink the whole poster to fit. Not written.`);
+    await p.close();
+    process.exitCode = 3;
+    continue;
+  }
+
   const nume = lang.toUpperCase();
   for (const m of MARIMI) {
     const pdf = await p.pdf({
