@@ -299,18 +299,19 @@
      poster, and had to scroll past five sections to reach his own. */
   (function(){
     var RTL = ["ar","ur"];
+    var curent = null;
 
     /* lang.js is the single place that decides the language: the visitor's
-       saved choice, then the browser, then English. Duplicating that rule
-       here is how this page and the rest of the site drift apart. The
-       fallback covers lang.js failing to load -- the page still has to
-       come up in something. */
-    var code = "";
-    try {
-      code = window.RotaboLang ? window.RotaboLang.preferred()
-                               : (localStorage.getItem("rotabo_lang") || "");
-    } catch (e) {}
-    if (!code) code = "en";
+       saved choice, then the browser, then English. Duplicating that rule here
+       is how this page and the rest of the site drift apart. The fallback
+       covers lang.js failing to load -- the page still has to come up in
+       something. */
+    function alege(){
+      try {
+        return (window.RotaboLang ? window.RotaboLang.preferred()
+                                  : localStorage.getItem("rotabo_lang")) || "en";
+      } catch (e) { return "en"; }
+    }
 
     function getPath(dict, path){
       return path.split(".").reduce(function(o, k){
@@ -318,31 +319,12 @@
       }, dict);
     }
 
-    /* The poster shown under "what it looks like" follows the reader too. The
-       map comes from the build, which is the only thing that knows which
-       languages have files -- guessing a filename here embeds a dead PDF.
-       A language with no poster keeps the default, which is a real file. */
-    function setPreview(){
-      var box = document.getElementById("preview");
-      if (!box) return;
-      var map;
-      try { map = JSON.parse(box.getAttribute("data-posters") || "{}"); }
-      catch (e) { return; }
-      var file = map[code];
-      if (!file) return;
-      var href = "/afise/" + file;
-      var old = box.querySelector("object");
-      if (!old || old.getAttribute("data") === href + "#view=FitH") return;
-      /* Rebuilt rather than re-pointed: several browsers keep rendering the
-         first PDF when data changes on a live <object>. */
-      var fresh = document.createElement("object");
-      fresh.setAttribute("data", href + "#view=FitH");
-      fresh.setAttribute("type", "application/pdf");
-      while (old.firstChild) fresh.appendChild(old.firstChild);
-      var link = fresh.querySelector(".fallback a");
-      if (link) link.setAttribute("href", href);
-      box.replaceChild(fresh, old);
-    }
+    /* The order the build wrote the sections in, kept so that re-running
+       against a new language restores it first. Without it, switching twice
+       leaves both previous choices stacked at the top. */
+    var gazda = document.querySelector(".lang-set") &&
+                document.querySelector(".lang-set").parentNode;
+    var ordine = [].slice.call(document.querySelectorAll(".lang-set"));
 
     /* The language the visitor was reading the site in comes first. They
        arrived from a link in their own language; without this a German reader
@@ -350,15 +332,49 @@
        stays on the page -- only the order changes, so anyone can still take
        another language, which is the whole reason the page carries all of
        them. */
-    function reorder(){
-      var set = document.querySelector('.lang-set[data-lang="' + code + '"]');
+    function reordoneaza(code){
+      if (!gazda) return;
+      ordine.forEach(function(s){
+        s.classList.remove("is-first");
+        gazda.appendChild(s);
+      });
+      var set = gazda.querySelector('.lang-set[data-lang="' + code + '"]');
       if (!set) return;                       // no posters in that language yet
-      var parent = set.parentNode;
-      parent.insertBefore(set, parent.querySelector(".lang-set"));
+      gazda.insertBefore(set, ordine[0]);
       set.classList.add("is-first");
     }
 
-    function apply(dict){
+    /* The poster shown under "what it looks like" follows the reader too. The
+       map comes from the build, which is the only thing that knows which
+       languages have files -- guessing a filename here embeds a dead PDF. A
+       language with no poster keeps the default, which is a real file. */
+    function previzualizare(code){
+      var box = document.getElementById("preview");
+      if (!box) return;
+      var map;
+      try { map = JSON.parse(box.getAttribute("data-posters") || "{}"); }
+      catch (e) { return; }
+      var vechi = box.querySelector("object");
+      if (!vechi) return;
+      var file = map[code] || box.getAttribute("data-implicit");
+      if (!file) {                            // first run: remember the default
+        file = (vechi.getAttribute("data") || "").split("/").pop().split("#")[0];
+        box.setAttribute("data-implicit", file);
+      }
+      var href = "/afise/" + file;
+      if (vechi.getAttribute("data") === href + "#view=FitH") return;
+      /* Rebuilt rather than re-pointed: several browsers keep rendering the
+         first PDF when data changes on a live <object>. */
+      var nou = document.createElement("object");
+      nou.setAttribute("data", href + "#view=FitH");
+      nou.setAttribute("type", "application/pdf");
+      while (vechi.firstChild) nou.appendChild(vechi.firstChild);
+      var link = nou.querySelector(".fallback a");
+      if (link) link.setAttribute("href", href);
+      box.replaceChild(nou, vechi);
+    }
+
+    function traduce(dict){
       document.querySelectorAll("[data-i18n]").forEach(function(el){
         var val = getPath(dict, el.getAttribute("data-i18n"));
         if (val !== undefined) el.textContent = val;
@@ -370,21 +386,58 @@
       if (meta && lead) meta.setAttribute("content", lead);
     }
 
-    /* Direction and language go on the document before the text does: a
-       screen reader must not announce Arabic under lang="en", and an RTL
-       page must not paint left-to-right first. */
-    document.documentElement.setAttribute("lang", code);
-    document.documentElement.setAttribute("dir", RTL.indexOf(code) !== -1 ? "rtl" : "ltr");
-    reorder();
-    setPreview();
+    var engleza = null;                       // the served copy, for switching back
+    function aplica(code){
+      /* Direction and language go on the document before the text does: a
+         screen reader must not announce Arabic under lang="en", and an RTL
+         page must not paint left-to-right first. */
+      document.documentElement.setAttribute("lang", code);
+      document.documentElement.setAttribute("dir", RTL.indexOf(code) !== -1 ? "rtl" : "ltr");
+      reordoneaza(code);
+      previzualizare(code);
+      if (code === "en") {
+        if (engleza) traduce(engleza);        // came back to it after another
+        return;
+      }
+      fetch("locales/" + code + ".json")
+        .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function(dict){
+          if (curent !== code) return;        // a later switch already won
+          traduce(dict);
+        })
+        /* English stays on the page. A failed fetch must not blank text a
+           visitor can at least read. */
+        .catch(function(err){ console.error("i18n:", err); });
+    }
 
-    if (code === "en") return;                // already served in English
-    fetch("locales/" + code + ".json")
-      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(apply)
-      /* English stays on the page. A failed fetch must not blank the text
-         a visitor can at least read. */
-      .catch(function(err){ console.error("i18n:", err); });
+    function reia(){
+      var code = alege();
+      if (code === curent) return;
+      curent = code;
+      aplica(code);
+    }
+
+    /* The English on the page is the fallback for a later switch back to it,
+       so it is kept before anything overwrites it. */
+    fetch("locales/en.json").then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){ engleza = d; }).catch(function(){});
+
+    reia();
+
+    /* Coming back to this page after changing the language on the site: the
+       browser restores it from the back/forward cache, where no script runs
+       again, so the page stayed in the language it was left in and only a
+       refresh fixed it. */
+    window.addEventListener("pageshow", function(e){ if (e.persisted) reia(); });
+    /* The site open in another tab switched language. */
+    window.addEventListener("storage", function(e){
+      if (!e.key || e.key === "rotabo_lang") reia();
+    });
+    /* Same tab, coming back to it: covers browsers that restore without
+       firing pageshow.persisted. */
+    document.addEventListener("visibilitychange", function(){
+      if (!document.hidden) reia();
+    });
   })();
   </script>
 
