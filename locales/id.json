@@ -227,6 +227,10 @@
     "none": "Tidak ada hasil. Coba kata lain - pekerjaan, alat, atau layanan."
   },
   "business": {
+    "idea": {
+      "tagline1": "Orang membutuhkan perusahaan.",
+      "tagline2": "Orang memiliki perusahaan."
+    },
     "hero": { "free_line": "Pendaftaran gratis, iklan gratis - perusahaan Anda, di tempat orang sudah mencari." },
     "categories": {
       "section_eyebrow": "ROTABO UNTUK BISNIS",
@@ -621,7 +625,8 @@
     "driver_terms": "Ketentuan pengemudi",
     "supporters": "Pendukung",
     "contact": "Kontak",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Poster"
   },
   "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…", "no_matches": "Tidak ada hasil" },
   "install_modal": {

@@ -227,6 +227,10 @@
     "none": "L-ebda riżultat. Ipprova kelma oħra - sengħa, għodda jew servizz."
   },
   "business": {
+    "idea": {
+      "tagline1": "In-nies għandhom bżonn kumpaniji.",
+      "tagline2": "In-nies għandhom kumpaniji."
+    },
     "hero": { "free_line": "Reġistrazzjoni b'xejn, avviż b'xejn - il-kumpanija tiegħek fejn in-nies diġà qed ifittxu." },
     "categories": {
       "section_eyebrow": "ROTABO GĦAN-NEGOZJU",
@@ -621,7 +625,8 @@
     "driver_terms": "Termini tas-sewwieqa",
     "supporters": "Sponsors",
     "contact": "Kuntatt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Posters"
   },
   "lang_selector": { "label": "Lingwa", "search_placeholder": "Fittex lingwa…", "no_matches": "L-ebda riżultat" },
   "install_modal": {

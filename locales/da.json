@@ -227,6 +227,10 @@
     "none": "Ingen resultater. Prøv et andet ord - et fag, et værktøj, en ydelse."
   },
   "business": {
+    "idea": {
+      "tagline1": "Folk har brug for virksomheder.",
+      "tagline2": "Folk har virksomheder."
+    },
     "hero": { "free_line": "Gratis tilmelding, gratis opslag - din virksomhed, dér hvor folk allerede leder." },
     "categories": {
       "section_eyebrow": "ROTABO FOR VIRKSOMHEDER",
@@ -628,7 +632,8 @@
     "driver_terms": "Chaufførvilkår",
     "supporters": "Støtter",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakater"
   },
   "lang_selector": {
     "label": "Sprog",

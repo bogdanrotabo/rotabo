@@ -227,6 +227,10 @@
     "none": "Tiada padanan. Cuba perkataan lain - pekerjaan, alat, perkhidmatan."
   },
   "business": {
+    "idea": {
+      "tagline1": "Orang memerlukan syarikat.",
+      "tagline2": "Orang mempunyai syarikat."
+    },
     "hero": { "free_line": "Pendaftaran percuma, iklan percuma - syarikat anda, di tempat orang sudah mencari." },
     "categories": {
       "section_eyebrow": "ROTABO UNTUK PERNIAGAAN",
@@ -621,7 +625,8 @@
     "driver_terms": "Terma pemandu",
     "supporters": "Penyokong",
     "contact": "Hubungi",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Poster"
   },
   "lang_selector": { "label": "Bahasa", "search_placeholder": "Cari bahasa…", "no_matches": "Tiada padanan" },
   "install_modal": {

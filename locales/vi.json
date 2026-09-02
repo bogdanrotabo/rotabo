@@ -227,6 +227,10 @@
     "none": "Không có kết quả. Thử từ khác - một nghề, một công cụ, một dịch vụ."
   },
   "business": {
+    "idea": {
+      "tagline1": "Mọi người cần công ty.",
+      "tagline2": "Mọi người có công ty."
+    },
     "hero": { "free_line": "Đăng ký miễn phí, đăng tin miễn phí - công ty bạn, ở nơi mọi người đang tìm." },
     "categories": {
       "section_eyebrow": "ROTABO CHO DOANH NGHIỆP",
@@ -621,7 +625,8 @@
     "driver_terms": "Điều khoản dành cho tài xế",
     "supporters": "Nhà tài trợ",
     "contact": "Liên hệ",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Áp phích"
   },
   "lang_selector": { "label": "Ngôn ngữ", "search_placeholder": "Tìm ngôn ngữ…", "no_matches": "Không có kết quả" },
   "install_modal": {

@@ -227,6 +227,10 @@
     "none": "결과가 없습니다. 다른 단어로 해보세요 - 직종, 장비, 서비스."
   },
   "business": {
+    "idea": {
+      "tagline1": "사람들은 회사가 필요합니다.",
+      "tagline2": "사람들은 회사를 가지고 있습니다."
+    },
     "hero": { "free_line": "등록도 게시도 무료 - 사람들이 이미 찾고 있는 곳에 귀사를." },
     "categories": {
       "section_eyebrow": "로타보 비즈니스",
@@ -621,7 +625,8 @@
     "driver_terms": "드라이버 이용약관",
     "supporters": "후원자",
     "contact": "문의하기",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "포스터"
   },
   "lang_selector": { "label": "언어", "search_placeholder": "언어 검색…", "no_matches": "검색 결과 없음" },
   "install_modal": {

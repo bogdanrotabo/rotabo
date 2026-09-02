@@ -227,6 +227,10 @@
     "none": "Vasteid ei leitud. Proovige teist sõna - amet, tööriist või teenus."
   },
   "business": {
+    "idea": {
+      "tagline1": "Inimesed vajavad ettevõtteid.",
+      "tagline2": "Inimestel on ettevõtted."
+    },
     "hero": { "free_line": "Tasuta registreerimine, tasuta kuulutus - teie ettevõte seal, kus inimesed juba otsivad." },
     "categories": {
       "section_eyebrow": "ROTABO ETTEVÕTETELE",
@@ -628,7 +632,8 @@
     "driver_terms": "Juhi tingimused",
     "supporters": "Toetajad",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakatid"
   },
   "lang_selector": {
     "label": "Keel",

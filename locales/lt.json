@@ -227,6 +227,10 @@
     "none": "Rezultatų nėra. Pabandykite kitą žodį - amatas, įrankis ar paslauga."
   },
   "business": {
+    "idea": {
+      "tagline1": "Žmonėms reikia įmonių.",
+      "tagline2": "Žmonės turi įmonių."
+    },
     "hero": { "free_line": "Nemokama registracija, nemokamas skelbimas - jūsų įmonė ten, kur žmonės jau ieško." },
     "categories": {
       "section_eyebrow": "ROTABO VERSLUI",
@@ -621,7 +625,8 @@
     "driver_terms": "Vairuotojų sąlygos",
     "supporters": "Rėmėjai",
     "contact": "Kontaktai",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakatai"
   },
   "lang_selector": { "label": "Kalba", "search_placeholder": "Ieškoti kalbos…", "no_matches": "Nėra rezultatų" },
   "install_modal": {

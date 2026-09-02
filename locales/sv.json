@@ -227,6 +227,10 @@
     "none": "Inga träffar. Prova ett annat ord - ett yrke, ett verktyg, en tjänst."
   },
   "business": {
+    "idea": {
+      "tagline1": "Människor behöver företag.",
+      "tagline2": "Människor har företag."
+    },
     "hero": { "free_line": "Gratis registrering, gratis annons - ditt företag, där folk redan letar." },
     "categories": {
       "section_eyebrow": "ROTABO FÖR FÖRETAG",
@@ -621,7 +625,8 @@
     "driver_terms": "Villkor för förare",
     "supporters": "Supportrar",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Affischer"
   },
   "lang_selector": { "label": "Språk", "search_placeholder": "Sök språk…", "no_matches": "Inga träffar" },
   "install_modal": {

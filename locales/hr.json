@@ -227,6 +227,10 @@
     "none": "Nema rezultata. Pokušajte s drugom riječi - zanat, alat, usluga."
   },
   "business": {
+    "idea": {
+      "tagline1": "Ljudima trebaju tvrtke.",
+      "tagline2": "Ljudi imaju tvrtke."
+    },
     "hero": { "free_line": "Besplatna registracija, besplatan oglas - vaša tvrtka ondje gdje ljudi već traže." },
     "categories": {
       "section_eyebrow": "ROTABO ZA TVRTKE",
@@ -628,7 +632,8 @@
     "driver_terms": "Uvjeti za vozače",
     "supporters": "Podupiratelji",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakati"
   },
   "lang_selector": {
     "label": "Jezik",

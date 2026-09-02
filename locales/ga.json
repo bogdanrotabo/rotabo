@@ -227,6 +227,10 @@
     "none": "Faic aimsithe. Bain triail as focal eile - ceird, uirlis nó seirbhís."
   },
   "business": {
+    "idea": {
+      "tagline1": "Teastaíonn comhlachtaí ó dhaoine.",
+      "tagline2": "Tá comhlachtaí ag daoine."
+    },
     "hero": { "free_line": "Clárú saor in aisce, fógra saor in aisce - do chomhlacht san áit a bhfuil daoine ag cuardach cheana." },
     "categories": {
       "section_eyebrow": "ROTABO DO GHNÓ",
@@ -621,7 +625,8 @@
     "driver_terms": "Téarmaí tiománaithe",
     "supporters": "Tacaíontóirí",
     "contact": "Teagmháil",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Póstaeir"
   },
   "lang_selector": { "label": "Teanga", "search_placeholder": "Cuardaigh teanga…", "no_matches": "Gan torthai" },
   "install_modal": {

@@ -227,6 +227,10 @@
     "none": "Nav rezultātu. Mēģiniet citu vārdu - amats, darbarīks vai pakalpojums."
   },
   "business": {
+    "idea": {
+      "tagline1": "Cilvēkiem ir vajadzīgi uzņēmumi.",
+      "tagline2": "Cilvēkiem ir uzņēmumi."
+    },
     "hero": { "free_line": "Bezmaksas reģistrācija, bezmaksas sludinājums - jūsu uzņēmums tur, kur cilvēki jau meklē." },
     "categories": {
       "section_eyebrow": "ROTABO UZŅĒMUMIEM",
@@ -621,7 +625,8 @@
     "driver_terms": "Šoferu noteikumi",
     "supporters": "Atbalstītāji",
     "contact": "Kontakti",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakāti"
   },
   "lang_selector": { "label": "Valoda", "search_placeholder": "Meklēt valodu…", "no_matches": "Nav rezultātu" },
   "install_modal": {

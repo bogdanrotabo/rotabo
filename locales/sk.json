@@ -227,6 +227,10 @@
     "none": "Žiadne výsledky. Skúste iné slovo - remeslo, náradie alebo službu."
   },
   "business": {
+    "idea": {
+      "tagline1": "Ľudia potrebujú firmy.",
+      "tagline2": "Ľudia majú firmy."
+    },
     "hero": { "free_line": "Registrácia zadarmo, inzerát zadarmo - vaša firma tam, kde ľudia už hľadajú." },
     "categories": {
       "section_eyebrow": "ROTABO PRE FIRMY",
@@ -621,7 +625,8 @@
     "driver_terms": "Podmienky pre vodičov",
     "supporters": "Podporovatelia",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plagáty"
   },
   "lang_selector": { "label": "Jazyk", "search_placeholder": "Hľadať jazyk…", "no_matches": "Žiadne výsledky" },
   "install_modal": {

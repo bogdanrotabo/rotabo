@@ -227,6 +227,10 @@
     "none": "कुछ नहीं मिला। दूसरा शब्द आज़माएँ - पेशा, औज़ार या सेवा।"
   },
   "business": {
+    "idea": {
+      "tagline1": "लोगों को कंपनियों की ज़रूरत है।",
+      "tagline2": "लोगों के पास कंपनियाँ हैं।"
+    },
     "hero": { "free_line": "पंजीकरण मुफ़्त, विज्ञापन मुफ़्त - आपकी कंपनी, वहीं जहाँ लोग पहले से खोज रहे हैं।" },
     "categories": {
       "section_eyebrow": "रोटाबो व्यवसाय के लिए",
@@ -621,7 +625,8 @@
     "driver_terms": "ड्राइवर नियम",
     "supporters": "समर्थक",
     "contact": "संपर्क करें",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "पोस्टर"
   },
   "lang_selector": { "label": "भाषा", "search_placeholder": "भाषा खोजें…", "no_matches": "कोई परिणाम नहीं" },
   "install_modal": {

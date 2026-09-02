@@ -227,6 +227,10 @@
     "none": "কিছু মেলেনি। অন্য শব্দ চেষ্টা করুন - পেশা, যন্ত্র বা সেবা।"
   },
   "business": {
+    "idea": {
+      "tagline1": "মানুষের কোম্পানি প্রয়োজন।",
+      "tagline2": "মানুষের কোম্পানি আছে।"
+    },
     "hero": { "free_line": "নিবন্ধন ফ্রি, বিজ্ঞাপন ফ্রি - আপনার কোম্পানি, যেখানে মানুষ ইতিমধ্যে খুঁজছে।" },
     "categories": {
       "section_eyebrow": "রোটাবো ব্যবসার জন্য",
@@ -621,7 +625,8 @@
     "driver_terms": "ড্রাইভার শর্তাবলী",
     "supporters": "সমর্থক",
     "contact": "যোগাযোগ",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "পোস্টার"
   },
   "lang_selector": { "label": "ভাষা", "search_placeholder": "ভাষা খুঁজুন…", "no_matches": "কোনো ফলাফল নেই" },
   "install_modal": {

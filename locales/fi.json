@@ -227,6 +227,10 @@
     "none": "Ei osumia. Kokeile toista sanaa - ammatti, työkalu tai palvelu."
   },
   "business": {
+    "idea": {
+      "tagline1": "Ihmiset tarvitsevat yrityksiä.",
+      "tagline2": "Ihmisillä on yrityksiä."
+    },
     "hero": { "free_line": "Ilmainen rekisteröityminen, ilmainen ilmoitus - yrityksesi siellä, missä ihmiset jo etsivät." },
     "categories": {
       "section_eyebrow": "ROTABO YRITYKSILLE",
@@ -628,7 +632,8 @@
     "driver_terms": "Kuljettajan ehdot",
     "supporters": "Tukijat",
     "contact": "Yhteystiedot",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Julisteet"
   },
   "lang_selector": {
     "label": "Kieli",

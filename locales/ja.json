@@ -227,6 +227,10 @@
     "none": "該当なし。別の言葉でお試しください - 職種、道具、サービスなど。"
   },
   "business": {
+    "idea": {
+      "tagline1": "人は会社を必要としている。",
+      "tagline2": "人は会社を持っている。"
+    },
     "hero": { "free_line": "登録も掲載も無料 - 御社を、人がすでに探している場所へ。" },
     "categories": {
       "section_eyebrow": "ロタボ 法人向け",
@@ -621,7 +625,8 @@
     "driver_terms": "ドライバー利用規約",
     "supporters": "サポーター",
     "contact": "お問い合わせ",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "ポスター"
   },
   "lang_selector": { "label": "言語", "search_placeholder": "言語を検索…", "no_matches": "一致するものがありません" },
   "install_modal": {

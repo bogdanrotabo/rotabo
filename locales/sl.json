@@ -227,6 +227,10 @@
     "none": "Ni zadetkov. Poskusite z drugo besedo - obrt, orodje ali storitev."
   },
   "business": {
+    "idea": {
+      "tagline1": "Ljudje potrebujejo podjetja.",
+      "tagline2": "Ljudje imajo podjetja."
+    },
     "hero": { "free_line": "Brezplačna registracija, brezplačen oglas - vaše podjetje tam, kjer ljudje že iščejo." },
     "categories": {
       "section_eyebrow": "ROTABO ZA PODJETJA",
@@ -621,7 +625,8 @@
     "driver_terms": "Pogoji za voznike",
     "supporters": "Podporniki",
     "contact": "Kontakt",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakati"
   },
   "lang_selector": { "label": "Jezik", "search_placeholder": "Išči jezik…", "no_matches": "Ni zadetkov" },
   "install_modal": {

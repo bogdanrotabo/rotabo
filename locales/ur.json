@@ -227,6 +227,10 @@
     "none": "کوئی نتیجہ نہیں۔ کوئی اور لفظ آزمائیں - پیشہ، اوزار یا خدمت۔"
   },
   "business": {
+    "idea": {
+      "tagline1": "لوگوں کو کمپنیوں کی ضرورت ہے۔",
+      "tagline2": "لوگوں کے پاس کمپنیاں ہیں۔"
+    },
     "hero": { "free_line": "رجسٹریشن مفت، اشتہار مفت - آپ کی کمپنی، وہیں جہاں لوگ پہلے سے تلاش کر رہے ہیں۔" },
     "categories": {
       "section_eyebrow": "روٹابو برائے کاروبار",
@@ -621,7 +625,8 @@
     "driver_terms": "ڈرائیور کی شرائط",
     "supporters": "معاونین",
     "contact": "رابطہ کریں",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "پوسٹرز"
   },
   "lang_selector": { "label": "زبان", "search_placeholder": "زبان تلاش کریں…", "no_matches": "کوئی نتیجہ نہیں" },
   "install_modal": {

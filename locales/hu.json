@@ -227,6 +227,10 @@
     "none": "Nincs találat. Próbáljon másik szót - szakma, szerszám vagy szolgáltatás."
   },
   "business": {
+    "idea": {
+      "tagline1": "Az embereknek cégekre van szükségük.",
+      "tagline2": "Az embereknek vannak cégeik."
+    },
     "hero": { "free_line": "Ingyenes regisztráció, ingyenes hirdetés - az Ön cége ott, ahol már keresnek." },
     "categories": {
       "section_eyebrow": "ROTABO CÉGEKNEK",
@@ -621,7 +625,8 @@
     "driver_terms": "Sofőrfeltételek",
     "supporters": "Támogatók",
     "contact": "Kapcsolat",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Plakátok"
   },
   "lang_selector": { "label": "Nyelv", "search_placeholder": "Nyelv keresése…", "no_matches": "Nincs találat" },
   "install_modal": {

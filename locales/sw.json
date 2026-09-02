@@ -227,6 +227,10 @@
     "none": "Hakuna kilichopatikana. Jaribu neno lingine - kazi, kifaa au huduma."
   },
   "business": {
+    "idea": {
+      "tagline1": "Watu wanahitaji kampuni.",
+      "tagline2": "Watu wana kampuni."
+    },
     "hero": { "free_line": "Usajili bure, tangazo bure - kampuni yako, pale ambapo watu tayari wanatafuta." },
     "categories": {
       "section_eyebrow": "ROTABO KWA BIASHARA",
@@ -621,7 +625,8 @@
     "driver_terms": "Masharti ya dereva",
     "supporters": "Wafadhili",
     "contact": "Wasiliana nasi",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "Mabango"
   },
   "lang_selector": { "label": "Lugha", "search_placeholder": "Tafuta lugha…", "no_matches": "Hakuna matokeo" },
   "install_modal": {

@@ -227,6 +227,10 @@
     "none": "没有匹配结果。换一个词试试 - 工种、工具或服务。"
   },
   "business": {
+    "idea": {
+      "tagline1": "人们需要公司。",
+      "tagline2": "人们拥有公司。"
+    },
     "hero": { "free_line": "免费注册，免费发布 - 让贵公司出现在人们已经在找的地方。" },
     "categories": {
       "section_eyebrow": "罗塔博商务版",
@@ -621,7 +625,8 @@
     "driver_terms": "司机条款",
     "supporters": "支持者",
     "contact": "联系我们",
-    "copyright": "© 2026 Rotabo"
+    "copyright": "© 2026 Rotabo",
+    "posters": "海报"
   },
   "lang_selector": { "label": "语言", "search_placeholder": "搜索语言…", "no_matches": "没有匹配项" },
   "install_modal": {
