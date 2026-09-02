@@ -626,6 +626,26 @@
     "offer_text": "Nabídněte službu, věc nebo pomoc, a najdou vás ti, kdo to potřebují.",
     "offer_btn": "Zveřejnit, co nabízíte"
   },
+  "posters": {
+    "back": "Zpět na rotabo.app",
+    "eyebrow": "Materiál k veřejnému vyvěšení",
+    "title": "Plakát Rotabo, připravený k tisku",
+    "lead": "Stejný plakát, v několika jazycích a ve třech formátech. Volně ke stažení a k tisku, pro kohokoli, zdarma — radnice, knihovny, školy, ordinace, spolky, obchody na rohu, nebo někdo, kdo ho chce dát na nástěnku v domě.",
+    "use_a4": "Vytiskne se na jakékoli kancelářské tiskárně. Pro vnitřní nástěnky a přepážky.",
+    "use_a3": "Obvyklý formát veřejných informačních tabulí.",
+    "use_a2": "Pro velké tabule a pouliční vyvěšení. Čitelný z dálky.",
+    "download": "Stáhnout PDF",
+    "preview": "Jak vypadá",
+    "preview_fallback": "Náhled PDF nelze v tomto prohlížeči zobrazit.",
+    "preview_open": "Otevřít plakát ve formátu A4",
+    "free_title": "Volně k použití.",
+    "free_body": "Vytiskněte ho a vyvěste bez ptaní a bez placení. Prosíme jen, abyste neměnili text: údaje na něm jsou ověřené a musí zůstat pravdivé pro toho, kdo je čte.",
+    "nomark_title": "Nenese ničí znak.",
+    "nomark_body": "Materiál neobsahuje název, logo ani vizuální identitu žádné instituce.",
+    "noendorse_title": "Vyvěšení není ničí doporučení.",
+    "noendorse_body": "Pokud se veřejná instituce rozhodne tento plakát vyvěsit, má taková podpora výhradně informativní povahu a nepředstavuje doporučení, certifikaci, akreditaci, povolení ani záruku ohledně platformy.",
+    "contact": "Pro jiný formát, jiný náklad nebo verzi v jiném jazyce pište na"
+  },
   "footer": {
     "legal": "Rotabo je technologická platforma. Řidiči jsou nezávislí poskytovatelé, nikoli zaměstnanci Rotaba.",
     "terms": "Podmínky",

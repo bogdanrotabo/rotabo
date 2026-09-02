@@ -841,6 +841,26 @@
     "offer_text": "Bieten Sie eine Leistung, einen Gegenstand oder Hilfe an, und werden Sie von denen gefunden, die das brauchen.",
     "offer_btn": "Veröffentlichen, was Sie anbieten"
   },
+  "posters": {
+    "back": "Zurück zu rotabo.app",
+    "eyebrow": "Material zum öffentlichen Aushang",
+    "title": "Das Rotabo-Plakat, druckfertig",
+    "lead": "Dasselbe Plakat, in mehreren Sprachen und drei Formaten. Frei herunterzuladen und zu drucken, von jedem, kostenlos — Rathäuser, Bibliotheken, Schulen, Praxen, Vereine, Läden um die Ecke, oder jemand, der es ans Schwarze Brett im Hausflur hängen will.",
+    "use_a4": "Druckt auf jedem Bürodrucker. Für Aushänge in Innenräumen und an Schaltern.",
+    "use_a3": "Das übliche Format für öffentliche Informationstafeln.",
+    "use_a2": "Für große Tafeln und Straßenaushang. Aus der Entfernung lesbar.",
+    "download": "PDF herunterladen",
+    "preview": "Wie es aussieht",
+    "preview_fallback": "Die PDF-Vorschau kann in diesem Browser nicht angezeigt werden.",
+    "preview_open": "Das Plakat im Format A4 öffnen",
+    "free_title": "Frei verwendbar.",
+    "free_body": "Drucken und aushängen, ohne uns zu fragen und ohne etwas zu bezahlen. Bitte ändere nur den Text nicht: die Angaben darauf sind geprüft und müssen für den, der sie liest, wahr bleiben.",
+    "nomark_title": "Es trägt niemandes Zeichen.",
+    "nomark_body": "Das Material enthält weder Namen noch Logo noch das Erscheinungsbild irgendeiner Einrichtung.",
+    "noendorse_title": "Der Aushang ist niemandes Empfehlung.",
+    "noendorse_body": "Wenn eine öffentliche Einrichtung dieses Plakat aushängt, ist diese Unterstützung rein informativ und stellt keine Empfehlung, Zertifizierung, Akkreditierung, Genehmigung oder Garantie für die Plattform dar.",
+    "contact": "Für ein anderes Format, eine andere Auflage oder eine Fassung in einer anderen Sprache schreibe an"
+  },
   "footer": {
     "legal": "Rotabo ist eine Technologieplattform. Fahrer sind unabhängige Anbieter, keine Angestellten von Rotabo.",
     "terms": "AGB",

@@ -626,6 +626,26 @@
     "offer_text": "Pakkuge teenust, eset või abi, ja laske end leida neil, kes seda vajavad.",
     "offer_btn": "Pane kirja, mida pakud"
   },
+  "posters": {
+    "back": "Tagasi rotabo.app-i",
+    "eyebrow": "Materjal avalikuks väljapanekuks",
+    "title": "Rotabo plakat, trükivalmis",
+    "lead": "Sama plakat, mitmes keeles ja kolmes formaadis. Vabalt allalaaditav ja trükitav, kelle tahes poolt, tasuta — vallamajad, raamatukogud, koolid, vastuvõtud, seltsid, nurgapoed, või keegi, kes tahab selle trepikoja teadetetahvlile panna.",
+    "use_a4": "Prindib igal kontoriprinteril. Sisemistele teadetetahvlitele ja lettidele.",
+    "use_a3": "Avalike infotahvlite tavapärane formaat.",
+    "use_a2": "Suurtele tahvlitele ja tänavaväljapanekuks. Loetav kaugelt.",
+    "download": "Laadi alla PDF",
+    "preview": "Milline see välja näeb",
+    "preview_fallback": "PDF-eelvaadet ei saa selles brauseris kuvada.",
+    "preview_open": "Ava plakat A4 formaadis",
+    "free_title": "Vabalt kasutatav.",
+    "free_body": "Prindi see välja ja pane üles ilma meilt küsimata ja midagi maksmata. Palume ainult, et sa teksti ei muudaks: sellel olev teave on kontrollitud ja peab jääma tõeseks sellele, kes seda loeb.",
+    "nomark_title": "See ei kanna kellegi tunnuseid.",
+    "nomark_body": "Materjal ei sisalda ühegi asutuse nime, logo ega visuaalset identiteeti.",
+    "noendorse_title": "Väljapanek ei ole kellegi heakskiit.",
+    "noendorse_body": "Kui avalik asutus otsustab selle plakati üles panna, on selline toetus rangelt informatiivne ega kujuta endast soovitust, sertifitseerimist, akrediteerimist, luba ega tagatist platvormi kohta.",
+    "contact": "Teise formaadi, teise tiraaži või teisekeelse versiooni jaoks kirjuta aadressil"
+  },
   "footer": {
     "legal": "Rotabo on tehnoloogiaplatvorm. Juhid on sõltumatud teenusepakkujad, mitte Rotabo töötajad.",
     "terms": "Tingimused",

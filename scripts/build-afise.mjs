@@ -40,13 +40,16 @@ const LANGS = {
   AR: { name: "العربية", note: "اللغة العربية.", rtl: true },
 };
 
+// The English in `use` and `dl` is what a visitor sees for the fraction of a
+// second before locales/<code>.json lands, and all a crawler ever sees. The
+// text the reader actually gets comes from the key in data-i18n.
 const SIZES = [
-  { code: "A4", dim: "210 × 297 mm", mm: [210, 297],
-    use: "Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee." },
-  { code: "A3", dim: "297 × 420 mm", mm: [297, 420],
-    use: "Formatul obișnuit pentru panourile publice de informare." },
-  { code: "A2", dim: "420 × 594 mm", mm: [420, 594],
-    use: "Pentru panouri mari și afișaj stradal. Se citește de la distanță." },
+  { code: "A4", dim: "210 × 297 mm", mm: [210, 297], key: "use_a4",
+    use: "Prints on any office printer. For indoor notice boards and counters." },
+  { code: "A3", dim: "297 × 420 mm", mm: [297, 420], key: "use_a3",
+    use: "The usual size for public information boards." },
+  { code: "A2", dim: "420 × 594 mm", mm: [420, 594], key: "use_a2",
+    use: "For large boards and street display. Readable from a distance." },
 ];
 
 // The page box the file actually declares, in millimetres. One MediaBox is
@@ -105,8 +108,8 @@ const sections = ready.map(lang => {
   const cards = SIZES.map(s => `      <div class="card">
         <div class="fmt">${s.code}</div>
         <div class="dim">${s.dim}</div>
-        <p class="use">${s.use}</p>
-        <a class="dl" href="/afise/${found[lang][s.code]}" download>Descarcă PDF</a>
+        <p class="use" data-i18n="posters.${s.key}">${s.use}</p>
+        <a class="dl" href="/afise/${found[lang][s.code]}" data-i18n="posters.download" download>Download PDF</a>
       </div>`).join("\n");
   const rtl = LANGS[lang].rtl ? ' dir="rtl"' : "";
   // data-lang is what the reordering script on the page matches against: a
@@ -126,14 +129,21 @@ const src = readFileSync(join(root, "afise.html"), "utf8");
 // written by hand and left alone.
 const START = "<!-- BUILT BY scripts/build-afise.mjs — do not edit between the markers -->";
 const END = "<!-- END BUILT -->";
+// lang code -> its A4 file, for the script that swaps the preview to the
+// language the visitor is reading the site in. Built here because only the
+// build knows which languages have files; the script must not guess a
+// filename and embed a dead PDF in the page.
+const previewMap = JSON.stringify(Object.fromEntries(
+  ready.map(l => [l.toLowerCase(), found[l].A4])));
+
 const block = `${START}
 ${sections}
 
-    <h2>Cum arată</h2>
-    <div class="preview">
+    <h2 data-i18n="posters.preview">What it looks like</h2>
+    <div class="preview" id="preview" data-posters='${previewMap}'>
       <object data="/afise/${found[ready[0]].A4}#view=FitH" type="application/pdf">
-        <div class="fallback">Previzualizarea PDF nu se poate afișa în acest browser.
-          <a href="/afise/${found[ready[0]].A4}">Deschide afișul în format A4</a>.</div>
+        <div class="fallback"><span data-i18n="posters.preview_fallback">The PDF preview cannot be shown in this browser.</span>
+          <a href="/afise/${found[ready[0]].A4}" data-i18n="posters.preview_open">Open the poster in A4</a>.</div>
       </object>
     </div>
     ${END}`;

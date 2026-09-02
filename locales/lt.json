@@ -619,6 +619,26 @@
     "offer_text": "Pasiūlykite paslaugą, daiktą ar pagalbą, ir tegul jus randa tie, kam to reikia.",
     "offer_btn": "Paskelbk, ką siūlai"
   },
+  "posters": {
+    "back": "Atgal į rotabo.app",
+    "eyebrow": "Medžiaga viešam skelbimui",
+    "title": "Rotabo plakatas, paruoštas spaudai",
+    "lead": "Tas pats plakatas, keliomis kalbomis ir trijų formatų. Laisvai parsisiunčiamas ir spausdinamas, bet kieno, nemokamai — savivaldybės, bibliotekos, mokyklos, kabinetai, asociacijos, kvartalo parduotuvės, arba kas nors, norintis pakabinti jį laiptinės skelbimų lentoje.",
+    "use_a4": "Atsispausdina bet kuriuo biuro spausdintuvu. Vidaus skelbimų lentoms ir langeliams.",
+    "use_a3": "Įprastas viešų informacijos lentų formatas.",
+    "use_a2": "Dideliems stendams ir gatvės skelbimui. Skaitomas iš toli.",
+    "download": "Atsisiųsti PDF",
+    "preview": "Kaip jis atrodo",
+    "preview_fallback": "PDF peržiūros šioje naršyklėje parodyti nepavyksta.",
+    "preview_open": "Atverti plakatą A4 formatu",
+    "free_title": "Laisvai naudojamas.",
+    "free_body": "Atsispausdink jį ir iškabink mūsų neklausdamas ir nieko nemokėdamas. Prašome tik nekeisti teksto: jame esanti informacija patikrinta ir turi likti teisinga tam, kas ją skaito.",
+    "nomark_title": "Jis nenešioja niekieno ženklų.",
+    "nomark_body": "Medžiagoje nėra jokios įstaigos pavadinimo, logotipo ar vizualinės tapatybės.",
+    "noendorse_title": "Iškabinimas nėra niekieno pritarimas.",
+    "noendorse_body": "Jei viešoji įstaiga nusprendžia iškabinti šį plakatą, tokia parama yra išimtinai informacinio pobūdžio ir nereiškia rekomendacijos, sertifikavimo, akreditavimo, leidimo ar garantijos dėl platformos.",
+    "contact": "Dėl kito formato, kito tiražo ar versijos kita kalba rašyk adresu"
+  },
   "footer": {
     "legal": "Rotabo yra technologijų platforma. Vairuotojai yra nepriklausomi paslaugų teikėjai, o ne Rotabo darbuotojai.",
     "terms": "Sąlygos",

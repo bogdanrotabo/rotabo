@@ -626,6 +626,26 @@
     "offer_text": "Ponudite uslugu, stvar ili pomoć i neka vas nađu oni kojima treba.",
     "offer_btn": "Objavi što nudiš"
   },
+  "posters": {
+    "back": "Natrag na rotabo.app",
+    "eyebrow": "Materijal za javno izlaganje",
+    "title": "Rotabo plakat, spreman za tisak",
+    "lead": "Isti plakat, na više jezika i u tri formata. Slobodno se preuzima i tiska, od bilo koga, besplatno — gradske uprave, knjižnice, škole, ordinacije, udruge, kvartovske trgovine, ili netko tko ga želi staviti na oglasnu ploču u zgradi.",
+    "use_a4": "Ispisuje se na bilo kojem uredskom pisaču. Za unutarnje oglasne ploče i šaltere.",
+    "use_a3": "Uobičajeni format javnih informativnih ploča.",
+    "use_a2": "Za velike ploče i ulično izlaganje. Čita se iz daljine.",
+    "download": "Preuzmi PDF",
+    "preview": "Kako izgleda",
+    "preview_fallback": "Pregled PDF-a nije moguće prikazati u ovom pregledniku.",
+    "preview_open": "Otvori plakat u formatu A4",
+    "free_title": "Slobodno za korištenje.",
+    "free_body": "Ispišite ga i izložite bez pitanja i bez plaćanja. Molimo samo da ne mijenjate tekst: podaci na njemu su provjereni i moraju ostati istiniti za onoga tko ih čita.",
+    "nomark_title": "Ne nosi ničije oznake.",
+    "nomark_body": "Materijal ne sadrži naziv, logotip ni vizualni identitet nijedne ustanove.",
+    "noendorse_title": "Izlaganje nije ničija preporuka.",
+    "noendorse_body": "Ako javna ustanova odluči izložiti ovaj plakat, ta je podrška isključivo informativne naravi i ne predstavlja preporuku, certifikaciju, akreditaciju, odobrenje ni jamstvo u vezi s platformom.",
+    "contact": "Za drugi format, drugu nakladu ili verziju na drugom jeziku pišite na"
+  },
   "footer": {
     "legal": "Rotabo je tehnološka platforma. Vozači su neovisni pružatelji usluga, a ne zaposlenici Rotaba.",
     "terms": "Uvjeti",

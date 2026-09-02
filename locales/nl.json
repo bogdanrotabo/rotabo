@@ -841,6 +841,26 @@
     "offer_text": "Bied een dienst, een voorwerp of hulp aan, en word gevonden door wie het nodig heeft.",
     "offer_btn": "Plaats wat u aanbiedt"
   },
+  "posters": {
+    "back": "Terug naar rotabo.app",
+    "eyebrow": "Materiaal voor openbare aanplakking",
+    "title": "De Rotabo-poster, drukklaar",
+    "lead": "Dezelfde poster, in meerdere talen en in drie formaten. Vrij te downloaden en te printen, door iedereen, gratis — gemeentehuizen, bibliotheken, scholen, praktijken, verenigingen, buurtwinkels, of iemand die hem op het prikbord in het portiek wil hangen.",
+    "use_a4": "Print op elke kantoorprinter. Voor prikborden binnen en aan loketten.",
+    "use_a3": "Het gebruikelijke formaat voor openbare informatieborden.",
+    "use_a2": "Voor grote borden en straataanplakking. Van veraf leesbaar.",
+    "download": "PDF downloaden",
+    "preview": "Hoe hij eruitziet",
+    "preview_fallback": "De PDF-voorbeeldweergave kan in deze browser niet worden getoond.",
+    "preview_open": "Open de poster op A4-formaat",
+    "free_title": "Vrij te gebruiken.",
+    "free_body": "Print hem en hang hem op zonder het ons te vragen en zonder iets te betalen. We vragen alleen de tekst niet te wijzigen: de informatie erop is geverifieerd en moet waar blijven voor wie hem leest.",
+    "nomark_title": "Hij draagt niemands kenteken.",
+    "nomark_body": "Het materiaal bevat geen naam, logo of huisstijl van welke instelling dan ook.",
+    "noendorse_title": "Ophangen is niemands goedkeuring.",
+    "noendorse_body": "Als een openbare instelling ervoor kiest deze poster op te hangen, is die steun strikt informatief en vormt zij geen aanbeveling, certificering, accreditatie, vergunning of garantie met betrekking tot het platform.",
+    "contact": "Voor een ander formaat, een andere oplage of een versie in een andere taal, schrijf naar"
+  },
   "footer": {
     "legal": "Rotabo is een technologieplatform. Chauffeurs zijn zelfstandige aanbieders, geen werknemers van Rotabo.",
     "terms": "Voorwaarden",

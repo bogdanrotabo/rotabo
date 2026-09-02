@@ -619,6 +619,26 @@
     "offer_text": "Toa huduma, kitu au msaada, na wanaohitaji wakupate.",
     "offer_btn": "Chapisha unachotoa"
   },
+  "posters": {
+    "back": "Rudi kwenye rotabo.app",
+    "eyebrow": "Nyenzo ya kubandikwa hadharani",
+    "title": "Bango la Rotabo, tayari kuchapishwa",
+    "lead": "Bango lilelile, kwa lugha kadhaa na saizi tatu. Linaweza kupakuliwa na kuchapishwa na yeyote, bila malipo — ofisi za serikali za mtaa, maktaba, shule, zahanati, vyama, maduka ya mtaa, au mtu anayetaka kulibandika kwenye ubao wa matangazo wa jengo.",
+    "use_a4": "Linachapishwa kwa printa yoyote ya ofisi. Kwa mbao za matangazo za ndani na madirisha ya huduma.",
+    "use_a3": "Saizi ya kawaida ya mbao za taarifa za umma.",
+    "use_a2": "Kwa mbao kubwa na kubandikwa barabarani. Linasomeka kwa mbali.",
+    "download": "Pakua PDF",
+    "preview": "Linavyoonekana",
+    "preview_fallback": "Onyesho la awali la PDF haliwezi kuonyeshwa katika kivinjari hiki.",
+    "preview_open": "Fungua bango kwa saizi ya A4",
+    "free_title": "Huru kutumika.",
+    "free_body": "Lichapishe na ulibandike bila kutuomba ruhusa na bila kulipa chochote. Tunaomba tu usibadilishe maandishi: taarifa zilizomo zimehakikiwa na lazima zibaki za kweli kwa anayezisoma.",
+    "nomark_title": "Halina nembo ya mtu yeyote.",
+    "nomark_body": "Nyenzo hii haina jina, nembo wala sura ya taasisi yoyote.",
+    "noendorse_title": "Kulibandika si idhini ya mtu yeyote.",
+    "noendorse_body": "Iwapo taasisi ya umma itaamua kubandika bango hili, msaada huo ni wa kutoa taarifa tu na hauwi pendekezo, uthibitisho, ithibati, kibali wala dhamana kuhusu jukwaa hili.",
+    "contact": "Kwa saizi nyingine, idadi nyingine ya nakala au toleo la lugha nyingine, andika kwa"
+  },
   "footer": {
     "legal": "Rotabo ni jukwaa la teknolojia. Madereva ni watoa huduma huru, si wafanyakazi wa Rotabo.",
     "terms": "Masharti",

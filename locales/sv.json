@@ -619,6 +619,26 @@
     "offer_text": "Erbjud en tjänst, en sak eller en hand, och bli hittad av dem som behöver det.",
     "offer_btn": "Lägg upp vad du erbjuder"
   },
+  "posters": {
+    "back": "Tillbaka till rotabo.app",
+    "eyebrow": "Material för offentlig anslagning",
+    "title": "Rotabo-affischen, tryckfärdig",
+    "lead": "Samma affisch, på flera språk och i tre format. Fri att ladda ner och skriva ut, av vem som helst, gratis — kommunhus, bibliotek, skolor, mottagningar, föreningar, kvartersbutiker, eller någon som vill sätta upp den på anslagstavlan i trapphuset.",
+    "use_a4": "Skrivs ut på vilken kontorsskrivare som helst. För anslagstavlor inomhus och vid luckor.",
+    "use_a3": "Det vanliga formatet för offentliga informationstavlor.",
+    "use_a2": "För stora tavlor och gatuanslag. Läsbar på avstånd.",
+    "download": "Ladda ner PDF",
+    "preview": "Så här ser den ut",
+    "preview_fallback": "PDF-förhandsvisningen kan inte visas i den här webbläsaren.",
+    "preview_open": "Öppna affischen i A4-format",
+    "free_title": "Fri att använda.",
+    "free_body": "Skriv ut den och sätt upp den utan att fråga oss och utan att betala något. Vi ber bara att du inte ändrar texten: uppgifterna på den är kontrollerade och måste förbli sanna för den som läser dem.",
+    "nomark_title": "Den bär ingens märke.",
+    "nomark_body": "Materialet innehåller inte någon institutions namn, logotyp eller visuella identitet.",
+    "noendorse_title": "Att sätta upp den är ingens godkännande.",
+    "noendorse_body": "Om en offentlig institution väljer att sätta upp den här affischen är det stödet strikt informativt och utgör inte en rekommendation, certifiering, ackreditering, tillstånd eller garanti om plattformen.",
+    "contact": "För ett annat format, en annan upplaga eller en version på ett annat språk, skriv till"
+  },
   "footer": {
     "legal": "Rotabo är en teknikplattform. Förarna är oberoende leverantörer, inte anställda hos Rotabo.",
     "terms": "Villkor",

@@ -847,6 +847,26 @@
     "offer_text": "Offrite un servizio, un oggetto o una mano, e fatevi trovare da chi ne ha bisogno.",
     "offer_btn": "Pubblica cosa offri"
   },
+  "posters": {
+    "back": "Torna a rotabo.app",
+    "eyebrow": "Materiale per affissione pubblica",
+    "title": "Il manifesto Rotabo, pronto per la stampa",
+    "lead": "Lo stesso manifesto, in più lingue e in tre formati. Si scarica e si stampa liberamente, da chiunque, gratis — comuni, biblioteche, scuole, ambulatori, associazioni, negozi di quartiere, o qualcuno che vuole metterlo nella bacheca del condominio.",
+    "use_a4": "Si stampa su qualsiasi stampante da ufficio. Per bacheche interne e sportelli.",
+    "use_a3": "Il formato abituale delle bacheche di informazione pubblica.",
+    "use_a2": "Per pannelli grandi e affissione in strada. Si legge da lontano.",
+    "download": "Scarica il PDF",
+    "preview": "Com'è fatto",
+    "preview_fallback": "L'anteprima PDF non può essere mostrata in questo browser.",
+    "preview_open": "Apri il manifesto in formato A4",
+    "free_title": "Libero da usare.",
+    "free_body": "Stampalo ed esponilo senza chiedercelo e senza pagare nulla. Ti chiediamo solo di non modificare il testo: le informazioni che riporta sono verificate e devono restare vere per chi le legge.",
+    "nomark_title": "Non porta le insegne di nessuno.",
+    "nomark_body": "Il materiale non contiene il nome, il logo o l'identità visiva di alcuna istituzione.",
+    "noendorse_title": "Esporlo non è l'avallo di nessuno.",
+    "noendorse_body": "Se un'istituzione pubblica sceglie di esporre questo manifesto, tale sostegno ha carattere strettamente informativo e non costituisce una raccomandazione, una certificazione, un accreditamento, un'autorizzazione o una garanzia sulla piattaforma.",
+    "contact": "Per un altro formato, un'altra tiratura o una versione in un'altra lingua, scrivi a"
+  },
   "footer": {
     "legal": "Rotabo è una piattaforma tecnologica. Gli autisti sono fornitori indipendenti, non dipendenti di Rotabo.",
     "terms": "Termini",

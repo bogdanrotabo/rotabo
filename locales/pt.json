@@ -841,6 +841,26 @@
     "offer_text": "Ofereça um serviço, um objeto ou uma ajuda, e seja encontrado por quem precisa.",
     "offer_btn": "Publicar o que oferece"
   },
+  "posters": {
+    "back": "Voltar a rotabo.app",
+    "eyebrow": "Material para afixação pública",
+    "title": "O cartaz Rotabo, pronto a imprimir",
+    "lead": "O mesmo cartaz, em várias línguas e em três formatos. Descarrega-se e imprime-se livremente, por qualquer pessoa, de graça — câmaras municipais, bibliotecas, escolas, consultórios, associações, lojas de bairro, ou alguém que o queira pôr no placard do prédio.",
+    "use_a4": "Imprime em qualquer impressora de escritório. Para placards interiores e balcões.",
+    "use_a3": "O formato habitual dos placards de informação pública.",
+    "use_a2": "Para painéis grandes e afixação na rua. Lê-se à distância.",
+    "download": "Descarregar PDF",
+    "preview": "Como é",
+    "preview_fallback": "A pré-visualização do PDF não pode ser mostrada neste navegador.",
+    "preview_open": "Abrir o cartaz em formato A4",
+    "free_title": "Livre de usar.",
+    "free_body": "Imprime-o e afixa-o sem nos pedires autorização e sem pagares nada. Só te pedimos que não alteres o texto: as informações que traz estão verificadas e têm de continuar verdadeiras para quem as lê.",
+    "nomark_title": "Não traz as insígnias de ninguém.",
+    "nomark_body": "O material não contém o nome, o logótipo ou a identidade visual de nenhuma instituição.",
+    "noendorse_title": "Afixá-lo não é o aval de ninguém.",
+    "noendorse_body": "Se uma instituição pública decidir afixar este cartaz, esse apoio tem carácter estritamente informativo e não constitui uma recomendação, uma certificação, uma acreditação, uma autorização ou uma garantia quanto à plataforma.",
+    "contact": "Para outro formato, outra tiragem ou uma versão noutra língua, escreve para"
+  },
   "footer": {
     "legal": "A Rotabo é uma plataforma tecnológica. Os condutores são prestadores independentes, não funcionários da Rotabo.",
     "terms": "Termos",

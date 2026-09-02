@@ -619,6 +619,26 @@
     "offer_text": "Offri servizz, oġġett jew għajnuna, u ħalli lil min għandu bżonnu jsibek.",
     "offer_btn": "Ippubblika dak li toffri"
   },
+  "posters": {
+    "back": "Lura għal rotabo.app",
+    "eyebrow": "Materjal għal wiri pubbliku",
+    "title": "Il-poster Rotabo, lest għall-istampar",
+    "lead": "L-istess poster, f'diversi lingwi u fi tliet daqsijiet. Jitniżżel u jiġi stampat liberament, minn kulħadd, b'xejn — kunsilli, libreriji, skejjel, kliniċi, għaqdiet, ħwienet tal-lokal, jew xi ħadd li jrid iwaħħlu fuq in-notice board tal-blokk.",
+    "use_a4": "Jistampa fuq kwalunkwe printer tal-uffiċċju. Għal notice boards ta' ġewwa u għall-bankijiet.",
+    "use_a3": "Id-daqs tas-soltu għall-bordijiet ta' informazzjoni pubblika.",
+    "use_a2": "Għal bordijiet kbar u wiri fit-triq. Jinqara mill-bogħod.",
+    "download": "Niżżel il-PDF",
+    "preview": "Kif jidher",
+    "preview_fallback": "L-anteprima tal-PDF ma tistax tintwera f'dan il-browser.",
+    "preview_open": "Iftaħ il-poster fid-daqs A4",
+    "free_title": "Liberu għall-użu.",
+    "free_body": "Stampah u waħħlu mingħajr ma tistaqsina u mingħajr ma tħallas xejn. Nitolbuk biss biex ma tibdilx it-test: l-informazzjoni fuqu hija verifikata u trid tibqa' vera għal min jaqraha.",
+    "nomark_title": "Ma jġorr l-emblema ta' ħadd.",
+    "nomark_body": "Il-materjal ma fih l-ebda isem, logo jew identità viżiva ta' xi istituzzjoni.",
+    "noendorse_title": "Li twaħħlu mhux approvazzjoni ta' ħadd.",
+    "noendorse_body": "Jekk istituzzjoni pubblika tagħżel li twaħħal dan il-poster, dak l-appoġġ huwa strettament informattiv u ma jikkostitwixxix rakkomandazzjoni, ċertifikazzjoni, akkreditazzjoni, awtorizzazzjoni jew garanzija dwar il-pjattaforma.",
+    "contact": "Għal daqs ieħor, tiraġ ieħor jew verżjoni f'lingwa oħra, ikteb lil"
+  },
   "footer": {
     "legal": "Rotabo hija pjattaforma teknoloġika. Is-sewwieqa huma fornituri indipendenti, mhux impjegati ta' Rotabo.",
     "terms": "Termini",

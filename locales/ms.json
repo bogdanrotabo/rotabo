@@ -619,6 +619,26 @@
     "offer_text": "Tawarkan perkhidmatan, barang atau bantuan, dan biar orang yang perlukannya menemui anda.",
     "offer_btn": "Siarkan apa yang anda tawarkan"
   },
+  "posters": {
+    "back": "Kembali ke rotabo.app",
+    "eyebrow": "Bahan untuk dipamerkan di tempat awam",
+    "title": "Poster Rotabo, sedia untuk dicetak",
+    "lead": "Poster yang sama, dalam beberapa bahasa dan tiga saiz. Bebas dimuat turun dan dicetak, oleh sesiapa sahaja, percuma — pejabat majlis, perpustakaan, sekolah, klinik, persatuan, kedai di kawasan, atau sesiapa yang mahu menampalnya di papan kenyataan blok.",
+    "use_a4": "Boleh dicetak pada mana-mana pencetak pejabat. Untuk papan kenyataan dalaman dan kaunter.",
+    "use_a3": "Saiz biasa bagi papan maklumat awam.",
+    "use_a2": "Untuk papan besar dan paparan di jalan. Boleh dibaca dari jauh.",
+    "download": "Muat turun PDF",
+    "preview": "Rupanya bagaimana",
+    "preview_fallback": "Pratonton PDF tidak dapat dipaparkan dalam pelayar ini.",
+    "preview_open": "Buka poster dalam saiz A4",
+    "free_title": "Bebas digunakan.",
+    "free_body": "Cetak dan tampalkan tanpa meminta kebenaran kami dan tanpa membayar apa-apa. Kami hanya minta jangan ubah teksnya: maklumat di dalamnya telah disahkan dan mesti kekal benar bagi sesiapa yang membacanya.",
+    "nomark_title": "Ia tidak membawa lambang sesiapa pun.",
+    "nomark_body": "Bahan ini tidak mengandungi nama, logo atau identiti visual mana-mana institusi.",
+    "noendorse_title": "Menampalnya bukan sokongan sesiapa pun.",
+    "noendorse_body": "Jika sesebuah institusi awam memilih untuk menampal poster ini, sokongan itu bersifat semata-mata maklumat dan tidak merupakan syor, pensijilan, akreditasi, kebenaran atau jaminan mengenai platform ini.",
+    "contact": "Untuk saiz lain, cetakan lain atau versi dalam bahasa lain, tulis kepada"
+  },
   "footer": {
     "legal": "Rotabo ialah platform teknologi. Pemandu adalah penyedia perkhidmatan bebas, bukan pekerja Rotabo.",
     "terms": "Terma",

@@ -834,6 +834,26 @@
     "offer_text": "Bir hizmet, bir eşya ya da yardım sunun, ihtiyacı olanlar sizi bulsun.",
     "offer_btn": "Sunduğunuzu yayınlayın"
   },
+  "posters": {
+    "back": "rotabo.app'a dön",
+    "eyebrow": "Kamuya asılmak için materyal",
+    "title": "Rotabo afişi, baskıya hazır",
+    "lead": "Aynı afiş, birkaç dilde ve üç boyutta. Herkes tarafından, ücretsiz, serbestçe indirilip basılabilir — belediyeler, kütüphaneler, okullar, muayenehaneler, dernekler, mahalle dükkânları, ya da onu apartman panosuna asmak isteyen biri.",
+    "use_a4": "Herhangi bir ofis yazıcısında basılır. İç mekân panoları ve gişeler için.",
+    "use_a3": "Kamu bilgilendirme panolarının alışılmış boyutu.",
+    "use_a2": "Büyük panolar ve sokak asımı için. Uzaktan okunur.",
+    "download": "PDF indir",
+    "preview": "Nasıl göründüğü",
+    "preview_fallback": "PDF önizlemesi bu tarayıcıda gösterilemiyor.",
+    "preview_open": "Afişi A4 boyutunda aç",
+    "free_title": "Serbestçe kullanılabilir.",
+    "free_body": "Bize sormadan ve hiçbir şey ödemeden bas ve as. Yalnızca metni değiştirmemeni rica ediyoruz: üzerindeki bilgiler doğrulanmıştır ve onları okuyan için doğru kalmalıdır.",
+    "nomark_title": "Kimsenin amblemini taşımaz.",
+    "nomark_body": "Materyal hiçbir kurumun adını, logosunu veya görsel kimliğini içermez.",
+    "noendorse_title": "Asılması kimsenin onayı değildir.",
+    "noendorse_body": "Bir kamu kurumu bu afişi asmayı seçerse, bu destek kesinlikle bilgilendirme amaçlıdır ve platform hakkında bir tavsiye, sertifikasyon, akreditasyon, yetkilendirme veya garanti oluşturmaz.",
+    "contact": "Başka bir boyut, başka bir baskı adedi veya başka bir dilde bir sürüm için şuraya yaz"
+  },
   "footer": {
     "legal": "Rotabo bir teknoloji platformudur. Sürücüler bağımsız hizmet sağlayıcılardır, Rotabo çalışanı değildir.",
     "terms": "Koşullar",
