@@ -1,0 +1,127 @@
+#!/usr/bin/env node
+/*
+ * Renders the poster to PDF, one language, three sizes.
+ *
+ *   node scripts/afise/randeaza.mjs ro            A4, A3 and A2 into /afise
+ *   node scripts/afise/randeaza.mjs ro --png      also a PNG, to look at
+ *   node scripts/afise/randeaza.mjs --toate       every language in texte.mjs
+ *
+ * A3 and A2 are the same page printed larger, not a redraw: Chromium is asked
+ * for a page of that size and the whole A4 layout is scaled into it. The ISO
+ * A ratio is constant, so nothing is cropped and nothing is stretched -- what
+ * a primărie pins to a panel is the same poster the office printer produced.
+ */
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+import { paginaHTML, A4 } from "./sablon.mjs";
+import { TEXTE, CHEI } from "./texte.mjs";
+
+/* Playwright may be a dependency here or installed globally; try both rather
+   than make the poster build depend on where node_modules happens to be. */
+async function ceruPlaywright() {
+  for (const spec of ["playwright", "playwright-core",
+                      "/opt/node22/lib/node_modules/playwright/index.mjs"]) {
+    try { return (await import(spec)).chromium; } catch (e) {}
+  }
+  throw new Error("playwright not found — npm i -D playwright");
+}
+
+/* PLAYWRIGHT_BROWSERS_PATH usually points playwright at its own browser; when
+   the versioned directory does not match the installed package, name the
+   binary directly instead of letting it try to download one. */
+function ceruChromium() {
+  const baza = process.env.PLAYWRIGHT_BROWSERS_PATH || "";
+  if (!baza || !existsSync(baza)) return undefined;
+  for (const d of readdirSync(baza).filter(d => d.startsWith("chromium")).sort().reverse()) {
+    for (const rel of ["chrome-linux/chrome", "chrome-linux/headless_shell"]) {
+      const p = join(baza, d, rel);
+      if (existsSync(p)) return p;
+    }
+  }
+  return undefined;
+}
+
+const aici = dirname(fileURLToPath(import.meta.url));
+const root = join(aici, "..", "..");
+/* Renders land in a staging directory. /afise holds files a primărie is
+   printing from, and a run started to try a wording out must not overwrite
+   one of them; --publica is the deliberate step that does. */
+const PROBA = join(aici, "proba");
+
+/* Chromium takes the page in real units, not points, and scales the content
+   into it. The ISO A ratio is √2 between consecutive sizes, so the same A4
+   layout fills A3 at 1.4142 and A2 at exactly 2 -- no redraw, no crop, and
+   the same proportions on the panel as on the desk. */
+const MARIMI = [
+  { cod: "A4", w: 210, h: 297, scala: 1 },
+  { cod: "A3", w: 297, h: 420, scala: Math.SQRT2 },
+  { cod: "A2", w: 420, h: 594, scala: 2 },
+];
+
+const logo = "data:image/png;base64," +
+  readFileSync(join(aici, "logo.png")).toString("base64");
+
+const argv = process.argv.slice(2);
+const png = argv.includes("--png");
+const iesire = argv.includes("--publica") ? join(root, "afise") : PROBA;
+const limbi = argv.includes("--toate")
+  ? Object.keys(TEXTE)
+  : argv.filter(a => !a.startsWith("--"));
+if (!limbi.length) { console.error("randeaza: which language? (or --toate)"); process.exit(2); }
+
+/* A missing key would render as the word "undefined" across a printed poster,
+   so it is caught before the browser starts rather than after 84 files. */
+for (const l of limbi) {
+  if (!TEXTE[l]) { console.error(`randeaza: no text for "${l}" in texte.mjs`); process.exit(2); }
+  const lipsa = CHEI.filter(k => !TEXTE[l][k]);
+  if (lipsa.length) { console.error(`randeaza: ${l} missing ${lipsa.join(", ")}`); process.exit(2); }
+}
+
+mkdirSync(iesire, { recursive: true });
+const chromium = await ceruPlaywright();
+const b = await chromium.launch({
+  executablePath: ceruChromium(),
+  args: ["--no-sandbox", "--disable-dev-shm-usage", "--font-render-hinting=none"],
+});
+
+for (const lang of limbi) {
+  const html = paginaHTML(lang, TEXTE[lang], logo);
+  const p = await b.newPage({ viewport: { width: Math.ceil(A4.w), height: Math.ceil(A4.h) } });
+  await p.setContent(html, { waitUntil: "load" });
+  await p.evaluate(() => document.fonts.ready);
+
+  /* Text that has overflowed its box is text that will be printed clipped or
+     sitting on top of the next block. Reported per box, not per poster, so
+     the string to shorten is named. */
+  const scurgeri = await p.evaluate(() => {
+    const out = [];
+    document.querySelectorAll("div[style*='position:absolute'][style*='font-size']")
+      .forEach(el => {
+        if (el.scrollWidth > el.clientWidth + 1)
+          out.push((el.textContent || "").slice(0, 40) + " (too wide)");
+      });
+    return out;
+  });
+  if (scurgeri.length) {
+    console.warn(`  ${lang}: ${scurgeri.length} box(es) overflow — ${scurgeri.join("; ")}`);
+  }
+
+  const nume = lang.toUpperCase();
+  for (const m of MARIMI) {
+    const pdf = await p.pdf({
+      width: `${m.w}mm`, height: `${m.h}mm`,
+      printBackground: true, margin: { top: 0, right: 0, bottom: 0, left: 0 },
+      scale: m.scala, pageRanges: "1",
+    });
+    writeFileSync(join(iesire, `Rotabo-afis-${nume}-${m.cod}.pdf`), pdf);
+  }
+  if (png) {
+    await p.screenshot({ path: join(aici, `previzualizare-${lang}.png`),
+                         clip: { x: 0, y: 0, width: A4.w, height: A4.h }, scale: "css" });
+  }
+  await p.close();
+  console.log(`  ${nume}: A4, A3, A2`);
+}
+await b.close();
+console.log(`written to ${iesire.replace(root + "/", "")}${iesire === PROBA ? "  (--publica writes into /afise)" : ""}`);

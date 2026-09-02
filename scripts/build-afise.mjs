@@ -68,6 +68,19 @@ function pageSize(file) {
   return { ok: buf.subarray(0, 5).toString() === "%PDF-", boxes: uniq };
 }
 
+/* The button in a language's block is written in that language, not in the
+   page's. The block already announces itself as "Deutsch"; a German who
+   scrolled to it to fetch the German poster should not have to read a
+   Japanese word to find the button. Taken from that language's own
+   dictionary, so it is the same wording the site uses everywhere else. */
+function descarca(lang) {
+  const cod = lang.toLowerCase();
+  const dict = JSON.parse(readFileSync(join(root, "locales", cod + ".json"), "utf8"));
+  const val = dict.posters && dict.posters.download;
+  if (!val) { console.error(`build-afise: locales/${cod}.json has no posters.download.`); process.exit(2); }
+  return val;
+}
+
 const found = {};
 for (const f of readdirSync(dir)) {
   const m = /^Rotabo-afis-([A-Z]{2})-(A[234])\.pdf$/.exec(f);
@@ -105,11 +118,17 @@ if (!ready.length) { console.error("build-afise: no complete language set in /af
 ready.sort((a, b) => (a === "RO" ? -1 : b === "RO" ? 1 : Object.keys(LANGS).indexOf(a) - Object.keys(LANGS).indexOf(b)));
 
 const sections = ready.map(lang => {
+  const dl = descarca(lang);
+  /* lang so a screen reader switches voice for it, dir so "تنزيل PDF" puts
+     the Latin word where an Arabic reader expects it -- without it the bidi
+     algorithm lays the line out as if it were a phrase in the page's own
+     direction. */
+  const btn = ` lang="${lang.toLowerCase()}"` + (LANGS[lang].rtl ? ' dir="rtl"' : "");
   const cards = SIZES.map(s => `      <div class="card">
         <div class="fmt">${s.code}</div>
         <div class="dim">${s.dim}</div>
         <p class="use" data-i18n="posters.${s.key}">${s.use}</p>
-        <a class="dl" href="/afise/${found[lang][s.code]}" data-i18n="posters.download" download>Download PDF</a>
+        <a class="dl" href="/afise/${found[lang][s.code]}"${btn} download>${dl}</a>
       </div>`).join("\n");
   const rtl = LANGS[lang].rtl ? ' dir="rtl"' : "";
   // data-lang is what the reordering script on the page matches against: a
