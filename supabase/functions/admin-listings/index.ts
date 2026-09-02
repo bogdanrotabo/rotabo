@@ -88,10 +88,22 @@ async function isAuthorized(token: string): Promise<boolean> {
   const providers = (user.app_metadata?.providers ?? []) as string[];
   if (!providers.includes("google")) return false;
 
+  // eq, not ilike. ilike is a pattern match -- % and _ are wildcards inside
+  // it -- and this is an equality test: is this exact address on the list.
+  // Nothing was exploitable, because the address arrives from a
+  // Google-verified session and Google issues neither character, but a
+  // wildcard operator standing in for equality is a trap waiting for the day
+  // the address comes from somewhere else.
+  //
+  // eq is case-sensitive where ilike was not. Auth stores addresses
+  // lowercased, and the admin_emails_lowercase constraint (migration 0006)
+  // now makes the table agree, so the two can no longer disagree about case
+  // -- which matters because the failure mode is a locked-out admin holding
+  // a 401 that deliberately explains nothing.
   const { data: adminRow } = await supabase
     .from("admin_emails")
     .select("email")
-    .ilike("email", user.email)
+    .eq("email", user.email.trim().toLowerCase())
     .maybeSingle();
 
   return !!adminRow;
