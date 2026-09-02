@@ -292,7 +292,14 @@
      on the page -- only the order changes, so anyone can still take another
      language, which is the whole reason the page carries all of them. */
   (function(){
-    var code = window.RotaboLang ? window.RotaboLang.preferred() : "ro";
+    /* lang.js when the page it came from has it -- saved choice, then the
+       browser, then English. Without it, the visitor's own saved choice, which
+       is the rule the rest of that deployment follows. Never a hardcoded
+       language: this page is reached from seven of them. */
+    var code = "";
+    if (window.RotaboLang) code = window.RotaboLang.preferred();
+    else { try { code = localStorage.getItem("rotabo_lang") || ""; } catch (e) {} }
+    if (!code) return;
     var set = document.querySelector('.lang-set[data-lang="' + code + '"]');
     if (!set) return;                       // no posters in that language yet
     var parent = set.parentNode;
