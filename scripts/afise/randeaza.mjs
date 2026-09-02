@@ -14,7 +14,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { paginaHTML, A4 } from "./sablon.mjs";
+import { paginaHTML, ASEAZA, A4 } from "./sablon.mjs";
 import { TEXTE, CHEI } from "./texte.mjs";
 
 /* Playwright may be a dependency here or installed globally; try both rather
@@ -49,14 +49,19 @@ const root = join(aici, "..", "..");
    one of them; --publica is the deliberate step that does. */
 const PROBA = join(aici, "proba");
 
-/* Chromium takes the page in real units, not points, and scales the content
-   into it. The ISO A ratio is √2 between consecutive sizes, so the same A4
-   layout fills A3 at 1.4142 and A2 at exactly 2 -- no redraw, no crop, and
-   the same proportions on the panel as on the desk. */
+/* Chromium will not take a page size in points, and asking for it in
+   millimetres gives a page 0.6pt wider than A4 -- the request is converted
+   through whole CSS pixels. Asking in pixels at 96 per inch lands on the
+   ISO size exactly.
+
+   The ISO A ratio is √2 between consecutive sizes, so the same A4 layout
+   fills A3 at 1.4142 and A2 at exactly 2 -- no redraw, no crop, and the same
+   proportions on a street panel as on the office printer. */
+const px = (pt) => pt * 96 / 72;
 const MARIMI = [
-  { cod: "A4", w: 210, h: 297, scala: 1 },
-  { cod: "A3", w: 297, h: 420, scala: Math.SQRT2 },
-  { cod: "A2", w: 420, h: 594, scala: 2 },
+  { cod: "A4", w: px(595.28),  h: px(841.89),  scala: 1 },
+  { cod: "A3", w: px(841.89),  h: px(1190.55), scala: Math.SQRT2 },
+  { cod: "A2", w: px(1190.55), h: px(1683.78), scala: 2 },
 ];
 
 const logo = "data:image/png;base64," +
@@ -91,26 +96,17 @@ for (const lang of limbi) {
   await p.setContent(html, { waitUntil: "load" });
   await p.evaluate(() => document.fonts.ready);
 
-  /* Text that has overflowed its box is text that will be printed clipped or
-     sitting on top of the next block. Reported per box, not per poster, so
-     the string to shorten is named. */
-  const scurgeri = await p.evaluate(() => {
-    const out = [];
-    document.querySelectorAll("div[style*='position:absolute'][style*='font-size']")
-      .forEach(el => {
-        if (el.scrollWidth > el.clientWidth + 1)
-          out.push((el.textContent || "").slice(0, 40) + " (too wide)");
-      });
-    return out;
-  });
-  if (scurgeri.length) {
-    console.warn(`  ${lang}: ${scurgeri.length} box(es) overflow — ${scurgeri.join("; ")}`);
-  }
+  /* Each block is moved onto the baseline the designer set, and shrunk if the
+     language needs more room than the Romanian did. What had to shrink is
+     printed: a block that reached the floor and still does not fit is a
+     wording to shorten, not a poster to publish. */
+  const raport = await p.evaluate(`(${ASEAZA.toString()})()`);
+  if (raport.length) console.warn(`  ${lang}: ${raport.join("; ")}`);
 
   const nume = lang.toUpperCase();
   for (const m of MARIMI) {
     const pdf = await p.pdf({
-      width: `${m.w}mm`, height: `${m.h}mm`,
+      width: `${m.w}px`, height: `${m.h}px`,
       printBackground: true, margin: { top: 0, right: 0, bottom: 0, left: 0 },
       scale: m.scala, pageRanges: "1",
     });
