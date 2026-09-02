@@ -202,6 +202,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/lang.js"></script>
 <script src="/countries.js"></script>
 <script src="/fx.js"></script>
 <script src="/viewer.js"></script>
@@ -245,7 +246,14 @@
   // purpose -- this is a working tool for someone who just paid, not a
   // marketing page.
   var LANG = "en";
-  try { LANG = localStorage.getItem("rotabo_lang") || "en"; } catch (e) {}
+  // Saved choice, then the browser, then English -- see lang.js. Reading
+  // storage alone meant a visitor who had never opened the flag menu got
+  // English here even when the rest of their browser asked for something
+  // else. The || "en" stays as the floor for a page loaded without lang.js.
+  try {
+    LANG = (window.RotaboLang && window.RotaboLang.preferred())
+        || localStorage.getItem("rotabo_lang") || "en";
+  } catch (e) {}
   var T = {
     eyebrow: category.toUpperCase(),
     offering_title: "{category} providers near you",

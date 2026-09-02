@@ -3696,9 +3696,15 @@
       if (e.key === "Escape") closePanel();
     });
 
-    var saved = null;
-    try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) { /* storage denied */ }
-    var initial = (saved && LANGS.some(function(l){ return l.code === saved; })) ? saved : "en";
+    // Saved choice first, then the browser, then English. This used to fall
+    // straight from "saved" to "en", so every first-time visitor on earth was
+    // served English regardless of what their browser asked for -- and the
+    // other thirty-seven dictionaries were reachable only by finding the flag
+    // menu. lang.js holds the order of authority; LANGS is passed in because
+    // this page owns the menu and decides what is in it.
+    var initial = window.RotaboLang
+      ? window.RotaboLang.preferred(LANGS.map(function(l){ return l.code; }))
+      : "en";
     loadLang(initial);
   });
 })();
@@ -3759,6 +3765,7 @@ if ("serviceWorker" in navigator) {
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/lang.js"></script>
 <script src="/countries.js"></script>
 <script src="/fx.js"></script>
 <script src="/viewer.js"></script>
