@@ -1,0 +1,5 @@
+node_modules/
+# Poster renders made while trying a wording out. The published files are the
+# ones in /afise; these are drafts and there is no reason to carry them.
+scripts/afise/proba/
+scripts/afise/previzualizare-*.png
