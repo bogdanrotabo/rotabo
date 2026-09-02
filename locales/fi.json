@@ -332,7 +332,8 @@
     "business": "Yritykset", "personal": "Yksityisille",
     "drive": "Ryhdy kuljettajaksi",
     "drivers": "Kuljettajat",
-    "account": "Oma tili"
+    "account": "Oma tili",
+    "posters": "Lataa Rotabo-julisteet"
   },
   "hero": {
     "free_line": "Liittyminen ilmaista, ilmoittaminen ilmaista — mitä tarvitset tai mitä tarjoat.",

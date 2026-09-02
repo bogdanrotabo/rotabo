@@ -326,7 +326,8 @@
     "fineprint": "Is é do rogha féin scríobh ar nótaí bainc. Seiceáil na dlíthe áitiúla."
   },
 
-  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Gnó", "personal": "Do dhaoine", "drive": "Bí i do thiománaí", "drivers": "Tiománaithe", "account": "Mo chuntas" },
+  "nav": { "how": "Conas a oibríonn sé", "safety": "Sábháilteacht", "business": "Gnó", "personal": "Do dhaoine", "drive": "Bí i do thiománaí", "drivers": "Tiománaithe", "account": "Mo chuntas",
+    "posters": "Íoslódáil póstaeir Rotabo" },
   "hero": {
     "free_line": "Saor in aisce le clárú, saor in aisce le postáil — an rud atá uait, nó an rud a thairgeann tú.",
     "number_intro": "Tá uimhir ag gach duine ar Rotabo. Uimhir amháin. Leatsa go deo. Insíonn sé cé tú féin, cá bhfuil tú agus cad is féidir leat a dhéanamh — inaimsithe ag aon duine ar domhan.",

@@ -326,7 +326,8 @@
     "fineprint": "Att skriva på sedlar är ditt eget val. Kontrollera de lokala lagarna."
   },
 
-  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "Företag", "personal": "För privatpersoner", "drive": "Bli förare", "drivers": "Förare", "account": "Mitt konto" },
+  "nav": { "how": "Så fungerar det", "safety": "Säkerhet", "business": "Företag", "personal": "För privatpersoner", "drive": "Bli förare", "drivers": "Förare", "account": "Mitt konto",
+    "posters": "Ladda ner Rotabo-affischer" },
   "hero": {
     "free_line": "Gratis att gå med, gratis att lägga upp — vad du behöver, eller vad du erbjuder.",
     "number_intro": "Alla på Rotabo har ett nummer. Ett nummer. Ditt för alltid. Det säger vem du är, var du är och vad du kan — hittbar av vem som helst på jorden.",

@@ -628,8 +628,6 @@
     color:var(--on-brand);
     box-shadow:0 14px 30px rgba(124,37,150,.35);
   }
-  .posters-cta{margin:0 0 22px;}
-  .posters-cta .btn{font-size:.95rem;padding:10px 18px;}
   .btn-outline{
     background:var(--panel-soft);
     border:1px solid var(--border);
@@ -1497,6 +1495,17 @@
     <nav class="links">
       <a class="biz" href="/" data-i18n="nav.personal">For people</a>
       <a href="/account.html" data-i18n="nav.account">My account</a>
+      <!-- No class of its own: nav.links a already draws the frame, the radius
+           and the padding, so this is the same object as the two beside it and
+           stays that way when they change.
+
+           Shown in every language. It was briefly gated to the seven languages
+           /afise carries, on the reasoning that sending a Japanese visitor to
+           download a Romanian PDF is a dead end. That reasoning belonged to the
+           day the page held one language: it now holds seven, English among
+           them, so anyone arriving can pick one they read. The wording lives in
+           the dictionaries because all thirty-eight need it. -->
+      <a href="/afise.html" data-i18n="nav.posters">Download Rotabo posters</a>
     </nav>
     <div class="lang-switcher">
       <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false">
@@ -1531,21 +1540,6 @@
        say "free" on purpose: signing up is free and so is posting, and the
        two were being read as one. -->
   <p class="free-line" data-i18n="hero.free_line">Free to join, free to post &mdash; what you need, or what you offer.</p>
-
-  <!-- The posters, offered only to visitors reading the site in a language the
-       posters exist in. Sending a Japanese visitor to download a Romanian PDF
-       is a dead end with a download in the middle of it, so the button is
-       simply absent for a language with no set behind it.
-
-       Deliberately no data-i18n key. The list below is exactly the languages
-       /afise carries, and it has to stay that way; putting the wording in the
-       dictionaries would put thirty-eight translations behind a button that
-       four of them can use, and nothing would tie the other thirty-four to a
-       file that exists. Add a language here on the day its three PDFs land in
-       /afise -- scripts/build-afise.mjs is what puts them on the page. -->
-  <p class="posters-cta" id="postersCta" hidden>
-    <a class="btn btn-outline" href="/afise.html"></a>
-  </p>
 
   <!-- The two doors. A stranger who has just read that posting is free still
        has to work out which of the twelve cards further down is theirs, and
@@ -3542,23 +3536,6 @@
     });
     document.documentElement.setAttribute("lang", code);
     document.documentElement.setAttribute("dir", RTL_LANGS.indexOf(code) !== -1 ? "rtl" : "ltr");
-    // The posters exist in these languages and no others, so the button that
-    // offers them appears in these and no others. Keep in step with /afise.
-    var POSTER_CTA = {
-      ro: "Descarcă afișe Rotabo",
-      en: "Download Rotabo posters",
-      fr: "Télécharger les affiches Rotabo",
-      es: "Descargar carteles Rotabo",
-      it: "Scarica i manifesti Rotabo",
-      de: "Rotabo-Plakate herunterladen",
-      ar: "حمّل ملصقات Rotabo"
-    };
-    var pc = document.getElementById("postersCta");
-    if (pc) {
-      var label = POSTER_CTA[code];
-      pc.hidden = !label;
-      if (label) pc.querySelector("a").textContent = label;
-    }
   }
 
   // Guards against two rapid clicks whose fetches resolve out of order:

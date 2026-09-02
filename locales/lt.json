@@ -326,7 +326,8 @@
     "fineprint": "Rašyti ant banknotų yra tavo paties pasirinkimas. Pasitikrink vietinius įstatymus."
   },
 
-  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslas", "personal": "Privatiems", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai", "account": "Mano paskyra" },
+  "nav": { "how": "Kaip tai veikia", "safety": "Sauga", "business": "Verslas", "personal": "Privatiems", "drive": "Tapk vairuotoju", "drivers": "Vairuotojai", "account": "Mano paskyra",
+    "posters": "Atsisiųsti Rotabo plakatus" },
   "hero": {
     "free_line": "Registracija nemokama, skelbimas nemokamas — ko jums reikia arba ką siūlote.",
     "number_intro": "Kiekvienas Rotabo turi numerį. Vieną numerį. Tavo amžinai. Jis pasako, kas tu esi, kur esi ir ką moki — surandamas bet kam Žemėje.",

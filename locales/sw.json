@@ -326,7 +326,8 @@
     "fineprint": "Kuandika kwenye noti ni chaguo lako mwenyewe. Angalia sheria za eneo lako."
   },
 
-  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Biashara", "personal": "Kwa watu binafsi", "drive": "Kuwa dereva", "drivers": "Madereva", "account": "Akaunti yangu" },
+  "nav": { "how": "Jinsi inavyofanya kazi", "safety": "Usalama", "business": "Biashara", "personal": "Kwa watu binafsi", "drive": "Kuwa dereva", "drivers": "Madereva", "account": "Akaunti yangu",
+    "posters": "Pakua mabango ya Rotabo" },
   "hero": {
     "free_line": "Kujiunga bure, kuchapisha bure — unachohitaji, au unachotoa.",
     "number_intro": "Kila mtu kwenye Rotabo ana nambari. Nambari moja. Yako milele. Inasema wewe ni nani, uko wapi na unaweza kufanya nini — unaweza kupatikana na yeyote Duniani.",

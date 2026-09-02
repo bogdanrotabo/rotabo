@@ -326,7 +326,8 @@
     "fineprint": "Il-kitba fuq il-karti tal-flus hija l-għażla tiegħek. Iċċekkja l-liġijiet lokali."
   },
 
-  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Negozji", "personal": "Għall-individwi", "drive": "Sir sewwieq", "drivers": "Sewwiequ", "account": "Il-kont tiegħi" },
+  "nav": { "how": "Kif taħdem", "safety": "Sikurezza", "business": "Negozji", "personal": "Għall-individwi", "drive": "Sir sewwieq", "drivers": "Sewwiequ", "account": "Il-kont tiegħi",
+    "posters": "Niżżel il-posters Rotabo" },
   "hero": {
     "free_line": "Ir-reġistrazzjoni b'xejn, il-pubblikazzjoni b'xejn — dak li għandek bżonn, jew dak li toffri.",
     "number_intro": "Kulħadd fuq Rotabo għandu numru. Numru wieħed. Tiegħek għal dejjem. Jgħid min int, fejn int u x'tista' tagħmel — jinstab minn kulħadd fid-dinja.",
