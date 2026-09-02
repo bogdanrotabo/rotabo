@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- GENERATED FILE. Do not edit.
+     Written from index.html by scripts/build-business.mjs.
+     Change index.html, then run: node scripts/build-business.mjs -->
 <html lang="en" data-mode="business">
 <head>
 <meta charset="UTF-8">
@@ -3880,31 +3883,49 @@ if ("serviceWorker" in navigator) {
 
   function load(){
     if (!listEl) return;
+    // Two queries, not one. A single limit(200) over the whole table mixes
+    // parents and replies in one window, so once the board passes 200 rows a
+    // reply whose parent falls outside that window is fetched, has nothing to
+    // attach to, and silently disappears -- the author watches their own
+    // answer vanish with no error anywhere. Ask for the newest 200 top-level
+    // posts, then for the replies belonging to exactly those.
     sb.from("ideas")
       .select("id,parent_id,author_name,body,created_at")
+      .is("parent_id", null)
       .order("created_at", { ascending: false })
       .limit(200)
       .then(function(res){
-        var rows = (res && res.data) || [];
-        if (!rows.length) { if (emptyEl) emptyEl.hidden = false; return; }
-        if (emptyEl) emptyEl.hidden = true;
-
-        var kids = {};
-        rows.forEach(function(r){
-          if (!r.parent_id) return;
-          (kids[r.parent_id] = kids[r.parent_id] || []).push(r);
-        });
-
-        // Clear whatever was drawn before, keeping the empty-state node.
+        var parents = (res && res.data) || [];
+        if (!parents.length) return { parents: [], replies: [] };
+        return sb.from("ideas")
+          .select("id,parent_id,author_name,body,created_at")
+          .in("parent_id", parents.map(function(p){ return p.id; }))
+          // Ascending here, so a conversation reads down under its parent.
+          // The board itself still reads newest-first; only the replies run
+          // the other way, which is why this used to need a reverse() after
+          // the fact.
+          .order("created_at", { ascending: true })
+          .then(function(res2){
+            return { parents: parents, replies: (res2 && res2.data) || [] };
+          });
+      })
+      .then(function(bundle){
+        // Clear first, and unconditionally: a board emptied to zero used to
+        // keep showing the last posts drawn, because the early return for
+        // "no rows" happened before this ran.
         Array.prototype.slice.call(listEl.children).forEach(function(n){
           if (n !== emptyEl) listEl.removeChild(n);
         });
+        if (!bundle.parents.length) { if (emptyEl) emptyEl.hidden = false; return; }
+        if (emptyEl) emptyEl.hidden = true;
 
-        rows.filter(function(r){ return !r.parent_id; }).forEach(function(r){
+        var kids = {};
+        bundle.replies.forEach(function(r){
+          (kids[r.parent_id] = kids[r.parent_id] || []).push(r);
+        });
+        bundle.parents.forEach(function(r){
           listEl.appendChild(postNode(r, false));
-          // Replies read oldest-first under their parent: a conversation
-          // reads down, even though the board itself reads newest-first.
-          (kids[r.id] || []).slice().reverse().forEach(function(k){
+          (kids[r.id] || []).forEach(function(k){
             listEl.appendChild(postNode(k, true));
           });
         });

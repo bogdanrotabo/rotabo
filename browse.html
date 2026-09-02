@@ -764,23 +764,17 @@
         unlockBtn.textContent = tr("unlock_btn");
         unlockBtn.addEventListener("click", function(){
           if (!window.RotaboViewer) return;
-          window.RotaboViewer.reveal({ number: row.number, onDetails: function(details){
-            // browse_public numbers people, not listings: rotabo_numbers is
-            // joined on the listing's email, so one person with two listings
-            // in the same category comes back as two cards carrying the same
-            // number, and get_listing_details answers for both. Nothing in
-            // that reply tells them apart except the city, so narrow on it.
-            //
-            // The fallback here used to be "match[0] || details[0]", which on
-            // a miss took whatever row happened to be first -- including one
-            // from a different category, so unlocking a plumber could print
-            // the note written for babysitting. A wrong note is worse than no
-            // note. If this category has no row at all the listing expired
-            // between the page rendering and the click: leave the card alone.
-            var rows = details || [];
-            var same = rows.filter(function(x){ return x.category === category && x.role === browseRole; });
-            var exact = same.filter(function(x){ return (x.city || "") === (row.city || ""); });
-            var d = exact[0] || same[0];
+          window.RotaboViewer.reveal({ id: row.id, onDetails: function(details){
+            // By id, not by number. rotabo_numbers is joined on the listing's
+            // email, so `number` identifies a PERSON: someone with two
+            // listings in one category appeared as two cards carrying the same
+            // number, get_listing_details answered for both, and there was
+            // nothing in the reply to tell them apart -- so both cards showed
+            // whichever row happened to come first, and one listing's note was
+            // simply unreachable. browse_public now returns the listing's own
+            // id and get_listing_details_by_id answers for exactly that one,
+            // behind the same paywall.
+            var d = (details || [])[0];
             if (!d) return;
             unlockBtn.hidden = true;
             var addressEl = card.querySelector(".address");
@@ -821,7 +815,18 @@
           renderGateOrDashboard();
           return;
         }
-        if (!res.data.stripe_session_id) {
+        // FREE LISTING PERIOD, from 2026-08-22: create-listing sets
+        // visible_until itself and no checkout follows, so stripe_session_id
+        // is null on every listing published since. This test used to read
+        // that null as "payment not confirmed yet", which meant every single
+        // person who published a free listing landed here from
+        // after-payment.html and was shown "Confirming your payment…" for two
+        // minutes -- for a payment that never existed and was never asked
+        // for -- at the exact moment they had just succeeded. The signal that
+        // a listing is live is visible_until, and always was.
+        var vu = res.data.visible_until;
+        var live = vu && new Date(vu).getTime() > Date.now();
+        if (!live) {
           if (tries >= PENDING_POLL_MAX) {
             // Either abandoned at Stripe or a webhook that is never
             // coming. Either way this is not a payment being confirmed.
@@ -863,7 +868,10 @@
         .eq("category", category)
         .eq("role", myRole)
         .eq("user_id", session.user.id)
-        .not("stripe_session_id", "is", null)
+        // Same correction as above: a free listing carries no stripe
+        // session, so filtering on one meant a signed-in lister never found
+        // their own listing on a second device.
+        .gt("visible_until", new Date().toISOString())
         .order("created_at", { ascending: false })
         .limit(1)
         .maybeSingle()
