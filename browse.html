@@ -715,19 +715,44 @@
       if (rows.length === 0 && !viewerToken()) { renderLocked(); return; }
       // Country/city filtering is done client-side over the public
       // projection (no private fields ever leave the server unfiltered).
+      // Match without diacritics, both ways. The filters compared the typed
+      // text to the stored text literally, so "Zurich" never found "Zürich",
+      // "Munchen" never found "München" and "Targu" never found "Târgu Jiu" --
+      // and people type the plain form, because that is what is on the
+      // keyboard in front of them. NFD splits an accented letter into the
+      // letter plus its mark; dropping the marks leaves the letter. Country
+      // still prefers the ISO code when countries.js can resolve one, which
+      // is what makes "Elveția" and "Svizzera" the same place; this is the
+      // fallback for everything it cannot resolve, and the whole of what the
+      // city field has.
+      // A few letters are not an ASCII letter plus a mark, so NFD leaves them
+      // whole: Polish Ł, Scandinavian Ø, Croatian Đ, German ß, the Æ/Œ
+      // ligatures. Without these, "Lodz" still misses "Łódź".
+      var LETTERS = { "\u0142":"l", "\u00f8":"o", "\u0111":"d", "\u00df":"ss",
+                      "\u00e6":"ae", "\u0153":"oe", "\u0131":"i", "\u00fe":"th" };
+      function fold(v){
+        return (v || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/[\u0142\u00f8\u0111\u00df\u00e6\u0153\u0131\u00fe]/g, function(c){ return LETTERS[c]; });
+      }
       if (countryFilter) {
         // Match on the canonical code when both sides resolve to one, so
         // "Switzerland" also finds listings saved as "Svizzera" or
         // "Elvetia". Falls back to the old substring match for rows with
         // no code yet, or a filter spelling the map doesn't know.
         var wantIso = window.RotaboCountries ? window.RotaboCountries.isoFor(countryFilter) : "";
-        var cf = countryFilter.toLowerCase();
+        var cf = fold(countryFilter);
         rows = rows.filter(function(r){
           if (wantIso && r.country_code) return r.country_code === wantIso;
-          return (r.country || "").toLowerCase().indexOf(cf) !== -1;
+          return fold(r.country).indexOf(cf) !== -1;
         });
       }
-      if (cityFilter) { var cyf = cityFilter.toLowerCase(); rows = rows.filter(function(r){ return (r.city || "").toLowerCase().indexOf(cyf) !== -1; }); }
+      if (cityFilter) {
+        var cyf = fold(cityFilter);
+        rows = rows.filter(function(r){ return fold(r.city).indexOf(cyf) !== -1; });
+      }
       // Skip re-render when the filtered result is unchanged, so an unlocked
       // card's revealed contact details aren't wiped by the 5s poll.
       var sig = JSON.stringify(rows);
