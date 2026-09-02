@@ -40,6 +40,33 @@ const SWAPS = [
   ['<link rel="canonical" href="https://rotabo.app/">',
    '<link rel="canonical" href="https://rotabo.app/business.html">'],
 
+  // Everything a link preview shows. These were the homepage's until
+  // 2026-09-01: the title, canonical and mode were swapped and the six
+  // social tags were not, so anyone sharing the business page on LinkedIn,
+  // WhatsApp or Slack posted the homepage's headline pointing at the
+  // homepage's address. The business page could not be shared at all.
+  //
+  // The wording is the page's own, from business.idea in the dictionaries:
+  // "People need companies. People have companies." -- the same sentence as
+  // the homepage with the one word that makes it a different page.
+  ['<meta name="description" content="People need things. People have things. Rotabo connects them.">',
+   '<meta name="description" content="People need companies. People have companies. Rotabo connects them.">'],
+
+  ['<meta property="og:title" content="Rotabo — Need Me? Find Me!">',
+   '<meta property="og:title" content="Rotabo for business — Need Me? Find Me!">'],
+
+  ['<meta property="og:description" content="People need things. People have things. Rotabo connects them.">',
+   '<meta property="og:description" content="People need companies. People have companies. Rotabo connects them.">'],
+
+  ['<meta property="og:url" content="https://rotabo.app/">',
+   '<meta property="og:url" content="https://rotabo.app/business.html">'],
+
+  ['<meta name="twitter:title" content="Rotabo — Need Me? Find Me!">',
+   '<meta name="twitter:title" content="Rotabo for business — Need Me? Find Me!">'],
+
+  ['<meta name="twitter:description" content="People need things. People have things. Rotabo connects them.">',
+   '<meta name="twitter:description" content="People need companies. People have companies. Rotabo connects them.">'],
+
   ['<a class="biz" href="/business.html" data-i18n="nav.business">Business</a>',
    '<a class="biz" href="/" data-i18n="nav.personal">For people</a>'],
 ];
