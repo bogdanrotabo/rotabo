@@ -26,19 +26,45 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dir = join(root, "afise");
 
-// Native names, so a Frenchman recognises his own section without knowing
-// what the page around it says.
-const LANGS = {
-  RO: { name: "Română",   note: "Limba română." },
-  EN: { name: "English",  note: "English." },
-  FR: { name: "Français", note: "Langue française." },
-  ES: { name: "Español",  note: "Idioma español." },
-  IT: { name: "Italiano", note: "Lingua italiana." },
-  DE: { name: "Deutsch",  note: "Deutsche Sprache." },
-  // dir="rtl" on the heading, not on the section: the label reads
-  // right-to-left, the cards around it stay in the page's own direction.
-  AR: { name: "العربية", note: "اللغة العربية.", rtl: true },
+/* Native names, so a Frenchman recognises his own section without knowing
+   what the page around it says, plus the English name beside it, so someone
+   who cannot read 한국어 or বাংলা can still tell which is which.
+
+   The native names are read out of index.html rather than kept in a second
+   list here: the site's language picker is where they live, and two lists
+   drift. A code on disk that the picker does not know is an error, not a
+   section with a blank heading. */
+const ENGLISH = {
+  en: "English", it: "Italian", ro: "Romanian", es: "Spanish", fr: "French",
+  de: "German", pt: "Portuguese", zh: "Chinese", ar: "Arabic", ja: "Japanese",
+  ko: "Korean", ru: "Russian", ms: "Malay", hi: "Hindi", sw: "Swahili",
+  vi: "Vietnamese", th: "Thai", id: "Indonesian", tr: "Turkish", bn: "Bengali",
+  ur: "Urdu", bg: "Bulgarian", cs: "Czech", hr: "Croatian", da: "Danish",
+  et: "Estonian", fi: "Finnish", el: "Greek", ga: "Irish", lv: "Latvian",
+  lt: "Lithuanian", hu: "Hungarian", mt: "Maltese", nl: "Dutch", pl: "Polish",
+  sk: "Slovak", sl: "Slovenian", sv: "Swedish",
 };
+// dir="rtl" goes on the heading, not the section: the label reads
+// right-to-left, the cards around it stay in the page's own direction.
+const RTL = ["ar", "ur"];
+
+const LANGS = (() => {
+  const html = readFileSync(join(root, "index.html"), "utf8");
+  const bloc = /var LANGS = \[([\s\S]*?)\];/.exec(html);
+  if (!bloc) {
+    console.error("build-afise: cannot find the language list in index.html.");
+    process.exit(2);
+  }
+  const out = {};
+  for (const m of bloc[1].matchAll(/code:"([a-z]{2})",name:"([^"]+)"/g)) {
+    const cod = m[1];
+    if (!ENGLISH[cod]) { console.error(`build-afise: no English name for "${cod}".`); process.exit(2); }
+    out[cod.toUpperCase()] = { name: m[2], note: ENGLISH[cod], rtl: RTL.includes(cod) };
+  }
+  const lipsa = Object.keys(ENGLISH).filter(c => !out[c.toUpperCase()]);
+  if (lipsa.length) { console.error("build-afise: index.html does not list " + lipsa.join(", ")); process.exit(2); }
+  return out;
+})();
 
 // The English in `use` and `dl` is what a visitor sees for the fraction of a
 // second before locales/<code>.json lands, and all a crawler ever sees. The
@@ -113,8 +139,8 @@ if (fatal.length) {
 problems.filter(p => p.includes("not listed")).forEach(p => console.warn("  note: " + p));
 if (!ready.length) { console.error("build-afise: no complete language set in /afise."); process.exit(2); }
 
-// Romanian first — the 219 primării were sent here — then the rest in the
-// order they were added to LANGS.
+// Romanian first — the 219 primării were sent here — then the order the
+// site's own picker lists them in.
 ready.sort((a, b) => (a === "RO" ? -1 : b === "RO" ? 1 : Object.keys(LANGS).indexOf(a) - Object.keys(LANGS).indexOf(b)));
 
 const sections = ready.map(lang => {

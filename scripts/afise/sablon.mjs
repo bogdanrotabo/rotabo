@@ -110,15 +110,32 @@ const esc = (s) => String(s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 /* The step number and its line, spaced as on the original. Non-breaking so
-   the gap survives HTML's collapsing of runs of spaces. */
-const pas = (n, text) => `${n}&#160;&#160;&#160;${esc(text)}`;
+   the gap survives HTML's collapsing of runs of spaces. Arabic and Urdu count
+   in Arabic-Indic digits -- his own Arabic poster is numbered ١ ٢ ٣. */
+const CIFRE_AR = ["٠", "١", "٢", "٣"];
+const pas = (n, text, lang) =>
+  `${RTL.includes(lang) ? CIFRE_AR[n] : n}&#160;&#160;&#160;${esc(text)}`;
+
+/* An Arabic reader starts at the right, so the poster starts there: the
+   violet "need something" box moves to the right-hand column and the gold
+   "have something to offer" box to the left, the three badges reverse, and
+   the numbered steps run in from the right margin. The designer's own Arabic
+   poster is laid out exactly this way; the mirror reproduces it from the
+   Latin geometry rather than keeping a second table in step.
+
+   The full-width blocks are symmetrical about the page and come back to
+   themselves. The logo and the claim do not move -- they do not move on his
+   Arabic poster either. */
+const oglinda = (x, w) => A4.w - x - w;
 
 export function paginaHTML(lang, T, logoDataUri) {
   const rtl = RTL.includes(lang);
-  const forme = FORME.map(f =>
-    `<div style="position:absolute;left:${f.x}pt;top:${f.y}pt;` +
-    `width:${f.w}pt;height:${f.h}pt;background:${f.fill}` +
-    `${f.r ? `;border-radius:${f.r}pt` : ""}"></div>`).join("\n");
+  const forme = FORME.map(f => {
+    const x = rtl && f.r ? oglinda(f.x, f.w) : f.x;   // r marks the four inner shapes
+    return `<div style="position:absolute;left:${x}pt;top:${f.y}pt;` +
+      `width:${f.w}pt;height:${f.h}pt;background:${f.fill}` +
+      `${f.r ? `;border-radius:${f.r}pt` : ""}"></div>`;
+  }).join("\n");
 
   const continut = {
     claim: "Need Me? Find Me!",           // untranslated on every poster
@@ -128,7 +145,7 @@ export function paginaHTML(lang, T, logoDataUri) {
     nevoieL: T.nevoieL, oferL: T.oferL,
     punte1: T.punte1, punte2: T.punte2,
     cumTitlu: T.cumTitlu,
-    pas1: pas(1, T.pas1), pas2: pas(2, T.pas2), pas3: pas(3, T.pas3),
+    pas1: pas(1, T.pas1, lang), pas2: pas(2, T.pas2, lang), pas3: pas(3, T.pas3, lang),
     badge1: T.badge1, badge2: T.badge2, badge3: T.badge3,
     azi: T.azi, maine: T.maine,
     adresa: "rotabo.app",                 // untranslated on every poster
@@ -150,12 +167,13 @@ export function paginaHTML(lang, T, logoDataUri) {
     const ta = b.align === "center" ? "center"
              : b.align === "right"  ? "right"
              : (dir ? "right" : "left");
+    const x = (rtl && !latin) ? oglinda(b.x, b.w) : b.x;
     /* An inline-block of zero height sits with its bottom margin edge on the
        line's baseline, so its measured top IS the baseline -- the one thing
        the browser will not tell you directly, and the thing the whole layout
        is anchored on. */
     return `<div class="t" data-k="${k}" data-bl="${b.bl}" data-h="${b.h}"` +
-      ` data-size="${b.size}"${dir} style="position:absolute;left:${b.x}pt;` +
+      ` data-size="${b.size}"${dir} style="position:absolute;left:${x}pt;` +
       `top:${b.bl}pt;width:${b.w}pt;font-family:${fam};font-size:${b.size}pt;` +
       `font-weight:${b.bold ? 700 : 400};color:${b.color};text-align:${ta};` +
       `line-height:${b.lh || 1.25}">${brut ? val : esc(val)}</div>`;
@@ -222,15 +240,21 @@ export function ASEAZA() {
       const prea_lat = el.scrollWidth > el.clientWidth + 1;
       const prea_inalt = el.getBoundingClientRect().height > maxH + 0.5;
       if (!prea_lat && !prea_inalt) break;
-      if (size <= baza * 0.78) {               // floor: below it stops reading as a poster
+      /* 70% of the design size. His own French poster sets the 12pt heading
+         at 9pt -- 75% -- to keep "VOUS AVEZ QUELQUE CHOSE À PROPOSER ?" on
+         one line, so shrinking this far is the poster's own habit, not a
+         workaround. Below 70% the line stops holding its place against the
+         one above it and the wording is what has to give. */
+      if (size <= baza * 0.70) {
         raport.push(`${el.dataset.k} at ${size.toFixed(1)}pt still ` +
-          (prea_lat ? "too wide" : "too tall"));
+          (prea_lat ? "too wide" : "too tall") + " — shorten the wording");
         break;
       }
-      size = Math.max(baza * 0.78, size - baza * 0.02);
+      size = Math.max(baza * 0.70, size - baza * 0.02);
     }
     if (size < baza - 0.001 && !raport.some(r => r.startsWith(el.dataset.k)))
-      raport.push(`${el.dataset.k} ${baza}pt -> ${size.toFixed(1)}pt`);
+      raport.push(`${el.dataset.k} ${baza}pt -> ${size.toFixed(1)}pt` +
+                  (size < baza * 0.75 ? " (a lot)" : ""));
   });
   return raport;
 }

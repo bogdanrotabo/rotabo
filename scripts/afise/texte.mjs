@@ -1,33 +1,27 @@
 /*
- * The poster's words, per language.
+ * The poster's words, per language, in texte.json.
  *
  * `ro` is not a translation: it is the text read back out of the poster the
- * designer drew, so it is the reference every other language is measured
- * against. `•` separates the list items on the poster itself.
+ * designer drew, and en, de, fr, es and it come out of the ones he had made
+ * from it. Those six are the reference the other thirty-two were written
+ * against, so the wording that was approved is the wording that spread.
+ *
+ * Data rather than code because it is 38 languages of prose and nothing else,
+ * and because a missing quote in one of them should be a parse error at the
+ * top and not a poster with a hole in it.
  */
-export const TEXTE = {
-  ro: {
-    cap1: "NU TREBUIE SĂ LE REZOLVI",
-    cap2: "PE TOATE SINGUR.",
-    corp: "Rotabo conectează oamenii care au nevoie de ceva cu oamenii care pot oferi servicii, ajutor, timp, competențe sau resurse.",
-    nevoieK: "AI NEVOIE DE CEVA?",
-    oferK: "AI CEVA DE OFERIT?",
-    nevoieT: "Spune ce cauți.",
-    oferT: "Spune ce poți oferi.",
-    nevoieL: "Șofer • transport • mutări • traducător • profesor • meseriaș • unelte • casă • auto • animale • și altele",
-    oferL: "O meserie • o abilitate • timp • experiență • unelte • echipamente • obiecte • alte resurse",
-    punte1: "CINEVA ARE NEVOIE. CINEVA POATE OFERI.",
-    punte2: "ROTABO ÎI CONECTEAZĂ.",
-    cumTitlu: "CUM FUNCȚIONEAZĂ",
-    pas1: "Intri pe rotabo.app",
-    pas2: "Publici ce cauți sau ce poți oferi",
-    pas3: "Vă găsiți și vă conectați direct",
-    badge1: "ÎNSCRIERE GRATUITĂ",
-    badge2: "PUBLICARE GRATUITĂ",
-    badge3: "0% COMISION ROTABO",
-    azi: "Astăzi poate ai nevoie de cineva.",
-    maine: "Mâine poate cineva are nevoie exact de ceea ce poți tu oferi.",
-    browser: "Direct în browser - fără App Store sau Google Play",
-  },
-};
-export const CHEI = Object.keys(TEXTE.ro);
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+export const TEXTE = JSON.parse(
+  readFileSync(join(dirname(fileURLToPath(import.meta.url)), "texte.json"), "utf8"));
+
+/* Every language must carry every line: a key missing from one of them prints
+   the word "undefined" across a poster somebody pins up. */
+export const CHEI = [
+  "cap1", "cap2", "corp", "nevoieK", "oferK", "nevoieT", "oferT",
+  "nevoieL", "oferL", "punte1", "punte2", "cumTitlu",
+  "pas1", "pas2", "pas3", "badge1", "badge2", "badge3",
+  "azi", "maine", "browser",
+];
