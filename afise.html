@@ -39,6 +39,9 @@
 
   h2{margin:2.75rem 0 1rem;font-size:1.15rem;color:var(--text-dark);letter-spacing:-.01em;}
 
+  .lang-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;
+    margin:2.5rem 0 .9rem;font-size:1.15rem;color:var(--text-dark);letter-spacing:-.01em;}
+  .lang-head span{font-size:.85rem;font-weight:400;color:var(--text-eyebrow);letter-spacing:0;}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
   .card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;
     padding:1.25rem 1.25rem 1.35rem;display:flex;flex-direction:column;gap:.35rem;}
@@ -78,40 +81,176 @@
 
   <p class="eyebrow">Material pentru afișare publică</p>
   <h1>Afișul Rotabo, gata de tipar</h1>
-  <p class="lead">Același afiș în trei formate. <strong>Se descarcă și se tipărește liber, de oricine, gratuit</strong> —
+  <p class="lead">Același afiș, în mai multe limbi și în trei formate.
+    <strong>Se descarcă și se tipărește liber, de oricine, gratuit</strong> —
     primării, biblioteci, școli, cabinete, asociații, magazine de cartier, sau un om care vrea
     să-l pună pe un avizier de bloc.</p>
   <p class="en">The Rotabo poster, print-ready, in A2, A3 and A4. Free for anyone to download,
-    print and display. Romanian language.</p>
+    print and display. Pick your language below.</p>
 
-  <div class="grid">
-    <div class="card">
-      <div class="fmt">A4</div>
-      <div class="dim">210 × 297 mm</div>
-      <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
-      <a class="dl" href="/afise/Rotabo-afis-A4.pdf" download>Descarcă PDF</a>
+  <!-- BUILT BY scripts/build-afise.mjs — do not edit between the markers -->
+    <h2 class="lang-head">Română <span>Limba română.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-RO-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-RO-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-RO-A2.pdf" download>Descarcă PDF</a>
+      </div>
     </div>
-    <div class="card">
-      <div class="fmt">A3</div>
-      <div class="dim">297 × 420 mm</div>
-      <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
-      <a class="dl" href="/afise/Rotabo-afis-A3.pdf" download>Descarcă PDF</a>
-    </div>
-    <div class="card">
-      <div class="fmt">A2</div>
-      <div class="dim">420 × 594 mm</div>
-      <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
-      <a class="dl" href="/afise/Rotabo-afis-A2.pdf" download>Descarcă PDF</a>
-    </div>
-  </div>
 
-  <h2>Cum arată</h2>
-  <div class="preview">
-    <object data="/afise/Rotabo-afis-A4.pdf#view=FitH" type="application/pdf">
-      <div class="fallback">Previzualizarea PDF nu se poate afișa în acest browser.
-        <a href="/afise/Rotabo-afis-A4.pdf">Deschide afișul în format A4</a>.</div>
-    </object>
-  </div>
+    <h2 class="lang-head">English <span>English.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-EN-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-EN-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-EN-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2 class="lang-head">Français <span>Langue française.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-FR-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-FR-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-FR-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2 class="lang-head">Español <span>Idioma español.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-ES-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-ES-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-ES-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2 class="lang-head">Italiano <span>Lingua italiana.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-IT-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-IT-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-IT-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2 class="lang-head">Deutsch <span>Deutsche Sprache.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-DE-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-DE-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-DE-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2 class="lang-head" dir="rtl">العربية <span>اللغة العربية.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="fmt">A4</div>
+        <div class="dim">210 × 297 mm</div>
+        <p class="use">Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.</p>
+        <a class="dl" href="/afise/Rotabo-afis-AR-A4.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A3</div>
+        <div class="dim">297 × 420 mm</div>
+        <p class="use">Formatul obișnuit pentru panourile publice de informare.</p>
+        <a class="dl" href="/afise/Rotabo-afis-AR-A3.pdf" download>Descarcă PDF</a>
+      </div>
+      <div class="card">
+        <div class="fmt">A2</div>
+        <div class="dim">420 × 594 mm</div>
+        <p class="use">Pentru panouri mari și afișaj stradal. Se citește de la distanță.</p>
+        <a class="dl" href="/afise/Rotabo-afis-AR-A2.pdf" download>Descarcă PDF</a>
+      </div>
+    </div>
+
+    <h2>Cum arată</h2>
+    <div class="preview">
+      <object data="/afise/Rotabo-afis-RO-A4.pdf#view=FitH" type="application/pdf">
+        <div class="fallback">Previzualizarea PDF nu se poate afișa în acest browser.
+          <a href="/afise/Rotabo-afis-RO-A4.pdf">Deschide afișul în format A4</a>.</div>
+      </object>
+    </div>
+    <!-- END BUILT -->
 
   <div class="note">
     <p><b>Se poate folosi liber.</b> Afișul se tipărește și se expune fără să ne ceri voie și
