@@ -615,6 +615,26 @@
     "offer_text": "Tairg seirbhís, rud nó lámh chúnta, agus faigheadh na daoine a bhfuil sé uathu thú.",
     "offer_btn": "Cuir suas an rud a thairgeann tú"
   },
+  "posters": {
+    "back": "Ar ais go rotabo.app",
+    "eyebrow": "Ábhar le crochadh go poiblí",
+    "title": "An póstaer Rotabo, réidh le priontáil",
+    "lead": "An póstaer céanna, i roinnt teangacha agus i dtrí mhéid. Saor le híoslódáil agus le priontáil, ag duine ar bith, saor in aisce — comhairlí, leabharlanna, scoileanna, clinicí, cumainn, siopaí áitiúla, nó duine ar mhaith leis é a chur ar chlár fógraí an fhoirgnimh.",
+    "use_a4": "Priontálann sé ar aon phrintéir oifige. Do chláir fógraí istigh agus do chuntair.",
+    "use_a3": "An gnáthmhéid do chláir eolais phoiblí.",
+    "use_a2": "Do chláir mhóra agus do chrochadh sráide. Inléite ó fhad.",
+    "download": "Íoslódáil PDF",
+    "preview": "An chuma atá air",
+    "preview_fallback": "Ní féidir an réamhamharc PDF a thaispeáint sa bhrabhsálaí seo.",
+    "preview_open": "Oscail an póstaer i méid A4",
+    "free_title": "Saor le húsáid.",
+    "free_body": "Priontáil é agus croch é gan cead a iarraidh orainn agus gan aon rud a íoc. Ná hathraigh an téacs, le do thoil: tá an t-eolas air fíoraithe agus caithfidh sé fanacht fíor don té a léann é.",
+    "nomark_title": "Níl comhartha aon duine air.",
+    "nomark_body": "Níl ainm, lógó ná íomhá aon institiúide san ábhar.",
+    "noendorse_title": "Ní formhuiniú ó aon duine é a chrochadh.",
+    "noendorse_body": "Má roghnaíonn institiúid phoiblí an póstaer seo a chrochadh, is tacaíocht faisnéiseach amháin í agus ní moladh, deimhniú, creidiúnú, údarú ná ráthaíocht maidir leis an ardán í.",
+    "contact": "Le haghaidh méid eile, eagrán eile nó leagan i dteanga eile, scríobh chuig"
+  },
   "footer": {
     "legal": "Is ardán teicneolaíochta é Rotabo. Is soláthraithe neamhspleácha iad na tiománaithe, ní fostaithe de chuid Rotabo iad.",
     "terms": "Téarmaí",

@@ -615,6 +615,26 @@
     "offer_text": "Tawarkan jasa, barang atau bantuan, dan biar orang yang membutuhkan menemukan Anda.",
     "offer_btn": "Pasang apa yang Anda tawarkan"
   },
+  "posters": {
+    "back": "Kembali ke rotabo.app",
+    "eyebrow": "Materi untuk dipasang di tempat umum",
+    "title": "Poster Rotabo, siap cetak",
+    "lead": "Poster yang sama, dalam beberapa bahasa dan tiga ukuran. Bebas diunduh dan dicetak, oleh siapa saja, gratis — kantor kelurahan, perpustakaan, sekolah, klinik, perkumpulan, toko di lingkungan, atau seseorang yang ingin memasangnya di papan pengumuman gedung.",
+    "use_a4": "Tercetak di printer kantor mana pun. Untuk papan pengumuman dalam ruangan dan loket.",
+    "use_a3": "Ukuran yang biasa dipakai papan informasi publik.",
+    "use_a2": "Untuk papan besar dan pemasangan di jalan. Terbaca dari jauh.",
+    "download": "Unduh PDF",
+    "preview": "Seperti apa bentuknya",
+    "preview_fallback": "Pratinjau PDF tidak dapat ditampilkan di peramban ini.",
+    "preview_open": "Buka poster dalam ukuran A4",
+    "free_title": "Bebas digunakan.",
+    "free_body": "Cetak dan pasang tanpa meminta izin kami dan tanpa membayar apa pun. Kami hanya minta jangan mengubah teksnya: informasi di dalamnya sudah diverifikasi dan harus tetap benar bagi yang membacanya.",
+    "nomark_title": "Tidak membawa lambang siapa pun.",
+    "nomark_body": "Materi ini tidak memuat nama, logo, atau identitas visual lembaga mana pun.",
+    "noendorse_title": "Memasangnya bukan dukungan siapa pun.",
+    "noendorse_body": "Jika sebuah lembaga publik memilih memasang poster ini, dukungan tersebut bersifat semata-mata informatif dan tidak merupakan rekomendasi, sertifikasi, akreditasi, izin, atau jaminan mengenai platform ini.",
+    "contact": "Untuk ukuran lain, jumlah cetak lain, atau versi dalam bahasa lain, tulis ke"
+  },
   "footer": {
     "legal": "Rotabo adalah platform teknologi. Pengemudi adalah penyedia layanan independen, bukan karyawan Rotabo.",
     "terms": "Ketentuan",

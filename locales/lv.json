@@ -615,6 +615,26 @@
     "offer_text": "Piedāvājiet pakalpojumu, lietu vai palīdzību, un lai jūs atrod tie, kam tas vajadzīgs.",
     "offer_btn": "Publicē, ko piedāvā"
   },
+  "posters": {
+    "back": "Atpakaļ uz rotabo.app",
+    "eyebrow": "Materiāls publiskai izlikšanai",
+    "title": "Rotabo plakāts, gatavs drukai",
+    "lead": "Tas pats plakāts, vairākās valodās un trijos formātos. Brīvi lejupielādējams un drukājams, jebkuram, bez maksas — pašvaldības, bibliotēkas, skolas, prakses, biedrības, kvartāla veikali, vai kāds, kas grib to izlikt kāpņutelpas ziņojumu dēlī.",
+    "use_a4": "Izdrukājas uz jebkura biroja printera. Iekštelpu ziņojumu dēļiem un lodziņiem.",
+    "use_a3": "Publisko informācijas dēļu ierastais formāts.",
+    "use_a2": "Lieliem dēļiem un ielas izlikšanai. Lasāms no attāluma.",
+    "download": "Lejupielādēt PDF",
+    "preview": "Kā tas izskatās",
+    "preview_fallback": "PDF priekšskatījumu šajā pārlūkā nevar parādīt.",
+    "preview_open": "Atvērt plakātu A4 formātā",
+    "free_title": "Brīvi lietojams.",
+    "free_body": "Izdrukā to un izliec, mums neprasot un neko nemaksājot. Lūdzam tikai nemainīt tekstu: tajā esošā informācija ir pārbaudīta un tai jāpaliek patiesai tam, kas to lasa.",
+    "nomark_title": "Tas nenes neviena zīmes.",
+    "nomark_body": "Materiālā nav nevienas iestādes nosaukuma, logotipa vai vizuālās identitātes.",
+    "noendorse_title": "Izlikšana nav neviena apstiprinājums.",
+    "noendorse_body": "Ja publiska iestāde izvēlas izlikt šo plakātu, šāds atbalsts ir stingri informatīvs un nav uzskatāms par ieteikumu, sertifikāciju, akreditāciju, atļauju vai garantiju attiecībā uz platformu.",
+    "contact": "Par citu formātu, citu metienu vai versiju citā valodā raksti uz"
+  },
   "footer": {
     "legal": "Rotabo ir tehnoloģiju platforma. Šoferi ir neatkarīgi pakalpojumu sniedzēji, nevis Rotabo darbinieki.",
     "terms": "Noteikumi",

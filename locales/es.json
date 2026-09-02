@@ -787,6 +787,26 @@
     "offer_text": "Ofrezcan un servicio, un objeto o una mano, y que los encuentre quien lo necesita.",
     "offer_btn": "Publica lo que ofreces"
   },
+  "posters": {
+    "back": "Volver a rotabo.app",
+    "eyebrow": "Material para exposición pública",
+    "title": "El cartel Rotabo, listo para imprimir",
+    "lead": "El mismo cartel, en varios idiomas y en tres formatos. Se descarga y se imprime libremente, por cualquiera, gratis — ayuntamientos, bibliotecas, escuelas, consultorios, asociaciones, tiendas de barrio, o alguien que quiera ponerlo en el tablón de su portal.",
+    "use_a4": "Se imprime en cualquier impresora de oficina. Para tablones interiores y ventanillas.",
+    "use_a3": "El formato habitual de los tablones de información pública.",
+    "use_a2": "Para paneles grandes y exposición en la calle. Se lee desde lejos.",
+    "download": "Descargar PDF",
+    "preview": "Cómo es",
+    "preview_fallback": "La vista previa del PDF no puede mostrarse en este navegador.",
+    "preview_open": "Abrir el cartel en formato A4",
+    "free_title": "Libre de uso.",
+    "free_body": "Imprímelo y exponlo sin pedirnos permiso y sin pagar nada. Solo te pedimos que no cambies el texto: la información que lleva está verificada y tiene que seguir siendo cierta para quien la lea.",
+    "nomark_title": "No lleva el escudo de nadie.",
+    "nomark_body": "El material no contiene el nombre, el logotipo ni la identidad visual de ninguna institución.",
+    "noendorse_title": "Exponerlo no es el aval de nadie.",
+    "noendorse_body": "Si una institución pública decide exponer este cartel, ese apoyo tiene carácter estrictamente informativo y no constituye una recomendación, una certificación, una acreditación, una autorización ni una garantía sobre la plataforma.",
+    "contact": "Para otro formato, otra tirada o una versión en otro idioma, escribe a"
+  },
   "footer": {
     "legal": "Rotabo es una plataforma tecnológica. Los conductores son proveedores independientes, no empleados de Rotabo.",
     "terms": "Términos",

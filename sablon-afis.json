@@ -1,0 +1,318 @@
+{
+ "W": 595.2755737304688,
+ "H": 841.8897705078125,
+ "forme": [
+  {
+   "x": 0.0,
+   "y": 0.0,
+   "w": 595.28,
+   "h": 841.89,
+   "fill": "#f6ebf9"
+  },
+  {
+   "x": 0.0,
+   "y": 0.0,
+   "w": 595.28,
+   "h": 4.0,
+   "fill": "#fdd321"
+  },
+  {
+   "x": 34.0,
+   "y": 264.0,
+   "w": 257.64,
+   "h": 150.0,
+   "fill": "#7c349a"
+  },
+  {
+   "x": 303.64,
+   "y": 264.0,
+   "w": 257.64,
+   "h": 150.0,
+   "fill": "#fdd321"
+  },
+  {
+   "x": 34.0,
+   "y": 611.0,
+   "w": 527.28,
+   "h": 55.0,
+   "fill": "#ffffff"
+  },
+  {
+   "x": 34.0,
+   "y": 757.0,
+   "w": 527.28,
+   "h": 62.0,
+   "fill": "#7c349a"
+  }
+ ],
+ "imagini": [
+  {
+   "x": 34.0,
+   "y": -1.98,
+   "w": 250.0,
+   "h": 73.98
+  }
+ ],
+ "texte": [
+  {
+   "t": "Need Me? Find Me!",
+   "x": 442.59,
+   "y": 49.64,
+   "align": "left",
+   "size": 11.0,
+   "bold": true,
+   "color": "#7c359b",
+   "w": 118.68
+  },
+  {
+   "t": "NU TREBUIE SĂ LE REZOLVI",
+   "x": 34.0,
+   "y": 145.53,
+   "align": "left",
+   "size": 23.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 354.89
+  },
+  {
+   "t": "PE TOATE SINGUR.",
+   "x": 34.0,
+   "y": 177.73,
+   "align": "left",
+   "size": 28.0,
+   "bold": true,
+   "color": "#7c359b",
+   "w": 293.86
+  },
+  {
+   "t": "Rotabo conectează oamenii care au nevoie de ceva cu oamenii care pot oferi servicii, ajutor, timp,",
+   "x": 34.0,
+   "y": 224.4,
+   "align": "left",
+   "size": 10.0,
+   "bold": false,
+   "color": "#4b4352",
+   "w": 494.34
+  },
+  {
+   "t": "competențe sau resurse.",
+   "x": 34.0,
+   "y": 238.4,
+   "align": "left",
+   "size": 10.0,
+   "bold": false,
+   "color": "#4b4352",
+   "w": 124.84
+  },
+  {
+   "t": "AI NEVOIE DE CEVA?",
+   "x": 49.0,
+   "y": 294.88,
+   "align": "left",
+   "size": 12.0,
+   "bold": true,
+   "color": "#ffffff",
+   "w": 137.36
+  },
+  {
+   "t": "AI CEVA DE OFERIT?",
+   "x": 318.64,
+   "y": 294.88,
+   "align": "left",
+   "size": 12.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 135.46
+  },
+  {
+   "t": "Spune ce cauți.",
+   "x": 49.0,
+   "y": 325.12,
+   "align": "left",
+   "size": 13.0,
+   "bold": true,
+   "color": "#ffffff",
+   "w": 112.92
+  },
+  {
+   "t": "Spune ce poți oferi.",
+   "x": 318.64,
+   "y": 325.12,
+   "align": "left",
+   "size": 13.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 144.21
+  },
+  {
+   "t": "Șofer • transport • mutări • traducător • profesor •",
+   "x": 49.0,
+   "y": 349.02,
+   "align": "left",
+   "size": 8.4,
+   "bold": false,
+   "color": "#ffffff",
+   "w": 216.65
+  },
+  {
+   "t": "O meserie • o abilitate • timp • experiență • unelte •",
+   "x": 432.46,
+   "y": 349.02,
+   "align": "center",
+   "size": 8.4,
+   "bold": false,
+   "color": "#1e1923",
+   "w": 225.26
+  },
+  {
+   "t": "meseriaș • unelte • casă • auto • animale • și altele",
+   "x": 49.0,
+   "y": 361.02,
+   "align": "left",
+   "size": 8.4,
+   "bold": false,
+   "color": "#ffffff",
+   "w": 220.98
+  },
+  {
+   "t": "echipamente • obiecte • alte resurse",
+   "x": 318.64,
+   "y": 361.02,
+   "align": "left",
+   "size": 8.4,
+   "bold": false,
+   "color": "#1e1923",
+   "w": 156.64
+  },
+  {
+   "t": "CINEVA ARE NEVOIE. CINEVA POATE OFERI.",
+   "x": 297.64,
+   "y": 445.36,
+   "align": "center",
+   "size": 14.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 340.96
+  },
+  {
+   "t": "ROTABO ÎI CONECTEAZĂ.",
+   "x": 297.64,
+   "y": 471.32,
+   "align": "center",
+   "size": 18.0,
+   "bold": true,
+   "color": "#7c359b",
+   "w": 251.71
+  },
+  {
+   "t": "CUM FUNCȚIONEAZĂ",
+   "x": 34.0,
+   "y": 516.64,
+   "align": "left",
+   "size": 11.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 128.17
+  },
+  {
+   "t": "1   Intri pe rotabo.app",
+   "x": 41.0,
+   "y": 541.16,
+   "align": "left",
+   "size": 9.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 112.06
+  },
+  {
+   "t": "2   Publici ce cauți sau ce poți oferi",
+   "x": 41.0,
+   "y": 564.16,
+   "align": "left",
+   "size": 9.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 178.16
+  },
+  {
+   "t": "3   Vă găsiți și vă conectați direct",
+   "x": 41.0,
+   "y": 587.16,
+   "align": "left",
+   "size": 9.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 169.94
+  },
+  {
+   "t": "ÎNSCRIERE GRATUITĂ",
+   "x": 69.78,
+   "y": 639.09,
+   "align": "left",
+   "size": 8.7,
+   "bold": true,
+   "color": "#7c359b",
+   "w": 104.19
+  },
+  {
+   "t": "PUBLICARE GRATUITĂ",
+   "x": 297.64,
+   "y": 639.09,
+   "align": "center",
+   "size": 8.7,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 107.11
+  },
+  {
+   "t": "0% COMISION ROTABO",
+   "x": 417.66,
+   "y": 639.09,
+   "align": "left",
+   "size": 8.7,
+   "bold": true,
+   "color": "#7c359b",
+   "w": 111.46
+  },
+  {
+   "t": "Astăzi poate ai nevoie de cineva.",
+   "x": 297.64,
+   "y": 704.4,
+   "align": "center",
+   "size": 10.0,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 186.16
+  },
+  {
+   "t": "Mâine poate cineva are nevoie exact de ceea ce poți tu oferi.",
+   "x": 297.64,
+   "y": 721.31,
+   "align": "center",
+   "size": 9.6,
+   "bold": true,
+   "color": "#1e1923",
+   "w": 331.22
+  },
+  {
+   "t": "rotabo.app",
+   "x": 297.64,
+   "y": 796.77,
+   "align": "center",
+   "size": 24.0,
+   "bold": true,
+   "color": "#ffffff",
+   "w": 149.35
+  },
+  {
+   "t": "Direct în browser - fără App Store sau Google Play",
+   "x": 297.64,
+   "y": 808.8,
+   "align": "center",
+   "size": 7.5,
+   "bold": false,
+   "color": "#ffffff",
+   "w": 188.72
+  }
+ ]
+}

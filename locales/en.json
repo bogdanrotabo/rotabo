@@ -851,6 +851,26 @@
     "offer_text": "Offer a service, an object or a hand, and be found by the people who need it.",
     "offer_btn": "Post what you offer"
   },
+  "posters": {
+    "back": "Back to rotabo.app",
+    "eyebrow": "Material for public display",
+    "title": "The Rotabo poster, print-ready",
+    "lead": "The same poster, in several languages and three sizes. Free for anyone to download and print — town halls, libraries, schools, surgeries, associations, corner shops, or someone who wants to put it on a block noticeboard.",
+    "use_a4": "Prints on any office printer. For indoor noticeboards and counters.",
+    "use_a3": "The usual size for public information boards.",
+    "use_a2": "For large boards and street display. Readable from a distance.",
+    "download": "Download PDF",
+    "preview": "What it looks like",
+    "preview_fallback": "The PDF preview cannot be shown in this browser.",
+    "preview_open": "Open the poster in A4",
+    "free_title": "Free to use.",
+    "free_body": "Print it and display it without asking us and without paying anything. Please just don't change the text: the information on it is verified and has to stay true for whoever reads it.",
+    "nomark_title": "It carries nobody's insignia.",
+    "nomark_body": "The material contains no institution's name, logo or visual identity.",
+    "noendorse_title": "Displaying it is nobody's endorsement.",
+    "noendorse_body": "If a public institution chooses to display this poster, that support is strictly informational and does not constitute a recommendation, certification, accreditation, authorisation or guarantee regarding the platform.",
+    "contact": "For another format, another print run or a version in another language, write to"
+  },
   "footer": {
     "legal": "Rotabo is a technology platform. Drivers are independent providers, not employees of Rotabo.",
     "terms": "Terms",

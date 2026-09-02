@@ -780,6 +780,26 @@
     "offer_text": "Zaoferujcie usługę, rzecz albo pomoc, a znajdą was ci, którzy tego potrzebują.",
     "offer_btn": "Opublikuj, co oferujesz"
   },
+  "posters": {
+    "back": "Powrót do rotabo.app",
+    "eyebrow": "Materiał do publicznego wywieszenia",
+    "title": "Plakat Rotabo, gotowy do druku",
+    "lead": "Ten sam plakat, w kilku językach i w trzech formatach. Można go pobrać i wydrukować swobodnie, przez każdego, za darmo — urzędy, biblioteki, szkoły, gabinety, stowarzyszenia, sklepy osiedlowe, albo ktoś, kto chce go powiesić na tablicy w klatce.",
+    "use_a4": "Drukuje się na każdej drukarce biurowej. Do tablic wewnętrznych i przy okienkach.",
+    "use_a3": "Zwykły format tablic informacji publicznej.",
+    "use_a2": "Do dużych tablic i ekspozycji ulicznej. Czytelny z odległości.",
+    "download": "Pobierz PDF",
+    "preview": "Jak wygląda",
+    "preview_fallback": "Podglądu PDF nie można wyświetlić w tej przeglądarce.",
+    "preview_open": "Otwórz plakat w formacie A4",
+    "free_title": "Wolno używać.",
+    "free_body": "Wydrukuj go i wywieś bez pytania nas o zgodę i bez płacenia. Prosimy tylko, żeby nie zmieniać tekstu: informacje na nim są sprawdzone i muszą pozostać prawdziwe dla tego, kto je czyta.",
+    "nomark_title": "Nie nosi niczyich oznaczeń.",
+    "nomark_body": "Materiał nie zawiera nazwy, logo ani identyfikacji wizualnej żadnej instytucji.",
+    "noendorse_title": "Wywieszenie nie jest niczyim poparciem.",
+    "noendorse_body": "Jeśli instytucja publiczna zdecyduje się wywiesić ten plakat, takie wsparcie ma charakter wyłącznie informacyjny i nie stanowi rekomendacji, certyfikacji, akredytacji, autoryzacji ani gwarancji dotyczącej platformy.",
+    "contact": "W sprawie innego formatu, innego nakładu lub wersji w innym języku pisz na"
+  },
   "footer": {
     "legal": "Rotabo to platforma technologiczna. Kierowcy są niezależnymi usługodawcami, a nie pracownikami Rotabo.",
     "terms": "Regulamin",

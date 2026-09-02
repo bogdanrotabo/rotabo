@@ -622,6 +622,26 @@
     "offer_text": "Tarjoa palvelua, tavaraa tai kättä, ja anna tarvitsevien löytää sinut.",
     "offer_btn": "Kerro mitä tarjoat"
   },
+  "posters": {
+    "back": "Takaisin rotabo.app-sivulle",
+    "eyebrow": "Aineisto julkiseen esillepanoon",
+    "title": "Rotabo-juliste, painovalmis",
+    "lead": "Sama juliste, useilla kielillä ja kolmessa koossa. Vapaasti ladattavissa ja tulostettavissa, kenen tahansa, ilmaiseksi — kunnantalot, kirjastot, koulut, vastaanotot, yhdistykset, lähikaupat, tai joku joka haluaa laittaa sen rappukäytävän ilmoitustaululle.",
+    "use_a4": "Tulostuu millä tahansa toimistotulostimella. Sisätilojen ilmoitustauluille ja tiskeille.",
+    "use_a3": "Julkisten ilmoitustaulujen tavallinen koko.",
+    "use_a2": "Suurille tauluille ja katunäkyvyyteen. Luettavissa kaukaa.",
+    "download": "Lataa PDF",
+    "preview": "Miltä se näyttää",
+    "preview_fallback": "PDF-esikatselua ei voi näyttää tässä selaimessa.",
+    "preview_open": "Avaa juliste A4-koossa",
+    "free_title": "Vapaasti käytettävissä.",
+    "free_body": "Tulosta se ja laita esille kysymättä meiltä ja maksamatta mitään. Pyydämme vain, ettet muuta tekstiä: siinä olevat tiedot on tarkistettu ja niiden on pysyttävä totena sille, joka ne lukee.",
+    "nomark_title": "Se ei kanna kenenkään tunnuksia.",
+    "nomark_body": "Aineisto ei sisällä minkään laitoksen nimeä, logoa tai visuaalista ilmettä.",
+    "noendorse_title": "Esillepano ei ole kenenkään hyväksyntä.",
+    "noendorse_body": "Jos julkinen laitos päättää asettaa tämän julisteen esille, tuki on luonteeltaan tiukasti tiedottava eikä muodosta suositusta, sertifiointia, akkreditointia, lupaa tai takuuta alustasta.",
+    "contact": "Toista kokoa, toista painosta tai toisenkielistä versiota varten kirjoita osoitteeseen"
+  },
   "footer": {
     "legal": "Rotabo on teknologia-alusta. Kuljettajat ovat itsenäisiä palveluntarjoajia, eivät Rotabon työntekijöitä.",
     "terms": "Käyttöehdot",

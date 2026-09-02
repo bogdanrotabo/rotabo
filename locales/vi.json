@@ -615,6 +615,26 @@
     "offer_text": "Cung cấp một dịch vụ, một món đồ hay một sự giúp đỡ, và để người cần tìm thấy bạn.",
     "offer_btn": "Đăng điều bạn cung cấp"
   },
+  "posters": {
+    "back": "Quay lại rotabo.app",
+    "eyebrow": "Tài liệu để dán nơi công cộng",
+    "title": "Áp phích Rotabo, sẵn sàng in",
+    "lead": "Cùng một áp phích, bằng nhiều thứ tiếng và ba khổ. Ai cũng tải và in được tự do, miễn phí — ủy ban, thư viện, trường học, phòng khám, hội đoàn, cửa hàng trong khu, hay một người muốn dán nó lên bảng tin của chung cư.",
+    "use_a4": "In được trên bất kỳ máy in văn phòng nào. Cho bảng tin trong nhà và quầy tiếp dân.",
+    "use_a3": "Khổ thường dùng cho bảng thông tin công cộng.",
+    "use_a2": "Cho bảng lớn và dán ngoài phố. Đọc được từ xa.",
+    "download": "Tải PDF",
+    "preview": "Trông như thế nào",
+    "preview_fallback": "Trình duyệt này không hiển thị được bản xem trước PDF.",
+    "preview_open": "Mở áp phích khổ A4",
+    "free_title": "Tự do sử dụng.",
+    "free_body": "In ra và dán lên mà không cần hỏi chúng tôi, không phải trả gì. Chỉ xin đừng sửa nội dung chữ: các thông tin trên đó đã được kiểm chứng và phải giữ đúng với người đọc.",
+    "nomark_title": "Nó không mang huy hiệu của ai.",
+    "nomark_body": "Tài liệu không chứa tên, logo hay nhận diện thị giác của bất kỳ cơ quan nào.",
+    "noendorse_title": "Dán lên không phải là sự bảo chứng của ai.",
+    "noendorse_body": "Nếu một cơ quan công quyền chọn dán áp phích này, sự hỗ trợ đó hoàn toàn mang tính thông tin và không cấu thành một khuyến nghị, chứng nhận, công nhận, cấp phép hay bảo đảm nào về nền tảng.",
+    "contact": "Cần khổ khác, số lượng in khác hay bản bằng ngôn ngữ khác, hãy viết đến"
+  },
   "footer": {
     "legal": "Rotabo là một nền tảng công nghệ. Tài xế là nhà cung cấp dịch vụ độc lập, không phải nhân viên của Rotabo.",
     "terms": "Điều khoản",

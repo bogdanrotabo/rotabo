@@ -851,6 +851,26 @@
     "offer_text": "Oferiți un serviciu, un obiect sau o mână de ajutor, și fiți găsit de cine are nevoie.",
     "offer_btn": "Publică ce oferi"
   },
+  "posters": {
+    "back": "Înapoi la rotabo.app",
+    "eyebrow": "Material pentru afișare publică",
+    "title": "Afișul Rotabo, gata de tipar",
+    "lead": "Același afiș, în mai multe limbi și în trei formate. Se descarcă și se tipărește liber, de oricine, gratuit — primării, biblioteci, școli, cabinete, asociații, magazine de cartier, sau un om care vrea să-l pună pe un avizier de bloc.",
+    "use_a4": "Se tipărește pe orice imprimantă de birou. Pentru aviziere de interior și ghișee.",
+    "use_a3": "Formatul obișnuit pentru panourile publice de informare.",
+    "use_a2": "Pentru panouri mari și afișaj stradal. Se citește de la distanță.",
+    "download": "Descarcă PDF",
+    "preview": "Cum arată",
+    "preview_fallback": "Previzualizarea PDF nu se poate afișa în acest browser.",
+    "preview_open": "Deschide afișul în format A4",
+    "free_title": "Se poate folosi liber.",
+    "free_body": "Afișul se tipărește și se expune fără să ne ceri voie și fără să plătești ceva. Te rugăm doar să nu modifici textul: informațiile de pe el sunt verificate și trebuie să rămână adevărate pentru omul care le citește.",
+    "nomark_title": "Nu poartă însemnele nimănui.",
+    "nomark_body": "Materialul nu conține numele, sigla sau identitatea vizuală a vreunei instituții.",
+    "noendorse_title": "Afișarea nu înseamnă girul nimănui.",
+    "noendorse_body": "Dacă o instituție publică alege să expună acest afiș, sprijinul are caracter strict informativ și nu reprezintă o recomandare, o certificare, o acreditare, o autorizare sau o garanție privind platforma.",
+    "contact": "Pentru alt format, alt tiraj sau o versiune în altă limbă, scrie la"
+  },
   "footer": {
     "legal": "Rotabo este o platformă tehnologică. Șoferii sunt furnizori independenți, nu angajați ai Rotabo.",
     "terms": "Termeni",

@@ -622,6 +622,26 @@
     "offer_text": "Tilbyd en ydelse, en ting eller en hånd, og bliv fundet af dem der har brug for det.",
     "offer_btn": "Slå op hvad du tilbyder"
   },
+  "posters": {
+    "back": "Tilbage til rotabo.app",
+    "eyebrow": "Materiale til offentlig opslag",
+    "title": "Rotabo-plakaten, klar til tryk",
+    "lead": "Den samme plakat, på flere sprog og i tre formater. Frit at downloade og printe, af hvem som helst, gratis — rådhuse, biblioteker, skoler, klinikker, foreninger, lokale butikker, eller en, der vil hænge den op på opslagstavlen i opgangen.",
+    "use_a4": "Printes på enhver kontorprinter. Til indendørs opslagstavler og skranker.",
+    "use_a3": "Det sædvanlige format til offentlige informationstavler.",
+    "use_a2": "Til store tavler og gadeopslag. Kan læses på afstand.",
+    "download": "Hent PDF",
+    "preview": "Sådan ser den ud",
+    "preview_fallback": "PDF-forhåndsvisningen kan ikke vises i denne browser.",
+    "preview_open": "Åbn plakaten i A4-format",
+    "free_title": "Fri at bruge.",
+    "free_body": "Print den og hæng den op uden at spørge os og uden at betale noget. Vi beder blot om, at du ikke ændrer teksten: oplysningerne på den er kontrolleret og skal blive ved med at være sande for den, der læser dem.",
+    "nomark_title": "Den bærer ingens mærke.",
+    "nomark_body": "Materialet indeholder ikke nogen institutions navn, logo eller visuelle identitet.",
+    "noendorse_title": "At hænge den op er ingens blåstempling.",
+    "noendorse_body": "Hvis en offentlig institution vælger at hænge denne plakat op, er den støtte udelukkende informativ og udgør ikke en anbefaling, certificering, akkreditering, godkendelse eller garanti vedrørende platformen.",
+    "contact": "For et andet format, et andet oplag eller en version på et andet sprog, skriv til"
+  },
   "footer": {
     "legal": "Rotabo er en teknologiplatform. Chauffører er selvstændige udbydere, ikke ansat af Rotabo.",
     "terms": "Vilkår",

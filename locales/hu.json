@@ -615,6 +615,26 @@
     "offer_text": "Ajánljon szolgáltatást, tárgyat vagy segítséget, és találják meg azok, akiknek kell.",
     "offer_btn": "Tedd közzé, mit kínálsz"
   },
+  "posters": {
+    "back": "Vissza a rotabo.app oldalra",
+    "eyebrow": "Nyilvános kihelyezésre szánt anyag",
+    "title": "A Rotabo plakát, nyomdakészen",
+    "lead": "Ugyanaz a plakát, több nyelven és három méretben. Szabadon letölthető és nyomtatható, bárki által, ingyen — önkormányzatok, könyvtárak, iskolák, rendelők, egyesületek, sarki boltok, vagy valaki, aki ki akarja tenni a lépcsőházi hirdetőtáblára.",
+    "use_a4": "Bármelyik irodai nyomtatón kinyomtatható. Beltéri hirdetőtáblákra és ügyfélpultokhoz.",
+    "use_a3": "A közérdekű hirdetőtáblák szokásos mérete.",
+    "use_a2": "Nagy tábláknak és utcai kihelyezésre. Távolról is olvasható.",
+    "download": "PDF letöltése",
+    "preview": "Így néz ki",
+    "preview_fallback": "A PDF-előnézet ebben a böngészőben nem jeleníthető meg.",
+    "preview_open": "A plakát megnyitása A4-es méretben",
+    "free_title": "Szabadon használható.",
+    "free_body": "Nyomtasd ki és tedd ki anélkül, hogy engedélyt kérnél tőlünk, és anélkül, hogy bármit fizetnél. Csak arra kérünk, hogy a szöveget ne változtasd meg: a rajta lévő információk ellenőrzöttek, és igaznak kell maradniuk annak, aki elolvassa.",
+    "nomark_title": "Senki jelvényét nem viseli.",
+    "nomark_body": "Az anyag semmilyen intézmény nevét, logóját vagy arculatát nem tartalmazza.",
+    "noendorse_title": "A kihelyezés senki jóváhagyása.",
+    "noendorse_body": "Ha egy közintézmény úgy dönt, hogy kiteszi ezt a plakátot, ez a támogatás kizárólag tájékoztató jellegű, és nem jelent ajánlást, tanúsítást, akkreditációt, engedélyt vagy garanciát a platformra vonatkozóan.",
+    "contact": "Más formátumért, más példányszámért vagy más nyelvű változatért írj ide"
+  },
   "footer": {
     "legal": "A Rotabo egy technológiai platform. A sofőrök független szolgáltatók, nem a Rotabo alkalmazottai.",
     "terms": "Feltételek",

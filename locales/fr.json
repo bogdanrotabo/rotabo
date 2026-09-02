@@ -787,6 +787,26 @@
     "offer_text": "Proposez un service, un objet ou un coup de main, et soyez trouvé par ceux qui en ont besoin.",
     "offer_btn": "Publier ce que vous offrez"
   },
+  "posters": {
+    "back": "Retour à rotabo.app",
+    "eyebrow": "Support pour affichage public",
+    "title": "L'affiche Rotabo, prête à imprimer",
+    "lead": "La même affiche, en plusieurs langues et en trois formats. À télécharger et à imprimer librement, par tout le monde, gratuitement — mairies, bibliothèques, écoles, cabinets, associations, commerces de quartier, ou quelqu'un qui veut la mettre sur le panneau de son immeuble.",
+    "use_a4": "S'imprime sur n'importe quelle imprimante de bureau. Pour les panneaux intérieurs et les guichets.",
+    "use_a3": "Le format habituel des panneaux d'information publique.",
+    "use_a2": "Pour les grands panneaux et l'affichage en rue. Se lit de loin.",
+    "download": "Télécharger le PDF",
+    "preview": "À quoi elle ressemble",
+    "preview_fallback": "L'aperçu PDF ne peut pas s'afficher dans ce navigateur.",
+    "preview_open": "Ouvrir l'affiche au format A4",
+    "free_title": "Libre d'utilisation.",
+    "free_body": "Imprimez-la et affichez-la sans nous demander et sans rien payer. Merci simplement de ne pas modifier le texte : les informations qui y figurent sont vérifiées et doivent rester vraies pour celui qui les lit.",
+    "nomark_title": "Elle ne porte les armes de personne.",
+    "nomark_body": "Le support ne contient ni le nom, ni le logo, ni l'identité visuelle d'aucune institution.",
+    "noendorse_title": "L'afficher n'est la caution de personne.",
+    "noendorse_body": "Si une institution publique choisit d'afficher cette affiche, ce soutien a un caractère strictement informatif et ne constitue ni une recommandation, ni une certification, ni une accréditation, ni une autorisation, ni une garantie concernant la plateforme.",
+    "contact": "Pour un autre format, un autre tirage ou une version dans une autre langue, écrivez à"
+  },
   "footer": {
     "legal": "Rotabo est une plateforme technologique. Les chauffeurs sont des prestataires indépendants, non des employés de Rotabo.",
     "terms": "Conditions",
