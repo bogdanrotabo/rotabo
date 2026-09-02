@@ -524,9 +524,15 @@
     var filterInput = document.getElementById("countryFilter");
     var filterBtn = document.getElementById("countryFilterBtn");
     var cityInput = document.getElementById("cityFilter");
+    // A placeholder is not a label: it is a hint that disappears the moment
+    // someone types, and a screen reader announces these two fields as
+    // "edit text, blank". Same wording, so there is nothing extra to
+    // translate and the two can never say different things.
     filterInput.placeholder = tr("country_filter_placeholder");
+    filterInput.setAttribute("aria-label", tr("country_filter_placeholder"));
     filterBtn.textContent = tr("search_btn");
     cityInput.placeholder = tr("city_filter_placeholder");
+    cityInput.setAttribute("aria-label", tr("city_filter_placeholder"));
     // The city picker on the home page has already asked which city, and
     // arriving here to an empty filter would throw that answer away and show
     // the whole world again. Country comes as an ISO code from the same
