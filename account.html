@@ -196,6 +196,25 @@
 (function(){
   var SUPABASE_URL = "https://auth.rotabo.app";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w";
+  // The Supabase CDN script is the one dependency this page cannot open
+  // without, and it comes from jsdelivr -- which fails on an offline PWA
+  // launch, on networks that block the CDN, and behind some content
+  // blockers. browse.html, index.html and viewer.js all guard this
+  // already; this page did not, and threw a TypeError on the next line
+  // instead. Everything here renders into one spinner, so the failure was
+  // not a missing feature: the page sat spinning forever with nothing on
+  // screen to say why. Same wording as browse.html, and deliberately not
+  // translated -- the dictionary is loaded further down and is not
+  // reachable from here.
+  if (!window.supabase) {
+    var boot = document.getElementById("content");
+    if (boot) {
+      boot.innerHTML = '<div class="card"><div class="auth-note"></div></div>';
+      boot.querySelector(".auth-note").textContent = "No connection \u2014 please reload";
+    }
+    return;
+  }
+
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
   // Google's own four-colour G, inline so the sign-in button never waits

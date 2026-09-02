@@ -765,8 +765,23 @@
         unlockBtn.addEventListener("click", function(){
           if (!window.RotaboViewer) return;
           window.RotaboViewer.reveal({ number: row.number, onDetails: function(details){
-            var match = (details || []).filter(function(x){ return x.category === category && x.role === browseRole; });
-            var d = match[0] || (details && details[0]) || {};
+            // browse_public numbers people, not listings: rotabo_numbers is
+            // joined on the listing's email, so one person with two listings
+            // in the same category comes back as two cards carrying the same
+            // number, and get_listing_details answers for both. Nothing in
+            // that reply tells them apart except the city, so narrow on it.
+            //
+            // The fallback here used to be "match[0] || details[0]", which on
+            // a miss took whatever row happened to be first -- including one
+            // from a different category, so unlocking a plumber could print
+            // the note written for babysitting. A wrong note is worse than no
+            // note. If this category has no row at all the listing expired
+            // between the page rendering and the click: leave the card alone.
+            var rows = details || [];
+            var same = rows.filter(function(x){ return x.category === category && x.role === browseRole; });
+            var exact = same.filter(function(x){ return (x.city || "") === (row.city || ""); });
+            var d = exact[0] || same[0];
+            if (!d) return;
             unlockBtn.hidden = true;
             var addressEl = card.querySelector(".address");
             if (d.address) { addressEl.textContent = d.address; addressEl.hidden = false; }
