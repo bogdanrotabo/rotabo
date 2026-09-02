@@ -316,6 +316,11 @@
         if (dict && dict.browse_page) {
           Object.assign(T, dict.browse_page);
         }
+        // The header link to the account page was hardcoded English, on a
+        // page that translates everything else. Same phrase, same dictionary
+        // entry the site's menu uses.
+        var navAcc = dict && dict.nav && dict.nav.account;
+        if (navAcc) document.getElementById("accountLink").textContent = navAcc;
         var catDict = (dict && dict.categories && dict.categories[category]) || {};
         if (catDict.name) categoryName = catDict.name;
         // The two titles below are built from a template that assumes the

@@ -46,7 +46,11 @@
   .brand svg.mark-gold{filter:drop-shadow(0 4px 10px rgba(196,140,0,.28));}
 
   .wrap{max-width:640px;margin:0 auto;padding:48px 24px 80px;}
-  .eyebrow{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.82rem;font-weight:700;margin-bottom:10px;}
+  /* Uppercased here rather than typed in capitals, so the word can come
+     from the dictionary. CSS casing follows the document language, which
+     is set alongside it, and scripts without case are left alone. */
+  .eyebrow{color:var(--text-eyebrow);letter-spacing:.1em;font-size:.82rem;font-weight:700;margin-bottom:10px;
+           text-transform:uppercase;}
   h1{color:var(--text-dark);font-size:1.7rem;margin:0 0 8px;}
   .sub{color:var(--text-body);font-size:1rem;margin:0 0 32px;}
 
@@ -182,7 +186,7 @@
 </header>
 
 <div class="wrap">
-  <p class="eyebrow" id="pageEyebrow">MY ACCOUNT</p>
+  <p class="eyebrow" id="pageEyebrow">My account</p>
   <h1 id="pageTitle">My account</h1>
   <p class="sub" id="pageSub">Log in to see everything you've listed, from any device.</p>
 
@@ -294,6 +298,22 @@
         // so translate it here once the dictionary is in.
         document.getElementById("pageTitle").textContent = T.title;
         document.getElementById("pageSub").textContent = T.subtitle;
+        // The eyebrow above them was the one word on this page that stayed
+        // English in all 38 languages. nav.account is the same phrase the
+        // site's own menu uses for this page, already translated everywhere.
+        //
+        // It says the same thing the title does. In English that reads as a
+        // flourish because the case differs -- MY ACCOUNT over My account --
+        // but Japanese and Arabic have no case, so the flourish becomes the
+        // same words printed twice. Kept where the case makes it one, dropped
+        // where it does not.
+        var nav = dict && dict.nav && dict.nav.account;
+        var eyebrow = document.getElementById("pageEyebrow");
+        if (nav) {
+          eyebrow.textContent = nav;
+          eyebrow.hidden = nav.toUpperCase() === nav.toLowerCase()
+                        && nav.trim() === String(T.title || "").trim();
+        }
       })
       .catch(function(){});
   }
