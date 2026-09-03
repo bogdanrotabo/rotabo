@@ -11,6 +11,27 @@
   gtag('config', 'G-ZSR8ZKJ4RL');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- fara cadru -->
+<script>
+/* Nobody frames this page.
+
+   The proper way to say that is a header -- frame-ancestors, or the older
+   X-Frame-Options -- and GitHub Pages does not let this repository set one.
+   Until that goes in at the edge, this is what is left, and it is aimed at a
+   real attack rather than a checkbox: somebody puts rotabo.app in an invisible
+   iframe under their own page, lines one of their buttons up with a button
+   here, and a click meant for them lands on something of yours.
+
+   Two moves, because either can be refused alone. Take the top window back --
+   which a sandboxed frame can block, and does. And, blocked or not, draw
+   nothing: a page that renders nothing has no button for anybody to line
+   anything up with. Before the first paint, so there is no moment in which
+   the trap could be sprung. */
+if (window.top !== window.self) {
+  try { window.top.location = window.self.location; } catch (e) { /* cross-origin: refused */ }
+  document.documentElement.style.display = 'none';
+}
+</script>
 <title>My Account — Rotabo</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
