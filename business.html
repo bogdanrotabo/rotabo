@@ -408,11 +408,11 @@ if (window.top !== window.self) {
     font-weight:800;color:var(--violet-1);
     font-variant-numeric:tabular-nums;
   }
-  /* The dot belonged to the "online now" item and went out with it, and a
-     bar with one still line on it stopped reading as live -- which is the
-     one thing a counter is for. It sits on the visitor total now: the
-     number it beats beside is cumulative, but the site it reports on is
-     the one being used this second, and that is what the dot says. */
+  /* The dot sits on "online now", where the number beside it is the one that
+     changes while you watch. It spent a while on the visitor total instead,
+     because that was the only line left when "online now" was out of the
+     markup, and a bar with one still line on it stopped reading as live --
+     which is the one thing a counter is for. */
   .pulse-dot{
     width:8px;height:8px;border-radius:50%;
     background:#22a45d;
@@ -1542,15 +1542,22 @@ if (window.top !== window.self) {
   </div>
 </header>
 
-<!-- Live counter: visitors so far. Hidden until site_pulse() answers, see
-     the CSS note. "Online now" used to stand in front of it and is out of the
-     markup again -- on a quiet hour a small number of people online says the
-     opposite of what the visitor total says, and the two were read together.
-     The heartbeat still runs: site_pulse() writes it and returns the total in
-     one call, so the count behind it stays real. -->
+<!-- Live counter: how many people are on the site this minute, and how many
+     have ever been. Both numbers come back from the one site_pulse() call.
+     Hidden until it answers, see the CSS note: a zero shown before the first
+     reply reads as "nobody" when it only means "not asked yet".
+
+     "Online now" was taken out for a while, on the argument that a small
+     number on a quiet hour says the opposite of what the visitor total says.
+     Back since 2026-09-04 -- the heartbeat never stopped being written, so
+     it did not come back starting from zero. -->
 <div class="pulse-bar" id="pulseBar" role="status" aria-live="polite">
   <span class="pulse-item">
     <span class="pulse-dot" aria-hidden="true"></span>
+    <span class="pulse-num" id="pulseOnline">–</span>
+    <span data-i18n="pulse.online">online now</span>
+  </span>
+  <span class="pulse-item">
     <span class="pulse-num" id="pulseTotal">–</span>
     <span data-i18n="pulse.total">visitors so far</span>
   </span>
