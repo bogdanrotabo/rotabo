@@ -87,6 +87,9 @@
     font-size:.87rem;font-weight:700;color:var(--violet-1);
   }
   .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green);}
+  .badge img{width:18px;height:18px;display:block;flex-shrink:0;}
+  a.badge{text-decoration:none;}
+  a.badge:hover{border-color:var(--diamond-a);}
 
   /* ---------------------------------------------------------- countdown */
   .clock{
@@ -202,9 +205,16 @@
     <p class="lede">The Rotabo token, launched on <strong>pump.fun</strong> on the
       Solana network. This page is where its official address lives.</p>
 
+    <!-- Each of the two carries the mark of the thing it names, taken from
+         that thing itself: Solana's is the one their own page serves as its
+         icon, pump.fun's is theirs. Both link out, because a reader who does
+         not know what either is should be one click from finding out rather
+         than from a search box. -->
     <div class="badges">
-      <span class="badge">Solana</span>
-      <span class="badge">pump.fun</span>
+      <a class="badge" href="https://solana.com" target="_blank" rel="noopener">
+        <img src="/solana-logo.svg" alt="" width="18" height="18" decoding="async">Solana</a>
+      <a class="badge" href="https://pump.fun" target="_blank" rel="noopener">
+        <img src="/pumpfun-logo.png" alt="" width="18" height="18" decoding="async">pump.fun</a>
       <span class="badge" id="stateBadge"><span class="dot"></span><span id="stateText">Launching today</span></span>
     </div>
 

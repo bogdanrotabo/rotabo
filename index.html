@@ -301,6 +301,22 @@ if (window.top !== window.self) {
     .ticker__track{animation:none;}
   }
 
+  /* The token band. It keeps the sponsors band's violet -- which is the
+     mark's own gradient, the same three colours the gems are filled with --
+     so the two stripes read as one site rather than as something stuck on
+     top. What tells it apart is what it carries: the mark itself on the left
+     of every unit, and after the launch the pump.fun capsule beside it. */
+  .tick--token{
+    display:inline-flex;align-items:center;gap:11px;
+    padding:0 26px;white-space:nowrap;text-decoration:none;
+    font-size:15px;line-height:1.4;color:var(--tick-label);
+  }
+  .tick--token .mk{display:flex;gap:3px;height:26px;flex-shrink:0;}
+  .tick--token .mk svg{height:100%;width:auto;display:block;}
+  .tick--token img{height:26px;width:26px;display:block;flex-shrink:0;}
+  .tick--token b{font-weight:800;color:#fff;}
+  .tick--token .when{font-weight:700;color:var(--tick-num);}
+
   /* The second band. Gold whatever the palette says, because it is the
      business side seen from the personal one -- swapped with the page it
      would stop meaning anything. Violet lettering, since #ffd41a cannot
@@ -1510,6 +1526,14 @@ if (window.top !== window.self) {
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>
 </svg>
+
+<!-- The token band, first on the page because it is the news. It runs on a
+     clock rather than on a deploy: before 20:00 Swiss time it says the token
+     is coming, and after it, it says where it is -- see the script at the
+     bottom, which is also where the launch time and the mint address live. -->
+<div class="ticker ticker--token" id="tokenBand" hidden aria-label="Rotabo Token">
+  <div class="ticker__track" id="tokenTrack"></div>
+</div>
 
 <!-- Filled by the band script at the bottom of the page. It ships empty and
      stays hidden until there is something to run, so a database that does not
@@ -5795,5 +5819,80 @@ if ("serviceWorker" in navigator) {
 })();
 </script>
 
+<script>
+/* ---------------------------------------------------------------------
+   The token band.
+   ---------------------------------------------------------------------
+   It runs on a clock, not on a deploy: nobody has to be awake at 20:00 to
+   push a change. Three states, and the difference between the last two is
+   the whole reason this is not a single timer that flips a sentence --
+
+     before the hour   the token is coming, at a time written out with its
+                       offset so it is the same moment in every country
+     after it, no mint the coin is being created; the band says "launching
+                       now" and points at the page that will carry the
+                       address
+     after it, a mint  it is live, and the band says so beside pump.fun's
+                       own mark
+
+   A clock alone would announce a launch that had not happened yet if the
+   hour passed and the coin did not appear. It says what is true instead,
+   and the address is what moves it to the last state.
+
+   MINT is the one thing to fill in, and crypto.html holds the same string
+   in the same shape -- two places, on purpose: this band must keep working
+   if that page is ever rewritten. */
+(function () {
+  var band  = document.getElementById('tokenBand');
+  var track = document.getElementById('tokenTrack');
+  if (!band || !track) return;
+
+  var LANSARE = new Date('2026-09-04T20:00:00+02:00').getTime();
+  var MINT = '';
+
+  var MARCA = '<span class="mk" aria-hidden="true">'
+    + '<svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>'
+    + '<svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>'
+    + '</span>';
+  var PUMP = '<img src="/pumpfun-logo.png" alt="" width="26" height="26" loading="lazy" decoding="async">';
+
+  function stare() {
+    if (Date.now() < LANSARE) return 'inainte';
+    return MINT ? 'live' : 'acum';
+  }
+
+  function unitate(st) {
+    if (st === 'inainte') {
+      return MARCA + '<b>Rotabo Token</b>'
+           + '<span class="when">launching today at 20:00, Swiss time</span>';
+    }
+    if (st === 'live') {
+      return MARCA + '<b>Rotabo Token</b><span class="when">is live on</span>' + PUMP + '<b>pump.fun</b>';
+    }
+    return MARCA + '<b>Rotabo Token</b><span class="when">launching now on</span>' + PUMP + '<b>pump.fun</b>';
+  }
+
+  var ultima = null;
+  function deseneaza() {
+    var st = stare();
+    if (st === ultima) return;          /* leave the animation alone */
+    ultima = st;
+
+    var u = '<a class="tick tick--token" href="/crypto.html">' + unitate(st) + '</a>';
+    /* Three units, then the same three again: the keyframe walks the track
+       to -50%, so the second half has to be the first half exactly. */
+    track.innerHTML = u + u + u + u + u + u;
+
+    /* Set from the measured width, like the other bands: a fixed duration
+       makes a short band crawl and a long one sprint. */
+    var jumatate = track.scrollWidth / 2;
+    track.style.animationDuration = Math.max(20, Math.round(jumatate / 55)) + 's';
+    band.hidden = false;
+  }
+
+  deseneaza();
+  setInterval(deseneaza, 1000);
+})();
+</script>
 </body>
 </html>
