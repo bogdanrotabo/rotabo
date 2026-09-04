@@ -70,10 +70,26 @@ function pereche(boxX, boxY, boxW, boxH) {
 
 /* The coin image: Save-Icon 1000 0.04, with no background, which is exactly
    what icons/icon-512.png is -- its corner pixel has alpha 0. */
-function logo() {
+function logo(fundal) {
   const S = 1000, inset = S * 0.04;
+  /* Transparent is what the official icon is, and it is right on a dark UI.
+     It is also what a phone gallery paints black and a document viewer paints
+     white, which makes the file look broken to anyone checking it outside a
+     browser -- so the same drawing is also written onto the card's own ground,
+     and the one to upload is whichever place it is going renders honestly. */
+  const spate = fundal
+    ? `<rect width="${S}" height="${S}" fill="url(#ground)"/>`
+    : '';
+  const g = fundal
+    ? `${grad()}
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="${GROUND_A}"/>
+    <stop offset="100%" stop-color="${GROUND_B}"/>
+  </linearGradient>`
+    : grad();
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${S} ${S}" width="${S}" height="${S}">
-  <defs>${grad()}</defs>
+  <defs>${g}</defs>
+  ${spate}
   ${pereche(inset, inset, S - inset * 2, S - inset * 2)}
 </svg>
 `;
@@ -100,7 +116,8 @@ function banner() {
 }
 
 const IESIRI = [
-  ['crypto-logo.png', 1000, 1000, logo()],
+  ['crypto-logo.png', 1000, 1000, logo(false)],
+  ['crypto-logo-fundal.png', 1000, 1000, logo(true)],
   ['crypto-banner.png', 1500, 500, banner()],
 ];
 
