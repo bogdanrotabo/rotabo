@@ -1527,14 +1527,6 @@ if (window.top !== window.self) {
   </defs>
 </svg>
 
-<!-- The token band, first on the page because it is the news. It runs on a
-     clock rather than on a deploy: before 20:00 Swiss time it says the token
-     is coming, and after it, it says where it is -- see the script at the
-     bottom, which is also where the launch time and the mint address live. -->
-<div class="ticker ticker--token" id="tokenBand" hidden aria-label="Rotabo Token">
-  <div class="ticker__track" id="tokenTrack"></div>
-</div>
-
 <!-- Filled by the band script at the bottom of the page. It ships empty and
      stays hidden until there is something to run, so a database that does not
      answer leaves no violet stripe with nothing in it. -->
@@ -1547,6 +1539,14 @@ if (window.top !== window.self) {
      site, so it stays gold here and is not drawn at all over there. -->
 <div class="ticker ticker--biz" id="tickerBiz" hidden aria-label="Rotabo for business">
   <div class="ticker__track"></div>
+</div>
+
+<!-- The token band, under the gold one. It runs on a clock rather than on a
+     deploy: before 20:00 Swiss time it says the token is coming, and after
+     it, it says where it is -- see the script at the bottom of this file,
+     which is also where the launch time and the mint address live. -->
+<div class="ticker ticker--token" id="tokenBand" hidden aria-label="Rotabo Token">
+  <div class="ticker__track" id="tokenTrack"></div>
 </div>
 
 <header>
