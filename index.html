@@ -475,8 +475,16 @@ if (window.top !== window.self) {
      business mode instead of staying violet on a yellow page; the gem inside
      the circle is what says which door it is. */
   .door-crypto{grid-column:1 / -1;width:100%;max-width:352px;margin:0 auto;}
-  .door-crypto .door-icon, .door-crypto .door-btn{background:var(--diamond-b);}
-  .door-crypto .door-icon svg{width:23px;height:30px;}
+  .door-crypto .door-btn{background:var(--diamond-b);}
+  /* The mark itself rather than an icon in a circle: the other two doors are
+     places on this site and get a drawing of what they are for, this one is
+     Rotabo's own thing and gets Rotabo's own face. Held to the 54px the
+     circles above it stand at, so the three cards still line up. */
+  .door-mark{
+    display:flex;align-items:center;justify-content:center;gap:5px;
+    height:54px;flex-shrink:0;
+  }
+  .door-mark svg{height:100%;width:auto;display:block;}
   /* Ink, not fill. These were the diamond's own two ends, which works while
      the brand is dark and fails the moment it is not: on the business side
      the same variables are yellow, and yellow lettering on a cream card
@@ -485,18 +493,11 @@ if (window.top !== window.self) {
   .door-need  .door-title{color:var(--ink-strong);}
   .door-offer .door-title{color:var(--ink-soft);}
   @media(max-width:560px){ .doors{grid-template-columns:1fr;} }
-  /* Main partner band -- see the comment on its markup in the hero.
-     The label was 2.7rem, three times the origin badge, from back when the
-     band opened the page and had to carry it alone. It does not any more:
-     it sits under the share bar, and the free-signup line above says the
-     thing that actually matters. Halved to 1.35rem, which is also what
-     fixes a phone -- the free line shrinks with the viewport and this
-     label, a flat rem, did not, so the sponsor slot shouted louder than
-     the offer on exactly the screens where space is scarce. Still flat
-     rather than clamp(): "Main Partner" is two words, and the longest
-     translation of it, the Bengali one, holds one line at this size.
-     break-word is the seatbelt for a locale added later with one very
-     long word. */
+  /* The band under the share bar -- see the comment on its markup in the
+     hero. It carried a heading once, at 2.7rem and then at 1.35rem, from
+     back when it opened the page and had to carry it alone. The heading is
+     gone with the words it said; what stands here now are two marks that
+     name themselves. */
   .main-partner{
     max-width:720px;
     margin:30px auto 0;
@@ -1619,7 +1620,10 @@ if (window.top !== window.self) {
          to every visitor for as long as the site stands, and a date in it is
          wrong the day after; the page it opens carries the clock. -->
     <a class="door door-crypto" href="/crypto.html">
-      <span class="door-icon" aria-hidden="true"><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg></span>
+      <span class="door-mark" aria-hidden="true">
+        <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+        <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
+      </span>
       <span class="door-title" data-i18n="choose.crypto_title">Rotabo Crypto</span>
       <span class="door-text" data-i18n="choose.crypto_text">The Rotabo token, on the Solana network.</span>
       <span class="door-btn" data-i18n="choose.crypto_btn">Open Rotabo Crypto</span>
