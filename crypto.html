@@ -114,6 +114,13 @@
     margin-top:7px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
     font-size:.9rem;color:#fff;word-break:break-all;line-height:1.5;
   }
+  /* The waiting state: not monospace, not white, nothing that could be
+     mistaken for an address at a glance. */
+  .addr .v.gol{
+    font-family:inherit;font-size:.93rem;color:#c9a9dd;font-style:italic;
+    word-break:normal;
+  }
+  .addr button[hidden]{display:none;}
   .addr button{
     margin-top:12px;width:100%;padding:11px 14px;border:0;border-radius:11px;
     background:var(--diamond-a);color:#fff;font:inherit;font-weight:800;cursor:pointer;
@@ -211,10 +218,21 @@
       </div>
       <div class="live-note" id="liveNote" hidden>It is live.</div>
 
-      <div class="addr" id="addrBox" hidden>
+      <!-- The slot for the address, always on the page. Before the coin
+           exists it stands here empty and says so, because a reader has to
+           be able to learn where the real address will be *before* the
+           launch -- that is the half hour when the copies go up and the
+           only defence anyone has is knowing which page to come back to.
+
+           Empty is not a placeholder. There is no example address, no
+           greyed-out string of the right shape, nothing that could be
+           copied by mistake: a page that prints something address-shaped
+           in this box is a page teaching people to trust whatever is in
+           this box. -->
+      <div class="addr" id="addrBox">
         <div class="k">Official contract address</div>
         <div class="v" id="addrV"></div>
-        <button type="button" id="copyBtn">Copy address</button>
+        <button type="button" id="copyBtn" hidden>Copy address</button>
       </div>
 
       <a class="cta" id="buyBtn" href="#how" aria-disabled="true">Buy on pump.fun</a>
@@ -358,15 +376,20 @@ var TOKEN = {
     });
   }
 
-  /* The address is only ever shown when there is one. A page that prints a
-     placeholder where a contract address goes is a page that teaches people
-     to trust whatever is in that box. */
+  /* The box is always shown; what changes is whether it holds an address or
+     the reason there is not one yet. */
+  var copyBtn = document.getElementById('copyBtn');
   if (TOKEN.MINT) {
     addrV.textContent = TOKEN.MINT;
-    addrBox.hidden = false;
+    addrV.classList.remove('gol');
+    copyBtn.hidden = false;
+  } else {
+    addrV.textContent =
+      'Not created yet. The address appears here the moment the coin exists ' +
+      'on pump.fun \u2014 published on this page first, and nowhere else before it.';
+    addrV.classList.add('gol');
   }
 
-  var copyBtn = document.getElementById('copyBtn');
   if (copyBtn) {
     copyBtn.addEventListener('click', function () {
       navigator.clipboard.writeText(TOKEN.MINT).then(function () {

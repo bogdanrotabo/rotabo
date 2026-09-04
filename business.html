@@ -504,13 +504,6 @@ if (window.top !== window.self) {
     max-width:720px;
     margin:30px auto 0;
   }
-  .mp-label{
-    margin:0;
-    font-size:1.35rem;
-    line-height:1.15;letter-spacing:-.01em;
-    overflow-wrap:break-word;
-    font-weight:800;color:var(--violet-1);
-  }
   .mp-invite{
     margin:10px 0 0;
     font-size:.95rem;font-weight:600;color:var(--text-eyebrow);
@@ -518,25 +511,45 @@ if (window.top !== window.self) {
   .mp-list{display:flex;flex-direction:column;gap:6px;margin-top:14px;}
   .mp-list[hidden]{display:none;}
 
-  /* The band is Rotabo's page, but the mark standing in it is TopTen's, so it
-     keeps TopTen's ground: near-black, with the gold that only reads against
-     it. Redrawn in this page's lavender it would be a different wordmark. */
-  .mp-gift{
-    display:inline-flex;flex-direction:column;align-items:center;gap:5px;
-    margin-top:16px;padding:16px 30px;
-    background:#1c1b19;border:1px solid #2b2926;border-radius:16px;
-    text-decoration:none;
+  /* The band is Rotabo's page, but the marks standing in it are not Rotabo's,
+     so each keeps its own ground -- gift.ceo's near-black with its gold,
+     topten.one's black with its violet. Redrawn in this page's lavender they
+     would be different wordmarks.
+
+     One row, two equal halves: flex:1 1 0 makes them the same width whatever
+     the words are, and stretch makes them the same height. Neither is bigger
+     than the other because neither is more than the other. */
+  .mp-brands{
+    display:flex;align-items:stretch;gap:14px;
+    margin-top:16px;
   }
+  .mp-brands[hidden]{display:none;}
+  .mp-brand{
+    flex:1 1 0;min-width:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+    padding:16px 20px;border-radius:16px;text-decoration:none;
+  }
+  .mp-brand .mp-gc-mark{
+    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;
+  }
+  .mp-brand .mp-gc-mark b{font-weight:800;}
+  .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;}
+
+  .mp-gift{background:#1c1b19;border:1px solid #2b2926;}
   .mp-gift:hover{border-color:#d9a63c;}
-  .mp-gift[hidden]{display:none;}
-  .mp-gift .mp-gc-mark{
-    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;
-    color:#f2f0ec;line-height:1.1;
-  }
-  .mp-gift .mp-gc-mark b{color:#d9a63c;font-weight:800;}
-  .mp-gift .mp-gc-tag{
-    font-size:.82rem;font-weight:700;color:#a09b93;
-  }
+  .mp-gift .mp-gc-mark{color:#f2f0ec;}
+  .mp-gift .mp-gc-mark b{color:#d9a63c;}
+  .mp-gift .mp-gc-tag{color:#a09b93;}
+
+  .mp-topten{background:#000;border:1px solid #241a2e;}
+  .mp-topten:hover{border-color:#cd6ff0;}
+  .mp-topten .mp-gc-mark{color:#fbf6fd;}
+  .mp-topten .mp-gc-mark b{color:#cd6ff0;}
+  .mp-topten .mp-gc-tag{color:#b3a3c0;}
+
+  /* Side by side is the point, but not at 320px: below that the two words
+     stop fitting and the marks start hyphenating. */
+  @media(max-width:560px){ .mp-brands{flex-direction:column;} }
   .mp-name{font-size:1.35rem;font-weight:800;color:var(--text-dark);text-decoration:none;}
   a.mp-name{color:var(--violet-2);}
   .mp-loc{font-size:.9rem;font-weight:600;color:var(--text-eyebrow);}
@@ -1673,17 +1686,28 @@ if (window.top !== window.self) {
        as broken, and a heading with nothing under it would imply a
        partner we do not have. -->
   <div class="main-partner">
-    <p class="mp-label" data-i18n="main_partner.label">Main Partner</p>
     <div class="mp-list" id="mainPartnerList" hidden></div>
-    <!-- TopTen.one holds the band until a paying partner takes it. Its own
-         wordmark on its own ground, linking straight out to the site; the
-         invitation below is hidden while the place is occupied, and
-         renderMainPartner() hides this the moment a real principal sponsor
-         exists, so the band never shows two. -->
-    <a class="mp-gift" id="mainPartnerGift" href="https://gift.ceo" target="_blank" rel="noopener">
-      <span class="mp-gc-mark">gift<b>.ceo</b></span>
-      <span class="mp-gc-tag">Only CEOs give here.</span>
-    </a>
+    <!-- The other two sites hold the band until a paying partner takes it,
+         side by side and the same size: neither is the main one. Each wears
+         its own ground and its own wordmark -- redrawn in this page's
+         lavender they would be different marks. The invitation below is
+         hidden while the place is occupied, and renderMainPartner() hides
+         the pair the moment a real principal sponsor exists, so the band
+         never shows three.
+
+         The "Main Partner" heading above them is gone. Two of the owner's
+         own sites are not a partner, and calling them one was the band
+         claiming something it did not have. -->
+    <div class="mp-brands" id="mainPartnerBrands">
+      <a class="mp-brand mp-gift" href="https://gift.ceo" target="_blank" rel="noopener">
+        <span class="mp-gc-mark">gift<b>.ceo</b></span>
+        <span class="mp-gc-tag">Only CEOs give here.</span>
+      </a>
+      <a class="mp-brand mp-topten" href="https://topten.one" target="_blank" rel="noopener">
+        <span class="mp-gc-mark">TopTen<b>.one</b></span>
+        <span class="mp-gc-tag">Be the one.</span>
+      </a>
+    </div>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
   </div>
 
@@ -3272,9 +3296,9 @@ if (window.top !== window.self) {
     // removed: the i18n engine still rewrites it on every language switch.
     var invite = document.getElementById("mainPartnerInvite");
     if (invite) invite.hidden = true;
-    // A paying partner takes the band; the stand-in steps out rather than
-    // sharing it.
-    var tt = document.getElementById("mainPartnerGift");
+    // A paying partner takes the band; the two stand-ins step out together
+    // rather than sharing it.
+    var tt = document.getElementById("mainPartnerBrands");
     if (tt) tt.hidden = true;
   }
 
