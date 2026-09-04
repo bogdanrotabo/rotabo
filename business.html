@@ -408,10 +408,11 @@ if (window.top !== window.self) {
     font-weight:800;color:var(--violet-1);
     font-variant-numeric:tabular-nums;
   }
-  /* Kept, though nothing wears it right now: the dot belongs to the
-     "online now" item, which is out of the markup until the figure is
-     worth showing. Deleting these rules would only mean writing them
-     again. */
+  /* The dot belonged to the "online now" item and went out with it, and a
+     bar with one still line on it stopped reading as live -- which is the
+     one thing a counter is for. It sits on the visitor total now: the
+     number it beats beside is cumulative, but the site it reports on is
+     the one being used this second, and that is what the dot says. */
   .pulse-dot{
     width:8px;height:8px;border-radius:50%;
     background:#22a45d;
@@ -1549,6 +1550,7 @@ if (window.top !== window.self) {
      one call, so the count behind it stays real. -->
 <div class="pulse-bar" id="pulseBar" role="status" aria-live="polite">
   <span class="pulse-item">
+    <span class="pulse-dot" aria-hidden="true"></span>
     <span class="pulse-num" id="pulseTotal">–</span>
     <span data-i18n="pulse.total">visitors so far</span>
   </span>
@@ -4561,6 +4563,21 @@ if ("serviceWorker" in navigator) {
     if (pulseBar) {
       pulse();
       pulseTimer = setInterval(pulse, 45000);
+      // The bar is display:none until the first answer arrives, so one
+      // failed call -- a phone that lost signal in the second the page
+      // loaded, a blocker that ate the request -- hides the counter for the
+      // next forty-five seconds. Three quick retries cost nothing and turn
+      // that into a wait nobody notices. They stop as soon as one lands.
+      (function () {
+        var incercari = 0;
+        var din_nou = setInterval(function () {
+          if (pulseBar.getAttribute("data-ready") === "1" || ++incercari > 3) {
+            clearInterval(din_nou);
+            return;
+          }
+          pulse();
+        }, 4000);
+      })();
       // A tab brought back to the front should not wait up to 45s to be
       // counted again -- by then its own heartbeat has already expired.
       document.addEventListener("visibilitychange", function(){
