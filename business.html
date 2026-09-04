@@ -1545,7 +1545,7 @@ if (window.top !== window.self) {
 </div>
 
 <!-- The token band, under the gold one. It runs on a clock rather than on a
-     deploy: before 20:00 Swiss time it says the token is coming, and after
+     deploy: before 21:00 Swiss time it says the token is coming, and after
      it, it says where it is -- see the script at the bottom of this file,
      which is also where the launch time and the mint address live. -->
 <div class="ticker ticker--token" id="tokenBand" hidden aria-label="Rotabo Token">
@@ -5826,7 +5826,7 @@ if ("serviceWorker" in navigator) {
 /* ---------------------------------------------------------------------
    The token band.
    ---------------------------------------------------------------------
-   It runs on a clock, not on a deploy: nobody has to be awake at 20:00 to
+   It runs on a clock, not on a deploy: nobody has to be awake at 21:00 to
    push a change. Three states, and the difference between the last two is
    the whole reason this is not a single timer that flips a sentence --
 
@@ -5850,7 +5850,7 @@ if ("serviceWorker" in navigator) {
   var track = document.getElementById('tokenTrack');
   if (!band || !track) return;
 
-  var LANSARE = new Date('2026-09-04T20:00:00+02:00').getTime();
+  var LANSARE = new Date('2026-09-04T21:00:00+02:00').getTime();
   var MINT = '';
 
   var MARCA = '<span class="mk" aria-hidden="true">'
@@ -5867,7 +5867,7 @@ if ("serviceWorker" in navigator) {
   function unitate(st) {
     if (st === 'inainte') {
       return MARCA + '<b>Rotabo Token</b>'
-           + '<span class="when">launching today at 20:00, Swiss time</span>';
+           + '<span class="when">launching today at 21:00, Swiss time</span>';
     }
     if (st === 'live') {
       return MARCA + '<b>Rotabo Token</b><span class="when">is live on</span>' + PUMP + '<b>pump.fun</b>';
