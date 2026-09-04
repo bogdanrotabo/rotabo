@@ -247,11 +247,14 @@ async function handleManualPayment(opts: {
   refId: string | null;
   customerEmail: string | null;
   note?: string | null;
+  // Whether the person who paid should hear from Rotabo at all. False
+  // when we cannot tell whose sale this was -- see alNostru below.
+  notifyBuyer?: boolean;
 }): Promise<void> {
   const amount = fmtAmount(opts.amountTotal, opts.currency);
   const what = opts.productName || "your Rotabo purchase";
 
-  if (opts.customerEmail) {
+  if (opts.customerEmail && opts.notifyBuyer !== false) {
     await sendEmail(
       opts.customerEmail,
       "We received your payment",
@@ -547,6 +550,23 @@ Deno.serve(async (req: Request) => {
     : (months ? "chf_amount_fallback" : "unresolved");
   console.log("tier resolved", { months, via: tierVia, paymentLink, currency, amountTotal });
 
+  // Was this sale even ours?
+  //
+  // ALTE_SITURI names the one foreign link we have already been bitten
+  // by, but all three sites sell through the same Stripe account -- their
+  // links are numbered in one sequence -- so the next one to make its
+  // first sale would arrive here just as unrecognised, and gift.ceo's
+  // first sale is 10,000 CHF.
+  //
+  // An unknown link is therefore not evidence of a Rotabo purchase. The
+  // admin is still told, loudly, because money did change hands and it
+  // might be a Rotabo link nobody added above. But the person who paid
+  // hears nothing: writing to a stranger about "your Rotabo purchase"
+  // when they bought something else entirely is worse than silence.
+  const alNostru = !paymentLink ||
+    ACCESS_TIERS[paymentLink] != null ||
+    MANUAL_PRODUCTS[paymentLink] != null;
+
   const isViewer = !!(refId && refId.startsWith(VIEWER_PREFIX));
   const isSponsor = !isViewer && !!(refId && refId.startsWith(SPONSOR_PREFIX));
   let kind = !months ? (isSponsor ? "sponsor" : "manual") : (isViewer ? "viewer" : (refId ? "listing" : "manual"));
@@ -573,6 +593,7 @@ Deno.serve(async (req: Request) => {
         });
         await handleManualPayment({
           productName, sessionId, amountTotal, currency, paymentLink, refId, customerEmail,
+          notifyBuyer: alNostru,
         });
       }
     } else if (isViewer) {
