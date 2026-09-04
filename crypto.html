@@ -119,6 +119,9 @@
   }
   .idpair span{display:flex;flex-direction:column;gap:3px;}
   .idpair b{font-size:1.12rem;font-weight:800;color:#fff;letter-spacing:-.01em;}
+  /* Not uppercased in CSS. The ticker is "Rotabo", with one capital, and a
+     text-transform here would show a reader a string that is not the one
+     they are checking against. */
   .addr .v{
     margin-top:7px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
     font-size:.9rem;color:#fff;word-break:break-all;line-height:1.5;
@@ -253,7 +256,7 @@
              three have to be in the place they were told to come back to. -->
         <div class="idpair">
           <span><span class="k">Name</span><b>Rotabo</b></span>
-          <span><span class="k">Ticker</span><b data-ticker>ROTABO</b></span>
+          <span><span class="k">Ticker</span><b data-ticker>Rotabo</b></span>
         </div>
         <div class="k">Official contract address</div>
         <div class="v" id="addrV"></div>
@@ -370,7 +373,7 @@
    changes.  TICKER is what it is called; MINT is the contract address
    pump.fun gives you.  PUMP_URL is built from MINT unless it is set. */
 var TOKEN = {
-  TICKER:   'ROTABO',
+  TICKER:   'Rotabo',
   MINT:     '',
   PUMP_URL: '',
   /* 20:00 Swiss time. +02:00 is CEST, which is what Switzerland is on in
