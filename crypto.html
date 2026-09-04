@@ -113,6 +113,12 @@
     text-align:left;
   }
   .addr .k{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c9a9dd;}
+  .idpair{
+    display:flex;flex-wrap:wrap;gap:8px 34px;
+    padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #4a2a63;
+  }
+  .idpair span{display:flex;flex-direction:column;gap:3px;}
+  .idpair b{font-size:1.12rem;font-weight:800;color:#fff;letter-spacing:-.01em;}
   .addr .v{
     margin-top:7px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
     font-size:.9rem;color:#fff;word-break:break-all;line-height:1.5;
@@ -240,6 +246,15 @@
            in this box is a page teaching people to trust whatever is in
            this box. -->
       <div class="addr" id="addrBox">
+        <!-- Name and ticker above the address, in the same dark panel, because
+             the three are one answer to one question: is this the real one.
+             A reader checking a coin they found somewhere else checks the
+             name first, the ticker second and the address last, and all
+             three have to be in the place they were told to come back to. -->
+        <div class="idpair">
+          <span><span class="k">Name</span><b>Rotabo</b></span>
+          <span><span class="k">Ticker</span><b data-ticker>ROTABO</b></span>
+        </div>
         <div class="k">Official contract address</div>
         <div class="v" id="addrV"></div>
         <button type="button" id="copyBtn" hidden>Copy address</button>
@@ -355,7 +370,7 @@
    changes.  TICKER is what it is called; MINT is the contract address
    pump.fun gives you.  PUMP_URL is built from MINT unless it is set. */
 var TOKEN = {
-  TICKER:   '',
+  TICKER:   'ROTABO',
   MINT:     '',
   PUMP_URL: '',
   /* 20:00 Swiss time. +02:00 is CEST, which is what Switzerland is on in
@@ -380,6 +395,9 @@ var TOKEN = {
       addrBox = document.getElementById('addrBox'),
       addrV = document.getElementById('addrV');
 
+  /* The ticker is written into the markup as well as here, so it is right
+     for a reader with JavaScript off; this keeps the two in step if only one
+     of them is ever edited. */
   if (TOKEN.TICKER) {
     document.querySelectorAll('[data-ticker]').forEach(function (el) {
       el.textContent = TOKEN.TICKER;
