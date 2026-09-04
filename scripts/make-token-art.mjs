@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 /**
- * The two pictures pump.fun asks for when a token is created.
+ * The pictures the token launch needs.
  *
- *   crypto-logo.png     1000 x 1000, the coin's image
- *   crypto-banner.png   1500 x 500,  the banner on the coin's page
+ *   crypto-logo.png          1000 x 1000, the coin's image, transparent
+ *   crypto-logo-fundal.png   1000 x 1000, the same on the card's own ground
+ *   crypto-banner.png        1500 x 500,  the banner on the coin's page
+ *   crypto-card.png          1200 x 630,  the share card for crypto.html
  *
- * Nothing here is designed. Both are the official mark and the official card,
- * to the number: the same path, the same three-stop radial, the same 7% gap
+ * Nothing here is designed. Every one is the official mark and the official
+ * card, to the number: the same path, the same three-stop radial, the same 7% gap
  * between the gems, the same 4% inset, the same #fdf5ff-to-#f4e6f9 ground,
  * the same #a239c9 violet and #ffd41a gold split across "Need me? Find me."
  * -- every one of them read out of scripts/make-icons.ps1 and og-image.png,
@@ -17,13 +19,13 @@
  * is shown at about forty pixels in a list, where a word is a smudge and a
  * shape is still a shape.
  *
- * Neither picture carries the ticker or the launch time. A picture with a
- * date in it is wrong the day after, and the ticker is not decided here.
+ * None of them carries the ticker or the launch time. A picture with a date
+ * in it is wrong the day after, and the ticker is not decided here.
  *
  *   npm i --no-save sharp
- *   node scripts/make-token-art.mjs          writes both
- *   node scripts/make-token-art.mjs --check  fails if either is missing or
- *                                            the wrong size; needs no sharp
+ *   node scripts/make-token-art.mjs          writes all four
+ *   node scripts/make-token-art.mjs --check  fails if any is missing or the
+ *                                            wrong size; needs no sharp
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -115,10 +117,34 @@ function banner() {
 `;
 }
 
+/* The share card for crypto.html. The banner cannot do this job: X crops a
+   large card to 1.91:1, and 3:1 loses 36% of the width -- the violet gem off
+   the left edge and the second line cut mid-word. So the same ground, the
+   same pair, the same two-colour words, at the ratio the crop leaves alone.
+   It says what the link is rather than what rotabo.app is, because that is
+   the question somebody scrolling past a launch post is actually asking. */
+function card() {
+  const W = 1200, H = 630, MID = W / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+  <defs>${grad()}
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="${GROUND_A}"/>
+    <stop offset="100%" stop-color="${GROUND_B}"/>
+  </linearGradient></defs>
+  <rect width="${W}" height="${H}" fill="url(#ground)"/>
+  ${pereche(0, 88, W, 236)}
+  <text x="${MID}" y="452" text-anchor="middle" font-family="${SANS}" font-size="84" font-weight="700" fill="${VIOLET_2}">Rotabo <tspan fill="${GOLD}">Crypto</tspan></text>
+  <text x="${MID}" y="508" text-anchor="middle" font-family="${SANS}" font-size="30" font-weight="400" fill="${GREY}">The Rotabo token, on the Solana network.</text>
+  <text x="${MID}" y="572" text-anchor="middle" font-family="${SANS}" font-size="34" font-weight="700" fill="${VIOLET_2}">rotabo.<tspan fill="${GOLD}">app</tspan>/crypto.html</text>
+</svg>
+`;
+}
+
 const IESIRI = [
   ['crypto-logo.png', 1000, 1000, logo(false)],
   ['crypto-logo-fundal.png', 1000, 1000, logo(true)],
   ['crypto-banner.png', 1500, 500, banner()],
+  ['crypto-card.png', 1200, 630, card()],
 ];
 
 /* Width and height out of a PNG's first chunk, so --check needs no library. */
@@ -138,7 +164,7 @@ if (process.argv.includes('--check')) {
     }
   }
   if (rele) { console.error('make-token-art: run npm i --no-save sharp && node scripts/make-token-art.mjs'); process.exit(1); }
-  console.log('make-token-art: both pictures present and the right size.');
+  console.log('make-token-art: every picture present and the right size.');
   process.exit(0);
 }
 
