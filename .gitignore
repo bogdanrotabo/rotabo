@@ -3,3 +3,5 @@ node_modules/
 # ones in /afise; these are drafts and there is no reason to carry them.
 scripts/afise/proba/
 scripts/afise/previzualizare-*.png
+node_modules/
+package-lock.json

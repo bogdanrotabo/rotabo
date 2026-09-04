@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotabo Crypto — the Rotabo token on Solana</title>
+<meta name="description" content="The Rotabo token, launched on pump.fun on Solana. The official contract address, how to buy it, and what it is and is not.">
+<link rel="canonical" href="https://rotabo.app/crypto.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rotabo">
+<meta property="og:url" content="https://rotabo.app/crypto.html">
+<meta property="og:title" content="Rotabo Crypto — the Rotabo token on Solana">
+<meta property="og:description" content="Launched on pump.fun. The official contract address is published here and nowhere else.">
+<meta property="og:image" content="https://rotabo.app/crypto-banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rotabo.app/crypto-banner.png">
+<link rel="icon" href="/icons/favicon-32.png" type="image/png">
+<style>
+  /* The site's palette, copied from index.html so this page cannot drift
+     into a violet of its own. */
+  :root{
+    --bg-top:#f6ecf9;
+    --bg-mid:#f3e6f8;
+    --bg-card:#f7edfa;
+    --border:#e2c3ee;
+    --violet-1:#7c2d9c;
+    --violet-2:#9b3fc0;
+    --diamond-a:#a239c9;
+    --diamond-b:#7c2596;
+    --text-dark:#3a1650;
+    --text-body:#6b5878;
+    --text-eyebrow:#8a7a94;
+    --brand-light:#c264e0;
+    --gold:#ffd41a;
+    --gold-ink:#8a6b00;
+    --green:#3ecb7e;
+    --on-brand:#fff;
+    --panel-soft:#faf3fc;
+    --warn-bg:#fff8e6;
+    --warn-border:#f0d488;
+    --warn-ink:#6b4e00;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font:400 16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text-dark);
+    background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-mid) 100%);
+    background-attachment:fixed;
+  }
+  .shell{max-width:960px;margin:0 auto;padding:0 20px;}
+  a{color:var(--violet-1);}
+
+  /* ------------------------------------------------------------- header */
+  .top{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 0;
+  }
+  .top .mark{display:flex;gap:5px;}
+  .top .mark svg{width:26px;height:34px;display:block;}
+  .top .name{font-weight:800;font-size:1.05rem;letter-spacing:-.02em;text-decoration:none;color:var(--text-dark);}
+  .top .name b{color:var(--diamond-a);font-weight:800;}
+  .top .back{margin-left:auto;font-size:.92rem;text-decoration:none;color:var(--text-body);}
+  .top .back:hover{color:var(--violet-1);}
+
+  /* --------------------------------------------------------------- hero */
+  .hero{text-align:center;padding:26px 0 8px;}
+  .gems{display:flex;justify-content:center;gap:14px;margin-bottom:22px;}
+  .gems svg{width:clamp(64px,14vw,104px);height:auto;display:block;
+    filter:drop-shadow(0 16px 26px rgba(124,37,150,.26));}
+  .gems svg.gold{filter:drop-shadow(0 16px 26px rgba(196,140,0,.28));}
+  h1{
+    margin:0;font-size:clamp(2.1rem,6.4vw,3.4rem);line-height:1.05;
+    letter-spacing:-.03em;font-weight:800;
+  }
+  h1 .g{color:var(--gold-ink);}
+  .lede{
+    margin:16px auto 0;max-width:44ch;
+    font-size:clamp(1.02rem,2.4vw,1.18rem);color:var(--text-body);
+  }
+  .badges{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:22px 0 0;}
+  .badge{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:7px 14px;border-radius:999px;
+    background:var(--bg-card);border:1px solid var(--border);
+    font-size:.87rem;font-weight:700;color:var(--violet-1);
+  }
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green);}
+
+  /* ---------------------------------------------------------- countdown */
+  .clock{
+    margin:30px auto 0;max-width:620px;
+    background:#fff;border:1px solid var(--border);border-radius:20px;
+    padding:24px 20px;text-align:center;
+    box-shadow:0 1px 2px rgba(58,22,80,.04),0 18px 40px -28px rgba(58,22,80,.35);
+  }
+  .clock .k{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--text-eyebrow);}
+  .clock .when{margin-top:6px;font-size:1rem;color:var(--text-body);}
+  .digits{display:flex;justify-content:center;gap:10px;margin-top:16px;}
+  .cell{min-width:76px;background:var(--panel-soft);border:1px solid var(--border);border-radius:14px;padding:12px 8px;}
+  .cell .n{font-size:2rem;font-weight:800;line-height:1;color:var(--diamond-b);font-variant-numeric:tabular-nums;}
+  .cell .u{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-eyebrow);margin-top:5px;}
+  .live-note{margin-top:16px;font-weight:800;color:var(--diamond-a);}
+
+  /* ------------------------------------------------------------ address */
+  .addr{
+    margin:16px auto 0;max-width:620px;
+    background:var(--text-dark);border-radius:16px;padding:16px;
+    text-align:left;
+  }
+  .addr .k{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c9a9dd;}
+  .addr .v{
+    margin-top:7px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.9rem;color:#fff;word-break:break-all;line-height:1.5;
+  }
+  .addr button{
+    margin-top:12px;width:100%;padding:11px 14px;border:0;border-radius:11px;
+    background:var(--diamond-a);color:#fff;font:inherit;font-weight:800;cursor:pointer;
+  }
+  .addr button:hover{background:var(--violet-2);}
+
+  .cta{
+    display:inline-block;margin:22px 0 0;padding:16px 30px;border-radius:14px;
+    background:var(--diamond-b);color:var(--on-brand);
+    font-weight:800;font-size:1.05rem;text-decoration:none;
+  }
+  .cta:hover{background:var(--violet-1);}
+  .cta[aria-disabled="true"]{background:#c3a7d2;pointer-events:none;}
+
+  /* -------------------------------------------------------------- cards */
+  section{padding:46px 0 0;}
+  h2{
+    margin:0 0 6px;font-size:clamp(1.45rem,3.6vw,2rem);letter-spacing:-.02em;font-weight:800;
+  }
+  .sub{margin:0 0 22px;color:var(--text-body);max-width:56ch;}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+  .card{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:18px;padding:22px;
+  }
+  .card h3{margin:0 0 8px;font-size:1.06rem;font-weight:800;}
+  .card p{margin:0;color:var(--text-body);font-size:.96rem;}
+  .card .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:30px;height:30px;border-radius:50%;margin-bottom:11px;
+    background:var(--diamond-a);color:#fff;font-weight:800;font-size:.9rem;
+  }
+
+  /* --------------------------------------------------------------- warn */
+  .warn{
+    margin:22px 0 0;padding:20px 22px;border-radius:16px;
+    background:var(--warn-bg);border:1px solid var(--warn-border);color:var(--warn-ink);
+  }
+  .warn h3{margin:0 0 8px;font-size:1.02rem;font-weight:800;}
+  .warn p{margin:0 0 9px;font-size:.95rem;line-height:1.55;}
+  .warn p:last-child{margin-bottom:0;}
+
+  /* ------------------------------------------------------------- footer */
+  footer{margin-top:56px;padding:26px 0 40px;border-top:1px solid var(--border);color:var(--text-eyebrow);font-size:.88rem;}
+  footer a{color:var(--text-body);}
+  .foot-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;}
+  .foot-row .sp{margin-left:auto;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <radialGradient id="dg" cx="50%" cy="50%" r="75%">
+    <stop offset="0%" stop-color="#c264e0"/><stop offset="45%" stop-color="#a239c9"/><stop offset="100%" stop-color="#7c2596"/>
+  </radialGradient>
+  <path id="dm" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+</defs></svg>
+
+<div class="shell">
+  <div class="top">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 200 260"><use href="#dm" fill="url(#dg)"/></svg>
+      <svg viewBox="0 0 200 260"><use href="#dm" fill="#ffd41a"/></svg>
+    </span>
+    <a class="name" href="/">rotabo<b>.app</b></a>
+    <a class="back" href="/">&larr; Back to Rotabo</a>
+  </div>
+</div>
+
+<main class="shell">
+
+  <div class="hero">
+    <div class="gems" aria-hidden="true">
+      <svg viewBox="0 0 200 260"><use href="#dm" fill="url(#dg)"/></svg>
+      <svg class="gold" viewBox="0 0 200 260"><use href="#dm" fill="#ffd41a"/></svg>
+    </div>
+
+    <h1>Rotabo <span class="g">Crypto</span></h1>
+    <p class="lede">The Rotabo token, launched on <strong>pump.fun</strong> on the
+      Solana network. This page is where its official address lives.</p>
+
+    <div class="badges">
+      <span class="badge">Solana</span>
+      <span class="badge">pump.fun</span>
+      <span class="badge" id="stateBadge"><span class="dot"></span><span id="stateText">Launching today</span></span>
+    </div>
+
+    <div class="clock" id="clock">
+      <div class="k" id="clockK">Launches in</div>
+      <div class="when" id="clockWhen">Today at 20:00, Swiss time</div>
+      <div class="digits" id="digits">
+        <div class="cell"><div class="n" id="dH">–</div><div class="u">hours</div></div>
+        <div class="cell"><div class="n" id="dM">–</div><div class="u">minutes</div></div>
+        <div class="cell"><div class="n" id="dS">–</div><div class="u">seconds</div></div>
+      </div>
+      <div class="live-note" id="liveNote" hidden>It is live.</div>
+
+      <div class="addr" id="addrBox" hidden>
+        <div class="k">Official contract address</div>
+        <div class="v" id="addrV"></div>
+        <button type="button" id="copyBtn">Copy address</button>
+      </div>
+
+      <a class="cta" id="buyBtn" href="#how" aria-disabled="true">Buy on pump.fun</a>
+    </div>
+  </div>
+
+  <section id="what">
+    <h2>What this is</h2>
+    <p class="sub">Said plainly, because the plain version is the one worth reading.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>A community token</h3>
+        <p>It is launched on pump.fun, a public launchpad on Solana. Anyone can
+           buy it and anyone can sell it, at whatever price the market makes.</p>
+      </div>
+      <div class="card">
+        <h3>It carries the Rotabo name</h3>
+        <p>The name and the mark come from rotabo.app, the marketplace where
+           people post what they need and what they offer.</p>
+      </div>
+      <div class="card">
+        <h3>It is not a share in the company</h3>
+        <p>Holding it gives no ownership, no dividend, no vote and no claim on
+           Rotabo or on anything Rotabo earns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How to buy it</h2>
+    <p class="sub">Four steps. The whole thing takes about ten minutes the first
+       time and under a minute after that.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>Get a Solana wallet</h3>
+        <p>Phantom or Solflare, as a phone app or a browser extension. Write the
+           recovery phrase down on paper and never type it anywhere else.</p>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>Put some SOL in it</h3>
+        <p>Buy SOL on any exchange and send it to your wallet address, or buy it
+           inside the wallet itself. Keep a little spare for network fees.</p>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>Open the official link</h3>
+        <p>Use the button above, or paste the contract address from this page
+           into pump.fun. Check it character by character.</p>
+      </div>
+      <div class="card">
+        <span class="num">4</span>
+        <h3>Swap</h3>
+        <p>Enter how much SOL you want to spend and confirm in your wallet.
+           That is it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety">
+    <h2>Before you buy anything</h2>
+
+    <div class="warn">
+      <h3>This is not an investment, and not advice</h3>
+      <p>A token launched on pump.fun has no guaranteed value. Its price is
+         whatever someone else will pay for it at that moment, it can fall to
+         nothing, and most tokens launched this way do. Nobody at Rotabo can
+         promise you a price, a return, or a buyer.</p>
+      <p><strong>Spend only what you would be relaxed about losing entirely.</strong>
+         Not rent, not savings, not borrowed money.</p>
+      <p>Nothing on this page is financial advice. If you are not sure what any
+         of it means, that is a good reason not to buy.</p>
+    </div>
+
+    <div class="warn" style="margin-top:14px">
+      <h3>There will be fakes</h3>
+      <p>Every launch attracts copies with the same name, the same picture and a
+         different address. The only address we will ever publish is the one on
+         this page, at <strong>rotabo.app/crypto.html</strong>.</p>
+      <p>Nobody from Rotabo will ever message you first, ask for your recovery
+         phrase, ask you to connect your wallet to a site to "verify" it, or
+         send you a private link. Any of those is somebody stealing from you.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-row">
+      <span>&copy; Rotabo</span>
+      <a href="/">rotabo.app</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/privacy.html">Privacy</a>
+      <span class="sp"></span>
+      <span id="stamp"></span>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ---------------------------------------------------------------------
+   The only thing to edit on this page.
+   ---------------------------------------------------------------------
+   The mint address does not exist until the coin is created on pump.fun,
+   so it starts empty on purpose and the page is written to be correct
+   while it is empty: the countdown runs, the buy button is dead rather
+   than pointing somewhere wrong, and no address is shown rather than a
+   placeholder somebody could mistake for the real one.
+
+   After creating the coin, paste the two strings below and nothing else
+   changes.  TICKER is what it is called; MINT is the contract address
+   pump.fun gives you.  PUMP_URL is built from MINT unless it is set. */
+var TOKEN = {
+  TICKER:   '',
+  MINT:     '',
+  PUMP_URL: '',
+  /* 20:00 Swiss time. +02:00 is CEST, which is what Switzerland is on in
+     September; the offset is written out so the countdown is the same
+     moment for a reader in any country. */
+  LAUNCH:   '2026-09-04T20:00:00+02:00'
+};
+
+(function () {
+  var lansare = new Date(TOKEN.LAUNCH).getTime();
+  var url = TOKEN.PUMP_URL || (TOKEN.MINT ? 'https://pump.fun/coin/' + TOKEN.MINT : '');
+
+  var dH = document.getElementById('dH'),
+      dM = document.getElementById('dM'),
+      dS = document.getElementById('dS'),
+      digits = document.getElementById('digits'),
+      clockK = document.getElementById('clockK'),
+      clockWhen = document.getElementById('clockWhen'),
+      liveNote = document.getElementById('liveNote'),
+      buyBtn = document.getElementById('buyBtn'),
+      stateText = document.getElementById('stateText'),
+      addrBox = document.getElementById('addrBox'),
+      addrV = document.getElementById('addrV');
+
+  if (TOKEN.TICKER) {
+    document.querySelectorAll('[data-ticker]').forEach(function (el) {
+      el.textContent = TOKEN.TICKER;
+    });
+  }
+
+  /* The address is only ever shown when there is one. A page that prints a
+     placeholder where a contract address goes is a page that teaches people
+     to trust whatever is in that box. */
+  if (TOKEN.MINT) {
+    addrV.textContent = TOKEN.MINT;
+    addrBox.hidden = false;
+  }
+
+  var copyBtn = document.getElementById('copyBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      navigator.clipboard.writeText(TOKEN.MINT).then(function () {
+        copyBtn.textContent = 'Copied';
+        setTimeout(function () { copyBtn.textContent = 'Copy address'; }, 1600);
+      }).catch(function () {
+        copyBtn.textContent = 'Select it above and copy';
+      });
+    });
+  }
+
+  function doiDigiti(n) { return (n < 10 ? '0' : '') + n; }
+
+  function tic() {
+    var ramas = lansare - Date.now();
+
+    if (ramas > 0) {
+      dH.textContent = doiDigiti(Math.floor(ramas / 3600000));
+      dM.textContent = doiDigiti(Math.floor(ramas / 60000) % 60);
+      dS.textContent = doiDigiti(Math.floor(ramas / 1000) % 60);
+      return;
+    }
+
+    /* Past the hour. Two different states, and the difference matters: the
+       coin exists (there is a link) or it is being created (there is not).
+       Saying "live" with nowhere to go would send people looking for it
+       somewhere else, which is exactly where the fakes are. */
+    digits.hidden = true;
+    clearInterval(ceas);
+
+    if (url) {
+      clockK.textContent = 'Live now';
+      clockWhen.textContent = 'Launched on pump.fun, on Solana.';
+      liveNote.hidden = false;
+      stateText.textContent = 'Live';
+      buyBtn.href = url;
+      buyBtn.target = '_blank';
+      buyBtn.rel = 'noopener';
+      buyBtn.removeAttribute('aria-disabled');
+    } else {
+      clockK.textContent = 'Launching now';
+      clockWhen.textContent =
+        'The contract address appears here the moment the coin is created. ' +
+        'Until then there is nothing to buy, and anything calling itself ' +
+        'Rotabo elsewhere is not this.';
+      stateText.textContent = 'Launching now';
+    }
+  }
+
+  tic();
+  var ceas = setInterval(tic, 1000);
+
+  document.getElementById('stamp').textContent =
+    'Launch: ' + new Date(TOKEN.LAUNCH).toLocaleString(undefined, {
+      dateStyle: 'medium', timeStyle: 'short'
+    }) + ' your time';
+})();
+</script>
+
+</body>
+</html>

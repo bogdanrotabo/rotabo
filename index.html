@@ -470,6 +470,13 @@ if (window.top !== window.self) {
      side that is giving. */
   .door-need  .door-icon, .door-need  .door-btn{background:var(--diamond-b);}
   .door-offer .door-icon, .door-offer .door-btn{background:var(--diamond-a);}
+  /* Under both, half the width, centred. It takes the same fills as the two
+     above rather than a colour of its own, so it follows the site into
+     business mode instead of staying violet on a yellow page; the gem inside
+     the circle is what says which door it is. */
+  .door-crypto{grid-column:1 / -1;width:100%;max-width:352px;margin:0 auto;}
+  .door-crypto .door-icon, .door-crypto .door-btn{background:var(--diamond-b);}
+  .door-crypto .door-icon svg{width:23px;height:30px;}
   /* Ink, not fill. These were the diamond's own two ends, which works while
      the brand is dark and fails the moment it is not: on the business side
      the same variables are yellow, and yellow lettering on a cream card
@@ -1589,6 +1596,20 @@ if (window.top !== window.self) {
       <span class="door-title" data-i18n="choose.offer_title">I have something to offer</span>
       <span class="door-text" data-i18n="choose.offer_text">Offer a service, an object or a hand, and be found by the people who need it.</span>
       <span class="door-btn" data-i18n="choose.offer_btn">Post what you offer</span>
+    </a>
+    <!-- The third door. Not a third thing a stranger comes here for -- it is a
+         different thing entirely -- so it sits under the two rather than
+         beside them, and does not take a third of the row. What tells it
+         apart is the gold gem in the circle: the other half of the mark, and
+         the one colour that stays itself in both the violet site and the
+         yellow business one. No launch date in here. This markup is served
+         to every visitor for as long as the site stands, and a date in it is
+         wrong the day after; the page it opens carries the clock. -->
+    <a class="door door-crypto" href="/crypto.html">
+      <span class="door-icon" aria-hidden="true"><svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg></span>
+      <span class="door-title" data-i18n="choose.crypto_title">Rotabo Crypto</span>
+      <span class="door-text" data-i18n="choose.crypto_text">The Rotabo token, on the Solana network.</span>
+      <span class="door-btn" data-i18n="choose.crypto_btn">Open Rotabo Crypto</span>
     </a>
   </div>
 

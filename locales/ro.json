@@ -849,7 +849,10 @@
     "need_btn": "Publică ce cauți",
     "offer_title": "Am ceva de oferit",
     "offer_text": "Oferiți un serviciu, un obiect sau o mână de ajutor, și fiți găsit de cine are nevoie.",
-    "offer_btn": "Publică ce oferi"
+    "offer_btn": "Publică ce oferi",
+    "crypto_title": "Rotabo Crypto",
+    "crypto_text": "Tokenul Rotabo, pe rețeaua Solana.",
+    "crypto_btn": "Deschide Rotabo Crypto"
   },
   "posters": {
     "back": "Înapoi la rotabo.app",

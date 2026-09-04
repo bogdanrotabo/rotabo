@@ -849,7 +849,10 @@
     "need_btn": "Post what you need",
     "offer_title": "I have something to offer",
     "offer_text": "Offer a service, an object or a hand, and be found by the people who need it.",
-    "offer_btn": "Post what you offer"
+    "offer_btn": "Post what you offer",
+    "crypto_title": "Rotabo Crypto",
+    "crypto_text": "The Rotabo token, on the Solana network.",
+    "crypto_btn": "Open Rotabo Crypto"
   },
   "posters": {
     "back": "Back to rotabo.app",
