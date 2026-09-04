@@ -101,6 +101,11 @@
   .clock .k{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--text-eyebrow);}
   .clock .when{margin-top:6px;font-size:1rem;color:var(--text-body);}
   .digits{display:flex;justify-content:center;gap:10px;margin-top:16px;}
+  /* A class that sets display beats the hidden attribute, so the script's
+     digits.hidden = true left three empty boxes reading -- hours minutes
+     seconds under the words LIVE NOW. .addr button[hidden] above is the
+     same guard for the same reason. */
+  .digits[hidden]{display:none;}
   .cell{min-width:76px;background:var(--panel-soft);border:1px solid var(--border);border-radius:14px;padding:12px 8px;}
   .cell .n{font-size:2rem;font-weight:800;line-height:1;color:var(--diamond-b);font-variant-numeric:tabular-nums;}
   .cell .u{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-eyebrow);margin-top:5px;}
