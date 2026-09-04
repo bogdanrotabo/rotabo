@@ -1,7 +1,7 @@
 /* Written by scripts/build-sw.mjs from a hash of everything precached below.
    Do not edit by hand: it was a number someone had to remember to raise, and
    for many deploys nobody did. */
-const CACHE_VERSION = "v4a5e28b650";
+const CACHE_VERSION = "v209819cb1b";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 // Where Google tag gateway serves gtag.js and receives its measurement
@@ -94,6 +94,61 @@ function revalidate(url) {
     .catch(function () { /* offline: the cached copy stands */ });
 }
 
+/* The network, with the cached page waiting behind it.
+ *
+ * Three ways out, and every one of them answers:
+ *   the network answers      -> that, and the cache is refreshed with it
+ *   it is slower than 2.5s   -> the cached page now, the fresh one stored
+ *                               when it lands, for next time
+ *   it fails outright        -> the cached page, or index.html, or the error
+ *
+ * TIMEOUT is a judgement, not a measurement: long enough that a normal
+ * mobile connection is never cut off and shown yesterday's page, short
+ * enough that a dead one does not leave somebody looking at nothing.
+ */
+var TIMEOUT = 2500;
+
+function din_cache(url) {
+  return caches.match(url.pathname, { ignoreSearch: true }).then(function (c) {
+    return c || caches.match("/index.html");
+  });
+}
+
+function retea_intai(request, url) {
+  return new Promise(function (resolve) {
+    var raspuns = false;
+    var da = function (r) {
+      if (raspuns || !r) return;
+      raspuns = true;
+      clearTimeout(ceas);
+      resolve(r);
+    };
+
+    // Whatever the cache holds, ready to go the moment the network is late.
+    var ceas = setTimeout(function () {
+      din_cache(url).then(da);
+    }, TIMEOUT);
+
+    fetch(request).then(function (res) {
+      // Stored even when the timeout has already answered from cache: the
+      // point of the slow visit is that the next one is fast and current.
+      if (res && res.status === 200 && !res.redirected) {
+        var clona = res.clone();
+        caches.open(CACHE_NAME).then(function (cache) {
+          cache.put(url.pathname, clona);
+        });
+      }
+      da(res);
+    }).catch(function () {
+      din_cache(url).then(function (c) {
+        // Nothing cached and no network: let the browser show its own
+        // offline page rather than hanging on a promise that never settles.
+        da(c || Response.error());
+      });
+    });
+  });
+}
+
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
@@ -113,6 +168,26 @@ self.addEventListener("fetch", function (event) {
   // instead of reaching Google at all.
   if (url.pathname === TAG_GATEWAY_PATH || url.pathname.indexOf(TAG_GATEWAY_PATH + "/") === 0) return;
 
+  // A page asked for by the browser goes to the network first; everything
+  // else keeps coming out of the cache.
+  //
+  // Cache-first was right for assets and wrong for pages, and the way it was
+  // wrong is that every visitor saw every deploy one visit late. The cached
+  // page was served, refreshed in the background, and the new copy only
+  // reached the screen the next time they came. On this site, where the owner
+  // changes something and opens it on his phone to look, that reads exactly
+  // like the change not having happened -- twice now it did.
+  //
+  // Network-first costs nothing on a working connection: the page comes from
+  // Cloudflare either way. On a bad one the cached copy is served after two
+  // and a half seconds, and offline it is served immediately, which is what
+  // the cache was put there for. The fresh copy is stored either way, so the
+  // slow path is still correct next time.
+  if (event.request.mode === "navigate") {
+    event.respondWith(retea_intai(event.request, url));
+    return;
+  }
+
   event.respondWith(
     // ignoreSearch: every real browse.html visit carries ?category=...&
     // role=..., but the precache stores the bare path. Without this the
@@ -122,11 +197,13 @@ self.addEventListener("fetch", function (event) {
     // page's own JS, never to the static file server.
     caches.match(event.request, { ignoreSearch: true }).then(function (cached) {
       if (cached) {
-        // Pages AND the scripts/dictionaries they call into: refreshing
-        // only the HTML left a new index.html running an old viewer.js
-        // until the next version bump.
+        // The scripts and dictionaries a page calls into: refreshing only
+        // the HTML left a new index.html running an old viewer.js until the
+        // next version bump. Pages themselves no longer come through here --
+        // they are fetched above -- so this is the asset half of the same
+        // rule.
         var dest = event.request.destination;
-        if (event.request.mode === "navigate" || dest === "script" || url.pathname.indexOf("/locales/") === 0) {
+        if (dest === "script" || url.pathname.indexOf("/locales/") === 0) {
           event.waitUntil(revalidate(url));
         }
         return cached;
