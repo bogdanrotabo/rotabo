@@ -39,6 +39,7 @@ const VIOLET_2 = '#a239c9';   /* its middle stop, and the violet of the words */
 const VIOLET_3 = '#7c2596';   /* its deep rim */
 const GOLD     = '#ffd41a';   /* one colour at every stop, and the gold words */
 const GREY     = '#6b5470';   /* the card's second line */
+const INK      = '#3a1650';   /* --text-dark, what the pages set headings in */
 const GROUND_A = '#fdf5ff';   /* the card's ground, top */
 const GROUND_B = '#f4e6f9';   /* and bottom */
 
@@ -122,7 +123,13 @@ function banner() {
    the left edge and the second line cut mid-word. So the same ground, the
    same pair, the same two-colour words, at the ratio the crop leaves alone.
    It says what the link is rather than what rotabo.app is, because that is
-   the question somebody scrolling past a launch post is actually asking. */
+   the question somebody scrolling past a launch post is actually asking.
+
+   "Crypto" was gold here and gold in the page's own heading until the owner
+   said on 2026-09-05 that it should be the violet gem's colour instead. It
+   is one wordmark in two places, so it changed in both: --text-dark for
+   "Rotabo", the lit #a239c9 for "Crypto". The gold stays where it belongs,
+   on the gem and on the "app" of rotabo.app. */
 function card() {
   const W = 1200, H = 630, MID = W / 2;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
@@ -133,7 +140,7 @@ function card() {
   </linearGradient></defs>
   <rect width="${W}" height="${H}" fill="url(#ground)"/>
   ${pereche(0, 88, W, 236)}
-  <text x="${MID}" y="452" text-anchor="middle" font-family="${SANS}" font-size="84" font-weight="700" fill="${VIOLET_2}">Rotabo <tspan fill="${GOLD}">Crypto</tspan></text>
+  <text x="${MID}" y="452" text-anchor="middle" font-family="${SANS}" font-size="84" font-weight="700" fill="${INK}">Rotabo <tspan fill="${VIOLET_2}">Crypto</tspan></text>
   <text x="${MID}" y="508" text-anchor="middle" font-family="${SANS}" font-size="30" font-weight="400" fill="${GREY}">The Rotabo token, on the Solana network.</text>
   <text x="${MID}" y="572" text-anchor="middle" font-family="${SANS}" font-size="34" font-weight="700" fill="${VIOLET_2}">rotabo.<tspan fill="${GOLD}">app</tspan>/crypto.html</text>
 </svg>
