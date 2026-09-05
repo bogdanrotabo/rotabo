@@ -1187,6 +1187,10 @@
     "warn2_p2": "Nitko iz Rotaba vam neće pisati prvi, neće tražiti vašu frazu za oporavak, neće tražiti da spojite novčanik na neku stranicu radi „provjere\", niti će vam poslati privatnu poveznicu. Bilo što od toga je netko tko vas krade.",
     "terms": "Uvjeti",
     "privacy": "Privatnost",
-    "stamp": "Pokretanje: {d} po vašem vremenu"
+    "stamp": "Pokretanje: {d} po vašem vremenu",
+    "soul_h": "Što stoji iza toga",
+    "soul_p1": "Rotabo je mjesto gdje se dvoje ljudi nađu: onaj kojemu treba sat vremena, ruka, vještina ili alat, i onaj koji to ima. Ništa veće od toga — a ni manje, jer se tako većina stvari zapravo i obavi.",
+    "soul_p2": "Ovo je prvi token koji nosi ime Rotabo. On nikoga ne povezuje; to rade ljudi. Nosi ime, a iza tog imena stoji tržnica koja postoji, na trideset osam jezika, kojom se služe ljudi koji riječ „token” nikad neće izgovoriti.",
+    "soul_p3": "To je sve. Bez ikakvog obećanja — samo ono jedno što većina novčića nema: nešto stvarno na što se može pokazati."
   }
 }

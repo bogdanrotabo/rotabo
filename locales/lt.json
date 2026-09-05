@@ -1176,6 +1176,10 @@
     "warn2_p2": "Niekas iš Rotabo jums nerašys pirmas, neprašys jūsų atkūrimo frazės, neprašys prijungti piniginės prie kokios nors svetainės, kad ją „patikrintų\", ir nesiųs jums privačios nuorodos. Bet kuris iš šių dalykų yra kažkas, kas iš jūsų vagia.",
     "terms": "Sąlygos",
     "privacy": "Privatumas",
-    "stamp": "Startas: {d} jūsų laiku"
+    "stamp": "Startas: {d} jūsų laiku",
+    "soul_h": "Kas už to stovi",
+    "soul_p1": "Rotabo yra vieta, kur du žmonės randa vienas kitą: tas, kuriam reikia valandos, pagalbos rankos, įgūdžio ar įrankio, ir tas, kuris tai turi. Nieko didesnio už tai — ir nieko mažesnio, nes būtent taip dauguma dalykų iš tikrųjų ir padaroma.",
+    "soul_p2": "Tai pirmas žetonas, nešantis Rotabo vardą. Jis nieko nesujungia; tai daro žmonės. Jis neša vardą, o už vardo stovi turgus, kuris egzistuoja, trisdešimt aštuoniomis kalbomis, kuriuo naudojasi žmonės, niekada neištarsiantys žodžio „žetonas“.",
+    "soul_p3": "Tai ir viskas. Be jokio pažado — tik tas vienas dalykas, kurio dauguma monetų neturi: kažkas tikro, į ką galima parodyti."
   }
 }

@@ -1189,6 +1189,10 @@
     "warn2_p2": "Nimeni de la Rotabo nu-ți va scrie primul, nu-ți va cere fraza de recuperare, nu-ți va cere să-ți conectezi portofelul la un sit ca să-l „verifice\" și nu-ți va trimite un link privat. Oricare dintre astea e cineva care te fură.",
     "terms": "Termeni",
     "privacy": "Confidențialitate",
-    "stamp": "Lansare: {d}, ora ta"
+    "stamp": "Lansare: {d}, ora ta",
+    "soul_h": "Ce stă în spatele lui",
+    "soul_p1": "Rotabo e un loc unde doi oameni se găsesc: unul care are nevoie de o oră, de o mână de ajutor, de o pricepere sau de o unealtă, și unul care le are. Nimic mai măreț de atât — și nici mai mic, fiindcă așa se fac de fapt cele mai multe lucruri.",
+    "soul_p2": "Ăsta e primul token care poartă numele Rotabo. Nu conectează el pe nimeni; oamenii fac asta. El poartă numele, iar în spatele numelui e o piață care există, în treizeci și opt de limbi, folosită de oameni care n-o să spună niciodată cuvântul „token”.",
+    "soul_p3": "Asta e tot. Fără nicio promisiune — doar singurul lucru pe care majoritatea monedelor nu-l au: ceva real spre care să arate."
   }
 }

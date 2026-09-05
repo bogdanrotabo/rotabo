@@ -1187,6 +1187,10 @@
     "warn2_p2": "Personne de chez Rotabo ne vous écrira en premier, ne vous demandera votre phrase de récupération, ne vous demandera de connecter votre portefeuille à un site pour le « vérifier », ni ne vous enverra un lien privé. Chacune de ces choses, c'est quelqu'un qui vous vole.",
     "terms": "Conditions",
     "privacy": "Confidentialité",
-    "stamp": "Lancement : {d} à votre heure"
+    "stamp": "Lancement : {d} à votre heure",
+    "soul_h": "Ce qu'il y a derrière",
+    "soul_p1": "Rotabo est un endroit où deux personnes se trouvent : celle qui a besoin d'une heure, d'un coup de main, d'un savoir-faire ou d'un outil, et celle qui l'a. Rien de plus grand que ça — et rien de plus petit non plus, parce que c'est ainsi que la plupart des choses se font vraiment.",
+    "soul_p2": "C'est le premier jeton à porter le nom Rotabo. Il ne relie personne ; ce sont les gens qui le font. Ce qu'il porte, c'est le nom, et derrière ce nom il y a une place de marché qui existe, en trente-huit langues, utilisée par des gens qui ne prononceront jamais le mot « jeton ».",
+    "soul_p3": "C'est tout. Aucune promesse attachée — seulement la seule chose que la plupart des pièces n'ont pas : quelque chose de réel à montrer du doigt."
   }
 }

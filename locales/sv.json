@@ -1176,6 +1176,10 @@
     "warn2_p2": "Ingen från Rotabo skriver till dig först, frågar efter din återställningsfras, ber dig koppla din plånbok till en sajt för att ”verifiera” den, eller skickar dig en privat länk. Vart och ett av det är någon som stjäl från dig.",
     "terms": "Villkor",
     "privacy": "Integritet",
-    "stamp": "Lansering: {d} din tid"
+    "stamp": "Lansering: {d} din tid",
+    "soul_h": "Vad som står bakom",
+    "soul_p1": "Rotabo är en plats där två människor hittar varandra: en som behöver en timme, en hand, en färdighet eller ett verktyg, och en som har det. Inget större än så — och inget mindre heller, för det är så det mesta faktiskt blir gjort.",
+    "soul_p2": "Det här är den första token som bär namnet Rotabo. Den kopplar inte ihop någon; det gör människor. Det den bär är namnet, och bakom namnet finns en marknadsplats som finns på riktigt, på trettioåtta språk, använd av folk som aldrig kommer att säga ordet ”token”.",
+    "soul_p3": "Det är alltihop. Inget löfte med på köpet — bara det enda de flesta mynt saknar: något verkligt att peka på."
   }
 }

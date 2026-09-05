@@ -1176,6 +1176,10 @@
     "warn2_p2": "A Rotabótól soha senki nem ír Önnek először, nem kéri a helyreállítási kifejezését, nem kéri, hogy csatlakoztassa a tárcáját egy oldalhoz „ellenőrzés\" céljából, és nem küld privát linket. Bármelyik ezek közül valaki, aki lopni akar Öntől.",
     "terms": "Feltételek",
     "privacy": "Adatvédelem",
-    "stamp": "Indulás: {d} az Ön ideje szerint"
+    "stamp": "Indulás: {d} az Ön ideje szerint",
+    "soul_h": "Mi áll mögötte",
+    "soul_p1": "A Rotabo egy hely, ahol két ember megtalálja egymást: az egyiknek egy órára, egy segítő kézre, egy tudásra vagy egy szerszámra van szüksége, a másiknak megvan. Semmivel sem nagyobb ennél — és nem is kisebb, mert a legtöbb dolog valójában így szokott elkészülni.",
+    "soul_p2": "Ez az első token, amely a Rotabo nevet viseli. Nem köt össze senkit; azt az emberek teszik. A nevet viseli, és a név mögött ott van egy piactér, amely létezik, harmincnyolc nyelven, olyan emberek használják, akik a „token” szót soha ki nem mondják.",
+    "soul_p3": "Ennyi az egész. Ígéret nélkül — csak az az egy dolog, ami a legtöbb érmének nincs meg: valami valóságos, amire mutatni lehet."
   }
 }

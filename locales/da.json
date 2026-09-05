@@ -1188,6 +1188,10 @@
     "warn2_p2": "Ingen fra Rotabo skriver til dig først, beder om din gendannelsessætning, beder dig forbinde din tegnebog til et websted for at „verificere\" den, eller sender dig et privat link. Hver eneste af de ting er nogen, der stjæler fra dig.",
     "terms": "Vilkår",
     "privacy": "Privatliv",
-    "stamp": "Lancering: {d} din tid"
+    "stamp": "Lancering: {d} din tid",
+    "soul_h": "Hvad der står bag",
+    "soul_p1": "Rotabo er et sted, hvor to mennesker finder hinanden: en der har brug for en time, en hånd, en færdighed eller et værktøj, og en der har det. Ikke noget større end det — og heller ikke noget mindre, for sådan bliver de fleste ting faktisk gjort.",
+    "soul_p2": "Dette er den første token, der bærer navnet Rotabo. Den forbinder ingen; det gør mennesker. Det den bærer, er navnet, og bag navnet står en markedsplads, der findes, på otteogtredive sprog, brugt af folk der aldrig kommer til at sige ordet „token“.",
+    "soul_p3": "Det er det hele. Uden løfter — kun den ene ting de fleste mønter ikke har: noget virkeligt at pege på."
   }
 }

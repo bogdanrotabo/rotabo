@@ -1176,6 +1176,10 @@
     "warn2_p2": "Rotabo'dan hiç kimse size önce yazmaz, kurtarma ifadenizi istemez, cüzdanınızı „doğrulamak\" için bir siteye bağlamanızı istemez ve size özel bir bağlantı göndermez. Bunların her biri sizden çalan biridir.",
     "terms": "Koşullar",
     "privacy": "Gizlilik",
-    "stamp": "Lansman: {d} sizin saatinizle"
+    "stamp": "Lansman: {d} sizin saatinizle",
+    "soul_h": "Arkasında ne var",
+    "soul_p1": "Rotabo, iki insanın birbirini bulduğu bir yer: bir saate, bir yardım eline, bir beceriye ya da bir alete ihtiyacı olan biri, ve buna sahip olan biri. Bundan daha büyük bir şey değil — daha küçük de değil, çünkü işlerin çoğu gerçekten böyle görülür.",
+    "soul_p2": "Bu, Rotabo adını taşıyan ilk token. Kimseyi o birleştirmiyor; onu insanlar yapıyor. Taşıdığı şey isim, ve ismin arkasında gerçekten var olan bir pazar yeri duruyor, otuz sekiz dilde, „token“ kelimesini hiç ağzına almayacak insanlar tarafından kullanılan.",
+    "soul_p3": "Hepsi bu. Hiçbir vaat yok — sadece çoğu coinde bulunmayan tek şey: gösterilecek gerçek bir yer."
   }
 }

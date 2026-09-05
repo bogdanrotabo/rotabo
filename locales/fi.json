@@ -1187,6 +1187,10 @@
     "warn2_p2": "Kukaan Rotabolta ei ota sinuun ensin yhteyttä, kysy palautuslausettasi, pyydä yhdistämään lompakkoasi jollekin sivustolle sen ”varmistamiseksi” tai lähetä sinulle yksityistä linkkiä. Jokainen niistä on joku joka varastaa sinulta.",
     "terms": "Ehdot",
     "privacy": "Tietosuoja",
-    "stamp": "Julkaisu: {d} omaa aikaasi"
+    "stamp": "Julkaisu: {d} omaa aikaasi",
+    "soul_h": "Mikä sen takana on",
+    "soul_p1": "Rotabo on paikka, jossa kaksi ihmistä löytää toisensa: se joka tarvitsee tunnin, kätevän käden, taidon tai työkalun, ja se jolla se on. Ei mitään suurempaa kuin tuo — eikä pienempääkään, sillä juuri noin useimmat asiat oikeasti tulevat tehdyiksi.",
+    "soul_p2": "Tämä on ensimmäinen token, joka kantaa Rotabon nimeä. Se ei yhdistä ketään; sen tekevät ihmiset. Se kantaa nimen, ja nimen takana on kauppapaikka joka on olemassa, kolmellakymmenelläkahdeksalla kielellä, ihmisten käytössä jotka eivät koskaan lausu sanaa ”token”.",
+    "soul_p3": "Siinä kaikki. Ei lupauksia mukana — vain se yksi asia, jota useimmilla kolikoilla ei ole: jotain todellista mihin osoittaa."
   }
 }

@@ -1189,6 +1189,10 @@
     "warn2_p2": "Nobody from Rotabo will ever message you first, ask for your recovery phrase, ask you to connect your wallet to a site to \"verify\" it, or send you a private link. Any of those is somebody stealing from you.",
     "terms": "Terms",
     "privacy": "Privacy",
-    "stamp": "Launch: {d} your time"
+    "stamp": "Launch: {d} your time",
+    "soul_h": "What stands behind it",
+    "soul_p1": "Rotabo is a place where two people find each other: one who needs an hour, a hand, a skill or a tool, and one who has it. Nothing grander than that — and nothing smaller either, because that is how most things actually get done.",
+    "soul_p2": "This is the first token to carry the Rotabo name. It does not connect anybody; people do that. What it carries is the name, and behind the name there is a marketplace that exists, in thirty-eight languages, used by people who will never say the word \"token\".",
+    "soul_p3": "That is the whole of it. No promise attached — only the one thing most coins do not have: somewhere real to point at."
   }
 }

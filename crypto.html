@@ -241,6 +241,31 @@
   }
   .mkt[hidden]{display:none;}
 
+  /* Why it exists, between the address and the explaining. The page had the
+     what, the how and the warnings, and nothing that says why anybody made
+     it -- which on a page about a coin is the only question a stranger
+     actually arrives with.
+
+     Quiet on purpose. It is the one place on the page allowed to mean
+     something, so it does not shout: the mark, a heading, three short
+     paragraphs, and the same lavender as everything else. A block that tried
+     to sell would undo the two warning boxes underneath it. */
+  .soul{
+    margin:34px auto 0;max-width:640px;
+    background:linear-gradient(180deg,var(--panel-soft),var(--bg-mid));
+    border:1px solid var(--border);border-radius:20px;
+    padding:30px 24px;text-align:center;
+  }
+  .soul .mk{display:flex;justify-content:center;gap:9px;margin-bottom:16px;}
+  .soul .mk svg{width:34px;height:auto;display:block;}
+  .soul h2{margin:0;font-size:clamp(1.3rem,4vw,1.62rem);letter-spacing:-.02em;color:var(--diamond-a);}
+  .soul p{
+    margin:14px auto 0;max-width:52ch;
+    font-size:1.02rem;line-height:1.62;color:var(--text-body);
+  }
+  .soul p.lead{font-size:1.09rem;color:var(--text-dark);}
+  @media (min-width:560px){ .soul{padding:36px 34px;} }
+
   /* -------------------------------------------------------------- cards */
   section{padding:46px 0 0;}
   h2{
@@ -403,6 +428,27 @@
       </div>
     </div>
   </div>
+
+  <!-- The why, ahead of the what. Everything below it explains the coin;
+       this is the only part that says what it is for, and it is placed where
+       a reader who has just copied the address is standing. -->
+  <section class="soul" id="soul">
+    <span class="mk" aria-hidden="true">
+      <svg viewBox="0 0 200 260"><use href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      <svg viewBox="0 0 200 260"><use href="#diamondShape" fill="#ffd41a"/></svg>
+    </span>
+    <h2 data-i18n="crypto.soul_h">What stands behind it</h2>
+    <p class="lead" data-i18n="crypto.soul_p1">Rotabo is a place where two people find each
+      other: one who needs an hour, a hand, a skill or a tool, and one who has it. Nothing
+      grander than that — and nothing smaller either, because that is how most things
+      actually get done.</p>
+    <p data-i18n="crypto.soul_p2">This is the first token to carry the Rotabo name. It does
+      not connect anybody; people do that. What it carries is the name, and behind the name
+      there is a marketplace that exists, in thirty-eight languages, used by people who will
+      never say the word "token".</p>
+    <p data-i18n="crypto.soul_p3">That is the whole of it. No promise attached — only the one
+      thing most coins do not have: somewhere real to point at.</p>
+  </section>
 
   <section id="what">
     <h2 data-i18n="crypto.what_h">What this is</h2>

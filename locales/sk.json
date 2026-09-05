@@ -1176,6 +1176,10 @@
     "warn2_p2": "Nikto z Rotabo vám nenapíše prvý, nebude chcieť vašu obnovovaciu frázu, nepožiada vás, aby ste peňaženku pripojili k nejakej stránke kvôli „overeniu\", ani vám nepošle súkromný odkaz. Čokoľvek z toho je niekto, kto vás okráda.",
     "terms": "Podmienky",
     "privacy": "Súkromie",
-    "stamp": "Spustenie: {d} vášho času"
+    "stamp": "Spustenie: {d} vášho času",
+    "soul_h": "Čo za tým stojí",
+    "soul_p1": "Rotabo je miesto, kde sa nájdu dvaja ľudia: ten, kto potrebuje hodinu, pomocnú ruku, zručnosť alebo náradie, a ten, kto ich má. Nič väčšie ako to — a nič menšie ani, lebo takto sa väčšina vecí naozaj urobí.",
+    "soul_p2": "Toto je prvý token, ktorý nesie meno Rotabo. Sám nikoho nespája; to robia ľudia. Nesie meno, a za tým menom stojí trhovisko, ktoré existuje, v tridsiatich ôsmich jazykoch, používané ľuďmi, ktorí slovo „token“ nikdy nevyslovia.",
+    "soul_p3": "A to je všetko. Bez akéhokoľvek sľubu — len tá jedna vec, ktorú väčšina mincí nemá: niečo skutočné, na čo sa dá ukázať."
   }
 }

@@ -1187,6 +1187,10 @@
     "warn2_p2": "Ninguém da Rotabo lhe escreverá primeiro, nem lhe pedirá a frase de recuperação, nem lhe pedirá que ligue a carteira a um site para a «verificar», nem lhe enviará um link privado. Qualquer uma dessas coisas é alguém a roubá-lo.",
     "terms": "Termos",
     "privacy": "Privacidade",
-    "stamp": "Lançamento: {d} na sua hora"
+    "stamp": "Lançamento: {d} na sua hora",
+    "soul_h": "O que está por trás",
+    "soul_p1": "O Rotabo é um sítio onde duas pessoas se encontram: uma que precisa de uma hora, de uma ajuda, de um saber ou de uma ferramenta, e outra que a tem. Nada maior do que isso — e nada menor também, porque é assim que a maioria das coisas se faz de facto.",
+    "soul_p2": "Este é o primeiro token a levar o nome Rotabo. Não liga ninguém; isso fazem-no as pessoas. O que ele leva é o nome, e por trás do nome há um mercado que existe, em trinta e oito línguas, usado por gente que nunca vai dizer a palavra «token».",
+    "soul_p3": "É tudo. Sem promessa nenhuma — só a única coisa que a maioria das moedas não tem: algo real para apontar."
   }
 }

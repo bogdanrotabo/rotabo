@@ -1176,6 +1176,10 @@
     "warn2_p2": "Hakuna mtu kutoka Rotabo atakayekuandikia kwanza, atakayeomba kifungu chako cha kurejesha, atakayekuomba uunganishe pochi yako kwenye tovuti ili «kuithibitisha», wala atakayekutumia kiungo cha faragha. Chochote kati ya hivyo ni mtu anayekuibia.",
     "terms": "Masharti",
     "privacy": "Faragha",
-    "stamp": "Uzinduzi: {d} kwa saa zako"
+    "stamp": "Uzinduzi: {d} kwa saa zako",
+    "soul_h": "Nini kinasimama nyuma yake",
+    "soul_p1": "Rotabo ni mahali ambapo watu wawili wanapatana: mmoja anayehitaji saa moja, mkono wa msaada, ujuzi au kifaa, na mwingine aliye nacho. Hakuna kikubwa zaidi ya hicho — wala kidogo zaidi, kwa sababu ndivyo mambo mengi yanavyokamilika kwa kweli.",
+    "soul_p2": "Hii ndiyo tokeni ya kwanza inayobeba jina la Rotabo. Haiunganishi mtu yeyote; watu ndio wanaofanya hivyo. Kinachobebwa ni jina, na nyuma ya jina kuna soko lililopo kweli, kwa lugha thelathini na nane, likitumiwa na watu ambao hawatalitamka neno «tokeni» kamwe.",
+    "soul_p3": "Ndiyo hiyo yote. Bila ahadi yoyote — ni kile kitu kimoja tu ambacho sarafu nyingi hazina: kitu halisi cha kukielekeza."
   }
 }

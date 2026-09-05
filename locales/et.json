@@ -1187,6 +1187,10 @@
     "warn2_p2": "Keegi Rotabost ei kirjuta sulle esimesena, ei küsi sinu taastefraasi, ei palu ühendada oma rahakotti mõne saidiga selle „kontrollimiseks\" ega saada sulle privaatset linki. Iga selline asi on keegi, kes sind varastab.",
     "terms": "Tingimused",
     "privacy": "Privaatsus",
-    "stamp": "Käivitamine: {d} sinu aja järgi"
+    "stamp": "Käivitamine: {d} sinu aja järgi",
+    "soul_h": "Mis selle taga on",
+    "soul_p1": "Rotabo on koht, kus kaks inimest leiavad teineteist: üks, kes vajab tundi, abikätt, oskust või tööriista, ja teine, kellel see on. Ei midagi suuremat sellest — ja midagi väiksemat ka mitte, sest just nii enamik asju tegelikult ära tehakse.",
+    "soul_p2": "See on esimene token, mis kannab Rotabo nime. See ei ühenda kedagi; seda teevad inimesed. Ta kannab nime, ja nime taga on turg, mis on päriselt olemas, kolmekümne kaheksas keeles, kasutatuna inimeste poolt, kes sõna „token“ kunagi välja ei ütle.",
+    "soul_p3": "See ongi kõik. Ilma ühegi lubaduseta — ainult see üks asi, mida enamikul müntidel ei ole: midagi tõelist, millele osutada."
   }
 }
