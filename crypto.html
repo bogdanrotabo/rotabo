@@ -180,6 +180,38 @@
   .cta:hover{background:var(--violet-1);}
   .cta[aria-disabled="true"]{background:#c3a7d2;pointer-events:none;}
 
+  /* Where else the coin can be reached. Four links, and they are not four
+     markets: there is one pool, the pump.fun bonding curve, and Jupiter
+     swaps straight through it. The other three are places to look at it --
+     DexScreener, GeckoTerminal and CoinMarketCap's on-chain scanner all
+     index the same pool on their own, which is why they can be linked at
+     all. Nothing here is a listing anybody applied for, and the note under
+     the row says so, because a row of famous logos reads as endorsement
+     unless it is told not to. */
+  .mkt{margin:26px 0 0;}
+  .mkt-k{
+    font-size:.74rem;font-weight:800;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--text-eyebrow);
+  }
+  .mkt-row{
+    display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:11px;
+  }
+  .mkt-b{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 15px;border-radius:12px;
+    background:var(--bg-card);border:1px solid var(--border);
+    font-size:.92rem;font-weight:700;color:var(--text-dark);text-decoration:none;
+  }
+  .mkt-b:hover{border-color:var(--diamond-a);}
+  /* The marks are each site's own, at the size they stay legible: the two
+     that are a face rather than a letterform go illegible below about 20px. */
+  .mkt-b img{width:21px;height:21px;display:block;flex-shrink:0;border-radius:5px;}
+  .mkt-note{
+    margin:12px auto 0;max-width:52ch;
+    font-size:.86rem;line-height:1.5;color:var(--text-body);
+  }
+  .mkt[hidden]{display:none;}
+
   /* -------------------------------------------------------------- cards */
   section{padding:46px 0 0;}
   h2{
@@ -301,6 +333,28 @@
       </div>
 
       <a class="cta" id="buyBtn" href="#how" aria-disabled="true">Buy on pump.fun</a>
+
+      <!-- The hrefs all carry the mint, so they are written by
+           scripts/build-crypto.mjs like everything else on this page that
+           does, and the whole block is hidden when there is no mint: before
+           a coin exists there is nothing on the other end of any of them. -->
+      <div class="mkt" id="mkt">
+        <div class="mkt-k">Also here</div>
+        <div class="mkt-row" id="mktRow">
+          <a class="mkt-b" href="https://jup.ag/tokens/8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump" target="_blank" rel="noopener">
+            <img src="/jupiter-logo.png" alt="" width="21" height="21" loading="lazy" decoding="async">Jupiter</a>
+          <a class="mkt-b" href="https://dexscreener.com/solana/8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump" target="_blank" rel="noopener">
+            <img src="/dexscreener-logo.png" alt="" width="21" height="21" loading="lazy" decoding="async">DexScreener</a>
+          <a class="mkt-b" href="https://www.geckoterminal.com/solana/tokens/8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump" target="_blank" rel="noopener">
+            <img src="/geckoterminal-logo.png" alt="" width="21" height="21" loading="lazy" decoding="async">GeckoTerminal</a>
+          <a class="mkt-b" href="https://dex.coinmarketcap.com/token/solana/8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump/" target="_blank" rel="noopener">
+            <img src="/coinmarketcap-logo.png" alt="" width="21" height="21" loading="lazy" decoding="async">CoinMarketCap</a>
+        </div>
+        <p class="mkt-note">There is one pool: the pump.fun one above. Jupiter
+          swaps straight through it, so a wallet that routes through Jupiter
+          reaches the same coin. The other three are charts — they found the
+          pool themselves, and none of this is a listing anyone applied for.</p>
+      </div>
     </div>
   </div>
 

@@ -13,10 +13,11 @@
  * whose whole purpose is publishing an address was showing everything about
  * the coin except the address.
  *
- * So the address is also written into the markup, into three descriptions and
- * into the JSON-LD -- and because a string copied five times is a string that
- * goes stale in four of them, none of those are edited by hand. They are
- * derived from TOKEN.MINT, and --check fails the moment one of them disagrees.
+ * So the address is also written into the markup, into three descriptions,
+ * into the JSON-LD, and into the four outbound links under the buy button --
+ * and because a string copied ten times is a string that goes stale in nine
+ * of them, none of those are edited by hand. They are derived from
+ * TOKEN.MINT, and --check fails the moment one of them disagrees.
  *
  * It handles the empty mint too, which is the state this page shipped in and
  * the state it would go back to for another launch: no address anywhere, and
@@ -97,6 +98,25 @@ const REGULI = [
   ["addrV",
    /<div class="v" id="addrV">[^<]*<\/div>/g,
    `<div class="v" id="addrV">${MINT}</div>`],
+  /* The four links under the buy button. Each one is the mint again, in a
+     URL shape somebody else decided, which is exactly the kind of string
+     that gets copied once and then goes stale. The block is hidden without
+     a mint: before a coin exists there is nothing on the other end. */
+  ["Jupiter link",
+   /href="https:\/\/jup\.ag\/tokens\/[^"]*"/g,
+   `href="https://jup.ag/tokens/${MINT}"`],
+  ["DexScreener link",
+   /href="https:\/\/dexscreener\.com\/solana\/[^"]*"/g,
+   `href="https://dexscreener.com/solana/${MINT}"`],
+  ["GeckoTerminal link",
+   /href="https:\/\/www\.geckoterminal\.com\/solana\/tokens\/[^"]*"/g,
+   `href="https://www.geckoterminal.com/solana/tokens/${MINT}"`],
+  ["CoinMarketCap link",
+   /href="https:\/\/dex\.coinmarketcap\.com\/token\/solana\/[^"]*"/g,
+   `href="https://dex.coinmarketcap.com/token/solana/${MINT}/"`],
+  ["the block itself",
+   /<div class="mkt" id="mkt"[^>]*>/g,
+   `<div class="mkt" id="mkt"${MINT ? "" : " hidden"}>`],
 ];
 
 let out = src;
