@@ -140,29 +140,35 @@
   .live-note{margin-top:16px;font-weight:800;color:var(--diamond-a);}
 
   /* ------------------------------------------------------------ address */
+  /* The panel holding the address. It was --text-dark, a near-black violet,
+     and it read as a hole punched in a page made of pale lavender. Light now,
+     and in the same family as everything around it: the card's own ground,
+     the site's border, the site's violet on top. Nothing here is a colour
+     this site did not already have. */
   .addr{
     margin:16px auto 0;max-width:620px;
-    background:var(--text-dark);border-radius:16px;padding:16px;
+    background:linear-gradient(180deg,var(--panel-soft),var(--bg-mid));
+    border:1px solid var(--border);border-radius:16px;padding:16px;
     text-align:left;
   }
-  .addr .k{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c9a9dd;}
+  .addr .k{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--violet-1);}
   .idpair{
     display:flex;flex-wrap:wrap;gap:8px 34px;
-    padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #4a2a63;
+    padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid var(--border);
   }
   .idpair span{display:flex;flex-direction:column;gap:3px;}
-  .idpair b{font-size:1.12rem;font-weight:800;color:#fff;letter-spacing:-.01em;}
+  .idpair b{font-size:1.12rem;font-weight:800;color:var(--text-dark);letter-spacing:-.01em;}
   /* Not uppercased in CSS. The ticker is "Rotabo", with one capital, and a
      text-transform here would show a reader a string that is not the one
      they are checking against. */
   .addr .v{
     margin-top:7px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    font-size:.9rem;color:#fff;word-break:break-all;line-height:1.5;
+    font-size:.9rem;color:var(--text-dark);word-break:break-all;line-height:1.5;
   }
-  /* The waiting state: not monospace, not white, nothing that could be
-     mistaken for an address at a glance. */
+  /* The waiting state: not monospace, not the address's own colour, nothing
+     that could be mistaken for an address at a glance. */
   .addr .v.gol{
-    font-family:inherit;font-size:.93rem;color:#c9a9dd;font-style:italic;
+    font-family:inherit;font-size:.93rem;color:var(--text-body);font-style:italic;
     word-break:normal;
   }
   .addr button[hidden]{display:none;}
@@ -172,12 +178,15 @@
   }
   .addr button:hover{background:var(--violet-2);}
 
+  /* The lit violet rather than the deep one -- #7c2596 next to a pale page
+     is a dark slab, and this is the friendly end of the same colour. White
+     on it measures 4.6:1, which large bold type carries. */
   .cta{
     display:inline-block;margin:22px 0 0;padding:16px 30px;border-radius:14px;
-    background:var(--diamond-b);color:var(--on-brand);
+    background:var(--diamond-a);color:var(--on-brand);
     font-weight:800;font-size:1.05rem;text-decoration:none;
   }
-  .cta:hover{background:var(--violet-1);}
+  .cta:hover{background:var(--violet-2);}
   .cta[aria-disabled="true"]{background:#c3a7d2;pointer-events:none;}
 
   /* Where else the coin can be reached. Four links, and they are not four
