@@ -15,6 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:description" content="Official contract address: 8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump — the Rotabo token, launched on pump.fun on Solana. Published here and nowhere else.">
 <meta name="twitter:image" content="https://rotabo.app/crypto-card.png">
+<link rel="stylesheet" href="/bands.css">
 <link rel="icon" href="/icons/favicon-32.png" type="image/png">
 <script src="/lang.js"></script>
 <!-- The address again, this time for a machine. A crawler that does not run
@@ -55,6 +56,14 @@
     --text-body:#6b5878;
     --text-eyebrow:#8a7a94;
     --brand-light:#c264e0;
+    /* The band's own five, from index.html's palette. They live on the
+       page rather than in bands.css because index.html swaps them in
+       business mode; this page has one mode and just declares them. */
+    --tick-text:#f0d7fa;
+    --tick-num:#e7c2f6;
+    --tick-sep:#e3b9f4;
+    --tick-label:#f6e4fd;
+    --tick-strong:#fff;
     --gold:#ffd41a;
     --gold-ink:#8a6b00;
     --green:#3ecb7e;
@@ -270,17 +279,34 @@
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <radialGradient id="dg" cx="50%" cy="50%" r="75%">
+  <radialGradient id="diamondGrad" cx="50%" cy="50%" r="75%">
     <stop offset="0%" stop-color="#c264e0"/><stop offset="45%" stop-color="#a239c9"/><stop offset="100%" stop-color="#7c2596"/>
   </radialGradient>
-  <path id="dm" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
+  <radialGradient id="diamondGold" cx="50%" cy="50%" r="75%">
+    <stop offset="0%" stop-color="#ffd41a"/><stop offset="45%" stop-color="#ffd41a"/><stop offset="100%" stop-color="#ffd41a"/>
+  </radialGradient>
+  <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
 </defs></svg>
+
+<!-- The same three that run across the front page, from the same two
+     files. They ship empty and stay hidden until there is something to
+     run in them, so a database that does not answer leaves no stripe
+     with nothing in it. -->
+<div class="ticker" id="ticker" hidden aria-label="Sponsors and latest listings">
+  <div class="ticker__track"></div>
+</div>
+<div class="ticker ticker--biz" id="tickerBiz" hidden aria-label="Rotabo for business">
+  <div class="ticker__track"></div>
+</div>
+<div class="ticker ticker--token" id="tokenBand" hidden aria-label="Rotabo Token">
+  <div class="ticker__track" id="tokenTrack"></div>
+</div>
 
 <div class="shell">
   <div class="top">
     <span class="mark" aria-hidden="true">
-      <svg viewBox="0 0 200 260"><use href="#dm" fill="url(#dg)"/></svg>
-      <svg viewBox="0 0 200 260"><use href="#dm" fill="#ffd41a"/></svg>
+      <svg viewBox="0 0 200 260"><use href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      <svg viewBox="0 0 200 260"><use href="#diamondShape" fill="#ffd41a"/></svg>
     </span>
     <a class="name" href="/">rotabo<b>.app</b></a>
     <a class="back" href="/">&larr; <span data-i18n="crypto.back">Back to Rotabo</span></a>
@@ -291,8 +317,8 @@
 
   <div class="hero">
     <div class="gems" aria-hidden="true">
-      <svg viewBox="0 0 200 260"><use href="#dm" fill="url(#dg)"/></svg>
-      <svg class="gold" viewBox="0 0 200 260"><use href="#dm" fill="#ffd41a"/></svg>
+      <svg viewBox="0 0 200 260"><use href="#diamondShape" fill="url(#diamondGrad)"/></svg>
+      <svg class="gold" viewBox="0 0 200 260"><use href="#diamondShape" fill="#ffd41a"/></svg>
     </div>
 
     <h1>Rotabo <span class="g">Crypto</span></h1>
@@ -526,6 +552,15 @@ var TOKEN = {
     return v === undefined ? implicit : v;
   };
 
+  /* The bands read their own strings through this one, the same name the
+     front page publishes it under. Returning the key path when it is missing
+     is the contract bands.js expects: it takes that as "not translated" and
+     uses the English it carries itself. */
+  window.rotaboT = function (cale) {
+    var v = caut(cale);
+    return v === undefined ? cale : v;
+  };
+
   function aplica() {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var v = caut(el.getAttribute('data-i18n'));
@@ -670,6 +705,13 @@ var TOKEN = {
   stampila();
 })();
 </script>
+
+<!-- What fills the bands. supabase-js for the two that read the database,
+     countries.js so a city and country come out in the language on screen,
+     and bands.js, which is the same file the front page runs. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/countries.js"></script>
+<script src="/bands.js"></script>
 
 </body>
 </html>

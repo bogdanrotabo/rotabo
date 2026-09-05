@@ -1,0 +1,136 @@
+/*
+ * The three bands that run across the top of the site.
+ *
+ * One file because there are two pages with them on: the front page, where
+ * they have always been, and crypto.html, which asked for the same three.
+ * A second copy of these rules would drift -- and the way it would drift is
+ * one page's violet stripe being a slightly different violet from the other's,
+ * on the same site, one click apart.
+ *
+ * The --tick-* colours are NOT here. They are the palette, and the palette is
+ * per page: index.html swaps five of them in business mode, where the band is
+ * gold and the lettering has to become violet to stay readable. Each page
+ * declares them; these rules only use them.
+ *
+ * Lifted out of index.html on 2026-09-05, unchanged.
+ */
+
+/* --------------------------------------------------------- top band --- */
+
+/* The same idea as the strip on topten.one and deliberately twice its
+   height: 20px of padding on a 15px line where that one runs 7px on 12px.
+   It is the first thing on the page, so it carries the diamond's own three
+   stops rather than a flat violet -- the diamond is what the brand is
+   recognised by, and a band in someone else's purple would not be Rotabo. */
+.ticker{
+  overflow:hidden;
+  background:linear-gradient(90deg,var(--diamond-b) 0%,var(--diamond-a) 38%,var(--brand-light) 62%,var(--diamond-a) 100%);
+  border-bottom:1px solid #6a1f80;
+  padding:20px 0;
+}
+
+/* The duration is set from JS, not here: a fixed one makes a short list
+   crawl and a long one sprint, and the band has to stay readable at both
+   ends as listings arrive. */
+.ticker__track{display:flex;width:max-content;animation:tick linear infinite;}
+
+/* Half the track, because the track is the list twice over. */
+@keyframes tick{ to { transform:translateX(-50%); } }
+
+.ticker:hover .ticker__track,
+.ticker:focus-within .ticker__track{animation-play-state:paused;}
+
+.tick{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:0 20px;font-size:15px;line-height:1.4;
+  white-space:nowrap;color:var(--tick-text);text-decoration:none;
+}
+/* Who is listing, ahead of what they are listing. Two people can share a
+   household, an email and therefore a Rotabo number, and then sit in the
+   band offering the same category in the same town -- without the name
+   those two cells are the same cell twice. */
+.tick__who{color:var(--tick-strong);font-weight:800;}
+.tick__cat{color:var(--tick-strong);font-weight:800;}
+.tick__where{color:var(--tick-strong);font-weight:600;}
+.tick__num{color:var(--tick-num);font-weight:700;font-variant-numeric:tabular-nums;}
+
+/* Two dots rather than two words: which way round a listing faces is worth
+   one glance, and the words are already there in the reader's language. */
+.tick__dot{
+  width:9px;height:9px;border-radius:50%;flex:0 0 auto;
+  background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.22);
+}
+.tick--seek .tick__dot{background:#ffd41a;box-shadow:0 0 0 3px rgba(255,212,26,.24);}
+
+/* One separator rule instead of a middot element in every gap. Logical
+   margin, so Arabic and Urdu put it on the correct side. */
+.tick__where::before,
+.tick__num::before{content:"\00B7";margin-inline-end:9px;color:var(--tick-sep);font-weight:400;}
+
+.tick--sponsor{gap:10px;}
+.tick__logo{
+  width:20px;height:20px;flex:0 0 auto;display:block;border-radius:5px;
+}
+/* A registered company in the band. A button, because on the business
+   side it opens the same window the search does; dressed as the other
+   cells so the band does not look like a row of controls. */
+.tick--firm{
+  font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;
+}
+.tick--firm b{font-weight:800;}
+@media (min-width:560px){ .tick__logo{width:23px;height:23px;} }
+.tick--sponsor .tick__label{
+  text-transform:uppercase;letter-spacing:.12em;font-size:11px;
+  font-weight:800;color:var(--tick-label);opacity:.85;
+}
+.tick--sponsor b{
+  color:#7c2596;background:#fff;font-weight:800;
+  padding:4px 12px;border-radius:999px;
+}
+
+@media (min-width:560px){
+  .ticker{padding:24px 0;}
+  .tick{font-size:17px;padding:0 26px;}
+  .tick--sponsor .tick__label{font-size:12px;}
+}
+
+/* Stopped, not hidden: the sponsor and the listings are the point, the
+   motion is only how they take turns. Left scrollable so the rest of the
+   band stays reachable by hand. */
+@media (prefers-reduced-motion:reduce){
+  .ticker{overflow-x:auto;}
+  .ticker__track{animation:none;}
+}
+
+/* The token band. It keeps the sponsors band's violet -- which is the
+   mark's own gradient, the same three colours the gems are filled with --
+   so the two stripes read as one site rather than as something stuck on
+   top. What tells it apart is what it carries: the mark itself on the left
+   of every unit, and after the launch the pump.fun capsule beside it. */
+.tick--token{
+  display:inline-flex;align-items:center;gap:11px;
+  padding:0 26px;white-space:nowrap;text-decoration:none;
+  font-size:15px;line-height:1.4;color:var(--tick-label);
+}
+.tick--token .mk{display:flex;gap:3px;height:26px;flex-shrink:0;}
+.tick--token .mk svg{height:100%;width:auto;display:block;}
+.tick--token img{height:26px;width:26px;display:block;flex-shrink:0;}
+.tick--token b{font-weight:800;color:#fff;}
+.tick--token .when{font-weight:700;color:var(--tick-num);}
+
+/* The second band. Gold whatever the palette says, because it is the
+   business side seen from the personal one -- swapped with the page it
+   would stop meaning anything. Violet lettering, since #ffd41a cannot
+   carry white, and the deeper violet clears 4.7 against the dark end. */
+.ticker--biz{
+  background:#ffd41a;
+  border-bottom:1px solid #ffd41a;
+}
+.ticker--biz .tick{color:#5f2270;}
+.ticker--biz .tick__cat,
+.ticker--biz .tick__where,
+.ticker--biz .tick__num{color:#5f2270;}
+.ticker--biz .tick__where::before,
+.ticker--biz .tick__num::before{color:#8a4a9e;}
+.ticker--biz .tick--sponsor .tick__label{color:#5f2270;opacity:.9;}
+.ticker--biz .tick__dot{background:#5f2270;box-shadow:0 0 0 3px rgba(95,34,112,.20);}
