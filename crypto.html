@@ -172,21 +172,31 @@
     word-break:normal;
   }
   .addr button[hidden]{display:none;}
+  /* The same light violet as the buy button below it. It was the deeper
+     #a239c9, which left the secondary action heavier than the primary one --
+     the page read as if copying the address mattered more than buying. */
   .addr button{
     margin-top:12px;width:100%;padding:11px 14px;border:0;border-radius:11px;
-    background:var(--diamond-a);color:#fff;font:inherit;font-weight:800;cursor:pointer;
+    background:var(--brand-light);color:var(--text-dark);
+    font:inherit;font-weight:800;cursor:pointer;
   }
-  .addr button:hover{background:var(--violet-2);}
+  .addr button:hover{background:var(--diamond-a);}
 
-  /* The lit violet rather than the deep one -- #7c2596 next to a pale page
-     is a dark slab, and this is the friendly end of the same colour. White
-     on it measures 4.6:1, which large bold type carries. */
+  /* Lighter again, and the other way round: --brand-light with the page's
+     own near-black violet on it rather than white. White on a violet this
+     pale is the weaker half of the pair -- #3a1650 on #c264e0 measures 6.4:1
+     and the button stops being a slab of colour with writing on it.
+
+     It carries pump.fun's own mark, the same file the badge above uses, so
+     the button says where it goes before anybody reads it. */
   .cta{
-    display:inline-block;margin:22px 0 0;padding:16px 30px;border-radius:14px;
-    background:var(--diamond-a);color:var(--on-brand);
+    display:inline-flex;align-items:center;gap:11px;
+    margin:22px 0 0;padding:15px 28px;border-radius:14px;
+    background:var(--brand-light);color:var(--text-dark);
     font-weight:800;font-size:1.05rem;text-decoration:none;
   }
-  .cta:hover{background:var(--violet-2);}
+  .cta img{width:24px;height:24px;display:block;flex-shrink:0;}
+  .cta:hover{background:var(--diamond-a);}
   .cta[aria-disabled="true"]{background:#c3a7d2;pointer-events:none;}
 
   /* Where else the coin can be reached. Four links, and they are not four
@@ -341,7 +351,7 @@
         <button type="button" id="copyBtn" hidden>Copy address</button>
       </div>
 
-      <a class="cta" id="buyBtn" href="#how" aria-disabled="true">Buy on pump.fun</a>
+      <a class="cta" id="buyBtn" href="#how" aria-disabled="true"><img src="/pumpfun-logo.png" alt="" width="24" height="24" decoding="async">Buy on pump.fun</a>
 
       <!-- The hrefs all carry the mint, so they are written by
            scripts/build-crypto.mjs like everything else on this page that
