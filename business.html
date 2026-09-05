@@ -510,6 +510,12 @@ if (window.top !== window.self) {
      the same variables are yellow, and yellow lettering on a cream card
      measured 1.34:1. The titles stay violet on both sides -- the icons and
      the buttons under them still carry the mode's colour. */
+  /* Written as the two colours themselves, not as --diamond-a: business
+     mode remaps that token to #ffd41a, and this is lettering, which that
+     mode's own rule keeps violet. The gems above the title are literal
+     for the same reason and stay violet-and-gold on both sides. */
+  .door-crypto .door-title{color:#a239c9;}
+  .door-crypto .door-title .g{color:#ffd41a;}
   .door-need  .door-title{color:var(--ink-strong);}
   .door-offer .door-title{color:var(--ink-soft);}
   @media(max-width:560px){ .doors{grid-template-columns:1fr;} }
@@ -1654,7 +1660,11 @@ if (window.top !== window.self) {
         <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
         <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>
       </span>
-      <span class="door-title" data-i18n="choose.crypto_title">Rotabo Crypto</span>
+      <!-- The wordmark, not a sentence: the same two colours it has on
+           crypto.html and on the share card, one word per gem. It goes
+           through data-i18n-html because textContent would flatten the
+           span the first time anyone switches language. -->
+      <span class="door-title" data-i18n-html="choose.crypto_title">Rotabo <span class="g">Crypto</span></span>
       <span class="door-text" data-i18n="choose.crypto_text">The Rotabo token, on the Solana network.</span>
       <span class="door-btn" data-i18n="choose.crypto_btn">Open Rotabo Crypto</span>
     </a>

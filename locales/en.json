@@ -850,7 +850,7 @@
     "offer_title": "I have something to offer",
     "offer_text": "Offer a service, an object or a hand, and be found by the people who need it.",
     "offer_btn": "Post what you offer",
-    "crypto_title": "Rotabo Crypto",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
     "crypto_text": "The Rotabo token, on the Solana network.",
     "crypto_btn": "Open Rotabo Crypto"
   },

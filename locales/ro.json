@@ -850,7 +850,7 @@
     "offer_title": "Am ceva de oferit",
     "offer_text": "Oferiți un serviciu, un obiect sau o mână de ajutor, și fiți găsit de cine are nevoie.",
     "offer_btn": "Publică ce oferi",
-    "crypto_title": "Rotabo Crypto",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
     "crypto_text": "Tokenul Rotabo, pe rețeaua Solana.",
     "crypto_btn": "Deschide Rotabo Crypto"
   },
