@@ -4,17 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rotabo Crypto — the Rotabo token on Solana</title>
-<meta name="description" content="The Rotabo token, launched on pump.fun on Solana. The official contract address, how to buy it, and what it is and is not.">
+<meta name="description" content="The Rotabo token on Solana. Official contract address: 8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump. Launched on pump.fun — how to buy it, and what it is and is not.">
 <link rel="canonical" href="https://rotabo.app/crypto.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rotabo">
 <meta property="og:url" content="https://rotabo.app/crypto.html">
 <meta property="og:title" content="Rotabo Crypto — the Rotabo token on Solana">
-<meta property="og:description" content="Launched on pump.fun. The official contract address is published here and nowhere else.">
+<meta property="og:description" content="Official contract address: 8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump — the Rotabo token, launched on pump.fun on Solana. Published here and nowhere else.">
 <meta property="og:image" content="https://rotabo.app/crypto-card.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Official contract address: 8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump — the Rotabo token, launched on pump.fun on Solana. Published here and nowhere else.">
 <meta name="twitter:image" content="https://rotabo.app/crypto-card.png">
 <link rel="icon" href="/icons/favicon-32.png" type="image/png">
+<!-- The address again, this time for a machine. A crawler that does not run
+     the script still gets the one string this page exists to publish. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Rotabo Crypto \u2014 the Rotabo token on Solana",
+  "url": "https://rotabo.app/crypto.html",
+  "about": {
+    "@type": "Thing",
+    "name": "Rotabo",
+    "alternateName": "Rotabo token",
+    "url": "https://pump.fun/coin/8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "Solana contract address",
+      "value": "8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump"
+    }
+  },
+  "publisher": { "@type": "Organization", "name": "Rotabo", "url": "https://rotabo.app" }
+}
+</script>
 <style>
   /* The site's palette, copied from index.html so this page cannot drift
      into a violet of its own. */
@@ -242,17 +265,21 @@
       </div>
       <div class="live-note" id="liveNote" hidden>It is live.</div>
 
-      <!-- The slot for the address, always on the page. Before the coin
-           exists it stands here empty and says so, because a reader has to
-           be able to learn where the real address will be *before* the
-           launch -- that is the half hour when the copies go up and the
-           only defence anyone has is knowing which page to come back to.
+      <!-- The address, always on the page. Before the coin existed this
+           stood here empty and said so, because a reader has to be able to
+           learn where the real address will be *before* the launch -- that
+           is the half hour when the copies go up and the only defence
+           anyone has is knowing which page to come back to. Empty was never
+           a placeholder: no example address, no greyed-out string of the
+           right shape, nothing that could be copied by mistake.
 
-           Empty is not a placeholder. There is no example address, no
-           greyed-out string of the right shape, nothing that could be
-           copied by mistake: a page that prints something address-shaped
-           in this box is a page teaching people to trust whatever is in
-           this box. -->
+           It is written into the markup now, not only set by the script,
+           and for the same reason it is in the meta tags and the JSON-LD
+           above: a crawler that does not run JavaScript, and a link preview
+           that never runs any, still get the one string this page exists to
+           publish. scripts/build-crypto.mjs keeps all of them equal to
+           TOKEN.MINT, so there is no way to change the address in one place
+           and leave a stale one somewhere a machine reads. -->
       <div class="addr" id="addrBox">
         <!-- Name and ticker above the address, in the same dark panel, because
              the three are one answer to one question: is this the real one.
@@ -264,7 +291,7 @@
           <span><span class="k">Ticker</span><b data-ticker>Rotabo</b></span>
         </div>
         <div class="k">Official contract address</div>
-        <div class="v" id="addrV"></div>
+        <div class="v" id="addrV">8EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump</div>
         <button type="button" id="copyBtn" hidden>Copy address</button>
       </div>
 

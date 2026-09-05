@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 #
-# The contract address, put in the two places that hold it.
+# The contract address, put everywhere it belongs.
 #
 #   bash scripts/pune-mint.sh <mint>            verifies, then edits
 #   VERIFICA_DOAR=1 bash scripts/pune-mint.sh <mint>   verifies only
 #
-# The address lives twice: TOKEN.MINT at the head of the script in crypto.html,
-# and `var MINT` in the band script at the foot of index.html. Editing one and
-# forgetting the other is the failure this script exists to prevent -- the page
-# would link to the coin while the band on the home page still said the address
-# was coming.
+# Two places are edited here: TOKEN.MINT at the head of the script in
+# crypto.html, and `var MINT` in the band script at the foot of index.html.
+# Editing one and forgetting the other is the failure this script exists to
+# prevent -- the page would link to the coin while the band on the home page
+# still said the address was coming.
+#
+# Everything else that carries the address -- the markup of the box, the three
+# descriptions a link preview reads, the JSON-LD -- is derived from TOKEN.MINT
+# by scripts/build-crypto.mjs, which runs in step 4.
 #
 # Nothing is written until pump.fun has been asked two questions: does
 # /coin/<mint> answer 200, and is the coin there ours -- name Rotabo, ticker
@@ -82,6 +86,7 @@ pune crypto.html "  MINT:     ''," "  MINT:     '$MINT',"
 pune index.html  "  var MINT = '';" "  var MINT = '$MINT';"
 
 echo "== 4. fisierele derivate"
+node scripts/build-crypto.mjs
 node scripts/build-business.mjs
 node scripts/build-sw.mjs
 
