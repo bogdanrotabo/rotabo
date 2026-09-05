@@ -617,7 +617,10 @@
     "need_btn": "Đăng điều bạn cần",
     "offer_title": "Tôi có thứ để cho",
     "offer_text": "Cung cấp một dịch vụ, một món đồ hay một sự giúp đỡ, và để người cần tìm thấy bạn.",
-    "offer_btn": "Đăng điều bạn cung cấp"
+    "offer_btn": "Đăng điều bạn cung cấp",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Token Rotabo, trên mạng Solana.",
+    "crypto_btn": "Mở Rotabo Crypto"
   },
   "posters": {
     "back": "Quay lại rotabo.app",

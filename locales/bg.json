@@ -624,7 +624,10 @@
     "need_btn": "Публикувай какво търсиш",
     "offer_title": "Имам какво да предложа",
     "offer_text": "Предложете услуга, вещ или помощ и нека ви намерят тези, на които им трябва.",
-    "offer_btn": "Публикувай какво предлагаш"
+    "offer_btn": "Публикувай какво предлагаш",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Токенът Rotabo, в мрежата Solana.",
+    "crypto_btn": "Отворете Rotabo Crypto"
   },
   "posters": {
     "back": "Обратно към rotabo.app",

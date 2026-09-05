@@ -617,7 +617,10 @@
     "need_btn": "Pasang apa yang Anda cari",
     "offer_title": "Saya punya sesuatu untuk ditawarkan",
     "offer_text": "Tawarkan jasa, barang atau bantuan, dan biar orang yang membutuhkan menemukan Anda.",
-    "offer_btn": "Pasang apa yang Anda tawarkan"
+    "offer_btn": "Pasang apa yang Anda tawarkan",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Token Rotabo, di jaringan Solana.",
+    "crypto_btn": "Buka Rotabo Crypto"
   },
   "posters": {
     "back": "Kembali ke rotabo.app",

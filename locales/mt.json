@@ -617,7 +617,10 @@
     "need_btn": "Ippubblika dak li tfittex",
     "offer_title": "Għandi xi ħaġa x'noffri",
     "offer_text": "Offri servizz, oġġett jew għajnuna, u ħalli lil min għandu bżonnu jsibek.",
-    "offer_btn": "Ippubblika dak li toffri"
+    "offer_btn": "Ippubblika dak li toffri",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "It-token Rotabo, fuq in-netwerk Solana.",
+    "crypto_btn": "Iftaħ Rotabo Crypto"
   },
   "posters": {
     "back": "Lura għal rotabo.app",

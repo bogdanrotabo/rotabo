@@ -617,7 +617,10 @@
     "need_btn": "যা দরকার তা দিন",
     "offer_title": "আমার কিছু দেওয়ার আছে",
     "offer_text": "একটি সেবা, একটি জিনিস বা সাহায্য দিন, আর যাঁদের দরকার তাঁরা আপনাকে খুঁজে নিন।",
-    "offer_btn": "যা দেন তা দিন"
+    "offer_btn": "যা দেন তা দিন",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo টোকেন, Solana নেটওয়ার্কে।",
+    "crypto_btn": "Rotabo Crypto খুলুন"
   },
   "posters": {
     "back": "rotabo.app-এ ফিরে যান",

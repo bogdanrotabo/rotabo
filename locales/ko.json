@@ -617,7 +617,10 @@
     "need_btn": "찾는 것 올리기",
     "offer_title": "제공할 것이 있습니다",
     "offer_text": "서비스, 물건 또는 도움을 제공하고 필요한 사람이 당신을 찾게 하세요.",
-    "offer_btn": "제공할 것 올리기"
+    "offer_btn": "제공할 것 올리기",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Solana 네트워크의 Rotabo 토큰.",
+    "crypto_btn": "Rotabo Crypto 열기"
   },
   "posters": {
     "back": "rotabo.app 으로 돌아가기",

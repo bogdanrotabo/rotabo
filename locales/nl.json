@@ -839,7 +839,10 @@
     "need_btn": "Plaats wat u zoekt",
     "offer_title": "Ik heb iets aan te bieden",
     "offer_text": "Bied een dienst, een voorwerp of hulp aan, en word gevonden door wie het nodig heeft.",
-    "offer_btn": "Plaats wat u aanbiedt"
+    "offer_btn": "Plaats wat u aanbiedt",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "De Rotabo-token, op het Solana-netwerk.",
+    "crypto_btn": "Rotabo Crypto openen"
   },
   "posters": {
     "back": "Terug naar rotabo.app",

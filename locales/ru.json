@@ -832,7 +832,10 @@
     "need_btn": "Опубликовать, что ищете",
     "offer_title": "Мне есть что предложить",
     "offer_text": "Предложите услугу, вещь или помощь, и вас найдут те, кому это нужно.",
-    "offer_btn": "Опубликовать, что предлагаете"
+    "offer_btn": "Опубликовать, что предлагаете",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Токен Rotabo, в сети Solana.",
+    "crypto_btn": "Открыть Rotabo Crypto"
   },
   "posters": {
     "back": "Назад на rotabo.app",

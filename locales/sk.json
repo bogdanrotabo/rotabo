@@ -617,7 +617,10 @@
     "need_btn": "Zverejniť, čo hľadáte",
     "offer_title": "Mám čo ponúknuť",
     "offer_text": "Ponúknite službu, vec alebo pomoc, a nájdu vás tí, ktorí to potrebujú.",
-    "offer_btn": "Zverejniť, čo ponúkate"
+    "offer_btn": "Zverejniť, čo ponúkate",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Token Rotabo, v sieti Solana.",
+    "crypto_btn": "Otvoriť Rotabo Crypto"
   },
   "posters": {
     "back": "Späť na rotabo.app",

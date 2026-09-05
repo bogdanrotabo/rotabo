@@ -839,7 +839,10 @@
     "need_btn": "Publica lo que buscas",
     "offer_title": "Tengo algo que ofrecer",
     "offer_text": "Ofrezcan un servicio, un objeto o una mano, y que los encuentre quien lo necesita.",
-    "offer_btn": "Publica lo que ofreces"
+    "offer_btn": "Publica lo que ofreces",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "El token Rotabo, en la red Solana.",
+    "crypto_btn": "Abrir Rotabo Crypto"
   },
   "posters": {
     "back": "Volver a rotabo.app",

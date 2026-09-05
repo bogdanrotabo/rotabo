@@ -832,7 +832,10 @@
     "need_btn": "Aradığınızı yayınlayın",
     "offer_title": "Sunacak bir şeyim var",
     "offer_text": "Bir hizmet, bir eşya ya da yardım sunun, ihtiyacı olanlar sizi bulsun.",
-    "offer_btn": "Sunduğunuzu yayınlayın"
+    "offer_btn": "Sunduğunuzu yayınlayın",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo tokeni, Solana ağında.",
+    "crypto_btn": "Rotabo Crypto'yu aç"
   },
   "posters": {
     "back": "rotabo.app'a dön",

@@ -617,7 +617,10 @@
     "need_btn": "جو چاہیے وہ لگائیں",
     "offer_title": "میرے پاس دینے کو کچھ ہے",
     "offer_text": "کوئی خدمت، کوئی چیز یا مدد پیش کریں، اور جنہیں ضرورت ہے وہ آپ کو ڈھونڈ لیں۔",
-    "offer_btn": "جو دیتے ہیں وہ لگائیں"
+    "offer_btn": "جو دیتے ہیں وہ لگائیں",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo ٹوکن، Solana نیٹ ورک پر۔",
+    "crypto_btn": "Rotabo Crypto کھولیں"
   },
   "posters": {
     "back": "rotabo.app پر واپس",

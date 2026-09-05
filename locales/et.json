@@ -624,7 +624,10 @@
     "need_btn": "Pane kirja, mida otsid",
     "offer_title": "Mul on midagi pakkuda",
     "offer_text": "Pakkuge teenust, eset või abi, ja laske end leida neil, kes seda vajavad.",
-    "offer_btn": "Pane kirja, mida pakud"
+    "offer_btn": "Pane kirja, mida pakud",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo token, Solana võrgus.",
+    "crypto_btn": "Ava Rotabo Crypto"
   },
   "posters": {
     "back": "Tagasi rotabo.app-i",

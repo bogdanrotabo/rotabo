@@ -617,7 +617,10 @@
     "need_btn": "Chapisha unachotafuta",
     "offer_title": "Nina kitu cha kutoa",
     "offer_text": "Toa huduma, kitu au msaada, na wanaohitaji wakupate.",
-    "offer_btn": "Chapisha unachotoa"
+    "offer_btn": "Chapisha unachotoa",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Tokeni ya Rotabo, kwenye mtandao wa Solana.",
+    "crypto_btn": "Fungua Rotabo Crypto"
   },
   "posters": {
     "back": "Rudi kwenye rotabo.app",

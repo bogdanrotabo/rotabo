@@ -617,7 +617,10 @@
     "need_btn": "ลงสิ่งที่คุณหา",
     "offer_title": "ฉันมีบางอย่างจะให้",
     "offer_text": "เสนอบริการ สิ่งของ หรือความช่วยเหลือ และให้คนที่ต้องการหาคุณเจอ",
-    "offer_btn": "ลงสิ่งที่คุณให้ได้"
+    "offer_btn": "ลงสิ่งที่คุณให้ได้",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "โทเคน Rotabo บนเครือข่าย Solana",
+    "crypto_btn": "เปิด Rotabo Crypto"
   },
   "posters": {
     "back": "กลับไปที่ rotabo.app",

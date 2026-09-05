@@ -624,7 +624,10 @@
     "need_btn": "Slå op hvad du søger",
     "offer_title": "Jeg har noget at tilbyde",
     "offer_text": "Tilbyd en ydelse, en ting eller en hånd, og bliv fundet af dem der har brug for det.",
-    "offer_btn": "Slå op hvad du tilbyder"
+    "offer_btn": "Slå op hvad du tilbyder",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo-tokenet, på Solana-netværket.",
+    "crypto_btn": "Åbn Rotabo Crypto"
   },
   "posters": {
     "back": "Tilbage til rotabo.app",

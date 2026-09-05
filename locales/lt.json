@@ -617,7 +617,10 @@
     "need_btn": "Paskelbk, ko ieškai",
     "offer_title": "Turiu ką pasiūlyti",
     "offer_text": "Pasiūlykite paslaugą, daiktą ar pagalbą, ir tegul jus randa tie, kam to reikia.",
-    "offer_btn": "Paskelbk, ką siūlai"
+    "offer_btn": "Paskelbk, ką siūlai",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo žetonas Solana tinkle.",
+    "crypto_btn": "Atidaryti Rotabo Crypto"
   },
   "posters": {
     "back": "Atgal į rotabo.app",

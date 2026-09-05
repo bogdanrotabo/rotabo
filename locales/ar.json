@@ -832,7 +832,10 @@
     "need_btn": "انشر ما تبحث عنه",
     "offer_title": "لدي ما أقدمه",
     "offer_text": "قدّم خدمة أو غرضًا أو مساعدة، ودع من يحتاجها يجدك.",
-    "offer_btn": "انشر ما تقدمه"
+    "offer_btn": "انشر ما تقدمه",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "عملة Rotabo، على شبكة Solana.",
+    "crypto_btn": "افتح Rotabo Crypto"
   },
   "posters": {
     "back": "العودة إلى rotabo.app",

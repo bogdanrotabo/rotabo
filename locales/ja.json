@@ -617,7 +617,10 @@
     "need_btn": "探しているものを投稿",
     "offer_title": "提供できるものがあります",
     "offer_text": "サービス、物、手助けを提供して、必要としている人に見つけてもらいましょう。",
-    "offer_btn": "提供できるものを投稿"
+    "offer_btn": "提供できるものを投稿",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Solana ネットワーク上の Rotabo トークン。",
+    "crypto_btn": "Rotabo Crypto を開く"
   },
   "posters": {
     "back": "rotabo.app に戻る",

@@ -617,7 +617,10 @@
     "need_btn": "Tedd közzé, mit keresel",
     "offer_title": "Van mit ajánlanom",
     "offer_text": "Ajánljon szolgáltatást, tárgyat vagy segítséget, és találják meg azok, akiknek kell.",
-    "offer_btn": "Tedd közzé, mit kínálsz"
+    "offer_btn": "Tedd közzé, mit kínálsz",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "A Rotabo token, a Solana hálózaton.",
+    "crypto_btn": "Rotabo Crypto megnyitása"
   },
   "posters": {
     "back": "Vissza a rotabo.app oldalra",

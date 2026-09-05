@@ -624,7 +624,10 @@
     "need_btn": "Kerro mitä etsit",
     "offer_title": "Minulla on jotain tarjottavaa",
     "offer_text": "Tarjoa palvelua, tavaraa tai kättä, ja anna tarvitsevien löytää sinut.",
-    "offer_btn": "Kerro mitä tarjoat"
+    "offer_btn": "Kerro mitä tarjoat",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo-token, Solana-verkossa.",
+    "crypto_btn": "Avaa Rotabo Crypto"
   },
   "posters": {
     "back": "Takaisin rotabo.app-sivulle",

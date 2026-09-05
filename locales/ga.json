@@ -617,7 +617,10 @@
     "need_btn": "Cuir suas an rud atá uait",
     "offer_title": "Tá rud éigin agam le tairiscint",
     "offer_text": "Tairg seirbhís, rud nó lámh chúnta, agus faigheadh na daoine a bhfuil sé uathu thú.",
-    "offer_btn": "Cuir suas an rud a thairgeann tú"
+    "offer_btn": "Cuir suas an rud a thairgeann tú",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "An comhartha Rotabo, ar líonra Solana.",
+    "crypto_btn": "Oscail Rotabo Crypto"
   },
   "posters": {
     "back": "Ar ais go rotabo.app",

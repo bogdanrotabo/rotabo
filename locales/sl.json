@@ -617,7 +617,10 @@
     "need_btn": "Objavi, kaj iščeš",
     "offer_title": "Nekaj lahko ponudim",
     "offer_text": "Ponudite storitev, stvar ali pomoč in naj vas najdejo tisti, ki to potrebujejo.",
-    "offer_btn": "Objavi, kaj ponujaš"
+    "offer_btn": "Objavi, kaj ponujaš",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Žeton Rotabo, v omrežju Solana.",
+    "crypto_btn": "Odprite Rotabo Crypto"
   },
   "posters": {
     "back": "Nazaj na rotabo.app",

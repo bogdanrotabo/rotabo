@@ -617,7 +617,10 @@
     "need_btn": "发布您要找的",
     "offer_title": "我有东西可以提供",
     "offer_text": "提供一项服务、一件物品或一份帮助，让需要的人找到您。",
-    "offer_btn": "发布您能提供的"
+    "offer_btn": "发布您能提供的",
+    "crypto_title": "Rotabo <span class=\"g\">Crypto</span>",
+    "crypto_text": "Rotabo 代币，运行在 Solana 网络上。",
+    "crypto_btn": "打开 Rotabo Crypto"
   },
   "posters": {
     "back": "返回 rotabo.app",
