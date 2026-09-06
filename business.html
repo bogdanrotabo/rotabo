@@ -429,9 +429,16 @@ if (window.top !== window.self) {
   .mp-list[hidden]{display:none;}
 
   /* The band is Rotabo's page, but the marks standing in it are not Rotabo's,
-     so each keeps its own ground -- gift.ceo's near-black with its gold,
-     topten.one's black with its violet. Redrawn in this page's lavender they
-     would be different wordmarks.
+     so each keeps its own ground -- gift.ceo's near-black with its gold, and
+     topten.one's warm near-black with its own. Redrawn in this page's lavender
+     they would be different wordmarks.
+
+     topten.one carried violet here because that is what it was when this band
+     was written. It went back to gold, so this did too -- a mark that is not
+     the mark on the site it links to is worse than no mark. The two are now
+     the same gold, which is true of them, so the crown is what tells them
+     apart: it is topten.one's, it is on every page of it, and gift.ceo has
+     nothing like it.
 
      One row, two equal halves: flex:1 1 0 makes them the same width whatever
      the words are, and stretch makes them the same height. Neither is bigger
@@ -458,11 +465,15 @@ if (window.top !== window.self) {
   .mp-gift .mp-gc-mark b{color:#d9a63c;}
   .mp-gift .mp-gc-tag{color:#a09b93;}
 
-  .mp-topten{background:#000;border:1px solid #241a2e;}
-  .mp-topten:hover{border-color:#cd6ff0;}
-  .mp-topten .mp-gc-mark{color:#fbf6fd;}
-  .mp-topten .mp-gc-mark b{color:#cd6ff0;}
-  .mp-topten .mp-gc-tag{color:#b3a3c0;}
+  .mp-topten{background:#131211;border:1px solid rgba(217,166,60,.30);}
+  .mp-topten:hover{border-color:#d9a63c;}
+  /* The crown sits before the word with its own margin rather than a flex gap:
+     a gap falls between every item, and "TopTen" and ".one" are two of them,
+     so the wordmark came out reading "TopTen .one". */
+  .mp-topten .mp-gc-mark{color:#f2f0ec;display:flex;align-items:center;gap:0;}
+  .mp-topten .mp-gc-mark b{color:#d9a63c;}
+  .mp-topten .mp-gc-crown{flex:none;display:block;color:#d9a63c;margin-right:9px;}
+  .mp-topten .mp-gc-tag{color:#a09b93;}
 
   /* Side by side is the point, but not at 320px: below that the two words
      stop fitting and the marks start hyphenating. */
@@ -1638,7 +1649,7 @@ if (window.top !== window.self) {
         <span class="mp-gc-tag">Only CEOs give here.</span>
       </a>
       <a class="mp-brand mp-topten" href="https://topten.one" target="_blank" rel="noopener">
-        <span class="mp-gc-mark">TopTen<b>.one</b></span>
+        <span class="mp-gc-mark"><svg class="mp-gc-crown" width="26" height="20" viewBox="0 0 38 28" aria-hidden="true"><path fill="currentColor" d="M2 8l7 6 10-12 10 12 7-6-4 18H6z"/></svg>TopTen<b>.one</b></span>
         <span class="mp-gc-tag">Be the one.</span>
       </a>
     </div>
