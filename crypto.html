@@ -241,6 +241,25 @@
   }
   .mkt[hidden]{display:none;}
 
+  /* The share row, in this page's lavender rather than index.html's. Same
+     shape and same behaviour; a row that looked like it came from another
+     site would read as an advert for one. */
+  .sharebar{
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+    margin:22px 0 0;padding:14px 16px;
+    border:1px solid var(--border);border-radius:14px;background:var(--bg-card);
+  }
+  .sharebar .sb-k{
+    width:100%;font-size:.72rem;font-weight:800;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--text-eyebrow);
+  }
+  .sharebar .sb-btn{
+    padding:6px 13px;border-radius:999px;border:1px solid var(--border);
+    background:#fff;color:var(--text-body);font-size:.82rem;font-weight:700;
+    text-decoration:none;cursor:pointer;font-family:inherit;line-height:1.4;
+  }
+  .sharebar .sb-btn:hover{color:var(--violet-2);border-color:var(--violet-2);}
+
   /* Why it exists, between the address and the explaining. The page had the
      what, the how and the warnings, and nothing that says why anybody made
      it -- which on a page about a coin is the only question a stranger
@@ -432,6 +451,34 @@
           swaps straight through it, so a wallet that routes through Jupiter
           reaches the same coin. The other three are charts — they found the
           pool themselves, and none of this is a listing anyone applied for.</p>
+      </div>
+
+      <!-- Under the markets on purpose. Somebody who has just read where the
+           coin trades and checked the chain record is the one person on this
+           page with something worth passing on, and until now the page gave
+           them no way to do it.
+
+           Every link is static markup and works with no script at all: a
+           share button that needs JavaScript to have a destination does
+           nothing on the one connection where sharing mattered. Instagram,
+           TikTok, YouTube and Snapchat have no button and never will --
+           none of them has a web address that opens a composer with a link
+           already in it, so a button could only ever look like it worked.
+           The phone's own sheet reaches all four, and that is "More", hidden
+           here and revealed only where navigator.share exists.
+
+           The address is the pitch, so the contract address goes in the text
+           rather than being left as something to retype from memory. -->
+      <div class="sharebar" id="cryptoShare">
+        <span class="sb-k" data-i18n="share.title">Share Rotabo</span>
+        <button class="sb-btn" type="button" data-share-copy data-i18n="share.copyLink">Copy link</button>
+        <a class="sb-btn" href="https://x.com/intent/post?text=Rotabo%20has%20a%20token%20on%20Solana.%20Contract%3A%208EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump&amp;url=https%3A%2F%2Frotabo.app%2Fcrypto.html" target="_blank" rel="noopener">X</a>
+        <a class="sb-btn" href="https://t.me/share/url?url=https%3A%2F%2Frotabo.app%2Fcrypto.html&amp;text=Rotabo%20has%20a%20token%20on%20Solana.%20Contract%3A%208EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump" target="_blank" rel="noopener">Telegram</a>
+        <a class="sb-btn" href="https://wa.me/?text=Rotabo%20has%20a%20token%20on%20Solana.%20Contract%3A%208EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump%20https%3A%2F%2Frotabo.app%2Fcrypto.html" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="sb-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Frotabo.app%2Fcrypto.html&amp;title=Rotabo%20has%20a%20token%20on%20Solana" target="_blank" rel="noopener">Reddit</a>
+        <a class="sb-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frotabo.app%2Fcrypto.html" target="_blank" rel="noopener">Facebook</a>
+        <a class="sb-btn" href="https://www.threads.net/intent/post?text=Rotabo%20has%20a%20token%20on%20Solana.%20Contract%3A%208EdzHKSEGTp4cex8sTX55rGhVBiEoWWeih24VyeRpump%20https%3A%2F%2Frotabo.app%2Fcrypto.html" target="_blank" rel="noopener">Threads</a>
+        <button class="sb-btn" type="button" data-share-sheet hidden>More</button>
       </div>
     </div>
   </div>
@@ -690,6 +737,49 @@ var TOKEN = {
       });
     });
   }
+
+  /* The share row. Every link in it is already a working link in the markup;
+     these are the two things that cannot be written as an href.
+
+     "More" is the phone's own sheet, which is the only way into Instagram,
+     TikTok, YouTube and Snapchat -- none of which can be linked into with a
+     message prepared. It ships hidden and is revealed here, because a button
+     that opens nothing on a desktop browser is worse than no button. */
+  (function () {
+    var bar = document.getElementById('cryptoShare');
+    if (!bar) return;
+
+    var URL_ = 'https://rotabo.app/crypto.html';
+    var TEXT = 'Rotabo has a token on Solana.'
+      + (TOKEN.MINT ? ' Contract: ' + TOKEN.MINT : '');
+
+    var sheet = bar.querySelector('[data-share-sheet]');
+    if (sheet && navigator.share) sheet.hidden = false;
+
+    bar.addEventListener('click', function (e) {
+      if (!e.target.closest) return;
+
+      if (e.target.closest('[data-share-sheet]')) {
+        e.preventDefault();
+        /* Cancelling the sheet rejects, and somebody changing their mind is
+           not an error worth reporting. */
+        try { navigator.share({ text: TEXT, url: URL_ }).catch(function () {}); } catch (err) {}
+        return;
+      }
+
+      var c = e.target.closest('[data-share-copy]');
+      if (!c) return;
+      e.preventDefault();
+      if (!navigator.clipboard) return;
+      var was = c.textContent;
+      navigator.clipboard.writeText(URL_).then(function () {
+        c.textContent = T('copied', 'Copied');
+        setTimeout(function () { c.textContent = was; }, 1800);
+      }).catch(function () {
+        setTimeout(function () { c.textContent = was; }, 1800);
+      });
+    });
+  })();
 
   var ajuns = false;   /* past the hour: dupaOra() has something to paint */
 
