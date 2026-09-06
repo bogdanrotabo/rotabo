@@ -1156,7 +1156,7 @@
     "copy_manual": "Selezionalo sopra e copialo",
     "buy": "Compra su pump.fun",
     "also_here": "Anche qui",
-    "mkt_note": "C'è una sola pool: quella di pump.fun, qui sopra. Jupiter scambia direttamente attraverso di essa, quindi un portafoglio che passa da Jupiter raggiunge la stessa moneta. Gli altri tre sono grafici — hanno trovato la pool da soli, e niente di tutto questo è una quotazione richiesta da qualcuno.",
+    "mkt_note": "C'è una sola pool: quella di pump.fun, qui sopra. Jupiter scambia direttamente attraverso di essa, quindi un portafoglio che passa da Jupiter raggiunge la stessa moneta. I grafici hanno trovato la pool da soli, e Solscan è semplicemente la catena stessa — niente di tutto questo è una quotazione richiesta da qualcuno.",
     "what_h": "Che cos'è",
     "what_sub": "Detto in modo semplice, perché la versione semplice è quella che vale la pena leggere.",
     "what1_h": "Un token di comunità",

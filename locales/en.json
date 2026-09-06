@@ -1160,7 +1160,7 @@
     "copy_manual": "Select it above and copy",
     "buy": "Buy on pump.fun",
     "also_here": "Also here",
-    "mkt_note": "There is one pool: the pump.fun one above. Jupiter swaps straight through it, so a wallet that routes through Jupiter reaches the same coin. The other three are charts — they found the pool themselves, and none of this is a listing anyone applied for.",
+    "mkt_note": "There is one pool: the pump.fun one above. Jupiter swaps straight through it, so a wallet that routes through Jupiter reaches the same coin. The charts found the pool by themselves, and Solscan is simply the chain itself — none of this is a listing anyone applied for.",
     "what_h": "What this is",
     "what_sub": "Said plainly, because the plain version is the one worth reading.",
     "what1_h": "A community token",

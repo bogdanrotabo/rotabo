@@ -1158,7 +1158,7 @@
     "copy_manual": "Sélectionnez-la ci-dessus et copiez",
     "buy": "Acheter sur pump.fun",
     "also_here": "Aussi ici",
-    "mkt_note": "Il n'y a qu'un seul pool : celui de pump.fun, ci-dessus. Jupiter échange directement à travers lui, donc un portefeuille qui passe par Jupiter atteint le même jeton. Les trois autres sont des graphiques — ils ont trouvé le pool tout seuls, et rien de tout cela n'est une cotation demandée par quiconque.",
+    "mkt_note": "Il n'y a qu'un seul pool : celui de pump.fun, ci-dessus. Jupiter échange directement à travers lui, donc un portefeuille qui passe par Jupiter atteint le même jeton. Les graphiques ont trouvé le pool tout seuls, et Solscan est simplement la chaîne elle-même — rien de tout cela n'est une cotation demandée par quiconque.",
     "what_h": "Ce que c'est",
     "what_sub": "Dit simplement, parce que la version simple est celle qui mérite d'être lue.",
     "what1_h": "Un jeton communautaire",

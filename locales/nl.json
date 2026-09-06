@@ -1158,7 +1158,7 @@
     "copy_manual": "Selecteer het hierboven en kopieer",
     "buy": "Kopen op pump.fun",
     "also_here": "Ook hier",
-    "mkt_note": "Er is één pool: die van pump.fun hierboven. Jupiter wisselt er rechtstreeks doorheen, dus een portemonnee die via Jupiter routeert komt bij dezelfde munt uit. De andere drie zijn grafieken — die hebben de pool zelf gevonden, en niets hiervan is een notering waar iemand om gevraagd heeft.",
+    "mkt_note": "Er is één pool: die van pump.fun hierboven. Jupiter wisselt er rechtstreeks doorheen, dus een portemonnee die via Jupiter routeert komt bij dezelfde munt uit. De grafieken hebben de pool zelf gevonden, en Solscan is simpelweg de keten zelf — niets hiervan is een notering waar iemand om gevraagd heeft.",
     "what_h": "Wat dit is",
     "what_sub": "Gewoon gezegd, want de gewone versie is de versie die het lezen waard is.",
     "what1_h": "Een community-token",

@@ -1159,7 +1159,7 @@
     "copy_manual": "Označte ji nahoře a zkopírujte",
     "buy": "Koupit na pump.fun",
     "also_here": "Také zde",
-    "mkt_note": "Existuje jediný pool: ten na pump.fun výše. Jupiter směňuje přímo přes něj, takže peněženka, která jde přes Jupiter, dojde ke stejné minci. Zbylé tři jsou grafy — pool si našly samy, a nic z toho není zalistování, o které by někdo žádal.",
+    "mkt_note": "Existuje jediný pool: ten na pump.fun výše. Jupiter směňuje přímo přes něj, takže peněženka, která jde přes Jupiter, dojde ke stejné minci. Grafy si pool našly samy a Solscan je prostě samotný řetězec — nic z toho není zalistování, o které by někdo žádal.",
     "what_h": "Co to je",
     "what_sub": "Řečeno prostě, protože prostá verze je ta, kterou stojí za to číst.",
     "what1_h": "Komunitní token",
