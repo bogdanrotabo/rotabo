@@ -43,7 +43,13 @@ Actions):
 | secret | de unde |
 |---|---|
 | `CLOUDFLARE_API_TOKEN` | Cloudflare -> My Profile -> API Tokens -> Create Token -> șablonul "Edit Cloudflare Workers" |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare -> Workers & Pages -> Overview, coloana din dreapta |
+| `CLOUDFLARE_ACCOUNT_ID` | `cf7a850abe1776336a7e82de730c5e12` (contul în care rulează și Worker-ul rotabo) |
+
+Alternativă fără token: repo-ul e deja legat la **Workers Builds** pentru Worker-ul
+rotabo. Cloudflare -> Workers & Pages -> Create -> Import a repository -> `rotabo`,
+cu *Root directory* `selfies`, *Deploy command* `npx wrangler deploy`, branch `main`.
+Atunci Cloudflare face deploy singur la fiecare push, iar pasul "Deploy" din workflow
+devine de prisos (poate fi șters, lăsând doar IndexNow).
 
 Până când zona nu e activă (pasul 1), deploy-ul cade la rutele `custom_domain`.
 Pentru test înainte de asta: `npm run dev` (http://localhost:8787), sau comentează
