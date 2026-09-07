@@ -5,3 +5,6 @@ scripts/afise/proba/
 scripts/afise/previzualizare-*.png
 node_modules/
 package-lock.json
+
+# wrangler dev keeps its local cache/state here; nothing in it is the site.
+.wrangler/
