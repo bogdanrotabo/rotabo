@@ -1,0 +1,13 @@
+{
+  "name": "selfies-lol",
+  "private": true,
+  "description": "selfies.lol - Cloudflare Worker serving ./public",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run --outdir /tmp/selfies-dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
