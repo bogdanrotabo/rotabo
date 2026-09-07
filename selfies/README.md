@@ -12,6 +12,9 @@ selfies/
   supabase/migrations/   schema bazei; 0001 e deja aplicată în proiect
 ```
 
+Zona Cloudflare: `selfies.lol`, Zone ID `c4dda510e4c17d721a263e88490bc1b3`, nameservere
+`jeremy.ns.cloudflare.com` și `ullis.ns.cloudflare.com` (puse la Porkbun pe 2026-09-07).
+
 Proiect Supabase: **selfies** (`uwpsdbymmwwoeltlvtic`, eu-central-1, 10 $/lună).
 URL: `https://uwpsdbymmwwoeltlvtic.supabase.co`.
 
