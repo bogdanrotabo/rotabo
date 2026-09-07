@@ -25,8 +25,17 @@ URL: `https://uwpsdbymmwwoeltlvtic.supabase.co`.
 3. Porkbun -> Domain Management -> selfies.lol -> **Authoritative Nameservers**
    -> șterge ce e acolo, pune cele două de la Cloudflare, salvează.
 4. Așteaptă până zona apare **Active** în Cloudflare (de obicei minute, maxim o zi).
-5. Nu crea niciun record DNS pentru `selfies.lol` sau `www`: le face `wrangler deploy`
-   singur, ca *Custom Domain* ale Worker-ului. Un CNAME pus de mână blochează pasul.
+5. Cloudflare -> DNS -> Records: **șterge** cele două recorduri A importate de la
+   Porkbun (`selfies.lol` și `www`, spre 172.67.x / 104.21.x, pagina de parcare
+   "Coming Soon"). Nu pune nimic în loc: `wrangler deploy` creează singur cele două
+   hostname-uri ca *Custom Domain* ale Worker-ului, iar un record existent pe
+   același nume blochează pasul.
+6. HTTPS merge abia după ce Cloudflare emite certificatul Universal SSL, de regulă
+   în câteva minute după activarea zonei, uneori până la o zi. Până atunci
+   `https://selfies.lol` dă "handshake failure"; nu e o eroare de configurare.
+
+Stare la 2026-09-07 23:56 UTC: nameserverele propagate, zona activă, certificatul
+încă neemis, recordurile de parcare încă prezente (pasul 5 e de făcut).
 
 ## 2. Primul deploy
 
