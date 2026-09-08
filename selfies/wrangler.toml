@@ -1,0 +1,41 @@
+# selfies.lol on Cloudflare Workers, serving the files in ./public.
+#
+# The domain was bought at Porkbun. It becomes a Cloudflare zone by pointing
+# its nameservers at the two Cloudflare gives when the site is added there;
+# until that zone is active, the `custom_domain` routes below make
+# `wrangler deploy` fail, and the way to try things out is the workers.dev
+# address (workers_dev = true) or `npm run dev`.
+#
+# Deploy:  npm run deploy          (needs a Cloudflare API token, see README)
+# Try:     npm run dev             (http://localhost:8787)
+
+name = "selfies-lol"
+main = "src/worker.js"
+compatibility_date = "2026-09-07"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+# The worker runs before the asset lookup, so www.selfies.lol can be sent to
+# the apex and every response can carry the security headers. It costs one
+# function call per request and nothing more: static files still come from
+# the asset store.
+run_worker_first = true
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+
+[[routes]]
+pattern = "selfies.lol"
+custom_domain = true
+
+[[routes]]
+pattern = "www.selfies.lol"
+custom_domain = true
+
+[observability]
+enabled = true
+
+[vars]
+SUPABASE_URL = "https://uwpsdbymmwwoeltlvtic.supabase.co"
+# SUPABASE_SERVICE_ROLE_KEY: never here. `npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY`

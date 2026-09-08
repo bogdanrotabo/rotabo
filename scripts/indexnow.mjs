@@ -17,7 +17,9 @@
  *   node scripts/indexnow.mjs             submits
  *   node scripts/indexnow.mjs --dry-run   prints what it would submit
  *
- * INDEXNOW_HOST and INDEXNOW_KEY come from the workflow.
+ * INDEXNOW_HOST and INDEXNOW_KEY come from the workflow. INDEXNOW_DIR, when
+ * set, is the one folder that is the site (selfies/public/ for selfies.lol);
+ * when unset, the site is the repository root and selfies/ is not part of it.
  */
 import { execFileSync } from 'node:child_process';
 
@@ -34,7 +36,9 @@ if (!HOST || !KEY) {
    scripts that generate things is not a change to the site, and a submission
    for it is noise the protocol explicitly asks us not to make. */
 const CONTEAZA = /\.(html|css|js|json|xml|svg|png|jpe?g|webp|txt)$/i;
-const NU_CONTEAZA = /^(\.github\/|scripts\/|supabase\/|tests\/|README|worker\/)/i;
+const NU_CONTEAZA = /^(\.github\/|scripts\/|supabase\/|tests\/|README|worker\/|selfies\/)/i;
+const DIR = process.env.INDEXNOW_DIR || '';
+const esteSite = f => DIR ? f.startsWith(DIR) && CONTEAZA.test(f) : CONTEAZA.test(f) && !NU_CONTEAZA.test(f);
 
 function schimbate() {
   /* The push's own range when the workflow gives it, the last commit
@@ -52,7 +56,7 @@ function schimbate() {
 }
 
 const fisiere = schimbate();
-const vazut = fisiere.filter(f => CONTEAZA.test(f) && !NU_CONTEAZA.test(f));
+const vazut = fisiere.filter(esteSite);
 if (!vazut.length) {
   console.log(`indexnow: ${fisiere.length} files changed, none of them the site. Nothing submitted.`);
   process.exit(0);
