@@ -5,8 +5,8 @@
  * binding. This script sits in front of it for three things a static file
  * cannot do on its own:
  *
- *   1. www.selfies.lol -> selfies.lol, 301, so there is one address for
- *      Google to index rather than two copies of every page.
+ *   1. www.selfies.lol -> selfies.lol and http -> https, 301, so there is
+ *      one address for Google to index rather than four copies of every page.
  *   2. Security headers on every response.
  *   3. A place for the application script to go when it arrives: anything
  *      under /api/ is answered here, with the Supabase keys in env, and never
@@ -27,8 +27,12 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (url.hostname === `www.${APEX}`) {
+    // One address: https, no www. Cloudflare's "Always Use HTTPS" does the
+    // first half too, but a zone setting can be flipped by accident and
+    // this cannot.
+    if (url.hostname === `www.${APEX}` || url.protocol === "http:") {
       url.hostname = APEX;
+      url.protocol = "https:";
       return Response.redirect(url.toString(), 301);
     }
 
