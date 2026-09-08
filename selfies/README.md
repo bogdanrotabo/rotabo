@@ -96,3 +96,5 @@ n-au poză.
 - Schimbări de schemă: fișier nou `supabase/migrations/0002_*.sql`, aplicat în proiect.
   `0001_init.sql` a rulat deja și nu se mai editează.
 - Pagini noi: adaugă-le în `public/sitemap.xml`; workflow-ul le anunță la push.
+
+<!-- build: workers builds connected 2026-09-08 -->
