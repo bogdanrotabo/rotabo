@@ -8,3 +8,6 @@ package-lock.json
 
 # wrangler dev keeps its local cache/state here; nothing in it is the site.
 .wrangler/
+
+# The local service-role key for `wrangler dev`. Never committed.
+.dev.vars

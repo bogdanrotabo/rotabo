@@ -5,25 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>selfies.lol — Your selfie, your moment</title>
-<meta name="description" content="selfies.lol is where a selfie gets its moment: take one, post it, see it next to the world's. Launching soon.">
+<meta name="description" content="Post a selfie in one tap. No account, no email, no password. See it on the wall next to the world's.">
 <link rel="canonical" href="https://selfies.lol/">
 <meta name="theme-color" content="#0b0b10">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b10'/%3E%3Ccircle cx='32' cy='30' r='12' fill='%23ff5fa2'/%3E%3Crect x='14' y='44' width='36' height='6' rx='3' fill='%23f4f0ff'/%3E%3C/svg%3E">
-
-<!-- Google Search Console: the DNS TXT record on the zone verifies the whole
-     domain and is the one to use (see ../README.md). If you prefer the HTML
-     tag method, paste the tag Google gives you on the next line. -->
-<!-- <meta name="google-site-verification" content="..."> -->
+<link rel="icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/og-image.png">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="selfies.lol">
 <meta property="og:title" content="selfies.lol — Your selfie, your moment">
-<meta property="og:description" content="Take one, post it, see it next to the world's. Launching soon.">
+<meta property="og:description" content="Post a selfie in one tap. No account, no email, no password.">
 <meta property="og:url" content="https://selfies.lol/">
 <meta property="og:image" content="https://selfies.lol/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="selfies.lol — Your selfie, your moment">
-<meta name="twitter:description" content="Take one, post it, see it next to the world's. Launching soon.">
+<meta name="twitter:description" content="Post a selfie in one tap. No account, no email, no password.">
 <meta name="twitter:image" content="https://selfies.lol/og-image.png">
 
 <script type="application/ld+json">
@@ -35,7 +31,7 @@
       "@id": "https://selfies.lol/#website",
       "url": "https://selfies.lol/",
       "name": "selfies.lol",
-      "description": "Where a selfie gets its moment.",
+      "description": "Post a selfie in one tap. No account, no email, no password.",
       "inLanguage": "en"
     },
     {
@@ -43,40 +39,79 @@
       "@id": "https://selfies.lol/#webpage",
       "url": "https://selfies.lol/",
       "name": "selfies.lol — Your selfie, your moment",
-      "isPartOf": { "@id": "https://selfies.lol/#website" },
-      "datePublished": "2026-09-07"
+      "isPartOf": { "@id": "https://selfies.lol/#website" }
     }
   ]
 }
 </script>
 
-<style>
-  :root{--bg:#0b0b10;--fg:#f4f0ff;--dim:#a9a3bd;--pink:#ff5fa2;--violet:#8b5cf6}
-  *{box-sizing:border-box}
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:
-    radial-gradient(60% 50% at 20% 10%,rgba(139,92,246,.35),transparent 60%),
-    radial-gradient(50% 40% at 85% 90%,rgba(255,95,162,.30),transparent 60%),
-    var(--bg);color:var(--fg);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-  main{max-width:38rem;padding:3rem 1.5rem;text-align:center}
-  .mark{width:72px;height:72px;margin:0 auto 1.5rem;border-radius:20px;background:#15121f;display:grid;place-items:center;box-shadow:0 10px 40px rgba(255,95,162,.25)}
-  .mark i{display:block;width:26px;height:26px;border-radius:50%;background:var(--pink)}
-  h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:0 0 .75rem;letter-spacing:-.02em}
-  h1 b{background:linear-gradient(90deg,var(--pink),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-  p{margin:0 0 1rem;color:var(--dim)}
-  .soon{display:inline-block;margin-top:1.25rem;padding:.6rem 1.1rem;border:1px solid rgba(255,255,255,.15);border-radius:999px;font-size:.9rem;color:var(--fg)}
-  footer{margin-top:3rem;font-size:.8rem;color:var(--dim)}
-  footer a{color:var(--dim)}
-</style>
+<link rel="stylesheet" href="/app.css">
 </head>
 <body>
-<main>
-  <div class="mark" aria-hidden="true"><i></i></div>
-  <h1><b>selfies.lol</b><br>Your selfie, your moment.</h1>
-  <p>Take one. Post it. See it next to the world's.</p>
-  <p>The site is being built. What you see here is the front door, open a little early so the address is known.</p>
-  <span class="soon">Launching soon</span>
-  <footer>&copy; 2026 selfies.lol &middot; <a href="mailto:hello@selfies.lol">hello@selfies.lol</a></footer>
+
+<header class="bar">
+  <a class="wordmark" href="/">selfies<span>.lol</span></a>
+  <button class="btn btn-ghost btn-small" id="whoBtn" hidden></button>
+  <button class="btn btn-primary" id="postBtn">Take a selfie</button>
+</header>
+
+<section class="hero">
+  <h1>Your selfie, <b>your moment</b>.</h1>
+  <p>One tap and it is on the wall. No account, no email, no password — the picture is the whole of it.</p>
+</section>
+
+<main class="wall" id="wall" aria-live="polite">
+  <p class="center" id="loading">Loading the wall…</p>
 </main>
-<script src="/config.js"></script>
+
+<p class="center" id="moreWrap" hidden>
+  <button class="btn btn-ghost" id="moreBtn">Show more</button>
+</p>
+
+<footer class="foot">
+  <a href="/">selfies.lol</a> ·
+  <a href="mailto:hello@selfies.lol">hello@selfies.lol</a> ·
+  <span>Report anything that does not belong and it comes down.</span>
+</footer>
+
+<!-- the composer -->
+<dialog class="sheet" id="composer">
+  <form method="dialog" class="sheet-in" id="composerForm">
+    <h2>Post a selfie</h2>
+
+    <label class="drop" id="drop" for="photo">
+      <span id="dropText">Tap to take one, or choose a picture</span>
+      <img id="preview" hidden alt="">
+    </label>
+    <input type="file" id="photo" accept="image/*" capture="user" hidden>
+
+    <textarea id="caption" rows="2" maxlength="140" placeholder="Say something (optional)"></textarea>
+    <p class="hint">The picture is resized in your browser before it is sent, which also strips the location and camera data out of it.</p>
+    <p class="err" id="composeErr"></p>
+
+    <div class="row">
+      <span class="grow"></span>
+      <button class="btn btn-ghost" type="button" id="cancelBtn">Cancel</button>
+      <button class="btn btn-primary" type="button" id="sendBtn" disabled>Post it</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- the handle -->
+<dialog class="sheet" id="handleSheet">
+  <form method="dialog" class="sheet-in">
+    <h2>Pick a name</h2>
+    <p class="hint" style="margin-top:0">Optional, and yours as long as you keep the cookie. Letters, digits and underscores, 3 to 20.</p>
+    <input type="text" id="handleInput" maxlength="20" placeholder="e.g. bogdan_ch" autocomplete="off">
+    <p class="err" id="handleErr"></p>
+    <div class="row">
+      <span class="grow"></span>
+      <button class="btn btn-ghost" type="button" id="handleCancel">Cancel</button>
+      <button class="btn btn-primary" type="button" id="handleSave">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/app.js" defer></script>
 </body>
 </html>

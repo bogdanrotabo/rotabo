@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Moderation · selfies.lol</title>
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="wordmark" href="/">selfies<span>.lol</span></a>
+  <button class="btn btn-ghost btn-small" id="refresh">Refresh</button>
+  <button class="btn btn-ghost btn-small" id="forget">Forget token</button>
+</header>
+
+<main class="admin">
+  <section id="gate">
+    <h2>Token</h2>
+    <input type="text" id="token" placeholder="Paste the admin token" autocomplete="off">
+    <p class="err" id="gateErr"></p>
+    <div class="row" style="margin-top:1rem">
+      <button class="btn btn-primary" id="enter">Open</button>
+    </div>
+    <p class="hint">The token is kept in this browser only, and sent as a bearer header to /api/admin.</p>
+  </section>
+
+  <section id="board" hidden>
+    <h2>Reported</h2>
+    <div class="mods" id="reported"></div>
+    <h2>Latest</h2>
+    <div class="mods" id="latest"></div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let token = localStorage.getItem("sl_admin") || "";
+
+document.addEventListener("DOMContentLoaded", () => {
+  $("enter").addEventListener("click", () => { token = $("token").value.trim(); localStorage.setItem("sl_admin", token); load(); });
+  $("refresh").addEventListener("click", load);
+  $("forget").addEventListener("click", () => { localStorage.removeItem("sl_admin"); location.reload(); });
+  if (token) load();
+});
+
+async function call(path, options = {}) {
+  const res = await fetch(path, {
+    ...options,
+    headers: { authorization: "Bearer " + token, "content-type": "application/json", ...(options.headers || {}) },
+  });
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || res.status);
+  return res.json();
+}
+
+async function load() {
+  try {
+    const data = await call("/api/admin/queue");
+    $("gate").hidden = true;
+    $("board").hidden = false;
+    draw($("reported"), data.reported, "Nothing has been reported.");
+    draw($("latest"), data.latest, "Nothing posted yet.");
+  } catch (err) {
+    $("gate").hidden = false;
+    $("board").hidden = true;
+    $("gateErr").textContent = String(err.message) === "bad_token" ? "That token is not right." : "Could not load.";
+  }
+}
+
+function draw(host, rows, emptyText) {
+  host.innerHTML = "";
+  if (!rows.length) { host.innerHTML = `<p class="hint">${emptyText}</p>`; return; }
+
+  for (const r of rows) {
+    const el = document.createElement("div");
+    el.className = "mod";
+    el.innerHTML = `
+      <img src="/i/${r.storage_path}" alt="" loading="lazy">
+      <div class="body">
+        <p class="tags">
+          <span class="badge ${r.visible ? "up" : "down"}">${r.visible ? "on the wall" : "hidden" + (r.hidden_reason ? ": " + r.hidden_reason : "")}</span>
+          ${r.report_count ? `<span class="badge down">${r.report_count} reported</span>` : ""}
+          <span class="badge">${r.like_count} ♥</span>
+        </p>
+        <p class="tags">${r.posters && r.posters.handle ? "@" + r.posters.handle : "anonymous"}${r.posters && r.posters.blocked ? " · blocked" : ""} · ${new Date(r.created_at).toLocaleString()}</p>
+        ${r.caption ? `<p>${escapeHtml(r.caption)}</p>` : ""}
+        <div class="acts">
+          <button class="btn btn-ghost btn-small" data-act="toggle">${r.visible ? "Hide" : "Restore"}</button>
+          <button class="btn btn-ghost btn-small" data-act="delete">Delete</button>
+          <button class="btn btn-ghost btn-small" data-act="block">${r.posters && r.posters.blocked ? "Unblock" : "Block poster"}</button>
+          <a class="btn btn-ghost btn-small" href="/s/${r.id}" target="_blank" rel="noopener">Open</a>
+        </div>
+      </div>`;
+
+    el.querySelector('[data-act="toggle"]').addEventListener("click", async () => {
+      await call("/api/admin/hide", { method: "POST", body: JSON.stringify({ id: r.id, visible: !r.visible }) });
+      load();
+    });
+    el.querySelector('[data-act="delete"]').addEventListener("click", async () => {
+      if (!confirm("Delete for good, picture and row?")) return;
+      await call("/api/admin/delete", { method: "POST", body: JSON.stringify({ id: r.id }) });
+      load();
+    });
+    el.querySelector('[data-act="block"]').addEventListener("click", async () => {
+      const blocked = !(r.posters && r.posters.blocked);
+      await call("/api/admin/block", { method: "POST", body: JSON.stringify({ poster_id: r.poster_id, blocked }) });
+      load();
+    });
+
+    host.appendChild(el);
+  }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+}
+</script>
+</body>
+</html>

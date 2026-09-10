@@ -6,11 +6,59 @@ cu Supabase în spate. Domeniul e cumpărat de la Porkbun.
 ```
 selfies/
   wrangler.toml          configurația Worker-ului (nume, domenii, assets, vars)
-  src/worker.js          redirect www -> apex, headere de securitate, /api/*
-  public/                tot ce vede vizitatorul (index.html, robots, sitemap, 404)
-  public/config.js       URL-ul Supabase + cheia publică, citite de browser
-  supabase/migrations/   schema bazei; 0001 e deja aplicată în proiect
+  src/worker.js          tot serverul: /api, /i, /s/<id>, sitemap, /api/admin
+  public/index.html      peretele
+  public/app.js          clientul: cameră, redimensionare, feed, like, raport
+  public/app.css         stilurile, folosite și de paginile randate de Worker
+  public/admin.html      moderarea, deschisă cu tokenul de admin
+  supabase/migrations/   schema; 0001 și 0002 sunt aplicate în proiect
 ```
+
+## Cum e făcut
+
+Browserul nu vorbește niciodată cu Supabase. Vorbește doar cu `/api` pe
+selfies.lol, iar Worker-ul ține singura cheie care există (service role, pusă cu
+`wrangler secret put`). Toate tabelele au RLS pornit **fără nicio politică**, deci
+cheia publicabilă nu poate citi și nu poate scrie nimic; singura intrare e prin
+Worker.
+
+Identitatea e un cookie și nimic altceva: la prima postare, Worker-ul face un rând
+în `posters`, un token opac în `poster_sessions`, și îl pune în cookie. Fără email,
+fără parolă, fără așteptat un mesaj. Am ales asta pentru că proiectul are doar
+autentificare pe email, cu confirmare, prin mailer-ul intern al Supabase, care
+trimite câteva mesaje pe oră: un perete de selfie-uri la care trebuie să aștepți un
+email e un perete gol. Prețul e că identitatea ține de browser -- ștergi cookie-ul,
+ești altcineva. Când asta devine o problemă, Supabase Auth se poate adăuga peste
+aceeași tabelă `posters`.
+
+Pozele stau în bucket-ul public `selfies`, dar se servesc prin `/i/...` de pe
+domeniul propriu, cu cache lung la Cloudflare, ca adresa pe care o vede Google să
+fie a noastră.
+
+Fiecare selfie are pagina lui la `/s/<id>`, randată de Worker cu titlu, descriere,
+Open Graph și JSON-LD proprii. `sitemap.xml` e generat din rânduri, nu ținut la zi
+de mână: fiecare poză nouă intră singură în el, iar workflow-ul anunță IndexNow.
+
+Redimensionarea se face în browser, înainte de trimitere: o poză de telefon are
+patru megabytes de detaliu pe care nimeni nu-i vede pe un perete, iar trecerea prin
+canvas lasă EXIF-ul în urmă -- adică și locul unde ai stat când ai făcut-o.
+
+### Moderare
+
+Trei rapoarte de la trei persoane scot poza de pe perete pe loc și o lasă în coada
+de la `/admin`. Tokenul de admin nu e în cod: în baza de date stă doar amprenta lui
+sha256, iar tokenul în clar e la tine. Din pagina de moderare poți ascunde, șterge
+definitiv (rând plus fișier) sau bloca autorul, ceea ce îi ascunde tot ce a pus.
+
+Un site pe care oricine poate încărca poze fără cont are nevoie de ochi. Coada de
+la `/admin` e minimul; pasul următor, dacă vine trafic, e clasificarea automată a
+imaginilor (Workers AI are un model pentru asta) înainte ca poza să apară.
+
+### Limite
+
+Douăsprezece poze pe oră de la un browser, treizeci de la o adresă IP. Adresa nu se
+păstrează: în `selfies.ip_hash` stă sha256 din adresă plus o sare care e în
+`app_config`, adică destul cât să limitezi, nu destul cât să afli cine a fost.
 
 Zona Cloudflare: `selfies.lol`, Zone ID `c4dda510e4c17d721a263e88490bc1b3`, nameservere
 `jeremy.ns.cloudflare.com` și `ullis.ns.cloudflare.com` (puse la Porkbun pe 2026-09-07).
@@ -81,20 +129,30 @@ Google se face prin Search Console, o singură dată:
 4. Search Console -> **URL Inspection** -> `https://selfies.lol/` -> **Request indexing**.
    Asta e ce grăbește prima apariție; restul vine din sitemap.
 
-Pagina are deja: `<title>`, description, canonical, Open Graph, Twitter card, JSON-LD
-(WebSite + WebPage), `robots.txt` cu sitemap, `404.html` cu `noindex`, iar `www`
-face 301 către apex ca să existe o singură adresă de indexat. Lipsește
-`public/og-image.png` (1200x630) -- până apare, previzualizările pe rețele sociale
-n-au poză.
+Pagina de start și fiecare pagină de selfie au titlu, description, canonical, Open
+Graph, Twitter card și JSON-LD proprii. `robots.txt` trimite la sitemap, `404.html`
+e `noindex`, iar `www` face 301 către apex ca să existe o singură adresă de
+indexat.
 
-## 4. Când vine scriptul aplicației
+## 4. Mai departe
 
-- HTML/CSS/JS de client: în `public/`. Browser-ul are `window.SELFIES.supabaseUrl`
-  și `window.SELFIES.supabaseKey` din `config.js`.
-- Cod de server (chei secrete, Stripe, etc.): în `src/worker.js` sub `/api/*`;
-  `env.SUPABASE_URL` și `env.SUPABASE_SERVICE_ROLE_KEY` sunt acolo.
-- Schimbări de schemă: fișier nou `supabase/migrations/0002_*.sql`, aplicat în proiect.
-  `0001_init.sql` a rulat deja și nu se mai editează.
-- Pagini noi: adaugă-le în `public/sitemap.xml`; workflow-ul le anunță la push.
+- Client: `public/app.js` și `public/index.html`.
+- Server: `src/worker.js`. `env.SUPABASE_URL` e în `wrangler.toml`,
+  `env.SUPABASE_SERVICE_ROLE_KEY` e secret de Worker.
+- Schimbări de schemă: fișier nou în `supabase/migrations/`, aplicat în proiect.
+  Cele existente au rulat deja și nu se mai editează.
+- Pagini noi statice: adaugă-le în ruta `sitemap()` din Worker. Selfie-urile intră
+  singure.
+- Local: `npm run dev`. Are nevoie de `selfies/.dev.vars` cu
+  `SUPABASE_SERVICE_ROLE_KEY="..."`; fișierul e în `.gitignore` și nu se comite.
+  Fără el, paginile merg și `/api` răspunde curat că baza nu e accesibilă.
+
+Un lucru de știut despre `wrangler dev`: îi dă Worker-ului hostname-ul real
+(`selfies.lol`) peste http simplu, și simulează inclusiv `cf-connecting-ip` și
+`request.cf`. De aceea redirectul http -> https **nu** e în Worker: acolo ar porni
+la fiecare cerere locală, iar dev server-ul rescrie `Location` înapoi spre
+localhost, deci ar fi o buclă. Îl fac setarea *Always Use HTTPS* din zonă, care e
+pornită, și antetul HSTS pe care Worker-ul îl pune pe orice răspuns. Dacă acea
+setare se stinge vreodată, repornește-o -- Worker-ul nu o acoperă.
 
 <!-- build: workers builds connected 2026-09-08 -->
