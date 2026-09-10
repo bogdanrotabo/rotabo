@@ -116,6 +116,35 @@ Deno.serve(async (req: Request) => {
     return json({ error: "registered as a company", side: "company" }, 409);
   }
 
+  // The Rotabo number, before the row exists.
+  //
+  // A listing is born visible (see below), and browse_count() and
+  // browse_public() reach it through an inner join to rotabo_numbers. A
+  // listing inserted without a number is therefore live, advertised in the
+  // band across the front page -- list_public_numbers() left-joins since
+  // 0004 -- and absent from the only page anyone searches from. It is the
+  // failure 0004 predicted in writing: "the first person it catches would
+  // vanish silently, and the band would look correct while doing it."
+  //
+  // Two people were in exactly that state: Vitan (11 August) and Rajkumar
+  // (3 September). Nothing here was assigning numbers. The only place that
+  // did was verify-email's "send", on the way to the code email, and only
+  // when it was told purpose="listing" -- so an address verified first for
+  // the viewer unlock or the sponsor form, and used for a listing
+  // afterwards, never passed a number-issuing step at all. That call also
+  // swallows its own failure by design, so the gap was silent twice over.
+  //
+  // assign_rotabo_number is idempotent per address: one already holding a
+  // number keeps it, which is why two listings from one household still
+  // share number 12. Its failure is fatal here on purpose. A form that
+  // says try again is a smaller harm than a listing nobody can find.
+  const { data: rotaboNumber, error: numberError } = await supabase
+    .rpc("assign_rotabo_number", { p_email: email });
+  if (numberError || !rotaboNumber) {
+    console.error("assign_rotabo_number failed for", email, numberError);
+    return json({ error: "could not allocate a Rotabo number, please try again" }, 500);
+  }
+
   // Born visible. Computed with setMonth so a listing made on the 31st
   // lands on a real date twelve months out rather than drifting by the
   // day count of the months in between.
@@ -149,6 +178,15 @@ Deno.serve(async (req: Request) => {
   }
 
   // visible_until goes back to the browser so index.html can say the
-  // listing is live, and until when, without a second round trip.
-  return json({ ok: true, id: inserted.id, visible_until: inserted.visible_until, free: true });
+  // listing is live, and until when, without a second round trip. The
+  // number rides along for the same reason: it is now guaranteed to exist
+  // by the time this returns, and verify-email already reports it under
+  // this name, so a caller that has one has it from both ends.
+  return json({
+    ok: true,
+    id: inserted.id,
+    visible_until: inserted.visible_until,
+    rotabo_number: rotaboNumber,
+    free: true,
+  });
 });
