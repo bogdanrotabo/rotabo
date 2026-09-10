@@ -1,10 +1,11 @@
 # selfies.lol on Cloudflare Workers, serving the files in ./public.
 #
-# The domain was bought at Porkbun. It becomes a Cloudflare zone by pointing
-# its nameservers at the two Cloudflare gives when the site is added there;
-# until that zone is active, the `custom_domain` routes below make
-# `wrangler deploy` fail, and the way to try things out is the workers.dev
-# address (workers_dev = true) or `npm run dev`.
+# The custom_domain routes for selfies.lol and www.selfies.lol were removed
+# 2026-09-10: a separate, independently-built application ("selfies-lol-web")
+# is meant to serve that domain, and this Worker had been holding the Custom
+# Domain hostnames since it first deployed on 2026-09-08, before that other
+# system was even created -- so it could never attach. This Worker now only
+# runs at its *.workers.dev address, for whatever still points at it directly.
 #
 # Deploy:  npm run deploy          (needs a Cloudflare API token, see README)
 # Try:     npm run dev             (http://localhost:8787)
@@ -24,14 +25,6 @@ binding = "ASSETS"
 run_worker_first = true
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
-
-[[routes]]
-pattern = "selfies.lol"
-custom_domain = true
-
-[[routes]]
-pattern = "www.selfies.lol"
-custom_domain = true
 
 [observability]
 enabled = true
