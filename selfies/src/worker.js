@@ -237,14 +237,31 @@ async function ipHash(request, env) {
 
 /* ------------------------------------------------------------------ routes */
 
+/* Enough to tell the three ways this goes wrong apart without printing
+   anything that is a secret: no key bound at all, a key the project
+   rejects, or a table that is not there. The status is the whole of what
+   is repeated back; the body of the upstream error is not. */
 async function health(env) {
-  const out = { ok: true, site: APEX, supabase_url: Boolean(env.SUPABASE_URL) };
+  const out = {
+    ok: true,
+    site: APEX,
+    supabase_url: Boolean(env.SUPABASE_URL),
+    service_key: env.SUPABASE_SERVICE_ROLE_KEY ? "bound" : "missing",
+  };
+
+  if (!env.SUPABASE_SERVICE_ROLE_KEY) {
+    out.ok = false;
+    out.database = "no_key";
+    return json(out, 503);
+  }
+
   try {
     await db(env).select("posters", "select=id&limit=1");
     out.database = "ok";
   } catch (err) {
     out.ok = false;
-    out.database = "unreachable";
+    const status = /supabase (\d{3})/.exec(String(err));
+    out.database = status ? `http_${status[1]}` : "unreachable";
   }
   return json(out, out.ok ? 200 : 503);
 }
