@@ -242,14 +242,29 @@ async function ipHash(request, env) {
    rejects, or a table that is not there. The status is the whole of what
    is repeated back; the body of the upstream error is not. */
 async function health(env) {
+  const key = env.SUPABASE_SERVICE_ROLE_KEY;
   const out = {
     ok: true,
     site: APEX,
     supabase_url: Boolean(env.SUPABASE_URL),
-    service_key: env.SUPABASE_SERVICE_ROLE_KEY ? "bound" : "missing",
+    // What kind of thing is bound, never any part of it. The four ways this
+    // goes wrong all look identical from a 401, and each has a different
+    // fix: a JWT that is the wrong project's, a JWT truncated on the way
+    // through a terminal, the publishable key pasted by mistake, or a value
+    // with a space or newline stuck to it.
+    service_key: !key
+      ? "missing"
+      : key.startsWith("eyJ")
+        ? "legacy jwt"
+        : key.startsWith("sb_secret_")
+          ? "secret key"
+          : key.startsWith("sb_publishable_")
+            ? "publishable key, which is the wrong kind"
+            : "unrecognised",
   };
+  if (key && key !== key.trim()) out.service_key += ", with whitespace around it";
 
-  if (!env.SUPABASE_SERVICE_ROLE_KEY) {
+  if (!key) {
     out.ok = false;
     out.database = "no_key";
     return json(out, 503);
@@ -260,9 +275,9 @@ async function health(env) {
   // legacy keys are JWTs carrying the project ref they were minted for, so
   // it can be said outright rather than guessed at. Neither ref is repeated
   // back -- knowing which one it is does not help whoever is asking.
-  if (env.SUPABASE_SERVICE_ROLE_KEY.startsWith("eyJ")) {
+  if (key.startsWith("eyJ")) {
     const mine = new URL(env.SUPABASE_URL).hostname.split(".")[0];
-    const its = jwtRef(env.SUPABASE_SERVICE_ROLE_KEY);
+    const its = jwtRef(key.trim());
     if (its && its !== mine) {
       out.ok = false;
       out.service_key = "bound, but minted for another project";
