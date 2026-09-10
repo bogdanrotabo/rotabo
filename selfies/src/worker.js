@@ -255,6 +255,22 @@ async function health(env) {
     return json(out, 503);
   }
 
+  // The failure worth naming, because it is the one that looks like every
+  // other 401: a perfectly good key belonging to a different project. The
+  // legacy keys are JWTs carrying the project ref they were minted for, so
+  // it can be said outright rather than guessed at. Neither ref is repeated
+  // back -- knowing which one it is does not help whoever is asking.
+  if (env.SUPABASE_SERVICE_ROLE_KEY.startsWith("eyJ")) {
+    const mine = new URL(env.SUPABASE_URL).hostname.split(".")[0];
+    const its = jwtRef(env.SUPABASE_SERVICE_ROLE_KEY);
+    if (its && its !== mine) {
+      out.ok = false;
+      out.service_key = "bound, but minted for another project";
+      out.database = "wrong_project";
+      return json(out, 503);
+    }
+  }
+
   try {
     await db(env).select("posters", "select=id&limit=1");
     out.database = "ok";
@@ -699,6 +715,20 @@ async function logVisit(request, url, env) {
     );
   } catch (err) {
     /* A visit that goes unrecorded is not worth a failed request. */
+  }
+}
+
+/* The "ref" claim out of a Supabase legacy key, or null if it is not a JWT
+   or does not carry one. Nothing here trusts the token; it is only read to
+   say something useful about a key the project has already refused. */
+function jwtRef(token) {
+  try {
+    const [, payload] = token.split(".");
+    if (!payload) return null;
+    const json = atob(payload.replace(/-/g, "+").replace(/_/g, "/"));
+    return JSON.parse(json).ref || null;
+  } catch (err) {
+    return null;
   }
 }
 
