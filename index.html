@@ -512,6 +512,7 @@ if (window.top !== window.self) {
   }
   .cat-chip{
     flex:0 0 auto;
+    max-width:100%;
     display:inline-flex;align-items:center;gap:7px;
     padding:8px 14px;border-radius:999px;
     background:var(--bg-card);border:1px solid var(--border);
@@ -5382,8 +5383,11 @@ if ("serviceWorker" in navigator) {
                 + '<b>' + esc(r.display_name || "") + '</b>'
                 + tierChip(r.tier)
                 + (r.city ? '<span class="biz-row__where">' + esc(r.city) + '</span>' : "");
-      html += r.website_url
-        ? '<a class="cascade-row biz-row biz-row--taken" href="' + esc(r.website_url) + '" target="_blank" rel="noopener" style="--i:' + Math.min(n, 24) + '">' + inner + '</a>'
+      // Only an http(s) address is a link; a `javascript:` scheme survives
+      // esc() and would run on click, so anything else renders as plain text.
+      var siteHref = /^https?:\/\//i.test(r.website_url || "") ? r.website_url : "";
+      html += siteHref
+        ? '<a class="cascade-row biz-row biz-row--taken" href="' + esc(siteHref) + '" target="_blank" rel="noopener" style="--i:' + Math.min(n, 24) + '">' + inner + '</a>'
         : '<span class="cascade-row biz-row biz-row--taken" style="--i:' + Math.min(n, 24) + '">' + inner + '</span>';
       n++;
     });

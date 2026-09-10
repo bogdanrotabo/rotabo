@@ -105,8 +105,12 @@
     var inner = '<span class="tick__label">' + esc(T("ticker.sponsors", "Sponsors")) + '</span>'
               + markFor(name, url)
               + '<b>' + esc(name) + '</b>';
-    return url
-      ? '<a class="tick tick--sponsor" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>'
+    // Only an http(s) address becomes a link. A `javascript:` (or any other
+    // scheme) survives esc(), which escapes markup and not the scheme, and
+    // would run on click; gated the same way the supporters list already is.
+    var href = /^https?:\/\//i.test(url || "") ? url : "";
+    return href
+      ? '<a class="tick tick--sponsor" href="' + esc(href) + '" target="_blank" rel="noopener">' + inner + '</a>'
       : '<span class="tick tick--sponsor">' + inner + '</span>';
   }
 
