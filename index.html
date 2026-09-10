@@ -426,20 +426,22 @@ if (window.top !== window.self) {
   .mp-list[hidden]{display:none;}
 
   /* The band is Rotabo's page, but the marks standing in it are not Rotabo's,
-     so each keeps its own ground -- gift.ceo's near-black with its gold, and
-     topten.one's warm near-black with its own. Redrawn in this page's lavender
-     they would be different wordmarks.
+     so each keeps its own ground -- gift.ceo's near-black with its gold,
+     topten.one's warm near-black with its own, and selfies.lol's near-black
+     with its own blue. Redrawn in this page's lavender they would be
+     different wordmarks.
 
      topten.one carried violet here because that is what it was when this band
      was written. It went back to gold, so this did too -- a mark that is not
-     the mark on the site it links to is worse than no mark. The two are now
-     the same gold, which is true of them, so the crown is what tells them
-     apart: it is topten.one's, it is on every page of it, and gift.ceo has
-     nothing like it.
+     the mark on the site it links to is worse than no mark. gift.ceo and
+     topten.one share that same gold, so the crown is what tells them apart:
+     it is topten.one's, it is on every page of it, and gift.ceo has nothing
+     like it. selfies.lol needed no such device -- its accent is blue, not
+     gold, so the colour alone already tells it apart from the other two.
 
-     One row, two equal halves: flex:1 1 0 makes them the same width whatever
-     the words are, and stretch makes them the same height. Neither is bigger
-     than the other because neither is more than the other. */
+     One row, three equal shares: flex:1 1 0 makes them the same width
+     whatever the words are, and stretch makes them the same height. None is
+     bigger than the others because none is more than the others. */
   .mp-brands{
     display:flex;align-items:stretch;gap:14px;
     margin-top:16px;
@@ -472,9 +474,19 @@ if (window.top !== window.self) {
   .mp-topten .mp-gc-crown{flex:none;display:block;color:#d9a63c;margin-right:9px;}
   .mp-topten .mp-gc-tag{color:#a09b93;}
 
-  /* Side by side is the point, but not at 320px: below that the two words
-     stop fitting and the marks start hyphenating. */
-  @media(max-width:560px){ .mp-brands{flex-direction:column;} }
+  /* selfies.lol wears the same near-black plate as the other two, but its own
+     accent: the action blue from its own tokens (--action, spec §17), not the
+     gold that already marks gift.ceo and topten.one apart from each other. */
+  .mp-selfies{background:#10161f;border:1px solid rgba(26,124,245,.30);}
+  .mp-selfies:hover{border-color:#1a7cf5;}
+  .mp-selfies .mp-gc-mark{color:#f2f0ec;}
+  .mp-selfies .mp-gc-mark b{color:#1a7cf5;}
+  .mp-selfies .mp-gc-tag{color:#a09b93;}
+
+  /* Side by side is the point, but not at 320px: below that the three words
+     stop fitting and the marks start hyphenating. Three now share the row
+     instead of two, so it gives up the row sooner than it used to. */
+  @media(max-width:720px){ .mp-brands{flex-direction:column;} }
   .mp-name{font-size:1.35rem;font-weight:800;color:var(--text-dark);text-decoration:none;}
   a.mp-name{color:var(--violet-2);}
   .mp-loc{font-size:.9rem;font-weight:600;color:var(--text-eyebrow);}
@@ -1644,16 +1656,16 @@ if (window.top !== window.self) {
        partner we do not have. -->
   <div class="main-partner">
     <div class="mp-list" id="mainPartnerList" hidden></div>
-    <!-- The other two sites hold the band until a paying partner takes it,
-         side by side and the same size: neither is the main one. Each wears
+    <!-- The other three sites hold the band until a paying partner takes it,
+         side by side and the same size: none is the main one. Each wears
          its own ground and its own wordmark -- redrawn in this page's
          lavender they would be different marks. The invitation below is
          hidden while the place is occupied, and renderMainPartner() hides
-         the pair the moment a real principal sponsor exists, so the band
-         never shows three.
+         this whole band the moment a real principal sponsor exists, so a
+         stand-in is never shown next to a real partner.
 
-         The "Main Partner" heading above them is gone. Two of the owner's
-         own sites are not a partner, and calling them one was the band
+         The "Main Partner" heading above them is gone. The owner's own
+         sites are not a partner, and calling them one was the band
          claiming something it did not have. -->
     <div class="mp-brands" id="mainPartnerBrands">
       <a class="mp-brand mp-gift" href="https://gift.ceo" target="_blank" rel="noopener">
@@ -1663,6 +1675,10 @@ if (window.top !== window.self) {
       <a class="mp-brand mp-topten" href="https://topten.one" target="_blank" rel="noopener">
         <span class="mp-gc-mark"><svg class="mp-gc-crown" width="26" height="20" viewBox="0 0 38 28" aria-hidden="true"><path fill="currentColor" d="M2 8l7 6 10-12 10 12 7-6-4 18H6z"/></svg>TopTen<b>.one</b></span>
         <span class="mp-gc-tag">Be the one.</span>
+      </a>
+      <a class="mp-brand mp-selfies" href="https://selfies.lol" target="_blank" rel="noopener">
+        <span class="mp-gc-mark">selfies<b>.lol</b></span>
+        <span class="mp-gc-tag">Don't follow people. Follow the world.</span>
       </a>
     </div>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
