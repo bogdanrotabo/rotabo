@@ -1,0 +1,39 @@
+# Rotabo
+
+> Local marketplace for services and gear, zero commission
+
+Rotabo is a global, zero-commission marketplace for local services, help and
+equipment. Someone needs something; someone nearby already has it. Rotabo
+connects the two and then gets out of the way.
+
+Anyone can join and post for free, on either side: as someone looking, or as
+someone offering time, skills, tools or space. Listings sit in 12 categories -
+Drive, Translator, Move, Build, Tools, Home, Auto, Borrowed Grandparents,
+Teachers, Vacation Stays, Pets and Something Else - plus a free-text request
+for anything that does not fit, and each listing stays visible for 12 months.
+
+Rotabo takes no percentage of what you earn. No commission, no booking fee,
+no cut of the job: you agree the price directly with the other person and
+keep all of it. The only optional payment is 2 CHF for a year of full access
+to contact details across the marketplace, which is what keeps the platform
+running instead of a commission.
+
+Every member also gets a Rotabo number - a permanent personal ID shown in a
+public live list as number, name, country flag and category. People write
+their number on a banknote, a business card or a van door, and whoever finds
+it can look the person up on rotabo.app. Hence the slogan: Need Me! Find Me!
+On a Banknote!
+
+Rotabo is an installable progressive web app in 38 languages with
+email-verified listings, and it began as a designated-driver service - you
+drink, they drive, your car - which is still one of its categories. Swiss
+made, available worldwide.
+
+## Key pages
+- [Home](https://rotabo.app/): post what you need or what you offer, and browse who is nearby
+- [For businesses](https://rotabo.app/business.html): company listings and sponsorship
+- [Terms](https://rotabo.app/terms.html): terms of service
+- [Privacy](https://rotabo.app/privacy.html): privacy policy
+
+## Elsewhere
+- [Rotabo on PeerPush](https://peerpush.com/p/rotabo): product listing with features, pricing and screenshots
