@@ -362,6 +362,17 @@ if (window.top !== window.self) {
      so a door carrying the attribute stayed fully on screen -- 147x329px of
      it. This makes the attribute mean what it says. */
   .door[hidden]{display:none;}
+  /* ASCUNS TEMPORAR 2026-09-11: banda Rotabo Token.
+
+     Here as well as in bands.js, and not instead of it. That file is served
+     with `max-age=14400`, so a returning visitor keeps running the old copy
+     -- band and all -- for up to four hours after the flag ships. This page
+     is `max-age=600` and not cached by Cloudflare, so the rule below takes
+     the band off screen within ten minutes for everyone. `bands.js` sets
+     `hidden = false` on the element, which only clears the attribute; a
+     `display:none` from here still wins, and wins on source order because
+     this block comes after bands.css. */
+  .ticker--token{display:none;}
   .door{
     display:flex;flex-direction:column;align-items:center;gap:10px;
     background:var(--bg-card);border:1px solid var(--border);
