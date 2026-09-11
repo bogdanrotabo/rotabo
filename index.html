@@ -358,6 +358,10 @@ if (window.top !== window.self) {
     max-width:720px;margin:0 auto 26px;
     display:grid;grid-template-columns:1fr 1fr;gap:16px;
   }
+  /* `display:flex` below beats the browser's own `[hidden]{display:none}`,
+     so a door carrying the attribute stayed fully on screen -- 147x329px of
+     it. This makes the attribute mean what it says. */
+  .door[hidden]{display:none;}
   .door{
     display:flex;flex-direction:column;align-items:center;gap:10px;
     background:var(--bg-card);border:1px solid var(--border);
@@ -1583,7 +1587,9 @@ if (window.top !== window.self) {
          yellow business one. No launch date in here. This markup is served
          to every visitor for as long as the site stands, and a date in it is
          wrong the day after; the page it opens carries the clock. -->
-    <a class="door door-crypto" href="/crypto.html">
+    <!-- ASCUNS TEMPORAR 2026-09-11: usa catre Rotabo Crypto. Markup-ul
+         ramane intact; scoate atributul `hidden` de mai jos ca sa revina. -->
+    <a class="door door-crypto" href="/crypto.html" hidden>
       <span class="door-mark" aria-hidden="true">
         <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/></svg>
         <svg viewBox="0 0 200 260"><use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGold)"/></svg>

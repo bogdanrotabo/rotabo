@@ -349,6 +349,16 @@
    in the same shape -- two places, on purpose: this band must keep working
    if that page is ever rewritten. */
 (function () {
+  /* ASCUNS TEMPORAR 2026-09-11, la cererea proprietarului.
+
+     The band below is left exactly as it was and still works: this is the
+     only line stopping it. The markup starts `hidden` and it is this script
+     that reveals it, so hiding it in the HTML would not have held -- the
+     next draw would have set `hidden = false` again. Delete these four lines
+     to bring the band back. */
+  var ASCUNS_TEMPORAR = true;
+  if (ASCUNS_TEMPORAR) return;
+
   var band  = document.getElementById('tokenBand');
   var track = document.getElementById('tokenTrack');
   if (!band || !track) return;
