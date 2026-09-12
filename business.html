@@ -640,6 +640,30 @@ if (window.top !== window.self) {
   .badges{display:flex;justify-content:center;flex-wrap:wrap;color:#5c4d68;font-size:.98rem;margin-bottom:60px;}
   .badges span{display:flex;align-items:center;margin:0 14px 10px;}
   .badges span .dot{margin-right:8px;}
+
+  /* Who is on Rotabo, in the order they joined, under the payment badge.
+     Built from what the page already wears -- the eyebrow, the outline
+     button, the panel and border tokens -- so it reads as part of this hero
+     rather than as something added to it. */
+  .members{max-width:560px;margin:-30px auto 60px;}
+  .members[hidden]{display:none;}
+  .members__list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .member__row{
+    width:100%;display:flex;align-items:center;gap:10px;
+    padding:12px 16px;border-radius:14px;cursor:pointer;
+    background:var(--panel-soft);border:1px solid var(--border);
+    color:var(--text-dark);font:inherit;text-align:left;
+  }
+  .member__row[aria-expanded="true"]{border-color:var(--violet-2);}
+  .member__cat{flex:1 1 auto;min-width:0;color:var(--violet-1);font-weight:700;font-size:.92rem;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .member__name{flex:0 0 auto;font-weight:800;}
+  .member__row .flagimg{flex:0 0 auto;height:.9em;width:auto;border-radius:2px;}
+  .member__card{padding:12px 16px 4px;color:var(--text-dark);}
+  .member__card p{margin:0 0 8px;}
+  .member__where,.member__locked{color:var(--text-eyebrow);font-size:.92rem;}
+  .member__contact a{margin-right:14px;}
+  .member__note{white-space:pre-wrap;}
   .dot{width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block;}
 
   section{max-width:1080px;margin:0 auto;padding:20px 24px;}
@@ -1936,6 +1960,14 @@ if (window.top !== window.self) {
   <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
   <div class="badges">
     <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
+  </div>
+  <!-- Who is on Rotabo, in the order they joined. Hidden until there is
+       somebody to show, and never on the business page. Only what the
+       privacy page already calls public is ever sent here; the note and the
+       contact details stay behind the existing paid-access check. -->
+  <div class="members" id="members" hidden>
+    <p class="eyebrow" data-i18n="categories.see_who_btn">See who is here</p>
+    <ol class="members__list" id="membersList"></ol>
   </div>
 </section>
 
@@ -4709,6 +4741,135 @@ if ("serviceWorker" in navigator) {
 <!-- What fills the three bands. Shared with crypto.html, which carries the
      same three -- see /bands.css for how they look. -->
 <script src="/bands.js"></script>
+<script>
+/* Who is on Rotabo, one person under another, in the order they joined.
+
+   Every piece is one the site already has. The rows come from
+   list_public_members(), which returns exactly what the privacy page calls
+   public -- first name, category, offering or looking, town, country, Rotabo
+   number -- for the listings the band shows, in the order they joined, with
+   the surname cut in the database rather than in this browser. Every word on
+   screen is an existing translation. The contact details go through
+   RotaboViewer.reveal, the same gate browse.html uses: a visitor who is not a
+   client gets the existing join-and-pay flow, and a client gets the details.
+
+   By listing id, not by Rotabo number. A number belongs to a person, and
+   browse.html already learned what that costs: somebody with two listings in
+   a category got one card's details on both. */
+(function(){
+  var section = document.getElementById("members");
+  var list = document.getElementById("membersList");
+  if (!section || !list || !window.supabase) return;
+  // The personal side only: on the business page the top band already shows
+  // companies, and this list is of people.
+  if (document.documentElement.getAttribute("data-mode") === "business") return;
+
+  var sb = window.supabase.createClient(
+    "https://auth.rotabo.app",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w"
+  );
+  var rows = [];
+
+  function T(key, fallback){
+    try {
+      if (window.rotaboT) { var v = window.rotaboT(key); if (v && v !== key) return v; }
+    } catch (e) {}
+    return fallback;
+  }
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function catName(row){ return T("categories." + row.category + ".name", row.category || ""); }
+  function isoOf(row){ return window.RotaboCountries ? window.RotaboCountries.isoFor(row.country || "") : ""; }
+  // Town and country in the language on screen, as the band says them.
+  function whereOf(row){
+    var lang = document.documentElement.getAttribute("lang") || "en";
+    var country = row.country || "";
+    var iso = isoOf(row);
+    if (iso && window.RotaboCountries) country = window.RotaboCountries.nameForIsoIn(iso, lang) || country;
+    return [row.city, country].filter(Boolean).join(", ");
+  }
+
+  function paint(){
+    if (!rows.length) { section.hidden = true; return; }
+    section.hidden = false;
+    list.innerHTML = rows.map(function(row, i){
+      var iso = isoOf(row);
+      var flag = iso && window.RotaboCountries ? window.RotaboCountries.flagImgFor(iso, row.country || "") : "";
+      return '<li class="member">'
+        + '<button type="button" class="member__row" aria-expanded="false" data-i="' + i + '">'
+        + '<span class="member__cat">' + esc(catName(row)) + '</span>'
+        + '<span class="member__name">' + esc(row.name) + '</span>'
+        + flag
+        + '</button>'
+        + '<div class="member__card" hidden></div>'
+        + '</li>';
+    }).join("");
+  }
+
+  function openCard(button){
+    var row = rows[+button.getAttribute("data-i")];
+    var card = button.parentNode.querySelector(".member__card");
+    var open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", open ? "false" : "true");
+    if (open) { card.hidden = true; return; }
+    var verb = row.role === "seeking" ? T("ticker.seeks", "looking for") : T("ticker.offers", "offers");
+    card.innerHTML = '<p>' + esc(row.name) + ' ' + esc(verb) + ' <b>' + esc(catName(row)) + '</b></p>'
+      + '<p class="member__where">' + esc(whereOf(row)) + (row.number ? ' · #' + esc(row.number) : '') + '</p>'
+      + '<p class="member__locked">' + esc(T("browse_page.subtitle", "Unlock full access to see who is here, with phone and address.")) + '</p>'
+      + '<button type="button" class="btn btn-outline member__unlock">' + esc(T("browse_page.unlock_btn", "🔓 See contact")) + '</button>'
+      + '<div class="member__contact" hidden></div>';
+    card.hidden = false;
+  }
+
+  function reveal(unlock){
+    if (!window.RotaboViewer) return;
+    var card = unlock.parentNode;
+    var row = rows[+card.parentNode.querySelector(".member__row").getAttribute("data-i")];
+    window.RotaboViewer.reveal({ id: row.id, onDetails: function(details){
+      var d = (details || [])[0];
+      if (!d) return;
+      unlock.hidden = true;
+      card.querySelector(".member__locked").hidden = true;
+      var box = card.querySelector(".member__contact");
+      box.textContent = "";
+      // Built with textContent and href properties, never markup: every one of
+      // these strings was typed by the member.
+      function line(el){ var p = document.createElement("p"); p.appendChild(el); box.appendChild(p); }
+      if (d.phone || d.email) {
+        var links = document.createElement("span");
+        if (d.phone) { var a = document.createElement("a"); a.href = "tel:" + d.phone; a.textContent = T("browse_page.call_btn", "📞 Call") + " " + d.phone; links.appendChild(a); }
+        if (d.email) { var m = document.createElement("a"); m.href = "mailto:" + d.email; m.textContent = T("browse_page.email_btn", "✉️ Email"); links.appendChild(m); }
+        line(links);
+      }
+      if (d.address) { var ad = document.createElement("span"); ad.textContent = d.address; line(ad); }
+      if (d.note) { var n = document.createElement("span"); n.className = "member__note"; n.textContent = d.note; line(n); }
+      box.hidden = false;
+    }});
+  }
+
+  list.addEventListener("click", function(e){
+    var unlock = e.target.closest && e.target.closest(".member__unlock");
+    if (unlock) { reveal(unlock); return; }
+    var row = e.target.closest && e.target.closest(".member__row");
+    if (row) openCard(row);
+  });
+
+  sb.rpc("list_public_members").then(function(r){
+    if (r && !r.error && Array.isArray(r.data)) rows = r.data;
+    paint();
+  }).catch(function(){ /* offline: the section simply stays hidden */ });
+
+  // Repainted when the language changes, chained onto the existing hook
+  // rather than replacing it -- the band and the country list both hang there.
+  var before = window.__afterTranslate;
+  window.__afterTranslate = function(d){
+    if (before) { try { before(d); } catch (e) {} }
+    paint();
+  };
+})();
+</script>
 
 
 <!-- ------------------------------------------- the professional search --- -->
