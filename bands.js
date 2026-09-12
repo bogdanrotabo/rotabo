@@ -18,9 +18,10 @@
 
    Both calls are functions the database already grants to anon --
    sponsors_public() and list_public_numbers() -- so nothing had to be opened
-   up for this and no token is involved. list_public_numbers() also returns a
-   name; the band deliberately shows the Rotabo number instead, which is the
-   identity this site already publishes and looks people up by. */
+   up for this and no token is involved. list_public_numbers() returns the
+   first name only -- the database cuts it, so no surname ever reaches the
+   browser (migration 0011) -- and the band shows it beside the Rotabo
+   number, which is the identity this site publishes and looks people up by. */
 (function(){
   var strip    = document.getElementById("ticker");
   var bizStrip = document.getElementById("tickerBiz");
