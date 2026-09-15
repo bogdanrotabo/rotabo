@@ -3709,6 +3709,7 @@ if (window.top !== window.self) {
       // visitor has just left. It also stops a screen reader announcing the
       // new text under the old language.
       setLangUI(code);
+      window.__dict = cache[code]; // viewer.js reads its unlock-modal strings from here (browse.html already does this)
       applyTranslations(cache[code]);
       return Promise.resolve();
     }
@@ -3724,6 +3725,7 @@ if (window.top !== window.self) {
         // cache[code], not dict: the business side merges its own wording in
         // on the way into the cache, and painting from the raw response put
         // the personal copy on a page whose dictionary already knew better.
+        window.__dict = cache[code]; // viewer.js reads its unlock-modal strings from here (browse.html already does this)
         applyTranslations(cache[code]);
       })
       .catch(function(err){

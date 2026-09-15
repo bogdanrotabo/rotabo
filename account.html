@@ -310,6 +310,7 @@ if (window.top !== window.self) {
     return fetch("locales/" + LANG + ".json")
       .then(function(res){ return res.ok ? res.json() : null; })
       .then(function(dict){
+        window.__dict = dict; // let viewer.js localize its unlock modal, as browse.html does
         if (dict && dict.account_page) Object.assign(T, dict.account_page);
         // Same omission as browse.html had: without these an Arabic or
         // Urdu reader gets the right words in the wrong direction.
