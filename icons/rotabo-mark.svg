@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="354" height="260" viewBox="0 0 354 260">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="446" height="260" viewBox="0 0 446 260">
   <!-- The Rotabo mark as the header draws it: the same diamond path and the
-       same stops as the symbol block at the top of index.html, the violet one
-       first and the gold one laid over its right tip. The offset is the
-       header's own geometry: two 26px-wide marks pulled 6px together is 20px
-       apart, 153.85 units in this 200-unit box.
+       same stops as the symbol block at the top of index.html, violet first and
+       gold beside it. The spacing is the header's own geometry: two 26px-wide
+       marks, the brand's 12px gap less the 6px they are pulled together, so
+       32px from one to the next, 246.15 units in this 200-unit box.
 
        For other sites to link to. The app icons carry the pair inside a padded
        square, which at pill size shrinks each diamond to a few blurred pixels;
@@ -17,5 +17,5 @@
     <path id="diamondShape" d="M118.15,28.88 Q100,5 81.85,28.88 L23.15,106.12 Q5,130 23.15,153.88 L81.85,231.12 Q100,255 118.15,231.12 L176.85,153.88 Q195,130 176.85,106.12 Z"/>
   </defs>
   <use xlink:href="#diamondShape" href="#diamondShape" fill="url(#diamondGrad)"/>
-  <use xlink:href="#diamondShape" href="#diamondShape" fill="#ffd41a" transform="translate(153.85 0)"/>
+  <use xlink:href="#diamondShape" href="#diamondShape" fill="#ffd41a" transform="translate(246.15 0)"/>
 </svg>
