@@ -637,7 +637,7 @@ if (window.top !== window.self) {
     color:var(--violet-1);
   }
   .fine{text-align:center;color:var(--text-eyebrow);font-size:.95rem;margin:18px 0 30px;}
-  .badges{display:flex;justify-content:center;flex-wrap:wrap;color:#5c4d68;font-size:.98rem;margin-bottom:60px;}
+  .badges{display:flex;justify-content:center;flex-wrap:wrap;color:#5c4d68;font-size:.98rem;margin:24px 0 8px;}
   .badges span{display:flex;align-items:center;margin:0 14px 10px;}
   .badges span .dot{margin-right:8px;}
 
@@ -645,7 +645,7 @@ if (window.top !== window.self) {
      Built from what the page already wears -- the eyebrow, the outline
      button, the panel and border tokens -- so it reads as part of this hero
      rather than as something added to it. */
-  .members{max-width:560px;margin:-30px auto 60px;}
+  .members{max-width:560px;margin:0 auto;}
   .members[hidden]{display:none;}
   .members__list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
   .member__row{
@@ -1694,6 +1694,22 @@ if (window.top !== window.self) {
     <button class="sb-btn" type="button" data-share-sheet hidden>More</button>
   </div>
 
+  <!-- The payment line and who is on Rotabo, above the three dark boxes of
+       the partner band: the owner moved them up from under the twelve
+       category cards, so a visitor sees how paying works and who is already
+       here before the sites standing beside Rotabo. -->
+  <div class="badges">
+    <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
+  </div>
+  <!-- Who is on Rotabo, in the order they joined. Hidden until there is
+       somebody to show, and never on the business page. Only what the
+       privacy page already calls public is ever sent here; the note and the
+       contact details stay behind the existing paid-access check. -->
+  <div class="members" id="members" hidden>
+    <p class="eyebrow" data-i18n="categories.see_who_btn">See who is here</p>
+    <ol class="members__list" id="membersList"></ol>
+  </div>
+
   <!-- Main partner band, under the share bar. It opened the page until it
        was pointed out that this puts a sponsor slot above the offer itself:
        a stranger has to know what the site is and what it costs before the
@@ -1958,17 +1974,6 @@ if (window.top !== window.self) {
     <button type="button" class="btn btn-dashed" id="installBtn" data-i18n="hero.cta_home_screen">⬇ Add Rotabo to your home screen</button>
   </div>
   <p class="fine" data-i18n="hero.fine">Works in your browser — no app store needed.</p>
-  <div class="badges">
-    <span data-i18n="hero.badge_pay">Google Pay / Apple Pay</span>
-  </div>
-  <!-- Who is on Rotabo, in the order they joined. Hidden until there is
-       somebody to show, and never on the business page. Only what the
-       privacy page already calls public is ever sent here; the note and the
-       contact details stay behind the existing paid-access check. -->
-  <div class="members" id="members" hidden>
-    <p class="eyebrow" data-i18n="categories.see_who_btn">See who is here</p>
-    <ol class="members__list" id="membersList"></ol>
-  </div>
 </section>
 
 <section class="works-section">
