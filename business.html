@@ -450,23 +450,9 @@ if (window.top !== window.self) {
   .mp-list{display:flex;flex-direction:column;gap:6px;margin-top:14px;}
   .mp-list[hidden]{display:none;}
 
-  /* The band is Rotabo's page, but the marks standing in it are not Rotabo's,
-     so each keeps its own ground -- gift.ceo's near-black with its gold,
-     topten.one's warm near-black with its own, and selfies.lol's near-black
-     with its own blue. Redrawn in this page's lavender they would be
-     different wordmarks.
-
-     topten.one carried violet here because that is what it was when this band
-     was written. It went back to gold, so this did too -- a mark that is not
-     the mark on the site it links to is worse than no mark. gift.ceo and
-     topten.one share that same gold, so the crown is what tells them apart:
-     it is topten.one's, it is on every page of it, and gift.ceo has nothing
-     like it. selfies.lol needed no such device -- its accent is blue, not
-     gold, so the colour alone already tells it apart from the other two.
-
-     One row, three equal shares: flex:1 1 0 makes them the same width
-     whatever the words are, and stretch makes them the same height. None is
-     bigger than the others because none is more than the others. */
+  /* Light lavender panels, matching the sister-site cards on selfies.lol.
+     Logo files retain their official artwork and colours, without filters.
+     Equal-width cards stack on small screens; logos sit above the names. */
   .mp-brands{
     display:flex;align-items:stretch;gap:14px;
     margin-top:16px;
@@ -476,37 +462,18 @@ if (window.top !== window.self) {
     flex:1 1 0;min-width:0;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
     padding:16px 20px;border-radius:16px;text-decoration:none;
+    background:#f6ecf9;border:1px solid #e2c3ee;
+    box-shadow:0 4px 14px rgba(124,45,156,.06);
   }
+  .mp-brand:hover{border-color:#9b3fc0;}
+  .mp-brand:focus-visible{outline:3px solid #9b3fc0;outline-offset:3px;}
   .mp-brand .mp-gc-mark{
-    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;display:flex;align-items:center;gap:0;
+    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;display:block;text-align:center;color:#7c2d9c;
   }
-  .mp-brand .mp-gc-logo{display:block;flex:none;margin-right:9px;object-fit:contain;}
+  .mp-brand .mp-gc-logo{display:block;width:40px;height:40px;margin:0 auto 8px;object-fit:contain;}
   .mp-brand .mp-gc-tag{text-align:center;}
-  .mp-brand .mp-gc-mark b{font-weight:800;}
-  .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;}
-
-  .mp-gift{background:#1c1b19;border:1px solid #2b2926;}
-  .mp-gift:hover{border-color:#d9a63c;}
-  .mp-gift .mp-gc-mark{color:#f2f0ec;}
-  .mp-gift .mp-gc-mark b{color:#d9a63c;}
-  .mp-gift .mp-gc-tag{color:#a09b93;}
-
-  .mp-topten{background:#131211;border:1px solid rgba(217,166,60,.30);}
-  .mp-topten:hover{border-color:#d9a63c;}
-  /* The crown sits before the word with its own margin rather than a flex gap:
-     a gap falls between every item, and "TopTen" and ".one" are two of them,
-     so the wordmark came out reading "TopTen .one". */
-  .mp-topten .mp-gc-mark{color:#f2f0ec;display:flex;align-items:center;gap:0;}
-  .mp-topten .mp-gc-mark b{color:#d9a63c;}
-  .mp-topten .mp-gc-crown{flex:none;display:block;color:#d9a63c;margin-right:9px;}
-  .mp-topten .mp-gc-tag{color:#a09b93;}
-
-  /* Current selfies campus identity; the original multicolour mark stays intact. */
-  .mp-selfies{background:#f6ecf9;border:1px solid #e2c3ee;}
-  .mp-selfies:hover{border-color:#9b3fc0;}
-  .mp-selfies .mp-gc-mark{color:#7c2d9c;}
-  .mp-selfies .mp-gc-mark b{color:#9b3fc0;}
-  .mp-selfies .mp-gc-tag{color:#7c2d9c;}
+  .mp-brand .mp-gc-mark b{font-weight:800;color:#9b3fc0;}
+  .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;color:#7c2d9c;}
 
   /* Side by side is the point, but not at 320px: below that the three words
      stop fitting and the marks start hyphenating. Three now share the row
@@ -1744,15 +1711,15 @@ if (window.top !== window.self) {
          claiming something it did not have. -->
     <div class="mp-brands" id="mainPartnerBrands">
       <a class="mp-brand mp-gift" href="https://gift.ceo" target="_blank" rel="noopener">
-        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/gift-mark.svg" width="32" height="32" alt="">gift<b>.ceo</b></span>
+        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/gift-mark.svg" width="40" height="40" alt="">gift<b>.ceo</b></span>
         <span class="mp-gc-tag">Only CEOs give here.</span>
       </a>
       <a class="mp-brand mp-topten" href="https://topten.one" target="_blank" rel="noopener">
-        <span class="mp-gc-mark"><svg class="mp-gc-crown" width="26" height="20" viewBox="0 0 38 28" aria-hidden="true"><path fill="currentColor" d="M2 8l7 6 10-12 10 12 7-6-4 18H6z"/></svg>TopTen<b>.one</b></span>
+        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/topten-mark.png" width="40" height="40" alt="">TopTen<b>.one</b></span>
         <span class="mp-gc-tag">Be the one.</span>
       </a>
       <a class="mp-brand mp-selfies" href="https://selfies.lol" target="_blank" rel="noopener">
-        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/selfies-mark.png" width="36" height="36" alt="">selfies<b>.lol</b></span>
+        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/selfies-mark.png" width="40" height="40" alt="">selfies<b>.lol</b></span>
         <span class="mp-gc-tag">Make your campus impossible to ignore.</span>
       </a>
     </div>

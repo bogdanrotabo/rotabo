@@ -1,7 +1,7 @@
 /* Written by scripts/build-sw.mjs from a hash of everything precached below.
    Do not edit by hand: it was a number someone had to remember to raise, and
    for many deploys nobody did. */
-const CACHE_VERSION = "v50e0d5dde5";
+const CACHE_VERSION = "v27b16d97bc";
 const CACHE_NAME = "rotabo-cache-" + CACHE_VERSION;
 
 // Where Google tag gateway serves gtag.js and receives its measurement
@@ -38,7 +38,10 @@ const PRECACHE_URLS = [
   "/icons/icon-512.png",
   "/icons/icon-512-maskable.png",
   "/icons/favicon-32.png",
-  "/icons/apple-touch-icon-180.png"
+  "/icons/apple-touch-icon-180.png",
+  "/icons/gift-mark.svg",
+  "/icons/topten-mark.png",
+  "/icons/selfies-mark.png"
 ].concat(LOCALE_CODES.map(function (code) {
   return "/locales/" + code + ".json";
 }));
