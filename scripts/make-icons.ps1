@@ -2,8 +2,8 @@
 #
 #   powershell -ExecutionPolicy Bypass -File scripts\make-icons.ps1
 #
-# Uses System.Drawing from the Windows runtime, so it needs no Node, no Python
-# and no image tooling. Re-run it whenever the mark changes.
+# Icons use System.Drawing from Windows. The shared-card generator uses
+# Node + sharp and embeds the authoritative SVG. Re-run when the mark changes.
 #
 # The mark is two rounded rhombi side by side: the violet one and, since the
 # yellow was chosen off a fish's tail, its gold twin. Both are drawn from the
@@ -146,64 +146,9 @@ Save-Icon 512 0.04 'icon-512.png'             $null
 # sit inside the middle 80% and the corners cannot be transparent.
 Save-Icon 512 0.22 'icon-512-maskable.png'    '#faf2fd'
 
-# ---------------------------------------------------------------- og-image
+# The card is composed from the authoritative SVG in one shared generator.
+# Requires Node + sharp (or BRAND_RENDERER_NODE_MODULES for an existing install).
+node (Join-Path $PSScriptRoot 'build-brand-card.mjs')
+if ($LASTEXITCODE -ne 0) { throw 'Brand card generation failed.' }
 
-$W = 1200; $H = 630
-$c = New-Canvas $W $H
-$g = $c.Graphics
-
-$bgBrush = New-Object System.Drawing.Drawing2D.LinearGradientBrush(
-    (New-Object System.Drawing.Point(0, 0)),
-    (New-Object System.Drawing.Point(0, $H)),
-    (C '#fdf5ff'), (C '#f4e6f9'))
-$g.FillRectangle($bgBrush, 0, 0, $W, $H)
-$bgBrush.Dispose()
-
-Draw-Pair $g 60 150 460 330
-
-$dark   = New-Object System.Drawing.SolidBrush((C '#2b0f36'))
-$violet = New-Object System.Drawing.SolidBrush((C '#a239c9'))
-$grey   = New-Object System.Drawing.SolidBrush((C '#6b5470'))
-# The tail colour itself, the same one the pages use for .me-gold and the
-# same one in the diamond above it. Faint on this pale ground -- that is a
-# known cost of using the mark's own yellow for words, and it is the colour
-# that was asked for.
-$gold   = New-Object System.Drawing.SolidBrush((C '#ffd41a'))
-
-$fBig  = New-Object System.Drawing.Font('Segoe UI', 62, [System.Drawing.FontStyle]::Bold)
-$fSub  = New-Object System.Drawing.Font('Segoe UI', 28, [System.Drawing.FontStyle]::Regular)
-$fLink = New-Object System.Drawing.Font('Segoe UI', 26, [System.Drawing.FontStyle]::Bold)
-
-# GenericTypographic drops a trailing space when it measures, which ran
-# "Need" straight into "me?". MeasureTrailingSpaces is what puts the gap back.
-$fmt = [System.Drawing.StringFormat]::GenericTypographic.Clone()
-$fmt.FormatFlags = $fmt.FormatFlags -bor [System.Drawing.StringFormatFlags]::MeasureTrailingSpaces
-
-# "Need" and "Find" violet, both "me" gold -- the same split the headline on
-# the site makes, so the card and the page read as one thing. The second half
-# is measured rather than guessed: the width of the first depends on the font
-# that actually resolved.
-function Draw-TwoTone($g, [string]$a, [string]$b, $font, $brushA, $brushB, [double]$x, [double]$y, $fmt) {
-    $g.DrawString($a, $font, $brushA, [single]$x, [single]$y, $fmt)
-    $w = $g.MeasureString($a, $font, 2000, $fmt).Width
-    $g.DrawString($b, $font, $brushB, [single]($x + $w), [single]$y, $fmt)
-}
-
-Draw-TwoTone $g 'Need ' 'me?' $fBig $violet $gold 566 168 $fmt
-Draw-TwoTone $g 'Find ' 'me.' $fBig $violet $gold 566 258 $fmt
-$g.DrawString('Translators, drivers, movers,', $fSub, $grey, [single]566, [single]372)
-$g.DrawString('tutors, handymen - worldwide.', $fSub, $grey, [single]566, [single]414)
-# "rotabo." violet, "app" gold: the wordmark says the same thing the pair of
-# diamonds above it does. Measured rather than guessed, because the width of
-# "rotabo." depends on the font that actually resolved.
-$head = 'rotabo.'
-$wHead = $g.MeasureString($head, $fLink, 1000, $fmt).Width
-$g.DrawString($head, $fLink, $violet, [single]566, [single]474, $fmt)
-$g.DrawString('app', $fLink, $gold, [single](566 + $wHead), [single]474, $fmt)
-
-$c.Bitmap.Save((Join-Path $root 'og-image.png'), [System.Drawing.Imaging.ImageFormat]::Png)
-$g.Dispose(); $c.Bitmap.Dispose()
-'  {0,-28} {1}x{2}' -f 'og-image.png', $W, $H
-
-''
-'Gata. Marca: rombul violet plus geamanul lui auriu.'
+'Gata. Marca originala: rombul violet plus geamanul lui auriu.'

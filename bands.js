@@ -73,23 +73,11 @@
     return [row.city, country].filter(Boolean).join(", ");
   }
 
-  /* A sponsor's own mark, drawn as the sponsor draws it.
-     gift.ceo's is a near-black rounded square with a pale g and a gold dot, and it is
-     inline rather than a file: it is four shapes, so it costs less than the
-     request it would take to fetch it, and it stays sharp at any size. The
-     colours are topten's own, not Rotabo's -- a sponsor's mark that has been
-     recoloured to match the page it sits on is not the sponsor's mark.
-
-     Keyed by host, so it is the sponsor that carries a logo, not the row. A
-     sponsor with no mark here shows its name, which is what it did before. */
+  /* Original sponsor artwork, copied unchanged from the sponsor's favicon.
+     No approximation, recolouring or change to the actual sponsor list. */
   var SPONSOR_MARKS = {
     "gift.ceo":
-      '<svg class="tick__logo" viewBox="0 0 64 64" aria-hidden="true">'
-      + '<rect width="64" height="64" rx="14" fill="#1c1b19"/>'
-      + '<rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#d9a63c" stroke-opacity=".28" stroke-width="2"/>'
-      + '<text x="30" y="45" font-family="Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#f2f0ec" text-anchor="middle">g</text>'
-      + '<circle cx="48" cy="42" r="5" fill="#d9a63c"/>'
-      + '</svg>'
+      '<img class="tick__logo" src="/icons/gift-mark.svg" width="24" height="24" alt="">'
   };
 
   function markFor(name, url){

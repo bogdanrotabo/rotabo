@@ -42,19 +42,26 @@ if (window.top !== window.self) {
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#9B3FAF">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180.png">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Rotabo">
 <meta property="og:title" content="Rotabo for business — Need Me? Find Me!">
 <meta property="og:description" content="People need companies. People have companies. Rotabo connects them.">
-<meta property="og:image" content="https://rotabo.app/og-image.png">
+<meta property="og:image" content="https://rotabo.app/og-image.png?v=20260916">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Rotabo — Need Me? Find Me! People need things. People have things. Rotabo connects them.">
 <meta property="og:url" content="https://rotabo.app/business.html">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@supportrotabo">
 <meta name="twitter:title" content="Rotabo for business — Need Me? Find Me!">
 <meta name="twitter:description" content="People need companies. People have companies. Rotabo connects them.">
-<meta name="twitter:image" content="https://rotabo.app/og-image.png">
+<meta name="twitter:image" content="https://rotabo.app/og-image.png?v=20260916">
+<meta name="twitter:image:alt" content="Rotabo — Need Me? Find Me! People need things. People have things. Rotabo connects them.">
 
 <link rel="canonical" href="https://rotabo.app/business.html">
 <!-- The three running bands, shared with crypto.html. Before the inline
@@ -471,8 +478,10 @@ if (window.top !== window.self) {
     padding:16px 20px;border-radius:16px;text-decoration:none;
   }
   .mp-brand .mp-gc-mark{
-    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;
+    font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;display:flex;align-items:center;gap:0;
   }
+  .mp-brand .mp-gc-logo{display:block;flex:none;margin-right:9px;object-fit:contain;}
+  .mp-brand .mp-gc-tag{text-align:center;}
   .mp-brand .mp-gc-mark b{font-weight:800;}
   .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;}
 
@@ -492,14 +501,12 @@ if (window.top !== window.self) {
   .mp-topten .mp-gc-crown{flex:none;display:block;color:#d9a63c;margin-right:9px;}
   .mp-topten .mp-gc-tag{color:#a09b93;}
 
-  /* selfies.lol wears the same near-black plate as the other two, but its own
-     accent: the action blue from its own tokens (--action, spec §17), not the
-     gold that already marks gift.ceo and topten.one apart from each other. */
-  .mp-selfies{background:#10161f;border:1px solid rgba(26,124,245,.30);}
-  .mp-selfies:hover{border-color:#1a7cf5;}
-  .mp-selfies .mp-gc-mark{color:#f2f0ec;}
-  .mp-selfies .mp-gc-mark b{color:#1a7cf5;}
-  .mp-selfies .mp-gc-tag{color:#a09b93;}
+  /* Current selfies campus identity; the original multicolour mark stays intact. */
+  .mp-selfies{background:#f6ecf9;border:1px solid #e2c3ee;}
+  .mp-selfies:hover{border-color:#9b3fc0;}
+  .mp-selfies .mp-gc-mark{color:#7c2d9c;}
+  .mp-selfies .mp-gc-mark b{color:#9b3fc0;}
+  .mp-selfies .mp-gc-tag{color:#7c2d9c;}
 
   /* Side by side is the point, but not at 320px: below that the three words
      stop fitting and the marks start hyphenating. Three now share the row
@@ -1737,7 +1744,7 @@ if (window.top !== window.self) {
          claiming something it did not have. -->
     <div class="mp-brands" id="mainPartnerBrands">
       <a class="mp-brand mp-gift" href="https://gift.ceo" target="_blank" rel="noopener">
-        <span class="mp-gc-mark">gift<b>.ceo</b></span>
+        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/gift-mark.svg" width="32" height="32" alt="">gift<b>.ceo</b></span>
         <span class="mp-gc-tag">Only CEOs give here.</span>
       </a>
       <a class="mp-brand mp-topten" href="https://topten.one" target="_blank" rel="noopener">
@@ -1745,8 +1752,8 @@ if (window.top !== window.self) {
         <span class="mp-gc-tag">Be the one.</span>
       </a>
       <a class="mp-brand mp-selfies" href="https://selfies.lol" target="_blank" rel="noopener">
-        <span class="mp-gc-mark">selfies<b>.lol</b></span>
-        <span class="mp-gc-tag">Don't follow people. Follow the world.</span>
+        <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/selfies-mark.png" width="36" height="36" alt="">selfies<b>.lol</b></span>
+        <span class="mp-gc-tag">Make your campus impossible to ignore.</span>
       </a>
     </div>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
