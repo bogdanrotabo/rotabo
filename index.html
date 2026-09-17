@@ -472,17 +472,14 @@ if (window.top !== window.self) {
   .mp-brand .mp-gc-mark b{font-weight:800;color:#9b3fc0;}
   .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;color:#7c2d9c;}
 
-  /* AutoSport Event is a guest beside the three sister sites, not one of them,
-     and the owner asked for no dark plate here: a light card instead, its own
-     logo carrying the wordmark, its red as the hover. The logo is a wide badge,
-     so it is sized by height and centred rather than set in type like the
-     others. */
-  .mp-autosport{background:#faf7fe;border:1px solid rgba(155,63,192,.24);}
-  .mp-autosport:hover{border-color:#e11d2a;}
+  /* AutoSport Event is a guest beside the three sister sites, and it wears the
+     same light family panel they do -- ground, edge, hover and tagline colour
+     all come from .mp-brand, so the four read as one row. Only the mark differs:
+     its logo is a wide badge that already carries the wordmark, so it is sized
+     by height and stands where the others have a mark and a name. */
   .mp-autosport .mp-as-logo{
-    display:block;width:auto;height:46px;max-width:100%;object-fit:contain;margin:0 auto;
+    display:block;width:auto;height:72px;max-width:100%;object-fit:contain;margin:0 auto 6px;
   }
-  .mp-autosport .mp-gc-tag{color:#6b5a78;}
 
   /* Side by side is the point, but not at 320px: below that the three words
      stop fitting and the marks start hyphenating. Three now share the row
