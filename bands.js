@@ -77,7 +77,14 @@
      No approximation, recolouring or change to the actual sponsor list. */
   var SPONSOR_MARKS = {
     "gift.ceo":
-      '<img class="tick__logo" src="/icons/gift-mark.svg" width="24" height="24" alt="">'
+      '<img class="tick__logo" src="/icons/gift-mark.svg" width="24" height="24" alt="">',
+    /* AutoSport Event's own logo, committed rather than hotlinked so the band
+       keeps working if their file moves. It is a wide badge, not a square, so
+       it is sized by height and keeps its shape instead of being squashed
+       into the square the other marks fill. */
+    "autosportevent.com":
+      '<img class="tick__logo" src="/autosportevent-logo.png" alt="" decoding="async"'
+      + ' style="width:auto;height:20px;border-radius:4px">'
   };
 
   function markFor(name, url){
@@ -179,6 +186,9 @@
     // written here. Anything the table does hold joins it rather than
     // replacing it, and this line needs no edit when the first one lands.
     out.push(sponsorCell("gift.ceo", "https://gift.ceo"));
+    // AutoSport Event (Sibiu), a sponsor on the owner's instruction: written
+    // here like gift.ceo, so it runs in both bands and needs no table row.
+    out.push(sponsorCell("AutoSport Event", "https://autosportevent.com"));
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });

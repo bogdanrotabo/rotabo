@@ -472,6 +472,18 @@ if (window.top !== window.self) {
   .mp-brand .mp-gc-mark b{font-weight:800;color:#9b3fc0;}
   .mp-brand .mp-gc-tag{font-size:.82rem;font-weight:700;color:#7c2d9c;}
 
+  /* AutoSport Event is a guest beside the three sister sites, not one of them,
+     and the owner asked for no dark plate here: a light card instead, its own
+     logo carrying the wordmark, its red as the hover. The logo is a wide badge,
+     so it is sized by height and centred rather than set in type like the
+     others. */
+  .mp-autosport{background:#faf7fe;border:1px solid rgba(155,63,192,.24);}
+  .mp-autosport:hover{border-color:#e11d2a;}
+  .mp-autosport .mp-as-logo{
+    display:block;width:auto;height:46px;max-width:100%;object-fit:contain;margin:0 auto;
+  }
+  .mp-autosport .mp-gc-tag{color:#6b5a78;}
+
   /* Side by side is the point, but not at 320px: below that the three words
      stop fitting and the marks start hyphenating. Three now share the row
      instead of two, so it gives up the row sooner than it used to. */
@@ -1718,6 +1730,13 @@ if (window.top !== window.self) {
       <a class="mp-brand mp-selfies" href="https://selfies.lol" target="_blank" rel="noopener">
         <span class="mp-gc-mark"><img class="mp-gc-logo" src="/icons/selfies-mark.png" width="40" height="40" alt="">selfies<b>.lol</b></span>
         <span class="mp-gc-tag">Make your campus impossible to ignore.</span>
+      </a>
+      <!-- AutoSport Event (Sibiu), added beside the sister sites on the owner's
+           instruction. Its own logo, on a light card rather than a dark plate:
+           the mark carries the wordmark, so the card stays out of its way. -->
+      <a class="mp-brand mp-autosport" href="https://autosportevent.com" target="_blank" rel="noopener">
+        <img class="mp-as-logo" src="/autosportevent-logo.png" alt="AutoSport Event" width="150" height="100" decoding="async">
+        <span class="mp-gc-tag">Motorsport events · Sibiu</span>
       </a>
     </div>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
