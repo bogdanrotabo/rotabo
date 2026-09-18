@@ -32,10 +32,10 @@
   // it rather than off a second copy of the page.
   var isBiz = document.documentElement.getAttribute("data-mode") === "business";
 
-  var sb = window.supabase.createClient(
+  var sb = window.__rotaboSupabaseClient || (window.__rotaboSupabaseClient = window.supabase.createClient(
     "https://auth.rotabo.app",
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhcWZicHp3ZGdud2pvYWVkanJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDkwMzgsImV4cCI6MjEwMTc4NTAzOH0.nds6gT2P32WT0wKoeCFAWuGLX3oipGKtvuU2mwdxi3w"
-  );
+  ));
 
   var listings = [];
   var sponsors = [];
