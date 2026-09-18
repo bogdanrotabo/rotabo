@@ -134,3 +134,23 @@
 .ticker--biz .tick__num::before{color:#8a4a9e;}
 .ticker--biz .tick--sponsor .tick__label{color:#5f2270;opacity:.9;}
 .ticker--biz .tick__dot{background:#5f2270;box-shadow:0 0 0 3px rgba(95,34,112,.20);}
+
+/* Each listing carries the colour of its category card. The colours are
+   deliberately deep enough to remain readable on both the violet personal
+   band and the gold business band. */
+.tick--cat-other{--category-ink:#6d28d9;}
+.tick--cat-drive{--category-ink:#075985;}
+.tick--cat-translator{--category-ink:#0f766e;}
+.tick--cat-move{--category-ink:#b45309;}
+.tick--cat-build{--category-ink:#92400e;}
+.tick--cat-tools{--category-ink:#334155;}
+.tick--cat-home{--category-ink:#166534;}
+.tick--cat-auto{--category-ink:#be123c;}
+.tick--cat-care{--category-ink:#9d174d;}
+.tick--cat-learn{--category-ink:#1d4ed8;}
+.tick--cat-stay{--category-ink:#0e7490;}
+.tick--cat-pets{--category-ink:#7e22ce;}
+[class*="tick--cat-"] .tick__who,
+[class*="tick--cat-"] .tick__cat,
+[class*="tick--cat-"] .tick__where{color:var(--category-ink);}
+[class*="tick--cat-"] .tick__dot{background:var(--category-ink);}

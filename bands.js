@@ -114,6 +114,9 @@
     var seeking = row.role === "seeking";
     var verb = seeking ? T("ticker.seeks", "looking for") : T("ticker.offers", "offers");
     var cat  = T("categories." + row.category + ".name", row.category || "");
+    var rawCat = String(row.category || "").toLowerCase();
+    var catKey = /^(other|drive|translator|move|build|tools|home|auto|care|learn|stay|pets)$/.test(rawCat)
+      ? rawCat : "other";
     var where = whereOf(row);
     /* First word only. Two people in one household share an email and so a
        number, and land in the band offering the same thing in the same town
@@ -121,7 +124,7 @@
        beside a town is a great deal more than this band needs to say about
        someone who only wanted to be findable. */
     var who = String(row.name || "").trim().split(/\s+/)[0] || "";
-    return '<span class="tick' + (seeking ? " tick--seek" : "") + '">'
+    return '<span class="tick tick--cat-' + catKey + (seeking ? " tick--seek" : "") + '">'
          + '<span class="tick__dot"></span>'
          + (who ? '<span class="tick__who">' + esc(who.slice(0, 40)) + '</span>' : "")
          + '<span>' + esc(verb) + '</span>'
