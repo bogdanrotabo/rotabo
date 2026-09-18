@@ -17,9 +17,9 @@
     "1": "https://buy.stripe.com/bJedR2eZo5ANe10b8w0co0b",
     "12": "https://buy.stripe.com/6oU6oA18y8MZ9KKgsQ0co0c"
   };
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  var sb = window.__rotaboSupabaseClient || (window.__rotaboSupabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     global: { fetch: function (u, o) { return fetch(u, Object.assign({}, o, { cache: "no-store" })); } }
-  });
+  }));
 
   // Reuse the site's existing verified-email token (also set by the
   // listing forms), valid ~29 min after a successful email verification.
