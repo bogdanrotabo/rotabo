@@ -84,7 +84,12 @@
        into the square the other marks fill. */
     "autosportevent.com":
       '<img class="tick__logo" src="/autosportevent-logo.png" alt="" decoding="async"'
-      + ' style="width:auto;height:20px;border-radius:4px">'
+      + ' style="width:auto;height:20px;border-radius:4px">',
+    /* Restaurant Gemsstübli's own badge, committed like AutoSport Event's.
+       A round mark on a transparent ground, so it takes the square cell. */
+    "gemsstuebli.ch":
+      '<img class="tick__logo" src="/gemsstuebli-logo.png" alt="" decoding="async"'
+      + ' style="width:auto;height:22px">'
   };
 
   function markFor(name, url){
@@ -192,6 +197,8 @@
     // AutoSport Event (Sibiu), a sponsor on the owner's instruction: written
     // here like gift.ceo, so it runs in both bands and needs no table row.
     out.push(sponsorCell("AutoSport Event", "https://autosportevent.com"));
+    // Restaurant Gemsstübli (Schaffhausen), on the owner's instruction, the same way.
+    out.push(sponsorCell("Gemsstübli", "https://www.gemsstuebli.ch"));
     sponsors.forEach(function(s){
       if (s && s.display_name) out.push(sponsorCell(s.display_name, s.website_url || ""));
     });

@@ -5577,6 +5577,17 @@ if ("serviceWorker" in navigator) {
           + '<b>gift.ceo</b>' + tierChip("platinum") + '</a>';
     n++;
 
+    // Restaurant Gemsstübli, a sponsor on the owner's instruction: written
+    // here like gift.ceo, so it holds its place without a table row.
+    html += '<a class="cascade-row biz-row biz-row--taken" href="https://www.gemsstuebli.ch"'
+          + ' target="_blank" rel="noopener" style="--i:' + n + '">'
+          + '<span class="biz-row__n">' + n + '</span>'
+          + '<img src="/gemsstuebli-logo.png" alt="" width="22" height="22" decoding="async"'
+          + ' style="width:auto;height:22px;flex:none">'
+          + '<b>Gemsstübli</b>'
+          + '<span class="biz-row__where">Schaffhausen</span></a>';
+    n++;
+
     rows.forEach(function(r){
       if (n > PLACES) return;
       var inner = '<span class="biz-row__n">' + n + '</span>'
