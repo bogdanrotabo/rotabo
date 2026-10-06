@@ -15,7 +15,7 @@ for (const page of ['index.html', 'business.html']) {
     assert(cards.includes(`src="/icons/${asset}" width="40" height="40"`), `${page}: original ${domain} image`);
     assert(readFileSync(new URL(`icons/${asset}`, root)).length > 100);
   }
-  assert.equal((cards.match(/<a /g) || []).length, 3);
+  assert((cards.match(/<a /g) || []).length >= 3, `${page}: the three sister sites, guests beside them allowed`);
   assert(!cards.includes('<svg'), `${page}: no substitute inline crown`);
   const common = html.match(/\.mp-brand\{([^}]+)\}/)?.[1] || '';
   assert(common.includes('background:#f6ecf9'), `${page}: lavender card background`);

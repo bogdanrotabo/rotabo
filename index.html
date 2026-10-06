@@ -450,13 +450,16 @@ if (window.top !== window.self) {
   /* Light lavender panels, matching the sister-site cards on selfies.lol.
      Logo files retain their official artwork and colours, without filters.
      Equal-width cards stack on small screens; logos sit above the names. */
+  /* Five cards no longer fit one row -- "TopTen.one" ran out of its card --
+     so they wrap, three and then two, each at least wide enough for the
+     longest wordmark. */
   .mp-brands{
-    display:flex;align-items:stretch;gap:14px;
+    display:flex;flex-wrap:wrap;align-items:stretch;gap:14px;
     margin-top:16px;
   }
   .mp-brands[hidden]{display:none;}
   .mp-brand{
-    flex:1 1 0;min-width:0;
+    flex:1 1 200px;min-width:0;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
     padding:16px 20px;border-radius:16px;text-decoration:none;
     background:#f6ecf9;border:1px solid #e2c3ee;
@@ -477,7 +480,7 @@ if (window.top !== window.self) {
      all come from .mp-brand, so the four read as one row. Only the mark differs:
      its logo is a wide badge that already carries the wordmark, so it is sized
      by height and stands where the others have a mark and a name. */
-  .mp-autosport .mp-as-logo{
+  .mp-autosport .mp-as-logo, .mp-gemsstuebli .mp-as-logo{
     display:block;width:auto;height:72px;max-width:100%;object-fit:contain;margin:0 auto 6px;
   }
 
@@ -1734,6 +1737,13 @@ if (window.top !== window.self) {
       <a class="mp-brand mp-autosport" href="https://autosportevent.com" target="_blank" rel="noopener">
         <img class="mp-as-logo" src="/autosportevent-logo.png" alt="AutoSport Event" width="150" height="100" decoding="async">
         <span class="mp-gc-tag">Motorsport events · Sibiu</span>
+      </a>
+      <!-- Restaurant Gemsstübli (Schaffhausen), the fifth card, on the owner's
+           instruction. Same light family panel; its round badge carries the
+           name, so it stands where the others have a mark and a name. -->
+      <a class="mp-brand mp-gemsstuebli" href="https://www.gemsstuebli.ch" target="_blank" rel="noopener">
+        <img class="mp-as-logo" src="/gemsstuebli-logo.png" alt="Restaurant Gemsstübli" width="300" height="249" decoding="async">
+        <span class="mp-gc-tag">Restaurant · Schaffhausen</span>
       </a>
     </div>
     <p class="mp-invite" id="mainPartnerInvite" data-i18n="main_partner.invite" hidden>This place is held for an organisation that stands behind the idea. It costs nothing, and it never will.</p>
